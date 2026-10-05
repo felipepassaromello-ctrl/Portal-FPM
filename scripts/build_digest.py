@@ -124,11 +124,11 @@ def item_id(link: str, title: str) -> str:
 
 # ---------------------------------------------------------------- coleta
 
-def gnews_url(query: str, lang: str = "pt") -> str:
+def gnews_url(query: str, lang: str = "pt", when: str = "2d") -> str:
     if lang == "en":
-        params = {"q": f"{query} when:1d", "hl": "en-US", "gl": "US", "ceid": "US:en"}
+        params = {"q": f"{query} when:{when}", "hl": "en-US", "gl": "US", "ceid": "US:en"}
     else:
-        params = {"q": f"{query} when:1d", "hl": "pt-BR", "gl": "BR", "ceid": "BR:pt-419"}
+        params = {"q": f"{query} when:{when}", "hl": "pt-BR", "gl": "BR", "ceid": "BR:pt-419"}
     return "https://news.google.com/rss/search?" + urllib.parse.urlencode(params)
 
 
@@ -162,7 +162,9 @@ def fetch_source(src: dict, cutoff: datetime) -> tuple[dict, list[dict], str | N
 
 
 def _fetch_source(src: dict, cutoff: datetime) -> tuple[dict, list[dict], str | None]:
-    url = src.get("url") or gnews_url(src["gnews"], src.get("lang", "pt"))
+    url = src.get("url") or gnews_url(src["gnews"], src.get("lang", "pt"), src.get("when", "2d"))
+    if src.get("lookback_hours"):  # fontes de baixo volume podem olhar mais para trás
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=src["lookback_hours"])
     try:
         if url.startswith("file:") or os.path.exists(url):
             parsed = feedparser.parse(url.removeprefix("file://"))
