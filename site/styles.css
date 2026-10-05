@@ -1,4 +1,4 @@
-/* Portal N1 — identidade "mesa de M&A": papel frio, azul-marinho de pitchbook, serifa de prospecto
+/* Portal FPM — identidade "mesa de M&A": papel frio, azul-marinho de pitchbook, serifa de prospecto
    e números em cobalto (convenção de input em modelos financeiros). Assinatura: a régua de 10 células da nota. */
 :root {
   --paper: #eceff3;
@@ -72,7 +72,7 @@ kbd { font: 500 11px var(--mono); border: 1px solid var(--line-strong); border-b
 .masthead { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
 .masthead-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 8px; flex-wrap: wrap; }
 .brand { display: flex; gap: 12px; align-items: center; }
-.logo { width: 38px; height: 38px; border-radius: var(--r); display: grid; place-items: center; background: var(--navy); color: #fff; font: 600 14px var(--mono); letter-spacing: -.02em; }
+.logo { width: 38px; height: 38px; border-radius: var(--r); display: grid; place-items: center; background: var(--navy); color: #fff; font: 600 12.5px var(--mono); letter-spacing: -.03em; }
 :root[data-theme="dark"] .logo { background: var(--cobalt); color: #0a111d; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo { background: var(--cobalt); color: #0a111d; } }
 .brand h1 { margin: 0; font: 600 21px/1.1 var(--serif); letter-spacing: -.01em; }
