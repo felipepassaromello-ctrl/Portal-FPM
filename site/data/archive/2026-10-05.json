@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T15:41:08.947291-03:00",
+ "generated_at": "2026-10-05T15:43:11.982356-03:00",
  "date": "2026-10-05",
  "mode": "ai",
  "model": null,
@@ -93,28 +93,28 @@
    "symbol": "^BVSP",
    "name": "Ibovespa",
    "unit": "pts",
-   "price": 209285.23,
-   "change_pct": 8.937474949899805,
+   "price": 209244.05,
+   "change_pct": 8.916039871951686,
    "spark": [
     183828.0,
     186340.0,
     187198.0,
     192115.0,
-    209285.234375
+    209244.046875
    ]
   },
   {
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 4.997,
-   "change_pct": -4.319687204464772,
+   "price": 4.9992,
+   "change_pct": -4.277562592067296,
    "spark": [
     5.222899913787842,
     5.202899932861328,
     5.179100036621094,
     5.222599983215332,
-    4.997000217437744
+    4.999199867248535
    ]
   },
   {
@@ -135,82 +135,82 @@
    "symbol": "^GSPC",
    "name": "S&P 500",
    "unit": "pts",
-   "price": 7780.69,
-   "change_pct": 0.7506394579053444,
+   "price": 7780.11,
+   "change_pct": 0.7431291508650295,
    "spark": [
     7670.83984375,
     7651.5400390625,
     7666.4501953125,
     7722.72021484375,
-    7780.68994140625
+    7780.10986328125
    ]
   },
   {
    "symbol": "^IXIC",
    "name": "Nasdaq",
    "unit": "pts",
-   "price": 27481.93,
-   "change_pct": 1.0704723266952598,
+   "price": 27481.82,
+   "change_pct": 1.0700677789813318,
    "spark": [
     26797.5390625,
     26861.060546875,
     26871.599609375,
     27190.859375,
-    27481.9296875
+    27481.8203125
    ]
   },
   {
    "symbol": "^TNX",
    "name": "Treasury 10a",
    "unit": "%",
-   "price": 5.347,
-   "change_pct": 1.32651222757052,
+   "price": 5.341,
+   "change_pct": 1.212811260043778,
    "spark": [
     5.255000114440918,
     5.293000221252441,
     5.236999988555908,
     5.2769999504089355,
-    5.3470001220703125
+    5.341000080108643
    ]
   },
   {
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 100.29,
-   "change_pct": -1.91687041564792,
+   "price": 100.32,
+   "change_pct": -1.887530562347195,
    "spark": [
     103.52999877929688,
     102.30999755859375,
     102.25,
-    100.29000091552734
+    100.31999969482422
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4166.8,
-   "change_pct": 0.10811800023227125,
+   "price": 4164.5,
+   "change_pct": 0.052860087349348994,
    "spark": [
     4186.7001953125,
     4202.2998046875,
     4162.2998046875,
-    4166.7998046875
+    4164.5
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 85594.75,
-   "change_pct": -1.0239957996216464,
+   "price": 85636.77,
+   "change_pct": -0.9754067016162105,
    "spark": [
     84853.1015625,
     84497.2109375,
     84763.578125,
     86480.3046875,
-    85594.75
+    85636.7734375
    ]
   }
  ],
@@ -1266,7 +1266,7 @@
    "region": "INTL",
    "outlets": [
     {
-     "source": "oilprice.com",
+     "source": "Crude Oil Prices Today | OilPrice.com",
      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaEw0NnF5Z003Sko1dExXYl96Q0hSeUd0WFdvaFZPeDZGdDhCZ0xXbjI1UVhoNl9wNTUxNXFuMEJLOFFDUy0welNHXzJUTHdiblgzMDAyR1dtekVaR09XU2pPVWNuNHlXZUVQRHZ1OXBUNF9RUzUySF8wVTFjYkk0T2hMbVRnNHpON2Q4azhZMldsUmZtMzQ4V3lSWDdGUWVYZGVwUHVfQWhXM0ZqZTdpdk1VT0kxY1hqN1FURC1wTmZ2Z2dEX3JyVTd4aHLSAcwBQVVfeXFMUGhMNDZxeWdNN0pKNXRMV2JfekNIUnlHdFhXb2hWT3g2RnQ4QmdMV24yNVFYaDZfcDU1MTVxbjBCSzhRQ1MtMHpTR18yVEx3Ym5YMzAwMkdXbXpFWkdPV1NqT1VjbjR5V2VFUER2dTlwVDRfUVM1MkhfMFUxY2JJNE9oTG1UZzR6TjdkOGs4WTJXbFJmbTM0OFd5Ulg3RlFlWGRlcFB1X0FoVzNGamU3aXZNVU9JMWNYajdRVEQtcE5mdmdnRF9yclU3eGhy?oc=5",
      "title": "Indian State Firm BPCL Readies $3-Billion Bond to Fund Brazil oil Project"
     },
@@ -1831,39 +1831,6 @@
    "ai": false
   },
   {
-   "id": "2d1791e09874",
-   "title": "Bolsa dispara após 1º turno: as 8 ações que analistas indicam para investir agora",
-   "link": "https://www.infomoney.com.br/onde-investir/bolsa-dispara-apos-1o-turno-as-8-acoes-que-analistas-indicam-para-investir-agora/",
-   "published": "2026-10-05T18:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/onde-investir/bolsa-dispara-apos-1o-turno-as-8-acoes-que-analistas-indicam-para-investir-agora/",
-     "title": "Bolsa dispara após 1º turno: as 8 ações que analistas indicam para investir agora"
-    }
-   ],
-   "ids": [
-    "2d1791e09874"
-   ],
-   "snippet": "Bancos, B3 e XP lideram as apostas em juros mais baixos, ao lado de Petrobras, Cyrela e Ecorodovias The post Bolsa dispara após 1º turno: as 8 ações que analistas indicam para investir agora appeared first on InfoMoney .",
-   "prescore": 5.2,
-   "headline": "Bolsa dispara após 1º turno: as 8 ações que analistas indicam para investir agora",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Bancos, B3 e XP lideram as apostas em juros mais baixos, ao lado de Petrobras, Cyrela e Ecorodovias The post Bolsa dispara após 1º turno: as 8 ações que analistas indicam para investir agora appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "22f7b3c1eca8",
    "title": "RXO Stock Soars on C.H. Robinson Buyout. Why the Buyer Is Today’s Worst S&P 500 Performer.",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb1l0S1M5eTJnWUxWWDc3WFRENG5PWkFkbFotYXRiYmttUG5MUlJoWjZQbzVwUHB1YVgxZkJ1UU5NSlA0SklUbHR5M09aTE02aFh1b3Q5cDZlcndMbUJZNFJqRmkwZGhseFdXQ3dyNmhVeV93ME9JRlJ4aHNkM1BiYQ?oc=5",
@@ -2191,6 +2158,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Flávio x Lula no 2º turno: quem estava com os candidatos em discurso pós apuração? Os discursos do senador Flávio Bolsonaro (PL) e do presidente Luiz Inácio Lula da Silva (PT) após a apuração dos votos do primeiro turno das eleições reuniram, ao redor dos dois candidatos, alguns dos principais nomes de suas campanhas e possíveis figuras de destaque em um eventual governo. 📱Favorite o g1 no Google ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "0025c0c267bc",
+   "title": "BT Group compra ativos da TalkTalk em recuperação judicial e prevê impacto no caixa",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTkE5QVlvalhIZjNUZFlIRDIzSmVrN21YbnVOeHNNLUFwVVIxMlBkSzJ4N1o2VWx1Ym52Sm8yNGlsVEZmb2ZaMEQ3MmZXVVNWdVdpQmRNWWJvZEozNEpVVHpLMi1JWUtSSUVjRmJvYjBWc090MTFudWxNY3lPbUVuVmRfbC1MQUhUNWhjQ2d5M2k1X3VvUXZUYnVTOFBqM1g1TW5Od2NqZUpwY19namRPSjA2QlpITjU2T3BUWFpLd08wSnhGa28tY3VTSjlqa1B4RHhoWNIB4wFBVV95cUxNQjY2Sk1IUW5mUVczQkZoeVQzbU9Uak9xdlFsYm9McFVLS1Zrb3Z2eWRwdjgxVGRrUFJEN003NnFnQ3NqYjhSb1BMY1JkeGJwb1R0bk5YRXpTNzBrRExlYXhnZ3UwTTN3ZnNiYWJvQW4tZFc2a2hpd0o3clZ5MjE2ZU04ZHdDLS03SFRiTlZoQm0zcnRrMHFBSlFocDdURGpjVVRWaVNhX2ZscTVobUdiWU1lQ3FjZXJaNmo3TXJ4VlJYcXk2bDhTb1BXXzhUdWxGelRfUUhWQWNWNHR2MXc4RS05cw?oc=5",
+   "published": "2026-10-05T12:36:37+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTkE5QVlvalhIZjNUZFlIRDIzSmVrN21YbnVOeHNNLUFwVVIxMlBkSzJ4N1o2VWx1Ym52Sm8yNGlsVEZmb2ZaMEQ3MmZXVVNWdVdpQmRNWWJvZEozNEpVVHpLMi1JWUtSSUVjRmJvYjBWc090MTFudWxNY3lPbUVuVmRfbC1MQUhUNWhjQ2d5M2k1X3VvUXZUYnVTOFBqM1g1TW5Od2NqZUpwY19namRPSjA2QlpITjU2T3BUWFpLd08wSnhGa28tY3VTSjlqa1B4RHhoWNIB4wFBVV95cUxNQjY2Sk1IUW5mUVczQkZoeVQzbU9Uak9xdlFsYm9McFVLS1Zrb3Z2eWRwdjgxVGRrUFJEN003NnFnQ3NqYjhSb1BMY1JkeGJwb1R0bk5YRXpTNzBrRExlYXhnZ3UwTTN3ZnNiYWJvQW4tZFc2a2hpd0o3clZ5MjE2ZU04ZHdDLS03SFRiTlZoQm0zcnRrMHFBSlFocDdURGpjVVRWaVNhX2ZscTVobUdiWU1lQ3FjZXJaNmo3TXJ4VlJYcXk2bDhTb1BXXzhUdWxGelRfUUhWQWNWNHR2MXc4RS05cw?oc=5",
+     "title": "BT Group compra ativos da TalkTalk em recuperação judicial e prevê impacto no caixa"
+    }
+   ],
+   "ids": [
+    "0025c0c267bc"
+   ],
+   "snippet": "",
+   "prescore": 4.8,
+   "headline": "BT Group compra ativos da TalkTalk em recuperação judicial e prevê impacto no caixa",
+   "category": "empresas",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -2611,52 +2611,6 @@
    "ai": true
   },
   {
-   "id": "e879185e570f",
-   "title": "Construction Partners, Inc. Completes Texas Acquisition",
-   "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
-   "published": "2026-10-05T13:15:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
-     "title": "Construction Partners, Inc. Completes Texas Acquisition"
-    }
-   ],
-   "ids": [
-    "e879185e570f"
-   ],
-   "snippet": "Company Adds Two Hot-Mix Asphalt Plants in Growing Abilene Market DOTHAN, Ala., Oct. 5, 2026 /PRNewswire/ -- Construction Partners, Inc. (NASDAQ: ROAD) (\"CPI\" or the \"Company\"), a vertically integrated civil infrastructure company specializing in the construction and maintenance of...",
-   "prescore": 5.0,
-   "headline": "Construction Partners compra duas usinas de asfalto no Texas",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Deal regional nos EUA, periférico.",
-   "summary": "A Construction Partners (NASDAQ: ROAD) concluiu a aquisição de duas usinas de asfalto em Abilene, no Texas.",
-   "involves": "Construction Partners.",
-   "interpretation": "Consolidação em infraestrutura civil nos EUA.",
-   "impact": "Impacto mínimo no Brasil.",
-   "sentiment": "neutro",
-   "entities": [
-    "Construction Partners"
-   ],
-   "tags": [
-    "infraestrutura",
-    "EUA"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "Construction Partners",
-    "target": "Duas usinas de asfalto em Abilene (Texas)",
-    "value": "não divulgado",
-    "stage": "Concluído",
-    "sector": "Infraestrutura civil",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "a50cf7470cd7",
    "title": "Hilb Group Announces Pennsylvania-Based Acquisition, Grows Mid-Atlantic Presence",
    "link": "https://www.prnewswire.com/news-releases/hilb-group-announces-pennsylvania-based-acquisition-grows-mid-atlantic-presence-302897972.html",
@@ -2698,6 +2652,52 @@
     "value": "não divulgado",
     "stage": "Concluído",
     "sector": "Corretagem de seguros",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "e879185e570f",
+   "title": "Construction Partners, Inc. Completes Texas Acquisition",
+   "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
+   "published": "2026-10-05T13:15:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
+     "title": "Construction Partners, Inc. Completes Texas Acquisition"
+    }
+   ],
+   "ids": [
+    "e879185e570f"
+   ],
+   "snippet": "Company Adds Two Hot-Mix Asphalt Plants in Growing Abilene Market DOTHAN, Ala., Oct. 5, 2026 /PRNewswire/ -- Construction Partners, Inc. (NASDAQ: ROAD) (\"CPI\" or the \"Company\"), a vertically integrated civil infrastructure company specializing in the construction and maintenance of...",
+   "prescore": 5.0,
+   "headline": "Construction Partners compra duas usinas de asfalto no Texas",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Deal regional nos EUA, periférico.",
+   "summary": "A Construction Partners (NASDAQ: ROAD) concluiu a aquisição de duas usinas de asfalto em Abilene, no Texas.",
+   "involves": "Construction Partners.",
+   "interpretation": "Consolidação em infraestrutura civil nos EUA.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Construction Partners"
+   ],
+   "tags": [
+    "infraestrutura",
+    "EUA"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Construction Partners",
+    "target": "Duas usinas de asfalto em Abilene (Texas)",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Infraestrutura civil",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -3191,6 +3191,39 @@
    "ai": false
   },
   {
+   "id": "86f7e92d0492",
+   "title": "High Yields Force Muni Bond Borrowers to Delay Refinancing Deals",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-05/high-yields-force-muni-bond-borrowers-to-delay-refinancing-deals",
+   "published": "2026-10-05T18:35:37+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-05/high-yields-force-muni-bond-borrowers-to-delay-refinancing-deals",
+     "title": "High Yields Force Muni Bond Borrowers to Delay Refinancing Deals"
+    }
+   ],
+   "ids": [
+    "86f7e92d0492"
+   ],
+   "snippet": "Several muni borrowers looking to refinance outstanding bonds are delaying deals due to yields near record highs.",
+   "prescore": 3.8,
+   "headline": "High Yields Force Muni Bond Borrowers to Delay Refinancing Deals",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Several muni borrowers looking to refinance outstanding bonds are delaying deals due to yields near record highs.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "9461d071be88",
    "title": "Trump culpa ataques da Ucrânia à Rússia por alta dos preços do petróleo",
    "link": "https://g1.globo.com/mundo/noticia/2026/10/05/trump-culpa-ataques-da-ucrania-a-russia-por-alta-dos-precos-do-petroleo.ghtml",
@@ -3291,6 +3324,39 @@
    "ai": false
   },
   {
+   "id": "10a6688f81b7",
+   "title": "Estoques de petróleo podem levar 2 anos para serem recompostos, diz Aramco",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZTdLbXlCdzVDVU5HRHFPM3BxYkRrVndZV2xRM0psRFlMaTNqTUVWcWQ0TnI4enNRNVVpRk1hZ1FqOUdxTC1uc0QwZTV4TldWSnc2dzM5MXJOYVMzbU9IdmlDemU3TFduOE9rMkxiaENpblJMRTdlSWZwcWJfUTUyZVFJcDNmZDM0djF1NVFXbW1EeUJTUmtoNURSaEN0eGx5SkZ4WmdDaHdXRnNneWdSMkp5MnoteHE0V1QwQU56QXBnRGpaVERjRE0tQdIB2gFBVV95cUxQMGxkYmhydEpnMlgzVE13ajI4QWhNNHNUeXc4T0N1bHp3emJTeVFDTmE1OVhsZUcwNVdpb21BMzVQaXFqVXBJQXRCeXRlYTFLVEJOOGVaMjdlVTZnY2hHOXp6Nkdpa09ldzYyemhuZ3JLT0dfbHp3cVdrbWtWU241ZTdES2cxejE1NU52SDVZM00xOFJ1dzNUUUdlb3dtTnZGMEpqMjJmVU5iV0dTUmk4VFNBSDkzRHp1bjNVa3p0X3plNFJOSnRmWmkxMi1KZmJvMzNkU3VTZ0hzUQ?oc=5",
+   "published": "2026-10-05T15:24:37+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZTdLbXlCdzVDVU5HRHFPM3BxYkRrVndZV2xRM0psRFlMaTNqTUVWcWQ0TnI4enNRNVVpRk1hZ1FqOUdxTC1uc0QwZTV4TldWSnc2dzM5MXJOYVMzbU9IdmlDemU3TFduOE9rMkxiaENpblJMRTdlSWZwcWJfUTUyZVFJcDNmZDM0djF1NVFXbW1EeUJTUmtoNURSaEN0eGx5SkZ4WmdDaHdXRnNneWdSMkp5MnoteHE0V1QwQU56QXBnRGpaVERjRE0tQdIB2gFBVV95cUxQMGxkYmhydEpnMlgzVE13ajI4QWhNNHNUeXc4T0N1bHp3emJTeVFDTmE1OVhsZUcwNVdpb21BMzVQaXFqVXBJQXRCeXRlYTFLVEJOOGVaMjdlVTZnY2hHOXp6Nkdpa09ldzYyemhuZ3JLT0dfbHp3cVdrbWtWU241ZTdES2cxejE1NU52SDVZM00xOFJ1dzNUUUdlb3dtTnZGMEpqMjJmVU5iV0dTUmk4VFNBSDkzRHp1bjNVa3p0X3plNFJOSnRmWmkxMi1KZmJvMzNkU3VTZ0hzUQ?oc=5",
+     "title": "Estoques de petróleo podem levar 2 anos para serem recompostos, diz Aramco"
+    }
+   ],
+   "ids": [
+    "10a6688f81b7"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Estoques de petróleo podem levar 2 anos para serem recompostos, diz Aramco",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5401981bd126",
    "title": "Miriam Leitão: Lula teria dificuldades com Congresso mais conservador, e Flávio Bolsonaro teria ‘poder demais’",
    "link": "https://g1.globo.com/bom-dia-brasil/noticia/2026/10/05/miriam-leitao-lula-teria-dificuldades-com-congresso-mais-conservador-e-flavio-bolsonaro-teria-poder-demais.ghtml",
@@ -3313,6 +3379,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Miriam & Sadi: Lula teria dificuldades com Congresso e Flávio teria poder demais O resultado do primeiro turno da eleição presidencial também definiu um novo cenário para o Congresso Nacional, que terá papel importante no próximo governo. Com uma composição mais conservadora, o Legislativo deve representar um desafio para os dois candidatos que seguem na disputa pela Presidência. No Bom Dia Brasil",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4aa74bec5aaa",
+   "title": "Inflação elevada ainda não está provocando efeitos secundários, diz integrante do BCE",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZmlwSVY3bWdJVUJkTmF4Skxqd2Nma2s3akJwUlRqZmF3dW8xNS1BcjhMbVdiaF9ZRGtHaERBVTlDWlRyUzdhOWVESWhjRC1FQjVveVBjcFY4NU5uMW1HbTJBUzJod0UzY0h5czdfVTM2R1V3OXNCc3JrT1JBYXBnUjFDSW5faXlpem9RcmwyOGlSWDhVT290T3ZVQ3ZEQTFLZXNaM054MDVadXYxRm9kaGZfWGRzX3AwWGVZZ1VvY05VcjgyNlpLVUlpVDByazh2U3NseDJTNWpiZ9IB6AFBVV95cUxONG9TQkNaOEZGalg3UzdHMDlGWXNfY0JEQklvTlBYZTJpUWVXV1F4OVJhUWdCMUJRZmxPc0t6ek93Tl9EaENVeHlDU1FpNEZXUU1NV2NaM0xtMTNaOU5uSTlWN0pJbFFqSWZINHpoX0Y2cFJCTFdGalIxblJ4QzVjaHp5UmNpUWdKWVNEQjU3ekFtTF96Z1dDYjROdERpX2R5RFJDM2ZFNmRKbzBOVmIxcjNCMHRIaUtTeWRpdXJZZG5nZTk4VXZxYXhOUjFsRnVhWnk3T01ZSW9PTHViakY5aEI0WEJ6UDdx?oc=5",
+   "published": "2026-10-05T12:55:52+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZmlwSVY3bWdJVUJkTmF4Skxqd2Nma2s3akJwUlRqZmF3dW8xNS1BcjhMbVdiaF9ZRGtHaERBVTlDWlRyUzdhOWVESWhjRC1FQjVveVBjcFY4NU5uMW1HbTJBUzJod0UzY0h5czdfVTM2R1V3OXNCc3JrT1JBYXBnUjFDSW5faXlpem9RcmwyOGlSWDhVT290T3ZVQ3ZEQTFLZXNaM054MDVadXYxRm9kaGZfWGRzX3AwWGVZZ1VvY05VcjgyNlpLVUlpVDByazh2U3NseDJTNWpiZ9IB6AFBVV95cUxONG9TQkNaOEZGalg3UzdHMDlGWXNfY0JEQklvTlBYZTJpUWVXV1F4OVJhUWdCMUJRZmxPc0t6ek93Tl9EaENVeHlDU1FpNEZXUU1NV2NaM0xtMTNaOU5uSTlWN0pJbFFqSWZINHpoX0Y2cFJCTFdGalIxblJ4QzVjaHp5UmNpUWdKWVNEQjU3ekFtTF96Z1dDYjROdERpX2R5RFJDM2ZFNmRKbzBOVmIxcjNCMHRIaUtTeWRpdXJZZG5nZTk4VXZxYXhOUjFsRnVhWnk3T01ZSW9PTHViakY5aEI0WEJ6UDdx?oc=5",
+     "title": "Inflação elevada ainda não está provocando efeitos secundários, diz integrante do BCE"
+    }
+   ],
+   "ids": [
+    "4aa74bec5aaa"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Inflação elevada ainda não está provocando efeitos secundários, diz integrante do BCE",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -4792,6 +4891,39 @@
    "snippet": "",
    "prescore": 3.2,
    "headline": "Flávio Bolsonaro sai fortalecido por onda de direita para enfrentar Lula no 2º turno",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d3471ddf7464",
+   "title": "Bolsonarismo mostra força e Flávio fica à frente de Lula",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd0ZCaXhNQ2JKeVhPaG1Mcy1JQy1CWXNUbWRheEtFdnA3Q2dkS3ItUFVIdlVWU1lUSC04ZFhFZEl0OTNDYjVZV00tbjJ6VUxISDdCTFllbE5ZeXJhaFNGbnAybVotQzVlUFFuaUZZdzY1ejRmNVo2V0gxSDZTNzItdlZkZjJTSUIwOGZjZHRHaHdKYVIza1dIeDVocmktRF8wSWhCb0d2T1JuNEhZVVZ2UUxIUVNUdVpVMDRQRkl3?oc=5",
+   "published": "2026-10-05T03:38:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd0ZCaXhNQ2JKeVhPaG1Mcy1JQy1CWXNUbWRheEtFdnA3Q2dkS3ItUFVIdlVWU1lUSC04ZFhFZEl0OTNDYjVZV00tbjJ6VUxISDdCTFllbE5ZeXJhaFNGbnAybVotQzVlUFFuaUZZdzY1ejRmNVo2V0gxSDZTNzItdlZkZjJTSUIwOGZjZHRHaHdKYVIza1dIeDVocmktRF8wSWhCb0d2T1JuNEhZVVZ2UUxIUVNUdVpVMDRQRkl3?oc=5",
+     "title": "Bolsonarismo mostra força e Flávio fica à frente de Lula"
+    }
+   ],
+   "ids": [
+    "d3471ddf7464"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Bolsonarismo mostra força e Flávio fica à frente de Lula",
    "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -8387,39 +8519,6 @@
    "ai": false
   },
   {
-   "id": "6edca9d75c19",
-   "title": "Latest Oil Market News and Analysis for Oct. 5",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-04/latest-oil-market-news-and-analysis-for-oct-5",
-   "published": "2026-10-04T22:03:02+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-04/latest-oil-market-news-and-analysis-for-oct-5",
-     "title": "Latest Oil Market News and Analysis for Oct. 5"
-    }
-   ],
-   "ids": [
-    "6edca9d75c19"
-   ],
-   "snippet": "Oil fluctuated in jittery trading as Saudi Arabia cut prices of its benchmark grade to Asia and progress toward talks between the US and Iran to halt the war came against a backdrop of intensifying fighting in Yemen.",
-   "prescore": 2.8,
-   "headline": "Latest Oil Market News and Analysis for Oct. 5",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Oil fluctuated in jittery trading as Saudi Arabia cut prices of its benchmark grade to Asia and progress toward talks between the US and Iran to halt the war came against a backdrop of intensifying fighting in Yemen.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "c9d7f9d1df16",
    "title": "No Acre, Mailza Assis (PP) e Alan Rick (Republicanos) disputarão segundo turno",
    "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOZnZxSzhmRVhUcmxhWHliSkZQOXUwdDFKMHVjZFJrZzcyWjdXd2N2QkRQVWNucmphTDZmSHc4TGM1WHNKOEtlOUJlUmhHSTdQcmJWanVJMHp1eUViTXUzZVozd0J2ZDYwUElqaHFXejNXS0hrSFNMQV9CRVFzRWR1NGVtVnlNVmZjWmItdC1fOXF6RnVoWGYyN1RTM2hVVUpjWWhIaU5sZU9rcERfQUItWVVoNTZWUnBpOExGSEhrbDR1SWZqVzJRN1ZFWnBwOGZIdVRVZFRkc25FbjhXRFVXWXdpWkgtX1lkSFNTRlQ2a2h0Yzk0SFNORGQ3UU9BSm9hYkJaUDgycWZHNXlSTlIybG1n0gGgAkFVX3lxTE0zLVZoYldBVUlaOWRfQUh3Tm00UjFqWTVtMTFaUGx4LVBCaDRVSjM4WG9qTFctQnYzdWVrU3RhMzhBMzJjdmZpYWFLeW9jMWh6TFlzYjByMGhjcWtSaElBUFYwckRCeXpJeTNzX1NfT2tqMUk3a2N1Y096dFQ2cmhJMVZGOTIyWTdyeUJQUzJNcG9yTjRTZjltQzlrY0h1eEpNRDRkZFJpWGdVcTgzSmNwR2JmaDNLMU1pRU1SekV5UDRhdWtyOU9hSXdKVjlBNjRjWDBsMERJV1BGdzBmcWtYa3RoU2IzWDdsbGNVU0hfOTdPMU5HMUFuVTBxSjRWbldPQVZuSGhlQ2J4OFZDcGhaalp5Sm1icVNqZjFkMENkNQ?oc=5",
@@ -8900,105 +8999,6 @@
    "snippet": "",
    "prescore": 2.8,
    "headline": "Caiado vota acompanhado por Kassab e diz que ainda é cedo para falar de estratégia para o segundo turno",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "07d5e5a0de26",
-   "title": "Presidente do TSE diz que eleições tiveram ‘pouquíssimas’ intercorrências até o momento",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMmdPVURFMUZCaFBQQWl5WVVGbmRyZjZDSUlib2NDY19XeGhEd2VWTVZEWGpuYWJYSXA0VzJwNDkxSnRfeGM1YXBnckFzZFZ3UktkT1EzUXZWNVJjRlE2TU14eDhyZ2VVWlFKMnhkVmtvcFNNWl9YMk5YRDBtWlIxTlFaZmRvQUxwXzdFYlNOYkwwX3ppd0c4N3lSS084WGlsOTZGYmV6T0ZMMWdIcDRoSnhaS3J0NXoxYV9ZODlZakNXVzZXaTZaeXBsaXNfOEM4T3djQUk2bzUyZFpMbkhOVHhFY0E4bEHSAfYBQVVfeXFMTnlvX3BPY0lIQmNab0I4WWx3bnptYlZELUpvUGJ0cTAydlAtYTluLW9TcTNqaWRDQ1JIVXYxYkx6Nm5pQ2pFcHBGM3o5S3p5NVJRUlRoRkFoOGlXTG96N2dJanIwckVWRXV0bWdoSm05XzRReE15T1JsMHhEWnV1RHphYmlQNGY2NFQxRWJ6X0p5YXhrTGpPUXVQQjNmZmNTaUFyWC1Zd0RSeHRxT2RhSU1CbGh4R1phbHdJUmNQT2g2SVMxVThZZFRsbDhNS2kxRTkxakhCWS1Pbkdld29zT09vc0l1cTRFelNYMWNiZE1sMHpaVkln?oc=5",
-   "published": "2026-10-04T15:14:24+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMmdPVURFMUZCaFBQQWl5WVVGbmRyZjZDSUlib2NDY19XeGhEd2VWTVZEWGpuYWJYSXA0VzJwNDkxSnRfeGM1YXBnckFzZFZ3UktkT1EzUXZWNVJjRlE2TU14eDhyZ2VVWlFKMnhkVmtvcFNNWl9YMk5YRDBtWlIxTlFaZmRvQUxwXzdFYlNOYkwwX3ppd0c4N3lSS084WGlsOTZGYmV6T0ZMMWdIcDRoSnhaS3J0NXoxYV9ZODlZakNXVzZXaTZaeXBsaXNfOEM4T3djQUk2bzUyZFpMbkhOVHhFY0E4bEHSAfYBQVVfeXFMTnlvX3BPY0lIQmNab0I4WWx3bnptYlZELUpvUGJ0cTAydlAtYTluLW9TcTNqaWRDQ1JIVXYxYkx6Nm5pQ2pFcHBGM3o5S3p5NVJRUlRoRkFoOGlXTG96N2dJanIwckVWRXV0bWdoSm05XzRReE15T1JsMHhEWnV1RHphYmlQNGY2NFQxRWJ6X0p5YXhrTGpPUXVQQjNmZmNTaUFyWC1Zd0RSeHRxT2RhSU1CbGh4R1phbHdJUmNQT2g2SVMxVThZZFRsbDhNS2kxRTkxakhCWS1Pbkdld29zT09vc0l1cTRFelNYMWNiZE1sMHpaVkln?oc=5",
-     "title": "Presidente do TSE diz que eleições tiveram ‘pouquíssimas’ intercorrências até o momento"
-    }
-   ],
-   "ids": [
-    "07d5e5a0de26"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Presidente do TSE diz que eleições tiveram ‘pouquíssimas’ intercorrências até o momento",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d30000f7b669",
-   "title": "Janja vota em escola da zona oeste de São Paulo, visita igreja e fala em vitória em primeiro turno",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcTE5TXQ5VFhfd1lHdXI3QkMyWDQ1MFh3ZUYybFVtcXcyeGl5VDdqSzYtMldQeXFVVWtLWHpGWlNKNUw2eDI2eTFNTW9ldXFTRnF6aDdkVzV3MEF3c0NUMkpnT2JrM3k1MkxKVGlOR3V6cEpmVWdQcGdlWjBWWHBoNklXdlBjUGdyWmtfY2tLZnRveF9mVkxPZktaZ0Y0RktJanlCUGlpQUtSWXdub0ZpdVptWk83OC1VSm9j0gHKAUFVX3lxTE9qVi1IRFFWQ2RlemhuR3FpYjZCMVZkRzcwanB0S3JoRHY0UlBlZ05uU25GSHZUREJna0pGMTBjMEtRSVI1YnplVnBzUzlBdFNJMkNsYU4yVzVDM1NGc292WElFajFsc2t5LUo4Zm1RdUZTemtRV29nQUdWS2FqWE9RbVNuOWV3d3pTZHhZRTV2Yk52X3ZUU3Q4TkdfTFdmQWswcTQxRzgzbEQzZTRjRDI1ZmxQeFVkMU82aXFIS01xZlI1ODlQSDNsS3c?oc=5",
-   "published": "2026-10-04T15:01:45+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcTE5TXQ5VFhfd1lHdXI3QkMyWDQ1MFh3ZUYybFVtcXcyeGl5VDdqSzYtMldQeXFVVWtLWHpGWlNKNUw2eDI2eTFNTW9ldXFTRnF6aDdkVzV3MEF3c0NUMkpnT2JrM3k1MkxKVGlOR3V6cEpmVWdQcGdlWjBWWHBoNklXdlBjUGdyWmtfY2tLZnRveF9mVkxPZktaZ0Y0RktJanlCUGlpQUtSWXdub0ZpdVptWk83OC1VSm9j0gHKAUFVX3lxTE9qVi1IRFFWQ2RlemhuR3FpYjZCMVZkRzcwanB0S3JoRHY0UlBlZ05uU25GSHZUREJna0pGMTBjMEtRSVI1YnplVnBzUzlBdFNJMkNsYU4yVzVDM1NGc292WElFajFsc2t5LUo4Zm1RdUZTemtRV29nQUdWS2FqWE9RbVNuOWV3d3pTZHhZRTV2Yk52X3ZUU3Q4TkdfTFdmQWswcTQxRzgzbEQzZTRjRDI1ZmxQeFVkMU82aXFIS01xZlI1ODlQSDNsS3c?oc=5",
-     "title": "Janja vota em escola da zona oeste de São Paulo, visita igreja e fala em vitória em primeiro turno"
-    }
-   ],
-   "ids": [
-    "d30000f7b669"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Janja vota em escola da zona oeste de São Paulo, visita igreja e fala em vitória em primeiro turno",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e686784744cb",
-   "title": "Estratégia de voto útil em Flávio é ‘mentira’ do bolsonarismo, afirma Renan Santos",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQejRIbnhNcHoybTVjbDZpZmRBeElJNUMwNEpOUlNrV1hzd2haUW1vcVhsaDZ5QXhuRi1sUkNOVkgwZVFGbU5SMGFTVF9ZVXRCRlJzQ3RQSXl4ZFF3TXV1eEE1VkkxdFU4V1lPNXBZaW0tWTkyaVJQRzBYc2JGREhJc0s0cnZRZThINHFnZS1uSjh1UkVud0VlQTRyNzJmNS1TVHJPSFZJYm5Vd2xFZEZhbXNNVXJ3RjdkM2ZYNGpuek5mXzhfNDF3WG5ka2NvUXpnMndfdzgxYzRtUGpfNndV0gHuAUFVX3lxTE4tUjc4MmZfajkzSENrcWdnRS1WWlJVSkRDd016dXp5bUFFZktiUC0zR0NpaUo4d0Vxa3ZOUUM4MzhUbk43cW9ISnhUS001T3hrdWQzNXIyTDdzYVdxazZ1ZUd0YVZEN3I1S291SUNFMl9JMFVOdWdKV2k2Sm9XUXVCNVctakhmRUlHUGIzN3JKQjBkbjlJQ1hLN25Gb0FSNjZRWTlHS2hFaEh5R1JpMUFWY1l6RkRRQ3ZqV3ZnakxJaVNqN0hYVTAwWE9zbE5YaXFCZzJZTXllY0c1dWk1VGpVX2QtQ2RKYmxwMjdjWVE?oc=5",
-   "published": "2026-10-04T14:17:41+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQejRIbnhNcHoybTVjbDZpZmRBeElJNUMwNEpOUlNrV1hzd2haUW1vcVhsaDZ5QXhuRi1sUkNOVkgwZVFGbU5SMGFTVF9ZVXRCRlJzQ3RQSXl4ZFF3TXV1eEE1VkkxdFU4V1lPNXBZaW0tWTkyaVJQRzBYc2JGREhJc0s0cnZRZThINHFnZS1uSjh1UkVud0VlQTRyNzJmNS1TVHJPSFZJYm5Vd2xFZEZhbXNNVXJ3RjdkM2ZYNGpuek5mXzhfNDF3WG5ka2NvUXpnMndfdzgxYzRtUGpfNndV0gHuAUFVX3lxTE4tUjc4MmZfajkzSENrcWdnRS1WWlJVSkRDd016dXp5bUFFZktiUC0zR0NpaUo4d0Vxa3ZOUUM4MzhUbk43cW9ISnhUS001T3hrdWQzNXIyTDdzYVdxazZ1ZUd0YVZEN3I1S291SUNFMl9JMFVOdWdKV2k2Sm9XUXVCNVctakhmRUlHUGIzN3JKQjBkbjlJQ1hLN25Gb0FSNjZRWTlHS2hFaEh5R1JpMUFWY1l6RkRRQ3ZqV3ZnakxJaVNqN0hYVTAwWE9zbE5YaXFCZzJZTXllY0c1dWk1VGpVX2QtQ2RKYmxwMjdjWVE?oc=5",
-     "title": "Estratégia de voto útil em Flávio é ‘mentira’ do bolsonarismo, afirma Renan Santos"
-    }
-   ],
-   "ids": [
-    "e686784744cb"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Estratégia de voto útil em Flávio é ‘mentira’ do bolsonarismo, afirma Renan Santos",
    "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -9727,52 +9727,6 @@
    "ai": true
   },
   {
-   "id": "e879185e570f",
-   "title": "Construction Partners, Inc. Completes Texas Acquisition",
-   "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
-   "published": "2026-10-05T13:15:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
-     "title": "Construction Partners, Inc. Completes Texas Acquisition"
-    }
-   ],
-   "ids": [
-    "e879185e570f"
-   ],
-   "snippet": "Company Adds Two Hot-Mix Asphalt Plants in Growing Abilene Market DOTHAN, Ala., Oct. 5, 2026 /PRNewswire/ -- Construction Partners, Inc. (NASDAQ: ROAD) (\"CPI\" or the \"Company\"), a vertically integrated civil infrastructure company specializing in the construction and maintenance of...",
-   "prescore": 5.0,
-   "headline": "Construction Partners compra duas usinas de asfalto no Texas",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Deal regional nos EUA, periférico.",
-   "summary": "A Construction Partners (NASDAQ: ROAD) concluiu a aquisição de duas usinas de asfalto em Abilene, no Texas.",
-   "involves": "Construction Partners.",
-   "interpretation": "Consolidação em infraestrutura civil nos EUA.",
-   "impact": "Impacto mínimo no Brasil.",
-   "sentiment": "neutro",
-   "entities": [
-    "Construction Partners"
-   ],
-   "tags": [
-    "infraestrutura",
-    "EUA"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "Construction Partners",
-    "target": "Duas usinas de asfalto em Abilene (Texas)",
-    "value": "não divulgado",
-    "stage": "Concluído",
-    "sector": "Infraestrutura civil",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "a50cf7470cd7",
    "title": "Hilb Group Announces Pennsylvania-Based Acquisition, Grows Mid-Atlantic Presence",
    "link": "https://www.prnewswire.com/news-releases/hilb-group-announces-pennsylvania-based-acquisition-grows-mid-atlantic-presence-302897972.html",
@@ -9814,6 +9768,52 @@
     "value": "não divulgado",
     "stage": "Concluído",
     "sector": "Corretagem de seguros",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "e879185e570f",
+   "title": "Construction Partners, Inc. Completes Texas Acquisition",
+   "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
+   "published": "2026-10-05T13:15:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-texas-acquisition-302897965.html",
+     "title": "Construction Partners, Inc. Completes Texas Acquisition"
+    }
+   ],
+   "ids": [
+    "e879185e570f"
+   ],
+   "snippet": "Company Adds Two Hot-Mix Asphalt Plants in Growing Abilene Market DOTHAN, Ala., Oct. 5, 2026 /PRNewswire/ -- Construction Partners, Inc. (NASDAQ: ROAD) (\"CPI\" or the \"Company\"), a vertically integrated civil infrastructure company specializing in the construction and maintenance of...",
+   "prescore": 5.0,
+   "headline": "Construction Partners compra duas usinas de asfalto no Texas",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Deal regional nos EUA, periférico.",
+   "summary": "A Construction Partners (NASDAQ: ROAD) concluiu a aquisição de duas usinas de asfalto em Abilene, no Texas.",
+   "involves": "Construction Partners.",
+   "interpretation": "Consolidação em infraestrutura civil nos EUA.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Construction Partners"
+   ],
+   "tags": [
+    "infraestrutura",
+    "EUA"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Construction Partners",
+    "target": "Duas usinas de asfalto em Abilene (Texas)",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Infraestrutura civil",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -10009,7 +10009,7 @@
    "id": "valor",
    "name": "Valor Econômico",
    "ok": true,
-   "count": 38,
+   "count": 41,
    "error": null
   },
   {
@@ -10184,15 +10184,15 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 37,
+   "count": 38,
    "error": null
   }
  ],
  "stats": {
-  "raw": 660,
-  "unique": 616,
+  "raw": 664,
+  "unique": 621,
   "sources_ok": 26,
   "sources_total": 26,
-  "seconds": 3.2
+  "seconds": 3.1
  }
 }
