@@ -200,8 +200,6 @@
     const list = (sel, arr) => { $(sel).innerHTML = (arr || []).map((t) => `<li>${esc(t)}</li>`).join(""); $(sel).closest(".side-block").hidden = !(arr || []).length; };
     list("#brief-watch", b.watchlist);
     list("#brief-conn", b.connections);
-    $("#brief-qotd").textContent = b.question_of_the_day || "";
-    $("#qotd-wrap").hidden = !b.question_of_the_day;
 
     const secs = [...(b.sections || [])].sort((a, z) => CAT_ORDER.indexOf(a.category) - CAT_ORDER.indexOf(z.category));
     $("#brief-sections").innerHTML = secs.map((s) => `
@@ -245,7 +243,7 @@
     return `
     <article class="card ${state.read.has(it.id) ? "read" : ""}" data-id="${it.id}" style="${catVar(it.category)}">
       <div class="card-top">
-        <span class="imp ${impClass(it.importance)}" title="${esc(it.importance_reason)}">${it.importance}</span>
+        <span class="imp ${impClass(it.importance)}" style="--imp:${it.importance}" title="Nota ${it.importance}/10 · ${esc(it.importance_reason)}">${it.importance}</span>
         <div class="card-main">
           <h3 data-toggle="${it.id}">${esc(it.headline)}</h3>
           <div class="meta">
@@ -317,7 +315,7 @@
     $("#deals-body").innerHTML = deals.map((i) => {
       const x = i.deal || {};
       return `<tr>
-        <td><span class="imp ${impClass(i.importance)}">${i.importance}</span></td>
+        <td><span class="imp ${impClass(i.importance)}" style="--imp:${i.importance}">${i.importance}</span></td>
         <td>${esc(x.type)}</td><td>${esc(x.buyer)}</td><td>${esc(x.target)}</td>
         <td>${esc(x.value)}</td><td><span class="stage">${esc(x.stage)}</span></td><td>${esc(x.sector)}</td>
         <td><a href="#" data-jump="${i.id}">${esc(i.outlets[0].source)}</a></td></tr>`;
