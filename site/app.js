@@ -1,4 +1,4 @@
-/* Portal N1 — frontend. Lê data/digest.json (gerado pelo GitHub Actions) e se atualiza sozinho. */
+/* Portal FPM — frontend. Lê data/digest.json (gerado pelo GitHub Actions) e se atualiza sozinho. */
 (() => {
   "use strict";
 
@@ -92,7 +92,7 @@
         const hot = fresh.filter((i) => i.importance >= 8);
         if (fresh.length) toast(`${fresh.length} novas notícias${hot.length ? ` · ${hot.length} importantes` : ""} — clique para ver`, () => setTab("feed"));
         if (hot.length && state.prefs.notify && "Notification" in window && Notification.permission === "granted") {
-          new Notification("Portal N1", { body: hot[0].headline });
+          new Notification("Portal FPM", { body: hot[0].headline });
         }
       }
       state.digest = d;
