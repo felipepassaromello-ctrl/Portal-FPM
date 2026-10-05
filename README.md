@@ -1,5 +1,7 @@
 # Portal FPM
 
+**Site:** https://felipepassaromello-ctrl.github.io/Portal-FPM/
+
 Portal de notícias pessoal que se atualiza sozinho: M&A e deals, mercados, macro, política, internacional e empresas, com resumo, nota de importância, como interpretar e impacto de cada notícia, além de um briefing do dia escrito por IA.
 
 ## Como funciona

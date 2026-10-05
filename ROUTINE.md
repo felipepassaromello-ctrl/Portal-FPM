@@ -9,7 +9,7 @@ Você é essa sessão. Siga os passos na ordem.
 ## 1. Preparar
 
 ```bash
-cd <raiz do repositório felipepassaromello-ctrl/Projeto-N1>
+cd <raiz do repositório felipepassaromello-ctrl/Portal-FPM>
 git fetch origin main && git checkout -B rotina-analise origin/main
 pip install -q -r scripts/requirements.txt
 mkdir -p /tmp/rotina
@@ -61,7 +61,7 @@ git pull --rebase origin main && git push origin HEAD:main
 
 Se o push para `main` for recusado (por exemplo, porque a sessão só pode enviar para branches `claude/*`), publique
 o arquivo pela ferramenta do GitHub. Use `mcp__github__create_or_update_file` no repositório
-`felipepassaromello-ctrl/Projeto-N1`, branch `main`, caminho `site/data/claude_analysis.json`, com o conteúdo do
+`felipepassaromello-ctrl/Portal-FPM`, branch `main`, caminho `site/data/claude_analysis.json`, com o conteúdo do
 arquivo local e o `sha` atual do arquivo em `main` (obtenha com `mcp__github__get_file_contents`; se o arquivo
 ainda não existir, omita o `sha`).
 
