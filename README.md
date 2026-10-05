@@ -52,6 +52,10 @@ Até a primeira execução, o site mostra **dados de exemplo fictícios**, com u
 
 Definidos em `.github/workflows/update.yml`, no horário de Brasília: 05:40 (edição da manhã), de hora em hora das 06h às 20h em dias úteis, e 09h, 15h e 19h nos fins de semana. O GitHub pode atrasar execuções agendadas em alguns minutos.
 
+## E-mail diário
+
+O workflow `Enviar edição por e-mail` manda a edição do dia nos dias úteis, por volta das 9h, pela conta do Gmail cadastrada. Ele só envia depois que a análise do dia é publicada, tenta de novo às 09:32 se ela atrasar e nunca envia duas vezes no mesmo dia. Endereços e senha ficam em segredos do repositório: `GMAIL_USER`, `GMAIL_APP_PASSWORD` (senha de app do Google), `MAIL_TO` e, opcionalmente, `MAIL_CC`. Para testar, rode o workflow manualmente com `eu` no campo de teste.
+
 ## Personalização
 
 - `config/profile.json`: quem você é, suas prioridades, o que ignorar e palavras-chave com peso. A IA usa isso para dar a nota de importância **para você**.
