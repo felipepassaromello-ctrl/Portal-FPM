@@ -1,0 +1,62 @@
+name: Atualizar portal
+
+on:
+  schedule:
+    # Horários em UTC (Brasília = UTC-3).
+    - cron: "40 8 * * *"          # 05:40 — edição da manhã, pronta antes de você chegar
+    - cron: "7 9-23 * * 1-5"      # dias úteis: de hora em hora, 06:07 às 20:07
+    - cron: "7 12,18,22 * * 0,6"  # fim de semana: 09:07, 15:07 e 19:07
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["site/**", "config/**", "scripts/**", ".github/workflows/update.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: portal
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Coletar e analisar notícias
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-opus-5-5' }}
+          MAX_ANALYZE: ${{ vars.MAX_ANALYZE || '90' }}
+        run: python scripts/build_digest.py
+
+      - name: Salvar edição no repositório (histórico)
+        run: |
+          git config user.name "portal-bot"
+          git config user.email "portal-bot@users.noreply.github.com"
+          git add site/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Edição $(TZ=America/Sao_Paulo date +'%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

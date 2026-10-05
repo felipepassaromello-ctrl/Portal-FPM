@@ -1,0 +1,23 @@
+{
+  "_comment": "Seu perfil. A IA usa isto para dar a nota de importância 'para você'. Edite à vontade.",
+  "name": "Felipe",
+  "role": "Profissional de M&A / mercado financeiro no Brasil",
+  "description": "Trabalho com M&A e preciso chegar ao escritório 100% informado: deals (fusões, aquisições, IPOs, follow-ons, dívida, private equity, venture capital), mercado e bolsa (Ibovespa, juros, câmbio, commodities), macro e política brasileira (fiscal, BC, Congresso, regulação), cenário internacional (EUA, China, Fed, geopolítica) e grandes movimentos corporativos no Brasil e no mundo.",
+  "priorities": [
+    "M&A, fusões e aquisições, joint ventures, venda de ativos, desinvestimentos",
+    "IPOs, follow-ons, emissões de dívida (debêntures, bonds), reestruturações e recuperações judiciais",
+    "Private equity, venture capital, fundos e gestoras (Patria, Advent, Vinci, XP, BTG etc.)",
+    "Copom, Selic, inflação, fiscal, câmbio e curva de juros",
+    "Política em Brasília que mexe com mercado e regulação setorial",
+    "Fed, juros americanos, China, geopolítica e commodities",
+    "Resultados e movimentos de grandes empresas listadas na B3"
+  ],
+  "deprioritize": ["esportes", "celebridades", "entretenimento", "crimes comuns sem impacto econômico", "horóscopo"],
+  "keywords_boost": {
+    "fusão": 3, "aquisição": 3, "adquire": 3, "compra participação": 3, "M&A": 3, "merger": 3, "acquisition": 3, "acquire": 3, "takeover": 3, "buyout": 3,
+    "IPO": 3, "follow-on": 3, "oferta": 1, "debênture": 2, "bond": 1, "recuperação judicial": 2, "reestruturação": 2, "private equity": 3, "venture capital": 2, "gestora": 1,
+    "Copom": 2, "Selic": 2, "Banco Central": 2, "Fed": 2, "inflação": 1, "IPCA": 1, "dólar": 1, "Ibovespa": 2, "B3": 1, "CVM": 2, "Cade": 3,
+    "Haddad": 1, "Lula": 1, "Congresso": 1, "arcabouço": 1, "tarifa": 1, "China": 1, "petróleo": 1,
+    "BTG": 1, "Itaú": 1, "Petrobras": 1, "Vale": 1, "XP": 1
+  }
+}

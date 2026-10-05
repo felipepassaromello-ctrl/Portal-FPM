@@ -1,0 +1,878 @@
+{
+ "demo": true,
+ "generated_at": "2026-10-05T11:24:35.300660-03:00",
+ "date": "2026-10-05",
+ "mode": "ai",
+ "model": null,
+ "categories": {
+  "mna": "M&A e Deals",
+  "mercados": "Mercados e Bolsa",
+  "macro": "Macro Brasil",
+  "politica": "Política",
+  "internacional": "Internacional",
+  "empresas": "Empresas",
+  "tech": "Tech e Inovação",
+  "outros": "Outros"
+ },
+ "brief": {
+  "headline": "Exemplo de manchete do dia: consolidação no varejo e cautela nos juros",
+  "mood": "Dados fictícios. Assim aparece o clima do dia escrito pela IA.",
+  "tldr": [
+   "Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste.",
+   "Gestora Gama levanta fundo de US$ 1 bi para infraestrutura na América Latina.",
+   "Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre.",
+   "Cade aprova sem restrições joint venture entre Épsilon e Zeta em logística.",
+   "Copom mantém juros e sinaliza cautela com expectativas de inflação.",
+   "Ibovespa sobe puxado por bancos; dólar recua com fluxo estrangeiro."
+  ],
+  "sections": [
+   {
+    "category": "mna",
+    "text": "Parágrafo de exemplo conectando as notícias de m&a e deals e explicando o que significam para o seu dia.",
+    "item_ids": [
+     "demo00",
+     "demo01",
+     "demo02"
+    ]
+   },
+   {
+    "category": "macro",
+    "text": "Parágrafo de exemplo conectando as notícias de macro brasil e explicando o que significam para o seu dia.",
+    "item_ids": [
+     "demo04"
+    ]
+   },
+   {
+    "category": "mercados",
+    "text": "Parágrafo de exemplo conectando as notícias de mercados e bolsa e explicando o que significam para o seu dia.",
+    "item_ids": [
+     "demo05"
+    ]
+   },
+   {
+    "category": "politica",
+    "text": "Parágrafo de exemplo conectando as notícias de política e explicando o que significam para o seu dia.",
+    "item_ids": [
+     "demo06"
+    ]
+   },
+   {
+    "category": "internacional",
+    "text": "Parágrafo de exemplo conectando as notícias de internacional e explicando o que significam para o seu dia.",
+    "item_ids": [
+     "demo07",
+     "demo08"
+    ]
+   }
+  ],
+  "watchlist": [
+   "Exemplo: ata do Copom na terça",
+   "Exemplo: prazo do Cade para o deal Alfa/Beta",
+   "Exemplo: dados de emprego nos EUA na sexta"
+  ],
+  "connections": [
+   "Exemplo: juros altos por mais tempo tendem a favorecer deals com pagamento em ações em vez de caixa."
+  ],
+  "question_of_the_day": "Exemplo: quem é o próximo alvo natural depois da consolidação do setor?"
+ },
+ "market": [
+  {
+   "symbol": "^BVSP",
+   "name": "Ibovespa",
+   "unit": "pts",
+   "price": 130000,
+   "change_pct": 0.8,
+   "spark": [
+    128000,
+    128900,
+    129100,
+    128700,
+    130000
+   ]
+  },
+  {
+   "symbol": "BRL=X",
+   "name": "Dólar",
+   "unit": "R$",
+   "price": 5.4,
+   "change_pct": -0.4,
+   "spark": [
+    5.45,
+    5.44,
+    5.43,
+    5.42,
+    5.4
+   ]
+  },
+  {
+   "symbol": "^GSPC",
+   "name": "S&P 500",
+   "unit": "pts",
+   "price": 5800,
+   "change_pct": -0.2,
+   "spark": [
+    5790,
+    5820,
+    5810,
+    5812,
+    5800
+   ]
+  }
+ ],
+ "items": [
+  {
+   "id": "demo00",
+   "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste",
+   "headline": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste",
+   "link": "https://example.com/",
+   "published": "2026-10-05T11:12:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo A",
+     "link": "https://example.com/",
+     "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste"
+    },
+    {
+     "source": "Veículo B",
+     "link": "https://example.com/",
+     "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste"
+    },
+    {
+     "source": "Veículo C",
+     "link": "https://example.com/",
+     "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste"
+    }
+   ],
+   "snippet": "",
+   "prescore": 13.5,
+   "category": "mna",
+   "importance": 9,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "positivo",
+   "entities": [
+    "Grupo",
+    "Alfa",
+    "Rede"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Grupo Alfa (fictício)",
+    "target": "Rede Beta (fictícia)",
+    "value": "R$ 4,2 bi",
+    "stage": "Anunciado",
+    "sector": "Varejo farmacêutico",
+    "advisors": "Banco X, Banco Y"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo01",
+   "title": "Exemplo: Gestora Gama levanta fundo de US$ 1 bi para infraestrutura na América Latina",
+   "headline": "Exemplo: Gestora Gama levanta fundo de US$ 1 bi para infraestrutura na América Latina",
+   "link": "https://example.com/",
+   "published": "2026-10-05T10:37:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo B",
+     "link": "https://example.com/",
+     "title": "Exemplo: Gestora Gama levanta fundo de US$ 1 bi para infraestrutura na América Latina"
+    }
+   ],
+   "snippet": "",
+   "prescore": 12.0,
+   "category": "mna",
+   "importance": 8,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "negativo",
+   "entities": [
+    "Gestora",
+    "Gama",
+    "US$"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Captação de fundo",
+    "buyer": "Gestora Gama (fictícia)",
+    "target": "Fundo Infra III",
+    "value": "US$ 1 bi",
+    "stage": "Concluído",
+    "sector": "Infraestrutura",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo02",
+   "title": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre",
+   "headline": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre",
+   "link": "https://example.com/",
+   "published": "2026-10-05T10:02:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo A",
+     "link": "https://example.com/",
+     "title": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre"
+    },
+    {
+     "source": "Veículo D",
+     "link": "https://example.com/",
+     "title": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre"
+    }
+   ],
+   "snippet": "",
+   "prescore": 10.5,
+   "category": "mna",
+   "importance": 7,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "neutro",
+   "entities": [
+    "Delta",
+    "Energia",
+    "IPO"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "Mercado",
+    "target": "Delta Energia (fictícia)",
+    "value": "não divulgado",
+    "stage": "Em preparação",
+    "sector": "Energia renovável",
+    "advisors": "Banco X"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo03",
+   "title": "Exemplo: Cade aprova sem restrições joint venture entre Épsilon e Zeta em logística",
+   "headline": "Exemplo: Cade aprova sem restrições joint venture entre Épsilon e Zeta em logística",
+   "link": "https://example.com/",
+   "published": "2026-10-05T09:27:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo C",
+     "link": "https://example.com/",
+     "title": "Exemplo: Cade aprova sem restrições joint venture entre Épsilon e Zeta em logística"
+    }
+   ],
+   "snippet": "",
+   "prescore": 9.0,
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "misto",
+   "entities": [
+    "Cade",
+    "Épsilon",
+    "Zeta"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Joint venture",
+    "buyer": "Épsilon (fictícia)",
+    "target": "JV com Zeta (fictícia)",
+    "value": "não divulgado",
+    "stage": "Aprovado pelo Cade",
+    "sector": "Logística",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo04",
+   "title": "Exemplo: Copom mantém juros e sinaliza cautela com expectativas de inflação",
+   "headline": "Exemplo: Copom mantém juros e sinaliza cautela com expectativas de inflação",
+   "link": "https://example.com/",
+   "published": "2026-10-05T08:52:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo A",
+     "link": "https://example.com/",
+     "title": "Exemplo: Copom mantém juros e sinaliza cautela com expectativas de inflação"
+    },
+    {
+     "source": "Veículo B",
+     "link": "https://example.com/",
+     "title": "Exemplo: Copom mantém juros e sinaliza cautela com expectativas de inflação"
+    },
+    {
+     "source": "Veículo E",
+     "link": "https://example.com/",
+     "title": "Exemplo: Copom mantém juros e sinaliza cautela com expectativas de inflação"
+    }
+   ],
+   "snippet": "",
+   "prescore": 12.0,
+   "category": "macro",
+   "importance": 8,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "positivo",
+   "entities": [
+    "Copom"
+   ],
+   "tags": [
+    "Macro Brasil"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "demo05",
+   "title": "Exemplo: Ibovespa sobe puxado por bancos; dólar recua com fluxo estrangeiro",
+   "headline": "Exemplo: Ibovespa sobe puxado por bancos; dólar recua com fluxo estrangeiro",
+   "link": "https://example.com/",
+   "published": "2026-10-05T08:17:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo D",
+     "link": "https://example.com/",
+     "title": "Exemplo: Ibovespa sobe puxado por bancos; dólar recua com fluxo estrangeiro"
+    },
+    {
+     "source": "Veículo E",
+     "link": "https://example.com/",
+     "title": "Exemplo: Ibovespa sobe puxado por bancos; dólar recua com fluxo estrangeiro"
+    }
+   ],
+   "snippet": "",
+   "prescore": 10.5,
+   "category": "mercados",
+   "importance": 7,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "negativo",
+   "entities": [
+    "Ibovespa"
+   ],
+   "tags": [
+    "Mercados e Bolsa"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "demo06",
+   "title": "Exemplo: Congresso adia votação de projeto que altera regras de tributação de fundos",
+   "headline": "Exemplo: Congresso adia votação de projeto que altera regras de tributação de fundos",
+   "link": "https://example.com/",
+   "published": "2026-10-05T07:42:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo A",
+     "link": "https://example.com/",
+     "title": "Exemplo: Congresso adia votação de projeto que altera regras de tributação de fundos"
+    },
+    {
+     "source": "Veículo F",
+     "link": "https://example.com/",
+     "title": "Exemplo: Congresso adia votação de projeto que altera regras de tributação de fundos"
+    }
+   ],
+   "snippet": "",
+   "prescore": 10.5,
+   "category": "politica",
+   "importance": 7,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "neutro",
+   "entities": [
+    "Congresso"
+   ],
+   "tags": [
+    "Política"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "demo07",
+   "title": "Exemplo: Banco central americano indica pausa nos cortes; Treasuries sobem",
+   "headline": "Exemplo: Banco central americano indica pausa nos cortes; Treasuries sobem",
+   "link": "https://example.com/",
+   "published": "2026-10-05T07:07:35.300660-03:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Veículo G",
+     "link": "https://example.com/",
+     "title": "Exemplo: Banco central americano indica pausa nos cortes; Treasuries sobem"
+    },
+    {
+     "source": "Veículo H",
+     "link": "https://example.com/",
+     "title": "Exemplo: Banco central americano indica pausa nos cortes; Treasuries sobem"
+    }
+   ],
+   "snippet": "",
+   "prescore": 12.0,
+   "category": "internacional",
+   "importance": 8,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "misto",
+   "entities": [
+    "Banco",
+    "Treasuries"
+   ],
+   "tags": [
+    "Internacional"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "demo08",
+   "title": "Exemplo: Tensão comercial entre grandes economias pressiona commodities metálicas",
+   "headline": "Exemplo: Tensão comercial entre grandes economias pressiona commodities metálicas",
+   "link": "https://example.com/",
+   "published": "2026-10-05T06:32:35.300660-03:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Veículo G",
+     "link": "https://example.com/",
+     "title": "Exemplo: Tensão comercial entre grandes economias pressiona commodities metálicas"
+    }
+   ],
+   "snippet": "",
+   "prescore": 9.0,
+   "category": "internacional",
+   "importance": 6,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "positivo",
+   "entities": [
+    "Tensão"
+   ],
+   "tags": [
+    "Internacional"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "demo09",
+   "title": "Exemplo: Teta Varejo reporta queda de margem e revisa plano de abertura de lojas",
+   "headline": "Exemplo: Teta Varejo reporta queda de margem e revisa plano de abertura de lojas",
+   "link": "https://example.com/",
+   "published": "2026-10-05T05:57:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo B",
+     "link": "https://example.com/",
+     "title": "Exemplo: Teta Varejo reporta queda de margem e revisa plano de abertura de lojas"
+    }
+   ],
+   "snippet": "",
+   "prescore": 9.0,
+   "category": "empresas",
+   "importance": 6,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "negativo",
+   "entities": [
+    "Teta",
+    "Varejo"
+   ],
+   "tags": [
+    "Empresas"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "demo10",
+   "title": "Exemplo: Startup Iota de crédito com IA recebe aporte série B de R$ 300 mi",
+   "headline": "Exemplo: Startup Iota de crédito com IA recebe aporte série B de R$ 300 mi",
+   "link": "https://example.com/",
+   "published": "2026-10-05T05:22:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo C",
+     "link": "https://example.com/",
+     "title": "Exemplo: Startup Iota de crédito com IA recebe aporte série B de R$ 300 mi"
+    }
+   ],
+   "snippet": "",
+   "prescore": 7.5,
+   "category": "tech",
+   "importance": 5,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "neutro",
+   "entities": [
+    "Startup",
+    "Iota",
+    "IA"
+   ],
+   "tags": [
+    "Tech e Inovação"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Rodada VC",
+    "buyer": "Fundo Kappa (fictício)",
+    "target": "Iota (fictícia)",
+    "value": "R$ 300 mi",
+    "stage": "Concluído",
+    "sector": "Fintech",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo11",
+   "title": "Exemplo: Lambda Saneamento anuncia novo diretor financeiro",
+   "headline": "Exemplo: Lambda Saneamento anuncia novo diretor financeiro",
+   "link": "https://example.com/",
+   "published": "2026-10-05T04:47:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo F",
+     "link": "https://example.com/",
+     "title": "Exemplo: Lambda Saneamento anuncia novo diretor financeiro"
+    }
+   ],
+   "snippet": "",
+   "prescore": 6.0,
+   "category": "empresas",
+   "importance": 4,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "misto",
+   "entities": [
+    "Lambda",
+    "Saneamento"
+   ],
+   "tags": [
+    "Empresas"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  }
+ ],
+ "deals": [
+  {
+   "id": "demo00",
+   "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste",
+   "headline": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste",
+   "link": "https://example.com/",
+   "published": "2026-10-05T11:12:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo A",
+     "link": "https://example.com/",
+     "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste"
+    },
+    {
+     "source": "Veículo B",
+     "link": "https://example.com/",
+     "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste"
+    },
+    {
+     "source": "Veículo C",
+     "link": "https://example.com/",
+     "title": "Exemplo: Grupo Alfa compra Rede Beta por R$ 4,2 bi e cria líder em farmácias no Nordeste"
+    }
+   ],
+   "snippet": "",
+   "prescore": 13.5,
+   "category": "mna",
+   "importance": 9,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "positivo",
+   "entities": [
+    "Grupo",
+    "Alfa",
+    "Rede"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Grupo Alfa (fictício)",
+    "target": "Rede Beta (fictícia)",
+    "value": "R$ 4,2 bi",
+    "stage": "Anunciado",
+    "sector": "Varejo farmacêutico",
+    "advisors": "Banco X, Banco Y"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo01",
+   "title": "Exemplo: Gestora Gama levanta fundo de US$ 1 bi para infraestrutura na América Latina",
+   "headline": "Exemplo: Gestora Gama levanta fundo de US$ 1 bi para infraestrutura na América Latina",
+   "link": "https://example.com/",
+   "published": "2026-10-05T10:37:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo B",
+     "link": "https://example.com/",
+     "title": "Exemplo: Gestora Gama levanta fundo de US$ 1 bi para infraestrutura na América Latina"
+    }
+   ],
+   "snippet": "",
+   "prescore": 12.0,
+   "category": "mna",
+   "importance": 8,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "negativo",
+   "entities": [
+    "Gestora",
+    "Gama",
+    "US$"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Captação de fundo",
+    "buyer": "Gestora Gama (fictícia)",
+    "target": "Fundo Infra III",
+    "value": "US$ 1 bi",
+    "stage": "Concluído",
+    "sector": "Infraestrutura",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo02",
+   "title": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre",
+   "headline": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre",
+   "link": "https://example.com/",
+   "published": "2026-10-05T10:02:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo A",
+     "link": "https://example.com/",
+     "title": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre"
+    },
+    {
+     "source": "Veículo D",
+     "link": "https://example.com/",
+     "title": "Exemplo: Delta Energia prepara IPO e contrata bancos para oferta no 1º semestre"
+    }
+   ],
+   "snippet": "",
+   "prescore": 10.5,
+   "category": "mna",
+   "importance": 7,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "neutro",
+   "entities": [
+    "Delta",
+    "Energia",
+    "IPO"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "Mercado",
+    "target": "Delta Energia (fictícia)",
+    "value": "não divulgado",
+    "stage": "Em preparação",
+    "sector": "Energia renovável",
+    "advisors": "Banco X"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo03",
+   "title": "Exemplo: Cade aprova sem restrições joint venture entre Épsilon e Zeta em logística",
+   "headline": "Exemplo: Cade aprova sem restrições joint venture entre Épsilon e Zeta em logística",
+   "link": "https://example.com/",
+   "published": "2026-10-05T09:27:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo C",
+     "link": "https://example.com/",
+     "title": "Exemplo: Cade aprova sem restrições joint venture entre Épsilon e Zeta em logística"
+    }
+   ],
+   "snippet": "",
+   "prescore": 9.0,
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "misto",
+   "entities": [
+    "Cade",
+    "Épsilon",
+    "Zeta"
+   ],
+   "tags": [
+    "M&A e Deals"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Joint venture",
+    "buyer": "Épsilon (fictícia)",
+    "target": "JV com Zeta (fictícia)",
+    "value": "não divulgado",
+    "stage": "Aprovado pelo Cade",
+    "sector": "Logística",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "demo10",
+   "title": "Exemplo: Startup Iota de crédito com IA recebe aporte série B de R$ 300 mi",
+   "headline": "Exemplo: Startup Iota de crédito com IA recebe aporte série B de R$ 300 mi",
+   "link": "https://example.com/",
+   "published": "2026-10-05T05:22:35.300660-03:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Veículo C",
+     "link": "https://example.com/",
+     "title": "Exemplo: Startup Iota de crédito com IA recebe aporte série B de R$ 300 mi"
+    }
+   ],
+   "snippet": "",
+   "prescore": 7.5,
+   "category": "tech",
+   "importance": 5,
+   "importance_reason": "Exemplo de justificativa da nota gerada pela IA.",
+   "summary": "Resumo de exemplo: aqui a IA descreve o fato principal em duas ou três frases, com números e nomes citados pela fonte.",
+   "involves": "Quem está envolvido: empresas, pessoas, órgãos reguladores, valores e setor.",
+   "interpretation": "Como interpretar: contexto que falta no título, se é rotina ou ponto de inflexão e o que a notícia sinaliza.",
+   "impact": "Impacto: quem ganha, quem perde e efeitos prováveis em ativos, setores e no pipeline de deals.",
+   "sentiment": "neutro",
+   "entities": [
+    "Startup",
+    "Iota",
+    "IA"
+   ],
+   "tags": [
+    "Tech e Inovação"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Rodada VC",
+    "buyer": "Fundo Kappa (fictício)",
+    "target": "Iota (fictícia)",
+    "value": "R$ 300 mi",
+    "stage": "Concluído",
+    "sector": "Fintech",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  }
+ ],
+ "sources": [
+  {
+   "id": "demo",
+   "name": "Dados de exemplo",
+   "ok": true,
+   "count": 12,
+   "error": null
+  }
+ ],
+ "stats": {
+  "raw": 12,
+  "unique": 12,
+  "sources_ok": 1,
+  "sources_total": 1,
+  "seconds": 0
+ }
+}

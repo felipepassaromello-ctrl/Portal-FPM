@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal N1</title>
+  <meta name="description" content="Briefing diário personalizado: M&A, mercados, política, macro e internacional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23c8a24a'/><text x='16' y='22' font-family='Georgia' font-size='16' font-weight='700' text-anchor='middle' fill='%23111'>N1</text></svg>">
+</head>
+<body>
+  <div id="ticker" class="ticker" aria-label="Mercado"></div>
+
+  <header class="masthead">
+    <div class="wrap masthead-row">
+      <div class="brand">
+        <span class="logo">N1</span>
+        <div>
+          <h1>Portal N1</h1>
+          <p id="dateline" class="dateline">Carregando…</p>
+        </div>
+      </div>
+      <div class="masthead-actions">
+        <span id="status" class="status-pill" title="Última atualização"></span>
+        <select id="archive" class="ctl" aria-label="Edições anteriores"></select>
+        <button id="btn-refresh" class="ctl icon" title="Atualizar agora (R)">⟳</button>
+        <button id="btn-theme" class="ctl icon" title="Tema claro/escuro">◐</button>
+        <button id="btn-prefs" class="ctl" title="Personalizar">Personalizar</button>
+      </div>
+    </div>
+    <nav class="wrap tabs" id="tabs" role="tablist"></nav>
+  </header>
+
+  <main class="wrap">
+    <div id="banner" class="banner" hidden></div>
+
+    <!-- BRIEFING -->
+    <section id="view-brief" class="view">
+      <article class="brief">
+        <div class="brief-head">
+          <span class="kicker">Briefing do dia</span>
+          <span id="brief-meta" class="muted small"></span>
+        </div>
+        <h2 id="brief-headline" class="brief-headline"></h2>
+        <p id="brief-mood" class="brief-mood"></p>
+        <div class="brief-grid">
+          <div>
+            <h3 class="section-label">O que você precisa saber</h3>
+            <ol id="brief-tldr" class="tldr"></ol>
+          </div>
+          <aside class="brief-side">
+            <div class="side-block">
+              <h3 class="section-label">No radar</h3>
+              <ul id="brief-watch" class="bullets"></ul>
+            </div>
+            <div class="side-block">
+              <h3 class="section-label">Conexões</h3>
+              <ul id="brief-conn" class="bullets"></ul>
+            </div>
+            <div class="side-block qotd" id="qotd-wrap">
+              <h3 class="section-label">Pergunta para a reunião</h3>
+              <p id="brief-qotd"></p>
+            </div>
+          </aside>
+        </div>
+        <div id="brief-sections" class="brief-sections"></div>
+      </article>
+
+      <section class="split">
+        <div>
+          <div class="row-head">
+            <h3 class="section-label">Top do dia</h3>
+            <button class="link-btn" data-goto="feed">ver todas →</button>
+          </div>
+          <div id="top-list" class="cards"></div>
+        </div>
+        <div>
+          <div class="row-head">
+            <h3 class="section-label">Mapa do dia</h3>
+          </div>
+          <div id="map" class="map"></div>
+          <div class="row-head" style="margin-top:20px">
+            <h3 class="section-label">Quem está nas notícias</h3>
+          </div>
+          <div id="entities" class="chips"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FEED -->
+    <section id="view-feed" class="view" hidden>
+      <div class="toolbar">
+        <input id="q" class="ctl search" type="search" placeholder="Buscar empresa, pessoa, tema…  ( / )" autocomplete="off">
+        <label class="ctl range">Importância ≥ <b id="minimp-val">1</b>
+          <input id="minimp" type="range" min="1" max="10" value="1">
+        </label>
+        <select id="region" class="ctl" aria-label="Região">
+          <option value="">Brasil + Mundo</option>
+          <option value="BR">Brasil</option>
+          <option value="INTL">Internacional</option>
+        </select>
+        <select id="sort" class="ctl" aria-label="Ordenar">
+          <option value="rel">Relevância para mim</option>
+          <option value="imp">Importância</option>
+          <option value="new">Mais recentes</option>
+        </select>
+        <label class="ctl check"><input id="unread" type="checkbox"> Só não lidas</label>
+        <label class="ctl check"><input id="saved" type="checkbox"> Salvas</label>
+      </div>
+      <div id="cat-chips" class="chips cat-chips"></div>
+      <p id="feed-count" class="muted small"></p>
+      <div id="feed" class="cards"></div>
+    </section>
+
+    <!-- DEALS -->
+    <section id="view-deals" class="view" hidden>
+      <div class="row-head">
+        <h3 class="section-label">Deal tracker</h3>
+        <span id="deals-count" class="muted small"></span>
+      </div>
+      <div class="table-wrap">
+        <table class="deals">
+          <thead><tr><th>Nota</th><th>Tipo</th><th>Comprador / Investidor</th><th>Alvo</th><th>Valor</th><th>Estágio</th><th>Setor</th><th>Fonte</th></tr></thead>
+          <tbody id="deals-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FONTES -->
+    <section id="view-sources" class="view" hidden>
+      <div class="row-head">
+        <h3 class="section-label">Fontes vasculhadas nesta edição</h3>
+        <span id="sources-stats" class="muted small"></span>
+      </div>
+      <div id="sources" class="sources"></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer muted small">
+    <span>Atalhos: <kbd>j</kbd>/<kbd>k</kbd> navegar · <kbd>Enter</kbd> abrir análise · <kbd>o</kbd> abrir matéria · <kbd>m</kbd> marcar lida · <kbd>s</kbd> salvar · <kbd>/</kbd> buscar · <kbd>1</kbd>–<kbd>4</kbd> abas</span>
+    <span id="footer-gen"></span>
+  </footer>
+
+  <!-- Painel de personalização -->
+  <dialog id="prefs" class="prefs">
+    <form method="dialog">
+      <h3>Personalizar</h3>
+      <p class="muted small">Ajusta a ordem "Relevância para mim" neste navegador. Para mudar o que a IA considera importante, edite <code>config/profile.json</code> no repositório.</p>
+      <label>Termos que quero ver primeiro (um por linha)
+        <textarea id="pref-boost" rows="5" placeholder="Ex.: Itaú&#10;saneamento&#10;Patria"></textarea>
+      </label>
+      <label>Termos que quero esconder
+        <textarea id="pref-mute" rows="3" placeholder="Ex.: futebol"></textarea>
+      </label>
+      <fieldset>
+        <legend>Peso por editoria</legend>
+        <div id="pref-cats" class="pref-cats"></div>
+      </fieldset>
+      <label class="check"><input id="pref-notify" type="checkbox"> Notificar no navegador quando chegar notícia com nota ≥ 8</label>
+      <div class="prefs-actions">
+        <button value="cancel" class="ctl">Fechar</button>
+        <button id="pref-save" value="save" class="ctl primary">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
