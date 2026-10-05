@@ -140,7 +140,7 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
   {deals_html}
   {watch_html}
   <table role="presentation" cellspacing="0" cellpadding="0" style="margin:30px 0 0"><tr><td style="background:{INK};border-radius:999px">
-    <a href="{SITE_URL}" style="display:inline-block;padding:13px 24px;font:700 14px {SANS};color:#ffffff;text-decoration:none">Abrir a edição completa →</a>
+    <a href="{SITE_URL}?e={today:%Y%m%d}" style="display:inline-block;padding:13px 24px;font:700 14px {SANS};color:#ffffff;text-decoration:none">Abrir a edição completa →</a>
   </td></tr></table>
 </td></tr></table>
 <p style="max-width:640px;margin:16px auto 0;font:500 12px/1.5 {SANS};color:{MUTED};text-align:center">
@@ -151,7 +151,7 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
     text = "\n".join([
         f"PORTAL FPM · {long_date(today)}", "", b["headline"], b.get("mood", ""), "", "PRINCIPAIS PONTOS",
         *[f"{n:02d}. {t}" for n, t in enumerate(b.get("tldr", []), 1)], "",
-        f"Edição completa: {SITE_URL}", "",
+        f"Edição completa: {SITE_URL}?e={today:%Y%m%d}", "",
         "Resumo gerado automaticamente. As análises são feitas por IA; confira a fonte original antes de usar.",
     ])
     return subject, body, text
