@@ -129,7 +129,7 @@
     const banner = $("#banner");
     const msgs = [];
     if (d.demo) msgs.push("<b>Dados de exemplo.</b> As notícias abaixo são fictícias e servem só para mostrar o layout. A primeira execução do GitHub Actions substitui tudo por notícias reais.");
-    if (d.mode !== "ai" && !d.demo) msgs.push("<b>Modo sem IA:</b> resumos, interpretação e notas vêm de heurística. Adicione o segredo <code>ANTHROPIC_API_KEY</code> no repositório para ativar a análise completa.");
+    if (d.mode !== "ai" && !d.demo) msgs.push("<b>Análise do dia ainda não rodou:</b> por enquanto as notas vêm de palavras-chave. A rotina do Claude publica resumos, interpretação e o briefing nos dias úteis por volta das 08:30.");
     if (state.edition) msgs.push(`Você está vendo a edição de <b>${esc(state.edition)}</b>. <a href="#" id="back-today">Voltar para hoje</a>`);
     banner.innerHTML = msgs.join("<br>");
     banner.hidden = !msgs.length;
@@ -193,7 +193,9 @@
     $("#brief-headline").textContent = b.headline || "";
     $("#brief-mood").textContent = b.mood || "";
     const mins = Math.max(2, Math.round(((b.tldr || []).join(" ").length + (b.sections || []).map((s) => s.text).join(" ").length) / 1100));
-    $("#brief-meta").textContent = `leitura de ${mins} min · ${new Date(d.generated_at).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}`;
+    const hhmm = (iso) => new Date(iso).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+    const an = d.analysis || {};
+    $("#brief-meta").textContent = `leitura de ${mins} min · ` + (an.updated_at ? `análise do Claude às ${hhmm(an.updated_at)} · notícias às ${hhmm(d.generated_at)}` : hhmm(d.generated_at));
     $("#brief-tldr").innerHTML = (b.tldr || []).map((t) => `<li>${esc(t)}</li>`).join("");
     const list = (sel, arr) => { $(sel).innerHTML = (arr || []).map((t) => `<li>${esc(t)}</li>`).join(""); $(sel).closest(".side-block").hidden = !(arr || []).length; };
     list("#brief-watch", b.watchlist);
@@ -253,6 +255,7 @@
             ${sources.length > 1 ? `<span class="multi" title="${esc(sources.join(", "))}">+${sources.length - 1} veículos</span>` : ""}
             <span>${time} · ${ago(it.published)}</span>
             ${it.sentiment && it.sentiment !== "neutro" ? `<span class="sent-${esc(it.sentiment)}">${esc(it.sentiment)}</span>` : ""}
+            ${it.ai === false ? `<span class="multi" title="Nota estimada por palavras-chave; a análise sai na próxima rodada do Claude">sem análise</span>` : ""}
           </div>
           ${it.summary ? `<p class="card-summary">${esc(it.summary)}</p>` : ""}
           ${open ? `<div class="detail">

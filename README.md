@@ -12,7 +12,7 @@ GitHub Actions (de hora em hora)
           + buscas temáticas de M&A/IPO no Google News)
        2. agrupa a mesma notícia publicada em vários veículos (quanto mais veículos, maior o peso)
        3. faz um pré-ranking pelo seu perfil (config/profile.json)
-       4. Claude analisa cada notícia: categoria, nota 1–10 para você, resumo,
+       4. Claude analisa cada notícia (via rotina do Claude Code ou via API, ver abaixo): categoria, nota 1–10 para você, resumo,
           o que envolve, como interpretar, impacto, sentimento, entidades e dados do deal
        5. Claude escreve o briefing: manchete, "o que você precisa saber", parágrafos por
           editoria, radar, conexões entre notícias e uma pergunta para a reunião
@@ -33,14 +33,18 @@ O site (`site/`) é HTML/CSS/JS puro, sem build. Ele confere a cada 5 minutos se
 - **Personalizar**: termos para priorizar ou esconder e peso por editoria. Fica salvo no navegador.
 - **Atalhos**: `j`/`k` navegar, `Enter` abrir a análise, `o` abrir a matéria, `m` marcar como lida, `s` salvar, `/` buscar, `1`–`4` trocar de aba, `r` atualizar.
 
-## Como colocar no ar (cerca de 5 minutos)
+## Análise por IA: dois modos
 
-1. **Chave da API**: crie uma chave em <https://console.anthropic.com/> e, no repositório, cadastre-a em *Settings → Secrets and variables → Actions → New repository secret* com o nome `ANTHROPIC_API_KEY`.
-2. **GitHub Pages**: em *Settings → Pages → Build and deployment*, escolha **Source: GitHub Actions**.
-3. **Branch**: faça o merge desta branch na `main`. O workflow `Atualizar portal` só roda agendado a partir da branch padrão.
-4. **Primeira edição**: em *Actions → Atualizar portal → Run workflow*. Em 2–4 minutos o endereço aparece no resumo da execução (algo como `https://<seu-usuario>.github.io/<repositório>/`). Salve como página inicial do navegador do escritório.
+- **Rotina do Claude Code (modo atual, sem custo extra):** uma sessão agendada do Claude Code, que usa o plano do usuário, roda nos dias úteis por volta das 08:15. Ela segue o [`ROUTINE.md`](ROUTINE.md): lê as notícias coletadas, escreve a análise e o briefing com `scripts/routine.py` e publica `site/data/claude_analysis.json`. A coleta continua de hora em hora no GitHub Actions, e as notícias que chegam depois da rotina aparecem com nota por palavras-chave e a etiqueta "sem análise".
+- **API da Anthropic (opcional, pago à parte):** cadastre o segredo `ANTHROPIC_API_KEY` no repositório e o workflow passa a analisar tudo a cada execução, sem depender da rotina.
 
-Até a primeira execução, o site mostra **dados de exemplo fictícios**, com um aviso no topo. Sem a chave da API ele também funciona, mas só no modo heurístico: nota por palavras-chave e sem resumos nem interpretação.
+## Como colocar no ar
+
+1. **GitHub Pages**: em *Settings → Pages → Build and deployment*, escolha **Source: GitHub Actions**.
+2. **Branch**: faça o merge desta branch na `main`. O workflow `Atualizar portal` só roda agendado a partir da branch padrão.
+3. **Primeira edição**: em *Actions → Atualizar portal → Run workflow*. Em 2–4 minutos o endereço aparece no resumo da execução (algo como `https://<seu-usuario>.github.io/<repositório>/`). Salve como página inicial do navegador do escritório.
+
+Até a primeira execução, o site mostra **dados de exemplo fictícios**, com um aviso no topo.
 
 ### Horários
 
@@ -56,7 +60,9 @@ Definidos em `.github/workflows/update.yml`, no horário de Brasília: 05:40 (ed
 
 ## Custo
 
-Cada notícia é analisada uma única vez. As análises ficam em cache, e as execuções seguintes só processam o que é novo. Quando não há nada novo, o briefing anterior é reaproveitado e nenhuma chamada é feita. A ordem de grandeza com Opus 5.5 é de alguns dólares por dia, e o custo depende do volume de notícias. Acompanhe pelo console da Anthropic e, se quiser reduzir, mude `CLAUDE_MODEL` para Sonnet 5.5, diminua `MAX_ANALYZE` ou espace os horários.
+Coleta e site são gratuitos em repositório público. A rotina do Claude Code consome a cota do plano do Claude. Só o modo API tem custo à parte, descrito a seguir.
+
+No modo API, cada notícia é analisada uma única vez. As análises ficam em cache, e as execuções seguintes só processam o que é novo. Quando não há nada novo, o briefing anterior é reaproveitado e nenhuma chamada é feita. A ordem de grandeza com Opus 5.5 é de alguns dólares por dia, e o custo depende do volume de notícias. Acompanhe pelo console da Anthropic e, se quiser reduzir, mude `CLAUDE_MODEL` para Sonnet 5.5, diminua `MAX_ANALYZE` ou espace os horários.
 
 As chamadas usam `fallbacks: "default"`: se o modelo recusar um lote, a API repete a chamada em outro modelo automaticamente.
 

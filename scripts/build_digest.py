@@ -12,7 +12,8 @@ Fluxo:
   5. Pede ao Claude o "briefing do dia" a partir das notícias analisadas.
   6. Busca cotações de mercado e grava site/data/digest.json + arquivo histórico.
 
-Sem ANTHROPIC_API_KEY o script roda em modo heurístico (sem resumos de IA).
+Sem ANTHROPIC_API_KEY, a análise vem da rotina do Claude Code (ver ROUTINE.md), que grava
+site/data/claude_analysis.json; o que ainda não foi analisado fica no modo heurístico.
 """
 from __future__ import annotations
 
@@ -32,13 +33,12 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
-import feedparser
-
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config"
 DATA = ROOT / "site" / "data"
 ARCHIVE = DATA / "archive"
 CACHE_FILE = DATA / "analysis_cache.json"
+ROUTINE_FILE = DATA / "claude_analysis.json"  # escrito pela rotina do Claude Code
 
 BRT = timezone(timedelta(hours=-3))
 UA = "Mozilla/5.0 (compatible; PortalN1/1.0; +https://github.com/)"
@@ -162,6 +162,7 @@ def fetch_source(src: dict, cutoff: datetime) -> tuple[dict, list[dict], str | N
 
 
 def _fetch_source(src: dict, cutoff: datetime) -> tuple[dict, list[dict], str | None]:
+    import feedparser
     url = src.get("url") or gnews_url(src["gnews"], src.get("lang", "pt"), src.get("when", "2d"))
     if src.get("lookback_hours"):  # fontes de baixo volume podem olhar mais para trás
         cutoff = datetime.now(timezone.utc) - timedelta(hours=src["lookback_hours"])
@@ -246,12 +247,14 @@ def cluster(items: list[dict]) -> list[dict]:
             if not best["snippet"] and it["snippet"]:
                 best["snippet"] = it["snippet"]
             best["region_set"].add(it["region"])
+            best["member_ids"].append(it["id"])
             continue
         clusters.append({
             **it,
             "_tokens": tk,
             "outlets": [{"source": it["source"], "link": it["link"], "title": it["title"]}],
             "region_set": {it["region"]},
+            "member_ids": [it["id"]],
         })
     for c in clusters:
         c.pop("_tokens")
@@ -482,7 +485,7 @@ def heuristic_brief(items: list[dict]) -> dict:
     top = items[:7]
     return {
         "headline": top[0]["headline"] if top else "Sem notícias coletadas",
-        "mood": "Briefing automático sem IA. Configure a ANTHROPIC_API_KEY para receber análise completa.",
+        "mood": "Briefing automático por palavras-chave: a análise do dia pelo Claude ainda não rodou.",
         "tldr": [f"{i['headline']} ({i['outlets'][0]['source']})" for i in top],
         "sections": [],
         "watchlist": [],
@@ -526,6 +529,7 @@ def merge_item(c: dict, a: dict | None, base_score: float) -> dict:
         "published": c["published"],
         "region": c["region"],
         "outlets": c["outlets"],
+        "ids": c.get("member_ids", [c["id"]]),
         "snippet": c["snippet"],
         "prescore": base_score,
     }
@@ -580,8 +584,20 @@ def main() -> int:
     else:
         log("Sem ANTHROPIC_API_KEY (ou --no-ai): modo heurístico.")
 
+    # Análises feitas pela rotina do Claude Code (sem API). Procura por qualquer matéria do grupo,
+    # porque o id do grupo pode mudar quando um veículo de peso maior passa a cobrir a notícia.
+    routine = load_json(ROUTINE_FILE, {"items": {}, "brief": None})
     analyzed_ids = {c["id"] for c in to_analyze}
-    items = [merge_item(c, cache.get(c["id"]) if c["id"] in analyzed_ids else None, c["prescore"]) for c in clusters]
+
+    def analysis_for(c: dict) -> dict | None:
+        for i in [c["id"], *c.get("member_ids", [])]:
+            if c["id"] in analyzed_ids and i in cache:
+                return cache[i]
+            if i in routine["items"]:
+                return routine["items"][i]
+        return None
+
+    items = [merge_item(c, analysis_for(c), c["prescore"]) for c in clusters]
     items = [i for i in items if i["ai"] or i["prescore"] > 0]
     items.sort(key=lambda i: i["published"], reverse=True)
     items.sort(key=lambda i: (-i["importance"], -i["prescore"]))
@@ -593,6 +609,9 @@ def main() -> int:
         log("Sem notícias novas: briefing anterior reaproveitado.")
     if client and not brief:
         brief = build_brief(client, profile, items)
+    rb = routine.get("brief") or {}
+    if not brief and rb.get("date") == today:
+        brief = {k: v for k, v in rb.items() if k != "date"}
     brief = brief or heuristic_brief(items)
 
     used = {i["id"] for i in items}
@@ -601,8 +620,10 @@ def main() -> int:
     digest = {
         "generated_at": now.isoformat(),
         "date": today,
-        "mode": "ai" if client and any(i["ai"] for i in items) else "heuristic",
+        "mode": "ai" if any(i["ai"] for i in items) else "heuristic",
         "model": MODEL if client else None,
+        "analysis": {"by": "api" if client else "rotina", "updated_at": None if client else routine.get("updated_at"),
+                     "analyzed": sum(i["ai"] for i in items)},
         "categories": CATEGORIES,
         "brief": brief,
         "market": [] if args.no_market else fetch_market(),
