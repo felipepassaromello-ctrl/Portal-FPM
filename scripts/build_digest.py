@@ -356,9 +356,8 @@ BRIEF_SCHEMA = {
         },
         "watchlist": {"type": "array", "items": {"type": "string"}},
         "connections": {"type": "array", "items": {"type": "string"}},
-        "question_of_the_day": {"type": "string"},
     },
-    "required": ["headline", "mood", "tldr", "sections", "watchlist", "connections", "question_of_the_day"],
+    "required": ["headline", "mood", "tldr", "sections", "watchlist", "connections"],
     "additionalProperties": False,
 }
 
@@ -405,7 +404,6 @@ BRIEF_INSTRUCTIONS = """Com base nas notícias analisadas abaixo (já ordenadas 
 - sections: um parágrafo curto (3-5 frases) por categoria que tenha notícias relevantes, conectando os fatos e dizendo o que significam; item_ids = ids das notícias citadas.
 - watchlist: 3 a 6 pontos para acompanhar hoje/nos próximos dias (agenda, decisões, desdobramentos de deals).
 - connections: 2 a 4 conexões não óbvias entre notícias diferentes (ex.: como um fato internacional afeta um deal ou setor no Brasil).
-- question_of_the_day: uma pergunta provocativa para o leitor levar para a reunião.
 
 Notícias analisadas:
 """
@@ -490,7 +488,6 @@ def heuristic_brief(items: list[dict]) -> dict:
         "sections": [],
         "watchlist": [],
         "connections": [],
-        "question_of_the_day": "",
     }
 
 

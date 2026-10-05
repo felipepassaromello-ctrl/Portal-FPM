@@ -87,7 +87,6 @@ digest = {
         ],
         "watchlist": ["Exemplo: ata do Copom na terça", "Exemplo: prazo do Cade para o deal Alfa/Beta", "Exemplo: dados de emprego nos EUA na sexta"],
         "connections": ["Exemplo: juros altos por mais tempo tendem a favorecer deals com pagamento em ações em vez de caixa."],
-        "question_of_the_day": "Exemplo: quem é o próximo alvo natural depois da consolidação do setor?",
     },
     "market": [
         {"symbol": "^BVSP", "name": "Ibovespa", "unit": "pts", "price": 130000, "change_pct": 0.8, "spark": [128000, 128900, 129100, 128700, 130000]},

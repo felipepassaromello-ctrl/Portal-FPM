@@ -141,7 +141,7 @@ def cmd_brief_input(args) -> None:
     print("=== PAPEL ===\n" + system_prompt(profile))
     print("\n=== TAREFA ===\n" + BRIEF_INSTRUCTIONS.strip())
     print("\nFormato de saída: um arquivo JSON com exatamente os campos acima "
-          "(headline, mood, tldr, sections, watchlist, connections, question_of_the_day).")
+          "(headline, mood, tldr, sections, watchlist, connections).")
     if digest.get("market"):
         print("\n=== MERCADO (última cotação) ===")
         for q in digest["market"]:
