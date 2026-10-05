@@ -1,0 +1,36 @@
+{
+  "_comment": "Fontes vasculhadas a cada execução. 'gnews' = consulta ao Google News RSS (usado para veículos sem RSS público ou com paywall). 'weight' = peso editorial da fonte (0.5 a 1.5) usado no ranking.",
+  "lookback_hours": 30,
+  "sources": [
+    {"id": "valor", "name": "Valor Econômico", "region": "BR", "weight": 1.4, "gnews": "site:valor.globo.com"},
+    {"id": "pipeline", "name": "Pipeline (Valor)", "region": "BR", "weight": 1.5, "gnews": "site:pipelinevalor.globo.com"},
+    {"id": "braziljournal", "name": "Brazil Journal", "region": "BR", "weight": 1.5, "url": "https://braziljournal.com/feed/"},
+    {"id": "infomoney", "name": "InfoMoney", "region": "BR", "weight": 1.1, "url": "https://www.infomoney.com.br/feed/"},
+    {"id": "neofeed", "name": "NeoFeed", "region": "BR", "weight": 1.2, "url": "https://neofeed.com.br/feed/"},
+    {"id": "exame", "name": "Exame", "region": "BR", "weight": 1.0, "url": "https://exame.com/invest/feed/"},
+    {"id": "thenews", "name": "The News", "region": "BR", "weight": 0.9, "gnews": "site:thenewscc.com.br"},
+    {"id": "estadao", "name": "Estadão", "region": "BR", "weight": 1.1, "gnews": "site:estadao.com.br (economia OR política OR negócios)"},
+    {"id": "folha-mercado", "name": "Folha", "region": "BR", "weight": 1.0, "url": "https://feeds.folha.uol.com.br/mercado/rss091.xml"},
+    {"id": "folha-poder", "name": "Folha", "region": "BR", "weight": 1.0, "url": "https://feeds.folha.uol.com.br/poder/rss091.xml"},
+    {"id": "folha-mundo", "name": "Folha", "region": "BR", "weight": 0.9, "url": "https://feeds.folha.uol.com.br/mundo/rss091.xml"},
+    {"id": "g1-economia", "name": "g1", "region": "BR", "weight": 0.9, "url": "https://g1.globo.com/rss/g1/economia/"},
+    {"id": "g1-politica", "name": "g1", "region": "BR", "weight": 0.9, "url": "https://g1.globo.com/rss/g1/politica/"},
+    {"id": "g1-mundo", "name": "g1", "region": "BR", "weight": 0.8, "url": "https://g1.globo.com/rss/g1/mundo/"},
+    {"id": "bloomberglinea", "name": "Bloomberg Línea", "region": "BR", "weight": 1.1, "gnews": "site:bloomberglinea.com.br"},
+
+    {"id": "bloomberg-markets", "name": "Bloomberg", "region": "INTL", "weight": 1.4, "url": "https://feeds.bloomberg.com/markets/news.rss"},
+    {"id": "bloomberg-deals", "name": "Bloomberg", "region": "INTL", "weight": 1.4, "url": "https://feeds.bloomberg.com/deals/news.rss"},
+    {"id": "bloomberg-politics", "name": "Bloomberg", "region": "INTL", "weight": 1.2, "url": "https://feeds.bloomberg.com/politics/news.rss"},
+    {"id": "wsj-markets", "name": "Wall Street Journal", "region": "INTL", "weight": 1.3, "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"},
+    {"id": "wsj-business", "name": "Wall Street Journal", "region": "INTL", "weight": 1.3, "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml"},
+    {"id": "wsj-world", "name": "Wall Street Journal", "region": "INTL", "weight": 1.1, "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"},
+    {"id": "ft", "name": "Financial Times", "region": "INTL", "weight": 1.3, "url": "https://www.ft.com/rss/home"},
+    {"id": "reuters", "name": "Reuters", "region": "INTL", "weight": 1.3, "gnews": "site:reuters.com (business OR markets OR world)", "lang": "en"},
+    {"id": "cnbc", "name": "CNBC", "region": "INTL", "weight": 1.0, "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"},
+    {"id": "prnewswire-mna", "name": "PR Newswire (M&A)", "region": "INTL", "weight": 1.0, "url": "https://www.prnewswire.com/rss/financial-services-latest-news/acquisitions-mergers-and-takeovers-list.rss"},
+
+    {"id": "q-mna-br", "name": "Radar M&A Brasil", "region": "BR", "weight": 1.2, "gnews": "(fusão OR aquisição OR \"M&A\" OR compra OR incorporação) empresa Brasil"},
+    {"id": "q-ecm-br", "name": "Radar Mercado de Capitais", "region": "BR", "weight": 1.2, "gnews": "(IPO OR follow-on OR debêntures OR \"oferta de ações\") B3"},
+    {"id": "q-mna-latam", "name": "Radar M&A LatAm", "region": "INTL", "weight": 1.1, "gnews": "(acquisition OR merger OR stake) Brazil company", "lang": "en"}
+  ]
+}
