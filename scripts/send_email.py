@@ -122,9 +122,9 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
                      f'<span style="font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{MUTED}">CVM · fato relevante · {f["date"][8:10]}/{f["date"][5:7]}</span><br>'
                      f'<a href="{e(f["link"])}" style="color:{INK};font-weight:700;text-decoration:none">{e(f["company"])}</a>'
                      f'<br><span style="color:{INK2};font-size:13px">{e(f["subject"])}</span></td></tr>')
-    for c in [x for x in off.get("cade", []) if x["kind"] == "Ato de concentração"][:4]:
+    for c in [x for x in off.get("cade", []) if x["kind"] != "Publicação do Cade"][:5]:
         off_rows += (f'<tr><td style="padding:10px 0;border-bottom:1px solid {LINE};font:500 14px/1.5 {SANS};color:{INK}">'
-                     f'<span style="font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{MUTED}">Cade · Diário Oficial</span><br>'
+                     f'<span style="font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{MUTED}">{e(c["kind"])} · Diário Oficial</span><br>'
                      f'<a href="{e(c["link"])}" style="color:{INK};font-weight:700;text-decoration:none">{e(c["title"])}</a>'
                      f'<br><span style="color:{INK2};font-size:13px">{e(c["summary"][:220])}</span></td></tr>')
     official_html = (f'<h2 style="{label};margin-top:30px">Fontes oficiais</h2>'

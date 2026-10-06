@@ -46,6 +46,7 @@ UA = "Mozilla/5.0 (compatible; PortalN1/1.0; +https://github.com/)"
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-5-5")
 MAX_ANALYZE = int(os.environ.get("MAX_ANALYZE", "90"))
 BATCH_SIZE = 15
+OFFICIAL_VERSION = 2  # mude para forçar uma nova coleta das fontes oficiais na edição corrente
 EDITION_CLOSE_HOUR = 8  # cada edição cobre as 24h até as 08h (BRT) do seu dia
 
 CATEGORIES = {
@@ -734,7 +735,7 @@ def main() -> int:
     prev_off = previous.get("official") or {}
     if args.no_official:
         pass
-    elif previous.get("date") == today and prev_off.get("complete"):
+    elif previous.get("date") == today and prev_off.get("complete") and prev_off.get("v") == OFFICIAL_VERSION:
         official, official_status = prev_off, previous.get("official_status", [])
         log("Fontes oficiais: reaproveitadas da coleta anterior desta edição.")
     else:
@@ -748,6 +749,7 @@ def main() -> int:
             prev_off.get("macro"))
         # CVM e Diário Oficial são pesados; o BC falha às vezes e já tem o último valor como reserva.
         official["complete"] = all(s["ok"] for s in official_status if s["id"] != "bcb")
+        official["v"] = OFFICIAL_VERSION
         for st in official_status:
             log(f"{'OK ' if st['ok'] else 'ERR'} {st['id']:<20} {st['count']:>3} {st['error'] or ''}")
     brief = None
