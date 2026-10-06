@@ -8,6 +8,7 @@
     { id: "brief", label: "Briefing" },
     { id: "feed", label: "Todas as notícias" },
     { id: "deals", label: "Deals" },
+    { id: "official", label: "Oficiais" },
     { id: "later", label: "Desde as 8h" },
     { id: "sources", label: "Fontes" },
   ];
@@ -151,6 +152,42 @@
     renderDeals();
     renderSources();
     renderLater();
+    renderOfficial();
+    renderMacro();
+  }
+
+  function renderOfficial() {
+    const off = state.digest.official || {};
+    const filings = off.filings || [], cade = off.cade || [];
+    $("#official-filings").innerHTML = filings.map((f) => `
+      <article class="card off-card"><div class="card-main">
+        <div class="meta"><span class="cat-tag" style="--cat: var(--c-mna)">${esc(f.kind)}</span><span>CVM · entregue em ${esc(fmtDay(f.date))}</span></div>
+        <h3><a href="${safeUrl(f.link)}" target="_blank" rel="noopener">${esc(f.company)}</a></h3>
+        <p class="card-summary">${esc(f.subject)}</p></div></article>`).join("")
+      || `<div class="empty">Nenhum fato relevante encontrado para esta edição${(state.digest.official_status || []).some((s) => s.id === "cvm-ipe" && !s.ok) ? " (a CVM não respondeu na última coleta)" : ""}.</div>`;
+    $("#official-cade").innerHTML = cade.map((c) => `
+      <article class="card off-card"><div class="card-main">
+        <div class="meta"><span class="cat-tag" style="--cat: var(--c-macro)">${esc(c.kind)}</span><span>Diário Oficial ${esc(c.section)} · ${esc(fmtDay(c.date))}</span></div>
+        <h3><a href="${safeUrl(c.link)}" target="_blank" rel="noopener">${esc(c.title)}</a></h3>
+        <p class="card-summary">${esc(c.summary)}</p></div></article>`).join("")
+      || `<div class="empty">Nenhuma publicação do Cade no Diário Oficial desta edição.</div>`;
+  }
+
+  function renderMacro() {
+    const m = (state.digest.official || {}).macro || {};
+    const el = $("#macro");
+    const f = m.focus || {};
+    const yrs = f.years || [];
+    const pct = (v) => (v == null ? "–" : `${fmtNum(v, 2)}%`);
+    const rows = [
+      ["Selic (meta)", m.selic_meta ? pct(m.selic_meta.value) : null],
+      ["IPCA 12 meses", m.ipca_12m ? pct(m.ipca_12m.value) : null],
+      ...[["ipca", "Focus IPCA"], ["selic", "Focus Selic"], ["pib", "Focus PIB"], ["cambio", "Focus câmbio"]]
+        .filter(([k]) => f[k]).map(([k, label]) => [label, yrs.map((y) => `${y}: ${k === "cambio" ? (f[k][y] != null ? "R$ " + fmtNum(f[k][y], 2) : "–") : pct(f[k][y])}`).join(" · ")]),
+    ].filter(([, v]) => v);
+    el.closest(".side-block").hidden = !rows.length;
+    el.innerHTML = rows.map(([k, v]) => `<li><b>${esc(k)}</b> ${esc(v)}</li>`).join("")
+      + (f.ipca ? `<li class="muted small">Focus de ${esc(fmtDay(f.ipca.date))} · fonte: Banco Central</li>` : "");
   }
 
   function renderLater() {
@@ -176,7 +213,9 @@
 
   function renderTabs() {
     const d = state.digest;
-    const counts = { feed: d.items.length, deals: d.deals.length, later: (d.upcoming || []).length };
+    const off = d.official || {};
+    const counts = { feed: d.items.length, deals: d.deals.length, later: (d.upcoming || []).length,
+                     official: (off.filings || []).length + (off.cade || []).length };
     const tabs = tabsAvailable();
     if (!tabs.some((t) => t.id === state.tab)) state.tab = "brief";
     $("#tabs").innerHTML = tabs.map((t) =>

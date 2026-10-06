@@ -157,6 +157,15 @@ def cmd_brief_input(args) -> None:
         print("\n=== MERCADO (última cotação) ===")
         for q in digest["market"]:
             print(f"{q['name']}: {q['price']:.2f} ({q['change_pct']:+.2f}%)")
+    off = digest.get("official") or {}
+    if off.get("filings") or off.get("cade") or off.get("macro"):
+        print("\n=== FONTES OFICIAIS DA EDIÇÃO (primárias; cite quando forem relevantes para o leitor) ===")
+        for f in off.get("filings", [])[:60]:
+            print(json.dumps({"fonte": "CVM", "tipo": f["kind"], "empresa": f["company"], "assunto": f["subject"]}, ensure_ascii=False))
+        for c in off.get("cade", [])[:30]:
+            print(json.dumps({"fonte": "Diário Oficial / Cade", "tipo": c["kind"], "titulo": c["title"], "resumo": c["summary"][:300]}, ensure_ascii=False))
+        if off.get("macro"):
+            print(json.dumps({"fonte": "Banco Central", "dados": off["macro"]}, ensure_ascii=False))
     print(f"\n=== NOTÍCIAS ANALISADAS ({len(rows[:45])}) ===")
     for r in rows[:45]:
         print(json.dumps(r, ensure_ascii=False))
