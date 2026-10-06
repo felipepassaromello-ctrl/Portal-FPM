@@ -8,6 +8,7 @@
     { id: "brief", label: "Briefing" },
     { id: "feed", label: "Todas as notícias" },
     { id: "deals", label: "Deals" },
+    { id: "later", label: "Desde as 8h" },
     { id: "sources", label: "Fontes" },
   ];
 
@@ -88,15 +89,15 @@
       const isNew = !state.digest || d.generated_at !== state.digest.generated_at;
       if (!isNew && silent) return;
       if (silent && !state.edition && state.seenIds) {
-        const fresh = d.items.filter((i) => !state.seenIds.has(i.id));
+        const fresh = [...d.items, ...(d.upcoming || [])].filter((i) => !state.seenIds.has(i.id));
         const hot = fresh.filter((i) => i.importance >= 8);
-        if (fresh.length) toast(`${fresh.length} novas notícias${hot.length ? ` · ${hot.length} importantes` : ""} — clique para ver`, () => setTab("feed"));
+        if (fresh.length) toast(`${fresh.length} novas notícias desde as 8h${hot.length ? ` · ${hot.length} importantes` : ""}. Clique para ver`, () => setTab("later"));
         if (hot.length && state.prefs.notify && "Notification" in window && Notification.permission === "granted") {
           new Notification("Portal FPM", { body: hot[0].headline });
         }
       }
       state.digest = d;
-      if (!state.edition) state.seenIds = new Set(d.items.map((i) => i.id));
+      if (!state.edition) state.seenIds = new Set([...d.items, ...(d.upcoming || [])].map((i) => i.id));
       render();
     } catch (e) {
       if (!silent) {
@@ -120,9 +121,14 @@
   function render() {
     const d = state.digest;
     if (!d) return;
-    const gen = new Date(d.generated_at);
-    const dl = gen.toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
-    $("#dateline").textContent = dl.charAt(0).toUpperCase() + dl.slice(1);
+    const edDate = d.date ? new Date(d.date + "T12:00:00") : new Date(d.generated_at);
+    const dl = edDate.toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+    let windowTxt = "";
+    if (d.window) {
+      const f = (iso) => new Date(iso).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }).replace(",", " às");
+      windowTxt = ` · notícias de ${f(d.window.start)} a ${f(d.window.end)}`;
+    }
+    $("#dateline").textContent = "Edição de " + dl + windowTxt;
     updateStatus();
     $("#footer-gen").textContent = `${d.stats.unique} notícias únicas de ${d.stats.raw} matérias · ${d.stats.sources_ok}/${d.stats.sources_total} fontes · ${d.mode === "ai" ? "análise por IA" : "modo sem IA"}`;
 
@@ -142,6 +148,13 @@
     renderFeed();
     renderDeals();
     renderSources();
+    renderLater();
+  }
+
+  function renderLater() {
+    const later = [...(state.digest.upcoming || [])].sort((a, z) => z.published.localeCompare(a.published));
+    $("#later-count").textContent = `${later.length} notícias publicadas depois do fechamento desta edição. Elas entram na edição de amanhã, com análise.`;
+    $("#later").innerHTML = later.map(cardHTML).join("") || `<div class="empty">Nada novo desde o fechamento da edição.</div>`;
   }
 
   function updateStatus() {
@@ -153,10 +166,18 @@
     el.classList.toggle("stale", ageMin > 180);
   }
 
+  function tabsAvailable() {
+    const d = state.digest;
+    // "Desde as 8h" só existe na edição atual: são as notícias que vão para a próxima edição.
+    return TABS.filter((t) => t.id !== "later" || (!state.edition && (d.upcoming || []).length));
+  }
+
   function renderTabs() {
     const d = state.digest;
-    const counts = { feed: d.items.length, deals: d.deals.length };
-    $("#tabs").innerHTML = TABS.map((t) =>
+    const counts = { feed: d.items.length, deals: d.deals.length, later: (d.upcoming || []).length };
+    const tabs = tabsAvailable();
+    if (!tabs.some((t) => t.id === state.tab)) state.tab = "brief";
+    $("#tabs").innerHTML = tabs.map((t) =>
       `<button class="tab" role="tab" data-tab="${t.id}" aria-selected="${state.tab === t.id}">${t.label}${counts[t.id] != null ? `<span class="count">${counts[t.id]}</span>` : ""}</button>`).join("");
     for (const t of TABS) $(`#view-${t.id}`).hidden = state.tab !== t.id;
   }

@@ -1,6 +1,6 @@
 {
-  "_comment": "Fontes vasculhadas a cada execução. 'gnews' = consulta ao Google News RSS (usado para veículos sem RSS público ou com paywall). 'weight' = peso editorial da fonte (0.5 a 1.5) usado no ranking.",
-  "lookback_hours": 30,
+  "_comment": "Fontes vasculhadas a cada execução. 'gnews' = consulta ao Google News RSS (usado para veículos sem RSS público ou com paywall). 'weight' = peso editorial da fonte (0.5 a 1.5) usado no ranking. A janela de 48h cobre a edição (08h a 08h) e o que chegou depois do fechamento.",
+  "lookback_hours": 48,
   "sources": [
     {
       "id": "valor",
