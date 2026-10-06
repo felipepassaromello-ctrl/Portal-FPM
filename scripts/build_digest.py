@@ -46,7 +46,7 @@ UA = "Mozilla/5.0 (compatible; PortalN1/1.0; +https://github.com/)"
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-5-5")
 MAX_ANALYZE = int(os.environ.get("MAX_ANALYZE", "90"))
 BATCH_SIZE = 15
-OFFICIAL_VERSION = 2  # mude para forçar uma nova coleta das fontes oficiais na edição corrente
+OFFICIAL_VERSION = 3  # mude para forçar uma nova coleta das fontes oficiais na edição corrente
 EDITION_CLOSE_HOUR = 8  # cada edição cobre as 24h até as 08h (BRT) do seu dia
 
 CATEGORIES = {

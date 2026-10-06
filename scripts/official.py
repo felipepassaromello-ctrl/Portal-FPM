@@ -118,6 +118,13 @@ def split_cade_acts(text: str, title: str) -> list[dict]:
         parties = grab(r"(?:Requerentes?|Partes|Interessad[oa]s?)\s*:\s*(.+?)\s*(?:Advogad|Natureza|Decis|Assunto|Setor|Procurador|$)")
         nature = grab(r"Natureza da opera[çc][ãa]o\s*:\s*(.+?)(?:\.\s+[A-ZÁÉÍÓÚ][^:.]{0,45}:|$)")
         decision = grab(r"Decis[ãa]o\s*:\s*(.+?)(?:\.\s|$)")
+        if not decision:  # despachos costumam trazer a decisão por extenso ("aprovo ... sem restrições")
+            if re.search(r"aprova\w*[^.]{0,80}sem restri", seg, re.I):
+                decision = "Aprovação sem restrições"
+            elif re.search(r"aprova\w*[^.]{0,80}(?:com restri|condiciona|ACC|acordo em controle)", seg, re.I):
+                decision = "Aprovação com restrições"
+            elif re.search(r"impugna|reprova|veta", seg, re.I):
+                decision = "Impugnação/reprovação"
         if "EDITA" in title.upper():
             kind = "Notificação ao Cade"
         elif re.search(r"aprova|sem restri", decision, re.I):
