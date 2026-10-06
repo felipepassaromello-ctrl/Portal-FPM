@@ -187,6 +187,12 @@ main { padding-top: 24px; padding-bottom: 40px; }
 .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 7px; font-size: 12.5px; color: var(--muted); font-weight: 500; }
 .cat-tag { color: var(--cat); font-weight: 700; font-size: 12px; }
 .multi { font-size: 11.5px; font-weight: 600; background: var(--surface-2); border: 1px solid var(--line); padding: 1px 8px; border-radius: 999px; }
+.macro { list-style: none; padding-left: 0; }
+.macro li { display: flex; justify-content: space-between; gap: 10px; }
+.macro li b { font-weight: 600; color: var(--ink); }
+.off-card h3 a { text-decoration: none; }
+.off-card h3 a:hover { color: var(--accent); }
+#view-official .split { margin-top: 0; }
 .multi.upd { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
 .deal-tag { font: 700 10.5px var(--font); letter-spacing: .06em; text-transform: uppercase; color: #fff; background: var(--hero); padding: 2px 8px; border-radius: 999px; }
 .sent-positivo { color: var(--pos); } .sent-negativo { color: var(--neg); }
