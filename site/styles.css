@@ -193,6 +193,14 @@ main { padding-top: 24px; padding-bottom: 40px; }
 .off-card h3 a { text-decoration: none; }
 .off-card h3 a:hover { color: var(--accent); }
 #view-official .split { margin-top: 0; }
+.week-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-bottom: 18px; }
+.week-grid .side-block { background: var(--glass); backdrop-filter: blur(12px); border-color: var(--glass-line); box-shadow: var(--shadow); }
+.week-big { margin: 0; font: 800 34px/1.1 var(--font); letter-spacing: -.02em; }
+.week-big span { font-size: 14px; font-weight: 600; color: var(--muted); margin-left: 6px; }
+.base-toolbar { margin-bottom: 12px; }
+.deals td.tl { font-size: 12.5px; white-space: nowrap; }
+.deals td.tl a { color: var(--ink-2); font-weight: 500; text-decoration: none; }
+.deals td.tl a:hover { color: var(--accent); }
 .multi.upd { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
 .deal-tag { font: 700 10.5px var(--font); letter-spacing: .06em; text-transform: uppercase; color: #fff; background: var(--hero); padding: 2px 8px; border-radius: 999px; }
 .sent-positivo { color: var(--pos); } .sent-negativo { color: var(--neg); }

@@ -41,7 +41,11 @@ jobs:
           MAIL_TO: ${{ secrets.MAIL_TO }}
           MAIL_CC: ${{ secrets.MAIL_CC }}
           MAIL_TO_OVERRIDE: ${{ inputs.test_to }}
-        run: python scripts/send_email.py ${{ inputs.force && '--force' || '' }}
+        run: |
+          EXTRA=""
+          # Na segunda tentativa (09:32), se a edição ainda não saiu, avisa o dono da conta.
+          if [ "${{ github.event.schedule }}" = "32 12 * * 1-5" ]; then EXTRA="--alert-if-missing"; fi
+          python scripts/send_email.py ${{ inputs.force && '--force' || '' }} $EXTRA
 
       - name: Registrar envio
         run: |
