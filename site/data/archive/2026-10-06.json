@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T19:04:43.651462-03:00",
+ "generated_at": "2026-10-06T19:07:15.863799-03:00",
  "date": "2026-10-06",
  "window": {
   "start": "2026-10-05T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-06T08:21:22.173428-03:00",
-  "analyzed": 30
+  "analyzed": 32
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -206,14 +206,14 @@
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 85622.14,
-   "change_pct": -0.19170099057581602,
+   "price": 85619.57,
+   "change_pct": -0.19469679666584971,
    "spark": [
     84497.2109375,
     84763.578125,
     86480.3046875,
     85786.59375,
-    85622.140625
+    85619.5703125
    ]
   }
  ],
@@ -1074,6 +1074,53 @@
    "ai": true
   },
   {
+   "id": "221d83e7db57",
+   "title": "Selbetti buys Botdesigner and advances in its R$100 million acquisition cycle.",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2J6TVBUSHBMZTBJTWVkSDRLTHdFXzlkMkVqTEdsSU9uY0EwUjNFelU0Um93aUY5TERKQ1lUVXZ0V0lnU05wLUxtNnZBQUhCVTRlUTJKYmRYXzNidFlaNlJIUnVoWWxaWHFkOXRRcG1BRmJVYWp5MzMzR1QtMG5UaVFfRzhUTkowNHExdG5oRlVCT0Z0d3hfUHUySmlVU3pfcG1uanhpOS12T1llWHNYc2Q0YnVxa282cElj?oc=5",
+   "published": "2026-10-05T22:30:37+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "TI INSIDE Online",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2J6TVBUSHBMZTBJTWVkSDRLTHdFXzlkMkVqTEdsSU9uY0EwUjNFelU0Um93aUY5TERKQ1lUVXZ0V0lnU05wLUxtNnZBQUhCVTRlUTJKYmRYXzNidFlaNlJIUnVoWWxaWHFkOXRRcG1BRmJVYWp5MzMzR1QtMG5UaVFfRzhUTkowNHExdG5oRlVCT0Z0d3hfUHUySmlVU3pfcG1uanhpOS12T1llWHNYc2Q0YnVxa282cElj?oc=5",
+     "title": "Selbetti buys Botdesigner and advances in its R$100 million acquisition cycle."
+    }
+   ],
+   "ids": [
+    "221d83e7db57"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Selbetti compra a Botdesigner e avança em ciclo de R$ 100 milhões em aquisições",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Consolidador de TI brasileiro com programa de M&A declarado.",
+   "summary": "A Selbetti comprou a Botdesigner e segue um ciclo de aquisições de R$ 100 milhões. O valor deste deal não consta do título.",
+   "involves": "Selbetti e Botdesigner. Setor de tecnologia.",
+   "interpretation": "Estratégia de buy-and-build em serviços de TI no Brasil.",
+   "impact": "Mais deals pequenos devem sair do mesmo programa.",
+   "sentiment": "positivo",
+   "entities": [
+    "Selbetti",
+    "Botdesigner"
+   ],
+   "tags": [
+    "TI",
+    "buy-and-build"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Selbetti",
+    "target": "Botdesigner",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Tecnologia",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "0c4859816232",
    "title": "AD Ports Group Successfully Completes Acquisition of Brazil’s CLI Upon Receiving Full Regulatory Approvals",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUFB4OWVJSUpfTmRZM19tMjF3RHpSZzBQOFhYemxDUDJfSmFVeFlSOTRwOWQxSF82YzNlejg0aHRlZk9lX1pzVDBoSUxHcUQ1Q01MR1RqLWVfcmpmb1RpQTRDemtFUUV2Slo0RjZnckJ3UjlDOXp3bnA4QU12WUJseHRzR1hIR01JRXNlQnlaNVVNM2VPaDUtZVRkbHhaanZXNE1qdXk0VG5JTUlVeklzM0NYZ3c3RGdJRm5BMnFLU3lSbXlLaGk2NA?oc=5",
@@ -1419,39 +1466,6 @@
    }
   },
   {
-   "id": "b605e036c2d3",
-   "title": "AD Ports Group completes $835 million acquisition of Brazil's CLI terminals",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOam96aEcyMHVyTjJOQWExanFnUWU3SjZkcFluZXZKZExleWZ1Ujg0WFFfdm5jYkxERGRtd3oxMXdDNkFZV0QwcUVSMUZfQnIzMTJFelF0YVRtUlh6SklfakJxdTFmbUdsVDRCUDk5Q3VxVjhGdDM5S1RMM2R4Ml9EaEJlVEQ3c2k1X0FGUmFiMHNzUjQyYjBTN0NDN0o2TzFCT2ZVT29ab3RieDUzVWRxLWhHbEJWcnpBQmtRdHA5ck5WMldhLUxTRUZBQ1c?oc=5",
-   "published": "2026-10-05T18:18:12+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Fresh Plaza",
-     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOam96aEcyMHVyTjJOQWExanFnUWU3SjZkcFluZXZKZExleWZ1Ujg0WFFfdm5jYkxERGRtd3oxMXdDNkFZV0QwcUVSMUZfQnIzMTJFelF0YVRtUlh6SklfakJxdTFmbUdsVDRCUDk5Q3VxVjhGdDM5S1RMM2R4Ml9EaEJlVEQ3c2k1X0FGUmFiMHNzUjQyYjBTN0NDN0o2TzFCT2ZVT29ab3RieDUzVWRxLWhHbEJWcnpBQmtRdHA5ck5WMldhLUxTRUZBQ1c?oc=5",
-     "title": "AD Ports Group completes $835 million acquisition of Brazil's CLI terminals"
-    }
-   ],
-   "ids": [
-    "b605e036c2d3"
-   ],
-   "snippet": "",
-   "prescore": 5.2,
-   "headline": "AD Ports Group completes $835 million acquisition of Brazil's CLI terminals",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "e19497522be9",
    "title": "Paramount defines the leadership of the new Skydance just hours before closing its merger with Warner Bros.",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeWl0RHRDeWtZVlM5WFlGQl9EM0RNbk9FM1hfSGlIa2g0QkFhaE85TGVHT2g0NU9VOXFPUm5Sb204MnlYQ3VZZXlxVkY1WHdZek02bTJWNEJZUzM4ZkRZNm1oUUQ3WDJQU1pRQjByWnF1V0NXYkRPOFd0b1VLd0VUUEpodDdGaVpVT0FmWXJvS0VzUnhQUjBscHRkMzBGMkhFMjZHV0FhYmF0SG1iVU5KMnJfM2hyR0ZXQlZPcHZIb2hmNF9hcFVQNklvWHhEQ09JMDlXaHZGb1ZRNHPSAeABQVVfeXFMUGhMcG54eU9ncjg3YkRGVzdXQzUySzZhalh1R0tHd3RSMVpDN2ZramQzdldCTlBzOGNXVTFwRmhyWWFCRFNGUC1yZUp5enRvbFpyRHZZb09yWUZ4LWFVTXZ4NFdVNmRZTlVKa2tEUmFPb2tIX2REeFJOVkdCVTh1cEFNY1ZWN3lrMElUYThXakVYMDBXNGVWUm16V012ZnA5SVhVRW43Sms5dHdmaGtZQ1NyaDU5R1A0SmI2TzdZSk1vOFZsQkQ4MU1Ba3VkSmNnRVhTTGxYaW5kZTRfZUlfdFM?oc=5",
@@ -1483,6 +1497,55 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "c4c9b4ccc263",
+   "title": "AD Ports Group completes $835 million acquisition of Brazil's CLI terminals",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVlFNeEtpYTlPWTNISnZXV2dEOUNmZVNtdWdzd05hdmdWVF8xT29lSXFtVC1kWlI1dEFSSVNBWUZyX1JhQzNUeFA5dHprUUZNNU4wc3pUVTFFOHlta1JGR2R2YUM4VVhfZ3JvcHRHUEM2RGMwQTllQTZldUpFS3NSZmFNUDdoeEp1WFdzdUM3S0xBN1BVRGlmTGpDb3loYTRkenk2MjRvVVVFQTRnQWVXU3hNLTdjVXFMMFV5cEg0SDlpT1df?oc=5",
+   "published": "2026-10-05T17:08:08+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Fresh Plaza",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVlFNeEtpYTlPWTNISnZXV2dEOUNmZVNtdWdzd05hdmdWVF8xT29lSXFtVC1kWlI1dEFSSVNBWUZyX1JhQzNUeFA5dHprUUZNNU4wc3pUVTFFOHlta1JGR2R2YUM4VVhfZ3JvcHRHUEM2RGMwQTllQTZldUpFS3NSZmFNUDdoeEp1WFdzdUM3S0xBN1BVRGlmTGpDb3loYTRkenk2MjRvVVVFQTRnQWVXU3hNLTdjVXFMMFV5cEg0SDlpT1df?oc=5",
+     "title": "AD Ports Group completes $835 million acquisition of Brazil's CLI terminals"
+    }
+   ],
+   "ids": [
+    "c4c9b4ccc263"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "AD Ports conclui aquisição de US$ 835 milhões da CLI",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Repete um fato já coberto em outra notícia desta edição.",
+   "summary": "AD Ports conclui aquisição de US$ 835 milhões da CLI.",
+   "involves": "AD Ports Group, CLI.",
+   "interpretation": "Mesmo fato de o deal AD Ports/CLI de ontem.",
+   "impact": "Veja a análise da notícia principal.",
+   "sentiment": "positivo",
+   "entities": [
+    "AD Ports Group",
+    "CLI"
+   ],
+   "tags": [
+    "portos"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "AD Ports Group",
+    "target": "CLI (terminais portuários)",
+    "value": "US$ 835 milhões",
+    "stage": "Concluído",
+    "sector": "Infraestrutura portuária",
+    "advisors": "não divulgado"
+   },
+   "ai": true,
+   "repeat": {
+    "date": "2026-10-05"
+   }
   },
   {
    "id": "b4e00140ffe1",
@@ -4170,12 +4233,17 @@
    "ai": false
   },
   {
-   "id": "19d59bcd1f7f",
-   "title": "Latest Oil Market News and Analysis for Oct. 6",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-05/latest-oil-market-news-and-analysis-for-oct-6",
+   "id": "e5db8db8ae4d",
+   "title": "Latest Oil Market News and Analysis for Oct. 7",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-06/latest-oil-market-news-and-analysis-for-oct-7",
    "published": "2026-10-05T22:03:37+00:00",
    "region": "INTL",
    "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-06/latest-oil-market-news-and-analysis-for-oct-7",
+     "title": "Latest Oil Market News and Analysis for Oct. 7"
+    },
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-10-05/latest-oil-market-news-and-analysis-for-oct-6",
@@ -4183,15 +4251,16 @@
     }
    ],
    "ids": [
+    "e5db8db8ae4d",
     "19d59bcd1f7f"
    ],
-   "snippet": "Oil held steady as traders weighed rising exports from the Middle East against increasingly elevated risks to tankers traversing the Strait of Hormuz.",
+   "snippet": "Oil steadied as traders weighed increased flows through the Strait of Hormuz against a pickup in Iranian attacks against vessels.",
    "prescore": 2.8,
-   "headline": "Latest Oil Market News and Analysis for Oct. 6",
+   "headline": "Latest Oil Market News and Analysis for Oct. 7",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Oil held steady as traders weighed rising exports from the Middle East against increasingly elevated risks to tankers traversing the Strait of Hormuz.",
+   "summary": "Oil steadied as traders weighed increased flows through the Strait of Hormuz against a pickup in Iranian attacks against vessels.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -6579,39 +6648,6 @@
    "ai": false
   },
   {
-   "id": "22b544dc7b0c",
-   "title": "Shippers Are Offering Sailors Up to $25,000 a Trip to Sneak Oil Out of the Gulf",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1phUjBVOXNDWmxVeVdGR3pQRHpJdjBlVm9ycVdwYWxJSzMycVBROUlfcWJJRTRkbEU5MEVNREFnckJfRkJodC15WVdSaTVYNVNuRjlWVWtBSDBfWW92WjU5NGxDNWZuQVoteGZKNWxxYkhYdmJhVVY4Q2NiUkFLdDE4bjMtMWVFZXBoVHZGMnd2TlctLUZQMy1oSnRsNFl0M3Qzcm1zd0dPQWNrZUZiNDZlbVc3WkJueUk4VEVUWGpabUlw?oc=5",
-   "published": "2026-10-05T16:56:47+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1phUjBVOXNDWmxVeVdGR3pQRHpJdjBlVm9ycVdwYWxJSzMycVBROUlfcWJJRTRkbEU5MEVNREFnckJfRkJodC15WVdSaTVYNVNuRjlWVWtBSDBfWW92WjU5NGxDNWZuQVoteGZKNWxxYkhYdmJhVVY4Q2NiUkFLdDE4bjMtMWVFZXBoVHZGMnd2TlctLUZQMy1oSnRsNFl0M3Qzcm1zd0dPQWNrZUZiNDZlbVc3WkJueUk4VEVUWGpabUlw?oc=5",
-     "title": "Shippers Are Offering Sailors Up to $25,000 a Trip to Sneak Oil Out of the Gulf"
-    }
-   ],
-   "ids": [
-    "22b544dc7b0c"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Shippers Are Offering Sailors Up to $25,000 a Trip to Sneak Oil Out of the Gulf",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "6cd88471ecdf",
    "title": "Dennis Hastert, former US House speaker and admitted child molester, dies at 84",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc3FlelZuLS1VNkFzU0Q0ekF3YmtGTGFicGZwaEJQWXF4TVZYY1lJRnVZVllHM3gwSEE5cGs3S193c0ZDaUNON2pDNURHdmI3UHBhYU9VUS02QlNoMVdYLXNXU2kyQnhUMmFCRFZ1QWdkTUtZWmpfSG1GM3ItUXd5aEFkV2tsODFBZEVuZjJXYkpXUk1XUjh3M1czZXc2a2hXeTJQdVg2dXg?oc=5",
@@ -8108,6 +8144,39 @@
    "ai": false
   },
   {
+   "id": "ece630fd3290",
+   "title": "Live Nation Unveils 21,000-Capacity São Paulo Arena",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSFVOVkE4VVgySVBiXzlVeFYwN2tNa2tCUHV5U0lma2I4alkxbVVsemhuOHpqMDFDSzUySndrQUhzYmVpWTE1S2d3Nkd1RHIwLWhfUVRLWFFIU2ZLd0k5RmtheHVVNFowY25FX29OeGFrenQ1QTBla3ZlWXEzZ2NtLUctWm1yNW13Y0V3MzBtbw?oc=5",
+   "published": "2026-10-05T16:52:20+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "TicketNews",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSFVOVkE4VVgySVBiXzlVeFYwN2tNa2tCUHV5U0lma2I4alkxbVVsemhuOHpqMDFDSzUySndrQUhzYmVpWTE1S2d3Nkd1RHIwLWhfUVRLWFFIU2ZLd0k5RmtheHVVNFowY25FX29OeGFrenQ1QTBla3ZlWXEzZ2NtLUctWm1yNW13Y0V3MzBtbw?oc=5",
+     "title": "Live Nation Unveils 21,000-Capacity São Paulo Arena"
+    }
+   ],
+   "ids": [
+    "ece630fd3290"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Live Nation Unveils 21,000-Capacity São Paulo Arena",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "cf3e3bbf8a5c",
    "title": "Dia do Empreendedor: 11 negócios que enxergaram oportunidades e transformaram ideias em empresas",
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQV2pVRHVNTXpVaTlDdUsycVR0ZHFOOGxIdkxmZUZicXRfVk01am01VEdaaHQ5OXZZZ1gtUjY2bkhqOHJQMHFfT3RxWUdvN0hHcVhwYXZpMEEwUEhhcWEyNDlyVVNTdURIX09VcjVJX2lTVW05QnV6el9fWmJWMVlYdG1qRDdrOTlzcjk5dFY3cE5FVWNyeGpINlRCeWF4TW82alkxOUZGSkl6bUdWM0FXYjZ6VFd4ZmlkMm1IZHRkaEoxMWVoc1BPaDc0QkcwYTVhTEljNUVvWS1adWlERlhHZUNreUJvQ3g1VDZ3R1BoYzhtb0ZIRmZQYVpVR2w?oc=5",
@@ -8600,39 +8669,6 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Tidewater Assumes Brazilian Loan Guarantees and Obligations",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b0ca7cfe2bcd",
-   "title": "Tidewater Assumes BNDES Loan Guarantees, Amends Terms; Cancels $170.5M DNB Backstop",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQndXQWtrZThDMEtJN1ExWFUzYVhSczBLSGVvS2hDNmVIQjAzbk5oUk5sSmVNdnpqbGRvWlpva1J4eUoySEdGc1ktOGpKdTFtX1FLR191TExUckhmbVllX09IVzhSbXFVOFE2UnNIaTRGUU5scGdDSXA1WVgzSVpMM0ZYQXFIOWV3aDh4STZWM01LNWpocEYzbVdkbEdyZmpidlB6YXJNNGswMWU3ZGRvbllzanEtVF9vWV8wdk04RGZMdC03a19iVmFBRFVjcHU0bjZPSG15YzY2Zw?oc=5",
-   "published": "2026-10-05T11:03:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "TradingView",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQndXQWtrZThDMEtJN1ExWFUzYVhSczBLSGVvS2hDNmVIQjAzbk5oUk5sSmVNdnpqbGRvWlpva1J4eUoySEdGc1ktOGpKdTFtX1FLR191TExUckhmbVllX09IVzhSbXFVOFE2UnNIaTRGUU5scGdDSXA1WVgzSVpMM0ZYQXFIOWV3aDh4STZWM01LNWpocEYzbVdkbEdyZmpidlB6YXJNNGswMWU3ZGRvbllzanEtVF9vWV8wdk04RGZMdC03a19iVmFBRFVjcHU0bjZPSG15YzY2Zw?oc=5",
-     "title": "Tidewater Assumes BNDES Loan Guarantees, Amends Terms; Cancels $170.5M DNB Backstop"
-    }
-   ],
-   "ids": [
-    "b0ca7cfe2bcd"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Tidewater Assumes BNDES Loan Guarantees, Amends Terms; Cancels $170.5M DNB Backstop",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -10653,6 +10689,53 @@
    "ai": true
   },
   {
+   "id": "221d83e7db57",
+   "title": "Selbetti buys Botdesigner and advances in its R$100 million acquisition cycle.",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2J6TVBUSHBMZTBJTWVkSDRLTHdFXzlkMkVqTEdsSU9uY0EwUjNFelU0Um93aUY5TERKQ1lUVXZ0V0lnU05wLUxtNnZBQUhCVTRlUTJKYmRYXzNidFlaNlJIUnVoWWxaWHFkOXRRcG1BRmJVYWp5MzMzR1QtMG5UaVFfRzhUTkowNHExdG5oRlVCT0Z0d3hfUHUySmlVU3pfcG1uanhpOS12T1llWHNYc2Q0YnVxa282cElj?oc=5",
+   "published": "2026-10-05T22:30:37+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "TI INSIDE Online",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2J6TVBUSHBMZTBJTWVkSDRLTHdFXzlkMkVqTEdsSU9uY0EwUjNFelU0Um93aUY5TERKQ1lUVXZ0V0lnU05wLUxtNnZBQUhCVTRlUTJKYmRYXzNidFlaNlJIUnVoWWxaWHFkOXRRcG1BRmJVYWp5MzMzR1QtMG5UaVFfRzhUTkowNHExdG5oRlVCT0Z0d3hfUHUySmlVU3pfcG1uanhpOS12T1llWHNYc2Q0YnVxa282cElj?oc=5",
+     "title": "Selbetti buys Botdesigner and advances in its R$100 million acquisition cycle."
+    }
+   ],
+   "ids": [
+    "221d83e7db57"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Selbetti compra a Botdesigner e avança em ciclo de R$ 100 milhões em aquisições",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Consolidador de TI brasileiro com programa de M&A declarado.",
+   "summary": "A Selbetti comprou a Botdesigner e segue um ciclo de aquisições de R$ 100 milhões. O valor deste deal não consta do título.",
+   "involves": "Selbetti e Botdesigner. Setor de tecnologia.",
+   "interpretation": "Estratégia de buy-and-build em serviços de TI no Brasil.",
+   "impact": "Mais deals pequenos devem sair do mesmo programa.",
+   "sentiment": "positivo",
+   "entities": [
+    "Selbetti",
+    "Botdesigner"
+   ],
+   "tags": [
+    "TI",
+    "buy-and-build"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Selbetti",
+    "target": "Botdesigner",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Tecnologia",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "713b7ca91039",
    "title": "Depois da Gymrats, Smart Fit compra 20% do Buddha Spa",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaWI5RkZla0pmRDdWYVVlNGs5OGV0UDEtSXVDSVBXZTliQzAta3lMQUFVbUxuVW9feDB3ZThNM1hzU1g3bm5DR3RORXI4S1Nvcm1Pb3lNcktja0hJeVR3ZUpVNW9KWTFWU0VkWi1weGtEdXVIeE41QlRTUzlrck9VajJKM1h3VnRSUEMxaUI4QW1aeTF2WVEyN01xbmR5NnA3WllJbGtkQkM5T3I3dEhBUUNB0gHAAUFVX3lxTE9vWFI3dkFWc0J3b3M2YWxGZXAwcmptZHNSZ3F5bXRQWUNQT2tfRFNTYldwZS03VVVFUjZGOGoyNEg5MHJTbEx3MkpqY29xR0RvWmNsZlRaVWh4RUlHRDh5QjFEVVlDUG1ZUl9JTDBRTk9jdVdGZEVsbC11dTdzUnpGbU0zbjk3blctYmdtN3poZFRRcEJiT0NMSWlka25uanIwcjBsX1dqNnpwY3Bwa0YwWmgtTTh2Slowb2ZKN0pEdQ?oc=5",
@@ -11901,6 +11984,39 @@
    "ai": false
   },
   {
+   "id": "e0fa7a01c223",
+   "title": "Ibovespa recua com realização de lucros após ‘trade Flávio’; dólar cai a R$ 4,97",
+   "link": "https://www.moneytimes.com.br/ibovespa-6-10-26-apsa/",
+   "published": "2026-10-06T20:24:55+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/ibovespa-6-10-26-apsa/",
+     "title": "Ibovespa recua com realização de lucros após ‘trade Flávio’; dólar cai a R$ 4,97"
+    }
+   ],
+   "ids": [
+    "e0fa7a01c223"
+   ],
+   "snippet": "O Ibovespa (IBOV) teve um pregão marcado pela volatilidade, após o forte rali registrado na segunda-feira (5) com os investidores de olho no ‘trade’ em cima de uma possível vitória do senador Flávio Bolsonaro (PL-RJ) na disputa presidencial. Nesta terça-feira (6), o principal índice da bolsa brasileira terminou as negociações com queda de 0,52%, aos […]",
+   "prescore": 4.8,
+   "headline": "Ibovespa recua com realização de lucros após ‘trade Flávio’; dólar cai a R$ 4,97",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Ibovespa (IBOV) teve um pregão marcado pela volatilidade, após o forte rali registrado na segunda-feira (5) com os investidores de olho no ‘trade’ em cima de uma possível vitória do senador Flávio Bolsonaro (PL-RJ) na disputa presidencial. Nesta terça-feira (6), o principal índice da bolsa brasileira terminou as negociações com queda de 0,52%, aos […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "1ffcbbb8ad3e",
    "title": "Morgan Stanley eleva Brasil para compra após 1º turno e vê Ibovespa a 250 mil pontos em cenário otimista",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPRUV6Zk9IN0Q1aEE3SjVNLXp0NERrWmdLdUJqaFFiclh5MWpJWXF2RVUydklZaFJNYnZMQnMyMV96ZkNGRlRvYV9vVUstLUw5MnhoVldVa0g5d21kdG55WU9yb3hHTzAxX2VRNmNwM0VFYkpZRWxZRURkMDEtT214VUI4MFVuZ0JDWXFfM2xUN1lzY0w0RmkyanJzb2d6a19XdjhNLXpWS1RtMEtWVTFCcUI5TlB4aWI2VHo1bWJJcU50Z3RRcTdpSDVsZk52MUNmdXVWenBZa2lSeXdDWVM1YVQ2Ny14OThvR2JQLWNSONIB_gFBVV95cUxOYUFFT0lLUFNxR2lDSUhBdTFVQ1ZPck8tYVhMV3dRbVBZXzZ2ZjV2TFZLQk5ZNWFxR1h5TTQ5TGtjRFA1S09IOTg0Z3lJV1NieGZWMGpmNHhDYXp1dUljczYyX29Yd1UySE9NUDVvbFgzamx3WkRZXzBVSmFWbUwtcWJ1TF83OUNfZ1pibGFqRGt0VFpTa3BZdnJPdnFtdVdycngtZTJ4Zk53Q0stZ3VNZnNfVTh2M1kzUFpCWlFFNUJULWdYUUhPdVNtV0RtQVVYNHhJS3RoTVpFSTNTNnRUNTZXRHVtajJlQkxuVzNIRkhUeDNWQ0I0R2ZoOHpFZw?oc=5",
@@ -12420,6 +12536,72 @@
    "ai": false
   },
   {
+   "id": "3a17a0219815",
+   "title": "Mais uma empresa de saída da Bolsa? Incorporadora pede cancelamento de registro na CVM",
+   "link": "https://www.moneytimes.com.br/mais-uma-empresa-de-saida-da-bolsa-incorporadora-pede-cancelamento-de-registro-na-cvm-pads/",
+   "published": "2026-10-06T21:43:45+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/mais-uma-empresa-de-saida-da-bolsa-incorporadora-pede-cancelamento-de-registro-na-cvm-pads/",
+     "title": "Mais uma empresa de saída da Bolsa? Incorporadora pede cancelamento de registro na CVM"
+    }
+   ],
+   "ids": [
+    "3a17a0219815"
+   ],
+   "snippet": "A Tegra Incorporadora (TEGA3) protocolou nesta terça-feira (6) um pedido de cancelamento voluntário de seu registro de emissora de valores mobiliários na categoria A junto à Comissão de Valores Mobiliários (CVM), segundo fato relevante divulgado pela companhia. A medida foi aprovada por unanimidade pelos acionistas em assembleia geral extraordinária realizada na mesma data. O pedido […]",
+   "prescore": 3.8,
+   "headline": "Mais uma empresa de saída da Bolsa? Incorporadora pede cancelamento de registro na CVM",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Tegra Incorporadora (TEGA3) protocolou nesta terça-feira (6) um pedido de cancelamento voluntário de seu registro de emissora de valores mobiliários na categoria A junto à Comissão de Valores Mobiliários (CVM), segundo fato relevante divulgado pela companhia. A medida foi aprovada por unanimidade pelos acionistas em assembleia geral extraordinária realizada na mesma data. O pedido […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "414ba2dd3764",
+   "title": "A eleição já mudou a forma de investir? Gestora de fortunas aumenta aposta em Tesouro IPCA+, prefixados e ações",
+   "link": "https://www.seudinheiro.com/2026/renda-fixa/a-eleicao-ja-mudou-a-forma-de-investir-gestora-de-fortunas-aumenta-aposta-em-tesouro-ipca-prefixados-e-acoes-mlim/",
+   "published": "2026-10-06T21:29:48+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/renda-fixa/a-eleicao-ja-mudou-a-forma-de-investir-gestora-de-fortunas-aumenta-aposta-em-tesouro-ipca-prefixados-e-acoes-mlim/",
+     "title": "A eleição já mudou a forma de investir? Gestora de fortunas aumenta aposta em Tesouro IPCA+, prefixados e ações"
+    }
+   ],
+   "ids": [
+    "414ba2dd3764"
+   ],
+   "snippet": "Carta de outubro mostra como a TAG Investimentos está transformando o novo cenário político em apostas concretas de investimento The post A eleição já mudou a forma de investir? Gestora de fortunas aumenta aposta em Tesouro IPCA+, prefixados e ações appeared first on Seu Dinheiro .",
+   "prescore": 3.8,
+   "headline": "A eleição já mudou a forma de investir? Gestora de fortunas aumenta aposta em Tesouro IPCA+, prefixados e ações",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Carta de outubro mostra como a TAG Investimentos está transformando o novo cenário político em apostas concretas de investimento The post A eleição já mudou a forma de investir? Gestora de fortunas aumenta aposta em Tesouro IPCA+, prefixados e ações appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ffafd3de269a",
    "title": "Bessent Risks Higher Yields If He Axes 20-Year Bond, BNP Warns",
    "link": "https://www.bloomberg.com/news/articles/2026-10-06/bessent-axing-20-year-treasury-may-send-yields-higher-bnp-warns",
@@ -12442,6 +12624,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Treasury Secretary Scott Bessent should resist calls to ax the 20-year bond, as doing so could send borrowing costs higher, according to BNP Paribas SA.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "bb240744ae93",
+   "title": "Petróleo fecha em leve alta com tensões no Mar Vermelho e aumento da oferta",
+   "link": "https://www.moneytimes.com.br/petroleo-6-10-26-lils/",
+   "published": "2026-10-06T20:23:32+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/petroleo-6-10-26-lils/",
+     "title": "Petróleo fecha em leve alta com tensões no Mar Vermelho e aumento da oferta"
+    }
+   ],
+   "ids": [
+    "bb240744ae93"
+   ],
+   "snippet": "O petróleo fechou em leve alta nesta terça-feira (6), com as tensões crescentes entre os houthis do Iêmen e a Arábia Saudita sendo balanceadas pelas exportações resilientes de petróleo via Estreito de Ormuz e uma oferta maior da commodity no comércio global. O contrato mais líquido do petróleo Brent, referência para o mercado internacional, para […]",
+   "prescore": 3.8,
+   "headline": "Petróleo fecha em leve alta com tensões no Mar Vermelho e aumento da oferta",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O petróleo fechou em leve alta nesta terça-feira (6), com as tensões crescentes entre os houthis do Iêmen e a Arábia Saudita sendo balanceadas pelas exportações resilientes de petróleo via Estreito de Ormuz e uma oferta maior da commodity no comércio global. O contrato mais líquido do petróleo Brent, referência para o mercado internacional, para […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12652,6 +12867,45 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Aneel adia decisão sobre caducidade da Enel São Paulo por pedido da vista The post Aneel adia decisão sobre caducidade da Enel São Paulo por pedido da vista appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f91379609874",
+   "title": "Votação sobre contrato da Enel em SP tem queixa de pressão política e acaba após pedido de vista",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVjhFQkdvblBSYlI2N2gtUmxVZFBqZEk5bjQ2cFhSTjRGaGVQZWFpeWF2anM3RmhmZ185allJTEVUMUR1VUpITWpXZVNzYXRDY2xqY0diamJITnRvYl9Na2MtTEZMQXBYQXRmdndkTVR3QlpuUk9LLU9lbktnT21EamIta3RhQTlIZHc2Tmp6MFlzeU1laUlj0gGcAUFVX3lxTE9TMzlReVFTRDJ5UG1TR21rUGFlaUhJV1BIbjU2cXgxOXVhOE1xZXFPMW1pVFRHaUNNODh6M3Rjb2ZzeHVpMHhYZzZGcGZtMFg0MXBvV0E5Yk5oa2Y0NmxEZ19teHZFaUtKV01OTWVNUFBCZFQ5MkxlakxoVVZHX0xXWUdyeW12cEFXUWg2RVVhbi14WmJhUW8weGNjYw?oc=5",
+   "published": "2026-10-06T19:35:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVjhFQkdvblBSYlI2N2gtUmxVZFBqZEk5bjQ2cFhSTjRGaGVQZWFpeWF2anM3RmhmZ185allJTEVUMUR1VUpITWpXZVNzYXRDY2xqY0diamJITnRvYl9Na2MtTEZMQXBYQXRmdndkTVR3QlpuUk9LLU9lbktnT21EamIta3RhQTlIZHc2Tmp6MFlzeU1laUlj0gGcAUFVX3lxTE9TMzlReVFTRDJ5UG1TR21rUGFlaUhJV1BIbjU2cXgxOXVhOE1xZXFPMW1pVFRHaUNNODh6M3Rjb2ZzeHVpMHhYZzZGcGZtMFg0MXBvV0E5Yk5oa2Y0NmxEZ19teHZFaUtKV01OTWVNUFBCZFQ5MkxlakxoVVZHX0xXWUdyeW12cEFXUWg2RVVhbi14WmJhUW8weGNjYw?oc=5",
+     "title": "Votação sobre contrato da Enel em SP tem queixa de pressão política e acaba após pedido de vista"
+    },
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/votacao-sobre-contrato-da-enel-de-sp-tem-queixa-de-pressao-politica-e-pedido-de-vista/",
+     "title": "Votação sobre contrato da Enel de SP tem queixa de pressão política e pedido de vista"
+    }
+   ],
+   "ids": [
+    "f91379609874",
+    "e121246bc183"
+   ],
+   "snippet": "O diretor da Agência Nacional de Energia Elétrica (Aneel) Gentil Nogueira de Sá Júnior pediu vistas para examinar melhor o processo que analisa o fim da concessão da Enel na Grande São Paulo e interrompeu a votação nesta terça-feira, 6. Duas diretoras já tinham votado por recomendar o rompimento do contrato: Agnes Costa (relatora do […]",
+   "prescore": 3.7,
+   "headline": "Votação sobre contrato da Enel em SP tem queixa de pressão política e acaba após pedido de vista",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O diretor da Agência Nacional de Energia Elétrica (Aneel) Gentil Nogueira de Sá Júnior pediu vistas para examinar melhor o processo que analisa o fim da concessão da Enel na Grande São Paulo e interrompeu a votação nesta terça-feira, 6. Duas diretoras já tinham votado por recomendar o rompimento do contrato: Agnes Costa (relatora do […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12962,6 +13216,45 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Christa Pike, mulher condenada à morte no estado do Tennessee, nos Estados Unidos , e que sobreviveu a duas injeções letais , está consciente e falando enquanto recebe tratamento médico, afirmaram seus advogados nesta terça-feira (6). Leia mais (10/06/2026 - 18h07)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "25a29288fd7b",
+   "title": "Ex-chefe da inteligência da Alemanha é preso por suspeita de espionagem",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/ex-chefe-da-inteligencia-da-alemanha-e-preso-por-suspeita-de-espionagem.shtml",
+   "published": "2026-10-06T15:20:18+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/ex-chefe-da-inteligencia-da-alemanha-e-preso-por-suspeita-de-espionagem.shtml",
+     "title": "Ex-chefe da inteligência da Alemanha é preso por suspeita de espionagem"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/06/ex-chefe-de-espionagem-da-alemanha-e-preso-sob-suspeita-de-traicao.ghtml",
+     "title": "Ex-chefe de espionagem da Alemanha é preso sob suspeita de traição"
+    }
+   ],
+   "ids": [
+    "25a29288fd7b",
+    "5d7cd422166c"
+   ],
+   "snippet": "Um ex-chefe do serviço de inteligência da Alemanha foi preso nesta terça-feira (6) sob suspeita de espionagem, acusado de tentar repassar informações sigilosas a serviços de inteligência estrangeiros, informou a Procuradoria Federal do país. Leia mais (10/06/2026 - 19h03)",
+   "prescore": 3.3,
+   "headline": "Ex-chefe da inteligência da Alemanha é preso por suspeita de espionagem",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Um ex-chefe do serviço de inteligência da Alemanha foi preso nesta terça-feira (6) sob suspeita de espionagem, acusado de tentar repassar informações sigilosas a serviços de inteligência estrangeiros, informou a Procuradoria Federal do país. Leia mais (10/06/2026 - 19h03)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14470,6 +14763,105 @@
    "ai": false
   },
   {
+   "id": "f77367c001db",
+   "title": "Juros futuros prolonga rali eleitoral nesta terça (6)",
+   "link": "https://www.moneytimes.com.br/juros-futuros-6-10-26-apsa/",
+   "published": "2026-10-06T22:06:56+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/juros-futuros-6-10-26-apsa/",
+     "title": "Juros futuros prolonga rali eleitoral nesta terça (6)"
+    }
+   ],
+   "ids": [
+    "f77367c001db"
+   ],
+   "snippet": "A curva de juros futuros estendeu o rali nesta terça-feira (6), quando derreteram mais de um ponto porcentual na ponta média e longa. A inesperada liderança de Flávio Bolsonaro (PL-RJ) no primeiro turno das eleições sobre o presidente Luiz Inácio Lula da Silva (PT) tem levado mais players a abrirem posições aplicadas, visando uma redução […]",
+   "prescore": 2.8,
+   "headline": "Juros futuros prolonga rali eleitoral nesta terça (6)",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A curva de juros futuros estendeu o rali nesta terça-feira (6), quando derreteram mais de um ponto porcentual na ponta média e longa. A inesperada liderança de Flávio Bolsonaro (PL-RJ) no primeiro turno das eleições sobre o presidente Luiz Inácio Lula da Silva (PT) tem levado mais players a abrirem posições aplicadas, visando uma redução […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d43d3039e7a9",
+   "title": "Vale (VALE3) sob pressão: Citi diz o que está no caminho da mineradora; saiba o que fazer com a ação agora",
+   "link": "https://www.seudinheiro.com/2026/empresas/vale-vale3-sob-pressao-o-que-leva-o-citi-a-projetar-queda-de-23-no-ebitda-do-terceiro-trimestre-e-o-que-fazer-com-a-acao-bdap/",
+   "published": "2026-10-06T22:05:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/empresas/vale-vale3-sob-pressao-o-que-leva-o-citi-a-projetar-queda-de-23-no-ebitda-do-terceiro-trimestre-e-o-que-fazer-com-a-acao-bdap/",
+     "title": "Vale (VALE3) sob pressão: Citi diz o que está no caminho da mineradora; saiba o que fazer com a ação agora"
+    }
+   ],
+   "ids": [
+    "d43d3039e7a9"
+   ],
+   "snippet": "Entenda como os preços do minério de ferro e do níquel devem mexer com o desempenho da companhia no terceiro trimestre — e o papel do cobre nessa equação The post Vale (VALE3) sob pressão: Citi diz o que está no caminho da mineradora; saiba o que fazer com a ação agora appeared first on Seu Dinheiro .",
+   "prescore": 2.8,
+   "headline": "Vale (VALE3) sob pressão: Citi diz o que está no caminho da mineradora; saiba o que fazer com a ação agora",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Entenda como os preços do minério de ferro e do níquel devem mexer com o desempenho da companhia no terceiro trimestre — e o papel do cobre nessa equação The post Vale (VALE3) sob pressão: Citi diz o que está no caminho da mineradora; saiba o que fazer com a ação agora appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8b282f0e58c0",
+   "title": "Trump pierde apoyo entre los votantes latinos en EE.UU.",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-06/trump-pierde-apoyo-entre-los-votantes-latinos-en-ee-uu-video",
+   "published": "2026-10-06T22:02:18+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-10-06/trump-pierde-apoyo-entre-los-votantes-latinos-en-ee-uu-video",
+     "title": "Trump pierde apoyo entre los votantes latinos en EE.UU."
+    }
+   ],
+   "ids": [
+    "8b282f0e58c0"
+   ],
+   "snippet": "Donald Trump logró avances importantes entre los votantes latinos en 2024, pero a pocas semanas de las elecciones de mitad de mandato, una encuesta de NBC News y Telemundo muestra señales de desgaste. El costo de vida, la economía y la política migratoria están detrás del cambio. ¿Qué puede significar para el control del Congreso? (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Trump pierde apoyo entre los votantes latinos en EE.UU.",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Donald Trump logró avances importantes entre los votantes latinos en 2024, pero a pocas semanas de las elecciones de mitad de mandato, una encuesta de NBC News y Telemundo muestra señales de desgaste. El costo de vida, la economía y la política migratoria están detrás del cambio. ¿Qué puede significar para el control del Congreso? (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "79b1e16ece2d",
    "title": "Apollo Weighs Larger Role in Government Lending as Debt Soars",
    "link": "https://www.bloomberg.com/news/articles/2026-10-06/apollo-weighs-larger-role-in-government-lending-as-debt-soars",
@@ -14492,6 +14884,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Apollo Global Management is scoping out a bigger role in financing debt-laden governments and state-backed companies as they increasingly turn to private capital to plug budget gaps.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "78bc0b1b9064",
+   "title": "Boi gordo: arroba bate recorde nominal de R$ 372,95 em SP; o que explica a alta?",
+   "link": "https://www.moneytimes.com.br/boi-gordo-arroba-bate-recorde-nominal-de-r-37295-em-sp-o-que-explica-a-alta-pads/",
+   "published": "2026-10-06T21:22:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/boi-gordo-arroba-bate-recorde-nominal-de-r-37295-em-sp-o-que-explica-a-alta-pads/",
+     "title": "Boi gordo: arroba bate recorde nominal de R$ 372,95 em SP; o que explica a alta?"
+    }
+   ],
+   "ids": [
+    "78bc0b1b9064"
+   ],
+   "snippet": "O preço da arroba do boi gordo no mercado paulista marcou o maior patamar nominal da história na segunda-feira, a R$372,95, com alta de 7,8% em relação ao início do mês anterior, devido a uma baixa oferta de animais para abate e também à firme demanda interna, disse um especialista do Cepea nesta terça-feira. O […]",
+   "prescore": 2.8,
+   "headline": "Boi gordo: arroba bate recorde nominal de R$ 372,95 em SP; o que explica a alta?",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O preço da arroba do boi gordo no mercado paulista marcou o maior patamar nominal da história na segunda-feira, a R$372,95, com alta de 7,8% em relação ao início do mês anterior, devido a uma baixa oferta de animais para abate e também à firme demanda interna, disse um especialista do Cepea nesta terça-feira. O […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14707,6 +15132,39 @@
    "ai": false
   },
   {
+   "id": "90f585bc5d81",
+   "title": "Debate Band/Estadão do 2º turno entre Flávio Bolsonaro e Lula será dia 18 de outubro",
+   "link": "https://www.moneytimes.com.br/debate-band-estadao-do-2o-turno-entre-flavio-bolsonaro-e-lula-sera-dia-18-de-outubro/",
+   "published": "2026-10-06T20:26:12+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/debate-band-estadao-do-2o-turno-entre-flavio-bolsonaro-e-lula-sera-dia-18-de-outubro/",
+     "title": "Debate Band/Estadão do 2º turno entre Flávio Bolsonaro e Lula será dia 18 de outubro"
+    }
+   ],
+   "ids": [
+    "90f585bc5d81"
+   ],
+   "snippet": "A Band e o Estadão marcaram para o dia 18 de outubro a realização do debate presidencial de segundo turno entre o senador Flávio Bolsonaro (PL) e o presidente Luiz Inácio Lula da Silva (PT). O encontro, com início previsto para as 20 horas, acontecerá uma semana antes de os eleitores voltarem às urnas para […]",
+   "prescore": 2.8,
+   "headline": "Debate Band/Estadão do 2º turno entre Flávio Bolsonaro e Lula será dia 18 de outubro",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Band e o Estadão marcaram para o dia 18 de outubro a realização do debate presidencial de segundo turno entre o senador Flávio Bolsonaro (PL) e o presidente Luiz Inácio Lula da Silva (PT). O encontro, com início previsto para as 20 horas, acontecerá uma semana antes de os eleitores voltarem às urnas para […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "968964023bca",
    "title": "Policiais e militares eleitos em 2026: quem são e que cargos ocuparão",
    "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/06/policiais-e-militares-eleitos-em-2026-quem-sao-e-que-cargos-ocuparao.ghtml",
@@ -14795,6 +15253,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A federação formada por União Brasil e Progressistas (União Progressista) anunciou nesta terça-feira (6) apoio ao senador Flávio Bolsonaro (PL) no segundo turno da disputa à Presidência da República. Segundo a senadora Tereza Cristina (PP-MS), a decisão foi tomada por unanimidade da federação e das executivas dos partidos, que se reuniram nesta terça. Os presidentes do PP, Ciro Nogueira, e do Uniã",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "30ef89f5c58a",
+   "title": "Grupo Mateus (GMAT3), Vulcabras (VULC3) e outras: por que a economia nem precisa melhorar tanto para estas ações decolarem logo",
+   "link": "https://www.seudinheiro.com/2026/empresas/grupo-mateus-gmat3-vulcabras-vulc3-e-outras-por-que-a-economia-nem-precisa-melhorar-tanto-para-estas-acoes-decolarem-logo-bdap/",
+   "published": "2026-10-06T19:20:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/empresas/grupo-mateus-gmat3-vulcabras-vulc3-e-outras-por-que-a-economia-nem-precisa-melhorar-tanto-para-estas-acoes-decolarem-logo-bdap/",
+     "title": "Grupo Mateus (GMAT3), Vulcabras (VULC3) e outras: por que a economia nem precisa melhorar tanto para estas ações decolarem logo"
+    }
+   ],
+   "ids": [
+    "30ef89f5c58a"
+   ],
+   "snippet": "BTG destaca papéis com posições vendidas elevadas que podem ter a alta reforçada por recompras; resultado eleitoral abre espaço para reavaliação do varejo The post Grupo Mateus (GMAT3), Vulcabras (VULC3) e outras: por que a economia nem precisa melhorar tanto para estas ações decolarem logo appeared first on Seu Dinheiro .",
+   "prescore": 2.8,
+   "headline": "Grupo Mateus (GMAT3), Vulcabras (VULC3) e outras: por que a economia nem precisa melhorar tanto para estas ações decolarem logo",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "BTG destaca papéis com posições vendidas elevadas que podem ter a alta reforçada por recompras; resultado eleitoral abre espaço para reavaliação do varejo The post Grupo Mateus (GMAT3), Vulcabras (VULC3) e outras: por que a economia nem precisa melhorar tanto para estas ações decolarem logo appeared first on Seu Dinheiro .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14905,28 +15396,28 @@
    "ai": false
   },
   {
-   "id": "30311c1ef6db",
-   "title": "Walter’s Insurance CEO Told DOJ He Was Unaware of Boss’s Loans",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-06/walter-s-insurance-ceo-told-doj-he-was-unaware-of-boss-s-loans",
-   "published": "2026-10-06T18:34:41+00:00",
-   "region": "INTL",
+   "id": "d0f42a127e86",
+   "title": "Comeram poeira! Rali dos bancos na B3 deixa estas duas ações para trás — mas JP Morgan vê espaço para uma nova arrancada",
+   "link": "https://www.seudinheiro.com/2026/empresas/comeram-poeira-rali-dos-bancos-na-b3-deixa-estas-duas-acoes-para-tras-mas-jp-morgan-ve-espaco-para-uma-nova-arrancada-miql/",
+   "published": "2026-10-06T18:32:50+00:00",
+   "region": "BR",
    "outlets": [
     {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-06/walter-s-insurance-ceo-told-doj-he-was-unaware-of-boss-s-loans",
-     "title": "Walter’s Insurance CEO Told DOJ He Was Unaware of Boss’s Loans"
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/empresas/comeram-poeira-rali-dos-bancos-na-b3-deixa-estas-duas-acoes-para-tras-mas-jp-morgan-ve-espaco-para-uma-nova-arrancada-miql/",
+     "title": "Comeram poeira! Rali dos bancos na B3 deixa estas duas ações para trás — mas JP Morgan vê espaço para uma nova arrancada"
     }
    ],
    "ids": [
-    "30311c1ef6db"
+    "d0f42a127e86"
    ],
-   "snippet": "The head of Mark Walter’s insurance companies told authorities he was unaware that the firms had loaned more than $20 billion to the sports mogul’s other businesses, according to people with knowledge of the matter.",
+   "snippet": "Banco mantém recomendação de compra para as duas ações e aponta os principais gatilhos para uma reprecificação The post Comeram poeira! Rali dos bancos na B3 deixa estas duas ações para trás — mas JP Morgan vê espaço para uma nova arrancada appeared first on Seu Dinheiro .",
    "prescore": 2.8,
-   "headline": "Walter’s Insurance CEO Told DOJ He Was Unaware of Boss’s Loans",
-   "category": "internacional",
+   "headline": "Comeram poeira! Rali dos bancos na B3 deixa estas duas ações para trás — mas JP Morgan vê espaço para uma nova arrancada",
+   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The head of Mark Walter’s insurance companies told authorities he was unaware that the firms had loaned more than $20 billion to the sports mogul’s other businesses, according to people with knowledge of the matter.",
+   "summary": "Banco mantém recomendação de compra para as duas ações e aponta os principais gatilhos para uma reprecificação The post Comeram poeira! Rali dos bancos na B3 deixa estas duas ações para trás — mas JP Morgan vê espaço para uma nova arrancada appeared first on Seu Dinheiro .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15026,39 +15517,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "47f84c42e0d1",
-   "title": "NYC Can Proceed With Pied-a-Terre Tax as Court Weighs Appeal",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-06/nyc-can-proceed-with-pied-a-terre-tax-as-court-weighs-appeal",
-   "published": "2026-10-06T16:30:51+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-06/nyc-can-proceed-with-pied-a-terre-tax-as-court-weighs-appeal",
-     "title": "NYC Can Proceed With Pied-a-Terre Tax as Court Weighs Appeal"
-    }
-   ],
-   "ids": [
-    "47f84c42e0d1"
-   ],
-   "snippet": "New York City can proceed with the rollout of its pied-à-terre tax while an appeals court considers a legal challenge.",
-   "prescore": 2.8,
-   "headline": "NYC Can Proceed With Pied-a-Terre Tax as Court Weighs Appeal",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "New York City can proceed with the rollout of its pied-à-terre tax while an appeals court considers a legal challenge.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15398,369 +15856,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "e0caf28c6eea",
-   "title": "Google e Constellation fecham parceria para adicionar 890 MW de energia nuclear à rede nos EUA",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVG5VbkZCWHZpaVFBMHFON3hUYmFoWm9wZVFkdWQ3bjMxbVh1ckdxbzF1RlpWSENzeHc5aHpwaHpJbENqYm8ycVJyMVNSMFhTSG5PbUJ0dDF3YlBUUHJhRGttXzhCOWtQYXlSem9JLUlzT2tidlZnTW1waTFOUjk5aHhQZHZQUHNEbGVPTlFSTXN2UHc5dW43U2lwaEZEc0ZPaHJpUWIxcjBiMjlFeFVUWEEyVXgzS1pqUTJRaENCUEpqQWxfWUl4aFRaNWZSdjVNS21CakliS21lSThoZzAwWDYtbkPSAfMBQVVfeXFMTThJTUVQYUI5MmtWLTYwTUVUQjJzdUhsLUxoam0ybndfR2VhaGgzc2lubmltTFBqN2RxZnRiYkE1YW16RTUwUFdsZWJtdmwxcmFPbGdUM2l4a3VFZEl1Q0M2eVZwYUtIZmVIQWNUbFhydjhBSmJzME5wYnFUcmZYOVNmbFVPMFBBdE52SnNFTEtmUkhKb0dfaDZReGlFR0wtQnBaSlhjaEFwa3B1Ym9uNHJkWmhyeHNnT19kSkRCOTRfYU0wbGtnYVNHQUIwaXBnWkN6MlhuRU85Slgwb3RkSEtxUE5udTdMeDA0RUdfZm1aclNj?oc=5",
-   "published": "2026-10-06T11:57:12+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVG5VbkZCWHZpaVFBMHFON3hUYmFoWm9wZVFkdWQ3bjMxbVh1ckdxbzF1RlpWSENzeHc5aHpwaHpJbENqYm8ycVJyMVNSMFhTSG5PbUJ0dDF3YlBUUHJhRGttXzhCOWtQYXlSem9JLUlzT2tidlZnTW1waTFOUjk5aHhQZHZQUHNEbGVPTlFSTXN2UHc5dW43U2lwaEZEc0ZPaHJpUWIxcjBiMjlFeFVUWEEyVXgzS1pqUTJRaENCUEpqQWxfWUl4aFRaNWZSdjVNS21CakliS21lSThoZzAwWDYtbkPSAfMBQVVfeXFMTThJTUVQYUI5MmtWLTYwTUVUQjJzdUhsLUxoam0ybndfR2VhaGgzc2lubmltTFBqN2RxZnRiYkE1YW16RTUwUFdsZWJtdmwxcmFPbGdUM2l4a3VFZEl1Q0M2eVZwYUtIZmVIQWNUbFhydjhBSmJzME5wYnFUcmZYOVNmbFVPMFBBdE52SnNFTEtmUkhKb0dfaDZReGlFR0wtQnBaSlhjaEFwa3B1Ym9uNHJkWmhyeHNnT19kSkRCOTRfYU0wbGtnYVNHQUIwaXBnWkN6MlhuRU85Slgwb3RkSEtxUE5udTdMeDA0RUdfZm1aclNj?oc=5",
-     "title": "Google e Constellation fecham parceria para adicionar 890 MW de energia nuclear à rede nos EUA"
-    }
-   ],
-   "ids": [
-    "e0caf28c6eea"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Google e Constellation fecham parceria para adicionar 890 MW de energia nuclear à rede nos EUA",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "80b695fdd44e",
-   "title": "Estudantes bloqueiam centenas de escolas em maior dia de protestos na França",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeUtNVU9rNkI5U3ZCWkEtWmJvSU5KaGNLTndKM3NrT2VtYTM4RkF5YmJPYThLTzBCZTF2dnpNSk80WXAydWFyYXlJS1MxLWxvc05JS3p5eGFPb1hMaEI2MXBGbE9VUllmd3VIblRzT1RJVkQtc3ZVamU0T0NoU1ozYWUxYXlzbnJzRGxtbzdzVmhCUF9PZzF3Wk9mM0RhY3hnMXA1STgxTkN3ck9fNDVUTXlfekZPRlAwZHQ0b1Q2d3NNMlgwVjNEZWJ30gHYAUFVX3lxTE5jMlRTWmNNdTdPeFRnUjRBUHpYN3RyamlLVUNkSTdldGRDRVlySFZMYmVtU1ktVDBOTVVyM1NRWVM5NDY3V2xZY1lLaEpwcWtMR2hXVHlob0piVE5jdXd5R00tR0ZlSGZFVW1xcUp2aHAtLTNLOHV0UDZwWjBIWFlOdmdyRkR2SXlWRU5wMVh2WFhKMkNjNHlKc1VzRkZYVU1ZRFVFVkl4SWF3dU1WY3R3SkdGc0pJZWdlMGZnOHhHZ3h6Mmc4Q09oMFRLZHBaanphWjFObHQydQ?oc=5",
-   "published": "2026-10-06T11:51:10+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeUtNVU9rNkI5U3ZCWkEtWmJvSU5KaGNLTndKM3NrT2VtYTM4RkF5YmJPYThLTzBCZTF2dnpNSk80WXAydWFyYXlJS1MxLWxvc05JS3p5eGFPb1hMaEI2MXBGbE9VUllmd3VIblRzT1RJVkQtc3ZVamU0T0NoU1ozYWUxYXlzbnJzRGxtbzdzVmhCUF9PZzF3Wk9mM0RhY3hnMXA1STgxTkN3ck9fNDVUTXlfekZPRlAwZHQ0b1Q2d3NNMlgwVjNEZWJ30gHYAUFVX3lxTE5jMlRTWmNNdTdPeFRnUjRBUHpYN3RyamlLVUNkSTdldGRDRVlySFZMYmVtU1ktVDBOTVVyM1NRWVM5NDY3V2xZY1lLaEpwcWtMR2hXVHlob0piVE5jdXd5R00tR0ZlSGZFVW1xcUp2aHAtLTNLOHV0UDZwWjBIWFlOdmdyRkR2SXlWRU5wMVh2WFhKMkNjNHlKc1VzRkZYVU1ZRFVFVkl4SWF3dU1WY3R3SkdGc0pJZWdlMGZnOHhHZ3h6Mmc4Q09oMFRLZHBaanphWjFObHQydQ?oc=5",
-     "title": "Estudantes bloqueiam centenas de escolas em maior dia de protestos na França"
-    }
-   ],
-   "ids": [
-    "80b695fdd44e"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Estudantes bloqueiam centenas de escolas em maior dia de protestos na França",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "4536f3bd1664",
-   "title": "Agentes descontrolados da OpenAI podem estar ligados à interrupção de serviços da Wikipedia em maio",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNWVpVLTAzemJXRk0taWNKTVUydGNpSTFxOGJVS0J1dm54TjIzMUhFMWZFRFplYk1Vb250dUdFc016TGg2akc2cFR3VEQ3c0pubnp4ck56MUVEQ184cFBzb2E1X1ZMT2hNeVBVWU1zVEdXV1A3eDluNGxqWC1zQ0VnelZuMFl0Y0ZhaUNEelJRbVRiTlo1YVJSRnZsRV91QzBXcUlQZHU5VzBXMk9EcTdiMWlJQ3BhSXh6S0ZYSG9MWFZVUldwRHdDMkJqNV9CS2FNajNjX0Fpd19UNGN5OEQtWlRmTXZ0Rnh3Znd0UTZB0gH8AUFVX3lxTE1ldjBwVndDZFlBVWhqN1F4a2QxbGdCTVp2TDJlaDFhbjNSUHpqTHJoUkNQZFI2MHBOOC1kamJoTEVfWXdaWTVxdWtDY0ZoMTRLZGZZaHFhYktSdEZmZWR2YkQtVWRaQlFpQnVTT2lvM2hSanc1c0Q1N1dMdV9Ycl90dm1rNWEwU2Z0QmtJekpYWkpXel8zYUlpNEFsYUFjLTlhTlRlSW1aWm5qNzBEWEdpb3pxRkxESXROeWVPX0tqdFFycjVJdjNocmVzc3g4N1BuQ0JZR0hOdEVaSTg1Y0dhcWZqcE9kdkZWQ0ZHUlVCY2ZvZGl4c1Iwb2pKeA?oc=5",
-   "published": "2026-10-06T11:46:37+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNWVpVLTAzemJXRk0taWNKTVUydGNpSTFxOGJVS0J1dm54TjIzMUhFMWZFRFplYk1Vb250dUdFc016TGg2akc2cFR3VEQ3c0pubnp4ck56MUVEQ184cFBzb2E1X1ZMT2hNeVBVWU1zVEdXV1A3eDluNGxqWC1zQ0VnelZuMFl0Y0ZhaUNEelJRbVRiTlo1YVJSRnZsRV91QzBXcUlQZHU5VzBXMk9EcTdiMWlJQ3BhSXh6S0ZYSG9MWFZVUldwRHdDMkJqNV9CS2FNajNjX0Fpd19UNGN5OEQtWlRmTXZ0Rnh3Znd0UTZB0gH8AUFVX3lxTE1ldjBwVndDZFlBVWhqN1F4a2QxbGdCTVp2TDJlaDFhbjNSUHpqTHJoUkNQZFI2MHBOOC1kamJoTEVfWXdaWTVxdWtDY0ZoMTRLZGZZaHFhYktSdEZmZWR2YkQtVWRaQlFpQnVTT2lvM2hSanc1c0Q1N1dMdV9Ycl90dm1rNWEwU2Z0QmtJekpYWkpXel8zYUlpNEFsYUFjLTlhTlRlSW1aWm5qNzBEWEdpb3pxRkxESXROeWVPX0tqdFFycjVJdjNocmVzc3g4N1BuQ0JZR0hOdEVaSTg1Y0dhcWZqcE9kdkZWQ0ZHUlVCY2ZvZGl4c1Iwb2pKeA?oc=5",
-     "title": "Agentes descontrolados da OpenAI podem estar ligados à interrupção de serviços da Wikipedia em maio"
-    }
-   ],
-   "ids": [
-    "4536f3bd1664"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Agentes descontrolados da OpenAI podem estar ligados à interrupção de serviços da Wikipedia em maio",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "31355668655f",
-   "title": "Prestador de serviços da Accenture é afastado do FBI após vazamento de dados, dizem fontes",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQS0lhb28tanVUSTR6dkJ2RzFIY2dUUVRvdi1RNHYwNVFIM0pXNEVETC1UMzAyVDQ0VEtUZ2VMS1J6OUg4c1F4SGZGSS1paXBXZl9qUUF5S2ZuUlk5bmZsblVrY3FkYXM1UEIzeVZabng1TFRQOTRKYTQwMjFQT1prRjdzdmJ6NmxUenRIb0FBR3V5c2F3M2lVT1EwUDZJRk8xNENBX3hwSW4zcncwR0h6U2doLVJwWElXT2pfTVdBR0NCeW1zcGVxX2YwcG9YVmdMMkN0d3VaaEh1U3p0SHhPetIB7wFBVV95cUxQRjBFUmctV2tKWWE3YmlEVnhob3ZoSEFUZWp2UHJHVnJWWkJoQkFrLUlBUVYwYUF4RFJ0c3RGMmVJQVVaVWcxVU5kM19nLW9tQWlzc01Ga2NkUHZyeHlGd2NETDdMX092V2Qya2tsc0d5aUdRNTV2dnQ1VVgwdTN1SDcwaVRmdm1PWDZweDNlSmlJT2xNZGRjd3dpODRuOWxoTU1fZ3VfZlY2bExZTElfdklpZHFVLU1mSklLWHRyanlQd3c1ZXpEX2tkZFh5eUJ5Tm5ITzhseGE0TE5YeGJ2cHJkelFPVUZnRGdrYzJfTQ?oc=5",
-   "published": "2026-10-06T11:41:22+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQS0lhb28tanVUSTR6dkJ2RzFIY2dUUVRvdi1RNHYwNVFIM0pXNEVETC1UMzAyVDQ0VEtUZ2VMS1J6OUg4c1F4SGZGSS1paXBXZl9qUUF5S2ZuUlk5bmZsblVrY3FkYXM1UEIzeVZabng1TFRQOTRKYTQwMjFQT1prRjdzdmJ6NmxUenRIb0FBR3V5c2F3M2lVT1EwUDZJRk8xNENBX3hwSW4zcncwR0h6U2doLVJwWElXT2pfTVdBR0NCeW1zcGVxX2YwcG9YVmdMMkN0d3VaaEh1U3p0SHhPetIB7wFBVV95cUxQRjBFUmctV2tKWWE3YmlEVnhob3ZoSEFUZWp2UHJHVnJWWkJoQkFrLUlBUVYwYUF4RFJ0c3RGMmVJQVVaVWcxVU5kM19nLW9tQWlzc01Ga2NkUHZyeHlGd2NETDdMX092V2Qya2tsc0d5aUdRNTV2dnQ1VVgwdTN1SDcwaVRmdm1PWDZweDNlSmlJT2xNZGRjd3dpODRuOWxoTU1fZ3VfZlY2bExZTElfdklpZHFVLU1mSklLWHRyanlQd3c1ZXpEX2tkZFh5eUJ5Tm5ITzhseGE0TE5YeGJ2cHJkelFPVUZnRGdrYzJfTQ?oc=5",
-     "title": "Prestador de serviços da Accenture é afastado do FBI após vazamento de dados, dizem fontes"
-    }
-   ],
-   "ids": [
-    "31355668655f"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Prestador de serviços da Accenture é afastado do FBI após vazamento de dados, dizem fontes",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "8b0c7062abd4",
-   "title": "Após convocação de eleições antecipadas, Espanha deve aprovar decretos de habitação",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNODAwU0N1X2VUVnhwQVh3ZndLYTNpT0VTcEx3VHNma1B2SmhxVFNuUFcwWGs3S0xsR1R4cWQ4YmwyeGk4N0tqSENVc2llRHY3aFdFYUhRUUREQjBwUklyQ3hkUk0zd3hNOWZ5UXVZdjhRcG9vd3Q2MFc4NGNsaG5mdGx6OFgxZ1pQZHpoTFdxTjYwT0MyVGdxSkFodENuM2FhS1U2NVVVbDJER2k3Ujk5QnItV3N6MlNSbXJMVjIxQ1huUXA0NFBOWUVsVXhLV2NwemVV0gHiAUFVX3lxTE1vSS1PTlVPcEhHX2RnS0pTbWxualpWWmxoT1pwd1Zwc3Qwd1pCeDBWMlZRSGFCVVhwTksyNnhKSTFZZm0yeExiRkZZbU1adHdwN0txeW1VZ0xVMGFYaHVVaXR0ZVE1SUlsTVo2U05ZSFlEaGtId1lWQ1hHQmp5X1FLWTVqTWlpb1poV213Ulp2UVR4R19rX3NlSG0yaDV4Y1BJanEyWGFIdWpteHpRX2lsLVFBUjh3dWw5Y05Ndm5rT0Y1eUM1YU52MWZuSmFRYm03WG8zZV9Bc1hpMC1odHdzLVE?oc=5",
-   "published": "2026-10-06T11:12:31+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNODAwU0N1X2VUVnhwQVh3ZndLYTNpT0VTcEx3VHNma1B2SmhxVFNuUFcwWGs3S0xsR1R4cWQ4YmwyeGk4N0tqSENVc2llRHY3aFdFYUhRUUREQjBwUklyQ3hkUk0zd3hNOWZ5UXVZdjhRcG9vd3Q2MFc4NGNsaG5mdGx6OFgxZ1pQZHpoTFdxTjYwT0MyVGdxSkFodENuM2FhS1U2NVVVbDJER2k3Ujk5QnItV3N6MlNSbXJMVjIxQ1huUXA0NFBOWUVsVXhLV2NwemVV0gHiAUFVX3lxTE1vSS1PTlVPcEhHX2RnS0pTbWxualpWWmxoT1pwd1Zwc3Qwd1pCeDBWMlZRSGFCVVhwTksyNnhKSTFZZm0yeExiRkZZbU1adHdwN0txeW1VZ0xVMGFYaHVVaXR0ZVE1SUlsTVo2U05ZSFlEaGtId1lWQ1hHQmp5X1FLWTVqTWlpb1poV213Ulp2UVR4R19rX3NlSG0yaDV4Y1BJanEyWGFIdWpteHpRX2lsLVFBUjh3dWw5Y05Ndm5rT0Y1eUM1YU52MWZuSmFRYm03WG8zZV9Bc1hpMC1odHdzLVE?oc=5",
-     "title": "Após convocação de eleições antecipadas, Espanha deve aprovar decretos de habitação"
-    }
-   ],
-   "ids": [
-    "8b0c7062abd4"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Após convocação de eleições antecipadas, Espanha deve aprovar decretos de habitação",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1d15edbc4914",
-   "title": "Mendonça manda redes excluírem posts falsos afirmando que Lula jogou bandeira do Brasil no chão",
-   "link": "https://g1.globo.com/politica/noticia/2026/10/06/mendonca-determina-exclusao-de-posts-falsos-dizendo-que-lula-jogou-bandeira-do-brasil-no-chao-apos-voto.ghtml",
-   "published": "2026-10-06T11:09:08+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/10/06/mendonca-determina-exclusao-de-posts-falsos-dizendo-que-lula-jogou-bandeira-do-brasil-no-chao-apos-voto.ghtml",
-     "title": "Mendonça manda redes excluírem posts falsos afirmando que Lula jogou bandeira do Brasil no chão"
-    }
-   ],
-   "ids": [
-    "1d15edbc4914"
-   ],
-   "snippet": "Mendonça manda excluir posts falsos afirmando que Lula jogou bandeira do Brasil no chão O ministro André Mendonça, do Supremo Tribunal Federal (STF), determinou a exclusão de posts com a informação falsa de que o presidente Luiz Inácio Lula da Silva (PT) teria jogado a bandeira do Brasil no chão após tirar uma foto com ela durante a votação no primeiro turno. Na decisão publicada por volta das 17h dessa segunda-feira (5), o ministro deu até 24 horas para que 16 publicações citadas sejam retiradas do ar. O g1 verificou que até a manhã desta terça-feira (6), ao menos 10 posts da lista ainda esta",
-   "prescore": 2.8,
-   "headline": "Mendonça manda redes excluírem posts falsos afirmando que Lula jogou bandeira do Brasil no chão",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Mendonça manda excluir posts falsos afirmando que Lula jogou bandeira do Brasil no chão O ministro André Mendonça, do Supremo Tribunal Federal (STF), determinou a exclusão de posts com a informação falsa de que o presidente Luiz Inácio Lula da Silva (PT) teria jogado a bandeira do Brasil no chão após tirar uma foto com ela durante a votação no primeiro turno. Na decisão publicada por volta das 17h",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "904f79d1fdab",
-   "title": "Transição energética: Evento do Valor e O Globo debate o uso da energia nas cidades",
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPajJRZHB5NVI4VGJxNUhoc1cwT0RESmt2ZzNLTjUzMG1xOXAwRURfN0RrbUVqeF94WEdvTzdmcWtINHRfQ2ZiT2FrTXVTWVQ0VXIyZlYzMXVzSG4ycElSRFJCOWw0V3ZrZnV4OHl1MjdpTDhsWWJJWHIzMWN6SnV3c3BrbzdpM29tS2J1cjlWeHVtOTgxVFFnM3NoOURMSHNnZHdmWmJySDVYZGNYYWJSQlg4SllHdU1KN1ZUUE1hQlhmZmhGbkw0RVBkNFhaRW1jbU9nVkg0SWwwUEtBQ2g2dUVQMUZBUXdheXJfeEd5ZkPSAf8BQVVfeXFMUG50QV9ZX3V2OHZ4c3RnQ2FmNm1RaWNPVklORHJWaVZVamdhNl9lSGh1VGlIdVZpb21LSTV4OFJHYzBYdG1fdkdrTFhSajNoZzFrMkJpZDhkU1UxWnBVbFlxM1VwZXJnTGlQXzN1dE5idmUwN05HbzFvRVQ2UDBpLTdHaC1lTnl6LVhmVDJDUkFxQllNNTkyS1lQNkVsN2RDNmpNQnVKMUV5NGpNY2trSUxxQ19PaTJVWjRoLVh6T09CRm80VHJJQWh4RkJ5UVR3NTB5ekNhN1FWaFZyZzJaUVRMTnM1Uzl4SnRCdzNOTkwwdi1qTHhkRzBhdlBCaTBR?oc=5",
-   "published": "2026-10-06T11:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPajJRZHB5NVI4VGJxNUhoc1cwT0RESmt2ZzNLTjUzMG1xOXAwRURfN0RrbUVqeF94WEdvTzdmcWtINHRfQ2ZiT2FrTXVTWVQ0VXIyZlYzMXVzSG4ycElSRFJCOWw0V3ZrZnV4OHl1MjdpTDhsWWJJWHIzMWN6SnV3c3BrbzdpM29tS2J1cjlWeHVtOTgxVFFnM3NoOURMSHNnZHdmWmJySDVYZGNYYWJSQlg4SllHdU1KN1ZUUE1hQlhmZmhGbkw0RVBkNFhaRW1jbU9nVkg0SWwwUEtBQ2g2dUVQMUZBUXdheXJfeEd5ZkPSAf8BQVVfeXFMUG50QV9ZX3V2OHZ4c3RnQ2FmNm1RaWNPVklORHJWaVZVamdhNl9lSGh1VGlIdVZpb21LSTV4OFJHYzBYdG1fdkdrTFhSajNoZzFrMkJpZDhkU1UxWnBVbFlxM1VwZXJnTGlQXzN1dE5idmUwN05HbzFvRVQ2UDBpLTdHaC1lTnl6LVhmVDJDUkFxQllNNTkyS1lQNkVsN2RDNmpNQnVKMUV5NGpNY2trSUxxQ19PaTJVWjRoLVh6T09CRm80VHJJQWh4RkJ5UVR3NTB5ekNhN1FWaFZyZzJaUVRMTnM1Uzl4SnRCdzNOTkwwdi1qTHhkRzBhdlBCaTBR?oc=5",
-     "title": "Transição energética: Evento do Valor e O Globo debate o uso da energia nas cidades"
-    }
-   ],
-   "ids": [
-    "904f79d1fdab"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Transição energética: Evento do Valor e O Globo debate o uso da energia nas cidades",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "2ea895699827",
-   "title": "Constellation Brands Profit Rises on Higher Beer, Spirits Sales",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOU3Z6NS12M0lEMnFWN2pNcnJnX3dFZ3lRTDF3U3FMeWdURjVkc0F6VGcyXzdmdjFleml2ckZYY1ZYTG1hMlNmT2EyZkk1b1RMcWhaVDdyX1dIT3BCaUlQN0dmYi1xWEVyX1FONzI0ZGJzM2o3NlJ1NVN6VlpXdm5HUUNFcXpBY09EaEFHTnhXR2RLcmJfT3UydThoemtaU1NTdG9kbGR4WGlCdUk?oc=5",
-   "published": "2026-10-06T21:39:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOU3Z6NS12M0lEMnFWN2pNcnJnX3dFZ3lRTDF3U3FMeWdURjVkc0F6VGcyXzdmdjFleml2ckZYY1ZYTG1hMlNmT2EyZkk1b1RMcWhaVDdyX1dIT3BCaUlQN0dmYi1xWEVyX1FONzI0ZGJzM2o3NlJ1NVN6VlpXdm5HUUNFcXpBY09EaEFHTnhXR2RLcmJfT3UydThoemtaU1NTdG9kbGR4WGlCdUk?oc=5",
-     "title": "Constellation Brands Profit Rises on Higher Beer, Spirits Sales"
-    }
-   ],
-   "ids": [
-    "2ea895699827"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Constellation Brands Profit Rises on Higher Beer, Spirits Sales",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "9499d90d914f",
-   "title": "Jim Clyburn urges Black voters not to be ‘fooled’ by Trump",
-   "link": "https://www.ft.com/content/793d9121-1dae-498b-bae1-db8c69e67e2d?syn-25a6b1a6=1",
-   "published": "2026-10-06T21:29:02+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/793d9121-1dae-498b-bae1-db8c69e67e2d?syn-25a6b1a6=1",
-     "title": "Jim Clyburn urges Black voters not to be ‘fooled’ by Trump"
-    }
-   ],
-   "ids": [
-    "9499d90d914f"
-   ],
-   "snippet": "Civil rights veteran says Republicans will ‘reap the reaction’ for redistricting moves ahead of midterm elections",
-   "prescore": 2.6,
-   "headline": "Jim Clyburn urges Black voters not to be ‘fooled’ by Trump",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Civil rights veteran says Republicans will ‘reap the reaction’ for redistricting moves ahead of midterm elections",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "aca17b51a86f",
-   "title": "Venezuela's Cardon refinery halted after fire, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUzg2YXJYRzVZM2tjYUx4U2ozUHo4cy1jZnFlYkRLOWlITnBFRjJES2ZtMGVLMVdnUDluVDl2b0pFWURvOWNYOFNQbm1WdnNpeHd5Q05FUlVnQVhNZkkwWFpLUkdLVlR5RHFuSjBGazhKcE1FQU90OERlLWoxWVJnTlkxQnplTVdITkhvVHE0TzFTUmtJSHlQX0E3VVZaaGsxNy1HVUVwX3g0aHc?oc=5",
-   "published": "2026-10-06T21:09:35+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUzg2YXJYRzVZM2tjYUx4U2ozUHo4cy1jZnFlYkRLOWlITnBFRjJES2ZtMGVLMVdnUDluVDl2b0pFWURvOWNYOFNQbm1WdnNpeHd5Q05FUlVnQVhNZkkwWFpLUkdLVlR5RHFuSjBGazhKcE1FQU90OERlLWoxWVJnTlkxQnplTVdITkhvVHE0TzFTUmtJSHlQX0E3VVZaaGsxNy1HVUVwX3g0aHc?oc=5",
-     "title": "Venezuela's Cardon refinery halted after fire, sources say"
-    }
-   ],
-   "ids": [
-    "aca17b51a86f"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Venezuela's Cardon refinery halted after fire, sources say",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1271c99cc4e8",
-   "title": "Trump says he is considering suspending federal petrol tax",
-   "link": "https://www.ft.com/content/3fd43fc5-4973-4a26-9d9c-47b6361e6217?syn-25a6b1a6=1",
-   "published": "2026-10-06T21:09:16+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/3fd43fc5-4973-4a26-9d9c-47b6361e6217?syn-25a6b1a6=1",
-     "title": "Trump says he is considering suspending federal petrol tax"
-    }
-   ],
-   "ids": [
-    "1271c99cc4e8"
-   ],
-   "snippet": "Surging fuel prices are heaping pressure on the president and his Republican Party four weeks ahead of midterm elections",
-   "prescore": 2.6,
-   "headline": "Trump says he is considering suspending federal petrol tax",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Surging fuel prices are heaping pressure on the president and his Republican Party four weeks ahead of midterm elections",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -15807,10 +15902,17 @@
    "error": null
   },
   {
-   "id": "thenews",
-   "name": "The News",
+   "id": "moneytimes",
+   "name": "Money Times",
    "ok": true,
-   "count": 0,
+   "count": 10,
+   "error": null
+  },
+  {
+   "id": "seudinheiro",
+   "name": "Seu Dinheiro",
+   "ok": true,
+   "count": 10,
    "error": null
   },
   {
@@ -15838,7 +15940,7 @@
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 37,
+   "count": 38,
    "error": null
   },
   {
@@ -15943,39 +16045,52 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 52,
+   "count": 53,
    "error": null
   },
   {
    "id": "cvm-ipe",
    "name": "CVM (fatos relevantes)",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "nenhum documento de 2026-10-05; última entrega no arquivo: 2026-10-03; colunas: CNPJ_Companhia,Nome_Companhia,Codigo_CVM,Data_Referencia,Categoria,Tipo,Especie,Assunto,Data_Entrega,Tipo_Apresentacao,Protocolo_Entrega,Versao,Link_Download"
   },
   {
    "id": "dou-cade",
    "name": "Diário Oficial (Cade)",
-   "ok": false,
-   "count": 0,
-   "error": "do1: HTTPError: HTTP Error 403: Forbidden; do3: HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "id": "bcb",
    "name": "Banco Central (Selic, IPCA, Focus)",
-   "ok": true,
-   "count": 3,
-   "error": null
+   "ok": false,
+   "count": 2,
+   "error": "SGS 432: HTTPError"
   }
  ],
  "official": {
   "filings": [],
-  "cade": [],
-  "macro": {
-   "selic_meta": {
-    "value": 13.75,
-    "date": "04/11/2026"
+  "cade": [
+   {
+    "kind": "Ato de concentração",
+    "title": "DESPACHOS SG de 5 de outubro de 2026",
+    "summary": "DESPACHOS SG de 5 de outubro de 2026 Nº 1.292 - Ato de Concentração nº 08700.009091/2026-19. Requerentes: Itaú Unibanco S.A, Investvivix S.A., Companhia Brasileira de Vidros Planos - CBVP e Ical Vidros S.A. Advogados: Ana Paula Paschoalinim, Izabella Passos, Beatriz Kenchian, Gabriela Alegret, Daniel Costa Rebello, Gabriela Leão Ferreira Alves de Oliveira e Luiz Eduardo Barbosa Soyer Queiroz. Deci...",
+    "date": "2026-10-06",
+    "section": "DO1",
+    "link": "https://www.in.gov.br/web/dou/-/despachos-sg-de-5-de-outubro-de-2026-736576146"
    },
+   {
+    "kind": "Ato de concentração",
+    "title": "EDITAIS DA SUPERINTENDÊNCIA, DE 5 DE OUTUBRO DE 2026",
+    "summary": "EDITAIS DA SUPERINTENDÊNCIA, DE 5 DE OUTUBRO DE 2026 Edital nº 751, de 05 de outubro de 2026. Nos termos do art. 53, § 2º, da Lei nº 12.529/2011, dá-se publicidade ao Ato de Concentração nº 08700.009519/2026-15. Partes: Pactual Comércio de Descartáveis e Limpeza Ltda., Pulire Indústria e Comércio de Materiais de Limpeza Ltda. e Pulire Caxias Comércio de Produtos Descartáveis Ltda. Advogados: Paula...",
+    "date": "2026-10-06",
+    "section": "DO3",
+    "link": "https://www.in.gov.br/web/dou/-/editais-da-superintendencia-de-5-de-outubro-de-2026-736618307"
+   }
+  ],
+  "macro": {
    "ipca_12m": {
     "value": 4.22,
     "date": "01/08/2026"
@@ -16007,38 +16122,38 @@
     }
    }
   },
-  "fetched_at": "2026-10-06T22:04",
+  "fetched_at": "2026-10-06T22:07",
   "complete": false
  },
  "official_status": [
   {
    "id": "cvm-ipe",
    "name": "CVM (fatos relevantes)",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "nenhum documento de 2026-10-05; última entrega no arquivo: 2026-10-03; colunas: CNPJ_Companhia,Nome_Companhia,Codigo_CVM,Data_Referencia,Categoria,Tipo,Especie,Assunto,Data_Entrega,Tipo_Apresentacao,Protocolo_Entrega,Versao,Link_Download"
   },
   {
    "id": "dou-cade",
    "name": "Diário Oficial (Cade)",
-   "ok": false,
-   "count": 0,
-   "error": "do1: HTTPError: HTTP Error 403: Forbidden; do3: HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "id": "bcb",
    "name": "Banco Central (Selic, IPCA, Focus)",
-   "ok": true,
-   "count": 3,
-   "error": null
+   "ok": false,
+   "count": 2,
+   "error": "SGS 432: HTTPError"
   }
  ],
  "stats": {
-  "raw": 850,
-  "unique": 331,
-  "unique_all": 795,
-  "sources_ok": 26,
-  "sources_total": 26,
-  "seconds": 12.4
+  "raw": 872,
+  "unique": 330,
+  "unique_all": 814,
+  "sources_ok": 27,
+  "sources_total": 27,
+  "seconds": 27.3
  }
 }
