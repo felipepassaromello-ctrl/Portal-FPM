@@ -26,6 +26,16 @@ CVM_KEYWORDS = re.compile(
 
 
 def _get(url: str, timeout: int = 60) -> bytes:
+    """GET com uma nova tentativa: algumas APIs públicas (BCB) falham de forma intermitente."""
+    try:
+        return _get_once(url, timeout)
+    except Exception:  # noqa: BLE001
+        import time
+        time.sleep(5)
+        return _get_once(url, timeout)
+
+
+def _get_once(url: str, timeout: int) -> bytes:
     req = urllib.request.Request(url, headers={
         "User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/json,*/*;q=0.8",
         "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8"})
@@ -35,10 +45,11 @@ def _get(url: str, timeout: int = 60) -> bytes:
 
 # ---------------------------------------------------------------- CVM: fatos relevantes e comunicados
 
-def cvm_filings(day: date) -> tuple[list[dict], str | None]:
-    """Fatos relevantes (todos) e comunicados ao mercado ligados a M&A/ECM entregues à CVM em `day`.
-    Fonte: dados abertos da CVM, conjunto IPE (informações periódicas e eventuais) do ano."""
-    year = day.year
+def cvm_filings(after: date, until: date) -> tuple[list[dict], str | None]:
+    """Fatos relevantes (todos) e comunicados ao mercado ligados a M&A/ECM entregues à CVM depois de `after`
+    e até `until`. Fonte: dados abertos da CVM, conjunto IPE do ano, que é publicado com alguns dias de atraso;
+    por isso cada edição traz o que ficou disponível desde a edição anterior."""
+    year = until.year
     base = f"https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_{year}"
     try:
         try:
@@ -52,12 +63,11 @@ def cvm_filings(day: date) -> tuple[list[dict], str | None]:
         return [], f"{type(exc).__name__}: {exc}"
 
     out, seen = [], set()
-    target = day.isoformat()
+    lo, hi = after.isoformat(), until.isoformat()
     reader = csv.DictReader(io.StringIO(text), delimiter=";")
-    last_date = ""
     for row in reader:
-        last_date = max(last_date, row.get("Data_Entrega", "")[:10])
-        if row.get("Data_Entrega", "")[:10] != target:
+        delivered = row.get("Data_Entrega", "")[:10]
+        if not (lo < delivered <= hi):
             continue
         cat = row.get("Categoria", "")
         assunto = row.get("Assunto", "") or row.get("Tipo", "")
@@ -72,12 +82,10 @@ def cvm_filings(day: date) -> tuple[list[dict], str | None]:
             "kind": "Fato relevante" if is_fato else "Comunicado ao mercado",
             "company": (row.get("Nome_Companhia") or "").strip(),
             "subject": assunto.strip(),
-            "date": target,
+            "date": delivered,
             "link": row.get("Link_Download", ""),
         })
-    out.sort(key=lambda r: (r["kind"] != "Fato relevante", r["company"]))
-    if not out:  # diagnóstico: o arquivo da CVM costuma ser atualizado com atraso
-        return [], f"nenhum documento de {target}; última entrega no arquivo: {last_date or '?'}; colunas: {','.join(reader.fieldnames or [])[:200]}"
+    out.sort(key=lambda r: (r["kind"] != "Fato relevante", r["date"], r["company"]))
     return out, None
 
 
@@ -161,15 +169,21 @@ def bcb_macro(today: date) -> tuple[dict, str | None]:
     return out, ("; ".join(errors) or None)
 
 
-def collect_official(edition_date: date) -> tuple[dict, list[dict]]:
-    """Coleta tudo o que pertence à edição: CVM do dia anterior (dia de entrega completo) e DOU do dia da edição."""
+def collect_official(edition_date: date, cvm_after: date | None = None, prev_macro: dict | None = None) -> tuple[dict, list[dict]]:
+    """Coleta o que pertence à edição: documentos da CVM entregues depois do que a edição anterior já mostrou
+    (até o dia anterior) e o Diário Oficial do dia da edição."""
     status = []
-    fatos, err = cvm_filings(edition_date - timedelta(days=1))
+    until = edition_date - timedelta(days=1)
+    after = cvm_after or (until - timedelta(days=3))
+    fatos, err = cvm_filings(after, until) if after < until else ([], None)
     status.append({"id": "cvm-ipe", "name": "CVM (fatos relevantes)", "ok": err is None, "count": len(fatos), "error": err})
     cade, err = dou_cade(edition_date)
     status.append({"id": "dou-cade", "name": "Diário Oficial (Cade)", "ok": err is None, "count": len(cade), "error": err})
     macro, err = bcb_macro(edition_date)
+    for k, v in (prev_macro or {}).items():  # se uma série falhou agora, mantém o último valor conhecido
+        macro.setdefault(k, v)
     status.append({"id": "bcb", "name": "Banco Central (Selic, IPCA, Focus)", "ok": err is None,
                    "count": len(macro), "error": err})
-    return {"filings": fatos, "cade": cade, "macro": macro,
+    cvm_through = max([f["date"] for f in fatos], default=after.isoformat())
+    return {"filings": fatos, "cade": cade, "macro": macro, "cvm_through": cvm_through,
             "fetched_at": datetime.now().isoformat(timespec="minutes")}, status

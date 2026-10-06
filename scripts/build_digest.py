@@ -739,8 +739,15 @@ def main() -> int:
         log("Fontes oficiais: reaproveitadas da coleta anterior desta edição.")
     else:
         from official import collect_official
-        official, official_status = collect_official(win_end.date())
-        official["complete"] = all(s["ok"] for s in official_status) and bool(official.get("filings"))
+        # CVM: começa logo depois do último documento mostrado em edições anteriores (os dados abertos atrasam).
+        shown = [load_json(pth, {}).get("official", {}).get("cvm_through") for pth in ARCHIVE.glob("????-??-??.json")
+                 if pth.stem < today]
+        shown = max([x for x in shown if x], default=None)
+        official, official_status = collect_official(
+            win_end.date(), datetime.fromisoformat(shown).date() if shown else None,
+            prev_off.get("macro"))
+        # CVM e Diário Oficial são pesados; o BC falha às vezes e já tem o último valor como reserva.
+        official["complete"] = all(s["ok"] for s in official_status if s["id"] != "bcb")
         for st in official_status:
             log(f"{'OK ' if st['ok'] else 'ERR'} {st['id']:<20} {st['count']:>3} {st['error'] or ''}")
     brief = None
