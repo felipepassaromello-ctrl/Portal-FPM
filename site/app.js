@@ -44,6 +44,8 @@
   const impClass = (n) => (n >= 9 ? "i-hot" : n >= 7 ? "i-warm" : n >= 5 ? "i-mild" : "");
   const fmtNum = (n, d = 2) => Number(n).toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
 
+  const fmtDay = (d) => (d ? `${d.slice(8, 10)}/${d.slice(5, 7)}` : "");
+
   function ago(iso) {
     const diff = (Date.now() - new Date(iso).getTime()) / 60000;
     if (diff < 1) return "agora";
@@ -231,7 +233,7 @@
           `<button class="ref" data-jump="${id}" title="${esc(byId[id].headline)}">${esc(byId[id].outlets[0].source)}</button>`).join("")}</div>
       </div>`).join("");
 
-    const top = d.items.filter((i) => !muted(i)).sort((a, z) => relevance(z) - relevance(a)).slice(0, 8);
+    const top = d.items.filter((i) => !muted(i) && !i.repeat && !i.dup_of).sort((a, z) => relevance(z) - relevance(a)).slice(0, 8);
     $("#top-list").innerHTML = top.map(cardHTML).join("");
 
     // mapa do dia: volume por editoria + quantas são importantes
@@ -270,6 +272,8 @@
           <div class="meta">
             <span class="cat-tag">${esc(catName(it.category))}</span>
             ${it.is_deal ? `<span class="deal-tag">deal</span>` : ""}
+            ${it.repeat ? `<span class="multi" title="Este deal já saiu numa edição anterior, sem mudança de estágio">já noticiado em ${esc(fmtDay(it.repeat.date))}</span>` : ""}
+            ${it.update ? `<span class="multi upd" title="Antes: ${esc(it.update.from)} (${esc(fmtDay(it.update.date))})">atualização</span>` : ""}
             <span>${esc(sources[0])}</span>
             ${sources.length > 1 ? `<span class="multi" title="${esc(sources.join(", "))}">+${sources.length - 1} veículos</span>` : ""}
             <span>${time} · ${ago(it.published)}</span>
@@ -338,7 +342,7 @@
       return `<tr>
         <td><span class="imp ${impClass(i.importance)}" style="--imp:${i.importance}">${i.importance}</span></td>
         <td>${esc(x.type)}</td><td>${esc(x.buyer)}</td><td>${esc(x.target)}</td>
-        <td>${esc(x.value)}</td><td><span class="stage">${esc(x.stage)}</span></td><td>${esc(x.sector)}</td>
+        <td>${esc(x.value)}</td><td><span class="stage">${esc(x.stage)}</span>${i.update ? `<div class="muted small">antes: ${esc(i.update.from)} (${esc(fmtDay(i.update.date))})</div>` : ""}</td><td>${esc(x.sector)}</td>
         <td><a href="#" data-jump="${i.id}">${esc(i.outlets[0].source)}</a></td></tr>`;
     }).join("") || `<tr><td colspan="8" class="muted">Nenhum deal identificado nesta edição${state.digest.mode !== "ai" ? " (requer análise por IA)" : ""}.</td></tr>`;
   }

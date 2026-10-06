@@ -415,6 +415,8 @@ BRIEF_INSTRUCTIONS = """Com base nas notícias analisadas abaixo (já ordenadas 
 - watchlist: 3 a 6 pontos para acompanhar hoje/nos próximos dias (agenda, decisões, desdobramentos de deals).
 - connections: 2 a 4 conexões não óbvias entre notícias diferentes (ex.: como um fato internacional afeta um deal ou setor no Brasil).
 
+Notícias com "ja_noticiado_em" tratam de um deal que já saiu em edição anterior, sem mudança de estágio: não as trate como novidade nem as repita no tldr. Notícias com "atualizacao_de_estagio" são desdobramentos de um deal já noticiado: mencione como atualização (ex.: "aprovado pelo Cade", "concluído").
+
 Notícias analisadas:
 """
 
@@ -528,6 +530,56 @@ def fetch_market() -> list[dict]:
 
 # ---------------------------------------------------------------- montagem
 
+def deal_key(deal: dict | None) -> str:
+    """Identifica o mesmo deal entre matérias e edições (comprador + alvo, normalizados)."""
+    if not deal:
+        return ""
+    buyer = re.sub(r"\(.*?\)", "", deal.get("buyer", ""))
+    target = re.sub(r"\(.*?\)", "", deal.get("target", ""))
+    return re.sub(r"[^a-z0-9]+", "", fold(buyer + "|" + target))[:48]
+
+
+def norm_stage(stage: str) -> str:
+    return re.sub(r"\s*\(.*?\)", "", fold(stage or "")).strip()
+
+
+def previous_deals(edition_date: str, days: int = 10) -> dict[str, dict]:
+    """Deals publicados nas edições anteriores (mais recente primeiro), por chave."""
+    seen: dict[str, dict] = {}
+    for path in sorted(ARCHIVE.glob("????-??-??.json"), reverse=True):
+        if path.stem >= edition_date:
+            continue
+        if (datetime.fromisoformat(edition_date) - datetime.fromisoformat(path.stem)).days > days:
+            break
+        for it in load_json(path, {}).get("deals", []):
+            k = deal_key(it.get("deal"))
+            if k and k not in seen:
+                seen[k] = {"date": path.stem, "stage": (it.get("deal") or {}).get("stage", "")}
+    return seen
+
+
+def mark_deal_repeats(items: list[dict], prev: dict[str, dict]) -> list[dict]:
+    """Marca deals já noticiados (sem mudança de estágio) e devolve a lista de deals únicos desta edição."""
+    best: dict[str, dict] = {}
+    for it in items:
+        if not it.get("is_deal") or not it.get("deal"):
+            continue
+        k = deal_key(it["deal"])
+        if not k:
+            continue
+        old = prev.get(k)
+        if old and norm_stage(old["stage"]) == norm_stage(it["deal"].get("stage", "")):
+            it["repeat"] = {"date": old["date"]}
+            continue
+        if old:
+            it["update"] = {"date": old["date"], "from": old["stage"]}
+        if k in best:  # mesmo deal em várias matérias desta edição: fica a de maior nota
+            it["dup_of"] = best[k]["id"]
+            continue
+        best[k] = it
+    return list(best.values())
+
+
 def merge_item(c: dict, a: dict | None, base_score: float) -> dict:
     out = {
         "id": c["id"],
@@ -619,6 +671,8 @@ def main() -> int:
 
     items = build_items(clusters)
     upcoming_items = build_items(upcoming)
+    unique_deals = mark_deal_repeats(items, previous_deals(today))
+    log(f"Deals: {len(unique_deals)} únicos; {sum(1 for i in items if i.get('repeat'))} já noticiados antes.")
 
     previous = load_json(DATA / "digest.json", {})
     brief = None
@@ -647,7 +701,7 @@ def main() -> int:
         "brief": brief,
         "market": [] if args.no_market else fetch_market(),
         "items": items[:300],
-        "deals": [i for i in items if i.get("is_deal")],
+        "deals": unique_deals,
         "upcoming": upcoming_items[:150],
         "sources": status,
         "stats": {
