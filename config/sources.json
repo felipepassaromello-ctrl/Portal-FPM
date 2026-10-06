@@ -47,13 +47,18 @@
       "url": "https://exame.com/invest/feed/"
     },
     {
-      "id": "thenews",
-      "name": "The News",
+      "id": "moneytimes",
+      "name": "Money Times",
       "region": "BR",
       "weight": 0.9,
-      "gnews": "site:thenewscc.com.br",
-      "when": "3d",
-      "lookback_hours": 72
+      "url": "https://www.moneytimes.com.br/feed/"
+    },
+    {
+      "id": "seudinheiro",
+      "name": "Seu Dinheiro",
+      "region": "BR",
+      "weight": 0.9,
+      "url": "https://www.seudinheiro.com/feed/"
     },
     {
       "id": "estadao",

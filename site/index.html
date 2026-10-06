@@ -130,6 +130,22 @@
     </section>
 
     <!-- FONTES -->
+    <section id="view-base" class="view" hidden>
+      <div id="base-summary"></div>
+      <div class="toolbar base-toolbar">
+        <input id="base-q" class="ctl search" type="search" placeholder="Buscar comprador, alvo, setor, assessor…" autocomplete="off">
+        <select id="base-sector" class="ctl" aria-label="Setor"><option value="">Todos os setores</option></select>
+        <span id="base-count" class="muted small"></span>
+        <button id="base-export" class="ctl primary">Exportar para Excel</button>
+      </div>
+      <div class="table-wrap">
+        <table class="deals">
+          <thead><tr><th>Desde</th><th>Tipo</th><th>Comprador / Investidor</th><th>Alvo</th><th>Valor</th><th>Estágio atual</th><th>Setor</th><th>Linha do tempo</th></tr></thead>
+          <tbody id="base-body"></tbody>
+        </table>
+      </div>
+    </section>
+
     <section id="view-official" class="view" hidden>
       <div class="split">
         <div>

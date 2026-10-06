@@ -39,6 +39,7 @@ DATA = ROOT / "site" / "data"
 ARCHIVE = DATA / "archive"
 CACHE_FILE = DATA / "analysis_cache.json"
 ROUTINE_FILE = DATA / "claude_analysis.json"  # escrito pela rotina do Claude Code
+DEALS_DB = DATA / "deals_db.json"  # base histórica de deals, acumulada edição a edição
 
 BRT = timezone(timedelta(hours=-3))
 UA = "Mozilla/5.0 (compatible; PortalN1/1.0; +https://github.com/)"
@@ -582,6 +583,53 @@ def mark_deal_repeats(items: list[dict], prev: dict[str, dict]) -> list[dict]:
     return list(best.values())
 
 
+def update_deals_db(items: list[dict], edition_date: str) -> dict:
+    """Acumula os deals de cada edição numa base única: um registro por deal (comprador + alvo), com a linha do
+    tempo de estágios. Repetições no mesmo estágio só atualizam a data da última menção."""
+    db = load_json(DEALS_DB, {"deals": {}})
+    deals = db.setdefault("deals", {})
+    if not deals and not db.get("backfilled"):
+        db["backfilled"] = True  # primeira vez: carrega os deals das edições já arquivadas
+        write_json(DEALS_DB, db)
+        for path in sorted(ARCHIVE.glob("????-??-??.json")):
+            if path.stem < edition_date:
+                update_deals_db(load_json(path, {}).get("items", []), path.stem)
+        db = load_json(DEALS_DB, {"deals": {}})
+        deals = db["deals"]
+    for it in sorted(items, key=lambda i: -i.get("importance", 0)):
+        d = it.get("deal") if it.get("is_deal") and it.get("ai") else None
+        k = deal_key(d)
+        if not k:
+            continue
+        e = deals.setdefault(k, {"key": k, "first_seen": edition_date, "timeline": [], "mentions": 0, "ids": []})
+        if it["id"] in e["ids"]:
+            continue  # a mesma matéria já foi contada numa coleta anterior
+        e["ids"] = (e["ids"] + [it["id"]])[-30:]
+        e["mentions"] += 1
+        for f in ("type", "buyer", "target", "sector"):
+            if d.get(f):
+                e[f] = d[f]
+        for f in ("value", "advisors"):
+            if d.get(f) and fold(d[f]) != "nao divulgado":
+                e[f] = d[f]
+            e.setdefault(f, d.get(f, ""))
+        e["importance"] = max(e.get("importance", 0), it.get("importance", 0))
+        e["last_seen"] = max(e.get("last_seen", edition_date), edition_date)
+        e.setdefault("headline", it["headline"])
+        e.setdefault("link", it["link"])
+        last = e["timeline"][-1] if e["timeline"] else None
+        if not last or norm_stage(last["stage"]) != norm_stage(d.get("stage", "")):
+            e["timeline"].append({"date": edition_date, "stage": d.get("stage", ""), "headline": it["headline"],
+                                  "link": it["link"], "source": it["outlets"][0]["source"]})
+            e["stage"] = d.get("stage", "")
+    if len(deals) > 1500:  # guarda os mais recentes
+        keep = sorted(deals.values(), key=lambda x: x.get("last_seen", ""), reverse=True)[:1500]
+        db["deals"] = {x["key"]: x for x in keep}
+    db["updated_at"] = datetime.now(BRT).isoformat()
+    write_json(DEALS_DB, db)
+    return db
+
+
 def merge_item(c: dict, a: dict | None, base_score: float) -> dict:
     out = {
         "id": c["id"],
@@ -676,6 +724,8 @@ def main() -> int:
     upcoming_items = build_items(upcoming)
     unique_deals = mark_deal_repeats(items, previous_deals(today))
     log(f"Deals: {len(unique_deals)} únicos; {sum(1 for i in items if i.get('repeat'))} já noticiados antes.")
+    db = update_deals_db(items, today)
+    log(f"Base de deals: {len(db['deals'])} registros.")
 
     previous = load_json(DATA / "digest.json", {})
 

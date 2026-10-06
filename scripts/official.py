@@ -14,7 +14,7 @@ import urllib.request
 import zipfile
 from datetime import date, datetime, timedelta
 
-UA = "Mozilla/5.0 (compatible; PortalFPM/1.0)"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
 
 # Palavras que tornam um "Comunicado ao Mercado" relevante para M&A e mercado de capitais.
 CVM_KEYWORDS = re.compile(
@@ -26,7 +26,9 @@ CVM_KEYWORDS = re.compile(
 
 
 def _get(url: str, timeout: int = 60) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/json,*/*;q=0.8",
+        "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8"})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read()
 
@@ -51,7 +53,10 @@ def cvm_filings(day: date) -> tuple[list[dict], str | None]:
 
     out, seen = [], set()
     target = day.isoformat()
-    for row in csv.DictReader(io.StringIO(text), delimiter=";"):
+    reader = csv.DictReader(io.StringIO(text), delimiter=";")
+    last_date = ""
+    for row in reader:
+        last_date = max(last_date, row.get("Data_Entrega", "")[:10])
         if row.get("Data_Entrega", "")[:10] != target:
             continue
         cat = row.get("Categoria", "")
@@ -71,6 +76,8 @@ def cvm_filings(day: date) -> tuple[list[dict], str | None]:
             "link": row.get("Link_Download", ""),
         })
     out.sort(key=lambda r: (r["kind"] != "Fato relevante", r["company"]))
+    if not out:  # diagnóstico: o arquivo da CVM costuma ser atualizado com atraso
+        return [], f"nenhum documento de {target}; última entrega no arquivo: {last_date or '?'}; colunas: {','.join(reader.fieldnames or [])[:200]}"
     return out, None
 
 

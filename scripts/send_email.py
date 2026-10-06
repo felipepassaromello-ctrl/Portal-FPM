@@ -131,6 +131,30 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
                      f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{off_rows}</table>'
                      if off_rows else "")
 
+    # Sexta-feira: resumo "M&A da semana" a partir da base histórica de deals.
+    week_html = ""
+    if today.weekday() == 4:
+        db = json.loads((DATA / "deals_db.json").read_text(encoding="utf-8")) if (DATA / "deals_db.json").exists() else {}
+        since = (today.date() - timedelta(days=6)).isoformat()
+        week = [x for x in db.get("deals", {}).values() if x.get("first_seen", "") >= since]
+        moved = [x for x in db.get("deals", {}).values() if x.get("first_seen", "") < since
+                 and any(t["date"] >= since for t in x.get("timeline", []))]
+        if week or moved:
+            sectors: dict[str, int] = {}
+            for x in week:
+                sectors[x.get("sector") or "Outros"] = sectors.get(x.get("sector") or "Outros", 0) + 1
+            top_sec = ", ".join(f"{k} ({n})" for k, n in sorted(sectors.items(), key=lambda kv: -kv[1])[:4])
+            rows = "".join(
+                f'<li style="margin:6px 0"><b>{e(x.get("buyer"))} → {e(x.get("target"))}</b>'
+                f'<span style="color:{MUTED}"> · {e(x.get("type"))} · {e(x.get("value") or "valor não divulgado")} · {e(x.get("stage"))}</span></li>'
+                for x in sorted(week, key=lambda x: -x.get("importance", 0))[:8])
+            week_html = (f'<div style="margin-top:30px;background:{ACCENT_SOFT};border-radius:16px;padding:18px 20px">'
+                         f'<h2 style="{label};color:{ACCENT}">M&amp;A da semana</h2>'
+                         f'<p style="margin:0 0 8px;font:600 15px/1.5 {SANS};color:{INK}">{len(week)} deals novos e {len(moved)} '
+                         f'mudanças de estágio nos últimos 7 dias.</p>'
+                         + (f'<p style="margin:0 0 8px;font:500 13.5px/1.5 {SANS};color:{INK2}">Setores mais ativos: {e(top_sec)}</p>' if top_sec else "")
+                         + f'<ul style="margin:0;padding-left:18px;font:500 14px/1.5 {SANS};color:{INK}">{rows}</ul></div>')
+
     watch = "".join(f'<li style="margin:6px 0">{e(w)}</li>' for w in b.get("watchlist", []))
     watch_html = (f'<div style="margin-top:30px;background:{PAPER};border:1px solid {LINE};border-radius:16px;padding:18px 20px">'
                   f'<h2 style="{label}">No radar</h2>'
@@ -153,6 +177,7 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
   {market_html}
   <h2 style="{label}">O que você precisa saber</h2>
   <table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{tldr}</table>
+  {week_html}
   {deals_html}
   {official_html}
   {watch_html}
@@ -174,18 +199,50 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
     return subject, body, text
 
 
+def send_alert(today: datetime, digest: dict, routine: dict) -> None:
+    """Avisa o próprio dono da conta quando a edição do dia não saiu a tempo."""
+    user, password = os.environ.get("GMAIL_USER", "").strip(), os.environ.get("GMAIL_APP_PASSWORD", "").replace(" ", "")
+    if not (user and password):
+        return
+    brief_date = (routine.get("brief") or {}).get("date", "?")
+    msg = EmailMessage()
+    msg["Subject"] = f"⚠️ Portal FPM: a edição de {today:%d/%m} não foi enviada"
+    msg["From"] = formataddr(("Portal FPM", user))
+    msg["To"] = user
+    msg.set_content(
+        f"A edição de hoje ({today:%d/%m}) não foi enviada porque a análise do dia não estava pronta até as 09:32.\n\n"
+        f"- Coleta: edição {digest.get('date')} gerada em {digest.get('generated_at', '?')[:16]}\n"
+        f"- Último briefing da rotina: {brief_date}\n\n"
+        f"Abra a conversa do Claude Code do Portal FPM e peça para rodar a análise de hoje. "
+        f"Depois dá para mandar o e-mail manualmente.\n\n{SITE_URL}")
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=60) as smtp:
+        smtp.login(user, password)
+        smtp.send_message(msg)
+    print("Aviso de edição não publicada enviado para a própria conta.")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="envia mesmo sem a análise de hoje")
     ap.add_argument("--dry-run", metavar="ARQ.html", help="só grava o HTML, sem enviar")
+    ap.add_argument("--alert-if-missing", action="store_true",
+                    help="se a edição de hoje não saiu, manda um aviso para a própria conta (GMAIL_USER)")
     args = ap.parse_args()
 
     today = datetime.now(BRT)
     digest = json.loads((DATA / "digest.json").read_text(encoding="utf-8"))
     routine = json.loads((DATA / "claude_analysis.json").read_text(encoding="utf-8")) if (DATA / "claude_analysis.json").exists() else {}
     fresh = (routine.get("brief") or {}).get("date") == today.date().isoformat() and digest.get("date") == today.date().isoformat()
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from holidays import holiday_name
+    hol = holiday_name(today.date())
+    if hol and not args.force and not os.environ.get("MAIL_TO_OVERRIDE", "").strip():
+        print(f"Feriado ({hol}): e-mail não enviado.")
+        return 0
     if not fresh and not args.force:
         print("A análise de hoje ainda não foi publicada; e-mail não enviado.")
+        if args.alert_if_missing:
+            send_alert(today, digest, routine)
         return 0
 
     override = os.environ.get("MAIL_TO_OVERRIDE", "").strip()

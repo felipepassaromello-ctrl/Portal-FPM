@@ -8,6 +8,7 @@
     { id: "brief", label: "Briefing" },
     { id: "feed", label: "Todas as notícias" },
     { id: "deals", label: "Deals" },
+    { id: "base", label: "Base de deals" },
     { id: "official", label: "Oficiais" },
     { id: "later", label: "Desde as 8h" },
     { id: "sources", label: "Fontes" },
@@ -154,6 +155,71 @@
     renderLater();
     renderOfficial();
     renderMacro();
+    loadBase();
+  }
+
+  // ---------------------------------------------------------- base histórica de deals
+  async function loadBase() {
+    try { state.base = await fetchJSON("data/deals_db.json"); } catch { state.base = null; }
+    renderBase();
+    renderTabs();
+  }
+
+  function baseRows() {
+    const deals = Object.values((state.base || {}).deals || {});
+    const q = fold($("#base-q").value.trim());
+    const sector = $("#base-sector").value;
+    return deals
+      .filter((d) => !sector || d.sector === sector)
+      .filter((d) => !q || fold(`${d.buyer} ${d.target} ${d.sector} ${d.type} ${d.advisors} ${d.headline}`).includes(q))
+      .sort((a, z) => (z.last_seen || "").localeCompare(a.last_seen || "") || z.importance - a.importance);
+  }
+
+  function renderBase() {
+    const deals = Object.values((state.base || {}).deals || {});
+    if (!deals.length) { $("#base-summary").innerHTML = `<div class="empty">A base começa a ser montada na próxima coleta.</div>`; $("#base-body").innerHTML = ""; return; }
+    // resumo dos últimos 7 dias (pela data da edição)
+    const ref = state.digest.date || new Date().toISOString().slice(0, 10);
+    const since = new Date(new Date(ref + "T12:00:00").getTime() - 6 * 864e5).toISOString().slice(0, 10);
+    const week = deals.filter((d) => d.first_seen >= since);
+    const moved = deals.filter((d) => d.first_seen < since && (d.timeline || []).some((t) => t.date >= since));
+    const bySector = {};
+    for (const d of week) bySector[d.sector || "Outros"] = (bySector[d.sector || "Outros"] || 0) + 1;
+    const topSectors = Object.entries(bySector).sort((a, z) => z[1] - a[1]).slice(0, 5);
+    const topDeals = [...week].sort((a, z) => z.importance - a.importance).slice(0, 5);
+    $("#base-summary").innerHTML = `
+      <div class="week-grid">
+        <div class="side-block"><h3 class="section-label">Últimos 7 dias</h3>
+          <p class="week-big">${week.length}<span> deals novos</span></p>
+          <p class="muted small">${moved.length} deals antigos mudaram de estágio · base com ${deals.length} deals</p></div>
+        <div class="side-block"><h3 class="section-label">Setores mais ativos</h3>
+          <ul class="bullets macro">${topSectors.map(([k, n]) => `<li><b>${esc(k)}</b> ${n}</li>`).join("") || "<li>–</li>"}</ul></div>
+        <div class="side-block"><h3 class="section-label">Maiores da semana</h3>
+          <ul class="bullets">${topDeals.map((d) => `<li>${esc(d.buyer)} → ${esc(d.target)} <span class="muted">· ${esc(d.value || "valor não divulgado")}</span></li>`).join("") || "<li>–</li>"}</ul></div>
+      </div>`;
+    const sel = $("#base-sector");
+    if (sel.options.length <= 1) {
+      const sectors = [...new Set(deals.map((d) => d.sector).filter(Boolean))].sort();
+      sel.innerHTML = `<option value="">Todos os setores</option>` + sectors.map((x) => `<option>${esc(x)}</option>`).join("");
+    }
+    const rows = baseRows();
+    $("#base-count").textContent = `${rows.length} deals`;
+    $("#base-body").innerHTML = rows.map((d) => `<tr>
+      <td>${esc(fmtDay(d.first_seen))}</td><td>${esc(d.type)}</td><td>${esc(d.buyer)}</td><td>${esc(d.target)}</td>
+      <td>${esc(d.value)}</td><td><span class="stage">${esc(d.stage)}</span></td><td>${esc(d.sector)}</td>
+      <td class="tl">${(d.timeline || []).map((t) => `<a href="${safeUrl(t.link)}" target="_blank" rel="noopener" title="${esc(t.headline)}">${esc(fmtDay(t.date))} · ${esc(t.stage)}</a>`).join("<br>")}</td></tr>`).join("");
+  }
+
+  function exportBase() {
+    const cols = ["Primeira aparição", "Última menção", "Tipo", "Comprador / investidor", "Alvo", "Valor", "Estágio", "Setor", "Assessores", "Manchete", "Link"];
+    const cell = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const lines = [cols.map(cell).join(";"), ...baseRows().map((d) => [d.first_seen, d.last_seen, d.type, d.buyer, d.target, d.value, d.stage, d.sector, d.advisors, d.headline, d.link].map(cell).join(";"))];
+    const blob = new Blob(["\ufeff" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `deals-portal-fpm-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   }
 
   function renderOfficial() {
@@ -215,6 +281,7 @@
     const d = state.digest;
     const off = d.official || {};
     const counts = { feed: d.items.length, deals: d.deals.length, later: (d.upcoming || []).length,
+                     base: Object.keys((state.base || {}).deals || {}).length || null,
                      official: (off.filings || []).length + (off.cade || []).length };
     const tabs = tabsAvailable();
     if (!tabs.some((t) => t.id === state.tab)) state.tab = "brief";
@@ -438,6 +505,9 @@
   });
 
   for (const id of ["q", "region", "sort", "unread", "saved"]) $("#" + id).addEventListener("input", () => { state.focus = -1; renderFeed(); });
+  $("#base-q").addEventListener("input", renderBase);
+  $("#base-sector").addEventListener("input", renderBase);
+  $("#base-export").onclick = exportBase;
   $("#minimp").addEventListener("input", (e) => { $("#minimp-val").textContent = e.target.value; renderFeed(); });
   $("#btn-refresh").onclick = () => load().then(() => toast("Atualizado"));
   $("#archive").onchange = (e) => { state.edition = e.target.value || null; state.open.clear(); load(); };
