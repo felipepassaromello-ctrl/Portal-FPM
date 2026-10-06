@@ -22,7 +22,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_digest import (  # noqa: E402
     ANALYSIS_INSTRUCTIONS, ANALYSIS_SCHEMA, BRIEF_INSTRUCTIONS, BRIEF_SCHEMA, BRT, CONFIG, DATA,
-    ROUTINE_FILE, load_json, system_prompt, write_json,
+    ROUTINE_FILE, deal_key, load_json, norm_stage, previous_deals, system_prompt, write_json,
 )
 
 KEEP_DAYS = 3
@@ -136,11 +136,18 @@ def cmd_brief_input(args) -> None:
     digest, state = load_state()
     profile = load_json(CONFIG / "profile.json", {})
     rows = []
+    prev = previous_deals(digest["date"])
     for it in digest["items"]:
         a = analyzed(it, state)
         if a:
-            rows.append({"id": it["id"], "categoria": a["category"], "nota": a["importance"], "titulo": a["headline"],
-                         "resumo": a["summary"], "impacto": a["impact"], "veiculos": [o["source"] for o in it["outlets"]]})
+            row = {"id": it["id"], "categoria": a["category"], "nota": a["importance"], "titulo": a["headline"],
+                   "resumo": a["summary"], "impacto": a["impact"], "veiculos": [o["source"] for o in it["outlets"]]}
+            old = prev.get(deal_key(a.get("deal"))) if a.get("is_deal") else None
+            if old and norm_stage(old["stage"]) == norm_stage(a["deal"].get("stage", "")):
+                row["ja_noticiado_em"] = old["date"]
+            elif old:
+                row["atualizacao_de_estagio"] = f"{old['stage']} (em {old['date']}) -> {a['deal'].get('stage', '')}"
+            rows.append(row)
     rows.sort(key=lambda r: -r["nota"])
     print("=== PAPEL ===\n" + system_prompt(profile))
     print("\n=== TAREFA ===\n" + BRIEF_INSTRUCTIONS.strip())
