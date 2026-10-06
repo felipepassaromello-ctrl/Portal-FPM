@@ -124,9 +124,9 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
                      f'<br><span style="color:{INK2};font-size:13px">{e(f["subject"])}</span></td></tr>')
     for c in [x for x in off.get("cade", []) if x["kind"] != "Publicação do Cade"][:5]:
         off_rows += (f'<tr><td style="padding:10px 0;border-bottom:1px solid {LINE};font:500 14px/1.5 {SANS};color:{INK}">'
-                     f'<span style="font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{MUTED}">{e(c["kind"])} · Diário Oficial</span><br>'
-                     f'<a href="{e(c["link"])}" style="color:{INK};font-weight:700;text-decoration:none">{e(c["title"])}</a>'
-                     f'<br><span style="color:{INK2};font-size:13px">{e(c["summary"][:220])}</span></td></tr>')
+                     f'<span style="font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{MUTED}">Antitruste · Cade</span><br>'
+                     f'<a href="{e(c["link"])}" style="color:{INK};font-weight:700;text-decoration:none">{e(c.get("headline") or c["title"])}</a>'
+                     f'<br><span style="color:{INK2};font-size:13px">{e(c.get("explain") or c["summary"][:220])}</span></td></tr>')
     official_html = (f'<h2 style="{label};margin-top:30px">Fontes oficiais</h2>'
                      f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{off_rows}</table>'
                      if off_rows else "")

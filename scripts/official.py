@@ -105,6 +105,44 @@ def _article_text(url_title: str) -> str | None:
     return _clean(m.group(1)) if m else None
 
 
+SUFFIXES = re.compile(r",?\s*\b(?:S\.?\s?/?A\.?|Ltda\.?|LTDA\.?|GmbH|Inc\.?|LLC|L\.?P\.?|Limited|Ltd\.?|B\.V\.|S\.?A\.?R\.?L\.?|"
+                      r"Participa[çc][õo]es|Empreendimentos|Holding)\b\.?", re.I)
+
+
+def short_parties(parties: str) -> str:
+    """'Sanofi e Cheplapharm Arzneimittel GmbH' -> 'Sanofi e Cheplapharm Arzneimittel' (nomes legíveis para manchete)."""
+    names = [SUFFIXES.sub("", n).strip(" ,.-") for n in re.split(r",\s*|\s+e\s+(?=[A-ZÁÉÍÓÚ0-9])", parties) if n.strip()]
+    names = [n for n in names if n]
+    if not names:
+        return "empresas não identificadas"
+    if len(names) > 4:
+        return ", ".join(names[:4]) + f" e mais {len(names) - 4}"
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " e " + names[-1]
+
+
+def explain_act(a: dict) -> tuple[str, str]:
+    """Manchete e explicação em linguagem simples para um ato do Cade."""
+    who = short_parties(a["parties"])
+    nature = (a["nature"] or "").lower()
+    if a["kind"] == "Notificação ao Cade":
+        head = f"Novo negócio notificado ao Cade: {nature or 'operação'} envolvendo {who}"
+        why = ("As empresas informaram o negócio ao Cade (órgão antitruste), que vai analisar se ele prejudica a "
+               "concorrência. É sinal de um deal fechado ou perto de fechar, às vezes antes de sair na imprensa.")
+    elif a["decision"] == "Aprovação sem restrições":
+        head = f"Cade aprova, sem restrições, a operação entre {who}"
+        why = "O órgão antitruste liberou o negócio sem exigir nada em troca; a operação agora pode ser concluída."
+    elif a["decision"] == "Aprovação com restrições":
+        head = f"Cade aprova com restrições a operação entre {who}"
+        why = "O negócio foi liberado, mas com condições (por exemplo, venda de ativos ou compromissos de conduta)."
+    elif a["decision"] == "Impugnação/reprovação":
+        head = f"Cade questiona a operação entre {who}"
+        why = "O órgão antitruste viu risco à concorrência; o caso segue para julgamento ou foi barrado."
+    else:
+        head = f"Cade se manifesta sobre a operação entre {who}"
+        why = "Despacho do órgão antitruste sobre o negócio; veja a íntegra no Diário Oficial."
+    return head, why
+
+
 def split_cade_acts(text: str, title: str) -> list[dict]:
     """Separa um bloco do Cade (edital ou despacho) em atos de concentração individuais."""
     acts = []
@@ -165,9 +203,12 @@ def dou_cade(day: date) -> tuple[list[dict], str | None]:
                 full = _article_text(art.get("urlTitle", "")) or text
                 acts = split_cade_acts(full, title)
                 for a in acts:
+                    head, why = explain_act(a)
                     out.append({
                         "kind": a["kind"],
                         "title": a["parties"] or f"Ato de Concentração nº {a['number']}",
+                        "headline": head,
+                        "explain": why,
                         "number": a["number"],
                         "summary": " · ".join(x for x in [
                             f"AC nº {a['number']}", a["nature"] and f"Operação: {a['nature']}",
