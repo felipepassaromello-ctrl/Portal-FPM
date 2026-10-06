@@ -233,11 +233,13 @@
       || `<div class="empty">${(state.digest.official_status || []).some((s) => s.id === "cvm-ipe" && !s.ok)
         ? "A CVM não respondeu na última coleta."
         : `Nenhum documento novo nos dados abertos da CVM. A última entrega já publicada é de ${esc(fmtDay(off.cvm_through))}; os próximos aparecem assim que a CVM atualizar o arquivo.`}</div>`;
+    const cadeTag = (k) => (k === "Notificação ao Cade" ? "Novo negócio" : k === "Aprovado pelo Cade" ? "Aprovação" : "Cade");
     $("#official-cade").innerHTML = cade.map((c) => `
       <article class="card off-card"><div class="card-main">
-        <div class="meta"><span class="cat-tag" style="--cat: var(--c-macro)">${esc(c.kind)}</span><span>Diário Oficial ${esc(c.section)} · ${esc(fmtDay(c.date))}</span></div>
-        <h3><a href="${safeUrl(c.link)}" target="_blank" rel="noopener">${esc(c.title)}</a></h3>
-        <p class="card-summary">${esc(c.summary)}</p></div></article>`).join("")
+        <div class="meta"><span class="cat-tag" style="--cat: ${c.kind === "Notificação ao Cade" ? "var(--c-mna)" : "var(--c-internacional)"}">${esc(cadeTag(c.kind))}</span><span>Cade · Diário Oficial de ${esc(fmtDay(c.date))}</span></div>
+        <h3><a href="${safeUrl(c.link)}" target="_blank" rel="noopener">${esc(c.headline || c.title)}</a></h3>
+        ${c.explain ? `<p class="card-summary">${esc(c.explain)}</p>` : ""}
+        <p class="muted small" style="margin:6px 0 0">${c.headline ? `Empresas: ${esc(c.title)} · ` : ""}${esc(c.summary)}</p></div></article>`).join("")
       || `<div class="empty">Nenhuma publicação do Cade no Diário Oficial desta edição.</div>`;
   }
 
