@@ -57,6 +57,10 @@ def load_state() -> tuple[dict, dict]:
     digest = load_json(DATA / "digest.json", {})
     if not digest or digest.get("demo"):
         sys.exit("site/data/digest.json ausente ou com dados de exemplo; rode o workflow primeiro.")
+    today = datetime.now(BRT).date().isoformat()
+    if digest.get("date") != today:
+        sys.exit(f"A edição de hoje ({today}) ainda não foi gerada: o digest é da edição {digest.get('date')}. "
+                 "A coleta das 08:07 ainda não rodou; aguarde alguns minutos, rode git pull e tente de novo.")
     state = load_json(ROUTINE_FILE, {})
     state.setdefault("items", {})
     state.setdefault("brief", None)

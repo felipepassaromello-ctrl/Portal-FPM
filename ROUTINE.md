@@ -15,7 +15,9 @@ pip install -q -r scripts/requirements.txt
 mkdir -p /tmp/rotina
 ```
 
-Se `site/data/digest.json` tiver mais de 3 horas, a coleta pode ter falhado. Siga em frente e mencione isso no
+Cada edição cobre as notícias das 08h do dia anterior às 08h do dia (horário de Brasília). Se o
+`routine.py queue` disser que a edição de hoje ainda não foi gerada, a coleta das 08:07 ainda não rodou: espere
+2 minutos, rode `git pull --rebase origin main` e tente de novo (até ~30 minutos). Se não aparecer, mencione isso no
 resumo final.
 
 ## 2. Analisar as notícias

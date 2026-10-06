@@ -45,6 +45,7 @@ UA = "Mozilla/5.0 (compatible; PortalN1/1.0; +https://github.com/)"
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-5-5")
 MAX_ANALYZE = int(os.environ.get("MAX_ANALYZE", "90"))
 BATCH_SIZE = 15
+EDITION_CLOSE_HOUR = 8  # cada edição cobre as 24h até as 08h (BRT) do seu dia
 
 CATEGORIES = {
     "mna": "M&A e Deals",
@@ -83,6 +84,15 @@ MARKET_SYMBOLS = [
 
 
 # ---------------------------------------------------------------- utilidades
+
+def edition_window(now: datetime) -> tuple[datetime, datetime]:
+    """Janela da edição vigente: das 08h do dia anterior às 08h do dia da edição (BRT).
+    Antes das 08h, a edição vigente ainda é a de ontem."""
+    end = now.replace(hour=EDITION_CLOSE_HOUR, minute=0, second=0, microsecond=0)
+    if now < end:
+        end -= timedelta(days=1)
+    return end - timedelta(days=1), end
+
 
 def log(msg: str) -> None:
     print(f"[{datetime.now(BRT):%H:%M:%S}] {msg}", flush=True)
@@ -556,14 +566,20 @@ def main() -> int:
     sources_cfg = load_json(Path(args.sources), {"sources": []})
     profile = load_json(CONFIG / "profile.json", {})
     now = datetime.now(BRT)
-    today = now.strftime("%Y-%m-%d")
+    win_start, win_end = edition_window(now)
+    today = win_end.strftime("%Y-%m-%d")  # data da edição vigente
 
     raw, status = collect(sources_cfg)
-    clusters = cluster(raw)
-    for c in clusters:
+    all_clusters = cluster(raw)
+    for c in all_clusters:
         c["prescore"] = prescore(c, profile)
-    clusters.sort(key=lambda c: -c["prescore"])
-    log(f"{len(raw)} itens brutos -> {len(clusters)} notícias únicas")
+    all_clusters.sort(key=lambda c: -c["prescore"])
+    # Cada notícia pertence a uma única edição, pela hora da primeira publicação.
+    ts = lambda c: datetime.fromisoformat(c["published"])
+    clusters = [c for c in all_clusters if win_start <= ts(c) < win_end]
+    upcoming = [c for c in all_clusters if ts(c) >= win_end]
+    log(f"{len(raw)} itens brutos -> {len(all_clusters)} notícias únicas; edição {today}: {len(clusters)}, "
+        f"desde o fechamento: {len(upcoming)}")
 
     client = None if args.no_ai else claude_client()
     cache_all = load_json(CACHE_FILE, {})
@@ -594,10 +610,15 @@ def main() -> int:
                 return routine["items"][i]
         return None
 
-    items = [merge_item(c, analysis_for(c), c["prescore"]) for c in clusters]
-    items = [i for i in items if i["ai"] or i["prescore"] > 0]
-    items.sort(key=lambda i: i["published"], reverse=True)
-    items.sort(key=lambda i: (-i["importance"], -i["prescore"]))
+    def build_items(cs: list[dict]) -> list[dict]:
+        out = [merge_item(c, analysis_for(c), c["prescore"]) for c in cs]
+        out = [i for i in out if i["ai"] or i["prescore"] > 0]
+        out.sort(key=lambda i: i["published"], reverse=True)
+        out.sort(key=lambda i: (-i["importance"], -i["prescore"]))
+        return out
+
+    items = build_items(clusters)
+    upcoming_items = build_items(upcoming)
 
     previous = load_json(DATA / "digest.json", {})
     brief = None
@@ -617,6 +638,7 @@ def main() -> int:
     digest = {
         "generated_at": now.isoformat(),
         "date": today,
+        "window": {"start": win_start.isoformat(), "end": win_end.isoformat()},
         "mode": "ai" if any(i["ai"] for i in items) else "heuristic",
         "model": MODEL if client else None,
         "analysis": {"by": "api" if client else "rotina", "updated_at": None if client else routine.get("updated_at"),
@@ -624,12 +646,14 @@ def main() -> int:
         "categories": CATEGORIES,
         "brief": brief,
         "market": [] if args.no_market else fetch_market(),
-        "items": items[:250],
+        "items": items[:300],
         "deals": [i for i in items if i.get("is_deal")],
+        "upcoming": upcoming_items[:150],
         "sources": status,
         "stats": {
             "raw": len(raw),
             "unique": len(clusters),
+            "unique_all": len(all_clusters),
             "sources_ok": sum(s["ok"] for s in status),
             "sources_total": len(status),
             "seconds": round(time.time() - started, 1),

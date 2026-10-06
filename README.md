@@ -23,6 +23,10 @@ GitHub Actions (de hora em hora)
   └─ publica o site no GitHub Pages
 ```
 
+**Edições:** cada edição cobre as 24h até as 08h do seu dia (horário de Brasília). A edição de terça tem tudo o
+que foi publicado das 08h de segunda às 08h de terça, e cada notícia aparece numa única edição. O que chega depois
+das 08h fica na aba "Desde as 8h" e entra na edição do dia seguinte.
+
 O site (`site/`) é HTML/CSS/JS puro, sem build. Ele confere a cada 5 minutos se há uma edição nova e avisa quando chegam notícias.
 
 ### O que dá para fazer no site
