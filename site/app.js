@@ -230,7 +230,9 @@
         <div class="meta"><span class="cat-tag" style="--cat: var(--c-mna)">${esc(f.kind)}</span><span>CVM · entregue em ${esc(fmtDay(f.date))}</span></div>
         <h3><a href="${safeUrl(f.link)}" target="_blank" rel="noopener">${esc(f.company)}</a></h3>
         <p class="card-summary">${esc(f.subject)}</p></div></article>`).join("")
-      || `<div class="empty">Nenhum fato relevante encontrado para esta edição${(state.digest.official_status || []).some((s) => s.id === "cvm-ipe" && !s.ok) ? " (a CVM não respondeu na última coleta)" : ""}.</div>`;
+      || `<div class="empty">${(state.digest.official_status || []).some((s) => s.id === "cvm-ipe" && !s.ok)
+        ? "A CVM não respondeu na última coleta."
+        : `Nenhum documento novo nos dados abertos da CVM. A última entrega já publicada é de ${esc(fmtDay(off.cvm_through))}; os próximos aparecem assim que a CVM atualizar o arquivo.`}</div>`;
     $("#official-cade").innerHTML = cade.map((c) => `
       <article class="card off-card"><div class="card-main">
         <div class="meta"><span class="cat-tag" style="--cat: var(--c-macro)">${esc(c.kind)}</span><span>Diário Oficial ${esc(c.section)} · ${esc(fmtDay(c.date))}</span></div>

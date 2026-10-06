@@ -91,6 +91,45 @@ def cvm_filings(after: date, until: date) -> tuple[list[dict], str | None]:
 
 # ---------------------------------------------------------------- Diário Oficial: atos do Cade
 
+def _clean(t: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", t or "")).strip()
+
+
+def _article_text(url_title: str) -> str | None:
+    """Texto integral de uma publicação do DOU (o resumo da leitura do jornal vem cortado)."""
+    try:
+        page = _get(f"https://www.in.gov.br/web/dou/-/{url_title}", 30).decode("utf-8", "replace")
+    except Exception:  # noqa: BLE001
+        return None
+    m = re.search(r'<div class="texto-dou">(.*?)</div>\s*(?:<div|</div>)', page, re.S)
+    return _clean(m.group(1)) if m else None
+
+
+def split_cade_acts(text: str, title: str) -> list[dict]:
+    """Separa um bloco do Cade (edital ou despacho) em atos de concentração individuais."""
+    acts = []
+    for seg in re.split(r"(?=Ato de Concentra[çc][ãa]o n[ºo°.])", text):
+        num = re.search(r"Ato de Concentra[çc][ãa]o n[ºo°.]\s*([\d./-]+\d)", seg)
+        if not num:
+            continue
+        def grab(pat):
+            m = re.search(pat, seg, re.I)
+            return m.group(1).strip(" .;") if m else ""
+        parties = grab(r"(?:Requerentes?|Partes|Interessad[oa]s?)\s*:\s*(.+?)\s*(?:Advogad|Natureza|Decis|Assunto|Setor|Procurador|$)")
+        nature = grab(r"Natureza da opera[çc][ãa]o\s*:\s*(.+?)(?:\.\s+[A-ZÁÉÍÓÚ][^:.]{0,45}:|$)")
+        decision = grab(r"Decis[ãa]o\s*:\s*(.+?)(?:\.\s|$)")
+        if "EDITA" in title.upper():
+            kind = "Notificação ao Cade"
+        elif re.search(r"aprova|sem restri", decision, re.I):
+            kind = "Aprovado pelo Cade"
+        elif decision:
+            kind = "Decisão do Cade"
+        else:
+            kind = "Despacho do Cade"
+        acts.append({"number": num.group(1), "parties": parties, "nature": nature, "decision": decision, "kind": kind})
+    return acts
+
+
 def dou_cade(day: date) -> tuple[list[dict], str | None]:
     """Publicações do Cade no Diário Oficial do dia (seções 1 e 3): notificações de atos de concentração,
     aprovações e outras decisões. Fonte: leitura do jornal no portal da Imprensa Nacional."""
@@ -115,14 +154,22 @@ def dou_cade(day: date) -> tuple[list[dict], str | None]:
                 if art.get("urlTitle") in seen:
                     continue
                 seen.add(art.get("urlTitle"))
-                out.append({
-                    "kind": "Ato de concentração" if "ato de concentra" in blob else "Decisão do Cade",
-                    "title": title,
-                    "summary": text[:500],
-                    "date": day.isoformat(),
-                    "section": secao.upper(),
-                    "link": f"https://www.in.gov.br/web/dou/-/{art.get('urlTitle', '')}",
-                })
+                link = f"https://www.in.gov.br/web/dou/-/{art.get('urlTitle', '')}"
+                full = _article_text(art.get("urlTitle", "")) or text
+                acts = split_cade_acts(full, title)
+                for a in acts:
+                    out.append({
+                        "kind": a["kind"],
+                        "title": a["parties"] or f"Ato de Concentração nº {a['number']}",
+                        "number": a["number"],
+                        "summary": " · ".join(x for x in [
+                            f"AC nº {a['number']}", a["nature"] and f"Operação: {a['nature']}",
+                            a["decision"] and f"Decisão: {a['decision']}"] if x)[:500],
+                        "date": day.isoformat(), "section": secao.upper(), "link": link,
+                    })
+                if not acts:
+                    out.append({"kind": "Publicação do Cade", "title": title, "summary": text[:500],
+                                "date": day.isoformat(), "section": secao.upper(), "link": link})
         except Exception as exc:  # noqa: BLE001
             errors.append(f"{secao}: {type(exc).__name__}: {exc}")
     return out, ("; ".join(errors) or None) if not out else None
