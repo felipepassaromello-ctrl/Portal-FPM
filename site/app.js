@@ -203,11 +203,18 @@
     const m = state.digest.market || [];
     const el = $("#ticker");
     el.hidden = !m.length;
-    el.innerHTML = m.map((q) => {
+    const ticks = m.map((q) => {
       const up = q.change_pct >= 0;
       const dec = q.unit === "R$" ? 4 : q.price > 1000 ? 0 : 2;
       return `<span class="tick"><b>${esc(q.name)}</b>${fmtNum(q.price, dec)}<span class="${up ? "up" : "down"}">${up ? "▲" : "▼"} ${fmtNum(Math.abs(q.change_pct))}%</span>${spark(q.spark, up)}</span>`;
     }).join("");
+    // Letreiro: a sequência aparece duas vezes e a faixa anda metade da largura, emendando sem salto.
+    el.innerHTML = `<div class="ticker-track"><div class="ticker-group">${ticks}</div><div class="ticker-group" aria-hidden="true">${ticks}</div></div>`;
+    const group = el.querySelector(".ticker-group");
+    requestAnimationFrame(() => {
+      const w = group.getBoundingClientRect().width;
+      el.querySelector(".ticker-track").style.setProperty("--ticker-duration", `${Math.max(20, w / 45)}s`);
+    });
   }
 
   function renderBrief() {
