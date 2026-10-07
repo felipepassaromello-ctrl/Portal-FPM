@@ -417,7 +417,7 @@ BRIEF_INSTRUCTIONS = """Com base nas notícias analisadas abaixo (já ordenadas 
 - watchlist: 3 a 6 pontos para acompanhar hoje/nos próximos dias (agenda, decisões, desdobramentos de deals).
 - connections: 2 a 4 conexões não óbvias entre notícias diferentes (ex.: como um fato internacional afeta um deal ou setor no Brasil).
 
-Se houver fontes oficiais (fatos relevantes na CVM, atos do Cade no Diário Oficial, dados do Banco Central) relevantes para o leitor, use-as no tldr ou nas seções e diga a fonte (ex.: "em fato relevante à CVM"). Não liste fatos relevantes rotineiros.
+Não cite as fontes oficiais (CVM, Cade/Diário Oficial, Banco Central) no briefing: elas têm aba própria no portal.
 
 Notícias com "ja_noticiado_em" tratam de um deal que já saiu em edição anterior, sem mudança de estágio: não as trate como novidade nem as repita no tldr. Notícias com "atualizacao_de_estagio" são desdobramentos de um deal já noticiado: mencione como atualização (ex.: "aprovado pelo Cade", "concluído").
 

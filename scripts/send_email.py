@@ -115,22 +115,6 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
                   f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{deal_rows}</table>'
                   if deal_rows else "")
 
-    off = digest.get("official") or {}
-    off_rows = ""
-    for f in [x for x in off.get("filings", []) if x["kind"] == "Fato relevante"][:6]:
-        off_rows += (f'<tr><td style="padding:10px 0;border-bottom:1px solid {LINE};font:500 14px/1.5 {SANS};color:{INK}">'
-                     f'<span style="font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{MUTED}">CVM · fato relevante · {f["date"][8:10]}/{f["date"][5:7]}</span><br>'
-                     f'<a href="{e(f["link"])}" style="color:{INK};font-weight:700;text-decoration:none">{e(f["company"])}</a>'
-                     f'<br><span style="color:{INK2};font-size:13px">{e(f["subject"])}</span></td></tr>')
-    for c in [x for x in off.get("cade", []) if x["kind"] != "Publicação do Cade"][:5]:
-        off_rows += (f'<tr><td style="padding:10px 0;border-bottom:1px solid {LINE};font:500 14px/1.5 {SANS};color:{INK}">'
-                     f'<span style="font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{MUTED}">Antitruste · Cade</span><br>'
-                     f'<a href="{e(c["link"])}" style="color:{INK};font-weight:700;text-decoration:none">{e(c.get("headline") or c["title"])}</a>'
-                     f'<br><span style="color:{INK2};font-size:13px">{e(c.get("explain") or c["summary"][:220])}</span></td></tr>')
-    official_html = (f'<h2 style="{label};margin-top:30px">Fontes oficiais</h2>'
-                     f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{off_rows}</table>'
-                     if off_rows else "")
-
     # Sexta-feira: resumo "M&A da semana" a partir da base histórica de deals.
     week_html = ""
     if today.weekday() == 4:
@@ -179,7 +163,6 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
   <table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{tldr}</table>
   {week_html}
   {deals_html}
-  {official_html}
   {watch_html}
   <table role="presentation" cellspacing="0" cellpadding="0" style="margin:30px 0 0"><tr><td style="background:{INK};border-radius:999px">
     <a href="{SITE_URL}?e={today:%Y%m%d}" style="display:inline-block;padding:13px 24px;font:700 14px {SANS};color:#ffffff;text-decoration:none">Abrir a edição completa →</a>
