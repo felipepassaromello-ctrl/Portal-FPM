@@ -196,7 +196,7 @@ Formato do arquivo: {{"items": [{{"id": "...", "resumo": "...", "pontos": ["..."
 
 def cmd_cvm_queue(args) -> None:
     from cias import FILA, FILA_HIST, RESUMOS, TEMAS, load_json as cload
-    fila, hist, resumos = load_json(FILA, {}), cload(FILA_HIST, {}), load_json(RESUMOS, {})
+    fila, hist, resumos = load_json(FILA, {}), cload(FILA_HIST, {}), cload(RESUMOS, {})
     ok = lambda kv: kv[0] not in resumos and len((kv[1].get("texto") or "").strip()) > 80  # noqa: E731
     # primeiro os novos (do dia), depois o histórico, do mais recente para o mais antigo
     pend = sorted(filter(ok, fila.items()), key=lambda kv: (kv[1]["c"] != "Fato Relevante", kv[1]["d"]))
@@ -211,7 +211,7 @@ def cmd_cvm_queue(args) -> None:
 def cmd_merge_cvm(args) -> None:
     from cias import FILA, FILA_HIST, RESUMOS, TEMAS, load_json as cload, save_json as csave
     data = json.loads(Path(args.file).read_text(encoding="utf-8"))
-    fila, hist, resumos = load_json(FILA, {}), cload(FILA_HIST, {}), load_json(RESUMOS, {})
+    fila, hist, resumos = load_json(FILA, {}), cload(FILA_HIST, {}), cload(RESUMOS, {})
     ok, errs = 0, []
     for it in data.get("items", []):
         i = str(it.get("id", ""))
@@ -228,7 +228,7 @@ def cmd_merge_cvm(args) -> None:
         fila.pop(i, None)
         hist.pop(i, None)
         ok += 1
-    write_json(RESUMOS, resumos)
+    csave(RESUMOS, resumos)
     write_json(FILA, fila)
     if Path(FILA_HIST).exists() or hist:
         csave(FILA_HIST, hist)
