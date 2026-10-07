@@ -3122,77 +3122,1590 @@
     "advisors": ""
    },
    "_day": "2026-10-06"
+  },
+  "c8c5abce80db": {
+   "id": "c8c5abce80db",
+   "headline": "Mercado acompanha ata do Fomc e falas de Durigan; Ibovespa em dólar recua",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Agenda do dia que pode mexer em juros e câmbio.",
+   "summary": "Investidores olham hoje a ata da última reunião do Fomc, que pode sinalizar pausa nos cortes de juros nos EUA, e falas de Durigan em evento. O Ibovespa em dólar recua nesta quarta.",
+   "involves": "Fed (Fomc), Durigan e o Ibovespa em dólar.",
+   "interpretation": "Depois do rali eleitoral, o foco volta para o ambiente externo: um Fed mais duro pode limitar a queda dos juros e o fluxo para emergentes.",
+   "impact": "Treasuries e dólar podem se mexer à tarde; bolsa brasileira tende a ficar mais sensível ao exterior.",
+   "sentiment": "neutro",
+   "entities": [
+    "Fed",
+    "Fomc",
+    "Durigan",
+    "Ibovespa"
+   ],
+   "tags": [
+    "agenda",
+    "Fed"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "c50980aaec7e": {
+   "id": "c50980aaec7e",
+   "headline": "Quantum X assina carta de intenção para comprar 80% da TraderMade",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Quantum X (OTC: QUTX) assinou carta de intenção vinculante para adquirir 80% da TraderMade Systems, provedora de dados de mercado.",
+   "involves": "Quantum X, TraderMade.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Quantum X",
+    "TraderMade"
+   ],
+   "tags": [
+    "dados de mercado"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição (80%)",
+    "buyer": "Quantum X",
+    "target": "TraderMade Systems",
+    "value": "não divulgado",
+    "stage": "Carta de intenção vinculante",
+    "sector": "Dados financeiros",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "adbe6ad960df": {
+   "id": "adbe6ad960df",
+   "headline": "Ibovespa realiza lucros após rali de 8%, mas segue acima de 205 mil pontos; dólar a R$ 4,97",
+   "category": "mercados",
+   "importance": 7,
+   "importance_reason": "Mostra a acomodação do mercado depois do choque eleitoral.",
+   "summary": "Depois da alta de quase 8% na segunda, o Ibovespa recuou na terça com realização de lucros, mas se manteve acima dos 205 mil pontos. O dólar foi a R$ 4,97. Em Nova York, os índices fecharam em alta, assim como o petróleo.",
+   "involves": "Ibovespa, dólar e bolsas americanas.",
+   "interpretation": "Correção pequena depois de um movimento histórico é sinal de que o mercado consolidou o novo patamar, sem devolver o rali.",
+   "impact": "O novo nível da bolsa (acima de 200 mil) passa a ser a referência para emissões e valuations.",
+   "sentiment": "neutro",
+   "entities": [
+    "Ibovespa"
+   ],
+   "tags": [
+    "realização",
+    "câmbio"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "549e8c0bd7d0": {
+   "id": "549e8c0bd7d0",
+   "headline": "Paramount conclui compra da Warner por US$ 81 bi e cria a Skydance",
+   "category": "mna",
+   "importance": 7,
+   "importance_reason": "Fechamento de um dos maiores deals de mídia do mundo, com valor divulgado.",
+   "summary": "A Paramount concluiu a aquisição da Warner Bros. Discovery por US$ 81 bilhões, criando a Skydance, uma gigante global de mídia.",
+   "involves": "Paramount, Warner Bros. Discovery e Skydance.",
+   "interpretation": "É o fim de um processo longo e disputado. A empresa resultante passa a concentrar estúdios, TV e streaming.",
+   "impact": "Muda o equilíbrio de forças em conteúdo e streaming; a integração e a dívida da operação viram o foco.",
+   "sentiment": "neutro",
+   "entities": [
+    "Paramount",
+    "Warner Bros. Discovery",
+    "Skydance"
+   ],
+   "tags": [
+    "mídia",
+    "fechamento"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Paramount",
+    "target": "Warner Bros. Discovery",
+    "value": "US$ 81 bilhões",
+    "stage": "Concluído",
+    "sector": "Mídia",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "1d1b7411f8a7": {
+   "id": "1d1b7411f8a7",
+   "headline": "Ânimo do mercado com Flávio pode ter prazo de validade, dizem economistas",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Contraponto à euforia, útil para calibrar o cenário.",
+   "summary": "Economistas ouvidos pelo g1 avaliam que o otimismo do mercado com a vantagem de Flávio Bolsonaro no 1º turno pode ser passageiro. O Ibovespa disparou mais de 7% e superou os 206 mil pontos.",
+   "involves": "Flávio Bolsonaro, Lula, o PL no Congresso e o mercado.",
+   "interpretation": "A euforia depende de o resultado se confirmar e de sinais concretos de política econômica; sem isso, parte do movimento pode devolver.",
+   "impact": "Reforça a leitura de volatilidade alta até 25/10.",
+   "sentiment": "misto",
+   "entities": [
+    "Flávio Bolsonaro",
+    "Lula",
+    "Ibovespa"
+   ],
+   "tags": [
+    "eleições",
+    "risco"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "2d15c79fc501": {
+   "id": "2d15c79fc501",
+   "headline": "Fortuna de André Esteves cresce US$ 2,7 bi com o rali",
+   "category": "empresas",
+   "importance": 4,
+   "importance_reason": "Termômetro do efeito do rali sobre o BTG.",
+   "summary": "A fortuna de André Esteves, principal acionista do BTG Pactual, teve crescimento recorde de US$ 2,7 bilhões com a euforia do mercado depois do 1º turno.",
+   "involves": "André Esteves e BTG Pactual.",
+   "interpretation": "Reflete a alta das ações do BTG, uma das maiores beneficiadas pelo rali.",
+   "impact": "Pouco efeito prático; mostra a dimensão da reprecificação das financeiras.",
+   "sentiment": "positivo",
+   "entities": [
+    "André Esteves",
+    "BTG Pactual"
+   ],
+   "tags": [
+    "BTG",
+    "rali"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "6436b53c393c": {
+   "id": "6436b53c393c",
+   "headline": "SVN compra a Expertise e chega a R$ 37 bi sob custódia",
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Consolidação de escritórios de assessoria ligados à XP, com valores divulgados.",
+   "summary": "O escritório de assessoria SVN, ligado à XP, comprou a Expertise, que tem R$ 900 milhões sob custódia e atua em Rondônia e Mato Grosso do Sul, numa transação com dinheiro e troca de ações. A SVN chega a R$ 37 bilhões sob custódia.",
+   "involves": "SVN, Expertise e o ecossistema XP.",
+   "interpretation": "Os escritórios de assessoria estão em plena consolidação, e o M&A é o caminho para ganhar escala e presença regional.",
+   "impact": "Mais consolidação entre assessorias; escritórios menores viram alvos.",
+   "sentiment": "positivo",
+   "entities": [
+    "SVN",
+    "Expertise",
+    "XP"
+   ],
+   "tags": [
+    "assessoria de investimentos",
+    "consolidação"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "SVN",
+    "target": "Expertise",
+    "value": "não divulgado (dinheiro e troca de ações)",
+    "stage": "Anunciado",
+    "sector": "Assessoria de investimentos",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "5917e20603a4": {
+   "id": "5917e20603a4",
+   "headline": "Grupo Primo incorpora a Oikos e chega a R$ 34 bi sob custódia",
+   "category": "mna",
+   "importance": 7,
+   "importance_reason": "Maior M&A da história do Grupo Primo, envolvendo famílias relevantes.",
+   "summary": "O Grupo Primo, de Thiago Nigro, incorporou a Oikos, multi-family office com R$ 8 bilhões em ativos que tem as famílias Zarzur e Grisi como acionistas de referência. A operação foi feita por troca de ações e leva o grupo a R$ 34 bilhões sob custódia.",
+   "involves": "Grupo Primo, Thiago Nigro, Oikos e as famílias Zarzur e Grisi.",
+   "interpretation": "Um grupo de origem em conteúdo financeiro avança para gestão de patrimônio de alta renda via M&A.",
+   "impact": "Acirra a disputa por multi-family offices; outros MFOs independentes podem virar alvo.",
+   "sentiment": "positivo",
+   "entities": [
+    "Grupo Primo",
+    "Thiago Nigro",
+    "Oikos"
+   ],
+   "tags": [
+    "wealth management",
+    "troca de ações"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Incorporação",
+    "buyer": "Grupo Primo",
+    "target": "Oikos",
+    "value": "não divulgado (troca de ações)",
+    "stage": "Concluído",
+    "sector": "Gestão de patrimônio",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "7a168d8646b6": {
+   "id": "7a168d8646b6",
+   "headline": "Refinaria Dangote oferece quase 20% do IPO a investidores do Leste da África",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "IPO relevante em emergente, sem ligação com o Brasil.",
+   "summary": "A Dangote Petroleum Refinery, dona da maior refinaria da África, na Nigéria, oferece quase 20% do seu IPO a investidores do Leste do continente. A oferta pode levantar até US$ 300,4 milhões.",
+   "involves": "Dangote Petroleum Refinery & Petrochemicals.",
+   "interpretation": "Mostra a abertura de mercados de capitais africanos para grandes ativos de energia.",
+   "impact": "Impacto limitado no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Dangote"
+   ],
+   "tags": [
+    "IPO",
+    "África"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "Mercado",
+    "target": "Dangote Petroleum Refinery",
+    "value": "até US$ 300,4 milhões",
+    "stage": "Em oferta",
+    "sector": "Refino",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "1f266303ecf5": {
+   "id": "1f266303ecf5",
+   "headline": "Com expectativa de queda da Selic, analistas indicam FIIs",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Pauta de investimento pessoal.",
+   "summary": "O mercado espera que o Copom reduza os juros depois das eleições, e analistas indicam fundos imobiliários para aproveitar a mudança.",
+   "involves": "Copom e fundos imobiliários.",
+   "interpretation": "A expectativa de queda de juros já está mexendo em ativos de renda.",
+   "impact": "Pouco relevante para M&A.",
+   "sentiment": "positivo",
+   "entities": [
+    "Copom"
+   ],
+   "tags": [
+    "FIIs",
+    "Selic"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "fee5c91d126b": {
+   "id": "fee5c91d126b",
+   "headline": "O Assunto: a reação do mercado ao 1º turno, da euforia à incerteza",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Podcast que resume o que já foi coberto.",
+   "summary": "Episódio do podcast O Assunto (g1) recapitula o rali de segunda e as dúvidas sobre sua continuidade.",
+   "involves": "Ibovespa, juros e câmbio.",
+   "interpretation": "Sem fato novo.",
+   "impact": "Nenhum adicional.",
+   "sentiment": "neutro",
+   "entities": [
+    "g1"
+   ],
+   "tags": [
+    "eleições"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "7b63c074a0a3": {
+   "id": "7b63c074a0a3",
+   "headline": "Os setores que mais subiram na bolsa depois do 1º turno",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Recapitulação setorial do rali.",
+   "summary": "O g1 mostra os setores que dispararam na bolsa no primeiro pregão após o 1º turno, quando o Ibovespa subiu 7,7% e o dólar caiu mais de 4%.",
+   "involves": "Setores da B3.",
+   "interpretation": "Confirma a rotação para domésticas e sensíveis a juros.",
+   "impact": "Nenhum adicional.",
+   "sentiment": "positivo",
+   "entities": [
+    "Ibovespa"
+   ],
+   "tags": [
+    "setores"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "867451013697": {
+   "id": "867451013697",
+   "headline": "Suprema Corte dos EUA se mostra cética com ação contra private equity em planos 401(k)",
+   "category": "internacional",
+   "importance": 5,
+   "importance_reason": "Pode abrir um canal grande de capital para private equity.",
+   "summary": "Juízes da Suprema Corte americana se mostraram céticos quanto a uma contestação ao uso de private equity em planos de previdência 401(k).",
+   "involves": "Suprema Corte dos EUA e a indústria de private equity.",
+   "interpretation": "Se a contestação cair, os fundos de previdência dos EUA ficam mais livres para alocar em private equity.",
+   "impact": "Mais capital para PE no longo prazo, com possível efeito em captação de fundos globais que investem no Brasil.",
+   "sentiment": "positivo",
+   "entities": [
+    "Suprema Corte dos EUA"
+   ],
+   "tags": [
+    "private equity",
+    "previdência"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "2433238baea9": {
+   "id": "2433238baea9",
+   "headline": "Lambda, de computação para IA, levanta US$ 4 bi na última rodada antes do IPO",
+   "category": "tech",
+   "importance": 5,
+   "importance_reason": "Rodada grande em infraestrutura de IA antes de IPO.",
+   "summary": "A Lambda, startup de computação para IA, está levantando US$ 4 bilhões na última rodada privada antes do IPO planejado, segundo o WSJ.",
+   "involves": "Lambda.",
+   "interpretation": "A demanda por capacidade de computação para IA segue atraindo cheques gigantes.",
+   "impact": "Referência de valuation para infraestrutura de IA.",
+   "sentiment": "positivo",
+   "entities": [
+    "Lambda"
+   ],
+   "tags": [
+    "IA",
+    "pré-IPO"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Rodada pré-IPO",
+    "buyer": "Investidores não divulgados",
+    "target": "Lambda",
+    "value": "US$ 4 bilhões",
+    "stage": "Em captação",
+    "sector": "Infraestrutura de IA",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "e72d7baca5a5": {
+   "id": "e72d7baca5a5",
+   "headline": "Uber compra plataforma de catering por US$ 2,3 bi para ampliar o Uber Eats",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Deal relevante de tecnologia com valor divulgado.",
+   "summary": "A Uber vai adquirir uma plataforma de catering por US$ 2,3 bilhões para expandir o Uber Eats. O nome da empresa comprada não consta do título.",
+   "involves": "Uber e uma plataforma de catering (nome não informado no título).",
+   "interpretation": "A Uber busca crescer em entregas corporativas, um nicho de margem maior.",
+   "impact": "Pode mexer na concorrência de delivery, inclusive em mercados onde a Uber disputa com iFood.",
+   "sentiment": "neutro",
+   "entities": [
+    "Uber"
+   ],
+   "tags": [
+    "delivery",
+    "aquisição"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Uber",
+    "target": "Plataforma de catering (nome não informado no título)",
+    "value": "US$ 2,3 bilhões",
+    "stage": "Anunciado",
+    "sector": "Delivery / tecnologia",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "fd6a106cbc80": {
+   "id": "fd6a106cbc80",
+   "headline": "Paramount conclui fusão com a Warner e cria a Skydance (Reuters)",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Mesmo fato da conclusão Paramount/Warner.",
+   "summary": "A Reuters confirma a conclusão da fusão entre Paramount e Warner Bros., que cria a Skydance.",
+   "involves": "Paramount e Warner Bros. Discovery.",
+   "interpretation": "Mesmo fato da notícia principal.",
+   "impact": "Veja a análise da notícia principal.",
+   "sentiment": "neutro",
+   "entities": [
+    "Paramount",
+    "Warner Bros. Discovery"
+   ],
+   "tags": [
+    "mídia"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Paramount",
+    "target": "Warner Bros. Discovery",
+    "value": "US$ 81 bilhões",
+    "stage": "Concluído",
+    "sector": "Mídia",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "4e9277ef293d": {
+   "id": "4e9277ef293d",
+   "headline": "Dangote quer atrair 10 milhões de investidores no IPO da refinaria",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Dangote pretende atrair 10 milhões de investidores no IPO da refinaria.",
+   "involves": "Dangote.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Dangote"
+   ],
+   "tags": [
+    "IPO"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "Mercado",
+    "target": "Dangote Petroleum Refinery",
+    "value": "até US$ 300,4 milhões",
+    "stage": "Em oferta",
+    "sector": "Refino",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "a132935a5045": {
+   "id": "a132935a5045",
+   "headline": "Lambda busca US$ 4 bi antes do IPO previsto para 2027",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Lambda busca levantar US$ 4 bilhões antes do IPO previsto para 2027.",
+   "involves": "Lambda.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Lambda"
+   ],
+   "tags": [
+    "IA"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Rodada pré-IPO",
+    "buyer": "Investidores não divulgados",
+    "target": "Lambda",
+    "value": "US$ 4 bilhões",
+    "stage": "Em captação",
+    "sector": "Infraestrutura de IA",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "fe410628e450": {
+   "id": "fe410628e450",
+   "headline": "Ondo mira mercado pré-IPO com tokens de empresas privadas",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Ondo vai oferecer tokens de exposição a empresas privadas antes do IPO, estreando com uma gigante de IA.",
+   "involves": "Ondo.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Ondo"
+   ],
+   "tags": [
+    "tokenização"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "c50e408e3d5f": {
+   "id": "c50e408e3d5f",
+   "headline": "Flávio Bolsonaro recebe apoio de Caiado para o 2º turno",
+   "category": "politica",
+   "importance": 7,
+   "importance_reason": "Apoio de um governador relevante muda a aritmética do 2º turno.",
+   "summary": "Ronaldo Caiado declarou apoio a Flávio Bolsonaro na disputa contra Lula no 2º turno.",
+   "involves": "Flávio Bolsonaro, Ronaldo Caiado e Lula.",
+   "interpretation": "Consolida o campo da direita em torno de Flávio, o que o mercado tende a ler como aumento da chance de troca de governo.",
+   "impact": "Pode sustentar o rali; a próxima peça são as pesquisas do 2º turno.",
+   "sentiment": "positivo",
+   "entities": [
+    "Flávio Bolsonaro",
+    "Ronaldo Caiado",
+    "Lula"
+   ],
+   "tags": [
+    "eleições",
+    "apoios"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "ff6ed9ec5b0b": {
+   "id": "ff6ed9ec5b0b",
+   "headline": "Cade aprova sem restrições a compra do Grupo Lumiar pela Air Liquide",
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Aprovação antitruste de um deal estrangeiro no Brasil.",
+   "summary": "A Air Liquide recebeu aprovação incondicional para a aquisição do Grupo Lumiar no Brasil.",
+   "involves": "Air Liquide, Grupo Lumiar e Cade.",
+   "interpretation": "Sem restrições, o deal pode ser concluído.",
+   "impact": "Consolidação no mercado de gases industriais e medicinais no Brasil.",
+   "sentiment": "positivo",
+   "entities": [
+    "Air Liquide",
+    "Grupo Lumiar",
+    "Cade"
+   ],
+   "tags": [
+    "Cade",
+    "gases industriais"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Air Liquide",
+    "target": "Grupo Lumiar",
+    "value": "não divulgado",
+    "stage": "Aprovado pelo Cade",
+    "sector": "Gases industriais",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "de135dfff806": {
+   "id": "de135dfff806",
+   "headline": "América Movil conclui aquisição da Desktop",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Mesmo deal Claro/Desktop já noticiado.",
+   "summary": "As ações da América Movil reagem no after-market à conclusão da aquisição no Brasil.",
+   "involves": "América Movil e Desktop.",
+   "interpretation": "Mesmo deal já noticiado.",
+   "impact": "Veja a análise da notícia principal.",
+   "sentiment": "neutro",
+   "entities": [
+    "América Movil",
+    "Desktop"
+   ],
+   "tags": [
+    "telecom"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "América Movil (Claro)",
+    "target": "Desktop",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Telecom / banda larga",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "077d28b32dd6": {
+   "id": "077d28b32dd6",
+   "headline": "Balflex e NRP Jones unem operações nos EUA",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "Balflex e NRP Jones combinam suas operações americanas no setor de hidráulica.",
+   "involves": "Balflex, NRP Jones.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Balflex",
+    "NRP Jones"
+   ],
+   "tags": [
+    "hidráulica"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Fusão",
+    "buyer": "Balflex",
+    "target": "NRP Jones (operações nos EUA)",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Hidráulica",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "e97be52c7675": {
+   "id": "e97be52c7675",
+   "headline": "Valsoft anuncia a compra do grupo Firebrand",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Valsoft Corporation anunciou a aquisição do grupo de empresas Firebrand.",
+   "involves": "Valsoft, Firebrand.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Valsoft",
+    "Firebrand"
+   ],
+   "tags": [
+    "software"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Valsoft",
+    "target": "Firebrand Group",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Software",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "0ce8a62935cc": {
+   "id": "0ce8a62935cc",
+   "headline": "Informa anuncia compra da Clarion Events por £2,24 bi",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Deal grande em eventos, sem ligação direta com o Brasil.",
+   "summary": "A Informa anunciou a aquisição da Clarion Events por £2,24 bilhões.",
+   "involves": "Informa e Clarion Events.",
+   "interpretation": "Consolidação no setor global de feiras e eventos.",
+   "impact": "Pouco efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Informa",
+    "Clarion Events"
+   ],
+   "tags": [
+    "eventos"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Informa",
+    "target": "Clarion Events",
+    "value": "£2,24 bilhões",
+    "stage": "Anunciado",
+    "sector": "Eventos",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "e5626cbb14eb": {
+   "id": "e5626cbb14eb",
+   "headline": "Claro conclui compra de 72,8% da Desktop",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Detalha a fatia comprada no deal Claro/Desktop.",
+   "summary": "A Claro concluiu a aquisição de 72,8% da operadora de fibra brasileira Desktop.",
+   "involves": "Claro e Desktop.",
+   "interpretation": "Com o controle, a OPA protocolada mira os minoritários restantes.",
+   "impact": "Consolidação de banda larga regional.",
+   "sentiment": "neutro",
+   "entities": [
+    "Claro",
+    "Desktop"
+   ],
+   "tags": [
+    "telecom",
+    "fibra"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "América Movil (Claro)",
+    "target": "Desktop",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Telecom / banda larga",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "be18b682bf5d": {
+   "id": "be18b682bf5d",
+   "headline": "Aprovação do Cade para a fusão Huntsman–Olin se torna definitiva",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Fim do prazo antitruste de um deal químico global.",
+   "summary": "A aprovação da fusão entre Huntsman e Olin no Brasil transitou em julgado e se tornou definitiva.",
+   "involves": "Huntsman, Olin e Cade.",
+   "interpretation": "Sem mais recursos, o deal está liberado no Brasil.",
+   "impact": "Pouco efeito direto; fecha uma etapa regulatória.",
+   "sentiment": "neutro",
+   "entities": [
+    "Huntsman",
+    "Olin",
+    "Cade"
+   ],
+   "tags": [
+    "Cade",
+    "química"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Fusão",
+    "buyer": "Huntsman",
+    "target": "Olin",
+    "value": "não divulgado",
+    "stage": "Aprovado pelo Cade",
+    "sector": "Química",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "c89400bc459b": {
+   "id": "c89400bc459b",
+   "headline": "Ayesa Digital conclui compra da basca Kuik Digital Solutions",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Ayesa Digital concluiu a aquisição da Kuik Digital Solutions, do País Basco.",
+   "involves": "Ayesa Digital, Kuik.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Ayesa Digital",
+    "Kuik"
+   ],
+   "tags": [
+    "TI"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Ayesa Digital",
+    "target": "Kuik Digital Solutions",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "TI",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "d0b85fdde5c1": {
+   "id": "d0b85fdde5c1",
+   "headline": "Third Coast e Great Plains anunciam fusão de bancos regionais nos EUA",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Consolidação bancária americana.",
+   "summary": "Third Coast Bancshares e Great Plains Bancshares assinaram acordo definitivo de fusão; juntas, terão mais de US$ 9 bilhões em ativos.",
+   "involves": "Third Coast Bancshares e Great Plains Bancshares.",
+   "interpretation": "Consolidação de bancos regionais nos EUA segue ativa.",
+   "impact": "Pouco efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Third Coast",
+    "Great Plains"
+   ],
+   "tags": [
+    "bancos",
+    "EUA"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Fusão",
+    "buyer": "Third Coast Bancshares",
+    "target": "Great Plains Bancshares",
+    "value": "não divulgado",
+    "stage": "Acordo definitivo",
+    "sector": "Bancos",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "530c184053e9": {
+   "id": "530c184053e9",
+   "headline": "Solidion mantém oferta pela Polar Power (versão em francês)",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "Versão em francês do comunicado em que a Solidion diz não ver razão para melhorar a oferta pela Polar Power.",
+   "involves": "Solidion, Polar Power.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Solidion",
+    "Polar Power"
+   ],
+   "tags": [
+    "oferta"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "d556c266b569": {
+   "id": "d556c266b569",
+   "headline": "Ata do Fed, fluxo cambial e indústria movem os mercados hoje",
+   "category": "mercados",
+   "importance": 5,
+   "importance_reason": "Agenda do dia.",
+   "summary": "A agenda desta quarta traz a ata do Fed e, no Brasil, indicadores de inflação, atividade e fluxo de capital.",
+   "involves": "Fed e indicadores brasileiros.",
+   "interpretation": "Dia de dados, com foco no exterior.",
+   "impact": "Pode mexer em juros e câmbio.",
+   "sentiment": "neutro",
+   "entities": [
+    "Fed"
+   ],
+   "tags": [
+    "agenda"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "cd0b0d9efb28": {
+   "id": "cd0b0d9efb28",
+   "headline": "Harbor Health compra clínicas Village Medical em Houston",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Harbor Health vai incorporar 27 clínicas da Village Medical em Houston.",
+   "involves": "Harbor Health, Village Medical.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Harbor Health",
+    "Village Medical"
+   ],
+   "tags": [
+    "saúde"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Harbor Health",
+    "target": "27 clínicas Village Medical (Houston)",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Saúde",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "09ed9b7e03fd": {
+   "id": "09ed9b7e03fd",
+   "headline": "Coast Counties Peterbilt compra revendedora em Nevada",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Coast Counties Peterbilt comprou a Peterbilt Truck Parts & Equipment e expande para o norte de Nevada.",
+   "involves": "Coast Counties Peterbilt.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Coast Counties Peterbilt"
+   ],
+   "tags": [
+    "concessionárias"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Coast Counties Peterbilt",
+    "target": "Peterbilt Truck Parts & Equipment",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Concessionárias",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "5daf201b123b": {
+   "id": "5daf201b123b",
+   "headline": "Gestores de FIDC poderão consultar o SCR do Banco Central a partir de novembro",
+   "category": "macro",
+   "importance": 5,
+   "importance_reason": "Mudança regulatória relevante para o crédito estruturado.",
+   "summary": "A partir de 1º de novembro, gestores de FIDCs poderão consultar o Sistema de Informações de Crédito (SCR) do Banco Central, base que registra as operações de crédito de pessoas físicas e jurídicas.",
+   "involves": "Banco Central e gestores de FIDC.",
+   "interpretation": "Mais informação reduz o risco de análise de crédito e tende a baratear as operações.",
+   "impact": "Favorece o crescimento dos FIDCs e de gestoras de crédito, como a XP Asset, que mira R$ 10 bi no segmento.",
+   "sentiment": "positivo",
+   "entities": [
+    "Banco Central",
+    "FIDC"
+   ],
+   "tags": [
+    "FIDC",
+    "regulação",
+    "crédito"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "e00bb8c9030a": {
+   "id": "e00bb8c9030a",
+   "headline": "Valtir compra a QWICK KURB",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Valtir concluiu em 1º de setembro a compra da QWICK KURB, de separadores de faixa para rodovias.",
+   "involves": "Valtir, QWICK KURB.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Valtir",
+    "QWICK KURB"
+   ],
+   "tags": [
+    "infraestrutura"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Valtir",
+    "target": "QWICK KURB",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Segurança viária",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "7ac234991872": {
+   "id": "7ac234991872",
+   "headline": "Opifex-Synergy compra a ECCO Equipment da Hitachi",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Opifex-Synergy comprou a ECCO Equipment de uma afiliada da Hitachi Construction Machinery; o Greenberg Traurig assessorou.",
+   "involves": "Opifex-Synergy, ECCO Equipment, Hitachi.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Opifex-Synergy",
+    "ECCO Equipment",
+    "Hitachi"
+   ],
+   "tags": [
+    "equipamentos"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Opifex-Synergy",
+    "target": "ECCO Equipment",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Aluguel de equipamentos",
+    "advisors": "Greenberg Traurig (comprador)"
+   },
+   "_day": "2026-10-07"
+  },
+  "14eb3ff7a5b3": {
+   "id": "14eb3ff7a5b3",
+   "headline": "Empresa australiana compra fábrica em Feira de Santana para reduzir dependência da China",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Investimento estrangeiro industrial no Brasil.",
+   "summary": "Uma empresa australiana comprou uma fábrica em Feira de Santana (BA) para reduzir a dependência da China. O nome da empresa não consta do título.",
+   "involves": "Empresa australiana (não identificada no título) e uma fábrica em Feira de Santana.",
+   "interpretation": "Sinal de reorganização de cadeias de suprimento, com o Brasil como alternativa à China.",
+   "impact": "Positivo para investimentos industriais no Nordeste.",
+   "sentiment": "positivo",
+   "entities": [
+    "Feira de Santana"
+   ],
+   "tags": [
+    "investimento estrangeiro",
+    "cadeias globais"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição de ativo",
+    "buyer": "Empresa australiana (não identificada no título)",
+    "target": "Fábrica em Feira de Santana (BA)",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Indústria",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "d1c401744856": {
+   "id": "d1c401744856",
+   "headline": "O que esperar hoje: ata do Fed, IGP-DI e dados da Anfavea",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Agenda do dia.",
+   "summary": "A agenda traz a ata do Fed, o IGP-DI e os dados de produção e vendas da Anfavea.",
+   "involves": "Fed, IGP-DI e Anfavea.",
+   "interpretation": "Agenda carregada, com foco nos EUA à tarde.",
+   "impact": "Pode mexer em juros e câmbio.",
+   "sentiment": "neutro",
+   "entities": [
+    "Fed",
+    "Anfavea"
+   ],
+   "tags": [
+    "agenda"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "8be86595fe7d": {
+   "id": "8be86595fe7d",
+   "headline": "Índia sobe juros pela primeira vez desde 2023",
+   "category": "internacional",
+   "importance": 5,
+   "importance_reason": "Sinal de aperto monetário num grande emergente.",
+   "summary": "O banco central da Índia elevou os juros pela primeira vez desde 2023.",
+   "involves": "Banco central da Índia.",
+   "interpretation": "Um grande emergente voltando a subir juros mostra pressão inflacionária global, com petróleo e juros americanos altos.",
+   "impact": "Pode pesar sobre o apetite por emergentes, inclusive o Brasil.",
+   "sentiment": "negativo",
+   "entities": [
+    "Índia"
+   ],
+   "tags": [
+    "juros",
+    "emergentes"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "86b1ecc93e2e": {
+   "id": "86b1ecc93e2e",
+   "headline": "Skydance nasce com 200 milhões de assinantes; veja os números",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Detalha a empresa resultante da fusão Paramount–Warner.",
+   "summary": "A empresa formada pela compra da Warner pela Paramount poderá alcançar 200 milhões de assinantes e reúne marcas como Warner Bros., Paramount Pictures, HBO, CNN, CBS, Paramount+ e HBO Max.",
+   "involves": "Paramount, Warner Bros. Discovery e Skydance.",
+   "interpretation": "Mostra a escala da nova empresa em streaming.",
+   "impact": "Pressiona concorrentes de streaming.",
+   "sentiment": "neutro",
+   "entities": [
+    "Skydance",
+    "HBO Max",
+    "Paramount+"
+   ],
+   "tags": [
+    "streaming"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Paramount",
+    "target": "Warner Bros. Discovery",
+    "value": "US$ 81 bilhões",
+    "stage": "Concluído",
+    "sector": "Mídia",
+    "advisors": "não divulgado"
+   },
+   "_day": "2026-10-07"
+  },
+  "1ffcbbb8ad3e": {
+   "id": "1ffcbbb8ad3e",
+   "headline": "Morgan Stanley eleva Brasil para compra e vê Ibovespa a 250 mil no cenário otimista",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Confirma que o banco do upgrade é o Morgan Stanley.",
+   "summary": "O Morgan Stanley elevou o Brasil para compra após o 1º turno e vê o Ibovespa a 250 mil pontos no cenário otimista.",
+   "involves": "Morgan Stanley e Ibovespa.",
+   "interpretation": "Esclarece que o 'Morgan' da notícia de ontem é o Morgan Stanley; o alvo de 250 mil é de cenário otimista, não central.",
+   "impact": "Upgrades de bancos globais tendem a atrair fluxo estrangeiro.",
+   "sentiment": "positivo",
+   "entities": [
+    "Morgan Stanley",
+    "Ibovespa"
+   ],
+   "tags": [
+    "upgrade",
+    "fluxo"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "777240b4b164": {
+   "id": "777240b4b164",
+   "headline": "ABBC anuncia ex-diretor do Banco Central como novo CEO",
+   "category": "empresas",
+   "importance": 3,
+   "importance_reason": "Notícia periférica para o leitor.",
+   "summary": "A Associação Brasileira de Bancos (ABBC) anunciou um ex-diretor do Banco Central como novo CEO; o nome não consta do título.",
+   "involves": "ABBC, Banco Central.",
+   "interpretation": "Movimento pontual, sem ligação direta com o Brasil.",
+   "impact": "Impacto mínimo no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "ABBC",
+    "Banco Central"
+   ],
+   "tags": [
+    "bancos médios"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "57cb87343757": {
+   "id": "57cb87343757",
+   "headline": "Dólar fecha a R$ 4,9757 e Ibovespa recua 0,52%, a 205.835 pontos",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Fechamento de terça, com números exatos.",
+   "summary": "Na terça, o dólar caiu 0,51%, a R$ 4,9757, e o Ibovespa recuou 0,52%, a 205.835 pontos. Na véspera, o índice tinha subido 7,70%, a maior alta desde março de 2020.",
+   "involves": "Dólar e Ibovespa.",
+   "interpretation": "Dia de acomodação: o real seguiu se valorizando e a bolsa devolveu muito pouco.",
+   "impact": "O novo patamar de câmbio, abaixo de R$ 5, se consolida por enquanto.",
+   "sentiment": "neutro",
+   "entities": [
+    "Ibovespa",
+    "dólar"
+   ],
+   "tags": [
+    "fechamento"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "c3c829c95777": {
+   "id": "c3c829c95777",
+   "headline": "Ouro cai 1% com dólar mais forte; ata do Fed no foco",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Mercado de commodities.",
+   "summary": "O ouro caiu 1% com o dólar mais forte, enquanto investidores aguardam a ata do Fed.",
+   "involves": "Ouro, dólar e Fed.",
+   "interpretation": "Dólar global mais forte.",
+   "impact": "Pouco efeito direto.",
+   "sentiment": "neutro",
+   "entities": [
+    "Fed"
+   ],
+   "tags": [
+    "ouro"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "089bef532cca": {
+   "id": "089bef532cca",
+   "headline": "Dólar sobe no mundo com petróleo em alta e foco no Fed",
+   "category": "internacional",
+   "importance": 4,
+   "importance_reason": "Ambiente externo para o câmbio.",
+   "summary": "O dólar ganha força globalmente com a alta do petróleo e a atenção ao Fed.",
+   "involves": "Dólar, petróleo e Fed.",
+   "interpretation": "Um dólar global mais forte pode limitar a valorização do real.",
+   "impact": "Câmbio pode ter dia de correção.",
+   "sentiment": "neutro",
+   "entities": [
+    "Fed"
+   ],
+   "tags": [
+    "dólar",
+    "petróleo"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "ed73ff2bfca6": {
+   "id": "ed73ff2bfca6",
+   "headline": "WSJ: Sheinbaum se cansa de ceder aos EUA",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Relação EUA–México, sem efeito direto no Brasil.",
+   "summary": "Análise do WSJ diz que a presidente do México, Claudia Sheinbaum, está perdendo a paciência com a postura conciliadora em relação aos EUA.",
+   "involves": "Claudia Sheinbaum, México e EUA.",
+   "interpretation": "Tensão comercial na América do Norte.",
+   "impact": "Pouco efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Claudia Sheinbaum",
+    "México"
+   ],
+   "tags": [
+    "EUA-México"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "faafd032b397": {
+   "id": "faafd032b397",
+   "headline": "WSJ: por que é difícil tirar o mercado da dependência das falas do Fed",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Análise conceitual.",
+   "summary": "Análise do WSJ sobre a dificuldade de reduzir a influência das falas do Fed nos mercados.",
+   "involves": "Fed.",
+   "interpretation": "Sem fato novo.",
+   "impact": "Nenhum.",
+   "sentiment": "neutro",
+   "entities": [
+    "Fed"
+   ],
+   "tags": [
+    "Fed"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "53ddf6e7553b": {
+   "id": "53ddf6e7553b",
+   "headline": "Bancos refazem as contas e sobem o potencial de Petrobras, Rede D'Or e outras",
+   "category": "mercados",
+   "importance": 5,
+   "importance_reason": "Revisões de recomendações após a eleição.",
+   "summary": "Depois do 1º turno, os analistas dos principais bancos revisaram o potencial de valorização de ações como Petrobras e Rede D'Or, com efeito positivo quase generalizado.",
+   "involves": "Bancos, Petrobras e Rede D'Or.",
+   "interpretation": "As revisões de preço-alvo dão sustentação ao rali.",
+   "impact": "Valuations mais altos ajudam emissões e M&A com pagamento em ações.",
+   "sentiment": "positivo",
+   "entities": [
+    "Petrobras",
+    "Rede D'Or"
+   ],
+   "tags": [
+    "preço-alvo"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "54328ebb9b17": {
+   "id": "54328ebb9b17",
+   "headline": "Debêntures de Petrobras e Vale se valorizam com a queda dos juros",
+   "category": "mercados",
+   "importance": 5,
+   "importance_reason": "O efeito da eleição chega ao crédito privado.",
+   "summary": "As debêntures de Petrobras e Vale avançam com a queda dos juros após o 1º turno.",
+   "involves": "Petrobras, Vale e o mercado de debêntures.",
+   "interpretation": "A queda dos juros longos valoriza títulos de dívida já emitidos.",
+   "impact": "Bom momento para novas emissões de dívida corporativa.",
+   "sentiment": "positivo",
+   "entities": [
+    "Petrobras",
+    "Vale"
+   ],
+   "tags": [
+    "debêntures",
+    "crédito privado"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
+  },
+  "8e3a7c77421e": {
+   "id": "8e3a7c77421e",
+   "headline": "Crédito privado se valoriza com a eleição, da Petrobras à Vale",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Mesmo tema das debêntures.",
+   "summary": "O crédito privado se valoriza com o resultado eleitoral, com destaque para Petrobras e Vale.",
+   "involves": "Petrobras e Vale.",
+   "interpretation": "Mesmo fato da notícia sobre as debêntures.",
+   "impact": "Veja a análise da notícia principal.",
+   "sentiment": "positivo",
+   "entities": [
+    "Petrobras",
+    "Vale"
+   ],
+   "tags": [
+    "crédito privado"
+   ],
+   "is_deal": false,
+   "deal": {
+    "type": "",
+    "buyer": "",
+    "target": "",
+    "value": "",
+    "stage": "",
+    "sector": "",
+    "advisors": ""
+   },
+   "_day": "2026-10-07"
   }
  },
  "brief": {
-  "headline": "Depois do rali, o teste: Ibovespa fecha recorde em 206,9 mil pontos, bancos sobem alvos e o mercado cobra sinais do programa econômico",
-  "mood": "Segundo dia da reprecificação eleitoral: euforia mais contida, foco em recomendações dos bancos e em quem será a equipe econômica. Volatilidade alta até 25/10.",
+  "headline": "Consolidação na gestão de patrimônio acelera: Grupo Primo incorpora a Oikos e SVN compra a Expertise",
+  "mood": "Dia de digestão depois do rali de segunda: Ibovespa realiza levemente, dólar abaixo de R$ 5 e mercado à espera da ata do Fomc.",
   "tldr": [
-   "Fechamento de segunda: Ibovespa +7,70%, a 206.912 pontos, recorde de fechamento e de máxima intradiária (cerca de 209,6 mil). O dólar teve a maior queda diária em oito anos, para perto de R$ 4,99.",
-   "Placar do 1º turno: Flávio 47,03% contra 45,16% de Lula nos votos válidos. A diferença é estreita, então o 2º turno segue aberto e cada pesquisa deve mexer nos preços.",
-   "Bancos sobem as apostas: 'Morgan' (InfoMoney) eleva o Brasil para compra com Ibovespa em até 250 mil pontos; BTG vê até +45% com vitória de Flávio; Citi gosta de XP, B3 e BTG; Bradesco BBI prefere Petrobras, Cosan e Compass.",
-   "Juros futuros caíram mais de 6% e a curva achatou. O próximo passo, segundo a Faria Lima, é cobrar nomes e medidas econômicas concretas.",
-   "M&A no Brasil: minoritários da Toky (Mobly/Tok&Stok) pedem à CVM uma OPA de quase R$ 2 bi contra fundos da SPX e da DSK; Alares conclui a compra do Grupo Oquei por R$ 189 mi; Kimberly-Clark e Kenvue defendem sobreposições no Cade.",
-   "Lá fora: Paramount conclui hoje a compra da Warner Bros. Discovery; Apollo deve financiar a compra da EasyJet (£3,5 bi) com dívida lastreada em aeronaves; Moonshot AI (US$ 50 bi) mira IPO em Hong Kong em 2027.",
-   "Ruído político global: assessor de Trump pede a saída de Powell do conselho do Fed. O ambiente externo segue bom na abertura, com futuros dos EUA em alta e Treasuries em queda."
+   "Grupo Primo (Thiago Nigro) incorpora o MFO Oikos (R$ 8 bi) via troca de ações e chega a R$ 34 bi sob custódia.",
+   "No mesmo segmento, a SVN compra a Expertise (R$ 900 mi) e vai a R$ 37 bi sob custódia: wealth management segue em consolidação.",
+   "Cade aprovou sem restrições, no DOU, três atos de concentração: Terloc/Set Port/Agrobulk, Strategic Value Partners/Marelli e SDB/Carrefour.",
+   "Ibovespa caiu 0,52% na terça, a 205.835 pontos; dólar recuou 0,51%, a R$ 4,9757, depois do salto de 7,70% da segunda.",
+   "Morgan Stanley é o banco por trás da elevação do Brasil para compra, com cenário otimista de 250 mil pontos para o Ibovespa.",
+   "Na política, Caiado declara apoio a Flávio Bolsonaro no 2º turno.",
+   "Focus 2026: IPCA 5,01%, Selic 13,50%, PIB 1,85% e câmbio R$ 5,20; Selic meta atual 13,75%."
   ],
   "sections": [
    {
-    "category": "mercados",
-    "text": "O rali de segunda fechou menor que as máximas, mas ainda assim histórico: +7,7% no Ibovespa e a maior queda do dólar em oito anos. Hoje o tom é de recomendações. O banco citado como 'Morgan' eleva o Brasil para compra com alvo de até 250 mil pontos, o Citi e o Bradesco BBI apontam ganhadores, e o Itaú BBA mostra que só cinco empresas concentraram quase metade da alta. Isso sugere espaço para rotação para as ações que ficaram para trás.",
+    "category": "mna",
+    "text": "O destaque é a consolidação em gestão de patrimônio. O Grupo Primo incorpora a Oikos por troca de ações, sem caixa, e chega a R$ 34 bi. A SVN compra a Expertise e vai a R$ 37 bi. Os dois movimentos indicam corrida por escala entre assessorias e MFOs, com estruturas de permuta que tendem a exigir governança e acordo de acionistas bem desenhados. No Cade, a aprovação sem restrições do Grupo Lumiar pela Air Liquide reforça o ritmo de rito sumário.",
     "item_ids": [
-     "c5a407bd5568",
-     "9a79a492a55d",
-     "42478a3c1135",
-     "5b2ac8c88b71",
-     "e67a7572fe97",
-     "2dc80bede909"
+     "5917e20603a4",
+     "6436b53c393c",
+     "ff6ed9ec5b0b"
     ]
    },
    {
-    "category": "mna",
-    "text": "O destaque doméstico é o pedido dos minoritários da Toky à CVM: se acatado, obriga fundos da SPX e da DSK a uma OPA de quase R$ 2 bi e cria precedente para gestoras com posições relevantes em listadas. A consolidação de banda larga avança com Alares/Oquei (R$ 189 mi). No Cade, Kimberly-Clark e Kenvue discutem sobreposições que podem exigir remédios. Lá fora, o financiamento da Apollo para a EasyJet mostra a dívida lastreada em ativos ganhando espaço sobre o high yield.",
+    "category": "mercados",
+    "text": "Depois do rali histórico de segunda, o mercado realizou levemente: Ibovespa -0,52% e dólar a R$ 4,9757. A confirmação de que foi o Morgan Stanley que elevou o Brasil para compra sustenta o fluxo estrangeiro, mas economistas alertam que a euforia pode perder fôlego. Hoje o foco é a ata do Fomc.",
     "item_ids": [
-     "4e5a46799c11",
-     "8171ac8bb8fb",
-     "ef64bbf7cce4",
-     "fa4bd30abb47",
-     "861760d52553"
+     "57cb87343757",
+     "1ffcbbb8ad3e",
+     "c8c5abce80db"
     ]
    },
    {
     "category": "politica",
-    "text": "O placar de 47,03% a 45,16% mostra uma disputa aberta. Os palanques do pós-apuração dão pistas de quem pode compor um eventual governo, e a Faria Lima quer sinais concretos sobre a área econômica. Em paralelo, a PF adiou o depoimento de André Esteves como testemunha no inquérito sobre a fiscalização do BC no Banco Master.",
+    "text": "O apoio de Caiado a Flávio Bolsonaro no 2º turno reorganiza a direita e entra no preço de ativos sensíveis ao cenário eleitoral.",
     "item_ids": [
-     "c1951103fa87",
-     "7047448b201c",
-     "1565b9b9cd16",
-     "376fabe65bb5"
+     "c50e408e3d5f"
+    ]
+   },
+   {
+    "category": "macro",
+    "text": "A partir de 1º/11, gestores de FIDC poderão consultar o SCR do Banco Central. Isso melhora a análise de crédito das carteiras e é relevante para estruturas de crédito privado. O Focus mantém a Selic de 2026 em 13,50%.",
+    "item_ids": [
+     "5daf201b123b"
     ]
    },
    {
     "category": "internacional",
-    "text": "Mercados globais perto de recordes mesmo com petróleo e juros altos. A pressão de um assessor de Trump sobre Powell e o pedido no Congresso americano para rever o acesso de Hong Kong a dólares do Fed adicionam ruído geopolítico e de política monetária.",
+    "text": "A Índia subiu juros pela primeira vez desde 2023, um sinal de que a pressão inflacionária global ainda não acabou. Lá fora, a agenda de deals segue ativa, com Uber, Informa/Clarion e Lambda.",
     "item_ids": [
-     "bf8497d23b58",
-     "4b76738355d8",
-     "ed16459f444c"
+     "8be86595fe7d"
     ]
    }
   ],
   "watchlist": [
-   "Primeiras pesquisas do 2º turno: com diferença de menos de 2 pontos, qualquer virada mexe forte em câmbio, DI e bolsa.",
-   "Sinais de equipe econômica e de regra fiscal da campanha de Flávio: é o que a Faria Lima está cobrando.",
-   "Decisão da CVM sobre o pedido de OPA na Toky.",
-   "Se o rali se estende às ações que ficaram para trás, como indicado pelo Itaú BBA.",
-   "Fechamento e integração Paramount/Warner Bros. Discovery."
+   "Ata do Fomc hoje à tarde e reação do dólar abaixo de R$ 5.",
+   "Falas de Durigan, IGP-DI e dados da Anfavea.",
+   "Próximos passos de Primo/Oikos e SVN/Expertise: notificação ao Cade e eventuais novos alvos no wealth.",
+   "Atos de concentração aprovados hoje pelo Cade: prazo de 15 dias para recurso de terceiros ou avocação.",
+   "CVM: dados abertos ainda defasados (até 02/10); fatos relevantes da semana devem aparecer nos próximos dias."
   ],
   "connections": [
-   "O pedido de OPA na Toky e a queda dos juros se cruzam: com custo de capital menor, gestoras podem preferir fechar capital de investidas a ficar expostas a disputas com minoritários.",
-   "A queda dos juros e o real forte tornam mais viáveis os LBOs e financiamentos de aquisição locais, mas encarecem para o estrangeiro ativos como os comprados por AD Ports e Ryan.",
-   "A recomendação de trocar exportadoras por domésticas pode abrir janela para controladores de exportadoras fazerem recompras ou fecharem capital a preços mais baixos."
+   "Primo/Oikos e SVN/Expertise no mesmo dia mostram que o mercado de wealth entrou em fase de escala, com permuta de ações como moeda.",
+   "O upgrade do Morgan Stanley e o dólar abaixo de R$ 5 favorecem janelas de ECM e de M&A cross-border no Brasil."
   ],
-  "date": "2026-10-06"
+  "date": "2026-10-07"
  },
- "updated_at": "2026-10-06T08:21:22.173428-03:00"
+ "updated_at": "2026-10-07T08:21:55.761747-03:00"
 }
