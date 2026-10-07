@@ -97,6 +97,11 @@
   };
 
   const ciaName = (c) => c.nc || c.n;
+  const docUrl = (d) => {
+    if (d.u) return d.u;
+    const [seq, ver] = String(d.q || "").split(".");
+    return `https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=${d.id}&numSequencia=${seq}&numVersao=${ver || 1}`;
+  };
   const docTitle = (d) => d.s || d.e || d.t || catShort(d.c);
   const docText = (d) => fold([d.s, d.e, d.t, d.c, d.n, d.tr, d.sm?.resumo, (d.sm?.pontos || []).join(" ")].join(" "));
 
@@ -120,11 +125,11 @@
           ${sm?.tema ? `<span class="tema">${esc(sm.tema)}</span>` : ""}
           ${withCompany ? `<a class="doc-cia" href="#cia/${esc(d.k)}">${esc(c ? ciaName(c) : d.n)}</a>${tickersHtml(c)}` : ""}
         </div>
-        <h4 class="doc-title"><a href="${safeUrl(d.u)}" target="_blank" rel="noopener">${esc(docTitle(d))}</a></h4>
+        <h4 class="doc-title"><a href="${safeUrl(docUrl(d))}" target="_blank" rel="noopener">${esc(docTitle(d))}</a></h4>
         ${sub.length ? `<div class="doc-sub">${sub.map(esc).join(" · ")}</div>` : ""}
         ${body}
       </div>
-      <a class="doc-open" href="${safeUrl(d.u)}" target="_blank" rel="noopener" title="Abrir o documento original (PDF)">PDF ↗</a>
+      <a class="doc-open" href="${safeUrl(docUrl(d))}" target="_blank" rel="noopener" title="Abrir o documento original (PDF)">PDF ↗</a>
     </article>`;
   }
 
@@ -217,7 +222,7 @@
     const cell = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
     const lines = rows.map((d) => {
       const c = state.byK.get(d.k);
-      return [fmtDate(d.d), d.h, c ? ciaName(c) : d.n, (c?.tk || []).join(" "), d.c, d.t, d.e, d.s, d.sm?.tema, d.sm?.resumo, d.u].map(cell).join(";");
+      return [fmtDate(d.d), d.h, c ? ciaName(c) : d.n, (c?.tk || []).join(" "), d.c, d.t, d.e, d.s, d.sm?.tema, d.sm?.resumo, docUrl(d)].map(cell).join(";");
     });
     const blob = new Blob(["﻿" + [head.map(cell).join(";"), ...lines].join("\r\n")], { type: "text/csv;charset=utf-8" });
     const a = document.createElement("a");
@@ -262,7 +267,7 @@
     const t = today();
     const months = [];
     const dt = new Date(t.slice(0, 7) + "-15T12:00:00");
-    for (let i = 23; i >= 0; i--) {
+    for (let i = 59; i >= 0; i--) {
       const m = new Date(dt); m.setMonth(dt.getMonth() - i);
       months.push(iso(m).slice(0, 7));
     }
@@ -278,8 +283,8 @@
       const label = `${MONTHS[+m.slice(5) - 1]}/${m.slice(2, 4)}: ${plural(n, "documento", "documentos")}${f ? `, ${plural(f, "fato relevante", "fatos relevantes")}` : ""}`;
       return `<button class="bar" data-month="${m}" title="${esc(label)}" aria-label="${esc(label)}">
         <span class="bar-col" style="height:${(n / max) * 100}%"><span class="bar-fr" style="height:${n ? (f / n) * 100 : 0}%"></span></span>
-        <span class="bar-x">${MONTHS[+m.slice(5) - 1][0]}</span></button>`;
-    }).join("")}</div><div class="bar-range"><span>${MONTHS[+months[0].slice(5) - 1]}/${months[0].slice(2, 4)}</span><span>${MONTHS[+months[23].slice(5) - 1]}/${months[23].slice(2, 4)}</span></div>`;
+        <span class="bar-x">${m.slice(5) === "01" ? m.slice(0, 4) : ""}</span></button>`;
+    }).join("")}</div><div class="bar-range"><span>${MONTHS[+months[0].slice(5) - 1]}/${months[0].slice(2, 4)}</span><span>${MONTHS[+months[59].slice(5) - 1]}/${months[59].slice(2, 4)}</span></div>`;
     $("#cia-chart-note").innerHTML = `<span class="key key-all"></span> todos os documentos <span class="key key-fr"></span> fatos relevantes · clique num mês para filtrar`;
     $("#cia-chart").onclick = (e) => {
       const b = e.target.closest("[data-month]");
