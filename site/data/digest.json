@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T05:56:19.099329-03:00",
+ "generated_at": "2026-10-07T06:19:08.132028-03:00",
  "date": "2026-10-06",
  "window": {
   "start": "2026-10-05T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-06T08:21:22.173428-03:00",
-  "analyzed": 30
+  "analyzed": 31
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -110,28 +110,28 @@
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 4.9754,
-   "change_pct": -0.42627755994725236,
+   "price": 4.9703,
+   "change_pct": -0.5283449282883379,
    "spark": [
     5.179100036621094,
     5.222599983215332,
     5.223100185394287,
     4.996699810028076,
-    4.975399971008301
+    4.970300197601318
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 5.5689,
-   "change_pct": -0.6508212712933004,
+   "price": 5.5716,
+   "change_pct": -0.6026532699703324,
    "spark": [
     5.868299961090088,
     5.87529993057251,
     5.871991157531738,
     5.605381011962891,
-    5.568900108337402
+    5.571599960327148
    ]
   },
   {
@@ -180,40 +180,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 100.88,
-   "change_pct": 0.29826820787814956,
+   "price": 101.63,
+   "change_pct": 1.043943278813031,
    "spark": [
     102.25,
     100.31999969482422,
     100.58000183105469,
-    100.87999725341797
+    101.62999725341797
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4152.8,
-   "change_pct": -0.8191850411087498,
+   "price": 4147.7,
+   "change_pct": -0.9409877179268888,
    "spark": [
     4162.2998046875,
     4156.7998046875,
     4187.10009765625,
-    4152.7998046875
+    4147.7001953125
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 83971.68,
-   "change_pct": -1.8535854150823927,
+   "price": 83792.35,
+   "change_pct": -2.063186991798638,
    "spark": [
     84763.578125,
     86480.3046875,
     85786.59375,
     85557.5625,
-    83971.6796875
+    83792.3515625
    ]
   }
  ],
@@ -793,6 +793,59 @@
    ],
    "is_deal": false,
    "deal": null,
+   "ai": true
+  },
+  {
+   "id": "87b4eb871bf0",
+   "title": "BPCL bets $3 billion bond sale in Brazil oil project",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYklmY1FyWVJpeGl4cWJhdm5mTkszTzQ4UGd6OVV0Sjh6QkY5LUdVcnIzQUVFNnpQOGRKT1FoSUtxTVZfZkxDZUczdi1IRS1iTmJvRWdmNFlYaGQydXBxRE1MaWd0S3UtOXU1YlpyWVdxRVdWUF9qM2NlVzBmUUtuakJzUlZDdWJCQmEyRFZfYi0xbEVBdWFSYURVMW5vMkZ2OFFtV05aejUxdmp4dlJJ0gG0AUFVX3lxTFBoZDJNUm9DWFdtQ1ZNakxhLWFTT085VVpHa1c4ei02NGpfVVkxY1FDZ0hTWHFVLVdzM1l5SWtMckZBTlBNQ0J6OUtUOTRJWWN2RHd4bzNQYW1XQlJoWG1UQi1ILUk5SEpMS043ZUJFemVpR2JVUWJvRVZNNE5JUDFXWHdyRGdXTEdXX1NLdEQ5cndqVHhFMzB2X3V5eUZCTjYtQWc4cVdGWk13cl91RklNRG90Rg?oc=5",
+   "published": "2026-10-06T06:31:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "The Week",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYklmY1FyWVJpeGl4cWJhdm5mTkszTzQ4UGd6OVV0Sjh6QkY5LUdVcnIzQUVFNnpQOGRKT1FoSUtxTVZfZkxDZUczdi1IRS1iTmJvRWdmNFlYaGQydXBxRE1MaWd0S3UtOXU1YlpyWVdxRVdWUF9qM2NlVzBmUUtuakJzUlZDdWJCQmEyRFZfYi0xbEVBdWFSYURVMW5vMkZ2OFFtV05aejUxdmp4dlJJ0gG0AUFVX3lxTFBoZDJNUm9DWFdtQ1ZNakxhLWFTT085VVpHa1c4ei02NGpfVVkxY1FDZ0hTWHFVLVdzM1l5SWtMckZBTlBNQ0J6OUtUOTRJWWN2RHd4bzNQYW1XQlJoWG1UQi1ILUk5SEpMS043ZUJFemVpR2JVUWJvRVZNNE5JUDFXWHdyRGdXTEdXX1NLdEQ5cndqVHhFMzB2X3V5eUZCTjYtQWc4cVdGWk13cl91RklNRG90Rg?oc=5",
+     "title": "BPCL bets $3 billion bond sale in Brazil oil project"
+    },
+    {
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOandoc3JFWmVqVVhJZm43Q3ctYnd3VnM3MmR6d0tZdW1UbU03R3VHZk5EYkM1ckVqZFp5VVNYZWV6aUNUQjhDWHRTeFN3RWk5WTdkX1FJbHdiUXBVLXFYQjQ1dnhMTFc2cHNfUnFVNmhMdG9zTE1MOUhoaWZDM3N5ejBCNFE4RXVNNmtPSW1adEJfTGI0RHdUM2haQzRHODhuYlB3NENSWmp2ZWh6VVE?oc=5",
+     "title": "BPCL Plans $3 Bn Bond Sale To Fund Brazil Oil Project"
+    }
+   ],
+   "ids": [
+    "87b4eb871bf0",
+    "6c26a6064d62"
+   ],
+   "snippet": "",
+   "prescore": 4.7,
+   "headline": "BPCL planeja emissão de US$ 3 bi em bonds para financiar projeto de petróleo no Brasil",
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Capital estrangeiro relevante para o offshore brasileiro.",
+   "summary": "A estatal indiana BPCL planeja vender US$ 3 bilhões em bonds para financiar um projeto offshore de petróleo no Brasil, estimado em US$ 2,8 bilhões.",
+   "involves": "BPCL (Bharat Petroleum) e um projeto offshore no Brasil.",
+   "interpretation": "Petroleiras asiáticas seguem apostando no pré-sal e em outras áreas offshore brasileiras.",
+   "impact": "Reforça investimentos estrangeiros em óleo e gás no Brasil e a demanda por serviços offshore.",
+   "sentiment": "positivo",
+   "entities": [
+    "BPCL"
+   ],
+   "tags": [
+    "petróleo",
+    "offshore",
+    "bonds"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Emissão de dívida",
+    "buyer": "BPCL",
+    "target": "Projeto offshore de petróleo no Brasil",
+    "value": "US$ 3 bilhões",
+    "stage": "Planejada",
+    "sector": "Óleo e gás",
+    "advisors": "não divulgado"
+   },
    "ai": true
   },
   {
@@ -2210,39 +2263,6 @@
    "snippet": "",
    "prescore": 3.6,
    "headline": "Wall Street shares notch records as oil prices stabilize, bond yields retreat",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b440a1b59e83",
-   "title": "Euro bounces as decline in French bond yields cools debt jitters",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcnpLWGdYR3FxRDFJMFVCN1NDalZucm9sOHhNeWVSSzFTNEJhUi0tQWg3NjY1VS1XbGVsMlpGNFVOQkZ0OUNEWjNCclhwLUhrQUNhaElCQWhPeDZ5Q0cwQzUzSW5EWnAwSkF3R25FVGYwR2RRZnNfYzhfNlUtbnRKN3lMNDBKREhONjFpcjlSbHFuNkJMaG9JNWlOdDVKMEVNbUlLc3o5WmNjaXJRWHhB?oc=5",
-   "published": "2026-10-06T01:14:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcnpLWGdYR3FxRDFJMFVCN1NDalZucm9sOHhNeWVSSzFTNEJhUi0tQWg3NjY1VS1XbGVsMlpGNFVOQkZ0OUNEWjNCclhwLUhrQUNhaElCQWhPeDZ5Q0cwQzUzSW5EWnAwSkF3R25FVGYwR2RRZnNfYzhfNlUtbnRKN3lMNDBKREhONjFpcjlSbHFuNkJMaG9JNWlOdDVKMEVNbUlLc3o5WmNjaXJRWHhB?oc=5",
-     "title": "Euro bounces as decline in French bond yields cools debt jitters"
-    }
-   ],
-   "ids": [
-    "b440a1b59e83"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "Euro bounces as decline in French bond yields cools debt jitters",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -3690,6 +3710,39 @@
    "ai": false
   },
   {
+   "id": "8387a4bcef22",
+   "title": "Bolsonaro participará de eventual governo Flávio, diz presidente do PL",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQVXAyUFpIaFNXd3FmOGNrOUFNMzBmT2llVDFqeXJfU0xoc1g2Nk11Umh6YmN3WjhwVjMzM0s0c21ldGhrdTRHb1V5TUpYMThUNzZyZVhZOUtrazlNbldicW42M25OdmJyZmJoaEtEQ3RjTDZaeWo5TzlyUzI1eTFFUUZpTG81NkJHYzhqWnZ0ek9XM3hzSF9qelNlSnhhLWZqVU1WUEVtMV9BU2V5Z0hrcEs5eldDbzNLbmxUaHhfMFlwTzdfWGFib1pKSk0wRllUOWNOLUpOTnBjTlBSM1RpX0M2V2VFaGZ0azBxMDQ1d9IB_gFBVV95cUxQQmdjUEwyYnF0MkZBNlN4eElfb3c2OXU5YXZ2U1M1V2tJUWpjbHZyQ2JZczRTbWFzajAzejVjT0FvVnNqQ3pPMzBvY1BaYnc4ZUoyVGlCaXBrYXZlRldvNlhaVkhMYVloSjg0ZjFST29rMHJWRkNfM1loWHdQWkE3S2RHcFF6UFB6akxCYjU0b1NwUnRtNnRMU1cwSDBjNXU5WVBOc3VRYkRuLW9zcHpTcnoxMmZHSXNmOHdzb1JMejJ4aXNHcTQtdVVYWTc3Rnd1VTQzQWZJREhLaERLSWNSdUpoRExtS3dUQmltbE5NaVBKWlQ1UVFPT0FHcU9DQQ?oc=5",
+   "published": "2026-10-05T17:31:33+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQVXAyUFpIaFNXd3FmOGNrOUFNMzBmT2llVDFqeXJfU0xoc1g2Nk11Umh6YmN3WjhwVjMzM0s0c21ldGhrdTRHb1V5TUpYMThUNzZyZVhZOUtrazlNbldicW42M25OdmJyZmJoaEtEQ3RjTDZaeWo5TzlyUzI1eTFFUUZpTG81NkJHYzhqWnZ0ek9XM3hzSF9qelNlSnhhLWZqVU1WUEVtMV9BU2V5Z0hrcEs5eldDbzNLbmxUaHhfMFlwTzdfWGFib1pKSk0wRllUOWNOLUpOTnBjTlBSM1RpX0M2V2VFaGZ0azBxMDQ1d9IB_gFBVV95cUxQQmdjUEwyYnF0MkZBNlN4eElfb3c2OXU5YXZ2U1M1V2tJUWpjbHZyQ2JZczRTbWFzajAzejVjT0FvVnNqQ3pPMzBvY1BaYnc4ZUoyVGlCaXBrYXZlRldvNlhaVkhMYVloSjg0ZjFST29rMHJWRkNfM1loWHdQWkE3S2RHcFF6UFB6akxCYjU0b1NwUnRtNnRMU1cwSDBjNXU5WVBOc3VRYkRuLW9zcHpTcnoxMmZHSXNmOHdzb1JMejJ4aXNHcTQtdVVYWTc3Rnd1VTQzQWZJREhLaERLSWNSdUpoRExtS3dUQmltbE5NaVBKWlQ1UVFPT0FHcU9DQQ?oc=5",
+     "title": "Bolsonaro participará de eventual governo Flávio, diz presidente do PL"
+    }
+   ],
+   "ids": [
+    "8387a4bcef22"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Bolsonaro participará de eventual governo Flávio, diz presidente do PL",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "72eaeb6347c9",
    "title": "Starbucks é processada nos EUA por bebidas anunciadas como 'sem açúcar'",
    "link": "https://g1.globo.com/economia/noticia/2026/10/05/starbucks-e-processada-nos-eua-por-bebidas-anunciadas-como-sem-acucar.ghtml",
@@ -4020,39 +4073,6 @@
    "ai": false
   },
   {
-   "id": "2f7155300f90",
-   "title": "Exclusive | Forbion Raises $2.6 Billion in Boost to European Biotech Industry",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU2o2bERGOHMyS01FSkhwUjFvTnZkalJkeDEwNVdSMmJIdGJVemp1OEo4UlB1MDB0bnFfWlk4VDlVZkszQ1F1X043ZVBfbVpLb3ZSM0l6aUdGRUFKYm9lMmdxY1FKdE9rMWxfQkpRQ1UzUVJqUC1qUjlyNzBzVklMdmlPaVdqSjMwZGcyS1RTTVNCYUtHaXdPZGdsVDd3cVF1anA1ak93aHdHdw?oc=5",
-   "published": "2026-10-06T10:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU2o2bERGOHMyS01FSkhwUjFvTnZkalJkeDEwNVdSMmJIdGJVemp1OEo4UlB1MDB0bnFfWlk4VDlVZkszQ1F1X043ZVBfbVpLb3ZSM0l6aUdGRUFKYm9lMmdxY1FKdE9rMWxfQkpRQ1UzUVJqUC1qUjlyNzBzVklMdmlPaVdqSjMwZGcyS1RTTVNCYUtHaXdPZGdsVDd3cVF1anA1ak93aHdHdw?oc=5",
-     "title": "Exclusive | Forbion Raises $2.6 Billion in Boost to European Biotech Industry"
-    }
-   ],
-   "ids": [
-    "2f7155300f90"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Exclusive | Forbion Raises $2.6 Billion in Boost to European Biotech Industry",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "f2a4b9fccba3",
    "title": "The Oil Shock Could Make Us Stronger",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeFpfaFc3R1RjdkNraGo0dXpUMVVXb01OTzNNNENzWmNBU0lFbUlYaXdTaHNhUVFoQnBSREVZQmVlOWNIRmszTldjZmNqZjdFbGlfN1Z0MVBFTkUyMm1zbzRmSDluX0NEOW9lMWJCa05aWXFqSkpFdVB5dmVKM0RtMUZQTklKUVJBVHlhZFVWNTZEWHM?oc=5",
@@ -4152,24 +4172,24 @@
    "ai": false
   },
   {
-   "id": "6ea541103a34",
-   "title": "World Bank raises Africa's 2026 growth forecast, urges AI investments",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSWxydGRxeGV6eFBoMzd4dGN1aV9rQVV6UTFhLTE0NFozWW10Yk5ndkQ0QkpFX2EwdkJfSzhxTXdZV0p3ZDZXZVNWVC0tLTBvMlR5ZWx4bnVWekpKWVdxNmRqQ2d1VkNOVjdwczY1cWlOZ1JITEtpcnRfc1daMFlGZGNtdnVDVXp4b3l3NW9leWlMUWhuMGZIYXE2Y3Q0VGdTQlFyMktGSkdMZ1VFZUlGSFdKT3k5Szg?oc=5",
-   "published": "2026-10-06T09:05:46+00:00",
+   "id": "d95bdec23664",
+   "title": "Exclusive | This Startup Wants to Double the World’s Compute—Without Building a Single Data Center",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQME1WMEpWVWJOaGd3QlI1d3d0VUFYbldOMWNTUXA4am5qcXRQWC1fcmtKaVJDNGJjQlhDSlVwaEhsX2o5RVZBU3dLazRJMF8tdE1jS0Vsb21nQmVhcVhzYUNKVFdMY2VGZFBiaWRXb0V0a3l2eXRvbHZheTNtTE8zeU9lRXRqdXpRMy12czlqLUotV1BKTzViMy1SQTRxbU5pWG5fYTZTSjJ4MTJCd1c4Q2lwS0NwT0Q3Wm5tS2JLTFRqQjIwX2lsTEF4TkNDQQ?oc=5",
+   "published": "2026-10-06T09:30:00+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSWxydGRxeGV6eFBoMzd4dGN1aV9rQVV6UTFhLTE0NFozWW10Yk5ndkQ0QkpFX2EwdkJfSzhxTXdZV0p3ZDZXZVNWVC0tLTBvMlR5ZWx4bnVWekpKWVdxNmRqQ2d1VkNOVjdwczY1cWlOZ1JITEtpcnRfc1daMFlGZGNtdnVDVXp4b3l3NW9leWlMUWhuMGZIYXE2Y3Q0VGdTQlFyMktGSkdMZ1VFZUlGSFdKT3k5Szg?oc=5",
-     "title": "World Bank raises Africa's 2026 growth forecast, urges AI investments"
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQME1WMEpWVWJOaGd3QlI1d3d0VUFYbldOMWNTUXA4am5qcXRQWC1fcmtKaVJDNGJjQlhDSlVwaEhsX2o5RVZBU3dLazRJMF8tdE1jS0Vsb21nQmVhcVhzYUNKVFdMY2VGZFBiaWRXb0V0a3l2eXRvbHZheTNtTE8zeU9lRXRqdXpRMy12czlqLUotV1BKTzViMy1SQTRxbU5pWG5fYTZTSjJ4MTJCd1c4Q2lwS0NwT0Q3Wm5tS2JLTFRqQjIwX2lsTEF4TkNDQQ?oc=5",
+     "title": "Exclusive | This Startup Wants to Double the World’s Compute—Without Building a Single Data Center"
     }
    ],
    "ids": [
-    "6ea541103a34"
+    "d95bdec23664"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "World Bank raises Africa's 2026 growth forecast, urges AI investments",
+   "headline": "Exclusive | This Startup Wants to Double the World’s Compute—Without Building a Single Data Center",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -4464,13 +4484,13 @@
    "ids": [
     "7df2714c44d3"
    ],
-   "snippet": "Mapa mostra como foram as eleições no exterior. Kayan Albertin/Arte g1 O presidente Luiz Inácio Lula da Silva (PT) terminou o primeiro turno da eleição presidencial na liderança entre os brasileiros que vivem no exterior. Flávio Bolsonaro (PL) ficou em segundo lugar. Ao todo, o petista venceu em 64 países, enquanto o senador liderou em 36. Houve empate em um país. Veja no mapa acima (os países marcados em cinza não tiveram votação por falta de eleitores registrados ou de brasileiros que não compareceram para votar). ✅ Siga o canal de notícias internacionais do g1 no WhatsApp Os dados foram con",
+   "snippet": "Mapa mostra como foram as eleições no exterior. Kayan Albertin/Arte g1 O presidente Luiz Inácio Lula da Silva (PT) terminou o primeiro turno da eleição presidencial na liderança entre os brasileiros que vivem no exterior. Flávio Bolsonaro (PL) ficou em segundo lugar. ✅ Siga o canal de notícias internacionais do g1 no WhatsApp Ao todo, o petista venceu em 64 países, enquanto o senador liderou em 36. Houve empate em um país. Veja no mapa acima (os países marcados em cinza não tiveram votação por falta de eleitores registrados ou de brasileiros que não compareceram para votar). Os dados foram con",
    "prescore": 2.6,
    "headline": "Lula venceu em 64 países; Flávio Bolsonaro, em 36: MAPA mostra como foi a eleição no exterior",
    "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Mapa mostra como foram as eleições no exterior. Kayan Albertin/Arte g1 O presidente Luiz Inácio Lula da Silva (PT) terminou o primeiro turno da eleição presidencial na liderança entre os brasileiros que vivem no exterior. Flávio Bolsonaro (PL) ficou em segundo lugar. Ao todo, o petista venceu em 64 países, enquanto o senador liderou em 36. Houve empate em um país. Veja no mapa acima (os países mar",
+   "summary": "Mapa mostra como foram as eleições no exterior. Kayan Albertin/Arte g1 O presidente Luiz Inácio Lula da Silva (PT) terminou o primeiro turno da eleição presidencial na liderança entre os brasileiros que vivem no exterior. Flávio Bolsonaro (PL) ficou em segundo lugar. ✅ Siga o canal de notícias internacionais do g1 no WhatsApp Ao todo, o petista venceu em 64 países, enquanto o senador liderou em 36",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -5194,39 +5214,6 @@
    "prescore": 2.6,
    "headline": "Nvidia, Broadcom shielded as AI power crunch hits chip supply chain, says Morgan Stanley",
    "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0c8bc19b70a4",
-   "title": "COMMENTARY: The world is overlooking a powerful brake on global warming",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT0RMaDM3bll4cnAwQW9VVmR5dVFuS2Q3UlU2dzZlMEk5RHZtY0J5bldRRmE5ZGV6dDNNOGdLbTNRdnlnRTExNTBDYjFvR2dVUTZpaUVRRDl2MGVUSlBBMlRuYnFVZjVPb0FjX2JtQWk0eXJ5Z241clV2bDAwcmZRTzR3dWJYQTQwWnhBVDI2eGV5R1V6ODk1RHk2cVJGMDl3cFV0MW1oUThZSWR4TERnMms0ZkxDSmdFYmcyS3p6cGY?oc=5",
-   "published": "2026-10-05T13:23:39+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT0RMaDM3bll4cnAwQW9VVmR5dVFuS2Q3UlU2dzZlMEk5RHZtY0J5bldRRmE5ZGV6dDNNOGdLbTNRdnlnRTExNTBDYjFvR2dVUTZpaUVRRDl2MGVUSlBBMlRuYnFVZjVPb0FjX2JtQWk0eXJ5Z241clV2bDAwcmZRTzR3dWJYQTQwWnhBVDI2eGV5R1V6ODk1RHk2cVJGMDl3cFV0MW1oUThZSWR4TERnMms0ZkxDSmdFYmcyS3p6cGY?oc=5",
-     "title": "COMMENTARY: The world is overlooking a powerful brake on global warming"
-    }
-   ],
-   "ids": [
-    "0c8bc19b70a4"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "COMMENTARY: The world is overlooking a powerful brake on global warming",
-   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -6611,26 +6598,26 @@
    "ai": false
   },
   {
-   "id": "79dbe471446f",
+   "id": "c7d0f91493f4",
    "title": "Eleições 2026: o que os resultados sinalizam para a economia e os mercados?",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQODhjQ3dvM2stUE1LMUdEV2NFR1NsXzFZcDdNY0VpU1BmcVU1RXdrcUVrRHRTQmVJTENWTHBrZWhSNG5fcUpGRFdtMEFLVmQ1Rks3czFHazZCdFRrQW81WEtZTG52allTTHZPQUw3cXc2dTY0UFlqcl9rdE5td3JpSmpjblRSeERuVEQ2bzdsY2stR0R5bW9lZG1Jc3c2c1BGTTJ2NGtxN25hN19JR0Rjb3pDaklNVThJU2E3bnZNQ2JZeV84czQ1YWNBY29rbGvSAdQBQVVfeXFMTWo0OENDU2Mxc0pNT1lYanJ6WjN1WnV1WTl1b1RReTRJVGJDUWd2eUgycF9GeWZ0MEtKdFdjcmgxOHhCOE04SWNvTEpSeG9RVUctNHNPdHJtQ1JvVmlZbmxvTnhFLVJYSVl0N2FVdmVEWXFyOElrNENOQUswRFA0d3FjU0NYSFhRQ0lmbUc3LUhRSktXeTJ3X0J1cXZPby1lenp2RUE5Uk9oYzhremhIUHpiOEFyT2lmVm9nem1MY0tVcmcyQUpJalRkMEU5YUl1MzBDRlM?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWkJEWGY5TWh3Y1VfWXhoR1l0S1htdmFVM2JyX3g3WllnZUQ5MXZhcF9wbFhNVTZGc3ZnZWptLWpMUDlYaU1Fb0t0MTlIZzhDeExyVW5sYWktX2J5YUlZT0JiT2V2WWZfLTZWdkxBU2xHYWxuNEhaRFpBZjVZaGVrNFVfcGFxdEFZcWF5RXp0bC1idUhuLWh5YjlSbk9GcDJhelR0M3BlczljUkl3RzBaZE5GeHVKSnJ3QzNkdjhHSGFzeWdULXMzY2F0SlJEVWIyVi1FMkNHQmJ5UQ?oc=5",
    "published": "2026-10-05T14:23:47+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQODhjQ3dvM2stUE1LMUdEV2NFR1NsXzFZcDdNY0VpU1BmcVU1RXdrcUVrRHRTQmVJTENWTHBrZWhSNG5fcUpGRFdtMEFLVmQ1Rks3czFHazZCdFRrQW81WEtZTG52allTTHZPQUw3cXc2dTY0UFlqcl9rdE5td3JpSmpjblRSeERuVEQ2bzdsY2stR0R5bW9lZG1Jc3c2c1BGTTJ2NGtxN25hN19JR0Rjb3pDaklNVThJU2E3bnZNQ2JZeV84czQ1YWNBY29rbGvSAdQBQVVfeXFMTWo0OENDU2Mxc0pNT1lYanJ6WjN1WnV1WTl1b1RReTRJVGJDUWd2eUgycF9GeWZ0MEtKdFdjcmgxOHhCOE04SWNvTEpSeG9RVUctNHNPdHJtQ1JvVmlZbmxvTnhFLVJYSVl0N2FVdmVEWXFyOElrNENOQUswRFA0d3FjU0NYSFhRQ0lmbUc3LUhRSktXeTJ3X0J1cXZPby1lenp2RUE5Uk9oYzhremhIUHpiOEFyT2lmVm9nem1MY0tVcmcyQUpJalRkMEU5YUl1MzBDRlM?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWkJEWGY5TWh3Y1VfWXhoR1l0S1htdmFVM2JyX3g3WllnZUQ5MXZhcF9wbFhNVTZGc3ZnZWptLWpMUDlYaU1Fb0t0MTlIZzhDeExyVW5sYWktX2J5YUlZT0JiT2V2WWZfLTZWdkxBU2xHYWxuNEhaRFpBZjVZaGVrNFVfcGFxdEFZcWF5RXp0bC1idUhuLWh5YjlSbk9GcDJhelR0M3BlczljUkl3RzBaZE5GeHVKSnJ3QzNkdjhHSGFzeWdULXMzY2F0SlJEVWIyVi1FMkNHQmJ5UQ?oc=5",
      "title": "Eleições 2026: o que os resultados sinalizam para a economia e os mercados?"
     },
     {
      "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWkJEWGY5TWh3Y1VfWXhoR1l0S1htdmFVM2JyX3g3WllnZUQ5MXZhcF9wbFhNVTZGc3ZnZWptLWpMUDlYaU1Fb0t0MTlIZzhDeExyVW5sYWktX2J5YUlZT0JiT2V2WWZfLTZWdkxBU2xHYWxuNEhaRFpBZjVZaGVrNFVfcGFxdEFZcWF5RXp0bC1idUhuLWh5YjlSbk9GcDJhelR0M3BlczljUkl3RzBaZE5GeHVKSnJ3QzNkdjhHSGFzeWdULXMzY2F0SlJEVWIyVi1FMkNHQmJ5UQ?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQODhjQ3dvM2stUE1LMUdEV2NFR1NsXzFZcDdNY0VpU1BmcVU1RXdrcUVrRHRTQmVJTENWTHBrZWhSNG5fcUpGRFdtMEFLVmQ1Rks3czFHazZCdFRrQW81WEtZTG52allTTHZPQUw3cXc2dTY0UFlqcl9rdE5td3JpSmpjblRSeERuVEQ2bzdsY2stR0R5bW9lZG1Jc3c2c1BGTTJ2NGtxN25hN19JR0Rjb3pDaklNVThJU2E3bnZNQ2JZeV84czQ1YWNBY29rbGvSAdQBQVVfeXFMTWo0OENDU2Mxc0pNT1lYanJ6WjN1WnV1WTl1b1RReTRJVGJDUWd2eUgycF9GeWZ0MEtKdFdjcmgxOHhCOE04SWNvTEpSeG9RVUctNHNPdHJtQ1JvVmlZbmxvTnhFLVJYSVl0N2FVdmVEWXFyOElrNENOQUswRFA0d3FjU0NYSFhRQ0lmbUc3LUhRSktXeTJ3X0J1cXZPby1lenp2RUE5Uk9oYzhremhIUHpiOEFyT2lmVm9nem1MY0tVcmcyQUpJalRkMEU5YUl1MzBDRlM?oc=5",
      "title": "Eleições 2026: o que os resultados sinalizam para a economia e os mercados?"
     }
    ],
    "ids": [
-    "79dbe471446f",
-    "c7d0f91493f4"
+    "c7d0f91493f4",
+    "79dbe471446f"
    ],
    "snippet": "",
    "prescore": 2.2,
@@ -6986,39 +6973,6 @@
    "ai": false
   },
   {
-   "id": "77dc7347d1cd",
-   "title": "Student riots engulf France as far-right presidential frontrunner Le Pen vows fiscal turnaround",
-   "link": "https://www.cnbc.com/2026/10/06/france-student-protests-budget.html",
-   "published": "2026-10-06T09:46:34+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/10/06/france-student-protests-budget.html",
-     "title": "Student riots engulf France as far-right presidential frontrunner Le Pen vows fiscal turnaround"
-    }
-   ],
-   "ids": [
-    "77dc7347d1cd"
-   ],
-   "snippet": "A teenager reportedly lost a hand in the protests, which have seen over 5,000 people arrested.",
-   "prescore": 2.0,
-   "headline": "Student riots engulf France as far-right presidential frontrunner Le Pen vows fiscal turnaround",
-   "category": "macro",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A teenager reportedly lost a hand in the protests, which have seen over 5,000 people arrested.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "0e5fc9cd042d",
    "title": "Estrategistas comemoram votações recorde de Tarcísio, Derrite e Prado",
    "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/estrategistas-comemoram-votacoes-recorde-de-tarcisio-derrite-e-prado.shtml",
@@ -7305,39 +7259,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "As mulheres bateram o recorde de eleitas aos Legislativos estaduais e do Distrito Federal, nas eleições deste domingo (4). Das 1.059 vagas a serem ocupadas no país, 218 serão de mulheres. É um aumento de 27 cadeiras em relação ao pleito de 2022. Leia mais (10/05/2026 - 23h00)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0fe53a16063d",
-   "title": "PSD encolhe após opção por Caiado, e Kassab diz: 'Meu candidato era Tarcísio, todo mundo sabe'",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/kassab-ve-psd-encolher-no-congresso-e-perder-estados-apos-aposta-em-caiado.shtml",
-   "published": "2026-10-06T02:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/kassab-ve-psd-encolher-no-congresso-e-perder-estados-apos-aposta-em-caiado.shtml",
-     "title": "PSD encolhe após opção por Caiado, e Kassab diz: 'Meu candidato era Tarcísio, todo mundo sabe'"
-    }
-   ],
-   "ids": [
-    "0fe53a16063d"
-   ],
-   "snippet": "Uma brincadeira recorrente da classe política diz que a melhor estratégia para decidir sobre alianças eleitorais é ver, antes, o que fez Gilberto Kassab , 66, presidente do PSD . Afinal, considerado um habilidoso articulador, Kassab sempre fica do lado vencedor. Neste ano, com o avanço da direita no país, isso não foi verdade. Leia mais (10/05/2026 - 23h00)",
-   "prescore": 2.0,
-   "headline": "PSD encolhe após opção por Caiado, e Kassab diz: 'Meu candidato era Tarcísio, todo mundo sabe'",
-   "category": "mna",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Uma brincadeira recorrente da classe política diz que a melhor estratégia para decidir sobre alianças eleitorais é ver, antes, o que fez Gilberto Kassab , 66, presidente do PSD . Afinal, considerado um habilidoso articulador, Kassab sempre fica do lado vencedor. Neste ano, com o avanço da direita no país, isso não foi verdade. Leia mais (10/05/2026 - 23h00)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8905,6 +8826,59 @@
    "ai": true
   },
   {
+   "id": "87b4eb871bf0",
+   "title": "BPCL bets $3 billion bond sale in Brazil oil project",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYklmY1FyWVJpeGl4cWJhdm5mTkszTzQ4UGd6OVV0Sjh6QkY5LUdVcnIzQUVFNnpQOGRKT1FoSUtxTVZfZkxDZUczdi1IRS1iTmJvRWdmNFlYaGQydXBxRE1MaWd0S3UtOXU1YlpyWVdxRVdWUF9qM2NlVzBmUUtuakJzUlZDdWJCQmEyRFZfYi0xbEVBdWFSYURVMW5vMkZ2OFFtV05aejUxdmp4dlJJ0gG0AUFVX3lxTFBoZDJNUm9DWFdtQ1ZNakxhLWFTT085VVpHa1c4ei02NGpfVVkxY1FDZ0hTWHFVLVdzM1l5SWtMckZBTlBNQ0J6OUtUOTRJWWN2RHd4bzNQYW1XQlJoWG1UQi1ILUk5SEpMS043ZUJFemVpR2JVUWJvRVZNNE5JUDFXWHdyRGdXTEdXX1NLdEQ5cndqVHhFMzB2X3V5eUZCTjYtQWc4cVdGWk13cl91RklNRG90Rg?oc=5",
+   "published": "2026-10-06T06:31:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "The Week",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYklmY1FyWVJpeGl4cWJhdm5mTkszTzQ4UGd6OVV0Sjh6QkY5LUdVcnIzQUVFNnpQOGRKT1FoSUtxTVZfZkxDZUczdi1IRS1iTmJvRWdmNFlYaGQydXBxRE1MaWd0S3UtOXU1YlpyWVdxRVdWUF9qM2NlVzBmUUtuakJzUlZDdWJCQmEyRFZfYi0xbEVBdWFSYURVMW5vMkZ2OFFtV05aejUxdmp4dlJJ0gG0AUFVX3lxTFBoZDJNUm9DWFdtQ1ZNakxhLWFTT085VVpHa1c4ei02NGpfVVkxY1FDZ0hTWHFVLVdzM1l5SWtMckZBTlBNQ0J6OUtUOTRJWWN2RHd4bzNQYW1XQlJoWG1UQi1ILUk5SEpMS043ZUJFemVpR2JVUWJvRVZNNE5JUDFXWHdyRGdXTEdXX1NLdEQ5cndqVHhFMzB2X3V5eUZCTjYtQWc4cVdGWk13cl91RklNRG90Rg?oc=5",
+     "title": "BPCL bets $3 billion bond sale in Brazil oil project"
+    },
+    {
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOandoc3JFWmVqVVhJZm43Q3ctYnd3VnM3MmR6d0tZdW1UbU03R3VHZk5EYkM1ckVqZFp5VVNYZWV6aUNUQjhDWHRTeFN3RWk5WTdkX1FJbHdiUXBVLXFYQjQ1dnhMTFc2cHNfUnFVNmhMdG9zTE1MOUhoaWZDM3N5ejBCNFE4RXVNNmtPSW1adEJfTGI0RHdUM2haQzRHODhuYlB3NENSWmp2ZWh6VVE?oc=5",
+     "title": "BPCL Plans $3 Bn Bond Sale To Fund Brazil Oil Project"
+    }
+   ],
+   "ids": [
+    "87b4eb871bf0",
+    "6c26a6064d62"
+   ],
+   "snippet": "",
+   "prescore": 4.7,
+   "headline": "BPCL planeja emissão de US$ 3 bi em bonds para financiar projeto de petróleo no Brasil",
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Capital estrangeiro relevante para o offshore brasileiro.",
+   "summary": "A estatal indiana BPCL planeja vender US$ 3 bilhões em bonds para financiar um projeto offshore de petróleo no Brasil, estimado em US$ 2,8 bilhões.",
+   "involves": "BPCL (Bharat Petroleum) e um projeto offshore no Brasil.",
+   "interpretation": "Petroleiras asiáticas seguem apostando no pré-sal e em outras áreas offshore brasileiras.",
+   "impact": "Reforça investimentos estrangeiros em óleo e gás no Brasil e a demanda por serviços offshore.",
+   "sentiment": "positivo",
+   "entities": [
+    "BPCL"
+   ],
+   "tags": [
+    "petróleo",
+    "offshore",
+    "bonds"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Emissão de dívida",
+    "buyer": "BPCL",
+    "target": "Projeto offshore de petróleo no Brasil",
+    "value": "US$ 3 bilhões",
+    "stage": "Planejada",
+    "sector": "Óleo e gás",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "da5c82b4297d",
    "title": "Bellmer to Acquire Brazilian Roll Cover and Services Specialist, Rolotipo",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQWpMeEx3V3ZHd1QwZWpyMnFLM1BBQ2I4czZnSEh0WTh2UHRpMm1aSVBtVGE3ckdqdDQ0TFl1VUpyMTRoWnc0Q3hoZXBueDNVLU84THFkallrS1cxSkxDTk1fUGpDYm9pQ2RkOVBYMGlaQ21SNElJWDdQRkZCTWYzMkFGcXljUkRjdmVVd0NJMXlvd2tYVjFEOUVpUER0dHh3UGF5cWdhNFVNaWVqMER4ckdnaXgwSW9YanB6V1lDaw?oc=5",
@@ -9239,6 +9213,39 @@
    "ai": false
   },
   {
+   "id": "bbe837f33369",
+   "title": "Tempo real: Ibovespa fica de olho na ata do Fomc e em dados no Brasil",
+   "link": "https://www.moneytimes.com.br/tempo-real-7-10-26-apsa-lils/",
+   "published": "2026-10-07T09:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/tempo-real-7-10-26-apsa-lils/",
+     "title": "Tempo real: Ibovespa fica de olho na ata do Fomc e em dados no Brasil"
+    }
+   ],
+   "ids": [
+    "bbe837f33369"
+   ],
+   "snippet": "Resumo: O Ibovespa (IBOV) acompanha a divulgação da ata da última reunião do Federal Reserve (Fed), documento que pode oferecer mais detalhes sobre a avaliação da autoridade monetária americana. No Brasil, os destaques da agenda são o IGP-DI, os dados da Anfavea e o fluxo cambial. A China permanece em feriado. Destaques: Confira os principais […]",
+   "prescore": 6.8,
+   "headline": "Tempo real: Ibovespa fica de olho na ata do Fomc e em dados no Brasil",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Resumo: O Ibovespa (IBOV) acompanha a divulgação da ata da última reunião do Federal Reserve (Fed), documento que pode oferecer mais detalhes sobre a avaliação da autoridade monetária americana. No Brasil, os destaques da agenda são o IGP-DI, os dados da Anfavea e o fluxo cambial. A China permanece em feriado. Destaques: Confira os principais […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "1d1b7411f8a7",
    "title": "'Quanto dura um amor de verão?’: ânimo do mercado com Flávio pode ter prazo de validade, avaliam economistas",
    "link": "https://g1.globo.com/economia/noticia/2026/10/07/animo-do-mercado-com-flavio-pode-ter-prazo-de-validade-avaliam-economistas.ghtml",
@@ -9262,39 +9269,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Ibovespa bate recorde e dólar tem maior queda desde 2018 após 1º turno O resultado do primeiro turno das eleições colocou o senador Flávio Bolsonaro (PL) à frente do presidente Luiz Inácio Lula da Silva (PT) na disputa pela presidência da República. No Congresso, o PL também foi o grande vencedor do pleito. Os reflexos apareceram imediatamente no mercado financeiro: o Ibovespa, principal índice da",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "fac7114e38f1",
-   "title": "DeepSeek Nears $12B Funding Round Ahead of Potential IPO",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-07/the-china-show-10-7-2026-video",
-   "published": "2026-10-07T06:47:13+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-10-07/the-china-show-10-7-2026-video",
-     "title": "DeepSeek Nears $12B Funding Round Ahead of Potential IPO"
-    }
-   ],
-   "ids": [
-    "fac7114e38f1"
-   ],
-   "snippet": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy. From politics and policy to tech and trends, Yvonne Man and Minmin Low give global investors unique insight, delivering in-depth discussions with the newsmakers who matter. (Source: Bloomberg)",
-   "prescore": 6.8,
-   "headline": "DeepSeek Nears $12B Funding Round Ahead of Potential IPO",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy. From politics and policy to tech and trends, Yvonne Man and Minmin Low give global investors unique insight, delivering in-depth discussions with the newsmakers who matter. (Source: Bloomberg)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -9417,6 +9391,105 @@
    "ai": false
   },
   {
+   "id": "e6e0bdac8d32",
+   "title": "RWE Sees Limited Role in Uniper After Making Joint Bid With KKR",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-07/rwe-sees-limited-role-in-uniper-after-making-joint-bid-with-kkr",
+   "published": "2026-10-07T09:07:09+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-07/rwe-sees-limited-role-in-uniper-after-making-joint-bid-with-kkr",
+     "title": "RWE Sees Limited Role in Uniper After Making Joint Bid With KKR"
+    }
+   ],
+   "ids": [
+    "e6e0bdac8d32"
+   ],
+   "snippet": "RWE AG has played down the prospect of taking a major role in state-owned Uniper SE, after the utility teamed up with private equity firm KKR & Co. to make a non-binding bid for the German company.",
+   "prescore": 5.8,
+   "headline": "RWE Sees Limited Role in Uniper After Making Joint Bid With KKR",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "RWE AG has played down the prospect of taking a major role in state-owned Uniper SE, after the utility teamed up with private equity firm KKR & Co. to make a non-binding bid for the German company.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1f266303ecf5",
+   "title": "Os juros vão cair? Estes são os FIIs que os analistas indicam para aproveitar a virada da Selic",
+   "link": "https://www.seudinheiro.com/2026/bolsa-dolar/os-juros-vao-cair-estes-sao-os-fiis-que-os-analistas-indicam-para-aproveitar-a-virada-da-selic-davs/",
+   "published": "2026-10-07T09:03:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/bolsa-dolar/os-juros-vao-cair-estes-sao-os-fiis-que-os-analistas-indicam-para-aproveitar-a-virada-da-selic-davs/",
+     "title": "Os juros vão cair? Estes são os FIIs que os analistas indicam para aproveitar a virada da Selic"
+    }
+   ],
+   "ids": [
+    "1f266303ecf5"
+   ],
+   "snippet": "A expectativa dos mercados é que, após as eleições, o Copom reduza a taxa de juros. Mas ainda tem riscos no radar, e esses são os fundos que podem defender sua carteira The post Os juros vão cair? Estes são os FIIs que os analistas indicam para aproveitar a virada da Selic appeared first on Seu Dinheiro .",
+   "prescore": 5.8,
+   "headline": "Os juros vão cair? Estes são os FIIs que os analistas indicam para aproveitar a virada da Selic",
+   "category": "macro",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A expectativa dos mercados é que, após as eleições, o Copom reduza a taxa de juros. Mas ainda tem riscos no radar, e esses são os fundos que podem defender sua carteira The post Os juros vão cair? Estes são os FIIs que os analistas indicam para aproveitar a virada da Selic appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6dde7bb166c9",
+   "title": "Spanish Miner Abenojar Tungsten Announces Plans for London IPO",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-07/spanish-miner-abenojar-tungsten-announces-plans-for-london-ipo",
+   "published": "2026-10-07T08:57:26+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-07/spanish-miner-abenojar-tungsten-announces-plans-for-london-ipo",
+     "title": "Spanish Miner Abenojar Tungsten Announces Plans for London IPO"
+    }
+   ],
+   "ids": [
+    "6dde7bb166c9"
+   ],
+   "snippet": "Abenojar Tungsten SA announced plans for an initial public offering in London, the latest overseas company to explore a UK listing.",
+   "prescore": 5.8,
+   "headline": "Spanish Miner Abenojar Tungsten Announces Plans for London IPO",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Abenojar Tungsten SA announced plans for an initial public offering in London, the latest overseas company to explore a UK listing.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "89a0c0d6afa4",
    "title": "Rwanda Tungsten Miner Eyes New York IPO as Munitions Metal Soars",
    "link": "https://www.bloomberg.com/news/articles/2026-10-07/rwanda-tungsten-miner-eyes-new-york-ipo-as-munitions-metal-soars",
@@ -9472,39 +9545,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Logo na abertura do pregão de segunda-feira (5), o Ibovespa, o índice da bolsa de valores brasileira, disparou mais de 7% e ultrapassou a marca de 200 mil pontos pela primeira vez. Além disso, a curva de juros futuros desabou e o dólar recuou para menos de R$ 5. O que explica a euforia dos mercados é o resultado das urnas no 1º turno, que indica favoritismo de Flávio Bolsonaro (PL) e um Congresso ",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "16a1d0dbdb11",
-   "title": "Grupo Primo faz fusão com Oikos Wealth Management",
-   "link": "https://www.moneytimes.com.br/grupo-primo-faz-fusao-com-oikos-wealth-management/",
-   "published": "2026-10-06T22:43:40+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/grupo-primo-faz-fusao-com-oikos-wealth-management/",
-     "title": "Grupo Primo faz fusão com Oikos Wealth Management"
-    }
-   ],
-   "ids": [
-    "16a1d0dbdb11"
-   ],
-   "snippet": "O Grupo Primo anunciou nesta terça-feira fusão com a gestora de fortunas Oikos Wealth Management, elevando o total de recursos sob administração da empresa para R$34 bilhões. Thiago Nigro, conhecido como Primo Rico, é o principal acionista e fundador do grupo Primo. O grupo tem meta de alcançar R$100 bilhões sob gestão até 2028 e […]",
-   "prescore": 5.8,
-   "headline": "Grupo Primo faz fusão com Oikos Wealth Management",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O Grupo Primo anunciou nesta terça-feira fusão com a gestora de fortunas Oikos Wealth Management, elevando o total de recursos sob administração da empresa para R$34 bilhões. Thiago Nigro, conhecido como Primo Rico, é o principal acionista e fundador do grupo Primo. O grupo tem meta de alcançar R$100 bilhões sob gestão até 2028 e […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -9649,6 +9689,39 @@
    "ai": false
   },
   {
+   "id": "fd6a106cbc80",
+   "title": "Paramount wraps up mega Warner Bros merger to create Hollywood powerhouse Skydance",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPU3FqSTVKTlVKYjhpTElEZG96U0k0V2hxWGFYNXk5emE4XzN2Ukpyb0dSakdPLWxoVnMzUE9uV3dmb3ZxM2x4ZE9ZNllUYjdKMElxdGFjSDdLYkVwdmY5R0FoQ3hEVDY0R2dySWdkNUhSUzNLZXg1QklURkQwY2RrUElRVWNUaFFhbC1HSXUxQ0Z5bERVYUdwLV9ZeHJ1X1YwY2tJM0ZhTm9WUFNoQXN6Y2FPYkxCUldRb0ZwNFNmUkNNaHJNSHhpc0lFaVVuS1l1cmdyUA?oc=5",
+   "published": "2026-10-06T12:42:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPU3FqSTVKTlVKYjhpTElEZG96U0k0V2hxWGFYNXk5emE4XzN2Ukpyb0dSakdPLWxoVnMzUE9uV3dmb3ZxM2x4ZE9ZNllUYjdKMElxdGFjSDdLYkVwdmY5R0FoQ3hEVDY0R2dySWdkNUhSUzNLZXg1QklURkQwY2RrUElRVWNUaFFhbC1HSXUxQ0Z5bERVYUdwLV9ZeHJ1X1YwY2tJM0ZhTm9WUFNoQXN6Y2FPYkxCUldRb0ZwNFNmUkNNaHJNSHhpc0lFaVVuS1l1cmdyUA?oc=5",
+     "title": "Paramount wraps up mega Warner Bros merger to create Hollywood powerhouse Skydance"
+    }
+   ],
+   "ids": [
+    "fd6a106cbc80"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Paramount wraps up mega Warner Bros merger to create Hollywood powerhouse Skydance",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "a132935a5045",
    "title": "Lambda busca 4 bilhões de dólares antes do IPO previsto para 2027",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZ3lDd1NETjJrSE5Bd2NVUVl0bHJJUlJxeTVBa3hBemFGcVBvenpCSVJaSWZIdXh2bER0VUFub1hSS1JaVlVJemhZM0dOTk9IMWNibGduSkJpRWxtVHdPMGl2RjliNWtQcXpxOC1HQlZYOVpFTWxhakhvR0l5c19xenNwdklURGhvQ0M4YUstdUpBUzliVExjNTBUcDZPMnNCMExkQ2N3?oc=5",
@@ -9743,6 +9816,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4e0bf8f3f064",
+   "title": "Futuros de NY operam mistos após novos ataques em Ormuz e à espera de ata do Fed",
+   "link": "https://www.infomoney.com.br/mercados/futuros-de-ny-operam-mistos-apos-novos-ataques-em-ormuz-e-a-espera-de-ata-do-fed/",
+   "published": "2026-10-07T09:12:49+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/futuros-de-ny-operam-mistos-apos-novos-ataques-em-ormuz-e-a-espera-de-ata-do-fed/",
+     "title": "Futuros de NY operam mistos após novos ataques em Ormuz e à espera de ata do Fed"
+    }
+   ],
+   "ids": [
+    "4e0bf8f3f064"
+   ],
+   "snippet": "Os mercados seguem em um ambiente de incerteza, com os preços elevados de energia e as expectativas de inflação ainda pressionadas The post Futuros de NY operam mistos após novos ataques em Ormuz e à espera de ata do Fed appeared first on InfoMoney .",
+   "prescore": 5.2,
+   "headline": "Futuros de NY operam mistos após novos ataques em Ormuz e à espera de ata do Fed",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Os mercados seguem em um ambiente de incerteza, com os preços elevados de energia e as expectativas de inflação ainda pressionadas The post Futuros de NY operam mistos após novos ataques em Ormuz e à espera de ata do Fed appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -10387,39 +10493,6 @@
    "ai": false
   },
   {
-   "id": "c1a31d66cb27",
-   "title": "Itaú BBA diz que Ibovespa pode chegar aos 246 mil pontos com ajuste fiscal e lista 4 ações para comprar",
-   "link": "https://www.moneytimes.com.br/ibovespa-pode-chegar-aos-246-mil-pontos-com-ajuste-fiscal-diz-itau-bba-veja-em-quais-acoes-apostar-apsa/",
-   "published": "2026-10-06T22:22:58+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/ibovespa-pode-chegar-aos-246-mil-pontos-com-ajuste-fiscal-diz-itau-bba-veja-em-quais-acoes-apostar-apsa/",
-     "title": "Itaú BBA diz que Ibovespa pode chegar aos 246 mil pontos com ajuste fiscal e lista 4 ações para comprar"
-    }
-   ],
-   "ids": [
-    "c1a31d66cb27"
-   ],
-   "snippet": "O Ibovespa (IBOV) pode ganhar um impulso bilionário caso investidores estrangeiros e fundos locais aumentem sua exposição à Bolsa brasileira. Segundo o Itaú BBA, o retorno das alocações em ações para patamares próximos às médias históricas teria potencial para direcionar até R$ 270,2 bilhões ao mercado. Desse total, cerca de R$ 123 bilhões poderiam vir […]",
-   "prescore": 4.8,
-   "headline": "Itaú BBA diz que Ibovespa pode chegar aos 246 mil pontos com ajuste fiscal e lista 4 ações para comprar",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O Ibovespa (IBOV) pode ganhar um impulso bilionário caso investidores estrangeiros e fundos locais aumentem sua exposição à Bolsa brasileira. Segundo o Itaú BBA, o retorno das alocações em ações para patamares próximos às médias históricas teria potencial para direcionar até R$ 270,2 bilhões ao mercado. Desse total, cerca de R$ 123 bilhões poderiam vir […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "86b1ecc93e2e",
    "title": "Compra da Warner Bros. pela Paramount cria gigante com 200 milhões de assinantes; veja os números",
    "link": "https://g1.globo.com/economia/noticia/2026/10/06/paramount-warner-bros-200-milhoes-assinantes.ghtml",
@@ -10553,7 +10626,7 @@
   },
   {
    "id": "089bef532cca",
-   "title": "Dollar recoups losses as markets await Fed minutes, speakers",
+   "title": "Dollar gains as oil climbs and investors focus on the Fed",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVnY5bzdPR0xZNUZ6VEJzWUhMVmJQZEI0bzY0cHpWV21LdHRFeDlIWkxnMURDYVFDVU9nZEVPYU9TNWNNV3NvWUE5MlJPaUVXT2VqaGJQQVFwNmtHWE5nNUF2SU5Ob3dmYVlSOENZVmRBc3lVUjFMM1NYYlBfLUJ6ZzJaU0FQQlQwMkh0cXlrZEItc0ZKeC1YLXdOd2wzRWxHeUlSUDg4STVVQTVGdmc?oc=5",
    "published": "2026-10-07T01:14:00+00:00",
    "region": "INTL",
@@ -10561,7 +10634,7 @@
     {
      "source": "Reuters",
      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVnY5bzdPR0xZNUZ6VEJzWUhMVmJQZEI0bzY0cHpWV21LdHRFeDlIWkxnMURDYVFDVU9nZEVPYU9TNWNNV3NvWUE5MlJPaUVXT2VqaGJQQVFwNmtHWE5nNUF2SU5Ob3dmYVlSOENZVmRBc3lVUjFMM1NYYlBfLUJ6ZzJaU0FQQlQwMkh0cXlrZEItc0ZKeC1YLXdOd2wzRWxHeUlSUDg4STVVQTVGdmc?oc=5",
-     "title": "Dollar recoups losses as markets await Fed minutes, speakers"
+     "title": "Dollar gains as oil climbs and investors focus on the Fed"
     }
    ],
    "ids": [
@@ -10569,8 +10642,8 @@
    ],
    "snippet": "",
    "prescore": 4.6,
-   "headline": "Dollar recoups losses as markets await Fed minutes, speakers",
-   "category": "mercados",
+   "headline": "Dollar gains as oil climbs and investors focus on the Fed",
+   "category": "internacional",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -10621,7 +10694,7 @@
    "id": "faafd032b397",
    "title": "Why Weaning Markets Off Fed Speak Is Harder Than It Sounds",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOHpmUGJnaVRkaVR2aFRMdjRXY01yaFkteGVrY0tlRlZxcFFPNlF2eVFubDY4YjBVOE9Ob0dxY1ByQURDN01XVlR4UjFuZWhYTHIxTXVoYjNLODluc2tGNlVEN3cyOEp1OWpGVnlfQmNlV0Utam45akk4RHVlaVdEMDVIaVVFQ3duemVjeGhWWHI0ZlprNHpic1BZcDdVQmZpSWI3bHJVbzRGRzdpa3FQTA?oc=5",
-   "published": "2026-10-06T13:00:00+00:00",
+   "published": "2026-10-06T13:04:09+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11365,39 +11438,6 @@
    "ai": false
   },
   {
-   "id": "4fb3e945f93e",
-   "title": "China’s Central Bank Adds Gold in September as Bullion Weakens",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-07/china-s-central-bank-adds-gold-in-september-as-bullion-weakens",
-   "published": "2026-10-07T06:41:26+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-07/china-s-central-bank-adds-gold-in-september-as-bullion-weakens",
-     "title": "China’s Central Bank Adds Gold in September as Bullion Weakens"
-    }
-   ],
-   "ids": [
-    "4fb3e945f93e"
-   ],
-   "snippet": "China added more gold to reserves last month, pushing a buying streak close to the two-year mark as prices weaken toward $4,000 an ounce.",
-   "prescore": 3.8,
-   "headline": "China’s Central Bank Adds Gold in September as Bullion Weakens",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "China added more gold to reserves last month, pushing a buying streak close to the two-year mark as prices weaken toward $4,000 an ounce.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "8edaecddd65e",
    "title": "Lula desafia Flávio e diz que 'máscara vai cair' com votação da 6x1",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWkpfSmR1SkZYX1gxdkt0dXM1XzBDbk94Mk1xdEdtVzZCdDdqUDkzWTBzYUNXRVhJbUhBa3R1dW1YbTBybzJ3RXZyMFFyRDEzQzBhT3JLMFdRZkdCUlBXOU5RT3dPSFRxbTVnNEkwTkMyczNNRmVLaDZNbjUtWFZvVm5hTHAyNzQ1OHFleGNKQ3pqODZvdFNyOXRiN2FZRE9NamljV2JBUDBxRDV1S3hvSFZyQl81MDdPZnNYbGh6dEg3QVRPVGhaZkZyNWtLR05ReFRN0gHiAUFVX3lxTFAwQldvOTZWUVFhMEN5c3R0cG1rY243cU9qZU55RnFWX3d4ejJ0R2hrWEV3YzNmR0JHWHNORXJ5Q2Z4S29wUnNtOG1maDFyOUtRSDlqLUxZeE9mQnRzQW9BVDNCZmlTeFkzTUh0VEhaWjc1V1RTNXpOaXI2NlJoRGh6bklkb2hNaUZ4YjVsbkg0a0ZSTGhaZUlHLWt2NW0wUVFNWkJoQzBjcXFfdFYxNWItQ0swRFpvUnp5bFFoWW1SWEYzUVZyaEFKdXRrU0pxbjJYZWxIbUhCVDJUYlhORllrRVE?oc=5",
@@ -11695,39 +11735,6 @@
    "ai": false
   },
   {
-   "id": "0f035a6fbb1b",
-   "title": "Bolsas na Europa sobem com apoio de queda nos preços do petróleo e nos juros",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQb21wZ3NIUEYtWkR5S2RqYjduc2dpVmEtaE9IWklxYmpzNFVha0tsUEp0Unh0T1BZaXJwTnJQZGY0TVlvTXBtMHQ0MVBubzlLbDlzeDNQVjVsWndYSjNWZzhSU0Q2MTNxWXU4OUlqSjhaVXcxZlljMjdIdEtVTmZRNmYwZ1VHblJkMVQxSmM3bFg1LTJ0OTBYZFFNeFV2WHkwVlREaGJaREUwTUUxQU5RU1JGeW5qN2N3LVR5aDE1M2gxQXZoOXo5bS1KVXJtZjTSAd4BQVVfeXFMUHJ0a0loWmpGb1RidndXZG9NOVVVQW5ndTdza0pMSV9ub0E0R1FRdmZHbVBPMHF2NkdISTRrQjZieDZ1bDM1eWlhREpvdGktcnRCWmg2RFBzU1dydzJra1Q3UTNzakJRQ0ZSUllaMGZ0MEpydERzSlR3S1dualU4ZlVzdGd1M0dTMFVBRUVMRElVMXdIVGg5N2tjQUoxNmRVcmt2Q1kxUlZnOGlqSmRrX2NEVmNZNXQxX1V4YWVyeEhKc3RiUEIyZmlWdmE5R3NSWTN5SlNaNzI2UjZleWdn?oc=5",
-   "published": "2026-10-06T16:54:49+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQb21wZ3NIUEYtWkR5S2RqYjduc2dpVmEtaE9IWklxYmpzNFVha0tsUEp0Unh0T1BZaXJwTnJQZGY0TVlvTXBtMHQ0MVBubzlLbDlzeDNQVjVsWndYSjNWZzhSU0Q2MTNxWXU4OUlqSjhaVXcxZlljMjdIdEtVTmZRNmYwZ1VHblJkMVQxSmM3bFg1LTJ0OTBYZFFNeFV2WHkwVlREaGJaREUwTUUxQU5RU1JGeW5qN2N3LVR5aDE1M2gxQXZoOXo5bS1KVXJtZjTSAd4BQVVfeXFMUHJ0a0loWmpGb1RidndXZG9NOVVVQW5ndTdza0pMSV9ub0E0R1FRdmZHbVBPMHF2NkdISTRrQjZieDZ1bDM1eWlhREpvdGktcnRCWmg2RFBzU1dydzJra1Q3UTNzakJRQ0ZSUllaMGZ0MEpydERzSlR3S1dualU4ZlVzdGd1M0dTMFVBRUVMRElVMXdIVGg5N2tjQUoxNmRVcmt2Q1kxUlZnOGlqSmRrX2NEVmNZNXQxX1V4YWVyeEhKc3RiUEIyZmlWdmE5R3NSWTN5SlNaNzI2UjZleWdn?oc=5",
-     "title": "Bolsas na Europa sobem com apoio de queda nos preços do petróleo e nos juros"
-    }
-   ],
-   "ids": [
-    "0f035a6fbb1b"
-   ],
-   "snippet": "",
-   "prescore": 3.8,
-   "headline": "Bolsas na Europa sobem com apoio de queda nos preços do petróleo e nos juros",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "a198a6b4d283",
    "title": "Após fim de prazo para saques de recursos nas bets, contas de apostadores ainda têm R$ 1,32 bilhão",
    "link": "https://g1.globo.com/economia/noticia/2026/10/06/apos-fim-de-prazo-para-saques-de-recursos-nas-bets-r-132-bilhao-restam-nas-contas-valores-serao-enviados-para-bancos.ghtml",
@@ -11751,6 +11758,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "O Ministério da Fazenda informou nesta terça-feira (6) que as contas de apostadores nas bets ainda reúnem R$ 1,32 bilhão. O prazo para saque dos recursos das plataformas de apostas se encerrou nesta segunda-feira (5). A proibição das bets foi anunciada pelo presidente Luiz Inácio Lula da Silva em 25 de setembro. A vedação inclui também jogos online e cassinos virtuais no país, como por exemplo, o ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5cb9c8341c88",
+   "title": "Economista-chefe do BCE diz que não se observam efeitos secundários sobre a inflação",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUG1tQkExaVJBYjdOd05XWnRsbmZBeGpCTl8yTGZkcHBKeGZBbXdtZldIMThYbmZweTVMS2dPOXlmaWsyWlNUVTZVMTUxNndYckQ4QWpmVTIwUE1lX2hwdmlmX2RyMFNzSWlpRkFQdElyR3ZMQjh6Ri1WZTlseTN5cGl6SXQ4Tmt1aDM4V3JmeEpFeTVyQ3BMX3BvcFd0TmZlRnRNQ2hOblV4S2x0enRwU0JhU1NpV3VhN2ZzSDNfdnBwU3AxSnBkeUZtOXJ0WGdSYlVfd9IB4wFBVV95cUxPRkRaejNnOHhrYXZDc19NM2QxSFF0ai1DX2tZODNJN1RwdEVsVDF5a0h0Q1dtdGJveG05RG5QcDRUVl85RjJOeUpfRHJnRFRvQ3E2bVhkQnZSRXdDZFdPYzNNVVhTRW9yVGJwLXVxbmhKNUlBNEdKdnAxaHN5djRSbXBHOXpmNnBKVDhDV3NLV2dHbERWaFNZUWFYczhFNzM2WXdIWndRdTdYVmtJeUZleXZmWUNrVk5IcHIzT0dSNWlQa25EYU16V0E5YjBhWkp2X2l3aHlxeldEY0RobE1LSElrcw?oc=5",
+   "published": "2026-10-06T14:35:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUG1tQkExaVJBYjdOd05XWnRsbmZBeGpCTl8yTGZkcHBKeGZBbXdtZldIMThYbmZweTVMS2dPOXlmaWsyWlNUVTZVMTUxNndYckQ4QWpmVTIwUE1lX2hwdmlmX2RyMFNzSWlpRkFQdElyR3ZMQjh6Ri1WZTlseTN5cGl6SXQ4Tmt1aDM4V3JmeEpFeTVyQ3BMX3BvcFd0TmZlRnRNQ2hOblV4S2x0enRwU0JhU1NpV3VhN2ZzSDNfdnBwU3AxSnBkeUZtOXJ0WGdSYlVfd9IB4wFBVV95cUxPRkRaejNnOHhrYXZDc19NM2QxSFF0ai1DX2tZODNJN1RwdEVsVDF5a0h0Q1dtdGJveG05RG5QcDRUVl85RjJOeUpfRHJnRFRvQ3E2bVhkQnZSRXdDZFdPYzNNVVhTRW9yVGJwLXVxbmhKNUlBNEdKdnAxaHN5djRSbXBHOXpmNnBKVDhDV3NLV2dHbERWaFNZUWFYczhFNzM2WXdIWndRdTdYVmtJeUZleXZmWUNrVk5IcHIzT0dSNWlQa25EYU16V0E5YjBhWkp2X2l3aHlxeldEY0RobE1LSElrcw?oc=5",
+     "title": "Economista-chefe do BCE diz que não se observam efeitos secundários sobre a inflação"
+    }
+   ],
+   "ids": [
+    "5cb9c8341c88"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Economista-chefe do BCE diz que não se observam efeitos secundários sobre a inflação",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12224,7 +12264,7 @@
    "id": "982b54067bf4",
    "title": "A Victory for Pro-American Candidate Bolsonaro Gives Washington an Opening to Leverage China’s Dependence on Brazil and Recalibrate the Global Balance of Power",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9ZclM0V2xJYUZVUTVUa3Y3dU1uNktrUlJfS3I5NXdTRVFBMmphdVU1Umg1NEdVYlp5QXV2UHNFSVF0Qng5cUxFbGhTdDl5bThPNkJMV1B2VF9OMmlMQVZCYjY2R2FTSzk1SDhLOVFZQ2hObGVFQmZvVWdqTm0?oc=5",
-   "published": "2026-10-07T06:42:42+00:00",
+   "published": "2026-10-07T06:41:49+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -14112,72 +14152,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "9924d600a1f6",
-   "title": "AMD planeja aumentar substancialmente a oferta em 2027, diz CEO",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/amd-planeja-aumentar-substancialmente-a-oferta-em-2027-diz-ceo.shtml",
-   "published": "2026-10-06T13:12:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/amd-planeja-aumentar-substancialmente-a-oferta-em-2027-diz-ceo.shtml",
-     "title": "AMD planeja aumentar substancialmente a oferta em 2027, diz CEO"
-    }
-   ],
-   "ids": [
-    "9924d600a1f6"
-   ],
-   "snippet": "A CEO da AMD, Lisa Su, afirmou nesta terça-feira (6) que a empresa planeja aumentar substancialmente o fornecimento de chips em 2027, à medida que a fabricante norte-americana corre para atender à crescente demanda proveniente da inteligência artificial . Leia mais (10/06/2026 - 10h12)",
-   "prescore": 3.0,
-   "headline": "AMD planeja aumentar substancialmente a oferta em 2027, diz CEO",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A CEO da AMD, Lisa Su, afirmou nesta terça-feira (6) que a empresa planeja aumentar substancialmente o fornecimento de chips em 2027, à medida que a fabricante norte-americana corre para atender à crescente demanda proveniente da inteligência artificial . Leia mais (10/06/2026 - 10h12)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ca1998a95d42",
-   "title": "Campanha de Lula vai apostar em medo de fim de programas sociais para aumentar rejeição a Flávio",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/campanha-de-lula-vai-apostar-em-medo-de-fim-de-programas-sociais-para-aumentar-rejeicao-a-flavio.shtml",
-   "published": "2026-10-06T13:02:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/campanha-de-lula-vai-apostar-em-medo-de-fim-de-programas-sociais-para-aumentar-rejeicao-a-flavio.shtml",
-     "title": "Campanha de Lula vai apostar em medo de fim de programas sociais para aumentar rejeição a Flávio"
-    }
-   ],
-   "ids": [
-    "ca1998a95d42"
-   ],
-   "snippet": "A campanha de reeleição do presidente Lula ( PT ) vai investir no medo de perda de programas sociais na tentativa de reverter a liderança de Flávio Bolsonaro ( PL -RJ), seu adversário no segundo turno . Leia mais (10/06/2026 - 10h02)",
-   "prescore": 3.0,
-   "headline": "Campanha de Lula vai apostar em medo de fim de programas sociais para aumentar rejeição a Flávio",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A campanha de reeleição do presidente Lula ( PT ) vai investir no medo de perda de programas sociais na tentativa de reverter a liderança de Flávio Bolsonaro ( PL -RJ), seu adversário no segundo turno . Leia mais (10/06/2026 - 10h02)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -14262,7 +14236,7 @@
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 37,
+   "count": 38,
    "error": null
   },
   {
@@ -14353,7 +14327,7 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 16,
+   "count": 17,
    "error": null
   },
   {
@@ -14367,7 +14341,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 51,
+   "count": 52,
    "error": null
   },
   {
@@ -14527,11 +14501,11 @@
   }
  ],
  "stats": {
-  "raw": 874,
-  "unique": 248,
-  "unique_all": 818,
+  "raw": 877,
+  "unique": 245,
+  "unique_all": 824,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.3
+  "seconds": 3.1
  }
 }
