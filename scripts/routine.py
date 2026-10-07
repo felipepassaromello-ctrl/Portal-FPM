@@ -8,6 +8,8 @@ Claude Code, que usa o plano do usuário em vez da API:
   python scripts/routine.py merge-analyses ARQ.json   valida e grava as análises
   python scripts/routine.py brief-input               imprime instruções + notícias analisadas
   python scripts/routine.py merge-brief ARQ.json      valida e grava o briefing do dia
+  python scripts/routine.py cvm-queue [--limit 80]    imprime documentos da CVM a resumir (texto do PDF)
+  python scripts/routine.py merge-cvm ARQ.json        valida e grava os resumos em site/data/cvm_resumos.json
 
 Tudo é gravado em site/data/claude_analysis.json, que o build_digest.py aplica a cada execução.
 """
@@ -182,6 +184,54 @@ def cmd_merge_brief(args) -> None:
     print("Briefing do dia gravado.")
 
 
+CVM_INSTRUCTIONS = """Você resume documentos que companhias abertas entregaram à CVM (fatos relevantes, comunicados ao mercado,
+avisos aos acionistas etc.) para um profissional de M&A. Para cada documento, escreva em português:
+- resumo: 2 a 3 frases em linguagem simples dizendo o que a companhia comunicou e o que muda, com os números,
+  nomes, valores, prazos e datas que estiverem no texto. Nada de "a companhia informa que"; vá direto ao fato.
+- pontos: 0 a 3 tópicos curtos com detalhes úteis (preço por ação, contraparte, condições, cronograma, próximos passos).
+- tema: um destes: {temas}.
+Use só o que está no texto. Se o texto estiver vazio, ilegível ou não disser nada além do título, não inclua o documento.
+Formato do arquivo: {{"items": [{{"id": "...", "resumo": "...", "pontos": ["..."], "tema": "..."}}]}}"""
+
+
+def cmd_cvm_queue(args) -> None:
+    from cias import FILA, RESUMOS, TEMAS
+    fila, resumos = load_json(FILA, {}), load_json(RESUMOS, {})
+    pend = [(k, v) for k, v in fila.items() if k not in resumos and len((v.get("texto") or "").strip()) > 80]
+    pend.sort(key=lambda kv: (kv[1]["c"] != "Fato Relevante", kv[1]["d"]))
+    print(CVM_INSTRUCTIONS.format(temas=", ".join(TEMAS)))
+    print(f"\n=== DOCUMENTOS PENDENTES ({min(len(pend), args.limit)} de {len(pend)}) ===")
+    for k, v in pend[:args.limit]:
+        print(f"\n--- id {k} · {v['empresa']} · {v['c']}{' · ' + v['t'] if v.get('t') else ''} · {v['s']} · entregue {v['d']}")
+        print(v["texto"].strip())
+
+
+def cmd_merge_cvm(args) -> None:
+    from cias import FILA, RESUMOS, TEMAS
+    data = json.loads(Path(args.file).read_text(encoding="utf-8"))
+    fila, resumos = load_json(FILA, {}), load_json(RESUMOS, {})
+    ok, errs = 0, []
+    for it in data.get("items", []):
+        i = str(it.get("id", ""))
+        if i not in fila and i not in resumos:
+            errs.append(f"{i}: id fora da fila"); continue
+        if not isinstance(it.get("resumo"), str) or len(it["resumo"]) < 30:
+            errs.append(f"{i}: resumo ausente ou curto"); continue
+        if it.get("tema") not in TEMAS:
+            errs.append(f"{i}: tema {it.get('tema')!r} fora de {TEMAS}"); continue
+        pontos = [p for p in it.get("pontos") or [] if isinstance(p, str) and p.strip()][:3]
+        meta = fila.get(i) or resumos.get(i, {})
+        resumos[i] = {"resumo": it["resumo"].strip(), "pontos": pontos, "tema": it["tema"],
+                      "k": meta.get("k"), "d": meta.get("d"), "em": datetime.now(BRT).isoformat(timespec="minutes")}
+        fila.pop(i, None)
+        ok += 1
+    write_json(RESUMOS, resumos)
+    write_json(FILA, fila)
+    print(f"{ok} resumos gravados; fila agora com {len(fila)}.")
+    for e in errs:
+        print("ERRO", e)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -190,9 +240,11 @@ def main() -> None:
     sub.add_parser("merge-analyses").add_argument("file")
     sub.add_parser("brief-input")
     sub.add_parser("merge-brief").add_argument("file")
+    sub.add_parser("cvm-queue").add_argument("--limit", type=int, default=80)
+    sub.add_parser("merge-cvm").add_argument("file")
     args = ap.parse_args()
     {"queue": cmd_queue, "merge-analyses": cmd_merge_analyses, "brief-input": cmd_brief_input,
-     "merge-brief": cmd_merge_brief}[args.cmd](args)
+     "merge-brief": cmd_merge_brief, "cvm-queue": cmd_cvm_queue, "merge-cvm": cmd_merge_cvm}[args.cmd](args)
 
 
 if __name__ == "__main__":
