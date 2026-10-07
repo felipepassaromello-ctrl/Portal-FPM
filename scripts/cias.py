@@ -2,7 +2,7 @@
 
 Gera arquivos estáticos em site/data/cias/ (não versionados; o workflow refaz a cada publicação):
   index.json            companhias + contagens + lista de meses
-  emp/{codigo}.json     todos os documentos de uma companhia (ano anterior e ano corrente)
+  emp/{codigo}.json     todos os documentos de uma companhia (últimos 5 anos)
   mes/{AAAA-MM}.json    todos os documentos entregues no mês, de todas as companhias
 
 Fontes:
@@ -47,6 +47,7 @@ ENET = "https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx"
 DOWNLOAD = ("https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1"
             "&numProtocolo={p}&numSequencia={s}&numVersao={v}")
 REALTIME_DAYS = 10
+YEARS = 5  # anos de documentos na base (o corrente e os quatro anteriores)
 
 # Categorias que ganham resumo (texto extraído do PDF e resumido pela rotina).
 SUMMARY_CATS = {
@@ -202,7 +203,7 @@ def fetch_realtime(start: datetime, end: datetime) -> list[dict]:
 def collect_docs(now: datetime) -> tuple[list[dict], dict]:
     status = {}
     docs: dict[str, dict] = {}
-    for year in (now.year - 1, now.year):
+    for year in range(now.year - YEARS + 1, now.year + 1):
         try:
             rows = fetch_ipe(year)
             for r in rows:
@@ -336,6 +337,12 @@ def cmd_build(args) -> None:
         elif fila.get(d["id"], {}).get("texto"):
             d["tr"] = excerpt(fila[d["id"]]["texto"])
         d.pop("cnpj", None)
+        # o link de download é montado no navegador a partir do protocolo (id), da sequência e da versão
+        seq = re.search(r"numSequencia=(\d+)", d.get("u", ""))
+        ver = re.search(r"numVersao=(\d+)", d.get("u", ""))
+        if seq:
+            d["q"] = f"{seq[1]}.{ver[1] if ver else 1}"
+            d.pop("u", None)
         d.pop("v", None)
 
     if OUT.exists():
