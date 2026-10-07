@@ -1,0 +1,55 @@
+name: CVM - histórico para resumir
+
+# Baixa o texto dos documentos antigos (até 5 anos) que ainda não têm resumo e guarda em
+# site/data/cvm_fila_hist.json. A rotina diária do Claude resume um lote por dia.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # 03:17 BRT: abastece a fila do histórico para a rotina da manhã
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: "Só documentos dos últimos N dias (vazio = 5 anos)"
+        required: false
+      max:
+        description: "Máximo de PDFs nesta execução"
+        default: "300"
+      cats:
+        description: "fr = só fatos relevantes; principais = fatos, comunicados, avisos etc."
+        default: "principais"
+      chars:
+        description: "Caracteres de texto por documento"
+        default: "4000"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cvm-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - run: pip install -r scripts/requirements.txt
+      - name: Baixar textos do histórico
+        run: |
+          python scripts/cias.py textos --hist --minutos 100 \
+            --max "${{ inputs.max || '300' }}" --cats "${{ inputs.cats || 'principais' }}" \
+            --chars "${{ inputs.chars || '4000' }}" ${{ inputs.dias && format('--dias {0}', inputs.dias) || '' }}
+      - name: Salvar no repositório
+        run: |
+          git config user.name "portal-bot"
+          git config user.email "portal-bot@users.noreply.github.com"
+          git add site/data/cvm_fila_hist.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Textos CVM do histórico para resumir"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs && git push && break; sleep 7; done

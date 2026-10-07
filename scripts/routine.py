@@ -195,10 +195,12 @@ Formato do arquivo: {{"items": [{{"id": "...", "resumo": "...", "pontos": ["..."
 
 
 def cmd_cvm_queue(args) -> None:
-    from cias import FILA, RESUMOS, TEMAS
-    fila, resumos = load_json(FILA, {}), load_json(RESUMOS, {})
-    pend = [(k, v) for k, v in fila.items() if k not in resumos and len((v.get("texto") or "").strip()) > 80]
-    pend.sort(key=lambda kv: (kv[1]["c"] != "Fato Relevante", kv[1]["d"]))
+    from cias import FILA, FILA_HIST, RESUMOS, TEMAS
+    fila, hist, resumos = load_json(FILA, {}), load_json(FILA_HIST, {}), load_json(RESUMOS, {})
+    ok = lambda kv: kv[0] not in resumos and len((kv[1].get("texto") or "").strip()) > 80  # noqa: E731
+    # primeiro os novos (do dia), depois o histórico, do mais recente para o mais antigo
+    pend = sorted(filter(ok, fila.items()), key=lambda kv: (kv[1]["c"] != "Fato Relevante", kv[1]["d"]))
+    pend += sorted((kv for kv in filter(ok, hist.items()) if kv[0] not in fila), key=lambda kv: kv[1]["d"], reverse=True)
     print(CVM_INSTRUCTIONS.format(temas=", ".join(TEMAS)))
     print(f"\n=== DOCUMENTOS PENDENTES ({min(len(pend), args.limit)} de {len(pend)}) ===")
     for k, v in pend[:args.limit]:
@@ -207,27 +209,30 @@ def cmd_cvm_queue(args) -> None:
 
 
 def cmd_merge_cvm(args) -> None:
-    from cias import FILA, RESUMOS, TEMAS
+    from cias import FILA, FILA_HIST, RESUMOS, TEMAS
     data = json.loads(Path(args.file).read_text(encoding="utf-8"))
-    fila, resumos = load_json(FILA, {}), load_json(RESUMOS, {})
+    fila, hist, resumos = load_json(FILA, {}), load_json(FILA_HIST, {}), load_json(RESUMOS, {})
     ok, errs = 0, []
     for it in data.get("items", []):
         i = str(it.get("id", ""))
-        if i not in fila and i not in resumos:
+        if i not in fila and i not in hist and i not in resumos:
             errs.append(f"{i}: id fora da fila"); continue
         if not isinstance(it.get("resumo"), str) or len(it["resumo"]) < 30:
             errs.append(f"{i}: resumo ausente ou curto"); continue
         if it.get("tema") not in TEMAS:
             errs.append(f"{i}: tema {it.get('tema')!r} fora de {TEMAS}"); continue
         pontos = [p for p in it.get("pontos") or [] if isinstance(p, str) and p.strip()][:3]
-        meta = fila.get(i) or resumos.get(i, {})
+        meta = fila.get(i) or hist.get(i) or resumos.get(i, {})
         resumos[i] = {"resumo": it["resumo"].strip(), "pontos": pontos, "tema": it["tema"],
                       "k": meta.get("k"), "d": meta.get("d"), "em": datetime.now(BRT).isoformat(timespec="minutes")}
         fila.pop(i, None)
+        hist.pop(i, None)
         ok += 1
     write_json(RESUMOS, resumos)
     write_json(FILA, fila)
-    print(f"{ok} resumos gravados; fila agora com {len(fila)}.")
+    if Path(FILA_HIST).exists() or hist:
+        write_json(FILA_HIST, hist)
+    print(f"{ok} resumos gravados; fila agora com {len(fila)} novos e {len(hist)} do histórico.")
     for e in errs:
         print("ERRO", e)
 

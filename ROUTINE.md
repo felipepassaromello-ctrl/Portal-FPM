@@ -68,12 +68,14 @@ Leia o arquivo, escreva `/tmp/rotina/cvm.json` no formato indicado e rode:
 python scripts/routine.py merge-cvm /tmp/rotina/cvm.json
 ```
 
-Se a fila tiver mais documentos do que o limite, repita (`cvm-queue` de novo, novo arquivo, `merge-cvm`).
+A fila traz primeiro os documentos novos e depois o histórico (`site/data/cvm_fila_hist.json`, abastecido toda
+madrugada pelo workflow **CVM - histórico para resumir**). Resuma todos os novos e pelo menos 200 do histórico por
+dia: repita `cvm-queue`, novo arquivo, `merge-cvm`. Se tiver fôlego, resuma mais do histórico.
 
 ## 6. Publicar
 
 ```bash
-git add site/data/claude_analysis.json site/data/cvm_resumos.json site/data/cvm_fila.json
+git add site/data/claude_analysis.json site/data/cvm_resumos.json site/data/cvm_fila.json site/data/cvm_fila_hist.json
 git commit -m "Análise do dia $(TZ=America/Sao_Paulo date +'%Y-%m-%d %H:%M')"
 git pull --rebase origin main && git push origin HEAD:main
 ```

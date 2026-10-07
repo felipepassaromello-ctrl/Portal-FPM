@@ -39,6 +39,7 @@ DATA = ROOT / "site" / "data"
 OUT = DATA / "cias"
 RESUMOS = DATA / "cvm_resumos.json"
 FILA = DATA / "cvm_fila.json"
+FILA_HIST = DATA / "cvm_fila_hist.json"  # histórico (backfill), escrito só pelo workflow cvm-backfill
 BRT = timezone(timedelta(hours=-3))
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
@@ -329,7 +330,7 @@ def cmd_build(args) -> None:
     log(f"Companhias: {len(companies)}")
 
     resumos = load_json(RESUMOS, {})
-    fila = load_json(FILA, {})
+    fila = {**load_json(FILA_HIST, {}), **load_json(FILA, {})}
     for d in docs:
         sm = resumos.get(d["id"])
         if sm:
@@ -401,39 +402,66 @@ def wants_summary(d: dict, listed: set[str], active: set[str]) -> bool:
     return (d["k"] in listed and d["c"] in SUMMARY_CATS) or (d["c"] == "Fato Relevante" and d["k"] in active)
 
 
+def _fetch_text(d: dict, chars: int) -> dict | None:
+    try:
+        raw = get(d["u"], timeout=60)
+        texto = pdf_text(raw) if raw[:5] == b"%PDF-" else ""
+    except Exception as exc:  # noqa: BLE001
+        log(f"PDF {d['id']} ({d['nome']}): {type(exc).__name__}: {exc}")
+        return None
+    return {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"], "texto": texto[:chars]}
+
+
 def cmd_textos(args) -> None:
-    """Baixa o PDF dos documentos relevantes recentes ainda sem resumo e guarda o texto na fila."""
+    """Baixa o PDF dos documentos ainda sem resumo e guarda o texto na fila.
+
+    Modo normal (workflow de hora em hora): últimos dias, poucos por vez, em cvm_fila.json.
+    Modo --hist (workflow cvm-backfill): histórico dos 5 anos, em lotes grandes, em cvm_fila_hist.json."""
+    from concurrent.futures import ThreadPoolExecutor
     now = datetime.now(BRT).replace(tzinfo=None)
     listed, active = summary_universe(now)
     log(f"Universo dos resumos: {len(listed)} listadas, {len(active)} ativas.")
-    since = (now - timedelta(days=SUMMARY_LOOKBACK_DAYS)).strftime("%Y-%m-%d")
-    try:
-        docs = fetch_realtime(now - timedelta(days=SUMMARY_LOOKBACK_DAYS), now)
-    except Exception as exc:  # noqa: BLE001
-        log(f"Tempo real indisponível ({exc}); usando dados abertos.")
-        docs = [d for d in (ipe_doc(r) for r in fetch_ipe(now.year)) if d]
+    dias = args.dias or (365 * YEARS if args.hist else SUMMARY_LOOKBACK_DAYS)
+    since = (now - timedelta(days=dias)).strftime("%Y-%m-%d")
+    if args.hist:
+        docs, _ = collect_docs(now)
+    else:
+        try:
+            docs = fetch_realtime(now - timedelta(days=dias), now)
+        except Exception as exc:  # noqa: BLE001
+            log(f"Tempo real indisponível ({exc}); usando dados abertos.")
+            docs = [d for d in (ipe_doc(r) for r in fetch_ipe(now.year)) if d]
     resumos = load_json(RESUMOS, {})
-    fila = load_json(FILA, {})
-    # descarta da fila o que já foi resumido ou ficou velho demais
-    cutoff = (now - timedelta(days=SUMMARY_LOOKBACK_DAYS + 7)).strftime("%Y-%m-%d")
-    fila = {k: v for k, v in fila.items() if k not in resumos and v.get("d", "") >= cutoff}
-
-    todo = [d for d in docs if wants_summary(d, listed, active) and d["d"] >= since and d["id"] not in resumos and d["id"] not in fila]
+    target = FILA_HIST if args.hist else FILA
+    fila = load_json(target, {})
+    other = load_json(FILA if args.hist else FILA_HIST, {})
+    if not args.hist:  # descarta da fila o que já foi resumido ou ficou velho demais
+        cutoff = (now - timedelta(days=SUMMARY_LOOKBACK_DAYS + 7)).strftime("%Y-%m-%d")
+        fila = {k: v for k, v in fila.items() if k not in resumos and v.get("d", "") >= cutoff}
+    else:
+        fila = {k: v for k, v in fila.items() if k not in resumos}
+    cats = {"fr": {"Fato Relevante"}}.get(args.cats, SUMMARY_CATS)
+    todo = [d for d in docs if wants_summary(d, listed, active) and d["c"] in cats and d["d"] >= since
+            and d["id"] not in resumos and d["id"] not in fila and d["id"] not in other and d.get("u")]
     todo.sort(key=lambda d: (d["d"], d["h"]), reverse=True)
     todo.sort(key=lambda d: d["c"] != "Fato Relevante")  # fatos relevantes primeiro, depois os mais novos
+    limit = args.max or MAX_PDFS_PER_RUN
+    deadline = time.time() + 60 * (args.minutos or 30)
     got = 0
-    for d in todo[:MAX_PDFS_PER_RUN]:
-        try:
-            raw = get(d["u"], timeout=60)
-            texto = pdf_text(raw) if raw[:5] == b"%PDF-" else ""
-        except Exception as exc:  # noqa: BLE001
-            log(f"PDF {d['id']} ({d['nome']}): {type(exc).__name__}: {exc}")
-            continue
-        fila[d["id"]] = {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"],
-                         "texto": texto[:TEXT_CHARS]}
-        got += 1
-        time.sleep(0.4)
-    save_json(FILA, fila)
+    with ThreadPoolExecutor(max_workers=4 if args.hist else 1) as pool:
+        for i in range(0, min(limit, len(todo)), 40):
+            if time.time() > deadline:
+                log("Tempo esgotado; o resto fica para a próxima execução.")
+                break
+            batch = todo[i:min(i + 40, limit)]
+            for d, item in zip(batch, pool.map(lambda x: _fetch_text(x, args.chars or TEXT_CHARS), batch)):
+                if item:
+                    fila[d["id"]] = item
+                    got += 1
+            if args.hist and i % 400 == 0:
+                save_json(target, fila)
+                log(f"... {got} textos")
+    save_json(target, fila)
     log(f"Textos: {got} novos (de {len(todo)} pendentes); fila com {len(fila)}.")
 
 
@@ -441,7 +469,14 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("build").set_defaults(fn=cmd_build)
-    sub.add_parser("textos").set_defaults(fn=cmd_textos)
+    t = sub.add_parser("textos")
+    t.add_argument("--hist", action="store_true", help="histórico dos 5 anos, em cvm_fila_hist.json")
+    t.add_argument("--dias", type=int, help="só documentos dos últimos N dias")
+    t.add_argument("--max", type=int, help="máximo de PDFs nesta execução")
+    t.add_argument("--cats", choices=["fr", "principais"], default="principais")
+    t.add_argument("--chars", type=int, help="caracteres de texto guardados por documento")
+    t.add_argument("--minutos", type=int, help="tempo máximo de execução")
+    t.set_defaults(fn=cmd_textos)
     args = ap.parse_args()
     args.fn(args)
 
