@@ -39,7 +39,7 @@ DATA = ROOT / "site" / "data"
 OUT = DATA / "cias"
 RESUMOS = DATA / "cvm_resumos.json"
 FILA = DATA / "cvm_fila.json"
-FILA_HIST = DATA / "cvm_fila_hist.json"  # histórico (backfill), escrito só pelo workflow cvm-backfill
+FILA_HIST = DATA / "cvm_fila_hist.json.gz"  # histórico (backfill), compactado: o GitHub recusa o JSON puro desse tamanho
 BRT = timezone(timedelta(hours=-3))
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
@@ -69,6 +69,9 @@ def log(msg: str) -> None:
 
 def load_json(path: Path, default):
     try:
+        if path.suffix == ".gz":
+            import gzip
+            return json.loads(gzip.decompress(path.read_bytes()).decode("utf-8"))
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception:  # noqa: BLE001
         return default
@@ -76,6 +79,11 @@ def load_json(path: Path, default):
 
 def save_json(path: Path, data, compact: bool = False) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.suffix == ".gz":
+        import gzip
+        raw = json.dumps(data, ensure_ascii=False, separators=(",", ":"), sort_keys=True).encode("utf-8")
+        path.write_bytes(gzip.compress(raw, mtime=0))
+        return
     if compact:
         path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     else:
