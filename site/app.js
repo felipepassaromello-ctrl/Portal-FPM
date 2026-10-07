@@ -366,7 +366,7 @@
       const x = cats[c];
       return `<div class="map-row" data-cat="${c}" style="${catVar(c)}" title="${x.hot} com nota ≥ 7 · média ${fmtNum(x.sum / x.n, 1)}">
         <span>${esc(catName(c))}</span>
-        <span class="bar"><span class="bar-fill" style="width:${(x.hot / maxN) * 100}%">${x.hot || ""}</span><span class="bar-hot" style="width:${((x.n - x.hot) / maxN) * 100}%"></span></span>
+        <span class="bar">${x.hot ? `<span class="bar-fill" style="width:${(x.hot / maxN) * 100}%">${x.hot}</span>` : ""}<span class="bar-hot" style="width:${((x.n - x.hot) / maxN) * 100}%"></span></span>
         <span class="muted small">${x.n}</span></div>`;
     }).join("") + `<div class="map-legend">Barra cheia = notícias com nota ≥ 7 · clara = demais · clique para filtrar</div>`;
 
