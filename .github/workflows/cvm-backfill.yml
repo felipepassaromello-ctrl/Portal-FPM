@@ -1,11 +1,9 @@
 name: CVM - histórico para resumir
 
 # Baixa o texto dos documentos antigos (até 5 anos) que ainda não têm resumo e guarda em
-# site/data/cvm_fila_hist.json.gz. A rotina diária do Claude resume um lote por dia.
+# site/data/cvm_fila_hist.json.gz. Só roda manualmente: a rotina diária resume apenas os documentos novos.
 
 on:
-  schedule:
-    - cron: "17 6 * * *"   # 03:17 BRT: abastece a fila do histórico para a rotina da manhã
   workflow_dispatch:
     inputs:
       dias:

@@ -8,7 +8,7 @@ Claude Code, que usa o plano do usuário em vez da API:
   python scripts/routine.py merge-analyses ARQ.json   valida e grava as análises
   python scripts/routine.py brief-input               imprime instruções + notícias analisadas
   python scripts/routine.py merge-brief ARQ.json      valida e grava o briefing do dia
-  python scripts/routine.py cvm-queue [--limit 80]    imprime documentos da CVM a resumir (texto do PDF)
+  python scripts/routine.py cvm-queue [--limit 80] [--hist]   documentos novos da CVM a resumir (--hist inclui o histórico)
   python scripts/routine.py merge-cvm ARQ.json        valida e grava os resumos em site/data/cvm_resumos.json
 
 Tudo é gravado em site/data/claude_analysis.json, que o build_digest.py aplica a cada execução.
@@ -198,9 +198,10 @@ def cmd_cvm_queue(args) -> None:
     from cias import FILA, FILA_HIST, RESUMOS, TEMAS, load_json as cload
     fila, hist, resumos = load_json(FILA, {}), cload(FILA_HIST, {}), cload(RESUMOS, {})
     ok = lambda kv: kv[0] not in resumos and len((kv[1].get("texto") or "").strip()) > 80  # noqa: E731
-    # primeiro os novos (do dia), depois o histórico, do mais recente para o mais antigo
+    # os novos (do dia); com --hist, depois o histórico, do mais recente para o mais antigo
     pend = sorted(filter(ok, fila.items()), key=lambda kv: (kv[1]["c"] != "Fato Relevante", kv[1]["d"]))
-    pend += sorted((kv for kv in filter(ok, hist.items()) if kv[0] not in fila), key=lambda kv: kv[1]["d"], reverse=True)
+    if args.hist:
+        pend += sorted((kv for kv in filter(ok, hist.items()) if kv[0] not in fila), key=lambda kv: kv[1]["d"], reverse=True)
     print(CVM_INSTRUCTIONS.format(temas=", ".join(TEMAS)))
     print(f"\n=== DOCUMENTOS PENDENTES ({min(len(pend), args.limit)} de {len(pend)}) ===")
     for k, v in pend[:args.limit]:
@@ -245,7 +246,9 @@ def main() -> None:
     sub.add_parser("merge-analyses").add_argument("file")
     sub.add_parser("brief-input")
     sub.add_parser("merge-brief").add_argument("file")
-    sub.add_parser("cvm-queue").add_argument("--limit", type=int, default=80)
+    q = sub.add_parser("cvm-queue")
+    q.add_argument("--limit", type=int, default=80)
+    q.add_argument("--hist", action="store_true", help="inclui a fila do histórico depois dos novos")
     sub.add_parser("merge-cvm").add_argument("file")
     args = ap.parse_args()
     {"queue": cmd_queue, "merge-analyses": cmd_merge_analyses, "brief-input": cmd_brief_input,
