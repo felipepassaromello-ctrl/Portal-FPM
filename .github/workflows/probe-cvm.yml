@@ -2,7 +2,7 @@ name: probe-cvm
 on:
   push:
     branches: [claude/news-portal-ma-personalized-ejb59l]
-    paths: [scripts/probe_cvm.py, .github/workflows/probe-cvm.yml]
+    paths: [scripts/probe_cvm.py, scripts/official.py, .github/workflows/probe-cvm.yml]
 jobs:
   probe:
     runs-on: ubuntu-latest

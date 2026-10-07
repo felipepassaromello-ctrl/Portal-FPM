@@ -89,6 +89,64 @@ def cvm_filings(after: date, until: date) -> tuple[list[dict], str | None]:
     return out, None
 
 
+ENET = "https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx"
+
+
+def cvm_realtime(start: datetime, end: datetime) -> tuple[list[dict], str | None]:
+    """Fatos relevantes (todos) e comunicados ao mercado ligados a M&A/ECM entregues à CVM em [start, end),
+    pela consulta pública do sistema Empresas.NET, que mostra o documento minutos depois do protocolo."""
+    import http.cookiejar
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    payload = {"dataDe": f"{start:%d/%m/%Y}", "dataAte": f"{end:%d/%m/%Y}", "empresa": "", "setorAtividade": "-1",
+               "categoriaEmissor": "-1", "situacaoEmissor": "-1", "tipoParticipante": "-1", "dataReferencia": "",
+               "categoria": "IPE_-1_-1_-1", "periodo": "2", "horaIni": "", "horaFim": "", "palavraChave": "",
+               "ultimaDtRef": "false", "tipoEmpresa": "0", "token": "", "versaoCaptcha": ""}
+    try:
+        opener.open(urllib.request.Request(ENET, headers={"User-Agent": UA}), timeout=40).read()  # cookies de sessão
+        req = urllib.request.Request(ENET + "/ListarDocumentos", data=json.dumps(payload).encode(), headers={
+            "User-Agent": UA, "Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest",
+            "Referer": ENET, "Origin": "https://www.rad.cvm.gov.br"})
+        resp = json.loads(opener.open(req, timeout=90).read().decode("utf-8", "replace"))["d"]
+        if resp.get("temErro") or resp.get("expirouSessao"):
+            raise RuntimeError(resp.get("msgErro") or "sessão expirada")
+    except Exception as exc:  # noqa: BLE001
+        return [], f"{type(exc).__name__}: {exc}"
+
+    lo, hi = start.strftime("%Y-%m-%d %H:%M"), end.strftime("%Y-%m-%d %H:%M")
+    out, seen = [], set()
+    for rec in (resp.get("dados") or "").split("&*"):
+        f = rec.split("$&")
+        if len(f) < 11:
+            continue
+        cat = _clean(f[2])
+        m = re.search(r"(\d{2})/(\d{2})/(\d{4})\s+(\d{2}:\d{2})", _clean(f[6]))
+        if not m:
+            continue
+        delivered = f"{m[3]}-{m[2]}-{m[1]} {m[4]}"
+        if not (lo <= delivered < hi):
+            continue
+        assunto = _clean(f[11] if len(f) > 11 else "") or _clean(f[4]).strip(" -") or _clean(f[3])
+        is_fato = cat.lower().startswith("fato relevante")
+        if not (is_fato or (cat.lower().startswith("comunicado ao mercado") and CVM_KEYWORDS.search(assunto))):
+            continue
+        company = _clean(f[1])
+        if (company, assunto) in seen:  # reapresentações (versões) do mesmo documento
+            continue
+        seen.add((company, assunto))
+        prot = re.search(r"NumeroProtocoloEntrega=(\d+)", f[10])
+        out.append({
+            "kind": "Fato relevante" if is_fato else "Comunicado ao mercado",
+            "company": company,
+            "subject": assunto,
+            "date": delivered[:10],
+            "time": delivered[11:],
+            "link": f"https://www.rad.cvm.gov.br/ENET/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega={prot[1]}"
+                    if prot else ENET,
+        })
+    out.sort(key=lambda r: (r["kind"] != "Fato relevante", r["date"], r.get("time", ""), r["company"]))
+    return out, None
+
+
 # ---------------------------------------------------------------- Diário Oficial: atos do Cade
 
 def _clean(t: str) -> str:
@@ -264,13 +322,22 @@ def bcb_macro(today: date) -> tuple[dict, str | None]:
     return out, ("; ".join(errors) or None)
 
 
-def collect_official(edition_date: date, cvm_after: date | None = None, prev_macro: dict | None = None) -> tuple[dict, list[dict]]:
-    """Coleta o que pertence à edição: documentos da CVM entregues depois do que a edição anterior já mostrou
-    (até o dia anterior) e o Diário Oficial do dia da edição."""
+def collect_official(edition_date: date, cvm_after: date | None = None, prev_macro: dict | None = None,
+                     window: tuple[datetime, datetime] | None = None) -> tuple[dict, list[dict]]:
+    """Coleta o que pertence à edição: documentos entregues à CVM na janela da edição (consulta em tempo real;
+    se ela falhar, os dados abertos, que atrasam alguns dias) e o Diário Oficial do dia da edição."""
     status = []
     until = edition_date - timedelta(days=1)
     after = cvm_after or (until - timedelta(days=3))
-    fatos, err = cvm_filings(after, until) if after < until else ([], None)
+    fatos, err, realtime = [], "sem janela", False
+    if window:
+        fatos, err = cvm_realtime(*window)
+        realtime = err is None
+    if not realtime:
+        rt_err = err
+        fatos, err = cvm_filings(after, until) if after < until else ([], None)
+        if err and window:
+            err = f"tempo real: {rt_err}; dados abertos: {err}"
     status.append({"id": "cvm-ipe", "name": "CVM (fatos relevantes)", "ok": err is None, "count": len(fatos), "error": err})
     cade, err = dou_cade(edition_date)
     status.append({"id": "dou-cade", "name": "Diário Oficial (Cade)", "ok": err is None, "count": len(cade), "error": err})
@@ -279,6 +346,6 @@ def collect_official(edition_date: date, cvm_after: date | None = None, prev_mac
         macro.setdefault(k, v)
     status.append({"id": "bcb", "name": "Banco Central (Selic, IPCA, Focus)", "ok": err is None,
                    "count": len(macro), "error": err})
-    cvm_through = max([f["date"] for f in fatos], default=after.isoformat())
-    return {"filings": fatos, "cade": cade, "macro": macro, "cvm_through": cvm_through,
+    cvm_through = until.isoformat() if realtime else max([f["date"] for f in fatos], default=after.isoformat())
+    return {"filings": fatos, "cade": cade, "macro": macro, "cvm_through": cvm_through, "cvm_realtime": realtime,
             "fetched_at": datetime.now().isoformat(timespec="minutes")}, status

@@ -157,6 +157,12 @@ def cmd_brief_input(args) -> None:
         print("\n=== MERCADO (última cotação) ===")
         for q in digest["market"]:
             print(f"{q['name']}: {q['price']:.2f} ({q['change_pct']:+.2f}%)")
+    filings = (digest.get("official") or {}).get("filings") or []
+    if filings:
+        print("\n=== CVM: FATOS RELEVANTES E COMUNICADOS DA JANELA (cite no briefing só os de M&A/mercado de capitais) ===")
+        for f in filings[:60]:
+            print(json.dumps({"tipo": f["kind"], "empresa": f["company"], "assunto": f["subject"],
+                              "entregue": f"{f['date']} {f.get('time', '')}".strip()}, ensure_ascii=False))
     print(f"\n=== NOTÍCIAS ANALISADAS ({len(rows[:45])}) ===")
     for r in rows[:45]:
         print(json.dumps(r, ensure_ascii=False))

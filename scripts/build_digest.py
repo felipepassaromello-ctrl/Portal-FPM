@@ -46,7 +46,7 @@ UA = "Mozilla/5.0 (compatible; PortalN1/1.0; +https://github.com/)"
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-5-5")
 MAX_ANALYZE = int(os.environ.get("MAX_ANALYZE", "90"))
 BATCH_SIZE = 15
-OFFICIAL_VERSION = 4  # mude para forçar uma nova coleta das fontes oficiais na edição corrente
+OFFICIAL_VERSION = 5  # mude para forçar uma nova coleta das fontes oficiais na edição corrente
 EDITION_CLOSE_HOUR = 8  # cada edição cobre as 24h até as 08h (BRT) do seu dia
 
 CATEGORIES = {
@@ -417,7 +417,7 @@ BRIEF_INSTRUCTIONS = """Com base nas notícias analisadas abaixo (já ordenadas 
 - watchlist: 3 a 6 pontos para acompanhar hoje/nos próximos dias (agenda, decisões, desdobramentos de deals).
 - connections: 2 a 4 conexões não óbvias entre notícias diferentes (ex.: como um fato internacional afeta um deal ou setor no Brasil).
 
-Não cite as fontes oficiais (CVM, Cade/Diário Oficial, Banco Central) no briefing: elas têm aba própria no portal.
+Fontes oficiais: cite no briefing só fatos relevantes da CVM que tratem de M&A ou mercado de capitais (aquisição, fusão, venda de ativo, oferta de ações, OPA, fechamento de capital), dizendo que vieram de fato relevante. Não cite fatos relevantes rotineiros, atos do Cade nem dados do Banco Central: eles têm aba própria no portal.
 
 Notícias com "ja_noticiado_em" tratam de um deal que já saiu em edição anterior, sem mudança de estágio: não as trate como novidade nem as repita no tldr. Notícias com "atualizacao_de_estagio" são desdobramentos de um deal já noticiado: mencione como atualização (ex.: "aprovado pelo Cade", "concluído").
 
@@ -746,7 +746,7 @@ def main() -> int:
         shown = max([x for x in shown if x], default=None)
         official, official_status = collect_official(
             win_end.date(), datetime.fromisoformat(shown).date() if shown else None,
-            prev_off.get("macro"))
+            prev_off.get("macro"), (win_start, win_end))
         # CVM e Diário Oficial são pesados; o BC falha às vezes e já tem o último valor como reserva.
         official["complete"] = all(s["ok"] for s in official_status if s["id"] != "bcb")
         official["v"] = OFFICIAL_VERSION
