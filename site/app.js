@@ -291,7 +291,8 @@
     const tabs = tabsAvailable();
     if (!tabs.some((t) => t.id === state.tab)) state.tab = "brief";
     $("#tabs").innerHTML = tabs.map((t) =>
-      `<button class="tab" role="tab" data-tab="${t.id}" aria-selected="${state.tab === t.id}">${t.label}${counts[t.id] != null ? `<span class="count">${counts[t.id]}</span>` : ""}</button>`).join("");
+      `<button class="tab" role="tab" data-tab="${t.id}" aria-selected="${state.tab === t.id}">${t.label}${counts[t.id] != null ? `<span class="count">${counts[t.id]}</span>` : ""}</button>`).join("")
+      + `<a class="tab tab-link" href="cias.html" title="Companhias abertas e seus documentos na CVM">Companhias ↗</a>`;
     for (const t of TABS) $(`#view-${t.id}`).hidden = state.tab !== t.id;
   }
 
