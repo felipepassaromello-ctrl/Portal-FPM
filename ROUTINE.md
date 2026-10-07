@@ -53,10 +53,27 @@ Leia o arquivo e escreva o briefing em `/tmp/rotina/brief.json`. Depois rode:
 python scripts/routine.py merge-brief /tmp/rotina/brief.json
 ```
 
-## 5. Publicar
+## 5. Resumir os documentos da CVM
+
+O workflow baixa o texto dos fatos relevantes, comunicados e avisos das companhias abertas e deixa em
+`site/data/cvm_fila.json`. Resuma todos:
 
 ```bash
-git add site/data/claude_analysis.json
+python scripts/routine.py cvm-queue > /tmp/rotina/cvm.txt
+```
+
+Leia o arquivo, escreva `/tmp/rotina/cvm.json` no formato indicado e rode:
+
+```bash
+python scripts/routine.py merge-cvm /tmp/rotina/cvm.json
+```
+
+Se a fila tiver mais documentos do que o limite, repita (`cvm-queue` de novo, novo arquivo, `merge-cvm`).
+
+## 6. Publicar
+
+```bash
+git add site/data/claude_analysis.json site/data/cvm_resumos.json site/data/cvm_fila.json
 git commit -m "Análise do dia $(TZ=America/Sao_Paulo date +'%Y-%m-%d %H:%M')"
 git pull --rebase origin main && git push origin HEAD:main
 ```
@@ -70,7 +87,7 @@ ainda não existir, omita o `sha`).
 O push dispara o workflow **Atualizar portal**, que aplica a análise e republica o site em 2 a 4 minutos.
 Não abra pull request.
 
-## 6. Encerrar
+## 7. Encerrar
 
-Responda com um resumo curto: quantas notícias foram analisadas, a manchete do dia e qualquer problema
+Responda com um resumo curto: quantas notícias foram analisadas, quantos documentos da CVM foram resumidos, a manchete do dia e qualquer problema
 (fontes falhando, coleta atrasada, push recusado).

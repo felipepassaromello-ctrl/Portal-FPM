@@ -8,7 +8,7 @@ Claude Code, que usa o plano do usuário em vez da API:
   python scripts/routine.py merge-analyses ARQ.json   valida e grava as análises
   python scripts/routine.py brief-input               imprime instruções + notícias analisadas
   python scripts/routine.py merge-brief ARQ.json      valida e grava o briefing do dia
-  python scripts/routine.py cvm-queue [--limit 40]    imprime documentos da CVM a resumir (texto do PDF)
+  python scripts/routine.py cvm-queue [--limit 80]    imprime documentos da CVM a resumir (texto do PDF)
   python scripts/routine.py merge-cvm ARQ.json        valida e grava os resumos em site/data/cvm_resumos.json
 
 Tudo é gravado em site/data/claude_analysis.json, que o build_digest.py aplica a cada execução.
@@ -240,7 +240,7 @@ def main() -> None:
     sub.add_parser("merge-analyses").add_argument("file")
     sub.add_parser("brief-input")
     sub.add_parser("merge-brief").add_argument("file")
-    sub.add_parser("cvm-queue").add_argument("--limit", type=int, default=40)
+    sub.add_parser("cvm-queue").add_argument("--limit", type=int, default=80)
     sub.add_parser("merge-cvm").add_argument("file")
     args = ap.parse_args()
     {"queue": cmd_queue, "merge-analyses": cmd_merge_analyses, "brief-input": cmd_brief_input,

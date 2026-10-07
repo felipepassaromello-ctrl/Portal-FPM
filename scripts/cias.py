@@ -113,7 +113,8 @@ def clean(t: str) -> str:
 
 
 def tidy_name(n: str) -> str:
-    return re.sub(r"\s+", " ", (n or "").strip())
+    n = re.sub(r"\s+", " ", (n or "").strip())
+    return n if re.search(r"\w", n) else ""
 
 
 # ---------------------------------------------------------------- fontes
@@ -214,9 +215,12 @@ def collect_docs(now: datetime) -> tuple[list[dict], dict]:
             if year == now.year:
                 raise
     open_through = max((d["d"] for d in docs.values()), default="")
+    canon = {c.lower(): c for c in {d["c"] for d in docs.values()}}
     try:
         rt = fetch_realtime(now - timedelta(days=REALTIME_DAYS), now)
         for d in rt:
+            low = d["c"].lower()
+            d["c"] = canon.get(low) or next((v for k, v in canon.items() if k.startswith(low)), d["c"])
             old = docs.get(d["id"])
             if old:  # mesmo documento nos dados abertos: fica com os campos deles e ganha o horário
                 old["h"] = d["h"] or old["h"]
@@ -297,11 +301,19 @@ def build_companies(cad: list[dict], fca: dict[str, list[dict]], docs: list[dict
 
 
 def excerpt(text: str, n: int = 420) -> str:
-    """Trecho que mostra o conteúdo: pula o cabeçalho (CNPJ, NIRE, 'Companhia Aberta', título)."""
+    """Trecho que mostra o conteúdo: começa na frase que apresenta a companhia ('A XYZ S.A. ("Companhia")…'),
+    pulando cabeçalho, endereço e data."""
     t = re.sub(r"\s+", " ", text or "").strip()
-    m = re.search(r"\b(A|O)\s+[A-ZÀ-Ý0-9][^,]{2,120}?\(\s*[“\"]", t)
+    m = re.search(r"\(\s*[“\"]", t[:2500])
     if m:
-        t = t[m.start():]
+        head = t[max(0, m.start() - 160):m.start()]
+        parts = [p for p in re.split(r"(?:\b\d{4},?|[;:–—|•])\s+", head) if p.strip()]
+        last = parts[-1] if parts else ""
+        art = list(re.finditer(r"\b[AO]S?\s+(?=[A-ZÀ-Ý0-9])", last))  # "… COMUNICADO AO MERCADO A DEXCO S.A. ("
+        if art:
+            last = last[art[-1].start():]
+        start = m.start() - len(last)
+        t = t[max(0, start):].lstrip(" ,.-–")
     return (t[:n].rsplit(" ", 1)[0] + "…") if len(t) > n else t
 
 
@@ -366,9 +378,27 @@ def pdf_text(raw: bytes) -> str:
     return re.sub(r"[ \t]+", " ", "\n".join(parts)).strip()
 
 
+def summary_universe(now: datetime) -> tuple[set[str], set[str]]:
+    """(companhias listadas na B3, companhias abertas ativas): só elas ganham resumo."""
+    active = {code(r["CD_CVM"]) for r in fetch_cadastro() if r.get("SIT") == "ATIVO"}
+    fca = fetch_fca(now.year)
+    cnpj_code = {r["CNPJ_Companhia"]: code(r.get("Codigo_CVM", ""))
+                 for name, rows in fca.items() if "_geral_" in name for r in rows}
+    listed = {cnpj_code.get(r["CNPJ_Companhia"], "") for name, rows in fca.items() if "valor_mobiliario" in name
+              for r in rows if r.get("Codigo_Negociacao") and not r.get("Data_Fim_Negociacao")}
+    listed.discard("")
+    return listed, active
+
+
+def wants_summary(d: dict, listed: set[str], active: set[str]) -> bool:
+    return (d["k"] in listed and d["c"] in SUMMARY_CATS) or (d["c"] == "Fato Relevante" and d["k"] in active)
+
+
 def cmd_textos(args) -> None:
     """Baixa o PDF dos documentos relevantes recentes ainda sem resumo e guarda o texto na fila."""
     now = datetime.now(BRT).replace(tzinfo=None)
+    listed, active = summary_universe(now)
+    log(f"Universo dos resumos: {len(listed)} listadas, {len(active)} ativas.")
     since = (now - timedelta(days=SUMMARY_LOOKBACK_DAYS)).strftime("%Y-%m-%d")
     try:
         docs = fetch_realtime(now - timedelta(days=SUMMARY_LOOKBACK_DAYS), now)
@@ -381,7 +411,7 @@ def cmd_textos(args) -> None:
     cutoff = (now - timedelta(days=SUMMARY_LOOKBACK_DAYS + 7)).strftime("%Y-%m-%d")
     fila = {k: v for k, v in fila.items() if k not in resumos and v.get("d", "") >= cutoff}
 
-    todo = [d for d in docs if d["c"] in SUMMARY_CATS and d["d"] >= since and d["id"] not in resumos and d["id"] not in fila]
+    todo = [d for d in docs if wants_summary(d, listed, active) and d["d"] >= since and d["id"] not in resumos and d["id"] not in fila]
     todo.sort(key=lambda d: (d["d"], d["h"]), reverse=True)
     todo.sort(key=lambda d: d["c"] != "Fato Relevante")  # fatos relevantes primeiro, depois os mais novos
     got = 0
