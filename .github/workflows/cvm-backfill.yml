@@ -1,7 +1,7 @@
 name: CVM - histórico para resumir
 
 # Baixa o texto dos documentos antigos (até 5 anos) que ainda não têm resumo e guarda em
-# site/data/cvm_fila_hist.json. A rotina diária do Claude resume um lote por dia.
+# site/data/cvm_fila_hist.json.gz. A rotina diária do Claude resume um lote por dia.
 
 on:
   schedule:
@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "portal-bot"
           git config user.email "portal-bot@users.noreply.github.com"
-          git add site/data/cvm_fila_hist.json
+          git add site/data/cvm_fila_hist.json.gz
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Textos CVM do histórico para resumir"
           for i in 1 2 3 4 5; do git pull --rebase -X theirs && git push && break; sleep 7; done
