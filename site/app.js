@@ -227,11 +227,12 @@
     const filings = off.filings || [], cade = off.cade || [];
     $("#official-filings").innerHTML = filings.map((f) => `
       <article class="card off-card"><div class="card-main">
-        <div class="meta"><span class="cat-tag" style="--cat: var(--c-mna)">${esc(f.kind)}</span><span>CVM · entregue em ${esc(fmtDay(f.date))}</span></div>
+        <div class="meta"><span class="cat-tag" style="--cat: var(--c-mna)">${esc(f.kind)}</span><span>CVM · entregue em ${esc(fmtDay(f.date))}${f.time ? ` às ${esc(f.time)}` : ""}</span></div>
         <h3><a href="${safeUrl(f.link)}" target="_blank" rel="noopener">${esc(f.company)}</a></h3>
         <p class="card-summary">${esc(f.subject)}</p></div></article>`).join("")
       || `<div class="empty">${(state.digest.official_status || []).some((s) => s.id === "cvm-ipe" && !s.ok)
         ? "A CVM não respondeu na última coleta."
+        : off.cvm_realtime ? "Nenhum fato relevante ou comunicado de M&A entregue à CVM no período desta edição."
         : `Nenhum documento novo nos dados abertos da CVM. A última entrega já publicada é de ${esc(fmtDay(off.cvm_through))}; os próximos aparecem assim que a CVM atualizar o arquivo.`}</div>`;
     const cadeTag = (k) => (k === "Notificação ao Cade" ? "Novo negócio" : k === "Aprovado pelo Cade" ? "Aprovação" : "Cade");
     $("#official-cade").innerHTML = cade.map((c) => `
