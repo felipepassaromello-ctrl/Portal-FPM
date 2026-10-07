@@ -68,9 +68,9 @@ Leia o arquivo, escreva `/tmp/rotina/cvm.json` no formato indicado e rode:
 python scripts/routine.py merge-cvm /tmp/rotina/cvm.json
 ```
 
-A fila traz primeiro os documentos novos e depois o histórico (`site/data/cvm_fila_hist.json.gz`, abastecido toda
-madrugada pelo workflow **CVM - histórico para resumir**). Resuma todos os novos e pelo menos 200 do histórico por
-dia: repita `cvm-queue`, novo arquivo, `merge-cvm`. Se tiver fôlego, resuma mais do histórico.
+A fila traz só os documentos novos (fatos relevantes, comunicados e avisos das listadas). Resuma todos: se passar
+de 80, repita `cvm-queue`, novo arquivo, `merge-cvm` até zerar. Não resuma o histórico antigo, a não ser que o
+Felipe peça (`cvm-queue --hist`).
 
 ## 6. Publicar
 
