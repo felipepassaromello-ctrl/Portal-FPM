@@ -37,7 +37,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "site" / "data"
 OUT = DATA / "cias"
-RESUMOS = DATA / "cvm_resumos.json"
+RESUMOS = DATA / "cvm_resumos.json.gz"  # compactado: o GitHub recusa o JSON puro desse tamanho
 FILA = DATA / "cvm_fila.json"
 FILA_HIST = DATA / "cvm_fila_hist.json.gz"  # histórico (backfill), compactado: o GitHub recusa o JSON puro desse tamanho
 BRT = timezone(timedelta(hours=-3))

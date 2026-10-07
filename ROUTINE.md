@@ -75,7 +75,7 @@ dia: repita `cvm-queue`, novo arquivo, `merge-cvm`. Se tiver fôlego, resuma mai
 ## 6. Publicar
 
 ```bash
-git add site/data/claude_analysis.json site/data/cvm_resumos.json site/data/cvm_fila.json site/data/cvm_fila_hist.json.gz
+git add site/data/claude_analysis.json site/data/cvm_resumos.json.gz site/data/cvm_fila.json site/data/cvm_fila_hist.json.gz
 git commit -m "Análise do dia $(TZ=America/Sao_Paulo date +'%Y-%m-%d %H:%M')"
 git pull --rebase origin main && git push origin HEAD:main
 ```
