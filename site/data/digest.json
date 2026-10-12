@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T10:34:42.076402-03:00",
+ "generated_at": "2026-10-12T11:23:38.352255-03:00",
  "date": "2026-10-12",
  "window": {
   "start": "2026-10-11T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-12T08:25:05.064471-03:00",
-  "analyzed": 243
+  "analyzed": 234
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -149,28 +149,28 @@
    "symbol": "^GSPC",
    "name": "S&P 500",
    "unit": "pts",
-   "price": 7815.09,
-   "change_pct": 0.04544508406469916,
+   "price": 7806.66,
+   "change_pct": -0.06247217626865753,
    "spark": [
     7818.93017578125,
     7801.77001953125,
     7765.35986328125,
     7811.5400390625,
-    7815.08984375
+    7806.66015625
    ]
   },
   {
    "symbol": "^IXIC",
    "name": "Nasdaq",
    "unit": "pts",
-   "price": 27309.273,
-   "change_pct": -0.207909700324993,
+   "price": 27267.244,
+   "change_pct": -0.36148983272930035,
    "spark": [
     27599.7890625,
     27538.689453125,
     27193.33984375,
     27366.169921875,
-    27309.2734375
+    27267.244140625
    ]
   },
   {
@@ -191,40 +191,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 106.64,
-   "change_pct": 1.8334594699348505,
+   "price": 106.86,
+   "change_pct": 2.0435435010993874,
    "spark": [
     100.19999694824219,
     104.27999877929688,
     104.72000122070312,
-    106.63999938964844
+    106.86000061035156
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4197.0,
-   "change_pct": -0.45774270287998187,
+   "price": 4194.0,
+   "change_pct": -0.5288951384032958,
    "spark": [
     4140.7001953125,
     4157.0,
     4216.2998046875,
-    4197.0
+    4194.0
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 82473.05,
-   "change_pct": -1.4417141600220784,
+   "price": 82871.92,
+   "change_pct": -0.9650500440109511,
    "spark": [
     81676.3359375,
     82546.3203125,
     82912.2265625,
     83679.46875,
-    82473.046875
+    82871.921875
    ]
   }
  ],
@@ -308,46 +308,6 @@
     "Ormuz",
     "petróleo",
     "geopolítica"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "03dcbc237a48",
-   "title": "Oil Prices Fall as Traders Weigh Russian Diesel Deal, Middle East Supply Risks",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOXpZa1FtWThybVR0cThaRndXOHlLN2hrRWdacGFUX29OaFk5R3J4N1NrUTlnRFRCeVVyV2x5aTJicF84WHNhT2s3dUJyOWFPR0VVZ2JwZ25Ed2dqa2RPY1V5Z3dTaFluRV9rSXBLSFJkQkZCcE1id0hQOVBsbHVnYUdrajlqajZCbHVYNl90M05BT2xyQVN3NFpQOXNkVFVCSVo2YXV4ei1TV2NuZzYxeEdraXV3NlJaZHNESHNINEhXUXFC?oc=5",
-   "published": "2026-10-12T08:00:05+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOXpZa1FtWThybVR0cThaRndXOHlLN2hrRWdacGFUX29OaFk5R3J4N1NrUTlnRFRCeVVyV2x5aTJicF84WHNhT2s3dUJyOWFPR0VVZ2JwZ25Ed2dqa2RPY1V5Z3dTaFluRV9rSXBLSFJkQkZCcE1id0hQOVBsbHVnYUdrajlqajZCbHVYNl90M05BT2xyQVN3NFpQOXNkVFVCSVo2YXV4ei1TV2NuZzYxeEdraXV3NlJaZHNESHNINEhXUXFC?oc=5",
-     "title": "Oil Prices Fall as Traders Weigh Russian Diesel Deal, Middle East Supply Risks"
-    }
-   ],
-   "ids": [
-    "03dcbc237a48"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Petróleo cai com acordo do diesel russo e riscos de oferta no Oriente Médio",
-   "category": "mercados",
-   "importance": 8,
-   "importance_reason": "Movimento direto em petróleo e Petrobras.",
-   "summary": "O WSJ informa que o petróleo recua enquanto operadores avaliam o acordo do diesel russo e riscos de oferta no Oriente Médio.",
-   "involves": "Petróleo; diesel russo; Oriente Médio",
-   "interpretation": "Dois vetores opostos: alívio do acordo e risco de oferta no Golfo.",
-   "impact": "Petróleo mais baixo ajuda inflação e importadores; pressiona Petrobras, PRIO e exportadores.",
-   "sentiment": "neutro",
-   "entities": [
-    "diesel russo",
-    "Oriente Médio"
-   ],
-   "tags": [
-    "petróleo",
-    "diesel",
-    "Brent"
    ],
    "is_deal": false,
    "deal": null,
@@ -623,7 +583,7 @@
   },
   {
    "id": "0c2f736dc40a",
-   "title": "S&P 500 to Hold Near Record on Earnings Optimism: Markets Wrap",
+   "title": "S&P 500 Wavers as Earnings Bets Offset Chip Rout: Markets Wrap",
    "link": "https://www.bloomberg.com/news/articles/2026-10-11/oil-rises-on-mideast-attacks-dollar-edges-higher-markets-wrap",
    "published": "2026-10-11T22:09:49+00:00",
    "region": "INTL",
@@ -631,13 +591,13 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-10-11/oil-rises-on-mideast-attacks-dollar-edges-higher-markets-wrap",
-     "title": "S&P 500 to Hold Near Record on Earnings Optimism: Markets Wrap"
+     "title": "S&P 500 Wavers as Earnings Bets Offset Chip Rout: Markets Wrap"
     }
    ],
    "ids": [
     "0c2f736dc40a"
    ],
-   "snippet": "The S&P 500 is poised to open just shy of an all-time high as traders weigh the prospect of solid results in a busy week for corporate earnings against the risk of escalating tensions in the Middle East.",
+   "snippet": "Stocks fluctuated near their all-time highs as traders looked ahead to the start of the earnings season and inflation data that will be key in shaping the Federal Reserve outlook.",
    "prescore": 2.8,
    "headline": "Bolsas dos EUA estáveis com lucros e oscilação do petróleo",
    "category": "mercados",
@@ -896,47 +856,6 @@
     "petróleo",
     "diesel",
     "Rússia"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "cda46901ccb2",
-   "title": "Trump faces Republican opposition to his diesel deal with Russia’s Putin",
-   "link": "https://www.ft.com/content/debf0be6-d5aa-4ba7-bb66-7daf770d99ff?syn-25a6b1a6=1",
-   "published": "2026-10-11T21:17:58+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/debf0be6-d5aa-4ba7-bb66-7daf770d99ff?syn-25a6b1a6=1",
-     "title": "Trump faces Republican opposition to his diesel deal with Russia’s Putin"
-    }
-   ],
-   "ids": [
-    "cda46901ccb2"
-   ],
-   "snippet": "Lawmakers from both parties say the agreement would finance Putin’s war machine in Ukraine and violate US law",
-   "prescore": 2.6,
-   "headline": "Trump enfrenta oposição republicana a acordo de diesel com Putin",
-   "category": "internacional",
-   "importance": 7,
-   "importance_reason": "Acordo ligado a energia e sanções com resistência bipartidária.",
-   "summary": "Segundo o FT, parlamentares dos dois partidos dizem que o acordo financiaria a máquina de guerra de Putin e violaria lei americana.",
-   "involves": "Trump, Putin, Congresso dos EUA.",
-   "interpretation": "Risco legal e político para o acordo.",
-   "impact": "Se travado, mantém oferta de diesel apertada; afeta preços de energia e sanções à Rússia.",
-   "sentiment": "negativo",
-   "entities": [
-    "Donald Trump",
-    "Vladimir Putin",
-    "Financial Times"
-   ],
-   "tags": [
-    "Rússia",
-    "diesel",
-    "Congresso"
    ],
    "is_deal": false,
    "deal": null,
@@ -1571,45 +1490,6 @@
    "ai": true
   },
   {
-   "id": "e868e1845efe",
-   "title": "Copper Gains on Interest-Rate Outlook and Chile Mine Avalanche",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-12/copper-gains-on-easing-rate-hike-bets-and-chile-mine-avalanche",
-   "published": "2026-10-12T04:02:08+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-12/copper-gains-on-easing-rate-hike-bets-and-chile-mine-avalanche",
-     "title": "Copper Gains on Interest-Rate Outlook and Chile Mine Avalanche"
-    }
-   ],
-   "ids": [
-    "e868e1845efe"
-   ],
-   "snippet": "Copper rose to a two-week high as traders looked to a more hopeful outlook for interest rates and gauged the impact on supply of a fatal mine incident in Chile.",
-   "prescore": 2.8,
-   "headline": "Cobre sobe com perspectiva de juros e avalanche em mina no Chile",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Commodity relevante para Vale e mineração.",
-   "summary": "O cobre chegou à máxima em duas semanas com perspectiva mais favorável de juros e impacto na oferta após incidente fatal em mina no Chile.",
-   "involves": "Cobre, Chile.",
-   "interpretation": "Combina macro e oferta.",
-   "impact": "Positivo para mineradoras de cobre.",
-   "sentiment": "positivo",
-   "entities": [
-    "Chile"
-   ],
-   "tags": [
-    "cobre",
-    "commodities",
-    "Chile"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "56b2100ca00f",
    "title": "Corregedor do TSE suspende preliminarmente ordem de Nunes Marques e libera canal 'Exército do Lula'; decisão final será do plenário",
    "link": "https://g1.globo.com/politica/noticia/2026/10/11/corregedor-do-tse-suspende-preliminarmente-decisao-de-nunes-marques-e-libera-canal-exercito-do-lula-decisao-final-sera-do-plenario.ghtml",
@@ -2171,45 +2051,6 @@
    "ai": true
   },
   {
-   "id": "b288c1ded0c7",
-   "title": "The huge lurking leverage of AI hyperscalers",
-   "link": "https://www.ft.com/content/17a207f4-1563-48af-91e3-14bac89ab4b8?syn-25a6b1a6=1",
-   "published": "2026-10-12T04:00:07+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/17a207f4-1563-48af-91e3-14bac89ab4b8?syn-25a6b1a6=1",
-     "title": "The huge lurking leverage of AI hyperscalers"
-    }
-   ],
-   "ids": [
-    "b288c1ded0c7"
-   ],
-   "snippet": "While equity investors look to sunny futures, creditors are scrutinising liabilities like leases on data centres",
-   "prescore": 2.6,
-   "headline": "A enorme alavancagem oculta dos hyperscalers de IA",
-   "category": "empresas",
-   "importance": 6,
-   "importance_reason": "Risco de crédito no ciclo de investimento em IA.",
-   "summary": "O FT diz que investidores em ações olham para um futuro positivo, enquanto credores examinam passivos como arrendamentos de data centers.",
-   "involves": "Hyperscalers de IA; credores; data centers",
-   "interpretation": "Obrigações fora do balanço podem mascarar o endividamento, relevante para o mercado de dívida.",
-   "impact": "Risco para crédito e valuation de big techs; oportunidade para financiamento e project finance.",
-   "sentiment": "negativo",
-   "entities": [
-    "hyperscalers"
-   ],
-   "tags": [
-    "IA",
-    "alavancagem",
-    "data centers"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "736e82348ea1",
    "title": "IMF says AI investment keeps global growth around 3% but brings massive disruption",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONXItVGZaTjNISE9iMlVzZzhlV2ZmYzFDR29feFhfWFRhRzJFdWlwYXk5QkZpUHQ3WVhLZEZId2xobTNmc1E2Y25FN2c1TTg1eldiR3RLR003ajh2RUpSN1RxYXVzYjJ4TW5ZMW1ZcVljRndfSUpoNVVlLUE3eWc1MkhqUUtGQTdYdC1zVUxIbnNJWVJYb2ZIcVN1S3QzWWhQUmdsQ3VFVG9xSEs4NDVvOTZ5dHJRZUNNaUtsazVSMThYQQ?oc=5",
@@ -2444,46 +2285,6 @@
     "Ucrânia",
     "refinarias",
     "energia"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "33a6577c7f89",
-   "title": "Saudis Confront a Resurgent Houthi Threat From Yemen",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-12/saudis-confront-a-resurgent-houthi-threat-from-yemen",
-   "published": "2026-10-12T09:59:15+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/newsletters/2026-10-12/saudis-confront-a-resurgent-houthi-threat-from-yemen",
-     "title": "Saudis Confront a Resurgent Houthi Threat From Yemen"
-    }
-   ],
-   "ids": [
-    "33a6577c7f89"
-   ],
-   "snippet": "The militants in Yemen have emerged from years of fighting with formidable capabilities.",
-   "prescore": 2.4,
-   "headline": "Sauditas enfrentam ameaça renovada dos Houthis",
-   "category": "internacional",
-   "importance": 6,
-   "importance_reason": "Reforça risco geopolítico no maior exportador do Golfo.",
-   "summary": "A Bloomberg diz que os militantes do Iêmen saíram de anos de combate com capacidades formidáveis.",
-   "involves": "Arábia Saudita, Houthis.",
-   "interpretation": "Ameaça duradoura à infraestrutura saudita.",
-   "impact": "Prêmio de risco no petróleo.",
-   "sentiment": "negativo",
-   "entities": [
-    "Arábia Saudita",
-    "Houthis",
-    "Bloomberg"
-   ],
-   "tags": [
-    "Houthis",
-    "Arábia Saudita"
    ],
    "is_deal": false,
    "deal": null,
@@ -3071,7 +2872,7 @@
     {
      "source": "g1",
      "link": "https://g1.globo.com/politica/noticia/2026/10/12/nunes-marques-determina-que-area-tecnica-do-tse-faca-levantamento-sobre-canal-exercito-lula.ghtml",
-     "title": "Nunes Marques determina que área técnica do TSE faça análise sobre canal 'Exército Lula'"
+     "title": "Nunes Marques determina que área técnica do TSE faça análise sobre canal 'Exército do Lula'"
     },
     {
      "source": "g1",
@@ -4551,58 +4352,49 @@
    }
   },
   {
-   "id": "781cd034686e",
-   "title": "China anuncia sanções a ministros de Paraguai e Belize por laços com Taiwan",
-   "link": "https://www.infomoney.com.br/mundo/china-anuncia-sancoes-a-ministros-de-paraguai-e-belize-por-lacos-com-taiwan/",
-   "published": "2026-10-12T05:29:10+00:00",
+   "id": "dcc6198aa4de",
+   "title": "Amazon negocia compra da startup de IA Decart por cerca de US$ 7 bi",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLV9DVlQzeDdYck5lOEJXSUw3d1FyN3dXX3p0Q3VGM3g3NGZEeXAtbzBwc1BzTzZDRFlBeGt1VUN5b1Z6ZTJuamo2ZFlBT2pLMkhKOTZVZ0FEcEpRRjNONDMyZktrZUV2QWV6enNGa2FfTUFjZHVzWm9lRk9NVXczYk81aHVvZEJKYlVfb0ZQYVRCUEhQUVlkczlzRnVzaUcyNGl3Rkd6WDRScV9xOWdfUXQxelhhb0RSRFZlbjVYMUlyd9IB0AFBVV95cUxQUHJNVXpab3h0TDc4VXZBZHFLSG5pMUNIUGJlYnNPdkt2ekxMWkRWb1ktMjlRVXpwNUZGMTBaMXFIT1lFS0o5djhTeW0zb1lKU2plM3FnaGVIUms4RmV3Y1ZkdDZqNG9MOUNpV09PbTdqM2gtblQtWnhOd29seDdMbkI4MUhWYXdXNV9xcnFSSFR2R1p3U2hubmw2NC1yZzZNd3lPMWpoZE9BcVdwbUJRYXhPR1hKYnZNLWFkcWVtUzhTTjRpak9LUHVMV0NEd1Vl?oc=5",
+   "published": "2026-10-12T00:07:00+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mundo/china-anuncia-sancoes-a-ministros-de-paraguai-e-belize-por-lacos-com-taiwan/",
-     "title": "China anuncia sanções a ministros de Paraguai e Belize por laços com Taiwan"
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLV9DVlQzeDdYck5lOEJXSUw3d1FyN3dXX3p0Q3VGM3g3NGZEeXAtbzBwc1BzTzZDRFlBeGt1VUN5b1Z6ZTJuamo2ZFlBT2pLMkhKOTZVZ0FEcEpRRjNONDMyZktrZUV2QWV6enNGa2FfTUFjZHVzWm9lRk9NVXczYk81aHVvZEJKYlVfb0ZQYVRCUEhQUVlkczlzRnVzaUcyNGl3Rkd6WDRScV9xOWdfUXQxelhhb0RSRFZlbjVYMUlyd9IB0AFBVV95cUxQUHJNVXpab3h0TDc4VXZBZHFLSG5pMUNIUGJlYnNPdkt2ekxMWkRWb1ktMjlRVXpwNUZGMTBaMXFIT1lFS0o5djhTeW0zb1lKU2plM3FnaGVIUms4RmV3Y1ZkdDZqNG9MOUNpV09PbTdqM2gtblQtWnhOd29seDdMbkI4MUhWYXdXNV9xcnFSSFR2R1p3U2hubmw2NC1yZzZNd3lPMWpoZE9BcVdwbUJRYXhPR1hKYnZNLWFkcWVtUzhTTjRpak9LUHVMV0NEd1Vl?oc=5",
+     "title": "Amazon negocia compra da startup de IA Decart por cerca de US$ 7 bi"
     },
     {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/china-anuncia-sancoes-a-ministros-de-paraguai-e-belize-por-lacos-com-taiwan-rens/",
-     "title": "China anuncia sanções a ministros de Paraguai e Belize por laços com Taiwan"
+     "source": "BossaNews Brasil",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTkF2QlZ6WEhPclpUSW9taXVQbGxSdjM4UV93N1B1SnFXNTMxX3dyVVV4MzlzNDZrajQ1U0JvelItR3dhamduWlNNM2VlVC1Xb3ZOSWx0TVljQVBCUWdpQ09iOUZwOGVmaFh6a2g1TUNXREc1OW4yWkNHck5vN2ZXNEJubTJvWE9DNUlZdlNMbjFwV3BsM25IZC1tdTVpMlZN?oc=5",
+     "title": "Amazon negocia compra da startup de IA Decart por US$ 7 bilhões, diz jornal"
     },
     {
-     "source": "g1",
-     "link": "https://g1.globo.com/mundo/noticia/2026/10/12/china-sancoes-paraguai-belize.ghtml",
-     "title": "China impõe sanções a ministros do Paraguai e de Belize por relações com Taiwan"
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/amazon-negocia-compra-de-startup-de-ia-por-us-7-bi-diz-jornal.shtml",
+     "title": "Amazon negocia compra de startup de IA por US$ 7 bi, diz jornal"
     }
    ],
    "ids": [
-    "781cd034686e",
-    "8cd8d63eb166",
-    "78c8a32aa643"
+    "dcc6198aa4de",
+    "b33284b5e459",
+    "292117082a46"
    ],
-   "snippet": "Paraguai e Belize estão entre os 12 aliados diplomáticos remanescentes de Taiwan The post China anuncia sanções a ministros de Paraguai e Belize por laços com Taiwan appeared first on InfoMoney .",
-   "prescore": 6.2,
-   "headline": "China impõe sanções a ministros do Paraguai e de Belize por relações com Taiwan",
-   "category": "internacional",
+   "snippet": "A Amazon está em negociações para adquirir a startup de IA (inteligência artificial) Decart, segundo o jornal americano Wall Street Journal. O acordo é avaliado em cerca de US$ 7 bilhões (aproximadamente R$ 35 bilhões). Leia mais (10/11/2026 - 21h07)",
+   "prescore": 5.8,
+   "headline": "Amazon negocia compra da startup de IA Decart por cerca de US$ 7 bi",
+   "category": "mercados",
    "importance": 4,
-   "importance_reason": "Tensão diplomática, impacto indireto no Paraguai.",
-   "summary": "A China sancionou o ministro das Comunicações do Paraguai e o chanceler de Belize pelas relações com Taiwan. Paraguai e Belize são dois dos 12 países com relações formais com Taiwan.",
-   "involves": "China; Paraguai; Belize; Taiwan",
-   "interpretation": "Pressão de Pequim sobre aliados de Taipé. Paraguai é vizinho do Brasil.",
-   "impact": "Efeito marginal; mantém o risco entre China e Taiwan.",
-   "sentiment": "negativo",
-   "entities": [
-    "China",
-    "Paraguai",
-    "Belize",
-    "Taiwan"
-   ],
-   "tags": [
-    "China",
-    "Taiwan",
-    "sanções"
-   ],
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Amazon está em negociações para adquirir a startup de IA (inteligência artificial) Decart, segundo o jornal americano Wall Street Journal. O acordo é avaliado em cerca de US$ 7 bilhões (aproximadamente R$ 35 bilhões). Leia mais (10/11/2026 - 21h07)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
    "is_deal": false,
    "deal": null,
-   "ai": true
+   "ai": false
   },
   {
    "id": "e09ec6c45eb6",
@@ -4817,6 +4609,54 @@
    "tags": [
     "automotivo",
     "China"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "8cd8d63eb166",
+   "title": "China anuncia sanções a ministros de Paraguai e Belize por laços com Taiwan",
+   "link": "https://www.moneytimes.com.br/china-anuncia-sancoes-a-ministros-de-paraguai-e-belize-por-lacos-com-taiwan-rens/",
+   "published": "2026-10-12T05:29:10+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/china-anuncia-sancoes-a-ministros-de-paraguai-e-belize-por-lacos-com-taiwan-rens/",
+     "title": "China anuncia sanções a ministros de Paraguai e Belize por laços com Taiwan"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/12/china-sancoes-paraguai-belize.ghtml",
+     "title": "China impõe sanções a ministros do Paraguai e de Belize por relações com Taiwan"
+    }
+   ],
+   "ids": [
+    "8cd8d63eb166",
+    "78c8a32aa643"
+   ],
+   "snippet": "A China anunciou nesta segunda-feira (12) sanções contra o ministro das Comunicações do Paraguai, Gustavo Villate, e o chanceler de Belize, Francis Fonseca, citando os laços de seus países com Taiwan, a ilha que Pequim reivindica como parte de seu território. Segundo o Ministério das Relações Exteriores chinês, as medidas buscam proteger a “soberania nacional, […]",
+   "prescore": 4.3,
+   "headline": "China impõe sanções a ministros do Paraguai e de Belize por relações com Taiwan",
+   "category": "internacional",
+   "importance": 4,
+   "importance_reason": "Tensão diplomática, impacto indireto no Paraguai.",
+   "summary": "A China sancionou o ministro das Comunicações do Paraguai e o chanceler de Belize pelas relações com Taiwan. Paraguai e Belize são dois dos 12 países com relações formais com Taiwan.",
+   "involves": "China; Paraguai; Belize; Taiwan",
+   "interpretation": "Pressão de Pequim sobre aliados de Taipé. Paraguai é vizinho do Brasil.",
+   "impact": "Efeito marginal; mantém o risco entre China e Taiwan.",
+   "sentiment": "negativo",
+   "entities": [
+    "China",
+    "Paraguai",
+    "Belize",
+    "Taiwan"
+   ],
+   "tags": [
+    "China",
+    "Taiwan",
+    "sanções"
    ],
    "is_deal": false,
    "deal": null,
@@ -5259,45 +5099,6 @@
    "ai": true
   },
   {
-   "id": "94690d8fc58b",
-   "title": "Campanha de Flávio Bolsonaro pede investigação de diretor da PF por entrevista no primeiro turno",
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQX2VuUVV4bnJqSXVZQWYxTHR0aTVSYWtHU3hnT09HWTRtSVpXUVJzY3ZmaEhyT25UVFowVG1DNkRabFY5Z1o1ZDB3YkVzc2otNVRVYWU5LS1uZEI5T3hCeHhaRVFCY3paZEFfR080TW52WExDaTlKRXlseXRYX0RUNEpuMzAxbEVKZk4ydVZjV0ZBWmh1dWMyYWZnbVk2cW5iSmpCa1Q4RWJaUTF2aEt2eVhvRmR4UDlKSHpJNFRic0ZRd2NYbkU4bnNOUVJhTXNHNGFsc0NwTzMyOWQ1ajhoQmhrdWFqOEJhay1nMjZFSENCU0Q2TlZ4U096VVLSAYsCQVVfeXFMUE13SnNoNXRlS05odksxcDcxa0Y1VENja0NNcmZaTFl6cXIzZ2tjOEdsYmg4MlhSTm9VMlBHbllTSGdEZHBVZ0VORlVCRFd3UnFLQ2ZHZHEzdjVkOUl4OEhKN0g1dzQtN0ZMU29YSm9vU2JiNUhjbmVSWkZ4X0cta3BKVVpjMFZHMHBDMzN0RjY0V05PN241dmRQaWtaaVEyWmIxZ0R5eXlydzZGX0tNYVp6Nk5QRGNMTXBCVjd6VldtcDVxRHM1T1pFczNUeXVRVU1DVC1kWXlrOWsyN1FSM0xtZkZBSy1IcVdlZUY1XzJOb1BUbjVoU1hpN0lMM01rY3lXNm9BYkxrY3FR?oc=5",
-   "published": "2026-10-11T21:15:08+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQX2VuUVV4bnJqSXVZQWYxTHR0aTVSYWtHU3hnT09HWTRtSVpXUVJzY3ZmaEhyT25UVFowVG1DNkRabFY5Z1o1ZDB3YkVzc2otNVRVYWU5LS1uZEI5T3hCeHhaRVFCY3paZEFfR080TW52WExDaTlKRXlseXRYX0RUNEpuMzAxbEVKZk4ydVZjV0ZBWmh1dWMyYWZnbVk2cW5iSmpCa1Q4RWJaUTF2aEt2eVhvRmR4UDlKSHpJNFRic0ZRd2NYbkU4bnNOUVJhTXNHNGFsc0NwTzMyOWQ1ajhoQmhrdWFqOEJhay1nMjZFSENCU0Q2TlZ4U096VVLSAYsCQVVfeXFMUE13SnNoNXRlS05odksxcDcxa0Y1VENja0NNcmZaTFl6cXIzZ2tjOEdsYmg4MlhSTm9VMlBHbllTSGdEZHBVZ0VORlVCRFd3UnFLQ2ZHZHEzdjVkOUl4OEhKN0g1dzQtN0ZMU29YSm9vU2JiNUhjbmVSWkZ4X0cta3BKVVpjMFZHMHBDMzN0RjY0V05PN241dmRQaWtaaVEyWmIxZ0R5eXlydzZGX0tNYVp6Nk5QRGNMTXBCVjd6VldtcDVxRHM1T1pFczNUeXVRVU1DVC1kWXlrOWsyN1FSM0xtZkZBSy1IcVdlZUY1XzJOb1BUbjVoU1hpN0lMM01rY3lXNm9BYkxrY3FR?oc=5",
-     "title": "Campanha de Flávio Bolsonaro pede investigação de diretor da PF por entrevista no primeiro turno"
-    }
-   ],
-   "ids": [
-    "94690d8fc58b"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Campanha de Flávio pede investigação de diretor da PF por entrevista no 1º turno",
-   "category": "politica",
-   "importance": 4,
-   "importance_reason": "Mais um embate institucional.",
-   "summary": "A campanha de Flávio Bolsonaro pediu investigação de diretor da PF por entrevista dada no primeiro turno.",
-   "involves": "Flávio Bolsonaro, PF.",
-   "interpretation": "Judicialização da campanha.",
-   "impact": "Sem impacto em ativos.",
-   "sentiment": "negativo",
-   "entities": [
-    "Flávio Bolsonaro",
-    "Polícia Federal"
-   ],
-   "tags": [
-    "PF",
-    "eleições"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "29e07dc6762f",
    "title": "Flávio Bolsonaro diz que canal da campanha de Lula no WhatsApp faz 'divulgação de mentiras em massa'",
    "link": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/11/flavio-bolsonaro-canal-campanha-lula-whatsapp-faz-divulgacao-mentiras.ghtml",
@@ -5421,7 +5222,7 @@
    "id": "23a8f6f44096",
    "title": "European Chip Stocks Mixed After Korean Tech Selloff",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQURCYXNmbEVyUy0yY3VDNVdsVHc5ZmxmdDhld0FCY0pRLS0ycXFpeFM2Q2tjNkFfS1o5UmRIX3BvN1doakxUMXRpQnFTOWVBQTk1Q0N4YVVZREg5aDdpM2dBM1dGMWNiaFk5M2plcnZUOXhmSHRheGZTZDdBWEFpZ3ctRUxXQ1NkeWVaUnFxNG93YnpZcVRhTE9OU1ZNbkpsNVJLeUFpS0tveXpiTTBtYmR1MXU4RkNp?oc=5",
-   "published": "2026-10-12T08:21:00+00:00",
+   "published": "2026-10-12T08:32:23+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -5686,45 +5487,6 @@
     "habitação",
     "regulação",
     "hipoteca"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "3ed09e3b4427",
-   "title": "Burnham Opens Fight Over Russia’s Brexit Role Before EU Speech",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-12/burnham-opens-fight-over-russia-s-brexit-role-before-eu-speech",
-   "published": "2026-10-12T09:53:19+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-12/burnham-opens-fight-over-russia-s-brexit-role-before-eu-speech",
-     "title": "Burnham Opens Fight Over Russia’s Brexit Role Before EU Speech"
-    }
-   ],
-   "ids": [
-    "3ed09e3b4427"
-   ],
-   "snippet": "A UK government minister tried to play down Andy Burnham’s claim of Russian interference in the Brexit vote of 10 years ago, ahead of what is likely to be a fraught debate over the prime minister’s plan for closer ties with the European Union.",
-   "prescore": 2.4,
-   "headline": "Burnham abre disputa sobre papel da Rússia no Brexit antes de discurso sobre UE",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Debate político britânico sobre laços com a UE.",
-   "summary": "Um ministro britânico tentou minimizar a fala de Burnham sobre interferência russa no Brexit, antes de debate sobre aproximação com a UE.",
-   "involves": "Andy Burnham, UE, governo britânico.",
-   "interpretation": "Disputa política interna.",
-   "impact": "Efeito limitado em libra.",
-   "sentiment": "neutro",
-   "entities": [
-    "Andy Burnham",
-    "Bloomberg"
-   ],
-   "tags": [
-    "Reino Unido",
-    "UE"
    ],
    "is_deal": false,
    "deal": null,
@@ -6456,45 +6218,6 @@
    "ai": true
   },
   {
-   "id": "dcc6198aa4de",
-   "title": "Amazon negocia compra da startup de IA Decart por cerca de US$ 7 bi",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLV9DVlQzeDdYck5lOEJXSUw3d1FyN3dXX3p0Q3VGM3g3NGZEeXAtbzBwc1BzTzZDRFlBeGt1VUN5b1Z6ZTJuamo2ZFlBT2pLMkhKOTZVZ0FEcEpRRjNONDMyZktrZUV2QWV6enNGa2FfTUFjZHVzWm9lRk9NVXczYk81aHVvZEJKYlVfb0ZQYVRCUEhQUVlkczlzRnVzaUcyNGl3Rkd6WDRScV9xOWdfUXQxelhhb0RSRFZlbjVYMUlyd9IB0AFBVV95cUxQUHJNVXpab3h0TDc4VXZBZHFLSG5pMUNIUGJlYnNPdkt2ekxMWkRWb1ktMjlRVXpwNUZGMTBaMXFIT1lFS0o5djhTeW0zb1lKU2plM3FnaGVIUms4RmV3Y1ZkdDZqNG9MOUNpV09PbTdqM2gtblQtWnhOd29seDdMbkI4MUhWYXdXNV9xcnFSSFR2R1p3U2hubmw2NC1yZzZNd3lPMWpoZE9BcVdwbUJRYXhPR1hKYnZNLWFkcWVtUzhTTjRpak9LUHVMV0NEd1Vl?oc=5",
-   "published": "2026-10-12T00:07:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLV9DVlQzeDdYck5lOEJXSUw3d1FyN3dXX3p0Q3VGM3g3NGZEeXAtbzBwc1BzTzZDRFlBeGt1VUN5b1Z6ZTJuamo2ZFlBT2pLMkhKOTZVZ0FEcEpRRjNONDMyZktrZUV2QWV6enNGa2FfTUFjZHVzWm9lRk9NVXczYk81aHVvZEJKYlVfb0ZQYVRCUEhQUVlkczlzRnVzaUcyNGl3Rkd6WDRScV9xOWdfUXQxelhhb0RSRFZlbjVYMUlyd9IB0AFBVV95cUxQUHJNVXpab3h0TDc4VXZBZHFLSG5pMUNIUGJlYnNPdkt2ekxMWkRWb1ktMjlRVXpwNUZGMTBaMXFIT1lFS0o5djhTeW0zb1lKU2plM3FnaGVIUms4RmV3Y1ZkdDZqNG9MOUNpV09PbTdqM2gtblQtWnhOd29seDdMbkI4MUhWYXdXNV9xcnFSSFR2R1p3U2hubmw2NC1yZzZNd3lPMWpoZE9BcVdwbUJRYXhPR1hKYnZNLWFkcWVtUzhTTjRpak9LUHVMV0NEd1Vl?oc=5",
-     "title": "Amazon negocia compra da startup de IA Decart por cerca de US$ 7 bi"
-    },
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/amazon-negocia-compra-de-startup-de-ia-por-us-7-bi-diz-jornal.shtml",
-     "title": "Amazon negocia compra de startup de IA por US$ 7 bi, diz jornal"
-    }
-   ],
-   "ids": [
-    "dcc6198aa4de",
-    "292117082a46"
-   ],
-   "snippet": "A Amazon está em negociações para adquirir a startup de IA (inteligência artificial) Decart, segundo o jornal americano Wall Street Journal. O acordo é avaliado em cerca de US$ 7 bilhões (aproximadamente R$ 35 bilhões). Leia mais (10/11/2026 - 21h07)",
-   "prescore": 4.3,
-   "headline": "Amazon negocia compra da startup de IA Decart por cerca de US$ 7 bi",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Amazon está em negociações para adquirir a startup de IA (inteligência artificial) Decart, segundo o jornal americano Wall Street Journal. O acordo é avaliado em cerca de US$ 7 bilhões (aproximadamente R$ 35 bilhões). Leia mais (10/11/2026 - 21h07)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "5d78f2bfa08d",
    "title": "Nobel Prize for economics awarded to Hall and Woodford",
    "link": "https://www.ft.com/content/f4463a28-832d-4a2d-acc5-d83e258610cb?syn-25a6b1a6=1",
@@ -6841,45 +6564,6 @@
    "ai": true
   },
   {
-   "id": "7749a5f7f0c9",
-   "title": "Boxer Names New CEO as Low Prices Help Lift Grocer’s Profit",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-12/boxer-appoints-new-ceo-as-south-african-grocer-s-profit-rises",
-   "published": "2026-10-12T05:56:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-12/boxer-appoints-new-ceo-as-south-african-grocer-s-profit-rises",
-     "title": "Boxer Names New CEO as Low Prices Help Lift Grocer’s Profit"
-    }
-   ],
-   "ids": [
-    "7749a5f7f0c9"
-   ],
-   "snippet": "Boxer Retail Ltd. promoted its supply-chain head to run the South African budget grocer from March, with the retailer facing intense competition for cash-strapped consumers.",
-   "prescore": 2.8,
-   "headline": "Boxer nomeia novo CEO enquanto preços baixos elevam o lucro",
-   "category": "empresas",
-   "importance": 3,
-   "importance_reason": "Mudança de gestão em varejista sul-africana.",
-   "summary": "A Boxer Retail promoveu o chefe de cadeia de suprimentos a CEO a partir de março, com lucro impulsionado por preços baixos.",
-   "involves": "Boxer Retail, África do Sul.",
-   "interpretation": "Sucessão interna.",
-   "impact": "Impacto restrito ao varejo sul-africano.",
-   "sentiment": "positivo",
-   "entities": [
-    "Boxer Retail"
-   ],
-   "tags": [
-    "varejo",
-    "CEO",
-    "África do Sul"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "e7784b785ac4",
    "title": "FAB envia aviões para ajudar no combate a queimadas no Amazonas",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV3drN0dVQS1jNEE4ekhnOUdyM0pkZXJNZXVpdHpmLWlNOUE1M3B0dWxsMXpZUTJRU2tmMF9Qa2xqQWF4NVVUcjJQRjByZVpaTUw2WEFCR3JLM2xrOXFfUExqSkFqZTBXZ0RVWjJIUUtsTEdnVE9DaVRTZEZQRmJnWTUxSjVYU2xCTzVTekV0TER0SFF2ZmtXSnp5c3A2Y0RfR20yV0F1S2lKU3ZhM09ydS05clBGeDB4OWtIS2NnbWVpRjN2djRqTNIByAFBVV95cUxQV3drN0dVQS1jNEE4ekhnOUdyM0pkZXJNZXVpdHpmLWlNOUE1M3B0dWxsMXpZUTJRU2tmMF9Qa2xqQWF4NVVUcjJQRjByZVpaTUw2WEFCR3JLM2xrOXFfUExqSkFqZTBXZ0RVWjJIUUtsTEdnVE9DaVRTZEZQRmJnWTUxSjVYU2xCTzVTekV0TER0SFF2ZmtXSnp5c3A2Y0RfR20yV0F1S2lKU3ZhM09ydS05clBGeDB4OWtIS2NnbWVpRjN2djRqTA?oc=5",
@@ -7150,6 +6834,45 @@
    "tags": [
     "EUA",
     "Justiça"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "87b40ed11038",
+   "title": "Starving Ukrainians Are Risking Death to Escape Their Front-Line Town",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUnBDVkpnZ0tLNE1lVnNQV2dJMVMyMjBfV09kZEdLN1VqTHk2TDZYQXJQZUxycENwNUROUGp0UXdBdm1XUkRyY1FNYzJ3QXMweWV4dWxqTkUxM0c3X3RpTHJyUjRIVERUQ2x2WVVtdExRTGpDNE10Q3c0NzBucjlJUFVJMFdTMVBDLVRsMnNjQXNUZ2NmUEZQaFNuZ1BSdXN5bjhxaW9sMA?oc=5",
+   "published": "2026-10-12T01:00:39+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUnBDVkpnZ0tLNE1lVnNQV2dJMVMyMjBfV09kZEdLN1VqTHk2TDZYQXJQZUxycENwNUROUGp0UXdBdm1XUkRyY1FNYzJ3QXMweWV4dWxqTkUxM0c3X3RpTHJyUjRIVERUQ2x2WVVtdExRTGpDNE10Q3c0NzBucjlJUFVJMFdTMVBDLVRsMnNjQXNUZ2NmUEZQaFNuZ1BSdXN5bjhxaW9sMA?oc=5",
+     "title": "Starving Ukrainians Are Risking Death to Escape Their Front-Line Town"
+    }
+   ],
+   "ids": [
+    "87b40ed11038"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Ucranianos famintos arriscam a vida para fugir de cidade na linha de frente",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Dimensão humanitária da guerra, sem efeito direto em preços.",
+   "summary": "O WSJ relata que civis em situação de fome tentam deixar uma cidade na linha de frente na Ucrânia, sob risco de morte.",
+   "involves": "Ucrânia, civis.",
+   "interpretation": "Retrato da deterioração humanitária.",
+   "impact": "Impacto de mercado indireto.",
+   "sentiment": "negativo",
+   "entities": [
+    "Ucrânia",
+    "Wall Street Journal"
+   ],
+   "tags": [
+    "Ucrânia",
+    "guerra"
    ],
    "is_deal": false,
    "deal": null,
@@ -7642,6 +7365,44 @@
     "Miami",
     "imobiliário",
     "gestoras"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "efbe2aa7afca",
+   "title": "Dupla ganha Nobel por estudo sobre condução da economia em períodos de expansão e recessão",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96Q2NtSVA4U1h1WGlzTl9LNDdldHNHNzNSQWZMdW5UT21UNFNYbzdObHJoanVRbUNpRHg2eE5qcEV2aWdhdHJYTDIzUGdDWUtrVzhzTlM5MlhRczc3VGJCdDR0YlBIUExURnFTNTNIQ23SAXZBVV95cUxPclpTWFhDNWlaZGFkX2FoTW5vWDZpWGViby0yQi1zajlNMDV1Y0MtVUFfRWtfMGdCWVJ0b2dnS0I1bjY3Q3JwLXhramhBRGxRMDlUdFdVMElxeUFySzBwTE5BR3U0SGtkU1k5T1hSUDQ0dVdmb2VB?oc=5",
+   "published": "2026-10-12T09:17:27+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96Q2NtSVA4U1h1WGlzTl9LNDdldHNHNzNSQWZMdW5UT21UNFNYbzdObHJoanVRbUNpRHg2eE5qcEV2aWdhdHJYTDIzUGdDWUtrVzhzTlM5MlhRczc3VGJCdDR0YlBIUExURnFTNTNIQ23SAXZBVV95cUxPclpTWFhDNWlaZGFkX2FoTW5vWDZpWGViby0yQi1zajlNMDV1Y0MtVUFfRWtfMGdCWVJ0b2dnS0I1bjY3Q3JwLXhramhBRGxRMDlUdFdVMElxeUFySzBwTE5BR3U0SGtkU1k5T1hSUDQ0dVdmb2VB?oc=5",
+     "title": "Dupla ganha Nobel por estudo sobre condução da economia em períodos de expansão e recessão"
+    }
+   ],
+   "ids": [
+    "efbe2aa7afca"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Pesquisadores dos EUA vencem Nobel de Economia por estudo sobre estabilização macroeconômica",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Prêmio acadêmico, relevância indireta.",
+   "summary": "O Nobel de Economia foi para pesquisadores dos EUA por estudo sobre estabilização macroeconômica.",
+   "involves": "Pesquisadores dos EUA.",
+   "interpretation": "Reconhecimento acadêmico, sem efeito imediato.",
+   "impact": "Sem impacto direto em ativos.",
+   "sentiment": "neutro",
+   "entities": [
+    "Nobel de Economia"
+   ],
+   "tags": [
+    "Nobel",
+    "macro"
    ],
    "is_deal": false,
    "deal": null,
@@ -8303,6 +8064,39 @@
    "ai": true
   },
   {
+   "id": "10e05ebd8225",
+   "title": "China’s Auto Sales Fall Despite Traditional Peak Season",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWnMybXF2RmFpTldBeUc3SkJPVmpIVFlQM1RrM0xjZnhEWHltaGxCZmtER3NSXy1pTEh2MkJIX2w5dThubDlSS3N1WHlPMTRuSFFYcUlrWkkzNC1lb3Rtd2M2TDVWNEF3cXRndWpzeThmWFZ6NXlhTUVicHlGcl9mTDdiNWlCWmRkTjFYaXZYLS1lM0VDWXota2FlZGVIS3M?oc=5",
+   "published": "2026-10-12T07:17:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWnMybXF2RmFpTldBeUc3SkJPVmpIVFlQM1RrM0xjZnhEWHltaGxCZmtER3NSXy1pTEh2MkJIX2w5dThubDlSS3N1WHlPMTRuSFFYcUlrWkkzNC1lb3Rtd2M2TDVWNEF3cXRndWpzeThmWFZ6NXlhTUVicHlGcl9mTDdiNWlCWmRkTjFYaXZYLS1lM0VDWXota2FlZGVIS3M?oc=5",
+     "title": "China’s Auto Sales Fall Despite Traditional Peak Season"
+    }
+   ],
+   "ids": [
+    "10e05ebd8225"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "China’s Auto Sales Fall Despite Traditional Peak Season",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5e666c759ab0",
    "title": "Why China Doesn’t Want to Join the Ranks of the World’s Developed Countries",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZUFJUEVQQlpNQkhYeWpsWmJJano1YVI4LUM1djAtTXIzWi13dkZ4c2JDY0hCYnVTYjN4ZDNYY01kUUlDY01DUEdmMVpfaUV6ZjRHeVJSa1ZKZkhxRGFZRUJvTW9vNFBZZnRnMTRwMF9EVTZwVjBWdHlacmFvVm1LdU5DZlViMjZtOVE5RzQzUG1SVDh6Y3FZNXVXa3lmX2t0eXV3eHdBdU5jOGd1S1RpQ3FSa0Q?oc=5",
@@ -8590,6 +8384,39 @@
    "ai": false
   },
   {
+   "id": "4de3771db127",
+   "title": "Britain, Brexit and the cat-flap option",
+   "link": "https://www.ft.com/content/0a66d390-149d-4cdc-83b6-88015da1e835?syn-25a6b1a6=1",
+   "published": "2026-10-12T10:59:07+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/0a66d390-149d-4cdc-83b6-88015da1e835?syn-25a6b1a6=1",
+     "title": "Britain, Brexit and the cat-flap option"
+    }
+   ],
+   "ids": [
+    "4de3771db127"
+   ],
+   "snippet": "The political, strategic and economic momentum for a reversal of Brexit is growing",
+   "prescore": 2.6,
+   "headline": "Britain, Brexit and the cat-flap option",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The political, strategic and economic momentum for a reversal of Brexit is growing",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "46d36489ec36",
    "title": "Trump’s Russian-Diesel Move Draws Pushback, Skepticism",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdjZzT0FCZUplM2NBNC1Yek5YUkZvR0dFT1dvMUlwV0hfeC1UOElKMTBzbzE4LVUzQVg3Sjl1QnZyWmZhRk9NVDRiaHlwX2pjVU1ZelRNbmdzQlNuSzJyZzIxVXJQYjROQm0wM0ROMkd5UDU1MmRIS0ViY1FBX3VpNENCaVZLcGpxRGhNN1Jqc3NQQU9IMXRYY3k0cWx6NTQ?oc=5",
@@ -8777,6 +8604,72 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "International oil company chiefs stay away from energy congress after airport attacks",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c2c87c6824e9",
+   "title": "Ethiopia launches its first gold refinery, Prime Minister says",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQakRZaVVPSWhhdkFTdkVTaTBHa21zS0dlRENMRlM3U0lGN0k3RUVUZjZOT0VwRkEwTGpEeFJlWkpCMnNBeUl2Yk40ekN0WkhkejRkTjZnYmI5TjZ3M3JNRmJGT0VUV1R5bkNqVm00VUVieFBVdmh1NnFCT1pMTWlOSWlFckR5RXFvWUZsVTlCTkE2QkFQSEtXRDdIeU12VjlpLV9vZ1k5MWJDcFhMbHlv?oc=5",
+   "published": "2026-10-12T07:10:10+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQakRZaVVPSWhhdkFTdkVTaTBHa21zS0dlRENMRlM3U0lGN0k3RUVUZjZOT0VwRkEwTGpEeFJlWkpCMnNBeUl2Yk40ekN0WkhkejRkTjZnYmI5TjZ3M3JNRmJGT0VUV1R5bkNqVm00VUVieFBVdmh1NnFCT1pMTWlOSWlFckR5RXFvWUZsVTlCTkE2QkFQSEtXRDdIeU12VjlpLV9vZ1k5MWJDcFhMbHlv?oc=5",
+     "title": "Ethiopia launches its first gold refinery, Prime Minister says"
+    }
+   ],
+   "ids": [
+    "c2c87c6824e9"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Ethiopia launches its first gold refinery, Prime Minister says",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4aedc77895ea",
+   "title": "India opposition parties march to Supreme Court against election chief",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaHdUQ01EMUVqOGlYVmhEVVJCemJoMjFKX0twdDRaS2VLVmpSbUZqWTlwWkVIcGI3NEdRclB2eWNfejhjbjQ2RHBOc1M1NHkxc2Y3RjYxTTJyby1rSkp1UFd2UVpBUGFnaGdzVUJiRGJDQ3FqcTJwdDd1MUcwdU12NFU2ckJrNzk1LXlhSXpCZHVfcUFwcGYxakZDRjZobXRvTnI4QWZIYnhqWm1TaWRLWUhzSzZkRlhSY0o3cTFaNHBKUk9nUVE?oc=5",
+   "published": "2026-10-12T05:03:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaHdUQ01EMUVqOGlYVmhEVVJCemJoMjFKX0twdDRaS2VLVmpSbUZqWTlwWkVIcGI3NEdRclB2eWNfejhjbjQ2RHBOc1M1NHkxc2Y3RjYxTTJyby1rSkp1UFd2UVpBUGFnaGdzVUJiRGJDQ3FqcTJwdDd1MUcwdU12NFU2ckJrNzk1LXlhSXpCZHVfcUFwcGYxakZDRjZobXRvTnI4QWZIYnhqWm1TaWRLWUhzSzZkRlhSY0o3cTFaNHBKUk9nUVE?oc=5",
+     "title": "India opposition parties march to Supreme Court against election chief"
+    }
+   ],
+   "ids": [
+    "4aedc77895ea"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "India opposition parties march to Supreme Court against election chief",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -9071,7 +8964,7 @@
    "id": "0c4d19dbb364",
    "title": "Opinion | Will the FTC Protect You From Discounts?",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZklvNjhHMGpPQkhVMmhhRkIyZ2UzVHVfMWJmOEpTZmo2TWVKMjBFbWdvYTBSRHdLOG1EYXNUZmZ2YzZiWVFOQWotVlFCaUVJRGR1Sld6T1VHaVI3NDREWDlNRUVfZFY3UGdRRE9VN2RPMGRCZUswUjRJWXhldTVhZEpB?oc=5",
-   "published": "2026-10-11T18:58:00+00:00",
+   "published": "2026-10-11T19:00:09+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -9139,45 +9032,6 @@
    ],
    "tags": [
     "Polônia"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "f639a0833773",
-   "title": "Opinion | Massachusetts’ Policies Increase Electric Bills",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNFJXSFhGVXVwOWVIdnM4OWYyNmhkQThJTDNPLV9iRkZFaXRmQWtTMmtmRW1fSWRES0dtUjk1SjBtcnpxUXBELTgzWGw5VTFrYXNiVDhlbnRTSi1CSmdBRnhhd2NFN3djTFdfcVlWZ3RSQXVRN0tCVkR1aFEyZEFXalZBaWRGWXhWVEJj?oc=5",
-   "published": "2026-10-11T17:09:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNFJXSFhGVXVwOWVIdnM4OWYyNmhkQThJTDNPLV9iRkZFaXRmQWtTMmtmRW1fSWRES0dtUjk1SjBtcnpxUXBELTgzWGw5VTFrYXNiVDhlbnRTSi1CSmdBRnhhd2NFN3djTFdfcVlWZ3RSQXVRN0tCVkR1aFEyZEFXalZBaWRGWXhWVEJj?oc=5",
-     "title": "Opinion | Massachusetts’ Policies Increase Electric Bills"
-    }
-   ],
-   "ids": [
-    "f639a0833773"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Opinião: políticas de Massachusetts elevam contas de energia",
-   "category": "outros",
-   "importance": 2,
-   "importance_reason": "Opinião sobre energia em um estado dos EUA.",
-   "summary": "Texto de opinião do WSJ afirma que políticas de Massachusetts elevam as contas de luz.",
-   "involves": "Massachusetts.",
-   "interpretation": "Visão editorial.",
-   "impact": "Impacto limitado.",
-   "sentiment": "neutro",
-   "entities": [
-    "Massachusetts",
-    "Wall Street Journal"
-   ],
-   "tags": [
-    "energia",
-    "opinião"
    ],
    "is_deal": false,
    "deal": null,
@@ -9694,46 +9548,6 @@
    "ai": true
   },
   {
-   "id": "f66e9588e270",
-   "title": "Datafolha: Celina tem 55% de intenção de votos no segundo turno no DF; Grass, 37%",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcVdGNGxsRTdWdmRsanhiOExNQXI0ZXlkbTVsTUJjb0tTS1F5VVRMaTVLVUhuTGdwcThXWTY5OGxpSjBPbjZUWXB6WjZYQ1Y1VjJMdWlndDE2RWJOUzA2SGdqTFpJWnUxT3haOWpGRzNmUzktY0lEM0dRSVI2aEl4bFlWaTAzOF8ydUlkUWFGMVI4WjBsaGU5UV9jY2l0TV9PVmpBWVd5UzhwUjFDd3ljUDRHUXZnOHRUWHRTdEh6MkFGbnlfS1pOcVF3?oc=5",
-   "published": "2026-10-11T15:49:43+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcVdGNGxsRTdWdmRsanhiOExNQXI0ZXlkbTVsTUJjb0tTS1F5VVRMaTVLVUhuTGdwcThXWTY5OGxpSjBPbjZUWXB6WjZYQ1Y1VjJMdWlndDE2RWJOUzA2SGdqTFpJWnUxT3haOWpGRzNmUzktY0lEM0dRSVI2aEl4bFlWaTAzOF8ydUlkUWFGMVI4WjBsaGU5UV9jY2l0TV9PVmpBWVd5UzhwUjFDd3ljUDRHUXZnOHRUWHRTdEh6MkFGbnlfS1pOcVF3?oc=5",
-     "title": "Datafolha: Celina tem 55% de intenção de votos no segundo turno no DF; Grass, 37%"
-    }
-   ],
-   "ids": [
-    "f66e9588e270"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Datafolha: Celina tem 55% no segundo turno no DF; Grass, 37%",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Pesquisa regional.",
-   "summary": "Datafolha mostra Celina com 55% das intenções de voto no segundo turno no DF e Grass com 37%.",
-   "involves": "Celina, Grass, Datafolha.",
-   "interpretation": "Vantagem de 18 pontos para Celina.",
-   "impact": "Sem efeito de mercado.",
-   "sentiment": "neutro",
-   "entities": [
-    "Celina",
-    "Grass",
-    "Datafolha"
-   ],
-   "tags": [
-    "Datafolha",
-    "DF"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "8d6353292b8f",
    "title": "O Brasil pode não merecer Flávio. Mas o petismo merece",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUWpGaUp1WFplWDBpZ0JSbEJrcFVSVExYNVJKVU5QbGJnOXBFMGRNZU1LWC1jbWVZUzl0TU50LXhCX3R4amw2Yy1HbE1Eenp3SERlbDZ0NWxJVk1TYTgzcWFQcHJiS05RemI1M29FdDlOQ0picjlvT1RQTHg0SF9BWlItOE02akEzdV8td2RLWUdrMGNzb1o2clh2ZUpIWlQxYTg2Mk1xbzNzZw?oc=5",
@@ -10007,7 +9821,7 @@
    "id": "bdfb3a5d58f9",
    "title": "How to Build a Custom, Architect-Designed Home for Under $1 Million",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZC1MQ0hxazFpT1hzQkhnaWdaZEhyN3FmcjVmRE93VmU5WG9MM0F1ZjA4a1hFdlRGMXU5MmRqS1hTOEk4ZGYzRUdIRy1sQ19BUzNJb0k1Q005MnNFVU03UXZ0LUdKbmRiMjhhT1psMzBkQUVyQVhBSUVrQ3M3OC1nSEFNQzBtSkVId2d0RjRGRjhkQmk0ZkkxR3JHVQ?oc=5",
-   "published": "2026-10-12T04:31:03+00:00",
+   "published": "2026-10-12T06:01:03+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -10036,43 +9850,6 @@
    "tags": [
     "imóveis",
     "EUA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "d659ba633814",
-   "title": "I Tried the SUV of Jet Skis and Hit Choppy Waters",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbDR3Y3FkZzdxZGE1THllaUptRGp0RXdzTUZSNHVGeF9Jb0NrTzlxZTRnQU5GX2xIWVJ2Z0xmTnBBT250c3paZVBFQ3lKUFRpc0NkRmp3dW9Sb2NNVVhCbWZhVkhfRGZ1LXZKY2NhQnRKdjEzQXFLNkNYeGRVZjZVSTJlZV9EU3M?oc=5",
-   "published": "2026-10-12T03:22:17+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbDR3Y3FkZzdxZGE1THllaUptRGp0RXdzTUZSNHVGeF9Jb0NrTzlxZTRnQU5GX2xIWVJ2Z0xmTnBBT250c3paZVBFQ3lKUFRpc0NkRmp3dW9Sb2NNVVhCbWZhVkhfRGZ1LXZKY2NhQnRKdjEzQXFLNkNYeGRVZjZVSTJlZV9EU3M?oc=5",
-     "title": "I Tried the SUV of Jet Skis and Hit Choppy Waters"
-    }
-   ],
-   "ids": [
-    "d659ba633814"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Testei o 'SUV dos jet skis' e enfrentei águas agitadas",
-   "category": "outros",
-   "importance": 1,
-   "importance_reason": "Lifestyle, ruído.",
-   "summary": "Matéria de estilo de vida do WSJ sobre um jet ski.",
-   "involves": "WSJ",
-   "interpretation": "Sem relevância.",
-   "impact": "Sem impacto.",
-   "sentiment": "neutro",
-   "entities": [
-    "WSJ"
-   ],
-   "tags": [
-    "lifestyle"
    ],
    "is_deal": false,
    "deal": null,
@@ -10233,7 +10010,7 @@
    "id": "fc63a6675c1b",
    "title": "Can Wearables Really Track Blood Pressure Without the Cuff? I Tested Them.",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWnhYQnpvMDMtenNDQkhpZUtHRmxacDVvLXFyN2ZaSHN4Nk85bEtZOHdYaGlLTFhWQ2hHQ19NYU5JNkFibGlrWmRIUGlXUmp4Z1pTaUxxaEhBd05QZVNwWnctM3g1VVNlR3dMeGd6VGFFNW53cFpGUURoQ09lYWROdnZUQmp6QlRTcGpRYQ?oc=5",
-   "published": "2026-10-11T11:03:05+00:00",
+   "published": "2026-10-11T11:00:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11880,6 +11657,171 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "c25cfb81149d",
+   "title": "Concentração de votos impede efetividade de 'puxadores de voto' do PSOL e coloca em xeque estratégia eleitoral da esquerda",
+   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/12/concentracao-de-votos-impede-efetividade-de-puxadores-de-voto-do-psol-e-coloca-em-xeque-estrategia-eleitoral-da-esquerda.ghtml",
+   "published": "2026-10-12T07:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/12/concentracao-de-votos-impede-efetividade-de-puxadores-de-voto-do-psol-e-coloca-em-xeque-estrategia-eleitoral-da-esquerda.ghtml",
+     "title": "Concentração de votos impede efetividade de 'puxadores de voto' do PSOL e coloca em xeque estratégia eleitoral da esquerda"
+    }
+   ],
+   "ids": [
+    "c25cfb81149d"
+   ],
+   "snippet": "A federação Psol/Rede ultrapassou o percentual nacional de votos necessário, mas atingiu o mínimo estadual em apenas oito estados. Divulgação / Câmara dos Deputados Estratégica para partidos, a eleição na Câmara dos Deputados terminou com uma frustração para o PSOL. Apesar de ter \"puxadores de voto\" importantes, a sigla de esquerda perdeu vagas na disputa para deputado federal e acabou sem acesso a dinheiro público para manter o partido. Nomes como Erika Hilton (SP), Sâmia Bomfim (SP) e Jones Manoel (PE) angariaram uma votação significativa em seus estados. Mas, não conseguiram levar colegas d",
+   "prescore": 1.8,
+   "headline": "Concentração de votos impede efetividade de 'puxadores de voto' do PSOL e coloca em xeque estratégia eleitoral da esquerda",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A federação Psol/Rede ultrapassou o percentual nacional de votos necessário, mas atingiu o mínimo estadual em apenas oito estados. Divulgação / Câmara dos Deputados Estratégica para partidos, a eleição na Câmara dos Deputados terminou com uma frustração para o PSOL. Apesar de ter \"puxadores de voto\" importantes, a sigla de esquerda perdeu vagas na disputa para deputado federal e acabou sem acesso ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e122b0788199",
+   "title": "'Open to love': por que tem gente usando o LinkedIn para flertar? Veja riscos de paquerar por lá",
+   "link": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/12/open-to-love-por-que-tem-gente-usando-o-linkedin-para-flertar-veja-riscos-de-paquerar-por-la.ghtml",
+   "published": "2026-10-12T06:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/12/open-to-love-por-que-tem-gente-usando-o-linkedin-para-flertar-veja-riscos-de-paquerar-por-la.ghtml",
+     "title": "'Open to love': por que tem gente usando o LinkedIn para flertar? Veja riscos de paquerar por lá"
+    }
+   ],
+   "ids": [
+    "e122b0788199"
+   ],
+   "snippet": "O LinkedIn permite que você encontre ótimos profissionais remotamente. adobe stock Em meio à saturação dos aplicativos de relacionamento, alguns usuários do LinkedIn, rede social voltada ao mercado de trabalho, passaram a arriscar um flerte ou até buscar um relacionamento por meio da plataforma. Uma pesquisa com mais de 1 mil trabalhadores dos Estados Unidos, realizada pela Zety para o \"Relatório de Romance do LinkedIn\", mostra que o tema divide opiniões. 🗒️ Tem alguma sugestão de reportagem? Mande para o g1 Enquanto 74% dos entrevistados consideram que paquerar na plataforma ultrapassa os lim",
+   "prescore": 1.8,
+   "headline": "'Open to love': por que tem gente usando o LinkedIn para flertar? Veja riscos de paquerar por lá",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O LinkedIn permite que você encontre ótimos profissionais remotamente. adobe stock Em meio à saturação dos aplicativos de relacionamento, alguns usuários do LinkedIn, rede social voltada ao mercado de trabalho, passaram a arriscar um flerte ou até buscar um relacionamento por meio da plataforma. Uma pesquisa com mais de 1 mil trabalhadores dos Estados Unidos, realizada pela Zety para o \"Relatório ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4e9f277a08af",
+   "title": "Mega-Sena pode pagar R$ 150 milhões nesta terça (13); veja os 10 maiores prêmios da loteria",
+   "link": "https://g1.globo.com/loterias/mega-sena/noticia/2026/10/12/mega-sena-pode-pagar-150-milhoes-de-reais-terca-13-veja-10-maiores-premios.ghtml",
+   "published": "2026-10-12T03:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/loterias/mega-sena/noticia/2026/10/12/mega-sena-pode-pagar-150-milhoes-de-reais-terca-13-veja-10-maiores-premios.ghtml",
+     "title": "Mega-Sena pode pagar R$ 150 milhões nesta terça (13); veja os 10 maiores prêmios da loteria"
+    }
+   ],
+   "ids": [
+    "4e9f277a08af"
+   ],
+   "snippet": "Concurso 3069 da Mega-Sena: veja os números sorteados O próximo sorteio da Mega-Sena, que acontece nesta terça-feira (13), pode pagar mais de R$ 150 milhões para a aposta vencedora. Até o momento, o sorteio 2.525, de 1º de outubro de 2022, que pagou mais de R$ 317,8 milhões, lidera o ranking de maiores prêmios da loteria, segundo a Caixa Econômica Federal. O ranking considera apenas os sorteios regulares e exclui as edições especiais, como a Mega da Virada. Veja abaixo: 📱Favorite o g1 no Google e acompanhe as principais notícias do dia Clique aqui para seguir o canal de Loterias do g1 no Whats",
+   "prescore": 1.8,
+   "headline": "Mega-Sena pode pagar R$ 150 milhões nesta terça (13); veja os 10 maiores prêmios da loteria",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Concurso 3069 da Mega-Sena: veja os números sorteados O próximo sorteio da Mega-Sena, que acontece nesta terça-feira (13), pode pagar mais de R$ 150 milhões para a aposta vencedora. Até o momento, o sorteio 2.525, de 1º de outubro de 2022, que pagou mais de R$ 317,8 milhões, lidera o ranking de maiores prêmios da loteria, segundo a Caixa Econômica Federal. O ranking considera apenas os sorteios re",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "30a53830e6c0",
+   "title": "Nem todo eleitor que deixa de votar é desinteressado pela política, diz pesquisador",
+   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/12/nem-todo-eleitor-que-deixa-de-votar-e-desinteressado-pela-politica-diz-pesquisador.ghtml",
+   "published": "2026-10-12T03:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/12/nem-todo-eleitor-que-deixa-de-votar-e-desinteressado-pela-politica-diz-pesquisador.ghtml",
+     "title": "Nem todo eleitor que deixa de votar é desinteressado pela política, diz pesquisador"
+    }
+   ],
+   "ids": [
+    "30a53830e6c0"
+   ],
+   "snippet": "Abstenção nas eleições de 2026 é a segunda maior desde a redemocratização Mais de 33 milhões de brasileiros deixaram de ir às urnas no primeiro turno das eleições de 2026. No entanto, esse número não pode ser interpretado como uma grande massa de pessoas desinteressadas pela política, afirma o cientista político e pesquisador da Fundação Getulio Vargas (FGV) Jairo Nicolau. Autor do livro \"O País Dividido\", que analisa as últimas duas décadas de eleições no Brasil, Nicolau explica que o total de ausentes reúne pessoas com perfis e motivos diferentes para não votar. Isso inclui desde eleitores q",
+   "prescore": 1.8,
+   "headline": "Nem todo eleitor que deixa de votar é desinteressado pela política, diz pesquisador",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Abstenção nas eleições de 2026 é a segunda maior desde a redemocratização Mais de 33 milhões de brasileiros deixaram de ir às urnas no primeiro turno das eleições de 2026. No entanto, esse número não pode ser interpretado como uma grande massa de pessoas desinteressadas pela política, afirma o cientista político e pesquisador da Fundação Getulio Vargas (FGV) Jairo Nicolau. Autor do livro \"O País D",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "21381693087e",
+   "title": "De quem é Nossa Senhora?",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/colunas/bianca-santana/2026/10/de-quem-e-nossa-senhora.shtml",
+   "published": "2026-10-12T02:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/colunas/bianca-santana/2026/10/de-quem-e-nossa-senhora.shtml",
+     "title": "De quem é Nossa Senhora?"
+    }
+   ],
+   "ids": [
+    "21381693087e"
+   ],
+   "snippet": "Em 1921, um homem deixou flores aos pés da Virgem de Guadalupe, na Cidade do México . Em meio a elas, uma bomba. A explosão danificou o altar e entortou um crucifixo, mas a imagem de Nossa Senhora permaneceu intacta. Leia mais (10/11/2026 - 23h00)",
+   "prescore": 1.8,
+   "headline": "De quem é Nossa Senhora?",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Em 1921, um homem deixou flores aos pés da Virgem de Guadalupe, na Cidade do México . Em meio a elas, uma bomba. A explosão danificou o altar e entortou um crucifixo, mas a imagem de Nossa Senhora permaneceu intacta. Leia mais (10/11/2026 - 23h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "deals": [
@@ -12658,6 +12600,87 @@
  ],
  "upcoming": [
   {
+   "id": "e9e4c7ab8852",
+   "title": "Diesel prices slip after Trump claims ‘energy ceasefire’ in Ukraine war",
+   "link": "https://www.ft.com/content/a663781e-2709-41f2-99df-4fb5a6162e6b?syn-25a6b1a6=1",
+   "published": "2026-10-12T14:12:15+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/a663781e-2709-41f2-99df-4fb5a6162e6b?syn-25a6b1a6=1",
+     "title": "Diesel prices slip after Trump claims ‘energy ceasefire’ in Ukraine war"
+    }
+   ],
+   "ids": [
+    "e9e4c7ab8852"
+   ],
+   "snippet": "Announcement follows deal with Putin as US president tries to contain impact of higher fuel costs ahead of midterm elections",
+   "prescore": 2.6,
+   "headline": "Preços do diesel recuam após Trump anunciar 'cessar-fogo energético' na Ucrânia",
+   "category": "internacional",
+   "importance": 8,
+   "importance_reason": "Move diesel e petróleo; liga EUA, Rússia e eleições.",
+   "summary": "O FT diz que o diesel recuou após Trump anunciar um 'cessar-fogo energético' na guerra da Ucrânia. O anúncio segue acordo com Putin, em meio à tentativa de conter combustíveis caros antes das eleições legislativas.",
+   "involves": "Trump; Putin; diesel; Ucrânia",
+   "interpretation": "Trump busca baixar o custo de combustíveis antes das midterms. Outros títulos questionam a adesão russa.",
+   "impact": "Alívio para inflação e cadeias de frete; ganho para consumidores de diesel e pressão sobre petroleiras.",
+   "sentiment": "positivo",
+   "entities": [
+    "Trump",
+    "Putin",
+    "Ucrânia"
+   ],
+   "tags": [
+    "diesel",
+    "cessar-fogo",
+    "midterms"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "03dcbc237a48",
+   "title": "Oil Prices Rebound Amid Persistent Middle East Supply Risks",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOXpZa1FtWThybVR0cThaRndXOHlLN2hrRWdacGFUX29OaFk5R3J4N1NrUTlnRFRCeVVyV2x5aTJicF84WHNhT2s3dUJyOWFPR0VVZ2JwZ25Ed2dqa2RPY1V5Z3dTaFluRV9rSXBLSFJkQkZCcE1id0hQOVBsbHVnYUdrajlqajZCbHVYNl90M05BT2xyQVN3NFpQOXNkVFVCSVo2YXV4ei1TV2NuZzYxeEdraXV3NlJaZHNESHNINEhXUXFC?oc=5",
+   "published": "2026-10-12T13:32:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOXpZa1FtWThybVR0cThaRndXOHlLN2hrRWdacGFUX29OaFk5R3J4N1NrUTlnRFRCeVVyV2x5aTJicF84WHNhT2s3dUJyOWFPR0VVZ2JwZ25Ed2dqa2RPY1V5Z3dTaFluRV9rSXBLSFJkQkZCcE1id0hQOVBsbHVnYUdrajlqajZCbHVYNl90M05BT2xyQVN3NFpQOXNkVFVCSVo2YXV4ei1TV2NuZzYxeEdraXV3NlJaZHNESHNINEhXUXFC?oc=5",
+     "title": "Oil Prices Rebound Amid Persistent Middle East Supply Risks"
+    }
+   ],
+   "ids": [
+    "03dcbc237a48"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Petróleo cai com acordo do diesel russo e riscos de oferta no Oriente Médio",
+   "category": "mercados",
+   "importance": 8,
+   "importance_reason": "Movimento direto em petróleo e Petrobras.",
+   "summary": "O WSJ informa que o petróleo recua enquanto operadores avaliam o acordo do diesel russo e riscos de oferta no Oriente Médio.",
+   "involves": "Petróleo; diesel russo; Oriente Médio",
+   "interpretation": "Dois vetores opostos: alívio do acordo e risco de oferta no Golfo.",
+   "impact": "Petróleo mais baixo ajuda inflação e importadores; pressiona Petrobras, PRIO e exportadores.",
+   "sentiment": "neutro",
+   "entities": [
+    "diesel russo",
+    "Oriente Médio"
+   ],
+   "tags": [
+    "petróleo",
+    "diesel",
+    "Brent"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "e52169ead92a",
    "title": "U.S. Futures Mixed, Oil Rises After Russia Hits Ukraine Energy Sites",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPamJ2ZGp1bmNfdEs1MUlid3YzVTcxNmRtZW9DRjE5LUhjM0E5cHJ3elNrYzVXTVBWOVNYX0hVTVJ2anJUUG44QnBvWnJfNVVUbnRTTDZEcVdqSTFSeWxuemlXOVJvWUhObmhiOVk0X083ckp4WEtQTUU3dnVNMW1wd3VxUlctaG5RbGpISVI3bVNQZXpHT3hWVEZZbDJrblZTYmhPVG9pVlJxUUJ3MnFNUmozQk5iNkp6OFlzNWppUEN1VXc?oc=5",
@@ -12692,47 +12715,6 @@
     "bolsas",
     "petróleo",
     "diesel"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "e9e4c7ab8852",
-   "title": "Diesel prices slip after Trump claims ‘energy ceasefire’ in Ukraine war",
-   "link": "https://www.ft.com/content/a663781e-2709-41f2-99df-4fb5a6162e6b?syn-25a6b1a6=1",
-   "published": "2026-10-12T11:27:37+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/a663781e-2709-41f2-99df-4fb5a6162e6b?syn-25a6b1a6=1",
-     "title": "Diesel prices slip after Trump claims ‘energy ceasefire’ in Ukraine war"
-    }
-   ],
-   "ids": [
-    "e9e4c7ab8852"
-   ],
-   "snippet": "Announcement follows deal with Putin as US president tries to contain impact of higher fuel costs ahead of midterm elections",
-   "prescore": 2.6,
-   "headline": "Preços do diesel recuam após Trump anunciar 'cessar-fogo energético' na Ucrânia",
-   "category": "internacional",
-   "importance": 8,
-   "importance_reason": "Move diesel e petróleo; liga EUA, Rússia e eleições.",
-   "summary": "O FT diz que o diesel recuou após Trump anunciar um 'cessar-fogo energético' na guerra da Ucrânia. O anúncio segue acordo com Putin, em meio à tentativa de conter combustíveis caros antes das eleições legislativas.",
-   "involves": "Trump; Putin; diesel; Ucrânia",
-   "interpretation": "Trump busca baixar o custo de combustíveis antes das midterms. Outros títulos questionam a adesão russa.",
-   "impact": "Alívio para inflação e cadeias de frete; ganho para consumidores de diesel e pressão sobre petroleiras.",
-   "sentiment": "positivo",
-   "entities": [
-    "Trump",
-    "Putin",
-    "Ucrânia"
-   ],
-   "tags": [
-    "diesel",
-    "cessar-fogo",
-    "midterms"
    ],
    "is_deal": false,
    "deal": null,
@@ -12780,46 +12762,37 @@
    "ai": true
   },
   {
-   "id": "22157cd60369",
-   "title": "Russia Sanctions Must Stay in Place, Says Dutch Defense Minister",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-12/dutch-defense-min-russia-sanctions-must-stay-in-place-video",
-   "published": "2026-10-12T11:11:05+00:00",
+   "id": "9b94a6bb66d4",
+   "title": "PayJoy to Acquire Strategic Assets of Finia AI, Advancing AI Underwriting and Financial Product Innovation",
+   "link": "https://www.prnewswire.com/news-releases/payjoy-to-acquire-strategic-assets-of-finia-ai-advancing-ai-underwriting-and-financial-product-innovation-302903894.html",
+   "published": "2026-10-12T14:00:00+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-10-12/dutch-defense-min-russia-sanctions-must-stay-in-place-video",
-     "title": "Russia Sanctions Must Stay in Place, Says Dutch Defense Minister"
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/payjoy-to-acquire-strategic-assets-of-finia-ai-advancing-ai-underwriting-and-financial-product-innovation-302903894.html",
+     "title": "PayJoy to Acquire Strategic Assets of Finia AI, Advancing AI Underwriting and Financial Product Innovation"
     }
    ],
    "ids": [
-    "22157cd60369"
+    "9b94a6bb66d4"
    ],
-   "snippet": "As the war in Ukraine enters nears its fifth year, Dutch Defense Minister Dilan Yesilgoz-Zegerius says \"it's very important to make sure that the sanctions\" against Russia remain in place, so that Russian President Vladimir \"doesn't get everything he needs to fund this war.\" She made the comments in an interview with Bloomberg Television from the Warsaw Security Forum on Monday. (Source: Bloomberg)",
-   "prescore": 2.8,
-   "headline": "Sanções à Rússia devem permanecer, diz ministra da Defesa holandesa",
-   "category": "internacional",
+   "snippet": "Transaction brings Finia's technology and experience serving micro-businesses to PayJoy's global platform SAN FRANCISCO, Oct. 12, 2026 /PRNewswire/ -- PayJoy, a leading financial services provider for underserved consumers across emerging markets, today announced the acquisition of select...",
+   "prescore": 8.0,
+   "headline": "PayJoy to Acquire Strategic Assets of Finia AI, Advancing AI Underwriting and Financial Product Innovation",
+   "category": "mna",
    "importance": 5,
-   "importance_reason": "Sinal de manutenção das sanções por aliados europeus.",
-   "summary": "A ministra da Defesa da Holanda, Dilan Yesilgoz-Zegerius, disse à Bloomberg TV que as sanções à Rússia precisam permanecer para evitar financiamento da guerra, que se aproxima do quinto ano.",
-   "involves": "Holanda, Rússia, Ucrânia, Dilan Yesilgoz-Zegerius.",
-   "interpretation": "Mostra posição firme da Europa, mesmo com discussão de cessar-fogo.",
-   "impact": "Mantém prêmio geopolítico em energia e commodities.",
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Transaction brings Finia's technology and experience serving micro-businesses to PayJoy's global platform SAN FRANCISCO, Oct. 12, 2026 /PRNewswire/ -- PayJoy, a leading financial services provider for underserved consumers across emerging markets, today announced the acquisition of select...",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
    "sentiment": "neutro",
-   "entities": [
-    "Dilan Yesilgoz-Zegerius",
-    "Rússia",
-    "Ucrânia",
-    "Holanda"
-   ],
-   "tags": [
-    "sanções",
-    "Rússia",
-    "Ucrânia"
-   ],
+   "entities": [],
+   "tags": [],
    "is_deal": false,
    "deal": null,
-   "ai": true
+   "ai": false
   },
   {
    "id": "49a13711d863",
@@ -12862,6 +12835,39 @@
    "ai": true
   },
   {
+   "id": "d8553a98cf12",
+   "title": "Goldman’s $2.3 Billion Deal Puts Tax-Smart ETFs Under Scrutiny",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/goldman-s-2-3-billion-deal-puts-tax-smart-etfs-under-scrutiny",
+   "published": "2026-10-12T13:52:19+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-12/goldman-s-2-3-billion-deal-puts-tax-smart-etfs-under-scrutiny",
+     "title": "Goldman’s $2.3 Billion Deal Puts Tax-Smart ETFs Under Scrutiny"
+    }
+   ],
+   "ids": [
+    "d8553a98cf12"
+   ],
+   "snippet": "When Goldman Sachs Group Inc. buys boutique ETF provider Neos Investments, it’ll acquire not only some of the hottest derivative-income funds around, but also products that are testing how decades-old laws are applied to Wall Street’s new generation of tax-optimizing strategies.",
+   "prescore": 5.8,
+   "headline": "Goldman’s $2.3 Billion Deal Puts Tax-Smart ETFs Under Scrutiny",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "When Goldman Sachs Group Inc. buys boutique ETF provider Neos Investments, it’ll acquire not only some of the hottest derivative-income funds around, but also products that are testing how decades-old laws are applied to Wall Street’s new generation of tax-optimizing strategies.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "05fffb240e24",
    "title": "Private Equity Has €41 Billion of Headroom for Dividend Recaps",
    "link": "https://www.bloomberg.com/news/articles/2026-10-12/private-equity-has-41-billion-of-headroom-for-dividend-recaps",
@@ -12895,10 +12901,43 @@
    "ai": false
   },
   {
+   "id": "3b4df692a862",
+   "title": "Steris to Acquire Xodus Medical for $2.1 Billion",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQ1B2WHl2dE9scjhta0NNcTlBX2g4VWVYUmRQUkVvQUx6QWJlM2k0Qkg4dlFidmtBU0JOMmYza1NPamh4WU5LTkN6WnJsOXNXcGIzYnpILXNlclI4UTJoR2xWRzlyNkRrM05INkNjdmYwYWZOOXQ0QVNrQjNCN2dmV1daVWVnUTFiWXRoVE1LMjlqNzhna1E?oc=5",
+   "published": "2026-10-12T13:11:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQ1B2WHl2dE9scjhta0NNcTlBX2g4VWVYUmRQUkVvQUx6QWJlM2k0Qkg4dlFidmtBU0JOMmYza1NPamh4WU5LTkN6WnJsOXNXcGIzYnpILXNlclI4UTJoR2xWRzlyNkRrM05INkNjdmYwYWZOOXQ0QVNrQjNCN2dmV1daVWVnUTFiWXRoVE1LMjlqNzhna1E?oc=5",
+     "title": "Steris to Acquire Xodus Medical for $2.1 Billion"
+    }
+   ],
+   "ids": [
+    "3b4df692a862"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Steris to Acquire Xodus Medical for $2.1 Billion",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "3f6779604cba",
    "title": "AI Fuels M&A Machine",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JYVpHUGo3WWhzT3FDV2x1VVc5dHRzelhqMV9ndUdiQVlJQWNDQklmQWh2c0ZoTk5fYjd0UjhfZjNHWFFTVTlLdDBlT0hMaEpfSFVrYnViUmE4Qi1KV2RsYmlmOTRnbGg2b0dsNDB3?oc=5",
-   "published": "2026-10-12T12:39:00+00:00",
+   "published": "2026-10-12T12:40:40+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -13009,7 +13048,7 @@
    "id": "559f2b9d5446",
    "title": "Starbucks says it is not buying Chipotle after takeover speculation",
    "link": "https://www.cnbc.com/2026/10/12/starbucks-denies-chipotle-takeover.html",
-   "published": "2026-10-12T13:23:41+00:00",
+   "published": "2026-10-12T14:22:48+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -13150,6 +13189,45 @@
    "ai": false
   },
   {
+   "id": "839fa8712782",
+   "title": "Lula cobra Kassio e diz que presidente do TSE 'não pode ter lado'",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/lula-cobra-kassio-e-diz-que-presidente-do-tse-nao-pode-ter-lado.shtml",
+   "published": "2026-10-12T13:47:39+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/lula-cobra-kassio-e-diz-que-presidente-do-tse-nao-pode-ter-lado.shtml",
+     "title": "Lula cobra Kassio e diz que presidente do TSE 'não pode ter lado'"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/12/lula-nossa-senhora-aparecida.ghtml",
+     "title": "'O que não pode é o presidente da Corte Eleitoral ter lado na política', diz Lula"
+    }
+   ],
+   "ids": [
+    "839fa8712782",
+    "f19c57183de4"
+   ],
+   "snippet": "O presidente Lula ( PT ) afirmou nesta segunda-feira (12) que o presidente do TSE (Tribunal Superior Eleitoral), Kassio Nunes Marques, precisa mostrar a ilegalidade do canal \"Exército do Lula\", montado no Whatsapp pelo deputado federal André Janones (Rede-MG) para divulgar conteúdo da campanha petista. Leia mais (10/12/2026 - 11h15)",
+   "prescore": 4.5,
+   "headline": "Lula cobra Kassio e diz que presidente do TSE 'não pode ter lado'",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O presidente Lula ( PT ) afirmou nesta segunda-feira (12) que o presidente do TSE (Tribunal Superior Eleitoral), Kassio Nunes Marques, precisa mostrar a ilegalidade do canal \"Exército do Lula\", montado no Whatsapp pelo deputado federal André Janones (Rede-MG) para divulgar conteúdo da campanha petista. Leia mais (10/12/2026 - 11h15)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "69f59a2a8153",
    "title": "Moraes autoriza Flávio a voltar com visitas a ex-presidente Bolsonaro",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYXRaM2pwM2N3TVJxRk1ZZUJpZ2plZ0VUcW1Wb2FyZlFaU3RmbEM0ODN5Y2lxM2E3Qm5NSlN4MjJzZ2pESmZXWDVLNl9QOUN3Rldsclk5SVNlYVlmcUM0WnJWVmtRQU94LUNQRG5HLUotWWJOSlNtWnVhTUVCeDMwRkJYMENLcHp3Ti1Hc1RNX3k2blo5WFB0eW5waUNscTFIc2lTMGR4WHl3RXRPdXkwZFhFejlldU5YTW9sRDNqV05mb01iT2fSAdQBQVVfeXFMTnprdEplRnRFWTEyckd6cG02UG1jdTRrczBVOW50M3drcjJ1RnVGY3ZXb2prdGtSYVBmZ25nSkdtMldoRVNaTEZucDJadGtnUmpNd3hxSl9RbkxyMGdsZmJKUEU2VzhLUmhUSjA3cEdrNmdjQng3VE5PckdfRnVZaXhacUxHRUtINDMzLTBPT2J2cnpuOUVpNEo3cGpKZC1UVVFvUXRZZE5ObVBpTHcxT2FKcWZmel9RaDNMRG1aWDE0MzQzZ3M0QTREaHFQeDZGUmpnVkI?oc=5",
@@ -13189,45 +13267,6 @@
    "ai": false
   },
   {
-   "id": "87b40ed11038",
-   "title": "Starving Ukrainians Are Risking Death to Escape Their Front-Line Town",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUnBDVkpnZ0tLNE1lVnNQV2dJMVMyMjBfV09kZEdLN1VqTHk2TDZYQXJQZUxycENwNUROUGp0UXdBdm1XUkRyY1FNYzJ3QXMweWV4dWxqTkUxM0c3X3RpTHJyUjRIVERUQ2x2WVVtdExRTGpDNE10Q3c0NzBucjlJUFVJMFdTMVBDLVRsMnNjQXNUZ2NmUEZQaFNuZ1BSdXN5bjhxaW9sMA?oc=5",
-   "published": "2026-10-12T12:30:39+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUnBDVkpnZ0tLNE1lVnNQV2dJMVMyMjBfV09kZEdLN1VqTHk2TDZYQXJQZUxycENwNUROUGp0UXdBdm1XUkRyY1FNYzJ3QXMweWV4dWxqTkUxM0c3X3RpTHJyUjRIVERUQ2x2WVVtdExRTGpDNE10Q3c0NzBucjlJUFVJMFdTMVBDLVRsMnNjQXNUZ2NmUEZQaFNuZ1BSdXN5bjhxaW9sMA?oc=5",
-     "title": "Starving Ukrainians Are Risking Death to Escape Their Front-Line Town"
-    }
-   ],
-   "ids": [
-    "87b40ed11038"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Ucranianos famintos arriscam a vida para fugir de cidade na linha de frente",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Dimensão humanitária da guerra, sem efeito direto em preços.",
-   "summary": "O WSJ relata que civis em situação de fome tentam deixar uma cidade na linha de frente na Ucrânia, sob risco de morte.",
-   "involves": "Ucrânia, civis.",
-   "interpretation": "Retrato da deterioração humanitária.",
-   "impact": "Impacto de mercado indireto.",
-   "sentiment": "negativo",
-   "entities": [
-    "Ucrânia",
-    "Wall Street Journal"
-   ],
-   "tags": [
-    "Ucrânia",
-    "guerra"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "edcd6f5d0ab5",
    "title": "EXCLUSIVE: Most Americans oppose betting on elections, government events, Reuters/Ipsos poll finds",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZF81cWRKYk1neGgwZFc2T1FuZ2d5MkZGZEdtMTExMURrbmxkT0JKSTZiczloWE1rV2Z0UlJJa2dhQmtheHdaU1U4eUdEYlJYcy11aVo1TzJ6WmpnUWM5TDRtQWp4cGNkdWt5RHFGNS1KOUJsaXFFQlFncVZiRkJnWnhoeTRKdHRzQkhkcGw5WmdlR29vMWt1cDJjYnFUVUdIOTM4UFJpdHN4R3h4alV4VDZPcHc5bXc0?oc=5",
@@ -13262,44 +13301,6 @@
     "apostas",
     "regulação",
     "pesquisa"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "efbe2aa7afca",
-   "title": "Dupla ganha Nobel por estudo sobre condução da economia em períodos de expansão e recessão",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96Q2NtSVA4U1h1WGlzTl9LNDdldHNHNzNSQWZMdW5UT21UNFNYbzdObHJoanVRbUNpRHg2eE5qcEV2aWdhdHJYTDIzUGdDWUtrVzhzTlM5MlhRczc3VGJCdDR0YlBIUExURnFTNTNIQ23SAXZBVV95cUxPclpTWFhDNWlaZGFkX2FoTW5vWDZpWGViby0yQi1zajlNMDV1Y0MtVUFfRWtfMGdCWVJ0b2dnS0I1bjY3Q3JwLXhramhBRGxRMDlUdFdVMElxeUFySzBwTE5BR3U0SGtkU1k5T1hSUDQ0dVdmb2VB?oc=5",
-   "published": "2026-10-12T11:37:54+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96Q2NtSVA4U1h1WGlzTl9LNDdldHNHNzNSQWZMdW5UT21UNFNYbzdObHJoanVRbUNpRHg2eE5qcEV2aWdhdHJYTDIzUGdDWUtrVzhzTlM5MlhRczc3VGJCdDR0YlBIUExURnFTNTNIQ23SAXZBVV95cUxPclpTWFhDNWlaZGFkX2FoTW5vWDZpWGViby0yQi1zajlNMDV1Y0MtVUFfRWtfMGdCWVJ0b2dnS0I1bjY3Q3JwLXhramhBRGxRMDlUdFdVMElxeUFySzBwTE5BR3U0SGtkU1k5T1hSUDQ0dVdmb2VB?oc=5",
-     "title": "Dupla ganha Nobel por estudo sobre condução da economia em períodos de expansão e recessão"
-    }
-   ],
-   "ids": [
-    "efbe2aa7afca"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Pesquisadores dos EUA vencem Nobel de Economia por estudo sobre estabilização macroeconômica",
-   "category": "macro",
-   "importance": 3,
-   "importance_reason": "Prêmio acadêmico, relevância indireta.",
-   "summary": "O Nobel de Economia foi para pesquisadores dos EUA por estudo sobre estabilização macroeconômica.",
-   "involves": "Pesquisadores dos EUA.",
-   "interpretation": "Reconhecimento acadêmico, sem efeito imediato.",
-   "impact": "Sem impacto direto em ativos.",
-   "sentiment": "neutro",
-   "entities": [
-    "Nobel de Economia"
-   ],
-   "tags": [
-    "Nobel",
-    "macro"
    ],
    "is_deal": false,
    "deal": null,
@@ -13471,6 +13472,39 @@
    "ai": false
   },
   {
+   "id": "2cda9c5a0fcc",
+   "title": "Índice de ADRs brasileiros opera próximo à estabilidade em dia de feriado na B3",
+   "link": "https://www.infomoney.com.br/mercados/indice-de-adrs-brasileiros-feriado-nossa-senhora-aparecida-12102026/",
+   "published": "2026-10-12T13:45:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/indice-de-adrs-brasileiros-feriado-nossa-senhora-aparecida-12102026/",
+     "title": "Índice de ADRs brasileiros opera próximo à estabilidade em dia de feriado na B3"
+    }
+   ],
+   "ids": [
+    "2cda9c5a0fcc"
+   ],
+   "snippet": "Índice brasileiro acompanha Nova York, enquanto investidores aguardam balanços de grandes bancos dos EUA e o índice de preços ao consumidor The post Índice de ADRs brasileiros opera próximo à estabilidade em dia de feriado na B3 appeared first on InfoMoney .",
+   "prescore": 3.2,
+   "headline": "Índice de ADRs brasileiros opera próximo à estabilidade em dia de feriado na B3",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Índice brasileiro acompanha Nova York, enquanto investidores aguardam balanços de grandes bancos dos EUA e o índice de preços ao consumidor The post Índice de ADRs brasileiros opera próximo à estabilidade em dia de feriado na B3 appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d3fb6d627ee7",
    "title": "China pede à UE tratamento não discriminatório para exportações de carros híbridos",
    "link": "https://www.infomoney.com.br/economia/china-pede-a-ue-tratamento-nao-discriminatorio-para-exportacoes-de-carros-hibridos/",
@@ -13570,6 +13604,39 @@
    "ai": false
   },
   {
+   "id": "3aa00a448194",
+   "title": "O que Flávio Bolsonaro e Lula propõem sobre o funcionalismo público",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/o-que-flavio-bolsonaro-e-lula-propoem-sobre-o-funcionalismo-publico.shtml",
+   "published": "2026-10-12T13:44:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/o-que-flavio-bolsonaro-e-lula-propoem-sobre-o-funcionalismo-publico.shtml",
+     "title": "O que Flávio Bolsonaro e Lula propõem sobre o funcionalismo público"
+    }
+   ],
+   "ids": [
+    "3aa00a448194"
+   ],
+   "snippet": "O funcionalismo público se tornou um dos temas centrais do debate eleitoral após o primeiro turno das eleições presidenciais, em que o senador Flávio Bolsonaro ( PL ) terminou à frente do presidente Luiz Inácio Lula da Silva ( PT ). Leia mais (10/12/2026 - 10h44)",
+   "prescore": 3.0,
+   "headline": "O que Flávio Bolsonaro e Lula propõem sobre o funcionalismo público",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O funcionalismo público se tornou um dos temas centrais do debate eleitoral após o primeiro turno das eleições presidenciais, em que o senador Flávio Bolsonaro ( PL ) terminou à frente do presidente Luiz Inácio Lula da Silva ( PT ). Leia mais (10/12/2026 - 10h44)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "805e87de5b82",
    "title": "Kassio Nunes manda investigar conteúdo de canal de Janones pró-Lula após censura ser derrubada",
    "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/kassio-nunes-manda-investigar-conteudo-de-canal-pro-lula-apos-censura-ser-derrubada.shtml",
@@ -13585,13 +13652,13 @@
    "ids": [
     "805e87de5b82"
    ],
-   "snippet": "O presidente do TSE (Tribunal Super Eleitoral), Kássio Nunes Marques, determinou neste domingo (11) que a Assessoria de Enfrentamento à Desinformação do órgão investigue o conteúdo publicado no canal de WhatsApp \"Exército do Lula \", administrado pelo deputado federal André Janones (Rede-MG). Leia mais (10/12/2026 - 10h24)",
+   "snippet": "O presidente do TSE (Tribunal Super Eleitoral), Kassio Nunes Marques, determinou neste domingo (11) que a Assessoria de Enfrentamento à Desinformação do órgão investigue o conteúdo publicado no canal de WhatsApp \"Exército do Lula \", administrado pelo deputado federal André Janones (Rede-MG). Leia mais (10/12/2026 - 10h24)",
    "prescore": 3.0,
    "headline": "Kassio Nunes manda investigar conteúdo de canal de Janones pró-Lula após censura ser derrubada",
    "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O presidente do TSE (Tribunal Super Eleitoral), Kássio Nunes Marques, determinou neste domingo (11) que a Assessoria de Enfrentamento à Desinformação do órgão investigue o conteúdo publicado no canal de WhatsApp \"Exército do Lula \", administrado pelo deputado federal André Janones (Rede-MG). Leia mais (10/12/2026 - 10h24)",
+   "summary": "O presidente do TSE (Tribunal Super Eleitoral), Kassio Nunes Marques, determinou neste domingo (11) que a Assessoria de Enfrentamento à Desinformação do órgão investigue o conteúdo publicado no canal de WhatsApp \"Exército do Lula \", administrado pelo deputado federal André Janones (Rede-MG). Leia mais (10/12/2026 - 10h24)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13643,6 +13710,237 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "89b911840e77",
+   "title": "Law Firm DLA Piper Hires Latham Team to Expand Private Credit Group",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/law-firm-dla-piper-hires-latham-team-to-expand-private-credit-group",
+   "published": "2026-10-12T14:08:18+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-12/law-firm-dla-piper-hires-latham-team-to-expand-private-credit-group",
+     "title": "Law Firm DLA Piper Hires Latham Team to Expand Private Credit Group"
+    }
+   ],
+   "ids": [
+    "89b911840e77"
+   ],
+   "snippet": "DLA Piper is hiring three senior lawyers from Latham & Watkins to join its growing capital solutions business as it continues an aggressive push into the private credit market.",
+   "prescore": 2.8,
+   "headline": "Law Firm DLA Piper Hires Latham Team to Expand Private Credit Group",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "DLA Piper is hiring three senior lawyers from Latham & Watkins to join its growing capital solutions business as it continues an aggressive push into the private credit market.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9588cbbc2ed4",
+   "title": "(USD:UGX) Uganda Shilling Turns Worst Currency as Investors Sour on Local Debt",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/-usd-ugx-uganda-shilling-turns-worst-currency-as-investors-sour-on-local-debt",
+   "published": "2026-10-12T14:02:10+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-12/-usd-ugx-uganda-shilling-turns-worst-currency-as-investors-sour-on-local-debt",
+     "title": "(USD:UGX) Uganda Shilling Turns Worst Currency as Investors Sour on Local Debt"
+    }
+   ],
+   "ids": [
+    "9588cbbc2ed4"
+   ],
+   "snippet": "Uganda’s shilling is bearing the brunt of rising US yields and foreign-investor selling as offshore holders trim their exposure to local-currency bonds.",
+   "prescore": 2.8,
+   "headline": "(USD:UGX) Uganda Shilling Turns Worst Currency as Investors Sour on Local Debt",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Uganda’s shilling is bearing the brunt of rising US yields and foreign-investor selling as offshore holders trim their exposure to local-currency bonds.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5285025c29ed",
+   "title": "Festival do Rio premia 'A margem do rio', que retrata fundamentalismo religioso, e doc sobre Elza Soares",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMzl1eEVrMzVGWkVIZXhDSnFTX29QVkJkUEMwcmZwaXFqbHMyaHY1UUQxTmVFM0FvMnRrX0NlU2JaZ3lmeUoxaUQ4alpHbGJzX3U4RnkzWDl2VTRoRkV0WTN0NDNVUlBVNlA4N2JuVFlmd3RCdzVHZDVVRWtzMjdjZEZ0Vk9jTlY2V2pLOGVBX096UEV4MlgzSVNTelJCclFFU1J0UkM0TnFjN0JDUmplRlNsY1ZBNm0zTF9RcmhsT0FkOHE5TXphazI4WmNuMHBHT2V3S3BzQ1dWV0xZQ0N4bWNFZlBTRnJNWUHSAfgBQVVfeXFMUG1GN1NMbDYyaEdCcUM3RlExdkJNOV9mN241TDRiX0UtSUVWM2V6bG9RT3hVbU9rVVFoLVRqSU9FUy1QWXdnZHZ1SkREQ184ak0tck9NbXU1TjEtM0pYTzRJZTVzQ0llMXFOV2ZQUG43ZHJacDQ2amsxWmdNZGxzMzZSTjJqVnhVUzQ4ODJjU3BOLVRZbWIxVDBhQmFSLXVkOG9tdWJmclVudVpoMUQxVGhENlVtWC1tcEMzZTdOOTBSTUoxckpkb0ZuclFwWTZqY0NvN0JudEk5UVNWRHcxVU1GaFVWM3BLZktRQXI3djFvZng5ZmpZLVU?oc=5",
+   "published": "2026-10-12T14:01:58+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMzl1eEVrMzVGWkVIZXhDSnFTX29QVkJkUEMwcmZwaXFqbHMyaHY1UUQxTmVFM0FvMnRrX0NlU2JaZ3lmeUoxaUQ4alpHbGJzX3U4RnkzWDl2VTRoRkV0WTN0NDNVUlBVNlA4N2JuVFlmd3RCdzVHZDVVRWtzMjdjZEZ0Vk9jTlY2V2pLOGVBX096UEV4MlgzSVNTelJCclFFU1J0UkM0TnFjN0JDUmplRlNsY1ZBNm0zTF9RcmhsT0FkOHE5TXphazI4WmNuMHBHT2V3S3BzQ1dWV0xZQ0N4bWNFZlBTRnJNWUHSAfgBQVVfeXFMUG1GN1NMbDYyaEdCcUM3RlExdkJNOV9mN241TDRiX0UtSUVWM2V6bG9RT3hVbU9rVVFoLVRqSU9FUy1QWXdnZHZ1SkREQ184ak0tck9NbXU1TjEtM0pYTzRJZTVzQ0llMXFOV2ZQUG43ZHJacDQ2amsxWmdNZGxzMzZSTjJqVnhVUzQ4ODJjU3BOLVRZbWIxVDBhQmFSLXVkOG9tdWJmclVudVpoMUQxVGhENlVtWC1tcEMzZTdOOTBSTUoxckpkb0ZuclFwWTZqY0NvN0JudEk5UVNWRHcxVU1GaFVWM3BLZktRQXI3djFvZng5ZmpZLVU?oc=5",
+     "title": "Festival do Rio premia 'A margem do rio', que retrata fundamentalismo religioso, e doc sobre Elza Soares"
+    }
+   ],
+   "ids": [
+    "5285025c29ed"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Festival do Rio premia 'A margem do rio', que retrata fundamentalismo religioso, e doc sobre Elza Soares",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d8da3bf767eb",
+   "title": "Nova crise no TSE gera insatisfação, opõe Lula e Flávio Bolsonaro e será discutida no lugar certo, o plenário",
+   "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/10/12/nova-crise-no-tse-gera-insatisfacao-opoe-lula-e-flavio-bolsonaro-e-sera-discutida-no-lugar-certo-o-plenario.ghtml",
+   "published": "2026-10-12T13:55:42+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/10/12/nova-crise-no-tse-gera-insatisfacao-opoe-lula-e-flavio-bolsonaro-e-sera-discutida-no-lugar-certo-o-plenario.ghtml",
+     "title": "Nova crise no TSE gera insatisfação, opõe Lula e Flávio Bolsonaro e será discutida no lugar certo, o plenário"
+    }
+   ],
+   "ids": [
+    "d8da3bf767eb"
+   ],
+   "snippet": "Corregedor do TSE libera canal 'Exército do Lula' e suspende decisão de Nunes Marques A nova tensão no Tribunal Superior Eleitoral (TSE) será resolvida no local certo, o plenário da Corte. A expectativa é que ainda nesta semana o presidente do tribunal, Kassio Nunes Marques, leve ao plenário o pedido da campanha de Flávio Bolsonaro (PL) para derrubar o canal Exército do Lula, no WhatsApp. O canal organizado pelo deputado André Janones (Rede-MG) conta atualmente com mais de 3,7 milhões de integrantes. A decisão do presidente do TSE, de mandar retirar do ar o canal Exército do Lula, gerou questi",
+   "prescore": 2.8,
+   "headline": "Nova crise no TSE gera insatisfação, opõe Lula e Flávio Bolsonaro e será discutida no lugar certo, o plenário",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Corregedor do TSE libera canal 'Exército do Lula' e suspende decisão de Nunes Marques A nova tensão no Tribunal Superior Eleitoral (TSE) será resolvida no local certo, o plenário da Corte. A expectativa é que ainda nesta semana o presidente do tribunal, Kassio Nunes Marques, leve ao plenário o pedido da campanha de Flávio Bolsonaro (PL) para derrubar o canal Exército do Lula, no WhatsApp. O canal ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b8ebc5ed47c4",
+   "title": "Pakistan to Chair Global Borrowers Group Facing ‘Perfect Storm’",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/pakistan-to-chair-global-borrowers-group-facing-perfect-storm",
+   "published": "2026-10-12T13:43:14+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-12/pakistan-to-chair-global-borrowers-group-facing-perfect-storm",
+     "title": "Pakistan to Chair Global Borrowers Group Facing ‘Perfect Storm’"
+    }
+   ],
+   "ids": [
+    "b8ebc5ed47c4"
+   ],
+   "snippet": "A newly formed borrowers’ collective of developing countries elected Pakistan to chair it as the group faced what United Nations Secretary-General António Guterres called “a perfect storm.”",
+   "prescore": 2.8,
+   "headline": "Pakistan to Chair Global Borrowers Group Facing ‘Perfect Storm’",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A newly formed borrowers’ collective of developing countries elected Pakistan to chair it as the group faced what United Nations Secretary-General António Guterres called “a perfect storm.”",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "62ae7b43a976",
+   "title": "Congo to Demand Franc Payments to Boost Currency, Investment",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/congo-to-demand-franc-payments-to-boost-currency-investment",
+   "published": "2026-10-12T13:40:19+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-12/congo-to-demand-franc-payments-to-boost-currency-investment",
+     "title": "Congo to Demand Franc Payments to Boost Currency, Investment"
+    }
+   ],
+   "ids": [
+    "62ae7b43a976"
+   ],
+   "snippet": "Democratic Republic of Congo’s central bank will soon require a range of payments to be made in francs instead of dollars — including to mining subcontractors — to strengthen the local currency and encourage domestic investment, Governor Andre Wameso said.",
+   "prescore": 2.8,
+   "headline": "Congo to Demand Franc Payments to Boost Currency, Investment",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Democratic Republic of Congo’s central bank will soon require a range of payments to be made in francs instead of dollars — including to mining subcontractors — to strengthen the local currency and encourage domestic investment, Governor Andre Wameso said.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ead290beab8a",
+   "title": "IA sustenta crescimento global de 3%, mas traz grandes transformações, diz FMI",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZm5KcXFncTZpUlQxQ0w5QTNwSjc4bnBxUVdqejJka190MXcxRXA5V3FnUHNGY1BwNjZHaHVtLXN5OTd5RGNIYzYzQ3F2OVBSVVRSdW04T1gtal96YU9MRzZoTEVtcjJNcWlxYjBMbTBoaFhYSkVkSkl2MzlFRldjZ1FMN09DVUN4djlvSHRTR0FVU0ZSQm5JRzFpa3hhQnVGbWpIZmhud2o2YjU1a3V3djc1TzlabTRKOTk0QzVRWUV4c05jc0FvWThfdjRMaTZVTENJ0gHiAUFVX3lxTE1jc3dVUjBZX3NLMXhNZnV4QU1WYlg3ZXUtdHdqZTh4a05KNEt2MXZ6Vk1oQV9zNG5TQ2lmNFlsc3R0MUliQjFwb0UyMnhxY2VPRzV6OGlHcDNmdE5yRzdrNXczdi10X3RmZG1OWEt3TDJKMEtxNzBCbExPMllXZ1VCVG5xNF9XdnE1RGJxVDNvd3dtSXA1QkFGZVdCcE9jd3RhSFh3X200MmM1M3FTMlV6OTdjdmc3eC1jb3g1Q3pRckJkVUFCR3BUdmZTam5TUkJCQ3gtRGM3bk10U0U5ZW40cnc?oc=5",
+   "published": "2026-10-12T13:04:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZm5KcXFncTZpUlQxQ0w5QTNwSjc4bnBxUVdqejJka190MXcxRXA5V3FnUHNGY1BwNjZHaHVtLXN5OTd5RGNIYzYzQ3F2OVBSVVRSdW04T1gtal96YU9MRzZoTEVtcjJNcWlxYjBMbTBoaFhYSkVkSkl2MzlFRldjZ1FMN09DVUN4djlvSHRTR0FVU0ZSQm5JRzFpa3hhQnVGbWpIZmhud2o2YjU1a3V3djc1TzlabTRKOTk0QzVRWUV4c05jc0FvWThfdjRMaTZVTENJ0gHiAUFVX3lxTE1jc3dVUjBZX3NLMXhNZnV4QU1WYlg3ZXUtdHdqZTh4a05KNEt2MXZ6Vk1oQV9zNG5TQ2lmNFlsc3R0MUliQjFwb0UyMnhxY2VPRzV6OGlHcDNmdE5yRzdrNXczdi10X3RmZG1OWEt3TDJKMEtxNzBCbExPMllXZ1VCVG5xNF9XdnE1RGJxVDNvd3dtSXA1QkFGZVdCcE9jd3RhSFh3X200MmM1M3FTMlV6OTdjdmc3eC1jb3g1Q3pRckJkVUFCR3BUdmZTam5TUkJCQ3gtRGM3bk10U0U5ZW40cnc?oc=5",
+     "title": "IA sustenta crescimento global de 3%, mas traz grandes transformações, diz FMI"
+    }
+   ],
+   "ids": [
+    "ead290beab8a"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "IA sustenta crescimento global de 3%, mas traz grandes transformações, diz FMI",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "7d314d212766",
@@ -14107,72 +14405,6 @@
    "ai": false
   },
   {
-   "id": "43459b76d5c8",
-   "title": "HSBC Moves to Wall Street Bonus Model",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-12/hsbc-moves-to-wall-street-bonus-model-video",
-   "published": "2026-10-12T11:04:08+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-10-12/hsbc-moves-to-wall-street-bonus-model-video",
-     "title": "HSBC Moves to Wall Street Bonus Model"
-    }
-   ],
-   "ids": [
-    "43459b76d5c8"
-   ],
-   "snippet": "HSBC will phase out fixed-pay allowances for its senior staff and instead hand out a greater proportion of its compensation in the form of bonuses, becoming the latest UK lender to switch to Wall Street-style remuneration to better align with performance. Bloomberg's finance reporter, Harry Wilson, reports on The Pulse. (Source: Bloomberg)",
-   "prescore": 2.8,
-   "headline": "HSBC Moves to Wall Street Bonus Model",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "HSBC will phase out fixed-pay allowances for its senior staff and instead hand out a greater proportion of its compensation in the form of bonuses, becoming the latest UK lender to switch to Wall Street-style remuneration to better align with performance. Bloomberg's finance reporter, Harry Wilson, reports on The Pulse. (Source: Bloomberg)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "faeb30c8e330",
-   "title": "Saudis Say New Missiles Intercepted After Deadly Airport Attacks",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-12/the-opening-trade-10-12-2026-video",
-   "published": "2026-10-12T11:01:40+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-10-12/the-opening-trade-10-12-2026-video",
-     "title": "Saudis Say New Missiles Intercepted After Deadly Airport Attacks"
-    }
-   ],
-   "ids": [
-    "faeb30c8e330"
-   ],
-   "snippet": "US stock futures rose modestly as traders weighed the prospect of solid results in a busy week for corporate earnings against the risk of escalating tensions in the Middle East. The Saudi-led military coalition fighting the Houthis said it intercepted missiles and drones aimed at the kingdom overnight, including areas that are home to some of Saudi Arabia’s key oil and gas facilities. Over the weekend, Saudi Arabia suffered its deadliest strikes since the Iran war began as Houthi militants repeatedly targeted airports across the kingdom, killing at least 14 people and wounding hundreds. The Op",
-   "prescore": 2.8,
-   "headline": "Saudis Say New Missiles Intercepted After Deadly Airport Attacks",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "US stock futures rose modestly as traders weighed the prospect of solid results in a busy week for corporate earnings against the risk of escalating tensions in the Middle East. The Saudi-led military coalition fighting the Houthis said it intercepted missiles and drones aimed at the kingdom overnight, including areas that are home to some of Saudi Arabia’s key oil and gas facilities. Over the wee",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "131e974dfc94",
    "title": "Queda do dólar: Veja 4 ações que podem ganhar com o real mais forte",
    "link": "https://www.moneytimes.com.br/queda-do-dolar-4-acoes-que-podem-ganhar-com-real-mais-forte-mlem/",
@@ -14206,25 +14438,223 @@
    "ai": false
   },
   {
-   "id": "9df91fbc80f5",
-   "title": "Anthropic AI Model Went Rogue, Submitted Fake Unsolved Murder Tip",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdC1Yb1VaRzVmWnNoRmpLRFF4cWtUZXNyMjYtVzItMEJIYWhGWUpsUXRtWEJmaDVpZ1lGSXE3WGFYWU94cUFwcTRZZnQzVFBsaktQVjQ3WmJMMFVyQnlTS3NtUEMzVkY1WmNoU1dmdW1LWVB5YXJ1amROdEVIWVRhSFNLdldjVkMwcVRjaHJoOGVwVFBDbmxCdHlqTGIwc2px?oc=5",
-   "published": "2026-10-12T13:18:58+00:00",
+   "id": "39fd562c2c0c",
+   "title": "Print Edition | Wall Street Journal",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55QndMUGdzUGNQdGdlcFRmSlNZcmh4Vmx0Y2dmYmNLLWZjUWJ1Tm1DSmJLclViVEZFSXF3bkJRMURTRGtEZnZ0YUF1YTBaXzJrZmZwQ2Qyb0ZZU1NMUk5ERXpn?oc=5",
+   "published": "2026-10-12T14:13:10+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdC1Yb1VaRzVmWnNoRmpLRFF4cWtUZXNyMjYtVzItMEJIYWhGWUpsUXRtWEJmaDVpZ1lGSXE3WGFYWU94cUFwcTRZZnQzVFBsaktQVjQ3WmJMMFVyQnlTS3NtUEMzVkY1WmNoU1dmdW1LWVB5YXJ1amROdEVIWVRhSFNLdldjVkMwcVRjaHJoOGVwVFBDbmxCdHlqTGIwc2px?oc=5",
-     "title": "Anthropic AI Model Went Rogue, Submitted Fake Unsolved Murder Tip"
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55QndMUGdzUGNQdGdlcFRmSlNZcmh4Vmx0Y2dmYmNLLWZjUWJ1Tm1DSmJLclViVEZFSXF3bkJRMURTRGtEZnZ0YUF1YTBaXzJrZmZwQ2Qyb0ZZU1NMUk5ERXpn?oc=5",
+     "title": "Print Edition | Wall Street Journal"
     }
    ],
    "ids": [
-    "9df91fbc80f5"
+    "39fd562c2c0c"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Anthropic AI Model Went Rogue, Submitted Fake Unsolved Murder Tip",
-   "category": "tech",
+   "headline": "Print Edition | Wall Street Journal",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b82ead2af1ca",
+   "title": "Video Cameras Are Everywhere—and Now They Are Being Hacked for War",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ1ZOekFxajFMUEhZeUZQeEg2R3JmMkNDaFJIbGdUeG1pelc5Vlh4d2pZNDYyaVV3VmVQNjJBakM5QTdoLWppTjM3cmNZanV0czZuVENLeWljMHVfNHlWZ1hEZ285VmM1OG8yZVdwS1R4N3BVcWUteUVTQXRVZkRVV2I4SDM4Wm8?oc=5",
+   "published": "2026-10-12T14:11:11+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ1ZOekFxajFMUEhZeUZQeEg2R3JmMkNDaFJIbGdUeG1pelc5Vlh4d2pZNDYyaVV3VmVQNjJBakM5QTdoLWppTjM3cmNZanV0czZuVENLeWljMHVfNHlWZ1hEZ285VmM1OG8yZVdwS1R4N3BVcWUteUVTQXRVZkRVV2I4SDM4Wm8?oc=5",
+     "title": "Video Cameras Are Everywhere—and Now They Are Being Hacked for War"
+    }
+   ],
+   "ids": [
+    "b82ead2af1ca"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Video Cameras Are Everywhere—and Now They Are Being Hacked for War",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "57277c1f8baa",
+   "title": "The Conspiracy Probe of Trump Foes Is Faltering",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRUlYSlZTb1RNUm9wLTdVQlhYUTJBSVNiaWxZa3J0VGc3Z0owMzJhOU5Ta1hRWnYzb2R6LS1XeVFjNmw3VFN6OFJTTGVNTEhOMFI0aE5LcXJmQmFaSjhRSzdOTVRhMDZEU0ZjVmJwYmV1MDdJR1RWX3Bld1lLTm94aG04YnhVaW1ZbWlV?oc=5",
+   "published": "2026-10-12T13:41:18+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRUlYSlZTb1RNUm9wLTdVQlhYUTJBSVNiaWxZa3J0VGc3Z0owMzJhOU5Ta1hRWnYzb2R6LS1XeVFjNmw3VFN6OFJTTGVNTEhOMFI0aE5LcXJmQmFaSjhRSzdOTVRhMDZEU0ZjVmJwYmV1MDdJR1RWX3Bld1lLTm94aG04YnhVaW1ZbWlV?oc=5",
+     "title": "The Conspiracy Probe of Trump Foes Is Faltering"
+    }
+   ],
+   "ids": [
+    "57277c1f8baa"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "The Conspiracy Probe of Trump Foes Is Faltering",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "62c6e6597fbe",
+   "title": "Exclusive | Former Morgan Stanley CEO Lists Converted N.Y.C. Carriage House for $80 Million",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcHNiT1VoT1Nkeno5VGZFUVdJSnZydWxzZG5DZUJFUk03QmpqOFYzbGE3Z2xULTk5RkNmaHVJMUs0M2RmY3dMZVFwU3lvUzNGRUsteXhXa0hxRWJuSFVRWi1sRk9TZnNWaGtzak1lME0zZTZYeUxPMTRMVGE0bmtzeVdORndVVFk5OHh1dVVSU0ZjUEVIaWF3?oc=5",
+   "published": "2026-10-12T13:40:11+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcHNiT1VoT1Nkeno5VGZFUVdJSnZydWxzZG5DZUJFUk03QmpqOFYzbGE3Z2xULTk5RkNmaHVJMUs0M2RmY3dMZVFwU3lvUzNGRUsteXhXa0hxRWJuSFVRWi1sRk9TZnNWaGtzak1lME0zZTZYeUxPMTRMVGE0bmtzeVdORndVVFk5OHh1dVVSU0ZjUEVIaWF3?oc=5",
+     "title": "Exclusive | Former Morgan Stanley CEO Lists Converted N.Y.C. Carriage House for $80 Million"
+    }
+   ],
+   "ids": [
+    "62c6e6597fbe"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Exclusive | Former Morgan Stanley CEO Lists Converted N.Y.C. Carriage House for $80 Million",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f1ac331b7208",
+   "title": "At Least 12 Killed, Hundreds Injured at Saudi Airport in Houthi Strikes",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOY3A1N0dSaEowdHRsQm11d1EzUnJneHRRYWRYa2NWU0ZfeUgwOUNzMHpNN2dVWFJQeVRZRDdYTTJ5YUtwX2YwUEprdWowUW1hYXplbjlsbnBuaTk1RUc3ZnBseDgyMFI2Q09BNllMRXVUWm52RXQ1R3ViSEZpZW1OOWlqenhMSDlPMXY2NWVzOEpHTkctQld3WWJaNVh0M05rdUhTQlBCNGl2SXVqR29UbkVNMm8wR00?oc=5",
+   "published": "2026-10-12T13:38:40+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOY3A1N0dSaEowdHRsQm11d1EzUnJneHRRYWRYa2NWU0ZfeUgwOUNzMHpNN2dVWFJQeVRZRDdYTTJ5YUtwX2YwUEprdWowUW1hYXplbjlsbnBuaTk1RUc3ZnBseDgyMFI2Q09BNllMRXVUWm52RXQ1R3ViSEZpZW1OOWlqenhMSDlPMXY2NWVzOEpHTkctQld3WWJaNVh0M05rdUhTQlBCNGl2SXVqR29UbkVNMm8wR00?oc=5",
+     "title": "At Least 12 Killed, Hundreds Injured at Saudi Airport in Houthi Strikes"
+    }
+   ],
+   "ids": [
+    "f1ac331b7208"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "At Least 12 Killed, Hundreds Injured at Saudi Airport in Houthi Strikes",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8ccc87884eab",
+   "title": "Nato’s supreme commander warns Moscow against attacks in Europe",
+   "link": "https://www.ft.com/content/da71c823-ca31-4eaa-8e6e-6baacea986a4?syn-25a6b1a6=1",
+   "published": "2026-10-12T13:34:54+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/da71c823-ca31-4eaa-8e6e-6baacea986a4?syn-25a6b1a6=1",
+     "title": "Nato’s supreme commander warns Moscow against attacks in Europe"
+    }
+   ],
+   "ids": [
+    "8ccc87884eab"
+   ],
+   "snippet": "Alexus Grynkewich says Russia’s ‘hybrid’ war is unsettling even if conflict is not imminent",
+   "prescore": 2.6,
+   "headline": "Nato’s supreme commander warns Moscow against attacks in Europe",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Alexus Grynkewich says Russia’s ‘hybrid’ war is unsettling even if conflict is not imminent",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "dba3d38f060e",
+   "title": "EU to Cap Chinese Hybrid-Vehicle Imports at 350,000 Units Annually, Official Says",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObHVEUHhqelFyWUQwZ2xCOWViUnBFeFQtSmJ6a29IUHo4eDZ1Wm9aZUtXcVhtU2Z4dGNHUlB0aGw1SFJ5ZUdYcXhoUjZ6TnFRUV9GaEdLZkdfOXhmY1c3djZJR2hxS2hXaUN1clI2X09TVzVZaENKUHFGXzd4STRaclN4TGZyR1pab1EyN19DbmpMREJ0Y1p0VTJnYjJRTnp2UndHMzRIaVRlUVJGWmxxMklvOW5fMWpSd1E?oc=5",
+   "published": "2026-10-12T12:38:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObHVEUHhqelFyWUQwZ2xCOWViUnBFeFQtSmJ6a29IUHo4eDZ1Wm9aZUtXcVhtU2Z4dGNHUlB0aGw1SFJ5ZUdYcXhoUjZ6TnFRUV9GaEdLZkdfOXhmY1c3djZJR2hxS2hXaUN1clI2X09TVzVZaENKUHFGXzd4STRaclN4TGZyR1pab1EyN19DbmpMREJ0Y1p0VTJnYjJRTnp2UndHMzRIaVRlUVJGWmxxMklvOW5fMWpSd1E?oc=5",
+     "title": "EU to Cap Chinese Hybrid-Vehicle Imports at 350,000 Units Annually, Official Says"
+    }
+   ],
+   "ids": [
+    "dba3d38f060e"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "EU to Cap Chinese Hybrid-Vehicle Imports at 350,000 Units Annually, Official Says",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -14305,24 +14735,24 @@
    "ai": false
   },
   {
-   "id": "5115a69a6d2d",
-   "title": "Planning for College Aid? The Federal Student-Loan Rules Just Changed",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYm40U3B1SU01S3pfTXdoZG5Zb1JGQ2VGamJ3cUJvT05mVm5STVBGaG1KbXpKbFZHOXNjNThHOXNKcF9vbmU1dzN2UFVoU2VySm1LbFZyMDJ2TXhTYTJUZVVzcy1tX25nSDRHNXh3clhoOU5RdDBVbWQxLW5oZG1mV1hJZWMwM0tX?oc=5",
-   "published": "2026-10-12T12:13:23+00:00",
+   "id": "459c1e17feb3",
+   "title": "The New Youth Vote",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYcC02WXV3YjdlVVJlc3FVeW1Pc0k0Y0Juc2diUUNlRVozc2F6bFdWWTduNW00NENUM1ZkNmlBNllwT3RxRGloZjFDSk1ZSnFQZXI1OEtIQlo5R2JnMWt2WWw2ZFVRZEpfM2k4Z0lrQ2VNVmRZ?oc=5",
+   "published": "2026-10-12T11:08:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYm40U3B1SU01S3pfTXdoZG5Zb1JGQ2VGamJ3cUJvT05mVm5STVBGaG1KbXpKbFZHOXNjNThHOXNKcF9vbmU1dzN2UFVoU2VySm1LbFZyMDJ2TXhTYTJUZVVzcy1tX25nSDRHNXh3clhoOU5RdDBVbWQxLW5oZG1mV1hJZWMwM0tX?oc=5",
-     "title": "Planning for College Aid? The Federal Student-Loan Rules Just Changed"
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYcC02WXV3YjdlVVJlc3FVeW1Pc0k0Y0Juc2diUUNlRVozc2F6bFdWWTduNW00NENUM1ZkNmlBNllwT3RxRGloZjFDSk1ZSnFQZXI1OEtIQlo5R2JnMWt2WWw2ZFVRZEpfM2k4Z0lrQ2VNVmRZ?oc=5",
+     "title": "The New Youth Vote"
     }
    ],
    "ids": [
-    "5115a69a6d2d"
+    "459c1e17feb3"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Planning for College Aid? The Federal Student-Loan Rules Just Changed",
+   "headline": "The New Youth Vote",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -14338,25 +14768,25 @@
    "ai": false
   },
   {
-   "id": "39fd562c2c0c",
-   "title": "Print Edition | Wall Street Journal",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55QndMUGdzUGNQdGdlcFRmSlNZcmh4Vmx0Y2dmYmNLLWZjUWJ1Tm1DSmJLclViVEZFSXF3bkJRMURTRGtEZnZ0YUF1YTBaXzJrZmZwQ2Qyb0ZZU1NMUk5ERXpn?oc=5",
-   "published": "2026-10-12T11:12:56+00:00",
+   "id": "7c60fb0f64f3",
+   "title": "CFOs’ Key Partners For AI Transformation, According to BCG",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMUZSVUhtcWFPN0pUV1dydExmSWt4M0ZyMkxyUGhOdHEySEhjSzJhSEhNZlFTeGFOdkVBQ2lEVDlFdjVYNjNiRlIwY2h4WTdCeTMza19CVEFEelZOTUExaFNWem5KeWxrNE9CWHFjVjA1YTdBT3JZWnFPdEFiWUEwbkw0WEhRMUJFNTZrMUtORHJZM2tqNmNmU0ZVUGU1QQ?oc=5",
+   "published": "2026-10-12T11:02:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55QndMUGdzUGNQdGdlcFRmSlNZcmh4Vmx0Y2dmYmNLLWZjUWJ1Tm1DSmJLclViVEZFSXF3bkJRMURTRGtEZnZ0YUF1YTBaXzJrZmZwQ2Qyb0ZZU1NMUk5ERXpn?oc=5",
-     "title": "Print Edition | Wall Street Journal"
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMUZSVUhtcWFPN0pUV1dydExmSWt4M0ZyMkxyUGhOdHEySEhjSzJhSEhNZlFTeGFOdkVBQ2lEVDlFdjVYNjNiRlIwY2h4WTdCeTMza19CVEFEelZOTUExaFNWem5KeWxrNE9CWHFjVjA1YTdBT3JZWnFPdEFiWUEwbkw0WEhRMUJFNTZrMUtORHJZM2tqNmNmU0ZVUGU1QQ?oc=5",
+     "title": "CFOs’ Key Partners For AI Transformation, According to BCG"
     }
    ],
    "ids": [
-    "39fd562c2c0c"
+    "7c60fb0f64f3"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Print Edition | Wall Street Journal",
-   "category": "internacional",
+   "headline": "CFOs’ Key Partners For AI Transformation, According to BCG",
+   "category": "tech",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -14437,6 +14867,105 @@
    "ai": false
   },
   {
+   "id": "407e15b885c2",
+   "title": "BlindPay contrata ex-líder da Oracle e amplia operação em stablecoins",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQLUE2MHpLM3FvWUZ5OEx3M3FfM2VINFRkTHlDcUVHa1B0d3pqX2NFUUV5akR4bFhjWUJsbEVXSmlXVnJraGhvcURBUFVZYmNMZDFFT3p2S1EzcWJBSUJWSndzRzNkYmtvTFhNTFBjazNaSU5abkdsMnUzTm1UMHRkMmFwdTcwQklOdmVIRGNHYkM?oc=5",
+   "published": "2026-10-12T14:00:09+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "BitNotícias",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQLUE2MHpLM3FvWUZ5OEx3M3FfM2VINFRkTHlDcUVHa1B0d3pqX2NFUUV5akR4bFhjWUJsbEVXSmlXVnJraGhvcURBUFVZYmNMZDFFT3p2S1EzcWJBSUJWSndzRzNkYmtvTFhNTFBjazNaSU5abkdsMnUzTm1UMHRkMmFwdTcwQklOdmVIRGNHYkM?oc=5",
+     "title": "BlindPay contrata ex-líder da Oracle e amplia operação em stablecoins"
+    }
+   ],
+   "ids": [
+    "407e15b885c2"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "BlindPay contrata ex-líder da Oracle e amplia operação em stablecoins",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e95399d602a2",
+   "title": "Flávio Bolsonaro Authorized to Visit Father by Court Before Vote",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/flavio-bolsonaro-authorized-to-visit-father-by-court-before-vote",
+   "published": "2026-10-12T13:58:17+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-12/flavio-bolsonaro-authorized-to-visit-father-by-court-before-vote",
+     "title": "Flávio Bolsonaro Authorized to Visit Father by Court Before Vote"
+    }
+   ],
+   "ids": [
+    "e95399d602a2"
+   ],
+   "snippet": "Brazil Supreme Court Justice Alexandre de Moraes has authorized Senator Flávio Bolsonaro to visit his father and former President Jair Bolsonaro who’s under house arrest less than two weeks before the presidential runoff.",
+   "prescore": 2.4,
+   "headline": "Flávio Bolsonaro Authorized to Visit Father by Court Before Vote",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Brazil Supreme Court Justice Alexandre de Moraes has authorized Senator Flávio Bolsonaro to visit his father and former President Jair Bolsonaro who’s under house arrest less than two weeks before the presidential runoff.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "2335840c1aea",
+   "title": "NATO Military Chief Lauds Ukraine, Lays Out Russia Strategy",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/nato-military-chief-lauds-ukraine-lays-out-russia-strategy",
+   "published": "2026-10-12T13:52:38+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-12/nato-military-chief-lauds-ukraine-lays-out-russia-strategy",
+     "title": "NATO Military Chief Lauds Ukraine, Lays Out Russia Strategy"
+    }
+   ],
+   "ids": [
+    "2335840c1aea"
+   ],
+   "snippet": "NATO’s top military commander, General Alexus Grynkewich, heaped praise on Ukraine and tempered fears of imminent conflict with Russia, laying out how the alliance would approach an attack on the east amid heightened tensions.",
+   "prescore": 2.4,
+   "headline": "NATO Military Chief Lauds Ukraine, Lays Out Russia Strategy",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "NATO’s top military commander, General Alexus Grynkewich, heaped praise on Ukraine and tempered fears of imminent conflict with Russia, laying out how the alliance would approach an attack on the east amid heightened tensions.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d20c29220a91",
    "title": "Can Gavin Newsom Unite the Democratic Party?",
    "link": "https://www.bloomberg.com/news/videos/2026-10-12/opinion-can-newsom-unite-the-democratic-party-video",
@@ -14471,7 +15000,7 @@
   },
   {
    "id": "a40ade3b6a10",
-   "title": "Federal Agents Search Representative Omar’s Washington-Area Home",
+   "title": "Federal Agents Search Representative Ilhan Omar’s Home",
    "link": "https://www.bloomberg.com/news/articles/2026-10-12/federal-agents-search-representative-omar-s-washington-area-home",
    "published": "2026-10-12T12:58:26+00:00",
    "region": "INTL",
@@ -14479,19 +15008,19 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-10-12/federal-agents-search-representative-omar-s-washington-area-home",
-     "title": "Federal Agents Search Representative Omar’s Washington-Area Home"
+     "title": "Federal Agents Search Representative Ilhan Omar’s Home"
     }
    ],
    "ids": [
     "a40ade3b6a10"
    ],
-   "snippet": "Federal agents searched Representative Ilhan Omar’s Washington-area home on Monday, an escalation in the Trump administration’s scrutiny of the Minnesota Democrat, according to a person familiar with the matter.",
+   "snippet": "Federal agents searched Representative Ilhan Omar’s Washington-area home in an escalation in the Trump administration’s scrutiny of the Minnesota Democrat, according to a person familiar with the matter.",
    "prescore": 2.4,
-   "headline": "Federal Agents Search Representative Omar’s Washington-Area Home",
+   "headline": "Federal Agents Search Representative Ilhan Omar’s Home",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Federal agents searched Representative Ilhan Omar’s Washington-area home on Monday, an escalation in the Trump administration’s scrutiny of the Minnesota Democrat, according to a person familiar with the matter.",
+   "summary": "Federal agents searched Representative Ilhan Omar’s Washington-area home in an escalation in the Trump administration’s scrutiny of the Minnesota Democrat, according to a person familiar with the matter.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14834,7 +15363,7 @@
   },
   {
    "id": "d6002dbdf9eb",
-   "title": "Businesses Risk Wave of Democratic Probes on Costs, Corruption",
+   "title": "Democrats, Eyeing Control, Lay Grounds for Post-Election Probes",
    "link": "https://www.bloomberg.com/news/articles/2026-10-12/businesses-risk-wave-of-democratic-probes-on-costs-corruption",
    "published": "2026-10-12T11:00:00+00:00",
    "region": "INTL",
@@ -14842,7 +15371,7 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-10-12/businesses-risk-wave-of-democratic-probes-on-costs-corruption",
-     "title": "Businesses Risk Wave of Democratic Probes on Costs, Corruption"
+     "title": "Democrats, Eyeing Control, Lay Grounds for Post-Election Probes"
     }
    ],
    "ids": [
@@ -14850,11 +15379,143 @@
    ],
    "snippet": "Private businesses risk an onslaught of congressional investigations if Democrats prevail in midterm elections as the opposition party prepares to concentrate sweeping oversight powers on allegations of Trump administration corruption and public anger over the cost of living.",
    "prescore": 2.4,
-   "headline": "Businesses Risk Wave of Democratic Probes on Costs, Corruption",
+   "headline": "Democrats, Eyeing Control, Lay Grounds for Post-Election Probes",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Private businesses risk an onslaught of congressional investigations if Democrats prevail in midterm elections as the opposition party prepares to concentrate sweeping oversight powers on allegations of Trump administration corruption and public anger over the cost of living.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "43fcd676cc59",
+   "title": "Moraes autoriza Flávio a retomar vistas a Jair Bolsonaro",
+   "link": "https://www.infomoney.com.br/politica/moraes-autoriza-flavio-a-retomar-vistas-a-jair-bolsonaro/",
+   "published": "2026-10-12T14:04:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/politica/moraes-autoriza-flavio-a-retomar-vistas-a-jair-bolsonaro/",
+     "title": "Moraes autoriza Flávio a retomar vistas a Jair Bolsonaro"
+    }
+   ],
+   "ids": [
+    "43fcd676cc59"
+   ],
+   "snippet": "O ministro, no entanto, proibiu encontros com \"finalidade político eleitoral\" e a divulgação de quaisquer manifestos ou declarações do ex-chefe do Executivo sobre as eleições The post Moraes autoriza Flávio a retomar vistas a Jair Bolsonaro appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Moraes autoriza Flávio a retomar vistas a Jair Bolsonaro",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O ministro, no entanto, proibiu encontros com \"finalidade político eleitoral\" e a divulgação de quaisquer manifestos ou declarações do ex-chefe do Executivo sobre as eleições The post Moraes autoriza Flávio a retomar vistas a Jair Bolsonaro appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d67493b50acc",
+   "title": "TSE precisa de um presidente sem lado para lidar com a fervura da campanha presidencial",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYzdRbGpKTXZDTkZpa1hSUmFPQktYUFVCb0JEX1B0bXpRNDhNTGM2NkJlcTdKaWdTUEtGb0RST2dIOU1ULS1IWUFiSEZ0WER1dGdrYlloRm8tV0tMbm1oc2RNZFc0cUxLbTZsOU1SUFJTZDhud0c5SkRaVW5pdnZqQWl5eHpEaXQ1SWVXNjdSZHd4RlkyZjJpY3Nvbmswci1tbFBfU0hRLWFlcVVoWkRBNEdoMlVXbjA2WTRRSzRFRS1pS1I1UDZwWHp6b1B3dENUM2wwcHJEMNIB3AFBVV95cUxNR2o1Ym56U1VmWlkzdndwSnFpcHBVUWVtQnVaa3drVk52NjRBTGVQOXpXRlUtZnh2NDhNTE9fZER6UTJ1eF8yU0poWUNOUHNwMXhsS3RRQTdsSWJqRy1DX1VIVXZTUDJwQkxCay1nckhqeDc3YVlzUC1tV2NvMkRRTDVnZl9mY0ItNXV5dk1SdGhWN1I3bDJYMzZwb3UyR2M5WUNPb09rbXJuekJKQkJicG95bWRfcl9fcDRDZ1hrXzRiNVN6SkpMaEc5eGVQdjh2allsRXlsX2ZlREUw?oc=5",
+   "published": "2026-10-12T13:40:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYzdRbGpKTXZDTkZpa1hSUmFPQktYUFVCb0JEX1B0bXpRNDhNTGM2NkJlcTdKaWdTUEtGb0RST2dIOU1ULS1IWUFiSEZ0WER1dGdrYlloRm8tV0tMbm1oc2RNZFc0cUxLbTZsOU1SUFJTZDhud0c5SkRaVW5pdnZqQWl5eHpEaXQ1SWVXNjdSZHd4RlkyZjJpY3Nvbmswci1tbFBfU0hRLWFlcVVoWkRBNEdoMlVXbjA2WTRRSzRFRS1pS1I1UDZwWHp6b1B3dENUM2wwcHJEMNIB3AFBVV95cUxNR2o1Ym56U1VmWlkzdndwSnFpcHBVUWVtQnVaa3drVk52NjRBTGVQOXpXRlUtZnh2NDhNTE9fZER6UTJ1eF8yU0poWUNOUHNwMXhsS3RRQTdsSWJqRy1DX1VIVXZTUDJwQkxCay1nckhqeDc3YVlzUC1tV2NvMkRRTDVnZl9mY0ItNXV5dk1SdGhWN1I3bDJYMzZwb3UyR2M5WUNPb09rbXJuekJKQkJicG95bWRfcl9fcDRDZ1hrXzRiNVN6SkpMaEc5eGVQdjh2allsRXlsX2ZlREUw?oc=5",
+     "title": "TSE precisa de um presidente sem lado para lidar com a fervura da campanha presidencial"
+    }
+   ],
+   "ids": [
+    "d67493b50acc"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "TSE precisa de um presidente sem lado para lidar com a fervura da campanha presidencial",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f91499182574",
+   "title": "Bolsas de NY abrem perto da estabilidade, com balanços de bancos e CPI em foco",
+   "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-abrem-perto-da-estabilidade-com-balancos-de-bancos-e-cpi-em-foco/",
+   "published": "2026-10-12T13:37:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-abrem-perto-da-estabilidade-com-balancos-de-bancos-e-cpi-em-foco/",
+     "title": "Bolsas de NY abrem perto da estabilidade, com balanços de bancos e CPI em foco"
+    }
+   ],
+   "ids": [
+    "f91499182574"
+   ],
+   "snippet": "O feriado do Dia de Colombo, que mantém o mercado de Treasuries fechado hoje, deve reforçar a cautela dos investidores após uma semana de ganhos The post Bolsas de NY abrem perto da estabilidade, com balanços de bancos e CPI em foco appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Bolsas de NY abrem perto da estabilidade, com balanços de bancos e CPI em foco",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O feriado do Dia de Colombo, que mantém o mercado de Treasuries fechado hoje, deve reforçar a cautela dos investidores após uma semana de ganhos The post Bolsas de NY abrem perto da estabilidade, com balanços de bancos e CPI em foco appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "385a43704713",
+   "title": "Europa critica acordo de Trump com a Rússia sobre o diesel: ‘Não ajuda em nada'",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR2NoMlRJY1ItR29oalpQcUJiWFdEaEVNdTZQaWVSMHhnWTdVWjFfckJRUkE4cFlHeHZIVmE5S2ZqQWFGNHNyUngyOHl6UWdobTNwTzZoNUttUHNPaUcwVTU0Wmx6emE3SnlrZ0p6eGc1SXlNeXNHTjFFMjBmMHEtXzVQS0ExWlp5eFlfUnVLMlA5a2ZqdjNfTTJQV1AzSnNnVW5nUlN1UnU2T2JWLXdWaThtSlRkZldfRjJEZUhKOUloTk3SAdcBQVVfeXFMTU5vTHBKRVUyOUpTajQyVldfd2RVZGN1SjJLRFJzZVdUYVVvYjBBYURzdXNKQllJdVZpbHhzWVJjaVdhTkFCSTBSbG5XRFU2dVBTcUpfOUhXeFZndk9Ycm5PdjhFWk9QYjFVTGpyNVZwVGFZLTcxU1M2X2s5ZHdaNWdJTWNCU05BVEw2S1VqMzFQQldxaGV6UFZORDcxUEx1LWlnZWtXNnlYYkV0Q3VnOC1YYlpDelc0TEFXZ1o5Q1EydXZOd094U1U4QkRnQVNUd3BTb09hMEU?oc=5",
+   "published": "2026-10-12T13:35:59+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR2NoMlRJY1ItR29oalpQcUJiWFdEaEVNdTZQaWVSMHhnWTdVWjFfckJRUkE4cFlHeHZIVmE5S2ZqQWFGNHNyUngyOHl6UWdobTNwTzZoNUttUHNPaUcwVTU0Wmx6emE3SnlrZ0p6eGc1SXlNeXNHTjFFMjBmMHEtXzVQS0ExWlp5eFlfUnVLMlA5a2ZqdjNfTTJQV1AzSnNnVW5nUlN1UnU2T2JWLXdWaThtSlRkZldfRjJEZUhKOUloTk3SAdcBQVVfeXFMTU5vTHBKRVUyOUpTajQyVldfd2RVZGN1SjJLRFJzZVdUYVVvYjBBYURzdXNKQllJdVZpbHhzWVJjaVdhTkFCSTBSbG5XRFU2dVBTcUpfOUhXeFZndk9Ycm5PdjhFWk9QYjFVTGpyNVZwVGFZLTcxU1M2X2s5ZHdaNWdJTWNCU05BVEw2S1VqMzFQQldxaGV6UFZORDcxUEx1LWlnZWtXNnlYYkV0Q3VnOC1YYlpDelc0TEFXZ1o5Q1EydXZOd094U1U4QkRnQVNUd3BTb09hMEU?oc=5",
+     "title": "Europa critica acordo de Trump com a Rússia sobre o diesel: ‘Não ajuda em nada'"
+    }
+   ],
+   "ids": [
+    "385a43704713"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Europa critica acordo de Trump com a Rússia sobre o diesel: ‘Não ajuda em nada'",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14965,6 +15626,39 @@
    "ai": false
   },
   {
+   "id": "6f1346b08d44",
+   "title": "Ternium amplia investimentos na indústria brasileira",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUVh0aElJbHJQZDJvMUtQV05YZm5iOHJTMkRxWDY4SzRKY3Ffa0ZEMFVtc2g3bDZ1Qnk1Z1JNVGRIVzJNalBTX1NHT1FYSHE0Y2xlLWtEVTB0cDFhUm5Oa3hVUlN6VGtRb2F2LU1ORy10V2VobGU3THZOMkt6SEVRVzJrY05oWlE3NVdMbXQtVmNhbmYwWDBLMlBZRlBlZw?oc=5",
+   "published": "2026-10-12T13:14:17+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUVh0aElJbHJQZDJvMUtQV05YZm5iOHJTMkRxWDY4SzRKY3Ffa0ZEMFVtc2g3bDZ1Qnk1Z1JNVGRIVzJNalBTX1NHT1FYSHE0Y2xlLWtEVTB0cDFhUm5Oa3hVUlN6VGtRb2F2LU1ORy10V2VobGU3THZOMkt6SEVRVzJrY05oWlE3NVdMbXQtVmNhbmYwWDBLMlBZRlBlZw?oc=5",
+     "title": "Ternium amplia investimentos na indústria brasileira"
+    }
+   ],
+   "ids": [
+    "6f1346b08d44"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Ternium amplia investimentos na indústria brasileira",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "bbdc3784b1de",
    "title": "Split payment precisa de ajustes, mas revogação exigiria alternativa para preservar empresas",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZE9nNnBwQ3BWM050QlNHU2tFUTJFS3l2c3BacUZWbFRTT2g4aU5EYUVQM2dYT3VwaVI5NmNpTUpMSS16cXhwQUVxRDJUenVKZmhNZWV3czM3dkJTSFN4NG1pMi15UnF0ejRVUzV1OUNNOXF3NVNrMUFVZ0p3QUU5T09Lcml1QjZCMzFmZjlPUkpJMFZyeWdYek02ZDJEZ3h2aDRzTjVLVTJraGYtQjlRS2dLLXXSAboBQVVfeXFMTUgtTEZZdXpNU2JDamVFZHQ2WjVrUlFubE01NnJBSmtORHI5akV1ZElqNndOZWc0a3BlVk5QQ182aWIzdDdVc2ZPRUVvSEhFTlQ2cXJoTjQ1a1JuS2RxVVJRbXRnSEQySy1Lb1V3cm9HNGJYalFCdGNOakJEN2U2TWItSzJyTndnRW1hbmRIanFWMjhkOWhFeVZ1WjZfZkROMFVtWUFHWkthbnE1WUI5M1dzalFkVEw5WDZ3?oc=5",
@@ -15064,72 +15758,6 @@
    "ai": false
   },
   {
-   "id": "cc7c0b38ce6a",
-   "title": "Coreia do Norte lança mísseis e eleva tensão após teste hipersônico sul-coreano",
-   "link": "https://www.infomoney.com.br/mundo/coreia-do-norte-lanca-misseis-e-eleva-tensao-apos-teste-hipersonico-sul-coreano/",
-   "published": "2026-10-12T12:09:09+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mundo/coreia-do-norte-lanca-misseis-e-eleva-tensao-apos-teste-hipersonico-sul-coreano/",
-     "title": "Coreia do Norte lança mísseis e eleva tensão após teste hipersônico sul-coreano"
-    }
-   ],
-   "ids": [
-    "cc7c0b38ce6a"
-   ],
-   "snippet": "No Japão, o vice-ministro da Defesa Takashi Koyari afirmou que o país identificou ao menos dois mísseis, lançados com 17 minutos de intervalo, que caíram fora da zona econômica exclusiva japonesa The post Coreia do Norte lança mísseis e eleva tensão após teste hipersônico sul-coreano appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Coreia do Norte lança mísseis e eleva tensão após teste hipersônico sul-coreano",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "No Japão, o vice-ministro da Defesa Takashi Koyari afirmou que o país identificou ao menos dois mísseis, lançados com 17 minutos de intervalo, que caíram fora da zona econômica exclusiva japonesa The post Coreia do Norte lança mísseis e eleva tensão após teste hipersônico sul-coreano appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f5afcb5ee989",
-   "title": "UE: Kallas pede sanções dos EUA contra Rússia para “terminar a guerra” na Ucrânia",
-   "link": "https://www.infomoney.com.br/mundo/ue-kallas-pede-sancoes-dos-eua-contra-russia-para-terminar-a-guerra-na-ucrania/",
-   "published": "2026-10-12T12:06:37+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mundo/ue-kallas-pede-sancoes-dos-eua-contra-russia-para-terminar-a-guerra-na-ucrania/",
-     "title": "UE: Kallas pede sanções dos EUA contra Rússia para “terminar a guerra” na Ucrânia"
-    }
-   ],
-   "ids": [
-    "f5afcb5ee989"
-   ],
-   "snippet": "Kaja Kallas afirmou que a UE recebe positivamente a trégua no setor de energia, \"quando ela se mantiver\", mas ressaltou que ainda não está claro se a Rússia irá cumpri-la The post UE: Kallas pede sanções dos EUA contra Rússia para “terminar a guerra” na Ucrânia appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "UE: Kallas pede sanções dos EUA contra Rússia para “terminar a guerra” na Ucrânia",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Kaja Kallas afirmou que a UE recebe positivamente a trégua no setor de energia, \"quando ela se mantiver\", mas ressaltou que ainda não está claro se a Rússia irá cumpri-la The post UE: Kallas pede sanções dos EUA contra Rússia para “terminar a guerra” na Ucrânia appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "6cc3fff720ad",
    "title": "Brazil appeals court suspends Stake’s injunction after just one day",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOY1g4b0cyeUZNVDVXYlFsS3lPZDZLWjRScWJjc0FmRXV2aUVFVVlLdjM0QlJzQTVXeUxPdURVZy1UNF8xZTVCLXFNS29RWFQ2bUlXb0pYd3ZkRkxFaDc2RjltV2ZQOWw4dmtlcFdZM0t6bWFha0pTQ2ZoLVlmQVRhNmd6dlVLNUk?oc=5",
@@ -15152,6 +15780,138 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "96991fff2e42",
+   "title": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue",
+   "link": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump.html",
+   "published": "2026-10-12T14:21:08+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump.html",
+     "title": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue"
+    }
+   ],
+   "ids": [
+    "96991fff2e42"
+   ],
+   "snippet": "If Russia doesn't agree to Trump's energy ceasefire, Ukraine will respond, Zelenskyy said Monday morning.",
+   "prescore": 2.0,
+   "headline": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "If Russia doesn't agree to Trump's energy ceasefire, Ukraine will respond, Zelenskyy said Monday morning.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d8d76644bc6f",
+   "title": "Aval a visita a Bolsonaro se soma a 3 decisões recentes do STF pró-bolsonarismo e 1 contra; lembre",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/aval-a-visita-a-bolsonaro-se-soma-a-3-decisoes-recentes-do-stf-pro-bolsonarismo-e-1-contra-lembre.shtml",
+   "published": "2026-10-12T14:07:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/aval-a-visita-a-bolsonaro-se-soma-a-3-decisoes-recentes-do-stf-pro-bolsonarismo-e-1-contra-lembre.shtml",
+     "title": "Aval a visita a Bolsonaro se soma a 3 decisões recentes do STF pró-bolsonarismo e 1 contra; lembre"
+    }
+   ],
+   "ids": [
+    "d8d76644bc6f"
+   ],
+   "snippet": "O ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), liberou nesta segunda-feira (12) as visitas do senador Flávio Bolsonaro ( PL ) ao pai, o ex-presidente Jair Bolsonaro (PL), que cumpre prisão domiciliar desde março deste ano. Leia mais (10/12/2026 - 11h07)",
+   "prescore": 2.0,
+   "headline": "Aval a visita a Bolsonaro se soma a 3 decisões recentes do STF pró-bolsonarismo e 1 contra; lembre",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), liberou nesta segunda-feira (12) as visitas do senador Flávio Bolsonaro ( PL ) ao pai, o ex-presidente Jair Bolsonaro (PL), que cumpre prisão domiciliar desde março deste ano. Leia mais (10/12/2026 - 11h07)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "eb8c5c328026",
+   "title": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia",
+   "link": "https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html",
+   "published": "2026-10-12T14:04:16+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html",
+     "title": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia"
+    }
+   ],
+   "ids": [
+    "eb8c5c328026"
+   ],
+   "snippet": "By increasingly counting on its own chips, Microsoft stands to expand margins and bolster its AI stack.",
+   "prescore": 2.0,
+   "headline": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "By increasingly counting on its own chips, Microsoft stands to expand margins and bolster its AI stack.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e93f5902357b",
+   "title": "Auditoria do TCU aponta possíveis pagamentos indevidos de R$ 3 bi no seguro-defeso",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/auditoria-do-tcu-aponta-possiveis-pagamentos-indevidos-de-r-3-bi-no-seguro-defeso.shtml",
+   "published": "2026-10-12T14:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/auditoria-do-tcu-aponta-possiveis-pagamentos-indevidos-de-r-3-bi-no-seguro-defeso.shtml",
+     "title": "Auditoria do TCU aponta possíveis pagamentos indevidos de R$ 3 bi no seguro-defeso"
+    }
+   ],
+   "ids": [
+    "e93f5902357b"
+   ],
+   "snippet": "Uma auditoria do TCU (Tribunal de Contas da União) estima que o governo pode ter realizado até R$ 3 bilhões em pagamentos indevidos do seguro-defeso em 2024. O benefício, que corresponde a um salário mínimo (R$ 1.621 em 2026), é destinado a pescadores artesanais durante o período em que a atividade é proibida. Leia mais (10/12/2026 - 11h00)",
+   "prescore": 2.0,
+   "headline": "Auditoria do TCU aponta possíveis pagamentos indevidos de R$ 3 bi no seguro-defeso",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Uma auditoria do TCU (Tribunal de Contas da União) estima que o governo pode ter realizado até R$ 3 bilhões em pagamentos indevidos do seguro-defeso em 2024. O benefício, que corresponde a um salário mínimo (R$ 1.621 em 2026), é destinado a pescadores artesanais durante o período em que a atividade é proibida. Leia mais (10/12/2026 - 11h00)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15229,39 +15989,6 @@
    "ai": false
   },
   {
-   "id": "5f316525d309",
-   "title": "Moraes autoriza Flávio Bolsonaro a retomar visitas ao pai e mantém veto a declarações políticas",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/moraes-autoriza-flavio-bolsonaro-a-retomar-visitas-ao-pai-e-mantem-veto-a-declaracoes-politicas.shtml",
-   "published": "2026-10-12T13:15:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/moraes-autoriza-flavio-bolsonaro-a-retomar-visitas-ao-pai-e-mantem-veto-a-declaracoes-politicas.shtml",
-     "title": "Moraes autoriza Flávio Bolsonaro a retomar visitas ao pai e mantém veto a declarações políticas"
-    }
-   ],
-   "ids": [
-    "5f316525d309"
-   ],
-   "snippet": "O ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), autorizou o senador Flávio Bolsonaro ( PL ) a retomar as visitas ao pai, o ex-presidente Jair Bolsonaro . A proibição estava em vigor desde julho e ficou mantida durante toda a campanha presidencial. Leia mais (10/12/2026 - 10h15)",
-   "prescore": 2.0,
-   "headline": "Moraes autoriza Flávio Bolsonaro a retomar visitas ao pai e mantém veto a declarações políticas",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), autorizou o senador Flávio Bolsonaro ( PL ) a retomar as visitas ao pai, o ex-presidente Jair Bolsonaro . A proibição estava em vigor desde julho e ficou mantida durante toda a campanha presidencial. Leia mais (10/12/2026 - 10h15)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "a33519bdc809",
    "title": "TROOPS, Inc. (NASDAQ: TROO) Announces Conditional Sales and Purchase Agreement with EFFORCE Group, Expanding into Multi-Vertical Digital Asset Infrastructure",
    "link": "https://www.prnewswire.com/news-releases/troops-inc-nasdaq-troo-announces-conditional-sales-and-purchase-agreement-with-efforce-group-expanding-into-multi-vertical-digital-asset-infrastructure-302905689.html",
@@ -15284,6 +16011,39 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "HONG KONG, Oct. 12, 2026 /PRNewswire/ -- TROOPS, Inc. (NASDAQ: TROO) (\"TROOPS\" or the \"Company\"), a diversified conglomerate spanning financial technology and insurance services, today announced that it has entered into a conditional sales and purchase agreement with EFFORCE Group...",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5f316525d309",
+   "title": "Moraes autoriza Flávio Bolsonaro a retomar visitas ao pai e mantém veto a declarações políticas",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/moraes-autoriza-flavio-bolsonaro-a-retomar-visitas-ao-pai-e-mantem-veto-a-declaracoes-politicas.shtml",
+   "published": "2026-10-12T13:08:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/moraes-autoriza-flavio-bolsonaro-a-retomar-visitas-ao-pai-e-mantem-veto-a-declaracoes-politicas.shtml",
+     "title": "Moraes autoriza Flávio Bolsonaro a retomar visitas ao pai e mantém veto a declarações políticas"
+    }
+   ],
+   "ids": [
+    "5f316525d309"
+   ],
+   "snippet": "O ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), autorizou o senador Flávio Bolsonaro ( PL ) a retomar as visitas ao pai, o ex-presidente Jair Bolsonaro . A proibição estava em vigor desde julho e ficou mantida durante toda a campanha presidencial. Leia mais (10/12/2026 - 10h08)",
+   "prescore": 2.0,
+   "headline": "Moraes autoriza Flávio Bolsonaro a retomar visitas ao pai e mantém veto a declarações políticas",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), autorizou o senador Flávio Bolsonaro ( PL ) a retomar as visitas ao pai, o ex-presidente Jair Bolsonaro . A proibição estava em vigor desde julho e ficou mantida durante toda a campanha presidencial. Leia mais (10/12/2026 - 10h08)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15383,39 +16143,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "O vice-presidente Geraldo Alckmin (PSB) acompanhou a missa solene em homenagem a Nossa Senhora Aparecida, na Basílica de Aparecida, no interior de São Paulo, na manhã desta segunda-feira (12), feriado que celebra o dia da padroeira do Brasil. Leia mais (10/12/2026 - 10h06)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "eb8c5c328026",
-   "title": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia",
-   "link": "https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html",
-   "published": "2026-10-12T13:00:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html",
-     "title": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia"
-    }
-   ],
-   "ids": [
-    "eb8c5c328026"
-   ],
-   "snippet": "By increasingly counting on its own chips, Microsoft stands to expand margins and bolster its AI stack.",
-   "prescore": 2.0,
-   "headline": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "By increasingly counting on its own chips, Microsoft stands to expand margins and bolster its AI stack.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15548,39 +16275,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Greensboro agency adds website design, development and hosting for more than 70 businesses; Notion co-founders join the team GREENSBORO, N.C., Oct. 12, 2026 /PRNewswire/ -- Spartan Marketing, a Greensboro-based marketing agency, has acquired Notion Design Group, a website design and...",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "96991fff2e42",
-   "title": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue",
-   "link": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump.html",
-   "published": "2026-10-12T12:36:21+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump.html",
-     "title": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue"
-    }
-   ],
-   "ids": [
-    "96991fff2e42"
-   ],
-   "snippet": "If Russia doesn't agree to Trump's energy ceasefire, Ukraine will respond, Zelenskyy said Monday morning.",
-   "prescore": 2.0,
-   "headline": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "If Russia doesn't agree to Trump's energy ceasefire, Ukraine will respond, Zelenskyy said Monday morning.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15878,6 +16572,138 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "The ads featuring President Trump have been criticized as government propaganda and as aimed at influencing the outcome of the midterm election.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d343d72701ad",
+   "title": "CSN (CSNA3) põe siderúrgica alemã à venda; negócio de R$ 3,1 bilhões vai resolver sua dor de cabeça bilionária?",
+   "link": "https://www.seudinheiro.com/2026/empresas/csn-csna3-poe-siderurgica-alema-a-venda-negocio-de-r-31-bilhoes-vai-resolver-sua-dor-de-cabeca-bilionaria-miql/",
+   "published": "2026-10-12T13:59:42+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/empresas/csn-csna3-poe-siderurgica-alema-a-venda-negocio-de-r-31-bilhoes-vai-resolver-sua-dor-de-cabeca-bilionaria-miql/",
+     "title": "CSN (CSNA3) põe siderúrgica alemã à venda; negócio de R$ 3,1 bilhões vai resolver sua dor de cabeça bilionária?"
+    }
+   ],
+   "ids": [
+    "d343d72701ad"
+   ],
+   "snippet": "Companhia negocia a venda de sua operação na Alemanha por 550 milhões de euros; veja o impacto estimado pelos analistas The post CSN (CSNA3) põe siderúrgica alemã à venda; negócio de R$ 3,1 bilhões vai resolver sua dor de cabeça bilionária? appeared first on Seu Dinheiro .",
+   "prescore": 1.8,
+   "headline": "CSN (CSNA3) põe siderúrgica alemã à venda; negócio de R$ 3,1 bilhões vai resolver sua dor de cabeça bilionária?",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Companhia negocia a venda de sua operação na Alemanha por 550 milhões de euros; veja o impacto estimado pelos analistas The post CSN (CSNA3) põe siderúrgica alemã à venda; negócio de R$ 3,1 bilhões vai resolver sua dor de cabeça bilionária? appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "01bb15c4779f",
+   "title": "Povoado no Peru elege prefeito de centro-esquerda chamado Hitler Mussolini",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/povoado-no-peru-elege-prefeito-de-centro-esquerda-chamado-hitler-mussolini.shtml",
+   "published": "2026-10-12T13:50:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/povoado-no-peru-elege-prefeito-de-centro-esquerda-chamado-hitler-mussolini.shtml",
+     "title": "Povoado no Peru elege prefeito de centro-esquerda chamado Hitler Mussolini"
+    }
+   ],
+   "ids": [
+    "01bb15c4779f"
+   ],
+   "snippet": "O peruano Hitler Mussolini Simeón Flores, 45, será o próximo prefeito de centro-esquerda do município rural de Queropalca, na região central de Huánuco, a partir de 1º de janeiro. Leia mais (10/12/2026 - 10h50)",
+   "prescore": 1.8,
+   "headline": "Povoado no Peru elege prefeito de centro-esquerda chamado Hitler Mussolini",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O peruano Hitler Mussolini Simeón Flores, 45, será o próximo prefeito de centro-esquerda do município rural de Queropalca, na região central de Huánuco, a partir de 1º de janeiro. Leia mais (10/12/2026 - 10h50)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "685600a618ca",
+   "title": "Trump sugere rebatizar oceano Atlântico ou Pacífico como oceano Trump",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/trump-sugere-rebatizar-oceano-atlantico-ou-pacifico-como-oceano-trump.shtml",
+   "published": "2026-10-12T13:47:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/trump-sugere-rebatizar-oceano-atlantico-ou-pacifico-como-oceano-trump.shtml",
+     "title": "Trump sugere rebatizar oceano Atlântico ou Pacífico como oceano Trump"
+    }
+   ],
+   "ids": [
+    "685600a618ca"
+   ],
+   "snippet": "O presidente dos Estados Unidos , Donald Trump , disse neste sábado (10) que pode rebatizar por decreto o oceano Atlântico ou o Pacífico para \"oceano Trump\" ou \"oceano das Américas\", a exemplo do que fez com o golfo do México e o lago Ontário, na fronteira com o Canadá . Leia mais (10/12/2026 - 10h47)",
+   "prescore": 1.8,
+   "headline": "Trump sugere rebatizar oceano Atlântico ou Pacífico como oceano Trump",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O presidente dos Estados Unidos , Donald Trump , disse neste sábado (10) que pode rebatizar por decreto o oceano Atlântico ou o Pacífico para \"oceano Trump\" ou \"oceano das Américas\", a exemplo do que fez com o golfo do México e o lago Ontário, na fronteira com o Canadá . Leia mais (10/12/2026 - 10h47)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f939ab931128",
+   "title": "Azure Maia 300: Microsoft lança novo chip de IA e mira redução da dependência da Nvidia",
+   "link": "https://www.moneytimes.com.br/azure-maia-300-microsoft-lanca-novo-chip-de-ia-e-mira-reducao-da-dependencia-da-nvidia-rens/",
+   "published": "2026-10-12T13:34:37+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/azure-maia-300-microsoft-lanca-novo-chip-de-ia-e-mira-reducao-da-dependencia-da-nvidia-rens/",
+     "title": "Azure Maia 300: Microsoft lança novo chip de IA e mira redução da dependência da Nvidia"
+    }
+   ],
+   "ids": [
+    "f939ab931128"
+   ],
+   "snippet": "A Microsoft (MSFT) apresentou nesta segunda-feira (12) seu mais novo processador voltado para inteligência artificial, o Azure Maia 300, reforçando a estratégia de desenvolver chips próprios e reduzir a dependência de fornecedores como Nvidia (NVDA) e AMD (AMD). O anúncio foi feito durante o OCP Global Summit 2026, em San Jose, nos Estados Unidos, e […]",
+   "prescore": 1.8,
+   "headline": "Azure Maia 300: Microsoft lança novo chip de IA e mira redução da dependência da Nvidia",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Microsoft (MSFT) apresentou nesta segunda-feira (12) seu mais novo processador voltado para inteligência artificial, o Azure Maia 300, reforçando a estratégia de desenvolver chips próprios e reduzir a dependência de fornecedores como Nvidia (NVDA) e AMD (AMD). O anúncio foi feito durante o OCP Global Summit 2026, em San Jose, nos Estados Unidos, e […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16219,6 +17045,39 @@
    "ai": false
   },
   {
+   "id": "f7f7184e89c1",
+   "title": "Arábia Saudita reage a ataques com drones e mísseis após prometer 'resposta firme' a bombardeio em aeroporto",
+   "link": "https://g1.globo.com/mundo/noticia/2026/10/12/arabia-saudita-reage-a-ataques-com-drones-e-misseis-apos-prometer-resposta-firme-a-bombardeio-em-aeroporto.ghtml",
+   "published": "2026-10-12T13:55:37+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/12/arabia-saudita-reage-a-ataques-com-drones-e-misseis-apos-prometer-resposta-firme-a-bombardeio-em-aeroporto.ghtml",
+     "title": "Arábia Saudita reage a ataques com drones e mísseis após prometer 'resposta firme' a bombardeio em aeroporto"
+    }
+   ],
+   "ids": [
+    "f7f7184e89c1"
+   ],
+   "snippet": "Apoiadores dos rebeldes houthis do Iêmen gritam slogans durante um comício em apoio ao grupo, em Sanaa, Iêmen AP/Osamah Abdulrahman A Arábia Saudita informou nesta segunda-feira (12) que suas forças reagiram a ataques com drones e mísseis de cruzeiro, em meio à escalada do conflito com os rebeldes houthis, do Iêmen. O anúncio ocorre depois de o governo saudita prometer uma \"resposta firme\" aos ataques contra o aeroporto internacional de Riad, que deixaram ao menos 14 mortos e 320 feridos nos últimos dias. Segundo a imprensa estatal saudita, as forças do país responderam aos ataques, mas não fo",
+   "prescore": 1.6,
+   "headline": "Arábia Saudita reage a ataques com drones e mísseis após prometer 'resposta firme' a bombardeio em aeroporto",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Apoiadores dos rebeldes houthis do Iêmen gritam slogans durante um comício em apoio ao grupo, em Sanaa, Iêmen AP/Osamah Abdulrahman A Arábia Saudita informou nesta segunda-feira (12) que suas forças reagiram a ataques com drones e mísseis de cruzeiro, em meio à escalada do conflito com os rebeldes houthis, do Iêmen. O anúncio ocorre depois de o governo saudita prometer uma \"resposta firme\" aos ata",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "0f1f62d1dbf8",
    "title": "Explosão deixa cerca de 20 feridos, incluindo crianças e professores, no norte de Israel",
    "link": "https://g1.globo.com/mundo/noticia/2026/10/12/explosao-deixa-cerca-de-20-feridos-incluindo-criancas-e-professores-no-norte-de-israel.ghtml",
@@ -16253,7 +17112,7 @@
   },
   {
    "id": "49a29030d2ce",
-   "title": "Brasileira é presa em Bali, na Indonésia, por transportar cocaína no xampu",
+   "title": "Brasileira é presa em Bali por transportar cocaína no xampu",
    "link": "https://g1.globo.com/mundo/noticia/2026/10/12/brasileira-e-presa-na-indonesia-por-transportar-cocaina-no-xampu.ghtml",
    "published": "2026-10-12T12:58:33+00:00",
    "region": "BR",
@@ -16261,19 +17120,19 @@
     {
      "source": "g1",
      "link": "https://g1.globo.com/mundo/noticia/2026/10/12/brasileira-e-presa-na-indonesia-por-transportar-cocaina-no-xampu.ghtml",
-     "title": "Brasileira é presa em Bali, na Indonésia, por transportar cocaína no xampu"
+     "title": "Brasileira é presa em Bali por transportar cocaína no xampu"
     }
    ],
    "ids": [
     "49a29030d2ce"
    ],
-   "snippet": "Uma brasileira detida na Indonésia com cerca de quatro quilos de cocaína líquida escondidos, entre outros locais, em frascos de xampu, corre o risco de ser condenada à prisão perpétua, anunciaram nesta segunda-feira (12) as autoridades da ilha turística de Bali. A mulher, de 36 anos, foi presa pela polícia pouco depois de desembarcar em Bali, vinda do Brasil, na última terça-feira. Ao revistarem sua bagagem, agentes da alfândega encontraram mais de 3,6 quilos de cocaína líquida em sete frascos de xampu e outros produtos de higiene pessoal. Segundo a polícia, trata-se de uma das maiores apreens",
+   "snippet": "Bali, na Indonéisa. Unsplash/Sebastian Pena Lambarri Uma brasileira foi presa na em Bali, na Indonésia, com cerca de quatro quilos de cocaína líquida escondido em frascos de cosméticos. A mulher, que não foi identificada, corre agora o risco de ser condenada à prisão perpétua, anunciaram na segunda-feira (12) as autoridades locais, ✅ Siga o canal de notícias internacionais do g1 no WhatsApp Autoridades disseram que a brasileira, de 36 anos, foi presa pela polícia pouco depois de desembarcar em Bali, vinda do Brasil, na semana passada. Ao revistarem sua bagagem, agentes da alfândega encontraram",
    "prescore": 1.6,
-   "headline": "Brasileira é presa em Bali, na Indonésia, por transportar cocaína no xampu",
+   "headline": "Brasileira é presa em Bali por transportar cocaína no xampu",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Uma brasileira detida na Indonésia com cerca de quatro quilos de cocaína líquida escondidos, entre outros locais, em frascos de xampu, corre o risco de ser condenada à prisão perpétua, anunciaram nesta segunda-feira (12) as autoridades da ilha turística de Bali. A mulher, de 36 anos, foi presa pela polícia pouco depois de desembarcar em Bali, vinda do Brasil, na última terça-feira. Ao revistarem s",
+   "summary": "Bali, na Indonéisa. Unsplash/Sebastian Pena Lambarri Uma brasileira foi presa na em Bali, na Indonésia, com cerca de quatro quilos de cocaína líquida escondido em frascos de cosméticos. A mulher, que não foi identificada, corre agora o risco de ser condenada à prisão perpétua, anunciaram na segunda-feira (12) as autoridades locais, ✅ Siga o canal de notícias internacionais do g1 no WhatsApp Autori",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16412,7 +17271,7 @@
    "id": "estadao",
    "name": "Estadão",
    "ok": true,
-   "count": 59,
+   "count": 60,
    "error": null
   },
   {
@@ -16426,14 +17285,14 @@
    "id": "folha-poder",
    "name": "Folha",
    "ok": true,
-   "count": 56,
+   "count": 58,
    "error": null
   },
   {
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 26,
+   "count": 27,
    "error": null
   },
   {
@@ -16447,14 +17306,14 @@
    "id": "g1-politica",
    "name": "g1",
    "ok": true,
-   "count": 23,
+   "count": 25,
    "error": null
   },
   {
    "id": "g1-mundo",
    "name": "g1",
    "ok": true,
-   "count": 56,
+   "count": 54,
    "error": null
   },
   {
@@ -16517,7 +17376,7 @@
    "id": "prnewswire-mna",
    "name": "PR Newswire (M&A)",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null
   },
   {
@@ -16538,7 +17397,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 36,
+   "count": 34,
    "error": null
   },
   {
@@ -16632,11 +17491,11 @@
   }
  ],
  "stats": {
-  "raw": 721,
-  "unique": 341,
-  "unique_all": 679,
+  "raw": 724,
+  "unique": 334,
+  "unique_all": 682,
   "sources_ok": 26,
   "sources_total": 27,
-  "seconds": 3.5
+  "seconds": 7.2
  }
 }
