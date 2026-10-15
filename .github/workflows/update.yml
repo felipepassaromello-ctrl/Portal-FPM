@@ -5,6 +5,7 @@ on:
     # Horários em UTC (Brasília = UTC-3).
     - cron: "40 8 * * *"          # 05:40 — edição da manhã, pronta antes de você chegar
     - cron: "7 9-23 * * 1-5"      # dias úteis: de hora em hora, 06:07 às 20:07
+    - cron: "1 11 * * *"          # 08:01 — fecha a edição do dia logo após as 08h (o das 08:07 costuma atrasar)
     - cron: "7 12,18,22 * * 0,6"  # fim de semana: 09:07, 15:07 e 19:07
   workflow_dispatch: {}
   push:
@@ -80,3 +81,5 @@ jobs:
           path: site
       - id: deploy
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1200000   # 20 min: o GitHub Pages às vezes demora mais que os 10 min padrão
