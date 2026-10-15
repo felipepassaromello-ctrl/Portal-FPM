@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T06:12:16.371669-03:00",
+ "generated_at": "2026-10-15T06:31:39.493441-03:00",
  "date": "2026-10-14",
  "window": {
   "start": "2026-10-13T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-14T08:33:27.723611-03:00",
-  "analyzed": 88
+  "analyzed": 89
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -124,14 +124,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 5.6467,
-   "change_pct": 0.3418608612377083,
+   "price": 5.6489,
+   "change_pct": 0.38095486196287887,
    "spark": [
     5.622099876403809,
     5.586592197418213,
     5.561735153198242,
     5.627461910247803,
-    5.646699905395508
+    5.648900032043457
    ]
   },
   {
@@ -180,40 +180,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 104.3,
-   "change_pct": -1.6594357902199874,
+   "price": 103.91,
+   "change_pct": -2.0271521856352726,
    "spark": [
     106.6500015258789,
     105.69000244140625,
     106.05999755859375,
-    104.30000305175781
+    103.91000366210938
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4175.2,
-   "change_pct": 1.6383090936040512,
+   "price": 4179.0,
+   "change_pct": 1.7308137818958125,
    "spark": [
     4190.60009765625,
     4177.2998046875,
     4107.89990234375,
-    4175.2001953125
+    4179.0
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 81260.37,
-   "change_pct": -0.37041804314349447,
+   "price": 81136.43,
+   "change_pct": -0.5223751458213854,
    "spark": [
     83679.46875,
     81762.5625,
     83095.125,
     81562.4921875,
-    81260.3671875
+    81136.4296875
    ]
   }
  ],
@@ -2414,44 +2414,6 @@
    "ai": true
   },
   {
-   "id": "ec43a4e21fbc",
-   "title": "Anthropic warns AI models may soon self-replicate and could wreak havoc on the web",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVFZnZHFlY0QxWV9XbURPeDVpQnlMcWFqaTlDMHRjcWhhLXRhR1hfbTdNeVl3c3dyR3V6V211Wmp5aXNZT1VpN1kwdUs3ZFdBTXB5Z2tEN1JfV2FnUk5FRHpVa2lfRWxENndHaDdNWmRZVUJfQkFody00VG1BNk8wb29Sel9Wd011ampEWXlOQk9xM2x0bkVwTXBib0hEMndtOWNuZXdDWFlEcTRuZzVLRDYxUDFfek9XRTNna3dhZw?oc=5",
-   "published": "2026-10-13T22:43:46+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVFZnZHFlY0QxWV9XbURPeDVpQnlMcWFqaTlDMHRjcWhhLXRhR1hfbTdNeVl3c3dyR3V6V211Wmp5aXNZT1VpN1kwdUs3ZFdBTXB5Z2tEN1JfV2FnUk5FRHpVa2lfRWxENndHaDdNWmRZVUJfQkFody00VG1BNk8wb29Sel9Wd011ampEWXlOQk9xM2x0bkVwTXBib0hEMndtOWNuZXdDWFlEcTRuZzVLRDYxUDFfek9XRTNna3dhZw?oc=5",
-     "title": "Anthropic warns AI models may soon self-replicate and could wreak havoc on the web"
-    }
-   ],
-   "ids": [
-    "ec43a4e21fbc"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Anthropic alerta que modelos de IA podem logo se autorreplicar sem data centers",
-   "category": "tech",
-   "importance": 5,
-   "importance_reason": "Risco de segurança de IA em múltiplas fontes.",
-   "summary": "A Anthropic alerta que modelos de IA podem em breve se autorreplicar sem acesso a data centers.",
-   "involves": "Anthropic, IA",
-   "interpretation": "Mesma pauta do FT; é um aviso de risco futuro.",
-   "impact": "Alimenta o debate regulatório.",
-   "sentiment": "negativo",
-   "entities": [
-    "Anthropic"
-   ],
-   "tags": [
-    "IA",
-    "segurança"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "bc5f8f823c9e",
    "title": "FBI arrests Saudi OpenAI engineer over covert recording device, DOJ says",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcjkxNVh4Vlg5aXhHdHJySlBhbC1iZVRDTTF1a2hiUk52eUlqUW1aWWtoeUg2TjQ0OWU1aURzNW5aWmZ1TEFBcGl4NTBIQVZSVnNPaFpFUnZqb2RjRzNQS0xLQjRkMmtJZWhuU1RLRXplcktzVnBHMVVhNThISzMxMVFYbXZoeWE2WFc3b2VzMlQ0Sl92Y0kwLXJ0MUxBOTdUNzFxdjR0VTI?oc=5",
@@ -2487,6 +2449,46 @@
     "OpenAI",
     "FBI",
     "espionagem"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "f9eb89f74ed8",
+   "title": "Google launches flagship AI model Gemini 4 Argon for developers, businesses",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQclhsaXp4NUtqeVJDQTNIUjVXQVdJcnNXYnpYZUFTZm4wY3UxcTM1SzJvdzRBNE9HaURlNG1obzFGQ0o3R0pWNVJfNGFDOUdFZnhfdEJxSkszQ2hZQlowMjdCbVliRE9uX3A5ak1CYkJHOEV1elBYRWgtUHBwdF9lcWEyUGdjbmhQb2JONkpNeWhLTHgzQzRhRFRnZTEwcDRCa3k3RkpxY0c5Z1RsSlFCSmQwNmRmQQ?oc=5",
+   "published": "2026-10-13T16:10:19+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQclhsaXp4NUtqeVJDQTNIUjVXQVdJcnNXYnpYZUFTZm4wY3UxcTM1SzJvdzRBNE9HaURlNG1obzFGQ0o3R0pWNVJfNGFDOUdFZnhfdEJxSkszQ2hZQlowMjdCbVliRE9uX3A5ak1CYkJHOEV1elBYRWgtUHBwdF9lcWEyUGdjbmhQb2JONkpNeWhLTHgzQzRhRFRnZTEwcDRCa3k3RkpxY0c5Z1RsSlFCSmQwNmRmQQ?oc=5",
+     "title": "Google launches flagship AI model Gemini 4 Argon for developers, businesses"
+    }
+   ],
+   "ids": [
+    "f9eb89f74ed8"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Google lança Gemini 4 Argon, modelo de IA principal, para desenvolvedores e empresas",
+   "category": "tech",
+   "importance": 5,
+   "importance_reason": "Lançamento relevante na corrida de IA.",
+   "summary": "A Reuters informa que o Google lançou o Gemini 4 Argon para desenvolvedores e empresas. Preço e desempenho não constam.",
+   "involves": "Google, Gemini 4 Argon",
+   "interpretation": "Eleva a concorrência com OpenAI e outros em modelos para empresas.",
+   "impact": "Positivo para Alphabet; pressiona rivais.",
+   "sentiment": "positivo",
+   "entities": [
+    "Google",
+    "Gemini 4 Argon"
+   ],
+   "tags": [
+    "Google",
+    "Gemini",
+    "IA"
    ],
    "is_deal": false,
    "deal": null,
@@ -2603,6 +2605,47 @@
    "tags": [
     "6x1",
     "Janones",
+    "eleições"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "cc6aef77194b",
+   "title": "Nunes Marques libera 'Exército do Lula' no WhatsApp, mas suspende canal por 48 horas",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd1M2V21ubTdTSVJ0M2s2SFJnSHpFeXROSFdILTR3Mkp4b0tPMFNLSGZCMkE1cGwtXzFqbW5oVkkyYlpEY1lzZFJ4b2tuV0tYSjMtOElYd0dMM1dBMUxNZHRXdnVja2oxOWZYUFMxRWQ1M0tHWGdvVmNMTUh2blFYS1JhT3I4VGZ5YWpBdDB4STBleEpyV1lNakpZMENTR2VVUDRSWGJMV3ZmTk5DZUlYZUlXR0d3elpEbUk2Z295N01lN21qd3fSAdQBQVVfeXFMTVJWNkpJNHg3UllmWTg2OFRSZlRUaXJjYkRqM1ljS0VRQTRveGZhOFJYUDA3bWM2NXRCajlGa1hYV3pEZV9PZTQtclN2OVFxenQ3ODZTTVVaWHE2ODN0dS0yLW80RER2REVEamR6WXBJY0Yxb0VrSk8ySTRuRjR4ZVhVYlhnQ2syM2RVN3liMF9CMFo3MUl3dmYzSjNTeG14SmhzNmNrSnBuZXc4R2kwSHNlYjZEdzA5VUtPZHBsTTdDOFlnUXdtYXRBeDA0c01VTWxEUzQ?oc=5",
+   "published": "2026-10-13T19:36:57+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd1M2V21ubTdTSVJ0M2s2SFJnSHpFeXROSFdILTR3Mkp4b0tPMFNLSGZCMkE1cGwtXzFqbW5oVkkyYlpEY1lzZFJ4b2tuV0tYSjMtOElYd0dMM1dBMUxNZHRXdnVja2oxOWZYUFMxRWQ1M0tHWGdvVmNMTUh2blFYS1JhT3I4VGZ5YWpBdDB4STBleEpyV1lNakpZMENTR2VVUDRSWGJMV3ZmTk5DZUlYZUlXR0d3elpEbUk2Z295N01lN21qd3fSAdQBQVVfeXFMTVJWNkpJNHg3UllmWTg2OFRSZlRUaXJjYkRqM1ljS0VRQTRveGZhOFJYUDA3bWM2NXRCajlGa1hYV3pEZV9PZTQtclN2OVFxenQ3ODZTTVVaWHE2ODN0dS0yLW80RER2REVEamR6WXBJY0Yxb0VrSk8ySTRuRjR4ZVhVYlhnQ2syM2RVN3liMF9CMFo3MUl3dmYzSjNTeG14SmhzNmNrSnBuZXc4R2kwSHNlYjZEdzA5VUtPZHBsTTdDOFlnUXdtYXRBeDA0c01VTWxEUzQ?oc=5",
+     "title": "Nunes Marques libera 'Exército do Lula' no WhatsApp, mas suspende canal por 48 horas"
+    }
+   ],
+   "ids": [
+    "cc6aef77194b"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Nunes Marques libera 'Exército do Lula' no WhatsApp, mas suspende canal por 48 horas",
+   "category": "politica",
+   "importance": 4,
+   "importance_reason": "Decisão do TSE na campanha; efeito indireto no mercado.",
+   "summary": "O ministro Nunes Marques liberou o 'Exército do Lula' no WhatsApp, mas suspendeu o canal por 48 horas.",
+   "involves": "Nunes Marques, TSE, WhatsApp, Exército do Lula.",
+   "interpretation": "Decisão judicial eleitoral sobre uso de canais de campanha.",
+   "impact": "Pouco efeito direto em ativos.",
+   "sentiment": "neutro",
+   "entities": [
+    "Nunes Marques",
+    "TSE",
+    "WhatsApp"
+   ],
+   "tags": [
+    "TSE",
+    "Exército do Lula",
     "eleições"
    ],
    "is_deal": false,
@@ -3089,6 +3132,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "bcf7d04dbc98",
+   "title": "Failure of Australia’s Largest IPO in Decades Sends Tremors Through AI Trade",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SUmYyXy1JaU0zSkNocVZBSkxSTzJrN045b3VsMFItazluQm50dFI5ZUtiMmdhYnVXcHBnc3BqTXlQQU1PbzMxLVNjWnJmSk5HXy1oVVhkUG5WMnRZM0tmelBWanVhblE?oc=5",
+   "published": "2026-10-14T01:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SUmYyXy1JaU0zSkNocVZBSkxSTzJrN045b3VsMFItazluQm50dFI5ZUtiMmdhYnVXcHBnc3BqTXlQQU1PbzMxLVNjWnJmSk5HXy1oVVhkUG5WMnRZM0tmelBWanVhblE?oc=5",
+     "title": "Failure of Australia’s Largest IPO in Decades Sends Tremors Through AI Trade"
+    }
+   ],
+   "ids": [
+    "bcf7d04dbc98"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Failure of Australia’s Largest IPO in Decades Sends Tremors Through AI Trade",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "4cf460c936ad",
@@ -4128,39 +4204,6 @@
    "ai": false
   },
   {
-   "id": "6358c74b2d1d",
-   "title": "Exclusive | An Ex-Tesla Executive Is Steering Uber Freight’s Turnaround",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMVU3ZE1wUEtHZlZzUTA1WEVuaGt1ZE1IYXlhVm9KOU55X0MtY3VVQ0kzb2FyWXhMcEN3ZWhXUVF2UG5tcTY3LUxhNWpOclI3WFFrQjlheW1lMUdBQnFCNTdpbU9KVmpmQ3A2eVdsa25vSmN0anY2X2NZalJfbkpFdHZQMG0zUzhNNjFLTWp2a1BjUkZKdHduaW9lMEVSdXBNX0VuY0hXMA?oc=5",
-   "published": "2026-10-14T09:30:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMVU3ZE1wUEtHZlZzUTA1WEVuaGt1ZE1IYXlhVm9KOU55X0MtY3VVQ0kzb2FyWXhMcEN3ZWhXUVF2UG5tcTY3LUxhNWpOclI3WFFrQjlheW1lMUdBQnFCNTdpbU9KVmpmQ3A2eVdsa25vSmN0anY2X2NZalJfbkpFdHZQMG0zUzhNNjFLTWp2a1BjUkZKdHduaW9lMEVSdXBNX0VuY0hXMA?oc=5",
-     "title": "Exclusive | An Ex-Tesla Executive Is Steering Uber Freight’s Turnaround"
-    }
-   ],
-   "ids": [
-    "6358c74b2d1d"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Exclusive | An Ex-Tesla Executive Is Steering Uber Freight’s Turnaround",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "ab81613c40ef",
    "title": "Pope Leo back on his feet after shock cancer diagnosis",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZEhjR1JvdVhXeEhEaEZla2JHSkZ5bHFoeWtBTmxpcWgwS3hhMVdCMExHVzdYalFtZFp5VGhYYldPTU5MZWt1QkE3QXNrSU02ZWhkbEtfVE14RW4zZGZwa0VTUmRwUXo5VjRMVlNrc0ZqS1lhcE5QLUlsak9WODRybU5peXp2ei11N2M0M0hBdFdweEdsOU9Xb21TbTJ4T2NRMTh4UkVvSmVxbWM?oc=5",
@@ -4197,6 +4240,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "9e60e6ff9a0f",
+   "title": "ASML's strong orders ease fears AI spending boom is running out of steam",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZFZsa19tQTZzTmpjeDVDenFPTGdxSTJVS1k5bTNrakxDWEtUelY1SWlDdnhNZDVoUmY1dkhoWXdJMWQtS1pjR3drMndqc0kxT00zVkM1bUIyRXM3X011cGhMaUNvbXdtUzVaNUhWWEMzOEN5Q0luZEQ3MzE5M2J2N2h3Mko4eUg3NkZJY2pBbG03UzRwVGs5MVl4dWxWbjNJeVN0OA?oc=5",
+   "published": "2026-10-14T05:07:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZFZsa19tQTZzTmpjeDVDenFPTGdxSTJVS1k5bTNrakxDWEtUelY1SWlDdnhNZDVoUmY1dkhoWXdJMWQtS1pjR3drMndqc0kxT00zVkM1bUIyRXM3X011cGhMaUNvbXdtUzVaNUhWWEMzOEN5Q0luZEQ3MzE5M2J2N2h3Mko4eUg3NkZJY2pBbG03UzRwVGs5MVl4dWxWbjNJeVN0OA?oc=5",
+     "title": "ASML's strong orders ease fears AI spending boom is running out of steam"
+    }
+   ],
+   "ids": [
+    "9e60e6ff9a0f"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "ASML's strong orders ease fears AI spending boom is running out of steam",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "75fa6eb84ca6",
@@ -4303,43 +4379,10 @@
    "ai": false
   },
   {
-   "id": "8c67ba9e0466",
-   "title": "Why U.S. Airstrikes Are Failing to Stop the Global Cocaine Boom",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGZXSjUwX3NPMFFLRGVHem5LV3ZNaXNJX0llb3dKZVJacjBHaHFubC1Mc0ZGU3J5MzMwY085aURSSFhQMk9PWGE4c2Nad2Z5dG5PUDdQNUNkcWFNaU1vZmtWM2QxOUFFeTNmREx6U181cWh1WVlRQXppb3l1UlZjSkhQTEV6bUNRZ0xBQ19XMG0?oc=5",
-   "published": "2026-10-13T23:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGZXSjUwX3NPMFFLRGVHem5LV3ZNaXNJX0llb3dKZVJacjBHaHFubC1Mc0ZGU3J5MzMwY085aURSSFhQMk9PWGE4c2Nad2Z5dG5PUDdQNUNkcWFNaU1vZmtWM2QxOUFFeTNmREx6U181cWh1WVlRQXppb3l1UlZjSkhQTEV6bUNRZ0xBQ19XMG0?oc=5",
-     "title": "Why U.S. Airstrikes Are Failing to Stop the Global Cocaine Boom"
-    }
-   ],
-   "ids": [
-    "8c67ba9e0466"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Why U.S. Airstrikes Are Failing to Stop the Global Cocaine Boom",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "e18d9a70757a",
    "title": "Pope Leo Diagnosed With Lung Cancer After Surgery",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9SQTV0N0hVZ1lmbDdZOVNEU1FfVl9iM1BJTU1uck4zWHJHMnlSTUdNV1h6OThLcEw1V2t6d0tWbXhSYWl3amk5aEdkdDJZejFsamFaQ1BLVWRzR2ZJSU9UNUtxdHdkSEdVZmNB?oc=5",
-   "published": "2026-10-13T22:19:05+00:00",
+   "published": "2026-10-13T22:18:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -4372,39 +4415,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "792e450ef8d4",
-   "title": "Albertsons Just Slapped a ‘For Sale’ Sign on Itself—Again",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOek0teHdVOUx3YndvZ01IdkhBc2t0OE56U2dmU09NOEVVSHVnWVlmLU5lMFpmSVZxMlRoYzV4NDY0UmJxemFMbzlMVDBTeldqc0ZqZnpzYTJoNzQ4OTNIWkVrTXdaaFZNRGNqeEE0eFEzb3BaYzFNZEQtNExZaGR1OGJNWHlUUmpfSVdhTk00TzZDdm8yN1preVdsMFZDQnRZ?oc=5",
-   "published": "2026-10-13T21:42:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOek0teHdVOUx3YndvZ01IdkhBc2t0OE56U2dmU09NOEVVSHVnWVlmLU5lMFpmSVZxMlRoYzV4NDY0UmJxemFMbzlMVDBTeldqc0ZqZnpzYTJoNzQ4OTNIWkVrTXdaaFZNRGNqeEE0eFEzb3BaYzFNZEQtNExZaGR1OGJNWHlUUmpfSVdhTk00TzZDdm8yN1preVdsMFZDQnRZ?oc=5",
-     "title": "Albertsons Just Slapped a ‘For Sale’ Sign on Itself—Again"
-    }
-   ],
-   "ids": [
-    "792e450ef8d4"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Albertsons Just Slapped a ‘For Sale’ Sign on Itself—Again",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "8d46bf3708a3",
@@ -5425,7 +5435,7 @@
    "region": "BR",
    "outlets": [
     {
-     "source": "GOV.BR",
+     "source": "Governo Federal",
      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQYlc4TFFtR1RRSzRhMnQzSXF1VDlKejFyc1VBSmFXTm1tcG5HT0Zqd1JTTnlfbTBGNXVQY3FoRjRlQ0VZektGc1UwUTlJaW9raFN5TzAzWVh0ckMtV2ZRTVc4emdmSHpsSmU2V0N3cTF0T1pGdGM2NTJLQWppU21lRE0wZVhqdFdETDFrMUlwM2lOSVY4cUtEMGlocUNueU85M3NzRkhxZ0lwQXlpZnJfSjRzSW8xVTBpMl8wMjN4X3prbHdfZ3lOS253WS1FWFZ1S1R4N0VRZ1NGRkpKdmc2MWktUW9NQkRhRjlZVTRKNlJwQmhkeU9iSFhnby1tYTc3NTViQ2swbEw?oc=5",
      "title": "Governo anuncia perdão de dívidas tributárias de MEIs, compra de débitos bancários e apoio de até R$ 5 mil para investir no negócio"
     }
@@ -10280,45 +10290,6 @@
    "ai": false
   },
   {
-   "id": "4e5c8902203a",
-   "title": "Clear Channel Outdoor Holdings, Inc. Announces Completion of Acquisition by Mubadala Capital",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQVZHa1VFdkxYVnB2QnhRVF9xdHRudTh1NUQtR3V4NWV3elg3R0NDZU00VndmQkJUTEx3TjlHYmlPc3BQbFM0RnZHaGF0eFVvSGQ3UkQ0QUgwLVdocHZpdFctSm1ULTVjY1lWTHp1VUgwTnByYVZmUGpJLURaSmFUTThQTFhWUGthMWhaWkRTXzZQYWI5UnZESGtTdktnaGRUQ01QckNVeVVLN1oxTVo4OGlNWHZrUE5CbW9YZnotWWlsWDhvaGJrZlpjQUx3cjlnN0g2bE1iaXduY1UxdG9F?oc=5",
-   "published": "2026-10-14T19:10:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "PR Newswire",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQVZHa1VFdkxYVnB2QnhRVF9xdHRudTh1NUQtR3V4NWV3elg3R0NDZU00VndmQkJUTEx3TjlHYmlPc3BQbFM0RnZHaGF0eFVvSGQ3UkQ0QUgwLVdocHZpdFctSm1ULTVjY1lWTHp1VUgwTnByYVZmUGpJLURaSmFUTThQTFhWUGthMWhaWkRTXzZQYWI5UnZESGtTdktnaGRUQ01QckNVeVVLN1oxTVo4OGlNWHZrUE5CbW9YZnotWWlsWDhvaGJrZlpjQUx3cjlnN0g2bE1iaXduY1UxdG9F?oc=5",
-     "title": "Clear Channel Outdoor Holdings, Inc. Announces Completion of Acquisition by Mubadala Capital"
-    },
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/clear-channel-outdoor-holdings-inc-announces-completion-of-acquisition-by-mubadala-capital-302909016.html",
-     "title": "Clear Channel Outdoor Holdings, Inc. Announces Completion of Acquisition by Mubadala Capital"
-    }
-   ],
-   "ids": [
-    "4e5c8902203a",
-    "93917bab4d8b"
-   ],
-   "snippet": "SAN ANTONIO, Oct. 14, 2026 /PRNewswire/ -- Clear Channel Outdoor Holdings, Inc. (\"Clear Channel\" or the \"Company\"), a leader in U.S. out-of-home advertising, today announced the completion of its previously announced acquisition by Mubadala Capital. The transaction, valued at...",
-   "prescore": 6.7,
-   "headline": "Clear Channel Outdoor Holdings, Inc. Announces Completion of Acquisition by Mubadala Capital",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "SAN ANTONIO, Oct. 14, 2026 /PRNewswire/ -- Clear Channel Outdoor Holdings, Inc. (\"Clear Channel\" or the \"Company\"), a leader in U.S. out-of-home advertising, today announced the completion of its previously announced acquisition by Mubadala Capital. The transaction, valued at...",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "cb95feefb8a1",
    "title": "Saipem, Subsea7 cite Petrobras’ power in Brazilian merger defense",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb1RRa0RaejZiX2EwQTRhdFRBZVhqRmVVVUl6RzZWcnpDQ1o2T1JVVUFLZThBNWVSa0ZrUF9vU0tzb1hLbEM0YkdySWU3bDlWRkZCMzZxWnRFLXRGd0hualpWeTFGc0JjTW04OE5CTzFhSmJwVmFHMEIyTlhMdG9BWk9DS1QtQWNjMWFVV2ZqZXFHUUdJdGVzZnhia2dmZldOMVMyVnpLand1TjNUR0dPSHFGdHd5b2l2ajA0VWxEQV9PaEpvUFHSAVpBVV95cUxQSGdwa3ZlY185NVc5cUg2T0Jiems0dkxmLXU2R3ktRHptbjJDQTM1dXZNWGU2VkpFTDlZNEk3dXhmOF8tXy1kZE1USVhPTklmeUF6djZ6VHRhd2c?oc=5",
@@ -10547,6 +10518,39 @@
    "snippet": "",
    "prescore": 5.6,
    "headline": "Ambani’s Jio Seeks $108 Billion Valuation in Landmark India IPO",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "503b78880138",
+   "title": "Lufthansa vence Air France/KLM e adquire quase metade da TAP",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYjFkZGQ5T0RUMVdUOEQ1S2ZrUVlnUFBZZGIybnBGNlFTcndUXzlRR280RUhyR01VQ09KSzVYSTNxNXFkNG9HZ1lBMkVqNnhncjVQNnFBX3dOMFhQXy03REVQdEVGWnVUaHRoU0tQUXBobWR1MGE2ZW5LOElPUkt6VEVJdHhhaEZlODc2MEdWQ1JFbXFrdFhJWWZPUTg?oc=5",
+   "published": "2026-10-15T02:34:11+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYjFkZGQ5T0RUMVdUOEQ1S2ZrUVlnUFBZZGIybnBGNlFTcndUXzlRR280RUhyR01VQ09KSzVYSTNxNXFkNG9HZ1lBMkVqNnhncjVQNnFBX3dOMFhQXy03REVQdEVGWnVUaHRoU0tQUXBobWR1MGE2ZW5LOElPUkt6VEVJdHhhaEZlODc2MEdWQ1JFbXFrdFhJWWZPUTg?oc=5",
+     "title": "Lufthansa vence Air France/KLM e adquire quase metade da TAP"
+    }
+   ],
+   "ids": [
+    "503b78880138"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Lufthansa vence Air France/KLM e adquire quase metade da TAP",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11253,6 +11257,39 @@
    "ai": false
   },
   {
+   "id": "93917bab4d8b",
+   "title": "Clear Channel Outdoor Holdings, Inc. Announces Completion of Acquisition by Mubadala Capital",
+   "link": "https://www.prnewswire.com/news-releases/clear-channel-outdoor-holdings-inc-announces-completion-of-acquisition-by-mubadala-capital-302909016.html",
+   "published": "2026-10-14T19:10:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/clear-channel-outdoor-holdings-inc-announces-completion-of-acquisition-by-mubadala-capital-302909016.html",
+     "title": "Clear Channel Outdoor Holdings, Inc. Announces Completion of Acquisition by Mubadala Capital"
+    }
+   ],
+   "ids": [
+    "93917bab4d8b"
+   ],
+   "snippet": "SAN ANTONIO, Oct. 14, 2026 /PRNewswire/ -- Clear Channel Outdoor Holdings, Inc. (\"Clear Channel\" or the \"Company\"), a leader in U.S. out-of-home advertising, today announced the completion of its previously announced acquisition by Mubadala Capital. The transaction, valued at...",
+   "prescore": 5.0,
+   "headline": "Clear Channel Outdoor Holdings, Inc. Announces Completion of Acquisition by Mubadala Capital",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "SAN ANTONIO, Oct. 14, 2026 /PRNewswire/ -- Clear Channel Outdoor Holdings, Inc. (\"Clear Channel\" or the \"Company\"), a leader in U.S. out-of-home advertising, today announced the completion of its previously announced acquisition by Mubadala Capital. The transaction, valued at...",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b2e7c89bd67f",
    "title": "Startups de biotecnologia recorrem a fusões reversas para acelerar a abertura de capital",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/10/startups-de-biotecnologia-recorrem-a-fusoes-reversas-para-acelerar-a-abertura-de-capital.shtml",
@@ -11508,39 +11545,6 @@
    "snippet": "",
    "prescore": 4.7,
    "headline": "Itau Buys 35% of Prisma Capital in Alternatives Push in Brazil",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ff822c1d4ef9",
-   "title": "Indian rupee to rise after US yields reverse inflation-led spike, Fed hike bets remain low",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaGR1OENJajFoN1pyejk2WXpNSHBSRTFpMzl1WXFiT2NIWGloV1lPc1BkY0VCRGM0VjVrSHMzYnBNVE93WjBWSXVCcTcxVkVDRkEwMC1mUWJYeXIyUlNoMUJBV0JVWEFOaUMwV2tpOHkyVFFESTdVeDFTbnFiVTZLRHVLNVhrelFOTTdhRG5WRVJwb0RjTWF1aU9iWmRRSThRX1NzeUZQMzl5aGV1MXJjYVZrX05mb3dsRE04OGJkRUQ?oc=5",
-   "published": "2026-10-15T02:58:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaGR1OENJajFoN1pyejk2WXpNSHBSRTFpMzl1WXFiT2NIWGloV1lPc1BkY0VCRGM0VjVrSHMzYnBNVE93WjBWSXVCcTcxVkVDRkEwMC1mUWJYeXIyUlNoMUJBV0JVWEFOaUMwV2tpOHkyVFFESTdVeDFTbnFiVTZLRHVLNVhrelFOTTdhRG5WRVJwb0RjTWF1aU9iWmRRSThRX1NzeUZQMzl5aGV1MXJjYVZrX05mb3dsRE04OGJkRUQ?oc=5",
-     "title": "Indian rupee to rise after US yields reverse inflation-led spike, Fed hike bets remain low"
-    }
-   ],
-   "ids": [
-    "ff822c1d4ef9"
-   ],
-   "snippet": "",
-   "prescore": 4.6,
-   "headline": "Indian rupee to rise after US yields reverse inflation-led spike, Fed hike bets remain low",
    "category": "internacional",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12063,7 +12067,7 @@
    "id": "981b3732ceac",
    "title": "US floats unfreezing some Russian assets to restart Ukraine peace talks",
    "link": "https://www.ft.com/content/54353d3a-afed-4fec-985a-50f3dfb9be8e?syn-25a6b1a6=1",
-   "published": "2026-10-14T23:09:30+00:00",
+   "published": "2026-10-14T23:23:25+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12097,44 +12101,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "55c5b110ae01",
-   "title": "Goliath Roller-Coaster Death Casts Long Shadow Over Six Flags’ Turnaround Hopes",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNV2FWcnlHaEpxRDFzQUEtME1BcUp3Y1JfeGVFY3VOeElSTDdOZFJJWVVORlA1b2NEZkN1U0xCV2lJbmhNNFd5WlBENEc1cDU0TGNGd1Y4dTFUWnpiUmJUQjJtTHZVVVZLamw3b1ZEaV8zNlNrN0Nmd0UzUHVVaWZHMTJoZjhIQ0ZjLWpObEc1aUxBRXlWQV8wOHRibS1iUFB4NXpCZTVDUU4wUm1DYTJWSnd2azJyYUk?oc=5",
-   "published": "2026-10-15T07:49:37+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNV2FWcnlHaEpxRDFzQUEtME1BcUp3Y1JfeGVFY3VOeElSTDdOZFJJWVVORlA1b2NEZkN1U0xCV2lJbmhNNFd5WlBENEc1cDU0TGNGd1Y4dTFUWnpiUmJUQjJtTHZVVVZLamw3b1ZEaV8zNlNrN0Nmd0UzUHVVaWZHMTJoZjhIQ0ZjLWpObEc1aUxBRXlWQV8wOHRibS1iUFB4NXpCZTVDUU4wUm1DYTJWSnd2azJyYUk?oc=5",
-     "title": "Goliath Roller-Coaster Death Casts Long Shadow Over Six Flags’ Turnaround Hopes"
-    }
-   ],
-   "ids": [
-    "55c5b110ae01"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Morte em montanha-russa Goliath lança sombra sobre a recuperação da Six Flags",
-   "category": "empresas",
-   "importance": 3,
-   "importance_reason": "Evento operacional e reputacional de empresa americana fora do foco.",
-   "summary": "O WSJ diz que a morte na montanha-russa Goliath ameaça as esperanças de recuperação da Six Flags.",
-   "involves": "Six Flags",
-   "interpretation": "Risco reputacional e regulatório sobre uma operação em turnaround.",
-   "impact": "Pressão sobre resultados e ações da Six Flags; efeito restrito.",
-   "sentiment": "negativo",
-   "entities": [
-    "Six Flags"
-   ],
-   "tags": [
-    "Six Flags",
-    "turnaround"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
   },
   {
    "id": "b4335e1c284f",
@@ -12429,39 +12395,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "83e34904087a",
-   "title": "Petróleo recua com investidores avaliando perspectivas de oferta e tensões no Oriente Médio",
-   "link": "https://www.moneytimes.com.br/petroleo-recua-com-investidores-avaliando-perspectivas-de-oferta-e-tensoes-no-oriente-medio-fets/",
-   "published": "2026-10-15T08:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/petroleo-recua-com-investidores-avaliando-perspectivas-de-oferta-e-tensoes-no-oriente-medio-fets/",
-     "title": "Petróleo recua com investidores avaliando perspectivas de oferta e tensões no Oriente Médio"
-    }
-   ],
-   "ids": [
-    "83e34904087a"
-   ],
-   "snippet": "Os preços do petróleo caem mais de 1% nesta quinta-feira (15), enquanto os investidores avaliaram os riscos para o abastecimento decorrentes dos ataques a embarcações no Estreito de Ormuz, em contraposição aos esforços dos Estados Unidos para reduzir os custos do transporte marítimo de petróleo por meio do afrouxamento das sanções impostas às embarcações. Os […]",
-   "prescore": 3.8,
-   "headline": "Petróleo recua com investidores avaliando perspectivas de oferta e tensões no Oriente Médio",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Os preços do petróleo caem mais de 1% nesta quinta-feira (15), enquanto os investidores avaliaram os riscos para o abastecimento decorrentes dos ataques a embarcações no Estreito de Ormuz, em contraposição aos esforços dos Estados Unidos para reduzir os custos do transporte marítimo de petróleo por meio do afrouxamento das sanções impostas às embarcações. Os […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13593,6 +13526,39 @@
    "ai": false
   },
   {
+   "id": "0ef2f24931f9",
+   "title": "Flávio acusa sindicatos de custearem campanha de Lula e pede ao TSE para cassar chapa",
+   "link": "https://www.infomoney.com.br/politica/flavio-acusa-sindicatos-de-custearem-campanha-de-lula-e-pede-ao-tse-para-cassar-chapa/",
+   "published": "2026-10-15T09:30:49+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/politica/flavio-acusa-sindicatos-de-custearem-campanha-de-lula-e-pede-ao-tse-para-cassar-chapa/",
+     "title": "Flávio acusa sindicatos de custearem campanha de Lula e pede ao TSE para cassar chapa"
+    }
+   ],
+   "ids": [
+    "0ef2f24931f9"
+   ],
+   "snippet": "A ação foi proposta pela campanha do parlamentar junto ao Tribunal Superior Eleitoral (TSE) e pede a cassação da chapa do petista por abuso econômico The post Flávio acusa sindicatos de custearem campanha de Lula e pede ao TSE para cassar chapa appeared first on InfoMoney .",
+   "prescore": 3.2,
+   "headline": "Flávio acusa sindicatos de custearem campanha de Lula e pede ao TSE para cassar chapa",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A ação foi proposta pela campanha do parlamentar junto ao Tribunal Superior Eleitoral (TSE) e pede a cassação da chapa do petista por abuso econômico The post Flávio acusa sindicatos de custearem campanha de Lula e pede ao TSE para cassar chapa appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "049955835bc3",
    "title": "A disputa está se movendo? Datafolha traz novo teste para Lula e Flávio",
    "link": "https://www.infomoney.com.br/politica/a-disputa-esta-se-movendo-datafolha-traz-novo-teste-para-lula-e-flavio/",
@@ -13648,39 +13614,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Investidores aguardam índice de preços ao produtor, vendas no varejo e pedidos de auxílio-desemprego após inflação ao consumidor superar expectativas The post Futuros de NY têm sinais mistos antes de novos dados econômicos; Kospi cai 7% appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a4a85f2f032c",
-   "title": "O que mudou nas campanhas de Lula e Flávio após o primeiro turno?",
-   "link": "https://www.infomoney.com.br/politica/a-10-dias-da-eleicao-lula-foca-em-campanha-flavio-ja-fala-sobre-governo/",
-   "published": "2026-10-15T08:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/a-10-dias-da-eleicao-lula-foca-em-campanha-flavio-ja-fala-sobre-governo/",
-     "title": "O que mudou nas campanhas de Lula e Flávio após o primeiro turno?"
-    }
-   ],
-   "ids": [
-    "a4a85f2f032c"
-   ],
-   "snippet": "Petista troca discurso centrado em legado por propostas para o futuro; candidato do PL antecipa nomes, PECs e desenho de um eventual governo The post O que mudou nas campanhas de Lula e Flávio após o primeiro turno? appeared first on InfoMoney .",
-   "prescore": 3.2,
-   "headline": "O que mudou nas campanhas de Lula e Flávio após o primeiro turno?",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Petista troca discurso centrado em legado por propostas para o futuro; candidato do PL antecipa nomes, PECs e desenho de um eventual governo The post O que mudou nas campanhas de Lula e Flávio após o primeiro turno? appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15043,6 +14976,78 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "5e1f6b7f5601",
+   "title": "Lula e Flávio Bolsonaro divergem sobre CLT, sindicatos e jornada de trabalho",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/lula-e-flavio-bolsonaro-divergem-sobre-clt-sindicatos-e-jornada-de-trabalho.shtml",
+   "published": "2026-10-14T15:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/lula-e-flavio-bolsonaro-divergem-sobre-clt-sindicatos-e-jornada-de-trabalho.shtml",
+     "title": "Lula e Flávio Bolsonaro divergem sobre CLT, sindicatos e jornada de trabalho"
+    },
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/lula-e-flavio-bolsonaro-divergem-sobre-clt-sindicatos-e-jornada-de-trabalho.shtml",
+     "title": "Lula e Flávio Bolsonaro divergem sobre CLT, sindicatos e jornada de trabalho"
+    }
+   ],
+   "ids": [
+    "5e1f6b7f5601",
+    "617acab6b9b1"
+   ],
+   "snippet": "As posições dos dois candidatos à Presidência da República apontam para caminhos opostos quando o assunto é mercado de trabalho . Leia mais (10/14/2026 - 12h00)",
+   "prescore": 3.0,
+   "headline": "Lula e Flávio Bolsonaro divergem sobre CLT, sindicatos e jornada de trabalho",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "As posições dos dois candidatos à Presidência da República apontam para caminhos opostos quando o assunto é mercado de trabalho . Leia mais (10/14/2026 - 12h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "050894182b57",
+   "title": "Campanha de Lula cobra Meta sobre IA que produz propaganda para Flávio e veta material do petista",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/campanha-de-lula-cobra-meta-sobre-ia-que-produz-propaganda-para-flavio-e-veta-material-do-petista.shtml",
+   "published": "2026-10-14T14:50:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/campanha-de-lula-cobra-meta-sobre-ia-que-produz-propaganda-para-flavio-e-veta-material-do-petista.shtml",
+     "title": "Campanha de Lula cobra Meta sobre IA que produz propaganda para Flávio e veta material do petista"
+    }
+   ],
+   "ids": [
+    "050894182b57"
+   ],
+   "snippet": "A campanha do presidente Lula ( PT ) apresentou nova petição ao TSE (Tribunal Superior Eleitoral), nesta quarta-feira (14), em que volta a acusar a Meta , empresa de tecnologia americana dona do Facebook e do Instagram , de interferir na disputa eleitoral em favor do adversário do petista, o senador Flávio Bolsonaro ( PL ). Leia mais (10/14/2026 - 11h50)",
+   "prescore": 3.0,
+   "headline": "Campanha de Lula cobra Meta sobre IA que produz propaganda para Flávio e veta material do petista",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A campanha do presidente Lula ( PT ) apresentou nova petição ao TSE (Tribunal Superior Eleitoral), nesta quarta-feira (14), em que volta a acusar a Meta , empresa de tecnologia americana dona do Facebook e do Instagram , de interferir na disputa eleitoral em favor do adversário do petista, o senador Flávio Bolsonaro ( PL ). Leia mais (10/14/2026 - 11h50)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "sources": [
@@ -15127,7 +15132,7 @@
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 47,
+   "count": 48,
    "error": null
   },
   {
@@ -15232,7 +15237,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 53,
+   "count": 52,
    "error": null
   },
   {
@@ -15575,9 +15580,9 @@
  "stats": {
   "raw": 968,
   "unique": 259,
-  "unique_all": 912,
+  "unique_all": 913,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.0
+  "seconds": 3.5
  }
 }
