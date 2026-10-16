@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T08:21:49.122702-03:00",
+ "generated_at": "2026-10-16T08:28:48.716206-03:00",
  "date": "2026-10-16",
  "window": {
   "start": "2026-10-15T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-16T08:20:21.852364-03:00",
-  "analyzed": 285
+  "analyzed": 283
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -121,14 +121,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 5.7171,
-   "change_pct": 1.3641784710848315,
+   "price": 5.7174,
+   "change_pct": 1.3694974708471586,
    "spark": [
     5.586592197418213,
     5.561735153198242,
     5.627461910247803,
     5.640158176422119,
-    5.717100143432617
+    5.717400074005127
    ]
   },
   {
@@ -177,42 +177,42 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 106.25,
-   "change_pct": 0.311557625339387,
+   "price": 106.27,
+   "change_pct": 0.33043980089237923,
    "spark": [
     106.6500015258789,
     105.69000244140625,
     106.05999755859375,
     105.91999816894531,
-    106.25
+    106.2699966430664
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4195.2,
-   "change_pct": 0.6019016751625861,
+   "price": 4198.5,
+   "change_pct": 0.6810364662400259,
    "spark": [
     4190.60009765625,
     4177.2998046875,
     4107.89990234375,
     4170.10009765625,
-    4195.2001953125
+    4198.5
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 82695.18,
-   "change_pct": 0.6741042296792177,
+   "price": 82794.29,
+   "change_pct": 0.7947619327062228,
    "spark": [
     81762.5625,
     83095.125,
     81562.4921875,
     82141.4609375,
-    82695.1796875
+    82794.2890625
    ]
   }
  ],
@@ -1091,6 +1091,54 @@
    }
   },
   {
+   "id": "6c97feaf5b06",
+   "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+   "published": "2026-10-15T21:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+     "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say"
+    }
+   ],
+   "ids": [
+    "6c97feaf5b06"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Investidores moderam expectativas de valuation do IPO da Anthropic por desaceleração da receita",
+   "category": "mna",
+   "importance": 7,
+   "importance_reason": "IPO potencialmente gigante de IA; influencia apetite por tech.",
+   "summary": "Segundo a Reuters, fontes indicam que investidores moderam as expectativas de valuation do IPO da Anthropic devido à desaceleração do crescimento da receita.",
+   "involves": "Anthropic, investidores.",
+   "interpretation": "Sinal de disciplina de preço em IA; detalhes de valor não constam.",
+   "impact": "Pode influenciar o apetite por IPOs de IA no mercado.",
+   "sentiment": "negativo",
+   "entities": [
+    "Anthropic",
+    "Reuters"
+   ],
+   "tags": [
+    "IPO",
+    "IA",
+    "valuation"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "não aplicável",
+    "target": "Anthropic",
+    "value": "não divulgado",
+    "stage": "Rumor",
+    "sector": "Inteligência artificial",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "d1d5739a9e70",
    "title": "Proofpoint to Acquire Varonis in $6.3 Billion Cybersecurity Deal",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRzRXbDF6YUJkek90VzR5cFBPTlZXNV9zbTNSX1dFb2VYeDZfV0hhdm5wRFpCaG1lVFo3Y2NqbmFFVzU0ckZFenlRemoyckMxb01ZZkhGcE0wZWFBRk83U0FIMm02MXl4UDZZdW5wRVFGS2w5RUJjTTV0TEtCOF9GbDRIUy01N040M3hXNzN6ZUR1blZFNnVkUDRiWWxKVE05aFNsNGstTUcxZVVrUjFB?oc=5",
@@ -1183,7 +1231,8 @@
     "sector": "Inteligência artificial",
     "advisors": "não divulgado"
    },
-   "ai": true
+   "ai": true,
+   "dup_of": "6c97feaf5b06"
   },
   {
    "id": "af7c12edea96",
@@ -1230,7 +1279,7 @@
     "advisors": "não divulgado"
    },
    "ai": true,
-   "dup_of": "e02bc3082634"
+   "dup_of": "6c97feaf5b06"
   },
   {
    "id": "57159cb42417",
@@ -1277,7 +1326,7 @@
     "advisors": "não divulgado"
    },
    "ai": true,
-   "dup_of": "e02bc3082634"
+   "dup_of": "6c97feaf5b06"
   },
   {
    "id": "d8185818edad",
@@ -1965,6 +2014,46 @@
    "ai": true
   },
   {
+   "id": "077a5c84620c",
+   "title": "Bolsonaro's lead over Lula narrows ahead of Brazil runoff, Datafolha poll shows",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVl9qeVZfdnAyMlplRWRWQTkzdUhVQWtIenpNczFnMWxyWFpuV0o5d19LSmZPTTdEeUd4dUtSM09RWGxheHVDcmpaSDUyR24xWmNYM3NYRjh5NHVHbXBTZ25hNkY0OU5oSnZjenZNN2dxSGhJYVBCQzlrTzlYbUoxVnFUeTNyRVJSa29ybUR4YkhSYmZ3VDkzOUpvdGtGQmk1dDZYZlhQdENOS1RlSFNhaURWQWpFMW1jWndwNldCRW8tVnBu?oc=5",
+   "published": "2026-10-15T22:11:40+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVl9qeVZfdnAyMlplRWRWQTkzdUhVQWtIenpNczFnMWxyWFpuV0o5d19LSmZPTTdEeUd4dUtSM09RWGxheHVDcmpaSDUyR24xWmNYM3NYRjh5NHVHbXBTZ25hNkY0OU5oSnZjenZNN2dxSGhJYVBCQzlrTzlYbUoxVnFUeTNyRVJSa29ybUR4YkhSYmZ3VDkzOUpvdGtGQmk1dDZYZlhQdENOS1RlSFNhaURWQWpFMW1jWndwNldCRW8tVnBu?oc=5",
+     "title": "Bolsonaro's lead over Lula narrows ahead of Brazil runoff, Datafolha poll shows"
+    }
+   ],
+   "ids": [
+    "077a5c84620c"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "Vantagem de Bolsonaro sobre Lula diminui antes do 2º turno, mostra Datafolha",
+   "category": "politica",
+   "importance": 7,
+   "importance_reason": "Pesquisa move o mercado.",
+   "summary": "A Reuters informa que a vantagem de Flávio Bolsonaro sobre Lula diminuiu no Datafolha antes do 2º turno. (O título cita 'Bolsonaro'; outros títulos indicam Flávio.)",
+   "involves": "Datafolha, Lula, Flávio Bolsonaro",
+   "interpretation": "Corrida mais apertada.",
+   "impact": "Maior volatilidade.",
+   "sentiment": "neutro",
+   "entities": [
+    "Datafolha",
+    "Lula",
+    "Flávio Bolsonaro"
+   ],
+   "tags": [
+    "eleição",
+    "Datafolha"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "1c13c10f3c40",
    "title": "Iron Ore Prices Should be Higher, Vale CEO Says",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/iron-ore-prices-should-be-higher-vale-ceo-says-video",
@@ -2618,46 +2707,6 @@
    "ai": true
   },
   {
-   "id": "845a0471cadc",
-   "title": "Oil Prices Fall as Traders Weigh IEA Reserve Releases, Hormuz Risks",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQlhVbW1hN3VaS2xQWTRNVHc1MGNIektPR0wzd2V5LWEtcmtZUXRSY1ZWYjJjSUVZZElTaFV4c0VfSnJhbHhBdGlHbjE4bkZDN0lfTnNxLXFxeFR3bnVqY21tSl9YdkZHTlY4VjYwYTVxZmFZV181ZHo0RXVFOEw0UDJoVXNYbWpfT1d2cHUza0FBekFXZzRRMTZlUkJYd2RUSlFxWEhLTHVRNjVZRk9xa0JhQzl0UQ?oc=5",
-   "published": "2026-10-16T07:11:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQlhVbW1hN3VaS2xQWTRNVHc1MGNIektPR0wzd2V5LWEtcmtZUXRSY1ZWYjJjSUVZZElTaFV4c0VfSnJhbHhBdGlHbjE4bkZDN0lfTnNxLXFxeFR3bnVqY21tSl9YdkZHTlY4VjYwYTVxZmFZV181ZHo0RXVFOEw0UDJoVXNYbWpfT1d2cHUza0FBekFXZzRRMTZlUkJYd2RUSlFxWEhLTHVRNjVZRk9xa0JhQzl0UQ?oc=5",
-     "title": "Oil Prices Fall as Traders Weigh IEA Reserve Releases, Hormuz Risks"
-    }
-   ],
-   "ids": [
-    "845a0471cadc"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Petróleo cai com liberação de reservas da AIE e riscos em Ormuz",
-   "category": "mercados",
-   "importance": 7,
-   "importance_reason": "Commodity-chave para Petrobras e inflação.",
-   "summary": "Os preços do petróleo caem enquanto operadores avaliam liberações de reservas da AIE e os riscos em Ormuz.",
-   "involves": "AIE, Estreito de Ormuz.",
-   "interpretation": "Dois vetores opostos: oferta adicional e risco geopolítico.",
-   "impact": "Impacto em Petrobras e combustíveis.",
-   "sentiment": "misto",
-   "entities": [
-    "AIE",
-    "Ormuz"
-   ],
-   "tags": [
-    "petróleo",
-    "AIE",
-    "Ormuz"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "c34c631ae1ba",
    "title": "UK tried to persuade UBS to move to London",
    "link": "https://www.ft.com/content/1bd1cdc2-9dc1-4538-8820-129e9bd9117b?syn-25a6b1a6=1",
@@ -2693,6 +2742,84 @@
     "UBS",
     "capital",
     "Londres"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "442822d8f0a0",
+   "title": "Chip-Machine Supplier ASML Boosts Guidance for Third Time on Surging AI Demand",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWHp0Zks1SnAwS1Y3RWhMSHNRUlVtTGJhb3duY1o0NWFycWQyUkNad2NIMm01aUlUM1lVX1lSS0lNYzQtVnBWTGZlc3RvcDZYQzUzNGRqZFRWOVNUSDJ1MVRnR19nZ280Tl80eERkdXJydU9DakFsbUVYYlIybnh4ZUY0YmJnV1lVTmhFRHZKNjlSR3o4S3lfeVc3akVEUm5vRnpodTZCUFB6MDExeXhyRWRmQXItVzlFVzBxTkJyMWtQV28?oc=5",
+   "published": "2026-10-16T02:23:22+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWHp0Zks1SnAwS1Y3RWhMSHNRUlVtTGJhb3duY1o0NWFycWQyUkNad2NIMm01aUlUM1lVX1lSS0lNYzQtVnBWTGZlc3RvcDZYQzUzNGRqZFRWOVNUSDJ1MVRnR19nZ280Tl80eERkdXJydU9DakFsbUVYYlIybnh4ZUY0YmJnV1lVTmhFRHZKNjlSR3o4S3lfeVc3akVEUm5vRnpodTZCUFB6MDExeXhyRWRmQXItVzlFVzBxTkJyMWtQV28?oc=5",
+     "title": "Chip-Machine Supplier ASML Boosts Guidance for Third Time on Surging AI Demand"
+    }
+   ],
+   "ids": [
+    "442822d8f0a0"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "ASML eleva projeções pela terceira vez com demanda de IA",
+   "category": "empresas",
+   "importance": 7,
+   "importance_reason": "Sinal forte da cadeia de semicondutores e do ciclo de IA.",
+   "summary": "A ASML elevou pela terceira vez sua projeção, puxada pela demanda de IA. Números não constam do material.",
+   "involves": "ASML, semicondutores, IA.",
+   "interpretation": "Confirma o ciclo de capex em IA; terceira revisão indica demanda forte.",
+   "impact": "Positivo para o setor de chips; sustenta o fôlego do tema IA.",
+   "sentiment": "positivo",
+   "entities": [
+    "ASML"
+   ],
+   "tags": [
+    "semicondutores",
+    "IA",
+    "guidance"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "78d29b60742c",
+   "title": "IEA to speed up oil stocks release including over 20 million barrels of diesel",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOajItTjVjRWhSaHJfNEJFdncwUU5yVU95N2RyVDdiaS04RGJfeE9RbjRIY3JaVFlTSmY4T1ZvNlVUdFdSOEczMUhKSm12ZzNRNHpueUM3aTVEcy1na2xUMG1qcm5vb2RwSFNIVHBpMmNVOVZqYml0RXYxcUNKazQyQlhUWGJxMnlhWFAySDJKaVNJdUVrZld6SUgyUWNaR1I4YWVxRUNIMkNVMm9ualR3LWNzQmJVVWR4Sk42aGhMX3FWQQ?oc=5",
+   "published": "2026-10-15T21:12:24+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOajItTjVjRWhSaHJfNEJFdncwUU5yVU95N2RyVDdiaS04RGJfeE9RbjRIY3JaVFlTSmY4T1ZvNlVUdFdSOEczMUhKSm12ZzNRNHpueUM3aTVEcy1na2xUMG1qcm5vb2RwSFNIVHBpMmNVOVZqYml0RXYxcUNKazQyQlhUWGJxMnlhWFAySDJKaVNJdUVrZld6SUgyUWNaR1I4YWVxRUNIMkNVMm9ualR3LWNzQmJVVWR4Sk42aGhMX3FWQQ?oc=5",
+     "title": "IEA to speed up oil stocks release including over 20 million barrels of diesel"
+    }
+   ],
+   "ids": [
+    "78d29b60742c"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "AIE vai acelerar liberação de estoques de petróleo, com mais de 20 milhões de barris de diesel",
+   "category": "mercados",
+   "importance": 7,
+   "importance_reason": "Liberação coordenada de estoques indica tensão de oferta e afeta preços.",
+   "summary": "A Reuters informa que a AIE acelerará a liberação de estoques de petróleo, incluindo mais de 20 milhões de barris de diesel.",
+   "involves": "AIE; petróleo; diesel.",
+   "interpretation": "Reação a aperto de oferta; diesel é foco.",
+   "impact": "Pode conter alta do diesel; relevante para Petrobras e inflação.",
+   "sentiment": "neutro",
+   "entities": [
+    "AIE"
+   ],
+   "tags": [
+    "AIE",
+    "diesel",
+    "petróleo"
    ],
    "is_deal": false,
    "deal": null,
@@ -2773,6 +2900,45 @@
     "petróleo",
     "Ormuz",
     "Golfo"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "a511a1624dca",
+   "title": "Dow Industrials, Treasurys Rise as Investors Rotate Out of Tech",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNlJqX1VNMzFROWFHQWtMOXlXTVkxX1d5dTQtQUVvbGNHTHZMNmxiNGdjQmlNNkxUYm1ucTNlaURJY1MtU2czWjdUQzFUMnpTODVvbC1fb1hIN2J3eS03RFE1em4wLV8wTzFSQ1kwYWJ0YW45bHJZUnRUeWZIV0pqMlhac08yeDhLNWpZU0NmRzkzZ09lQ1NGOVdBYk16SnM?oc=5",
+   "published": "2026-10-15T18:17:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNlJqX1VNMzFROWFHQWtMOXlXTVkxX1d5dTQtQUVvbGNHTHZMNmxiNGdjQmlNNkxUYm1ucTNlaURJY1MtU2czWjdUQzFUMnpTODVvbC1fb1hIN2J3eS03RFE1em4wLV8wTzFSQ1kwYWJ0YW45bHJZUnRUeWZIV0pqMlhac08yeDhLNWpZU0NmRzkzZ09lQ1NGOVdBYk16SnM?oc=5",
+     "title": "Dow Industrials, Treasurys Rise as Investors Rotate Out of Tech"
+    }
+   ],
+   "ids": [
+    "a511a1624dca"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Futuros da Nasdaq recuam com avanço da liquidação global de IA",
+   "category": "mercados",
+   "importance": 7,
+   "importance_reason": "Indica abertura negativa em Nova York.",
+   "summary": "Os futuros da Nasdaq recuam com a liquidação global de ativos de IA ganhando força, segundo o WSJ.",
+   "involves": "Nasdaq; IA.",
+   "interpretation": "Antecipa abertura fraca nos EUA.",
+   "impact": "Risco-off com efeito provável na B3 e câmbio.",
+   "sentiment": "negativo",
+   "entities": [
+    "Nasdaq"
+   ],
+   "tags": [
+    "Nasdaq",
+    "futuros",
+    "IA"
    ],
    "is_deal": false,
    "deal": null,
@@ -3614,6 +3780,45 @@
    "ai": true
   },
   {
+   "id": "38dae6b91790",
+   "title": "China proposes adding 40 AI, biotech, solar technologies to export control list",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMWNnS1haU3c5T3lybTBzQUNxZF9lMmhWaFp0Yk5UbzhDdklobHpkRHk2dExFU1dWZmVMVENFNEVLOW9JWDdscm15VDhObXhhc1JwYjlIelZjeFJuMG9jVERmTHRNRTZtSlBRYndNc2IxZTRkdWtPUGdlWDhoSEZQTHVZNzIwMFUzWVhjT3gxUWl1X2VpM1VOM29BZElFRjlaek1uRDFQb2N5aF9FTlF4U1N4WFZRVmtyUTBLdmVJc0Rzb3E2NkZ5ZQ?oc=5",
+   "published": "2026-10-16T08:43:39+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMWNnS1haU3c5T3lybTBzQUNxZF9lMmhWaFp0Yk5UbzhDdklobHpkRHk2dExFU1dWZmVMVENFNEVLOW9JWDdscm15VDhObXhhc1JwYjlIelZjeFJuMG9jVERmTHRNRTZtSlBRYndNc2IxZTRkdWtPUGdlWDhoSEZQTHVZNzIwMFUzWVhjT3gxUWl1X2VpM1VOM29BZElFRjlaek1uRDFQb2N5aF9FTlF4U1N4WFZRVmtyUTBLdmVJc0Rzb3E2NkZ5ZQ?oc=5",
+     "title": "China proposes adding 40 AI, biotech, solar technologies to export control list"
+    }
+   ],
+   "ids": [
+    "38dae6b91790"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "China propõe incluir 40 tecnologias de IA, biotecnologia e solar em controle de exportação",
+   "category": "internacional",
+   "importance": 6,
+   "importance_reason": "Aumenta tensão tecnológica.",
+   "summary": "A China propõe adicionar 40 tecnologias de IA, biotecnologia e solar à lista de controle de exportações.",
+   "involves": "China",
+   "interpretation": "Escalada na disputa tecnológica.",
+   "impact": "Afeta cadeias globais.",
+   "sentiment": "negativo",
+   "entities": [
+    "China"
+   ],
+   "tags": [
+    "China",
+    "exportações",
+    "IA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "d4a22ed11e1b",
    "title": "The French Political Crisis Turning Into a Debt Crisis",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/the-french-political-crisis-turning-into-a-debt-crisis-video",
@@ -4273,46 +4478,6 @@
    "ai": true
   },
   {
-   "id": "16f415cde619",
-   "title": "Record Foreign Selling in Indonesia Set to Worsen on MSCI Threat",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-outflows-to-worsen-as-msci-mulls-cut-analysts-say",
-   "published": "2026-10-16T00:43:17+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-outflows-to-worsen-as-msci-mulls-cut-analysts-say",
-     "title": "Record Foreign Selling in Indonesia Set to Worsen on MSCI Threat"
-    }
-   ],
-   "ids": [
-    "16f415cde619"
-   ],
-   "snippet": "Indonesian stocks will likely see further outflows as the nation faces a potential ejection from global stock indexes following MSCI Inc.’s latest proposal to downgrade the country, according to analysts and investors.",
-   "prescore": 2.8,
-   "headline": "Venda estrangeira recorde na Indonésia deve piorar com ameaça da MSCI",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Fluxo de emergentes pode afetar alocação global.",
-   "summary": "Ações indonésias devem ver mais saídas após a proposta da MSCI de rebaixar o país, segundo analistas e investidores.",
-   "involves": "Indonésia, MSCI, investidores estrangeiros.",
-   "interpretation": "Venda recorde já em curso; o rebaixamento agrava.",
-   "impact": "Pressão sobre a bolsa indonésia.",
-   "sentiment": "negativo",
-   "entities": [
-    "MSCI",
-    "Indonésia"
-   ],
-   "tags": [
-    "Indonésia",
-    "MSCI",
-    "fluxo"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "6e3d5b7bd65d",
    "title": "Agora só falta Lula assinar: Senado aprova novo enquadramento dos MEIs e perdão de dívidas",
    "link": "https://www.seudinheiro.com/2026/seu-negocio/senado-aprova-novo-enquadramento-dos-meis-e-perdao-de-dividas-do-setor-projeto-vai-a-sancao-ccgg/",
@@ -4629,46 +4794,6 @@
    "ai": true
   },
   {
-   "id": "565ab0c04bb1",
-   "title": "Key Moments From Kevin Warsh’s Speech to the IMF",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORnpKVU16UFh4NDdkaENsa09hUE1rT2IyeWhwb2JyMVZMQm8yLWN5b0lXdEZPa1ZjS2JjN2ZsRzB4RDJocEpyeE1Za01PdFROdzdueUNzZU1BTExzRjZQejJWR1dpeEpJV3o4Zmo2cUdJMHdkbTdvbW9odnBoTk9nT1BiVlNrZ29QSzhhUjMtOTlMN21pQ2loNFRxdnVjMTZjUlE?oc=5",
-   "published": "2026-10-16T10:08:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORnpKVU16UFh4NDdkaENsa09hUE1rT2IyeWhwb2JyMVZMQm8yLWN5b0lXdEZPa1ZjS2JjN2ZsRzB4RDJocEpyeE1Za01PdFROdzdueUNzZU1BTExzRjZQejJWR1dpeEpJV3o4Zmo2cUdJMHdkbTdvbW9odnBoTk9nT1BiVlNrZ29QSzhhUjMtOTlMN21pQ2loNFRxdnVjMTZjUlE?oc=5",
-     "title": "Key Moments From Kevin Warsh’s Speech to the IMF"
-    }
-   ],
-   "ids": [
-    "565ab0c04bb1"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Principais momentos do discurso de Kevin Warsh no FMI",
-   "category": "internacional",
-   "importance": 6,
-   "importance_reason": "Fala de figura central da política monetária americana.",
-   "summary": "A WSJ resume os principais momentos do discurso de Kevin Warsh no FMI. Conteúdo não detalhado.",
-   "involves": "Kevin Warsh, FMI.",
-   "interpretation": "Sinaliza posição de Warsh sobre política monetária; o conteúdo não consta.",
-   "impact": "Pode mexer na expectativa de juros dos EUA.",
-   "sentiment": "neutro",
-   "entities": [
-    "Kevin Warsh",
-    "FMI"
-   ],
-   "tags": [
-    "Warsh",
-    "Fed",
-    "FMI"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "b841b5f516da",
    "title": "Russia takes control of more European corporate assets ahead of Zelenskiy's appearance at EU summit",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTDMtenFMRWlxMERtR0Q4QVFNUUFtXzBqM1p3U1VSQ256Vkxod1o2Q09kSDZLamxiWUtIanlPM25KOS13eWxCMm00REhXNWVhbjlYUUxHTjB0MHZKVUpXNlBCNDduQnI1czdUR05jMzdibWVSMGlFMmlxOHdTdnB3WXlnVkh3ZGE2T2ZWdl9Jd3lGYi1scjFULUU5S29jMG15ZkZhVE1uQ3pWYWswQWwtLWFDdWwtU010ZTBJUzJZNGR4Qm1TVFBwUlJ3bw?oc=5",
@@ -4710,6 +4835,86 @@
    "ai": true
   },
   {
+   "id": "4ba27f8d8b48",
+   "title": "Hedge funds' role comes into focus following European bonds turmoil",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOXExeXEzNDNZOWtnSFNGYU5jLUJKLUJPc2lMNGZQRWE4c2VSOW8zVEV0eGFEOFJIMnFhM3YxMVdhZk1USG0zNGtWdEE3cXZJTEtJamJSY2pOMVU0clcybWljQjlsNnM0NGhDRkUwMlhCbnRQWGljZEZ5ZkE4eEptUHBGRkRfc2ZScG9FOVZJS0dsMjEzX1BqTzFJSFV4R2NmbXU5Z3BCdnREQ0ZyQld5cnVwVFZmZzRhakE?oc=5",
+   "published": "2026-10-16T05:02:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOXExeXEzNDNZOWtnSFNGYU5jLUJKLUJPc2lMNGZQRWE4c2VSOW8zVEV0eGFEOFJIMnFhM3YxMVdhZk1USG0zNGtWdEE3cXZJTEtJamJSY2pOMVU0clcybWljQjlsNnM0NGhDRkUwMlhCbnRQWGljZEZ5ZkE4eEptUHBGRkRfc2ZScG9FOVZJS0dsMjEzX1BqTzFJSFV4R2NmbXU5Z3BCdnREQ0ZyQld5cnVwVFZmZzRhakE?oc=5",
+     "title": "Hedge funds' role comes into focus following European bonds turmoil"
+    }
+   ],
+   "ids": [
+    "4ba27f8d8b48"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Papel dos hedge funds ganha foco após turbulência nos títulos europeus",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Estresse em renda fixa europeia afeta apetite global a risco.",
+   "summary": "A Reuters aponta que o papel dos hedge funds entrou no radar após a turbulência recente nos títulos europeus. O texto não traz trecho nem números no material disponível.",
+   "involves": "Hedge funds; mercado de bonds europeu.",
+   "interpretation": "Sugere que posições alavancadas podem ter amplificado a volatilidade; detalhes não constam do material.",
+   "impact": "Possível efeito em prêmio de risco global e funding de emissores; impacto direto no Brasil é indireto.",
+   "sentiment": "negativo",
+   "entities": [
+    "Hedge funds",
+    "Europa"
+   ],
+   "tags": [
+    "bonds",
+    "hedge funds",
+    "volatilidade"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "46a1e51a287e",
+   "title": "US Treasury says Japan no longer faces deflationary environment, yen level must change",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVnlFbzgwbXQ1Q3RjNk9wS2U2dHhqUzJLMENfa3Q1NU5pSUc2ZW96Mlg4Uk9sbDhic0N4YVhaNkpvbmphcTJSSnlJNjRUdFhXNWoxc3dzbUhRV054M0YyMjZBT3hRRFhSLWhYbFh0QUZjRThCUDFSRlptWVJ6YUN0OWkzYlJEQi14Z1ZMazE0WnJmU18yUHVmc2x4OXd4VU5DVlh3dUZ0cTV5UWRFQ2JrMnNEZXBSM0VjcjRxOHhabk1CY0oxaEF0SmF0ZUxJdw?oc=5",
+   "published": "2026-10-16T04:11:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVnlFbzgwbXQ1Q3RjNk9wS2U2dHhqUzJLMENfa3Q1NU5pSUc2ZW96Mlg4Uk9sbDhic0N4YVhaNkpvbmphcTJSSnlJNjRUdFhXNWoxc3dzbUhRV054M0YyMjZBT3hRRFhSLWhYbFh0QUZjRThCUDFSRlptWVJ6YUN0OWkzYlJEQi14Z1ZMazE0WnJmU18yUHVmc2x4OXd4VU5DVlh3dUZ0cTV5UWRFQ2JrMnNEZXBSM0VjcjRxOHhabk1CY0oxaEF0SmF0ZUxJdw?oc=5",
+     "title": "US Treasury says Japan no longer faces deflationary environment, yen level must change"
+    }
+   ],
+   "ids": [
+    "46a1e51a287e"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Tesouro dos EUA diz que Japão não enfrenta mais deflação e que nível do iene deve mudar",
+   "category": "internacional",
+   "importance": 6,
+   "importance_reason": "Pressão dos EUA por iene mais forte mexe em carry trade e câmbio global.",
+   "summary": "A Reuters relata que o Tesouro americano afirmou que o Japão não vive mais ambiente deflacionário e que o nível do iene precisa mudar.",
+   "involves": "Tesouro dos EUA; Japão; iene.",
+   "interpretation": "Sinal de pressão diplomática por valorização do iene e pavimenta normalização do BoJ.",
+   "impact": "Possível desmonte de carry trade, com volatilidade em moedas emergentes e dólar.",
+   "sentiment": "neutro",
+   "entities": [
+    "Tesouro dos EUA",
+    "Japão"
+   ],
+   "tags": [
+    "iene",
+    "câmbio",
+    "BoJ"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "2dd539d95c90",
    "title": "World Bank's Banga sets goal of quintupling critical minerals financing in five years",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMURDQ2RXU1hVUVRzWnlhdG1vclRwaEFnWlRvVGY2bFJ0SFhfWDNOR0ktX28zRC1mUjFGbklkRThPckpQa0FfUXNkZHZJRm9hTnB0YmFNMzJIdVNOa3dtMlBUbGVSbFRscFVjYmx6TS0xRHA0WFk2RVJPRkdpVnl5MDNsUFlfUmU0ZDg4RmpoaVJZVVJBT29FdGtPZFF5TTFGNnlXOXpqUExLTU9tV2RfY1M5Q3hrRHd2a01JNDBUemNiNC1iVTBScXItYw?oc=5",
@@ -4744,6 +4949,44 @@
     "minerais críticos",
     "Banco Mundial",
     "mineração"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "5b0a6526f043",
+   "title": "Oil eases but heads for small weekly gain as investors focus on Middle East supply",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOY0FIVXBWc1k5eW1ObWUyOGNQS1NGZDA5anNoLVJmVDRoMGR0ZUM5aWdDYTFDX3lKN2dYbVlhZzhuTFUwcVo3N0xmTkpBNXJKV2JLVW9qUmdmNWdxaWFJVlFZLWVPVHJjZ0RTNUdYdGxoMk9RZms0aHpzQWlTVDd4LUNnQ1RKUlZmVkhFSS1FQlk5bWl1dkU2QTQ0bDA2dVdHVzMzcTlRZi00ZkM1THVWRFgzTnYtUm9id3pBM1BWeEI4ZVFqU1ltSDB2SQ?oc=5",
+   "published": "2026-10-16T00:57:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOY0FIVXBWc1k5eW1ObWUyOGNQS1NGZDA5anNoLVJmVDRoMGR0ZUM5aWdDYTFDX3lKN2dYbVlhZzhuTFUwcVo3N0xmTkpBNXJKV2JLVW9qUmdmNWdxaWFJVlFZLWVPVHJjZ0RTNUdYdGxoMk9RZms0aHpzQWlTVDd4LUNnQ1RKUlZmVkhFSS1FQlk5bWl1dkU2QTQ0bDA2dVdHVzMzcTlRZi00ZkM1THVWRFgzTnYtUm9id3pBM1BWeEI4ZVFqU1ltSDB2SQ?oc=5",
+     "title": "Oil eases but heads for small weekly gain as investors focus on Middle East supply"
+    }
+   ],
+   "ids": [
+    "5b0a6526f043"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Petróleo recua, mas caminha para pequena alta semanal com foco em oferta no Oriente Médio",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Petróleo afeta Petrobras, inflação e câmbio.",
+   "summary": "A Reuters informa que o petróleo cede, mas segue com ganho semanal pequeno, com investidores atentos à oferta no Oriente Médio.",
+   "involves": "Petróleo; Oriente Médio.",
+   "interpretation": "Prêmio geopolítico segue sustentando preços.",
+   "impact": "Favorável a Petrobras e petroleiras; pressão em combustíveis.",
+   "sentiment": "neutro",
+   "entities": [
+    "Oriente Médio"
+   ],
+   "tags": [
+    "petróleo",
+    "commodities"
    ],
    "is_deal": false,
    "deal": null,
@@ -6945,45 +7188,6 @@
    "ai": true
   },
   {
-   "id": "1ebfcf5748ed",
-   "title": "Yields on Treasurys, European Government Bonds Edge Higher as Stocks Recover",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaTh2LXo3TUR2cXpfSTI2QlNFNGQwVlNtM0FMQW9EZ1ctdGZmSXd1WFpnTnN2a3VKTHdHdmNaLXlEd21pdnJWdEZOZ0MxV2dnZ29LZ1RoZXlRS2x5V2JLazF1a1puX2NjM1h0ai1fdXRFal9hTDZLMDNBSEk2SHJnc1BR?oc=5",
-   "published": "2026-10-16T09:47:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaTh2LXo3TUR2cXpfSTI2QlNFNGQwVlNtM0FMQW9EZ1ctdGZmSXd1WFpnTnN2a3VKTHdHdmNaLXlEd21pdnJWdEZOZ0MxV2dnZ29LZ1RoZXlRS2x5V2JLazF1a1puX2NjM1h0ai1fdXRFal9hTDZLMDNBSEk2SHJnc1BR?oc=5",
-     "title": "Yields on Treasurys, European Government Bonds Edge Higher as Stocks Recover"
-    }
-   ],
-   "ids": [
-    "1ebfcf5748ed"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Yields de Treasuries e bonds europeus sobem levemente com recuperação das bolsas",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Movimento de juros globais.",
-   "summary": "Os yields de Treasuries e bonds europeus avançam levemente com a recuperação das ações.",
-   "involves": "Treasuries, bonds europeus.",
-   "interpretation": "Reversão parcial da fuga para qualidade do dia anterior.",
-   "impact": "Neutro para DI e câmbio.",
-   "sentiment": "neutro",
-   "entities": [
-    "Treasuries"
-   ],
-   "tags": [
-    "yields",
-    "Treasuries",
-    "bonds"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "2f4c3f9611b6",
    "title": "Indonesia Stocks Log Worst Day Since 1998 on MSCI Downgrade Warning",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRmY4bFlVY09zSkdQc0ItXzJqT2pmcFBSUkpwVVd6aUNuTU1waDNUcHY3UHJfYkRNby1kOTBPWHdEcklJLXlHVWpfMThubmtmU3JGZjNPWFdjNHJXZ29vVzJ6Z2tienRzc2d6V3pyVFNGQzdFZVphWTRNazZiRVRMeWpoSTE5ZEJ1aVRRUTZ6eC1XSE1scE9RNUx6MnhMbUxHRTc4ek9hOWlqTldkRlpxTzcxYjJQQQ?oc=5",
@@ -7018,44 +7222,6 @@
     "MSCI",
     "Indonésia",
     "bolsa"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "795627b86c1c",
-   "title": "Schneider Electric Boosts Outlook Again After Data-Center Demand Lifts Sales",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR0V2aVY1ajM5TmFYMXZvQXV2N3pKYUVPQjhRQVBsUnNXek41TFBNUkVGMFNoTzlralFrdmE3bUJyLUNDRTJ1Q1g3bTNmT0ctajQxdmg5NnI3SjhGT2VCRnRDY1lMRDRxdnp6VkpVajFTeU5HQmJjZXR5TXNFV0k2YXdsNEh4TENHcGJXSkwwWV81OHFBd2ZBMEtLeHlxRkZ3eEtORFNYUHlxUjJERnppbE52djVuN1djcldJVm9rZC0?oc=5",
-   "published": "2026-10-16T05:50:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR0V2aVY1ajM5TmFYMXZvQXV2N3pKYUVPQjhRQVBsUnNXek41TFBNUkVGMFNoTzlralFrdmE3bUJyLUNDRTJ1Q1g3bTNmT0ctajQxdmg5NnI3SjhGT2VCRnRDY1lMRDRxdnp6VkpVajFTeU5HQmJjZXR5TXNFV0k2YXdsNEh4TENHcGJXSkwwWV81OHFBd2ZBMEtLeHlxRkZ3eEtORFNYUHlxUjJERnppbE52djVuN1djcldJVm9rZC0?oc=5",
-     "title": "Schneider Electric Boosts Outlook Again After Data-Center Demand Lifts Sales"
-    }
-   ],
-   "ids": [
-    "795627b86c1c"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Schneider Electric eleva projeção novamente com demanda de data centers",
-   "category": "empresas",
-   "importance": 5,
-   "importance_reason": "Termômetro da demanda de infraestrutura de IA.",
-   "summary": "A Schneider Electric elevou novamente sua projeção após a demanda de data centers impulsionar as vendas.",
-   "involves": "Schneider Electric.",
-   "interpretation": "Confirma o ciclo de investimento em data centers.",
-   "impact": "Positivo para fornecedores de energia.",
-   "sentiment": "positivo",
-   "entities": [
-    "Schneider Electric"
-   ],
-   "tags": [
-    "data centers",
-    "guidance"
    ],
    "is_deal": false,
    "deal": null,
@@ -7182,6 +7348,46 @@
    "ai": true
   },
   {
+   "id": "1e1b12f5b728",
+   "title": "Philippines hits back at Chinese envoy over 'thinly veiled threat' of force",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOc2tlX3dZcElfRjZUcE1UaXAyWEZ5T2k5R1lXeHNnVUU4TUxlNDNJckdzTnFVRk9nMmc2SVk0UFdTdkItQ29OZ25sNDhzR1VkcFNmTldhVWJadXVnMnhicmJOU2xCaGhVU3VjbFFxd3M3YTJXTkt5ZF84UGFVaW1NYjdpMzNjSFBBTm5kUWtlUllVQTZKMmd6bTJ5cEZUT2VBLVpFTE5qUVRXMFVpZHFaV1RwZnpFZw?oc=5",
+   "published": "2026-10-16T03:14:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOc2tlX3dZcElfRjZUcE1UaXAyWEZ5T2k5R1lXeHNnVUU4TUxlNDNJckdzTnFVRk9nMmc2SVk0UFdTdkItQ29OZ25sNDhzR1VkcFNmTldhVWJadXVnMnhicmJOU2xCaGhVU3VjbFFxd3M3YTJXTkt5ZF84UGFVaW1NYjdpMzNjSFBBTm5kUWtlUllVQTZKMmd6bTJ5cEZUT2VBLVpFTE5qUVRXMFVpZHFaV1RwZnpFZw?oc=5",
+     "title": "Philippines hits back at Chinese envoy over 'thinly veiled threat' of force"
+    }
+   ],
+   "ids": [
+    "1e1b12f5b728"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Filipinas rebatem enviado chinês por 'ameaça pouco velada' de uso de força",
+   "category": "internacional",
+   "importance": 5,
+   "importance_reason": "Tensão no Mar do Sul da China, risco geopolítico recorrente.",
+   "summary": "A Reuters relata que as Filipinas reagiram a declaração do enviado chinês, classificada como ameaça pouco velada de força.",
+   "involves": "Filipinas; China.",
+   "interpretation": "Escalada retórica; sem fato militar novo no material.",
+   "impact": "Risco para rotas comerciais asiáticas e aversão a risco.",
+   "sentiment": "negativo",
+   "entities": [
+    "Filipinas",
+    "China"
+   ],
+   "tags": [
+    "geopolítica",
+    "China",
+    "Filipinas"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "038baa58e743",
    "title": "European stocks rise as markets stabilise, dollar set for weekly loss",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMUpLRUNwWEpRNVpNVWJPOWQyQXdKRjkzdTU5RjFiOUxpUFZGU1ZBa1VaS3ctN0xlc0lSMkptbUVMRlprcFFtZ3B6Z2ZFTG5XX2FBUHBoSk4xRTdiQm1ucERORXE4ZzNFZ09ySlpvUDlzb0tGUjFQZ3c0UmotdEstMEZCUQ?oc=5",
@@ -7262,6 +7468,46 @@
    "ai": true
   },
   {
+   "id": "2a59ef7e84c4",
+   "title": "MSCI freezes certain Turkey index changes, warns of potential market downgrade",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcUZEVFFWaFBnQ2FpV24tTElBdW51dWh2cVNhS3I3NTNJcjFYa1dYNjRSOHlSR0phVDFZeldDb3dLLVdlOGdRbW1rWWt5TjVvZkNnN1R2MUE0LTRuU2VUZDljZlBaUmpwMml4MTNJam5VQ3FnSEEzN0NCQVNuTUFvbjdLVF9nRHdhUGMxd0hGak9DTHN4S3ZzS09fLUh2U1Rsd2t0T3A1OUszN1FlLWRmQWVDbkFfM0s3b19WOXdubmExclE?oc=5",
+   "published": "2026-10-16T01:53:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcUZEVFFWaFBnQ2FpV24tTElBdW51dWh2cVNhS3I3NTNJcjFYa1dYNjRSOHlSR0phVDFZeldDb3dLLVdlOGdRbW1rWWt5TjVvZkNnN1R2MUE0LTRuU2VUZDljZlBaUmpwMml4MTNJam5VQ3FnSEEzN0NCQVNuTUFvbjdLVF9nRHdhUGMxd0hGak9DTHN4S3ZzS09fLUh2U1Rsd2t0T3A1OUszN1FlLWRmQWVDbkFfM0s3b19WOXdubmExclE?oc=5",
+     "title": "MSCI freezes certain Turkey index changes, warns of potential market downgrade"
+    }
+   ],
+   "ids": [
+    "2a59ef7e84c4"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "MSCI congela mudanças em índices da Turquia e alerta para possível rebaixamento",
+   "category": "mercados",
+   "importance": 5,
+   "importance_reason": "Risco de rebaixamento de mercado mostra sensibilidade de fluxos a regras do MSCI.",
+   "summary": "A Reuters informa que o MSCI congelou certas mudanças nos índices da Turquia e alertou para possível rebaixamento do mercado.",
+   "involves": "MSCI; Turquia.",
+   "interpretation": "Sinal de preocupação com acesso/funcionamento do mercado turco.",
+   "impact": "Risco de saída de fluxos passivos da Turquia; contágio a emergentes é limitado.",
+   "sentiment": "negativo",
+   "entities": [
+    "MSCI",
+    "Turquia"
+   ],
+   "tags": [
+    "MSCI",
+    "Turquia",
+    "índices"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "5280d078b98c",
    "title": "AI Runs Into Its Next Big Obstacle: Insurance",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRVNpLUJKTDFYV2ZWb3JLckpkdFNZaG1FcGdlOFQyc3dDN25sdTVYSHFJVlpkNHQ2bkh3OEtyNlJDZGs5OXZpMUxXMTBLb3NjVDM4bHNrWEV5WFREZUs1ZHFXM2o0cTYxTE5ndWpRN2E1LWVSTkYtY0JlQWlFWE9XcFQ2eWdZZnNB?oc=5",
@@ -7295,6 +7541,46 @@
     "IA",
     "seguros",
     "risco"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "9b12c49e0529",
+   "title": "How the Houthis are helping Iran turn Saudi Arabia into a pressure point",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdGVvZWRvRzA4MGlxRTRTLU95S2ZWTnB2LVZ1ZDBPQTdxbW53SmViQk96X3FpTlVXNEtZaTRvMld4akRJUm9vOU56NjJfSnROV3pCeURHQ3BCcTBYbW1KVVZyLVBaT0VXaE55WGc0WGI5c2RRdC1RaVZiT092ZU9RaTBRdmluamFTQ0JuRWRWNTNYdzhOa1dfNWVBNV9RcVMydFZoaHpFMlJnSHhrckl2cnRyZC0xc0xMcW5Idw?oc=5",
+   "published": "2026-10-15T17:42:36+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdGVvZWRvRzA4MGlxRTRTLU95S2ZWTnB2LVZ1ZDBPQTdxbW53SmViQk96X3FpTlVXNEtZaTRvMld4akRJUm9vOU56NjJfSnROV3pCeURHQ3BCcTBYbW1KVVZyLVBaT0VXaE55WGc0WGI5c2RRdC1RaVZiT092ZU9RaTBRdmluamFTQ0JuRWRWNTNYdzhOa1dfNWVBNV9RcVMydFZoaHpFMlJnSHhrckl2cnRyZC0xc0xMcW5Idw?oc=5",
+     "title": "How the Houthis are helping Iran turn Saudi Arabia into a pressure point"
+    }
+   ],
+   "ids": [
+    "9b12c49e0529"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Como os houthis ajudam o Irã a transformar a Arábia Saudita em ponto de pressão",
+   "category": "internacional",
+   "importance": 5,
+   "importance_reason": "Risco no Golfo afeta oferta de petróleo.",
+   "summary": "A Reuters analisa como os houthis ajudam o Irã a pressionar a Arábia Saudita.",
+   "involves": "Houthis; Irã; Arábia Saudita.",
+   "interpretation": "Análise de escalada regional.",
+   "impact": "Risco de alta do petróleo.",
+   "sentiment": "negativo",
+   "entities": [
+    "Houthis",
+    "Irã",
+    "Arábia Saudita"
+   ],
+   "tags": [
+    "Oriente Médio",
+    "petróleo"
    ],
    "is_deal": false,
    "deal": null,
@@ -8707,77 +8993,39 @@
    "ai": true
   },
   {
-   "id": "6c9619ff6234",
-   "title": "Gold Rises on Softer U.S. Dollar",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVE1wbXpia1hJYU4xY3Y1UVU4eDRDY0MzWXEwRHpHR0c4SGMxNkJqRHdQR1ZqdE9UUWRrU3lxc3c3enhLY0dwUmJGR0x1ZC1DdGRmTkFMaS15Q3cwVEhialJ3RmZvZU5qeUIwSkRSZzVwWHNGOHUxU2JMVXVxd2EyQmN1Q2ZYU0VWdEgzMDA1ZzNBeXFxM0xESXhpQWRKVC1aV19ScHdzNWVXM0RJ?oc=5",
-   "published": "2026-10-16T08:35:00+00:00",
+   "id": "abfc44c41b4c",
+   "title": "IMF chief says AI risks may exceed opportunities without safeguards and ethical framework",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS2IzOWJIRFRrNjFuc3M5M1RRQUNUS1dQcGVaSVhPa2lZVzd2a0JKamxsTFR4dU5QMThydUVyTks4bXhjM29fOE1oVWltNkVKcnk3ZFZEZmlmWXl5UlZDZXRfSmRfRTltdGU5dGdUbF9hSEI1Qi02R05ScVNvZVJ0V0xvelkxTmFsbXVvM1VjNWRCQU5FZUJXbnFQSUgtYlpxclUtbkV3ejNiVGs2V2pQOS1LNTN5TzZVb00xbGlBVQ?oc=5",
+   "published": "2026-10-16T09:30:22+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVE1wbXpia1hJYU4xY3Y1UVU4eDRDY0MzWXEwRHpHR0c4SGMxNkJqRHdQR1ZqdE9UUWRrU3lxc3c3enhLY0dwUmJGR0x1ZC1DdGRmTkFMaS15Q3cwVEhialJ3RmZvZU5qeUIwSkRSZzVwWHNGOHUxU2JMVXVxd2EyQmN1Q2ZYU0VWdEgzMDA1ZzNBeXFxM0xESXhpQWRKVC1aV19ScHdzNWVXM0RJ?oc=5",
-     "title": "Gold Rises on Softer U.S. Dollar"
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS2IzOWJIRFRrNjFuc3M5M1RRQUNUS1dQcGVaSVhPa2lZVzd2a0JKamxsTFR4dU5QMThydUVyTks4bXhjM29fOE1oVWltNkVKcnk3ZFZEZmlmWXl5UlZDZXRfSmRfRTltdGU5dGdUbF9hSEI1Qi02R05ScVNvZVJ0V0xvelkxTmFsbXVvM1VjNWRCQU5FZUJXbnFQSUgtYlpxclUtbkV3ejNiVGs2V2pQOS1LNTN5TzZVb00xbGlBVQ?oc=5",
+     "title": "IMF chief says AI risks may exceed opportunities without safeguards and ethical framework"
     }
    ],
    "ids": [
-    "6c9619ff6234"
+    "abfc44c41b4c"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Ouro sobe com dólar mais fraco",
-   "category": "mercados",
+   "headline": "Chefe do FMI diz que riscos da IA podem superar oportunidades sem salvaguardas",
+   "category": "internacional",
    "importance": 4,
-   "importance_reason": "Movimento diário de commodity.",
-   "summary": "O ouro sobe com o enfraquecimento do dólar.",
-   "involves": "Ouro, dólar.",
-   "interpretation": "Movimento de rotina.",
-   "impact": "Favorece mineradoras de ouro.",
-   "sentiment": "positivo",
-   "entities": [
-    "Ouro"
-   ],
-   "tags": [
-    "ouro",
-    "dólar"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "76bf1e901cfb",
-   "title": "U.K. Bank Shares Slip After Report of Tax Increase Plan",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdUI4NnVld2NGQzV4TlM3VkhtUUpFaG5NWWItVlhhcVZTRmhpMEhLdW80VE0wWWFacEpDVlNwNzVyb1Fxb2pnNGtHb1ZzR2ZVb1BKM0Fnb2FraTBIRndNSWF5SHdoVUt6SVhCd3dFY3Rham15dlY4RjZmV1lkU0duZk1BLWtjcXlncTJqRlVJLTViQQ?oc=5",
-   "published": "2026-10-16T08:33:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdUI4NnVld2NGQzV4TlM3VkhtUUpFaG5NWWItVlhhcVZTRmhpMEhLdW80VE0wWWFacEpDVlNwNzVyb1Fxb2pnNGtHb1ZzR2ZVb1BKM0Fnb2FraTBIRndNSWF5SHdoVUt6SVhCd3dFY3Rham15dlY4RjZmV1lkU0duZk1BLWtjcXlncTJqRlVJLTViQQ?oc=5",
-     "title": "U.K. Bank Shares Slip After Report of Tax Increase Plan"
-    }
-   ],
-   "ids": [
-    "76bf1e901cfb"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Ações de bancos do Reino Unido caem após relato de plano de aumento de impostos",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Risco fiscal para bancos britânicos.",
-   "summary": "As ações de bancos do Reino Unido recuam após relato de plano de aumento de impostos.",
-   "involves": "Bancos do Reino Unido.",
-   "interpretation": "Ligado ao Orçamento.",
-   "impact": "Pressão sobre margens dos bancos.",
+   "importance_reason": "Posicionamento sobre regulação de IA.",
+   "summary": "A chefe do FMI diz que os riscos da IA podem superar as oportunidades sem salvaguardas e uma estrutura ética.",
+   "involves": "FMI.",
+   "interpretation": "Sinaliza pressão por regulação de IA.",
+   "impact": "Potencial maior regulação.",
    "sentiment": "negativo",
    "entities": [
-    "Bancos do Reino Unido"
+    "FMI"
    ],
    "tags": [
-    "Reino Unido",
-    "bancos",
-    "impostos"
+    "IA",
+    "FMI",
+    "regulação"
    ],
    "is_deal": false,
    "deal": null,
@@ -8943,45 +9191,6 @@
    "ai": true
   },
   {
-   "id": "edbab81edcb7",
-   "title": "J.B. Hunt Turns to Price Increases as Costs Rise",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcUdmanZlRFRwRk9jNWFGbHYtVFhfdkkwWFJob0VsUE9KMWJ0VUFBeFVsSGJDeVQ4dFlVYnAyQW5NLXhFZF80VXB5RjV5VEdpa1E4dU5yWEpJdEFJaWFJSXFJWENLcTdpWk5LY0QtQlBWWFhhOFJmMVBneXlsTlI0cm1Pend6RU1MaVh6d1RsaDFyMFlKRWxQX2pORG9FZlkzczJLd2d4TQ?oc=5",
-   "published": "2026-10-15T23:01:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcUdmanZlRFRwRk9jNWFGbHYtVFhfdkkwWFJob0VsUE9KMWJ0VUFBeFVsSGJDeVQ4dFlVYnAyQW5NLXhFZF80VXB5RjV5VEdpa1E4dU5yWEpJdEFJaWFJSXFJWENLcTdpWk5LY0QtQlBWWFhhOFJmMVBneXlsTlI0cm1Pend6RU1MaVh6d1RsaDFyMFlKRWxQX2pORG9FZlkzczJLd2d4TQ?oc=5",
-     "title": "J.B. Hunt Turns to Price Increases as Costs Rise"
-    }
-   ],
-   "ids": [
-    "edbab81edcb7"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "J.B. Hunt recorre a aumentos de preço com alta de custos",
-   "category": "empresas",
-   "importance": 4,
-   "importance_reason": "Sinal de repasse de custos no setor de transporte americano.",
-   "summary": "O WSJ informa que a J.B. Hunt está aumentando preços diante de custos maiores.",
-   "involves": "J.B. Hunt; transporte.",
-   "interpretation": "Indica pressão de custos e tentativa de preservar margens.",
-   "impact": "Leitura para logística e inflação de serviços nos EUA.",
-   "sentiment": "neutro",
-   "entities": [
-    "J.B. Hunt"
-   ],
-   "tags": [
-    "logística",
-    "preços",
-    "custos"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "52530ac8db85",
    "title": "Exclusive | Tesla’s Energy Boss Leaves the Company",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWWgxb0xjY25vNUZPTGN5RDRIMW0tcnpaUjBpNlRWSm1fcjJ1SnBYck9rcEVwX3NjNjduRzBYemlMaXNtMnRtTmp0bkxsMmZMTHpmSE04Wi1BUjVIVlRZYjE1WERkbFB5aG5namtfSUJoVzJWdVdObVZGejc0M0l3ZkhCTnVNUWxK?oc=5",
@@ -9015,6 +9224,88 @@
     "Tesla",
     "energia",
     "executivo"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "19012d70eb3f",
+   "title": "KFC picks Coca-Cola as US soda supplier, ditches longtime partner PepsiCo",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPY3pOZ1RpY0NtVzh0UHZZMDN5OTlBQjB2VHRYeE9CYUN2cGZwZERiNnduY2dmaUVqN0dyMUI5eGxRQ0JCVkJuRUJ3RWZrNnlfalVtQUhBdFVxZllvS3dWMVp3TVVuN3FFX28xQ2U3a3RPUmlFZ0p5Z2hXSDUybnFYcFJDUHlDMGV6WDVTQ3pXTGtHYXQyZ2VWTklCbjBQMTdtSTlHZ2pFRGFiQTN4amc?oc=5",
+   "published": "2026-10-15T22:01:38+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPY3pOZ1RpY0NtVzh0UHZZMDN5OTlBQjB2VHRYeE9CYUN2cGZwZERiNnduY2dmaUVqN0dyMUI5eGxRQ0JCVkJuRUJ3RWZrNnlfalVtQUhBdFVxZllvS3dWMVp3TVVuN3FFX28xQ2U3a3RPUmlFZ0p5Z2hXSDUybnFYcFJDUHlDMGV6WDVTQ3pXTGtHYXQyZ2VWTklCbjBQMTdtSTlHZ2pFRGFiQTN4amc?oc=5",
+     "title": "KFC picks Coca-Cola as US soda supplier, ditches longtime partner PepsiCo"
+    }
+   ],
+   "ids": [
+    "19012d70eb3f"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "KFC escolhe Coca-Cola como fornecedora de refrigerantes nos EUA e deixa a PepsiCo",
+   "category": "empresas",
+   "importance": 4,
+   "importance_reason": "Troca de fornecedor relevante para bebidas, sem deal.",
+   "summary": "A Reuters informa que a KFC escolheu a Coca-Cola como fornecedora nos EUA, abandonando a PepsiCo, parceira antiga.",
+   "involves": "KFC; Coca-Cola; PepsiCo.",
+   "interpretation": "Contrato comercial, valor não divulgado.",
+   "impact": "Positivo para Coca-Cola, negativo para PepsiCo.",
+   "sentiment": "neutro",
+   "entities": [
+    "KFC",
+    "Coca-Cola",
+    "PepsiCo"
+   ],
+   "tags": [
+    "bebidas",
+    "KFC",
+    "contrato"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "4f1fdf34663a",
+   "title": "Nvidia, Apple each gave $25 million for Trump's ballroom, Washington Post reports",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPd1poWEFKa01FenF2THNycHFFMFNaeklhc2JGSVJqa21nTGo1cFpyMFR5cGFwMHN1cVdjdWM5NjhiaU9Zakg2ZUJDVG1aeVBPRHVNYm95NEItUlFGNndZQnhVQUE3bE1rZE52bHgxM3Jmd1RCVm9FNy1LNFlFb1RXQ0ZXRG9CRXNUUE9PUG1rbHdqSE5XT3FOSzBlUFdoTUoxZmwxbUFoY01ZMG85cG5INDg2ZmdycTdUaHc?oc=5",
+   "published": "2026-10-15T20:27:35+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPd1poWEFKa01FenF2THNycHFFMFNaeklhc2JGSVJqa21nTGo1cFpyMFR5cGFwMHN1cVdjdWM5NjhiaU9Zakg2ZUJDVG1aeVBPRHVNYm95NEItUlFGNndZQnhVQUE3bE1rZE52bHgxM3Jmd1RCVm9FNy1LNFlFb1RXQ0ZXRG9CRXNUUE9PUG1rbHdqSE5XT3FOSzBlUFdoTUoxZmwxbUFoY01ZMG85cG5INDg2ZmdycTdUaHc?oc=5",
+     "title": "Nvidia, Apple each gave $25 million for Trump's ballroom, Washington Post reports"
+    }
+   ],
+   "ids": [
+    "4f1fdf34663a"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Nvidia e Apple doaram US$ 25 milhões cada para o salão de baile de Trump, diz Washington Post",
+   "category": "empresas",
+   "importance": 4,
+   "importance_reason": "Aproximação de big techs com a Casa Branca, risco reputacional.",
+   "summary": "A Reuters, citando o Washington Post, diz que Nvidia e Apple deram US$ 25 milhões cada para o salão de baile de Trump.",
+   "involves": "Nvidia; Apple; Trump; Washington Post.",
+   "interpretation": "Sinal de relacionamento político das big techs.",
+   "impact": "Efeito direto limitado.",
+   "sentiment": "neutro",
+   "entities": [
+    "Nvidia",
+    "Apple",
+    "Trump"
+   ],
+   "tags": [
+    "Nvidia",
+    "Apple",
+    "Trump"
    ],
    "is_deal": false,
    "deal": null,
@@ -9096,6 +9387,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "9e5f92bafe82",
+   "title": "Bruno Dantas assume liderança do conselho da Avibras após aquisição pela Globe Investimentos",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaXYxR19wVm1vUkdkRlJNNFZ6b0taRDlZZlFPZVg0TjZHTV95WlZLaE1VNmdkQW92OEtYNW1IdEg3T3NHa2ZGSFdhMnFoT1g3dzdqUTVQSnAzTkNZeTRrQTFRVnl6WF8zN09KTHllbzJ1QzZ4bWVPMlpwV3dZSjBoWVJsR3cwUjlaR0FRMVVkZnRkb211akFwYUNYa2xGZkN3MVNKckE1R1ZydjhCNXR5cVhxakFGUWtZbWZKOUJidS12ME1yZDlfTDF6Z2Zrdw?oc=5",
+   "published": "2026-10-15T15:18:39+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Report",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaXYxR19wVm1vUkdkRlJNNFZ6b0taRDlZZlFPZVg0TjZHTV95WlZLaE1VNmdkQW92OEtYNW1IdEg3T3NHa2ZGSFdhMnFoT1g3dzdqUTVQSnAzTkNZeTRrQTFRVnl6WF8zN09KTHllbzJ1QzZ4bWVPMlpwV3dZSjBoWVJsR3cwUjlaR0FRMVVkZnRkb211akFwYUNYa2xGZkN3MVNKckE1R1ZydjhCNXR5cVhxakFGUWtZbWZKOUJidS12ME1yZDlfTDF6Z2Zrdw?oc=5",
+     "title": "Bruno Dantas assume liderança do conselho da Avibras após aquisição pela Globe Investimentos"
+    }
+   ],
+   "ids": [
+    "9e5f92bafe82"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Bruno Dantas assume liderança do conselho da Avibras após aquisição pela Globe Investimentos",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "6adc38db9bc5",
@@ -10319,44 +10643,6 @@
    "ai": true
   },
   {
-   "id": "4624204b9ed8",
-   "title": "AI Agents Bring New Headaches to Online Sellers",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQengtRllueUItOFkyTnZoU20wTjhOYTRLOEdUUndnTHNDQk8zY20zeVVCLWhtU2ZnSEJSbklHeE1MUkZFeDVRSERsRXdsZG9rLXVGZXNDeG95RmxiVHp2UUF0OTFzNHRoTkZnQ0tRWDU5T0JTbmNydjE2RTFUV2Z0X0JsandmQTFad0k5US1R?oc=5",
-   "published": "2026-10-16T09:30:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQengtRllueUItOFkyTnZoU20wTjhOYTRLOEdUUndnTHNDQk8zY20zeVVCLWhtU2ZnSEJSbklHeE1MUkZFeDVRSERsRXdsZG9rLXVGZXNDeG95RmxiVHp2UUF0OTFzNHRoTkZnQ0tRWDU5T0JTbmNydjE2RTFUV2Z0X0JsandmQTFad0k5US1R?oc=5",
-     "title": "AI Agents Bring New Headaches to Online Sellers"
-    }
-   ],
-   "ids": [
-    "4624204b9ed8"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Agentes de IA trazem novas dores de cabeça a vendedores online",
-   "category": "tech",
-   "importance": 3,
-   "importance_reason": "Tendência de tecnologia.",
-   "summary": "A WSJ aborda como agentes de IA complicam a vida de vendedores online.",
-   "involves": "Agentes de IA, e-commerce.",
-   "interpretation": "Tendência.",
-   "impact": "Efeito setorial pequeno.",
-   "sentiment": "neutro",
-   "entities": [
-    "WSJ"
-   ],
-   "tags": [
-    "IA",
-    "e-commerce"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "daa4d3db2d26",
    "title": "The Fierce Battle to Control How Americans Buy and Sell Their Homes",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQb0p4UXFCZVFuVGRzeElrNl82S3loZDdIU3FIdVhJSEZOZlZDZHdwdDVXck8wdjdCWkl6X1Z2VHR6eE56ZjY1RVdrRHQ2NU1oaU91WEl3cnRJR0tfSmRiMDlxYTB0Y1Nvc1BqdTNzRThNa3ZFaFJTZGk4emJzN1BTdU1CZTRrbEhvLVE?oc=5",
@@ -10511,44 +10797,6 @@
    "ai": true
   },
   {
-   "id": "3d4490380052",
-   "title": "How Does Starshield Work and Who Controls It?",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSVlreHl3ZDQwWEd1eDFaUXFfaHFMY09ETnM0X2w2QUFneGVzTnoxUnpwb2x3RjdNa3V3ZEpUUG1fZHN0ZHl1ajdQYl9RVWd4UTNLSC0xYkYwQjRKV21OaktMMjZKNXg4THNyYlVZX2ptVC12V3pUS1BTcEZDQ1hCNHM4LU5XZXNCOWJzZHZ3WjRvRklk?oc=5",
-   "published": "2026-10-15T23:06:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSVlreHl3ZDQwWEd1eDFaUXFfaHFMY09ETnM0X2w2QUFneGVzTnoxUnpwb2x3RjdNa3V3ZEpUUG1fZHN0ZHl1ajdQYl9RVWd4UTNLSC0xYkYwQjRKV21OaktMMjZKNXg4THNyYlVZX2ptVC12V3pUS1BTcEZDQ1hCNHM4LU5XZXNCOWJzZHZ3WjRvRklk?oc=5",
-     "title": "How Does Starshield Work and Who Controls It?"
-    }
-   ],
-   "ids": [
-    "3d4490380052"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Como funciona o Starshield e quem o controla",
-   "category": "tech",
-   "importance": 3,
-   "importance_reason": "Explicativo, sem fato novo de mercado.",
-   "summary": "O WSJ explica o funcionamento do Starshield e quem o controla.",
-   "involves": "Starshield.",
-   "interpretation": "Texto explicativo.",
-   "impact": "Sem impacto direto.",
-   "sentiment": "neutro",
-   "entities": [
-    "Starshield"
-   ],
-   "tags": [
-    "Starshield",
-    "satélites"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "1a17bf15407f",
    "title": "EXCLUSIVE: UN chief frontrunner Rebeca Grynspan says UN has 'become too risk-averse'",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOXzA3OFRjakdPV3ZtU1EtbWhBOXlKcGlJeGNQVnJ5bFhlN0NGa0tHV3k3T2ZRcVduT2NNSENRNmMwOVd4dnZabWlUY2NtVnF0blpPVHczb2luTlpyR1FxYXhDQ2IzWlhMQ2tmYUNUYzY1b0N5dXd1bFJkMHJiRmZpZnZMVFhsdzVDX09tNFFmaURzeFpKNjUzSGlZdGJ3b3BKam5OMmpkUVE2V255eWNNUXlQVU9FdUstVVpLcHVNcw?oc=5",
@@ -10582,6 +10830,45 @@
    "tags": [
     "ONU",
     "Grynspan"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "e465f2f8ec40",
+   "title": "Indian mutual funds stop bulk subscriptions to gold ETFs ahead of festive season",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNa1dJUmxWRVJFR2xLMFhiSTRENmk2eklvZndkX2dzUmZGLUtKc0o2YldJRF9WbTNoVnJPc3Jjdy1qMTgtRXdWNjR0c3pIaVZxQzVZSk9JazRsdXNkLWtsenMyZzBFbHNlOTlzN1FVcWxKWm10Q3VlQkF6ZXVvcHduQ00xbnlqaE1wek9HQXJhU20zWERTN1NFSlRlRmFSQnp3aUFjYVp6aFhJYUwyZTlZdjRDR2tobk1la1hLbVBqZw?oc=5",
+   "published": "2026-10-15T18:56:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNa1dJUmxWRVJFR2xLMFhiSTRENmk2eklvZndkX2dzUmZGLUtKc0o2YldJRF9WbTNoVnJPc3Jjdy1qMTgtRXdWNjR0c3pIaVZxQzVZSk9JazRsdXNkLWtsenMyZzBFbHNlOTlzN1FVcWxKWm10Q3VlQkF6ZXVvcHduQ00xbnlqaE1wek9HQXJhU20zWERTN1NFSlRlRmFSQnp3aUFjYVp6aFhJYUwyZTlZdjRDR2tobk1la1hLbVBqZw?oc=5",
+     "title": "Indian mutual funds stop bulk subscriptions to gold ETFs ahead of festive season"
+    }
+   ],
+   "ids": [
+    "e465f2f8ec40"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Fundos indianos suspendem subscrições em bloco de ETFs de ouro antes da temporada festiva",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Fluxo local no mercado de ouro indiano.",
+   "summary": "A Reuters informa que fundos mútuos indianos pararam subscrições em bloco de ETFs de ouro antes da temporada festiva.",
+   "involves": "Fundos indianos; ETFs de ouro.",
+   "interpretation": "Medida de controle de fluxo.",
+   "impact": "Efeito limitado no ouro global.",
+   "sentiment": "neutro",
+   "entities": [
+    "Índia"
+   ],
+   "tags": [
+    "ouro",
+    "ETFs",
+    "Índia"
    ],
    "is_deal": false,
    "deal": null,
@@ -10977,43 +11264,37 @@
    "ai": false
   },
   {
-   "id": "a90e355742ec",
-   "title": "FII Btg Agro (BTAL11)",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBOUUxHdHRrUG4zTjgyMlQxVzB4dWR5R1FBazN0UFV5Qmh1NVg3WkFWejQ2X2NOWXVZYXBFY2pxQXQwaUF2YjJUUFlYTm1VaWtoaVJ3MVV5NjNlMXNqbDRvaG0tQQ?oc=5",
-   "published": "2026-10-15T20:00:00+00:00",
-   "region": "BR",
+   "id": "92230ef01129",
+   "title": "Treasury, Eurozone Bond Yields Fall as Risk Aversion Beats Inflation Fears",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVHpmUnkwb1hrcFVSZHJyWXFiNzhpR1BLVXlmZ194WUQ0X0hzZHFGTGZPSGtOQXFmaURndUtlU1ZhYUNOdzUwUHJraG5yZ0laQnJpN3g0VXhvN3ZjeUlLdVRSRXJJUHZDeUVMVlJGUkN2MHNwa1d0bWVZOUNzN1kySS1RaXBmOEM5am1FZXU2UlJpMjVDY09BTE41UWpHNF9tQTF1c3ZvZXpZdXI5SnYtZUZ6eUpZVEMyVUNiN25idFFIbkNiN0Yw?oc=5",
+   "published": "2026-10-15T16:02:00+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "trademap.com.br",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBOUUxHdHRrUG4zTjgyMlQxVzB4dWR5R1FBazN0UFV5Qmh1NVg3WkFWejQ2X2NOWXVZYXBFY2pxQXQwaUF2YjJUUFlYTm1VaWtoaVJ3MVV5NjNlMXNqbDRvaG0tQQ?oc=5",
-     "title": "FII Btg Agro (BTAL11)"
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVHpmUnkwb1hrcFVSZHJyWXFiNzhpR1BLVXlmZ194WUQ0X0hzZHFGTGZPSGtOQXFmaURndUtlU1ZhYUNOdzUwUHJraG5yZ0laQnJpN3g0VXhvN3ZjeUlLdVRSRXJJUHZDeUVMVlJGUkN2MHNwa1d0bWVZOUNzN1kySS1RaXBmOEM5am1FZXU2UlJpMjVDY09BTE41UWpHNF9tQTF1c3ZvZXpZdXI5SnYtZUZ6eUpZVEMyVUNiN25idFFIbkNiN0Yw?oc=5",
+     "title": "Treasury, Eurozone Bond Yields Fall as Risk Aversion Beats Inflation Fears"
     }
    ],
    "ids": [
-    "a90e355742ec"
+    "92230ef01129"
    ],
    "snippet": "",
-   "prescore": 3.4,
-   "headline": "FII Btg Agro (BTAL11)",
-   "category": "outros",
+   "prescore": 3.6,
+   "headline": "Treasury, Eurozone Bond Yields Fall as Risk Aversion Beats Inflation Fears",
+   "category": "mercados",
    "importance": 2,
-   "importance_reason": "Título sem conteúdo; ruído.",
-   "summary": "Título apenas cita o FII BTG Agro (BTAL11); sem trecho ou detalhes divulgados.",
-   "involves": "BTG Pactual, FII BTAL11",
-   "interpretation": "Sem informação suficiente para interpretação.",
-   "impact": "Impacto não avaliável.",
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
    "sentiment": "neutro",
-   "entities": [
-    "BTG Pactual",
-    "BTAL11"
-   ],
-   "tags": [
-    "FII",
-    "agro"
-   ],
+   "entities": [],
+   "tags": [],
    "is_deal": false,
    "deal": null,
-   "ai": true
+   "ai": false
   },
   {
    "id": "51850851a017",
@@ -11254,6 +11535,39 @@
    "ai": true
   },
   {
+   "id": "e9374afb9f2e",
+   "title": "Romania resumes search for seven missing sailors from drone-hit ship",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSlZhRnVFYUtGUGRnTHJ5c0d3V2R0SlFoUXVKd0t2RHEybzBubG9iRHlzWmVxU1FnRHV1RHlxSDZram9rUDR5ZEk2TU1yVnNCcVhRWXFLR2d3UVFOSWptUGItUEtwVFhSN25hOXZFOEFLVTFWNi13Mlo3a281SjJQQ0lXU0tXRGJsTGJxY2VCaTdQVm83b0FsNXlvM1dBcjFPM2RB?oc=5",
+   "published": "2026-10-16T10:55:02+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSlZhRnVFYUtGUGRnTHJ5c0d3V2R0SlFoUXVKd0t2RHEybzBubG9iRHlzWmVxU1FnRHV1RHlxSDZram9rUDR5ZEk2TU1yVnNCcVhRWXFLR2d3UVFOSWptUGItUEtwVFhSN25hOXZFOEFLVTFWNi13Mlo3a281SjJQQ0lXU0tXRGJsTGJxY2VCaTdQVm83b0FsNXlvM1dBcjFPM2RB?oc=5",
+     "title": "Romania resumes search for seven missing sailors from drone-hit ship"
+    }
+   ],
+   "ids": [
+    "e9374afb9f2e"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Romania resumes search for seven missing sailors from drone-hit ship",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "a1cedb46558d",
    "title": "Nova secretária de imprensa de Trump minimiza potencial da China por falta de 'banheiros adequados'",
    "link": "https://g1.globo.com/mundo/noticia/2026/10/16/nova-secretaria-de-imprensa-de-trump-china-falta-banheiros-adequados.ghtml",
@@ -11293,25 +11607,58 @@
    "ai": true
   },
   {
-   "id": "8997fb77b544",
-   "title": "Asia Stocks Recover Some Ground After Tech Rout",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTl9peDRyUXIyRlVzSUs3ZDBpMi1ONHRqbkJVUUE1QjctUEtfbWhQVUZKZ0NfY3UxNnpPbl9McVJYMHA5U2FycFJld05RNG4tNFQ5Z2VSaXJhTTNnZ2VhQTI4OG1XRHVtWE9zTG5XbkcxcEx0eDF6YlpJS0ZSZmdza1YyTE9SS2tNNUsyT012MnNGSVNsZUE?oc=5",
-   "published": "2026-10-16T05:28:00+00:00",
+   "id": "248095c36c40",
+   "title": "Oil Futures Ease But Remain on Track for Weekly Gains",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSGhiSUFLMkVjcGltOWJGUGZ5VU1UTk5zODdLbG5zMmgxbVZMbXQ1M1B3a2xabDcyRGFUNTd3NjVzMzBnNVFRT2pSNGphaUZIWHBHOGhKYzFlQ2hwZjh2RG5jWmtiLWFVWmhMdXRrbXVvUmdjYUdqby1VYldOd19pUG5NXzJfRk5yT2V4MlVZV1BQLXRtaGlyZ1U1LTF0bldXSlJIb25SZ2lnZUNqb3RWTUV0ejFfNXc?oc=5",
+   "published": "2026-10-16T08:53:29+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTl9peDRyUXIyRlVzSUs3ZDBpMi1ONHRqbkJVUUE1QjctUEtfbWhQVUZKZ0NfY3UxNnpPbl9McVJYMHA5U2FycFJld05RNG4tNFQ5Z2VSaXJhTTNnZ2VhQTI4OG1XRHVtWE9zTG5XbkcxcEx0eDF6YlpJS0ZSZmdza1YyTE9SS2tNNUsyT012MnNGSVNsZUE?oc=5",
-     "title": "Asia Stocks Recover Some Ground After Tech Rout"
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSGhiSUFLMkVjcGltOWJGUGZ5VU1UTk5zODdLbG5zMmgxbVZMbXQ1M1B3a2xabDcyRGFUNTd3NjVzMzBnNVFRT2pSNGphaUZIWHBHOGhKYzFlQ2hwZjh2RG5jWmtiLWFVWmhMdXRrbXVvUmdjYUdqby1VYldOd19pUG5NXzJfRk5yT2V4MlVZV1BQLXRtaGlyZ1U1LTF0bldXSlJIb25SZ2lnZUNqb3RWTUV0ejFfNXc?oc=5",
+     "title": "Oil Futures Ease But Remain on Track for Weekly Gains"
     }
    ],
    "ids": [
-    "8997fb77b544"
+    "248095c36c40"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Asia Stocks Recover Some Ground After Tech Rout",
-   "category": "mercados",
+   "headline": "Oil Futures Ease But Remain on Track for Weekly Gains",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "537af30fc65f",
+   "title": "Mark Zuckerberg Versus the Pint of Guinness",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNVhYQkhOekNwZWFFZUpjNTl4c3ZNVzZCaGgxVndobVR3X2UwWl9QY2g3RkhxN0FSMWJMZEc4cHR5Um9uejlydldBdXAzaTFUdFh1aXpNRXhoNkJCOWVZMXN6UHpRLUwzc3FKZGd6Y21iWDZjeE9acWRLQXRHYU50V0p5YzBCTVhPNnE4T21iSmFCUWNEc19JMW1WV295OGs?oc=5",
+   "published": "2026-10-16T08:33:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNVhYQkhOekNwZWFFZUpjNTl4c3ZNVzZCaGgxVndobVR3X2UwWl9QY2g3RkhxN0FSMWJMZEc4cHR5Um9uejlydldBdXAzaTFUdFh1aXpNRXhoNkJCOWVZMXN6UHpRLUwzc3FKZGd6Y21iWDZjeE9acWRLQXRHYU50V0p5YzBCTVhPNnE4T21iSmFCUWNEc19JMW1WV295OGs?oc=5",
+     "title": "Mark Zuckerberg Versus the Pint of Guinness"
+    }
+   ],
+   "ids": [
+    "537af30fc65f"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Mark Zuckerberg Versus the Pint of Guinness",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -11366,77 +11713,6 @@
    "ai": true
   },
   {
-   "id": "65a5f6ce527f",
-   "title": "Mexico shrinks protected area as world's rarest porpoise battles extinction",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOa0l0Qk5lczdKZmUzM21MVDZHbVR4WUJaQmF5WXh0RWdjcnlhd2Jqalp4NmwyLVpGaWwzckphamNXRkFKbkNORlFvQkowYXo2MW4yNnNMaWhRSmNyczZLNnNMM2l4anNiZjlJUUJjMk5TRm43RnVNSF9SS2NrUC1HOUU5N3JhSElMbWFKUXVBTmlOVTU3bGR0TndqNXJsdTh5UHBLVS1xRFhkR2k1MmVjaXpPRWtrQ2tIS1Y0NDZYdnEtZw?oc=5",
-   "published": "2026-10-15T23:10:13+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOa0l0Qk5lczdKZmUzM21MVDZHbVR4WUJaQmF5WXh0RWdjcnlhd2Jqalp4NmwyLVpGaWwzckphamNXRkFKbkNORlFvQkowYXo2MW4yNnNMaWhRSmNyczZLNnNMM2l4anNiZjlJUUJjMk5TRm43RnVNSF9SS2NrUC1HOUU5N3JhSElMbWFKUXVBTmlOVTU3bGR0TndqNXJsdTh5UHBLVS1xRFhkR2k1MmVjaXpPRWtrQ2tIS1Y0NDZYdnEtZw?oc=5",
-     "title": "Mexico shrinks protected area as world's rarest porpoise battles extinction"
-    }
-   ],
-   "ids": [
-    "65a5f6ce527f"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Mexico shrinks protected area as world's rarest porpoise battles extinction",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e7ddb58e362e",
-   "title": "Opinion | Slapping Down an Insubordinate Court",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMDZoR1BhZUtmNjJ3MEtSLXVWS1JSSG5wbm53MjNuWUtaa1Jrd3FTQl9CUmhxZjQtdEFpUEtCMmgtZWlyd0FoR25NaEd1blVNNFpmeDNmZldsRjE3bklkWG9MZHJhVGNDQXM1NEFtMUtSSnN0UVhJZFJHcXBnTlUtUHdra3ZkU2lLa0tneTM0cGdkX2tm?oc=5",
-   "published": "2026-10-15T21:38:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMDZoR1BhZUtmNjJ3MEtSLXVWS1JSSG5wbm53MjNuWUtaa1Jrd3FTQl9CUmhxZjQtdEFpUEtCMmgtZWlyd0FoR25NaEd1blVNNFpmeDNmZldsRjE3bklkWG9MZHJhVGNDQXM1NEFtMUtSSnN0UVhJZFJHcXBnTlUtUHdra3ZkU2lLa0tneTM0cGdkX2tm?oc=5",
-     "title": "Opinion | Slapping Down an Insubordinate Court"
-    }
-   ],
-   "ids": [
-    "e7ddb58e362e"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Opinião: colocando um tribunal insubordinado em seu lugar",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Editorial opinativo do WSJ.",
-   "summary": "Editorial do WSJ sobre conflito com um tribunal. Detalhes não constam do material.",
-   "involves": "Judiciário dos EUA.",
-   "interpretation": "Opinião.",
-   "impact": "Sem impacto de mercado direto.",
-   "sentiment": "neutro",
-   "entities": [
-    "WSJ"
-   ],
-   "tags": [
-    "opinião",
-    "tribunal"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "ef7e05a3faa7",
    "title": "Opinion | Alaska Considers Economic Suicide",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9GMUxVZ09kRW9ybEJ4eFRKVjdNLWFBVUhTZjFubldnUzlyVWFGRGt4eDVkUVhTTnFrSl9nTVotdFRYUkVKMHpBR1J1MFd6allZc0RYTzdGaXBHdGFMQzVFMWV6VVo2LXVuWnR2SFB5LXdmdFhmRkxpSzRB?oc=5",
@@ -11475,91 +11751,25 @@
    "ai": true
   },
   {
-   "id": "6337b02b2fe0",
-   "title": "Opinion | The Best Defense Against AI Is AI",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBuVXlMWmNvT3JxRmMxZklVc0ZRVWpIanhSanAtOXdESzJnOTRBcGYwa0d4ZDA1S09aZkh5cng4LW80TEVqZFp5dC1sTzdqZV9xQWtIZE4xQVMzeVZoeW1kQ1R5WC0xcEh5M2hHODExLTNwZlUyRWZjeDdR?oc=5",
-   "published": "2026-10-15T21:28:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBuVXlMWmNvT3JxRmMxZklVc0ZRVWpIanhSanAtOXdESzJnOTRBcGYwa0d4ZDA1S09aZkh5cng4LW80TEVqZFp5dC1sTzdqZV9xQWtIZE4xQVMzeVZoeW1kQ1R5WC0xcEh5M2hHODExLTNwZlUyRWZjeDdR?oc=5",
-     "title": "Opinion | The Best Defense Against AI Is AI"
-    }
-   ],
-   "ids": [
-    "6337b02b2fe0"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Opinion | The Best Defense Against AI Is AI",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f0adbba80792",
-   "title": "‘La Bola Negra’ Review: A Sprawling Spanish Epic",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNa2RBVk1jcXI1ZXFRaGNLbjdqUF9sT0xidVY2WDhuLW9STFhIZHhoTWczeTZKWVozd0x3cnEtdUlSdm85MFZ1cE8zRmNIRy1CZ1VhZTRXYzRwNWtuTXpJR0pTVUYwN0FHYlJ1aEtaUmM0c3Q1LUlEM0oxTXJCRzZ2MURkbEVIbEhVeFIteVVLM25URzl2aEpj?oc=5",
-   "published": "2026-10-15T20:32:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNa2RBVk1jcXI1ZXFRaGNLbjdqUF9sT0xidVY2WDhuLW9STFhIZHhoTWczeTZKWVozd0x3cnEtdUlSdm85MFZ1cE8zRmNIRy1CZ1VhZTRXYzRwNWtuTXpJR0pTVUYwN0FHYlJ1aEtaUmM0c3Q1LUlEM0oxTXJCRzZ2MURkbEVIbEhVeFIteVVLM25URzl2aEpj?oc=5",
-     "title": "‘La Bola Negra’ Review: A Sprawling Spanish Epic"
-    }
-   ],
-   "ids": [
-    "f0adbba80792"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "‘La Bola Negra’ Review: A Sprawling Spanish Epic",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "59f82561e3ed",
-   "title": "India markets regulator partly reverses derivative settlement rules after pushback",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZGRONTRmdHRZYTJ6Yk54UE52QjBqX1NCZzdZRmFZb3JFR2tBTGF5cHpJWkZoaURDYXVkazBOcnFqdHZIOUNkZ0xNLTRtWnhFeVRrcVo5d0c2TmYwY1BzUDgxYzV3SUxMTlU3RHliUzFDM0Zsc1ZwRlZQQXJTZE5HWGpGOGxUVVBHM3FsQzZGV3VIS1JYOFcxVWYwbWFjRVFUQnUxN0RHVkF3em90RDNRbEd0T0V4eEQ1VlRxM1JR?oc=5",
-   "published": "2026-10-15T17:24:00+00:00",
+   "id": "26feebbbfd04",
+   "title": "US producer prices post largest gain in 4-1/2 years; expensive gasoline boosts retail sales",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMmQ2aEh5YkdMWGR6cGNVdU5TZ1k0NmpFX3BNcDRCM3B2cEJmX1BhYktBbkprQk12WDVGSXpKalhFTkVyS1hmWHNnVVJLYU80Q3dLcWVLVTN3YWVTS3BjVjZpTFM0SkloWUF0clFLbE5aR3dFR1ZVSWpxNjUwWUFyVjMta2E5X2YxRVhQTmpHSk5KRXRqT2UyTTlqdG1lOXFXUkVJTmxMLU1Kdw?oc=5",
+   "published": "2026-10-15T17:28:43+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZGRONTRmdHRZYTJ6Yk54UE52QjBqX1NCZzdZRmFZb3JFR2tBTGF5cHpJWkZoaURDYXVkazBOcnFqdHZIOUNkZ0xNLTRtWnhFeVRrcVo5d0c2TmYwY1BzUDgxYzV3SUxMTlU3RHliUzFDM0Zsc1ZwRlZQQXJTZE5HWGpGOGxUVVBHM3FsQzZGV3VIS1JYOFcxVWYwbWFjRVFUQnUxN0RHVkF3em90RDNRbEd0T0V4eEQ1VlRxM1JR?oc=5",
-     "title": "India markets regulator partly reverses derivative settlement rules after pushback"
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMmQ2aEh5YkdMWGR6cGNVdU5TZ1k0NmpFX3BNcDRCM3B2cEJmX1BhYktBbkprQk12WDVGSXpKalhFTkVyS1hmWHNnVVJLYU80Q3dLcWVLVTN3YWVTS3BjVjZpTFM0SkloWUF0clFLbE5aR3dFR1ZVSWpxNjUwWUFyVjMta2E5X2YxRVhQTmpHSk5KRXRqT2UyTTlqdG1lOXFXUkVJTmxMLU1Kdw?oc=5",
+     "title": "US producer prices post largest gain in 4-1/2 years; expensive gasoline boosts retail sales"
     }
    ],
    "ids": [
-    "59f82561e3ed"
+    "26feebbbfd04"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "India markets regulator partly reverses derivative settlement rules after pushback",
-   "category": "mercados",
+   "headline": "US producer prices post largest gain in 4-1/2 years; expensive gasoline boosts retail sales",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -11640,39 +11850,6 @@
    "ai": false
   },
   {
-   "id": "fadc598601df",
-   "title": "Meta and Apple, Longtime Foes, Team Up to Put Open-Weight AI on Macs",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQzh2RmRTanJlLWlJdUQ4Z3FNQXI5aGZVWlVCdHNVdWlQNGJ5MlhCbkR5d3QtdWVLYXNfdlpmOHVGVTJidXBrTFh4Wml6d1dkYmFiUGJtNDRHVl9vSWF0T2Zvb1pjc0ttX19FYjQwdDA5U214ZGFlNFpVclNxOXR1RERXZlRwUTFLcXVyOTNpd2NRamdGTExfdFVaSURGSDkyTjZ1WWRR?oc=5",
-   "published": "2026-10-15T17:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQzh2RmRTanJlLWlJdUQ4Z3FNQXI5aGZVWlVCdHNVdWlQNGJ5MlhCbkR5d3QtdWVLYXNfdlpmOHVGVTJidXBrTFh4Wml6d1dkYmFiUGJtNDRHVl9vSWF0T2Zvb1pjc0ttX19FYjQwdDA5U214ZGFlNFpVclNxOXR1RERXZlRwUTFLcXVyOTNpd2NRamdGTExfdFVaSURGSDkyTjZ1WWRR?oc=5",
-     "title": "Meta and Apple, Longtime Foes, Team Up to Put Open-Weight AI on Macs"
-    }
-   ],
-   "ids": [
-    "fadc598601df"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Meta and Apple, Longtime Foes, Team Up to Put Open-Weight AI on Macs",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "7a4c57c0fe1c",
    "title": "How Aramco learned to keep pumping oil under fire",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMEo4RHMzbGVMLUpQcnFqT28tSlU2Q0FBUlZtc2MzaUZSLXpsd3o3X1VGQXplLWJUaUJuQ1BCbFdVbzZwZUk0OURuZ0dmcWVkaWNaclNBcHBlRGR1bWViNWROR21UV2pSRTdqNDZfUVFDdHR2TG9lUDd5eDlNRzVtWHRVNFI5d3I4MUtQdG04SVA1OURzQzI5WXk3N3ItUEE?oc=5",
@@ -11691,39 +11868,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "How Aramco learned to keep pumping oil under fire",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b5d6ba2d6bcd",
-   "title": "U.S. Crude Oil Stockpiles Post Large Weekly Drop",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMEY4UmZnX3BONHF6Z0J6SW96Ny1DWTFIeDkxSGR2X0xoZlpPSTQwaWwyaVBxMHg1MDc3N3h5Z3R0TDd1YWlDVUZCUURQUFdSd2NiQ05mN2ZUNVFQbTFLWWo4VThWNkVNMk84WFp1MTFJa0oxUVo4SWZRZnZkM0EwMlN6VnJRZjRxeHdXREZVMlo4bWZ1am54QW0zc2k?oc=5",
-   "published": "2026-10-15T16:53:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMEY4UmZnX3BONHF6Z0J6SW96Ny1DWTFIeDkxSGR2X0xoZlpPSTQwaWwyaVBxMHg1MDc3N3h5Z3R0TDd1YWlDVUZCUURQUFdSd2NiQ05mN2ZUNVFQbTFLWWo4VThWNkVNMk84WFp1MTFJa0oxUVo4SWZRZnZkM0EwMlN6VnJRZjRxeHdXREZVMlo4bWZ1am54QW0zc2k?oc=5",
-     "title": "U.S. Crude Oil Stockpiles Post Large Weekly Drop"
-    }
-   ],
-   "ids": [
-    "b5d6ba2d6bcd"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "U.S. Crude Oil Stockpiles Post Large Weekly Drop",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11805,6 +11949,72 @@
    "ai": false
   },
   {
+   "id": "60bc78164ab6",
+   "title": "What does Alberta's referendum on separation from Canada mean?",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNHl4YlhWUTN5a2ZwZFRyMUxBOW10bll0dE55Mkt0ZDdVNklQNFBnelp6NEpSUlVMMHY3dUdLLXJXeC13OGhqOXdfTEh6N3BwanlrU3liNGZYU3hfVllDcnNCYXVYTjVTMTMxT0h1MmZjdVBHXzdVWTViVFNBeUI2dGtDMURzZ19qQXppQjE4Zi02NGxvWjRya0paQ3BMbkRDZlBlcnV3?oc=5",
+   "published": "2026-10-15T16:27:33+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNHl4YlhWUTN5a2ZwZFRyMUxBOW10bll0dE55Mkt0ZDdVNklQNFBnelp6NEpSUlVMMHY3dUdLLXJXeC13OGhqOXdfTEh6N3BwanlrU3liNGZYU3hfVllDcnNCYXVYTjVTMTMxT0h1MmZjdVBHXzdVWTViVFNBeUI2dGtDMURzZ19qQXppQjE4Zi02NGxvWjRya0paQ3BMbkRDZlBlcnV3?oc=5",
+     "title": "What does Alberta's referendum on separation from Canada mean?"
+    }
+   ],
+   "ids": [
+    "60bc78164ab6"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "What does Alberta's referendum on separation from Canada mean?",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7b0299aa87bf",
+   "title": "Cartier-owner Richemont considers joining bidders for De Beers, source says",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVWVQU3FmM05zRFJmS3o3ZW9OanpSNWV1X2Z0SllMSEtZTTdLYXBFLW5pNl9iN1FvOXF1MUgyM1ZVMXg4Vlk5RFVjaENmaXJvb3Uxb1M0Mm81a0E1RkVDTHRRSi1Ta0FUWTlvTGVPR19Sa0NadEVkc2J5UWNlR2c4SUFMMnU3ZVNsX1NKd1RFcEdxUmpZWUdoU3hjNUVySDNpdGt3MlltYXdzenVXdk9kT1VoYmRLQk15MUJSQTBFSUJRbzB5?oc=5",
+   "published": "2026-10-15T16:10:52+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVWVQU3FmM05zRFJmS3o3ZW9OanpSNWV1X2Z0SllMSEtZTTdLYXBFLW5pNl9iN1FvOXF1MUgyM1ZVMXg4Vlk5RFVjaENmaXJvb3Uxb1M0Mm81a0E1RkVDTHRRSi1Ta0FUWTlvTGVPR19Sa0NadEVkc2J5UWNlR2c4SUFMMnU3ZVNsX1NKd1RFcEdxUmpZWUdoU3hjNUVySDNpdGt3MlltYXdzenVXdk9kT1VoYmRLQk15MUJSQTBFSUJRbzB5?oc=5",
+     "title": "Cartier-owner Richemont considers joining bidders for De Beers, source says"
+    }
+   ],
+   "ids": [
+    "7b0299aa87bf"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Cartier-owner Richemont considers joining bidders for De Beers, source says",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "1588e88d18aa",
    "title": "US Treasury pushes global partners to rename AI as 'super intelligence'",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNDhRZ0FsM05ZWGFISWtLaXVIam1VcVlxWUY0YlF6NUR1SF9FSnFKQnJwMU5pa2hZUG1ZalVtb1RmY19adW5LSnZhQ1pmNzhtX2tTeE9Lal9LX29iRkZsbHVlcWlLWEw2NW9iaGlrS19odFpadHRSak5VYXFfTWRaaUpjUVp0SEVlb0ZvdTBZLThVcVB0V0JSdEZyZnBrQk05dzgzWUR4Yi0?oc=5",
@@ -11871,91 +12081,25 @@
    "ai": false
   },
   {
-   "id": "614cf2eaa8ad",
-   "title": "Explainer: Why are credit default swaps unnerving AI investors?",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYWRtVm1RTmdMcHZLMFFUTUphS2UweFlGVUtpa0Q3WndrcHVrWnl2Szkwc1VnaU1WMHBtOG5nSEJ0OG5BNldxWHp4RWUyejFqNENpSjZPa0Q4OFNXbHk4MDBLUWlzQmlDQVNYcTg1RkRsVDZ0T0JJaUVGQmhXWVF5XzI4U2haYmNZ?oc=5",
-   "published": "2026-10-15T14:05:18+00:00",
+   "id": "db73f3c9c7d9",
+   "title": "EXCLUSIVE: WEF could appoint Lagarde as early as November, sources say",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNExHamNuVlEwYUJMR1pmbjhxVFpNYURJVDNqU2wydDRMSDV3WkNSajkweDMzTU9FRGpsclhFLWFJVVRzcWxpMWlZN0VkYkNyUVlOWmhoZ1BNNXA5M2s4WU1EUEZVMDRWM3ktWUtaTmM2UkhfMEdSZ29oXzBZMFJyUngxN05NYjYzUUVQVksxaHBjSzFyVjNHLVpaaFZweTVlUkMtNnQ3dUI?oc=5",
+   "published": "2026-10-15T13:05:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYWRtVm1RTmdMcHZLMFFUTUphS2UweFlGVUtpa0Q3WndrcHVrWnl2Szkwc1VnaU1WMHBtOG5nSEJ0OG5BNldxWHp4RWUyejFqNENpSjZPa0Q4OFNXbHk4MDBLUWlzQmlDQVNYcTg1RkRsVDZ0T0JJaUVGQmhXWVF5XzI4U2haYmNZ?oc=5",
-     "title": "Explainer: Why are credit default swaps unnerving AI investors?"
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNExHamNuVlEwYUJMR1pmbjhxVFpNYURJVDNqU2wydDRMSDV3WkNSajkweDMzTU9FRGpsclhFLWFJVVRzcWxpMWlZN0VkYkNyUVlOWmhoZ1BNNXA5M2s4WU1EUEZVMDRWM3ktWUtaTmM2UkhfMEdSZ29oXzBZMFJyUngxN05NYjYzUUVQVksxaHBjSzFyVjNHLVpaaFZweTVlUkMtNnQ3dUI?oc=5",
+     "title": "EXCLUSIVE: WEF could appoint Lagarde as early as November, sources say"
     }
    ],
    "ids": [
-    "614cf2eaa8ad"
+    "db73f3c9c7d9"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Explainer: Why are credit default swaps unnerving AI investors?",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ff3664b61816",
-   "title": "An AI-for-Climate Startup Won Nvidia’s Backing—After Putting the Climate Part on Ice",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNak9mU2RoMUtpX2tSZlY3YTJwMms2UDZMVnNqTGJSTkdTTTBtdm5Cc3pHUUg4V2p2Um1SWmhTWGF1TUhIcmZZYWU3R2ZxYjVYRWRURDdHNXRUN0stSEU1STFrZ2t1Nko4RjFKRGF5NmRuX0RsMEhRMEhCNUFBQ0NoWmZ2LVpmVzR6MFZRTGlFVFRoLXhYQWZ6MjREMGRwb01EZWZBTjB5dTdTTXJjemVNVTE1MVFLTERoSmV6VG9NMmdxQ09aNFpVZm5XUQ?oc=5",
-   "published": "2026-10-15T13:25:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNak9mU2RoMUtpX2tSZlY3YTJwMms2UDZMVnNqTGJSTkdTTTBtdm5Cc3pHUUg4V2p2Um1SWmhTWGF1TUhIcmZZYWU3R2ZxYjVYRWRURDdHNXRUN0stSEU1STFrZ2t1Nko4RjFKRGF5NmRuX0RsMEhRMEhCNUFBQ0NoWmZ2LVpmVzR6MFZRTGlFVFRoLXhYQWZ6MjREMGRwb01EZWZBTjB5dTdTTXJjemVNVTE1MVFLTERoSmV6VG9NMmdxQ09aNFpVZm5XUQ?oc=5",
-     "title": "An AI-for-Climate Startup Won Nvidia’s Backing—After Putting the Climate Part on Ice"
-    }
-   ],
-   "ids": [
-    "ff3664b61816"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "An AI-for-Climate Startup Won Nvidia’s Backing—After Putting the Climate Part on Ice",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "7d5ed4bdde6a",
-   "title": "Bloomberg CEO’s ‘Aggressive’ Stance on AI",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdC1WcERYYXZpajZKMVVJbFpmYy03VGx4dDFKa0NWTEQwUnRDQW5ubVFtcjYwR0JHMFZ6ZHAtUk5EQUdXc1BvMGlUeEZCN3ladjcyWWZlZ1hnRDVDR2ZiWVNJYkdUZVFzcU5ZSTlaYVhiem1GbnVZeUhEREl1SVVyZ2Jtc1hsdw?oc=5",
-   "published": "2026-10-15T13:12:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdC1WcERYYXZpajZKMVVJbFpmYy03VGx4dDFKa0NWTEQwUnRDQW5ubVFtcjYwR0JHMFZ6ZHAtUk5EQUdXc1BvMGlUeEZCN3ladjcyWWZlZ1hnRDVDR2ZiWVNJYkdUZVFzcU5ZSTlaYVhiem1GbnVZeUhEREl1SVVyZ2Jtc1hsdw?oc=5",
-     "title": "Bloomberg CEO’s ‘Aggressive’ Stance on AI"
-    }
-   ],
-   "ids": [
-    "7d5ed4bdde6a"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Bloomberg CEO’s ‘Aggressive’ Stance on AI",
-   "category": "tech",
+   "headline": "EXCLUSIVE: WEF could appoint Lagarde as early as November, sources say",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -12003,6 +12147,39 @@
    "ai": false
   },
   {
+   "id": "33c4a1b5eef0",
+   "title": "US retail sales beat expectations in September on higher gasoline prices",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdEZnMTMydHhjWGswNVBLR3F5dEhkQ09TOW02dkt2eF8yMXVfa2g5dUNwQm5MdmRIZXB6Q0QtNkJrOGg3Zm1JWUh1akw3RGZ5czh4dEk2b2pxeDNLSXg5Sk9wQzJKVFBhanF2ZWtxNDR6T3pvNzgzbVVlRWotSnR5NjVwcjQtYjd3eVBGang1Sk1BWlU1WExpQy1ySndDeUhZSGFUNVFpSkRFZ19meGNuOA?oc=5",
+   "published": "2026-10-15T12:49:46+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdEZnMTMydHhjWGswNVBLR3F5dEhkQ09TOW02dkt2eF8yMXVfa2g5dUNwQm5MdmRIZXB6Q0QtNkJrOGg3Zm1JWUh1akw3RGZ5czh4dEk2b2pxeDNLSXg5Sk9wQzJKVFBhanF2ZWtxNDR6T3pvNzgzbVVlRWotSnR5NjVwcjQtYjd3eVBGang1Sk1BWlU1WExpQy1ySndDeUhZSGFUNVFpSkRFZ19meGNuOA?oc=5",
+     "title": "US retail sales beat expectations in September on higher gasoline prices"
+    }
+   ],
+   "ids": [
+    "33c4a1b5eef0"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "US retail sales beat expectations in September on higher gasoline prices",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "2ce9038c1bc8",
    "title": "Exclusive | Bloomberg Doubles Down on Conversational AI",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQOURfcGVoTnU1U3NZNXRxRElGMDZ5eFVQUUxhWXRwdXlJTmFhZWNlQnVyXzJrY283X0J4TWNkQXdyT0NzN0JEWXhRWTI4YVVNeFdaMlNkNmk0ZUktZFc2MDl4ZTFKb2N0SkZPUTJ5RnllTGkyY3VsRWpRd2ZMNlh4X1RPTWxKTDQySHZ4Nw?oc=5",
@@ -12036,24 +12213,24 @@
    "ai": false
   },
   {
-   "id": "900620e897b6",
-   "title": "Penske Automotive Group to Be Taken Private by Penske, Mitsui",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQ0g5NVlYYVNnZmlDQXAweUdHd1d4OTRWMUlXdUtyNU9mWWNkTmxtQUlrVHQ3UTJvbW92RUxpSjZ6S0RETzVTNlhfQjNRbmpsbUV6RVJLSndiLU15dDlfNTkwLWFQc3o1Smhpc2t3V0puQ25yd0RlUUZoVDQ1bFhYdmx5b1hpdUh3aEktSElmTWgyenVpR1duUTQzR2JlWkR3WUUzelRJNA?oc=5",
-   "published": "2026-10-15T12:26:00+00:00",
+   "id": "a760aaa76898",
+   "title": "POLL BoE to raise rates to 4% in November, but economists narrowly expect hold from there",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ3lHU1dNb1J1ZmNRREt2THh1OVNpdms2TDU2UFVrRndzN2ltSEZJYUR5d25wd1ZBdGxCQno0OEVXbl9abDhaemo4TFo4RlpXSXV1WkRrSlM0MThwbmZ0OTUzTmdvN3V4VUFZYkhoakdObzlTbmlneGJOUlB0ZGVwaDhEdHlUNUtQeVp2dkw2Q1l3eTdzZjBSMGR3dFBYa1VxLUVoOEREMlFQc2RFd3c?oc=5",
+   "published": "2026-10-15T12:12:12+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQ0g5NVlYYVNnZmlDQXAweUdHd1d4OTRWMUlXdUtyNU9mWWNkTmxtQUlrVHQ3UTJvbW92RUxpSjZ6S0RETzVTNlhfQjNRbmpsbUV6RVJLSndiLU15dDlfNTkwLWFQc3o1Smhpc2t3V0puQ25yd0RlUUZoVDQ1bFhYdmx5b1hpdUh3aEktSElmTWgyenVpR1duUTQzR2JlWkR3WUUzelRJNA?oc=5",
-     "title": "Penske Automotive Group to Be Taken Private by Penske, Mitsui"
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ3lHU1dNb1J1ZmNRREt2THh1OVNpdms2TDU2UFVrRndzN2ltSEZJYUR5d25wd1ZBdGxCQno0OEVXbl9abDhaemo4TFo4RlpXSXV1WkRrSlM0MThwbmZ0OTUzTmdvN3V4VUFZYkhoakdObzlTbmlneGJOUlB0ZGVwaDhEdHlUNUtQeVp2dkw2Q1l3eTdzZjBSMGR3dFBYa1VxLUVoOEREMlFQc2RFd3c?oc=5",
+     "title": "POLL BoE to raise rates to 4% in November, but economists narrowly expect hold from there"
     }
    ],
    "ids": [
-    "900620e897b6"
+    "a760aaa76898"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Penske Automotive Group to Be Taken Private by Penske, Mitsui",
+   "headline": "POLL BoE to raise rates to 4% in November, but economists narrowly expect hold from there",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12121,72 +12298,6 @@
    "prescore": 2.6,
    "headline": "India says first phase of US trade deal nearly done, insists on edge over rivals",
    "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6571d2ec7f4b",
-   "title": "US wants Senegal debt restructuring wrapped up in less than a year",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOWNjSVNSdU9qeG5wSDE2MnNXMjBoMmpVeVdwbzlwNWtjejRMWmpLbVR2QnYwVUpsN3NBWE53NkNCaXZpNGVURTdOWkxOX0pvRkQ4Z3ZpbllKREw5UWkyeFFmRnBSN0IwY0xtWFdueUd0TFRCRFc5QjR4Wmt1YjVma3NyQng4eVdXcGN0OG4td1JqaFBLTnR2b25kY3ZCVk94M0RORi1iRUItc2lkSkVn?oc=5",
-   "published": "2026-10-15T11:43:43+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOWNjSVNSdU9qeG5wSDE2MnNXMjBoMmpVeVdwbzlwNWtjejRMWmpLbVR2QnYwVUpsN3NBWE53NkNCaXZpNGVURTdOWkxOX0pvRkQ4Z3ZpbllKREw5UWkyeFFmRnBSN0IwY0xtWFdueUd0TFRCRFc5QjR4Wmt1YjVma3NyQng4eVdXcGN0OG4td1JqaFBLTnR2b25kY3ZCVk94M0RORi1iRUItc2lkSkVn?oc=5",
-     "title": "US wants Senegal debt restructuring wrapped up in less than a year"
-    }
-   ],
-   "ids": [
-    "6571d2ec7f4b"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "US wants Senegal debt restructuring wrapped up in less than a year",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ec3c040109a4",
-   "title": "India's goods trade deficit widens; focus turns to trade pacts to narrow gap",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRlpEUE85Qnl6NWJNQXBnMU1Lek11TWVESkZWSFVzU2JrM3kyUmhWeGNHd3VRNE5YRzBXeC1ieElneF9CcjdoWkpBSHRsWFMxRVg2N1VyX29EQ0lHZDZaaHN2QkdIMHB0NVFKTENwb1pXc29GLVFhWFRId2MtYmJmU3ZJWDlFMVdjMzlHT1lrQzh1d1lCYWJvTXFLd1U1ejVCZ3dHSWlB?oc=5",
-   "published": "2026-10-15T11:27:05+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRlpEUE85Qnl6NWJNQXBnMU1Lek11TWVESkZWSFVzU2JrM3kyUmhWeGNHd3VRNE5YRzBXeC1ieElneF9CcjdoWkpBSHRsWFMxRVg2N1VyX29EQ0lHZDZaaHN2QkdIMHB0NVFKTENwb1pXc29GLVFhWFRId2MtYmJmU3ZJWDlFMVdjMzlHT1lrQzh1d1lCYWJvTXFLd1U1ejVCZ3dHSWlB?oc=5",
-     "title": "India's goods trade deficit widens; focus turns to trade pacts to narrow gap"
-    }
-   ],
-   "ids": [
-    "ec3c040109a4"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "India's goods trade deficit widens; focus turns to trade pacts to narrow gap",
-   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -12317,84 +12428,6 @@
    "tags": [
     "eleições",
     "São Paulo"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "501bf808c3e0",
-   "title": "O que Holanda e Austrália podem nos ensinar sobre avaliar promessas de campanha",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/transparencia-publica/2026/10/eleicoes-o-que-holanda-e-australia-podem-nos-ensinar-sobre-avaliar-promessas-de-campanha.shtml",
-   "published": "2026-10-15T19:34:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/transparencia-publica/2026/10/eleicoes-o-que-holanda-e-australia-podem-nos-ensinar-sobre-avaliar-promessas-de-campanha.shtml",
-     "title": "O que Holanda e Austrália podem nos ensinar sobre avaliar promessas de campanha"
-    }
-   ],
-   "ids": [
-    "501bf808c3e0"
-   ],
-   "snippet": "Que esta eleição foi marcada pela ausência de discussões substantivas sobre políticas públicas e projetos de país , já sabemos. Mas, diante desse cenário desalentador, vale a pena olhar para experiências que mostram como poderiam ser nossas eleições futuras. Leia mais (10/15/2026 - 16h34)",
-   "prescore": 3.0,
-   "headline": "O que Holanda e Austrália ensinam sobre avaliar promessas de campanha",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Opinião sem impacto.",
-   "summary": "Coluna compara práticas de avaliação de promessas eleitorais em outros países.",
-   "involves": "Holanda, Austrália",
-   "interpretation": "Opinião.",
-   "impact": "Nenhum.",
-   "sentiment": "neutro",
-   "entities": [
-    "Holanda",
-    "Austrália"
-   ],
-   "tags": [
-    "eleições",
-    "opinião"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "882af65c6f17",
-   "title": "Como votaram em Flávio Bolsonaro e Lula as cidades mais e menos eficientes do Brasil; confira a sua",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/como-votaram-em-flavio-bolsonaro-e-lula-as-cidades-mais-e-menos-eficientes-do-brasil-confira-a-sua.shtml",
-   "published": "2026-10-15T16:03:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/como-votaram-em-flavio-bolsonaro-e-lula-as-cidades-mais-e-menos-eficientes-do-brasil-confira-a-sua.shtml",
-     "title": "Como votaram em Flávio Bolsonaro e Lula as cidades mais e menos eficientes do Brasil; confira a sua"
-    }
-   ],
-   "ids": [
-    "882af65c6f17"
-   ],
-   "snippet": "Ferramenta interativa permite explorar a relação entre a votação de Lula ( PT ) e Flávio Bolsonaro ( PL ) com o Ranking de Eficiência dos Municípios - Folha (REM-F), elaborado em parceria com o Datafolha . Leia mais (10/15/2026 - 13h03)",
-   "prescore": 3.0,
-   "headline": "Como cidades mais e menos eficientes votaram em Flávio e Lula",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Ferramenta interativa.",
-   "summary": "Ferramenta relaciona votação com Ranking de Eficiência dos Municípios da Folha/Datafolha.",
-   "involves": "Folha, Datafolha",
-   "interpretation": "Conteúdo de dados.",
-   "impact": "Nenhum.",
-   "sentiment": "neutro",
-   "entities": [
-    "Folha",
-    "Datafolha"
-   ],
-   "tags": [
-    "eleições",
-    "dados"
    ],
    "is_deal": false,
    "deal": null,
@@ -12713,6 +12746,54 @@
    }
   },
   {
+   "id": "6c97feaf5b06",
+   "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+   "published": "2026-10-15T21:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+     "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say"
+    }
+   ],
+   "ids": [
+    "6c97feaf5b06"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Investidores moderam expectativas de valuation do IPO da Anthropic por desaceleração da receita",
+   "category": "mna",
+   "importance": 7,
+   "importance_reason": "IPO potencialmente gigante de IA; influencia apetite por tech.",
+   "summary": "Segundo a Reuters, fontes indicam que investidores moderam as expectativas de valuation do IPO da Anthropic devido à desaceleração do crescimento da receita.",
+   "involves": "Anthropic, investidores.",
+   "interpretation": "Sinal de disciplina de preço em IA; detalhes de valor não constam.",
+   "impact": "Pode influenciar o apetite por IPOs de IA no mercado.",
+   "sentiment": "negativo",
+   "entities": [
+    "Anthropic",
+    "Reuters"
+   ],
+   "tags": [
+    "IPO",
+    "IA",
+    "valuation"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "não aplicável",
+    "target": "Anthropic",
+    "value": "não divulgado",
+    "stage": "Rumor",
+    "sector": "Inteligência artificial",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "d1d5739a9e70",
    "title": "Proofpoint to Acquire Varonis in $6.3 Billion Cybersecurity Deal",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRzRXbDF6YUJkek90VzR5cFBPTlZXNV9zbTNSX1dFb2VYeDZfV0hhdm5wRFpCaG1lVFo3Y2NqbmFFVzU0ckZFenlRemoyckMxb01ZZkhGcE0wZWFBRk83U0FIMm02MXl4UDZZdW5wRVFGS2w5RUJjTTV0TEtCOF9GbDRIUy01N040M3hXNzN6ZUR1blZFNnVkUDRiWWxKVE05aFNsNGstTUcxZVVrUjFB?oc=5",
@@ -12756,53 +12837,6 @@
     "value": "US$ 6,3 bilhões",
     "stage": "Anunciado",
     "sector": "Cibersegurança",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
-   "id": "e02bc3082634",
-   "title": "Anthropic fatura 16,8 bilhões de dólares no terceiro trimestre antes do IPO",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWsyVl8tV2hXNU1KaldFV2dmWGVaNFQtUExJSzIxSkU2VG9CUnZwWWtlY2ZjLWpVcWhUSm04R3RHR0Q3TGhCbnJWRWtlbDdTQ25EeEZmT3ZhNVF0Y2xvQVJzVGJ4eGNLcDd4YWlnUGwzaXc3bFNmamU1UFA3M1FOemxLTE9mb29GNXlzTkpKcUdUQjZDcnAtY2pWcGhudw?oc=5",
-   "published": "2026-10-15T18:41:30+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Pasquale Pillitteri",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWsyVl8tV2hXNU1KaldFV2dmWGVaNFQtUExJSzIxSkU2VG9CUnZwWWtlY2ZjLWpVcWhUSm04R3RHR0Q3TGhCbnJWRWtlbDdTQ25EeEZmT3ZhNVF0Y2xvQVJzVGJ4eGNLcDd4YWlnUGwzaXc3bFNmamU1UFA3M1FOemxLTE9mb29GNXlzTkpKcUdUQjZDcnAtY2pWcGhudw?oc=5",
-     "title": "Anthropic fatura 16,8 bilhões de dólares no terceiro trimestre antes do IPO"
-    }
-   ],
-   "ids": [
-    "e02bc3082634"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Anthropic fatura US$ 16,8 bilhões no terceiro trimestre antes do IPO",
-   "category": "mna",
-   "importance": 7,
-   "importance_reason": "Dados financeiros da Anthropic em pré-IPO.",
-   "summary": "A Anthropic divulgou receita de US$ 16,8 bilhões no terceiro trimestre, antes de um IPO. Período exato e demais métricas não detalhados.",
-   "involves": "Anthropic.",
-   "interpretation": "Número grande antecede o IPO; desaceleração da receita é citada pela Reuters.",
-   "impact": "Sustenta a tese de IA.",
-   "sentiment": "positivo",
-   "entities": [
-    "Anthropic"
-   ],
-   "tags": [
-    "Anthropic",
-    "IPO",
-    "receita"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "IPO",
-    "buyer": "não aplicável",
-    "target": "Anthropic",
-    "value": "não divulgado",
-    "stage": "Rumor",
-    "sector": "Inteligência artificial",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -14108,6 +14142,39 @@
    "ai": false
   },
   {
+   "id": "4b7760f2a879",
+   "title": "Brava, Eneva, Itaú, Mitre, Lavvi e mais ações para acompanhar hoje",
+   "link": "https://www.infomoney.com.br/mercados/brava-eneva-itau-mitre-lavvi-e-mais-acoes-para-acompanhar-hoje/",
+   "published": "2026-10-16T11:27:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/brava-eneva-itau-mitre-lavvi-e-mais-acoes-para-acompanhar-hoje/",
+     "title": "Brava, Eneva, Itaú, Mitre, Lavvi e mais ações para acompanhar hoje"
+    }
+   ],
+   "ids": [
+    "4b7760f2a879"
+   ],
+   "snippet": "Veja os principais destaques do noticiário corporativo desta sexta-feira The post Brava, Eneva, Itaú, Mitre, Lavvi e mais ações para acompanhar hoje appeared first on InfoMoney .",
+   "prescore": 3.2,
+   "headline": "Brava, Eneva, Itaú, Mitre, Lavvi e mais ações para acompanhar hoje",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Veja os principais destaques do noticiário corporativo desta sexta-feira The post Brava, Eneva, Itaú, Mitre, Lavvi e mais ações para acompanhar hoje appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5f2a15674d58",
    "title": "Eneva (ENEV3) recebe novo aporte de R$ 1,77 bilhão do Itaú (ITUB4)",
    "link": "https://www.infomoney.com.br/mercados/eneva-enev3-recebe-novo-aporte-de-r-177-bilhao-do-itau-itub4/",
@@ -14196,6 +14263,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Nike announced earlier this month that it's expanding into India. The retailer has been broadly struggling, especially in the China market.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7cb806baae0d",
+   "title": "Pimco’s Balls Sees Good Value in Long End of Yield Curve",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/pimco-s-balls-sees-good-value-in-long-end-of-yield-curve-video",
+   "published": "2026-10-16T11:23:20+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-10-16/pimco-s-balls-sees-good-value-in-long-end-of-yield-curve-video",
+     "title": "Pimco’s Balls Sees Good Value in Long End of Yield Curve"
+    }
+   ],
+   "ids": [
+    "7cb806baae0d"
+   ],
+   "snippet": "Andrew Balls, global fixed income CIO at Pimco, says one to two further interest-rate hikes from the Federal Reserve “seems reasonable” as the central bank targets a return to 2% inflation. He also explains why he sees “good value” in the long end of the Treasury yield curve amid uncertainty around artificial intelligence. He speaks on “Bloomberg Surveillance.” (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Pimco’s Balls Sees Good Value in Long End of Yield Curve",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Andrew Balls, global fixed income CIO at Pimco, says one to two further interest-rate hikes from the Federal Reserve “seems reasonable” as the central bank targets a return to 2% inflation. He also explains why he sees “good value” in the long end of the Treasury yield curve amid uncertainty around artificial intelligence. He speaks on “Bloomberg Surveillance.” (Source: Bloomberg)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14818,7 +14918,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 38,
+   "count": 39,
    "error": null
   },
   {
@@ -14888,7 +14988,7 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 43,
+   "count": 44,
    "error": null
   },
   {
@@ -15094,11 +15194,11 @@
   }
  ],
  "stats": {
-  "raw": 947,
-  "unique": 560,
-  "unique_all": 875,
+  "raw": 949,
+  "unique": 555,
+  "unique_all": 877,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.8
+  "seconds": 4.3
  }
 }
