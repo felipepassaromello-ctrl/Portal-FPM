@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T08:16:29.255390-03:00",
+ "generated_at": "2026-10-17T09:35:07.553045-03:00",
  "date": "2026-10-17",
  "window": {
   "start": "2026-10-16T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-16T08:20:21.852364-03:00",
-  "analyzed": 6
+  "analyzed": 8
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -27,12 +27,12 @@
   "mood": "Briefing automático por palavras-chave: a análise do dia pelo Claude ainda não rodou.",
   "tldr": [
    "M. Dias Branco interrompe jejum de M&As e estreia em pães congelados com compra da Grespan (NeoFeed)",
+   "Investidores moderam expectativas de valuation do IPO da Anthropic por desaceleração da receita (Reuters)",
    "Warsh não sinaliza nova alta de juros e elogia aperto global sem 'caronas' (CNBC)",
    "Petróleo cai com liberação de reservas da AIE e riscos em Ormuz (Wall Street Journal)",
    "China propõe incluir 40 tecnologias de IA, biotecnologia e solar em controle de exportação (Reuters)",
    "Indonésia recebe 'alerta' enquanto MSCI se prepara para excluí-la dos índices globais (Reuters)",
-   "Potencial de alta do Ibovespa, IPCA e balanços dos EUA; veja destaques da semana (InfoMoney)",
-   "Vale trocar um Tesouro IPCA+ por uma debênture da Sabesp? Títulos isentos passam a pagar mais que os públicos, mostra BTG (Seu Dinheiro)"
+   "Rússia assume controle de mais ativos corporativos europeus antes de discurso de Zelensky na UE (Reuters)"
   ],
   "sections": [],
   "watchlist": [],
@@ -155,14 +155,14 @@
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 81524.0,
-   "change_pct": 0.028460225133897232,
+   "price": 81438.04,
+   "change_pct": -0.07701112613631711,
    "spark": [
     83095.125,
     81562.4921875,
     82141.4609375,
     81500.8046875,
-    81524.0
+    81438.0390625
    ]
   }
  ],
@@ -178,6 +178,11 @@
      "source": "NeoFeed",
      "link": "https://neofeed.com.br/negocios/m-dias-branco-interrompe-jejum-de-mas-e-estreia-em-paes-congelados-com-compra-da-grespan/",
      "title": "M. Dias Branco interrompe jejum de M&As e estreia em pães congelados com compra da Grespan"
+    },
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSnBXbHY2YnZHNUVhTktNUEdMbDBIRHlFNnpVNWtPZE5tZktOYk1GeDhHTnZuM0JLWUhlcWFZVTFXVEU4TGxtaDJsbHpJZ2NxZkJfVXlOOEhVZmwtMEFuX0YyQl9zeXliUENwQ0FxVURycUx1TWt6SExGWWF4dmZBajlWQ1RhVlIzc0hMXzln?oc=5",
+     "title": "M. Dias Branco compra 80% da Grespan Pães Congelados"
     },
     {
      "source": "UOL Economia",
@@ -202,6 +207,7 @@
    ],
    "ids": [
     "f462672f42de",
+    "5b9ca53cec2b",
     "a3b992e3e78d",
     "806bbad2e7a5",
     "c8b959a6da89",
@@ -223,6 +229,57 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "6c97feaf5b06",
+   "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+   "published": "2026-10-17T10:10:22+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+     "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say"
+    }
+   ],
+   "ids": [
+    "6c97feaf5b06"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Investidores moderam expectativas de valuation do IPO da Anthropic por desaceleração da receita",
+   "category": "mna",
+   "importance": 7,
+   "importance_reason": "IPO potencialmente gigante de IA; influencia apetite por tech.",
+   "summary": "Segundo a Reuters, fontes indicam que investidores moderam as expectativas de valuation do IPO da Anthropic devido à desaceleração do crescimento da receita.",
+   "involves": "Anthropic, investidores.",
+   "interpretation": "Sinal de disciplina de preço em IA; detalhes de valor não constam.",
+   "impact": "Pode influenciar o apetite por IPOs de IA no mercado.",
+   "sentiment": "negativo",
+   "entities": [
+    "Anthropic",
+    "Reuters"
+   ],
+   "tags": [
+    "IPO",
+    "IA",
+    "valuation"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "não aplicável",
+    "target": "Anthropic",
+    "value": "não divulgado",
+    "stage": "Rumor",
+    "sector": "Inteligência artificial",
+    "advisors": "não divulgado"
+   },
+   "ai": true,
+   "repeat": {
+    "date": "2026-10-16"
+   }
   },
   {
    "id": "059f197f93f1",
@@ -384,37 +441,45 @@
    "ai": true
   },
   {
-   "id": "5650d9c5bc7e",
-   "title": "Potencial de alta do Ibovespa, IPCA e balanços dos EUA; veja destaques da semana",
-   "link": "https://www.infomoney.com.br/onde-investir/potencial-de-alta-do-ibovespa-ipca-e-balancos-dos-eua-veja-destaques-da-semana/",
-   "published": "2026-10-17T10:49:00+00:00",
-   "region": "BR",
+   "id": "b841b5f516da",
+   "title": "Russia takes over more EU companies' assets over Ukraine support",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTDMtenFMRWlxMERtR0Q4QVFNUUFtXzBqM1p3U1VSQ256Vkxod1o2Q09kSDZLamxiWUtIanlPM25KOS13eWxCMm00REhXNWVhbjlYUUxHTjB0MHZKVUpXNlBCNDduQnI1czdUR05jMzdibWVSMGlFMmlxOHdTdnB3WXlnVkh3ZGE2T2ZWdl9Jd3lGYi1scjFULUU5S29jMG15ZkZhVE1uQ3pWYWswQWwtLWFDdWwtU010ZTBJUzJZNGR4Qm1TVFBwUlJ3bw?oc=5",
+   "published": "2026-10-16T11:43:36+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/onde-investir/potencial-de-alta-do-ibovespa-ipca-e-balancos-dos-eua-veja-destaques-da-semana/",
-     "title": "Potencial de alta do Ibovespa, IPCA e balanços dos EUA; veja destaques da semana"
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTDMtenFMRWlxMERtR0Q4QVFNUUFtXzBqM1p3U1VSQ256Vkxod1o2Q09kSDZLamxiWUtIanlPM25KOS13eWxCMm00REhXNWVhbjlYUUxHTjB0MHZKVUpXNlBCNDduQnI1czdUR05jMzdibWVSMGlFMmlxOHdTdnB3WXlnVkh3ZGE2T2ZWdl9Jd3lGYi1scjFULUU5S29jMG15ZkZhVE1uQ3pWYWswQWwtLWFDdWwtU010ZTBJUzJZNGR4Qm1TVFBwUlJ3bw?oc=5",
+     "title": "Russia takes over more EU companies' assets over Ukraine support"
     }
    ],
    "ids": [
-    "5650d9c5bc7e"
+    "b841b5f516da"
    ],
-   "snippet": "Estudo feito pela XP Investimentos aponta espaço para ações com queda de juros, oportunidade no biometano e aceleração da inflação para 4,58% The post Potencial de alta do Ibovespa, IPCA e balanços dos EUA; veja destaques da semana appeared first on InfoMoney .",
-   "prescore": 7.2,
-   "headline": "Potencial de alta do Ibovespa, IPCA e balanços dos EUA; veja destaques da semana",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Estudo feito pela XP Investimentos aponta espaço para ações com queda de juros, oportunidade no biometano e aceleração da inflação para 4,58% The post Potencial de alta do Ibovespa, IPCA e balanços dos EUA; veja destaques da semana appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Rússia assume controle de mais ativos corporativos europeus antes de discurso de Zelensky na UE",
+   "category": "internacional",
+   "importance": 6,
+   "importance_reason": "Risco de ativos europeus na Rússia.",
+   "summary": "A Rússia assumiu controle de mais ativos corporativos europeus antes da participação de Zelensky em cúpula da UE. Quais empresas não consta.",
+   "involves": "Rússia, UE, Zelensky.",
+   "interpretation": "Retaliação a sanções.",
+   "impact": "Baixa contábil para empresas europeias.",
+   "sentiment": "negativo",
+   "entities": [
+    "Rússia",
+    "UE",
+    "Zelensky"
+   ],
+   "tags": [
+    "Rússia",
+    "ativos",
+    "sanções"
+   ],
    "is_deal": false,
    "deal": null,
-   "ai": false
+   "ai": true
   },
   {
    "id": "589881f09f60",
@@ -439,84 +504,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Relatório do banco mostra o aumento da remuneração das debêntures incentivadas, enquanto a reprecificação dos títulos públicos diminuiu a atratividade desses papéis The post Vale trocar um Tesouro IPCA+ por uma debênture da Sabesp? Títulos isentos passam a pagar mais que os públicos, mostra BTG appeared first on Seu Dinheiro .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "685bf275b2a6",
-   "title": "Ibovespa ganha fôlego com Petrobras (PETR4) e interrompe ciclo de perdas; dólar cai",
-   "link": "https://www.moneytimes.com.br/ibovespa-16-10-26-lils/",
-   "published": "2026-10-16T20:26:11+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/ibovespa-16-10-26-lils/",
-     "title": "Ibovespa ganha fôlego com Petrobras (PETR4) e interrompe ciclo de perdas; dólar cai"
-    }
-   ],
-   "ids": [
-    "685bf275b2a6"
-   ],
-   "snippet": "O Ibovespa (IBOV) ‘pegou carona’ no salto do petróleo e ‘ignorou’ a aversão a risco externa, interrompendo a sequência de três dias de perdas consecutivas. A disputa pela Presidência ficou no centro das atenções. Nesta sexta-feira (16), o principal índice da bolsa brasileira terminou as negociações com alta de 0,54%, aos 205.430,33 pontos. Na semana, […]",
-   "prescore": 6.8,
-   "headline": "Ibovespa ganha fôlego com Petrobras (PETR4) e interrompe ciclo de perdas; dólar cai",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O Ibovespa (IBOV) ‘pegou carona’ no salto do petróleo e ‘ignorou’ a aversão a risco externa, interrompendo a sequência de três dias de perdas consecutivas. A disputa pela Presidência ficou no centro das atenções. Nesta sexta-feira (16), o principal índice da bolsa brasileira terminou as negociações com alta de 0,54%, aos 205.430,33 pontos. Na semana, […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "792bf78f2643",
-   "title": "Governo pode dar crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOEg3QzlmS2JVd3dDaG9iRDhWeFd5V3JkWmJCNUM4VXV0S2tYVnptbEM5V056NFFKeHhQdXR1MlZWQjVnZGpzV0ZvNi1tYkdmNzBRa1RWTDlMWTh5Wm12RUwwc2RRc09OamtBWk94QzRmcy11VWctU0NZWVhTZUk3cTRlc2dGMktEVFBVLWJNRE5CaVduN1NXdVlPY1pJSGoycFVBdXFBYnZVWE5pWlplMFM5dHRCejRLSEsxOU80NDQzRmk5ZE9VRzZkSmhhVENKM09qZzItM21sdmg0YjRvSDJ2UndVVFXSAfYBQVVfeXFMTm10Y0NTS0VZQ245d2VNSG9qTllLMmgwRGRaTGUxU1ljVTVMSzNnMUtUWnRtZU9sWDJmbzgzdjRBaUtackliRUdSYXF6cE9ZVWhZeng0YzRIVjRoLUo3ejdqdlVSS0VMSjh3LWthR25FVWYtTzRTeEJmc1Q5NUhhOEJtVTlZM1pIdjVCZHVmYlVYR0daaElYUDJzOW0wSk05elFfdmY1SDNoM2hyaG5rNmtfVlNZdUdHcU5oS1lFOEstbUM0S1VYZW1ZWkJzcVZmTDR2WE5pcTIwaFBsQm5HS2RMQ1N4VzVnU0w4VHVxNldHSW5ldXBB?oc=5",
-   "published": "2026-10-16T20:07:38+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOEg3QzlmS2JVd3dDaG9iRDhWeFd5V3JkWmJCNUM4VXV0S2tYVnptbEM5V056NFFKeHhQdXR1MlZWQjVnZGpzV0ZvNi1tYkdmNzBRa1RWTDlMWTh5Wm12RUwwc2RRc09OamtBWk94QzRmcy11VWctU0NZWVhTZUk3cTRlc2dGMktEVFBVLWJNRE5CaVduN1NXdVlPY1pJSGoycFVBdXFBYnZVWE5pWlplMFM5dHRCejRLSEsxOU80NDQzRmk5ZE9VRzZkSmhhVENKM09qZzItM21sdmg0YjRvSDJ2UndVVFXSAfYBQVVfeXFMTm10Y0NTS0VZQ245d2VNSG9qTllLMmgwRGRaTGUxU1ljVTVMSzNnMUtUWnRtZU9sWDJmbzgzdjRBaUtackliRUdSYXF6cE9ZVWhZeng0YzRIVjRoLUo3ejdqdlVSS0VMSjh3LWthR25FVWYtTzRTeEJmc1Q5NUhhOEJtVTlZM1pIdjVCZHVmYlVYR0daaElYUDJzOW0wSk05elFfdmY1SDNoM2hyaG5rNmtfVlNZdUdHcU5oS1lFOEstbUM0S1VYZW1ZWkJzcVZmTDR2WE5pcTIwaFBsQm5HS2RMQ1N4VzVnU0w4VHVxNldHSW5ldXBB?oc=5",
-     "title": "Governo pode dar crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan"
-    },
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/governo-prepara-credito-e-capacitacao-para-empresas-afetadas-pelo-fim-da-escala-6x1-diz-durigan.shtml",
-     "title": "Governo prepara crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan"
-    },
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/governo-podera-oferecer-credito-a-empresas-afetadas-pelo-fim-da-escala-6x1-diz-durigan-rnda/",
-     "title": "Governo poderá oferecer crédito a empresas afetadas pelo fim da escala 6×1, diz Durigan"
-    }
-   ],
-   "ids": [
-    "792bf78f2643",
-    "504ebaea92f0",
-    "c6e6a0bc886b"
-   ],
-   "snippet": "O ministro da Fazenda, Dario Durigan , afirmou à TV Bandeirantes que o governo de Luiz Inácio Lula da Silva (PT) planeja oferecer linhas de crédito e programas de capacitação para ajudar empresas a se adaptar ao fim da escala de trabalho 6x1 . Leia mais (10/16/2026 - 18h27)",
-   "prescore": 6.8,
-   "headline": "Governo pode dar crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan",
-   "category": "politica",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro da Fazenda, Dario Durigan , afirmou à TV Bandeirantes que o governo de Luiz Inácio Lula da Silva (PT) planeja oferecer linhas de crédito e programas de capacitação para ajudar empresas a se adaptar ao fim da escala de trabalho 6x1 . Leia mais (10/16/2026 - 18h27)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -1185,6 +1172,45 @@
    "ai": false
   },
   {
+   "id": "792bf78f2643",
+   "title": "Governo pode dar crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOEg3QzlmS2JVd3dDaG9iRDhWeFd5V3JkWmJCNUM4VXV0S2tYVnptbEM5V056NFFKeHhQdXR1MlZWQjVnZGpzV0ZvNi1tYkdmNzBRa1RWTDlMWTh5Wm12RUwwc2RRc09OamtBWk94QzRmcy11VWctU0NZWVhTZUk3cTRlc2dGMktEVFBVLWJNRE5CaVduN1NXdVlPY1pJSGoycFVBdXFBYnZVWE5pWlplMFM5dHRCejRLSEsxOU80NDQzRmk5ZE9VRzZkSmhhVENKM09qZzItM21sdmg0YjRvSDJ2UndVVFXSAfYBQVVfeXFMTm10Y0NTS0VZQ245d2VNSG9qTllLMmgwRGRaTGUxU1ljVTVMSzNnMUtUWnRtZU9sWDJmbzgzdjRBaUtackliRUdSYXF6cE9ZVWhZeng0YzRIVjRoLUo3ejdqdlVSS0VMSjh3LWthR25FVWYtTzRTeEJmc1Q5NUhhOEJtVTlZM1pIdjVCZHVmYlVYR0daaElYUDJzOW0wSk05elFfdmY1SDNoM2hyaG5rNmtfVlNZdUdHcU5oS1lFOEstbUM0S1VYZW1ZWkJzcVZmTDR2WE5pcTIwaFBsQm5HS2RMQ1N4VzVnU0w4VHVxNldHSW5ldXBB?oc=5",
+   "published": "2026-10-16T20:07:38+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOEg3QzlmS2JVd3dDaG9iRDhWeFd5V3JkWmJCNUM4VXV0S2tYVnptbEM5V056NFFKeHhQdXR1MlZWQjVnZGpzV0ZvNi1tYkdmNzBRa1RWTDlMWTh5Wm12RUwwc2RRc09OamtBWk94QzRmcy11VWctU0NZWVhTZUk3cTRlc2dGMktEVFBVLWJNRE5CaVduN1NXdVlPY1pJSGoycFVBdXFBYnZVWE5pWlplMFM5dHRCejRLSEsxOU80NDQzRmk5ZE9VRzZkSmhhVENKM09qZzItM21sdmg0YjRvSDJ2UndVVFXSAfYBQVVfeXFMTm10Y0NTS0VZQ245d2VNSG9qTllLMmgwRGRaTGUxU1ljVTVMSzNnMUtUWnRtZU9sWDJmbzgzdjRBaUtackliRUdSYXF6cE9ZVWhZeng0YzRIVjRoLUo3ejdqdlVSS0VMSjh3LWthR25FVWYtTzRTeEJmc1Q5NUhhOEJtVTlZM1pIdjVCZHVmYlVYR0daaElYUDJzOW0wSk05elFfdmY1SDNoM2hyaG5rNmtfVlNZdUdHcU5oS1lFOEstbUM0S1VYZW1ZWkJzcVZmTDR2WE5pcTIwaFBsQm5HS2RMQ1N4VzVnU0w4VHVxNldHSW5ldXBB?oc=5",
+     "title": "Governo pode dar crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan"
+    },
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/governo-prepara-credito-e-capacitacao-para-empresas-afetadas-pelo-fim-da-escala-6x1-diz-durigan.shtml",
+     "title": "Governo prepara crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan"
+    }
+   ],
+   "ids": [
+    "792bf78f2643",
+    "504ebaea92f0"
+   ],
+   "snippet": "O ministro da Fazenda, Dario Durigan , afirmou à TV Bandeirantes que o governo de Luiz Inácio Lula da Silva (PT) planeja oferecer linhas de crédito e programas de capacitação para ajudar empresas a se adaptar ao fim da escala de trabalho 6x1 . Leia mais (10/16/2026 - 18h27)",
+   "prescore": 5.3,
+   "headline": "Governo pode dar crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O ministro da Fazenda, Dario Durigan , afirmou à TV Bandeirantes que o governo de Luiz Inácio Lula da Silva (PT) planeja oferecer linhas de crédito e programas de capacitação para ajudar empresas a se adaptar ao fim da escala de trabalho 6x1 . Leia mais (10/16/2026 - 18h27)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "15de62bb2caf",
    "title": "Smart Fit agrees to acquire up to 20 per cent stake in Brazil’s Buddha Spa",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUWJodkVLUHY3Njg1N1VPV1Q4Y3NzVkEwNDhQZnNHT3luQVBodHhVYjVvNHluRGQ0VWJndENVQy1vQkxhcEZTN1h4OUR4eXluRWRmeXQ2cGxWOWxZOTJ0eGZMZzNuUmxMMEktN3FETVRFMDhBdXk2Qy1SS05ocTVZR2F2X2RSM1llanRCZzJGYmJrUVQ3TXE5RFowcFh1c3A0d2p2TUVGU3lBYW1EX09ZNnRvSDNma2RtUkpnSWM2NA?oc=5",
@@ -1830,20 +1856,20 @@
    "ai": false
   },
   {
-   "id": "e410a29362f9",
+   "id": "29f15a04166f",
    "title": "Flávio absorve 3 erros de Lula; petista volta a ser ‘metamorfose’ e usa a máquina no vale-tudo final",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOc1JqTlg5RGJRVURIYndCN1FVWC1yZnBSMDVibXhfdzVXQWFtWnVBOVpLRzAyNTljSVJNbmNRR2VpYjkwTDZPeU1RRU5ORkJyMjByaFdsQ1hocXpsVlNaRjNIRmJJYXdxOTBrT1lrazhLcURjV296OVd6Y3gyM1lZaE9hS1ZFeUN3R29FdFM0VXFJenVZc01EQ1FnQW13YnM4aVVHTXlNZ3hmcnNNOFRDXzNQSjVuVG1TYXp5dGlWNWM1Tnp6dHRpdGdtbDJFQThKSUxxZTYwZGhRZ3pRM1B2akpQZVZ0Mjg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOc1JqTlg5RGJRVURIYndCN1FVWC1yZnBSMDVibXhfdzVXQWFtWnVBOVpLRzAyNTljSVJNbmNRR2VpYjkwTDZPeU1RRU5ORkJyMjByaFdsQ1hocXpsVlNaRjNIRmJJYXdxOTBrT1lrazhLcURjV296OVd6Y3gyM1lZaE9hS1ZFeUN3R29FdFM0VXFJenVZc01EQ1FnQW13YnM4aVVHTXlNZ3hmcnNNOFRDXzNQSjVuVG1TYXp5dGlWNWM1Tnp6dHRpdGdtbDJFQThKSUxxZTYwZGhRZ3pRM1B2akpQZVZ0MjjSAewBQVVfeXFMT0FBX1BQS2R1WS1jS19SQWwzX0tYMmlBc0doVXBJLXpnRUpWVldnRjIxclVwNUlmNWVLVEUyOE1KWFNCX1g3SHdoSlBKVVpiSTJSZF9QUjI5emtZcGhGaEN2UktWZWhKcTA1LUhfWE9WMWdUWGdDLU0weEhrY1JpQTg0ZVhzY3QzeUFTajhGZnZ5TGNOSEhMcGw1N3lEZUsxTHI5SzlyMnB0MW9CRmNFR1FKM2s0OGpNT2l0YXBZcnY1ZFVTYkFRTlJnNFZkODAtYkQyRkFWcTU5bjRTa3dHLUJaVEd2dV9NaFdZb0s?oc=5",
    "published": "2026-10-17T08:30:00+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOc1JqTlg5RGJRVURIYndCN1FVWC1yZnBSMDVibXhfdzVXQWFtWnVBOVpLRzAyNTljSVJNbmNRR2VpYjkwTDZPeU1RRU5ORkJyMjByaFdsQ1hocXpsVlNaRjNIRmJJYXdxOTBrT1lrazhLcURjV296OVd6Y3gyM1lZaE9hS1ZFeUN3R29FdFM0VXFJenVZc01EQ1FnQW13YnM4aVVHTXlNZ3hmcnNNOFRDXzNQSjVuVG1TYXp5dGlWNWM1Tnp6dHRpdGdtbDJFQThKSUxxZTYwZGhRZ3pRM1B2akpQZVZ0Mjg?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOc1JqTlg5RGJRVURIYndCN1FVWC1yZnBSMDVibXhfdzVXQWFtWnVBOVpLRzAyNTljSVJNbmNRR2VpYjkwTDZPeU1RRU5ORkJyMjByaFdsQ1hocXpsVlNaRjNIRmJJYXdxOTBrT1lrazhLcURjV296OVd6Y3gyM1lZaE9hS1ZFeUN3R29FdFM0VXFJenVZc01EQ1FnQW13YnM4aVVHTXlNZ3hmcnNNOFRDXzNQSjVuVG1TYXp5dGlWNWM1Tnp6dHRpdGdtbDJFQThKSUxxZTYwZGhRZ3pRM1B2akpQZVZ0MjjSAewBQVVfeXFMT0FBX1BQS2R1WS1jS19SQWwzX0tYMmlBc0doVXBJLXpnRUpWVldnRjIxclVwNUlmNWVLVEUyOE1KWFNCX1g3SHdoSlBKVVpiSTJSZF9QUjI5emtZcGhGaEN2UktWZWhKcTA1LUhfWE9WMWdUWGdDLU0weEhrY1JpQTg0ZVhzY3QzeUFTajhGZnZ5TGNOSEhMcGw1N3lEZUsxTHI5SzlyMnB0MW9CRmNFR1FKM2s0OGpNT2l0YXBZcnY1ZFVTYkFRTlJnNFZkODAtYkQyRkFWcTU5bjRTa3dHLUJaVEd2dV9NaFdZb0s?oc=5",
      "title": "Flávio absorve 3 erros de Lula; petista volta a ser ‘metamorfose’ e usa a máquina no vale-tudo final"
     }
    ],
    "ids": [
-    "e410a29362f9"
+    "29f15a04166f"
    ],
    "snippet": "",
    "prescore": 4.2,
@@ -1932,7 +1958,7 @@
    "id": "daa4d3db2d26",
    "title": "The Fierce Battle to Control How Americans Buy and Sell Their Homes",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQb0p4UXFCZVFuVGRzeElrNl82S3loZDdIU3FIdVhJSEZOZlZDZHdwdDVXck8wdjdCWkl6X1Z2VHR6eE56ZjY1RVdrRHQ2NU1oaU91WEl3cnRJR0tfSmRiMDlxYTB0Y1Nvc1BqdTNzRThNa3ZFaFJTZGk4emJzN1BTdU1CZTRrbEhvLVE?oc=5",
-   "published": "2026-10-16T22:01:28+00:00",
+   "published": "2026-10-16T22:31:28+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -2165,46 +2191,6 @@
    "ai": false
   },
   {
-   "id": "6d944c8eb2d3",
-   "title": "M. Dias Branco (MDIA3) anuncia compra de 80% da Grespan",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2NhLVo3OHhoZlYwWGZBa1NTWkN2YWlTbUoxeGhnUlhxT3lxTnh1OGtNLW54LW9MeEVxUkthM1VzTTN4WVlWR3l6WlJvNE9nMVlzVjVfb3ZxX05NeVdfNlNjcC1rTG1hY21CMnR4ZDdtdjk3SG5oNlg1ZFhzTnh4WGo2V1d0RFUxRFBidXdTeHRoQUU?oc=5",
-   "published": "2026-10-16T20:18:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Visno Invest",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2NhLVo3OHhoZlYwWGZBa1NTWkN2YWlTbUoxeGhnUlhxT3lxTnh1OGtNLW54LW9MeEVxUkthM1VzTTN4WVlWR3l6WlJvNE9nMVlzVjVfb3ZxX05NeVdfNlNjcC1rTG1hY21CMnR4ZDdtdjk3SG5oNlg1ZFhzTnh4WGo2V1d0RFUxRFBidXdTeHRoQUU?oc=5",
-     "title": "M. Dias Branco (MDIA3) anuncia compra de 80% da Grespan"
-    },
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/m-dias-branco-mdia3-compra-80-da-fabricante-de-paes-congelados-grespan/",
-     "title": "M. Dias Branco (MDIA3) compra 80% da fabricante de pães congelados Grespan"
-    }
-   ],
-   "ids": [
-    "6d944c8eb2d3",
-    "6d944c8eb2d3",
-    "426a438a5220"
-   ],
-   "snippet": "A M. Dias Branco (MDIA3) assinou contrato para adquirir 80% do capital social da Grespan Pães Congelados, fabricante sediada em Marília (SP). O acordo prevê ainda uma opção de compra dos 20% restantes em até cinco anos após o fechamento da operação. Fundada em 2009, a Grespan atua na fabricação e comercialização de produtos de […]",
-   "prescore": 3.9,
-   "headline": "M. Dias Branco (MDIA3) anuncia compra de 80% da Grespan",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A M. Dias Branco (MDIA3) assinou contrato para adquirir 80% do capital social da Grespan Pães Congelados, fabricante sediada em Marília (SP). O acordo prevê ainda uma opção de compra dos 20% restantes em até cinco anos após o fechamento da operação. Fundada em 2009, a Grespan atua na fabricação e comercialização de produtos de […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "17283cfefc5a",
    "title": "Trump’s New White House Press Secretary Out After Five Days",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/trump-opens-door-to-replacing-press-secretary-after-rocky-start",
@@ -2217,11 +2203,6 @@
      "title": "Trump’s New White House Press Secretary Out After Five Days"
     },
     {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-10-16/bloomberg-businessweek-daily-10-16-2026-video",
-     "title": "Warsh Touts ‘Consequential’ AI, Trump Press Secretary Out After Five Days"
-    },
-    {
      "source": "CNBC",
      "link": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
      "title": "Katie Zacharia out as Trump's White House press secretary"
@@ -2229,7 +2210,6 @@
    ],
    "ids": [
     "17283cfefc5a",
-    "8079a6ea9130",
     "c9adfa929922"
    ],
    "snippet": "Katie Zacharia will no longer serve as President Donald Trump’s press secretary after spending less than a week on the job, thrusting the White House’s communications operation back into a state of chaos.",
@@ -2400,39 +2380,6 @@
    "snippet": "",
    "prescore": 3.8,
    "headline": "Apoiadores de Lula fazem panelaço contra Flávio Bolsonaro, que concede entrevista à Globo",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "84fb8c6f6e05",
-   "title": "Em Minas, Lula busca aumentar rejeição a Flávio Bolsonaro e cita risco aos programas sociais",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQcVFFUnFTelZNUFZBdzJ0NlJxOVhmR2ZpVGwzcjJDS1FHN1F5ZmR3YUVkRHc2b3A3S1Z5c3VRbHBpTmNJbXhQTFNhMVB1cEFucmdFSmdMUmJ0Y2lVbURfb05Oa0NXMWFoZUFSYTNsckZTTVMyRWxtZ0RlRTBSZUxudW15N2VwSWFOa0pCd1hONW5QQnVxel9QbEt0VWV5RWoyQWRxcW9sdlp6QXpTRXNFa3ZXMFBuQ1pGWDdNeFJ2SzNkTkpCZzJDc0tCaFdZd1lyR1g2RW1IS1hOQkxoSWdXT29oT1VWTzRxblB2ZTRoQWkybU1fb1HSAYQCQVVfeXFMTkVLcEhYLVRMS010V0lIeURCZWtiTVVFdlNCWDNKUUZPSnhOLXdtSGpEWGNfVHJQRVYzcFMyeFp2TUlrZXV3dFBZYk5GeTZrUGFpeFBFd2ZiQ2NlSUdNUnltVVAzMDl4UGFJYkRzZEdDTHhRLW9VVlNKMjhBVG1LVGl6OXU5UmFQUDNRV0JEV2NOUmlWMHZ6YTM3U3d5Z3YwXzZCSmNfRnU3VHpBRmtGZ1lCbm1OZnA4Nl9jVVZZSVZXcmljRHcxbGJQeVBfZEVBZEhENXJEWTh6VFY5aWVJQTlwUndCekFzTWZPLU9WNW5Bbzc4emZhQmhtV0FHVmxJVThGb1Y?oc=5",
-   "published": "2026-10-16T22:41:23+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQcVFFUnFTelZNUFZBdzJ0NlJxOVhmR2ZpVGwzcjJDS1FHN1F5ZmR3YUVkRHc2b3A3S1Z5c3VRbHBpTmNJbXhQTFNhMVB1cEFucmdFSmdMUmJ0Y2lVbURfb05Oa0NXMWFoZUFSYTNsckZTTVMyRWxtZ0RlRTBSZUxudW15N2VwSWFOa0pCd1hONW5QQnVxel9QbEt0VWV5RWoyQWRxcW9sdlp6QXpTRXNFa3ZXMFBuQ1pGWDdNeFJ2SzNkTkpCZzJDc0tCaFdZd1lyR1g2RW1IS1hOQkxoSWdXT29oT1VWTzRxblB2ZTRoQWkybU1fb1HSAYQCQVVfeXFMTkVLcEhYLVRMS010V0lIeURCZWtiTVVFdlNCWDNKUUZPSnhOLXdtSGpEWGNfVHJQRVYzcFMyeFp2TUlrZXV3dFBZYk5GeTZrUGFpeFBFd2ZiQ2NlSUdNUnltVVAzMDl4UGFJYkRzZEdDTHhRLW9VVlNKMjhBVG1LVGl6OXU5UmFQUDNRV0JEV2NOUmlWMHZ6YTM3U3d5Z3YwXzZCSmNfRnU3VHpBRmtGZ1lCbm1OZnA4Nl9jVVZZSVZXcmljRHcxbGJQeVBfZEVBZEhENXJEWTh6VFY5aWVJQTlwUndCekFzTWZPLU9WNW5Bbzc4emZhQmhtV0FHVmxJVThGb1Y?oc=5",
-     "title": "Em Minas, Lula busca aumentar rejeição a Flávio Bolsonaro e cita risco aos programas sociais"
-    }
-   ],
-   "ids": [
-    "84fb8c6f6e05"
-   ],
-   "snippet": "",
-   "prescore": 3.8,
-   "headline": "Em Minas, Lula busca aumentar rejeição a Flávio Bolsonaro e cita risco aos programas sociais",
    "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -3200,6 +3147,45 @@
    "ai": false
   },
   {
+   "id": "46d9b727be98",
+   "title": "Papa Leão 14 receberá alta do hospital neste sábado, diz Vaticano",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/papa-leao-14-recebera-alta-do-hospital-neste-sabado-diz-vaticano.shtml",
+   "published": "2026-10-17T09:49:59+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/papa-leao-14-recebera-alta-do-hospital-neste-sabado-diz-vaticano.shtml",
+     "title": "Papa Leão 14 receberá alta do hospital neste sábado, diz Vaticano"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/17/papa-leao-xiv-alta.ghtml",
+     "title": "Papa Leão XIV deve receber alta do hospital neste sábado, diz Vaticano"
+    }
+   ],
+   "ids": [
+    "46d9b727be98",
+    "ade74ad621a4"
+   ],
+   "snippet": "O papa Leão 14 vai receber alta neste sábado (17) do hospital Agostino Gemelli, em Roma, depois de quatro dias internado para retirar um tumor maligno do pulmão . Segundo os médicos, a decisão foi tomada depois de resultados satisfatórios de exames realizados pela manhã. Leia mais (10/17/2026 - 08h17)",
+   "prescore": 3.3,
+   "headline": "Papa Leão 14 receberá alta do hospital neste sábado, diz Vaticano",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O papa Leão 14 vai receber alta neste sábado (17) do hospital Agostino Gemelli, em Roma, depois de quatro dias internado para retirar um tumor maligno do pulmão . Segundo os médicos, a decisão foi tomada depois de resultados satisfatórios de exames realizados pela manhã. Leia mais (10/17/2026 - 08h17)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "387b23e83e6a",
    "title": "Trump demite secretária de Imprensa 5 dias após posse",
    "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/casa-branca-demite-secretaria-de-imprensa-5-dias-apos-posse.shtml",
@@ -3228,39 +3214,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "O presidente dos Estados Unidos , Donald Trump , demitiu a secretária de Imprensa da Casa Branca, Katie Zacharia , nesta sexta-feira (16), apenas cinco dias após ela assumir o posto. Leia mais (10/16/2026 - 15h02)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "20b87c6abaf2",
-   "title": "Previdência multimercado vale a pena com juros altos? Grão Investimentos avalia",
-   "link": "https://www.infomoney.com.br/onde-investir/previdencia-multimercado-vale-a-pena-com-juros-altos-grao-investimentos-avalia/",
-   "published": "2026-10-17T10:49:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/onde-investir/previdencia-multimercado-vale-a-pena-com-juros-altos-grao-investimentos-avalia/",
-     "title": "Previdência multimercado vale a pena com juros altos? Grão Investimentos avalia"
-    }
-   ],
-   "ids": [
-    "20b87c6abaf2"
-   ],
-   "snippet": "Diversificação, custos e exposição a ativos de risco entram na conta de quem investe para o longo prazo, explica especialista da Grão Investimentos The post Previdência multimercado vale a pena com juros altos? Grão Investimentos avalia appeared first on InfoMoney .",
-   "prescore": 3.2,
-   "headline": "Previdência multimercado vale a pena com juros altos? Grão Investimentos avalia",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Diversificação, custos e exposição a ativos de risco entram na conta de quem investe para o longo prazo, explica especialista da Grão Investimentos The post Previdência multimercado vale a pena com juros altos? Grão Investimentos avalia appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -4862,39 +4815,6 @@
    "ai": false
   },
   {
-   "id": "2d1597eea2d6",
-   "title": "Lagarde Says Sustainable Finances Key for Economic Stability",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/lagarde-says-fiscal-sustainability-key-for-economic-stability",
-   "published": "2026-10-17T05:40:45+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-17/lagarde-says-fiscal-sustainability-key-for-economic-stability",
-     "title": "Lagarde Says Sustainable Finances Key for Economic Stability"
-    }
-   ],
-   "ids": [
-    "2d1597eea2d6"
-   ],
-   "snippet": "European Central Bank President Christine Lagarde stressed the importance of sound public finances when she addressed ministers in charge of budgets from around the world in Thailand.",
-   "prescore": 2.8,
-   "headline": "Lagarde Says Sustainable Finances Key for Economic Stability",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "European Central Bank President Christine Lagarde stressed the importance of sound public finances when she addressed ministers in charge of budgets from around the world in Thailand.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "da9232ee3df2",
    "title": "India Halts Sugar Diversion to Ethanol After El Nino Hurts Crops",
    "link": "https://www.bloomberg.com/news/articles/2026-10-17/india-halts-sugar-diversion-to-ethanol-after-el-nino-hurts-crops",
@@ -5061,7 +4981,7 @@
   },
   {
    "id": "5c077b74fefd",
-   "title": "India’s ‘Cockroach’ Protest Leader Faces Court in Voter-List Row",
+   "title": "India’s ‘Cockroach’ Protest Leader Released After Voter-List Row",
    "link": "https://www.bloomberg.com/news/articles/2026-10-17/india-s-cockroach-protest-leader-faces-court-in-voter-list-row",
    "published": "2026-10-17T02:34:29+00:00",
    "region": "INTL",
@@ -5069,19 +4989,19 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-10-17/india-s-cockroach-protest-leader-faces-court-in-voter-list-row",
-     "title": "India’s ‘Cockroach’ Protest Leader Faces Court in Voter-List Row"
+     "title": "India’s ‘Cockroach’ Protest Leader Released After Voter-List Row"
     }
    ],
    "ids": [
     "5c077b74fefd"
    ],
-   "snippet": "The founder of India’s “Cockroach” protest movement is due to appear in court Saturday after being taken into police custody as a widening fight over the country’s voter rolls keeps New Delhi on edge.",
+   "snippet": "The founder of India’s “Cockroach” protest movement was released on Saturday after being taken into police custody, his lawyer said, as a widening fight over the country’s voter rolls keeps New Delhi on edge.",
    "prescore": 2.8,
-   "headline": "India’s ‘Cockroach’ Protest Leader Faces Court in Voter-List Row",
+   "headline": "India’s ‘Cockroach’ Protest Leader Released After Voter-List Row",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The founder of India’s “Cockroach” protest movement is due to appear in court Saturday after being taken into police custody as a widening fight over the country’s voter rolls keeps New Delhi on edge.",
+   "summary": "The founder of India’s “Cockroach” protest movement was released on Saturday after being taken into police custody, his lawyer said, as a widening fight over the country’s voter rolls keeps New Delhi on edge.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -5313,6 +5233,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A XP Inc. (XP) vai trazer Rodrigo Kede Lima, presidente da Microsoft Frontier Company, como membro interino de seu conselho de administração. Ele assume a posição após a renúncia de Martin Emiliano Escobari Lifchitz, também efetiva a partir desta sexta. Kede permanecerá no conselho até a assembleia geral anual de acionistas de 2027. A XP […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "021a9db65de8",
+   "title": "TSE tem maioria para manter decisão que proíbe Meta de limitar alcance de publicações eleitorais",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQMlRlcWFyVUhwQll3aTN4MzNsSW5nR18wVmhPUVFfaU9vNVFsREJCYXBXUjFJLVJKX3NTNDQ2eV9GZXBzQkpEdkMzSlBSaHFISHgtQ0lFTVl4MUhxZXgwbXBzeUozd1VOaWJsWUQxYl92TjZ5SFVwZWtROXpoMXBzYmdCRHRNQ0IwdjFnT0kwVnliWlZ1QVhPRlZBY1VmZlplczNUeG5xaGlTVXlpOWxSUDByQkJDV1NLRnBKQ1ZaYTV4anUyRnQ0RThUdTRFOEl1RlhoUDNwVjJvY21iOHVrWU55THMxTjRtZ3AxLWFibl9oWGVvN29V0gGGAkFVX3lxTE5CYmROU01vNjZEOGs5WUZiYzVmal91ZUw4SjdTNWVOOC1iekhkMmJEamlweGlWYUp0SnIwSmtfREgtdUJ3eG9sRWYtT0hVM1pseHdaWFB1dlNUWXNaVkJUTXo2SE9XR2t2UzRuV1hQcFVPT2FBdVdqd01nNVBxbHk2S3pBdzdXd2hPU0RrZW5oVmtMaHRsUFpkc2lVbzA3WHE3WkxtcERMdmgtelFDV0xYQWY5N3BOR0Z2TWV6amFWeWI4M3BIdlpEOTNuYS1ZOVNPTENxNVQxRWg5OGxCdmp3TkRPY0plMGJlMnFTNnBQLW9uOWtwZGNIem9fOEFTbzd4b08xTGc?oc=5",
+   "published": "2026-10-16T23:04:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQMlRlcWFyVUhwQll3aTN4MzNsSW5nR18wVmhPUVFfaU9vNVFsREJCYXBXUjFJLVJKX3NTNDQ2eV9GZXBzQkpEdkMzSlBSaHFISHgtQ0lFTVl4MUhxZXgwbXBzeUozd1VOaWJsWUQxYl92TjZ5SFVwZWtROXpoMXBzYmdCRHRNQ0IwdjFnT0kwVnliWlZ1QVhPRlZBY1VmZlplczNUeG5xaGlTVXlpOWxSUDByQkJDV1NLRnBKQ1ZaYTV4anUyRnQ0RThUdTRFOEl1RlhoUDNwVjJvY21iOHVrWU55THMxTjRtZ3AxLWFibl9oWGVvN29V0gGGAkFVX3lxTE5CYmROU01vNjZEOGs5WUZiYzVmal91ZUw4SjdTNWVOOC1iekhkMmJEamlweGlWYUp0SnIwSmtfREgtdUJ3eG9sRWYtT0hVM1pseHdaWFB1dlNUWXNaVkJUTXo2SE9XR2t2UzRuV1hQcFVPT2FBdVdqd01nNVBxbHk2S3pBdzdXd2hPU0RrZW5oVmtMaHRsUFpkc2lVbzA3WHE3WkxtcERMdmgtelFDV0xYQWY5N3BOR0Z2TWV6amFWeWI4M3BIdlpEOTNuYS1ZOVNPTENxNVQxRWg5OGxCdmp3TkRPY0plMGJlMnFTNnBQLW9uOWtwZGNIem9fOEFTbzd4b08xTGc?oc=5",
+     "title": "TSE tem maioria para manter decisão que proíbe Meta de limitar alcance de publicações eleitorais"
+    }
+   ],
+   "ids": [
+    "021a9db65de8"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "TSE tem maioria para manter decisão que proíbe Meta de limitar alcance de publicações eleitorais",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -5892,6 +5845,39 @@
    "ai": false
   },
   {
+   "id": "b6f7912230bc",
+   "title": "Ouro sobe com redução das expectativas de alta dos juros nos EUA",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMUN5cWRWZTNsVkZiX0pvYmJCNkxHaE1ycGpnakZoVWZmci1EN3I2T01WSTcyb0tjMTZVa2VWd3RleEVUeEJDMjgzNGhfdHVuSWRTdnVtd0dRb3ltWjRMOHNvOTZGUEd5M2xWbC1vLWRLWHZISWlicnlFREhWUm0yUnczUEc1VHN2S0NxYnZtZVpZVXhSVWg0WmlaWFN3MnJ6WGl0S2JrdXB2NklwVzRzZ1JXTlp5UTZmZ2s1QS05UdIBzgFBVV95cUxNem9DRXplQW93dGpRMXdUc0wybTVSVVBrT055R2kyZXNxQy1CTzhfWnI0eVlOR1l6b20wNXBiYU9MNC1DNzlnQ0o5WWxzWThnbk5rSVlLa3JfSVlzQ2twYWZwOTF6WUxOaXhEc29jbmt1dEZrWWdpVXo4SDJWdGtPNFBROVBhMUl3bTdKVzBwSFFXVm81UXFfUndVeXFpRGEwNjNhdmRBem1nY2NRWmkwOWVCd0tORkFreVVYdWNvbHJ5cWVYYUxZcENHUjVEdw?oc=5",
+   "published": "2026-10-16T18:13:02+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMUN5cWRWZTNsVkZiX0pvYmJCNkxHaE1ycGpnakZoVWZmci1EN3I2T01WSTcyb0tjMTZVa2VWd3RleEVUeEJDMjgzNGhfdHVuSWRTdnVtd0dRb3ltWjRMOHNvOTZGUEd5M2xWbC1vLWRLWHZISWlicnlFREhWUm0yUnczUEc1VHN2S0NxYnZtZVpZVXhSVWg0WmlaWFN3MnJ6WGl0S2JrdXB2NklwVzRzZ1JXTlp5UTZmZ2s1QS05UdIBzgFBVV95cUxNem9DRXplQW93dGpRMXdUc0wybTVSVVBrT055R2kyZXNxQy1CTzhfWnI0eVlOR1l6b20wNXBiYU9MNC1DNzlnQ0o5WWxzWThnbk5rSVlLa3JfSVlzQ2twYWZwOTF6WUxOaXhEc29jbmt1dEZrWWdpVXo4SDJWdGtPNFBROVBhMUl3bTdKVzBwSFFXVm81UXFfUndVeXFpRGEwNjNhdmRBem1nY2NRWmkwOWVCd0tORkFreVVYdWNvbHJ5cWVYYUxZcENHUjVEdw?oc=5",
+     "title": "Ouro sobe com redução das expectativas de alta dos juros nos EUA"
+    }
+   ],
+   "ids": [
+    "b6f7912230bc"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Ouro sobe com redução das expectativas de alta dos juros nos EUA",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b927df777da4",
    "title": "Air Canada e United ampliam parceria e anunciam novas rotas entre EUA e Canadá",
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcE12SDZ3OVNDdGhMUmtGVEM4SjVyWEpVeEhUOEZFSDVQcUVVazZ2QTBIMHFpX2RHaGZCd3pKMFF5ay1GSDNzUUNGalptM3dPbmtnTVlvQVRob1JPQlppV3NqazUzdjJCeEhESmdvaVJqY29PVHFySUVBNEplSW5yWTZXTFp4VzdsMkhWQlVVbkxQZXJXd0FiWTdtaW05a3QyWWtrUVg4Q18tNWtpYjdOOUlWQ2VpSU5QcWdsenJzWHMxSWFialFKZTBrQ3Q5bHcy0gHfAUFVX3lxTE8yci1idll2NEZJdk9id3lOQ0F5ckh1eXRLWG1sTXV5bVBYRnRBVUFVcWM1QUNPUVhyLUJ4S1JHWE9vandxdTFwQXQxT2tVRVZLREw0OHNwQTdIVFdkb2t1QnlnNUt5MnROY0Y2WDB1VXpBd2hRc2pwTXMwWFNob25ka0hRSS00ZUptamJRZFZpbENjc0wzMzN1N28yOGliNlA1aVlQbmE4RXV1czRjam1UNG5wMHduS0VTVmRoeWdUTzRZSi1MdEdfZllCX1RhUkNwVExQSmVxZThNRmJBeFU?oc=5",
@@ -6420,39 +6406,6 @@
    "ai": false
   },
   {
-   "id": "1644ea24eca4",
-   "title": "O Itaú (ITUB4) quer mais energia: bancão injeta mais R$ 1,77 bilhão em subsidiária da Eneva (ENEV3)",
-   "link": "https://www.seudinheiro.com/2026/empresas/o-itau-itub4-quer-mais-energia-bancao-injeta-mais-r-177-bilhao-em-subsidiaria-da-eneva-enev3-miql/",
-   "published": "2026-10-16T14:09:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Seu Dinheiro",
-     "link": "https://www.seudinheiro.com/2026/empresas/o-itau-itub4-quer-mais-energia-bancao-injeta-mais-r-177-bilhao-em-subsidiaria-da-eneva-enev3-miql/",
-     "title": "O Itaú (ITUB4) quer mais energia: bancão injeta mais R$ 1,77 bilhão em subsidiária da Eneva (ENEV3)"
-    }
-   ],
-   "ids": [
-    "1644ea24eca4"
-   ],
-   "snippet": "Novo aporte aprofunda a parceria entre as companhias na geração termelétrica a gás natural no Maranhão The post O Itaú (ITUB4) quer mais energia: bancão injeta mais R$ 1,77 bilhão em subsidiária da Eneva (ENEV3) appeared first on Seu Dinheiro .",
-   "prescore": 2.8,
-   "headline": "O Itaú (ITUB4) quer mais energia: bancão injeta mais R$ 1,77 bilhão em subsidiária da Eneva (ENEV3)",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Novo aporte aprofunda a parceria entre as companhias na geração termelétrica a gás natural no Maranhão The post O Itaú (ITUB4) quer mais energia: bancão injeta mais R$ 1,77 bilhão em subsidiária da Eneva (ENEV3) appeared first on Seu Dinheiro .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "61250a092629",
    "title": "Datafolha mostra desafios de candidatos: Flávio Bolsonaro tem de evitar mais perda de votos; Lula precisa ganhar eleitores",
    "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/10/16/datafolha-mostra-desafios-a-candidatos-flavio-bolsonaro-tem-de-evitar-mais-perda-de-votos-lula-precisa-ganhar-eleitores.ghtml",
@@ -6950,6 +6903,39 @@
    "ai": false
   },
   {
+   "id": "7efe70c9ac7a",
+   "title": "Katie Zacharia Projected Confidence. Less Than an Hour Later, She Was Out.",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSHF1ajhlclg5MmFLeURtVDRUUGQyY1pwcHpPN19Kc09rNW9kVG96ZjBzeEExN0V4RnczeXJNZU9heEFndkMtZlhveXpIdTNpOUtsdmNzNl9tNExmMzFlVlk3NFk3UHFKQTZFZi04TS1yVldYRW1zRXp4R3BrNmlVdEdfQUVmM3k1TjlvT2hBdFlGWXdEcU9JTUFaRFpSX0hEVVVma3RRUlhMaHVlVHZhWkg1OTRYV1YxNFNz?oc=5",
+   "published": "2026-10-17T10:58:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSHF1ajhlclg5MmFLeURtVDRUUGQyY1pwcHpPN19Kc09rNW9kVG96ZjBzeEExN0V4RnczeXJNZU9heEFndkMtZlhveXpIdTNpOUtsdmNzNl9tNExmMzFlVlk3NFk3UHFKQTZFZi04TS1yVldYRW1zRXp4R3BrNmlVdEdfQUVmM3k1TjlvT2hBdFlGWXdEcU9JTUFaRFpSX0hEVVVma3RRUlhMaHVlVHZhWkg1OTRYV1YxNFNz?oc=5",
+     "title": "Katie Zacharia Projected Confidence. Less Than an Hour Later, She Was Out."
+    }
+   ],
+   "ids": [
+    "7efe70c9ac7a"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Katie Zacharia Projected Confidence. Less Than an Hour Later, She Was Out.",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "00ba0f51a33e",
    "title": "Trump exempts Russia from further sanctions mandated by new law",
    "link": "https://www.ft.com/content/836eddd7-3adc-4cbb-8527-7a0a7a277e50?syn-25a6b1a6=1",
@@ -7412,6 +7398,39 @@
    "ai": false
   },
   {
+   "id": "2cf84e9c4915",
+   "title": "Hermès Is Targeting a New Emerging Market: The American Suburbs",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORnJJUnBDRWRZVE9oSk1nRVctXy12dy1TQnBzV3hoVGt0UEZrbVY5dGhJNFJOMFNoeVFOV01CcjNHNTNLRnZhTnRjWlBDcTRSMDg3b1J4bE56YXU3aFA2M0EyMkdhTmVLbjJPRUFTSzZqUEtZY3EtMWNuSzA4QmVrMzlJNURvZw?oc=5",
+   "published": "2026-10-17T02:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORnJJUnBDRWRZVE9oSk1nRVctXy12dy1TQnBzV3hoVGt0UEZrbVY5dGhJNFJOMFNoeVFOV01CcjNHNTNLRnZhTnRjWlBDcTRSMDg3b1J4bE56YXU3aFA2M0EyMkdhTmVLbjJPRUFTSzZqUEtZY3EtMWNuSzA4QmVrMzlJNURvZw?oc=5",
+     "title": "Hermès Is Targeting a New Emerging Market: The American Suburbs"
+    }
+   ],
+   "ids": [
+    "2cf84e9c4915"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Hermès Is Targeting a New Emerging Market: The American Suburbs",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "82b86841b679",
    "title": "The Moment Katie Zacharia Found Out Her Five-Day Stint as Press Secretary Was Over",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcVJVakdKOUd6NWg5Q0h5Vy1tajJyU204aW9aZGRQRGFvZ1JqYzNHZVp2OWVEdk1YZnlJM0hGUV9xYlUwRHd3bHE5UEVtZnh1VC1kUmh1TVlWcW51M2FJVjhYNWpXOThsdXZSS1VRRzhQVWZJd0l0Zzl4MWZCUkpvNGZtclZXN0YtODMzQXVDMDQ?oc=5",
@@ -7446,7 +7465,7 @@
   },
   {
    "id": "2edc4b0f249c",
-   "title": "India's 'cockroach' movement founder arrested after detention, media reports say",
+   "title": "India's 'cockroach' movement founder released a day after detention",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWlN6bi00Sm50dzdTdjZsXzM0TmtsM2JRWDdieXQtM2VSdzlVTTlxM1B5Xy01WTBFWnpQQWlFSWRqNDBqcHkteEViMFV5M1plS01VV3JCVUtCeDVhZF8yT01HYVQ5Q1Q0NmZIZ3JHQWtSM01rbTNCZ2lxRFdqeVZkWjY3MXB4QXYzNmtJME41Qi1IaWxnZ1htSGVXUlNLeUFpZFZXVmRRem5UYmdu?oc=5",
    "published": "2026-10-17T01:56:00+00:00",
    "region": "INTL",
@@ -7454,7 +7473,7 @@
     {
      "source": "Reuters",
      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWlN6bi00Sm50dzdTdjZsXzM0TmtsM2JRWDdieXQtM2VSdzlVTTlxM1B5Xy01WTBFWnpQQWlFSWRqNDBqcHkteEViMFV5M1plS01VV3JCVUtCeDVhZF8yT01HYVQ5Q1Q0NmZIZ3JHQWtSM01rbTNCZ2lxRFdqeVZkWjY3MXB4QXYzNmtJME41Qi1IaWxnZ1htSGVXUlNLeUFpZFZXVmRRem5UYmdu?oc=5",
-     "title": "India's 'cockroach' movement founder arrested after detention, media reports say"
+     "title": "India's 'cockroach' movement founder released a day after detention"
     }
    ],
    "ids": [
@@ -7462,7 +7481,40 @@
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "India's 'cockroach' movement founder arrested after detention, media reports say",
+   "headline": "India's 'cockroach' movement founder released a day after detention",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f4b35f5310fe",
+   "title": "White House Press Secretary Is Out One Week After Her Appointment",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaml6RjczQkpKczJjX1M5N293NzM2UHViUFkzazdIWElSYnE0c09wSVJEaXJxc0xQZmFjVFZ4U3RKanlqdnBYM0xKcTFrMjJXY0JsNlRtR1RzcFVhYjR2THpPTzdrbzlzMTNLdi1CZlNRcGF6ZTFwT0pjY09qZk52R05MMHJZeTB2RG1vbGpUUlp5bHVtdTFQT051ZGwyS1JEYWR5WlhB?oc=5",
+   "published": "2026-10-17T01:50:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaml6RjczQkpKczJjX1M5N293NzM2UHViUFkzazdIWElSYnE0c09wSVJEaXJxc0xQZmFjVFZ4U3RKanlqdnBYM0xKcTFrMjJXY0JsNlRtR1RzcFVhYjR2THpPTzdrbzlzMTNLdi1CZlNRcGF6ZTFwT0pjY09qZk52R05MMHJZeTB2RG1vbGpUUlp5bHVtdTFQT051ZGwyS1JEYWR5WlhB?oc=5",
+     "title": "White House Press Secretary Is Out One Week After Her Appointment"
+    }
+   ],
+   "ids": [
+    "f4b35f5310fe"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "White House Press Secretary Is Out One Week After Her Appointment",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7775,39 +7827,6 @@
    "ai": false
   },
   {
-   "id": "9127d2159547",
-   "title": "Missiles hit Aden airport as Saudi-led coalition intercepts missile headed for Yanbu",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPelJ6OUp1VFpwTmJ0Qm85TzRUS2ppU0swVFMydlJuTDZiS1Q1V2R6M1N4bmpfeTZ0aWNqd29XbGdDMm9IVllmLTZUazAxQWFzX3lsVlJBbHI4TVRfQVFrZlk5MkNqVzVCMU5XYkFwM3Fyb0pkbDk0bGo5N1dwQWJMMEo5aEhIeXpaS1J5TkRLVFZTem93Rl9rM2trUHZlaDQwSzVIQTB4UG1xelRQSU5wZ2I4X1N1V0VPUElsWHBIYVZvckhpYk9RZVhZaw?oc=5",
-   "published": "2026-10-16T21:51:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPelJ6OUp1VFpwTmJ0Qm85TzRUS2ppU0swVFMydlJuTDZiS1Q1V2R6M1N4bmpfeTZ0aWNqd29XbGdDMm9IVllmLTZUazAxQWFzX3lsVlJBbHI4TVRfQVFrZlk5MkNqVzVCMU5XYkFwM3Fyb0pkbDk0bGo5N1dwQWJMMEo5aEhIeXpaS1J5TkRLVFZTem93Rl9rM2trUHZlaDQwSzVIQTB4UG1xelRQSU5wZ2I4X1N1V0VPUElsWHBIYVZvckhpYk9RZVhZaw?oc=5",
-     "title": "Missiles hit Aden airport as Saudi-led coalition intercepts missile headed for Yanbu"
-    }
-   ],
-   "ids": [
-    "9127d2159547"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Missiles hit Aden airport as Saudi-led coalition intercepts missile headed for Yanbu",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "e43d4fa7fe0e",
    "title": "U.S. Stocks Fall as Credit Fears Haunt Tech Sector",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeXBpcEpXNEdyTTRkb0VfcDRmVEdGM0NTbEY5ZXlBc2N2STdjLXBtWGtTVnZYbHlkNFlFVVBnWFdxUlgzNzR2bFlWQjJ2Q3lQYXo4NXFfSEN3bmJPME5BMDdvcjBtSWJqSmRaM2txNVg0MHZzOXg2M2MyWVV3U1BzZjRBY25lWG8xb1JZalBGV0EwdV85RTI1cnlQd0U?oc=5",
@@ -7973,6 +7992,39 @@
    "ai": false
   },
   {
+   "id": "6124b8c840d1",
+   "title": "Cleveland-Cliffs Braces for Fight as Canada Looks to Block Layoffs at Stelco",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcmVVYXVfWWNnNHc1aWlOTVQ5TDQwcUJxaVdLM0RDZklRZUllcXJ5YTFDdV9FaDFaUnh3MnE4ZmhRTFJzR01ySl96VU5VdVJ1aURMRXVlN0VmZl9qSFEySEY3cVVoeE96TF9pcWYxV1luUmdUV2JLb3c1SW5EZUxaRmtMZzQ3YW1jTkdIdHNFak5WdHM5S2c4WXpkNkNGWllrak5uN2tOa1EwM0hPOHdrakc5YVhfUzdVc1pPQg?oc=5",
+   "published": "2026-10-16T20:01:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcmVVYXVfWWNnNHc1aWlOTVQ5TDQwcUJxaVdLM0RDZklRZUllcXJ5YTFDdV9FaDFaUnh3MnE4ZmhRTFJzR01ySl96VU5VdVJ1aURMRXVlN0VmZl9qSFEySEY3cVVoeE96TF9pcWYxV1luUmdUV2JLb3c1SW5EZUxaRmtMZzQ3YW1jTkdIdHNFak5WdHM5S2c4WXpkNkNGWllrak5uN2tOa1EwM0hPOHdrakc5YVhfUzdVc1pPQg?oc=5",
+     "title": "Cleveland-Cliffs Braces for Fight as Canada Looks to Block Layoffs at Stelco"
+    }
+   ],
+   "ids": [
+    "6124b8c840d1"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Cleveland-Cliffs Braces for Fight as Canada Looks to Block Layoffs at Stelco",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "c7b84794a02a",
    "title": "Ukraine's Zelenskiy blasts US-Russian diesel deal, welcomes bigger European role in peace process",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQc2hXSnYwZU9ldlRnMk4yckJBZGdyYUJDZWJBa1ZRNFM5bWVmUkRYVmNfWVdtMFlGOG5TX3YwREZYWi1jeGRmLVpTanpzYWltYlR4UVpqblpnUUZuUEdYODVMS3VORFJHaXNIcC1PMVVKVERPTS1GeS1Ra0Y4dVNNb2otSWliai0zcXBaLWRmR3hfc2FMNFZZMTN4Q3F4YzN4NmM1RFg1cGtOdDQ0REFRN1B2RV95Wnp3R0NYUA?oc=5",
@@ -8028,39 +8080,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Strong demand for private air travel combined with production delays boosts prices",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f4b35f5310fe",
-   "title": "White House Press Secretary Is Out One Week After Her Appointment",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaml6RjczQkpKczJjX1M5N293NzM2UHViUFkzazdIWElSYnE0c09wSVJEaXJxc0xQZmFjVFZ4U3RKanlqdnBYM0xKcTFrMjJXY0JsNlRtR1RzcFVhYjR2THpPTzdrbzlzMTNLdi1CZlNRcGF6ZTFwT0pjY09qZk52R05MMHJZeTB2RG1vbGpUUlp5bHVtdTFQT051ZGwyS1JEYWR5WlhB?oc=5",
-   "published": "2026-10-16T19:52:41+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaml6RjczQkpKczJjX1M5N293NzM2UHViUFkzazdIWElSYnE0c09wSVJEaXJxc0xQZmFjVFZ4U3RKanlqdnBYM0xKcTFrMjJXY0JsNlRtR1RzcFVhYjR2THpPTzdrbzlzMTNLdi1CZlNRcGF6ZTFwT0pjY09qZk52R05MMHJZeTB2RG1vbGpUUlp5bHVtdTFQT051ZGwyS1JEYWR5WlhB?oc=5",
-     "title": "White House Press Secretary Is Out One Week After Her Appointment"
-    }
-   ],
-   "ids": [
-    "f4b35f5310fe"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "White House Press Secretary Is Out One Week After Her Appointment",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8699,39 +8718,6 @@
    "ai": false
   },
   {
-   "id": "6e1adafd1482",
-   "title": "‘Weimar’ Review: Hitler’s Rise, Through One Man’s Eyes",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZjFlMHhWT25KMmROVkZkWmQ1ekdlTGZVQ21WUVNqRGFUblRGTF9oRlFmLUp2cDNXd3Q3eUlfTGhCcjlwQ2ZpcUVrT2tnRlNuVF9ISjlEcTd2ekY2enBJR3B2RXB4X2NSdG9UdFB2bHN6QTc1OXREZnBFSU11T2NJU1lNMXZyOEhQTG9uUzB5cnJXbVdDZDNlT0VNYw?oc=5",
-   "published": "2026-10-16T15:59:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZjFlMHhWT25KMmROVkZkWmQ1ekdlTGZVQ21WUVNqRGFUblRGTF9oRlFmLUp2cDNXd3Q3eUlfTGhCcjlwQ2ZpcUVrT2tnRlNuVF9ISjlEcTd2ekY2enBJR3B2RXB4X2NSdG9UdFB2bHN6QTc1OXREZnBFSU11T2NJU1lNMXZyOEhQTG9uUzB5cnJXbVdDZDNlT0VNYw?oc=5",
-     "title": "‘Weimar’ Review: Hitler’s Rise, Through One Man’s Eyes"
-    }
-   ],
-   "ids": [
-    "6e1adafd1482"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "‘Weimar’ Review: Hitler’s Rise, Through One Man’s Eyes",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "f2bac9ba8072",
    "title": "Chinese online retailer Temu agrees to data privacy curbs to settle Texas lawsuit",
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUURFUXU2ZzFtZmdDWGE1X0otUGFGeEFTc0RVbFJDaExxTlltMnlqUVhnbmxVSjhqeDNyZEFMcnpodkJoYXpENk5pLTNpZUFGb2RXUEN0RUl3RDduTC1peE94aUNTT0dCRllVTks4cDM0ZDd1bHV5d1Bvb1V6ZE80dFowNFJyb09Bd19haVRUcGRQLUtwdlM4ekVfcXJlaWNublYwQk1mSUhUNlItMUtHNmZUSllWdVBTUTRfTmp0XzBVcUlET0lxMzlENXlxZjVs?oc=5",
@@ -8883,39 +8869,6 @@
    "prescore": 2.6,
    "headline": "France and Germany Reach Deal to Protect Europe’s Car Industry",
    "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b52ec4d76c77",
-   "title": "Supertanker rates fall from record highs",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVkk0WDVQcnY0THRwaTVSenJQTEQ0U1VuVHdEY2xKTl9CdEw2NjlFN0FvTnBGbldlREpWRGZ6YV9kWnRjNjVuTlJqTWVBR0U3VXAwbXgwRjlSY1pfSVd3SjRKYU5KMVJwVm56blVQMnFFbV9EejlRNlZuSWo2OGd1TVl4ZlVwOXlvVGttb0ZLVkk?oc=5",
-   "published": "2026-10-16T14:25:41+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVkk0WDVQcnY0THRwaTVSenJQTEQ0U1VuVHdEY2xKTl9CdEw2NjlFN0FvTnBGbldlREpWRGZ6YV9kWnRjNjVuTlJqTWVBR0U3VXAwbXgwRjlSY1pfSVd3SjRKYU5KMVJwVm56blVQMnFFbV9EejlRNlZuSWo2OGd1TVl4ZlVwOXlvVGttb0ZLVkk?oc=5",
-     "title": "Supertanker rates fall from record highs"
-    }
-   ],
-   "ids": [
-    "b52ec4d76c77"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Supertanker rates fall from record highs",
-   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -9095,39 +9048,6 @@
    "ai": false
   },
   {
-   "id": "0c4f1bf2a498",
-   "title": "Indonesian stocks sink most since 1998 on MSCI downgrade warning",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTGZDclBEV0w3ZFJ3bE8tckwwTE1YTXBXTG1GdGNfN2Vkb1BsaXFoZVo1QUF4YUhzanBOM05HNmR6X1gyalBGR05HQk5NM1VhY0VGbUhqb0dIN2txQklscWtMaVd3MVE3QTdISTRVbDZXdEpXa25EUHpZejdrZ1ozdFlOOTBBT2VfT3VFcmh5UmpjRWFoelZTUEZKOTl5UEhrc1dpWVQ3ZUpMd1NmVE8ybA?oc=5",
-   "published": "2026-10-16T12:03:38+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTGZDclBEV0w3ZFJ3bE8tckwwTE1YTXBXTG1GdGNfN2Vkb1BsaXFoZVo1QUF4YUhzanBOM05HNmR6X1gyalBGR05HQk5NM1VhY0VGbUhqb0dIN2txQklscWtMaVd3MVE3QTdISTRVbDZXdEpXa25EUHpZejdrZ1ozdFlOOTBBT2VfT3VFcmh5UmpjRWFoelZTUEZKOTl5UEhrc1dpWVQ3ZUpMd1NmVE8ybA?oc=5",
-     "title": "Indonesian stocks sink most since 1998 on MSCI downgrade warning"
-    }
-   ],
-   "ids": [
-    "0c4f1bf2a498"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Indonesian stocks sink most since 1998 on MSCI downgrade warning",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "7ac7d96b4ce1",
    "title": "Nvidia, Meta and Apple Unveil New Open Models The Morning Download for Oct. 16",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRzl4Qm1LOUgzSHRaWEdvRDhKYkRaemRoOV9GWWVuU0N1THhvaXFnYnhQOWRWaGZBQlBUN3dicGJmWWVuZW9BS3BnLVlGYks2R3I1b1ZuVW9ObVhXX3I1cGViWnJyTnIwd3pfV3BXQVhWZy15dkpDTlFUSVg1YUtjR28wRkFrRHNpT2ktMnpR?oc=5",
@@ -9147,6 +9067,39 @@
    "prescore": 2.6,
    "headline": "Nvidia, Meta and Apple Unveil New Open Models The Morning Download for Oct. 16",
    "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "49dc35610d79",
+   "title": "Two ships sink near Hormuz after being hit by projectiles amid surge in attacks",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVlQtcHJibXBpYWEwWTQ4dFdfWUFJbTVteGY0WThGcTFybEdUTERvVG9DcGdoY09vUjh0TG1QeG5zMWx0LTFvV09teVNXY1NLdXZVNlpuMVBIV3pndWJKWVBRdENjLVd0dnVwdUxPTHFPU002S0ZqR0lkcjgyNVl2ZFFXc05MdTJHenM3LVNUSlBUb1RyeDVxY3VTdUxEamxrbS1OXzJJR3o3SlltandncHAwVXFNSTFYcmJXblh2U25vN2xMMW1ibQ?oc=5",
+   "published": "2026-10-16T11:13:21+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVlQtcHJibXBpYWEwWTQ4dFdfWUFJbTVteGY0WThGcTFybEdUTERvVG9DcGdoY09vUjh0TG1QeG5zMWx0LTFvV09teVNXY1NLdXZVNlpuMVBIV3pndWJKWVBRdENjLVd0dnVwdUxPTHFPU002S0ZqR0lkcjgyNVl2ZFFXc05MdTJHenM3LVNUSlBUb1RyeDVxY3VTdUxEamxrbS1OXzJJR3o3SlltandncHAwVXFNSTFYcmJXblh2U25vN2xMMW1ibQ?oc=5",
+     "title": "Two ships sink near Hormuz after being hit by projectiles amid surge in attacks"
+    }
+   ],
+   "ids": [
+    "49dc35610d79"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Two ships sink near Hormuz after being hit by projectiles amid surge in attacks",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -9689,6 +9642,39 @@
    "ai": false
   },
   {
+   "id": "7253b023901e",
+   "title": "Ecossistemas: Quality, KPMG e Globant falam de parceria",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWWVKYWhkLTd6Qk9ZN0Vnbk0za04tYWgyQjE3cjFtSmtvbFBQSmctSnpjOWZvbFNRYTE2VGVKMkRXNHI2bExJTTZCb2o0ektMTFdjUU9ZYUNDaENqamlUN056dlotRHplUkVCeTZnSERwdlN4a1c3RkN0V1U1YnZsZTl0RkdPYnPSAYcBQVVfeXFMUFllSmFoZC03ekJPWTdFZ25NM2tOLWFoMkIxN3IxbUprb2xQUEpnLUp6Yzlmb2xTUWExNlRlSjJEVzRyNmxMSU02Qm9qNHpLTExXY1FPWWFDQ2hDamppVDdOenZaLUR6ZVJFQnk2Z0hEcHZTeGtXN0ZDdFdVNWJ2bGU5dEZHT2Jz?oc=5",
+   "published": "2026-10-16T22:15:31+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "IT Forum",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWWVKYWhkLTd6Qk9ZN0Vnbk0za04tYWgyQjE3cjFtSmtvbFBQSmctSnpjOWZvbFNRYTE2VGVKMkRXNHI2bExJTTZCb2o0ektMTFdjUU9ZYUNDaENqamlUN056dlotRHplUkVCeTZnSERwdlN4a1c3RkN0V1U1YnZsZTl0RkdPYnPSAYcBQVVfeXFMUFllSmFoZC03ekJPWTdFZ25NM2tOLWFoMkIxN3IxbUprb2xQUEpnLUp6Yzlmb2xTUWExNlRlSjJEVzRyNmxMSU02Qm9qNHpLTExXY1FPWWFDQ2hDamppVDdOenZaLUR6ZVJFQnk2Z0hEcHZTeGtXN0ZDdFdVNWJ2bGU5dEZHT2Jz?oc=5",
+     "title": "Ecossistemas: Quality, KPMG e Globant falam de parceria"
+    }
+   ],
+   "ids": [
+    "7253b023901e"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Ecossistemas: Quality, KPMG e Globant falam de parceria",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "83a650d29612",
    "title": "David Rubenstein on New Book, “Speaking of America”",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/david-rubenstein-on-new-book-speaking-of-america-video",
@@ -9876,6 +9862,40 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Chancellor of the Exchequer John Healey has backed plans for a third runway at Heathrow, setting up a possible Downing Street clash with Prime Minister Andy Burnham.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6d944c8eb2d3",
+   "title": "M. Dias Branco (MDIA3) anuncia compra de 80% da Grespan",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2NhLVo3OHhoZlYwWGZBa1NTWkN2YWlTbUoxeGhnUlhxT3lxTnh1OGtNLW54LW9MeEVxUkthM1VzTTN4WVlWR3l6WlJvNE9nMVlzVjVfb3ZxX05NeVdfNlNjcC1rTG1hY21CMnR4ZDdtdjk3SG5oNlg1ZFhzTnh4WGo2V1d0RFUxRFBidXdTeHRoQUU?oc=5",
+   "published": "2026-10-16T20:18:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Visno Invest",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2NhLVo3OHhoZlYwWGZBa1NTWkN2YWlTbUoxeGhnUlhxT3lxTnh1OGtNLW54LW9MeEVxUkthM1VzTTN4WVlWR3l6WlJvNE9nMVlzVjVfb3ZxX05NeVdfNlNjcC1rTG1hY21CMnR4ZDdtdjk3SG5oNlg1ZFhzTnh4WGo2V1d0RFUxRFBidXdTeHRoQUU?oc=5",
+     "title": "M. Dias Branco (MDIA3) anuncia compra de 80% da Grespan"
+    }
+   ],
+   "ids": [
+    "6d944c8eb2d3",
+    "6d944c8eb2d3"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "M. Dias Branco (MDIA3) anuncia compra de 80% da Grespan",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -10253,6 +10273,78 @@
  "deals": [],
  "upcoming": [
   {
+   "id": "0e79256f72b1",
+   "title": "Braskem (BRKM5): FIP Shine consolida controle após OPA; acionistas têm novo prazo para vender papéis",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVmFZOXBOeE5rUEZyYkJ6dFkwS2lMNUN0eWNLZlQwYjJNQ1NSZGVCMEpzVFZUNXpDVTRpbGZvMUNOOWFRU05rZ2llWmo5T05SM1VDNkk3U3VXZjBJX2pxY0J0YUFLWDR2SzJfanZQR1BVYTBGODNTOXRLaG9WS1RFVzgzbzFTcmFTT05EQTc1Vl9YX0pRSFQ3Qm05OWs2a0U0Y2tVRjRualBicnc2d2ZoeTFtZ2VVQ2J0MDF3eXpSeFRLSmtYSjlYZHZ1aEo?oc=5",
+   "published": "2026-10-17T11:59:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVmFZOXBOeE5rUEZyYkJ6dFkwS2lMNUN0eWNLZlQwYjJNQ1NSZGVCMEpzVFZUNXpDVTRpbGZvMUNOOWFRU05rZ2llWmo5T05SM1VDNkk3U3VXZjBJX2pxY0J0YUFLWDR2SzJfanZQR1BVYTBGODNTOXRLaG9WS1RFVzgzbzFTcmFTT05EQTc1Vl9YX0pRSFQ3Qm05OWs2a0U0Y2tVRjRualBicnc2d2ZoeTFtZ2VVQ2J0MDF3eXpSeFRLSmtYSjlYZHZ1aEo?oc=5",
+     "title": "Braskem (BRKM5): FIP Shine consolida controle após OPA; acionistas têm novo prazo para vender papéis"
+    },
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/braskem-brkm5-fip-shine-consolida-controle-apos-opa-acionistas-tem-novo-prazo-para-vender-papeis-igdl/",
+     "title": "Braskem (BRKM5): FIP Shine consolida controle após OPA; acionistas têm novo prazo para vender papéis"
+    }
+   ],
+   "ids": [
+    "0e79256f72b1",
+    "bd017866d905"
+   ],
+   "snippet": "A Braskem (BRKM5) informou, na noite de sexta-feira (16), que o Shine I Fundo de Investimento, ligado à IG4, adquiriu 19.983 papéis no leilão de sua oferta pública de aquisição de ações (OPA). Segundo fato relevante divulgado ao mercado, a operação envolveu 2.850 ações ordinárias e 17.133 preferenciais classe A (PNA). Não houve compra de […]",
+   "prescore": 6.4,
+   "headline": "Braskem (BRKM5): FIP Shine consolida controle após OPA; acionistas têm novo prazo para vender papéis",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Braskem (BRKM5) informou, na noite de sexta-feira (16), que o Shine I Fundo de Investimento, ligado à IG4, adquiriu 19.983 papéis no leilão de sua oferta pública de aquisição de ações (OPA). Segundo fato relevante divulgado ao mercado, a operação envolveu 2.850 ações ordinárias e 17.133 preferenciais classe A (PNA). Não houve compra de […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "22f8ba7ece12",
+   "title": "Ibovespa devolve ganhos do ‘trade Flávio’ e cai quase 2% na semana; Prio (PRIO3) e Vamos (VAMO3) são os destaques",
+   "link": "https://www.moneytimes.com.br/ibovespa-destaques-da-semana-42-lils/",
+   "published": "2026-10-17T11:32:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/ibovespa-destaques-da-semana-42-lils/",
+     "title": "Ibovespa devolve ganhos do ‘trade Flávio’ e cai quase 2% na semana; Prio (PRIO3) e Vamos (VAMO3) são os destaques"
+    }
+   ],
+   "ids": [
+    "22f8ba7ece12"
+   ],
+   "snippet": "Após a euforia do resultado do primeiro turno, o Ibovespa (IBOV) devolveu parte dos ganhos da semana anterior. O principal índice da bolsa brasileira acumulou queda de 1,74% na semana e encerrou a última sessão aos 205.430,33 pontos. Já o dólar à vista terminou a R$ 5,0735, com valorização de 1,77% o real no acumulado […]",
+   "prescore": 4.8,
+   "headline": "Ibovespa devolve ganhos do ‘trade Flávio’ e cai quase 2% na semana; Prio (PRIO3) e Vamos (VAMO3) são os destaques",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Após a euforia do resultado do primeiro turno, o Ibovespa (IBOV) devolveu parte dos ganhos da semana anterior. O principal índice da bolsa brasileira acumulou queda de 1,74% na semana e encerrou a última sessão aos 205.430,33 pontos. Já o dólar à vista terminou a R$ 5,0735, com valorização de 1,77% o real no acumulado […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "e3d8f53f2ac0",
    "title": "Corte nos gastos do governo pode reduzir juro real para 5%, calcula economista",
    "link": "https://www.infomoney.com.br/onde-investir/corte-nos-gastos-do-governo-pode-reduzir-juro-real-para-5-diz-economista/",
@@ -10275,6 +10367,72 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Estudo da gestora indica que contenção de despesas retiraria 300 pontos-base dos juros longos e garantiria o cumprimento das metas de inflação The post Corte nos gastos do governo pode reduzir juro real para 5%, calcula economista appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "47058a8b7b6b",
+   "title": "Rockstar Rebuilt Itself to Make GTA VI",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-17/rockstar-rebuilt-itself-to-make-gta-vi-video",
+   "published": "2026-10-17T12:15:53+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-10-17/rockstar-rebuilt-itself-to-make-gta-vi-video",
+     "title": "Rockstar Rebuilt Itself to Make GTA VI"
+    }
+   ],
+   "ids": [
+    "47058a8b7b6b"
+   ],
+   "snippet": "Bloomberg News video game reporter Jason Schreier tells Bloomberg This Weekend how Rockstar Games nearly doubled its workforce and overhauled its production culture while building the highly anticipated Grand Theft Auto VI. Speaking with hosts Christina Ruffini and Lisa Mateo, Schreier explains Rockstar’s efforts to curb excessive overtime, the extraordinary commercial expectations for the game and why the company believes its next major release could take less time to develop. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Rockstar Rebuilt Itself to Make GTA VI",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Bloomberg News video game reporter Jason Schreier tells Bloomberg This Weekend how Rockstar Games nearly doubled its workforce and overhauled its production culture while building the highly anticipated Grand Theft Auto VI. Speaking with hosts Christina Ruffini and Lisa Mateo, Schreier explains Rockstar’s efforts to curb excessive overtime, the extraordinary commercial expectations for the game an",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c188048fda85",
+   "title": "Trump Puts New Russia Sanctions on Hold",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-17/trump-puts-new-russia-sanctions-on-hold-video",
+   "published": "2026-10-17T11:49:42+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-10-17/trump-puts-new-russia-sanctions-on-hold-video",
+     "title": "Trump Puts New Russia Sanctions on Hold"
+    }
+   ],
+   "ids": [
+    "c188048fda85"
+   ],
+   "snippet": "Bloomberg News Russia economy and government editor Anthony Halpin and White House correspondent Jeff Mason tell Bloomberg This Weekend that President Donald Trump’s waiver of new Russia sanctions could offer Moscow economic and diplomatic opportunities while adding pressure on Ukraine. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Trump Puts New Russia Sanctions on Hold",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Bloomberg News Russia economy and government editor Anthony Halpin and White House correspondent Jeff Mason tell Bloomberg This Weekend that President Donald Trump’s waiver of new Russia sanctions could offer Moscow economic and diplomatic opportunities while adding pressure on Ukraine. (Source: Bloomberg)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -10339,6 +10497,72 @@
    "headline": "Print Edition | Wall Street Journal",
    "category": "internacional",
    "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c2eff9632b0d",
+   "title": "Egypt Ready to Defend Saudi Arabia if Needed, Sisi Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-17/egypt-ready-to-defend-saudi-arabia-if-needed-sisi-says",
+   "published": "2026-10-17T12:14:33+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-17/egypt-ready-to-defend-saudi-arabia-if-needed-sisi-says",
+     "title": "Egypt Ready to Defend Saudi Arabia if Needed, Sisi Says"
+    }
+   ],
+   "ids": [
+    "c2eff9632b0d"
+   ],
+   "snippet": "Egyptian President Abdel-Fattah El-Sisi said his nation stands ready to defend Saudi Arabia as it comes under attack from Yemen’s Houthis and called on parliament to convene an emergency session to authorize such action if it became necessary.",
+   "prescore": 2.4,
+   "headline": "Egypt Ready to Defend Saudi Arabia if Needed, Sisi Says",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Egyptian President Abdel-Fattah El-Sisi said his nation stands ready to defend Saudi Arabia as it comes under attack from Yemen’s Houthis and called on parliament to convene an emergency session to authorize such action if it became necessary.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f52af7baedeb",
+   "title": "M. Dias Branco celebra 20 anos da abertura de seu capital",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcmFwMVljcGFnQ19NUG5abVExSExNYWplS3hZSTJDWVlCX3FFR1RTajZHakQ4bVlEM1E3UUtkY1B5R0JwYTVvN28xbmZ1NjE4c3dwd0dGU20tRXdXM29kT0o2S1hZYXBWV002OXdRa25Ib21ReXV1MXFrWWJBZ0RZbnpGMWlSQi1DNHJ5N1IzX1NVbmJtUkhrVVRWcnpweURFNHA0M3p2RmttbE9ENDFSTDVvcWcxN3ktWEM1b2ppOTJfSHJBS2lQLTZwVk1VX1NtMEJRcmU4TWV1UQ?oc=5",
+   "published": "2026-10-17T11:33:09+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Diário do Nordeste",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcmFwMVljcGFnQ19NUG5abVExSExNYWplS3hZSTJDWVlCX3FFR1RTajZHakQ4bVlEM1E3UUtkY1B5R0JwYTVvN28xbmZ1NjE4c3dwd0dGU20tRXdXM29kT0o2S1hZYXBWV002OXdRa25Ib21ReXV1MXFrWWJBZ0RZbnpGMWlSQi1DNHJ5N1IzX1NVbmJtUkhrVVRWcnpweURFNHA0M3p2RmttbE9ENDFSTDVvcWcxN3ktWEM1b2ppOTJfSHJBS2lQLTZwVk1VX1NtMEJRcmU4TWV1UQ?oc=5",
+     "title": "M. Dias Branco celebra 20 anos da abertura de seu capital"
+    }
+   ],
+   "ids": [
+    "f52af7baedeb"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "M. Dias Branco celebra 20 anos da abertura de seu capital",
+   "category": "empresas",
+   "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
    "involves": "",
@@ -10451,6 +10675,303 @@
    "ai": false
   },
   {
+   "id": "8735e57ae384",
+   "title": "Marinha britânica diz que navio-tanque foi atingido por projétil na Arábia Saudita",
+   "link": "https://www.infomoney.com.br/mundo/marinha-britanica-diz-que-navio-tanque-foi-atingido-por-projetil-na-arabia-saudita/",
+   "published": "2026-10-17T12:26:38+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/marinha-britanica-diz-que-navio-tanque-foi-atingido-por-projetil-na-arabia-saudita/",
+     "title": "Marinha britânica diz que navio-tanque foi atingido por projétil na Arábia Saudita"
+    }
+   ],
+   "ids": [
+    "8735e57ae384"
+   ],
+   "snippet": "Petroleiro foi atingido por um lança-granadas disparado a partir de outro navio de pequeno porte, o que provocou danos na parte traseira esquerda da embarcação; tripulantes passam bem The post Marinha britânica diz que navio-tanque foi atingido por projétil na Arábia Saudita appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Marinha britânica diz que navio-tanque foi atingido por projétil na Arábia Saudita",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Petroleiro foi atingido por um lança-granadas disparado a partir de outro navio de pequeno porte, o que provocou danos na parte traseira esquerda da embarcação; tripulantes passam bem The post Marinha britânica diz que navio-tanque foi atingido por projétil na Arábia Saudita appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "93f47044857e",
+   "title": "Stellantis planeja contratar centenas de novos engenheiros na Europa e nos EUA",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeTRnYVNra1Z3VXhYeUI3V1JGRC1iWnRtSkhrVTVua1QxUnZNVlVSVzcxSEg0TXB3LU1RdWRIUzBKWWRidVdNNGVYczF1RUlkU01mM25WajZ1Unhaa2cySXJUYllFblhRWGVkN2JwNERCdzJyYWdiVHh1ZlB4SlVPUnU5aEx6cVRiTmUzdEx3RENKcGJMQWtZQlZZSUs5eWdaTXdmY1RoRUlRREFSWm5jN0kyRmRtc1V4RC04UTZMa9IB0wFBVV95cUxNZWtESDEtQ01WRXNQeU5Gd1VjVFdsWjBXSk1sR2FDVHlyS044aFAtUXBuTkRrY0EyNHluMmtfbGsyVmpEbmkteHFsSUhQWEdsOHVDZjhfaUZuNE82SjFyNzFEVEtIZTJ3N2FyUFNnLVc5UzYyeWw0TWZWTkE1ZjRIQXdlRjV5LUNqU0RRYUNHRGtLa0JKc0cxQ1NpTlAzaVFVd1c4SlQ1QW8xUWNGOVRUVG1xSE5TM2VJcTZYVlAtT0VwTURnYjBUb19ldk80UXg1d0x3?oc=5",
+   "published": "2026-10-17T12:21:48+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeTRnYVNra1Z3VXhYeUI3V1JGRC1iWnRtSkhrVTVua1QxUnZNVlVSVzcxSEg0TXB3LU1RdWRIUzBKWWRidVdNNGVYczF1RUlkU01mM25WajZ1Unhaa2cySXJUYllFblhRWGVkN2JwNERCdzJyYWdiVHh1ZlB4SlVPUnU5aEx6cVRiTmUzdEx3RENKcGJMQWtZQlZZSUs5eWdaTXdmY1RoRUlRREFSWm5jN0kyRmRtc1V4RC04UTZMa9IB0wFBVV95cUxNZWtESDEtQ01WRXNQeU5Gd1VjVFdsWjBXSk1sR2FDVHlyS044aFAtUXBuTkRrY0EyNHluMmtfbGsyVmpEbmkteHFsSUhQWEdsOHVDZjhfaUZuNE82SjFyNzFEVEtIZTJ3N2FyUFNnLVc5UzYyeWw0TWZWTkE1ZjRIQXdlRjV5LUNqU0RRYUNHRGtLa0JKc0cxQ1NpTlAzaVFVd1c4SlQ1QW8xUWNGOVRUVG1xSE5TM2VJcTZYVlAtT0VwTURnYjBUb19ldk80UXg1d0x3?oc=5",
+     "title": "Stellantis planeja contratar centenas de novos engenheiros na Europa e nos EUA"
+    }
+   ],
+   "ids": [
+    "93f47044857e"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Stellantis planeja contratar centenas de novos engenheiros na Europa e nos EUA",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5a0eaf3e636f",
+   "title": "Quem é o empresário que morreu em queda de avião no interior de São Paulo",
+   "link": "https://www.infomoney.com.br/brasil/quem-e-o-empresario-que-morreu-em-queda-de-aviao-no-interior-de-sao-paulo/",
+   "published": "2026-10-17T12:16:41+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/brasil/quem-e-o-empresario-que-morreu-em-queda-de-aviao-no-interior-de-sao-paulo/",
+     "title": "Quem é o empresário que morreu em queda de avião no interior de São Paulo"
+    }
+   ],
+   "ids": [
+    "5a0eaf3e636f"
+   ],
+   "snippet": "Acionista do Grupo Simões morreu na sexta-feira (16) em um acidente aéreo em Orlândia, no interior de São Paulo The post Quem é o empresário que morreu em queda de avião no interior de São Paulo appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Quem é o empresário que morreu em queda de avião no interior de São Paulo",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Acionista do Grupo Simões morreu na sexta-feira (16) em um acidente aéreo em Orlândia, no interior de São Paulo The post Quem é o empresário que morreu em queda de avião no interior de São Paulo appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1fcc0a4d7fda",
+   "title": "Abu Dhabi at the Quay: How Gulf Sovereign Capital Is Quietly Taking Control of Brazil's Agricultural Export Infrastructure",
+   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNTEw2VllnaXdORzNJSmxSdGhQdFJNTllOamNSYUZ2NTN3VVhHV083S1MzR2U2M2FMaS1pLUtXc0tWbWdtcWc3VnpRcGxGOVRYSmZBWEVCcy1zNlh6d1QtZldZVTJ4akFBSHlicHdtNmo5cXlfTU9lZ2RjNUhJVVNzN1MtaDFHaHJHZ3J1TTlWclp0YjItU28ydFJ3S0NwQTlVTmRxbDJnMFpVajJERktkSGM5NUZGNFNGRmdZdGhlbmNkTjUxdktQenFsOTlWTmUyQ21FeFBZRk1FX2EwbTcxSDdTbUZhNWZ6VFBDOU1qdkVIQWdOSHpZeXQ1Q3U1RmlwNWFwanFtN0IyZEVOVkRhOE9R?oc=5",
+   "published": "2026-10-17T12:14:12+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Portogente",
+     "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNTEw2VllnaXdORzNJSmxSdGhQdFJNTllOamNSYUZ2NTN3VVhHV083S1MzR2U2M2FMaS1pLUtXc0tWbWdtcWc3VnpRcGxGOVRYSmZBWEVCcy1zNlh6d1QtZldZVTJ4akFBSHlicHdtNmo5cXlfTU9lZ2RjNUhJVVNzN1MtaDFHaHJHZ3J1TTlWclp0YjItU28ydFJ3S0NwQTlVTmRxbDJnMFpVajJERktkSGM5NUZGNFNGRmdZdGhlbmNkTjUxdktQenFsOTlWTmUyQ21FeFBZRk1FX2EwbTcxSDdTbUZhNWZ6VFBDOU1qdkVIQWdOSHpZeXQ1Q3U1RmlwNWFwanFtN0IyZEVOVkRhOE9R?oc=5",
+     "title": "Abu Dhabi at the Quay: How Gulf Sovereign Capital Is Quietly Taking Control of Brazil's Agricultural Export Infrastructure"
+    }
+   ],
+   "ids": [
+    "1fcc0a4d7fda"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Abu Dhabi at the Quay: How Gulf Sovereign Capital Is Quietly Taking Control of Brazil's Agricultural Export Infrastructure",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "755823c13d43",
+   "title": "SP tem garoa ocasional e tempo frio no fim de semana; veja previsão",
+   "link": "https://www.infomoney.com.br/mercados/sp-tem-garoa-ocasional-e-tempo-frio-no-fim-de-semana-veja-previsao/",
+   "published": "2026-10-17T12:01:05+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/sp-tem-garoa-ocasional-e-tempo-frio-no-fim-de-semana-veja-previsao/",
+     "title": "SP tem garoa ocasional e tempo frio no fim de semana; veja previsão"
+    }
+   ],
+   "ids": [
+    "755823c13d43"
+   ],
+   "snippet": "O sábado amanheceu com temperatura de 15°C, muita nebulosidade e chuviscos; para os próximos dias, a tendência é de queda da temperatura e ausência de chuva The post SP tem garoa ocasional e tempo frio no fim de semana; veja previsão appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "SP tem garoa ocasional e tempo frio no fim de semana; veja previsão",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O sábado amanheceu com temperatura de 15°C, muita nebulosidade e chuviscos; para os próximos dias, a tendência é de queda da temperatura e ausência de chuva The post SP tem garoa ocasional e tempo frio no fim de semana; veja previsão appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "fe272a64df2c",
+   "title": "Personal trainer cobra disciplina dos alunos, mas ignora a própria no day trade; veja",
+   "link": "https://www.infomoney.com.br/mercados/personal-trainer-cobra-disciplina-dos-alunos-mas-ignora-proprio-plano-no-day-trade/",
+   "published": "2026-10-17T12:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/personal-trainer-cobra-disciplina-dos-alunos-mas-ignora-proprio-plano-no-day-trade/",
+     "title": "Personal trainer cobra disciplina dos alunos, mas ignora a própria no day trade; veja"
+    }
+   ],
+   "ids": [
+    "fe272a64df2c"
+   ],
+   "snippet": "Ao buscar ajuda para avançar no mercado, Bira ouviu que talvez precisasse interromper as operações com dinheiro real e reconstruir sua forma de operar The post Personal trainer cobra disciplina dos alunos, mas ignora a própria no day trade; veja appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Personal trainer cobra disciplina dos alunos, mas ignora a própria no day trade; veja",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Ao buscar ajuda para avançar no mercado, Bira ouviu que talvez precisasse interromper as operações com dinheiro real e reconstruir sua forma de operar The post Personal trainer cobra disciplina dos alunos, mas ignora a própria no day trade; veja appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "db9d58d0f877",
+   "title": "Quer crescer na carreira? Sair do país pode ajudar mais do que você imagina",
+   "link": "https://www.infomoney.com.br/carreira/o-que-experiencia-internacional-faz-profissionais-crescer/",
+   "published": "2026-10-17T12:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/carreira/o-que-experiencia-internacional-faz-profissionais-crescer/",
+     "title": "Quer crescer na carreira? Sair do país pode ajudar mais do que você imagina"
+    }
+   ],
+   "ids": [
+    "db9d58d0f877"
+   ],
+   "snippet": "A experiência fora do país, mesmo que de curta duração, consegue alavancar habilidades que as empresas procuram The post Quer crescer na carreira? Sair do país pode ajudar mais do que você imagina appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Quer crescer na carreira? Sair do país pode ajudar mais do que você imagina",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A experiência fora do país, mesmo que de curta duração, consegue alavancar habilidades que as empresas procuram The post Quer crescer na carreira? Sair do país pode ajudar mais do que você imagina appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ceab05b89a17",
+   "title": "FMI pede apoio a economias que sofrem com guerras e cita “vulnerabilidade fiscal”",
+   "link": "https://www.infomoney.com.br/economia/fmi-pede-apoio-a-economias-que-sofrem-com-guerras-e-cita-vulnerabilidade-fiscal/",
+   "published": "2026-10-17T11:55:14+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/economia/fmi-pede-apoio-a-economias-que-sofrem-com-guerras-e-cita-vulnerabilidade-fiscal/",
+     "title": "FMI pede apoio a economias que sofrem com guerras e cita “vulnerabilidade fiscal”"
+    }
+   ],
+   "ids": [
+    "ceab05b89a17"
+   ],
+   "snippet": "Comunicado divulgado após a semana de reuniões na Tailândia ressalta que a economia mundial tem resistido melhor do que o esperado a uma sequência de choques, mas que a resiliência \"não pode ser dada como certa\" The post FMI pede apoio a economias que sofrem com guerras e cita “vulnerabilidade fiscal” appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "FMI pede apoio a economias que sofrem com guerras e cita “vulnerabilidade fiscal”",
+   "category": "macro",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Comunicado divulgado após a semana de reuniões na Tailândia ressalta que a economia mundial tem resistido melhor do que o esperado a uma sequência de choques, mas que a resiliência \"não pode ser dada como certa\" The post FMI pede apoio a economias que sofrem com guerras e cita “vulnerabilidade fiscal” appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "42be91e2c158",
+   "title": "Bloqueio de celulares nos presídios fica mais ágil após decreto do governo federal",
+   "link": "https://www.infomoney.com.br/brasil/bloqueio-de-celulares-nos-presidios-fica-mais-agil-apos-decreto-do-governo-federal/",
+   "published": "2026-10-17T11:40:26+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/brasil/bloqueio-de-celulares-nos-presidios-fica-mais-agil-apos-decreto-do-governo-federal/",
+     "title": "Bloqueio de celulares nos presídios fica mais ágil após decreto do governo federal"
+    }
+   ],
+   "ids": [
+    "42be91e2c158"
+   ],
+   "snippet": "Medida dispensa necessidade de decisão judicial para cortar o sinal de aparelhos em penitenciárias; telefones são identificados por de tecnologia de nova geração The post Bloqueio de celulares nos presídios fica mais ágil após decreto do governo federal appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Bloqueio de celulares nos presídios fica mais ágil após decreto do governo federal",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Medida dispensa necessidade de decisão judicial para cortar o sinal de aparelhos em penitenciárias; telefones são identificados por de tecnologia de nova geração The post Bloqueio de celulares nos presídios fica mais ágil após decreto do governo federal appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d52a103c9880",
    "title": "Governo Trump diz apoiar eleição livre no Brasil e defende sanções a Moraes, PCC e CV",
    "link": "https://www.infomoney.com.br/politica/governo-trump-diz-apoiar-eleicao-livre-no-brasil-e-defende-sancoes-a-moraes-pcc-e-cv/",
@@ -10550,6 +11071,171 @@
    "ai": false
   },
   {
+   "id": "61cae8d261bc",
+   "title": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan",
+   "link": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
+   "published": "2026-10-17T12:00:01+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
+     "title": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan"
+    }
+   ],
+   "ids": [
+    "61cae8d261bc"
+   ],
+   "snippet": "Less than four months into life as a public company, Bending Spoons got a big vote of confidence this week from Berkshire Hathaway.",
+   "prescore": 2.0,
+   "headline": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Less than four months into life as a public company, Bending Spoons got a big vote of confidence this week from Berkshire Hathaway.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "dbe30a48f6a4",
+   "title": "Eleição de Flávio não garante ajuste fiscal, que precisará de plano imediato, mas efeito gradual, diz Felipe Salto",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/10/eleicao-de-flavio-nao-garante-ajuste-fiscal-que-precisara-de-plano-imediato-mas-efeito-gradual-diz-felipe-salto.shtml",
+   "published": "2026-10-17T12:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/10/eleicao-de-flavio-nao-garante-ajuste-fiscal-que-precisara-de-plano-imediato-mas-efeito-gradual-diz-felipe-salto.shtml",
+     "title": "Eleição de Flávio não garante ajuste fiscal, que precisará de plano imediato, mas efeito gradual, diz Felipe Salto"
+    }
+   ],
+   "ids": [
+    "dbe30a48f6a4"
+   ],
+   "snippet": "Um dos maiores especialistas em contas públicas do país, Felipe Salto , economista-chefe da Warren Investimentos, olha com distanciamento a empolgação do mercado com uma eventual eleição do senador Flávio Bolsonaro ( PL ). Para ele, a vitória do candidato não garante, automaticamente, uma organização das contas públicas. Leia mais (10/17/2026 - 09h00)",
+   "prescore": 2.0,
+   "headline": "Eleição de Flávio não garante ajuste fiscal, que precisará de plano imediato, mas efeito gradual, diz Felipe Salto",
+   "category": "macro",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Um dos maiores especialistas em contas públicas do país, Felipe Salto , economista-chefe da Warren Investimentos, olha com distanciamento a empolgação do mercado com uma eventual eleição do senador Flávio Bolsonaro ( PL ). Para ele, a vitória do candidato não garante, automaticamente, uma organização das contas públicas. Leia mais (10/17/2026 - 09h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "de0f2fafbfef",
+   "title": "Fundos imobiliários: Confira os que mais sobem em 2026, segundo a Quantum Finance",
+   "link": "https://www.moneytimes.com.br/fundos-imobiliarios-confira-os-que-mais-sobem-em-2026-segundo-a-quantum-finance-igdl/",
+   "published": "2026-10-17T12:30:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/fundos-imobiliarios-confira-os-que-mais-sobem-em-2026-segundo-a-quantum-finance-igdl/",
+     "title": "Fundos imobiliários: Confira os que mais sobem em 2026, segundo a Quantum Finance"
+    }
+   ],
+   "ids": [
+    "de0f2fafbfef"
+   ],
+   "snippet": "O Polo Crédito Imobiliário (PORD11) lidera o ranking dos fundos imobiliários com os maiores retornos acumulados em 2026, segundo levantamento da Quantum Finance ao qual o Money Times teve acesso. Do início de janeiro até o final de setembro, o veículo registrou rentabilidade de 15,11%, enquanto o IFIX, principal índice dos FIIs na bolsa de […]",
+   "prescore": 1.8,
+   "headline": "Fundos imobiliários: Confira os que mais sobem em 2026, segundo a Quantum Finance",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Polo Crédito Imobiliário (PORD11) lidera o ranking dos fundos imobiliários com os maiores retornos acumulados em 2026, segundo levantamento da Quantum Finance ao qual o Money Times teve acesso. Do início de janeiro até o final de setembro, o veículo registrou rentabilidade de 15,11%, enquanto o IFIX, principal índice dos FIIs na bolsa de […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "335b25b76616",
+   "title": "Cosan (CSAN3) aprova transferência de 20,33% da Rumo (RAIL3) para fundo de investimento; entenda",
+   "link": "https://www.moneytimes.com.br/cosan-csan3-aprova-transferencia-de-2033-da-rumo-rail3-para-fundo-de-investimento-entenda-igdl/",
+   "published": "2026-10-17T12:25:03+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/cosan-csan3-aprova-transferencia-de-2033-da-rumo-rail3-para-fundo-de-investimento-entenda-igdl/",
+     "title": "Cosan (CSAN3) aprova transferência de 20,33% da Rumo (RAIL3) para fundo de investimento; entenda"
+    }
+   ],
+   "ids": [
+    "335b25b76616"
+   ],
+   "snippet": "A Cosan (CSAN3) realizou um movimento societário relevante envolvendo a participação na Rumo (RAIL3). A holding informou que o seu conselho de administração aprovou, por unanimidade, a transferência de 377,8 milhões de ações ordinárias da empresa de logística para o Maglev Fundo de Investimento em Participações Multiestratégia. Conforme a ata de reunião do colegiado divulgada […]",
+   "prescore": 1.8,
+   "headline": "Cosan (CSAN3) aprova transferência de 20,33% da Rumo (RAIL3) para fundo de investimento; entenda",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Cosan (CSAN3) realizou um movimento societário relevante envolvendo a participação na Rumo (RAIL3). A holding informou que o seu conselho de administração aprovou, por unanimidade, a transferência de 377,8 milhões de ações ordinárias da empresa de logística para o Maglev Fundo de Investimento em Participações Multiestratégia. Conforme a ata de reunião do colegiado divulgada […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4df948c0f07a",
+   "title": "Ainda dá tempo de ficar milionário: Mega-Sena sorteia prêmio acumulado em R$ 170 milhões neste domingo",
+   "link": "https://www.seudinheiro.com/2026/financas-pessoais/ainda-da-tempo-de-ficar-milionario-mega-sena-sorteia-premio-acumulado-em-r-170-milhoes-neste-domingo-mlim/",
+   "published": "2026-10-17T12:15:38+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/financas-pessoais/ainda-da-tempo-de-ficar-milionario-mega-sena-sorteia-premio-acumulado-em-r-170-milhoes-neste-domingo-mlim/",
+     "title": "Ainda dá tempo de ficar milionário: Mega-Sena sorteia prêmio acumulado em R$ 170 milhões neste domingo"
+    }
+   ],
+   "ids": [
+    "4df948c0f07a"
+   ],
+   "snippet": "Apostas podem ser feitas até às 22h deste sábado (17) The post Ainda dá tempo de ficar milionário: Mega-Sena sorteia prêmio acumulado em R$ 170 milhões neste domingo appeared first on Seu Dinheiro .",
+   "prescore": 1.8,
+   "headline": "Ainda dá tempo de ficar milionário: Mega-Sena sorteia prêmio acumulado em R$ 170 milhões neste domingo",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Apostas podem ser feitas até às 22h deste sábado (17) The post Ainda dá tempo de ficar milionário: Mega-Sena sorteia prêmio acumulado em R$ 170 milhões neste domingo appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "7d6af22b4f16",
    "title": "Dá pra gastar tudo? Veja quanto rende o prêmio de R$ 170 milhões da Mega-Sena acumulada",
    "link": "https://www.moneytimes.com.br/da-pra-gastar-tudo-veja-quanto-rende-premio-170-milhoes-mega-sena-acumulada-rsgp/",
@@ -10614,6 +11300,39 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "0548606d0131",
+   "title": "Polícia usa gás lacrimogêneo e entra em confronto com manifestantes em protestos contra o custo de vida na França",
+   "link": "https://g1.globo.com/mundo/noticia/2026/10/17/policia-usa-gas-lacrimogeneo-e-entra-em-confronto-com-manifestantes-em-protestos-contra-o-custo-de-vida-na-franca.ghtml",
+   "published": "2026-10-17T12:33:36+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/17/policia-usa-gas-lacrimogeneo-e-entra-em-confronto-com-manifestantes-em-protestos-contra-o-custo-de-vida-na-franca.ghtml",
+     "title": "Polícia usa gás lacrimogêneo e entra em confronto com manifestantes em protestos contra o custo de vida na França"
+    }
+   ],
+   "ids": [
+    "0548606d0131"
+   ],
+   "snippet": "A polícia francesa usou gás lacrimogêneo e entrou em confronto com manifestantes em várias cidades da França neste sábado (17), durante uma onda de protestos contra o alto custo de vida e as condições dos serviços públicos. Os atos, que levaram milhares de pessoas às ruas, estão entre os mais violentos registrados no país nos últimos anos. Segundo as autoridades francesas, até o meio-dia foram contabilizadas 140 manifestações, com a participação de 32,8 mil pessoas, fora de Paris. O governo atribuiu os episódios de violência a grupos classificados como de \"ultraesquerda\". Os protestos começara",
+   "prescore": 1.6,
+   "headline": "Polícia usa gás lacrimogêneo e entra em confronto com manifestantes em protestos contra o custo de vida na França",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A polícia francesa usou gás lacrimogêneo e entrou em confronto com manifestantes em várias cidades da França neste sábado (17), durante uma onda de protestos contra o alto custo de vida e as condições dos serviços públicos. Os atos, que levaram milhares de pessoas às ruas, estão entre os mais violentos registrados no país nos últimos anos. Segundo as autoridades francesas, até o meio-dia foram con",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "sources": [
@@ -10628,7 +11347,7 @@
    "id": "pipeline",
    "name": "Pipeline (Valor)",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
@@ -10656,7 +11375,7 @@
    "id": "exame",
    "name": "Exame",
    "ok": true,
-   "count": 13,
+   "count": 12,
    "error": null
   },
   {
@@ -10698,14 +11417,14 @@
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 37,
+   "count": 36,
    "error": null
   },
   {
    "id": "g1-economia",
    "name": "g1",
    "ok": true,
-   "count": 39,
+   "count": 34,
    "error": null
   },
   {
@@ -10719,14 +11438,14 @@
    "id": "g1-mundo",
    "name": "g1",
    "ok": true,
-   "count": 45,
+   "count": 44,
    "error": null
   },
   {
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 35,
+   "count": 33,
    "error": null
   },
   {
@@ -10740,7 +11459,7 @@
    "id": "bloomberg-deals",
    "name": "Bloomberg",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -10796,14 +11515,14 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 45,
+   "count": 43,
    "error": null
   },
   {
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 47,
+   "count": 45,
    "error": null
   },
   {
@@ -11010,11 +11729,11 @@
   }
  ],
  "stats": {
-  "raw": 900,
-  "unique": 486,
-  "unique_all": 827,
+  "raw": 884,
+  "unique": 479,
+  "unique_all": 814,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 15.9
+  "seconds": 5.2
  }
 }
