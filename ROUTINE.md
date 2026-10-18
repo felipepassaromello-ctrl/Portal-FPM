@@ -31,7 +31,7 @@ notícias pendentes, ordenadas por relevância. Escreva a análise de **todas** 
 formato `{"items": [...]}` descrito no arquivo. Siga as regras do papel: português, específico, sem inventar fatos,
 valores ou nomes que não estejam no título, no trecho ou nos outros títulos.
 
-Preencha o campo opcional `lead` sempre que a notícia indicar uma transação ainda em aberto envolvendo empresa brasileira (avalia venda, contratou banco, busca sócio, prepara IPO, reestruturação, negociação em curso): ele alimenta a aba Leads.
+Preencha o campo opcional `lead` sempre que a notícia indicar uma transação ainda em aberto envolvendo empresa brasileira (avalia venda, contratou banco, busca investidor, prepara IPO, reestruturação, negociação em curso): ele alimenta a aba Leads.
 
 Se a fila for grande, escreva em partes (por exemplo `analises1.json`, `analises2.json`) e grave cada uma no passo 3.
 

@@ -302,7 +302,8 @@ def guess_category(c: dict) -> str:
 
 # ---------------------------------------------------------------- IA (Claude)
 
-LEAD_SIGNALS = ["Venda", "Busca de sócio", "Captação", "IPO", "Reestruturação", "Aquisição"]
+LEAD_SIGNALS = ["Venda", "Entrada de investidor", "Captação", "IPO", "Reestruturação", "Aquisição"]
+LEAD_ALIASES = {"Busca de sócio": "Entrada de investidor"}  # nomes antigos
 
 ANALYSIS_SCHEMA = {
     "type": "object",
@@ -419,7 +420,7 @@ Campos:
 - tags: até 4 palavras-chave curtas.
 - is_deal: true se for uma transação (M&A, IPO, follow-on, emissão relevante, investimento de PE/VC, venda de ativo, JV, reestruturação).
 - deal: se is_deal, preencha tipo (ex.: Aquisição, Fusão, IPO, Follow-on, Venda de ativo, Investimento PE, Rodada VC, Emissão de dívida, Reestruturação), comprador/investidor, alvo, valor (com moeda, ou "não divulgado"), estágio (Rumor, Em negociação, Anunciado, Aprovado pelo Cade, Concluído, Cancelado), setor e assessores (ou "não divulgado"). Se não for deal, preencha todos com string vazia.
-- lead (opcional; inclua só quando houver): sinal de uma transação que ainda não foi fechada e em que um escritório de advocacia de M&A pode se oferecer para assessorar uma das partes. Exemplos: empresa contratou banco ou "avalia venda", fundo procura comprador para ativo, empresa busca sócio ou investidor, plano de IPO ou follow-on, reestruturação ou recuperação judicial, empresa anuncia que quer comprar no setor, negociação exclusiva em andamento. Não use para deal já anunciado, assinado ou concluído, nem para notícias fora do Brasil sem empresa brasileira envolvida. Campos: signal (um de: Venda, Busca de sócio, Captação, IPO, Reestruturação, Aquisição), company (a empresa ou ativo no centro da oportunidade), counterparty (contraparte conhecida, ou "não divulgado"), advisors (bancos, assessores ou escritórios já citados, ou "não divulgado"), why (1 a 2 frases: por que é uma oportunidade e quem faria sentido abordar).
+- lead (opcional; inclua só quando houver): sinal de uma transação que ainda não foi fechada e em que um escritório de advocacia de M&A pode se oferecer para assessorar uma das partes. Exemplos: empresa contratou banco ou "avalia venda", fundo procura comprador para ativo, empresa busca investidor ou novo sócio, plano de IPO ou follow-on, reestruturação ou recuperação judicial, empresa anuncia que quer comprar no setor, negociação exclusiva em andamento. Não use para deal já anunciado, assinado ou concluído, nem para notícias fora do Brasil sem empresa brasileira envolvida. Campos: signal (um de: Venda, Entrada de investidor, Captação, IPO, Reestruturação, Aquisição; use Entrada de investidor quando um fundo ou investidor vai entrar no capital, com aporte ou compra de participação), company (a empresa ou ativo no centro da oportunidade), counterparty (contraparte conhecida, ou "não divulgado"), advisors (bancos, assessores ou escritórios já citados, ou "não divulgado"), why (1 a 2 frases: por que é uma oportunidade e quem faria sentido abordar).
 
 Notícias:
 """
@@ -650,7 +651,7 @@ def update_deals_db(items: list[dict], edition_date: str) -> dict:
 EARLY_STAGES = {"rumor", "em negociacao", "em negociacoes", "negociacao", "em analise", "em estudo", "processo de venda"}
 CLOSED_STAGES = {"anunciado", "aprovado pelo cade", "aprovado", "concluido", "assinado", "fechado"}
 DEAL_TYPE_SIGNAL = {"ipo": "IPO", "follow-on": "Captação", "follow on": "Captação", "emissao": "Captação",
-                    "rodada": "Captação", "investimento": "Busca de sócio", "reestruturacao": "Reestruturação",
+                    "rodada": "Captação", "investimento": "Entrada de investidor", "reestruturacao": "Reestruturação",
                     "recuperacao": "Reestruturação", "venda": "Venda", "desinvestimento": "Venda"}
 
 
@@ -672,7 +673,9 @@ def lead_key(company: str) -> str:
 def lead_from_item(it: dict) -> dict | None:
     """Oportunidade da matéria: o campo lead da análise ou, na falta dele, um deal ainda em estágio inicial."""
     if it.get("lead") and it["lead"].get("company"):
-        return dict(it["lead"])
+        lead = dict(it["lead"])
+        lead["signal"] = LEAD_ALIASES.get(lead.get("signal"), lead.get("signal"))
+        return lead
     d = it.get("deal") if it.get("is_deal") and it.get("ai") else None
     if not d or norm_stage(d.get("stage", "")) not in EARLY_STAGES or not d.get("target") or it.get("region") != "BR":
         return None
@@ -693,6 +696,10 @@ def update_leads_db(items: list[dict], edition_date: str, deals_db: dict) -> dic
                                              - datetime.fromisoformat(path.stem)).days <= 90:
                 _add_leads(leads, load_json(path, {}).get("items", []), path.stem)
     _add_leads(leads, items, edition_date)
+    for e in leads.values():  # renomeia sinais antigos
+        e["signal"] = LEAD_ALIASES.get(e.get("signal"), e.get("signal"))
+        for ev in e.get("events", []):
+            ev["signal"] = LEAD_ALIASES.get(ev.get("signal"), ev.get("signal"))
     # status: virou deal anunciado/concluído ou foi cancelado?
     closed = {}
     for d in (deals_db or {}).get("deals", {}).values():
