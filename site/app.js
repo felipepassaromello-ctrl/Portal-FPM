@@ -8,6 +8,7 @@
     { id: "brief", label: "Briefing" },
     { id: "feed", label: "Todas as notícias" },
     { id: "deals", label: "Deals" },
+    { id: "leads", label: "Leads" },
     { id: "base", label: "Base de deals" },
     { id: "official", label: "Oficiais" },
     { id: "later", label: "Desde as 8h" },
@@ -156,6 +157,110 @@
     renderOfficial();
     renderMacro();
     loadBase();
+    loadLeads();
+  }
+
+  // ---------------------------------------------------------- leads (oportunidades em aberto)
+  const TRACK = { contatar: "A contatar", contato: "Em contato", assessorando: "Assessorando", descartado: "Descartado" };
+  state.track = store.get("leads-track", {});
+
+  async function loadLeads() {
+    try { state.leads = await fetchJSON("data/leads_db.json"); } catch { state.leads = null; }
+    const sel = $("#leads-signal");
+    const signals = [...new Set(Object.values((state.leads || {}).leads || {}).map((l) => l.signal).filter(Boolean))].sort();
+    if (sel.options.length <= 1) sel.innerHTML = `<option value="">Todos os sinais</option>` + signals.map((x) => `<option>${esc(x)}</option>`).join("");
+    renderLeads();
+    renderTabs();
+  }
+
+  const noAdvisor = (l) => !l.advisors || /n[aã]o divulgad|n[aã]o informad/i.test(l.advisors);
+
+  function leadRows() {
+    const all = Object.values((state.leads || {}).leads || {});
+    const ref = (state.digest && state.digest.date) || new Date().toISOString().slice(0, 10);
+    const days = +$("#leads-period").value;
+    const since = new Date(new Date(ref + "T12:00:00").getTime() - days * 864e5).toISOString().slice(0, 10);
+    const q = fold($("#leads-q").value.trim());
+    const sig = $("#leads-signal").value;
+    const tr = $("#leads-track").value;
+    return all
+      .filter((l) => (l.last_seen || "") >= since)
+      .filter((l) => $("#leads-closed").checked || l.status === "Em aberto")
+      .filter((l) => !sig || l.signal === sig)
+      .filter((l) => !$("#leads-noadv").checked || noAdvisor(l))
+      .filter((l) => {
+        const t = (state.track[l.key] || {}).s || "";
+        if (!tr) return t !== "descartado";
+        return tr === "novo" ? !t : t === tr;
+      })
+      .filter((l) => !q || fold(`${l.company} ${l.sector} ${l.signal} ${l.counterparty} ${l.advisors} ${l.why} ${(l.events || []).map((e) => e.headline).join(" ")}`).includes(q))
+      .sort((a, z) => (z.last_seen || "").localeCompare(a.last_seen || "") || z.importance - a.importance);
+  }
+
+  function renderLeads() {
+    const box = $("#leads-list");
+    if (!state.leads) { box.innerHTML = `<div class="empty">A base de leads começa a ser montada na próxima coleta.</div>`; return; }
+    const rows = leadRows();
+    $("#leads-count").textContent = `${rows.length} leads`;
+    box.innerHTML = rows.map((l) => {
+      const t = state.track[l.key] || {};
+      const ev = [...(l.events || [])].reverse().slice(0, 3);
+      return `<article class="card lead ${l.status !== "Em aberto" ? "lead-closed" : ""}" data-lead="${esc(l.key)}">
+        <div class="lead-head">
+          <div>
+            <div class="meta">
+              <span class="cat-tag" style="--cat: var(--c-mna)">${esc(l.signal || "Oportunidade")}</span>
+              ${l.sector ? `<span>${esc(l.sector)}</span>` : ""}
+              <span>desde ${esc(fmtDay(l.first_seen))}${l.last_seen !== l.first_seen ? ` · última notícia ${esc(fmtDay(l.last_seen))}` : ""}</span>
+              ${l.status !== "Em aberto" ? `<span class="multi">${esc(l.status.toLowerCase())}</span>` : ""}
+            </div>
+            <h3>${esc(l.company)}</h3>
+          </div>
+          <select class="ctl lead-status" data-track="${esc(l.key)}" aria-label="Meu status">
+            <option value="">Sem status</option>
+            ${Object.entries(TRACK).map(([k, v]) => `<option value="${k}" ${t.s === k ? "selected" : ""}>${v}</option>`).join("")}
+          </select>
+        </div>
+        ${l.why ? `<p class="card-summary">${esc(l.why)}</p>` : ""}
+        <dl class="lead-facts">
+          <dt>Contraparte</dt><dd>${esc(l.counterparty || "não divulgado")}</dd>
+          <dt>Assessores</dt><dd>${noAdvisor(l) ? `<span class="adv-open">nenhum citado</span>` : esc(l.advisors)}</dd>
+        </dl>
+        <ul class="lead-events">${ev.map((e) => `<li><span class="muted">${esc(fmtDay(e.date))}</span> <a href="${safeUrl(e.link)}" target="_blank" rel="noopener">${esc(e.headline)}</a> <span class="muted">· ${esc(e.source)}</span></li>`).join("")}</ul>
+        <div class="lead-foot">
+          <input class="ctl lead-note" data-note="${esc(l.key)}" placeholder="Anotação (ex.: Carol conhece o CFO; falar com o Itaú BBA)" value="${esc(t.n || "")}">
+          <button class="ctl" data-copylead="${esc(l.key)}" title="Copiar um resumo para mandar por WhatsApp ou e-mail">Copiar resumo</button>
+        </div>
+      </article>`;
+    }).join("") || `<div class="empty">Nenhum lead com esses filtros.</div>`;
+  }
+
+  function saveTrack(key, patch) {
+    state.track[key] = { ...(state.track[key] || {}), ...patch, at: new Date().toISOString().slice(0, 10) };
+    if (!state.track[key].s && !state.track[key].n) delete state.track[key];
+    store.set("leads-track", state.track);
+  }
+
+  function leadText(l) {
+    const last = (l.events || [])[l.events.length - 1] || {};
+    return [`${l.company} (${l.signal}${l.sector ? ` · ${l.sector}` : ""})`, l.why,
+      `Contraparte: ${l.counterparty || "não divulgado"} | Assessores: ${l.advisors || "não divulgado"}`,
+      last.headline ? `${last.headline} (${last.source}, ${fmtDay(last.date)}) ${last.link}` : ""].filter(Boolean).join("\n");
+  }
+
+  function exportLeads() {
+    const cols = ["Empresa", "Sinal", "Setor", "Situação", "Desde", "Última notícia", "Contraparte", "Assessores", "Por que é oportunidade", "Meu status", "Anotação", "Última manchete", "Link"];
+    const cell = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const lines = [cols.map(cell).join(";"), ...leadRows().map((l) => {
+      const t = state.track[l.key] || {}, last = (l.events || [])[l.events.length - 1] || {};
+      return [l.company, l.signal, l.sector, l.status, l.first_seen, l.last_seen, l.counterparty, l.advisors, l.why, TRACK[t.s] || "", t.n || "", last.headline, last.link].map(cell).join(";");
+    })];
+    const blob = new Blob(["\ufeff" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `leads-portal-fpm-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   }
 
   // ---------------------------------------------------------- base histórica de deals
@@ -287,6 +392,7 @@
     const off = d.official || {};
     const counts = { feed: d.items.length, deals: d.deals.length, later: (d.upcoming || []).length,
                      base: Object.keys((state.base || {}).deals || {}).length || null,
+                     leads: state.leads ? leadRows().length : null,
                      official: (off.filings || []).length + (off.cade || []).length };
     const tabs = tabsAvailable();
     if (!tabs.some((t) => t.id === state.tab)) state.tab = "brief";
@@ -514,6 +620,21 @@
   $("#base-q").addEventListener("input", renderBase);
   $("#base-sector").addEventListener("input", renderBase);
   $("#base-export").onclick = exportBase;
+  for (const id of ["leads-q", "leads-signal", "leads-period", "leads-track", "leads-noadv", "leads-closed"])
+    $("#" + id).addEventListener("input", () => { renderLeads(); renderTabs(); });
+  $("#leads-export").onclick = exportLeads;
+  $("#leads-list").addEventListener("change", (e) => {
+    const k = e.target.dataset.track || e.target.dataset.note;
+    if (!k) return;
+    if (e.target.dataset.track !== undefined) { saveTrack(k, { s: e.target.value }); renderLeads(); renderTabs(); }
+    else saveTrack(k, { n: e.target.value.trim() });
+  });
+  $("#leads-list").addEventListener("click", (e) => {
+    const k = e.target.dataset.copylead;
+    const l = k && ((state.leads || {}).leads || {})[k];
+    if (!l) return;
+    navigator.clipboard.writeText(leadText(l)).then(() => toast("Resumo copiado"), () => toast("Não consegui copiar"));
+  });
   $("#minimp").addEventListener("input", (e) => { $("#minimp-val").textContent = e.target.value; renderFeed(); });
   $("#btn-refresh").onclick = () => load().then(() => toast("Atualizado"));
   $("#archive").onchange = (e) => { state.edition = e.target.value || null; state.open.clear(); load(); };
