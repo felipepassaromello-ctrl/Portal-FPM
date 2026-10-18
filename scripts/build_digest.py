@@ -40,6 +40,7 @@ ARCHIVE = DATA / "archive"
 CACHE_FILE = DATA / "analysis_cache.json"
 ROUTINE_FILE = DATA / "claude_analysis.json"  # escrito pela rotina do Claude Code
 DEALS_DB = DATA / "deals_db.json"  # base histórica de deals, acumulada edição a edição
+LEADS_DB = DATA / "leads_db.json"  # oportunidades em aberto (rumores, processos de venda, busca de sócio...)
 
 BRT = timezone(timedelta(hours=-3))
 UA = "Mozilla/5.0 (compatible; PortalN1/1.0; +https://github.com/)"
@@ -301,6 +302,8 @@ def guess_category(c: dict) -> str:
 
 # ---------------------------------------------------------------- IA (Claude)
 
+LEAD_SIGNALS = ["Venda", "Busca de sócio", "Captação", "IPO", "Reestruturação", "Aquisição"]
+
 ANALYSIS_SCHEMA = {
     "type": "object",
     "properties": {
@@ -334,6 +337,18 @@ ANALYSIS_SCHEMA = {
                             "advisors": {"type": "string"},
                         },
                         "required": ["type", "buyer", "target", "value", "stage", "sector", "advisors"],
+                        "additionalProperties": False,
+                    },
+                    "lead": {  # opcional: sinal de transação que ainda pode ser disputada por assessores
+                        "type": "object",
+                        "properties": {
+                            "signal": {"type": "string", "enum": LEAD_SIGNALS},
+                            "company": {"type": "string"},
+                            "counterparty": {"type": "string"},
+                            "advisors": {"type": "string"},
+                            "why": {"type": "string"},
+                        },
+                        "required": ["signal", "company", "counterparty", "advisors", "why"],
                         "additionalProperties": False,
                     },
                 },
@@ -404,6 +419,7 @@ Campos:
 - tags: até 4 palavras-chave curtas.
 - is_deal: true se for uma transação (M&A, IPO, follow-on, emissão relevante, investimento de PE/VC, venda de ativo, JV, reestruturação).
 - deal: se is_deal, preencha tipo (ex.: Aquisição, Fusão, IPO, Follow-on, Venda de ativo, Investimento PE, Rodada VC, Emissão de dívida, Reestruturação), comprador/investidor, alvo, valor (com moeda, ou "não divulgado"), estágio (Rumor, Em negociação, Anunciado, Aprovado pelo Cade, Concluído, Cancelado), setor e assessores (ou "não divulgado"). Se não for deal, preencha todos com string vazia.
+- lead (opcional; inclua só quando houver): sinal de uma transação que ainda não foi fechada e em que um escritório de advocacia de M&A pode se oferecer para assessorar uma das partes. Exemplos: empresa contratou banco ou "avalia venda", fundo procura comprador para ativo, empresa busca sócio ou investidor, plano de IPO ou follow-on, reestruturação ou recuperação judicial, empresa anuncia que quer comprar no setor, negociação exclusiva em andamento. Não use para deal já anunciado, assinado ou concluído, nem para notícias fora do Brasil sem empresa brasileira envolvida. Campos: signal (um de: Venda, Busca de sócio, Captação, IPO, Reestruturação, Aquisição), company (a empresa ou ativo no centro da oportunidade), counterparty (contraparte conhecida, ou "não divulgado"), advisors (bancos, assessores ou escritórios já citados, ou "não divulgado"), why (1 a 2 frases: por que é uma oportunidade e quem faria sentido abordar).
 
 Notícias:
 """
@@ -631,6 +647,95 @@ def update_deals_db(items: list[dict], edition_date: str) -> dict:
     return db
 
 
+EARLY_STAGES = {"rumor", "em negociacao", "em negociacoes", "negociacao", "em analise", "em estudo", "processo de venda"}
+CLOSED_STAGES = {"anunciado", "aprovado pelo cade", "aprovado", "concluido", "assinado", "fechado"}
+DEAL_TYPE_SIGNAL = {"ipo": "IPO", "follow-on": "Captação", "follow on": "Captação", "emissao": "Captação",
+                    "rodada": "Captação", "investimento": "Busca de sócio", "reestruturacao": "Reestruturação",
+                    "recuperacao": "Reestruturação", "venda": "Venda", "desinvestimento": "Venda"}
+
+
+UNKNOWN = ("nao divulgad", "nao identificad", "nao aplica", "nao informad", "empresas ")
+
+
+def is_unknown(text: str) -> bool:
+    t = fold(text or "").strip()
+    return not t or any(u in t for u in UNKNOWN)
+
+
+def lead_key(company: str) -> str:
+    if is_unknown(company):
+        return ""
+    company = re.sub(r"\(.*?\)", "", company or "")
+    return re.sub(r"[^a-z0-9]+", "", fold(company))[:40]
+
+
+def lead_from_item(it: dict) -> dict | None:
+    """Oportunidade da matéria: o campo lead da análise ou, na falta dele, um deal ainda em estágio inicial."""
+    if it.get("lead") and it["lead"].get("company"):
+        return dict(it["lead"])
+    d = it.get("deal") if it.get("is_deal") and it.get("ai") else None
+    if not d or norm_stage(d.get("stage", "")) not in EARLY_STAGES or not d.get("target") or it.get("region") != "BR":
+        return None
+    t = fold(d.get("type", ""))
+    signal = next((v for k, v in DEAL_TYPE_SIGNAL.items() if k in t), "Venda")
+    return {"signal": signal, "company": d["target"], "counterparty": d.get("buyer") or "não divulgado",
+            "advisors": d.get("advisors") or "não divulgado", "why": it.get("interpretation", "")}
+
+
+def update_leads_db(items: list[dict], edition_date: str, deals_db: dict) -> dict:
+    """Acumula as oportunidades por empresa, com a linha do tempo das matérias, e marca as que viraram deal."""
+    db = load_json(LEADS_DB, {"leads": {}})
+    leads = db.setdefault("leads", {})
+    if not leads and not db.get("backfilled"):
+        db["backfilled"] = True  # primeira vez: carrega os sinais das edições arquivadas dos últimos 90 dias
+        for path in sorted(ARCHIVE.glob("????-??-??.json")):
+            if path.stem < edition_date and (datetime.fromisoformat(edition_date)
+                                             - datetime.fromisoformat(path.stem)).days <= 90:
+                _add_leads(leads, load_json(path, {}).get("items", []), path.stem)
+    _add_leads(leads, items, edition_date)
+    # status: virou deal anunciado/concluído ou foi cancelado?
+    closed = {}
+    for d in (deals_db or {}).get("deals", {}).values():
+        st = norm_stage(d.get("stage", ""))
+        if st in CLOSED_STAGES or st == "cancelado":
+            closed[lead_key(d.get("target", ""))] = ("Cancelado" if st == "cancelado" else "Virou deal", d.get("last_seen", ""))
+    for k, e in leads.items():
+        st = closed.get(k)
+        e["status"] = st[0] if st and st[1] >= e.get("first_seen", "") else "Em aberto"
+    if len(leads) > 800:
+        keep = sorted(leads.values(), key=lambda x: x.get("last_seen", ""), reverse=True)[:800]
+        db["leads"] = {x["key"]: x for x in keep}
+    db["updated_at"] = datetime.now(BRT).isoformat()
+    write_json(LEADS_DB, db)
+    return db
+
+
+def _add_leads(leads: dict, items: list[dict], edition_date: str) -> None:
+    for it in sorted(items, key=lambda i: -i.get("importance", 0)):
+        lead = lead_from_item(it)
+        k = lead_key(lead["company"]) if lead else ""
+        if not k:
+            continue
+        e = leads.setdefault(k, {"key": k, "company": lead["company"], "first_seen": edition_date,
+                                 "events": [], "ids": [], "importance": 0})
+        if it["id"] in e["ids"]:
+            continue
+        e["ids"] = (e["ids"] + [it["id"]])[-30:]
+        e["signal"] = lead["signal"]
+        for f in ("counterparty", "advisors"):
+            if not is_unknown(lead.get(f)):
+                e[f] = lead[f]
+            e.setdefault(f, "não divulgado")
+        if lead.get("why"):
+            e["why"] = lead["why"]
+        if (it.get("deal") or {}).get("sector"):
+            e["sector"] = it["deal"]["sector"]
+        e["importance"] = max(e["importance"], it.get("importance", 0))
+        e["last_seen"] = max(e.get("last_seen", edition_date), edition_date)
+        e["events"] = (e["events"] + [{"date": edition_date, "headline": it["headline"], "link": it["link"],
+                                       "source": it["outlets"][0]["source"], "signal": lead["signal"]}])[-12:]
+
+
 def merge_item(c: dict, a: dict | None, base_score: float) -> dict:
     out = {
         "id": c["id"],
@@ -648,6 +753,8 @@ def merge_item(c: dict, a: dict | None, base_score: float) -> dict:
                                       "interpretation", "impact", "sentiment", "entities", "tags", "is_deal")})
         out["importance"] = max(1, min(10, int(out["importance"])))
         out["deal"] = a["deal"] if a.get("is_deal") else None
+        if a.get("lead"):
+            out["lead"] = a["lead"]
         out["ai"] = True
     else:
         imp = max(1, min(10, round(base_score / 1.6)))
@@ -727,6 +834,8 @@ def main() -> int:
     log(f"Deals: {len(unique_deals)} únicos; {sum(1 for i in items if i.get('repeat'))} já noticiados antes.")
     db = update_deals_db(items, today)
     log(f"Base de deals: {len(db['deals'])} registros.")
+    ldb = update_leads_db(items, today, db)
+    log(f"Leads: {sum(1 for x in ldb['leads'].values() if x['status'] == 'Em aberto')} em aberto, {len(ldb['leads'])} no total.")
 
     previous = load_json(DATA / "digest.json", {})
 
