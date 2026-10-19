@@ -23,7 +23,7 @@
    "why": "Impasse sugere negociação difícil, com risco de prorrogação ou de um evento de crédito.",
    "sector": "Petroquímico",
    "last_seen": "2026-10-08",
-   "status": "Em aberto"
+   "status": "Virou deal"
   },
   "unidadedeniqueldaangloamericannobrasil": {
    "key": "unidadedeniqueldaangloamericannobrasil",
@@ -61,18 +61,34 @@
      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbkhzZWcxODlCaHNDMzh0N05odnRaQ3Z5VlNGX2NHa0dZZmtGMVNhdTZaSHEzamVxUjJCX2Ntc01Dek40Q2hRWVR2ekdGSVlWUmlGLWdpb3NNUVhPcXU2bGZZb2piWk1GWk5zLTc4Q3NFamkxZWwxbDEzQS1XWUVrY1hrN20yekZ2N293QktsQjFZUzBCZndRWHJ6T0VIUkIxak9XSlVCZUNIZnVpM3Y2LVBqNGtST0RuYjhn?oc=5",
      "source": "UOL Economia",
      "signal": "Captação"
+    },
+    {
+     "date": "2026-10-19",
+     "headline": "Presidente da SpaceX segue Tesla no X e alimenta rumor de fusão",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVmMzNWpNejlXeU9HZUFmVFFobDA5MC1ud3FBVDBxc2NjWnJzYURLSFFYbW5VcWRkU0xmUmNOMnpfakdHeXBtRzNVSHhLWERvV2R4MGpDTWNKUmY2SHBobTJKVFpCRE1ZVFNsbW1BVlNMWDlqRHpSLTZWZXRzMzFfNUladlpkZzBFdTJZZzZ4M1d3TEo0WERrMUV1STVaV3V5YjJnM1NWdlJ4TE10MGVrWm1MVzlRdw?oc=5",
+     "source": "TecStudio",
+     "signal": "Venda"
+    },
+    {
+     "date": "2026-10-19",
+     "headline": "Executivos de Tesla e SpaceX se seguem no X e especulação de fusão reacende",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcXhkc3hyMkF6c0Z2YnJySmhjWEl2WEg3eE0wcThTNDYxZlhiVldqWGE3VWh0YzEtd3poSmpmd2g4aGNiVXRBbFYxTkN0ejlGamhWbS1CTEROQ3Nqa3NONURma1V3T2Zta3otUzg5Y1JYQnRESElBUlZHeEQ3WjNrTU1Gek9tcy1KLTFDRGxsNk5FNER0eHdYS2hSaWlzN0I4aDNxdGtIdUs1eUg0Zk5YSA?oc=5",
+     "source": "TecStudio",
+     "signal": "Venda"
     }
    ],
    "ids": [
-    "718099dd263c"
+    "718099dd263c",
+    "9462a333dd7b",
+    "c03da3f064af"
    ],
    "importance": 6,
-   "signal": "Captação",
-   "counterparty": "não divulgado",
+   "signal": "Venda",
+   "counterparty": "Tesla",
    "advisors": "não divulgado",
-   "why": "Mostra a corrida por capacidade de computação financiada com dívida.",
-   "sector": "Aeroespacial / IA",
-   "last_seen": "2026-10-08",
+   "why": "Sinal fraco, sem base factual divulgada.",
+   "sector": "Tecnologia / espaço",
+   "last_seen": "2026-10-19",
    "status": "Em aberto"
   },
   "minervafoods": {
@@ -397,8 +413,81 @@
    "sector": "Fintech/pagamentos",
    "last_seen": "2026-10-16",
    "status": "Em aberto"
+  },
+  "aeroportodebrasilia": {
+   "key": "aeroportodebrasilia",
+   "company": "Aeroporto de Brasília",
+   "first_seen": "2026-10-19",
+   "events": [
+    {
+     "date": "2026-10-19",
+     "headline": "Aeroporto de Brasília atrai interesse de estrangeiros, mas mercado aponta desafios",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaFk1eXpyUkpCY1RlQU1aOWJUajZadUMzam5KdWFoclJ3b2ZvUWdmLTNEX1RySnloVU1kYnRodHN0X3RuREVYR0dFVV9WcjA1U1NmMFRFbVlFTFpvOE12T1pzdVRRRUVsaXlVMDVhOUlGZmE1VjQzcHJ0MjZpQVh2R2d6UmVieGVSMDQxY1JTbW4zbHlVQ2lJRVQyay03SENreFNIMWFmV1Nnb1hRc1ozMWJoekJ2U2hFa1BoQ2FxcVE2OGk0MVNTRmdHZHFENFkwZGlvQ3RB?oc=5",
+     "source": "Valor Econômico",
+     "signal": "Venda"
+    }
+   ],
+   "ids": [
+    "13642441ec98"
+   ],
+   "importance": 7,
+   "signal": "Venda",
+   "counterparty": "investidores estrangeiros interessados",
+   "advisors": "não divulgado",
+   "why": "O Valor relata interesse de estrangeiros no ativo, o que sugere uma possível venda de participação ou troca de controle. Fazem sentido a abordagem à concessionária e aos interessados, mas o formato da operação não foi divulgado.",
+   "last_seen": "2026-10-19",
+   "status": "Em aberto"
+  },
+  "unifique": {
+   "key": "unifique",
+   "company": "Unifique (FIQE3)",
+   "first_seen": "2026-10-19",
+   "events": [
+    {
+     "date": "2026-10-19",
+     "headline": "Unifique (FIQE3) suspende OPA após pedido de nova avaliação",
+     "link": "https://www.infomoney.com.br/mercados/unifique-fiqe3-suspende-opa-apos-pedido-de-nova-avaliacao-das-acoes/",
+     "source": "InfoMoney",
+     "signal": "Aquisição"
+    }
+   ],
+   "ids": [
+    "ebc782228f13"
+   ],
+   "importance": 7,
+   "signal": "Aquisição",
+   "counterparty": "não divulgado",
+   "advisors": "não divulgado",
+   "why": "OPA suspensa e dependente de assembleia especial para nova avaliação. Há espaço para assessoria jurídica a ofertante, à companhia ou a minoritários com mais de 10% das ações em circulação.",
+   "sector": "Telecomunicações",
+   "last_seen": "2026-10-19",
+   "status": "Em aberto"
+  },
+  "projetodeniqueldacentaurusus380milhoes": {
+   "key": "projetodeniqueldacentaurusus380milhoes",
+   "company": "Projeto de níquel da Centaurus (Brasil), US$ 380 milhões",
+   "first_seen": "2026-10-19",
+   "events": [
+    {
+     "date": "2026-10-19",
+     "headline": "Glencore reforça apoio a projeto de níquel de US$ 380 milhões da Centaurus no Brasil",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSG5feWFrZU55R05hNXhRTFljRFJIWC1TaW0taUJoQ2NvR2VvTWhOelRJc1pwX251ZzRISTR6NmtJRTVxZjNWOVJqZm9LQjFpZ1hfdV90anJKbV93TDNHczZ1ZjdhNHo2dTBTTFBEaEJpTEFJMnQ4SnBOclFpMFFxU0ktNWdVRjNteUZZWWxEa3h4WFZ1NVJUWVJ0THkxUmdEaHJpNXZRNC1FUXZ5S3A4MEc0cEQyMWYyQVl6UQ?oc=5",
+     "source": "BNamericas",
+     "signal": "Captação"
+    }
+   ],
+   "ids": [
+    "dfd5b07fec38"
+   ],
+   "importance": 6,
+   "signal": "Captação",
+   "counterparty": "Glencore",
+   "advisors": "não divulgado",
+   "why": "O projeto de US$ 380 milhões conta com apoio reforçado da Glencore, e a estrutura de financiamento não foi divulgada. Vale abordar a Centaurus e a Glencore para eventual captação, offtake ou entrada de sócio.",
+   "last_seen": "2026-10-19",
+   "status": "Em aberto"
   }
  },
  "backfilled": true,
- "updated_at": "2026-10-19T08:17:28.800915-03:00"
+ "updated_at": "2026-10-19T08:22:47.447464-03:00"
 }
