@@ -670,12 +670,17 @@ def lead_key(company: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", fold(company))[:40]
 
 
-def lead_from_item(it: dict) -> dict | None:
-    """Oportunidade da matéria: o campo lead da análise ou, na falta dele, um deal ainda em estágio inicial."""
+LEAD_FIELD_SINCE = "2026-10-19"  # a partir desta edição a análise marca os leads; antes, eles vêm dos deals
+
+
+def lead_from_item(it: dict, edition_date: str = "") -> dict | None:
+    """Oportunidade da matéria: o campo lead da análise ou, em edições antigas, um deal ainda em estágio inicial."""
     if it.get("lead") and it["lead"].get("company"):
         lead = dict(it["lead"])
         lead["signal"] = LEAD_ALIASES.get(lead.get("signal"), lead.get("signal"))
         return lead
+    if edition_date >= LEAD_FIELD_SINCE:
+        return None
     d = it.get("deal") if it.get("is_deal") and it.get("ai") else None
     if not d or norm_stage(d.get("stage", "")) not in EARLY_STAGES or not d.get("target") or it.get("region") != "BR":
         return None
@@ -719,10 +724,12 @@ def update_leads_db(items: list[dict], edition_date: str, deals_db: dict) -> dic
 
 def _add_leads(leads: dict, items: list[dict], edition_date: str) -> None:
     for it in sorted(items, key=lambda i: -i.get("importance", 0)):
-        lead = lead_from_item(it)
+        lead = lead_from_item(it, edition_date)
         k = lead_key(lead["company"]) if lead else ""
         if not k:
             continue
+        # mesma empresa com nome mais curto ou mais longo ("Ri Happy" x "Ri Happy Brinquedos")
+        k = next((x for x in leads if min(len(x), len(k)) >= 5 and (x.startswith(k) or k.startswith(x))), k)
         e = leads.setdefault(k, {"key": k, "company": lead["company"], "first_seen": edition_date,
                                  "events": [], "ids": [], "importance": 0})
         if it["id"] in e["ids"]:
