@@ -3931,18 +3931,19 @@
      "source": "PR Newswire (M&A)"
     }
    ],
-   "mentions": 1,
+   "mentions": 2,
    "ids": [
-    "59197e3600c7"
+    "59197e3600c7",
+    "0b88cb4067b6"
    ],
    "type": "Aquisição",
    "buyer": "Cardinal Infrastructure Group",
    "target": "Hughes Brothers Construction",
-   "sector": "Construção",
+   "sector": "Construção / infraestrutura",
    "value": "não divulgado",
    "advisors": "não divulgado",
    "importance": 2,
-   "last_seen": "2026-10-13",
+   "last_seen": "2026-10-20",
    "headline": "Cardinal Infrastructure compra a Hughes Brothers Construction",
    "link": "https://www.prnewswire.com/news-releases/cardinal-infrastructure-group-cdnl-announces-acquisition-of-hughes-brothers-construction-inc-302906370.html",
    "stage": "Anunciado"
@@ -4942,7 +4943,7 @@
      "source": "InfoMoney"
     }
    ],
-   "mentions": 8,
+   "mentions": 9,
    "ids": [
     "d8a0d5c59389",
     "14af8bce93ed",
@@ -4951,15 +4952,16 @@
     "cd245ce50230",
     "6ab3df40bced",
     "04cf3d9d7b01",
-    "57159cb42417"
+    "57159cb42417",
+    "a33c5c30abb0"
    ],
    "type": "IPO",
    "target": "Anthropic",
-   "sector": "Tecnologia / IA",
+   "sector": "Inteligência artificial",
    "value": "não divulgado",
    "advisors": "não divulgado",
    "importance": 7,
-   "last_seen": "2026-10-15",
+   "last_seen": "2026-10-20",
    "headline": "Anthropic atinge receita de US$ 16,8 bi antes de IPO, mas desaceleração frustra mercado",
    "link": "https://www.infomoney.com.br/mercados/anthropic-bate-receita-de-us-168-bi-antes-de-ipo-mas-desaceleracao-frustra-mercado/",
    "stage": "Rumor"
@@ -6541,18 +6543,20 @@
      "source": "just-food.com"
     }
    ],
-   "mentions": 1,
+   "mentions": 3,
    "ids": [
-    "eb1ecf710857"
+    "eb1ecf710857",
+    "158710d75a33",
+    "aa3c734c0b89"
    ],
    "type": "Aquisição",
    "buyer": "M. Dias Branco",
-   "target": "Grespan (controle majoritário)",
-   "sector": "Alimentos",
+   "target": "Grespan (80%)",
+   "sector": "Alimentos / panificação congelada",
    "value": "não divulgado",
    "advisors": "não divulgado",
-   "importance": 6,
-   "last_seen": "2026-10-19",
+   "importance": 7,
+   "last_seen": "2026-10-20",
    "headline": "M. Dias Branco compra controle do grupo de panificação Grespan",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSkhwcHNWajQ5N0l4QkVMTnEwOGVwUWozWE8tcUpVS3ZMQXlkdWZZX3lLZjdKZjRxUnl2V3dhcWxFWGVpck9WWXliLUw5X2t5MWtmTHJSN2NocEI5eDE3alEwV2hiX3JRMlA5VzcwaXI4T1A5dVdGOTlHMVRIcl83Z05fVlVTQ0ZEU2VBTHZSd01WT3A1VWFSdg?oc=5",
    "stage": "Anunciado"
@@ -6780,8 +6784,1221 @@
    "headline": "Diretor da Stake na Dinamarca sai após aquisição da VinderCasino",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUlF5dnAxMU9NNkNUUlhPN3N3SmNHb3dGdTUyeXppb3pRV3hma1VhLXUxNHZCZDZqWW5BNWRfSnp6Z0g5UnVfSHgtbGVQcUNaNFpKWlpZRGVaQ0d1aVNXM05keGlyNzlOUmhFd2R5Qk53VF9lNFVkUmNlcGRPZERxbFZxblo2aVBPUkJYYXYwUVRSYTFyQ3hGYXRSenRzUQ?oc=5",
    "stage": "Concluído"
+  },
+  "credoresrihappy": {
+   "key": "credoresrihappy",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Ri Happy pede recuperação extrajudicial com dívida de R$ 827,4 milhões",
+     "link": "https://neofeed.com.br/negocios/com-divida-de-r-8274-milhoes-ri-happy-entra-com-pedido-de-recuperacao-extrajudicial/",
+     "source": "NeoFeed"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "5e315eccf639"
+   ],
+   "type": "Reestruturação",
+   "buyer": "Credores",
+   "target": "Ri Happy",
+   "sector": "Varejo de brinquedos",
+   "value": "R$ 827,4 milhões (valor da causa)",
+   "advisors": "não divulgado",
+   "importance": 8,
+   "last_seen": "2026-10-20",
+   "headline": "Ri Happy pede recuperação extrajudicial com dívida de R$ 827,4 milhões",
+   "link": "https://neofeed.com.br/negocios/com-divida-de-r-8274-milhoes-ri-happy-entra-com-pedido-de-recuperacao-extrajudicial/",
+   "stage": "Anunciado"
+  },
+  "rihappybrinquedos": {
+   "key": "rihappybrinquedos",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "Ri Happy pede recuperação extrajudicial para renegociar R$ 827,4 mi em dívidas",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/10/ri-happy-pede-recuperacao-extrajudicial-para-renegociar-r-827-milhoes-em-dividas.shtml",
+     "source": "Folha"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "3cf1af4597d0"
+   ],
+   "type": "Reestruturação",
+   "target": "Ri Happy Brinquedos",
+   "sector": "Varejo",
+   "value": "R$ 827,4 milhões em dívidas",
+   "advisors": "não divulgado",
+   "importance": 8,
+   "last_seen": "2026-10-20",
+   "headline": "Ri Happy pede recuperação extrajudicial para renegociar R$ 827,4 mi em dívidas",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/10/ri-happy-pede-recuperacao-extrajudicial-para-renegociar-r-827-milhoes-em-dividas.shtml",
+   "stage": "Em negociação"
+  },
+  "americanas": {
+   "key": "americanas",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Concluído",
+     "headline": "Americanas sai da recuperação judicial quase quatro anos após a fraude",
+     "link": "https://neofeed.com.br/negocios/quase-quatro-anos-apos-fraude-bilionaria-americanas-sai-da-recuperacao-judicial/",
+     "source": "NeoFeed"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "34fc3bad1617"
+   ],
+   "type": "Reestruturação",
+   "target": "Americanas",
+   "sector": "Varejo",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 7,
+   "last_seen": "2026-10-20",
+   "headline": "Americanas sai da recuperação judicial quase quatro anos após a fraude",
+   "link": "https://neofeed.com.br/negocios/quase-quatro-anos-apos-fraude-bilionaria-americanas-sai-da-recuperacao-judicial/",
+   "stage": "Concluído"
+  },
+  "naodivulgadocsncimentos": {
+   "key": "naodivulgadocsncimentos",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "Com venda que se arrasta, oferta de ações pode ser opção para a CSN Cimentos",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMnd0SmtIMVNUaVByUkhkOWVVUDdwZXBGbGNocHF6dUE5Z0FrakluQlg5TlVHbFFNLVRBZXFjVklNUWlUVldHbC1MX1IxQUVnOC00b2NqNnpLUlFFVlJ1U2RCWWgtLW9RaHlzd2VuV1lLYXV6ZTM1a29idEtyWGMySWw4Qk42bk11SmQ0enlUSlRGb2ZYbU1VU1ZIcXlLNTE1THZNZy1xRC0zQ01mcldwUC0waUFKaklxdG9QdDRMM0JCM0RQd0ln0gHMAUFVX3lxTFA5R0RRY0s3Z3JodzRyUW5UcHRMM2dPWk92QkJNMVNlQi1VOTc2b216NWI1M0VUUmRjellJY2VXS1RfWE0yMUVsbEJDR2hpR3Jra21GVDZHeDdxUUNpSGF6Rjh4bGRLdzJJaGlLWFR5cUhReUUtMmZxMTAwaXVjaTJ6cnZFNU1DQ2dnUmZHdHpSdFN5T1ViV3I1Z1JXbExtNXRuNVJLVjl4MEhPLU1NZkd3M0J6a1JBWTdaOWE5Y3hMUUpyWWxmODVxaDhmWQ?oc=5",
+     "source": "Estadão"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "4fec931b4fbb"
+   ],
+   "type": "Venda de ativo",
+   "buyer": "não divulgado",
+   "target": "CSN Cimentos",
+   "sector": "Cimento",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 7,
+   "last_seen": "2026-10-20",
+   "headline": "Com venda que se arrasta, oferta de ações pode ser opção para a CSN Cimentos",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMnd0SmtIMVNUaVByUkhkOWVVUDdwZXBGbGNocHF6dUE5Z0FrakluQlg5TlVHbFFNLVRBZXFjVklNUWlUVldHbC1MX1IxQUVnOC00b2NqNnpLUlFFVlJ1U2RCWWgtLW9RaHlzd2VuV1lLYXV6ZTM1a29idEtyWGMySWw4Qk42bk11SmQ0enlUSlRGb2ZYbU1VU1ZIcXlLNTE1THZNZy1xRC0zQ01mcldwUC0waUFKaklxdG9QdDRMM0JCM0RQd0ln0gHMAUFVX3lxTFA5R0RRY0s3Z3JodzRyUW5UcHRMM2dPWk92QkJNMVNlQi1VOTc2b216NWI1M0VUUmRjellJY2VXS1RfWE0yMUVsbEJDR2hpR3Jra21GVDZHeDdxUUNpSGF6Rjh4bGRLdzJJaGlLWFR5cUhReUUtMmZxMTAwaXVjaTJ6cnZFNU1DQ2dnUmZHdHpSdFN5T1ViV3I1Z1JXbExtNXRuNVJLVjl4MEhPLU1NZkd3M0J6a1JBWTdaOWE5Y3hMUUpyWWxmODVxaDhmWQ?oc=5",
+   "stage": "Em negociação"
+  },
+  "plus500guru": {
+   "key": "plus500guru",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Plus500 anuncia aquisição da Guru, corretora brasileira",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQmNBVENpallINGdvTnZlTzBXbExLWTdZRDNsZ3diRXlZNUhFU3ZOV0ExQ3gtc3ItTDh4dzJNTnh6dkVBNjFWWFdVWk9ZUldYcE9OaGMwWGxYVVJGMDZvUWdMTzU5bGNocm1qT0NiVldfdV9TdkhzczE1NEtQem1aTDE4ek12UDNYWTViZFRMbGFVZm84Wng3T2ZCR2Q0XzJvYUkzczQwaVJwdFg3UVBoaWRldU41ZlprTFp6QzRZV0dFSXBURVJ4cWtyUlktNGJGVDhF?oc=5",
+     "source": "TradingView"
+    }
+   ],
+   "mentions": 3,
+   "ids": [
+    "6c4126099570",
+    "196d21bfb5d3",
+    "373a55623af0"
+   ],
+   "type": "Aquisição",
+   "buyer": "Plus500",
+   "target": "Guru",
+   "sector": "Corretoras",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 6,
+   "last_seen": "2026-10-20",
+   "headline": "Plus500 anuncia aquisição da Guru, corretora brasileira",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQmNBVENpallINGdvTnZlTzBXbExLWTdZRDNsZ3diRXlZNUhFU3ZOV0ExQ3gtc3ItTDh4dzJNTnh6dkVBNjFWWFdVWk9ZUldYcE9OaGMwWGxYVVJGMDZvUWdMTzU5bGNocm1qT0NiVldfdV9TdkhzczE1NEtQem1aTDE4ek12UDNYWTViZFRMbGFVZm84Wng3T2ZCR2Q0XzJvYUkzczQwaVJwdFg3UVBoaWRldU41ZlprTFp6QzRZV0dFSXBURVJ4cWtyUlktNGJGVDhF?oc=5",
+   "stage": "Anunciado"
+  },
+  "pancomarcanutrella": {
+   "key": "pancomarcanutrella",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Aprovado pelo Cade",
+     "headline": "Cade autoriza compra da marca Nutrella pela Panco",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUDZVN1FlVnQxN1o0YWZFRnNyc0YtbnV6UWRXQllGYVpDWXVnRWo5VXdpWWNCVWJBY1RVUjJkZHNUb3Y2M0pDYjBWXzh1Q05VZkpRQjFSbUxIM2xkOVRENC1ybUlPQ0c2R3JlOTBtaURLaTdsZ19aRlNXenpiUTR0N1RoVkdCai1tSXFYbEJqVlFCZXZvN1NuWEpnQjlKaDl2TXc?oc=5",
+     "source": "SuperVarejo"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "97cd017d7398"
+   ],
+   "type": "Aquisição",
+   "buyer": "Panco",
+   "target": "Marca Nutrella",
+   "sector": "Alimentos / panificação",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 6,
+   "last_seen": "2026-10-20",
+   "headline": "Cade autoriza compra da marca Nutrella pela Panco",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUDZVN1FlVnQxN1o0YWZFRnNyc0YtbnV6UWRXQllGYVpDWXVnRWo5VXdpWWNCVWJBY1RVUjJkZHNUb3Y2M0pDYjBWXzh1Q05VZkpRQjFSbUxIM2xkOVRENC1ybUlPQ0c2R3JlOTBtaURLaTdsZ19aRlNXenpiUTR0N1RoVkdCai1tSXFYbEJqVlFCZXZvN1NuWEpnQjlKaDl2TXc?oc=5",
+   "stage": "Aprovado pelo Cade"
+  },
+  "rihappy": {
+   "key": "rihappy",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "RiHappy, rede de brinquedos, pede recuperação judicial",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTkgzZ0xvUmlTU1VueVdWeU90U1U1MzFpb3RoWEFqZkdhRkNTQTVnMFM4RUdmU1VIMVN4YlZVNUFGNmVXRWZNSFZSSlVib2hRcjZ2RG92VThmVnJCdGRjbTlXMDdmT2dFd1hBbnhQX1l0RXNjSldfaTJBM04tNXgzU0FYRjFGaXQxeEM3c2x2OU9fc3hRdmNDSmhwTjBTOHFrRTBmaEp6REF2OGR6?oc=5",
+     "source": "Terra Brasil Notícias"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "95b2a0acb458"
+   ],
+   "type": "Reestruturação",
+   "target": "RiHappy",
+   "sector": "Varejo de brinquedos",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 6,
+   "last_seen": "2026-10-20",
+   "headline": "RiHappy, rede de brinquedos, pede recuperação judicial",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTkgzZ0xvUmlTU1VueVdWeU90U1U1MzFpb3RoWEFqZkdhRkNTQTVnMFM4RUdmU1VIMVN4YlZVNUFGNmVXRWZNSFZSSlVib2hRcjZ2RG92VThmVnJCdGRjbTlXMDdmT2dFd1hBbnhQX1l0RXNjSldfaTJBM04tNXgzU0FYRjFGaXQxeEM3c2x2OU9fc3hRdmNDSmhwTjBTOHFrRTBmaEp6REF2OGR6?oc=5",
+   "stage": "Anunciado"
+  },
+  "aggrekoseistermicasdabbf": {
+   "key": "aggrekoseistermicasdabbf",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Aggreko compra seis térmicas da BBF em regiões isoladas do Amazonas",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWnpKaEZwVnVPbWg2VHAxQnJKRGpFakJJdXhDcDlBSXo1dDRQN0d1S0NrYTRrNnQxQ3NYY1Y2VEplbE8tYlpGbHUtbVB2TFMydzdVaTlGckVhdEh1aGpZWTVqS0pZVkpWNHhBaXFLR19lei1LOFZTdXBITVEtaGVXM3VJRWQ5MXhsbzV0MmV1djdYVE16VG8yMUxOT3BCd24wQ2FzR2I0cFNZUQ?oc=5",
+     "source": "Agência eixos"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "6f4479575335"
+   ],
+   "type": "Venda de ativo",
+   "buyer": "Aggreko",
+   "target": "Seis térmicas da BBF (Amazonas)",
+   "sector": "Energia",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 6,
+   "last_seen": "2026-10-20",
+   "headline": "Aggreko compra seis térmicas da BBF em regiões isoladas do Amazonas",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWnpKaEZwVnVPbWg2VHAxQnJKRGpFakJJdXhDcDlBSXo1dDRQN0d1S0NrYTRrNnQxQ3NYY1Y2VEplbE8tYlpGbHUtbVB2TFMydzdVaTlGckVhdEh1aGpZWTVqS0pZVkpWNHhBaXFLR19lei1LOFZTdXBITVEtaGVXM3VJRWQ5MXhsbzV0MmV1djdYVE16VG8yMUxOT3BCd24wQ2FzR2I0cFNZUQ?oc=5",
+   "stage": "Anunciado"
+  },
+  "bracodobancomundialalice": {
+   "key": "bracodobancomundialalice",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Alice levanta US$ 40 milhões em série D com braço do Banco Mundial",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYlhzV053TllSZGE5YVdocHoySlpSTHJtNUtSUFpHbGx1NlN5cFFIdXpvNlFsY09RQ0hSeUJLSk1sa0dOZk5JODVJemVHY05NaU1LMTJMcElrNVBDTlp6QmpyOE9PRTd1YlY1bXpUb3VrUEs0dzNVZmNwM0p5eXNxS3J4RDBIYWI1V0c0dXNycW9LYjc5TWN5aVN4WU14SDU0cngzeXdXZWJZX184LXR0ZTE5WXRzWHl0NFVuddIBywFBVV95cUxONHg4M1ByTmF0ZEJwdXhBVndyZUlWdHVxLVpvR0w1WFFUZFpzVkZDZ0NDVGZQY3NTaHZPbWdKd3FwUWhHeXhkLTNvWVpKSEpvcGw4MGlldm1zSkhBb1gyWVNSWjg2MmwxdTJ6WkZmSGlCVFJud2FVQjliOHh2MmFHU1A3a1UtNjA5a1pKdlVhaldSNEMxVVBhVk9MbENiaE1INXlmNXBNSHlvNHZfYXhwODExTm1iTi1uT3FqYWdpeXdLS1d4cTZWLXB2dw?oc=5",
+     "source": "Pipeline (Valor)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "de684d19f371"
+   ],
+   "type": "Rodada VC",
+   "buyer": "Braço do Banco Mundial (demais investidores não divulgados)",
+   "target": "Alice",
+   "sector": "Healthtech",
+   "value": "US$ 40 milhões",
+   "advisors": "não divulgado",
+   "importance": 6,
+   "last_seen": "2026-10-20",
+   "headline": "Alice levanta US$ 40 milhões em série D com braço do Banco Mundial",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYlhzV053TllSZGE5YVdocHoySlpSTHJtNUtSUFpHbGx1NlN5cFFIdXpvNlFsY09RQ0hSeUJLSk1sa0dOZk5JODVJemVHY05NaU1LMTJMcElrNVBDTlp6QmpyOE9PRTd1YlY1bXpUb3VrUEs0dzNVZmNwM0p5eXNxS3J4RDBIYWI1V0c0dXNycW9LYjc5TWN5aVN4WU14SDU0cngzeXdXZWJZX184LXR0ZTE5WXRzWHl0NFVuddIBywFBVV95cUxONHg4M1ByTmF0ZEJwdXhBVndyZUlWdHVxLVpvR0w1WFFUZFpzVkZDZ0NDVGZQY3NTaHZPbWdKd3FwUWhHeXhkLTNvWVpKSEpvcGw4MGlldm1zSkhBb1gyWVNSWjg2MmwxdTJ6WkZmSGlCVFJud2FVQjliOHh2MmFHU1A3a1UtNjA5a1pKdlVhaldSNEMxVVBhVk9MbENiaE1INXlmNXBNSHlvNHZfYXhwODExTm1iTi1uT3FqYWdpeXdLS1d4cTZWLXB2dw?oc=5",
+   "stage": "Anunciado"
+  },
+  "tradewebtrumid": {
+   "key": "tradewebtrumid",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Tradeweb vai comprar a Trumid por cerca de US$ 1,97 bilhão",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQR3BERDAta1ZnbmpFdEJmUTctWTByVG5yRDBkMjRWemNaUVBNMmlPd2M3RUV1NVk0SDNibWtiNEhYb25Pd1lHVzdyT1o1ZGN6Rk9ZQlBEV0pIeDBrb3ltdC1URkQySUZObTcyV1Z1eVVYUThRUl9Pd210MlJNdy1TWEpjZFRPd01FRXlkNVgwcGM5Rnc?oc=5",
+     "source": "Wall Street Journal"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "f98d9d81e3cc"
+   ],
+   "type": "Aquisição",
+   "buyer": "Tradeweb",
+   "target": "Trumid",
+   "sector": "Infraestrutura de mercado financeiro",
+   "value": "cerca de US$ 1,97 bilhão",
+   "advisors": "não divulgado",
+   "importance": 6,
+   "last_seen": "2026-10-20",
+   "headline": "Tradeweb vai comprar a Trumid por cerca de US$ 1,97 bilhão",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQR3BERDAta1ZnbmpFdEJmUTctWTByVG5yRDBkMjRWemNaUVBNMmlPd2M3RUV1NVk0SDNibWtiNEhYb25Pd1lHVzdyT1o1ZGN6Rk9ZQlBEV0pIeDBrb3ltdC1URkQySUZObTcyV1Z1eVVYUThRUl9Pd210MlJNdy1TWEpjZFRPd01FRXlkNVgwcGM5Rnc?oc=5",
+   "stage": "Anunciado"
+  },
+  "naodivulgadonaodivulgado": {
+   "key": "naodivulgadonaodivulgado",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Duas empresas cripto de R$ 21 bi em operações anunciam fusão e pedirão licença ao BC",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOTl5VUxoeG1wVkU5VHlNWW1tTEtKNU5hM2JzZm9vR09RQldDOEpqN0pTcDRwWE9MTjhoMmZtTDU2ZGg1cjYtZDFEdzVtb3kyY19uUmpCYjRtNWRFTkxhbXNBc2E4dFRCT1hYZGgyYUoyT3ZVa0lzX3R1YzBZeTJQNW5MSGFNd3cz?oc=5",
+     "source": "BitNotícias"
+    }
+   ],
+   "mentions": 2,
+   "ids": [
+    "442c1072f6f5",
+    "fb18f8a7ddba"
+   ],
+   "type": "Fusão",
+   "buyer": "não divulgado",
+   "target": "não divulgado",
+   "sector": "Óleo e gás",
+   "value": "US$ 1 bilhão (porte combinado)",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Duas empresas cripto de R$ 21 bi em operações anunciam fusão e pedirão licença ao BC",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOTl5VUxoeG1wVkU5VHlNWW1tTEtKNU5hM2JzZm9vR09RQldDOEpqN0pTcDRwWE9MTjhoMmZtTDU2ZGg1cjYtZDFEdzVtb3kyY19uUmpCYjRtNWRFTkxhbXNBc2E4dFRCT1hYZGgyYUoyT3ZVa0lzX3R1YzBZeTJQNW5MSGFNd3cz?oc=5",
+   "stage": "Anunciado"
+  },
+  "naodivulgadoopenai": {
+   "key": "naodivulgadoopenai",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "OpenAI corre para captar R$ 163,5 bi antes do IPO da Anthropic",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLVV5MGNiNHZHSk1zR2FZdThQbjJuUUlQTF9jTFdoMzZmRm4tYjlKM0VnQm1PcXF3Y2NLclMtZGYxZG5tek1WNXlOV2RieW9rSWRZYkI3VFVQOTgyNEw2V01DZ3dHZ1N1ay12YXB3bGVxWFhfMmJYSG9NMUlhQ3ZOOVR5dlU5Q0lqcUlaOE5fVXhYRE9SNTN1MHFDWHJQelZKYTBLTlNXWW5MOU16TTlpd0xn?oc=5",
+     "source": "Olhar Digital"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "22b06e3a7c01"
+   ],
+   "type": "Captação",
+   "buyer": "não divulgado",
+   "target": "OpenAI",
+   "sector": "Tecnologia / IA",
+   "value": "R$ 163,5 bilhões",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "OpenAI corre para captar R$ 163,5 bi antes do IPO da Anthropic",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLVV5MGNiNHZHSk1zR2FZdThQbjJuUUlQTF9jTFdoMzZmRm4tYjlKM0VnQm1PcXF3Y2NLclMtZGYxZG5tek1WNXlOV2RieW9rSWRZYkI3VFVQOTgyNEw2V01DZ3dHZ1N1ay12YXB3bGVxWFhfMmJYSG9NMUlhQ3ZOOVR5dlU5Q0lqcUlaOE5fVXhYRE9SNTN1MHFDWHJQelZKYTBLTlNXWW5MOU16TTlpd0xn?oc=5",
+   "stage": "Em negociação"
+  },
+  "raizensubsidiariaraizenenergia": {
+   "key": "raizensubsidiariaraizenenergia",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "CVM aprova conversão de registro de subsidiária da Raízen Energia",
+     "link": "https://www.infomoney.com.br/mercados/cvm-aprova-pedido-de-conversao-de-registro-de-subsidiaria-da-raizen-energia/",
+     "source": "InfoMoney"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "7f6de8eb2472"
+   ],
+   "type": "Reestruturação",
+   "buyer": "Raízen",
+   "target": "Subsidiária Raízen Energia",
+   "sector": "Energia / bioenergia",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "CVM aprova conversão de registro de subsidiária da Raízen Energia",
+   "link": "https://www.infomoney.com.br/mercados/cvm-aprova-pedido-de-conversao-de-registro-de-subsidiaria-da-raizen-energia/",
+   "stage": "Em negociação"
+  },
+  "spacextesla": {
+   "key": "spacextesla",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Rumor",
+     "headline": "Balanços de SpaceX e Tesla testam gastos de Musk em IA e fusão ganha força",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdi1oa1VDTm0wMUJualVQRU5ieHFCQmFCejlxdEx1cEM3am1WaEV4LVJwRGVab29QU05IUl9fYzhsaFFFSk5hVGtTZFFLNGNOUVNFMjJ4RkE2b2RCdVJmN0t5UmVBeWpPb2ZwMThLcVRkVENsdFhRc0JOUml0Z3F3MFg5bDhsNmZrX2tuS1ZkRFl2elAzd0p0ZDlFb0E1MF9malVCZXhEZnJqRUFYMUxFNDV5ZmRrZkYxZndkWGthUEpPQVdOTHAtMHBVTQ?oc=5",
+     "source": "Reuters"
+    }
+   ],
+   "mentions": 2,
+   "ids": [
+    "2013f5ca4416",
+    "68616624c196"
+   ],
+   "type": "Fusão",
+   "buyer": "SpaceX",
+   "target": "Tesla",
+   "sector": "Tecnologia / automotivo",
+   "value": "US$ 480 por ação (modelagem RBC)",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Balanços de SpaceX e Tesla testam gastos de Musk em IA e fusão ganha força",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdi1oa1VDTm0wMUJualVQRU5ieHFCQmFCejlxdEx1cEM3am1WaEV4LVJwRGVab29QU05IUl9fYzhsaFFFSk5hVGtTZFFLNGNOUVNFMjJ4RkE2b2RCdVJmN0t5UmVBeWpPb2ZwMThLcVRkVENsdFhRc0JOUml0Z3F3MFg5bDhsNmZrX2tuS1ZkRFl2elAzd0p0ZDlFb0E1MF9malVCZXhEZnJqRUFYMUxFNDV5ZmRrZkYxZndkWGthUEpPQVdOTHAtMHBVTQ?oc=5",
+   "stage": "Rumor"
+  },
+  "investidoreselice": {
+   "key": "investidoreselice",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Concluído",
+     "headline": "IPO da Elice decepciona e acende alerta de IA",
+     "link": "https://www.bloomberg.com/news/videos/2026-10-20/daybreak-europe-10-20-2026-video",
+     "source": "Bloomberg"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "1a62b0d2b691"
+   ],
+   "type": "IPO",
+   "buyer": "Investidores",
+   "target": "Elice",
+   "sector": "Data centers / IA",
+   "value": "US$ 151 milhões",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "IPO da Elice decepciona e acende alerta de IA",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/daybreak-europe-10-20-2026-video",
+   "stage": "Concluído"
+  },
+  "bluetaxmitysafe": {
+   "key": "bluetaxmitysafe",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "BlueTax e MitySafe anunciam fusão focada na Reforma Tributária",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYWxIR0hHY09fSEt5cENoamJtZFYxeEVycHk0czBJemp6MjlIdXpKWHZTSXdxYWJoYTVFR3lEUTdDR3k4TTJSUWNnamZnSnd3bi1QOHVYOWYyc216WV8yUkNTUDJFWG55SFdELS1HTzRRakdnQzl5SHBCc1U5OXc5eWx4Vl9EUXN6QXRTcWRBTXdfSy05YjZVM2NQME5RNzBmcEY1UHgwTVRabWVJSy1sZg?oc=5",
+     "source": "brazileconomy.com.br"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "a963b5500345"
+   ],
+   "type": "Fusão",
+   "buyer": "BlueTax",
+   "target": "MitySafe",
+   "sector": "Tax tech",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "BlueTax e MitySafe anunciam fusão focada na Reforma Tributária",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYWxIR0hHY09fSEt5cENoamJtZFYxeEVycHk0czBJemp6MjlIdXpKWHZTSXdxYWJoYTVFR3lEUTdDR3k4TTJSUWNnamZnSnd3bi1QOHVYOWYyc216WV8yUkNTUDJFWG55SFdELS1HTzRRakdnQzl5SHBCc1U5OXc5eWx4Vl9EUXN6QXRTcWRBTXdfSy05YjZVM2NQME5RNzBmcEY1UHgwTVRabWVJSy1sZg?oc=5",
+   "stage": "Anunciado"
+  },
+  "investidoresanthropic": {
+   "key": "investidoresanthropic",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Rumor",
+     "headline": "Valuation de IPO da Anthropic recua US$ 500 bilhões",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN1VRczFBTVdDZWZVeXRTOERMMkREcDlQLTdDMm0xNGZuSEtWU1RzZUtOVkx6cTljTmtZNHduR0ZvWWlJeXlvMFo0dmxuNGJjRktDXzk4OTRSSHpRWjlWaFEyc2VnYzFWaXpQVU16Ql90YmRCa0M2U3M1dVVfM3Bsdy1vWHZvVk1qM2dHcks4eVVoY21EOEZnV2NRNnlmZEpMYUtiRW9ETmhpVmpOVGxF?oc=5",
+     "source": "SpaceMoney"
+    }
+   ],
+   "mentions": 5,
+   "ids": [
+    "7bffb23719ff",
+    "2d6106c621da",
+    "f05cdbcbf4a5",
+    "6340f3ed487a",
+    "0e23bb53c0b1"
+   ],
+   "type": "IPO",
+   "buyer": "Investidores",
+   "target": "Anthropic",
+   "sector": "Tecnologia / IA",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Valuation de IPO da Anthropic recua US$ 500 bilhões",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN1VRczFBTVdDZWZVeXRTOERMMkREcDlQLTdDMm0xNGZuSEtWU1RzZUtOVkx6cTljTmtZNHduR0ZvWWlJeXlvMFo0dmxuNGJjRktDXzk4OTRSSHpRWjlWaFEyc2VnYzFWaXpQVU16Ql90YmRCa0M2U3M1dVVfM3Bsdy1vWHZvVk1qM2dHcks4eVVoY21EOEZnV2NRNnlmZEpMYUtiRW9ETmhpVmpOVGxF?oc=5",
+   "stage": "Rumor"
+  },
+  "mineradoraaustralianaareade17796hanaparaiba": {
+   "key": "mineradoraaustralianaareade17796hanaparaiba",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "Mineradora australiana negocia área de 17.796 ha na Paraíba para terras raras",
+     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTjJnd2Y4ZWJZM2M4VUxWRHhxUUlHSGl0NmdnRzBXR3pnY1JuTFFlc1RGSTd4UkJnUDRESld2ZUpUVEUzemxta0xwWDQ3d3RHbnRMVjhLVW1NS1BEcDZyRWo0eEdIT1l2OGVGOWFxU3BaclQyMFMwRWNnUkhiRkNFOFNmWjN4S2tIRnBYbDVUVVpzdzNDYzBORHpuNG9WQ0hBWFYta0pWeEcxSThvQUNpRHNoaGxsczhwMXNJbFJ6SnE4RkNRTkpIV1F6NGxNbV80d1dyREpjUHFRcDZWV0FkcHFEbXdmR2xyRUM2UFF4MmMwdjBCazRn?oc=5",
+     "source": "CPG Click Petróleo e Gás"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "fe76be2894b7"
+   ],
+   "type": "Aquisição",
+   "buyer": "Mineradora australiana (não identificada)",
+   "target": "Área de 17.796 ha na Paraíba",
+   "sector": "Mineração / terras raras",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Mineradora australiana negocia área de 17.796 ha na Paraíba para terras raras",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTjJnd2Y4ZWJZM2M4VUxWRHhxUUlHSGl0NmdnRzBXR3pnY1JuTFFlc1RGSTd4UkJnUDRESld2ZUpUVEUzemxta0xwWDQ3d3RHbnRMVjhLVW1NS1BEcDZyRWo0eEdIT1l2OGVGOWFxU3BaclQyMFMwRWNnUkhiRkNFOFNmWjN4S2tIRnBYbDVUVVpzdzNDYzBORHpuNG9WQ0hBWFYta0pWeEcxSThvQUNpRHNoaGxsczhwMXNJbFJ6SnE4RkNRTkpIV1F6NGxNbV80d1dyREpjUHFRcDZWV0FkcHFEbXdmR2xyRUM2UFF4MmMwdjBCazRn?oc=5",
+   "stage": "Em negociação"
+  },
+  "investidoresancorajioplatforms": {
+   "key": "investidoresancorajioplatforms",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Lances âncora para o IPO da Jio passam de US$ 26 bi; BlackRock e GIC entre os investidores",
+     "link": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
+     "source": "CNBC"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "70004515a034"
+   ],
+   "type": "IPO",
+   "buyer": "Investidores âncora (BlackRock, GIC)",
+   "target": "Jio Platforms",
+   "sector": "Telecomunicações",
+   "value": "até US$ 3,2 bilhões",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Lances âncora para o IPO da Jio passam de US$ 26 bi; BlackRock e GIC entre os investidores",
+   "link": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
+   "stage": "Anunciado"
+  },
+  "mercksilencetherapeutics": {
+   "key": "mercksilencetherapeutics",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Merck anuncia compra da britânica Silence Therapeutics por US$ 1,3 bilhão",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkp3ZUZjNEt1dEpEYWloRzEyZVhlajdHakZZYWNHRGhIck9Qc1lPOG9PbmZNdkc4b2IyVGhXcVJ0LTFuNFRiMzhCVXpxejM1a0JlNFZ5ck9ueWQtclhvcTdXd2pMZjg1VUZkSkQ4Nk5KM0tHa3dhbW9oN1BOWTZVTmQyZnJUS01BZFBzQzlmUHRCVHBUWC1Cajd4bGJ3eXRfSlY2WnJTeml6eUE2d1p3?oc=5",
+     "source": "CNN Brasil"
+    }
+   ],
+   "mentions": 2,
+   "ids": [
+    "f024b86b9d51",
+    "c42e15f0b015"
+   ],
+   "type": "Aquisição",
+   "buyer": "Merck (Alemanha)",
+   "target": "Silence Therapeutics",
+   "sector": "Biotecnologia",
+   "value": "US$ 1,3 bilhão",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Merck anuncia compra da britânica Silence Therapeutics por US$ 1,3 bilhão",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkp3ZUZjNEt1dEpEYWloRzEyZVhlajdHakZZYWNHRGhIck9Qc1lPOG9PbmZNdkc4b2IyVGhXcVJ0LTFuNFRiMzhCVXpxejM1a0JlNFZ5ck9ueWQtclhvcTdXd2pMZjg1VUZkSkQ4Nk5KM0tHa3dhbW9oN1BOWTZVTmQyZnJUS01BZFBzQzlmUHRCVHBUWC1Cajd4bGJ3eXRfSlY2WnJTeml6eUE2d1p3?oc=5",
+   "stage": "Anunciado"
+  },
+  "fundodaalgarvecapitaldireitoseconomicosdasogemna": {
+   "key": "fundodaalgarvecapitaldireitoseconomicosdasogemna",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Fundo da Algarve Capital, co-gerido pelo Itaú Asset, entra em disputa de R$ 500 mi da Totvs com a Sogem",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/10/disputa-de-r-500-milhoes-envolvendo-a-totvs-atrai-fundo-de-investimento.shtml",
+     "source": "Folha"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "6f6a7b99da08"
+   ],
+   "type": "Investimento PE",
+   "buyer": "Fundo da Algarve Capital (co-gerido pelo Itaú Asset)",
+   "target": "Direitos econômicos da Sogem na disputa contra a Totvs (via EvidJuri)",
+   "sector": "Ativos judiciais / tecnologia",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Fundo da Algarve Capital, co-gerido pelo Itaú Asset, entra em disputa de R$ 500 mi da Totvs com a Sogem",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/10/disputa-de-r-500-milhoes-envolvendo-a-totvs-atrai-fundo-de-investimento.shtml",
+   "stage": "Anunciado"
+  },
+  "credoresepimcothameswater": {
+   "key": "credoresepimcothameswater",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "Thames Water e credores oferecem acordo à Pimco para apoiar nova dívida de resgate de £2,4 bi",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-20/thames-water-creditors-offer-pimco-a-compromise-on-new-debt",
+     "source": "Bloomberg"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "79d7248fa47a"
+   ],
+   "type": "Reestruturação",
+   "buyer": "Credores e Pimco (apoio ao acordo)",
+   "target": "Thames Water",
+   "sector": "Saneamento / utilities",
+   "value": "£2,4 bilhões (US$ 3,2 bilhões) em dívida de resgate",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Thames Water e credores oferecem acordo à Pimco para apoiar nova dívida de resgate de £2,4 bi",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/thames-water-creditors-offer-pimco-a-compromise-on-new-debt",
+   "stage": "Em negociação"
+  },
+  "investidorestrategicotikehaucapital": {
+   "key": "investidorestrategicotikehaucapital",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Rumor",
+     "headline": "Gestora de crédito privado Tikehau busca investidor estratégico",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-20/private-credit-firm-tikehau-is-said-to-seek-strategic-investor",
+     "source": "Bloomberg"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "8f96d6ae2fe1"
+   ],
+   "type": "Investimento PE",
+   "buyer": "Investidor estratégico (não identificado)",
+   "target": "Tikehau Capital",
+   "sector": "Gestão de ativos / crédito privado",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Gestora de crédito privado Tikehau busca investidor estratégico",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/private-credit-firm-tikehau-is-said-to-seek-strategic-investor",
+   "stage": "Rumor"
+  },
+  "rheinmetallemscestaleironaromenia": {
+   "key": "rheinmetallemscestaleironaromenia",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Rheinmetall e MSC compram estaleiro na Romênia para navios civis e militares",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOWhKVmV4b0NfX3pYTFgtSEFYb3pUdUljLTJuNFk0UzVOUWQ5N01FUzBydzVDNTN4bVJOOUdzWm5RUFFyZ1hkUXdhUENUUHpuMld4OWxLVlk0cElaZmR0OVJ4X2JMV3Nqdy1JQ0ZKb0RGbGQ2bnVVX2tud3oyb0xZeGdzam1kWDVOMG9LNWIwZFhfOG9lb2NQZVNqaFNkbm5EUVpmcV92Sk9ZWHJnYk04dndEWDlFU2hqdndwcDlfaDZRYlVmUXUxb0ZPZU1VcC05TDkxMk5lY2pZa2_SAeoBQVVfeXFMT3pRTlI5eWd6M1d2OVVrRlM4Zk9xR201ZjF5LWw2T3ctUkstNnVWVWpiaFdneWZnLXFPSS1wMFpQTkN4NmszMDlLdjBHa0dHQkJFcThVLUZCajMxbnF6UVFGazdtRkg3eUdRV3E1ZjNBOENRd3lMa24zZlhlTi1qaWkzUFVQbllLUzhjMW5kT2V0Q2wzUHZGdnQzbjY2OTh2OEk0ZXNKVmM5T2kwVmhVdWljWUpNalJuZG04a0RrMzhsdnBxX3pua29lN0RzdkxLMHpMbFg1bnExdzBGTVM1SmVJYW1RRndHLTZn?oc=5",
+     "source": "Valor Econômico"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "80a8c1821995"
+   ],
+   "type": "Aquisição",
+   "buyer": "Rheinmetall e MSC",
+   "target": "Estaleiro na Romênia",
+   "sector": "Defesa e naval",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 5,
+   "last_seen": "2026-10-20",
+   "headline": "Rheinmetall e MSC compram estaleiro na Romênia para navios civis e militares",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOWhKVmV4b0NfX3pYTFgtSEFYb3pUdUljLTJuNFk0UzVOUWQ5N01FUzBydzVDNTN4bVJOOUdzWm5RUFFyZ1hkUXdhUENUUHpuMld4OWxLVlk0cElaZmR0OVJ4X2JMV3Nqdy1JQ0ZKb0RGbGQ2bnVVX2tud3oyb0xZeGdzam1kWDVOMG9LNWIwZFhfOG9lb2NQZVNqaFNkbm5EUVpmcV92Sk9ZWHJnYk04dndEWDlFU2hqdndwcDlfaDZRYlVmUXUxb0ZPZU1VcC05TDkxMk5lY2pZa2_SAeoBQVVfeXFMT3pRTlI5eWd6M1d2OVVrRlM4Zk9xR201ZjF5LWw2T3ctUkstNnVWVWpiaFdneWZnLXFPSS1wMFpQTkN4NmszMDlLdjBHa0dHQkJFcThVLUZCajMxbnF6UVFGazdtRkg3eUdRV3E1ZjNBOENRd3lMa24zZlhlTi1qaWkzUFVQbllLUzhjMW5kT2V0Q2wzUHZGdnQzbjY2OTh2OEk0ZXNKVmM5T2kwVmhVdWljWUpNalJuZG04a0RrMzhsdnBxX3pua29lN0RzdkxLMHpMbFg1bnExdzBGTVM1SmVJYW1RRndHLTZn?oc=5",
+   "stage": "Anunciado"
+  },
+  "kapitalwoz": {
+   "key": "kapitalwoz",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Kapital compra a startup de IA Woz por US$ 30 milhões",
+     "link": "https://www.prnewswire.com/news-releases/kapital-agrees-to-acquire-ai-startup-woz-for-30m-to-enhance-capabilities-of-ai-native-banking-platform-302912404.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "61f86a0d24dd"
+   ],
+   "type": "Aquisição",
+   "buyer": "Kapital",
+   "target": "Woz",
+   "sector": "Fintech / IA",
+   "value": "US$ 30 milhões",
+   "advisors": "não divulgado",
+   "importance": 4,
+   "last_seen": "2026-10-20",
+   "headline": "Kapital compra a startup de IA Woz por US$ 30 milhões",
+   "link": "https://www.prnewswire.com/news-releases/kapital-agrees-to-acquire-ai-startup-woz-for-30m-to-enhance-capabilities-of-ai-native-banking-platform-302912404.html",
+   "stage": "Anunciado"
+  },
+  "heliusmineralsprojetoserrapelada": {
+   "key": "heliusmineralsprojetoserrapelada",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "Fechamento da compra de Serra Pelada pela Helius é adiado",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZGxmeEF3UFJUZ0NEX3RuS1ZsMjhXMnZBS3haU1djT01OSjdLZ09VUDVHSkczOG93TnJDd3RWS0YzX25Xa3cwYVRCWUtTNnJnUEFVblNuNHRqbkFwZWNnelJpT1U2Vk5sUjJvU21xOWJCZGUyTjRVY2R0Q0xIc2ZMMHNhMWM1SUljU2p4aDNUdjZPMUVXTVRkNDZlTU9kRThDb3JJMjNvaThqUlREQ3Q2bzc0N0VtOGcz?oc=5",
+     "source": "Investing.com South Africa"
+    }
+   ],
+   "mentions": 3,
+   "ids": [
+    "790515009afd",
+    "ac4cba0aba03",
+    "686def99d1a9"
+   ],
+   "type": "Aquisição",
+   "buyer": "Helius Minerals",
+   "target": "Projeto Serra Pelada",
+   "sector": "Mineração",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 4,
+   "last_seen": "2026-10-20",
+   "headline": "Fechamento da compra de Serra Pelada pela Helius é adiado",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZGxmeEF3UFJUZ0NEX3RuS1ZsMjhXMnZBS3haU1djT01OSjdLZ09VUDVHSkczOG93TnJDd3RWS0YzX25Xa3cwYVRCWUtTNnJnUEFVblNuNHRqbkFwZWNnelJpT1U2Vk5sUjJvU21xOWJCZGUyTjRVY2R0Q0xIc2ZMMHNhMWM1SUljU2p4aDNUdjZPMUVXTVRkNDZlTU9kRThDb3JJMjNvaThqUlREQ3Q2bzc0N0VtOGcz?oc=5",
+   "stage": "Em negociação"
+  },
+  "seamonee": {
+   "key": "seamonee",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Rumor",
+     "headline": "Sea cria negócio de nuvem e avalia IPO do braço financeiro",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOemF4dFRpSFBGRnY1bVFGOUF4dThXZk1DMzhuQXp4cGp1OEtIUXBmNzJQRGpkSmFHY1E3UUlvM0szOE9hR2tkNjNCVzFLQnd4MXVJQm9fSGdqYm5lU3RNa05RVlZzd2FEZDdrc2psb1NBSmtKNjdkREZzZUZGSmJtODBYWklvYWxsbmE5ZFFWbVJpNHVY?oc=5",
+     "source": "Wall Street Journal"
+    }
+   ],
+   "mentions": 2,
+   "ids": [
+    "2cd00961f69f",
+    "bd964ebb2f5e"
+   ],
+   "type": "IPO",
+   "buyer": "Sea",
+   "target": "Monee",
+   "sector": "Fintech",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 4,
+   "last_seen": "2026-10-20",
+   "headline": "Sea cria negócio de nuvem e avalia IPO do braço financeiro",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOemF4dFRpSFBGRnY1bVFGOUF4dThXZk1DMzhuQXp4cGp1OEtIUXBmNzJQRGpkSmFHY1E3UUlvM0szOE9hR2tkNjNCVzFLQnd4MXVJQm9fSGdqYm5lU3RNa05RVlZzd2FEZDdrc2psb1NBSmtKNjdkREZzZUZGSmJtODBYWklvYWxsbmE5ZFFWbVJpNHVY?oc=5",
+   "stage": "Rumor"
+  },
+  "lynasrareearthsmeteoric": {
+   "key": "lynasrareearthsmeteoric",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Lynas: resultado do ano fiscal 26 e proposta de aquisição da Meteoric",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQWZadE9sY1Vjc2hXYXo0MXRsTGVNdXJTWWxTeXNxSzlRZEpTOTNGbnBMWFBNUlBid05uSFdUNl9OeldkZk9sbzE3Q2J4WlhZLV9HR1VIcnptOHdNQ1pjcHhid0tyaXk3ZFlFV3h2V3hMS2Jhd2VCS2tPWC1uOXgwNzFjSG4zSmNxUHdfQUhabS1PSi1BNHpBcHFiZWx3MkhPN1p1U2tVY24yVDQ?oc=5",
+     "source": "Kalkine"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "8c8ac2b59f7b"
+   ],
+   "type": "Aquisição",
+   "buyer": "Lynas Rare Earths",
+   "target": "Meteoric",
+   "sector": "Mineração / terras raras",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 4,
+   "last_seen": "2026-10-20",
+   "headline": "Lynas: resultado do ano fiscal 26 e proposta de aquisição da Meteoric",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQWZadE9sY1Vjc2hXYXo0MXRsTGVNdXJTWWxTeXNxSzlRZEpTOTNGbnBMWFBNUlBid05uSFdUNl9OeldkZk9sbzE3Q2J4WlhZLV9HR1VIcnptOHdNQ1pjcHhid0tyaXk3ZFlFV3h2V3hMS2Jhd2VCS2tPWC1uOXgwNzFjSG4zSmNxUHdfQUhabS1PSi1BNHpBcHFiZWx3MkhPN1p1U2tVY24yVDQ?oc=5",
+   "stage": "Anunciado"
+  },
+  "walmart": {
+   "key": "walmart",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Concluído",
+     "headline": "Walmart capta US$ 6,56 bilhões em bonds, incluindo estreia no Canadá",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-19/walmart-sells-us-debt-eyes-canadian-market-as-spending-grows",
+     "source": "Bloomberg"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "2c4c56b1dafa"
+   ],
+   "type": "Emissão de dívida",
+   "target": "Walmart",
+   "sector": "Varejo",
+   "value": "US$ 6,56 bilhões",
+   "advisors": "não divulgado",
+   "importance": 4,
+   "last_seen": "2026-10-20",
+   "headline": "Walmart capta US$ 6,56 bilhões em bonds, incluindo estreia no Canadá",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/walmart-sells-us-debt-eyes-canadian-market-as-spending-grows",
+   "stage": "Concluído"
+  },
+  "merckintesanouscom": {
+   "key": "merckintesanouscom",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Merck e Intesa lideram captação na biotecnologia Nouscom",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTHpfUndVZGpjT1MwR0VvdTJHaVFjLUFKRXkzRlBxdVBobDIyeExPVHZVR3hPd2dubFFKMkVHSkgxc0Y0bGNyZkhRQ2ItSmE0b1VDeE9xR0UxWkJkMUFLbEkxRUJOSmdSQjhNckVvMlZENkI3RGt6MzBIaDhYUjZFWHM4ajhXYXBPTEozVGdza3JrYlR2V1V1ckdTcVFuT3R1QjlscDlIdVBxUmdPQ0J3N21NNG5EMWJMNjNscFBuVjl5bjQzNkt4czR2RTBKUdIB3AFBVV95cUxQV3hxVktfbEtPeWxTN1pGVGRiT2dtU0JlQzlSS2hEWFVZWW9qTWhRTkY4U2stSWc3TWNmbmhZT1ltS2ZVQ3dnOGlyRFVjekxISGxyY082WGcxdkxGRGFrdWR0SHJPRFZHWTctNG9GaXhhRk5RQjNBYm95VGdqWk8zdUVJeS1oVTFMNzV4VXFXbHRIM2tETmFUb3lkU0cxR05VQkJhSWRXWjJnLTRtei00bE5SWERJN293VkZpNDR6N2U1T3JzVG5nSTZ0WmxObjhsajl2M3otaDhQUG02?oc=5",
+     "source": "Valor Econômico"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "c2bcbfad9219"
+   ],
+   "type": "Rodada VC",
+   "buyer": "Merck, Intesa",
+   "target": "Nouscom",
+   "sector": "Biotecnologia",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 4,
+   "last_seen": "2026-10-20",
+   "headline": "Merck e Intesa lideram captação na biotecnologia Nouscom",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTHpfUndVZGpjT1MwR0VvdTJHaVFjLUFKRXkzRlBxdVBobDIyeExPVHZVR3hPd2dubFFKMkVHSkgxc0Y0bGNyZkhRQ2ItSmE0b1VDeE9xR0UxWkJkMUFLbEkxRUJOSmdSQjhNckVvMlZENkI3RGt6MzBIaDhYUjZFWHM4ajhXYXBPTEozVGdza3JrYlR2V1V1ckdTcVFuT3R1QjlscDlIdVBxUmdPQ0J3N21NNG5EMWJMNjNscFBuVjl5bjQzNkt4czR2RTBKUdIB3AFBVV95cUxQV3hxVktfbEtPeWxTN1pGVGRiT2dtU0JlQzlSS2hEWFVZWW9qTWhRTkY4U2stSWc3TWNmbmhZT1ltS2ZVQ3dnOGlyRFVjekxISGxyY082WGcxdkxGRGFrdWR0SHJPRFZHWTctNG9GaXhhRk5RQjNBYm95VGdqWk8zdUVJeS1oVTFMNzV4VXFXbHRIM2tETmFUb3lkU0cxR05VQkJhSWRXWjJnLTRtei00bE5SWERJN293VkZpNDR6N2U1T3JzVG5nSTZ0WmxObjhsajl2M3otaDhQUG02?oc=5",
+   "stage": "Anunciado"
+  },
+  "adobetopazlabs": {
+   "key": "adobetopazlabs",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Concluído",
+     "headline": "Adobe adquire a Topaz Labs, IA de vídeo",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNnlRRmoyQjRWcmpmVUNkeExtcUZSeHM1aV9aSzRMd0FoaUFzaW9QdzRrRTRvQXhJN1hEZTZaSWwtMWhfZUFhdkRFRUFMUFhIb19wLWt0dFZnSWtwM1dPcjRnUk10cU5wbWxVQWpKcjNodTZkMkV6d1RzWXBwSTVEc2hWMDkzcmhGbzNlMVhRdzNDN1QyXzdNdWpiLVpWblA2Rkp0SFpmaGZQMVF5bm1tSUhHZ0swaXlJVk43RWk5amZwdw?oc=5",
+     "source": "Administradores"
+    }
+   ],
+   "mentions": 2,
+   "ids": [
+    "f7f9106a8031",
+    "c3f674d48e06"
+   ],
+   "type": "Aquisição",
+   "buyer": "Adobe",
+   "target": "Topaz Labs",
+   "sector": "Software / IA",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 3,
+   "last_seen": "2026-10-20",
+   "headline": "Adobe adquire a Topaz Labs, IA de vídeo",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNnlRRmoyQjRWcmpmVUNkeExtcUZSeHM1aV9aSzRMd0FoaUFzaW9QdzRrRTRvQXhJN1hEZTZaSWwtMWhfZUFhdkRFRUFMUFhIb19wLWt0dFZnSWtwM1dPcjRnUk10cU5wbWxVQWpKcjNodTZkMkV6d1RzWXBwSTVEc2hWMDkzcmhGbzNlMVhRdzNDN1QyXzdNdWpiLVpWblA2Rkp0SFpmaGZQMVF5bm1tSUhHZ0swaXlJVk43RWk5amZwdw?oc=5",
+   "stage": "Concluído"
+  },
+  "oceanoilfieldplataformaautoelevaveldanoble": {
+   "key": "oceanoilfieldplataformaautoelevaveldanoble",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Concluído",
+     "headline": "Ocean Oilfield conclui compra de plataforma da Noble, agora Ocean MVM",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb1lmQmRmZFBSaHBsS1JUYWFoQy0ycW9yS204ZzZROGxoaDNRUVlaSi1sUTBWQ3RuSWJvZy1QQmVUMjhzUjZXbWFXOE5sMi1pT0tjSlZnS0FTYVU5ck1YMDNsTnI2STVqUmJuOVNXQmdzSElMRzVTYnF0MnpaRGRnS0V6OXQ1SkpQLUoyOC04QnJFdHBXYURTMHB1YmR2Yk9YVVdCbU9jWE9wYWh1UXZIdHV0VQ?oc=5",
+     "source": "IndexBox"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "528e04b0bdb8"
+   ],
+   "type": "Venda de ativo",
+   "buyer": "Ocean Oilfield",
+   "target": "Plataforma autoelevável da Noble (Ocean MVM)",
+   "sector": "Óleo e gás offshore",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 3,
+   "last_seen": "2026-10-20",
+   "headline": "Ocean Oilfield conclui compra de plataforma da Noble, agora Ocean MVM",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb1lmQmRmZFBSaHBsS1JUYWFoQy0ycW9yS204ZzZROGxoaDNRUVlaSi1sUTBWQ3RuSWJvZy1QQmVUMjhzUjZXbWFXOE5sMi1pT0tjSlZnS0FTYVU5ck1YMDNsTnI2STVqUmJuOVNXQmdzSElMRzVTYnF0MnpaRGRnS0V6OXQ1SkpQLUoyOC04QnJFdHBXYURTMHB1YmR2Yk9YVVdCbU9jWE9wYWh1UXZIdHV0VQ?oc=5",
+   "stage": "Concluído"
+  },
+  "newprivateequityonegroupsolutions": {
+   "key": "newprivateequityonegroupsolutions",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "NPE investe na ONE group solutions para plataforma de governança de fundos",
+     "link": "https://www.prnewswire.com/news-releases/new-private-equity-sassocie-a-one-group-solutions-afin-de-construire-la-plateforme-de-gouvernance-de-fonds-centree-sur-les-donnees-pour-les-gestionnaires-dactifs-mondiaux-302912901.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 2,
+   "ids": [
+    "eef53bf91a74",
+    "7590de2ffee4"
+   ],
+   "type": "Investimento PE",
+   "buyer": "New Private Equity (NPE)",
+   "target": "ONE group solutions",
+   "sector": "Tecnologia financeira / governança de fundos",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 3,
+   "last_seen": "2026-10-20",
+   "headline": "NPE investe na ONE group solutions para plataforma de governança de fundos",
+   "link": "https://www.prnewswire.com/news-releases/new-private-equity-sassocie-a-one-group-solutions-afin-de-construire-la-plateforme-de-gouvernance-de-fonds-centree-sur-les-donnees-pour-les-gestionnaires-dactifs-mondiaux-302912901.html",
+   "stage": "Anunciado"
+  },
+  "starmanopticalgopro": {
+   "key": "starmanopticalgopro",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "GoPro arquiva proxy preliminar; fusão com Starman Optical segue no cronograma",
+     "link": "https://www.prnewswire.com/news-releases/gopro-files-preliminary-proxy-statement-proposed-merger-with-starman-optical-on-track-302912646.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "a9992f3616ce"
+   ],
+   "type": "Fusão",
+   "buyer": "Starman Optical",
+   "target": "GoPro",
+   "sector": "Eletrônicos de consumo / óptica",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 3,
+   "last_seen": "2026-10-20",
+   "headline": "GoPro arquiva proxy preliminar; fusão com Starman Optical segue no cronograma",
+   "link": "https://www.prnewswire.com/news-releases/gopro-files-preliminary-proxy-statement-proposed-merger-with-starman-optical-on-track-302912646.html",
+   "stage": "Anunciado"
+  },
+  "kortpaymentsaptpay": {
+   "key": "kortpaymentsaptpay",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "KORT Payments assina acordo para comprar a AptPay, de pagamentos em tempo real",
+     "link": "https://www.prnewswire.com/news-releases/kort-payments-to-acquire-aptpay-expanding-real-time-payments-and-payment-orchestration-across-north-america-302912058.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "71fa8cd05d7c"
+   ],
+   "type": "Aquisição",
+   "buyer": "KORT Payments",
+   "target": "AptPay (100%)",
+   "sector": "Pagamentos",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 3,
+   "last_seen": "2026-10-20",
+   "headline": "KORT Payments assina acordo para comprar a AptPay, de pagamentos em tempo real",
+   "link": "https://www.prnewswire.com/news-releases/kort-payments-to-acquire-aptpay-expanding-real-time-payments-and-payment-orchestration-across-north-america-302912058.html",
+   "stage": "Anunciado"
+  },
+  "pernodricard": {
+   "key": "pernodricard",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Em negociação",
+     "headline": "Pernod Ricard planeja primeiro bond híbrido junto com recompra de dívida sênior",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-20/pernod-ricard-plans-debut-hybrid-bond-as-french-debt-risk-rises",
+     "source": "Bloomberg"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "eedc6beb9a33"
+   ],
+   "type": "Emissão de dívida",
+   "target": "Pernod Ricard",
+   "sector": "Bebidas",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 3,
+   "last_seen": "2026-10-20",
+   "headline": "Pernod Ricard planeja primeiro bond híbrido junto com recompra de dívida sênior",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/pernod-ricard-plans-debut-hybrid-bond-as-french-debt-risk-rises",
+   "stage": "Em negociação"
+  },
+  "constructionpartnersnaodivulgado": {
+   "key": "constructionpartnersnaodivulgado",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Concluído",
+     "headline": "Construction Partners conclui aquisição na Flórida",
+     "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-florida-acquisition-302913034.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "25edf85221b9"
+   ],
+   "type": "Aquisição",
+   "buyer": "Construction Partners",
+   "target": "não divulgado",
+   "sector": "Construção / infraestrutura",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 2,
+   "last_seen": "2026-10-20",
+   "headline": "Construction Partners conclui aquisição na Flórida",
+   "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-florida-acquisition-302913034.html",
+   "stage": "Concluído"
+  },
+  "nationalkitchenbathshowroomsgreenwichkitchens": {
+   "key": "nationalkitchenbathshowroomsgreenwichkitchens",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "National Kitchen & Bath Showrooms entra na Virgínia ao comprar a Greenwich Kitchens",
+     "link": "https://www.prnewswire.com/news-releases/national-kitchen--bath-showrooms-expands-into-virginia-with-acquisition-of-greenwich-kitchens-302912851.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "7ccd570e66e7"
+   ],
+   "type": "Aquisição",
+   "buyer": "National Kitchen & Bath Showrooms",
+   "target": "Greenwich Kitchens",
+   "sector": "Varejo de reforma/decoração",
+   "value": "não divulgado",
+   "advisors": "Viking Mergers & Acquisitions",
+   "importance": 2,
+   "last_seen": "2026-10-20",
+   "headline": "National Kitchen & Bath Showrooms entra na Virgínia ao comprar a Greenwich Kitchens",
+   "link": "https://www.prnewswire.com/news-releases/national-kitchen--bath-showrooms-expands-into-virginia-with-acquisition-of-greenwich-kitchens-302912851.html",
+   "stage": "Anunciado"
+  },
+  "centralnationalgottesmanomahapapercompany": {
+   "key": "centralnationalgottesmanomahapapercompany",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "CNG compra a Omaha Paper Company via Lindenmeyr Munroe",
+     "link": "https://www.prnewswire.com/news-releases/central-national-gottesman-inc-cng-acquires-nebraska-based-omaha-paper-company-302912689.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "03484970f63c"
+   ],
+   "type": "Aquisição",
+   "buyer": "Central National Gottesman (Lindenmeyr Munroe)",
+   "target": "Omaha Paper Company",
+   "sector": "Distribuição de papel",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 2,
+   "last_seen": "2026-10-20",
+   "headline": "CNG compra a Omaha Paper Company via Lindenmeyr Munroe",
+   "link": "https://www.prnewswire.com/news-releases/central-national-gottesman-inc-cng-acquires-nebraska-based-omaha-paper-company-302912689.html",
+   "stage": "Anunciado"
+  },
+  "nextechsolutionshalcyondaysconsulting": {
+   "key": "nextechsolutionshalcyondaysconsulting",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "NexTech Solutions compra a Halcyon Days Consulting, de tecnologia de defesa",
+     "link": "https://www.prnewswire.com/news-releases/nextech-solutions-nts-acquires-halcyon-days-consulting-adding-combat-tested-tactical-mission-networks-to-its-defense-technology-portfolio-302912738.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "85a236867c0d"
+   ],
+   "type": "Aquisição",
+   "buyer": "NexTech Solutions (NTS)",
+   "target": "Halcyon Days Consulting (HDC)",
+   "sector": "Tecnologia de defesa",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 2,
+   "last_seen": "2026-10-20",
+   "headline": "NexTech Solutions compra a Halcyon Days Consulting, de tecnologia de defesa",
+   "link": "https://www.prnewswire.com/news-releases/nextech-solutions-nts-acquires-halcyon-days-consulting-adding-combat-tested-tactical-mission-networks-to-its-defense-technology-portfolio-302912738.html",
+   "stage": "Anunciado"
+  },
+  "systemonegmp": {
+   "key": "systemonegmp",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "System One adquire a GMP, de planejamento e consultoria de projetos de infraestrutura",
+     "link": "https://www.prnewswire.com/news-releases/system-one-acquires-gmp-a-critical-infrastructure-capital-project-planning-and-consulting-leader-302912206.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "5744505c42df"
+   ],
+   "type": "Aquisição",
+   "buyer": "System One",
+   "target": "GMP",
+   "sector": "Consultoria / infraestrutura crítica",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 2,
+   "last_seen": "2026-10-20",
+   "headline": "System One adquire a GMP, de planejamento e consultoria de projetos de infraestrutura",
+   "link": "https://www.prnewswire.com/news-releases/system-one-acquires-gmp-a-critical-infrastructure-capital-project-planning-and-consulting-leader-302912206.html",
+   "stage": "Anunciado"
+  },
+  "arthurjgallaghercointelligentcommunicationsexper": {
+   "key": "arthurjgallaghercointelligentcommunicationsexper",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Anunciado",
+     "headline": "Arthur J. Gallagher adquire a australiana Intelligent Communications Experiences",
+     "link": "https://www.prnewswire.com/news-releases/arthur-j-gallagher--co-acquires-intelligent-communications-experiences-302911555.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "17f1212eb8b1"
+   ],
+   "type": "Aquisição",
+   "buyer": "Arthur J. Gallagher & Co.",
+   "target": "Intelligent Communications Experiences",
+   "sector": "Seguros / serviços",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 2,
+   "last_seen": "2026-10-20",
+   "headline": "Arthur J. Gallagher adquire a australiana Intelligent Communications Experiences",
+   "link": "https://www.prnewswire.com/news-releases/arthur-j-gallagher--co-acquires-intelligent-communications-experiences-302911555.html",
+   "stage": "Anunciado"
+  },
+  "williamssafetyrescuefrandsonsafety": {
+   "key": "williamssafetyrescuefrandsonsafety",
+   "first_seen": "2026-10-20",
+   "timeline": [
+    {
+     "date": "2026-10-20",
+     "stage": "Concluído",
+     "headline": "Williams Safety & Rescue conclui compra da Frandson Safety",
+     "link": "https://www.prnewswire.com/news-releases/williams-safety--rescue-completes-acquisition-of-frandson-safety-302911847.html",
+     "source": "PR Newswire (M&A)"
+    }
+   ],
+   "mentions": 1,
+   "ids": [
+    "ed33a3c6f516"
+   ],
+   "type": "Aquisição",
+   "buyer": "Williams Safety & Rescue",
+   "target": "Frandson Safety",
+   "sector": "Serviços de segurança industrial",
+   "value": "não divulgado",
+   "advisors": "não divulgado",
+   "importance": 2,
+   "last_seen": "2026-10-20",
+   "headline": "Williams Safety & Rescue conclui compra da Frandson Safety",
+   "link": "https://www.prnewswire.com/news-releases/williams-safety--rescue-completes-acquisition-of-frandson-safety-302911847.html",
+   "stage": "Concluído"
   }
  },
  "backfilled": true,
- "updated_at": "2026-10-20T08:23:05.566901-03:00"
+ "updated_at": "2026-10-20T08:24:15.089843-03:00"
 }
