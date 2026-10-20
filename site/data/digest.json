@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T06:13:55.207792-03:00",
+ "generated_at": "2026-10-20T06:31:16.706876-03:00",
  "date": "2026-10-19",
  "window": {
   "start": "2026-10-18T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-19T08:22:45.005769-03:00",
-  "analyzed": 108
+  "analyzed": 110
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -123,14 +123,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 5.6636,
-   "change_pct": -0.3206369580272539,
+   "price": 5.6662,
+   "change_pct": -0.27487695663076517,
    "spark": [
     5.627461910247803,
     5.640158176422119,
     5.711021900177002,
     5.681818008422852,
-    5.663599967956543
+    5.666200160980225
    ]
   },
   {
@@ -179,40 +179,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 111.53,
-   "change_pct": 1.8073910480008948,
+   "price": 111.23,
+   "change_pct": 1.5335434974369289,
    "spark": [
     105.91999816894531,
     109.86000061035156,
     109.55000305175781,
-    111.52999877929688
+    111.2300033569336
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4136.7,
-   "change_pct": -0.5624888129358574,
+   "price": 4142.9,
+   "change_pct": -0.4134539374651247,
    "spark": [
     4170.10009765625,
     4181.10009765625,
     4160.10009765625,
-    4136.7001953125
+    4142.89990234375
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 81303.85,
-   "change_pct": -0.6715519802757419,
+   "price": 81347.69,
+   "change_pct": -0.6179929032924969,
    "spark": [
     81500.8046875,
     81382.1484375,
     82017.6015625,
     81853.5390625,
-    81303.8515625
+    81347.6875
    ]
   }
  ],
@@ -2099,6 +2099,46 @@
    "ai": true
   },
   {
+   "id": "8541926f4240",
+   "title": "French Contagion Less Virulent Than in Previous Eurozone Crisis",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNEIyQ21LWFpfU0N6LWFvb0N2bDZfTFNmRHVjQUVEUjZzS2F3V25naFJmLTZLOXlpQy1lMkNILUF6ZUdROTFCLXliS0hQRzFIQWRGYnJPc1FoVENXdFV5MlZxaEVhQVpSZHZRU2N1UDVzakdwVFFsWkU5WFVHSFc4TzN3MnNWNndGRFNmdXJKQ0xWeGRuMWJBQVlXbjI1dThJejV1d1NBSWI?oc=5",
+   "published": "2026-10-19T08:13:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNEIyQ21LWFpfU0N6LWFvb0N2bDZfTFNmRHVjQUVEUjZzS2F3V25naFJmLTZLOXlpQy1lMkNILUF6ZUdROTFCLXliS0hQRzFIQWRGYnJPc1FoVENXdFV5MlZxaEVhQVpSZHZRU2N1UDVzakdwVFFsWkU5WFVHSFc4TzN3MnNWNndGRFNmdXJKQ0xWeGRuMWJBQVlXbjI1dThJejV1d1NBSWI?oc=5",
+     "title": "French Contagion Less Virulent Than in Previous Eurozone Crisis"
+    }
+   ],
+   "ids": [
+    "8541926f4240"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Contágio francês é menos virulento que na crise anterior da zona do euro",
+   "category": "mercados",
+   "importance": 5,
+   "importance_reason": "Avalia o risco sistêmico da crise francesa.",
+   "summary": "O WSJ avalia que o contágio da crise francesa é menos virulento do que na crise anterior da zona do euro.",
+   "involves": "França, zona do euro",
+   "interpretation": "Mercado vê risco localizado.",
+   "impact": "Limita efeito em emergentes.",
+   "sentiment": "neutro",
+   "entities": [
+    "França",
+    "zona do euro"
+   ],
+   "tags": [
+    "França",
+    "euro",
+    "dívida"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "653356d171a7",
    "title": "Global food inflation is expected to intensify as supply shocks pile up",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUVRkb2hsTDU1SE9pWjNla2I5RTYxUFJQZndkWkVIQ05EbzhUOWlfbGp5X2J2SHA0bTJpMGptenRDdXdWZ3E2VkthVVdBY2YxTFQ0SjhPc2xadGJWRFR2dENBZ1luZ1lEOUlsVTFxYnJxYmJ4ck9kZmtaQlg1bzFjemN5Rk1WdFhSb0tpT2c2OVVGd2lRenlBVnRud2E5S2ZsMlRucENKZ0hpLWJBd1dCX0R5VG10YkU?oc=5",
@@ -3546,7 +3586,7 @@
    "id": "71e1bb013288",
    "title": "A hora extra pode ficar mais cara com a escala 5x2? Veja o que dizem os especialistas",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTUlkOVg2cXowRkMxbElUTFZZWlRVY2gzM2tydjlWSW9YcEFsMjNQZFhFZm5JcXMxaFJ3b2xfU3FGdFp0a3ozNzZCSXBudzRaUkZLSVp6N1lMMnhUaFVGMEE2UXQ3LUk2MzM4MGdVQk5MVnp0TGtwT1pfc1ZEdUxmdU42QkFsT3IzTktjOWNNQjRlNTNoSm1Bd2RQaDJOOVdhWWs5bWFrTllYMVpmeHoyTk1WWkt3a0RwcFFyVjZ30gHDAUFVX3lxTE5Wa3Z5cXlDYjgzWHhZSWtzQTk1aktMXzhnUW8xUHpEckxhZHJqaGNuRThSUUJRT0pPUFAwWDU2eHJpVmdDaVZqZWh1VlowZGl2dXJRZDZINFhxWUc2Qmc3NVBoVFNjZXZtNUphYjZEX3JwQUIzTk5FSEYweWpyS3pseU9BNVpiamc0bUxvV3BwR2lZcXhLNENvdndoc19rUHlMQmlaT0xmSmhEX1FLQUs4cEFBMHIxN0lJb0VucTJ4LURlNA?oc=5",
-   "published": "2026-10-19T08:33:59+00:00",
+   "published": "2026-10-19T08:30:00+00:00",
    "region": "BR",
    "outlets": [
     {
@@ -4385,39 +4425,6 @@
    "ai": false
   },
   {
-   "id": "6b33dc790427",
-   "title": "Netflix faces questions on user engagement ahead of third-quarter report",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdFN2eW1pT0s4OUlZS3BBcmxIank0TS1kbXhTQlJSdHk4YVdBOUVuWm5URGJNSjB2a1Vpakh4TFRCVUtBU2JkR0p6U3NRbVBkQkhaaURIbkZlbDZFOG03Q0JfTkpDY19lWlFLUmVJd2ctbGFHNV9UZG9SM18tdU1RazdFZkpnTUYxM0t2eS1QVXFxU2ZZb3I1VW9KN1pKVjNnTWJpM2VBLWQwMzdxeHdNY0dBX1gwZFBRS1FST3VBaEJ0Yjg?oc=5",
-   "published": "2026-10-19T10:20:24+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdFN2eW1pT0s4OUlZS3BBcmxIank0TS1kbXhTQlJSdHk4YVdBOUVuWm5URGJNSjB2a1Vpakh4TFRCVUtBU2JkR0p6U3NRbVBkQkhaaURIbkZlbDZFOG03Q0JfTkpDY19lWlFLUmVJd2ctbGFHNV9UZG9SM18tdU1RazdFZkpnTUYxM0t2eS1QVXFxU2ZZb3I1VW9KN1pKVjNnTWJpM2VBLWQwMzdxeHdNY0dBX1gwZFBRS1FST3VBaEJ0Yjg?oc=5",
-     "title": "Netflix faces questions on user engagement ahead of third-quarter report"
-    }
-   ],
-   "ids": [
-    "6b33dc790427"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Netflix faces questions on user engagement ahead of third-quarter report",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "ab3c705de186",
    "title": "America’s New Housing Market Is All About Luxury—and It Runs on Cash",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRHBTY1hrY0hfWVBxMkdERFpmUWhvUmhKUVU0VlA4YV9yRF9fd19CRTRud1AzbGdtYzhxc2V0UXZXWnJJdEZiUnhmemREWml1Z3lIOGlyUEtxajlXemEteDdEOFJDR0J1VlVXMHo4OE9PZUc2MnplWUtZSlcxYldaRk9temFXM2FQMUFpblRQcUg1OGlSWGd1YjNTMFkycUlrNWdhZ3ZNTVZqaWIwN0JrVw?oc=5",
@@ -5130,6 +5137,44 @@
     "WSJ"
    ],
    "tags": [
+    "consumo"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "0fc66e4a98c9",
+   "title": "Aluguel de carro no Brasil: cuidados e dicas pós-viagem para evitar pendências",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZEpPSEgzbXdHeHNzVldjLVVjQXdRTHNWUjRwRXhzSkpXZUMydVgwYmJBZFllV2R2TlZGQU5CYTZtbWI5WU8yQzNQV25PYnc4U2o5aElPVjJXcW1GZnB1NDl3NlNYaEF2aTlZWndaQmpNYkNSZHhCWGdIT3pua2hGOG9wUU9RWnNPb1k5Qg?oc=5",
+   "published": "2026-10-19T09:32:07+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Mobilidade Sampa",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZEpPSEgzbXdHeHNzVldjLVVjQXdRTHNWUjRwRXhzSkpXZUMydVgwYmJBZFllV2R2TlZGQU5CYTZtbWI5WU8yQzNQV25PYnc4U2o5aElPVjJXcW1GZnB1NDl3NlNYaEF2aTlZWndaQmpNYkNSZHhCWGdIT3pua2hGOG9wUU9RWnNPb1k5Qg?oc=5",
+     "title": "Aluguel de carro no Brasil: cuidados e dicas pós-viagem para evitar pendências"
+    }
+   ],
+   "ids": [
+    "0fc66e4a98c9"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Aluguel de carro no Brasil: dicas pós-viagem para evitar pendências",
+   "category": "outros",
+   "importance": 1,
+   "importance_reason": "Ruído, sem relevância para o leitor.",
+   "summary": "Conteúdo de serviço ao consumidor, sem trecho disponível.",
+   "involves": "Matéria de orientação sobre cuidados após a devolução de carro alugado. Não há números no material.",
+   "interpretation": "Sem sinal direto para o mercado, com base apenas no título e trecho disponíveis.",
+   "impact": "Impacto limitado ou indireto sobre ativos brasileiros.",
+   "sentiment": "neutro",
+   "entities": [
+    "Locado"
+   ],
+   "tags": [
+    "aluguel de carro",
     "consumo"
    ],
    "is_deal": false,
@@ -8237,46 +8282,6 @@
    "ai": false
   },
   {
-   "id": "ada7b28acd9f",
-   "title": "U.S. Treasury Yields Turn Higher With Oil; French Bond Yields Rise on Protests",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSk1wWWp6WG1vZjdfYjZXX1hRU0lPVEl6WnVGbkozSXB5eTU5UHN2aG9nRHRpc1VMNlI5eF92YXNZNTFUOGFBMnk1anY0cUxFcG5YTTF0NFRhaGZ0VjkwbjNETmpiWkVXUHlNMmZJV014MlJ2LXRKZWlmS3E1N21wZHdnUXZybnJBRzlVSmdwUQ?oc=5",
-   "published": "2026-10-19T19:27:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSk1wWWp6WG1vZjdfYjZXX1hRU0lPVEl6WnVGbkozSXB5eTU5UHN2aG9nRHRpc1VMNlI5eF92YXNZNTFUOGFBMnk1anY0cUxFcG5YTTF0NFRhaGZ0VjkwbjNETmpiWkVXUHlNMmZJV014MlJ2LXRKZWlmS3E1N21wZHdnUXZybnJBRzlVSmdwUQ?oc=5",
-     "title": "U.S. Treasury Yields Turn Higher With Oil; French Bond Yields Rise on Protests"
-    }
-   ],
-   "ids": [
-    "ada7b28acd9f"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "Juros dos títulos franceses sobem com protestos e preocupação orçamentária; Treasuries recuam",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Relevância para o leitor conforme tema e cobertura.",
-   "summary": "Os rendimentos dos títulos soberanos franceses subiram com protestos e dúvidas sobre o orçamento, enquanto os yields dos Treasuries caíram.",
-   "involves": "Títulos franceses, Treasuries, governo francês",
-   "interpretation": "Prêmio de risco político volta à França; fuga para ativos seguros pressiona yields americanos para baixo.",
-   "impact": "Aversão a risco global pode pesar em emergentes e no câmbio brasileiro.",
-   "sentiment": "negativo",
-   "entities": [
-    "França",
-    "Treasuries"
-   ],
-   "tags": [
-    "França",
-    "juros",
-    "dívida"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "2052c0bf1187",
    "title": "Oil Futures Pull Back as U.S. Waives Some Russia Sanctions",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTjUxeXdZWDd5c3MxTHBocWZqajJlQ2UwRTF6dW9KMXh6Q1ROdllKRGZiMV9kWUhvRW9CQzNQMU1LYk80U04zc0dLU2ppcFkySWRjenZFSm8wQjA5QmRPVXhPN3dhMTZPdnFiWjh1QjZ6VDR1ZDg5dFFlZ0t0STJzZlBrUzBMQ0N1R1RTQ2FkekRVaTlPN3lPYU94ZjZRdktUTlJEeTVqSEVFamNkc1FWelQ2MnRNb25OemZ5aUx3dl8?oc=5",
@@ -8367,6 +8372,51 @@
     "why": "O projeto de US$ 380 milhões conta com apoio reforçado da Glencore, e a estrutura de financiamento não foi divulgada. Vale abordar a Centaurus e a Glencore para eventual captação, offtake ou entrada de sócio."
    },
    "ai": true
+  },
+  {
+   "id": "6c4126099570",
+   "title": "REG - Plus500 Ltd - Acquisition of Guru, a broker-dealer in Brazil",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQmNBVENpallINGdvTnZlTzBXbExLWTdZRDNsZ3diRXlZNUhFU3ZOV0ExQ3gtc3ItTDh4dzJNTnh6dkVBNjFWWFdVWk9ZUldYcE9OaGMwWGxYVVJGMDZvUWdMTzU5bGNocm1qT0NiVldfdV9TdkhzczE1NEtQem1aTDE4ek12UDNYWTViZFRMbGFVZm84Wng3T2ZCR2Q0XzJvYUkzczQwaVJwdFg3UVBoaWRldU41ZlprTFp6QzRZV0dFSXBURVJ4cWtyUlktNGJGVDhF?oc=5",
+   "published": "2026-10-20T06:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQmNBVENpallINGdvTnZlTzBXbExLWTdZRDNsZ3diRXlZNUhFU3ZOV0ExQ3gtc3ItTDh4dzJNTnh6dkVBNjFWWFdVWk9ZUldYcE9OaGMwWGxYVVJGMDZvUWdMTzU5bGNocm1qT0NiVldfdV9TdkhzczE1NEtQem1aTDE4ek12UDNYWTViZFRMbGFVZm84Wng3T2ZCR2Q0XzJvYUkzczQwaVJwdFg3UVBoaWRldU41ZlprTFp6QzRZV0dFSXBURVJ4cWtyUlktNGJGVDhF?oc=5",
+     "title": "REG - Plus500 Ltd - Acquisition of Guru, a broker-dealer in Brazil"
+    },
+    {
+     "source": "www.marketscreener.com",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUHNPN21VMUN0S3ZIbnVQbmVYUWNySDZWTHR4TDB2aXhzay1SR2NVd2J1ei1OWDFKNHlWUHlFa29Jbk9QY19PdFNEOXRkOTEwOEpXVmg2d2JvUUR2M3FBTnVlSEU0d09xTGlYV09YVWh4d201S3Q1b1hWeHhCbFZsRXhZSlM2LThhMDJTbFhCbzJKRnZBcnJfdkhkVXZKekhlTUgtSmZyWVZ2aTFZN24zOQ?oc=5",
+     "title": "Plus500 agrees acquisition of Brazilian broker-dealer Guru"
+    },
+    {
+     "source": "FX News Group",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWkc5RUpFUWxvejFsX3NyRjdfNEpJN0FnM2RxVWY2SDVHLXoyeGN3bG54U3hoY2pzeTR5bmhsX1dYWGY0bk84OUdYSXA5Z25UU1RLZ0RadFRkdGtGa3JOTVl6bHEtNmJ4TkEwZTNadTlFQjR5RENvRDdENGRDZjIyTzJJV0dOZkRfUC1sRWNNSlFkT0ltTG9lbEZLRkl2eHV1?oc=5",
+     "title": "Plus500 to acquire Brazil-based broker-dealer Guru"
+    }
+   ],
+   "ids": [
+    "6c4126099570",
+    "838ddbd4dc48",
+    "759456b7d83b"
+   ],
+   "snippet": "",
+   "prescore": 8.2,
+   "headline": "REG - Plus500 Ltd - Acquisition of Guru, a broker-dealer in Brazil",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "790515009afd",
@@ -8613,45 +8663,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Entenda o que faz o preço do dólar subir ou cair O dólar fechou em queda de 0,49% nesta segunda-feira (19), cotado a R$ 5,0480. O Ibovespa, principal índice da bolsa brasileira, recuou 0,17%, aos 205.079 pontos. A reta final da campanha presidencial concentra as atenções do mercado, após o debate entre Lula (PT) e Flávio Bolsonaro (PL) promovido pela Band no fim de semana. Investidores também repe",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6c4126099570",
-   "title": "REG - Plus500 Ltd - Acquisition of Guru, a broker-dealer in Brazil",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQmNBVENpallINGdvTnZlTzBXbExLWTdZRDNsZ3diRXlZNUhFU3ZOV0ExQ3gtc3ItTDh4dzJNTnh6dkVBNjFWWFdVWk9ZUldYcE9OaGMwWGxYVVJGMDZvUWdMTzU5bGNocm1qT0NiVldfdV9TdkhzczE1NEtQem1aTDE4ek12UDNYWTViZFRMbGFVZm84Wng3T2ZCR2Q0XzJvYUkzczQwaVJwdFg3UVBoaWRldU41ZlprTFp6QzRZV0dFSXBURVJ4cWtyUlktNGJGVDhF?oc=5",
-   "published": "2026-10-20T06:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "TradingView",
-     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQmNBVENpallINGdvTnZlTzBXbExLWTdZRDNsZ3diRXlZNUhFU3ZOV0ExQ3gtc3ItTDh4dzJNTnh6dkVBNjFWWFdVWk9ZUldYcE9OaGMwWGxYVVJGMDZvUWdMTzU5bGNocm1qT0NiVldfdV9TdkhzczE1NEtQem1aTDE4ek12UDNYWTViZFRMbGFVZm84Wng3T2ZCR2Q0XzJvYUkzczQwaVJwdFg3UVBoaWRldU41ZlprTFp6QzRZV0dFSXBURVJ4cWtyUlktNGJGVDhF?oc=5",
-     "title": "REG - Plus500 Ltd - Acquisition of Guru, a broker-dealer in Brazil"
-    },
-    {
-     "source": "FX News Group",
-     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWkc5RUpFUWxvejFsX3NyRjdfNEpJN0FnM2RxVWY2SDVHLXoyeGN3bG54U3hoY2pzeTR5bmhsX1dYWGY0bk84OUdYSXA5Z25UU1RLZ0RadFRkdGtGa3JOTVl6bHEtNmJ4TkEwZTNadTlFQjR5RENvRDdENGRDZjIyTzJJV0dOZkRfUC1sRWNNSlFkT0ltTG9lbEZLRkl2eHV1?oc=5",
-     "title": "Plus500 to acquire Brazil-based broker-dealer Guru"
-    }
-   ],
-   "ids": [
-    "6c4126099570",
-    "759456b7d83b"
-   ],
-   "snippet": "",
-   "prescore": 6.7,
-   "headline": "REG - Plus500 Ltd - Acquisition of Guru, a broker-dealer in Brazil",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -9882,20 +9893,20 @@
    "ai": false
   },
   {
-   "id": "686def99d1a9",
+   "id": "e0b36f545b98",
    "title": "Helius Provides Update Regarding the Acquisition of the Serra Pelada Project",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZWRBZDdkZmhvMWxUWVN0bVlyMFJQMnJBZkVnWXNkT0Y3SmNzaFUwUDBVenlzODVGVzNESVBzWjhRMGt3eFRfLW1HMENfVWt4bzIzbG9nOXJEeGs4Ymc2SUlvMnZ1X0ozQ3lxaXpJTkVQUUFMRFBRd3kwVklXRldrZWM3bnFoWGM5YXJqOGpVWDRycElfdDJUbmM0emhwRFFiMGh3UFRLVnV0Um82eG5xMEItTHNOdjh3UnMyMA?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUVZiM2ZWbVFMTEdkM2hiR2M1U2dSdExwZ2dha2JWVnctTGdsREFXYldlNk5FTTA3V1RCLWd0Q090VjlSajdsTjJmWmFCN05OejZsVWlINy00S3IwRDdwVlR5MWp2YUJvdVE5Qi1uVUZwUTY3SHdYX09vVDZqWUNUUGVoWmtoNlYyNThfT1BOZzlnZ1JfRnBSc3RMRzlJQUVMeXY3aGJsTXpxZU4yZGxoTTFQcw?oc=5",
    "published": "2026-10-19T18:12:00+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "TMX Newsfile",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZWRBZDdkZmhvMWxUWVN0bVlyMFJQMnJBZkVnWXNkT0Y3SmNzaFUwUDBVenlzODVGVzNESVBzWjhRMGt3eFRfLW1HMENfVWt4bzIzbG9nOXJEeGs4Ymc2SUlvMnZ1X0ozQ3lxaXpJTkVQUUFMRFBRd3kwVklXRldrZWM3bnFoWGM5YXJqOGpVWDRycElfdDJUbmM0emhwRFFiMGh3UFRLVnV0Um82eG5xMEItTHNOdjh3UnMyMA?oc=5",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUVZiM2ZWbVFMTEdkM2hiR2M1U2dSdExwZ2dha2JWVnctTGdsREFXYldlNk5FTTA3V1RCLWd0Q090VjlSajdsTjJmWmFCN05OejZsVWlINy00S3IwRDdwVlR5MWp2YUJvdVE5Qi1uVUZwUTY3SHdYX09vVDZqWUNUUGVoWmtoNlYyNThfT1BOZzlnZ1JfRnBSc3RMRzlJQUVMeXY3aGJsTXpxZU4yZGxoTTFQcw?oc=5",
      "title": "Helius Provides Update Regarding the Acquisition of the Serra Pelada Project"
     }
    ],
    "ids": [
-    "686def99d1a9"
+    "e0b36f545b98"
    ],
    "snippet": "",
    "prescore": 5.2,
@@ -10284,39 +10295,6 @@
    "ai": false
   },
   {
-   "id": "ed33a3c6f516",
-   "title": "WILLIAMS SAFETY & RESCUE COMPLETES ACQUISITION OF FRANDSON SAFETY",
-   "link": "https://www.prnewswire.com/news-releases/williams-safety--rescue-completes-acquisition-of-frandson-safety-302911847.html",
-   "published": "2026-10-19T13:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/williams-safety--rescue-completes-acquisition-of-frandson-safety-302911847.html",
-     "title": "WILLIAMS SAFETY & RESCUE COMPLETES ACQUISITION OF FRANDSON SAFETY"
-    }
-   ],
-   "ids": [
-    "ed33a3c6f516"
-   ],
-   "snippet": "HOUSTON, Oct. 19, 2026 /PRNewswire/ -- Williams Safety & Rescue, LLC is proud to announce the successful acquisition of Frandson Safety, effective October 16, 2026, expanding our Rockies Region Footprint with offices in Worland and Gillette, Wyoming. This milestone builds on Frandson...",
-   "prescore": 5.0,
-   "headline": "WILLIAMS SAFETY & RESCUE COMPLETES ACQUISITION OF FRANDSON SAFETY",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "HOUSTON, Oct. 19, 2026 /PRNewswire/ -- Williams Safety & Rescue, LLC is proud to announce the successful acquisition of Frandson Safety, effective October 16, 2026, expanding our Rockies Region Footprint with offices in Worland and Gillette, Wyoming. This milestone builds on Frandson...",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "17f1212eb8b1",
    "title": "Arthur J. Gallagher & Co. Acquires Intelligent Communications Experiences",
    "link": "https://www.prnewswire.com/news-releases/arthur-j-gallagher--co-acquires-intelligent-communications-experiences-302911555.html",
@@ -10339,6 +10317,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "ROLLING MEADOWS, Ill., Oct. 19, 2026 /PRNewswire/ -- Arthur J. Gallagher & Co. today announced the acquisition of Melbourne, Victoria-based Intelligent Communications Experiences. Terms of the transaction were not disclosed. Intelligent Communications Experiences helps businesses in...",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ed33a3c6f516",
+   "title": "WILLIAMS SAFETY & RESCUE COMPLETES ACQUISITION OF FRANDSON SAFETY",
+   "link": "https://www.prnewswire.com/news-releases/williams-safety--rescue-completes-acquisition-of-frandson-safety-302911847.html",
+   "published": "2026-10-19T13:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/williams-safety--rescue-completes-acquisition-of-frandson-safety-302911847.html",
+     "title": "WILLIAMS SAFETY & RESCUE COMPLETES ACQUISITION OF FRANDSON SAFETY"
+    }
+   ],
+   "ids": [
+    "ed33a3c6f516"
+   ],
+   "snippet": "HOUSTON, Oct. 19, 2026 /PRNewswire/ -- Williams Safety & Rescue, LLC is proud to announce the successful acquisition of Frandson Safety, effective October 16, 2026, expanding our Rockies Region Footprint with offices in Worland and Gillette, Wyoming. This milestone builds on Frandson...",
+   "prescore": 5.0,
+   "headline": "WILLIAMS SAFETY & RESCUE COMPLETES ACQUISITION OF FRANDSON SAFETY",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "HOUSTON, Oct. 19, 2026 /PRNewswire/ -- Williams Safety & Rescue, LLC is proud to announce the successful acquisition of Frandson Safety, effective October 16, 2026, expanding our Rockies Region Footprint with offices in Worland and Gillette, Wyoming. This milestone builds on Frandson...",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11130,7 +11141,7 @@
   },
   {
    "id": "977a042f7c0b",
-   "title": "French Bond-Risk Gauge Hits 150 Basis Points After Protests",
+   "title": "French Bond-Risk Gauge Breaches Key Level After Protests",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/french-bond-risk-gauge-hits-150-basis-points-after-protests",
    "published": "2026-10-20T08:49:59+00:00",
    "region": "INTL",
@@ -11138,19 +11149,19 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-10-20/french-bond-risk-gauge-hits-150-basis-points-after-protests",
-     "title": "French Bond-Risk Gauge Hits 150 Basis Points After Protests"
+     "title": "French Bond-Risk Gauge Breaches Key Level After Protests"
     }
    ],
    "ids": [
     "977a042f7c0b"
    ],
-   "snippet": "A measure of French bond risk breached a key level on Tuesday, underscoring the challenges facing the government as it struggles to tame the budget deficit and defuse cost-of-living protests.",
+   "snippet": "A measure of French bond risk breached a key level on Tuesday, underscoring the challenges facing the government as it struggles to tame the budget deficit and grapples with cost-of-living protests.",
    "prescore": 3.8,
-   "headline": "French Bond-Risk Gauge Hits 150 Basis Points After Protests",
+   "headline": "French Bond-Risk Gauge Breaches Key Level After Protests",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A measure of French bond risk breached a key level on Tuesday, underscoring the challenges facing the government as it struggles to tame the budget deficit and defuse cost-of-living protests.",
+   "summary": "A measure of French bond risk breached a key level on Tuesday, underscoring the challenges facing the government as it struggles to tame the budget deficit and grapples with cost-of-living protests.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11892,39 +11903,6 @@
    "ai": false
   },
   {
-   "id": "8f7298fbfcb1",
-   "title": "XP Inc (XPBR31)",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEl1ZjFtTlhZTnBvazlaZFYzenVxN0FwZnBSZlVuWHo4dDNVd2RSREJoVVQ1MmhrX1RlNWV3czN4NVhNTVNxTUpFbFZ2ZTFpYXZlLXpwa1IxLUF4T2lpajV6QzlYVktQRTZnT2N6OUZiWl9PQU43Y1ZuTDN2M3FOaVNuY1VKdWRnRlcw?oc=5",
-   "published": "2026-10-19T20:55:14+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "trademap.com.br",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEl1ZjFtTlhZTnBvazlaZFYzenVxN0FwZnBSZlVuWHo4dDNVd2RSREJoVVQ1MmhrX1RlNWV3czN4NVhNTVNxTUpFbFZ2ZTFpYXZlLXpwa1IxLUF4T2lpajV6QzlYVktQRTZnT2N6OUZiWl9PQU43Y1ZuTDN2M3FOaVNuY1VKdWRnRlcw?oc=5",
-     "title": "XP Inc (XPBR31)"
-    }
-   ],
-   "ids": [
-    "8f7298fbfcb1"
-   ],
-   "snippet": "",
-   "prescore": 3.4,
-   "headline": "XP Inc (XPBR31)",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "094f13cdac29",
    "title": "Kede, da Microsoft, integra conselho de administração da XP",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NeWNDV2pzVS03dE1vVUhxa3MtbU9raEJuUWZBUk9XLXFuSkxGak04endMcXNlUnpWaldrVnh6c2FpUGJ6UjRSVjlERVlmYUNqS3YtekJfZ0FiS2lwZk5UWlpvdWxfc0s2Ql9ldEpMbHjSAXBBVV95cUxOTXljQ1dqc1UtN3RNb1VIcWtzLW1Pa2hCblFmQVJPVy1xbkpMRmpNOHp3THFzZVJ6VmpXa1Z4enNhaVBielI0UlY5REVZZmFDakt2LXpCX2dBYktpcGZOVFpab3VsX3NLNkJfZXRKTGx4?oc=5",
@@ -12010,39 +11988,6 @@
    "prescore": 3.4,
    "headline": "Boletim Cambial (19/10): Dólar e Euro PTAX",
    "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b46f6375a4f9",
-   "title": "Como inflação e dívidas do governo impactam seu dinheiro e como se proteger até 2027",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMzhZR2hDTExadW80bUlHcnBWOUhTM1l2cTVTaXJvOFJOdl9zZm1CQzJPZjBfNjdSazNFSGRRRFlVV2h1N0tMcVVFMjJXZ08zVGlMMVhYdFZSemVjOTJWbzlfTUwyeThoay1NZVNRZ3NxWk1pcUlmdUZiVGFKVURleHctZXhidXhXX1VsRnBuRzc3akduYWhTZkhPbEhoUXFPVTRqSlluWHctWnZwLVg1cnh6alJDQWtZc1dQUEQxSjU0ZlI3ckE?oc=5",
-   "published": "2026-10-19T14:23:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "bra1.com.br",
-     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMzhZR2hDTExadW80bUlHcnBWOUhTM1l2cTVTaXJvOFJOdl9zZm1CQzJPZjBfNjdSazNFSGRRRFlVV2h1N0tMcVVFMjJXZ08zVGlMMVhYdFZSemVjOTJWbzlfTUwyeThoay1NZVNRZ3NxWk1pcUlmdUZiVGFKVURleHctZXhidXhXX1VsRnBuRzc3akduYWhTZkhPbEhoUXFPVTRqSlluWHctWnZwLVg1cnh6alJDQWtZc1dQUEQxSjU0ZlI3ckE?oc=5",
-     "title": "Como inflação e dívidas do governo impactam seu dinheiro e como se proteger até 2027"
-    }
-   ],
-   "ids": [
-    "b46f6375a4f9"
-   ],
-   "snippet": "",
-   "prescore": 3.4,
-   "headline": "Como inflação e dívidas do governo impactam seu dinheiro e como se proteger até 2027",
-   "category": "macro",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -13360,6 +13305,105 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "d160a63494e8",
+   "title": "Debate da Globo prevê livre movimentação de candidatos pelo estúdio",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/debate-da-globo-preve-livre-movimentacao-de-candidatos-pelo-estudio.shtml",
+   "published": "2026-10-19T20:51:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/debate-da-globo-preve-livre-movimentacao-de-candidatos-pelo-estudio.shtml",
+     "title": "Debate da Globo prevê livre movimentação de candidatos pelo estúdio"
+    }
+   ],
+   "ids": [
+    "d160a63494e8"
+   ],
+   "snippet": "As regras para o debate presidencial da TV Globo, na sexta-feira (23), preveem liberdade de movimentação para os candidatos Flávio Bolsonaro ( PL ) e Luiz Inácio Lula da Silva ( PT ) dentro do estúdio. Leia mais (10/19/2026 - 17h51)",
+   "prescore": 3.0,
+   "headline": "Debate da Globo prevê livre movimentação de candidatos pelo estúdio",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "As regras para o debate presidencial da TV Globo, na sexta-feira (23), preveem liberdade de movimentação para os candidatos Flávio Bolsonaro ( PL ) e Luiz Inácio Lula da Silva ( PT ) dentro do estúdio. Leia mais (10/19/2026 - 17h51)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "813eae15547b",
+   "title": "Mesmo internado, Janones retoma 'Exército de Lula' após 19 horas sem publicações",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/com-janones-internado-exercito-do-lula-fica-parado-a-5-dias-das-eleicoes.shtml",
+   "published": "2026-10-19T20:47:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/com-janones-internado-exercito-do-lula-fica-parado-a-5-dias-das-eleicoes.shtml",
+     "title": "Mesmo internado, Janones retoma 'Exército de Lula' após 19 horas sem publicações"
+    }
+   ],
+   "ids": [
+    "813eae15547b"
+   ],
+   "snippet": "O \"Exército do Lula \" foi retomado no início da noite desta segunda-feira (19) após 19 horas sem publicação desde a internação de André Janones (Rede-MG) com arritmia cardíaca . O canal de mobilização digital no WhatsApp é o maior da campanha petista. Leia mais (10/19/2026 - 17h47)",
+   "prescore": 3.0,
+   "headline": "Mesmo internado, Janones retoma 'Exército de Lula' após 19 horas sem publicações",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O \"Exército do Lula \" foi retomado no início da noite desta segunda-feira (19) após 19 horas sem publicação desde a internação de André Janones (Rede-MG) com arritmia cardíaca . O canal de mobilização digital no WhatsApp é o maior da campanha petista. Leia mais (10/19/2026 - 17h47)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f0802b7ccb9c",
+   "title": "O que causa arritmia cardíaca, que levou Janones à UTI após debate entre Lula e Flávio Bolsonaro",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/10/o-causa-arritmia-cardiaca-que-levou-janones-a-uti-apos-debate-entre-lula-e-flavio-bolsonaro.shtml",
+   "published": "2026-10-19T19:54:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/10/o-causa-arritmia-cardiaca-que-levou-janones-a-uti-apos-debate-entre-lula-e-flavio-bolsonaro.shtml",
+     "title": "O que causa arritmia cardíaca, que levou Janones à UTI após debate entre Lula e Flávio Bolsonaro"
+    }
+   ],
+   "ids": [
+    "f0802b7ccb9c"
+   ],
+   "snippet": "O deputado federal André Janones , 42, (Rede-MG) foi internado na madrugada desta segunda-feira (19) na UTI (Unidade de Terapia Intensiva) do Hospital Vila Nova Star, em São Paulo, após apresentar arritmia cardíaca e falta de ar. Leia mais (10/19/2026 - 16h54)",
+   "prescore": 3.0,
+   "headline": "O que causa arritmia cardíaca, que levou Janones à UTI após debate entre Lula e Flávio Bolsonaro",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O deputado federal André Janones , 42, (Rede-MG) foi internado na madrugada desta segunda-feira (19) na UTI (Unidade de Terapia Intensiva) do Hospital Vila Nova Star, em São Paulo, após apresentar arritmia cardíaca e falta de ar. Leia mais (10/19/2026 - 16h54)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "sources": [
@@ -13381,7 +13425,7 @@
    "id": "braziljournal",
    "name": "Brazil Journal",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -13542,14 +13586,14 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 36,
+   "count": 33,
    "error": null
   },
   {
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 42,
+   "count": 43,
    "error": null
   },
   {
@@ -13730,11 +13774,11 @@
   }
  ],
  "stats": {
-  "raw": 870,
-  "unique": 210,
-  "unique_all": 809,
+  "raw": 867,
+  "unique": 211,
+  "unique_all": 805,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 5.0
+  "seconds": 4.6
  }
 }
