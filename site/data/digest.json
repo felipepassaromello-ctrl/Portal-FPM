@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:31:13.975183-03:00",
+ "generated_at": "2026-10-21T07:32:15.453091-03:00",
  "date": "2026-10-20",
  "window": {
   "start": "2026-10-19T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-20T08:22:41.995441-03:00",
-  "analyzed": 108
+  "analyzed": 96
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -122,14 +122,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 5.6292,
-   "change_pct": -0.3068578983036585,
+   "price": 5.6302,
+   "change_pct": -0.2891478965091343,
    "spark": [
     5.640158176422119,
     5.711021900177002,
     5.681818008422852,
     5.64652681350708,
-    5.629199981689453
+    5.630199909210205
    ]
   },
   {
@@ -178,40 +178,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 109.98,
-   "change_pct": 1.093849686973214,
+   "price": 111.0,
+   "change_pct": 2.031435854282848,
    "spark": [
     109.86000061035156,
     109.55000305175781,
     108.79000091552734,
-    109.9800033569336
+    111.0
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4139.7,
-   "change_pct": -0.07000670081311888,
+   "price": 4133.1,
+   "change_pct": -0.22932693072702515,
    "spark": [
     4181.10009765625,
     4160.10009765625,
     4142.60009765625,
-    4139.7001953125
+    4133.10009765625
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 83501.82,
-   "change_pct": 0.6761673961008574,
+   "price": 83246.73,
+   "change_pct": 0.3686114225774917,
    "spark": [
     81382.1484375,
     82017.6015625,
     81853.5390625,
     82941.0,
-    83501.8203125
+    83246.7265625
    ]
   }
  ],
@@ -355,59 +355,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "158710d75a33",
-   "title": "Na M. Dias Branco, o M&A do pão congelado",
-   "link": "https://braziljournal.com/na-m-dias-branco-o-m-and-a-do-pao-congelado",
-   "published": "2026-10-19T20:36:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/na-m-dias-branco-o-m-and-a-do-pao-congelado",
-     "title": "Na M. Dias Branco, o M&A do pão congelado"
-    }
-   ],
-   "ids": [
-    "158710d75a33"
-   ],
-   "snippet": "A ação da M. Dias Branco subiu mais de 3% hoje depois da companhia anunciar a aquisição de 80% da Grespan, uma fabricante de produtos de panificação congelados. Os fundadores da Grespan, José Marcos Grespan e Marlene Grespan, permanecerão na operação por até cinco anos, ajudando na integração dos negócios.",
-   "prescore": 9.0,
-   "headline": "M. Dias Branco compra 80% da Grespan e entra em pães congelados",
-   "category": "mna",
-   "importance": 7,
-   "importance_reason": "Aquisição de empresa listada na B3, com ação em alta de mais de 3%.",
-   "summary": "A M. Dias Branco anunciou a compra de 80% da Grespan, fabricante de panificação congelada; as ações subiram mais de 3%. Os fundadores José Marcos e Marlene Grespan ficam até cinco anos na integração. Valor não informado no trecho.",
-   "involves": "M. Dias Branco, Grespan, fundadores, alimentos",
-   "interpretation": "Movimento de diversificação para o segmento de congelados, com earn-in/retenção dos fundadores; o valor não foi divulgado no material.",
-   "impact": "Mercado reagiu bem. Sinaliza apetite por M&A em alimentos processados e pode pressionar concorrentes de panificação a buscar ativos.",
-   "sentiment": "positivo",
-   "entities": [
-    "M. Dias Branco",
-    "Grespan",
-    "José Marcos Grespan",
-    "Marlene Grespan"
-   ],
-   "tags": [
-    "alimentos",
-    "aquisição",
-    "panificação"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "M. Dias Branco",
-    "target": "Grespan (80%)",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Alimentos / panificação congelada",
-    "advisors": "não divulgado"
-   },
-   "ai": true,
-   "repeat": {
-    "date": "2026-10-19"
-   }
   },
   {
    "id": "aa3c734c0b89",
@@ -1079,87 +1026,6 @@
    "ai": true
   },
   {
-   "id": "c156b7fc0bc5",
-   "title": "Campanha de Lula decide pedir cassação de chapa de Flávio por 'manipulação algorítmica' da Meta",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/campanha-de-lula-decide-pedir-cassacao-de-chapa-de-flavio-por-manipulacao-algoritmica-da-meta.shtml",
-   "published": "2026-10-19T22:06:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/campanha-de-lula-decide-pedir-cassacao-de-chapa-de-flavio-por-manipulacao-algoritmica-da-meta.shtml",
-     "title": "Campanha de Lula decide pedir cassação de chapa de Flávio por 'manipulação algorítmica' da Meta"
-    }
-   ],
-   "ids": [
-    "c156b7fc0bc5"
-   ],
-   "snippet": "A campanha do presidente Lula decidiu entrar com uma ação no TSE (Tribunal Superior Eleitoral) acusando a Meta de \"manipulação algorítmica\" em favor de Flávio Bolsonaro e pedindo a cassação presidencial da chapa do candidato do PL . Leia mais (10/19/2026 - 19h06)",
-   "prescore": 3.0,
-   "headline": "Campanha de Lula pedirá cassação da chapa de Flávio por 'manipulação algorítmica' da Meta",
-   "category": "politica",
-   "importance": 6,
-   "importance_reason": "Ação no TSE a 5 dias do 2º turno, com risco institucional.",
-   "summary": "A campanha de Lula decidiu acionar o TSE acusando a Meta de 'manipulação algorítmica' pró-Flávio e pedindo a cassação da chapa.",
-   "involves": "Campanha de Lula; TSE; Meta; Flávio Bolsonaro",
-   "interpretation": "Ação de alto risco político, com chance baixa de resultado antes do pleito.",
-   "impact": "Incerteza eleitoral e risco regulatório para plataformas.",
-   "sentiment": "negativo",
-   "entities": [
-    "Lula",
-    "Flávio Bolsonaro",
-    "TSE",
-    "Meta"
-   ],
-   "tags": [
-    "TSE",
-    "cassação",
-    "Meta"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "68d3ae3193a7",
-   "title": "‘Bondade eleitoral’ ou compra de voto? A conta não para de crescer",
-   "link": "https://braziljournal.com/bondade-eleitoral-ou-compra-de-voto-a-conta-nao-para-de-crescer",
-   "published": "2026-10-19T21:17:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/bondade-eleitoral-ou-compra-de-voto-a-conta-nao-para-de-crescer",
-     "title": "‘Bondade eleitoral’ ou compra de voto? A conta não para de crescer"
-    }
-   ],
-   "ids": [
-    "68d3ae3193a7"
-   ],
-   "snippet": "A proliferação das medidas caridosamente chamadas de ‘bondades eleitorais’ — ou “compra de votos com dinheiro público”, para outros — não tem paralelos na história do País. É difícil fazer a conta com precisão, porque as “bondades” misturam aumentos simples e diretos de despesas, promessas futuras ainda a serem aprovadas e políticas parafiscais, como linhas de crédito subsidiado.",
-   "prescore": 3.0,
-   "headline": "'Bondade eleitoral' ou compra de voto? A conta não para de crescer",
-   "category": "macro",
-   "importance": 6,
-   "importance_reason": "Análise do custo fiscal das medidas eleitorais.",
-   "summary": "O Brazil Journal diz que as bondades eleitorais não têm paralelo histórico e são difíceis de quantificar, pois misturam despesas, promessas e crédito subsidiado.",
-   "involves": "Governo; Congresso; Brazil Journal",
-   "interpretation": "Alerta sobre passivo fiscal, sem número consolidado.",
-   "impact": "Pressão sobre o fiscal de 2027 e a curva de juros.",
-   "sentiment": "negativo",
-   "entities": [
-    "Brazil Journal"
-   ],
-   "tags": [
-    "fiscal",
-    "eleições",
-    "gastos"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "de684d19f371",
    "title": "Alice levanta US$ 40 milhões em série D com braço do Banco Mundial",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYlhzV053TllSZGE5YVdocHoySlpSTHJtNUtSUFpHbGx1NlN5cFFIdXpvNlFsY09RQ0hSeUJLSk1sa0dOZk5JODVJemVHY05NaU1LMTJMcElrNVBDTlp6QmpyOE9PRTd1YlY1bXpUb3VrUEs0dzNVZmNwM0p5eXNxS3J4RDBIYWI1V0c0dXNycW9LYjc5TWN5aVN4WU14SDU0cngzeXdXZWJZX184LXR0ZTE5WXRzWHl0NFVuddIBywFBVV95cUxONHg4M1ByTmF0ZEJwdXhBVndyZUlWdHVxLVpvR0w1WFFUZFpzVkZDZ0NDVGZQY3NTaHZPbWdKd3FwUWhHeXhkLTNvWVpKSEpvcGw4MGlldm1zSkhBb1gyWVNSWjg2MmwxdTJ6WkZmSGlCVFJud2FVQjliOHh2MmFHU1A3a1UtNjA5a1pKdlVhaldSNEMxVVBhVk9MbENiaE1INXlmNXBNSHlvNHZfYXhwODExTm1iTi1uT3FqYWdpeXdLS1d4cTZWLXB2dw?oc=5",
@@ -1371,46 +1237,6 @@
    "ai": true
   },
   {
-   "id": "fc778f881d4b",
-   "title": "Veja quando serão divulgadas as próximas pesquisas eleitorais",
-   "link": "https://g1.globo.com/politica/eleicoes/2026/pesquisa-eleitoral/noticia/2026/10/19/pesquisas-eleitorais-quaest-datafolha.ghtml",
-   "published": "2026-10-19T12:14:04+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/eleicoes/2026/pesquisa-eleitoral/noticia/2026/10/19/pesquisas-eleitorais-quaest-datafolha.ghtml",
-     "title": "Veja quando serão divulgadas as próximas pesquisas eleitorais"
-    }
-   ],
-   "ids": [
-    "fc778f881d4b"
-   ],
-   "snippet": "Flávio Bolsonaro e Lula em debate na Band Renato Pizzutto/Band A Quaest divulga nesta quarta-feira (21) pesquisa de intenção de voto para o 2º turno das eleições presidenciais de 2026. O levantamento foi encomendado pela Globo e pelo jornal O Globo. ✅ Siga o canal de notícias de eleições do g1 no WhatsApp Na pesquisa anterior, divulgada na semana passada, Flávio Bolsonaro (PL) e o presidente Lula (PT) estavam em empate técnico. Flávio tinha 46%, e Lula, 44%. A diferença de dois pontos estava dentro da margem de erro, por isso o empate técnico. 📋Segundo os dados registrados no Tribunal Superior",
-   "prescore": 2.8,
-   "headline": "Quaest divulga na quarta (21) pesquisa do 2º turno; anterior mostrava Flávio 46% x Lula 44%",
-   "category": "politica",
-   "importance": 6,
-   "importance_reason": "Pesquisa pode mexer com o mercado.",
-   "summary": "Quaest divulga pesquisa na quarta (21). A anterior indicava empate técnico: Flávio 46% e Lula 44%.",
-   "involves": "Quaest, Globo, Lula, Flávio Bolsonaro",
-   "interpretation": "Pesquisas são o principal gatilho de volatilidade pré-eleição.",
-   "impact": "Câmbio e juros podem reagir ao resultado.",
-   "sentiment": "neutro",
-   "entities": [
-    "Quaest",
-    "Lula",
-    "Flávio Bolsonaro"
-   ],
-   "tags": [
-    "pesquisa",
-    "eleição"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "dfd5b07fec38",
    "title": "Glencore reforça apoio a projeto de níquel de US$380 milhões da Centaurus no Brasil",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSG5feWFrZU55R05hNXhRTFljRFJIWC1TaW0taUJoQ2NvR2VvTWhOelRJc1pwX251ZzRISTR6NmtJRTVxZjNWOVJqZm9LQjFpZ1hfdV90anJKbV93TDNHczZ1ZjdhNHo2dTBTTFBEaEJpTEFJMnQ4SnBOclFpMFFxU0ktNWdVRjNteUZZWWxEa3h4WFZ1NVJUWVJ0THkxUmdEaHJpNXZRNC1FUXZ5S3A4MEc0cEQyMWYyQVl6UQ?oc=5",
@@ -1556,46 +1382,6 @@
     "sector": "Tecnologia / IA",
     "advisors": "não divulgado"
    },
-   "ai": true
-  },
-  {
-   "id": "b0330e50b9f5",
-   "title": "Ibovespa fecha no zero a zero com eleição acirrada e Petrobras em baixa",
-   "link": "https://exame.com/invest/mercados/ibovespa-fecha-no-zero-a-zero-com-eleicao-acirrada-e-petrobras-em-baixa/",
-   "published": "2026-10-19T17:35:01+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/mercados/ibovespa-fecha-no-zero-a-zero-com-eleicao-acirrada-e-petrobras-em-baixa/",
-     "title": "Ibovespa fecha no zero a zero com eleição acirrada e Petrobras em baixa"
-    }
-   ],
-   "ids": [
-    "b0330e50b9f5"
-   ],
-   "snippet": "O dólar à vista também fechou em queda nesta segunda-feira, 19, e foi para R$ 5,048",
-   "prescore": 6.0,
-   "headline": "Ibovespa fecha estável com eleição acirrada e Petrobras em baixa",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Fechamento diário.",
-   "summary": "O Ibovespa fechou perto da estabilidade e o dólar caiu a R$ 5,048 na segunda (19), com Petrobras em baixa.",
-   "involves": "Ibovespa, dólar, Petrobras",
-   "interpretation": "Mercado cauteloso.",
-   "impact": "Neutro.",
-   "sentiment": "neutro",
-   "entities": [
-    "Ibovespa",
-    "Petrobras"
-   ],
-   "tags": [
-    "Ibovespa",
-    "dólar",
-    "Petrobras"
-   ],
-   "is_deal": false,
-   "deal": null,
    "ai": true
   },
   {
@@ -2564,6 +2350,39 @@
    "ai": false
   },
   {
+   "id": "92deb2c75f38",
+   "title": "Na M. Dias Branco, o M&A do pão congelado",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84dDZtb212b3pPcjlzWEROYnlJTEdDa0Z6WWhyTF9tRFltZTBMaE1xRDdaNl9uVjh0QkRxNW9pSlg4OVpfWnJPdXpXRW1BQ1E5cF9nSndQOFpnNDdZV0VXc1pJWHRuWjhqUWlXQXRUai1OQlRteTNoMg?oc=5",
+   "published": "2026-10-19T20:36:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84dDZtb212b3pPcjlzWEROYnlJTEdDa0Z6WWhyTF9tRFltZTBMaE1xRDdaNl9uVjh0QkRxNW9pSlg4OVpfWnJPdXpXRW1BQ1E5cF9nSndQOFpnNDdZV0VXc1pJWHRuWjhqUWlXQXRUai1OQlRteTNoMg?oc=5",
+     "title": "Na M. Dias Branco, o M&A do pão congelado"
+    }
+   ],
+   "ids": [
+    "92deb2c75f38"
+   ],
+   "snippet": "",
+   "prescore": 6.0,
+   "headline": "Na M. Dias Branco, o M&A do pão congelado",
+   "category": "empresas",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "c78c7e0d1ddc",
    "title": "Justiça encerra recuperação judicial da Americanas três anos e nove meses após fraude",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaGdrQzZ5TmlSZDJ6VF95cnUteUxudVNBeGpnMXFUR0VVbzI1end5QXVGMm9wM3Q2MkE1OGxIM3MwVjg1SlpUN2lnQ2RuQTktUXNkaFhXUGtoWk1pVmtzZjlveTZneGxKeHUxWm9mTTV5VW9yT09QelFKTkhibDBRclpQT2FzZ2V4ZWpFdVFjTTBTR3RzZHdROElJeHBqX2FsSFZHSjhHT0pNZnpMNjlzeEE1blFYUVhEY1RRcTFianNJMFMxY1BhbNIB3AFBVV95cUxPVFVxN0Utck45ZklPOElyR0xfWl8wMnBQZEtmV1JuU01udUpIaFNBYnpSTmNGRHM0RTd4QnJCVC00ZDVfdm9xZTlMc3VIazlmVzk3QmlsRGoyTGhOU3oyZDlkR082WWdBcVUwUVUta1VGamtEN29MQ0F1Q21vWVZrNk40NEFHdTFLaWl1Q2VnT1VNNlRtdDRRTElfMENNVkNBMVh6eVo2RUxyMXFDdmw1OER2VjRvaHd5OHdFU3laQlFVWFlpZ3l5T1YxajlKZHROWmZNN0VTZWVVUnNw?oc=5",
@@ -2601,54 +2420,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "bd964ebb2f5e",
-   "title": "Sea plans IPO for financial services arm Monee, memo says",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTnJhT0dMNmJNYTNMN2pSWnlhTXBXdkZTSFF1c3JhdnpGOVZ4TXN3Umh2MlczQ0xNN0s4MGJEM3hVTmU2RTFITGpWOWR6OHR4RlZCUFhJdWFldTg0SHlOYjREa3A3T2VJNzl5c0w0TldZSDFfQ2NVMXQyX1lnUXRxeFhkcG5nc0xDYUZQSnpONkJtNzNSZnZ4NFlZaC1USmtNRlFMekY4QTdYems?oc=5",
-   "published": "2026-10-20T04:12:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTnJhT0dMNmJNYTNMN2pSWnlhTXBXdkZTSFF1c3JhdnpGOVZ4TXN3Umh2MlczQ0xNN0s4MGJEM3hVTmU2RTFITGpWOWR6OHR4RlZCUFhJdWFldTg0SHlOYjREa3A3T2VJNzl5c0w0TldZSDFfQ2NVMXQyX1lnUXRxeFhkcG5nc0xDYUZQSnpONkJtNzNSZnZ4NFlZaC1USmtNRlFMekY4QTdYems?oc=5",
-     "title": "Sea plans IPO for financial services arm Monee, memo says"
-    }
-   ],
-   "ids": [
-    "bd964ebb2f5e"
-   ],
-   "snippet": "",
-   "prescore": 5.6,
-   "headline": "Sea planeja IPO do braço financeiro Monee, diz memorando",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Confirma o plano de IPO.",
-   "summary": "Segundo a Reuters, a Sea planeja IPO de sua unidade de serviços financeiros Monee, conforme memorando.",
-   "involves": "Sea, Monee",
-   "interpretation": "Memorando interno sugere plano concreto.",
-   "impact": "Indireto.",
-   "sentiment": "neutro",
-   "entities": [
-    "Sea",
-    "Monee"
-   ],
-   "tags": [
-    "IPO",
-    "Monee",
-    "fintech"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "IPO",
-    "buyer": "Sea",
-    "target": "Monee",
-    "value": "não divulgado",
-    "stage": "Rumor",
-    "sector": "Fintech",
-    "advisors": "não divulgado"
-   },
-   "ai": true
   },
   {
    "id": "8c8ac2b59f7b",
@@ -3036,88 +2807,6 @@
    "ai": true
   },
   {
-   "id": "eb82ebab8df2",
-   "title": "PepsiCo perde o KFC; ação tem maior desconto para a Coca em 25 anos",
-   "link": "https://braziljournal.com/pepsico-perde-o-kfc-acao-tem-maior-desconto-para-a-coca-em-25-anos",
-   "published": "2026-10-19T15:36:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/pepsico-perde-o-kfc-acao-tem-maior-desconto-para-a-coca-em-25-anos",
-     "title": "PepsiCo perde o KFC; ação tem maior desconto para a Coca em 25 anos"
-    }
-   ],
-   "ids": [
-    "eb82ebab8df2"
-   ],
-   "snippet": "“Tem Coca?” “Só Pepsi.” No KFC dos EUA, esse papo acabou.",
-   "prescore": 3.0,
-   "headline": "PepsiCo perde o KFC nos EUA; ação tem maior desconto para a Coca em 25 anos",
-   "category": "empresas",
-   "importance": 4,
-   "importance_reason": "Movimento corporativo global de bebidas, sem ligação direta ao Brasil.",
-   "summary": "A PepsiCo perdeu o fornecimento ao KFC nos EUA e suas ações operam com o maior desconto frente à Coca-Cola em 25 anos. Valores do contrato não constam no trecho.",
-   "involves": "PepsiCo, KFC, Coca-Cola",
-   "interpretation": "Perda de conta relevante de food service reforça a diferença de percepção entre as duas.",
-   "impact": "Positivo relativo para Coca-Cola; negativo para PepsiCo.",
-   "sentiment": "negativo",
-   "entities": [
-    "PepsiCo",
-    "KFC",
-    "Coca-Cola"
-   ],
-   "tags": [
-    "bebidas",
-    "PepsiCo",
-    "KFC"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "e374dfc7b728",
-   "title": "‘Momento Diet Coke’ da cerveja: compre AB Inbev, diz a Barron’s",
-   "link": "https://braziljournal.com/momento-diet-coke-da-cerveja-e-oportunidade-de-compra-na-ab-inbev-diz-a-barrons",
-   "published": "2026-10-19T14:58:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/momento-diet-coke-da-cerveja-e-oportunidade-de-compra-na-ab-inbev-diz-a-barrons",
-     "title": "‘Momento Diet Coke’ da cerveja: compre AB Inbev, diz a Barron’s"
-    }
-   ],
-   "ids": [
-    "e374dfc7b728"
-   ],
-   "snippet": "O consumo de álcool no mundo tem caído ano a ano. Nos EUA, por exemplo, as famílias estão gastando só 0,8% de seu orçamento com bebidas alcoólicas – o menor patamar dos últimos 40 anos. Para completar, medicamentos como o Ozempic e Monjauro têm reduzido ainda mais o apetite dos consumidores por álcool – turbinando a queda de volume das principais fabricantes de bebidas.",
-   "prescore": 3.0,
-   "headline": "Barron's recomenda compra de AB InBev em 'momento Diet Coke' da cerveja",
-   "category": "empresas",
-   "importance": 4,
-   "importance_reason": "Tese de investimento global em bebidas, relevância indireta (Ambev).",
-   "summary": "A Barron's recomenda comprar AB InBev apesar da queda do consumo de álcool: nos EUA, famílias gastam 0,8% do orçamento com bebidas alcoólicas, menor nível em 40 anos, e os GLP-1 pressionam volumes.",
-   "involves": "AB InBev, Barron's, GLP-1",
-   "interpretation": "Tese contrarian de que a categoria se adapta com produtos sem álcool; ligação indireta com Ambev.",
-   "impact": "Neutro a positivo para AB InBev; GLP-1 segue como risco estrutural de volume.",
-   "sentiment": "misto",
-   "entities": [
-    "AB InBev",
-    "Barron's",
-    "Ambev"
-   ],
-   "tags": [
-    "cerveja",
-    "AB InBev",
-    "GLP-1"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "3a165cd79522",
    "title": "Índice ZEW da Alemanha recua em outubro com custos de energia",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSGxraWRuT3JiV0hZYTJWS3VnNUhlMm5tYXNfak82MXZEY3NlNnJQYUlmbTl3eE5yZU05OENXTEhJc2V1NEZ5QW0wWTA4OUE0bDZUQzBDYU0yaFV0MHNrTXpkRll2V2pnMGdCRy1kN2hTbEtjeDlEQWtWamZEaHF5ejhSVzJhSnpZTjlZU1FiLW90bl9ncnB5RkRyd2FtdUVpZkNmS0o2TVNtWXVacGxHMks1T0o4d9IBxAFBVV95cUxOUHhzb1NIUEVRSF9SdDlCUUdGMGluRDM0NXJXaDlTcmc5VHlIUWt3Zm80QmI1RktFR1lIbnRyenhfVWhVTjBlY25EaFEya2FCWi0xOFdxc0dGZVBTY2xXTWE3U1h1eHpqc3ZqcmVlTWE2dklCZUJNSzZETmVPckpHSkJTSEU2TlA1ME1DaktXMjNUbjREc0JLRlNEWTU0dUdmck5MOGdzSDBYaXVReGdQT1dMaUg1QUFXTEdDajlQbl8xV2Zn?oc=5",
@@ -3400,46 +3089,6 @@
    "ai": true
   },
   {
-   "id": "24bc4feb6f5d",
-   "title": "Dollar dips as traders weigh Iran, AI risks",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOazFGS3ZwNDhmME9ZUDdoZVQzMkV3UEJQUEJsTE1LdnFTcjNXRzI2emE2Z3VvZE1YNGRpam95VTF3UGgyTVFjRExnWkJ1TGxpenBQUHFhbmU1MUpEYVhDcURRS05xQ1BycHRUT3F3bExRQjZfaUFVeGlKcHpmaGFEMkVwQ0RxSk5iLU4zaDVaVDJzQzEyQ0R4OVFZeHZuVXJKZ3pESWtudFQ?oc=5",
-   "published": "2026-10-20T01:14:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOazFGS3ZwNDhmME9ZUDdoZVQzMkV3UEJQUEJsTE1LdnFTcjNXRzI2emE2Z3VvZE1YNGRpam95VTF3UGgyTVFjRExnWkJ1TGxpenBQUHFhbmU1MUpEYVhDcURRS05xQ1BycHRUT3F3bExRQjZfaUFVeGlKcHpmaGFEMkVwQ0RxSk5iLU4zaDVaVDJzQzEyQ0R4OVFZeHZuVXJKZ3pESWtudFQ?oc=5",
-     "title": "Dollar dips as traders weigh Iran, AI risks"
-    }
-   ],
-   "ids": [
-    "24bc4feb6f5d"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Euro reage com alívio dos protestos na França; dólar cede",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Movimento cambial global.",
-   "summary": "O euro sobe com a redução dos protestos na França e o dólar recua.",
-   "involves": "Euro, dólar, França",
-   "interpretation": "Alívio temporário ligado à calmaria na França.",
-   "impact": "Dólar mais fraco pode ajudar o real marginalmente.",
-   "sentiment": "positivo",
-   "entities": [
-    "Euro",
-    "Dólar"
-   ],
-   "tags": [
-    "euro",
-    "dólar",
-    "câmbio"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "802bffed257c",
    "title": "Flávio propõe retomar regra de transição de dois anos no Bolsa Família para quem conseguir emprego",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWUVGY3NGblphaWlFWUxmRnZvN1JFNUp0TjV5bnJzS1l2a1lHdHdZcVJ4WjZ0N3JMcWNXczc2Z0Z6UGdEYTZPSnk4bEZkRjFjdDMwNUNIQ05ubWh2NUM5R0E1bnNLNnJBU1JtLTNYYVc3cnVvV3hpTFpDZEljMkFWS3hpU09YSkJKMXZocFJMRDBjYUl6WGNZN9IBngFBVV95cUxQWUNoQnBvSXBicDdlQ0NJdEhIRndENldVcjlOb2MwLTA4TG9JdkZYUC00eUFNQUg4WGQzRTJ3X0gwNW4xTlEyOXhqeG1jZURZdUJSRFVTbTNOT3ZoOUdMbU9PeHpqU1o0bWhlS2EwM0UwYk13bW45a29UN1MtTE5SYUJwVDZuaVpSVDFKbjFWdC1LMUk3a3FZOGREYThTdw?oc=5",
@@ -3478,6 +3127,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "7c9ce05ed981",
+   "title": "IPO da Anthropic — Detalhes do Próximo IPO",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9OX3RBb1pIenZSM0pCSnY1ek1velM0OHdpTkNkOHVIRE9YV3o4WFpRVElLTlRKdkdZOFg1WjYtZUt4RkNMOWR6bnluMnNYdlM4VUlUd0RvMng1S1Q5ZEdQWk1B?oc=5",
+   "published": "2026-10-19T19:45:54+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9OX3RBb1pIenZSM0pCSnY1ek1velM0OHdpTkNkOHVIRE9YV3o4WFpRVElLTlRKdkdZOFg1WjYtZUt4RkNMOWR6bnluMnNYdlM4VUlUd0RvMng1S1Q5ZEdQWk1B?oc=5",
+     "title": "IPO da Anthropic — Detalhes do Próximo IPO"
+    }
+   ],
+   "ids": [
+    "7c9ce05ed981"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "IPO da Anthropic — Detalhes do Próximo IPO",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "672141d9b2a4",
@@ -3535,39 +3217,6 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "EWZ sobe 1,48% em Nova York com duas pesquisas mostrando vantagem numérica de Bolsonaro",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1809f4abce10",
-   "title": "Petróleo sobe e Brent supera US$ 111 com queda na oferta do Golfo e ataques do Irã em Ormuz | Finanças",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQU3NVc1FSdm9SZm5kRkNlV3Zma2dJMjliTkFKaUhJRkpoUnRITWtrREtYRnVsYjBsdDhHZWlCUFFHdXE4S3E3LV9QdTNhcEFIZThGdDJ0ajZidW5UNVNnRmlodGNsOWYzTVVuY2dSNVlhMDNwaWlMZG4ydWpXT3RQV0ludEFHbVVuLVR1TVRLejFQQ2hVUFByeTYySUtiTWlDREtYOEZ2SndvdVk0RGxFQ2JDQ3hPWlB4VV9vZjRoZklsTzJGU1VyU3JuUHRxMXdlRDlaTnZEdUF6MG9LY1hj?oc=5",
-   "published": "2026-10-20T10:51:46+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQU3NVc1FSdm9SZm5kRkNlV3Zma2dJMjliTkFKaUhJRkpoUnRITWtrREtYRnVsYjBsdDhHZWlCUFFHdXE4S3E3LV9QdTNhcEFIZThGdDJ0ajZidW5UNVNnRmlodGNsOWYzTVVuY2dSNVlhMDNwaWlMZG4ydWpXT3RQV0ludEFHbVVuLVR1TVRLejFQQ2hVUFByeTYySUtiTWlDREtYOEZ2SndvdVk0RGxFQ2JDQ3hPWlB4VV9vZjRoZklsTzJGU1VyU3JuUHRxMXdlRDlaTnZEdUF6MG9LY1hj?oc=5",
-     "title": "Petróleo sobe e Brent supera US$ 111 com queda na oferta do Golfo e ataques do Irã em Ormuz | Finanças"
-    }
-   ],
-   "ids": [
-    "1809f4abce10"
-   ],
-   "snippet": "",
-   "prescore": 4.8,
-   "headline": "Petróleo sobe e Brent supera US$ 111 com queda na oferta do Golfo e ataques do Irã em Ormuz | Finanças",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -3942,88 +3591,6 @@
    "tags": [
     "campanha",
     "eleições"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "fd268f9bfd8b",
-   "title": "Manifestantes pró-Lula criticam suposta ingerência eleitoral da Meta em ato na frente da empresa",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/manifestantes-pro-lula-criticam-suposta-ingerencia-eleitoral-da-meta-em-ato-na-frente-da-empresa.shtml",
-   "published": "2026-10-19T22:35:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/manifestantes-pro-lula-criticam-suposta-ingerencia-eleitoral-da-meta-em-ato-na-frente-da-empresa.shtml",
-     "title": "Manifestantes pró-Lula criticam suposta ingerência eleitoral da Meta em ato na frente da empresa"
-    }
-   ],
-   "ids": [
-    "fd268f9bfd8b"
-   ],
-   "snippet": "Manifestantes a favor da reeleição do presidente Lula ( PT ) realizaram nesta segunda-feira (19) um ato contra a Meta , empresa dona do Facebook , Instagram e WhatsApp , na sede da firma no Brasil, na avenida Brigadeiro Faria Lima, em São Paulo . Leia mais (10/19/2026 - 19h35)",
-   "prescore": 3.0,
-   "headline": "Manifestantes pró-Lula protestam contra suposta ingerência da Meta",
-   "category": "politica",
-   "importance": 3,
-   "importance_reason": "Ato na Faria Lima.",
-   "summary": "Manifestantes pró-Lula fizeram ato na sede da Meta, na Faria Lima, contra suposta ingerência eleitoral.",
-   "involves": "Meta; manifestantes",
-   "interpretation": "Pressão política sobre big tech.",
-   "impact": "Risco reputacional e regulatório para a Meta.",
-   "sentiment": "negativo",
-   "entities": [
-    "Meta",
-    "Lula"
-   ],
-   "tags": [
-    "Meta",
-    "protesto",
-    "eleições"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "752168cc2a77",
-   "title": "A maioria dos médicos mal usa um CRM. A Healo quer mudar isso",
-   "link": "https://braziljournal.com/a-maioria-dos-medicos-mal-usa-um-crm-a-healo-quer-mudar-isso",
-   "published": "2026-10-19T19:35:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/a-maioria-dos-medicos-mal-usa-um-crm-a-healo-quer-mudar-isso",
-     "title": "A maioria dos médicos mal usa um CRM. A Healo quer mudar isso"
-    }
-   ],
-   "ids": [
-    "752168cc2a77"
-   ],
-   "snippet": "Na era da inteligência artificial, os consultórios médicos ainda operam com soluções da idade da pedra – pelo menos quando o assunto é o relacionamento com os seus clientes. Esse é o diagnóstico de Lucas Assis e Bruno Henrique, que desenvolveram um software de CRM – turbinado com AI – para ajudar os médicos independentes a captar e reter pacientes.",
-   "prescore": 3.0,
-   "headline": "Healo desenvolve CRM com IA para médicos independentes captarem e reterem pacientes",
-   "category": "tech",
-   "importance": 3,
-   "importance_reason": "Startup early stage, sem valores divulgados.",
-   "summary": "Lucas Assis e Bruno Henrique criaram a Healo, software de CRM com IA para consultórios independentes. A fonte não traz valores, rodada ou investidores.",
-   "involves": "Healo, Lucas Assis, Bruno Henrique, healthtech",
-   "interpretation": "Sinal de mais uma healthtech vertical com IA; tração e financiamento não divulgados.",
-   "impact": "Pouco impacto imediato; pode virar alvo de seed/VC se ganhar escala.",
-   "sentiment": "positivo",
-   "entities": [
-    "Healo",
-    "Lucas Assis",
-    "Bruno Henrique"
-   ],
-   "tags": [
-    "healthtech",
-    "CRM",
-    "IA",
-    "startup"
    ],
    "is_deal": false,
    "deal": null,
@@ -4475,46 +4042,6 @@
    "ai": true
   },
   {
-   "id": "7fdc39906c73",
-   "title": "AstraZeneca Partners With Oracle to Refine Clinical Research With AI",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVJpY0VOc2tLVk9kZTE4bEZHaWJBbEFmaUFqbTBPcHhBODc3SUdwdnJBU2NuanRVVmk0NDNlZElOZWlTM1ZIOUpoekE2aVlvUmlra1N3dndiZWVTZVFGUXI2QXhnWWF4eHg2RFhlOC1hWDF4dzc5a2dIcDhvQWVGZkRSYU9nNlpkNVlRS0RYNUpDQ19lUnl4X1dYaGFGRWpoTXpFbkVHb3h0QUFzYXZF?oc=5",
-   "published": "2026-10-20T06:10:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVJpY0VOc2tLVk9kZTE4bEZHaWJBbEFmaUFqbTBPcHhBODc3SUdwdnJBU2NuanRVVmk0NDNlZElOZWlTM1ZIOUpoekE2aVlvUmlra1N3dndiZWVTZVFGUXI2QXhnWWF4eHg2RFhlOC1hWDF4dzc5a2dIcDhvQWVGZkRSYU9nNlpkNVlRS0RYNUpDQ19lUnl4X1dYaGFGRWpoTXpFbkVHb3h0QUFzYXZF?oc=5",
-     "title": "AstraZeneca Partners With Oracle to Refine Clinical Research With AI"
-    }
-   ],
-   "ids": [
-    "7fdc39906c73"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "AstraZeneca faz parceria com Oracle para usar IA em pesquisa clínica",
-   "category": "tech",
-   "importance": 3,
-   "importance_reason": "Parceria corporativa de IA sem valor divulgado e distante do foco do leitor.",
-   "summary": "AstraZeneca e Oracle firmaram parceria para refinar pesquisa clínica com IA. Termos financeiros não foram divulgados.",
-   "involves": "AstraZeneca, Oracle",
-   "interpretation": "Mostra a adoção de IA em farmacêuticas; não é transação de M&A.",
-   "impact": "Efeito limitado; positivo para a narrativa de nuvem e IA da Oracle.",
-   "sentiment": "positivo",
-   "entities": [
-    "AstraZeneca",
-    "Oracle"
-   ],
-   "tags": [
-    "IA",
-    "farmacêutica",
-    "parceria"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "4d95680fe965",
    "title": "Micron union in Taiwan to launch one-day strike as bonus dispute escalates",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdW84LTY4WGZuakNjaU5mZ1I5TEd3RXZRYmdBWlFYUkVoTHQyX0xSYkhidnhGTFN6SjBsdGp6eE9aN3M1VE03V09mNWtjYnFYWWRtN0J3NUk2ZVEzVGhxRFFMNEZqRW94Y1h0OHpyX0tOWTMzNDdhcmFJN2dUSUtwN1FtTXpFNFVITG9LT3JNMFdWLVdQRklxZzU0aE9TUmxXUjRNY0NEN0hLMjZFYTRJQXVJQTNZY0k?oc=5",
@@ -4631,6 +4158,39 @@
    "ai": false
   },
   {
+   "id": "b8e305128a2f",
+   "title": "Petróleo passa a cair e ativos registram melhora nos EUA com expectativa de acordo com o Irã",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQU3NVc1FSdm9SZm5kRkNlV3Zma2dJMjliTkFKaUhJRkpoUnRITWtrREtYRnVsYjBsdDhHZWlCUFFHdXE4S3E3LV9QdTNhcEFIZThGdDJ0ajZidW5UNVNnRmlodGNsOWYzTVVuY2dSNVlhMDNwaWlMZG4ydWpXT3RQV0ludEFHbVVuLVR1TVRLejFQQ2hVUFByeTYySUtiTWlDREtYOEZ2SndvdVk0RGxFQ2JDQ3hPWlB4VV9vZjRoZklsTzJGU1VyU3JuUHRxMXdlRDlaTnZEdUF6MG9LY1hj0gHuAUFVX3lxTFB2ckFHMVZWSVhXTjdoSnJ1Nmk2czBIVXc3dmV2MUR5Y1VnZGZYeUxjaGIyVXFCVHN3eVFQUXcybThPLUprZ0NRYmJLUExmaXp5ZHJNMGJzaElIWjFjZ2ZVekdjZU9neHJBUkpIWnJxcEgzaV9sa0RDTWdRQWVYZ3lUai16bXB2eS0wNktVQlVYTkhEajZRM0tyeUo5Nl9JSTc2UVBld3BJMXhIeTRUUmpBT21TUVhCbXNVQUQ5enAtUjhUQW9WMVFfeUFsTnZ5SVV6RG9keFNwcGhJZm5LcDlKVzhGdldRR3NhaGtZZVE?oc=5",
+   "published": "2026-10-20T10:51:46+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQU3NVc1FSdm9SZm5kRkNlV3Zma2dJMjliTkFKaUhJRkpoUnRITWtrREtYRnVsYjBsdDhHZWlCUFFHdXE4S3E3LV9QdTNhcEFIZThGdDJ0ajZidW5UNVNnRmlodGNsOWYzTVVuY2dSNVlhMDNwaWlMZG4ydWpXT3RQV0ludEFHbVVuLVR1TVRLejFQQ2hVUFByeTYySUtiTWlDREtYOEZ2SndvdVk0RGxFQ2JDQ3hPWlB4VV9vZjRoZklsTzJGU1VyU3JuUHRxMXdlRDlaTnZEdUF6MG9LY1hj0gHuAUFVX3lxTFB2ckFHMVZWSVhXTjdoSnJ1Nmk2czBIVXc3dmV2MUR5Y1VnZGZYeUxjaGIyVXFCVHN3eVFQUXcybThPLUprZ0NRYmJLUExmaXp5ZHJNMGJzaElIWjFjZ2ZVekdjZU9neHJBUkpIWnJxcEgzaV9sa0RDTWdRQWVYZ3lUai16bXB2eS0wNktVQlVYTkhEajZRM0tyeUo5Nl9JSTc2UVBld3BJMXhIeTRUUmpBT21TUVhCbXNVQUQ5enAtUjhUQW9WMVFfeUFsTnZ5SVV6RG9keFNwcGhJZm5LcDlKVzhGdldRR3NhaGtZZVE?oc=5",
+     "title": "Petróleo passa a cair e ativos registram melhora nos EUA com expectativa de acordo com o Irã"
+    }
+   ],
+   "ids": [
+    "b8e305128a2f"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Petróleo passa a cair e ativos registram melhora nos EUA com expectativa de acordo com o Irã",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "db35de8db440",
    "title": "Petróleo lidera exportações e responde por metade do superávit",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOekE1aFpfemVraFc3Z2x1LWZNUUhxSmVFSndsczUtelZBWG1JcUJBYkRpZHJWQU5udWFzZ1Q5UzJfaTdKc1dYVUtxZTFvZ05uUEtNNnZqYTBsRDZkZjh0akxRd3Bnc2REejZ1T1dMcmROVk5JVFlNZG95Vl9GVExTOGwwcjM0NF9jLVRGSEYwZlFqUm9PZVkydl9UUGV5N1E2VGRZNENoWjhFVXFiRFhmZDhqdTFKVEk1ZmfSAcgBQVVfeXFMT0I4WXRDdDZGX1FaT1BxZFAxNFdTbmJyODFzX0pvOHhUcHNzU2FOVF9jVTNoUEZMcHhWSU9iZkEzVTJfaFpfdDhWS24wOGlvR09Ra2g0Sm0ySENDUVZLaUVJTGVpdkhrbV9IbHVYTU9UNFdqd3NWZDEtOWRtTXpNZWxKQ0tvWnQ1dlVMeUJxMDU2bHFQMi1uRGVyX3cxUVRPR1RjOVgwR083dEQ5azFGS1ZlODhXZXVSX05XVjUwNDJQdGk0SGx5Ti0?oc=5",
@@ -4700,7 +4260,7 @@
    "id": "aab0d8b1e887",
    "title": "The fake commute: How China's unemployed save face",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOGNrUFg3d1QxV2UtNVFtdjY3SUhSdnF3Q29tbEljbmZqUlFIeFB3QmowcEMtbWNWTHFYRXBKLWQwSk1PYmJrbGxiTFZ1c004VTF4SnJLZ1J2MGdwclZxQzNobmdjR2Q1RHE1SVpDWmllRzlzNXlNWmZmalBQN21nRHQtN2dCTXRxNGNKeUZja0d1Z3g4U3JLZjFaa1p6X2VYUFgzc2dB?oc=5",
-   "published": "2026-10-20T06:05:00+00:00",
+   "published": "2026-10-20T06:19:47+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -4715,39 +4275,6 @@
    "snippet": "",
    "prescore": 3.6,
    "headline": "The fake commute: How China's unemployed save face",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a4b73176296e",
-   "title": "China’s Export Boom Masks Deep Economic Problems at Home",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5",
-   "published": "2026-10-19T23:11:04+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5",
-     "title": "China’s Export Boom Masks Deep Economic Problems at Home"
-    }
-   ],
-   "ids": [
-    "a4b73176296e"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "China’s Export Boom Masks Deep Economic Problems at Home",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -4945,6 +4472,171 @@
    "ai": false
   },
   {
+   "id": "dadb18f30578",
+   "title": "Ray Dalio",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1pWmg0YWZEZXhrOTVuYVREME9tMTh5S1BfYmJ0NkxlMVFVN240TVVGc1NkN3VGSE1pVFNfVWJaOHk3ZGpHWDBTZnRUSXBnUzJSTjZ6cA?oc=5",
+   "published": "2026-10-20T08:33:02+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1pWmg0YWZEZXhrOTVuYVREME9tMTh5S1BfYmJ0NkxlMVFVN240TVVGc1NkN3VGSE1pVFNfVWJaOHk3ZGpHWDBTZnRUSXBnUzJSTjZ6cA?oc=5",
+     "title": "Ray Dalio"
+    }
+   ],
+   "ids": [
+    "dadb18f30578"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Ray Dalio",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4e90491617fa",
+   "title": "Pedro Azevedo",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CMTRuZGVwa3dzWWpKdnpPZ1lMQmwxV2xuNVdZeXFNYk8xNlk4QmNwZ0pyWHJJcGNyS0FMUEdnRVIzUkhBWUI2YXRYT1ZvT0E2RjVRNkwyWGF2Zw?oc=5",
+   "published": "2026-10-20T04:05:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CMTRuZGVwa3dzWWpKdnpPZ1lMQmwxV2xuNVdZeXFNYk8xNlk4QmNwZ0pyWHJJcGNyS0FMUEdnRVIzUkhBWUI2YXRYT1ZvT0E2RjVRNkwyWGF2Zw?oc=5",
+     "title": "Pedro Azevedo"
+    }
+   ],
+   "ids": [
+    "4e90491617fa"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Pedro Azevedo",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "96b8621c1190",
+   "title": "Yuri Sanches",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4wc0FNT252eFNNN09QLTJWZktRWHVJT2gweXk1ZlR5cmJjQWFFTTBRU0pqbEdVWXNzVGZCTHB5b2FKeHVhZElnSkhsWFVsQjlfR0l3WDVwUGw?oc=5",
+   "published": "2026-10-20T04:03:02+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4wc0FNT252eFNNN09QLTJWZktRWHVJT2gweXk1ZlR5cmJjQWFFTTBRU0pqbEdVWXNzVGZCTHB5b2FKeHVhZElnSkhsWFVsQjlfR0l3WDVwUGw?oc=5",
+     "title": "Yuri Sanches"
+    }
+   ],
+   "ids": [
+    "96b8621c1190"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Yuri Sanches",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "dc544e8a497f",
+   "title": "Citadel",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1OMHFySm1fMG5lazFoTktlTTI0MGYzdlQ4dFpfbzVzZFEwbUlxYlhhVWdPSzJSM3VpeGhpM2RXbTdxZmhLVUVJbXdSTWtodw?oc=5",
+   "published": "2026-10-20T03:39:51+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1OMHFySm1fMG5lazFoTktlTTI0MGYzdlQ4dFpfbzVzZFEwbUlxYlhhVWdPSzJSM3VpeGhpM2RXbTdxZmhLVUVJbXdSTWtodw?oc=5",
+     "title": "Citadel"
+    }
+   ],
+   "ids": [
+    "dc544e8a497f"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Citadel",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "49c4d7ddacd0",
+   "title": "Ciro Nogueira",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vRElTbzhraGhnWEFwNnJnZ0VDWFVESTJiRHA1VlJxeWpKRm5FQmFyT3B5Vkgwa0w3aXJnYnVQOUFOaWhUbXBSemwwMVlWTzg5YXUzWW9ZaWZFUQ?oc=5",
+   "published": "2026-10-20T03:33:06+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vRElTbzhraGhnWEFwNnJnZ0VDWFVESTJiRHA1VlJxeWpKRm5FQmFyT3B5Vkgwa0w3aXJnYnVQOUFOaWhUbXBSemwwMVlWTzg5YXUzWW9ZaWZFUQ?oc=5",
+     "title": "Ciro Nogueira"
+    }
+   ],
+   "ids": [
+    "49c4d7ddacd0"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Ciro Nogueira",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "1cb9cb92bf83",
    "title": "Incrédula com força de Flávio, eleitora de Lula diz que democracia está em jogo",
    "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/incredula-com-forca-de-flavio-eleitora-de-lula-diz-que-democracia-esta-em-jogo.shtml",
@@ -4982,6 +4674,237 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "edec97da8064",
+   "title": "‘Bondade eleitoral’ ou compra de voto? A conta não para de crescer",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVllRWGtORkl0MnZuQzZpdVhyWm9LOFBHajRnVDh2VlhOaWxyVmpvcnpUQ2dFR3Nod2hqbklSY1RSS091ZkFSOXdCbVgwV2hZelZQUmFGeTAya3ZZSjJLS29YMXNvemozM3FtZFpkN0kxZkpVeVp6eWU0RzRWSkw2cEJZcW1pby10REp0T0h1OVNQOTg?oc=5",
+   "published": "2026-10-19T21:17:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVllRWGtORkl0MnZuQzZpdVhyWm9LOFBHajRnVDh2VlhOaWxyVmpvcnpUQ2dFR3Nod2hqbklSY1RSS091ZkFSOXdCbVgwV2hZelZQUmFGeTAya3ZZSjJLS29YMXNvemozM3FtZFpkN0kxZkpVeVp6eWU0RzRWSkw2cEJZcW1pby10REp0T0h1OVNQOTg?oc=5",
+     "title": "‘Bondade eleitoral’ ou compra de voto? A conta não para de crescer"
+    }
+   ],
+   "ids": [
+    "edec97da8064"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "‘Bondade eleitoral’ ou compra de voto? A conta não para de crescer",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "91504d9d9fc4",
+   "title": "A maioria dos médicos mal usa um CRM. A Healo quer mudar isso",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVUpaN29hWV9oaWc3WkNncFpla2xMbDFKUWQ0YzJNZ1Z1UE9rdXBfNWNrcGRpcGI3ZlM0OUhuVHE5c1RLa1NLeXEydzJYNkZ3RWtHZjZNRHFRNnJ2ak8wYktkV09vNDY1UndXZm5YdW5nSmdOaFN5MTBBWlg1VlZ4MTZhamhXVmJfM0FtZG11Zw?oc=5",
+   "published": "2026-10-19T19:35:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVUpaN29hWV9oaWc3WkNncFpla2xMbDFKUWQ0YzJNZ1Z1UE9rdXBfNWNrcGRpcGI3ZlM0OUhuVHE5c1RLa1NLeXEydzJYNkZ3RWtHZjZNRHFRNnJ2ak8wYktkV09vNDY1UndXZm5YdW5nSmdOaFN5MTBBWlg1VlZ4MTZhamhXVmJfM0FtZG11Zw?oc=5",
+     "title": "A maioria dos médicos mal usa um CRM. A Healo quer mudar isso"
+    }
+   ],
+   "ids": [
+    "91504d9d9fc4"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "A maioria dos médicos mal usa um CRM. A Healo quer mudar isso",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1434b7063455",
+   "title": "José Vicente Caixeta Filho",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE40LUhOSm54SDBhbEhYb1VqQm84cTFLdjBMNEtWSTdIazNvekNlY2tNaTI4a0tGMGxRdUJvb2tsNUI0RVdpTkI5czNrSUFteF9PTHUydF9kbnY1NW8yRXNscVlNSVRGWGI4MHBr?oc=5",
+   "published": "2026-10-19T19:33:19+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE40LUhOSm54SDBhbEhYb1VqQm84cTFLdjBMNEtWSTdIazNvekNlY2tNaTI4a0tGMGxRdUJvb2tsNUI0RVdpTkI5czNrSUFteF9PTHUydF9kbnY1NW8yRXNscVlNSVRGWGI4MHBr?oc=5",
+     "title": "José Vicente Caixeta Filho"
+    }
+   ],
+   "ids": [
+    "1434b7063455"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "José Vicente Caixeta Filho",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7def07126218",
+   "title": "Thiago Guilherme Péra",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1OWUx4bFVNZDBrNXFSRnQ1ejVDOUljWkZaZGowekFRTFhFcU9BQ29hZnU2Y2FVMXZmdFZDUnRieXlCVmZ3bi1JbFVaelVjbjRfX015NHhxNkF1MXhjekpIUUhTaVY?oc=5",
+   "published": "2026-10-19T19:03:33+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1OWUx4bFVNZDBrNXFSRnQ1ejVDOUljWkZaZGowekFRTFhFcU9BQ29hZnU2Y2FVMXZmdFZDUnRieXlCVmZ3bi1JbFVaelVjbjRfX015NHhxNkF1MXhjekpIUUhTaVY?oc=5",
+     "title": "Thiago Guilherme Péra"
+    }
+   ],
+   "ids": [
+    "7def07126218"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Thiago Guilherme Péra",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1bacde77d03f",
+   "title": "PepsiCo perde o KFC; ação tem maior desconto para a Coca em 25 anos",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNTd3OF96NWlTMUNpcEpfeWJ5QVRPX1NCbEdQUTVGMUVsMlVZY1B6a3pOdlQxQnNLOUVVaW1jN0t1TTc0bFhmZUdqajZuM3Bla0dTTThhNEpFQ0U0aXp2QkZ2RFRuY1NiTEtPbF8wVWdEdlRBcFBLaVVMZTQ1UkdQZW5pd0dtNHYyRkZsQVZKYjJaVzQwUkhZ?oc=5",
+   "published": "2026-10-19T15:36:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNTd3OF96NWlTMUNpcEpfeWJ5QVRPX1NCbEdQUTVGMUVsMlVZY1B6a3pOdlQxQnNLOUVVaW1jN0t1TTc0bFhmZUdqajZuM3Bla0dTTThhNEpFQ0U0aXp2QkZ2RFRuY1NiTEtPbF8wVWdEdlRBcFBLaVVMZTQ1UkdQZW5pd0dtNHYyRkZsQVZKYjJaVzQwUkhZ?oc=5",
+     "title": "PepsiCo perde o KFC; ação tem maior desconto para a Coca em 25 anos"
+    }
+   ],
+   "ids": [
+    "1bacde77d03f"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "PepsiCo perde o KFC; ação tem maior desconto para a Coca em 25 anos",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5b266030bec1",
+   "title": "‘Momento Diet Coke’ da cerveja: compre AB Inbev, diz a Barron’s",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNWwwMDg3djVwcE1JaHpzeWxiV2FSdmpPcWlvZC1LelpEZG5xZ2xBZ0I5eDdSbzR1eDFJYlN3b0RxXzY4NUI5YVBodFNjb3NfWHlwSFlXUmhOS0xnYjEySEc0RTBIM3duNVFSaW5iSkt3bjQ5Szc3SGNGcEtETnY2ajRkd0ZqRGQxc1VpMHF3eWhrd1l3SVJpSkdsZFhUQUgycDY2OURJTlo?oc=5",
+   "published": "2026-10-19T14:58:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNWwwMDg3djVwcE1JaHpzeWxiV2FSdmpPcWlvZC1LelpEZG5xZ2xBZ0I5eDdSbzR1eDFJYlN3b0RxXzY4NUI5YVBodFNjb3NfWHlwSFlXUmhOS0xnYjEySEc0RTBIM3duNVFSaW5iSkt3bjQ5Szc3SGNGcEtETnY2ajRkd0ZqRGQxc1VpMHF3eWhrd1l3SVJpSkdsZFhUQUgycDY2OURJTlo?oc=5",
+     "title": "‘Momento Diet Coke’ da cerveja: compre AB Inbev, diz a Barron’s"
+    }
+   ],
+   "ids": [
+    "5b266030bec1"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "‘Momento Diet Coke’ da cerveja: compre AB Inbev, diz a Barron’s",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "cbd6373cafe7",
+   "title": "Isabel Amorim",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41X0l0b3g4NVJoNllKUkVPdDBJajdMWGdIdm9jQl9Rb3pCZTJlUlJScVNHZzdYeTdDOXZjbTlMV1g0eTIwSEpnZHpDT21BRjJfRVBDTnBjQkhsZw?oc=5",
+   "published": "2026-10-19T14:32:55+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41X0l0b3g4NVJoNllKUkVPdDBJajdMWGdIdm9jQl9Rb3pCZTJlUlJScVNHZzdYeTdDOXZjbTlMV1g0eTIwSEpnZHpDT21BRjJfRVBDTnBjQkhsZw?oc=5",
+     "title": "Isabel Amorim"
+    }
+   ],
+   "ids": [
+    "cbd6373cafe7"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Isabel Amorim",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "75e44e4187e6",
@@ -5287,39 +5210,6 @@
    "ai": false
   },
   {
-   "id": "0af3d0c32300",
-   "title": "Ouro recua em meio ao avanço dos Treasuries e maior apetite ao risco | Finanças",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQzJQT3EyZGExMThsSDJhQ1BhQkM1b3E4ZFJaT21xQXZwZDdDUGZSeUNyaXg1cTdqVmkwV2x4VzR3QUY3QlhwdlZwenJDVkZacGdrRWlTd2xqbTRZTzl3clJOZmMwYkc3YjhMNnVXVUVCTmhBd1NGWUZ5SnlVS2ktekgzZWlPcENsS3lWZ0ZDSnYwczVwSEhfRFdLWTRWU1BqY2IyNW9NVUQwa09Kd1AzTUxYdjdjbHV3cE51QkpEYWpjb1oz?oc=5",
-   "published": "2026-10-19T18:03:38+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQzJQT3EyZGExMThsSDJhQ1BhQkM1b3E4ZFJaT21xQXZwZDdDUGZSeUNyaXg1cTdqVmkwV2x4VzR3QUY3QlhwdlZwenJDVkZacGdrRWlTd2xqbTRZTzl3clJOZmMwYkc3YjhMNnVXVUVCTmhBd1NGWUZ5SnlVS2ktekgzZWlPcENsS3lWZ0ZDSnYwczVwSEhfRFdLWTRWU1BqY2IyNW9NVUQwa09Kd1AzTUxYdjdjbHV3cE51QkpEYWpjb1oz?oc=5",
-     "title": "Ouro recua em meio ao avanço dos Treasuries e maior apetite ao risco | Finanças"
-    }
-   ],
-   "ids": [
-    "0af3d0c32300"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Ouro recua em meio ao avanço dos Treasuries e maior apetite ao risco | Finanças",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "d684f9c245aa",
    "title": "Watch De olho nas eleições",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVnkxYktzcGJIa3p1TkZ4SktnZURENTB2QkJRQjMyZ1AtTUwxbVZqNDEzRnozUExEMWo4ZEYteXlBU2RJMy1rY0pyM3lqSmFMRndDdHhSSk41ZlZFSl8ySTNMcWJkR25wTHJFaHRwNXJHU0tTczRHdE8yS1ZaOE5Ueg?oc=5",
@@ -5393,7 +5283,7 @@
    "id": "6f3fe3c95a62",
    "title": "Opinion | France’s Riots Are More Than Student Protests",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeFl4YUlkUGpRd3RDQnJrQ1pYMTRYZUlYVGc0R3lVUFpnem93eWZsWkJKaGhILVpMYTdzNktBNE5nRGhPOXFsaFN3LUpuZUFCa1NIR2dyMXYwOGJJeFdpUnFpNmZtM0NDMGZsRXVDRFJhVEpwVGRUdU4xR2lxWUJzMXNZYmlKUmV1aG5XZzhfd2QtN1pYSkc1ZTZYQVpNZw?oc=5",
-   "published": "2026-10-20T10:29:43+00:00",
+   "published": "2026-10-20T10:14:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -5456,6 +5346,39 @@
    "ai": false
   },
   {
+   "id": "11a8fff0a6d6",
+   "title": "Bill Gross’s AI Tool Could Supercharge the Number of Startups",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONVA1emJoX2p2MFB1bko5OG0wd0JLZ0tVRVA1cThHT0hiN21TNXlaVGlDcGlMbXBqTUloWVAzWDR2RjE4VElsWVI5dkhhcDVxZ1ZzR2JWZjRUaUFWQ3NuWUZoR29HMGUwQ3UxRlFlX0hhZktMak1EaWJQdDZUNVlOU3MyMkd6T3pqMEFpV3RfTktFNjZjYWZMdmFpSnNfdw?oc=5",
+   "published": "2026-10-20T10:01:13+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONVA1emJoX2p2MFB1bko5OG0wd0JLZ0tVRVA1cThHT0hiN21TNXlaVGlDcGlMbXBqTUloWVAzWDR2RjE4VElsWVI5dkhhcDVxZ1ZzR2JWZjRUaUFWQ3NuWUZoR29HMGUwQ3UxRlFlX0hhZktMak1EaWJQdDZUNVlOU3MyMkd6T3pqMEFpV3RfTktFNjZjYWZMdmFpSnNfdw?oc=5",
+     "title": "Bill Gross’s AI Tool Could Supercharge the Number of Startups"
+    }
+   ],
+   "ids": [
+    "11a8fff0a6d6"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Bill Gross’s AI Tool Could Supercharge the Number of Startups",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d69d42d1e4d3",
    "title": "Exclusive | Real-Estate Giant CBRE Gets Deeper Into Data Centers With $1 Billion Deal",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPM0I3SDR1N2xmZ3FSVWZ5VkpxcVV3NXduSmQzdXRiX2psZFBxc2V5Y05ISVg4Ti16Y1BHOTVGYTVuQzM5ejVYS3h0Z0M0WUVqbXpSbHNKZVFMaVk1eGlJOUdYSzI5a3BaWUpOeVlFV1p0dUdYN3cyN3RYMkczM2VTdTFXSTFXbnV5ei1lVFZWLWZ4c1lxSHZPQkk1YkM0NGowQ08yc2tielFiZUdDU2F1RVRRbmdvSFloajRCS0ZxV0RYQQ?oc=5",
@@ -5475,39 +5398,6 @@
    "prescore": 2.6,
    "headline": "Exclusive | Real-Estate Giant CBRE Gets Deeper Into Data Centers With $1 Billion Deal",
    "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "11a8fff0a6d6",
-   "title": "Bill Gross’s AI Tool Could Supercharge the Number of Startups",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONVA1emJoX2p2MFB1bko5OG0wd0JLZ0tVRVA1cThHT0hiN21TNXlaVGlDcGlMbXBqTUloWVAzWDR2RjE4VElsWVI5dkhhcDVxZ1ZzR2JWZjRUaUFWQ3NuWUZoR29HMGUwQ3UxRlFlX0hhZktMak1EaWJQdDZUNVlOU3MyMkd6T3pqMEFpV3RfTktFNjZjYWZMdmFpSnNfdw?oc=5",
-   "published": "2026-10-20T10:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONVA1emJoX2p2MFB1bko5OG0wd0JLZ0tVRVA1cThHT0hiN21TNXlaVGlDcGlMbXBqTUloWVAzWDR2RjE4VElsWVI5dkhhcDVxZ1ZzR2JWZjRUaUFWQ3NuWUZoR29HMGUwQ3UxRlFlX0hhZktMak1EaWJQdDZUNVlOU3MyMkd6T3pqMEFpV3RfTktFNjZjYWZMdmFpSnNfdw?oc=5",
-     "title": "Bill Gross’s AI Tool Could Supercharge the Number of Startups"
-    }
-   ],
-   "ids": [
-    "11a8fff0a6d6"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Bill Gross’s AI Tool Could Supercharge the Number of Startups",
-   "category": "tech",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -5588,43 +5478,10 @@
    "ai": false
   },
   {
-   "id": "20cf07143e51",
-   "title": "As France erupts, Europe's far right gains from fuel-price anger ahead of elections",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRjl5VmhGZHJ1bUpkdTZQaElWaWdnSFVkdVVQOUhzN3Y5SFdHOUNpS0pXQjdsVzhMVm1YOFloSGhHbnNYT29talRoNVJWdlRDVkdCM0VQV1lIUFZSbG9MV3BPclJZZGVtejVZZFNNWWxxdFdBM19hS2pQdHNaWm51MFRFNWxLWHdzVzQwN1ZxeXFFenRPREthTGRvVW9vOW1JdWpiVWk0VE9UQWlqRnZJWEJ0aFVYd2xBR3FN?oc=5",
-   "published": "2026-10-20T06:02:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRjl5VmhGZHJ1bUpkdTZQaElWaWdnSFVkdVVQOUhzN3Y5SFdHOUNpS0pXQjdsVzhMVm1YOFloSGhHbnNYT29talRoNVJWdlRDVkdCM0VQV1lIUFZSbG9MV3BPclJZZGVtejVZZFNNWWxxdFdBM19hS2pQdHNaWm51MFRFNWxLWHdzVzQwN1ZxeXFFenRPREthTGRvVW9vOW1JdWpiVWk0VE9UQWlqRnZJWEJ0aFVYd2xBR3FN?oc=5",
-     "title": "As France erupts, Europe's far right gains from fuel-price anger ahead of elections"
-    }
-   ],
-   "ids": [
-    "20cf07143e51"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "As France erupts, Europe's far right gains from fuel-price anger ahead of elections",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "0dc49070d4dd",
    "title": "US to launch $8 billion support program for farmers to offset diesel costs, Trump says",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZHZFT05lTUJLSWdVemJzcXoyNWNma0RISlVOQm5JWl9ESk1DOUdCYTRDVXotODNZOHMxTnM2WWNoeDdxOVZJVHJsY1JvTkNBem9Qck1LWGdSRlI2b0x3djVCN1dTaUZqUHl1UERKNUhDaTNSWWVDVXZPV2RQVVhHVEd1VWpRd245ZDRMWDVnSFFxbGpQQlE5M1BINXJ2ODZxWVV0UXkxRnZoSk1DcW0wSEtvaFpLdTJHMnFB?oc=5",
-   "published": "2026-10-20T02:14:31+00:00",
+   "published": "2026-10-20T02:13:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -5705,72 +5562,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Nurses Are in High Demand—but They’re Quitting in Droves",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e35e083a1c96",
-   "title": "Hegseth discusses Iran with Netanyahu in unannounced visit to Israel, officials say",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOazNPMm5GbVJUYTRwVVVraElGMVptZkdyb0pkbklkdWMzY01zYWlkYTNNTDlxMFVnanBvVkczd3ozNUxZbDJ0Wl9JQ1hDOGtLZjJsM0hzeXRDTUpFYkhnWHFnQUFqRnZEVFFXZ1hHY1Vrb2hmbk1kaVNUTWZEZ0hoWURkZ080ZUlNQnVBaFhLWVNpTDliV3BmVHMzU05EQWUzTWdlNVd4dHpFNmhEUTZoRWVYVFJLQ1U?oc=5",
-   "published": "2026-10-19T22:47:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOazNPMm5GbVJUYTRwVVVraElGMVptZkdyb0pkbklkdWMzY01zYWlkYTNNTDlxMFVnanBvVkczd3ozNUxZbDJ0Wl9JQ1hDOGtLZjJsM0hzeXRDTUpFYkhnWHFnQUFqRnZEVFFXZ1hHY1Vrb2hmbk1kaVNUTWZEZ0hoWURkZ080ZUlNQnVBaFhLWVNpTDliV3BmVHMzU05EQWUzTWdlNVd4dHpFNmhEUTZoRWVYVFJLQ1U?oc=5",
-     "title": "Hegseth discusses Iran with Netanyahu in unannounced visit to Israel, officials say"
-    }
-   ],
-   "ids": [
-    "e35e083a1c96"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Hegseth discusses Iran with Netanyahu in unannounced visit to Israel, officials say",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b27ee298fcd7",
-   "title": "For Wellness Fans, Gummies Are Out. The New Craze Is Supplement Strips.",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQkdzcnNMMGxUZ3JBSzVEc0RVQkpuSzF1T2hqVGFuYkI5a09iRk93cE5HY045WFE3WlhIVW9tMEV1bjBjeXR6d2tLbHdQRkswcFd3b20xQXpCakxwdzMzSmU3ZW9NSWNIZy1WeC1yS0JqbXNYdFpCNTFlc2EyQnVBalJCNzBDeVVKaUhv?oc=5",
-   "published": "2026-10-19T20:11:37+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQkdzcnNMMGxUZ3JBSzVEc0RVQkpuSzF1T2hqVGFuYkI5a09iRk93cE5HY045WFE3WlhIVW9tMEV1bjBjeXR6d2tLbHdQRkswcFd3b20xQXpCakxwdzMzSmU3ZW9NSWNIZy1WeC1yS0JqbXNYdFpCNTFlc2EyQnVBalJCNzBDeVVKaUhv?oc=5",
-     "title": "For Wellness Fans, Gummies Are Out. The New Craze Is Supplement Strips."
-    }
-   ],
-   "ids": [
-    "b27ee298fcd7"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "For Wellness Fans, Gummies Are Out. The New Craze Is Supplement Strips.",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -5951,24 +5742,24 @@
    "ai": false
   },
   {
-   "id": "41dbd0bf4ab5",
-   "title": "Venezuela oilfield hiring picks up as first wave of investment builds",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa3VLcnQ0WDUxUm5NUTVUU2Frc1NtT0d1WlM2cVY5NVpnY2swR2xLN3FYZzlBb3p5U0RQQk9mcWd2eUswVXQtNk5iVFVfZF9XVDd3ZTJsS0VRaVVrZlpud2tGd0xLeGxWOEpaNUlDY3pZaEhsWXhMNklFeFpTcUhpZkNzYjBrRWs5MU5ELWxETV9xUXMxbDM3ZHZqSUc2YlpZYkRyMEtqU1Qtd2N4Y3o0Sl9IYzdOQQ?oc=5",
-   "published": "2026-10-19T16:41:20+00:00",
+   "id": "b27ee298fcd7",
+   "title": "For Wellness Fans, Gummies Are Out. The New Craze Is Supplement Strips.",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQkdzcnNMMGxUZ3JBSzVEc0RVQkpuSzF1T2hqVGFuYkI5a09iRk93cE5HY045WFE3WlhIVW9tMEV1bjBjeXR6d2tLbHdQRkswcFd3b20xQXpCakxwdzMzSmU3ZW9NSWNIZy1WeC1yS0JqbXNYdFpCNTFlc2EyQnVBalJCNzBDeVVKaUhv?oc=5",
+   "published": "2026-10-19T17:21:00+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa3VLcnQ0WDUxUm5NUTVUU2Frc1NtT0d1WlM2cVY5NVpnY2swR2xLN3FYZzlBb3p5U0RQQk9mcWd2eUswVXQtNk5iVFVfZF9XVDd3ZTJsS0VRaVVrZlpud2tGd0xLeGxWOEpaNUlDY3pZaEhsWXhMNklFeFpTcUhpZkNzYjBrRWs5MU5ELWxETV9xUXMxbDM3ZHZqSUc2YlpZYkRyMEtqU1Qtd2N4Y3o0Sl9IYzdOQQ?oc=5",
-     "title": "Venezuela oilfield hiring picks up as first wave of investment builds"
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQkdzcnNMMGxUZ3JBSzVEc0RVQkpuSzF1T2hqVGFuYkI5a09iRk93cE5HY045WFE3WlhIVW9tMEV1bjBjeXR6d2tLbHdQRkswcFd3b20xQXpCakxwdzMzSmU3ZW9NSWNIZy1WeC1yS0JqbXNYdFpCNTFlc2EyQnVBalJCNzBDeVVKaUhv?oc=5",
+     "title": "For Wellness Fans, Gummies Are Out. The New Craze Is Supplement Strips."
     }
    ],
    "ids": [
-    "41dbd0bf4ab5"
+    "b27ee298fcd7"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Venezuela oilfield hiring picks up as first wave of investment builds",
+   "headline": "For Wellness Fans, Gummies Are Out. The New Craze Is Supplement Strips.",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -6149,39 +5940,6 @@
    "ai": false
   },
   {
-   "id": "adbc52e70fa8",
-   "title": "Kenyan starvation cult leader convicted of deaths of nearly 200 children",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVEVmY0NoY2t3Z1RrS2Q4d3hBWDlORjVJS2s0MF9xSVg2VGNXVXQxY2JKeERGREJtTFVib2d2ZFlvUW9NMHN3M3ZYR1hMZzVZS1hzTm43SjNMaUYyNjVINlVtWmQzTURtaDlKbkY1S1FrWFFiRzhPa21CcFFhLWlTMmx4dzBNdDdqSFoxQWdOOFlTUHdjZEZLdDE0YXdScmhYVVBpd3lyanhXTXl2XzVFV1RheE8?oc=5",
-   "published": "2026-10-19T15:27:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVEVmY0NoY2t3Z1RrS2Q4d3hBWDlORjVJS2s0MF9xSVg2VGNXVXQxY2JKeERGREJtTFVib2d2ZFlvUW9NMHN3M3ZYR1hMZzVZS1hzTm43SjNMaUYyNjVINlVtWmQzTURtaDlKbkY1S1FrWFFiRzhPa21CcFFhLWlTMmx4dzBNdDdqSFoxQWdOOFlTUHdjZEZLdDE0YXdScmhYVVBpd3lyanhXTXl2XzVFV1RheE8?oc=5",
-     "title": "Kenyan starvation cult leader convicted of deaths of nearly 200 children"
-    }
-   ],
-   "ids": [
-    "adbc52e70fa8"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Kenyan starvation cult leader convicted of deaths of nearly 200 children",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "af1d4d7bc731",
    "title": "DHS Orders DeepSeek Technology Removed From Federal Civilian IT Systems",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQX2MyVGNOQ1RfNzdBem5aV201TEVXX21EWUdSbEJzeE9iQ2FsX2xGbm11Wi1XNWZaTGpYbGJxOGVaWjBHVjVPYmpqVlRPaF9FMkRzZmxJZWlfMmc0U0RhWERuTEdTamVNcmV2ajBSTVIxRmV1elJ4SlVybE93R0d6VHo5cEptVEZsOGl2Wnk3cDN4SmRxdHppbXR3Zl8xSzNUUlZrQVdHNThlRkM2?oc=5",
@@ -6200,6 +5958,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "DHS Orders DeepSeek Technology Removed From Federal Civilian IT Systems",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "90be9d97ad77",
+   "title": "Macron urges calm as France counts cost of worst unrest in years",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNd1VSODRfY1ZTZlpfMVBnaXZzSi1KU1ZsUlJWcWZBaWVaQ0Fyal85ZmEtdkR3ZU94c2ZEeGNzRXpIamtSQVdfVlpJWTdhcEY2ZkZaMFZGZzlTVTVCTDRoUDJybE90dGJGYTNmU1NwUTJDNmVZZllXTDFSR3hIVnBTV2lYTk9LM2N1MlREWk9VOEtidHY2?oc=5",
+   "published": "2026-10-19T14:38:39+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNd1VSODRfY1ZTZlpfMVBnaXZzSi1KU1ZsUlJWcWZBaWVaQ0Fyal85ZmEtdkR3ZU94c2ZEeGNzRXpIamtSQVdfVlpJWTdhcEY2ZkZaMFZGZzlTVTVCTDRoUDJybE90dGJGYTNmU1NwUTJDNmVZZllXTDFSR3hIVnBTV2lYTk9LM2N1MlREWk9VOEtidHY2?oc=5",
+     "title": "Macron urges calm as France counts cost of worst unrest in years"
+    }
+   ],
+   "ids": [
+    "90be9d97ad77"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Macron urges calm as France counts cost of worst unrest in years",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -6699,6 +6490,39 @@
    "snippet": "",
    "prescore": 2.4,
    "headline": "Carlyle compra carteira de crédito de US$ 7,7 bilhões da Truist",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a8843246aab2",
+   "title": "FII Whg Real (WHGR11)",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hUDRZRXU0eFp5SDIxci1ocEw0bm1jNFRrWTZZWERYaTJYa0NjOFprbElRZmU2SFpteGk4Tm5JSFIxc1l1YURPblMxaUxiaWVaWUg2R0hXX05mTm8yNkJCQWo1LWtISU11U0VsT3ZlMGpGOFpFUTV0ejRR?oc=5",
+   "published": "2026-10-19T20:36:16+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "trademap.com.br",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hUDRZRXU0eFp5SDIxci1ocEw0bm1jNFRrWTZZWERYaTJYa0NjOFprbElRZmU2SFpteGk4Tm5JSFIxc1l1YURPblMxaUxiaWVaWUg2R0hXX05mTm8yNkJCQWo1LWtISU11U0VsT3ZlMGpGOFpFUTV0ejRR?oc=5",
+     "title": "FII Whg Real (WHGR11)"
+    }
+   ],
+   "ids": [
+    "a8843246aab2"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "FII Whg Real (WHGR11)",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7234,39 +7058,6 @@
    "prescore": 2.2,
    "headline": "Gigantes de remessas recorrem a cripto para conter perdas com desafio de stablecoins",
    "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "39fe94312b9e",
-   "title": "Why Brazil's regulatory break affects Malta's iGaming sector",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmxDNnUtdk5VRlBTVHhMNkZKOHBXNUJpdkMzNG0tUXNoUVNCM2FhNWxMUTVhVDVaWkdsMUVwSGZtRDI4UExqb3FyaERtMGF0SW42dkV4Y0Zmb2JvcVA0b1dZSzBNSU1UX2RoQnRaSmlMQklSZ2RBUnlhSGoxU1prd1hIekRuZzlTYWhtOUotbEwxclR5c1plUFAwVmlKakdKU3hlYURGZTVLd3lBMlNnelJQZ3FjUQ?oc=5",
-   "published": "2026-10-20T10:29:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "MaltaToday",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmxDNnUtdk5VRlBTVHhMNkZKOHBXNUJpdkMzNG0tUXNoUVNCM2FhNWxMUTVhVDVaWkdsMUVwSGZtRDI4UExqb3FyaERtMGF0SW42dkV4Y0Zmb2JvcVA0b1dZSzBNSU1UX2RoQnRaSmlMQklSZ2RBUnlhSGoxU1prd1hIekRuZzlTYWhtOUotbEwxclR5c1plUFAwVmlKakdKU3hlYURGZTVLd3lBMlNnelJQZ3FjUQ?oc=5",
-     "title": "Why Brazil's regulatory break affects Malta's iGaming sector"
-    }
-   ],
-   "ids": [
-    "39fe94312b9e"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Why Brazil's regulatory break affects Malta's iGaming sector",
-   "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -11161,6 +10952,105 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "9077c7ce494b",
+   "title": "Protestos na França: VÍDEOS mostram lojistas desesperados tentando impedir saques",
+   "link": "https://g1.globo.com/mundo/noticia/2026/10/19/protestos-na-franca-videos-mostram-saques-em-lojas-e-desespero-de-comerciantes.ghtml",
+   "published": "2026-10-19T12:12:40+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/19/protestos-na-franca-videos-mostram-saques-em-lojas-e-desespero-de-comerciantes.ghtml",
+     "title": "Protestos na França: VÍDEOS mostram lojistas desesperados tentando impedir saques"
+    }
+   ],
+   "ids": [
+    "9077c7ce494b"
+   ],
+   "snippet": "Comerciantes se desesperam com saques durante protestos na França Vídeos que viralizaram nas redes sociais mostram o desespero de comerciantes e a tentativa de evitar a destruição completa de suas lojas durante o dia intenso de protestos que a França viveu no sábado (17). Um deles mostra o dono de uma franquia da maior rede de varejo de videogames e cultura pop da França, a Micromania, em Nice, tentando proteger a porta de sua loja com o próprio corpo. Em determinado momento, ao ser confrontado por um dos jovens, ele anda em direção a ele e, ao virar de costas, é atacado com um chute e lançado",
+   "prescore": 1.6,
+   "headline": "Protestos na França: VÍDEOS mostram lojistas desesperados tentando impedir saques",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Comerciantes se desesperam com saques durante protestos na França Vídeos que viralizaram nas redes sociais mostram o desespero de comerciantes e a tentativa de evitar a destruição completa de suas lojas durante o dia intenso de protestos que a França viveu no sábado (17). Um deles mostra o dono de uma franquia da maior rede de varejo de videogames e cultura pop da França, a Micromania, em Nice, te",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "bb16e1740f82",
+   "title": "Lojas são saqueadas durante protestos em Milão; polícia italiana detém quase 300 pessoas",
+   "link": "https://g1.globo.com/mundo/noticia/2026/10/19/policia-italiana-detem-centenas-apos-lojas-serem-saqueadas-durante-protestos-em-milao.ghtml",
+   "published": "2026-10-19T12:04:03+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/19/policia-italiana-detem-centenas-apos-lojas-serem-saqueadas-durante-protestos-em-milao.ghtml",
+     "title": "Lojas são saqueadas durante protestos em Milão; polícia italiana detém quase 300 pessoas"
+    }
+   ],
+   "ids": [
+    "bb16e1740f82"
+   ],
+   "snippet": "Manifestantes invadem e saqueiam lojas durante protestos em Milão A polícia italiana deteve 271 jovens durante os distúrbios registrados em Milão neste domingo (18), segundo autoridades, após um segundo dia de protestos contra a precariedade dos serviços públicos e o aumento do custo de vida. Manifestantes entraram em confronto com policiais, saquearam lojas e depredaram imóveis. Policiais usaram gás lacrimogêneo e jatos d'água enquanto centenas de manifestantes encapuzados atearam fogo a lixeiras e saquearam lojas, incluindo as de artigos esportivos Decathlon e Arc'teryx, além de uma unidade ",
+   "prescore": 1.6,
+   "headline": "Lojas são saqueadas durante protestos em Milão; polícia italiana detém quase 300 pessoas",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Manifestantes invadem e saqueiam lojas durante protestos em Milão A polícia italiana deteve 271 jovens durante os distúrbios registrados em Milão neste domingo (18), segundo autoridades, após um segundo dia de protestos contra a precariedade dos serviços públicos e o aumento do custo de vida. Manifestantes entraram em confronto com policiais, saquearam lojas e depredaram imóveis. Policiais usaram ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ca5cdfb8ce82",
+   "title": "Protestos na França: primeiro-ministro francês pede toque de recolher a prefeitos",
+   "link": "https://g1.globo.com/mundo/noticia/2026/10/19/protestos-em-paris-primeiro-ministro-frances-pede-toque-de-recolher.ghtml",
+   "published": "2026-10-19T11:00:59+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/10/19/protestos-em-paris-primeiro-ministro-frances-pede-toque-de-recolher.ghtml",
+     "title": "Protestos na França: primeiro-ministro francês pede toque de recolher a prefeitos"
+    }
+   ],
+   "ids": [
+    "ca5cdfb8ce82"
+   ],
+   "snippet": "França autoriza toque de recolher depois de protestos violentos O primeiro-ministro da França, Sébastien Lecornu, anunciou nesta segunda-feira (19) ter solicitado a prefeitos de cidades com manifestações que decretem toques de recolher por conta dos protestos. Lecornu, que divide o govenro da França com o presidente, Emmanuel Macron, quer que as cidades imponham as restrições já na noite desta segunda. O primeiro-ministro não especificou para qual cidades solicitou o toque de recolher. \"Pedi aos prefeitos que decretassem vários toques de recolher nesta noite, toques de recolher parciais\", diss",
+   "prescore": 1.6,
+   "headline": "Protestos na França: primeiro-ministro francês pede toque de recolher a prefeitos",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "França autoriza toque de recolher depois de protestos violentos O primeiro-ministro da França, Sébastien Lecornu, anunciou nesta segunda-feira (19) ter solicitado a prefeitos de cidades com manifestações que decretem toques de recolher por conta dos protestos. Lecornu, que divide o govenro da França com o presidente, Emmanuel Macron, quer que as cidades imponham as restrições já na noite desta seg",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "deals": [
@@ -11665,54 +11555,6 @@
     "value": "US$ 1,3 bilhão",
     "stage": "Anunciado",
     "sector": "Farmacêutico / biotecnologia",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
-   "id": "bd964ebb2f5e",
-   "title": "Sea plans IPO for financial services arm Monee, memo says",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTnJhT0dMNmJNYTNMN2pSWnlhTXBXdkZTSFF1c3JhdnpGOVZ4TXN3Umh2MlczQ0xNN0s4MGJEM3hVTmU2RTFITGpWOWR6OHR4RlZCUFhJdWFldTg0SHlOYjREa3A3T2VJNzl5c0w0TldZSDFfQ2NVMXQyX1lnUXRxeFhkcG5nc0xDYUZQSnpONkJtNzNSZnZ4NFlZaC1USmtNRlFMekY4QTdYems?oc=5",
-   "published": "2026-10-20T04:12:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTnJhT0dMNmJNYTNMN2pSWnlhTXBXdkZTSFF1c3JhdnpGOVZ4TXN3Umh2MlczQ0xNN0s4MGJEM3hVTmU2RTFITGpWOWR6OHR4RlZCUFhJdWFldTg0SHlOYjREa3A3T2VJNzl5c0w0TldZSDFfQ2NVMXQyX1lnUXRxeFhkcG5nc0xDYUZQSnpONkJtNzNSZnZ4NFlZaC1USmtNRlFMekY4QTdYems?oc=5",
-     "title": "Sea plans IPO for financial services arm Monee, memo says"
-    }
-   ],
-   "ids": [
-    "bd964ebb2f5e"
-   ],
-   "snippet": "",
-   "prescore": 5.6,
-   "headline": "Sea planeja IPO do braço financeiro Monee, diz memorando",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Confirma o plano de IPO.",
-   "summary": "Segundo a Reuters, a Sea planeja IPO de sua unidade de serviços financeiros Monee, conforme memorando.",
-   "involves": "Sea, Monee",
-   "interpretation": "Memorando interno sugere plano concreto.",
-   "impact": "Indireto.",
-   "sentiment": "neutro",
-   "entities": [
-    "Sea",
-    "Monee"
-   ],
-   "tags": [
-    "IPO",
-    "Monee",
-    "fintech"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "IPO",
-    "buyer": "Sea",
-    "target": "Monee",
-    "value": "não divulgado",
-    "stage": "Rumor",
-    "sector": "Fintech",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -12355,45 +12197,6 @@
    "ai": false
   },
   {
-   "id": "dd353e7f0652",
-   "title": "iFood paga R$ 1 bilhão pela Caju e dobra a aposta em benefícios",
-   "link": "https://braziljournal.com/ifood-paga-r-1-bilhao-pela-caju-e-dobra-a-aposta-em-beneficios",
-   "published": "2026-10-20T19:52:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/ifood-paga-r-1-bilhao-pela-caju-e-dobra-a-aposta-em-beneficios",
-     "title": "iFood paga R$ 1 bilhão pela Caju e dobra a aposta em benefícios"
-    },
-    {
-     "source": "Brazil Journal",
-     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVjZRczc4dkVrS3hRcjJidHd0Z3FVY3lBX0FTQTBtZ1N2U3BOeXlQZ09QY2xzUy1TdmNHTGNtVWhlbDFDOGRRY3ZKd18xdHlKTXc0djN1VDJhT1JfcEFCTGRoZkxOUlEtaE1MMzY0Y1p3SGY2VTJQbVl6ZlN6cEY4TDJPT3VyM09xMkZXYVZFX1kzUQ?oc=5",
-     "title": "iFood paga R$ 1 bilhão pela Caju e dobra a aposta em benefícios"
-    }
-   ],
-   "ids": [
-    "dd353e7f0652",
-    "bdeb091a4eb9"
-   ],
-   "snippet": "O iFood acaba de anunciar a compra da Caju – uma das principais startups de benefícios do País – dobrando o tamanho de sua operação numa área ainda dominada por incumbentes como a Alelo, Ticket e Pluxee (a antiga Sodexo). A aquisição está sendo feita pelo iFood Benefícios, e faz parte do pacote de R$ 24 bilhões em investimentos anunciado pelo iFood mês passado.",
-   "prescore": 6.0,
-   "headline": "iFood paga R$ 1 bilhão pela Caju e dobra a aposta em benefícios",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O iFood acaba de anunciar a compra da Caju – uma das principais startups de benefícios do País – dobrando o tamanho de sua operação numa área ainda dominada por incumbentes como a Alelo, Ticket e Pluxee (a antiga Sodexo). A aquisição está sendo feita pelo iFood Benefícios, e faz parte do pacote de R$ 24 bilhões em investimentos anunciado pelo iFood mês passado.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "6f53deec3085",
    "title": "Ibovespa volta aos 208 mil pontos com aposta eleitoral e bancos; dólar recua para R$ 5,01",
    "link": "https://exame.com/invest/mercados/ibovespa-volta-aos-208-mil-pontos-com-aposta-eleitoral-e-bancos-dolar-recua-para-r-501/",
@@ -12416,39 +12219,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "As bolsas de Nova York encerraram a sessão com desempenho misto, enquanto os preços do petróleo recuaram nesta terça-feira, 20",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "2a8b0a588f4a",
-   "title": "Ânima faz acordo com o Einstein. Mercado elogia mas questiona preço",
-   "link": "https://braziljournal.com/anima-fecha-acordo-com-einstein-mercado-elogia-racional-mas-questiona-preco",
-   "published": "2026-10-20T15:49:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/anima-fecha-acordo-com-einstein-mercado-elogia-racional-mas-questiona-preco",
-     "title": "Ânima faz acordo com o Einstein. Mercado elogia mas questiona preço"
-    }
-   ],
-   "ids": [
-    "2a8b0a588f4a"
-   ],
-   "snippet": "Poucos meses depois de fechar a aquisição da FMU , a Ânima Educação anunciou ontem um novo investimento relevante que pegou os investidores de surpresa. A dona da Anhembi Morumbi e São Judas fechou uma parceria com o hospital Albert Einstein para receber serviços de consultoria de educação médica e usar a marca do hospital – um dos mais respeitados da América Latina – nos cursos da Inspirali, sua vertical de saúde.",
-   "prescore": 6.0,
-   "headline": "Ânima faz acordo com o Einstein. Mercado elogia mas questiona preço",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Poucos meses depois de fechar a aquisição da FMU , a Ânima Educação anunciou ontem um novo investimento relevante que pegou os investidores de surpresa. A dona da Anhembi Morumbi e São Judas fechou uma parceria com o hospital Albert Einstein para receber serviços de consultoria de educação médica e usar a marca do hospital – um dos mais respeitados da América Latina – nos cursos da Inspirali, sua ",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12532,6 +12302,39 @@
    "ai": false
   },
   {
+   "id": "02f2f04d287b",
+   "title": "KKR’s Freise Says Firm 'Is Very Positive on Germany'",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-21/kkr-s-freise-says-firm-is-very-positive-on-germany-video",
+   "published": "2026-10-21T10:26:11+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-10-21/kkr-s-freise-says-firm-is-very-positive-on-germany-video",
+     "title": "KKR’s Freise Says Firm 'Is Very Positive on Germany'"
+    }
+   ],
+   "ids": [
+    "02f2f04d287b"
+   ],
+   "snippet": "KKR & Co.’s co-head of European private equity, Philipp Freise says Germany is offering a safe and stable environment for investment while other parts of the world face crises. Speaking to Bloomberg's Francine Lacqua on the sidelines of the Berlin Global Dialogue, Freise pointed to positive signs from Chancellor Friedrich Merz’s reform on pensions. (Source: Bloomberg)",
+   "prescore": 5.8,
+   "headline": "KKR’s Freise Says Firm 'Is Very Positive on Germany'",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "KKR & Co.’s co-head of European private equity, Philipp Freise says Germany is offering a safe and stable environment for investment while other parts of the world face crises. Speaking to Bloomberg's Francine Lacqua on the sidelines of the Berlin Global Dialogue, Freise pointed to positive signs from Chancellor Friedrich Merz’s reform on pensions. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "a1998fe9dceb",
    "title": "Kroger’s Ex-CEO Defends Effort to Close Failed Albertsons Deal",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/kroger-s-ex-ceo-defends-effort-to-close-failed-albertsons-deal",
@@ -12554,72 +12357,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Kroger Co.’s former chief executive officer testified in court that the grocery giant did what it was required to do to secure regulatory approval for a $24.6 billion merger with Albertsons Co., which is now demanding damages after the deal was blocked for antitrust reasons.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "4f70ae8238fa",
-   "title": "Carlsberg Said to Near Public Filing for $700 Million India IPO",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/carlsberg-said-to-near-public-filing-for-700-million-india-ipo",
-   "published": "2026-10-21T07:23:07+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-21/carlsberg-said-to-near-public-filing-for-700-million-india-ipo",
-     "title": "Carlsberg Said to Near Public Filing for $700 Million India IPO"
-    }
-   ],
-   "ids": [
-    "4f70ae8238fa"
-   ],
-   "snippet": "Carlsberg A/S is preparing to publicly file documents for an initial public offering of its India business, which could raise as much as $700 million, as early as this week, according to people familiar with the matter.",
-   "prescore": 5.8,
-   "headline": "Carlsberg Said to Near Public Filing for $700 Million India IPO",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Carlsberg A/S is preparing to publicly file documents for an initial public offering of its India business, which could raise as much as $700 million, as early as this week, according to people familiar with the matter.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "3479112e147b",
-   "title": "INR/USD: Indian Rupee Rises to Six-Week High on Jio Platforms IPO Flows",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/inr-usd-indian-rupee-rises-to-six-week-high-on-jio-platforms-ipo-flows",
-   "published": "2026-10-21T05:48:10+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-21/inr-usd-indian-rupee-rises-to-six-week-high-on-jio-platforms-ipo-flows",
-     "title": "INR/USD: Indian Rupee Rises to Six-Week High on Jio Platforms IPO Flows"
-    }
-   ],
-   "ids": [
-    "3479112e147b"
-   ],
-   "snippet": "India’s rupee extended its gains to a six-week high, buoyed by foreign inflows into Jio Platforms Ltd.’s $3.1 billion initial public offering, the nation’s largest.",
-   "prescore": 5.8,
-   "headline": "INR/USD: Indian Rupee Rises to Six-Week High on Jio Platforms IPO Flows",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "India’s rupee extended its gains to a six-week high, buoyed by foreign inflows into Jio Platforms Ltd.’s $3.1 billion initial public offering, the nation’s largest.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12703,41 +12440,8 @@
    "ai": false
   },
   {
-   "id": "24a59ff25496",
-   "title": "SpaceX and Tesla boards explore potential merger",
-   "link": "https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1",
-   "published": "2026-10-21T01:49:39+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1",
-     "title": "SpaceX and Tesla boards explore potential merger"
-    }
-   ],
-   "ids": [
-    "24a59ff25496"
-   ],
-   "snippet": "Elon Musk says combining his two public companies would be a ‘good idea’ as the world approaches an AI singularity",
-   "prescore": 5.6,
-   "headline": "SpaceX and Tesla boards explore potential merger",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Elon Musk says combining his two public companies would be a ‘good idea’ as the world approaches an AI singularity",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "5d3f96e88676",
-   "title": "Ambani's Jio IPO fully subscribed within hours in record Indian sale",
+   "title": "Ambani's Jio IPO oversubscribed within hours in record Indian sale",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON1VVUmNkZDI5QkFtVV8zeWNRdWY2YkRtQXVPSHlNUnFwY3BhRTBYcU9uOXVKMmljOE05N1dLSUxkTm9PUjBmSXhhNHFTZ000cUgyNlpVMG1ia1diRlJ6WXFuN091VktQX3hJMjl3QUJCRy1yeGtzSDY5bm1FSHNydzRtbUZzcUY5amhobDM2eXBfZXIydUwyZDBJSElseDFDX1VIWjdB?oc=5",
    "published": "2026-10-20T23:02:00+00:00",
    "region": "INTL",
@@ -12745,7 +12449,7 @@
     {
      "source": "Reuters",
      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON1VVUmNkZDI5QkFtVV8zeWNRdWY2YkRtQXVPSHlNUnFwY3BhRTBYcU9uOXVKMmljOE05N1dLSUxkTm9PUjBmSXhhNHFTZ000cUgyNlpVMG1ia1diRlJ6WXFuN091VktQX3hJMjl3QUJCRy1yeGtzSDY5bm1FSHNydzRtbUZzcUY5amhobDM2eXBfZXIydUwyZDBJSElseDFDX1VIWjdB?oc=5",
-     "title": "Ambani's Jio IPO fully subscribed within hours in record Indian sale"
+     "title": "Ambani's Jio IPO oversubscribed within hours in record Indian sale"
     }
    ],
    "ids": [
@@ -12753,7 +12457,7 @@
    ],
    "snippet": "",
    "prescore": 5.6,
-   "headline": "Ambani's Jio IPO fully subscribed within hours in record Indian sale",
+   "headline": "Ambani's Jio IPO oversubscribed within hours in record Indian sale",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12820,6 +12524,39 @@
    "snippet": "",
    "prescore": 5.6,
    "headline": "Opinion | A Buyout for Iran’s ‘Shadow Fleet’",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a9e32ce6da27",
+   "title": "EXCLUSIVO: Grupo Abra, dono da Gol e da Avianca, mira US$ 500 milhões em IPO nos EUA",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSERRVHJRNENrU2NhQ1NUVXoyS3NHM1l2RVo1WDVmY1JaUzBPS1Myc1NxeDVPR2M1bDBidmVhbmZfb0RmX3FBNWxnTFJYS1ZoSnU5eEJIcUNuZ1V1aHEzYWJnZWh2M2Y5WWgtdHJJWTQtbFpkOUFzRzJoNlpmN1BDSEdkSVI2NDFrVmhyQV9kS0dIUTQ3UTY3LTFPck4tN19EY3pPY0cxaWdKa2RESlZZTVB3?oc=5",
+   "published": "2026-10-21T10:03:16+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Exame",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSERRVHJRNENrU2NhQ1NUVXoyS3NHM1l2RVo1WDVmY1JaUzBPS1Myc1NxeDVPR2M1bDBidmVhbmZfb0RmX3FBNWxnTFJYS1ZoSnU5eEJIcUNuZ1V1aHEzYWJnZWh2M2Y5WWgtdHJJWTQtbFpkOUFzRzJoNlpmN1BDSEdkSVI2NDFrVmhyQV9kS0dIUTQ3UTY3LTFPck4tN19EY3pPY0cxaWdKa2RESlZZTVB3?oc=5",
+     "title": "EXCLUSIVO: Grupo Abra, dono da Gol e da Avianca, mira US$ 500 milhões em IPO nos EUA"
+    }
+   ],
+   "ids": [
+    "a9e32ce6da27"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "EXCLUSIVO: Grupo Abra, dono da Gol e da Avianca, mira US$ 500 milhões em IPO nos EUA",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13078,39 +12815,6 @@
    "ai": false
   },
   {
-   "id": "ce6f25ce596c",
-   "title": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkVtWXgtZVJhMzl6eV9QVTF4M3hjMGdzeWo5cGtUWE85SDJrcC1LTDVaQVNON3RZejRZclVjUF9WS1RxWERiTHcyZXNuUXZxcl9ETWEtS1o3amNOU3hjWFZRSV85eXlEaG9BODRONFZtS3BWdksyR21UOTVGcFJVeWQ2RWtkNVRDaXBkWVlwcjc5WU9EcnVJWnAxUC1kbHQ0NkhZUUwwaEhhMlN6YkxGVm03ekF2SUhRV25WT3pNWlo1dWw4TDFkbW13?oc=5",
-   "published": "2026-10-20T16:05:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkVtWXgtZVJhMzl6eV9QVTF4M3hjMGdzeWo5cGtUWE85SDJrcC1LTDVaQVNON3RZejRZclVjUF9WS1RxWERiTHcyZXNuUXZxcl9ETWEtS1o3amNOU3hjWFZRSV85eXlEaG9BODRONFZtS3BWdksyR21UOTVGcFJVeWQ2RWtkNVRDaXBkWVlwcjc5WU9EcnVJWnAxUC1kbHQ0NkhZUUwwaEhhMlN6YkxGVm03ekF2SUhRV25WT3pNWlo1dWw4TDFkbW13?oc=5",
-     "title": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial"
-    }
-   ],
-   "ids": [
-    "ce6f25ce596c"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "63d545baefc0",
    "title": "Ações de data centers caem após IPO da Elice recuar 30%",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYVEtNXFVcG1xVUVjb0F6eGd6Q1J6bjRMRUgwamtzaUoxUUVQUy01TFRDbUJhV3R6RDFBc0VLdUpoaWVJV1ZBWDZxckRMd0NKMjN2djJhRlRiWVctYlFSSmJ3Wm9FT1ZocG9fSVNWdzRyT2F1cVdEcnAyMW0wbUEybGlZVERhUFZCUVE?oc=5",
@@ -13129,39 +12833,6 @@
    "snippet": "",
    "prescore": 5.4,
    "headline": "Ações de data centers caem após IPO da Elice recuar 30%",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b92103e8121d",
-   "title": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVFk4cHJnNVhSLUJWcXVGYm1zcXd2a3NzZktMUmdwSDVqV29IX0RqbnZiaEhTM3ZiUTByeEpFaDZUcHBoVzZZQ1QwRm5EeE1xbzZmaTRheUNfR3MwNTZHN0JOcklMcXJnQncyNUF0aHNUNkJkVHpGckNfZ2pXbjV0dkVSazd3QXpPQ1QzX2pHc3pZU1IycGJTN0djY2JUc0d3cDN0eWdyYjl2V1lERnA2aUt1VEx3TEsxTjNhNzFLUmNSVEhmcUpTbkZOMk10azJn0gHfAUFVX3lxTE9TVktzNHhJZHpPaEVwcnNSRW16ajk0S1ZianlYTk55S2UxZlNjVHY1NzkxWGNBVVRMT2djbl9CajlYdm9QeFZkVGdRdVB2V1NRSExvZS1pbm9QVXBFeU5IaTY3ZXpfY2RpRjBzVzBlbjNrdHhUQmQ2Ykp2aVlzYWM1WndhNHlmZTg3TGJqT0xfVlByejluUWpzVVNrbzRCSVFyeEJxb29Xcjdnc2NLT29lM0xBaFJrd0xVVTNOTy1sd3ZabW1vVHRMRzU0akJ3NVdHTUhfcTVBRzZIdVFqTW8?oc=5",
-   "published": "2026-10-20T14:50:29+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVFk4cHJnNVhSLUJWcXVGYm1zcXd2a3NzZktMUmdwSDVqV29IX0RqbnZiaEhTM3ZiUTByeEpFaDZUcHBoVzZZQ1QwRm5EeE1xbzZmaTRheUNfR3MwNTZHN0JOcklMcXJnQncyNUF0aHNUNkJkVHpGckNfZ2pXbjV0dkVSazd3QXpPQ1QzX2pHc3pZU1IycGJTN0djY2JUc0d3cDN0eWdyYjl2V1lERnA2aUt1VEx3TEsxTjNhNzFLUmNSVEhmcUpTbkZOMk10azJn0gHfAUFVX3lxTE9TVktzNHhJZHpPaEVwcnNSRW16ajk0S1ZianlYTk55S2UxZlNjVHY1NzkxWGNBVVRMT2djbl9CajlYdm9QeFZkVGdRdVB2V1NRSExvZS1pbm9QVXBFeU5IaTY3ZXpfY2RpRjBzVzBlbjNrdHhUQmQ2Ykp2aVlzYWM1WndhNHlmZTg3TGJqT0xfVlByejluUWpzVVNrbzRCSVFyeEJxb29Xcjdnc2NLT29lM0xBaFJrd0xVVTNOTy1sd3ZabW1vVHRMRzU0akJ3NVdHTUhfcTVBRzZIdVFqTW8?oc=5",
-     "title": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA"
-    }
-   ],
-   "ids": [
-    "b92103e8121d"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13228,6 +12899,39 @@
    "snippet": "",
    "prescore": 5.4,
    "headline": "Participação de Eric Schmidt na Anthropic pode valer US$ 20 bilhões em um IPO",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d73443e1b177",
+   "title": "Sea Ltd (SE), dona da Shopee, considera IPO da Monee, diz Wall Street Journal",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUVFrejNTellBX2xPcHJiYmpUR1puT1ROd1A5VlpiWGpzYlhiX2EzaFBUbE5aNGtlWGZQdlg5YjlDang3RTZBSXhnZnM5UEdpcHZ3QlpJcEpzenJmVTJaR25IcXpnT1EtLW9vU19VRWl6TmZkNkpwNmlPUExYTFNoOUVuRkhFUk9yYzdjd2p6aUZFZVVmVU9MMEVRMEZ1VHZianl6bkxQMjBDZGdVOWZmY2tZWTZMM2hLd2pQR1dzaG1ORXozYkVnOWs3dTZEUDNKYTlaaA?oc=5",
+   "published": "2026-10-20T12:14:29+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "ADVFN",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUVFrejNTellBX2xPcHJiYmpUR1puT1ROd1A5VlpiWGpzYlhiX2EzaFBUbE5aNGtlWGZQdlg5YjlDang3RTZBSXhnZnM5UEdpcHZ3QlpJcEpzenJmVTJaR25IcXpnT1EtLW9vU19VRWl6TmZkNkpwNmlPUExYTFNoOUVuRkhFUk9yYzdjd2p6aUZFZVVmVU9MMEVRMEZ1VHZianl6bkxQMjBDZGdVOWZmY2tZWTZMM2hLd2pQR1dzaG1ORXozYkVnOWs3dTZEUDNKYTlaaA?oc=5",
+     "title": "Sea Ltd (SE), dona da Shopee, considera IPO da Monee, diz Wall Street Journal"
+    }
+   ],
+   "ids": [
+    "d73443e1b177"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Sea Ltd (SE), dona da Shopee, considera IPO da Monee, diz Wall Street Journal",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13381,6 +13085,39 @@
    "ai": false
   },
   {
+   "id": "7b879ed88a78",
+   "title": "Conselhos da SpaceX e da Tesla avaliam maior fusão da história no valor de US$ 3,5 tri",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWXZ2ellTX2JfOWFObWlXV3pUT2RyRTZ3YlhqeEUxbEtYUVFBMDQ3ZFhtR2lSRDVqRWFTdEZwaDViZ1BabjdiYXlkcUdOVzVZV21QamJGVUFuRVBuUmllX3JBN2FpXzBUSWZVc1pCZ1B0ZDZrWUF6V3dkdWZ4eTlsaU1WeVlsbUhOTlJkd0dQMk90MWFtSnBVeGR2UVNzOXhKSlJtRVhreGV5cFZfT3EteEJjMnhEaVp2eTdGOEU1RTJ2T1JBUC1R0gHbAUFVX3lxTE1iTHRkNUx6WlBEbUwzUnl0Z0V4dUpDLUplWHppVGRidndCWTNfSjVNMDZUaHZ6WW9qQUZDM3MzNW91eW11eVRRTlhZd2dYLW9tTGJubDJTeERHVm1fcmdfS0pKeTdPeXF5YTlLYmNwOXk0dnBydFcxTjlKUzNmYWtrMTY2eDVQbWFWNDBtbnVsV29FQm1reXhVeHdPVk5MczNFVVBOT2ZPVzkxMExXOHdaZjVhOTlydksxNkt3cl8wdWlmWFcyQk5nZExsbFpsYXY0Wk9TOEVma3JrRQ?oc=5",
+   "published": "2026-10-21T10:16:27+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWXZ2ellTX2JfOWFObWlXV3pUT2RyRTZ3YlhqeEUxbEtYUVFBMDQ3ZFhtR2lSRDVqRWFTdEZwaDViZ1BabjdiYXlkcUdOVzVZV21QamJGVUFuRVBuUmllX3JBN2FpXzBUSWZVc1pCZ1B0ZDZrWUF6V3dkdWZ4eTlsaU1WeVlsbUhOTlJkd0dQMk90MWFtSnBVeGR2UVNzOXhKSlJtRVhreGV5cFZfT3EteEJjMnhEaVp2eTdGOEU1RTJ2T1JBUC1R0gHbAUFVX3lxTE1iTHRkNUx6WlBEbUwzUnl0Z0V4dUpDLUplWHppVGRidndCWTNfSjVNMDZUaHZ6WW9qQUZDM3MzNW91eW11eVRRTlhZd2dYLW9tTGJubDJTeERHVm1fcmdfS0pKeTdPeXF5YTlLYmNwOXk0dnBydFcxTjlKUzNmYWtrMTY2eDVQbWFWNDBtbnVsV29FQm1reXhVeHdPVk5MczNFVVBOT2ZPVzkxMExXOHdaZjVhOTlydksxNkt3cl8wdWlmWFcyQk5nZExsbFpsYXY0Wk9TOEVma3JrRQ?oc=5",
+     "title": "Conselhos da SpaceX e da Tesla avaliam maior fusão da história no valor de US$ 3,5 tri"
+    }
+   ],
+   "ids": [
+    "7b879ed88a78"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Conselhos da SpaceX e da Tesla avaliam maior fusão da história no valor de US$ 3,5 tri",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "daeeb035cc42",
    "title": "Oceana Metals Serra Negra Acquisition 2026 Explained",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9tc0R6RDBkZ2pqWnh0OGROZ0hUWUI1bkRjcEZUMHYybTBTLUdGZXVGSFpuRDZ3T0RiNzFFVWhkYk5pQ2stbTI3RzJPRWNVUkRwYnR3cUJVdk1ISDBjcngzYXRZOG52cUF2cFdyRDk2RFAtM0VQUVFWMjFXU014d1U?oc=5",
@@ -13414,20 +13151,20 @@
    "ai": false
   },
   {
-   "id": "0da395f8b8cb",
+   "id": "c8ace462508c",
    "title": "Plus500 retains 'buy' rating from Panmure Liberum after Brazil acquisition",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdDhNYXcteDlqSUVncU5EU0VTMXRtaUk5RTNfZ1lxdzBVUGVGUi1fempKTkQzOXZaLWZoai1zLTVKRGVWc2dRNTRIekJ5aW9wemFWWGU4VjBiNHNnOUJYVGlsTk9abXhUYS1OdFBJNnlGQ1ZUNV9qMjljaUZvN3NLRzhLdFBzTzdoMVRpbWlHdEZ5YjBXdUQyOGIweXhYUlRpbjh1QW9XbzRjV1AyQk1EeXRlV0VwbHRwbEsycGtFbWxRV21CVUdzR0tvREF3VGk5aHNYYkY4OG1vbmM?oc=5",
-   "published": "2026-10-20T13:30:00+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVUZkOFVEbHdNcDR6dFlNSnRKdUtYZ21vSTRjaC1jdC1LNXFPMTNETzBHNnYzaE9mLVBteVZrd18tdVN4NnM1MGdTY0Y1Z2N3SmhFdXFiR1c1Z2RGd0hBcXg2U0tQSzVOWExJWGtiNHFabXFQcmlSU2w3Ni1ibEdrZ0pfWEEza0E2YXlN?oc=5",
+   "published": "2026-10-20T12:30:00+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Proactive financial news",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdDhNYXcteDlqSUVncU5EU0VTMXRtaUk5RTNfZ1lxdzBVUGVGUi1fempKTkQzOXZaLWZoai1zLTVKRGVWc2dRNTRIekJ5aW9wemFWWGU4VjBiNHNnOUJYVGlsTk9abXhUYS1OdFBJNnlGQ1ZUNV9qMjljaUZvN3NLRzhLdFBzTzdoMVRpbWlHdEZ5YjBXdUQyOGIweXhYUlRpbjh1QW9XbzRjV1AyQk1EeXRlV0VwbHRwbEsycGtFbWxRV21CVUdzR0tvREF3VGk5aHNYYkY4OG1vbmM?oc=5",
+     "source": "Yahoo Finance UK",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVUZkOFVEbHdNcDR6dFlNSnRKdUtYZ21vSTRjaC1jdC1LNXFPMTNETzBHNnYzaE9mLVBteVZrd18tdVN4NnM1MGdTY0Y1Z2N3SmhFdXFiR1c1Z2RGd0hBcXg2U0tQSzVOWExJWGtiNHFabXFQcmlSU2w3Ni1ibEdrZ0pfWEEza0E2YXlN?oc=5",
      "title": "Plus500 retains 'buy' rating from Panmure Liberum after Brazil acquisition"
     }
    ],
    "ids": [
-    "0da395f8b8cb"
+    "c8ace462508c"
    ],
    "snippet": "",
    "prescore": 5.2,
@@ -13909,39 +13646,6 @@
    "ai": false
   },
   {
-   "id": "b9fce0dea1a1",
-   "title": "Crowell & Moring Continues to Expand Corporate Practice with Addition of M&A Partner Jeryl Bowers in Los Angeles",
-   "link": "https://www.prnewswire.com/news-releases/crowell--moring-continues-to-expand-corporate-practice-with-addition-of-ma-partner-jeryl-bowers-in-los-angeles-302913709.html",
-   "published": "2026-10-20T13:30:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/crowell--moring-continues-to-expand-corporate-practice-with-addition-of-ma-partner-jeryl-bowers-in-los-angeles-302913709.html",
-     "title": "Crowell & Moring Continues to Expand Corporate Practice with Addition of M&A Partner Jeryl Bowers in Los Angeles"
-    }
-   ],
-   "ids": [
-    "b9fce0dea1a1"
-   ],
-   "snippet": "LOS ANGELES, Oct. 20, 2026 /PRNewswire/ -- Jeryl A. Bowers, an M&A lawyer with more than 30 years of experience advising clients on complex transactions and commercial matters, has joined Crowell & Moring as a partner in Los Angeles. His arrival reflects the continued growth of the firm's...",
-   "prescore": 5.0,
-   "headline": "Crowell & Moring Continues to Expand Corporate Practice with Addition of M&A Partner Jeryl Bowers in Los Angeles",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "LOS ANGELES, Oct. 20, 2026 /PRNewswire/ -- Jeryl A. Bowers, an M&A lawyer with more than 30 years of experience advising clients on complex transactions and commercial matters, has joined Crowell & Moring as a partner in Los Angeles. His arrival reflects the continued growth of the firm's...",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "662f4f615464",
    "title": "OpenAI busca acelerar captação de recursos antes da IPO da Anthropic, diz agência",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/openai-busca-acelerar-captacao-de-recursos-antes-da-ipo-da-anthropic-diz-agencia.shtml",
@@ -13964,6 +13668,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A OpenAI está correndo contra o tempo para garantir compromissos de investidores antes da esperada estreia da rival Anthropic no mercado de capitais, prevista para meados de novembro, em uma captação de recursos excepcionalmente rápida que poderia avaliar a fabricante do ChatGPT em mais de US$ 1,4 trilhão (R$ 7,07 trilhões), de acordo com duas pessoas a par do assunto. Leia mais (10/20/2026 - 09h4",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "2bb47fc09a5e",
+   "title": "Pesquisa Quaest aparece em dia mais esvaziado e investidores monitoram balanços; Ibovespa em dólar cai nesta quarta-feira (21)",
+   "link": "https://www.moneytimes.com.br/pesquisa-quaest-aparece-em-dia-mais-esvaziado-e-investidores-monitoram-balancos-ibovespa-em-dolar-cai-nesta-quarta-feira-21-rens/",
+   "published": "2026-10-21T10:07:39+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/pesquisa-quaest-aparece-em-dia-mais-esvaziado-e-investidores-monitoram-balancos-ibovespa-em-dolar-cai-nesta-quarta-feira-21-rens/",
+     "title": "Pesquisa Quaest aparece em dia mais esvaziado e investidores monitoram balanços; Ibovespa em dólar cai nesta quarta-feira (21)"
+    }
+   ],
+   "ids": [
+    "2bb47fc09a5e"
+   ],
+   "snippet": "Os investidores encaram uma quarta-feira (21) bastante árida no campo de indicadores e eventos. O destaque vai para a segunda prévia do IGP-M de outubro, divulgado nas primeiras horas do dia. Assim, as atenções se voltam para a nova rodada da pesquisa Quaest para o segundo turno das eleições, que acontece no próximo domingo (25). […]",
+   "prescore": 4.8,
+   "headline": "Pesquisa Quaest aparece em dia mais esvaziado e investidores monitoram balanços; Ibovespa em dólar cai nesta quarta-feira (21)",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Os investidores encaram uma quarta-feira (21) bastante árida no campo de indicadores e eventos. O destaque vai para a segunda prévia do IGP-M de outubro, divulgado nas primeiras horas do dia. Assim, as atenções se voltam para a nova rodada da pesquisa Quaest para o segundo turno das eleições, que acontece no próximo domingo (25). […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14428,28 +14165,28 @@
    "ai": false
   },
   {
-   "id": "ca58ed0ae503",
-   "title": "Queda de juros pode adicionar R$ 4,9 bi aos lucros da Bolsa; utilities lideram ganhos",
-   "link": "https://www.infomoney.com.br/mercados/queda-de-juros-pode-adicionar-r-49-bi-aos-lucros-da-bolsa-utilities-lideram-ganhos/",
-   "published": "2026-10-21T09:00:00+00:00",
+   "id": "9ac24255376d",
+   "title": "Day Trade hoje (21): Ibovespa volta a subir; recorde pode ser renovado?",
+   "link": "https://www.infomoney.com.br/mercados/mercados-day-trade-hoje-analistas-21102026/",
+   "published": "2026-10-21T10:03:00+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/queda-de-juros-pode-adicionar-r-49-bi-aos-lucros-da-bolsa-utilities-lideram-ganhos/",
-     "title": "Queda de juros pode adicionar R$ 4,9 bi aos lucros da Bolsa; utilities lideram ganhos"
+     "link": "https://www.infomoney.com.br/mercados/mercados-day-trade-hoje-analistas-21102026/",
+     "title": "Day Trade hoje (21): Ibovespa volta a subir; recorde pode ser renovado?"
     }
    ],
    "ids": [
-    "ca58ed0ae503"
+    "9ac24255376d"
    ],
-   "snippet": "Estudo mapeou a exposição das companhias mais líquidas da Bolsa a dívidas atreladas ao CDI e à inflação (IPCA), descontando o caixa disponível The post Queda de juros pode adicionar R$ 4,9 bi aos lucros da Bolsa; utilities lideram ganhos appeared first on InfoMoney .",
+   "snippet": "Confira os pontos de suporte e resistência do mini-índice e minidólar The post Day Trade hoje (21): Ibovespa volta a subir; recorde pode ser renovado? appeared first on InfoMoney .",
    "prescore": 4.2,
-   "headline": "Queda de juros pode adicionar R$ 4,9 bi aos lucros da Bolsa; utilities lideram ganhos",
+   "headline": "Day Trade hoje (21): Ibovespa volta a subir; recorde pode ser renovado?",
    "category": "mercados",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Estudo mapeou a exposição das companhias mais líquidas da Bolsa a dívidas atreladas ao CDI e à inflação (IPCA), descontando o caixa disponível The post Queda de juros pode adicionar R$ 4,9 bi aos lucros da Bolsa; utilities lideram ganhos appeared first on InfoMoney .",
+   "summary": "Confira os pontos de suporte e resistência do mini-índice e minidólar The post Day Trade hoje (21): Ibovespa volta a subir; recorde pode ser renovado? appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14461,28 +14198,28 @@
    "ai": false
   },
   {
-   "id": "a877fdb244a0",
-   "title": "De R$ 12 a R$ 0,05: AMER3 quase virou pó; fim da RJ expõe uma Americanas menor",
-   "link": "https://www.infomoney.com.br/mercados/amer3-de-12-reais-a-centavos-americanas-encolheu/",
-   "published": "2026-10-21T08:04:00+00:00",
+   "id": "dafb0ba2a184",
+   "title": "Lula x Flávio: o que cada candidato propõe para controlar os gastos públicos?",
+   "link": "https://www.infomoney.com.br/politica/propostas-lula-flavio-ajuste-fiscal/",
+   "published": "2026-10-21T10:00:00+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/amer3-de-12-reais-a-centavos-americanas-encolheu/",
-     "title": "De R$ 12 a R$ 0,05: AMER3 quase virou pó; fim da RJ expõe uma Americanas menor"
+     "link": "https://www.infomoney.com.br/politica/propostas-lula-flavio-ajuste-fiscal/",
+     "title": "Lula x Flávio: o que cada candidato propõe para controlar os gastos públicos?"
     }
    ],
    "ids": [
-    "a877fdb244a0"
+    "dafb0ba2a184"
    ],
-   "snippet": "Com o fim da recuperação judicial, veja como AMER3 perdeu quase todo o valor nominal enquanto a varejista reduziu lojas, digital e marketplace The post De R$ 12 a R$ 0,05: AMER3 quase virou pó; fim da RJ expõe uma Americanas menor appeared first on InfoMoney .",
+   "snippet": "Flávio promete ajuste de 1,5% do PIB em 18 meses e uma nova regra fiscal; Lula defende redução gradual do déficit e manutenção do arcabouço, com possíveis mudanças nos limites de despesas The post Lula x Flávio: o que cada candidato propõe para controlar os gastos públicos? appeared first on InfoMoney .",
    "prescore": 4.2,
-   "headline": "De R$ 12 a R$ 0,05: AMER3 quase virou pó; fim da RJ expõe uma Americanas menor",
-   "category": "empresas",
+   "headline": "Lula x Flávio: o que cada candidato propõe para controlar os gastos públicos?",
+   "category": "macro",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Com o fim da recuperação judicial, veja como AMER3 perdeu quase todo o valor nominal enquanto a varejista reduziu lojas, digital e marketplace The post De R$ 12 a R$ 0,05: AMER3 quase virou pó; fim da RJ expõe uma Americanas menor appeared first on InfoMoney .",
+   "summary": "Flávio promete ajuste de 1,5% do PIB em 18 meses e uma nova regra fiscal; Lula defende redução gradual do déficit e manutenção do arcabouço, com possíveis mudanças nos limites de despesas The post Lula x Flávio: o que cada candidato propõe para controlar os gastos públicos? appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14564,6 +14301,85 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "f6561f810d5e",
+   "title": "Former Hungarian central bank chief Matolcsy detained in foundations probe",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMkxqQkdiOXBuOUE1R0tpenMtMFdRM2lDRzkweHB5cm93clBRM2h4dEI3M1pFZ0V4QlVyNXA1dzZPWGFiOThtbUVGQTBNVmJfZ2F0UXQyOTRXa3FiS0RMSGxpZ1duMVdGQW84cEd3NkxRQ25IajVnbTdmakFJUnFPb0ZwOWRLZTl6VmVFWVp6OXc0RlhYZFRxcEpvN1N5clJKTzAtNUtrNGJ5bVRPNm1nczgtbDJxQVlQWVFNOXRmbDVTckVDN0E?oc=5",
+   "published": "2026-10-21T07:41:17+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMkxqQkdiOXBuOUE1R0tpenMtMFdRM2lDRzkweHB5cm93clBRM2h4dEI3M1pFZ0V4QlVyNXA1dzZPWGFiOThtbUVGQTBNVmJfZ2F0UXQyOTRXa3FiS0RMSGxpZ1duMVdGQW84cEd3NkxRQ25IajVnbTdmakFJUnFPb0ZwOWRLZTl6VmVFWVp6OXc0RlhYZFRxcEpvN1N5clJKTzAtNUtrNGJ5bVRPNm1nczgtbDJxQVlQWVFNOXRmbDVTckVDN0E?oc=5",
+     "title": "Former Hungarian central bank chief Matolcsy detained in foundations probe"
+    },
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-21/former-hungarian-central-bank-governor-matolcsy-detained-telex",
+     "title": "Former Hungarian Central Bank Governor Gyorg Matolcsy Detained"
+    }
+   ],
+   "ids": [
+    "f6561f810d5e",
+    "f79296ed5527"
+   ],
+   "snippet": "Former Hungarian central bank Governor Gyorgy Matolcsy was detained early on Wednesday as prosecutors probe cases of embezzlement and fraud under his leadership.",
+   "prescore": 4.1,
+   "headline": "Former Hungarian central bank chief Matolcsy detained in foundations probe",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Former Hungarian central bank Governor Gyorgy Matolcsy was detained early on Wednesday as prosecutors probe cases of embezzlement and fraud under his leadership.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7fdc39906c73",
+   "title": "AstraZeneca Partners With Oracle to Refine Clinical Research With AI",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVJpY0VOc2tLVk9kZTE4bEZHaWJBbEFmaUFqbTBPcHhBODc3SUdwdnJBU2NuanRVVmk0NDNlZElOZWlTM1ZIOUpoekE2aVlvUmlra1N3dndiZWVTZVFGUXI2QXhnWWF4eHg2RFhlOC1hWDF4dzc5a2dIcDhvQWVGZkRSYU9nNlpkNVlRS0RYNUpDQ19lUnl4X1dYaGFGRWpoTXpFbkVHb3h0QUFzYXZF?oc=5",
+   "published": "2026-10-21T10:23:50+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVJpY0VOc2tLVk9kZTE4bEZHaWJBbEFmaUFqbTBPcHhBODc3SUdwdnJBU2NuanRVVmk0NDNlZElOZWlTM1ZIOUpoekE2aVlvUmlra1N3dndiZWVTZVFGUXI2QXhnWWF4eHg2RFhlOC1hWDF4dzc5a2dIcDhvQWVGZkRSYU9nNlpkNVlRS0RYNUpDQ19lUnl4X1dYaGFGRWpoTXpFbkVHb3h0QUFzYXZF?oc=5",
+     "title": "AstraZeneca Partners With Oracle to Refine Clinical Research With AI"
+    }
+   ],
+   "ids": [
+    "7fdc39906c73"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "AstraZeneca faz parceria com Oracle para usar IA em pesquisa clínica",
+   "category": "tech",
+   "importance": 3,
+   "importance_reason": "Parceria corporativa de IA sem valor divulgado e distante do foco do leitor.",
+   "summary": "AstraZeneca e Oracle firmaram parceria para refinar pesquisa clínica com IA. Termos financeiros não foram divulgados.",
+   "involves": "AstraZeneca, Oracle",
+   "interpretation": "Mostra a adoção de IA em farmacêuticas; não é transação de M&A.",
+   "impact": "Efeito limitado; positivo para a narrativa de nuvem e IA da Oracle.",
+   "sentiment": "positivo",
+   "entities": [
+    "AstraZeneca",
+    "Oracle"
+   ],
+   "tags": [
+    "IA",
+    "farmacêutica",
+    "parceria"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
   },
   {
    "id": "71e1bb013288",
@@ -14841,39 +14657,6 @@
    "ai": false
   },
   {
-   "id": "4358cc0faf29",
-   "title": "O que a Berkshire viu na Lennar",
-   "link": "https://braziljournal.com/o-que-a-berkshire-viu-na-lennar",
-   "published": "2026-10-20T15:46:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/o-que-a-berkshire-viu-na-lennar",
-     "title": "O que a Berkshire viu na Lennar"
-    }
-   ],
-   "ids": [
-    "4358cc0faf29"
-   ],
-   "snippet": "Fiel à tese de que vale a pena ser ganancioso quando os outros têm medo, a Berkshire Hathaway está aumentando sua exposição ao mercado imobiliário dos EUA num momento desafiador para o setor. De junho para cá, o CEO Greg Abel dobrou a participação da Berkshire na Lennar, uma das maiores incorporadoras residenciais dos EUA.",
-   "prescore": 4.0,
-   "headline": "O que a Berkshire viu na Lennar",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Fiel à tese de que vale a pena ser ganancioso quando os outros têm medo, a Berkshire Hathaway está aumentando sua exposição ao mercado imobiliário dos EUA num momento desafiador para o setor. De junho para cá, o CEO Greg Abel dobrou a participação da Berkshire na Lennar, uma das maiores incorporadoras residenciais dos EUA.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "708502a15aa5",
    "title": "TCU recua e aprova contas do BC sem esperar julgamento do caso Master",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/tcu-recua-e-aprova-contas-do-bc-sem-esperar-julgamento-do-caso-master.shtml",
@@ -14896,6 +14679,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "O TCU (Tribunal de Contas da União) recuou e aprovou as contas do Banco Central referentes a 2025, uma semana depois de suspender o julgamento e condicionar a regularidade das contas dos dirigentes do órgão à conclusão do processo que apura a liquidação do Banco Master. Leia mais (10/20/2026 - 12h44)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9b562a62c013",
+   "title": "Da siderurgia aos automóveis: como a China ameaça a indústria brasileira",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcHJvZ0o1QkJnS1A0V29BcFJfb1JXU0JWOTVHSlY1X2p6WVNtSVV1QnRNOTVIbHZkRjg0NVdnYW9hMVJlUVVIeHdZa0xNOTlfN1FYSkZFQ2I4Zk52ZEFQdUtXQmpBUXZ3OWRzYzNvT0l1OVA4R2ZCaDd4SXVaSVRkZmRkUEJrR19RTjVyV0F3WFZ4bmdvX2VUeFVIM2FXWGtxMzNNMk93SQ?oc=5",
+   "published": "2026-10-20T14:10:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcHJvZ0o1QkJnS1A0V29BcFJfb1JXU0JWOTVHSlY1X2p6WVNtSVV1QnRNOTVIbHZkRjg0NVdnYW9hMVJlUVVIeHdZa0xNOTlfN1FYSkZFQ2I4Zk52ZEFQdUtXQmpBUXZ3OWRzYzNvT0l1OVA4R2ZCaDd4SXVaSVRkZmRkUEJrR19RTjVyV0F3WFZ4bmdvX2VUeFVIM2FXWGtxMzNNMk93SQ?oc=5",
+     "title": "Da siderurgia aos automóveis: como a China ameaça a indústria brasileira"
+    }
+   ],
+   "ids": [
+    "9b562a62c013"
+   ],
+   "snippet": "",
+   "prescore": 4.0,
+   "headline": "Da siderurgia aos automóveis: como a China ameaça a indústria brasileira",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15105,6 +14921,39 @@
    "ai": false
   },
   {
+   "id": "430da0ff1e4d",
+   "title": "RBI Turns Away All Bids at Treasury Bill Sale Amid Bond Selloff",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/rbi-turns-away-all-bids-at-treasury-bill-sale-amid-bond-selloff",
+   "published": "2026-10-21T09:45:01+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-21/rbi-turns-away-all-bids-at-treasury-bill-sale-amid-bond-selloff",
+     "title": "RBI Turns Away All Bids at Treasury Bill Sale Amid Bond Selloff"
+    }
+   ],
+   "ids": [
+    "430da0ff1e4d"
+   ],
+   "snippet": "India’s central bank rejected all bids at a sale of federal treasury bills on Wednesday amid a bond selloff that pushed borrowing costs to multi-year highs.",
+   "prescore": 3.8,
+   "headline": "RBI Turns Away All Bids at Treasury Bill Sale Amid Bond Selloff",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "India’s central bank rejected all bids at a sale of federal treasury bills on Wednesday amid a bond selloff that pushed borrowing costs to multi-year highs.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5435ca620d5f",
    "title": "Agenda econômica: O que mexe com Bolsa e dólar nesta quarta-feira (21)",
    "link": "https://www.moneytimes.com.br/agenda-economica-o-que-pode-mexer-com-bolsa-e-dolar-nesta-quarta-feira-21-mlem/",
@@ -15138,6 +14987,39 @@
    "ai": false
   },
   {
+   "id": "0cf4f3e68e06",
+   "title": "French Bond Risk Hits 15-Year High on $110 Crude, Budget Concern",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/french-bond-risk-gauge-nears-160-basis-points-hits-15-year-high",
+   "published": "2026-10-21T09:18:02+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-21/french-bond-risk-gauge-nears-160-basis-points-hits-15-year-high",
+     "title": "French Bond Risk Hits 15-Year High on $110 Crude, Budget Concern"
+    }
+   ],
+   "ids": [
+    "0cf4f3e68e06"
+   ],
+   "snippet": "A gauge of French government bond risk hit the highest level in 15 years as rising energy prices exacerbated concern over the country’s fiscal outlook.",
+   "prescore": 3.8,
+   "headline": "French Bond Risk Hits 15-Year High on $110 Crude, Budget Concern",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A gauge of French government bond risk hit the highest level in 15 years as rising energy prices exacerbated concern over the country’s fiscal outlook.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "3c294988e521",
    "title": "Última pesquisa Datafolha para presidente no segundo turno testa se Lula vira sobre Flávio Bolsonaro após debate da Globo",
    "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxOdjVoNVNILVI2bjRtT0M2aHNfMC1hTkFLYkxaSDYwM3k0ajNCQ3NwZ195blFSNDdyY0NlYzR5U3ZfSWVSOXNWXzFRWnNodkQ2Y3NfYUtsQXBpaTl3cmE3eGUwNmNRa2VqU1Y5bFlMMm10aElqQlZKX01ManpfMDlhZ2VzNGxFb0wzMjJ1WmJQbVVHV0lXbFVrY2VId1hwa1pRMmdldnY4Qy1RZWRpYUhFRFp6NkduU2k4WFd3aW1lSlI3MS1ZN2pBOUpiM0tPSWt1YXFJb3ViSjhjSHdLQ2FXc21pdjJsWGZfQy1odXZJVWlmX21tank0R3pTZEpYclVvYnZLSE8ydVRXdkRYTUlLSTJxN1FkVTdIYW1uOVp30gGsAkFVX3lxTE9nck50NmdodTlXUDFHWi1uTXFWRTg2ZU5IUnBLUkhtVDJaSzZCX3paSV9NaWdrMFZnbWpWdEUwUFFsc1FQdWV6SXktdnZyTHBDS3IyYW00NWFQdDZUbEVhazZPYmladnMwV3cxRmVaUHh4YXJPNDVnNXkta1FMUWJTQ3dEdjItNXVFLVlsaTFBS2Z0emowcXNwVmhMS2pYME5zNGhkbG96SWxBUjJhNVczNTFKb0lmOC1tckNUYkszRW1ScWhQSFlTNVZ0UVNyNnJaMDFFaTkxWlFDX2VCanVpemVoMmZYUml5d0czMWROTEd4N0l0QkVJaVEwLVQtemRWM2hBR0s3OWZaWE9CZndlSV9sa2FrQ1QtNnAyOGM2M0hSUF96cW1vYW02eA?oc=5",
@@ -15160,39 +15042,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6c341c9e6131",
-   "title": "Chiriseri: France’s Fiscal Picture Concern Bond Markets",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-21/chiriseri-france-s-fiscal-picture-concern-bond-markets-video",
-   "published": "2026-10-21T07:00:05+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-10-21/chiriseri-france-s-fiscal-picture-concern-bond-markets-video",
-     "title": "Chiriseri: France’s Fiscal Picture Concern Bond Markets"
-    }
-   ],
-   "ids": [
-    "6c341c9e6131"
-   ],
-   "snippet": "Treasury yields edged higher as the recent bond rally lost some momentum. Bloomberg’s strategists say longer term, they see yields reaching fresher highs as strong US growth, higher borrowing costs and rising government debt supply will keep pressure on Treasuries. Rufaro Chiriseri, Head of Fixed Income for UK and Europe at RBC Wealth Management spoke to Bloomberg’s Abeer Abu Omar on Horizons Middle East & Africa. (Source: Bloomberg)",
-   "prescore": 3.8,
-   "headline": "Chiriseri: France’s Fiscal Picture Concern Bond Markets",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Treasury yields edged higher as the recent bond rally lost some momentum. Bloomberg’s strategists say longer term, they see yields reaching fresher highs as strong US growth, higher borrowing costs and rising government debt supply will keep pressure on Treasuries. Rufaro Chiriseri, Head of Fixed Income for UK and Europe at RBC Wealth Management spoke to Bloomberg’s Abeer Abu Omar on Horizons Midd",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15537,30 +15386,63 @@
    "ai": false
   },
   {
-   "id": "a213a2b356c1",
-   "title": "Prudential Financial Agrees to Sell Operations in Brazil, Mexico for $4.03 Billion Cash",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSlBRckJLbWJfMVJsU0RNYkJ2Yl9kb0J3OWNrLWVVUWp1bGZOMGw4VUE5T3dlckJ3aXpkb0VjX0dlSW80QmlqU25GWE8wbmduRF9YN0ctejFZVDB0aWE0b2MxNEFkXzNERTl6RncyOEc4WUhrbGY2VmlBR2daRDRMQk1iTDk3QzdWSmliZ1ROeU1zSmJmT2x3MTNMS2JYbzdRWmtCMzFjLXg2TXdi?oc=5",
-   "published": "2026-10-20T11:03:24+00:00",
-   "region": "INTL",
+   "id": "395a3bfee9cb",
+   "title": "S&P reduz CSN para “B-” por desempenho fraco de mineração e alavancagem",
+   "link": "https://www.infomoney.com.br/mercados/sp-reduz-csn-para-b-por-desempenho-fraco-de-mineracao-e-alavancagem/",
+   "published": "2026-10-21T09:18:23+00:00",
+   "region": "BR",
    "outlets": [
     {
-     "source": "Yahoo Finance",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSlBRckJLbWJfMVJsU0RNYkJ2Yl9kb0J3OWNrLWVVUWp1bGZOMGw4VUE5T3dlckJ3aXpkb0VjX0dlSW80QmlqU25GWE8wbmduRF9YN0ctejFZVDB0aWE0b2MxNEFkXzNERTl6RncyOEc4WUhrbGY2VmlBR2daRDRMQk1iTDk3QzdWSmliZ1ROeU1zSmJmT2x3MTNMS2JYbzdRWmtCMzFjLXg2TXdi?oc=5",
-     "title": "Prudential Financial Agrees to Sell Operations in Brazil, Mexico for $4.03 Billion Cash"
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/sp-reduz-csn-para-b-por-desempenho-fraco-de-mineracao-e-alavancagem/",
+     "title": "S&P reduz CSN para “B-” por desempenho fraco de mineração e alavancagem"
     },
     {
-     "source": "Briefs Finance",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPS2hFZ2J2aGFTT2R4blJ5X3VXdzlmVG0wcEc1RTBZRkxHQzFDQk1jS3pnZmFNTk9OV2psSDU3MGZpUWJzU3Z4Q1BlLWZDdFMzalhaTGtXRkVBU2lEODcxRFQweE1fd1Jia1RrcjlwbnN2ZGM5WW1FQ1hGRkhUVUQtcjVsWDJWd3lhM3J4dFU2c0I?oc=5",
-     "title": "Prudential agrees to sell Brazil and Mexico units to CNP in $4 billion pivot"
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/sp-reduz-csn-para-b-por-desempenho-fraco-de-mineracao-e-alavancagem-perspectiva-negativa-fets/",
+     "title": "S&P reduz CSN para “B-” por desempenho fraco de mineração e alavancagem, perspectiva negativa"
     }
    ],
    "ids": [
-    "a213a2b356c1",
-    "306c25e1a66e"
+    "395a3bfee9cb",
+    "ea17e925038c"
+   ],
+   "snippet": "Corte ocorreu ​diante de resultados mais ​fracos ⁠na mineração e ⁠alavancagem elevada The post S&P reduz CSN para “B-” por desempenho fraco de mineração e alavancagem appeared first on InfoMoney .",
+   "prescore": 3.7,
+   "headline": "S&P reduz CSN para “B-” por desempenho fraco de mineração e alavancagem",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Corte ocorreu ​diante de resultados mais ​fracos ⁠na mineração e ⁠alavancagem elevada The post S&P reduz CSN para “B-” por desempenho fraco de mineração e alavancagem appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1b9b90b9cce7",
+   "title": "French 10-year bond yields hit 5%, highest since 2002",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYXc5VF91b3J6TjJpdkR6VFR1SUtTX1VUY1ZTUFBTNXFIT3ZZQ3RBMTVPaDNjMVNZbzRqcGdqRjRXcFhEQjRZd0V6R2ZRZVJwOHdmeHl5LWhva0Y3c285ZUNuaG80bWxBNUMyczhxWWdPd0NZZlNUTVJmUEszM1dCMzU2dU43ZzJ0bHNMQVF5cjgzZWZMUWViWE5aeWc3NUYwSkE?oc=5",
+   "published": "2026-10-21T09:44:40+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYXc5VF91b3J6TjJpdkR6VFR1SUtTX1VUY1ZTUFBTNXFIT3ZZQ3RBMTVPaDNjMVNZbzRqcGdqRjRXcFhEQjRZd0V6R2ZRZVJwOHdmeHl5LWhva0Y3c285ZUNuaG80bWxBNUMyczhxWWdPd0NZZlNUTVJmUEszM1dCMzU2dU43ZzJ0bHNMQVF5cjgzZWZMUWViWE5aeWc3NUYwSkE?oc=5",
+     "title": "French 10-year bond yields hit 5%, highest since 2002"
+    }
+   ],
+   "ids": [
+    "1b9b90b9cce7"
    ],
    "snippet": "",
-   "prescore": 3.7,
-   "headline": "Prudential Financial Agrees to Sell Operations in Brazil, Mexico for $4.03 Billion Cash",
+   "prescore": 3.6,
+   "headline": "French 10-year bond yields hit 5%, highest since 2002",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -15598,39 +15480,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Concerns over public finances and political stability have helped push up 10-year bond yields from 3.2% in late February",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "5abda02ef30a",
-   "title": "EXCLUSIVE: Samsung, SK Hynix upgrading China plants to make more advanced chips, people say",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNmZxYjhQQjhXcUZzRnh3dHJIMWQzWUxyNDFMLTM1b1R3d3NFMEFycFpkQkx5NW5sQjBNdVJldDNhakRYcUMxRERYRnR3ZWdoVDBZUmljM2VENTdmRzFVdVY4eUMxTDk3VmtCWk1jQ1dvZmY0cnVCQ1FpTl9uZ3lrWWU4MGp0aDRsbG9jNTBvUDBadXpoZVAwOUFYRUlITXVUMUMxakpMVGc3QXJmQjJxeWZoWWJlTHNDSHNmZGprUVY?oc=5",
-   "published": "2026-10-21T04:49:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNmZxYjhQQjhXcUZzRnh3dHJIMWQzWUxyNDFMLTM1b1R3d3NFMEFycFpkQkx5NW5sQjBNdVJldDNhakRYcUMxRERYRnR3ZWdoVDBZUmljM2VENTdmRzFVdVY4eUMxTDk3VmtCWk1jQ1dvZmY0cnVCQ1FpTl9uZ3lrWWU4MGp0aDRsbG9jNTBvUDBadXpoZVAwOUFYRUlITXVUMUMxakpMVGc3QXJmQjJxeWZoWWJlTHNDSHNmZGprUVY?oc=5",
-     "title": "EXCLUSIVE: Samsung, SK Hynix upgrading China plants to make more advanced chips, people say"
-    }
-   ],
-   "ids": [
-    "5abda02ef30a"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "EXCLUSIVE: Samsung, SK Hynix upgrading China plants to make more advanced chips, people say",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15697,6 +15546,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Tokyo lost decades when a property bust led to an economic slump. Could the same phenomenon undo Xi Jinping’s ambitions?",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d4236bb6e792",
+   "title": "French bond yields dip but remain near 24-year high in volatile trading",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdzNSV1VKT0t1WFIzSE9fT0Mzck9VVWRTWktvUTFOYXM5Q0w3NWZVWGEyWkROMl9FaGQ0Zk1pbU1WS3lwT1FaQkhxM2NsbEQ2cUtOY01RUi1TR3U0YVhPYlo1N2MwRG5IMzdKMjRqUmJLczAxOXJqSTgzRFMyNmZ2TFdIaldhUXRlN0daZmROMXY5SFBfakpTb3F3eWdqRW80MTl3?oc=5",
+   "published": "2026-10-20T16:25:12+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdzNSV1VKT0t1WFIzSE9fT0Mzck9VVWRTWktvUTFOYXM5Q0w3NWZVWGEyWkROMl9FaGQ0Zk1pbU1WS3lwT1FaQkhxM2NsbEQ2cUtOY01RUi1TR3U0YVhPYlo1N2MwRG5IMzdKMjRqUmJLczAxOXJqSTgzRFMyNmZ2TFdIaldhUXRlN0daZmROMXY5SFBfakpTb3F3eWdqRW80MTl3?oc=5",
+     "title": "French bond yields dip but remain near 24-year high in volatile trading"
+    }
+   ],
+   "ids": [
+    "d4236bb6e792"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "French bond yields dip but remain near 24-year high in volatile trading",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15814,39 +15696,6 @@
    "ai": false
   },
   {
-   "id": "fdf7173d68d9",
-   "title": "BTG INF LONG (PACB11)",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GaUFRZUhwcTFJRXV2WHhTRzVaYThma3FFTEpsWl9nSzBmXy0wOTUzWVA3eXFDWWYtZmtWYVZHRmhvWlRqb08xbWdpTndlVi1zenlZSjc4aUc?oc=5",
-   "published": "2026-10-20T16:34:08+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "trademap.com.br",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GaUFRZUhwcTFJRXV2WHhTRzVaYThma3FFTEpsWl9nSzBmXy0wOTUzWVA3eXFDWWYtZmtWYVZHRmhvWlRqb08xbWdpTndlVi1zenlZSjc4aUc?oc=5",
-     "title": "BTG INF LONG (PACB11)"
-    }
-   ],
-   "ids": [
-    "fdf7173d68d9"
-   ],
-   "snippet": "",
-   "prescore": 3.4,
-   "headline": "BTG INF LONG (PACB11)",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "5e22f77ee341",
    "title": "Enfim com vento a favor, Raízen Energia ganha fôlego para remar na maior RE da história e na B3",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMM3Rmb09GTHVOWEN5SHBUTTQ4Nnh1R3BGOVNQSUVFTlE3U1dxV2pfWlFmT0ppT1RXb3BwS3ZNd0J4Zk5ucTBuU1pxLXhxY0tzQVBsNVMxZ1g5dw?oc=5",
@@ -15919,28 +15768,61 @@
    "ai": false
   },
   {
-   "id": "240d50af38d5",
-   "title": "O que realmente mobiliza os eleitores de Lula e Flávio nas redes sociais?",
-   "link": "https://www.infomoney.com.br/politica/o-que-realmente-mobiliza-os-eleitores-de-lula-e-flavio-nas-redes-sociais/",
-   "published": "2026-10-21T09:00:00+00:00",
+   "id": "deb55b75fa44",
+   "title": "Governo acusa Milei de interferência após fala sobre fraude de Lula para roubar eleição",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYU1xTkYxQWtHT05fTks2VkVNN2R6VjllZGlKWm1uemVZYU9NODlfaWZJTXR3UzJBc19YUFZGeUdlRVRKaFp2b1RHeTk1WWQyUXRBNDloeEZoR1QyVDRPcFZndzFkTlU4WUt3eXV6cHUtVGE1TUtrWExJSVBRWUtXUjZDUHpkbG9tVXkybS1fc0ZOV09YcWtaMXVMd1QyZHIzS1B1U0NLU0g1akk2ZFlscmRMeUR3UXlhUmhFcE9uN28zdUJIWk930gHbAUFVX3lxTFAzUDJPUjlEVVpaNmgwakNONjJwWTZHajM3U0RZWS02VktWZ0dBdjFRdXlDMDZncGZnNm12VlNCdWJoUVRkOGZOYk5WUjBKOG5xN0ZvcEdtTkJKOFZQWkdTMzJhVThtUTBHWkFzV2hRbXFtTnBMUzdKNUl5UXBnWmZFXzFQUnRrRDZReFEyQ2tUNVZQUVF1dkQwYzB5c0ZoRDhMR0l1a0gtWGdnblBuUG8zaEpMOVFfV3dmOGhwaUNxMWo3eklJbjlUT3lDc05aUjFVdUJOcW16VTVyWQ?oc=5",
+   "published": "2026-10-21T10:02:33+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYU1xTkYxQWtHT05fTks2VkVNN2R6VjllZGlKWm1uemVZYU9NODlfaWZJTXR3UzJBc19YUFZGeUdlRVRKaFp2b1RHeTk1WWQyUXRBNDloeEZoR1QyVDRPcFZndzFkTlU4WUt3eXV6cHUtVGE1TUtrWExJSVBRWUtXUjZDUHpkbG9tVXkybS1fc0ZOV09YcWtaMXVMd1QyZHIzS1B1U0NLU0g1akk2ZFlscmRMeUR3UXlhUmhFcE9uN28zdUJIWk930gHbAUFVX3lxTFAzUDJPUjlEVVpaNmgwakNONjJwWTZHajM3U0RZWS02VktWZ0dBdjFRdXlDMDZncGZnNm12VlNCdWJoUVRkOGZOYk5WUjBKOG5xN0ZvcEdtTkJKOFZQWkdTMzJhVThtUTBHWkFzV2hRbXFtTnBMUzdKNUl5UXBnWmZFXzFQUnRrRDZReFEyQ2tUNVZQUVF1dkQwYzB5c0ZoRDhMR0l1a0gtWGdnblBuUG8zaEpMOVFfV3dmOGhwaUNxMWo3eklJbjlUT3lDc05aUjFVdUJOcW16VTVyWQ?oc=5",
+     "title": "Governo acusa Milei de interferência após fala sobre fraude de Lula para roubar eleição"
+    }
+   ],
+   "ids": [
+    "deb55b75fa44"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Governo acusa Milei de interferência após fala sobre fraude de Lula para roubar eleição",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "beb9c5e19846",
+   "title": "Petrobras (PETR4) avalia como positivo adiamento de audiência sobre Gas Release",
+   "link": "https://www.infomoney.com.br/mercados/petrobras-petr4-avalia-como-positivo-adiamento-de-audiencia-sobre-gas-release/",
+   "published": "2026-10-21T09:48:27+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/o-que-realmente-mobiliza-os-eleitores-de-lula-e-flavio-nas-redes-sociais/",
-     "title": "O que realmente mobiliza os eleitores de Lula e Flávio nas redes sociais?"
+     "link": "https://www.infomoney.com.br/mercados/petrobras-petr4-avalia-como-positivo-adiamento-de-audiencia-sobre-gas-release/",
+     "title": "Petrobras (PETR4) avalia como positivo adiamento de audiência sobre Gas Release"
     }
    ],
    "ids": [
-    "240d50af38d5"
+    "beb9c5e19846"
    ],
-   "snippet": "Para Renato Dolci, da Dados Timeless, rejeição ao campo político rival ajuda a explicar a mobilização digital de apoiadores de Lula e Flávio Bolsonaro The post O que realmente mobiliza os eleitores de Lula e Flávio nas redes sociais? appeared first on InfoMoney .",
+   "snippet": "O ‌adiamento 'beneficia o bom andamento ⁠do processo regulatório The post Petrobras (PETR4) avalia como positivo adiamento de audiência sobre Gas Release appeared first on InfoMoney .",
    "prescore": 3.2,
-   "headline": "O que realmente mobiliza os eleitores de Lula e Flávio nas redes sociais?",
-   "category": "politica",
+   "headline": "Petrobras (PETR4) avalia como positivo adiamento de audiência sobre Gas Release",
+   "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Para Renato Dolci, da Dados Timeless, rejeição ao campo político rival ajuda a explicar a mobilização digital de apoiadores de Lula e Flávio Bolsonaro The post O que realmente mobiliza os eleitores de Lula e Flávio nas redes sociais? appeared first on InfoMoney .",
+   "summary": "O ‌adiamento 'beneficia o bom andamento ⁠do processo regulatório The post Petrobras (PETR4) avalia como positivo adiamento de audiência sobre Gas Release appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16051,6 +15933,39 @@
    "ai": false
   },
   {
+   "id": "a8c4ef5bfb84",
+   "title": "Lula x Flávio Bolsonaro: Debate rasteiro à altura da atividade política no Brasil | Estadão Analisa",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZUxBRnJsLWh1Z2g2cm9ETU9zNElIUmJfeXB5VW1jZVRLTVZySVFRbDVWOFdRUGpabkZlZVNJdTBaNHlrSWRNdHNVWkt4NU1tR2U3Q1VsY0pDSGV0dDg4WmhxSzFvcHhtbmNvYkFnbW0ydFZ1WmNxUm9kWE9rOVNLQ2ZNdlFiZUI3dmstbmN2Tnltb1lYQ19aMTlWR2lsbEpxUWRXcXVBV3ZxMUpSZ2xyb3p5N1JSSWZGVGh0NE1Wc2l1M0c0elJtX2dNY1RPNE1sYVUydG9XeWc4Uy1OZEFjRjNobkU0THdGUWxvYS13?oc=5",
+   "published": "2026-10-20T16:40:38+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZUxBRnJsLWh1Z2g2cm9ETU9zNElIUmJfeXB5VW1jZVRLTVZySVFRbDVWOFdRUGpabkZlZVNJdTBaNHlrSWRNdHNVWkt4NU1tR2U3Q1VsY0pDSGV0dDg4WmhxSzFvcHhtbmNvYkFnbW0ydFZ1WmNxUm9kWE9rOVNLQ2ZNdlFiZUI3dmstbmN2Tnltb1lYQ19aMTlWR2lsbEpxUWRXcXVBV3ZxMUpSZ2xyb3p5N1JSSWZGVGh0NE1Wc2l1M0c0elJtX2dNY1RPNE1sYVUydG9XeWc4Uy1OZEFjRjNobkU0THdGUWxvYS13?oc=5",
+     "title": "Lula x Flávio Bolsonaro: Debate rasteiro à altura da atividade política no Brasil | Estadão Analisa"
+    }
+   ],
+   "ids": [
+    "a8c4ef5bfb84"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Lula x Flávio Bolsonaro: Debate rasteiro à altura da atividade política no Brasil | Estadão Analisa",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d24da4874350",
    "title": "Brasil suspende exportações de aves à China após confirmação da doença de Newcastle",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR1hsX3lOSlZfWUxicDJlMTI3WllsVE1tSkU3bGpyVUoxRHZzdHFONEktdWdBdDUxbTdDSnRERVZfTmk1U2Vjb2hSZU41bnBlYzNRRmpnVC1CYVVaeHdhTy1IY01DTHFMeWxPRV90ZHM1ZzRmZWpYbHM3ZU1RV2V2UjdBWk9pbkg1ZEg1U0FHMG9OTFV2aDhWd1doQWdYSEszOS1HZDZOWFJUVGdEN283X1NONEtRdTFvNkp1bE14NVHSAdQBQVVfeXFMTzdNYnlfMmVtRVZEMGpwNEk1QWFfbmZDNWgyOFlDNXU1ZHN4RGlXVTFzZUlXczQ2eDg4NFk5b0FLWlkxQmlnWlJ1ZDRyaTZDY2lzbWtyRmJDeFJ3UDJRTWl6LWdaYmk4ZlFhZnNIUTdwdW9ZdkdPN0Jub0NyQThIeWVtOWtiaklYYzh5YWZFRWhLOVBjbGVHOFdSVlVzTHUyR3hyUFhiMUl1MURqNkFmd1FaYktoS2tXMU1KLTJSUU83OUdUdWxrZTQzTl85cVpNeEVpdVE?oc=5",
@@ -16120,7 +16035,7 @@
    "id": "c59926c2ea76",
    "title": "French 10-year bond yield hits 5% for first time since 2002 amid unrest",
    "link": "https://www.cnbc.com/2026/10/21/france-protests-bonds-debt.html",
-   "published": "2026-10-21T09:20:37+00:00",
+   "published": "2026-10-21T10:27:14+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -16132,10 +16047,175 @@
    "ids": [
     "c59926c2ea76"
    ],
-   "snippet": "",
+   "snippet": "France is grappling with intense pressure to slash spending, while trying to quell violent protests demanding the government spends more.",
    "prescore": 3.0,
    "headline": "French 10-year bond yield hits 5% for first time since 2002 amid unrest",
    "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "France is grappling with intense pressure to slash spending, while trying to quell violent protests demanding the government spends more.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6418b9b05c95",
+   "title": "Flávio Bolsonaro tem 51,1%, e Lula, 48,9% dos votos válidos, e seguem empatados, diz Meio/Ideia",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-tem-511-e-lula-489-dos-votos-validos-e-seguem-empatados-diz-meioideia.shtml",
+   "published": "2026-10-21T10:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-tem-511-e-lula-489-dos-votos-validos-e-seguem-empatados-diz-meioideia.shtml",
+     "title": "Flávio Bolsonaro tem 51,1%, e Lula, 48,9% dos votos válidos, e seguem empatados, diz Meio/Ideia"
+    }
+   ],
+   "ids": [
+    "6418b9b05c95"
+   ],
+   "snippet": "O senador Flávio Bolsonaro ( PL ) tem 51,1% dos votos válidos, ante 48,9% do presidente Lula ( PT ), e os dois seguem tecnicamente empatados na disputa pelo segundo turno da eleição presidencial, mostra nova rodada da pesquisa Meio/Ideia. Leia mais (10/21/2026 - 07h00)",
+   "prescore": 3.0,
+   "headline": "Flávio Bolsonaro tem 51,1%, e Lula, 48,9% dos votos válidos, e seguem empatados, diz Meio/Ideia",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O senador Flávio Bolsonaro ( PL ) tem 51,1% dos votos válidos, ante 48,9% do presidente Lula ( PT ), e os dois seguem tecnicamente empatados na disputa pelo segundo turno da eleição presidencial, mostra nova rodada da pesquisa Meio/Ideia. Leia mais (10/21/2026 - 07h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "09c505434f11",
+   "title": "Pesquisa Palver mostra Flávio com 50% e Lula com 48%",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/pesquisa-palver-mostra-flavio-com-50-e-lula-com-48.shtml",
+   "published": "2026-10-21T10:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/pesquisa-palver-mostra-flavio-com-50-e-lula-com-48.shtml",
+     "title": "Pesquisa Palver mostra Flávio com 50% e Lula com 48%"
+    }
+   ],
+   "ids": [
+    "09c505434f11"
+   ],
+   "snippet": "Pesquisa da Palver mostra empate técnico na disputa presidencial, com Flávio Bolsonaro ( PL ) marcando 50% dos votos totais e Luiz Inácio Lula da Silva ( PT ) com 48%. Leia mais (10/21/2026 - 07h00)",
+   "prescore": 3.0,
+   "headline": "Pesquisa Palver mostra Flávio com 50% e Lula com 48%",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Pesquisa da Palver mostra empate técnico na disputa presidencial, com Flávio Bolsonaro ( PL ) marcando 50% dos votos totais e Luiz Inácio Lula da Silva ( PT ) com 48%. Leia mais (10/21/2026 - 07h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4754dedd10be",
+   "title": "As razões ‘críticas’ e ‘pesadas’ da torcida de Washington por Flávio",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbVpoMnR1WUNETlJhblk2ZHJoNkRHNnRFaXZpV250dWFOTG1janRTTjQxYU5TVnNBZVlaOUNLMGgtR0xLUlFIRlQ4YVdFZm42cDhLNUE2aWNpOW9sWm5OZEo4Z1luNkt4YmI1eHRZMElqczczVkpQTlRtckdvd09PbjZhdmhJVWsxWVZoN19XVHBCOTVV?oc=5",
+   "published": "2026-10-21T09:50:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbVpoMnR1WUNETlJhblk2ZHJoNkRHNnRFaXZpV250dWFOTG1janRTTjQxYU5TVnNBZVlaOUNLMGgtR0xLUlFIRlQ4YVdFZm42cDhLNUE2aWNpOW9sWm5OZEo4Z1luNkt4YmI1eHRZMElqczczVkpQTlRtckdvd09PbjZhdmhJVWsxWVZoN19XVHBCOTVV?oc=5",
+     "title": "As razões ‘críticas’ e ‘pesadas’ da torcida de Washington por Flávio"
+    }
+   ],
+   "ids": [
+    "4754dedd10be"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "As razões ‘críticas’ e ‘pesadas’ da torcida de Washington por Flávio",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "22793155fbda",
+   "title": "Na Europa, passagens aéreas podem ter o maior aumento da história",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ2MwZG0zVTNSbmtQYnVObWZ3RmJFUWRiMWpCM1dCN3hYbnVpTWlLS3A0Y3llMlhpLW1yR2tNRFZlYjA1cXIwTHJ5b2dTUDY5SHBfS0t6Mmx2dTRhR28zM0ZPNENfc3F6c09TckRLMFJmdWpEVzRUMG1iLW81MFE2QV9MR011MmtaUl96dzBwY2JsWEVD?oc=5",
+   "published": "2026-10-21T09:50:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ2MwZG0zVTNSbmtQYnVObWZ3RmJFUWRiMWpCM1dCN3hYbnVpTWlLS3A0Y3llMlhpLW1yR2tNRFZlYjA1cXIwTHJ5b2dTUDY5SHBfS0t6Mmx2dTRhR28zM0ZPNENfc3F6c09TckRLMFJmdWpEVzRUMG1iLW81MFE2QV9MR011MmtaUl96dzBwY2JsWEVD?oc=5",
+     "title": "Na Europa, passagens aéreas podem ter o maior aumento da história"
+    }
+   ],
+   "ids": [
+    "22793155fbda"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Na Europa, passagens aéreas podem ter o maior aumento da história",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5451600a7073",
+   "title": "Os planos da Americanas depois da RJ",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Vb0xHVE1zd2FEclc5RVJuN2FEc3VXOElLUGdnc0N0S3pBMndZdDIwT3VjX2hoY01ZenQyQmxxYzY5Uk9ZUXM1N0ttNmpuY3BLM3ZOOVIyVEU5MUU5cERLcTFBajgwTmwwcjlsdHVNSQ?oc=5",
+   "published": "2026-10-21T09:50:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Vb0xHVE1zd2FEclc5RVJuN2FEc3VXOElLUGdnc0N0S3pBMndZdDIwT3VjX2hoY01ZenQyQmxxYzY5Uk9ZUXM1N0ttNmpuY3BLM3ZOOVIyVEU5MUU5cERLcTFBajgwTmwwcjlsdHVNSQ?oc=5",
+     "title": "Os planos da Americanas depois da RJ"
+    }
+   ],
+   "ids": [
+    "5451600a7073"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Os planos da Americanas depois da RJ",
+   "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -16238,6 +16318,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Em sua entrevista à Globo na semana passada, o presidente Lula defendeu o que chamou de \" maior política de crédito que o país já conheceu \". Flávio Bolsonaro e sua assessora Daniella Marques também propõem políticas para oferecer mais crédito, usando a Caixa como \"o grande braço de apoio\" para isso. Leia mais (10/21/2026 - 00h41)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "71764fcb8fbf",
+   "title": "Sylvain Justum",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sWGdTeXRMcGZXeHBwQ0dLVEdPaVdMc1JFYngxMG1lelA5X1VxUndFZUpjSk1QbElmTkhmRTg0WWVFbkNuQWFzaERqQjBEdVEtSFZOeG90Ym9VSFU?oc=5",
+   "published": "2026-10-21T02:33:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brazil Journal",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sWGdTeXRMcGZXeHBwQ0dLVEdPaVdMc1JFYngxMG1lelA5X1VxUndFZUpjSk1QbElmTkhmRTg0WWVFbkNuQWFzaERqQjBEdVEtSFZOeG90Ym9VSFU?oc=5",
+     "title": "Sylvain Justum"
+    }
+   ],
+   "ids": [
+    "71764fcb8fbf"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Sylvain Justum",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16682,276 +16795,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "046338c3d8e6",
-   "title": "Motta diz ser favorável ao passe livre proposto por Lula, mas quer preservar emendas",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/motta-diz-ser-favoravel-ao-passe-livre-proposto-por-lula-mas-quer-preservar-emendas.shtml",
-   "published": "2026-10-20T20:05:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/motta-diz-ser-favoravel-ao-passe-livre-proposto-por-lula-mas-quer-preservar-emendas.shtml",
-     "title": "Motta diz ser favorável ao passe livre proposto por Lula, mas quer preservar emendas"
-    }
-   ],
-   "ids": [
-    "046338c3d8e6"
-   ],
-   "snippet": "O presidente da Câmara dos Deputados , Hugo Motta ( Republicanos -PB), tem dito a deputados e líderes partidários que é favorável à emenda constitucional proposta por Lula que garante transporte coletivo gratuito nos fins de semana, mas que se opõe ao uso de emendas parlamentares para financiar a medida. Leia mais (10/20/2026 - 17h05)",
-   "prescore": 3.0,
-   "headline": "Motta diz ser favorável ao passe livre proposto por Lula, mas quer preservar emendas",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O presidente da Câmara dos Deputados , Hugo Motta ( Republicanos -PB), tem dito a deputados e líderes partidários que é favorável à emenda constitucional proposta por Lula que garante transporte coletivo gratuito nos fins de semana, mas que se opõe ao uso de emendas parlamentares para financiar a medida. Leia mais (10/20/2026 - 17h05)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "5ce6b6703fbe",
-   "title": "Derrotado no Paraná, Ratinho Jr pede votos a Flávio Bolsonaro; Greca declara voto em Lula",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/derrotado-no-parana-ratinho-jr-pede-votos-a-flavio-bolsonaro-greca-declara-voto-em-lula.shtml",
-   "published": "2026-10-20T19:22:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/derrotado-no-parana-ratinho-jr-pede-votos-a-flavio-bolsonaro-greca-declara-voto-em-lula.shtml",
-     "title": "Derrotado no Paraná, Ratinho Jr pede votos a Flávio Bolsonaro; Greca declara voto em Lula"
-    }
-   ],
-   "ids": [
-    "5ce6b6703fbe"
-   ],
-   "snippet": "Com seu grupo derrotado no Paraná após as urnas de 4 de outubro, o governador Ratinho Junior (PSD) aderiu à campanha à presidência de Flávio Bolsonaro (PL) nesta reta final da disputa ao Planalto. Leia mais (10/20/2026 - 16h22)",
-   "prescore": 3.0,
-   "headline": "Derrotado no Paraná, Ratinho Jr pede votos a Flávio Bolsonaro; Greca declara voto em Lula",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Com seu grupo derrotado no Paraná após as urnas de 4 de outubro, o governador Ratinho Junior (PSD) aderiu à campanha à presidência de Flávio Bolsonaro (PL) nesta reta final da disputa ao Planalto. Leia mais (10/20/2026 - 16h22)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e348239aba1b",
-   "title": "PT pede CPI contra Flávio Bolsonaro e defende apuração sobre Lulinha em manobra para pressionar oposição",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/10/pt-pede-cpi-contra-flavio-bolsonaro-e-defende-apuracao-sobre-lulinha-em-manobra-para-pressionar-oposicao.shtml",
-   "published": "2026-10-20T19:19:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/10/pt-pede-cpi-contra-flavio-bolsonaro-e-defende-apuracao-sobre-lulinha-em-manobra-para-pressionar-oposicao.shtml",
-     "title": "PT pede CPI contra Flávio Bolsonaro e defende apuração sobre Lulinha em manobra para pressionar oposição"
-    }
-   ],
-   "ids": [
-    "e348239aba1b"
-   ],
-   "snippet": "O líder do PT na Câmara, deputado Pedro Uczai (SC), anunciou nesta terça-feira (20) que a bancada do partido do presidente Lula na Casa apresentou um pedido de abertura de uma CPI (Comissão Parlamentar de Inquérito) mista para apurar investigações contra o candidato à Presidência Flávio Bolsonaro ( PL ). Leia mais (10/20/2026 - 16h19)",
-   "prescore": 3.0,
-   "headline": "PT pede CPI contra Flávio Bolsonaro e defende apuração sobre Lulinha em manobra para pressionar oposição",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O líder do PT na Câmara, deputado Pedro Uczai (SC), anunciou nesta terça-feira (20) que a bancada do partido do presidente Lula na Casa apresentou um pedido de abertura de uma CPI (Comissão Parlamentar de Inquérito) mista para apurar investigações contra o candidato à Presidência Flávio Bolsonaro ( PL ). Leia mais (10/20/2026 - 16h19)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "eb3d12bce2ce",
-   "title": "iFood fecha compra da Caju para dobrar receita em benefícios",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdWpPUDdFeUdkZmZxeDI5b09TZ2J2RnlzZ1hOQ0NPSnV4MXM0LThCT1lDd0g0bXViYWlzbzluS0dpeGphbm9uTW13c1gxTzRiNUQxM25tVU1zdkFiVVVFbGV5TTloSHhTSEZlcUc4XzZEVU9ZaXpvMkdZYnlNS29ZdVc4alY2Ry01MlVjUzkxaF9MT1YtQTlnUURkQ1IxZWdzNTZvS3JlaEplZHFKY25nR2xvcjEzQdIBxAFBVV95cUxPR2J6R2dLRndrX3ROaFRjQkNFdWtlcDhsSV9VR25kUU95WWZWN2ZMSzVNOFdZVjB3SFhycmo5RnJMOGlpTWdpek9UWFozZXNMekw0b0tHSC1qc2VSY0R4VFN5Sk1uSEtfLVI0QVZDOW5BM2ZOVHN4MTVnbG9LeHlNNWJPX3U0VUVTM1RQaW5rOVBMQldFdWVRR3Q5aXN6bnRHRUhJNVJvMzliUjRRZzhvNU95My1ma1lmaXV1eFNmOFZoQ2s2?oc=5",
-   "published": "2026-10-20T19:06:32+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Pipeline (Valor)",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdWpPUDdFeUdkZmZxeDI5b09TZ2J2RnlzZ1hOQ0NPSnV4MXM0LThCT1lDd0g0bXViYWlzbzluS0dpeGphbm9uTW13c1gxTzRiNUQxM25tVU1zdkFiVVVFbGV5TTloSHhTSEZlcUc4XzZEVU9ZaXpvMkdZYnlNS29ZdVc4alY2Ry01MlVjUzkxaF9MT1YtQTlnUURkQ1IxZWdzNTZvS3JlaEplZHFKY25nR2xvcjEzQdIBxAFBVV95cUxPR2J6R2dLRndrX3ROaFRjQkNFdWtlcDhsSV9VR25kUU95WWZWN2ZMSzVNOFdZVjB3SFhycmo5RnJMOGlpTWdpek9UWFozZXNMekw0b0tHSC1qc2VSY0R4VFN5Sk1uSEtfLVI0QVZDOW5BM2ZOVHN4MTVnbG9LeHlNNWJPX3U0VUVTM1RQaW5rOVBMQldFdWVRR3Q5aXN6bnRHRUhJNVJvMzliUjRRZzhvNU95My1ma1lmaXV1eFNmOFZoQ2s2?oc=5",
-     "title": "iFood fecha compra da Caju para dobrar receita em benefícios"
-    }
-   ],
-   "ids": [
-    "eb3d12bce2ce"
-   ],
-   "snippet": "",
-   "prescore": 3.0,
-   "headline": "iFood fecha compra da Caju para dobrar receita em benefícios",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "638cdd02ff26",
-   "title": "Tarcísio prevê vitória de Flávio com 5 pontos de diferença sobre Lula",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/tarcisio-preve-vitoria-de-flavio-com-5-pontos-de-diferenca-sobre-lula.shtml",
-   "published": "2026-10-20T18:31:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/tarcisio-preve-vitoria-de-flavio-com-5-pontos-de-diferenca-sobre-lula.shtml",
-     "title": "Tarcísio prevê vitória de Flávio com 5 pontos de diferença sobre Lula"
-    }
-   ],
-   "ids": [
-    "638cdd02ff26"
-   ],
-   "snippet": "O governador de São Paulo , Tarcísio de Freitas (Republicanos), acredita em uma vitória de Flávio Bolsonaro (PL) por margem de cinco pontos percentuais sobre Lula (PT) no próximo domingo (25). Leia mais (10/20/2026 - 15h31)",
-   "prescore": 3.0,
-   "headline": "Tarcísio prevê vitória de Flávio com 5 pontos de diferença sobre Lula",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O governador de São Paulo , Tarcísio de Freitas (Republicanos), acredita em uma vitória de Flávio Bolsonaro (PL) por margem de cinco pontos percentuais sobre Lula (PT) no próximo domingo (25). Leia mais (10/20/2026 - 15h31)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "966793967392",
-   "title": "Japão teme ficar sem terras raras por restrições da China",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/10/japao-teme-ficar-sem-terras-raras-por-restricoes-da-china.shtml",
-   "published": "2026-10-20T17:45:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/10/japao-teme-ficar-sem-terras-raras-por-restricoes-da-china.shtml",
-     "title": "Japão teme ficar sem terras raras por restrições da China"
-    }
-   ],
-   "ids": [
-    "966793967392"
-   ],
-   "snippet": "O Japão está a meses de esgotar seus estoques de ítrio, um metal essencial, e pediu aos Estados Unidos que pressionem a China a flexibilizar os controles de exportação de terras raras que ameaçam provocar graves perturbações nos setores automotivo, de defesa e de semicondutores em todo o mundo. Leia mais (10/20/2026 - 14h45)",
-   "prescore": 3.0,
-   "headline": "Japão teme ficar sem terras raras por restrições da China",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O Japão está a meses de esgotar seus estoques de ítrio, um metal essencial, e pediu aos Estados Unidos que pressionem a China a flexibilizar os controles de exportação de terras raras que ameaçam provocar graves perturbações nos setores automotivo, de defesa e de semicondutores em todo o mundo. Leia mais (10/20/2026 - 14h45)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a43ebe7aabc5",
-   "title": "Brasileiros gastam R$ 650 milhões por ano no Onlyfans",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYUg0c3gwWlFoVGdQMkl3S1JOQVE1NTRyZkJKU1hiR21oUG9FeGdBMVhYd0l1TnN3UnFkdDB4VzM3TFJtT2NHN09UTEZrT2EwQkl6Rkk5bElWaHM3cVBySW1KcFh0OUxTU3ZDM2UydXk3dmJuR1pHeXZpNHFMcU5DQlNjSkNITkxpUm5aTUFTVVZzZGVwWW9jU2ZHZ01ra0t2MDVnN1N1a1VnSE8xbUhZ0gG-AUFVX3lxTFBoNGVzMTRhR1dZTTdFTnE4bU05RUhpcVd1R3V5bUpoc3I5aTNxbjEzaUV6c3NpRXpsMjdDZTNCbnprYUV6VmVYZ1E1Zkx3eFFIVGE5Y2JEMzJmaGgtQzhkUDdNYXcxNUo2RXk3OFRyODNBYXd4eDdZV3MzV0FzbWEtV1lvLVhFbEZXYVJ4a0lMU0NxenNmY2lhVjdyMTVFeDBIOExSbjE3bGJSZ3czNVdkRlo4V002M1dBclNTMGc?oc=5",
-   "published": "2026-10-20T17:37:30+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Pipeline (Valor)",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYUg0c3gwWlFoVGdQMkl3S1JOQVE1NTRyZkJKU1hiR21oUG9FeGdBMVhYd0l1TnN3UnFkdDB4VzM3TFJtT2NHN09UTEZrT2EwQkl6Rkk5bElWaHM3cVBySW1KcFh0OUxTU3ZDM2UydXk3dmJuR1pHeXZpNHFMcU5DQlNjSkNITkxpUm5aTUFTVVZzZGVwWW9jU2ZHZ01ra0t2MDVnN1N1a1VnSE8xbUhZ0gG-AUFVX3lxTFBoNGVzMTRhR1dZTTdFTnE4bU05RUhpcVd1R3V5bUpoc3I5aTNxbjEzaUV6c3NpRXpsMjdDZTNCbnprYUV6VmVYZ1E1Zkx3eFFIVGE5Y2JEMzJmaGgtQzhkUDdNYXcxNUo2RXk3OFRyODNBYXd4eDdZV3MzV0FzbWEtV1lvLVhFbEZXYVJ4a0lMU0NxenNmY2lhVjdyMTVFeDBIOExSbjE3bGJSZ3czNVdkRlo4V002M1dBclNTMGc?oc=5",
-     "title": "Brasileiros gastam R$ 650 milhões por ano no Onlyfans"
-    },
-    {
-     "source": "Pipeline (Valor)",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaDRlczE0YUdXWU03RU5xOG1NOUVIaXFXdUd1eW1KaHNyOWkzcW4xM2lFenNzaUV6bDI3Q2UzQm56a2FFelZlWGdRNWZMd3hRSFRhOWNiRDMyZmhoLUM4ZFA3TWF3MTVKNkV5NzhUcjgzQWF3eHg3WVdzM1dBc21hLVdZby1YRWxGV2FSeGtJTFNDcXpzZmNpYVY3cjE1RXgwSDhMUm4xN2xiUmd3MzVXZEZaOFdNNjNXQXJTUzBn0gG-AUFVX3lxTFBoNGVzMTRhR1dZTTdFTnE4bU05RUhpcVd1R3V5bUpoc3I5aTNxbjEzaUV6c3NpRXpsMjdDZTNCbnprYUV6VmVYZ1E1Zkx3eFFIVGE5Y2JEMzJmaGgtQzhkUDdNYXcxNUo2RXk3OFRyODNBYXd4eDdZV3MzV0FzbWEtV1lvLVhFbEZXYVJ4a0lMU0NxenNmY2lhVjdyMTVFeDBIOExSbjE3bGJSZ3czNVdkRlo4V002M1dBclNTMGc?oc=5",
-     "title": "Brasileiros gastam mais de R$ 600 mi por ano no Onlyfans"
-    }
-   ],
-   "ids": [
-    "a43ebe7aabc5",
-    "0f9185f84a9e"
-   ],
-   "snippet": "",
-   "prescore": 3.0,
-   "headline": "Brasileiros gastam R$ 650 milhões por ano no Onlyfans",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e597e4dcd762",
-   "title": "Lula exalta bondades eleitorais, repete que esta é sua última eleição e visita Sarney no Maranhão",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/lula-exalta-bondades-eleitorais-repete-que-esta-e-sua-ultima-eleicao-e-visita-a-sarney-no-maranhao.shtml",
-   "published": "2026-10-20T17:33:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/lula-exalta-bondades-eleitorais-repete-que-esta-e-sua-ultima-eleicao-e-visita-a-sarney-no-maranhao.shtml",
-     "title": "Lula exalta bondades eleitorais, repete que esta é sua última eleição e visita Sarney no Maranhão"
-    }
-   ],
-   "ids": [
-    "e597e4dcd762"
-   ],
-   "snippet": "O presidente Lula ( PT ) exaltou o pacote de bondades encaminhado por seu governo nas vésperas do segundo turno da eleição, repetiu que esta é sua última campanha presidencial e disse que pretende fazer um \"mandato histórico\" caso seja reeleito. Leia mais (10/20/2026 - 14h33)",
-   "prescore": 3.0,
-   "headline": "Lula exalta bondades eleitorais, repete que esta é sua última eleição e visita Sarney no Maranhão",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O presidente Lula ( PT ) exaltou o pacote de bondades encaminhado por seu governo nas vésperas do segundo turno da eleição, repetiu que esta é sua última campanha presidencial e disse que pretende fazer um \"mandato histórico\" caso seja reeleito. Leia mais (10/20/2026 - 14h33)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -16966,14 +16809,14 @@
    "id": "pipeline",
    "name": "Pipeline (Valor)",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
    "id": "braziljournal",
    "name": "Brazil Journal",
    "ok": true,
-   "count": 9,
+   "count": 22,
    "error": null
   },
   {
@@ -17064,14 +16907,14 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 41,
+   "count": 42,
    "error": null
   },
   {
    "id": "bloomberg-markets",
    "name": "Bloomberg",
    "ok": true,
-   "count": 19,
+   "count": 20,
    "error": null
   },
   {
@@ -17099,7 +16942,7 @@
    "id": "ft",
    "name": "Financial Times",
    "ok": true,
-   "count": 10,
+   "count": 11,
    "error": null
   },
   {
@@ -17134,14 +16977,14 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 49,
+   "count": 51,
    "error": null
   },
   {
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 38,
+   "count": 37,
    "error": null
   },
   {
@@ -17428,11 +17271,11 @@
   }
  ],
  "stats": {
-  "raw": 948,
-  "unique": 303,
-  "unique_all": 879,
+  "raw": 964,
+  "unique": 300,
+  "unique_all": 893,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.2
+  "seconds": 3.1
  }
 }
