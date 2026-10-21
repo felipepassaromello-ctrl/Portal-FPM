@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:21:23.009591-03:00",
+ "generated_at": "2026-10-21T08:23:39.112718-03:00",
  "date": "2026-10-21",
  "window": {
   "start": "2026-10-20T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-20T08:22:41.995441-03:00",
-  "analyzed": 7
+  "analyzed": 6
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -127,40 +127,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 110.21,
-   "change_pct": 1.3052661756802753,
+   "price": 110.19,
+   "change_pct": 1.2868821331840197,
    "spark": [
     109.86000061035156,
     109.55000305175781,
     108.79000091552734,
-    110.20999908447266
+    110.19000244140625
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4146.4,
-   "change_pct": 0.09172747197827569,
+   "price": 4149.0,
+   "change_pct": 0.15448998679286063,
    "spark": [
     4181.10009765625,
     4160.10009765625,
     4142.60009765625,
-    4146.39990234375
+    4149.0
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 83292.55,
-   "change_pct": 0.423855511749327,
+   "price": 83329.42,
+   "change_pct": 0.46830879782013835,
    "spark": [
     81382.1484375,
     82017.6015625,
     81853.5390625,
     82941.0,
-    83292.546875
+    83329.421875
    ]
   }
  ],
@@ -494,45 +494,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "20a7e1ebafcc",
-   "title": "EXCLUSIVE: Trump's approval falls to record low of 31% as midterms near, Reuters/Ipsos poll finds",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOT2FjX0hUODU4WlBWVWtBbDJwVTBPdHVBTFpGTEpTcDhUYjQyaEZ2aE1RQkE1YjZlREp5ZkRFMXU2czFFVFFaQWQ2NmlJNzJVNGtQM0R0YW5fWDZ1Xzh3b0FBWHBfWVA5UFkwRUFic0FMQWJRTnRmY2xuU3N2dXZFai1ydGtVTC13QjdVM2txNTIyN1UzaGhPMFA4OG80dl8xbHFsUE90bmViTkdtSVNtRFhWakZkWWtH?oc=5",
-   "published": "2026-10-20T22:25:38+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOT2FjX0hUODU4WlBWVWtBbDJwVTBPdHVBTFpGTEpTcDhUYjQyaEZ2aE1RQkE1YjZlREp5ZkRFMXU2czFFVFFaQWQ2NmlJNzJVNGtQM0R0YW5fWDZ1Xzh3b0FBWHBfWVA5UFkwRUFic0FMQWJRTnRmY2xuU3N2dXZFai1ydGtVTC13QjdVM2txNTIyN1UzaGhPMFA4OG80dl8xbHFsUE90bmViTkdtSVNtRFhWakZkWWtH?oc=5",
-     "title": "EXCLUSIVE: Trump's approval falls to record low of 31% as midterms near, Reuters/Ipsos poll finds"
-    }
-   ],
-   "ids": [
-    "20a7e1ebafcc"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Aprovação de Trump cai a mínima de 31%, mostra Reuters/Ipsos, perto das eleições legislativas",
-   "category": "internacional",
-   "importance": 5,
-   "importance_reason": "Afeta cenário das midterms e política comercial.",
-   "summary": "A aprovação de Trump caiu a 31%, mínima de seu mandato, segundo Reuters/Ipsos, às vésperas das eleições legislativas.",
-   "involves": "Trump, Reuters/Ipsos",
-   "interpretation": "Risco de derrota republicana.",
-   "impact": "Pode alterar política tarifária.",
-   "sentiment": "negativo",
-   "entities": [
-    "Donald Trump",
-    "Reuters/Ipsos"
-   ],
-   "tags": [
-    "Trump",
-    "midterms"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
   },
   {
    "id": "16019d8f2f68",
@@ -1440,6 +1401,39 @@
    "ai": false
   },
   {
+   "id": "ce6f25ce596c",
+   "title": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkVtWXgtZVJhMzl6eV9QVTF4M3hjMGdzeWo5cGtUWE85SDJrcC1LTDVaQVNON3RZejRZclVjUF9WS1RxWERiTHcyZXNuUXZxcl9ETWEtS1o3amNOU3hjWFZRSV85eXlEaG9BODRONFZtS3BWdksyR21UOTVGcFJVeWQ2RWtkNVRDaXBkWVlwcjc5WU9EcnVJWnAxUC1kbHQ0NkhZUUwwaEhhMlN6YkxGVm03ekF2SUhRV25WT3pNWlo1dWw4TDFkbW13?oc=5",
+   "published": "2026-10-20T16:05:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkVtWXgtZVJhMzl6eV9QVTF4M3hjMGdzeWo5cGtUWE85SDJrcC1LTDVaQVNON3RZejRZclVjUF9WS1RxWERiTHcyZXNuUXZxcl9ETWEtS1o3amNOU3hjWFZRSV85eXlEaG9BODRONFZtS3BWdksyR21UOTVGcFJVeWQ2RWtkNVRDaXBkWVlwcjc5WU9EcnVJWnAxUC1kbHQ0NkhZUUwwaEhhMlN6YkxGVm03ekF2SUhRV25WT3pNWlo1dWw4TDFkbW13?oc=5",
+     "title": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial"
+    }
+   ],
+   "ids": [
+    "ce6f25ce596c"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "63d545baefc0",
    "title": "Ações de data centers caem após IPO da Elice recuar 30%",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYVEtNXFVcG1xVUVjb0F6eGd6Q1J6bjRMRUgwamtzaUoxUUVQUy01TFRDbUJhV3R6RDFBc0VLdUpoaWVJV1ZBWDZxckRMd0NKMjN2djJhRlRiWVctYlFSSmJ3Wm9FT1ZocG9fSVNWdzRyT2F1cVdEcnAyMW0wbUEybGlZVERhUFZCUVE?oc=5",
@@ -1458,6 +1452,39 @@
    "snippet": "",
    "prescore": 5.4,
    "headline": "Ações de data centers caem após IPO da Elice recuar 30%",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b92103e8121d",
+   "title": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVFk4cHJnNVhSLUJWcXVGYm1zcXd2a3NzZktMUmdwSDVqV29IX0RqbnZiaEhTM3ZiUTByeEpFaDZUcHBoVzZZQ1QwRm5EeE1xbzZmaTRheUNfR3MwNTZHN0JOcklMcXJnQncyNUF0aHNUNkJkVHpGckNfZ2pXbjV0dkVSazd3QXpPQ1QzX2pHc3pZU1IycGJTN0djY2JUc0d3cDN0eWdyYjl2V1lERnA2aUt1VEx3TEsxTjNhNzFLUmNSVEhmcUpTbkZOMk10azJn0gHfAUFVX3lxTE9TVktzNHhJZHpPaEVwcnNSRW16ajk0S1ZianlYTk55S2UxZlNjVHY1NzkxWGNBVVRMT2djbl9CajlYdm9QeFZkVGdRdVB2V1NRSExvZS1pbm9QVXBFeU5IaTY3ZXpfY2RpRjBzVzBlbjNrdHhUQmQ2Ykp2aVlzYWM1WndhNHlmZTg3TGJqT0xfVlByejluUWpzVVNrbzRCSVFyeEJxb29Xcjdnc2NLT29lM0xBaFJrd0xVVTNOTy1sd3ZabW1vVHRMRzU0akJ3NVdHTUhfcTVBRzZIdVFqTW8?oc=5",
+   "published": "2026-10-20T14:50:29+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVFk4cHJnNVhSLUJWcXVGYm1zcXd2a3NzZktMUmdwSDVqV29IX0RqbnZiaEhTM3ZiUTByeEpFaDZUcHBoVzZZQ1QwRm5EeE1xbzZmaTRheUNfR3MwNTZHN0JOcklMcXJnQncyNUF0aHNUNkJkVHpGckNfZ2pXbjV0dkVSazd3QXpPQ1QzX2pHc3pZU1IycGJTN0djY2JUc0d3cDN0eWdyYjl2V1lERnA2aUt1VEx3TEsxTjNhNzFLUmNSVEhmcUpTbkZOMk10azJn0gHfAUFVX3lxTE9TVktzNHhJZHpPaEVwcnNSRW16ajk0S1ZianlYTk55S2UxZlNjVHY1NzkxWGNBVVRMT2djbl9CajlYdm9QeFZkVGdRdVB2V1NRSExvZS1pbm9QVXBFeU5IaTY3ZXpfY2RpRjBzVzBlbjNrdHhUQmQ2Ykp2aVlzYWM1WndhNHlmZTg3TGJqT0xfVlByejluUWpzVVNrbzRCSVFyeEJxb29Xcjdnc2NLT29lM0xBaFJrd0xVVTNOTy1sd3ZabW1vVHRMRzU0akJ3NVdHTUhfcTVBRzZIdVFqTW8?oc=5",
+     "title": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA"
+    }
+   ],
+   "ids": [
+    "b92103e8121d"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -1524,39 +1551,6 @@
    "snippet": "",
    "prescore": 5.4,
    "headline": "Participação de Eric Schmidt na Anthropic pode valer US$ 20 bilhões em um IPO",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d73443e1b177",
-   "title": "Sea Ltd (SE), dona da Shopee, considera IPO da Monee, diz Wall Street Journal",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUVFrejNTellBX2xPcHJiYmpUR1puT1ROd1A5VlpiWGpzYlhiX2EzaFBUbE5aNGtlWGZQdlg5YjlDang3RTZBSXhnZnM5UEdpcHZ3QlpJcEpzenJmVTJaR25IcXpnT1EtLW9vU19VRWl6TmZkNkpwNmlPUExYTFNoOUVuRkhFUk9yYzdjd2p6aUZFZVVmVU9MMEVRMEZ1VHZianl6bkxQMjBDZGdVOWZmY2tZWTZMM2hLd2pQR1dzaG1ORXozYkVnOWs3dTZEUDNKYTlaaA?oc=5",
-   "published": "2026-10-20T12:14:29+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "ADVFN",
-     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUVFrejNTellBX2xPcHJiYmpUR1puT1ROd1A5VlpiWGpzYlhiX2EzaFBUbE5aNGtlWGZQdlg5YjlDang3RTZBSXhnZnM5UEdpcHZ3QlpJcEpzenJmVTJaR25IcXpnT1EtLW9vU19VRWl6TmZkNkpwNmlPUExYTFNoOUVuRkhFUk9yYzdjd2p6aUZFZVVmVU9MMEVRMEZ1VHZianl6bkxQMjBDZGdVOWZmY2tZWTZMM2hLd2pQR1dzaG1ORXozYkVnOWs3dTZEUDNKYTlaaA?oc=5",
-     "title": "Sea Ltd (SE), dona da Shopee, considera IPO da Monee, diz Wall Street Journal"
-    }
-   ],
-   "ids": [
-    "d73443e1b177"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Sea Ltd (SE), dona da Shopee, considera IPO da Monee, diz Wall Street Journal",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -1699,39 +1693,6 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "64c0bd42f616",
-   "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta",
-   "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-21102026/",
-   "published": "2026-10-21T10:57:53+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-21102026/",
-     "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta"
-    }
-   ],
-   "ids": [
-    "64c0bd42f616"
-   ],
-   "snippet": "Índices futuros dos EUA operam mistos em meio à temporada de balanços The post Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta appeared first on InfoMoney .",
-   "prescore": 5.2,
-   "headline": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Índices futuros dos EUA operam mistos em meio à temporada de balanços The post Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -2359,39 +2320,6 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A OpenAI está correndo contra o tempo para garantir compromissos de investidores antes da esperada estreia da rival Anthropic no mercado de capitais, prevista para meados de novembro, em uma captação de recursos excepcionalmente rápida que poderia avaliar a fabricante do ChatGPT em mais de US$ 1,4 trilhão (R$ 7,07 trilhões), de acordo com duas pessoas a par do assunto. Leia mais (10/20/2026 - 09h4",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "462c4a4c8a50",
-   "title": "Tempo real: Ibovespa monitora pesquisa Quaest",
-   "link": "https://www.moneytimes.com.br/tempo-real-21-10-26-apsa-lils/",
-   "published": "2026-10-21T09:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/tempo-real-21-10-26-apsa-lils/",
-     "title": "Tempo real: Ibovespa monitora pesquisa Quaest"
-    }
-   ],
-   "ids": [
-    "462c4a4c8a50"
-   ],
-   "snippet": "Resumo: O Ibovespa (IBOV) acompanha a divulgação da pesquisa Quaest de intenções de voto para o segundo turno presidencial. No exterior, os investidores monitoram dados de inflação ao consumidor, ao produtor e no varejo do Reino Unido, além de discurso do presidente do Banco da Inglaterra, Andrew Bailey. Destaques: Confira os principais temas do Ibovespa […]",
-   "prescore": 4.8,
-   "headline": "Tempo real: Ibovespa monitora pesquisa Quaest",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Resumo: O Ibovespa (IBOV) acompanha a divulgação da pesquisa Quaest de intenções de voto para o segundo turno presidencial. No exterior, os investidores monitoram dados de inflação ao consumidor, ao produtor e no varejo do Reino Unido, além de discurso do presidente do Banco da Inglaterra, Andrew Bailey. Destaques: Confira os principais temas do Ibovespa […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -3513,6 +3441,45 @@
    "ai": false
   },
   {
+   "id": "863a38f2167a",
+   "title": "CNP Assurances acerta compra dos negócios da Prudential no Brasil e no México por US$ 4 bilhões",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbzRFbVM3SmNtUnNuYU1PVUdWLUFOS2FfODBUc0U5cHNPR0EzNVNib2FjR1dMTHdqU3J6M3JDVlE0WV9ONG1KY3lQeFE4OHJWSGZ3bnN1Ny1KUHRBeHdIMjExY05HdzNucjU0WVBacXpGMHdoRFpzRmU0SVdvZlVMVG9sRHJ4RFRzVFA0T0FvcTk4RG9OMXU3SkZfREVoM2dBbjk2VGhKTWhyUlRDVndIRUZURFJzTnh0elVXanpyaVE3b09GRTNodWxn?oc=5",
+   "published": "2026-10-20T11:14:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Brasil 247",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbzRFbVM3SmNtUnNuYU1PVUdWLUFOS2FfODBUc0U5cHNPR0EzNVNib2FjR1dMTHdqU3J6M3JDVlE0WV9ONG1KY3lQeFE4OHJWSGZ3bnN1Ny1KUHRBeHdIMjExY05HdzNucjU0WVBacXpGMHdoRFpzRmU0SVdvZlVMVG9sRHJ4RFRzVFA0T0FvcTk4RG9OMXU3SkZfREVoM2dBbjk2VGhKTWhyUlRDVndIRUZURFJzTnh0elVXanpyaVE3b09GRTNodWxn?oc=5",
+     "title": "CNP Assurances acerta compra dos negócios da Prudential no Brasil e no México por US$ 4 bilhões"
+    },
+    {
+     "source": "Terra",
+     "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSGFTM3N6MlI2Q2VvUnRNX1dFcXR1Y3NWSFhicERNR3RjdUJXTzNYeE03QmhLd2NOeGhUd2tEd1NzQ0VxS2RwTERTT2kyblV1a3VRLTVRYU9TSE5MaFNUc3ZxZzZ5amVpRU0zR1lLd3N1cTFXWV9HM0ZQdVFkSWozWmMwVXcyQXRTTktHUC0zbkU2UExiR3dmVy1VX3UwQmJtUkRWSVAtQWZnbXF2ZUx6US03SHJ4NWxhZGp4UmF4U3cxV3NhZWlTOGJGWkt1eFh1REpDX2E1R2czSjZjc3lGM0gxVEcxM2xWSm1JaFhKcEg2U3dUcHVXZUFfdWw?oc=5",
+     "title": "Seguradora CNP Assurances fecha compra da Prudential no Brasil e México por US$ 4 bilhões"
+    }
+   ],
+   "ids": [
+    "863a38f2167a",
+    "41279ff3bf3a"
+   ],
+   "snippet": "",
+   "prescore": 3.9,
+   "headline": "CNP Assurances acerta compra dos negócios da Prudential no Brasil e no México por US$ 4 bilhões",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ec6a0610cf69",
    "title": "Petrobras (PETR4) avalia como positivo adiamento de audiência sobre Gas Release",
    "link": "https://www.moneytimes.com.br/petrobras-petr4-avalia-como-positivo-adiamento-de-audiencia-sobre-gas-release-lmrs/",
@@ -3977,6 +3944,39 @@
    "ai": false
   },
   {
+   "id": "436c3d33c559",
+   "title": "Bolsas de NY sobem com perspectiva de acordo EUA-Irã; taxas de Treasuries e dólar caem",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNmQ4T3g5NUtxblNXcGhsajJiN3g5T1I2QlFydEhwVjZDenE2T1ltTnJ4SW5rNkZYM0dsWUZRdjRRWHhSN20zakc3V25EZ1lHZTBxN0JnWjhXRlpfVk81enNHTThNYU84YVoyeW1PNElsOGRiV2tLUWNuVEVNWUhOb0Z5bUQ2VloyR1J3SURBZ1A3TjNzZEdQUU56UGpKWHkwUl9CdFNGRUlXYTlQSHRESFRRZTYtd9IBxAFBVV95cUxQLWlrVk1XaXVfX3lEZk5HRjBMQUlmOXlHZFJUcEU2a3NJRzlqU2tONlB5X1JuUjRmT2g4NE9QcFZ5UmVqSmoydzBELWxWaHNvTmt6RFBhbF9DZkR3X2dGMThzQ2taZmY2SXgyWHZHdkgyby13bTh6QTQ3eU80VnlqVDZNY0VQNTF6WFF4dnFsQl9LYTJtSFA4OUUycWRybFpjQW91eU9wa1Y0T3FsOENRbmpzLUwwdWEtcU8yd3VVbTBXUnVt?oc=5",
+   "published": "2026-10-20T13:48:57+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNmQ4T3g5NUtxblNXcGhsajJiN3g5T1I2QlFydEhwVjZDenE2T1ltTnJ4SW5rNkZYM0dsWUZRdjRRWHhSN20zakc3V25EZ1lHZTBxN0JnWjhXRlpfVk81enNHTThNYU84YVoyeW1PNElsOGRiV2tLUWNuVEVNWUhOb0Z5bUQ2VloyR1J3SURBZ1A3TjNzZEdQUU56UGpKWHkwUl9CdFNGRUlXYTlQSHRESFRRZTYtd9IBxAFBVV95cUxQLWlrVk1XaXVfX3lEZk5HRjBMQUlmOXlHZFJUcEU2a3NJRzlqU2tONlB5X1JuUjRmT2g4NE9QcFZ5UmVqSmoydzBELWxWaHNvTmt6RFBhbF9DZkR3X2dGMThzQ2taZmY2SXgyWHZHdkgyby13bTh6QTQ3eU80VnlqVDZNY0VQNTF6WFF4dnFsQl9LYTJtSFA4OUUycWRybFpjQW91eU9wa1Y0T3FsOENRbmpzLUwwdWEtcU8yd3VVbTBXUnVt?oc=5",
+     "title": "Bolsas de NY sobem com perspectiva de acordo EUA-Irã; taxas de Treasuries e dólar caem"
+    }
+   ],
+   "ids": [
+    "436c3d33c559"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Bolsas de NY sobem com perspectiva de acordo EUA-Irã; taxas de Treasuries e dólar caem",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "aa257b723a53",
    "title": "Lula supera Flávio Bolsonaro em engajamento nas redes após debate na Band, aponta levantamento",
    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPR0ViZVJwR1FheTRFRFRDUldhYzdjNEZSRkhWWDRQUjZ4MG5OUGNBQ2llT0stQ0VyOTVYV0dwT1RpcnJuZjR6SDFBT2l2Z1lNVXhVT1NTcWRmRXNYZkprYTVxTjFkWUZyS3NOa3lMTjVEaFp3dG1ZN25BYW9IOGZNOFMydTRSbW50Rm5JZzdzMkQ3c0doS1FIQjB2X1l1b25XTjIyMG85b25YYTVpX0FWdjBYbVdoRlNSN2FUdnJ0SWJBVWZYS0pYTW9PUTVIeDFXWk9VamNzVEROejEycUZGSDdhYXZFNTJzWUN6RGQ1dk53cnBOclRXX9IBhwJBVV95cUxOM2ZCcnFFR1B0QnVlMF8tSWtlSE1aN3lranZSMWlQUlg1ZW5KdHFaSGdHUUp4elZzeGNSaXFwRGJzRWstSlhPX3pZX2dKVmd2elBDYjhTZ09Idnh1d2xTNlE2ZFZVYnhrek9PNUc1NmhaNWF6UmtkX3lka1Ixcm5BWlp1ZlFsZkpVZS1wS05xTDV0MW9DZmtQWmgtNEt6Uk1UZmc2QXhrcDZ3ZV9wS3ZLUElObEVkX3FsNmcxdlBYUEtYMkE1QTdnQ21xazRrNGdwbGNUZ2ZHVDcxczFpYkt1aTBJRjRVSksxQ1lENTRPb3JxdG14dkhoZmRwNGthRmFXUmxnSWVfRQ?oc=5",
@@ -4315,6 +4315,39 @@
    "ai": false
   },
   {
+   "id": "fdf7173d68d9",
+   "title": "BTG INF LONG (PACB11)",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GaUFRZUhwcTFJRXV2WHhTRzVaYThma3FFTEpsWl9nSzBmXy0wOTUzWVA3eXFDWWYtZmtWYVZHRmhvWlRqb08xbWdpTndlVi1zenlZSjc4aUc?oc=5",
+   "published": "2026-10-20T16:34:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "trademap.com.br",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GaUFRZUhwcTFJRXV2WHhTRzVaYThma3FFTEpsWl9nSzBmXy0wOTUzWVA3eXFDWWYtZmtWYVZHRmhvWlRqb08xbWdpTndlVi1zenlZSjc4aUc?oc=5",
+     "title": "BTG INF LONG (PACB11)"
+    }
+   ],
+   "ids": [
+    "fdf7173d68d9"
+   ],
+   "snippet": "",
+   "prescore": 3.4,
+   "headline": "BTG INF LONG (PACB11)",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5e22f77ee341",
    "title": "Enfim com vento a favor, Raízen Energia ganha fôlego para remar na maior RE da história e na B3",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMM3Rmb09GTHVOWEN5SHBUTTQ4Nnh1R3BGOVNQSUVFTlE3U1dxV2pfWlFmT0ppT1RXb3BwS3ZNd0J4Zk5ucTBuU1pxLXhxY0tzQVBsNVMxZ1g5dw?oc=5",
@@ -4538,39 +4571,6 @@
    "prescore": 3.2,
    "headline": "Inflação virou assunto menor na campanha",
    "category": "macro",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f528817c7733",
-   "title": "Lula lidera engajamento nas redes em todo o 2º turno, com 200 milhões de interações",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVC1SUThYUGdQX3FWMFJXSjEwcVBTVXh4TUZTYkwtTmhoYkpibVFUQmhvNDlKVlg3NjA5Z3QzcUhfSjMzWWhRRnlRSFZDX2F0MFB4c3dyTGlYRlB4aVVYak05NnlzZkhCeE5vVUhtRmQwMUw0YkJUUVgtakZTZXNHa1BEcFgwcU1YaHhUWXpKX2ZNTGVYajhWOFFVaHNLaFRFLWtmaVByQVJ0OXVXQl80Wm13MmFfU1B3TWpEaVZWRFVtajJiWVZ1RHYzZHZuV180U1HSAdcBQVVfeXFMUENnLUwydzRJZjlqU1RhbXE3S0NjR2t2MF8tRm9RcjlGcFZGc1VHRWlzYUVHX1JDQzREd3NmMFJaSHRoUjlPU3VqUnA5dHVmejlrZE9wRmJZb3NqTmhmVWJ6MnNYczkwZDBrS2FuM0E2OWl5aXl3Yk5SZm9zUU9iYU1LNHYtcnZNaUJOVTlLSnlWb0RiT2thZnNUckJqSjlxSmw3eDVsdldiLXBYczJ1Rk9TRS1tZjgyUjJrTkxwUHktMFUyNnZnSUVzS1lZNjFlRndBcDFLU3M?oc=5",
-   "published": "2026-10-20T17:59:38+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVC1SUThYUGdQX3FWMFJXSjEwcVBTVXh4TUZTYkwtTmhoYkpibVFUQmhvNDlKVlg3NjA5Z3QzcUhfSjMzWWhRRnlRSFZDX2F0MFB4c3dyTGlYRlB4aVVYak05NnlzZkhCeE5vVUhtRmQwMUw0YkJUUVgtakZTZXNHa1BEcFgwcU1YaHhUWXpKX2ZNTGVYajhWOFFVaHNLaFRFLWtmaVByQVJ0OXVXQl80Wm13MmFfU1B3TWpEaVZWRFVtajJiWVZ1RHYzZHZuV180U1HSAdcBQVVfeXFMUENnLUwydzRJZjlqU1RhbXE3S0NjR2t2MF8tRm9RcjlGcFZGc1VHRWlzYUVHX1JDQzREd3NmMFJaSHRoUjlPU3VqUnA5dHVmejlrZE9wRmJZb3NqTmhmVWJ6MnNYczkwZDBrS2FuM0E2OWl5aXl3Yk5SZm9zUU9iYU1LNHYtcnZNaUJOVTlLSnlWb0RiT2thZnNUckJqSjlxSmw3eDVsdldiLXBYczJ1Rk9TRS1tZjgyUjJrTkxwUHktMFUyNnZnSUVzS1lZNjFlRndBcDFLU3M?oc=5",
-     "title": "Lula lidera engajamento nas redes em todo o 2º turno, com 200 milhões de interações"
-    }
-   ],
-   "ids": [
-    "f528817c7733"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "Lula lidera engajamento nas redes em todo o 2º turno, com 200 milhões de interações",
-   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -7342,39 +7342,6 @@
    "ai": false
   },
   {
-   "id": "13bbaabee51d",
-   "title": "Reino Unido volta a prender suspeitos por incidente perto de base aérea usada por EUA",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNnhTWjRWR21JLVBmRU43MVpSTnFYM3l2dXFfY3FaOXdOTEdqOXFDX2tsQ2xaeHNXbW9tMENjejNhaUthLWNNLXZ1b0ozTlkwczVQTnRodHhJa09PdGlmTGRldnExYjFLZmFsajFKRDRkX3B3WHNTUjJOR1hQbXBraE11ZmJ1SkZ4T3F1dDRteXdPVjlhdnY0b3RYSzJ1ZDdkZUlEcHdWVGNrczlHREE1WjRfVGtGNGVjTXIxXzQ4aldqeVFteUYxNnJCcW0zR2lwWVZHeU9FMNIB5gFBVV95cUxNMkM4Uy1US21fSk00RnNHOXFQZFJ4UDZvZkJDTHdmVGNNUEV0SE5FbmNOUEs1enc2RTJscnZHWktTT1B4NEwwOFJDNlJfR2VYdEtuWElwSnh0QlNKN0JDS1FPcDQ5M1Y0RlRhNHo5d3dzb1EzVkxkc1hGbF9LVXhpenlSZEdQYW1lVU1ndDl6ZWx4Xzk2aW14TkJpaXRHcG1QcGZaeksxQ3RPdmF5Z1hmZ09xLV9xdTJGaGl3V3FacG45YmJnVE0tbFEyWWtxRGxsel8yaEJzZmdyOXRJbG15RmtUV1lMdw?oc=5",
-   "published": "2026-10-20T17:29:06+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNnhTWjRWR21JLVBmRU43MVpSTnFYM3l2dXFfY3FaOXdOTEdqOXFDX2tsQ2xaeHNXbW9tMENjejNhaUthLWNNLXZ1b0ozTlkwczVQTnRodHhJa09PdGlmTGRldnExYjFLZmFsajFKRDRkX3B3WHNTUjJOR1hQbXBraE11ZmJ1SkZ4T3F1dDRteXdPVjlhdnY0b3RYSzJ1ZDdkZUlEcHdWVGNrczlHREE1WjRfVGtGNGVjTXIxXzQ4aldqeVFteUYxNnJCcW0zR2lwWVZHeU9FMNIB5gFBVV95cUxNMkM4Uy1US21fSk00RnNHOXFQZFJ4UDZvZkJDTHdmVGNNUEV0SE5FbmNOUEs1enc2RTJscnZHWktTT1B4NEwwOFJDNlJfR2VYdEtuWElwSnh0QlNKN0JDS1FPcDQ5M1Y0RlRhNHo5d3dzb1EzVkxkc1hGbF9LVXhpenlSZEdQYW1lVU1ndDl6ZWx4Xzk2aW14TkJpaXRHcG1QcGZaeksxQ3RPdmF5Z1hmZ09xLV9xdTJGaGl3V3FacG45YmJnVE0tbFEyWWtxRGxsel8yaEJzZmdyOXRJbG15RmtUV1lMdw?oc=5",
-     "title": "Reino Unido volta a prender suspeitos por incidente perto de base aérea usada por EUA"
-    }
-   ],
-   "ids": [
-    "13bbaabee51d"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Reino Unido volta a prender suspeitos por incidente perto de base aérea usada por EUA",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "155e976a1480",
    "title": "Carrefour cresce no 3º trimestre, mas reduz metas para 2026 após protestos na França",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOUxIbkl1SXVpS2xlUGZEQ3VzWkpqWmlVTjQtTGlQZnBKRGFGampWTnpma0V6WDNTc1hfRDRJU3A0cGNkUzNTQW1HcThzOVdweUdaMEVmdzFrUFhRWjQ0V0VsZjhxRzdGWllxdTdjTUhoVUItQWxyNlA4RElXTGZXbmM4MG1fYlZpcE1pU3dQbTRwT2FCRFZLWmtSUWt0SWd0MjJhSzBxekt2VExMZE9TVmxFY3V3Y1UxOGxVeFJ1SzhUX0NpTDIyaldIN3ROMWRodWVVTdIB4wFBVV95cUxPVS1XaHlRRmZ2Z0F5cTRwRzVTVjJVbkN1Tzd1MG1GSzIzZXVxN003amYyeUtjcGw5akRjU015ZnFFQTFrY29TcG9qenZpdjFYaDNJMzhuNjFLTUphTWg4bklvQU56aGt2MFhOZ2FpSFc2N2RraG1mQUtZd2o1ZGFvMF9iNU5UWWhObUdCTzVlMzRGQ0hLV293SkdsOE03bkFOX29kVTdUMjRZX29VblFkMFVNT2tGVVRoQkdFeXFjR3hqT2U2UWZDRkp5VksxQzlHcEdBTHpuT3ItTktkNzVoOVlzNA?oc=5",
@@ -7857,39 +7824,6 @@
    "prescore": 2.8,
    "headline": "Itália reforçará poderes de prisão da polícia após protestos no fim de semana",
    "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "436c3d33c559",
-   "title": "S&P 500 e Nasdaq caem com perdas no setor de tecnologia",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNmQ4T3g5NUtxblNXcGhsajJiN3g5T1I2QlFydEhwVjZDenE2T1ltTnJ4SW5rNkZYM0dsWUZRdjRRWHhSN20zakc3V25EZ1lHZTBxN0JnWjhXRlpfVk81enNHTThNYU84YVoyeW1PNElsOGRiV2tLUWNuVEVNWUhOb0Z5bUQ2VloyR1J3SURBZ1A3TjNzZEdQUU56UGpKWHkwUl9CdFNGRUlXYTlQSHRESFRRZTYtd9IBxAFBVV95cUxQLWlrVk1XaXVfX3lEZk5HRjBMQUlmOXlHZFJUcEU2a3NJRzlqU2tONlB5X1JuUjRmT2g4NE9QcFZ5UmVqSmoydzBELWxWaHNvTmt6RFBhbF9DZkR3X2dGMThzQ2taZmY2SXgyWHZHdkgyby13bTh6QTQ3eU80VnlqVDZNY0VQNTF6WFF4dnFsQl9LYTJtSFA4OUUycWRybFpjQW91eU9wa1Y0T3FsOENRbmpzLUwwdWEtcU8yd3VVbTBXUnVt?oc=5",
-   "published": "2026-10-20T13:48:57+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNmQ4T3g5NUtxblNXcGhsajJiN3g5T1I2QlFydEhwVjZDenE2T1ltTnJ4SW5rNkZYM0dsWUZRdjRRWHhSN20zakc3V25EZ1lHZTBxN0JnWjhXRlpfVk81enNHTThNYU84YVoyeW1PNElsOGRiV2tLUWNuVEVNWUhOb0Z5bUQ2VloyR1J3SURBZ1A3TjNzZEdQUU56UGpKWHkwUl9CdFNGRUlXYTlQSHRESFRRZTYtd9IBxAFBVV95cUxQLWlrVk1XaXVfX3lEZk5HRjBMQUlmOXlHZFJUcEU2a3NJRzlqU2tONlB5X1JuUjRmT2g4NE9QcFZ5UmVqSmoydzBELWxWaHNvTmt6RFBhbF9DZkR3X2dGMThzQ2taZmY2SXgyWHZHdkgyby13bTh6QTQ3eU80VnlqVDZNY0VQNTF6WFF4dnFsQl9LYTJtSFA4OUUycWRybFpjQW91eU9wa1Y0T3FsOENRbmpzLUwwdWEtcU8yd3VVbTBXUnVt?oc=5",
-     "title": "S&P 500 e Nasdaq caem com perdas no setor de tecnologia"
-    }
-   ],
-   "ids": [
-    "436c3d33c559"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "S&P 500 e Nasdaq caem com perdas no setor de tecnologia",
-   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -8901,6 +8835,39 @@
    "ai": false
   },
   {
+   "id": "cb223bbf43c0",
+   "title": "US envoy Witkoff arrives in St Petersburg for talks with Putin",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOblFpbFpHeVI2RDNmTm1ZbWtNenZRZTR5eW1jcVpQY1hxcHpqUXpxbGh3c2V2UnVVUHo2bVMzcmlJTmNkcXdieFBuMVlCWi1HNGMxcHlidkVGQS1BZVdQNmxQd1EzeEZMNTlackhVS1VCLTRuSG9rTWxGYkpRdzJaRm8wWmFjT0pYa3FlR3BQbUI1VDRQVjhncjJUZ2RaUQ?oc=5",
+   "published": "2026-10-21T06:11:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOblFpbFpHeVI2RDNmTm1ZbWtNenZRZTR5eW1jcVpQY1hxcHpqUXpxbGh3c2V2UnVVUHo2bVMzcmlJTmNkcXdieFBuMVlCWi1HNGMxcHlidkVGQS1BZVdQNmxQd1EzeEZMNTlackhVS1VCLTRuSG9rTWxGYkpRdzJaRm8wWmFjT0pYa3FlR3BQbUI1VDRQVjhncjJUZ2RaUQ?oc=5",
+     "title": "US envoy Witkoff arrives in St Petersburg for talks with Putin"
+    }
+   ],
+   "ids": [
+    "cb223bbf43c0"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "US envoy Witkoff arrives in St Petersburg for talks with Putin",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "650b1cca5b20",
    "title": "One killed, two injured in attack on Russia's Bryansk region, governor says",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSUNpd1lfRTMySFkwSTlhUi12MENJQXNSWmJqWnFFN3pTNHJ1NjhidTNyOUdIN3BSVi1WZ0p0WWV3RjJnQmpSR242YnlzT1ZHajRUSG53eEZNenJMMGg0WWdVZlE5ajNDajFMeWtWd2dJdmNiN3FsUThMLVV3Sm1jMU12UWZlVU9TUVU5dG80dUVVd0pRS3pxZlpuZXZoaHpIYkIwcEJvQWE4RDI1?oc=5",
@@ -9495,6 +9462,39 @@
    "ai": false
   },
   {
+   "id": "85236266554c",
+   "title": "Netflix Revenue Growth Slows as It Overhauls Programming Units",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWEliUElBYzE0WlcxV2VLNkZJSlFYcDJlZXBLeDZxOTZKNmlkMGRlQ003RWRjdE1YUVpZakxYaHZsY2YyVnAwYkhFSmhaUEZzWXJlalBHNFRSb2RhbUk3ZkhMRWJTNmZLaXhLX1NPRFk1Nks4TzNKNEpwUktvYWdKOE5Bb01QeUlVbGM0ZVhuTnNoNFBRd0RxdTd3Zjc4cVd4T1NrcXVaYlF4TWd2dnc?oc=5",
+   "published": "2026-10-20T23:01:18+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWEliUElBYzE0WlcxV2VLNkZJSlFYcDJlZXBLeDZxOTZKNmlkMGRlQ003RWRjdE1YUVpZakxYaHZsY2YyVnAwYkhFSmhaUEZzWXJlalBHNFRSb2RhbUk3ZkhMRWJTNmZLaXhLX1NPRFk1Nks4TzNKNEpwUktvYWdKOE5Bb01QeUlVbGM0ZVhuTnNoNFBRd0RxdTd3Zjc4cVd4T1NrcXVaYlF4TWd2dnc?oc=5",
+     "title": "Netflix Revenue Growth Slows as It Overhauls Programming Units"
+    }
+   ],
+   "ids": [
+    "85236266554c"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Netflix Revenue Growth Slows as It Overhauls Programming Units",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d202e9118845",
    "title": "Meta Policy Chief Joel Kaplan to Leave Company",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNDVURXk0Y3RYTUxJeENFU0Vub0lCOW5weWk1Qm8wMmgzdUttQjVDZHRjaGlhajFlS09sb2Q4SHM2MTd5SkphSEpIMV9ydWNQa0NqdmtJajBNMkFpakxicldHeTBVOGxIel9nOWFvd25yQ3hBSXNkR2NmeEpLNlRKOGtmaHZqNm8?oc=5",
@@ -9612,39 +9612,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Opinion | Gen Z Is ‘Just Asking Questions’",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "85236266554c",
-   "title": "Netflix Revenue Growth Slows as It Overhauls Programming Units",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWEliUElBYzE0WlcxV2VLNkZJSlFYcDJlZXBLeDZxOTZKNmlkMGRlQ003RWRjdE1YUVpZakxYaHZsY2YyVnAwYkhFSmhaUEZzWXJlalBHNFRSb2RhbUk3ZkhMRWJTNmZLaXhLX1NPRFk1Nks4TzNKNEpwUktvYWdKOE5Bb01QeUlVbGM0ZVhuTnNoNFBRd0RxdTd3Zjc4cVd4T1NrcXVaYlF4TWd2dnc?oc=5",
-   "published": "2026-10-20T21:46:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWEliUElBYzE0WlcxV2VLNkZJSlFYcDJlZXBLeDZxOTZKNmlkMGRlQ003RWRjdE1YUVpZakxYaHZsY2YyVnAwYkhFSmhaUEZzWXJlalBHNFRSb2RhbUk3ZkhMRWJTNmZLaXhLX1NPRFk1Nks4TzNKNEpwUktvYWdKOE5Bb01QeUlVbGM0ZVhuTnNoNFBRd0RxdTd3Zjc4cVd4T1NrcXVaYlF4TWd2dnc?oc=5",
-     "title": "Netflix Revenue Growth Slows as It Overhauls Programming Units"
-    }
-   ],
-   "ids": [
-    "85236266554c"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Netflix Revenue Growth Slows as It Overhauls Programming Units",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -9795,7 +9762,7 @@
    "id": "3811f70fe6f5",
    "title": "Exclusive | A Power Couple’s Aspen Home Fetches $30 Million in Post-Split Sale",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWGY0RVppQ2ZyNEs4dW5pa2hLdEVQdDJEVmZmQVFlN0h6LV9OUFEta0FiZDByNGwyMm5YdVhNak1PNldjWUVZRkZTVWlSLVVKaFA3UFU1WGd2VU1FMGptSUVvaGhkMUdfWUhINnlTMGFIM1lPbzBROG4zNGhlVjhQc1RpUk1WWS10Q0kyY0FDWFhSSFk0TTZZZ3RR?oc=5",
-   "published": "2026-10-20T20:20:00+00:00",
+   "published": "2026-10-20T20:21:19+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -10285,10 +10252,142 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "263a0c22270a",
+   "title": "EU unveils new Arctic strategy with focus on security",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdDY3aUczblRQd2RfekVBRVo0aDFzaFl5RDctZlRTekUxV21hUTQ3a19qLTlwUVBCemRjSVl6Mk1INjRrQXNtWmc4N1FmVllhbTVvVkw4TGdfR1FrOVNfOEFjcVN6VEYtNjcxR1FLT0xRdDl1THhMc05ORDRkSDUtLXhMeWFiZkZrWHJqY05IQ1VGNjRpeEtn?oc=5",
+   "published": "2026-10-20T16:29:56+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdDY3aUczblRQd2RfekVBRVo0aDFzaFl5RDctZlRTekUxV21hUTQ3a19qLTlwUVBCemRjSVl6Mk1INjRrQXNtWmc4N1FmVllhbTVvVkw4TGdfR1FrOVNfOEFjcVN6VEYtNjcxR1FLT0xRdDl1THhMc05ORDRkSDUtLXhMeWFiZkZrWHJqY05IQ1VGNjRpeEtn?oc=5",
+     "title": "EU unveils new Arctic strategy with focus on security"
+    }
+   ],
+   "ids": [
+    "263a0c22270a"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "EU unveils new Arctic strategy with focus on security",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "deals": [],
  "upcoming": [
+  {
+   "id": "58f5ee54d6a5",
+   "title": "Anthropic registra prejuízo líquido de mais de US$80 bi no primeiro semestre de 2026",
+   "link": "https://g1.globo.com/tecnologia/noticia/2026/10/21/anthropic-prejuizo.ghtml",
+   "published": "2026-10-21T11:22:45+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/tecnologia/noticia/2026/10/21/anthropic-prejuizo.ghtml",
+     "title": "Anthropic registra prejuízo líquido de mais de US$80 bi no primeiro semestre de 2026"
+    }
+   ],
+   "ids": [
+    "58f5ee54d6a5"
+   ],
+   "snippet": "Anthropic Reuters O prejuízo líquido da Anthropic aumentou drasticamente para US$80,7 bilhões no primeiro semestre de 2026, em grande parte devido a um aumento no valor justo dos títulos conversíveis em ações da startup de IA, de acordo com uma versão preliminar do prospecto para uma oferta pública inicial (IPO), analisada pela Reuters. A empresa sediada em San Francisco deve abrir o capital em novembro, e alguns investidores estão agora avaliando uma valorização menor, em torno de US$1,5 trilhão, após suas últimas divulgações financeiras, informou a Reuters na semana passada. O prejuízo do pr",
+   "prescore": 5.8,
+   "headline": "Anthropic registra prejuízo líquido de mais de US$80 bi no primeiro semestre de 2026",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Anthropic Reuters O prejuízo líquido da Anthropic aumentou drasticamente para US$80,7 bilhões no primeiro semestre de 2026, em grande parte devido a um aumento no valor justo dos títulos conversíveis em ações da startup de IA, de acordo com uma versão preliminar do prospecto para uma oferta pública inicial (IPO), analisada pela Reuters. A empresa sediada em San Francisco deve abrir o capital em no",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "64c0bd42f616",
+   "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta",
+   "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-21102026/",
+   "published": "2026-10-21T11:22:46+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-21102026/",
+     "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta"
+    }
+   ],
+   "ids": [
+    "64c0bd42f616"
+   ],
+   "snippet": "Índices futuros dos EUA operam mistos em meio à temporada de balanços The post Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta appeared first on InfoMoney .",
+   "prescore": 5.2,
+   "headline": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Índices futuros dos EUA operam mistos em meio à temporada de balanços The post Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a28dd4cb1c7d",
+   "title": "Carrefour notifica ao Cade venda de 22 imóveis a fundo imobiliário do Patria",
+   "link": "https://www.moneytimes.com.br/carrefour-notifica-ao-cade-venda-de-22-imoveis-a-fundo-de-investimento-imobiliario-patria-igdl/",
+   "published": "2026-10-21T11:20:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/carrefour-notifica-ao-cade-venda-de-22-imoveis-a-fundo-de-investimento-imobiliario-patria-igdl/",
+     "title": "Carrefour notifica ao Cade venda de 22 imóveis a fundo imobiliário do Patria"
+    }
+   ],
+   "ids": [
+    "a28dd4cb1c7d"
+   ],
+   "snippet": "O Carrefour notificou ao Conselho Administrativo de Defesa Econômica (Cade) a venda de até 22 imóveis, hoje de propriedade do Atacadão, ao fundo de investimento imobiliário Patria Renda Urbana (HGRU11), para posterior locação para o Atacadão para a continuidade das atividades de varejo alimentar de autosserviço e distribuição ali desempenhadas. O valor do negócio não […]",
+   "prescore": 4.8,
+   "headline": "Carrefour notifica ao Cade venda de 22 imóveis a fundo imobiliário do Patria",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Carrefour notificou ao Conselho Administrativo de Defesa Econômica (Cade) a venda de até 22 imóveis, hoje de propriedade do Atacadão, ao fundo de investimento imobiliário Patria Renda Urbana (HGRU11), para posterior locação para o Atacadão para a continuidade das atividades de varejo alimentar de autosserviço e distribuição ali desempenhadas. O valor do negócio não […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
   {
    "id": "21f314981c98",
    "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
@@ -10521,6 +10620,39 @@
    "ai": false
   },
   {
+   "id": "3552c40f4dfb",
+   "title": "American Airlines conclui investimento na Azul com aumento de capital R$ 512,8 mi",
+   "link": "https://www.infomoney.com.br/mercados/american-airlines-conclui-investimento-na-azul-com-aumento-de-capital-r-5128-mi/",
+   "published": "2026-10-21T11:23:10+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/american-airlines-conclui-investimento-na-azul-com-aumento-de-capital-r-5128-mi/",
+     "title": "American Airlines conclui investimento na Azul com aumento de capital R$ 512,8 mi"
+    }
+   ],
+   "ids": [
+    "3552c40f4dfb"
+   ],
+   "snippet": "Ao todo, foram emitidas 31,8 milhões de ações ordinárias para a American Airlines e outras 432,6 mil ações para os demais investidores The post American Airlines conclui investimento na Azul com aumento de capital R$ 512,8 mi appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "American Airlines conclui investimento na Azul com aumento de capital R$ 512,8 mi",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Ao todo, foram emitidas 31,8 milhões de ações ordinárias para a American Airlines e outras 432,6 mil ações para os demais investidores The post American Airlines conclui investimento na Azul com aumento de capital R$ 512,8 mi appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "de5baa0ff085",
    "title": "WEG (WEGE3) tem lucro de R$ 1,67 bilhão no 3º trimestre, abaixo do esperado",
    "link": "https://www.infomoney.com.br/mercados/weg-wege3-resultados-terceiro-trimestre-2026/",
@@ -10692,6 +10824,39 @@
    "ai": false
   },
   {
+   "id": "4e5328fd1111",
+   "title": "WEG (WEGE3) lucra R$ 1,66 bilhão no terceiro trimestre de 2026, avanço de 0,9% no ano; veja os números",
+   "link": "https://www.moneytimes.com.br/weg-wege3-lucra-r-166-bilhao-no-terceiro-trimestre-de-2026-avanco-de-09-no-ano-veja-os-numeros-lmrs/",
+   "published": "2026-10-21T11:22:57+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/weg-wege3-lucra-r-166-bilhao-no-terceiro-trimestre-de-2026-avanco-de-09-no-ano-veja-os-numeros-lmrs/",
+     "title": "WEG (WEGE3) lucra R$ 1,66 bilhão no terceiro trimestre de 2026, avanço de 0,9% no ano; veja os números"
+    }
+   ],
+   "ids": [
+    "4e5328fd1111"
+   ],
+   "snippet": "A WEG (WEGE3) reportou lucro líquido de R$ 1,66 bilhão referente ao terceiro trimestre de 2026 (3T26), um avanço de 0,9% ante o mesmo período no ano anterior, mostra relatório de resultados divulgado ao mercado nesta quarta-feira (21). O Ebitda (lucro antes de juros, impostos, depreciação e amortização) totalizou R$ 2,34 bilhões, uma alta de […]",
+   "prescore": 1.8,
+   "headline": "WEG (WEGE3) lucra R$ 1,66 bilhão no terceiro trimestre de 2026, avanço de 0,9% no ano; veja os números",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A WEG (WEGE3) reportou lucro líquido de R$ 1,66 bilhão referente ao terceiro trimestre de 2026 (3T26), um avanço de 0,9% ante o mesmo período no ano anterior, mostra relatório de resultados divulgado ao mercado nesta quarta-feira (21). O Ebitda (lucro antes de juros, impostos, depreciação e amortização) totalizou R$ 2,34 bilhões, uma alta de […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "dfaeaea7d1e7",
    "title": "Câmbio, experiências e destinos fora do óbvio: 7 tendências de turismo para 2027",
    "link": "https://www.seudinheiro.com/2026/lifestyle/cambio-experiencias-e-destinos-fora-do-obvio-7-tendencias-de-turismo-para-2027-lefp/",
@@ -10847,7 +11012,7 @@
    "id": "g1-economia",
    "name": "g1",
    "ok": true,
-   "count": 55,
+   "count": 56,
    "error": null
   },
   {
@@ -10931,7 +11096,7 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 48,
+   "count": 49,
    "error": null
   },
   {
@@ -11205,11 +11370,11 @@
   }
  ],
  "stats": {
-  "raw": 933,
-  "unique": 580,
+  "raw": 935,
+  "unique": 576,
   "unique_all": 866,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 10.8
+  "seconds": 3.9
  }
 }
