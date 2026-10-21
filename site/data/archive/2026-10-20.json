@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:15:13.972815-03:00",
+ "generated_at": "2026-10-21T06:31:13.975183-03:00",
  "date": "2026-10-20",
  "window": {
   "start": "2026-10-19T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-20T08:22:41.995441-03:00",
-  "analyzed": 110
+  "analyzed": 108
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -122,14 +122,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 5.6263,
-   "change_pct": -0.3582169035077576,
+   "price": 5.6292,
+   "change_pct": -0.3068578983036585,
    "spark": [
     5.640158176422119,
     5.711021900177002,
     5.681818008422852,
     5.64652681350708,
-    5.626299858093262
+    5.629199981689453
    ]
   },
   {
@@ -178,40 +178,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 110.11,
-   "change_pct": 1.213345963198953,
+   "price": 109.98,
+   "change_pct": 1.093849686973214,
    "spark": [
     109.86000061035156,
     109.55000305175781,
     108.79000091552734,
-    110.11000061035156
+    109.9800033569336
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4139.4,
-   "change_pct": -0.0772485294455727,
+   "price": 4139.7,
+   "change_pct": -0.07000670081311888,
    "spark": [
     4181.10009765625,
     4160.10009765625,
     4142.60009765625,
-    4139.39990234375
+    4139.7001953125
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 83511.03,
-   "change_pct": 0.6872716750461194,
+   "price": 83501.82,
+   "change_pct": 0.6761673961008574,
    "spark": [
     81382.1484375,
     82017.6015625,
     81853.5390625,
     82941.0,
-    83511.03125
+    83501.8203125
    ]
   }
  ],
@@ -3281,46 +3281,6 @@
    "ai": true
   },
   {
-   "id": "fe1fcde4e06f",
-   "title": "Governo dos EUA proíbe agências federais de usarem tecnologia de IA da chinesa DeepSeek",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRlVYUTh5aFhDUnEwcUROa3VSQVFaR2FMTmVJV1hqenBFMG1oS0d4aHZxb1JFNjRHVk9MNnpNYVA0WUFWWHFESlVBbGNtcFkxWFREbEZpMS1sMGlHNUtUdzJEeTQtMHdVTG1JbmZVcXpObzR5dkxMdFYtaTFzMEVJcEt2QUVPMUN2MTZSZHI3QW9CSkZodTRnZ0I4alNtWU1BWXBzekFqQVN5a2prT3JCRUlHMTRvUjNOeGNsOXBJamg1dVUtZU0tU0xvU1hQalBRYzczcXJCdk8xR2_SAeoBQVVfeXFMUHBuT2pZUktZdVdIMlA2a2dxR3lOS1dQdENacTRXYnVVR3FBQjNSVlBlQVdkc2xsd3pkVTVpd1MzY0k4bFpEREZVQmM1eEkzblFVeHdTVDVna1FwUjdZY2hlZWttbEJ1VF9kSW5VZ3hqYVkwcnNEMVNWZ3JxNnhDNlY0aTJkWjhzRDBkNnAxOXFlaE4tN3JMdnRtQ0NqRU9JcENRd3Y0WmZ1SWlBaldSQjc3R3BSYlVFTC15aTJWY0szOHRvX2hEVjZkbUgzZmpzam9lcEMtU1NvUzNKcy1uT205MVpHeEhZUXFn?oc=5",
-   "published": "2026-10-19T16:24:15+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRlVYUTh5aFhDUnEwcUROa3VSQVFaR2FMTmVJV1hqenBFMG1oS0d4aHZxb1JFNjRHVk9MNnpNYVA0WUFWWHFESlVBbGNtcFkxWFREbEZpMS1sMGlHNUtUdzJEeTQtMHdVTG1JbmZVcXpObzR5dkxMdFYtaTFzMEVJcEt2QUVPMUN2MTZSZHI3QW9CSkZodTRnZ0I4alNtWU1BWXBzekFqQVN5a2prT3JCRUlHMTRvUjNOeGNsOXBJamg1dVUtZU0tU0xvU1hQalBRYzczcXJCdk8xR2_SAeoBQVVfeXFMUHBuT2pZUktZdVdIMlA2a2dxR3lOS1dQdENacTRXYnVVR3FBQjNSVlBlQVdkc2xsd3pkVTVpd1MzY0k4bFpEREZVQmM1eEkzblFVeHdTVDVna1FwUjdZY2hlZWttbEJ1VF9kSW5VZ3hqYVkwcnNEMVNWZ3JxNnhDNlY0aTJkWjhzRDBkNnAxOXFlaE4tN3JMdnRtQ0NqRU9JcENRd3Y0WmZ1SWlBaldSQjc3R3BSYlVFTC15aTJWY0szOHRvX2hEVjZkbUgzZmpzam9lcEMtU1NvUzNKcy1uT205MVpHeEhZUXFn?oc=5",
-     "title": "Governo dos EUA proíbe agências federais de usarem tecnologia de IA da chinesa DeepSeek"
-    }
-   ],
-   "ids": [
-    "fe1fcde4e06f"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "EUA proíbem agências federais de usar IA da chinesa DeepSeek",
-   "category": "tech",
-   "importance": 4,
-   "importance_reason": "Restrição regulatória no embate tecnológico EUA-China.",
-   "summary": "O governo dos EUA proibiu agências federais de usar a tecnologia de IA da DeepSeek.",
-   "involves": "Governo dos EUA, DeepSeek",
-   "interpretation": "Mais um capítulo da disputa tecnológica EUA-China.",
-   "impact": "Efeito direto limitado.",
-   "sentiment": "negativo",
-   "entities": [
-    "DeepSeek",
-    "Governo dos EUA"
-   ],
-   "tags": [
-    "IA",
-    "China",
-    "EUA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "5490b952296e",
    "title": "Lula expôs Flávio em casos de corrupção, e senador acertou ao deixar petista 'visivelmente irritado', avaliam aliados",
    "link": "https://g1.globo.com/politica/noticia/2026/10/19/lula-expos-flavio-em-casos-de-corrupcao-e-senador-acertou-ao-deixar-petista-visivelmente-irritado-avaliam-aliados.ghtml",
@@ -3474,45 +3434,6 @@
     "euro",
     "dólar",
     "câmbio"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "87f4287a7fec",
-   "title": "National Australia Bank to cut 2,500 jobs in cost overhaul as credit growth slows",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1NXdDBPdHE1QktYQVlGcFhraENxRlVHbEFSczlSS1RrLUtVcmJWOTZaN0Q3azVjbnowbzg3ZFpHTTZsY3hSNlRHQklyV2tfZldwMFJpVVNkdjRsYzRCV2FHQmo2WkdXOTVRTGI1NWlHaFcyeDdySUhIMGJveGtjY0JydWdNRThLaUFtOE1qdDlHV3RWNGgxYXdwWlkxTVY2anhJRHBzalB5VVhPYXZXMG1RYk5zVzZ0c0xnNQ?oc=5",
-   "published": "2026-10-19T21:39:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1NXdDBPdHE1QktYQVlGcFhraENxRlVHbEFSczlSS1RrLUtVcmJWOTZaN0Q3azVjbnowbzg3ZFpHTTZsY3hSNlRHQklyV2tfZldwMFJpVVNkdjRsYzRCV2FHQmo2WkdXOTVRTGI1NWlHaFcyeDdySUhIMGJveGtjY0JydWdNRThLaUFtOE1qdDlHV3RWNGgxYXdwWlkxTVY2anhJRHBzalB5VVhPYXZXMG1RYk5zVzZ0c0xnNQ?oc=5",
-     "title": "National Australia Bank to cut 2,500 jobs in cost overhaul as credit growth slows"
-    }
-   ],
-   "ids": [
-    "87f4287a7fec"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "National Australia Bank vai cortar 2.500 vagas em reestruturação de custos",
-   "category": "empresas",
-   "importance": 4,
-   "importance_reason": "Sinaliza pressão de custos em banco global.",
-   "summary": "O NAB cortará 2.500 empregos em revisão de custos, com o crescimento do crédito desacelerando.",
-   "involves": "National Australia Bank",
-   "interpretation": "Eficiência diante de crescimento menor.",
-   "impact": "Referência para bancos.",
-   "sentiment": "neutro",
-   "entities": [
-    "National Australia Bank"
-   ],
-   "tags": [
-    "NAB",
-    "bancos",
-    "cortes"
    ],
    "is_deal": false,
    "deal": null,
@@ -4809,6 +4730,39 @@
    "ai": false
   },
   {
+   "id": "a4b73176296e",
+   "title": "China’s Export Boom Masks Deep Economic Problems at Home",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5",
+   "published": "2026-10-19T23:11:04+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5",
+     "title": "China’s Export Boom Masks Deep Economic Problems at Home"
+    }
+   ],
+   "ids": [
+    "a4b73176296e"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "China’s Export Boom Masks Deep Economic Problems at Home",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "8f7298fbfcb1",
    "title": "XP Inc (XPBR31)",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEl1ZjFtTlhZTnBvazlaZFYzenVxN0FwZnBSZlVuWHo4dDNVd2RSREJoVVQ1MmhrX1RlNWV3czN4NVhNTVNxTUpFbFZ2ZTFpYXZlLXpwa1IxLUF4T2lpajV6QzlYVktQRTZnT2N6OUZiWl9PQU43Y1ZuTDN2M3FOaVNuY1VKdWRnRlcw?oc=5",
@@ -5997,6 +5951,39 @@
    "ai": false
   },
   {
+   "id": "41dbd0bf4ab5",
+   "title": "Venezuela oilfield hiring picks up as first wave of investment builds",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa3VLcnQ0WDUxUm5NUTVUU2Frc1NtT0d1WlM2cVY5NVpnY2swR2xLN3FYZzlBb3p5U0RQQk9mcWd2eUswVXQtNk5iVFVfZF9XVDd3ZTJsS0VRaVVrZlpud2tGd0xLeGxWOEpaNUlDY3pZaEhsWXhMNklFeFpTcUhpZkNzYjBrRWs5MU5ELWxETV9xUXMxbDM3ZHZqSUc2YlpZYkRyMEtqU1Qtd2N4Y3o0Sl9IYzdOQQ?oc=5",
+   "published": "2026-10-19T16:41:20+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa3VLcnQ0WDUxUm5NUTVUU2Frc1NtT0d1WlM2cVY5NVpnY2swR2xLN3FYZzlBb3p5U0RQQk9mcWd2eUswVXQtNk5iVFVfZF9XVDd3ZTJsS0VRaVVrZlpud2tGd0xLeGxWOEpaNUlDY3pZaEhsWXhMNklFeFpTcUhpZkNzYjBrRWs5MU5ELWxETV9xUXMxbDM3ZHZqSUc2YlpZYkRyMEtqU1Qtd2N4Y3o0Sl9IYzdOQQ?oc=5",
+     "title": "Venezuela oilfield hiring picks up as first wave of investment builds"
+    }
+   ],
+   "ids": [
+    "41dbd0bf4ab5"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Venezuela oilfield hiring picks up as first wave of investment builds",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "978f08750751",
    "title": "Myanmar authorities release rare images of Aung San Suu Kyi",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVFdXV3JSQk1EQ1VxSWRjU3M0WU9OWHBRaVBtN3I5NDVQdnpJYzJaRHVlTmJpRUlCcVJVZUU2aFlEZ1U4UmVMRmkydTRQWUs5SUlOalVtX3dZUkpBaXYwRG9uT2FIVU5XV1hDZUpiRWcwMkx1SUppcWt0Wl9YUnluM2R0MGwzYzJuRlN4WXhUTkhKMWp0aVBBb0V1ajktU2hqejdFY1VjMUlCbXFRYlNKZQ?oc=5",
@@ -6213,39 +6200,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "DHS Orders DeepSeek Technology Removed From Federal Civilian IT Systems",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "90be9d97ad77",
-   "title": "Macron urges calm as France counts cost of worst unrest in years",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNd1VSODRfY1ZTZlpfMVBnaXZzSi1KU1ZsUlJWcWZBaWVaQ0Fyal85ZmEtdkR3ZU94c2ZEeGNzRXpIamtSQVdfVlpJWTdhcEY2ZkZaMFZGZzlTVTVCTDRoUDJybE90dGJGYTNmU1NwUTJDNmVZZllXTDFSR3hIVnBTV2lYTk9LM2N1MlREWk9VOEtidHY2?oc=5",
-   "published": "2026-10-19T14:38:39+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNd1VSODRfY1ZTZlpfMVBnaXZzSi1KU1ZsUlJWcWZBaWVaQ0Fyal85ZmEtdkR3ZU94c2ZEeGNzRXpIamtSQVdfVlpJWTdhcEY2ZkZaMFZGZzlTVTVCTDRoUDJybE90dGJGYTNmU1NwUTJDNmVZZllXTDFSR3hIVnBTV2lYTk9LM2N1MlREWk9VOEtidHY2?oc=5",
-     "title": "Macron urges calm as France counts cost of worst unrest in years"
-    }
-   ],
-   "ids": [
-    "90be9d97ad77"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Macron urges calm as France counts cost of worst unrest in years",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7280,6 +7234,39 @@
    "prescore": 2.2,
    "headline": "Gigantes de remessas recorrem a cripto para conter perdas com desafio de stablecoins",
    "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "39fe94312b9e",
+   "title": "Why Brazil's regulatory break affects Malta's iGaming sector",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmxDNnUtdk5VRlBTVHhMNkZKOHBXNUJpdkMzNG0tUXNoUVNCM2FhNWxMUTVhVDVaWkdsMUVwSGZtRDI4UExqb3FyaERtMGF0SW42dkV4Y0Zmb2JvcVA0b1dZSzBNSU1UX2RoQnRaSmlMQklSZ2RBUnlhSGoxU1prd1hIekRuZzlTYWhtOUotbEwxclR5c1plUFAwVmlKakdKU3hlYURGZTVLd3lBMlNnelJQZ3FjUQ?oc=5",
+   "published": "2026-10-20T10:29:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "MaltaToday",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmxDNnUtdk5VRlBTVHhMNkZKOHBXNUJpdkMzNG0tUXNoUVNCM2FhNWxMUTVhVDVaWkdsMUVwSGZtRDI4UExqb3FyaERtMGF0SW42dkV4Y0Zmb2JvcVA0b1dZSzBNSU1UX2RoQnRaSmlMQklSZ2RBUnlhSGoxU1prd1hIekRuZzlTYWhtOUotbEwxclR5c1plUFAwVmlKakdKU3hlYURGZTVLd3lBMlNnelJQZ3FjUQ?oc=5",
+     "title": "Why Brazil's regulatory break affects Malta's iGaming sector"
+    }
+   ],
+   "ids": [
+    "39fe94312b9e"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Why Brazil's regulatory break affects Malta's iGaming sector",
+   "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -12230,30 +12217,30 @@
    "ai": false
   },
   {
-   "id": "c49b43e1da54",
-   "title": "CSN diz que venda de cimenteira está em fase final e nega possível IPO",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSklTazlLRUNtN3F1RmdoUWk1N255akFZNG5kLUZGU0FCTTJWZ0RqLWNqSjlHUGNURE41YUxXV01HTkxyNXViU3NMWUx1bHA2ZWpybzFETEdUVFIxS2RsbERkLVlLeU1wdE44dV9aOXNMOFJabkVmVnFSanlnemRIaTN0dVJwaTh1VGo1dVVncVE4RGw0UWR3SlEzMl9oOVVKWGZ0enJvdkNBWmFuMks2V3FEMjhiQy1lclNzUFhIUHpOMnhJTU9HNg?oc=5",
+   "id": "41a8ecb24068",
+   "title": "CSN nega IPO da CSN Cimentos e diz que venda está em fase final de negociação",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUmptYTVIMnFWMlE5Rl8yTVFjY0VoYzhSRTU3SzRTZFo5RThxTTVobmxvSUFxdFVLVnhjTEhPZDJRLVo5RnJJaHBVWW9WUlZsTTFVeTJGU0VIeDJYV2t3bE1Yb09oLVM3MkdoQ0ZEb0l3ZEtBd3RpYWlFZElYWnVvU3Z6TE41c3g3Q1hBeEx5VVpCQUVSd3h0MzhNbUswdlhjNERpVEJYU25qMTh5MVdrd2JuUzhvZUdCREV4cUdMU252cndD0gHEAUFVX3lxTE9Sam1hNUgycVYyUTlGXzJNUWNjRWhjOFJFNTdLNFNkWjlFOHFNNWhubG9JQXF0VUtWeGNMSE9kMlEtWjlGcklocFVZb1ZSVmxNMVV5MkZTRUh4MlhXa3dsTVhvT2gtUzcyR2hDRkRvSXdkS0F3dGlhaUVkSVhadW9TdnpMTjVzeDdDWEF4THlVWkJBRVJ3eHQzOE1tSzB2WGM0RGlUQlhTbmoxOHkxV2t3Ym5TOG9lR0JERXhxR0xTbnZyd0M?oc=5",
    "published": "2026-10-20T15:30:12+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "CNN Brasil",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSklTazlLRUNtN3F1RmdoUWk1N255akFZNG5kLUZGU0FCTTJWZ0RqLWNqSjlHUGNURE41YUxXV01HTkxyNXViU3NMWUx1bHA2ZWpybzFETEdUVFIxS2RsbERkLVlLeU1wdE44dV9aOXNMOFJabkVmVnFSanlnemRIaTN0dVJwaTh1VGo1dVVncVE4RGw0UWR3SlEzMl9oOVVKWGZ0enJvdkNBWmFuMks2V3FEMjhiQy1lclNzUFhIUHpOMnhJTU9HNg?oc=5",
-     "title": "CSN diz que venda de cimenteira está em fase final e nega possível IPO"
-    },
-    {
      "source": "Investidor10",
      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUmptYTVIMnFWMlE5Rl8yTVFjY0VoYzhSRTU3SzRTZFo5RThxTTVobmxvSUFxdFVLVnhjTEhPZDJRLVo5RnJJaHBVWW9WUlZsTTFVeTJGU0VIeDJYV2t3bE1Yb09oLVM3MkdoQ0ZEb0l3ZEtBd3RpYWlFZElYWnVvU3Z6TE41c3g3Q1hBeEx5VVpCQUVSd3h0MzhNbUswdlhjNERpVEJYU25qMTh5MVdrd2JuUzhvZUdCREV4cUdMU252cndD0gHEAUFVX3lxTE9Sam1hNUgycVYyUTlGXzJNUWNjRWhjOFJFNTdLNFNkWjlFOHFNNWhubG9JQXF0VUtWeGNMSE9kMlEtWjlGcklocFVZb1ZSVmxNMVV5MkZTRUh4MlhXa3dsTVhvT2gtUzcyR2hDRkRvSXdkS0F3dGlhaUVkSVhadW9TdnpMTjVzeDdDWEF4THlVWkJBRVJ3eHQzOE1tSzB2WGM0RGlUQlhTbmoxOHkxV2t3Ym5TOG9lR0JERXhxR0xTbnZyd0M?oc=5",
      "title": "CSN nega IPO da CSN Cimentos e diz que venda está em fase final de negociação"
+    },
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSklTazlLRUNtN3F1RmdoUWk1N255akFZNG5kLUZGU0FCTTJWZ0RqLWNqSjlHUGNURE41YUxXV01HTkxyNXViU3NMWUx1bHA2ZWpybzFETEdUVFIxS2RsbERkLVlLeU1wdE44dV9aOXNMOFJabkVmVnFSanlnemRIaTN0dVJwaTh1VGo1dVVncVE4RGw0UWR3SlEzMl9oOVVKWGZ0enJvdkNBWmFuMks2V3FEMjhiQy1lclNzUFhIUHpOMnhJTU9HNg?oc=5",
+     "title": "CSN diz que venda de cimenteira está em fase final e nega possível IPO"
     }
    ],
    "ids": [
-    "c49b43e1da54",
-    "41a8ecb24068"
+    "41a8ecb24068",
+    "c49b43e1da54"
    ],
    "snippet": "",
    "prescore": 6.9,
-   "headline": "CSN diz que venda de cimenteira está em fase final e nega possível IPO",
+   "headline": "CSN nega IPO da CSN Cimentos e diz que venda está em fase final de negociação",
    "category": "mna",
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13427,20 +13414,20 @@
    "ai": false
   },
   {
-   "id": "c8ace462508c",
+   "id": "0da395f8b8cb",
    "title": "Plus500 retains 'buy' rating from Panmure Liberum after Brazil acquisition",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVUZkOFVEbHdNcDR6dFlNSnRKdUtYZ21vSTRjaC1jdC1LNXFPMTNETzBHNnYzaE9mLVBteVZrd18tdVN4NnM1MGdTY0Y1Z2N3SmhFdXFiR1c1Z2RGd0hBcXg2U0tQSzVOWExJWGtiNHFabXFQcmlSU2w3Ni1ibEdrZ0pfWEEza0E2YXlN?oc=5",
-   "published": "2026-10-20T12:30:00+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdDhNYXcteDlqSUVncU5EU0VTMXRtaUk5RTNfZ1lxdzBVUGVGUi1fempKTkQzOXZaLWZoai1zLTVKRGVWc2dRNTRIekJ5aW9wemFWWGU4VjBiNHNnOUJYVGlsTk9abXhUYS1OdFBJNnlGQ1ZUNV9qMjljaUZvN3NLRzhLdFBzTzdoMVRpbWlHdEZ5YjBXdUQyOGIweXhYUlRpbjh1QW9XbzRjV1AyQk1EeXRlV0VwbHRwbEsycGtFbWxRV21CVUdzR0tvREF3VGk5aHNYYkY4OG1vbmM?oc=5",
+   "published": "2026-10-20T13:30:00+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Yahoo Finance UK",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVUZkOFVEbHdNcDR6dFlNSnRKdUtYZ21vSTRjaC1jdC1LNXFPMTNETzBHNnYzaE9mLVBteVZrd18tdVN4NnM1MGdTY0Y1Z2N3SmhFdXFiR1c1Z2RGd0hBcXg2U0tQSzVOWExJWGtiNHFabXFQcmlSU2w3Ni1ibEdrZ0pfWEEza0E2YXlN?oc=5",
+     "source": "Proactive financial news",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdDhNYXcteDlqSUVncU5EU0VTMXRtaUk5RTNfZ1lxdzBVUGVGUi1fempKTkQzOXZaLWZoai1zLTVKRGVWc2dRNTRIekJ5aW9wemFWWGU4VjBiNHNnOUJYVGlsTk9abXhUYS1OdFBJNnlGQ1ZUNV9qMjljaUZvN3NLRzhLdFBzTzdoMVRpbWlHdEZ5YjBXdUQyOGIweXhYUlRpbjh1QW9XbzRjV1AyQk1EeXRlV0VwbHRwbEsycGtFbWxRV21CVUdzR0tvREF3VGk5aHNYYkY4OG1vbmM?oc=5",
      "title": "Plus500 retains 'buy' rating from Panmure Liberum after Brazil acquisition"
     }
    ],
    "ids": [
-    "c8ace462508c"
+    "0da395f8b8cb"
    ],
    "snippet": "",
    "prescore": 5.2,
@@ -15118,6 +15105,72 @@
    "ai": false
   },
   {
+   "id": "5435ca620d5f",
+   "title": "Agenda econômica: O que mexe com Bolsa e dólar nesta quarta-feira (21)",
+   "link": "https://www.moneytimes.com.br/agenda-economica-o-que-pode-mexer-com-bolsa-e-dolar-nesta-quarta-feira-21-mlem/",
+   "published": "2026-10-21T09:30:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/agenda-economica-o-que-pode-mexer-com-bolsa-e-dolar-nesta-quarta-feira-21-mlem/",
+     "title": "Agenda econômica: O que mexe com Bolsa e dólar nesta quarta-feira (21)"
+    }
+   ],
+   "ids": [
+    "5435ca620d5f"
+   ],
+   "snippet": "A agenda econômica desta quarta-feira (21) tem como destaque a divulgação de indicadores de inflação do Reino Unido. Os dados incluem o índice de preços ao consumidor (CPI), o índice de preços ao produtor (PPI) e o índice de preços no varejo (RPI). Os números ajudam a avaliar a evolução dos preços na economia britânica […]",
+   "prescore": 3.8,
+   "headline": "Agenda econômica: O que mexe com Bolsa e dólar nesta quarta-feira (21)",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A agenda econômica desta quarta-feira (21) tem como destaque a divulgação de indicadores de inflação do Reino Unido. Os dados incluem o índice de preços ao consumidor (CPI), o índice de preços ao produtor (PPI) e o índice de preços no varejo (RPI). Os números ajudam a avaliar a evolução dos preços na economia britânica […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "3c294988e521",
+   "title": "Última pesquisa Datafolha para presidente no segundo turno testa se Lula vira sobre Flávio Bolsonaro após debate da Globo",
+   "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxOdjVoNVNILVI2bjRtT0M2aHNfMC1hTkFLYkxaSDYwM3k0ajNCQ3NwZ195blFSNDdyY0NlYzR5U3ZfSWVSOXNWXzFRWnNodkQ2Y3NfYUtsQXBpaTl3cmE3eGUwNmNRa2VqU1Y5bFlMMm10aElqQlZKX01ManpfMDlhZ2VzNGxFb0wzMjJ1WmJQbVVHV0lXbFVrY2VId1hwa1pRMmdldnY4Qy1RZWRpYUhFRFp6NkduU2k4WFd3aW1lSlI3MS1ZN2pBOUpiM0tPSWt1YXFJb3ViSjhjSHdLQ2FXc21pdjJsWGZfQy1odXZJVWlmX21tank0R3pTZEpYclVvYnZLSE8ydVRXdkRYTUlLSTJxN1FkVTdIYW1uOVp30gGsAkFVX3lxTE9nck50NmdodTlXUDFHWi1uTXFWRTg2ZU5IUnBLUkhtVDJaSzZCX3paSV9NaWdrMFZnbWpWdEUwUFFsc1FQdWV6SXktdnZyTHBDS3IyYW00NWFQdDZUbEVhazZPYmladnMwV3cxRmVaUHh4YXJPNDVnNXkta1FMUWJTQ3dEdjItNXVFLVlsaTFBS2Z0emowcXNwVmhMS2pYME5zNGhkbG96SWxBUjJhNVczNTFKb0lmOC1tckNUYkszRW1ScWhQSFlTNVZ0UVNyNnJaMDFFaTkxWlFDX2VCanVpemVoMmZYUml5d0czMWROTEd4N0l0QkVJaVEwLVQtemRWM2hBR0s3OWZaWE9CZndlSV9sa2FrQ1QtNnAyOGM2M0hSUF96cW1vYW02eA?oc=5",
+   "published": "2026-10-21T09:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxOdjVoNVNILVI2bjRtT0M2aHNfMC1hTkFLYkxaSDYwM3k0ajNCQ3NwZ195blFSNDdyY0NlYzR5U3ZfSWVSOXNWXzFRWnNodkQ2Y3NfYUtsQXBpaTl3cmE3eGUwNmNRa2VqU1Y5bFlMMm10aElqQlZKX01ManpfMDlhZ2VzNGxFb0wzMjJ1WmJQbVVHV0lXbFVrY2VId1hwa1pRMmdldnY4Qy1RZWRpYUhFRFp6NkduU2k4WFd3aW1lSlI3MS1ZN2pBOUpiM0tPSWt1YXFJb3ViSjhjSHdLQ2FXc21pdjJsWGZfQy1odXZJVWlmX21tank0R3pTZEpYclVvYnZLSE8ydVRXdkRYTUlLSTJxN1FkVTdIYW1uOVp30gGsAkFVX3lxTE9nck50NmdodTlXUDFHWi1uTXFWRTg2ZU5IUnBLUkhtVDJaSzZCX3paSV9NaWdrMFZnbWpWdEUwUFFsc1FQdWV6SXktdnZyTHBDS3IyYW00NWFQdDZUbEVhazZPYmladnMwV3cxRmVaUHh4YXJPNDVnNXkta1FMUWJTQ3dEdjItNXVFLVlsaTFBS2Z0emowcXNwVmhMS2pYME5zNGhkbG96SWxBUjJhNVczNTFKb0lmOC1tckNUYkszRW1ScWhQSFlTNVZ0UVNyNnJaMDFFaTkxWlFDX2VCanVpemVoMmZYUml5d0czMWROTEd4N0l0QkVJaVEwLVQtemRWM2hBR0s3OWZaWE9CZndlSV9sa2FrQ1QtNnAyOGM2M0hSUF96cW1vYW02eA?oc=5",
+     "title": "Última pesquisa Datafolha para presidente no segundo turno testa se Lula vira sobre Flávio Bolsonaro após debate da Globo"
+    }
+   ],
+   "ids": [
+    "3c294988e521"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Última pesquisa Datafolha para presidente no segundo turno testa se Lula vira sobre Flávio Bolsonaro após debate da Globo",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "6c341c9e6131",
    "title": "Chiriseri: France’s Fiscal Picture Concern Bond Markets",
    "link": "https://www.bloomberg.com/news/videos/2026-10-21/chiriseri-france-s-fiscal-picture-concern-bond-markets-video",
@@ -15524,15 +15577,15 @@
   },
   {
    "id": "bad16aff96dc",
-   "title": "France’s borrowing costs poised to hit 5% for first time since 2002",
+   "title": "France’s borrowing costs hit 5% for first time since 2002",
    "link": "https://www.ft.com/content/76f076e4-9db2-4971-8ac9-73d9f39e4876?syn-25a6b1a6=1",
-   "published": "2026-10-21T08:17:23+00:00",
+   "published": "2026-10-21T09:07:37+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Financial Times",
      "link": "https://www.ft.com/content/76f076e4-9db2-4971-8ac9-73d9f39e4876?syn-25a6b1a6=1",
-     "title": "France’s borrowing costs poised to hit 5% for first time since 2002"
+     "title": "France’s borrowing costs hit 5% for first time since 2002"
     }
    ],
    "ids": [
@@ -15540,7 +15593,7 @@
    ],
    "snippet": "Concerns over public finances and political stability have helped push up 10-year bond yields from 3.2% in late February",
    "prescore": 3.6,
-   "headline": "France’s borrowing costs poised to hit 5% for first time since 2002",
+   "headline": "France’s borrowing costs hit 5% for first time since 2002",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -15574,6 +15627,39 @@
    "snippet": "",
    "prescore": 3.6,
    "headline": "EXCLUSIVE: Samsung, SK Hynix upgrading China plants to make more advanced chips, people say",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a6250d80be5a",
+   "title": "In China, ECB makes case for euro liquidity lines",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNN3NOb19uSnBzc0sxX3ZDZjdhVDNlNTVHR0tYZnFCT1NPc0wwSE9oSkp0SjA2WXJzMmJnNnY5NEVKN3ZBdlE3aTJBNmRpaC10YmFjekVvWS1fQW83RWE3NDBRVDRXdmVVS2NFRFBWelRZQ3lIakk5RUhSdExqM0F4NktQOHdkVkFnQ2pGaDhIaFNsTmpRWnhYSWVR?oc=5",
+   "published": "2026-10-21T04:17:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNN3NOb19uSnBzc0sxX3ZDZjdhVDNlNTVHR0tYZnFCT1NPc0wwSE9oSkp0SjA2WXJzMmJnNnY5NEVKN3ZBdlE3aTJBNmRpaC10YmFjekVvWS1fQW83RWE3NDBRVDRXdmVVS2NFRFBWelRZQ3lIakk5RUhSdExqM0F4NktQOHdkVkFnQ2pGaDhIaFNsTmpRWnhYSWVR?oc=5",
+     "title": "In China, ECB makes case for euro liquidity lines"
+    }
+   ],
+   "ids": [
+    "a6250d80be5a"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "In China, ECB makes case for euro liquidity lines",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -15662,6 +15748,39 @@
    "ai": false
   },
   {
+   "id": "8cc10188a0da",
+   "title": "Merz Says EU Aims to Avoid China Trade War as It Defends Itself",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/merz-says-protectionism-is-throwing-a-wrench-at-global-trade",
+   "published": "2026-10-21T08:33:46+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-10-21/merz-says-protectionism-is-throwing-a-wrench-at-global-trade",
+     "title": "Merz Says EU Aims to Avoid China Trade War as It Defends Itself"
+    }
+   ],
+   "ids": [
+    "8cc10188a0da"
+   ],
+   "snippet": "German Chancellor Friedrich Merz said the European Union would seek to avoid a trade conflict with China even as it protects itself from a new dimension of overcapacity and an undervalued currency.",
+   "prescore": 3.4,
+   "headline": "Merz Says EU Aims to Avoid China Trade War as It Defends Itself",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "German Chancellor Friedrich Merz said the European Union would seek to avoid a trade conflict with China even as it protects itself from a new dimension of overcapacity and an undervalued currency.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "cdc7204a9532",
    "title": "iFood compra Caju e pode mudar regras do vale-refeição no Brasil",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeFRfWWpHZTg0QjVxS2FYLURxWGpZU3VWSWl4WllON1dKckR2dGpkQXF3QUpZU2U5VzdvbFMzZUFHTWtmNUoyNHVZTjEzM2xGVVR3ZmlVZDNKaHVmU0JnaHFEaDJ4Q0pSVm5PXzRZZlpvbVhWNGZ4MHI1NDFHTEtiX285WVZGVGZ4UlZjS0kwbmExdkctNThjMVJCSzZNY1BBdlNMUW9vdzNiYVU?oc=5",
@@ -15680,6 +15799,39 @@
    "snippet": "",
    "prescore": 3.4,
    "headline": "iFood compra Caju e pode mudar regras do vale-refeição no Brasil",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "fdf7173d68d9",
+   "title": "BTG INF LONG (PACB11)",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GaUFRZUhwcTFJRXV2WHhTRzVaYThma3FFTEpsWl9nSzBmXy0wOTUzWVA3eXFDWWYtZmtWYVZHRmhvWlRqb08xbWdpTndlVi1zenlZSjc4aUc?oc=5",
+   "published": "2026-10-20T16:34:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "trademap.com.br",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GaUFRZUhwcTFJRXV2WHhTRzVaYThma3FFTEpsWl9nSzBmXy0wOTUzWVA3eXFDWWYtZmtWYVZHRmhvWlRqb08xbWdpTndlVi1zenlZSjc4aUc?oc=5",
+     "title": "BTG INF LONG (PACB11)"
+    }
+   ],
+   "ids": [
+    "fdf7173d68d9"
+   ],
+   "snippet": "",
+   "prescore": 3.4,
+   "headline": "BTG INF LONG (PACB11)",
    "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -15950,6 +16102,39 @@
    "snippet": "",
    "prescore": 3.2,
    "headline": "China suspende importação de carne de aves de Santa Catarina após Doença de Newcastle",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c59926c2ea76",
+   "title": "French 10-year bond yield hits 5% for first time since 2002 amid unrest",
+   "link": "https://www.cnbc.com/2026/10/21/france-protests-bonds-debt.html",
+   "published": "2026-10-21T09:20:37+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/10/21/france-protests-bonds-debt.html",
+     "title": "French 10-year bond yield hits 5% for first time since 2002 amid unrest"
+    }
+   ],
+   "ids": [
+    "c59926c2ea76"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "French 10-year bond yield hits 5% for first time since 2002 amid unrest",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -16767,204 +16952,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "b5891134a0f0",
-   "title": "Janones sai do hospital, compara Lula a Messi e diz que petista não precisa usar redes sociais",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/janones-sai-do-hospital-compara-lula-a-messi-e-diz-que-petista-nao-precisa-usar-redes-sociais.shtml",
-   "published": "2026-10-20T17:25:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/janones-sai-do-hospital-compara-lula-a-messi-e-diz-que-petista-nao-precisa-usar-redes-sociais.shtml",
-     "title": "Janones sai do hospital, compara Lula a Messi e diz que petista não precisa usar redes sociais"
-    }
-   ],
-   "ids": [
-    "b5891134a0f0"
-   ],
-   "snippet": "O deputado André Janones (Rede-MG) afirmou que não tem nada a ensinar ao presidente Lula ( PT ) sobre comunicação e que o petista não precisa aprender a usar as redes sociais. Leia mais (10/20/2026 - 14h25)",
-   "prescore": 3.0,
-   "headline": "Janones sai do hospital, compara Lula a Messi e diz que petista não precisa usar redes sociais",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O deputado André Janones (Rede-MG) afirmou que não tem nada a ensinar ao presidente Lula ( PT ) sobre comunicação e que o petista não precisa aprender a usar as redes sociais. Leia mais (10/20/2026 - 14h25)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "cabaac6786a1",
-   "title": "Deputada do PL cobra registros de acesso de empresário ligado a Lulinha ao Planalto e órgãos federais",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/deputada-do-pl-cobra-registros-de-acesso-de-empresario-ligado-a-lulinha-ao-planalto-e-orgaos-federais.shtml",
-   "published": "2026-10-20T17:15:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/deputada-do-pl-cobra-registros-de-acesso-de-empresario-ligado-a-lulinha-ao-planalto-e-orgaos-federais.shtml",
-     "title": "Deputada do PL cobra registros de acesso de empresário ligado a Lulinha ao Planalto e órgãos federais"
-    }
-   ],
-   "ids": [
-    "cabaac6786a1"
-   ],
-   "snippet": "A deputada federal Júlia Zanatta (PL-SC) apresentou três requerimentos ao governo em que cobra informações sobre o acesso do empresário da Mota-Engil, ligado ao filho do presidente Lula , o Lulinha , ao Palácio do Planalto e outros órgãos públicos. Leia mais (10/20/2026 - 14h15)",
-   "prescore": 3.0,
-   "headline": "Deputada do PL cobra registros de acesso de empresário ligado a Lulinha ao Planalto e órgãos federais",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A deputada federal Júlia Zanatta (PL-SC) apresentou três requerimentos ao governo em que cobra informações sobre o acesso do empresário da Mota-Engil, ligado ao filho do presidente Lula , o Lulinha , ao Palácio do Planalto e outros órgãos públicos. Leia mais (10/20/2026 - 14h15)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a29bfa920112",
-   "title": "Tudo o que você precisa saber sobre o fim da escala 6x1",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/tudo-o-que-voce-precisa-saber-sobre-o-fim-da-escala-6x1.shtml",
-   "published": "2026-10-20T17:05:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/tudo-o-que-voce-precisa-saber-sobre-o-fim-da-escala-6x1.shtml",
-     "title": "Tudo o que você precisa saber sobre o fim da escala 6x1"
-    }
-   ],
-   "ids": [
-    "a29bfa920112"
-   ],
-   "snippet": "O fim da escala 6x1 -na qual se trabalham seis dias por semana com um dia de folga- promulgado pelo Congresso Nacional na sexta-feira (16) começará a valer em dezembro. O texto estabalece a adoção da escala 5x2, com dois dias de descanso remunerado por semana, redução da carga horára de 44 horas semanais para 42 horas e, depois, para 40 horas, sem redução de salário. Leia mais (10/20/2026 - 14h05)",
-   "prescore": 3.0,
-   "headline": "Tudo o que você precisa saber sobre o fim da escala 6x1",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O fim da escala 6x1 -na qual se trabalham seis dias por semana com um dia de folga- promulgado pelo Congresso Nacional na sexta-feira (16) começará a valer em dezembro. O texto estabalece a adoção da escala 5x2, com dois dias de descanso remunerado por semana, redução da carga horára de 44 horas semanais para 42 horas e, depois, para 40 horas, sem redução de salário. Leia mais (10/20/2026 - 14h05)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0fb10c67bb84",
-   "title": "Randolfe denuncia Flávio Bolsonaro no Conselho de Ética do Senado por pedido de R$ 134 milhões a Vorcaro",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/randolfe-denuncia-flavio-bolsonaro-no-conselho-de-etica-do-senado-por-pedido-de-r-134-milhoes-a-vorcaro.shtml",
-   "published": "2026-10-20T16:10:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/randolfe-denuncia-flavio-bolsonaro-no-conselho-de-etica-do-senado-por-pedido-de-r-134-milhoes-a-vorcaro.shtml",
-     "title": "Randolfe denuncia Flávio Bolsonaro no Conselho de Ética do Senado por pedido de R$ 134 milhões a Vorcaro"
-    }
-   ],
-   "ids": [
-    "0fb10c67bb84"
-   ],
-   "snippet": "O líder do governo no Congresso Nacional , Randolfe Rodrigues (PT-AP), vai protocolar uma denúncia no Conselho de Ética contra o senador e candidato à Presidência Flávio Bolsonaro ( PL ). Leia mais (10/20/2026 - 13h10)",
-   "prescore": 3.0,
-   "headline": "Randolfe denuncia Flávio Bolsonaro no Conselho de Ética do Senado por pedido de R$ 134 milhões a Vorcaro",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O líder do governo no Congresso Nacional , Randolfe Rodrigues (PT-AP), vai protocolar uma denúncia no Conselho de Ética contra o senador e candidato à Presidência Flávio Bolsonaro ( PL ). Leia mais (10/20/2026 - 13h10)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ddf686d352d8",
-   "title": "A tese da Brookfield: ainda tem muito telhado para a GD solar",
-   "link": "https://braziljournal.com/a-tese-da-brookfield-ainda-tem-muito-telhado-para-a-gd-solar",
-   "published": "2026-10-20T16:03:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brazil Journal",
-     "link": "https://braziljournal.com/a-tese-da-brookfield-ainda-tem-muito-telhado-para-a-gd-solar",
-     "title": "A tese da Brookfield: ainda tem muito telhado para a GD solar"
-    }
-   ],
-   "ids": [
-    "ddf686d352d8"
-   ],
-   "snippet": "O negócio de instalação de painéis solares em telhados cresceu nos últimos anos num ritmo que surpreendeu técnicos do setor elétrico e reguladores – e está longe de se esgotar. Até porque o principal impulso para esses sistemas – conhecidos como geração distribuída de energia, ou “GD” – é o preço da conta de luz, que não vai parar de subir.",
-   "prescore": 3.0,
-   "headline": "A tese da Brookfield: ainda tem muito telhado para a GD solar",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O negócio de instalação de painéis solares em telhados cresceu nos últimos anos num ritmo que surpreendeu técnicos do setor elétrico e reguladores – e está longe de se esgotar. Até porque o principal impulso para esses sistemas – conhecidos como geração distribuída de energia, ou “GD” – é o preço da conta de luz, que não vai parar de subir.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "9f598e78c5da",
-   "title": "Lula formaliza ao TSE abertura de sigilo caso Flávio Bolsonaro entregue seus dados",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/10/lula-formaliza-ao-tse-abertura-de-sigilo-caso-flavio-bolsonaro-entregue-seus-dados.shtml",
-   "published": "2026-10-20T16:02:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/10/lula-formaliza-ao-tse-abertura-de-sigilo-caso-flavio-bolsonaro-entregue-seus-dados.shtml",
-     "title": "Lula formaliza ao TSE abertura de sigilo caso Flávio Bolsonaro entregue seus dados"
-    }
-   ],
-   "ids": [
-    "9f598e78c5da"
-   ],
-   "snippet": "O presidente e candidato a reeleição Luiz Inácio Lula da Silva ( PT ) formalizou nesta terça-feira (20) a proposta de abrir os sigilos bancário, fiscal e telefônico caso o adversário no segundo turno, o senador Flávio Bolsonaro ( PL -RJ), faça o mesmo. Documento entregue ao TSE (Tribunal Superior Eleitoral) oficializou o desafio. Leia mais (10/20/2026 - 13h02)",
-   "prescore": 3.0,
-   "headline": "Lula formaliza ao TSE abertura de sigilo caso Flávio Bolsonaro entregue seus dados",
-   "category": "macro",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O presidente e candidato a reeleição Luiz Inácio Lula da Silva ( PT ) formalizou nesta terça-feira (20) a proposta de abrir os sigilos bancário, fiscal e telefônico caso o adversário no segundo turno, o senador Flávio Bolsonaro ( PL -RJ), faça o mesmo. Documento entregue ao TSE (Tribunal Superior Eleitoral) oficializou o desafio. Leia mais (10/20/2026 - 13h02)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -16979,7 +16966,7 @@
    "id": "pipeline",
    "name": "Pipeline (Valor)",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
@@ -17154,7 +17141,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 37,
+   "count": 38,
    "error": null
   },
   {
@@ -17446,6 +17433,6 @@
   "unique_all": 879,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 2.8
+  "seconds": 4.2
  }
 }
