@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T08:25:07.676936-03:00",
+ "generated_at": "2026-10-21T08:27:03.907437-03:00",
  "date": "2026-10-21",
  "window": {
   "start": "2026-10-20T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-21T08:24:39.397812-03:00",
-  "analyzed": 294
+  "analyzed": 293
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -110,14 +110,14 @@
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.0272,
-   "change_pct": -0.1945638066693789,
+   "price": 5.0146,
+   "change_pct": -0.4447126959190584,
    "spark": [
     5.0395002365112305,
     5.09660005569458,
     5.0630998611450195,
     5.0370001792907715,
-    5.027200222015381
+    5.014599800109863
    ]
   },
   {
@@ -193,27 +193,27 @@
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4146.5,
-   "change_pct": 0.0941414148557751,
+   "price": 4147.5,
+   "change_pct": 0.11828084363061375,
    "spark": [
     4181.10009765625,
     4160.10009765625,
     4142.60009765625,
-    4146.5
+    4147.5
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 83398.81,
-   "change_pct": 0.5519706779517852,
+   "price": 83414.99,
+   "change_pct": 0.5714785208762896,
    "spark": [
     81382.1484375,
     82017.6015625,
     81853.5390625,
     82941.0,
-    83398.8125
+    83414.9921875
    ]
   }
  ],
@@ -786,6 +786,55 @@
    },
    "ai": true,
    "dup_of": "ae8c26a586be"
+  },
+  {
+   "id": "14f3f69adf18",
+   "title": "CNP Assurances announces proposed acquisition in Brazil and Mexico",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWGZkX0ZaTmtNRkJQTkFpR2pkbEZIaHZlU3pudVF2d3pKalItdG12Q1M2YTJiSEZuSjc4Zl90dU1yQmtzZlFQYXlQd3A5S0ZuOGZ4dWRHV3R5aXNELW5XcC02MzBORjI0WHFKVGpCZDNtZTE1cFc1b0xmb29FSDBwbXBqcnA0WjFHVUpUV2JqcWtndnBhSktDMG5XTXRzTzA0Wmp4SkpLSQ?oc=5",
+   "published": "2026-10-20T17:01:26+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "La Poste Groupe",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWGZkX0ZaTmtNRkJQTkFpR2pkbEZIaHZlU3pudVF2d3pKalItdG12Q1M2YTJiSEZuSjc4Zl90dU1yQmtzZlFQYXlQd3A5S0ZuOGZ4dWRHV3R5aXNELW5XcC02MzBORjI0WHFKVGpCZDNtZTE1cFc1b0xmb29FSDBwbXBqcnA0WjFHVUpUV2JqcWtndnBhSktDMG5XTXRzTzA0Wmp4SkpLSQ?oc=5",
+     "title": "CNP Assurances announces proposed acquisition in Brazil and Mexico"
+    }
+   ],
+   "ids": [
+    "14f3f69adf18"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "CNP Assurances anuncia proposta de aquisição no Brasil e no México",
+   "category": "mna",
+   "importance": 8,
+   "importance_reason": "Comunicado da própria compradora sobre o deal de seguros.",
+   "summary": "A CNP Assurances, do grupo La Poste, anunciou uma proposta de aquisição no Brasil e no México. O trecho não traz valor; outras fontes citam US$ 4 bi para as operações da Prudential.",
+   "involves": "CNP Assurances, La Poste Groupe, Brasil, México",
+   "interpretation": "Confirmação corporativa do deal; detalhes não estão no trecho.",
+   "impact": "Ver nota principal sobre a compra das operações da Prudential.",
+   "sentiment": "positivo",
+   "entities": [
+    "CNP Assurances",
+    "La Poste",
+    "Brasil",
+    "México"
+   ],
+   "tags": [
+    "seguros",
+    "aquisição"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "CNP Assurances",
+    "target": "Operações no Brasil e no México (Prudential, segundo outros veículos)",
+    "value": "não divulgado neste material (outros veículos citam US$ 4 bilhões)",
+    "stage": "Anunciado",
+    "sector": "Seguros",
+    "advisors": "não divulgado"
+   },
+   "ai": true
   },
   {
    "id": "06ebfc662a5e",
@@ -1452,26 +1501,26 @@
    "ai": true
   },
   {
-   "id": "c49b43e1da54",
-   "title": "CSN diz que venda de cimenteira está em fase final e nega possível IPO",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSklTazlLRUNtN3F1RmdoUWk1N255akFZNG5kLUZGU0FCTTJWZ0RqLWNqSjlHUGNURE41YUxXV01HTkxyNXViU3NMWUx1bHA2ZWpybzFETEdUVFIxS2RsbERkLVlLeU1wdE44dV9aOXNMOFJabkVmVnFSanlnemRIaTN0dVJwaTh1VGo1dVVncVE4RGw0UWR3SlEzMl9oOVVKWGZ0enJvdkNBWmFuMks2V3FEMjhiQy1lclNzUFhIUHpOMnhJTU9HNg?oc=5",
+   "id": "41a8ecb24068",
+   "title": "CSN nega IPO da CSN Cimentos e diz que venda está em fase final de negociação",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUmptYTVIMnFWMlE5Rl8yTVFjY0VoYzhSRTU3SzRTZFo5RThxTTVobmxvSUFxdFVLVnhjTEhPZDJRLVo5RnJJaHBVWW9WUlZsTTFVeTJGU0VIeDJYV2t3bE1Yb09oLVM3MkdoQ0ZEb0l3ZEtBd3RpYWlFZElYWnVvU3Z6TE41c3g3Q1hBeEx5VVpCQUVSd3h0MzhNbUswdlhjNERpVEJYU25qMTh5MVdrd2JuUzhvZUdCREV4cUdMU252cndD0gHEAUFVX3lxTE9Sam1hNUgycVYyUTlGXzJNUWNjRWhjOFJFNTdLNFNkWjlFOHFNNWhubG9JQXF0VUtWeGNMSE9kMlEtWjlGcklocFVZb1ZSVmxNMVV5MkZTRUh4MlhXa3dsTVhvT2gtUzcyR2hDRkRvSXdkS0F3dGlhaUVkSVhadW9TdnpMTjVzeDdDWEF4THlVWkJBRVJ3eHQzOE1tSzB2WGM0RGlUQlhTbmoxOHkxV2t3Ym5TOG9lR0JERXhxR0xTbnZyd0M?oc=5",
    "published": "2026-10-20T15:30:12+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "CNN Brasil",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSklTazlLRUNtN3F1RmdoUWk1N255akFZNG5kLUZGU0FCTTJWZ0RqLWNqSjlHUGNURE41YUxXV01HTkxyNXViU3NMWUx1bHA2ZWpybzFETEdUVFIxS2RsbERkLVlLeU1wdE44dV9aOXNMOFJabkVmVnFSanlnemRIaTN0dVJwaTh1VGo1dVVncVE4RGw0UWR3SlEzMl9oOVVKWGZ0enJvdkNBWmFuMks2V3FEMjhiQy1lclNzUFhIUHpOMnhJTU9HNg?oc=5",
-     "title": "CSN diz que venda de cimenteira está em fase final e nega possível IPO"
-    },
-    {
      "source": "Investidor10",
      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUmptYTVIMnFWMlE5Rl8yTVFjY0VoYzhSRTU3SzRTZFo5RThxTTVobmxvSUFxdFVLVnhjTEhPZDJRLVo5RnJJaHBVWW9WUlZsTTFVeTJGU0VIeDJYV2t3bE1Yb09oLVM3MkdoQ0ZEb0l3ZEtBd3RpYWlFZElYWnVvU3Z6TE41c3g3Q1hBeEx5VVpCQUVSd3h0MzhNbUswdlhjNERpVEJYU25qMTh5MVdrd2JuUzhvZUdCREV4cUdMU252cndD0gHEAUFVX3lxTE9Sam1hNUgycVYyUTlGXzJNUWNjRWhjOFJFNTdLNFNkWjlFOHFNNWhubG9JQXF0VUtWeGNMSE9kMlEtWjlGcklocFVZb1ZSVmxNMVV5MkZTRUh4MlhXa3dsTVhvT2gtUzcyR2hDRkRvSXdkS0F3dGlhaUVkSVhadW9TdnpMTjVzeDdDWEF4THlVWkJBRVJ3eHQzOE1tSzB2WGM0RGlUQlhTbmoxOHkxV2t3Ym5TOG9lR0JERXhxR0xTbnZyd0M?oc=5",
      "title": "CSN nega IPO da CSN Cimentos e diz que venda está em fase final de negociação"
+    },
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSklTazlLRUNtN3F1RmdoUWk1N255akFZNG5kLUZGU0FCTTJWZ0RqLWNqSjlHUGNURE41YUxXV01HTkxyNXViU3NMWUx1bHA2ZWpybzFETEdUVFIxS2RsbERkLVlLeU1wdE44dV9aOXNMOFJabkVmVnFSanlnemRIaTN0dVJwaTh1VGo1dVVncVE4RGw0UWR3SlEzMl9oOVVKWGZ0enJvdkNBWmFuMks2V3FEMjhiQy1lclNzUFhIUHpOMnhJTU9HNg?oc=5",
+     "title": "CSN diz que venda de cimenteira está em fase final e nega possível IPO"
     }
    ],
    "ids": [
-    "c49b43e1da54",
-    "41a8ecb24068"
+    "41a8ecb24068",
+    "c49b43e1da54"
    ],
    "snippet": "",
    "prescore": 6.9,
@@ -6902,45 +6951,6 @@
    "ai": true
   },
   {
-   "id": "20a7e1ebafcc",
-   "title": "EXCLUSIVE: Trump's approval falls to record low of 31% as midterms near, Reuters/Ipsos poll finds",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOT2FjX0hUODU4WlBWVWtBbDJwVTBPdHVBTFpGTEpTcDhUYjQyaEZ2aE1RQkE1YjZlREp5ZkRFMXU2czFFVFFaQWQ2NmlJNzJVNGtQM0R0YW5fWDZ1Xzh3b0FBWHBfWVA5UFkwRUFic0FMQWJRTnRmY2xuU3N2dXZFai1ydGtVTC13QjdVM2txNTIyN1UzaGhPMFA4OG80dl8xbHFsUE90bmViTkdtSVNtRFhWakZkWWtH?oc=5",
-   "published": "2026-10-20T22:25:38+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOT2FjX0hUODU4WlBWVWtBbDJwVTBPdHVBTFpGTEpTcDhUYjQyaEZ2aE1RQkE1YjZlREp5ZkRFMXU2czFFVFFaQWQ2NmlJNzJVNGtQM0R0YW5fWDZ1Xzh3b0FBWHBfWVA5UFkwRUFic0FMQWJRTnRmY2xuU3N2dXZFai1ydGtVTC13QjdVM2txNTIyN1UzaGhPMFA4OG80dl8xbHFsUE90bmViTkdtSVNtRFhWakZkWWtH?oc=5",
-     "title": "EXCLUSIVE: Trump's approval falls to record low of 31% as midterms near, Reuters/Ipsos poll finds"
-    }
-   ],
-   "ids": [
-    "20a7e1ebafcc"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Aprovação de Trump cai a mínima de 31%, mostra Reuters/Ipsos, perto das eleições legislativas",
-   "category": "internacional",
-   "importance": 5,
-   "importance_reason": "Afeta cenário das midterms e política comercial.",
-   "summary": "A aprovação de Trump caiu a 31%, mínima de seu mandato, segundo Reuters/Ipsos, às vésperas das eleições legislativas.",
-   "involves": "Trump, Reuters/Ipsos",
-   "interpretation": "Risco de derrota republicana.",
-   "impact": "Pode alterar política tarifária.",
-   "sentiment": "negativo",
-   "entities": [
-    "Donald Trump",
-    "Reuters/Ipsos"
-   ],
-   "tags": [
-    "Trump",
-    "midterms"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "6c3ee7eee55f",
    "title": "Order to Slow Down Starlink for Ukraine Came From Musk",
    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZlNQd1hOM3M3d2lrdVJlWFc4WVJUWkJhMzNfTGhoQmFFenp0SWNlVVRtMTFkTlhtQTFwbUhsZ3ExdmxuVVdSaHlTTzR6QzFxTTZRdW1PeFd3VFo0WjRFaFdrOVR5ZDQ2TzZ2NzNRRTNLQU5xT2FLeURIMmhqX1FrdFh2VXNXcGRlZi1DZzhaX0dGb21CTTBz?oc=5",
@@ -7314,47 +7324,6 @@
     "sector": "Mineração",
     "advisors": "não divulgado"
    },
-   "ai": true
-  },
-  {
-   "id": "462c4a4c8a50",
-   "title": "Tempo real: Ibovespa monitora pesquisa Quaest",
-   "link": "https://www.moneytimes.com.br/tempo-real-21-10-26-apsa-lils/",
-   "published": "2026-10-21T09:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/tempo-real-21-10-26-apsa-lils/",
-     "title": "Tempo real: Ibovespa monitora pesquisa Quaest"
-    }
-   ],
-   "ids": [
-    "462c4a4c8a50"
-   ],
-   "snippet": "Resumo: O Ibovespa (IBOV) acompanha a divulgação da pesquisa Quaest de intenções de voto para o segundo turno presidencial. No exterior, os investidores monitoram dados de inflação ao consumidor, ao produtor e no varejo do Reino Unido, além de discurso do presidente do Banco da Inglaterra, Andrew Bailey. Destaques: Confira os principais temas do Ibovespa […]",
-   "prescore": 4.8,
-   "headline": "Ibovespa monitora pesquisa Quaest do segundo turno e dados de inflação do Reino Unido",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Cobertura de rotina de abertura de mercado.",
-   "summary": "O Ibovespa acompanha a pesquisa Quaest para o segundo turno presidencial. No exterior, o foco é inflação ao consumidor, ao produtor e no varejo do Reino Unido e discurso de Andrew Bailey, do BoE.",
-   "involves": "Ibovespa, Quaest, Banco da Inglaterra.",
-   "interpretation": "Pesquisas eleitorais são o principal gatilho local de curto prazo.",
-   "impact": "Resultado da pesquisa pode mexer em câmbio e juros futuros na abertura.",
-   "sentiment": "neutro",
-   "entities": [
-    "Ibovespa",
-    "Quaest",
-    "Andrew Bailey"
-   ],
-   "tags": [
-    "Ibovespa",
-    "eleição",
-    "agenda"
-   ],
-   "is_deal": false,
-   "deal": null,
    "ai": true
   },
   {
@@ -7928,6 +7897,46 @@
     "Meta",
     "moderação",
     "eleições"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "9f020cd04cbf",
+   "title": "For Lula, Brazil's sovereignty is at stake in final election",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEFJdEJUbHlqZy1SVVdHNWticWVRYVlPLXNpZ0FhR2JfTm9kNDFYRzRGa1czdmM2SU1uT1B3bEh6SVl2ai1rRmx2aGR6c2w5WmtFWVM2TTFoaGJxOEZtOG1xcG90THJzSWxSMlN1aUxvN1JXSk1KWEVyNjlNTldYcFcxOWZYeVpYRC1MNng1WVM2OW9yMjgyTA?oc=5",
+   "published": "2026-10-20T18:56:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "The Straits Times",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEFJdEJUbHlqZy1SVVdHNWticWVRYVlPLXNpZ0FhR2JfTm9kNDFYRzRGa1czdmM2SU1uT1B3bEh6SVl2ai1rRmx2aGR6c2w5WmtFWVM2TTFoaGJxOEZtOG1xcG90THJzSWxSMlN1aUxvN1JXSk1KWEVyNjlNTldYcFcxOWZYeVpYRC1MNng1WVM2OW9yMjgyTA?oc=5",
+     "title": "For Lula, Brazil's sovereignty is at stake in final election"
+    }
+   ],
+   "ids": [
+    "9f020cd04cbf"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Para Lula, soberania do Brasil está em jogo na eleição final",
+   "category": "politica",
+   "importance": 4,
+   "importance_reason": "Narrativa de campanha; pouco dado novo.",
+   "summary": "O Straits Times relata que Lula enquadra o segundo turno como disputa sobre a soberania do Brasil. Não há mais detalhes.",
+   "involves": "Lula, Brasil",
+   "interpretation": "Enquadramento reforça a polarização e o debate sobre a influência externa.",
+   "impact": "Sem efeito direto; reforça o risco político.",
+   "sentiment": "neutro",
+   "entities": [
+    "Lula",
+    "Brasil"
+   ],
+   "tags": [
+    "soberania",
+    "eleição",
+    "Lula"
    ],
    "is_deal": false,
    "deal": null,
@@ -9581,72 +9590,6 @@
    "ai": true
   },
   {
-   "id": "ce6f25ce596c",
-   "title": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkVtWXgtZVJhMzl6eV9QVTF4M3hjMGdzeWo5cGtUWE85SDJrcC1LTDVaQVNON3RZejRZclVjUF9WS1RxWERiTHcyZXNuUXZxcl9ETWEtS1o3amNOU3hjWFZRSV85eXlEaG9BODRONFZtS3BWdksyR21UOTVGcFJVeWQ2RWtkNVRDaXBkWVlwcjc5WU9EcnVJWnAxUC1kbHQ0NkhZUUwwaEhhMlN6YkxGVm03ekF2SUhRV25WT3pNWlo1dWw4TDFkbW13?oc=5",
-   "published": "2026-10-20T16:05:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkVtWXgtZVJhMzl6eV9QVTF4M3hjMGdzeWo5cGtUWE85SDJrcC1LTDVaQVNON3RZejRZclVjUF9WS1RxWERiTHcyZXNuUXZxcl9ETWEtS1o3amNOU3hjWFZRSV85eXlEaG9BODRONFZtS3BWdksyR21UOTVGcFJVeWQ2RWtkNVRDaXBkWVlwcjc5WU9EcnVJWnAxUC1kbHQ0NkhZUUwwaEhhMlN6YkxGVm03ekF2SUhRV25WT3pNWlo1dWw4TDFkbW13?oc=5",
-     "title": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial"
-    }
-   ],
-   "ids": [
-    "ce6f25ce596c"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "CSN (CSNA3): IPO da divisão de cimentos à vista? Possibilidade não está na mesa por ora, diz analista da Genial",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b92103e8121d",
-   "title": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVFk4cHJnNVhSLUJWcXVGYm1zcXd2a3NzZktMUmdwSDVqV29IX0RqbnZiaEhTM3ZiUTByeEpFaDZUcHBoVzZZQ1QwRm5EeE1xbzZmaTRheUNfR3MwNTZHN0JOcklMcXJnQncyNUF0aHNUNkJkVHpGckNfZ2pXbjV0dkVSazd3QXpPQ1QzX2pHc3pZU1IycGJTN0djY2JUc0d3cDN0eWdyYjl2V1lERnA2aUt1VEx3TEsxTjNhNzFLUmNSVEhmcUpTbkZOMk10azJn0gHfAUFVX3lxTE9TVktzNHhJZHpPaEVwcnNSRW16ajk0S1ZianlYTk55S2UxZlNjVHY1NzkxWGNBVVRMT2djbl9CajlYdm9QeFZkVGdRdVB2V1NRSExvZS1pbm9QVXBFeU5IaTY3ZXpfY2RpRjBzVzBlbjNrdHhUQmQ2Ykp2aVlzYWM1WndhNHlmZTg3TGJqT0xfVlByejluUWpzVVNrbzRCSVFyeEJxb29Xcjdnc2NLT29lM0xBaFJrd0xVVTNOTy1sd3ZabW1vVHRMRzU0akJ3NVdHTUhfcTVBRzZIdVFqTW8?oc=5",
-   "published": "2026-10-20T14:50:29+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVFk4cHJnNVhSLUJWcXVGYm1zcXd2a3NzZktMUmdwSDVqV29IX0RqbnZiaEhTM3ZiUTByeEpFaDZUcHBoVzZZQ1QwRm5EeE1xbzZmaTRheUNfR3MwNTZHN0JOcklMcXJnQncyNUF0aHNUNkJkVHpGckNfZ2pXbjV0dkVSazd3QXpPQ1QzX2pHc3pZU1IycGJTN0djY2JUc0d3cDN0eWdyYjl2V1lERnA2aUt1VEx3TEsxTjNhNzFLUmNSVEhmcUpTbkZOMk10azJn0gHfAUFVX3lxTE9TVktzNHhJZHpPaEVwcnNSRW16ajk0S1ZianlYTk55S2UxZlNjVHY1NzkxWGNBVVRMT2djbl9CajlYdm9QeFZkVGdRdVB2V1NRSExvZS1pbm9QVXBFeU5IaTY3ZXpfY2RpRjBzVzBlbjNrdHhUQmQ2Ykp2aVlzYWM1WndhNHlmZTg3TGJqT0xfVlByejluUWpzVVNrbzRCSVFyeEJxb29Xcjdnc2NLT29lM0xBaFJrd0xVVTNOTy1sd3ZabW1vVHRMRzU0akJ3NVdHTUhfcTVBRzZIdVFqTW8?oc=5",
-     "title": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA"
-    }
-   ],
-   "ids": [
-    "b92103e8121d"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Estresse no crédito e IPO frustrante ampliam desconforto do mercado com IA",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "4847d0bcad4d",
    "title": "Participação de Eric Schmidt na Anthropic pode valer US$ 20 bilhões em um IPO",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdVQ5X2tqTUZBalhqa2djSmFYWnlzX2I1QTJNemFBdE9DdTVrUUc5UHJMNGdIUFlOcVFTLXpUa2M1Yk1TMDVQRVlZUlZWVk9MQ1BScDl2OHhnNDZDclBRekhacUgtR3BuNDhtZmlTY0pRY2tUZC0yRlVFMWtlWG4zMkNqVVY4VGVZVHFkY2puTGx2c1FiRG92Ukt5X1dGMlJXMTczZjYweVY1ZGhVU080ZWMySWc?oc=5",
@@ -9908,6 +9851,39 @@
     "advisors": "não divulgado"
    },
    "ai": true
+  },
+  {
+   "id": "85c4377a974e",
+   "title": "Fed to skip October but raise rates again in December, nearly all economists say",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZUFYOUZFZXZ4UWJSN1J6RkRxM1lkdGJsUFZRZ2puQkFnRk9rczVQZF9iUS12amVsUl9ESnA4MmNlUmFuVnBVY3BoeVZoVWx1dmwtSWdCa2tGUUlXeXdWR0o0U2o5NHdUend5d2o3c1NoUlZTQUNyWFFEalBHY25QMVptcnFoRnZiSk1JVDFyb1VFYkg0NGRJaXhWemlUY3gxX3YxeVh0YkNMSHNQU21pWkc0OVQ?oc=5",
+   "published": "2026-10-20T13:27:27+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZUFYOUZFZXZ4UWJSN1J6RkRxM1lkdGJsUFZRZ2puQkFnRk9rczVQZF9iUS12amVsUl9ESnA4MmNlUmFuVnBVY3BoeVZoVWx1dmwtSWdCa2tGUUlXeXdWR0o0U2o5NHdUend5d2o3c1NoUlZTQUNyWFFEalBHY25QMVptcnFoRnZiSk1JVDFyb1VFYkg0NGRJaXhWemlUY3gxX3YxeVh0YkNMSHNQU21pWkc0OVQ?oc=5",
+     "title": "Fed to skip October but raise rates again in December, nearly all economists say"
+    }
+   ],
+   "ids": [
+    "85c4377a974e"
+   ],
+   "snippet": "",
+   "prescore": 4.6,
+   "headline": "Fed to skip October but raise rates again in December, nearly all economists say",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "1511fcde5ebd",
@@ -11215,46 +11191,6 @@
    "ai": true
   },
   {
-   "id": "7fdc39906c73",
-   "title": "AstraZeneca Partners With Oracle to Refine Clinical Research With AI",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVJpY0VOc2tLVk9kZTE4bEZHaWJBbEFmaUFqbTBPcHhBODc3SUdwdnJBU2NuanRVVmk0NDNlZElOZWlTM1ZIOUpoekE2aVlvUmlra1N3dndiZWVTZVFGUXI2QXhnWWF4eHg2RFhlOC1hWDF4dzc5a2dIcDhvQWVGZkRSYU9nNlpkNVlRS0RYNUpDQ19lUnl4X1dYaGFGRWpoTXpFbkVHb3h0QUFzYXZF?oc=5",
-   "published": "2026-10-21T10:42:37+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVJpY0VOc2tLVk9kZTE4bEZHaWJBbEFmaUFqbTBPcHhBODc3SUdwdnJBU2NuanRVVmk0NDNlZElOZWlTM1ZIOUpoekE2aVlvUmlra1N3dndiZWVTZVFGUXI2QXhnWWF4eHg2RFhlOC1hWDF4dzc5a2dIcDhvQWVGZkRSYU9nNlpkNVlRS0RYNUpDQ19lUnl4X1dYaGFGRWpoTXpFbkVHb3h0QUFzYXZF?oc=5",
-     "title": "AstraZeneca Partners With Oracle to Refine Clinical Research With AI"
-    }
-   ],
-   "ids": [
-    "7fdc39906c73"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "AstraZeneca faz parceria com Oracle para usar IA em pesquisa clínica",
-   "category": "tech",
-   "importance": 3,
-   "importance_reason": "Parceria corporativa de IA sem valor divulgado e distante do foco do leitor.",
-   "summary": "AstraZeneca e Oracle firmaram parceria para refinar pesquisa clínica com IA. Termos financeiros não foram divulgados.",
-   "involves": "AstraZeneca, Oracle",
-   "interpretation": "Mostra a adoção de IA em farmacêuticas; não é transação de M&A.",
-   "impact": "Efeito limitado; positivo para a narrativa de nuvem e IA da Oracle.",
-   "sentiment": "positivo",
-   "entities": [
-    "AstraZeneca",
-    "Oracle"
-   ],
-   "tags": [
-    "IA",
-    "farmacêutica",
-    "parceria"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "42aeefa55392",
    "title": "The far-right contender refusing to bow to Israel’s Netanyahu",
    "link": "https://www.ft.com/content/21160606-97fe-4db7-b374-647a728ff361?syn-25a6b1a6=1",
@@ -12048,45 +11984,6 @@
    "ai": true
   },
   {
-   "id": "863a38f2167a",
-   "title": "CNP Assurances acerta compra dos negócios da Prudential no Brasil e no México por US$ 4 bilhões",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbzRFbVM3SmNtUnNuYU1PVUdWLUFOS2FfODBUc0U5cHNPR0EzNVNib2FjR1dMTHdqU3J6M3JDVlE0WV9ONG1KY3lQeFE4OHJWSGZ3bnN1Ny1KUHRBeHdIMjExY05HdzNucjU0WVBacXpGMHdoRFpzRmU0SVdvZlVMVG9sRHJ4RFRzVFA0T0FvcTk4RG9OMXU3SkZfREVoM2dBbjk2VGhKTWhyUlRDVndIRUZURFJzTnh0elVXanpyaVE3b09GRTNodWxn?oc=5",
-   "published": "2026-10-20T11:14:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Brasil 247",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbzRFbVM3SmNtUnNuYU1PVUdWLUFOS2FfODBUc0U5cHNPR0EzNVNib2FjR1dMTHdqU3J6M3JDVlE0WV9ONG1KY3lQeFE4OHJWSGZ3bnN1Ny1KUHRBeHdIMjExY05HdzNucjU0WVBacXpGMHdoRFpzRmU0SVdvZlVMVG9sRHJ4RFRzVFA0T0FvcTk4RG9OMXU3SkZfREVoM2dBbjk2VGhKTWhyUlRDVndIRUZURFJzTnh0elVXanpyaVE3b09GRTNodWxn?oc=5",
-     "title": "CNP Assurances acerta compra dos negócios da Prudential no Brasil e no México por US$ 4 bilhões"
-    },
-    {
-     "source": "Terra",
-     "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSGFTM3N6MlI2Q2VvUnRNX1dFcXR1Y3NWSFhicERNR3RjdUJXTzNYeE03QmhLd2NOeGhUd2tEd1NzQ0VxS2RwTERTT2kyblV1a3VRLTVRYU9TSE5MaFNUc3ZxZzZ5amVpRU0zR1lLd3N1cTFXWV9HM0ZQdVFkSWozWmMwVXcyQXRTTktHUC0zbkU2UExiR3dmVy1VX3UwQmJtUkRWSVAtQWZnbXF2ZUx6US03SHJ4NWxhZGp4UmF4U3cxV3NhZWlTOGJGWkt1eFh1REpDX2E1R2czSjZjc3lGM0gxVEcxM2xWSm1JaFhKcEg2U3dUcHVXZUFfdWw?oc=5",
-     "title": "Seguradora CNP Assurances fecha compra da Prudential no Brasil e México por US$ 4 bilhões"
-    }
-   ],
-   "ids": [
-    "863a38f2167a",
-    "41279ff3bf3a"
-   ],
-   "snippet": "",
-   "prescore": 3.9,
-   "headline": "CNP Assurances acerta compra dos negócios da Prudential no Brasil e no México por US$ 4 bilhões",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "fdf7173d68d9",
    "title": "BTG INF LONG (PACB11)",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GaUFRZUhwcTFJRXV2WHhTRzVaYThma3FFTEpsWl9nSzBmXy0wOTUzWVA3eXFDWWYtZmtWYVZHRmhvWlRqb08xbWdpTndlVi1zenlZSjc4aUc?oc=5",
@@ -12163,72 +12060,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "4fc8c3dc552f",
-   "title": "For Lula, Brazil's sovereignty is at stake in final election",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTmZVckRCbGx3bXpFb0N3WGQ3OC05LXd0Mmw1OUJ0WExWUlBXaG5nVUgySXdzOUNRekhjT3lxdTJFR0FMZ0YtRzVvYWtWTEpLUk9iUFhPekVVbU5nRmU3WHRhV2dRbHh0RmFpZmVLbEt5WHgyN1pkR0lMb0pZaGdOb3ZpLVBRY09uekJYRTZybzR3Tk52OVNSbElURXI?oc=5",
-   "published": "2026-10-21T04:52:37+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Awani International",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTmZVckRCbGx3bXpFb0N3WGQ3OC05LXd0Mmw1OUJ0WExWUlBXaG5nVUgySXdzOUNRekhjT3lxdTJFR0FMZ0YtRzVvYWtWTEpLUk9iUFhPekVVbU5nRmU3WHRhV2dRbHh0RmFpZmVLbEt5WHgyN1pkR0lMb0pZaGdOb3ZpLVBRY09uekJYRTZybzR3Tk52OVNSbElURXI?oc=5",
-     "title": "For Lula, Brazil's sovereignty is at stake in final election"
-    }
-   ],
-   "ids": [
-    "4fc8c3dc552f"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "For Lula, Brazil's sovereignty is at stake in final election",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "cc41a1693a23",
-   "title": "Com migração de fundos, Base DTVM pode bater R$ 10 bi no primeiro ano",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZkdFZzJBdEpoQ1ZRcDFDZG5KcGFZdzdKdHZSWm9mX3NncnFyM3g3RUFiY1gxQ1ZkdElCT09lMHdUVkFncmJwYTE5Wnp0X2lvaXVGdkUtam5tSHJPRjFaeGI4bHhBdnMxMmt6UTJkdlVwTVREUENoZE54RkxndUNQdEdhRkh4OUNXbFNqelhuUjVGanZucV9FcEtqOVNVUnFoTnRtZzVRbnlEbFNPb2tCcURsQmRDSzVnT3BYcGlSMNIBzgFBVV95cUxQSXd2Wi1KMTBYNHRvaW1laXdKSkwtTVI2SF94OEtEU1VKSFVWRXQ2bmlmN09sSjhSWGZTUEdKNHZVd0poQUF0dzZoUW9USERmZkNzQldkV3hnZGJOc0QwN1djYVJmbmlNYVBaeVVoNWU3ektnY0dTeVVkTHRJaXRGam5pUXZqYVJFdElPd05Bc01kRl9TbVd1dHc5UkVzQWxKY1ZBUmpMNlJrRXM1bElEXzBESmpMRjUxN1pjWTZvVF9MVjlfUjV1cTFzODN6QQ?oc=5",
-   "published": "2026-10-21T09:45:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Pipeline (Valor)",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZkdFZzJBdEpoQ1ZRcDFDZG5KcGFZdzdKdHZSWm9mX3NncnFyM3g3RUFiY1gxQ1ZkdElCT09lMHdUVkFncmJwYTE5Wnp0X2lvaXVGdkUtam5tSHJPRjFaeGI4bHhBdnMxMmt6UTJkdlVwTVREUENoZE54RkxndUNQdEdhRkh4OUNXbFNqelhuUjVGanZucV9FcEtqOVNVUnFoTnRtZzVRbnlEbFNPb2tCcURsQmRDSzVnT3BYcGlSMNIBzgFBVV95cUxQSXd2Wi1KMTBYNHRvaW1laXdKSkwtTVI2SF94OEtEU1VKSFVWRXQ2bmlmN09sSjhSWGZTUEdKNHZVd0poQUF0dzZoUW9USERmZkNzQldkV3hnZGJOc0QwN1djYVJmbmlNYVBaeVVoNWU3ektnY0dTeVVkTHRJaXRGam5pUXZqYVJFdElPd05Bc01kRl9TbVd1dHc5UkVzQWxKY1ZBUmpMNlJrRXM1bElEXzBESmpMRjUxN1pjWTZvVF9MVjlfUjV1cTFzODN6QQ?oc=5",
-     "title": "Com migração de fundos, Base DTVM pode bater R$ 10 bi no primeiro ano"
-    }
-   ],
-   "ids": [
-    "cc41a1693a23"
-   ],
-   "snippet": "",
-   "prescore": 3.0,
-   "headline": "Com migração de fundos, Base DTVM pode bater R$ 10 bi no primeiro ano",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "ca6b0a02f290",
@@ -12579,7 +12410,7 @@
    "id": "f80835ac2c9b",
    "title": "Ghana president: anybody committed to fighting terrorism is welcome in West Africa",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbTBFQTBwLTVWbnhJRFZzbVFsX2hsaUZxYzBOZVJvZVpKOVAxTWZlNEFvM1JnM0NCRVY1Z3Iwenp1LXhqSnBlY0lKMmJ0UDRmQ3pldGdqUDFOMTFWd3dnekEtOGRsVUR5bVNsSndHb0RGWkpKNHN2YkVSeTFOSk1Ubm5wRUVRTUF0NWhjd0xWUlhRMHQ0QUo2anR1Z2IwOFJkUDR3a1Y4dTI3ZlpaOGdKSEthb1lwbDMxMDZxSERB?oc=5",
-   "published": "2026-10-21T10:19:09+00:00",
+   "published": "2026-10-21T10:27:38+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12613,39 +12444,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "cb223bbf43c0",
-   "title": "US envoy Witkoff arrives in St Petersburg for talks with Putin",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOblFpbFpHeVI2RDNmTm1ZbWtNenZRZTR5eW1jcVpQY1hxcHpqUXpxbGh3c2V2UnVVUHo2bVMzcmlJTmNkcXdieFBuMVlCWi1HNGMxcHlidkVGQS1BZVdQNmxQd1EzeEZMNTlackhVS1VCLTRuSG9rTWxGYkpRdzJaRm8wWmFjT0pYa3FlR3BQbUI1VDRQVjhncjJUZ2RaUQ?oc=5",
-   "published": "2026-10-21T06:11:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOblFpbFpHeVI2RDNmTm1ZbWtNenZRZTR5eW1jcVpQY1hxcHpqUXpxbGh3c2V2UnVVUHo2bVMzcmlJTmNkcXdieFBuMVlCWi1HNGMxcHlidkVGQS1BZVdQNmxQd1EzeEZMNTlackhVS1VCLTRuSG9rTWxGYkpRdzJaRm8wWmFjT0pYa3FlR3BQbUI1VDRQVjhncjJUZ2RaUQ?oc=5",
-     "title": "US envoy Witkoff arrives in St Petersburg for talks with Putin"
-    }
-   ],
-   "ids": [
-    "cb223bbf43c0"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "US envoy Witkoff arrives in St Petersburg for talks with Putin",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "1ef65dfa9f22",
@@ -12848,6 +12646,204 @@
    "prescore": 2.6,
    "headline": "Why Nvidia Needs CoreWeave",
    "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "676b156862e2",
+   "title": "The Pitching Castoff Who Led the Rays to the World Series",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aUDk4aUhwZnpTZTA0S2RjNVdDUGtCN1ExYkZNdUlQZzRtdzdiMlBBRGstM2RyNWV1QVlncXY4aDJxQkNhRzVXcnZtcExyM19FWGtkNHVCZWFKNzZPWl9NbzJvMFVjYXhLcnBkN3Y3YWZOU3RMUE4zVg?oc=5",
+   "published": "2026-10-20T16:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aUDk4aUhwZnpTZTA0S2RjNVdDUGtCN1ExYkZNdUlQZzRtdzdiMlBBRGstM2RyNWV1QVlncXY4aDJxQkNhRzVXcnZtcExyM19FWGtkNHVCZWFKNzZPWl9NbzJvMFVjYXhLcnBkN3Y3YWZOU3RMUE4zVg?oc=5",
+     "title": "The Pitching Castoff Who Led the Rays to the World Series"
+    }
+   ],
+   "ids": [
+    "676b156862e2"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "The Pitching Castoff Who Led the Rays to the World Series",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b492569436be",
+   "title": "Disney’s Former CEO Is Getting $100,000 a Month as Activist’s Nominee for Vail Board",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbXhfLVlWcm1QNW5YMVZKbndmdjFLTnFyZUlyX2hpejVRN0RiaENJeHVMamNfVlVxZ2M1Z09XR1l6Tk0xZllWR1hmT1FkUC0tejZLRENPVDdzYXFoZ3pjYm5TU193YnZ1cTEwU1pZNWNqZ2FNY09aNWJRbEUybVFWVTRnVS14V09ZcEZxX29yWFJsTjdrZVgtcFl6STRQd1RUZnhhNDZ3TmUxSERpQzJYRQ?oc=5",
+   "published": "2026-10-20T15:55:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbXhfLVlWcm1QNW5YMVZKbndmdjFLTnFyZUlyX2hpejVRN0RiaENJeHVMamNfVlVxZ2M1Z09XR1l6Tk0xZllWR1hmT1FkUC0tejZLRENPVDdzYXFoZ3pjYm5TU193YnZ1cTEwU1pZNWNqZ2FNY09aNWJRbEUybVFWVTRnVS14V09ZcEZxX29yWFJsTjdrZVgtcFl6STRQd1RUZnhhNDZ3TmUxSERpQzJYRQ?oc=5",
+     "title": "Disney’s Former CEO Is Getting $100,000 a Month as Activist’s Nominee for Vail Board"
+    }
+   ],
+   "ids": [
+    "b492569436be"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Disney’s Former CEO Is Getting $100,000 a Month as Activist’s Nominee for Vail Board",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "cf88eaf23edc",
+   "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQOXBuUld1bXhxNWlQNktuUmYxOWpVRFlnN0dialpvZlhYM1JLVzE1N0VBSUVNbUlCNmwtN2RVWXRkd1VUV3BRSV9aMGJGMkpxQUk4VWZ1dUt5YjZpdmthQVZ3REFHUzBmV3B0SFJwOFFsMl9fb3l0Y3F0Z1FXbDAxSFhTbV9peVVDQ3FKRnp3NjVDdEpRVHdIOG04SjctLWRRTzN2bDM1a2QxaGdZMHlJV0hGS1FObHFKTVNiS3hvXzZsUzdvMktteFBvSGNEZw?oc=5",
+   "published": "2026-10-20T15:51:20+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQOXBuUld1bXhxNWlQNktuUmYxOWpVRFlnN0dialpvZlhYM1JLVzE1N0VBSUVNbUlCNmwtN2RVWXRkd1VUV3BRSV9aMGJGMkpxQUk4VWZ1dUt5YjZpdmthQVZ3REFHUzBmV3B0SFJwOFFsMl9fb3l0Y3F0Z1FXbDAxSFhTbV9peVVDQ3FKRnp3NjVDdEpRVHdIOG04SjctLWRRTzN2bDM1a2QxaGdZMHlJV0hGS1FObHFKTVNiS3hvXzZsUzdvMktteFBvSGNEZw?oc=5",
+     "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders"
+    }
+   ],
+   "ids": [
+    "cf88eaf23edc"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f2d1dc308f67",
+   "title": "GM Plans $20 Billion in Buybacks, but Warns of Bumpy 2027",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcGZSd2xXLXlQSjl1UTNEUGRUSlhfdWg3dHBlMkNXS2p1US1JSG9KU1dnbS15SlBjV0Q5YUg5Z0xXZDlLdm5uOEpMQVhzSlg4MlMwNGhxQnoyYmFzcnNrNnowVjktdXlxamtxQ0VnOU5YdmtWSUQyVHRZTzZLdllxcTFvVXA5NkFUbnp6TFEtNk9mVE9vN0QxbzRyNmJ0cFdBVElfYWFMUzRJVkNkVlk3cg?oc=5",
+   "published": "2026-10-20T15:39:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcGZSd2xXLXlQSjl1UTNEUGRUSlhfdWg3dHBlMkNXS2p1US1JSG9KU1dnbS15SlBjV0Q5YUg5Z0xXZDlLdm5uOEpMQVhzSlg4MlMwNGhxQnoyYmFzcnNrNnowVjktdXlxamtxQ0VnOU5YdmtWSUQyVHRZTzZLdllxcTFvVXA5NkFUbnp6TFEtNk9mVE9vN0QxbzRyNmJ0cFdBVElfYWFMUzRJVkNkVlk3cg?oc=5",
+     "title": "GM Plans $20 Billion in Buybacks, but Warns of Bumpy 2027"
+    }
+   ],
+   "ids": [
+    "f2d1dc308f67"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "GM Plans $20 Billion in Buybacks, but Warns of Bumpy 2027",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "0bd07a7bc5a0",
+   "title": "GM shares sink as automaker signals rising cost pressures",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRnpBNEpFcnF0SnZqa1ZfTHM3VnJuQWc4SE5CSWpNQXNMWV85ZmRTNHBzeUdsNmdKTklmTjZxSVZQVFp1VDZFTnBiLXhmSFE3OFlVNVVLSUludTdNSFhQV3ppc2RSY2ZFNFVmQnJPcG5NVDh3cm5XTlVxYzQ2b2MzRXRTTUVUSXV4SGxydGlIdVh6NTQ0dlBqMjhXa3RCNmJHbkhtVXZqd29jR29OLUVtUHRMQUFNTGJKMEMwRzlR?oc=5",
+   "published": "2026-10-20T15:04:45+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRnpBNEpFcnF0SnZqa1ZfTHM3VnJuQWc4SE5CSWpNQXNMWV85ZmRTNHBzeUdsNmdKTklmTjZxSVZQVFp1VDZFTnBiLXhmSFE3OFlVNVVLSUludTdNSFhQV3ppc2RSY2ZFNFVmQnJPcG5NVDh3cm5XTlVxYzQ2b2MzRXRTTUVUSXV4SGxydGlIdVh6NTQ0dlBqMjhXa3RCNmJHbkhtVXZqd29jR29OLUVtUHRMQUFNTGJKMEMwRzlR?oc=5",
+     "title": "GM shares sink as automaker signals rising cost pressures"
+    }
+   ],
+   "ids": [
+    "0bd07a7bc5a0"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "GM shares sink as automaker signals rising cost pressures",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ee5eae02762e",
+   "title": "Trump Envoy Tells Nervous Gulf Allies U.S. Can’t Guarantee Security Forever",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFdVRnQ1U2RqODlKLU0tUFhRZWxOZC1HZmZuWVlTejh5aDFjT0U2Ykw3RUpzWFA4QW1PZnJ6cnNHTmw1TFRfTS1kUUVXdGFwbkJ0RnJVV0FQR001Qk44TE5Ock83c3J6Q1F2UXVLdXFpMzRKVHFhRnNHZmFfekNBNmFZcXpTQ3ZnVGdNenRGZ0Q5WEhpVlRZZFlKRXFwVHpKSVktUk1vTnZ6UnRHX25JdlNhblpXMVBVeG5KYg?oc=5",
+   "published": "2026-10-20T14:47:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFdVRnQ1U2RqODlKLU0tUFhRZWxOZC1HZmZuWVlTejh5aDFjT0U2Ykw3RUpzWFA4QW1PZnJ6cnNHTmw1TFRfTS1kUUVXdGFwbkJ0RnJVV0FQR001Qk44TE5Ock83c3J6Q1F2UXVLdXFpMzRKVHFhRnNHZmFfekNBNmFZcXpTQ3ZnVGdNenRGZ0Q5WEhpVlRZZFlKRXFwVHpKSVktUk1vTnZ6UnRHX25JdlNhblpXMVBVeG5KYg?oc=5",
+     "title": "Trump Envoy Tells Nervous Gulf Allies U.S. Can’t Guarantee Security Forever"
+    }
+   ],
+   "ids": [
+    "ee5eae02762e"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Trump Envoy Tells Nervous Gulf Allies U.S. Can’t Guarantee Security Forever",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -13158,6 +13154,55 @@
     "value": "Cerca de R$ 1 bilhão",
     "stage": "Anunciado",
     "sector": "Varejo alimentar / imobiliário",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "14f3f69adf18",
+   "title": "CNP Assurances announces proposed acquisition in Brazil and Mexico",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWGZkX0ZaTmtNRkJQTkFpR2pkbEZIaHZlU3pudVF2d3pKalItdG12Q1M2YTJiSEZuSjc4Zl90dU1yQmtzZlFQYXlQd3A5S0ZuOGZ4dWRHV3R5aXNELW5XcC02MzBORjI0WHFKVGpCZDNtZTE1cFc1b0xmb29FSDBwbXBqcnA0WjFHVUpUV2JqcWtndnBhSktDMG5XTXRzTzA0Wmp4SkpLSQ?oc=5",
+   "published": "2026-10-20T17:01:26+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "La Poste Groupe",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWGZkX0ZaTmtNRkJQTkFpR2pkbEZIaHZlU3pudVF2d3pKalItdG12Q1M2YTJiSEZuSjc4Zl90dU1yQmtzZlFQYXlQd3A5S0ZuOGZ4dWRHV3R5aXNELW5XcC02MzBORjI0WHFKVGpCZDNtZTE1cFc1b0xmb29FSDBwbXBqcnA0WjFHVUpUV2JqcWtndnBhSktDMG5XTXRzTzA0Wmp4SkpLSQ?oc=5",
+     "title": "CNP Assurances announces proposed acquisition in Brazil and Mexico"
+    }
+   ],
+   "ids": [
+    "14f3f69adf18"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "CNP Assurances anuncia proposta de aquisição no Brasil e no México",
+   "category": "mna",
+   "importance": 8,
+   "importance_reason": "Comunicado da própria compradora sobre o deal de seguros.",
+   "summary": "A CNP Assurances, do grupo La Poste, anunciou uma proposta de aquisição no Brasil e no México. O trecho não traz valor; outras fontes citam US$ 4 bi para as operações da Prudential.",
+   "involves": "CNP Assurances, La Poste Groupe, Brasil, México",
+   "interpretation": "Confirmação corporativa do deal; detalhes não estão no trecho.",
+   "impact": "Ver nota principal sobre a compra das operações da Prudential.",
+   "sentiment": "positivo",
+   "entities": [
+    "CNP Assurances",
+    "La Poste",
+    "Brasil",
+    "México"
+   ],
+   "tags": [
+    "seguros",
+    "aquisição"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "CNP Assurances",
+    "target": "Operações no Brasil e no México (Prudential, segundo outros veículos)",
+    "value": "não divulgado neste material (outros veículos citam US$ 4 bilhões)",
+    "stage": "Anunciado",
+    "sector": "Seguros",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -14705,6 +14750,39 @@
  ],
  "upcoming": [
   {
+   "id": "58f5ee54d6a5",
+   "title": "Anthropic registra prejuízo líquido de mais de US$80 bi no primeiro semestre de 2026",
+   "link": "https://g1.globo.com/tecnologia/noticia/2026/10/21/anthropic-prejuizo.ghtml",
+   "published": "2026-10-21T11:22:45+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/tecnologia/noticia/2026/10/21/anthropic-prejuizo.ghtml",
+     "title": "Anthropic registra prejuízo líquido de mais de US$80 bi no primeiro semestre de 2026"
+    }
+   ],
+   "ids": [
+    "58f5ee54d6a5"
+   ],
+   "snippet": "Anthropic Reuters O prejuízo líquido da Anthropic aumentou drasticamente para US$80,7 bilhões no primeiro semestre de 2026, em grande parte devido a um aumento no valor justo dos títulos conversíveis em ações da startup de IA, de acordo com uma versão preliminar do prospecto para uma oferta pública inicial (IPO), analisada pela Reuters. A empresa sediada em San Francisco deve abrir o capital em novembro, e alguns investidores estão agora avaliando uma valorização menor, em torno de US$1,5 trilhão, após suas últimas divulgações financeiras, informou a Reuters na semana passada. O prejuízo do pr",
+   "prescore": 5.8,
+   "headline": "Anthropic registra prejuízo líquido de mais de US$80 bi no primeiro semestre de 2026",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Anthropic Reuters O prejuízo líquido da Anthropic aumentou drasticamente para US$80,7 bilhões no primeiro semestre de 2026, em grande parte devido a um aumento no valor justo dos títulos conversíveis em ações da startup de IA, de acordo com uma versão preliminar do prospecto para uma oferta pública inicial (IPO), analisada pela Reuters. A empresa sediada em San Francisco deve abrir o capital em no",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "64c0bd42f616",
    "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quarta",
    "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-21102026/",
@@ -15008,6 +15086,39 @@
    "ai": false
   },
   {
+   "id": "2f0d719ee93e",
+   "title": "Operadores brasileiros elevam operações de hedge antes de 2º turno eleitoral acirrado",
+   "link": "https://www.infomoney.com.br/mercados/operadores-brasileiros-elevam-operacoes-de-hedge-antes-de-2o-turno-eleitoral-acirrado/",
+   "published": "2026-10-21T11:25:21+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/operadores-brasileiros-elevam-operacoes-de-hedge-antes-de-2o-turno-eleitoral-acirrado/",
+     "title": "Operadores brasileiros elevam operações de hedge antes de 2º turno eleitoral acirrado"
+    }
+   ],
+   "ids": [
+    "2f0d719ee93e"
+   ],
+   "snippet": "Os risk reversals de um mês no real — que refletem o prêmio que os investidores em opções estão dispostos a pagar para se proteger contra uma moeda mais fraca — subiram para 9% The post Operadores brasileiros elevam operações de hedge antes de 2º turno eleitoral acirrado appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Operadores brasileiros elevam operações de hedge antes de 2º turno eleitoral acirrado",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Os risk reversals de um mês no real — que refletem o prêmio que os investidores em opções estão dispostos a pagar para se proteger contra uma moeda mais fraca — subiram para 9% The post Operadores brasileiros elevam operações de hedge antes de 2º turno eleitoral acirrado appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "4086761e098c",
    "title": "PF pede mais prazo para aprofundar investigações sobre Lulinha e Roberta Luchsinger",
    "link": "https://www.infomoney.com.br/politica/pf-pede-mais-prazo-para-aprofundar-investigacoes-sobre-lulinha-e-roberta-luchsinger/",
@@ -15245,6 +15356,39 @@
    "ai": false
   },
   {
+   "id": "4e5328fd1111",
+   "title": "WEG (WEGE3) lucra R$ 1,66 bilhão no terceiro trimestre de 2026, avanço de 0,9% no ano; veja os números",
+   "link": "https://www.moneytimes.com.br/weg-wege3-lucra-r-166-bilhao-no-terceiro-trimestre-de-2026-avanco-de-09-no-ano-veja-os-numeros-lmrs/",
+   "published": "2026-10-21T11:22:57+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/weg-wege3-lucra-r-166-bilhao-no-terceiro-trimestre-de-2026-avanco-de-09-no-ano-veja-os-numeros-lmrs/",
+     "title": "WEG (WEGE3) lucra R$ 1,66 bilhão no terceiro trimestre de 2026, avanço de 0,9% no ano; veja os números"
+    }
+   ],
+   "ids": [
+    "4e5328fd1111"
+   ],
+   "snippet": "A WEG (WEGE3) reportou lucro líquido de R$ 1,66 bilhão referente ao terceiro trimestre de 2026 (3T26), um avanço de 0,9% ante o mesmo período no ano anterior, mostra relatório de resultados divulgado ao mercado nesta quarta-feira (21). O Ebitda (lucro antes de juros, impostos, depreciação e amortização) totalizou R$ 2,34 bilhões, uma alta de […]",
+   "prescore": 1.8,
+   "headline": "WEG (WEGE3) lucra R$ 1,66 bilhão no terceiro trimestre de 2026, avanço de 0,9% no ano; veja os números",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A WEG (WEGE3) reportou lucro líquido de R$ 1,66 bilhão referente ao terceiro trimestre de 2026 (3T26), um avanço de 0,9% ante o mesmo período no ano anterior, mostra relatório de resultados divulgado ao mercado nesta quarta-feira (21). O Ebitda (lucro antes de juros, impostos, depreciação e amortização) totalizou R$ 2,34 bilhões, uma alta de […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "dfaeaea7d1e7",
    "title": "Câmbio, experiências e destinos fora do óbvio: 7 tendências de turismo para 2027",
    "link": "https://www.seudinheiro.com/2026/lifestyle/cambio-experiencias-e-destinos-fora-do-obvio-7-tendencias-de-turismo-para-2027-lefp/",
@@ -15323,7 +15467,7 @@
    "id": "pipeline",
    "name": "Pipeline (Valor)",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
@@ -15400,7 +15544,7 @@
    "id": "g1-economia",
    "name": "g1",
    "ok": true,
-   "count": 54,
+   "count": 55,
    "error": null
   },
   {
@@ -15484,21 +15628,21 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 49,
+   "count": 48,
    "error": null
   },
   {
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 50,
+   "count": 49,
    "error": null
   },
   {
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 37,
+   "count": 20,
    "error": null
   },
   {
@@ -15758,11 +15902,11 @@
   }
  ],
  "stats": {
-  "raw": 951,
-  "unique": 586,
-  "unique_all": 881,
+  "raw": 932,
+  "unique": 574,
+  "unique_all": 865,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.6
+  "seconds": 4.2
  }
 }
