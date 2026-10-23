@@ -199,14 +199,14 @@ def shareholders(rows: list[dict]) -> list[dict]:
         if depth < 3:
             kids = [node(c, depth + 1) for c in by_rel.get(r.get("ID_Acionista", ""), [])
                     if not (c.get("Acionista", "").strip().lower() in ("ações tesouraria", "outros") and not num(c.get("Percentual_Total_Acoes_Circulacao")))]
-            kids = [k for k in kids if k["n"].lower() not in ("ações tesouraria",)]
+            kids = [k for k in kids if k.get("n", "").lower() not in ("ações tesouraria",)]
             if kids:
-                n["de"] = sorted(kids, key=lambda k: -(k["tot"] or 0))[:8]
+                n["de"] = sorted(kids, key=lambda k: -(k.get("tot") or 0))[:8]
         return {k: v for k, v in n.items() if v not in ("", None, False)}
 
     top = [node(r, 1) for r in by_rel.get("", [])]
-    top = [t for t in top if t.get("tot") or t.get("on") or t.get("pn") or t["n"].lower() not in ("ações tesouraria",)]
-    return sorted(top, key=lambda t: (t["n"].lower() in ("outros", "ações tesouraria"), -(t.get("tot") or 0)))
+    top = [t for t in top if t.get("tot") or t.get("on") or t.get("pn") or t.get("n", "").lower() not in ("ações tesouraria",)]
+    return sorted(top, key=lambda t: (t.get("n", "").lower() in ("outros", "ações tesouraria"), -(t.get("tot") or 0)))
 
 
 def people(rows: list[dict]) -> list[dict]:
@@ -345,7 +345,7 @@ def stakes(rows: list[dict]) -> list[dict]:
 
 def fca_profile(t: dict, cnpj: str) -> dict:
     g = (t.get("geral", {}).get(cnpj) or [{}])[0]
-    out = {"const": g.get("Data_Constituicao", ""), "reg": g.get("Data_Registro_CVM", ""), "cat": g.get("Categoria_Registro_CVM", ""),
+    out = {"razao": g.get("Nome_Empresarial", ""), "const": g.get("Data_Constituicao", ""), "reg": g.get("Data_Registro_CVM", ""), "cat": g.get("Categoria_Registro_CVM", ""),
            "ctl": g.get("Especie_Controle_Acionario", ""), "exerc": g.get("Mes_Encerramento_Exercicio_Social", ""),
            "pais": g.get("Pais_Origem", "") if g.get("Pais_Origem") not in ("", "Brasil") else "", "setor": g.get("Setor_Atividade", ""),
            "ativ": cut(g.get("Descricao_Atividade", ""), 900), "web": g.get("Pagina_Web", ""), "sit": g.get("Situacao_Emissor", ""),
@@ -709,7 +709,12 @@ GENERIC = {"brasil", "banco", "grupo", "holding", "companhia", "cia", "energia",
            "participacoes", "industria", "comercio", "servicos", "investimentos", "capital", "tecnologia", "logistica", "transportes",
            "alimentos", "construtora", "incorporadora", "brasileira", "nacional", "geral", "global", "the", "new", "nova", "vale do",
            "pan", "inter", "even", "gol", "oi", "log", "mega", "light", "porto", "tim", "kora", "wiz", "smart", "bom", "boa", "rede",
-           "cosan", "lojas", "casa", "casas", "eletro", "auto", "agro", "hotel", "mercado", "estado", "uniao", "federal", "governo"}
+           "lojas", "casa", "casas", "eletro", "auto", "agro", "hotel", "mercado", "estado", "uniao", "federal", "governo",
+           "mundial", "central", "real", "progresso", "alianca", "vitoria", "futuro", "sul", "norte", "nordeste", "oeste", "leste",
+           "atlantico", "america", "american", "imperial", "cristal", "estrela", "fortaleza", "paulista", "bahia", "minas", "rio",
+           "sao paulo", "santos", "mercantil", "popular", "comercial", "industrial", "financeira", "amazonia", "continental",
+           "standard", "alfa", "beta", "omega", "delta", "sigma", "alpha", "prime", "master", "atlas", "titan", "unica", "uniao federal",
+           "brasil", "brazil", "ponto", "via", "bolsa", "credores", "justica", "fundo", "fundos", "investidores", "acionistas"}
 SUFFIX = re.compile(r"\b(s\.?/?a\.?|s/a|sa|ltda\.?|cia\.?|companhia|participa[cç][oõ]es|holding|em recupera[cç][aã]o judicial|"
                     r"em recupera[cç][aã]o extrajudicial|-\s*em rj|em liquida[cç][aã]o|brasil(eira)?\s*$)\b", re.I)
 
@@ -720,6 +725,9 @@ def norm_name(s: str) -> str:
     s = SUFFIX.sub(" ", s)
     s = re.sub(r"[^a-z0-9&+ .-]", " ", s)
     return re.sub(r"\s+", " ", s).strip(" .-")
+
+
+CURATED: set[str] = set()
 
 
 def build_aliases(companies: list[dict], curated: dict) -> dict[str, str]:
@@ -744,6 +752,7 @@ def build_aliases(companies: list[dict], curated: dict) -> dict[str, str]:
         if k:
             for n in names:
                 alias[norm_name(n)] = k
+                CURATED.add(norm_name(n))
     return alias
 
 
@@ -756,9 +765,11 @@ def match_company(text: str, alias: dict[str, str], entity: bool) -> str | None:
         return alias[a]
     if entity:
         words = a.split(" ")
-        for n in range(len(words) - 1, 0, -1):  # 'grupo casas bahia' → 'casas bahia'? tenta prefixos e sufixos
+        for n in range(len(words) - 1, 0, -1):  # 'credores da braskem' → 'braskem'; 'grupo casas bahia' → 'casas bahia'
             for cand in (" ".join(words[:n]), " ".join(words[-n:])):
-                if len(cand) >= (5 if " " not in cand else 4) and cand not in GENERIC and cand in alias:
+                if cand in GENERIC or cand not in alias:
+                    continue
+                if " " in cand or cand in CURATED:  # uma palavra só vale se for apelido curado (evita 'american', 'mundial')
                     return alias[cand]
     return None
 
@@ -867,10 +878,12 @@ def cmd_montar(args) -> None:
                 p[key] = src[k][:80] if key != "noticias" else sorted(src[k], key=lambda x: x["d"], reverse=True)[:80]
         if not p:
             continue
+        p["nm"] = next((curated[tk[:4]][0] for tk in c.get("tk", []) if tk[:4] in curated), None) or title(c.get("nc") or c.get("n") or "")
         save_json(perfil_dir / f"{k}.json", p, compact=True)
         ltm = p.get("fin", {}).get("ltm", {})
         main_tk = mkt.get("tk") if mkt else None
-        r = {"mc": mkt.get("mc") if mkt else None, "tk": main_tk, "p": q.get(main_tk, {}).get("p") if main_tk else None,
+        nm = next((curated[tk[:4]][0] for tk in c.get("tk", []) if tk[:4] in curated), None) or title(c.get("nc") or c.get("n") or "")
+        r = {"nm": nm, "mc": mkt.get("mc") if mkt else None, "tk": main_tk, "p": q.get(main_tk, {}).get("p") if main_tk else None,
              "d1": q.get(main_tk, {}).get("d1") if main_tk else None, "y1": q.get(main_tk, {}).get("y1") if main_tk else None,
              "rec": ltm.get("rec"), "ll": ltm.get("llc", ltm.get("ll")), "nn": len(news.get(k, [])), "nd": len(deals.get(k, [])),
              "nl": len(leads.get(k, [])), "no": len(of_k.get(k, [])),
