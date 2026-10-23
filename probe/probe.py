@@ -56,13 +56,26 @@ for a in ("petrobras", "vale", "itau", "casas bahia", "gpa", "braskem", "raizen"
     print(a, "→", alias.get(a), names.get(alias.get(a)))
 
 print("\n--- depuração")
-for k in ("17450", "25062", "23574", "20028", "6505"):
+for k in ("25062", "23574", "6505", "19348", "9512"):
     f = OUT / "perfil" / f"{k}.json"
-    if not f.exists():
-        print(k, "sem perfil"); continue
-    p = json.loads(f.read_text())
-    print(k, names.get(k), "mercado:", p.get("mercado"), "| capital:", p.get("capital"), "| ações:", (p.get("fin") or {}).get("acoes"), "| PL:", ((p.get("fin") or {}).get("ltm") or {}).get("plc"))
-    for s in p.get("acionistas", [])[:6]:
-        print("   ", s.get("n"), s.get("tot"), s.get("on"), "ctl" if s.get("ctl") else "", [(x.get("n"), x.get("tot")) for x in s.get("de", [])][:4])
-    for n in p.get("noticias", [])[:5]:
-        print("    notícia:", n.get("h"))
+    if f.exists():
+        print(k, names.get(k), json.loads(f.read_text()).get("mercado"))
+
+# pacote de teste para o navegador
+import shutil
+dst = P / "dados"
+if dst.exists():
+    shutil.rmtree(dst)
+(dst / "perfil").mkdir(parents=True)
+(dst / "emp").mkdir()
+(dst / "mes").mkdir()
+for name in ("index.json", "resumo.json", "alias.json", "agenda.json", "ofertas.json"):
+    shutil.copy(OUT / name, dst / name)
+top = [k for k, _ in sorted(resumo.items(), key=lambda kv: -((kv[1].get("mc") or 0) + 1e12 * (kv[1].get("nn") or 0)))[:40]]
+for k in set(top) | want:
+    for sub in ("perfil", "emp"):
+        f = OUT / sub / f"{k}.json"
+        if f.exists():
+            shutil.copy(f, dst / sub / f.name)
+for f in sorted((OUT / "mes").glob("*.json"))[-2:]:
+    shutil.copy(f, dst / "mes" / f.name)

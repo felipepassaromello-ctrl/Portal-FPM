@@ -11,11 +11,13 @@
     { id: "deals", label: "Deals do dia", group: "Deals", icon: "deals", short: "Deals" },
     { id: "leads", label: "Leads", group: "Deals", icon: "leads", short: "Leads" },
     { id: "base", label: "Base de deals", group: "Deals", icon: "base" },
+    { id: "ofertas", label: "Ofertas públicas", group: "Deals", icon: "ofertas" },
+    { id: "agenda", label: "Agenda", group: "Hoje", icon: "agenda" },
     { id: "official", label: "Oficiais", group: "Fontes", icon: "official" },
     { id: "later", label: "Desde as 8h", group: "Hoje", icon: "later" },
     { id: "sources", label: "Fontes", group: "Fontes", icon: "sources" },
   ];
-  const NAV_ORDER = ["brief", "feed", "later", "deals", "leads", "base", "official", "sources"];
+  const NAV_ORDER = ["brief", "feed", "later", "agenda", "deals", "leads", "ofertas", "base", "official", "sources"];
   const icon = (name, cls = "ic") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 
   // ---------------------------------------------------------- estado local (por navegador)
@@ -120,6 +122,7 @@
     const sel = $("#archive");
     try {
       const days = await fetchJSON("data/archive/index.json");
+      state.archiveDays = days;
       sel.innerHTML = `<option value="">Edição de hoje</option>` + days.slice(1).map((d) =>
         `<option value="${esc(d)}">${new Date(d + "T12:00:00").toLocaleDateString("pt-BR", { weekday: "short", day: "2-digit", month: "short" })}</option>`).join("");
     } catch { sel.hidden = true; }
@@ -151,6 +154,10 @@
     const back = $("#back-today");
     if (back) back.onclick = (e) => { e.preventDefault(); $("#archive").value = ""; state.edition = null; load(); };
 
+    const days = state.archiveDays || [];
+    const pos = days.indexOf(state.edition || days[0]);
+    $("#ed-prev").disabled = pos < 0 || pos >= days.length - 1;
+    $("#ed-next").disabled = pos <= 0;
     renderTabs();
     renderMarket();
     renderBrief();
@@ -162,6 +169,172 @@
     renderMacro();
     loadBase();
     loadLeads();
+    loadCias().then(() => { renderBriefSide(); renderAgenda(); renderOfertas(); renderDeals(); renderTabs(); if ($("#reader").open) renderReader(); });
+  }
+
+  // ---------------------------------------------------------- companhias (perfis), agenda e ofertas
+  const cias = { loaded: false, resumo: {}, alias: {}, names: {}, agenda: [], ofertas: [] };
+  async function loadCias() {
+    if (cias.loading) return cias.loading;
+    cias.loading = Promise.all([
+      fetchJSON("data/cias/resumo.json").then((r) => { cias.resumo = r.cias || {}; }).catch(() => {}),
+      fetchJSON("data/cias/alias.json").then((a) => { cias.alias = a || {}; }).catch(() => {}),
+      fetchJSON("data/cias/agenda.json").then((a) => { cias.agenda = a.eventos || []; }).catch(() => {}),
+      fetchJSON("data/cias/ofertas.json").then((o) => { cias.ofertas = o.ofertas || []; cias.ofertasAt = o.generated_at; }).catch(() => {}),
+    ]).then(() => { cias.loaded = true; });
+    return cias.loading;
+  }
+  // mesmo critério do scripts/perfis.py (norm_name): sem acento, sem "S.A.", "Ltda", "Participações"…
+  const SUFFIX = /\b(s\.?\/?a\.?|s\/a|sa|ltda\.?|cia\.?|companhia|participa[cç][oõ]es|holding|em recupera[cç][aã]o (extra)?judicial|-\s*em rj|em liquida[cç][aã]o|brasil(eira)?\s*$)\b/gi;
+  const normName = (t) => fold(t).replace(/["'“”‘’()]/g, " ").replace(SUFFIX, " ").replace(/[^a-z0-9&+ .-]/g, " ").replace(/\s+/g, " ").trim().replace(/^[ .-]+|[ .-]+$/g, "");
+  function companyOf(text) {
+    if (!text || !cias.loaded) return null;
+    const a = normName(text);
+    if (cias.alias[a]) return cias.alias[a];
+    const w = a.split(" ");
+    if (w.length > 1 && w[0] === "grupo" && cias.alias[w.slice(1).join(" ")]) return cias.alias[w.slice(1).join(" ")];
+    return null;
+  }
+  const ciaHref = (k) => `cias.html#cia/${encodeURIComponent(k)}`;
+  const ciaName = (k) => cias.resumo[k]?.nm || "";
+  // texto com link para o perfil da companhia, quando o portal reconhece o nome
+  function ciaLinked(text) {
+    const k = companyOf(text);
+    return k ? `<a class="cia-link" href="${ciaHref(k)}" title="Perfil de ${esc(ciaName(k) || text)}">${esc(text)}</a>` : esc(text);
+  }
+  const brl = (v) => {
+    if (typeof v !== "number" || !isFinite(v)) return "–";
+    const a = Math.abs(v), f = (x, s) => `R$ ${fmtNum(x, x >= 100 ? 0 : 1)} ${s}`;
+    return a >= 1e12 ? f(a / 1e12, "tri") : a >= 1e9 ? f(a / 1e9, "bi") : a >= 1e6 ? f(a / 1e6, "mi") : a >= 1e3 ? f(a / 1e3, "mil") : `R$ ${fmtNum(a, 0)}`;
+  };
+  const isoDay = (dt) => `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}-${String(dt.getDate()).padStart(2, "0")}`;
+  const plusDays = (n) => { const dt = new Date(); dt.setDate(dt.getDate() + n); return isoDay(dt); };
+  const favs = () => new Set(store.get("cias-fav", []));
+  const docUrlCvm = (id, q) => {
+    const [seq, ver] = String(q || "").split(".");
+    return `https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=${id}&numSequencia=${seq}&numVersao=${ver || 1}`;
+  };
+
+  // barra do briefing: suas companhias, leads novos, próximos dias
+  function renderBriefSide() {
+    const d = state.digest;
+    if (!d) return;
+    // suas companhias: cotação e o que saiu hoje sobre cada uma
+    const fv = [...favs()];
+    $("#w-favs").hidden = !fv.length || !cias.loaded;
+    if (fv.length && cias.loaded) {
+      const hits = {};
+      for (const it of d.items) for (const e of [...(it.entities || []), it.deal?.buyer, it.deal?.target, it.lead?.company].filter(Boolean)) {
+        const k = companyOf(e);
+        if (k && fv.includes(k)) (hits[k] ||= new Set()).add(it.id);
+      }
+      $("#brief-favs").innerHTML = fv.slice(0, 10).map((k) => {
+        const r = cias.resumo[k] || {};
+        const n = hits[k]?.size || 0;
+        const up = (r.d1 ?? 0) >= 0;
+        return `<a class="fav-row" href="${ciaHref(k)}"><span class="fav-nm">${esc(r.nm || k)}${r.tk ? `<small>${esc(r.tk)}</small>` : ""}</span>
+          ${n ? `<span class="fav-news" data-search="${esc(r.nm || "")}" title="Notícias de hoje">${n} notícia${n > 1 ? "s" : ""}</span>` : ""}
+          ${typeof r.p === "number" ? `<span class="fav-q ${up ? "up" : "down"}">${fmtNum(r.p)}<i>${r.d1 != null ? `${up ? "+" : "−"}${fmtNum(Math.abs(r.d1))}%` : ""}</i></span>` : ""}</a>`;
+      }).join("");
+    }
+    // leads que apareceram nesta edição
+    const fresh = Object.values((state.leads || {}).leads || {}).filter((l) => l.first_seen === d.date).sort((a, z) => (z.importance || 0) - (a.importance || 0));
+    $("#w-leads").hidden = !fresh.length;
+    $("#brief-leads").innerHTML = fresh.slice(0, 6).map((l) => `<li><b>${ciaLinked(l.company)}</b> <span class="badge lead">${esc(l.signal)}</span><small>${esc(l.why || "")}</small></li>`).join("");
+    // próximos 7 dias: assembleias das suas companhias e das maiores, vencimentos grandes
+    const soon = plusDays(7), today = isoDay(new Date());
+    const fset = favs();
+    const ev = cias.agenda.filter((e) => e.data >= today && e.data <= soon)
+      .sort((a, z) => (fset.has(z.k) - fset.has(a.k)) || ((cias.resumo[z.k]?.mc || 0) - (cias.resumo[a.k]?.mc || 0)))
+      .slice(0, 6).sort((a, z) => a.data.localeCompare(z.data));
+    $("#w-agenda").hidden = !ev.length;
+    $("#brief-agenda").innerHTML = ev.map((e) => `<li><span class="ag-date">${esc(fmtDay(e.data))}</span><a class="cia-link" href="${ciaHref(e.k)}">${esc(cias.resumo[e.k]?.nm || e.n)}</a> ${e.tipo === "assembleia" ? `${esc(e.t || "Assembleia")}` : `vencimento de ${esc(e.t.toLowerCase())} · ${brl(e.v)}`}</li>`).join("");
+  }
+
+  // aba Agenda
+  function renderAgenda() {
+    const kind = $("#ag-kind").value, range = +$("#ag-range").value || 30;
+    const q = fold($("#ag-q").value.trim());
+    const fset = favs();
+    const today = isoDay(new Date()), end = plusDays(range);
+    syncSegments();
+    const rows = cias.agenda.filter((e) => e.data >= today && e.data <= end && (!kind || e.tipo === kind) && (!$("#ag-favs").checked || fset.has(e.k))
+      && (!q || fold(`${e.n} ${cias.resumo[e.k]?.nm || ""} ${e.t} ${e.s} ${e.e || ""}`).includes(q)));
+    const watch = state.digest?.brief?.watchlist || [];
+    $("#ag-watch").innerHTML = watch.length && !kind && !q ? `<div class="widget ag-watch"><h3 class="group-label">No radar do briefing</h3><ul class="list-plain">${watch.map((w) => `<li>${esc(w)}</li>`).join("")}</ul></div>` : "";
+    if (!rows.length) { $("#agenda-list").innerHTML = `<div class="empty">${cias.loaded ? "Nada na agenda com esses filtros." : "Carregando a agenda…"}</div>`; return; }
+    const byDay = {};
+    for (const e of rows) (byDay[e.data] ||= []).push(e);
+    $("#agenda-list").innerHTML = Object.entries(byDay).map(([day, list]) => {
+      const dt = new Date(day + "T12:00:00");
+      const label = dt.toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
+      list.sort((a, z) => (fset.has(z.k) - fset.has(a.k)) || ((cias.resumo[z.k]?.mc || 0) - (cias.resumo[a.k]?.mc || 0)));
+      return `<div class="ag-day"><h3 class="ag-head"><span class="ag-cal"><b>${dt.getDate()}</b><small>${dt.toLocaleDateString("pt-BR", { month: "short" }).replace(".", "")}</small></span>${esc(label.charAt(0).toUpperCase() + label.slice(1))}<span class="muted small">${list.length} evento${list.length > 1 ? "s" : ""}</span></h3>
+        <div class="cards grouped">${list.map((e) => `<div class="ag-row ${fset.has(e.k) ? "fav" : ""}">
+          <span class="badge ${e.tipo === "assembleia" ? "deal" : "neg"}">${e.tipo === "assembleia" ? esc(e.t || "Assembleia") : "Vencimento"}</span>
+          <div class="ag-main"><a class="cia-link" href="${ciaHref(e.k)}">${esc(cias.resumo[e.k]?.nm || e.n)}</a>${cias.resumo[e.k]?.tk ? ` <span class="tk">${esc(cias.resumo[e.k].tk)}</span>` : ""}
+            <div class="small muted">${e.tipo === "assembleia" ? esc([e.e, e.s].filter(Boolean).join(" · ") || "Assembleia de acionistas") : `${esc(e.t)} · ${esc(e.s)} · saldo ${brl(e.v)}`}</div></div>
+          ${e.tipo === "assembleia" && e.id ? `<a class="btn btn-sm" href="${safeUrl(docUrlCvm(e.id, e.q))}" target="_blank" rel="noopener">Edital</a>` : ""}
+        </div>`).join("")}</div></div>`;
+    }).join("");
+  }
+
+  // aba Ofertas públicas
+  const ofState = { shown: 80 };
+  function ofertasRows() {
+    const days = +$("#of-range").value || 90;
+    const since = plusDays(-days);
+    const vm = $("#of-vm").value, q = fold($("#of-q").value.trim());
+    return cias.ofertas.filter((o) => o.d >= since && (!vm || o.vm === vm) && (!$("#of-listed").checked || o.k)
+      && (!q || fold(`${o.em} ${o.lider} ${o.coord || ""} ${o.dest || ""} ${o.vm} ${cias.resumo[o.k]?.nm || ""}`).includes(q)));
+  }
+  function renderOfertas() {
+    syncSegments();
+    const sel = $("#of-vm");
+    if (sel.options.length <= 1 && cias.ofertas.length) {
+      const c = {};
+      for (const o of cias.ofertas) c[o.vm] = (c[o.vm] || 0) + 1;
+      sel.innerHTML = `<option value="">Todos os títulos</option>` + Object.entries(c).sort((a, z) => z[1] - a[1]).map(([v, n]) => `<option value="${esc(v)}">${esc(v)} (${n})</option>`).join("");
+    }
+    const rows = ofertasRows();
+    const total = rows.reduce((a, o) => a + (o.v || 0), 0);
+    const acoes = rows.filter((o) => /^a[cç][oõ]es/i.test(o.vm));
+    const days = +$("#of-range").value || 90;
+    $("#of-kpis").innerHTML = [
+      ["Volume registrado", brl(total), `${rows.length} ofertas em ${days === 366 ? "12 meses" : days + " dias"}`],
+      ["Ofertas de ações", String(acoes.length), acoes.length ? brl(acoes.reduce((a, o) => a + (o.v || 0), 0)) : "nenhuma"],
+      ["Debêntures", brl(rows.filter((o) => /deb[eê]ntur/i.test(o.vm)).reduce((a, o) => a + (o.v || 0), 0)), `${rows.filter((o) => /deb[eê]ntur/i.test(o.vm)).length} ofertas`],
+      ["De companhias abertas", String(rows.filter((o) => o.k).length), "emissores com registro na CVM"],
+    ].map(([k, v, s2]) => `<div class="stat"><span>${k}</span><b>${esc(v)}</b><small>${esc(s2)}</small></div>`).join("");
+    const league = (key) => {
+      const m = {};
+      for (const o of rows) { const n = o[key] || "não informado"; (m[n] ||= { n: 0, v: 0 }); m[n].n++; m[n].v += o.v || 0; }
+      const list = Object.entries(m).sort((a, z) => z[1].v - a[1].v).slice(0, 10);
+      const max = Math.max(1, ...list.map(([, x]) => x.v));
+      return list.map(([n, x]) => `<button class="lg-row" type="button" data-ofq="${esc(key === "lider" ? n : "")}" data-ofvm="${esc(key === "vm" ? n : "")}"><span class="lg-n">${esc(n)}</span><span class="lg-bar"><i style="width:${(100 * x.v) / max}%"></i></span><span class="lg-v">${brl(x.v)}<small>${x.n} ofertas</small></span></button>`).join("");
+    };
+    $("#of-league").innerHTML = league("lider") || `<p class="muted small">Sem ofertas no período.</p>`;
+    $("#of-league-note").textContent = "por volume";
+    $("#of-types").innerHTML = league("vm");
+    $("#of-count").textContent = `${rows.length} ofertas · ${brl(total)}${cias.ofertasAt ? ` · dados da CVM de ${fmtDay(cias.ofertasAt.slice(0, 10))}` : ""}`;
+    $("#of-body").innerHTML = rows.slice(0, ofState.shown).map((o) => `<tr>
+      <td class="nowrap">${esc(fmtDay(o.d))}/${esc(o.d.slice(2, 4))}</td>
+      <td>${o.k ? `<a class="cia-link" href="${ciaHref(o.k)}">${esc(cias.resumo[o.k]?.nm || o.em)}</a>` : esc(o.em)}${o.pub ? `<small class="muted block">público ${esc(o.pub.toLowerCase())}</small>` : ""}</td>
+      <td>${esc(o.vm)}${o.emissao ? ` · ${esc(o.emissao)}ª emissão` : ""}${o.tipo && o.tipo !== "Primária" ? ` · ${esc(o.tipo.toLowerCase())}` : ""}${o.sust ? ` <span class="badge pos">ESG</span>` : ""}${o.inc ? ` <span class="badge">incentivada</span>` : ""}${o.dest ? `<small class="muted block clamp2">${esc(o.dest)}</small>` : ""}</td>
+      <td class="num">${brl(o.v)}</td><td>${esc(o.lider || "–")}</td><td><span class="stage">${esc((o.st || "").replace(/^Oferta /, ""))}</span></td></tr>`).join("")
+      || `<tr><td colspan="6" class="muted">${cias.loaded ? "Nenhuma oferta com esses filtros." : "Carregando…"}</td></tr>`;
+    $("#of-more").hidden = rows.length <= ofState.shown;
+  }
+  function exportOfertas() {
+    const cols = ["Registro", "Encerramento", "Emissor", "CNPJ", "Valor mobiliário", "Emissão", "Tipo", "Volume (R$)", "Coordenador líder", "Grupo coordenador", "Público", "Regime", "Situação", "Destinação"];
+    const cell = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const lines = [cols.map(cell).join(";"), ...ofertasRows().map((o) => [o.d, o.fim, o.em, o.cnpj, o.vm, o.emissao, o.tipo, o.v, o.lider, o.coord, o.pub, o.reg, o.st, o.dest].map(cell).join(";"))];
+    const blob = new Blob(["\ufeff" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `ofertas-cvm-${isoDay(new Date())}.csv`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   }
 
   // ---------------------------------------------------------- leads (oportunidades em aberto)
@@ -218,7 +391,7 @@
               <span>desde ${esc(fmtDay(l.first_seen))}${l.last_seen !== l.first_seen ? ` · última notícia ${esc(fmtDay(l.last_seen))}` : ""}</span>
               ${l.status !== "Em aberto" ? `<span class="multi">${esc(l.status.toLowerCase())}</span>` : ""}
             </div>
-            <h3>${esc(l.company)}</h3>
+            <h3>${ciaLinked(l.company)}</h3>
           </div>
           <select class="lead-status ${t.s ? `s-${esc(t.s)}` : ""}" data-track="${esc(l.key)}" aria-label="Meu status">
             <option value="">Sem status</option>
@@ -284,6 +457,21 @@
       .sort((a, z) => (z.last_seen || "").localeCompare(a.last_seen || "") || z.importance - a.importance);
   }
 
+  // bancos e escritórios citados como assessores nos deals da base (quem está fazendo M&A no Brasil)
+  function advisorRank(deals) {
+    const count = {};
+    for (const d of deals) {
+      const a = d.advisors || "";
+      if (!a || /n[aã]o divulgad|n[aã]o informad|^-+$/i.test(a)) continue;
+      for (let n of a.split(/\s*[;,/]\s*|\s+e\s+|\s*\(|\)\s*/)) {
+        n = n.replace(/^(assessor(ado|ia)?|assessores|pelo|pela|do|da|de)\s+/i, "").replace(/[.:]$/, "").trim();
+        if (n.length < 2 || /^(comprador|vendedor|alvo|financeiro|jur[ií]dico|legal|lado)$/i.test(n)) continue;
+        count[n] = (count[n] || 0) + 1;
+      }
+    }
+    return Object.entries(count).sort((a, z) => z[1] - a[1] || a[0].localeCompare(z[0])).slice(0, 8);
+  }
+
   function renderBase() {
     const deals = Object.values((state.base || {}).deals || {});
     if (!deals.length) { $("#base-summary").innerHTML = `<div class="empty">A base começa a ser montada na próxima coleta.</div>`; $("#base-body").innerHTML = ""; return; }
@@ -305,6 +493,8 @@
           <ul class="bullets macro">${topSectors.map(([k, n]) => `<li><b>${esc(k)}</b> ${n}</li>`).join("") || "<li>–</li>"}</ul></div>
         <div class="side-block"><h3 class="section-label">Maiores da semana</h3>
           <ul class="bullets">${topDeals.map((d) => `<li>${esc(d.buyer)} → ${esc(d.target)} <span class="muted">· ${esc(d.value || "valor não divulgado")}</span></li>`).join("") || "<li>–</li>"}</ul></div>
+        <div class="side-block"><h3 class="section-label">Assessores mais citados</h3>
+          <ul class="bullets macro adv-rank">${advisorRank(deals).map(([n, c]) => `<li><button class="link-btn" type="button" data-advq="${esc(n)}">${esc(n)}</button> ${c}</li>`).join("") || "<li>Sem assessores divulgados na base.</li>"}</ul></div>
       </div>`;
     const sel = $("#base-sector");
     if (sel.options.length <= 1) {
@@ -397,7 +587,9 @@
     return { feed: d.items.filter((i) => !state.read.has(i.id)).length || null, deals: d.deals.length, later: (d.upcoming || []).length,
              base: Object.keys((state.base || {}).deals || {}).length || null,
              leads: state.leads ? leadRows().length : null,
-             official: (off.filings || []).length + (off.cade || []).length };
+             official: (off.filings || []).length + (off.cade || []).length,
+             agenda: cias.loaded ? cias.agenda.filter((e) => e.data >= isoDay(new Date()) && e.data <= plusDays(7)).length || null : null,
+             ofertas: cias.loaded ? cias.ofertas.filter((o) => o.d >= plusDays(-30)).length || null : null };
   }
 
   function renderTabs() {
@@ -434,6 +626,7 @@
     if (state.tab !== id) {
       state.tab = id;
       store.set("tab", id);
+      history.replaceState(null, "", `#${id}`);
       state.focus = -1;
     }
     if ($("#more").open) $("#more").close();
@@ -556,6 +749,7 @@
     renderReader();
     const dlg = $("#reader");
     if (!dlg.open) dlg.showModal();
+    history.replaceState(null, "", `#n/${id}@${state.edition || state.digest?.date || ""}`);
     $("#reader-body").scrollTop = 0;
     rerenderLists();
   }
@@ -583,10 +777,20 @@
       ${sec("Impacto", it.impact)}
       ${it.is_deal && dealRows.length ? `<section class="reader-sec"><h4>Deal${it.update ? ` · antes: ${esc(it.update.from)} (${esc(fmtDay(it.update.date))})` : ""}</h4>
         <dl class="deal-grid">${dealRows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl></section>` : ""}
-      ${(it.entities || []).length ? `<section class="reader-sec"><h4>Quem está na notícia</h4><div class="chips-plain">${it.entities.map((e) => `<button type="button" data-search="${esc(e)}">${esc(e)}</button>`).join("")}</div></section>` : ""}
+      ${(it.entities || []).length ? `<section class="reader-sec"><h4>Quem está na notícia</h4><div class="chips-plain">${it.entities.map((e) => { const k = companyOf(e); return k ? `<a class="chip-cia" href="${ciaHref(k)}">${icon("cias", "ic ic-sm")}${esc(e)}</a>` : `<button type="button" data-search="${esc(e)}">${esc(e)}</button>`; }).join("")}</div></section>` : ""}
       <section class="reader-sec"><h4>Leia nos veículos</h4>
         <div class="outlets">${it.outlets.map((o) => `<a href="${safeUrl(o.link)}" target="_blank" rel="noopener">${esc(o.source)}${icon("ext")}</a>`).join("")}</div></section>
       ${it.title && it.title !== it.headline ? `<p class="muted small">Título original: ${esc(it.title)}</p>` : ""}`;
+  }
+
+  const itemLink = (id) => `${location.origin}${location.pathname}#n/${id}@${state.edition || state.digest?.date || ""}`;
+  function itemText(it) {
+    if (!it) return "";
+    const src = it.outlets[0] || {};
+    return [`*${it.headline}*`, it.summary, it.impact ? `Impacto: ${it.impact}` : "", `${src.source || ""}: ${src.link || it.link}`, `Portal FPM: ${itemLink(it.id)}`].filter(Boolean).join("\n\n");
+  }
+  function copyText(t, msg) {
+    navigator.clipboard.writeText(t).then(() => toast(msg), () => toast("Não consegui copiar"));
   }
 
   function readerStep(dir) {
@@ -642,7 +846,7 @@
       const x = i.deal || {};
       return `<tr>
         <td>${ring(i.importance, "sm")}</td>
-        <td>${esc(x.type)}</td><td>${esc(x.buyer)}</td><td>${esc(x.target)}</td>
+        <td>${esc(x.type)}</td><td>${ciaLinked(x.buyer)}</td><td>${ciaLinked(x.target)}</td>
         <td>${esc(x.value)}</td><td><span class="stage">${esc(x.stage)}</span>${i.update ? `<div class="muted small">antes: ${esc(i.update.from)} (${esc(fmtDay(i.update.date))})</div>` : ""}</td><td>${esc(x.sector)}</td>
         <td><a href="#" data-jump="${i.id}">${esc(i.outlets[0].source)}</a></td></tr>`;
     }).join("") || `<tr><td colspan="8" class="muted">Nenhum deal identificado nesta edição${state.digest.mode !== "ai" ? " (requer análise por IA)" : ""}.</td></tr>`;
@@ -698,6 +902,8 @@
       if (ds.reader === "prev") return readerStep(-1);
       if (ds.reader === "next") return readerStep(1);
       if (ds.reader === "save") { toggle(state.saved, reader.id); return rerenderLists(); }
+      if (ds.reader === "link") return copyText(itemLink(reader.id), "Link copiado");
+      if (ds.reader === "copy") return copyText(itemText(findItem(reader.id)), "Resumo copiado para colar no WhatsApp ou no e-mail");
     }
     if (ds.save) { e.stopPropagation(); toggle(state.saved, ds.save); return rerenderLists(); }
     if (ds.read) { e.stopPropagation(); toggle(state.read, ds.read); return rerenderLists(); }
@@ -724,6 +930,7 @@
 
   for (const id of ["q", "region", "sort", "unread", "saved"]) $("#" + id).addEventListener("input", () => { state.focus = -1; renderFeed(); });
   $("#base-q").addEventListener("input", renderBase);
+  document.addEventListener("click", (e) => { const b = e.target.closest("[data-advq]"); if (b) { $("#base-q").value = b.dataset.advq; renderBase(); } });
   $("#base-sector").addEventListener("input", renderBase);
   $("#base-export").onclick = exportBase;
   for (const id of ["leads-q", "leads-signal", "leads-period", "leads-track", "leads-noadv", "leads-closed"])
@@ -744,6 +951,33 @@
   $("#minimp").addEventListener("input", () => renderFeed());
   $("#btn-refresh").onclick = () => load().then(() => toast("Atualizado"));
   $("#archive").onchange = (e) => { state.edition = e.target.value || null; state.open.clear(); load(); };
+  // edição anterior / seguinte (o índice vem do mais novo para o mais antigo)
+  function stepEdition(dir) {
+    const days = state.archiveDays || [];
+    const cur = state.edition || days[0];
+    const i = days.indexOf(cur) + dir;
+    if (i < 0 || i >= days.length) return;
+    state.edition = i === 0 ? null : days[i];
+    $("#archive").value = state.edition || "";
+    state.open.clear();
+    load();
+  }
+  $("#ed-prev").onclick = () => stepEdition(1);
+  $("#ed-next").onclick = () => stepEdition(-1);
+  $("#btn-print").onclick = () => { if (state.tab !== "brief") setTab("brief"); setTimeout(() => window.print(), 80); };
+  $("#reader").addEventListener("close", () => history.replaceState(null, "", `#${state.tab}`));
+  for (const id of ["ag-q", "ag-favs", "ag-kind", "ag-range"]) $("#" + id).addEventListener("input", renderAgenda);
+  for (const id of ["of-q", "of-vm", "of-listed", "of-range"]) $("#" + id).addEventListener("input", () => { ofState.shown = 80; renderOfertas(); });
+  $("#of-more").onclick = () => { ofState.shown += 120; renderOfertas(); };
+  $("#of-export").onclick = exportOfertas;
+  document.addEventListener("click", (e) => {
+    const lg = e.target.closest("[data-ofq],[data-ofvm]");
+    if (!lg) return;
+    if (lg.dataset.ofvm) $("#of-vm").value = lg.dataset.ofvm;
+    if (lg.dataset.ofq) $("#of-q").value = lg.dataset.ofq;
+    ofState.shown = 80;
+    renderOfertas();
+  });
 
   // título grande que vira título compacto na barra ao rolar
   new IntersectionObserver(([en]) => document.body.classList.toggle("scrolled", !en.isIntersecting), { rootMargin: "-52px 0px 0px 0px" })
@@ -794,6 +1028,7 @@
     const has = (s) => !q || fold(s).includes(q);
     const groups = [];
     const tabs = tabsAvailable().filter((t) => has(t.label)).map((t) => ({ ic: icon(t.icon), title: t.label, sub: "Ir para a aba", run: () => setTab(t.id) }));
+    if (has("Documentos CVM fatos relevantes")) tabs.push({ ic: icon("docs"), title: "Documentos CVM", sub: "Fatos relevantes e comunicados de todas as companhias", run: () => { location.href = "cias.html#docs"; } });
     if (has("Companhias abertas CVM")) tabs.push({ ic: icon("cias"), title: "Companhias", sub: "Companhias abertas e documentos na CVM", run: () => { location.href = "cias.html"; } });
     const items = [...state.digest.items].filter((i) => q && has(`${i.headline} ${i.title} ${(i.entities || []).join(" ")} ${(i.tags || []).join(" ")}`))
       .sort((a, z) => z.importance - a.importance).slice(0, 8)
@@ -802,7 +1037,11 @@
       .map((l) => ({ ic: icon("leads"), title: l.company, sub: `Lead · ${l.signal}${l.sector ? ` · ${l.sector}` : ""}`, run: () => { setTab("leads"); $("#leads-q").value = l.company; $("#leads-period").value = "9999"; $("#leads-closed").checked = true; renderLeads(); renderTabs(); } }));
     const deals = Object.values((state.base || {}).deals || {}).filter((d) => q && has(`${d.buyer} ${d.target} ${d.sector} ${d.advisors}`)).slice(0, 5)
       .map((d) => ({ ic: icon("base"), title: `${d.buyer} → ${d.target}`, sub: `Base de deals · ${d.stage}${d.value ? ` · ${d.value}` : ""}`, run: () => { setTab("base"); $("#base-q").value = d.target || d.buyer; renderBase(); } }));
+    const ciasHits = Object.entries(cias.resumo).filter(([, r]) => q && (fold(r.nm || "").includes(q) || fold(r.tk || "") === q || fold(r.tk || "").startsWith(q)))
+      .sort((a, z) => (fold(z[1].tk || "") === q) - (fold(a[1].tk || "") === q) || (fold(z[1].nm || "").startsWith(q)) - (fold(a[1].nm || "").startsWith(q)) || (z[1].mc || 0) - (a[1].mc || 0)).slice(0, 5)
+      .map(([k, r]) => ({ ic: icon("cias"), title: r.nm, sub: ["Companhia", r.tk, r.mc ? `valor de mercado ${brl(r.mc)}` : "", r.nn ? `${r.nn} notícias` : ""].filter(Boolean).join(" · "), run: () => { location.href = ciaHref(k); } }));
     if (q) {
+      if (ciasHits.length) groups.push(["Companhias", ciasHits]);
       if (items.length) groups.push(["Notícias", items]);
       if (leads.length) groups.push(["Leads", leads]);
       if (deals.length) groups.push(["Base de deals", deals]);
@@ -887,6 +1126,27 @@
   setInterval(updateStatus, 60 * 1000);
   document.addEventListener("visibilitychange", () => { if (!document.hidden && !state.edition) load({ silent: true }); });
 
+  // links compartilháveis: #feed, #leads… ou #n/{id}@{AAAA-MM-DD} abre a notícia de qualquer edição
+  async function route() {
+    const h = decodeURIComponent(location.hash.replace(/^#/, ""));
+    const m = h.match(/^n\/([\w-]+)(?:@(\d{4}-\d{2}-\d{2}))?$/);
+    if (m) {
+      const [, id, day] = m;
+      if (!findItem(id) && day && day !== state.digest?.date) {
+        state.edition = (state.archiveDays || [])[0] === day ? null : day;
+        $("#archive").value = state.edition || "";
+        await load();
+      }
+      if (findItem(id)) openReader(id);
+      return;
+    }
+    if (TABS.some((t) => t.id === h) && h !== state.tab) setTab(h);
+  }
+  window.addEventListener("hashchange", route);
+
+  if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
+
+  if (TABS.some((t) => t.id === location.hash.slice(1))) state.tab = location.hash.slice(1);
   loadArchiveIndex();
-  load();
+  load().then(route);
 })();

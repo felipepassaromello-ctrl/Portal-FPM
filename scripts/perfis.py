@@ -915,21 +915,17 @@ def cmd_montar(args) -> None:
 
 def market_value(p: dict, q: dict) -> dict:
     """Valor de mercado = ações ON × cotação ON + ações PN × cotação PN (sem tesouraria). Sem cotação de uma
-    classe, usa a da outra; só com unit, usa a composição da unit."""
+    classe, usa a da outra; só com unit, usa a composição da unit.
+
+    A quantidade de ações vem preferencialmente do Formulário de Referência: a composição do capital da DFP/ITR
+    chega em escalas erradas em parte das companhias (10×, 100× ou 1.000×). Entre as candidatas, fica a primeira
+    que dá um preço sobre valor patrimonial plausível."""
+    import math
     if not q:
         return {}
     acoes = (p.get("fin") or {}).get("acoes") or {}
     cap = p.get("capital") or {}
-    on, pn = acoes.get("on"), acoes.get("pn")
-    on_t, pn_t = acoes.get("on_t") or 0, acoes.get("pn_t") or 0
     fin = (p.get("fin") or {}).get("ltm") or {}
-    if not (on or pn):
-        on, pn = cap.get("on"), cap.get("pn")
-    if not (on or pn):
-        return {}
-    # a composição do capital às vezes vem em milhares (na DFP/ITR ou no Formulário de Referência): entre as
-    # escalas possíveis, fica a que dá um preço sobre valor patrimonial plausível
-    scales = [1, 1000] if cap.get("total") and acoes.get("tot") and 900 < cap["total"] / acoes["tot"] < 1100 else [1]
     px_on = next((q[t]["p"] for t in q if t.endswith("3")), None)
     px_pn = next((q[t]["p"] for t in sorted(q) if t[-1] in "4567"), None)
     unit = next((t for t in q if t.endswith("11")), None)
@@ -938,30 +934,38 @@ def market_value(p: dict, q: dict) -> dict:
         n_on = sum(int(x) for x in re.findall(r"(\d+)\s*(?:a[cç][oõ]es?\s*)?(?:ordin|ON)", comp, re.I)) or 0
         n_pn = sum(int(x) for x in re.findall(r"(\d+)\s*(?:a[cç][oõ]es?\s*)?(?:prefer|PN)", comp, re.I)) or 0
         if n_on + n_pn:
-            px = q[unit]["p"] / (n_on + n_pn)
-            px_on = px_pn = px
+            px_on = px_pn = q[unit]["p"] / (n_on + n_pn)
     px_on = px_on if px_on is not None else px_pn
     px_pn = px_pn if px_pn is not None else px_on
     if px_on is None:
         return {}
-    import math
+    tre_on, tre_pn = acoes.get("on_t") or 0, acoes.get("pn_t") or 0
+    comp_tot = acoes.get("tot") or 0
+    cands = []
+    if cap.get("on") or cap.get("pn"):
+        # tesouraria vem da DFP/ITR: ajusta à escala do Formulário de Referência
+        f = 10 ** round(math.log10(cap["total"] / comp_tot)) if cap.get("total") and comp_tot else 1
+        cands.append(((cap.get("on") or 0) - tre_on * f, (cap.get("pn") or 0) - tre_pn * f))
+    if acoes.get("on") or acoes.get("pn"):
+        for sc in (1, 1000):
+            cands.append((((acoes.get("on") or 0) - tre_on) * sc, ((acoes.get("pn") or 0) - tre_pn) * sc))
     book = fin.get("plc") or fin.get("pl")
-    best = None
-    for sc in scales:
-        on_n, pn_n = max(0, (on or 0) - on_t) * sc, max(0, (pn or 0) - pn_t) * sc
-        mc = on_n * px_on + pn_n * px_pn
+    chosen = None
+    for on_n, pn_n in cands:
+        mc = max(0, on_n) * px_on + max(0, pn_n) * px_pn
         if mc <= 0:
             continue
-        score = abs(math.log(mc / book) - math.log(1.5)) if book and book > 0 else (0 if sc == 1 else 1)
-        if best is None or score < best[0]:
-            best = (score, mc, on_n, pn_n)
-    if not best:
+        if not book or book <= 0:
+            chosen = (mc, on_n, pn_n)
+            break
+        if 0.15 <= mc / book <= 15:
+            chosen = (mc, on_n, pn_n)
+            break
+    if not chosen:
         return {}
-    _, mc, on_n, pn_n = best
-    if book and book > 0 and not 0.03 <= mc / book <= 30:  # fora disso, quase sempre é erro de escala no dado
-        return {}
+    mc, on_n, pn_n = chosen
     main = (sorted(q, key=lambda t: -q[t].get("adv", 0)) or [None])[0]
-    out = {"mc": round(mc), "tk": main, "acoes": round(on_n + pn_n), "ref": max((x.get("t", "") for x in q.values()), default="")}
+    out = {"mc": round(mc), "tk": main, "acoes": round(max(0, on_n) + max(0, pn_n)), "ref": max((x.get("t", "") for x in q.values()), default="")}
     if not fin.get("fin") and fin.get("dl") is not None:
         out["ev"] = round(mc + fin["dl"])
         if fin.get("ebitda") and fin["ebitda"] > 0:
