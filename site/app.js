@@ -4,16 +4,19 @@
 
   const REFRESH_MS = 5 * 60 * 1000;
   const CAT_ORDER = ["mna", "mercados", "macro", "politica", "internacional", "empresas", "tech", "outros"];
+  // group = seção da barra lateral; short = rótulo da barra de abas no celular (só as que aparecem nela)
   const TABS = [
-    { id: "brief", label: "Briefing" },
-    { id: "feed", label: "Todas as notícias" },
-    { id: "deals", label: "Deals" },
-    { id: "leads", label: "Leads" },
-    { id: "base", label: "Base de deals" },
-    { id: "official", label: "Oficiais" },
-    { id: "later", label: "Desde as 8h" },
-    { id: "sources", label: "Fontes" },
+    { id: "brief", label: "Briefing", group: "Hoje", icon: "brief", short: "Briefing" },
+    { id: "feed", label: "Notícias", group: "Hoje", icon: "feed", short: "Notícias" },
+    { id: "deals", label: "Deals do dia", group: "Deals", icon: "deals", short: "Deals" },
+    { id: "leads", label: "Leads", group: "Deals", icon: "leads", short: "Leads" },
+    { id: "base", label: "Base de deals", group: "Deals", icon: "base" },
+    { id: "official", label: "Oficiais", group: "Fontes", icon: "official" },
+    { id: "later", label: "Desde as 8h", group: "Hoje", icon: "later" },
+    { id: "sources", label: "Fontes", group: "Fontes", icon: "sources" },
   ];
+  const NAV_ORDER = ["brief", "feed", "later", "deals", "leads", "base", "official", "sources"];
+  const icon = (name, cls = "ic") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 
   // ---------------------------------------------------------- estado local (por navegador)
   const store = {
@@ -133,7 +136,8 @@
       const f = (iso) => new Date(iso).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }).replace(",", " às");
       windowTxt = ` · notícias de ${f(d.window.start)} a ${f(d.window.end)}`;
     }
-    $("#dateline").textContent = "Edição de " + dl + windowTxt;
+    $("#dateline").textContent = dl.charAt(0).toUpperCase() + dl.slice(1) + windowTxt;
+    document.body.classList.remove("loading");
     updateStatus();
     $("#footer-gen").textContent = `${d.stats.unique} notícias únicas de ${d.stats.raw} matérias · ${d.stats.sources_ok}/${d.stats.sources_total} fontes · ${d.mode === "ai" ? "análise por IA" : "modo sem IA"}`;
 
@@ -148,7 +152,7 @@
     if (back) back.onclick = (e) => { e.preventDefault(); $("#archive").value = ""; state.edition = null; load(); };
 
     renderTabs();
-    renderTicker();
+    renderMarket();
     renderBrief();
     renderFeed();
     renderDeals();
@@ -216,7 +220,7 @@
             </div>
             <h3>${esc(l.company)}</h3>
           </div>
-          <select class="ctl lead-status" data-track="${esc(l.key)}" aria-label="Meu status">
+          <select class="lead-status ${t.s ? `s-${esc(t.s)}` : ""}" data-track="${esc(l.key)}" aria-label="Meu status">
             <option value="">Sem status</option>
             ${Object.entries(TRACK).map(([k, v]) => `<option value="${k}" ${t.s === k ? "selected" : ""}>${v}</option>`).join("")}
           </select>
@@ -228,8 +232,8 @@
         </dl>
         <ul class="lead-events">${ev.map((e) => `<li><span class="muted">${esc(fmtDay(e.date))}</span> <a href="${safeUrl(e.link)}" target="_blank" rel="noopener">${esc(e.headline)}</a> <span class="muted">· ${esc(e.source)}</span></li>`).join("")}</ul>
         <div class="lead-foot">
-          <input class="ctl lead-note" data-note="${esc(l.key)}" placeholder="Anotação (ex.: Carol conhece o CFO; falar com o Itaú BBA)" value="${esc(t.n || "")}">
-          <button class="ctl" data-copylead="${esc(l.key)}" title="Copiar um resumo para mandar por WhatsApp ou e-mail">Copiar resumo</button>
+          <input class="lead-note" data-note="${esc(l.key)}" placeholder="Anotação (ex.: Carol conhece o CFO; falar com o Itaú BBA)" value="${esc(t.n || "")}">
+          <button class="btn" data-copylead="${esc(l.key)}" title="Copiar um resumo para mandar por WhatsApp ou e-mail">Copiar resumo</button>
         </div>
       </article>`;
     }).join("") || `<div class="empty">Nenhum lead com esses filtros.</div>`;
@@ -361,7 +365,7 @@
       ...[["ipca", "Focus IPCA"], ["selic", "Focus Selic"], ["pib", "Focus PIB"], ["cambio", "Focus câmbio"]]
         .filter(([k]) => f[k]).map(([k, label]) => [label, yrs.map((y) => `${y}: ${k === "cambio" ? (f[k][y] != null ? "R$ " + fmtNum(f[k][y], 2) : "–") : pct(f[k][y])}`).join(" · ")]),
     ].filter(([, v]) => v);
-    el.closest(".side-block").hidden = !rows.length;
+    el.closest(".widget").hidden = !rows.length;
     el.innerHTML = rows.map(([k, v]) => `<li><b>${esc(k)}</b> ${esc(v)}</li>`).join("")
       + (f.ipca ? `<li class="muted small">Focus de ${esc(fmtDay(f.ipca.date))} · fonte: Banco Central</li>` : "");
   }
@@ -387,52 +391,67 @@
     return TABS.filter((t) => t.id !== "later" || (!state.edition && (d.upcoming || []).length));
   }
 
-  function renderTabs() {
+  function tabCounts() {
     const d = state.digest;
     const off = d.official || {};
-    const counts = { feed: d.items.length, deals: d.deals.length, later: (d.upcoming || []).length,
-                     base: Object.keys((state.base || {}).deals || {}).length || null,
-                     leads: state.leads ? leadRows().length : null,
-                     official: (off.filings || []).length + (off.cade || []).length };
+    return { feed: d.items.filter((i) => !state.read.has(i.id)).length || null, deals: d.deals.length, later: (d.upcoming || []).length,
+             base: Object.keys((state.base || {}).deals || {}).length || null,
+             leads: state.leads ? leadRows().length : null,
+             official: (off.filings || []).length + (off.cade || []).length };
+  }
+
+  function renderTabs() {
+    const counts = tabCounts();
     const tabs = tabsAvailable();
     if (!tabs.some((t) => t.id === state.tab)) state.tab = "brief";
-    $("#tabs").innerHTML = tabs.map((t) =>
-      `<button class="tab" role="tab" data-tab="${t.id}" aria-selected="${state.tab === t.id}">${t.label}${counts[t.id] != null ? `<span class="count">${counts[t.id]}</span>` : ""}</button>`).join("")
-      + `<a class="tab tab-link" href="cias.html" title="Companhias abertas e seus documentos na CVM">Companhias ↗</a>`;
+    const byId = Object.fromEntries(tabs.map((t) => [t.id, t]));
+    const navBtn = (t) => `<button class="nav-item" data-tab="${t.id}" ${state.tab === t.id ? 'aria-current="page"' : ""}>${icon(t.icon)}<span>${t.label}</span>${counts[t.id] != null ? `<span class="count">${counts[t.id]}</span>` : ""}</button>`;
+    let html = "", group = "";
+    for (const id of NAV_ORDER) {
+      const t = byId[id];
+      if (!t) continue;
+      if (t.group !== group) { group = t.group; html += `<div class="nav-group">${group}</div>`; }
+      html += navBtn(t);
+      if (id === "sources") html += `<a class="nav-item" href="cias.html">${icon("cias")}<span>Companhias</span>${icon("chev", "ext")}</a>`;
+    }
+    $("#tabs").innerHTML = html;
+    // celular: quatro abas fixas + "Mais"
+    const primary = TABS.filter((t) => t.short);
+    const inMore = !primary.some((t) => t.id === state.tab);
+    $("#tabbar").innerHTML = primary.map((t) => `<button data-tab="${t.id}" ${state.tab === t.id ? 'aria-current="page"' : ""}>${icon(t.icon)}<span>${t.short}</span></button>`).join("")
+      + `<button data-more ${inMore ? 'aria-current="page"' : ""}>${icon("more")}<span>Mais</span></button>`;
+    $("#more-list").innerHTML = NAV_ORDER.filter((id) => byId[id] && !byId[id].short).map((id) => navBtn(byId[id])).join("")
+      + `<a class="nav-item" href="cias.html">${icon("cias")}<span>Companhias</span>${icon("chev", "ext")}</a>`
+      + `<button class="nav-item" data-prefs-open>${icon("sliders")}<span>Personalizar</span></button>`;
     for (const t of TABS) $(`#view-${t.id}`).hidden = state.tab !== t.id;
+    const title = (byId[state.tab] || TABS[0]).label;
+    $("#page-title").textContent = title;
+    $("#bar-title").textContent = title;
+    document.title = state.tab === "brief" ? "Portal FPM" : `${title} · Portal FPM`;
   }
 
   function setTab(id) {
-    state.tab = id;
-    store.set("tab", id);
-    state.focus = -1;
+    if (state.tab !== id) {
+      state.tab = id;
+      store.set("tab", id);
+      state.focus = -1;
+    }
+    if ($("#more").open) $("#more").close();
     renderTabs();
     window.scrollTo({ top: 0 });
   }
 
-  function spark(values, up) {
-    if (!values || values.length < 2) return "";
-    const min = Math.min(...values), max = Math.max(...values), r = max - min || 1;
-    const pts = values.map((v, i) => `${(i / (values.length - 1)) * 44},${14 - ((v - min) / r) * 12 - 1}`).join(" ");
-    return `<svg viewBox="0 0 44 14" aria-hidden="true"><polyline fill="none" stroke="${up ? "#4cc38a" : "#ef6a5b"}" stroke-width="1.4" points="${pts}"/></svg>`;
-  }
-
-  function renderTicker() {
+  function renderMarket() {
     const m = state.digest.market || [];
-    const el = $("#ticker");
-    el.hidden = !m.length;
-    const ticks = m.map((q) => {
+    $("#market").closest(".widget").hidden = !m.length;
+    $("#market").innerHTML = m.map((q) => {
       const up = q.change_pct >= 0;
       const dec = q.unit === "R$" ? 4 : q.price > 1000 ? 0 : 2;
-      return `<span class="tick"><b>${esc(q.name)}</b>${fmtNum(q.price, dec)}<span class="${up ? "up" : "down"}">${up ? "▲" : "▼"} ${fmtNum(Math.abs(q.change_pct))}%</span>${spark(q.spark, up)}</span>`;
+      return `<div class="mkt ${up ? "up" : "down"}" title="${esc(q.name)}: ${fmtNum(q.price, dec)}">
+        <span class="mkt-name">${esc(q.name)}</span>
+        <span class="mkt-chg">${up ? "+" : "−"}${fmtNum(Math.abs(q.change_pct))}%</span>
+        <span class="mkt-price">${q.unit === "R$" ? "R$ " : ""}${fmtNum(q.price, dec)}</span></div>`;
     }).join("");
-    // Letreiro: a sequência aparece duas vezes e a faixa anda metade da largura, emendando sem salto.
-    el.innerHTML = `<div class="ticker-track"><div class="ticker-group">${ticks}</div><div class="ticker-group" aria-hidden="true">${ticks}</div></div>`;
-    const group = el.querySelector(".ticker-group");
-    requestAnimationFrame(() => {
-      const w = group.getBoundingClientRect().width;
-      el.querySelector(".ticker-track").style.setProperty("--ticker-duration", `${Math.max(20, w / 45)}s`);
-    });
   }
 
   function renderBrief() {
@@ -443,9 +462,9 @@
     const mins = Math.max(2, Math.round(((b.tldr || []).join(" ").length + (b.sections || []).map((s) => s.text).join(" ").length) / 1100));
     const hhmm = (iso) => new Date(iso).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
     const an = d.analysis || {};
-    $("#brief-meta").textContent = `leitura de ${mins} min · ` + (an.updated_at ? `análise do Claude às ${hhmm(an.updated_at)} · notícias às ${hhmm(d.generated_at)}` : hhmm(d.generated_at));
+    $("#brief-meta").textContent = `${mins} min de leitura · ` + (an.updated_at ? `análise às ${hhmm(an.updated_at)}` : `notícias às ${hhmm(d.generated_at)}`);
     $("#brief-tldr").innerHTML = (b.tldr || []).map((t) => `<li>${esc(t)}</li>`).join("");
-    const list = (sel, arr) => { $(sel).innerHTML = (arr || []).map((t) => `<li>${esc(t)}</li>`).join(""); $(sel).closest(".side-block").hidden = !(arr || []).length; };
+    const list = (sel, arr) => { $(sel).innerHTML = (arr || []).map((t) => `<li>${esc(t)}</li>`).join(""); $(sel).closest(".widget").hidden = !(arr || []).length; };
     list("#brief-watch", b.watchlist);
     list("#brief-conn", b.connections);
 
@@ -460,6 +479,7 @@
 
     const top = d.items.filter((i) => !muted(i) && !i.repeat && !i.dup_of).sort((a, z) => relevance(z) - relevance(a)).slice(0, 8);
     $("#top-list").innerHTML = top.map(cardHTML).join("");
+    $("#brief-sections").closest(".section").hidden = !secs.length;
 
     // mapa do dia: volume por editoria + quantas são importantes
     const cats = {};
@@ -474,7 +494,7 @@
         <span>${esc(catName(c))}</span>
         <span class="bar">${x.hot ? `<span class="bar-fill" style="width:${(x.hot / maxN) * 100}%">${x.hot}</span>` : ""}<span class="bar-hot" style="width:${((x.n - x.hot) / maxN) * 100}%"></span></span>
         <span class="muted small">${x.n}</span></div>`;
-    }).join("") + `<div class="map-legend">Barra cheia = notícias com nota ≥ 7 · clara = demais · clique para filtrar</div>`;
+    }).join("") + `<div class="map-legend">Cor forte: notícias com nota 7 ou mais. Toque numa editoria para filtrar.</div>`;
 
     const ent = {};
     for (const i of d.items) for (const e of i.entities || []) ent[e] = (ent[e] || 0) + i.importance;
@@ -482,46 +502,101 @@
       .map(([e]) => `<button class="chip" data-search="${esc(e)}">${esc(e)}</button>`).join("") || `<span class="muted small">Disponível com a análise por IA.</span>`;
   }
 
-  function cardHTML(it) {
-    const open = state.open.has(it.id);
+  // nota como anel: o traço cobre nota × 10% da circunferência (r = 15,9155 → circunferência 100)
+  const ring = (n, cls = "") => `<span class="ring ${impClass(n)} ${cls}" style="--imp:${n}">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><circle class="trk" cx="18" cy="18" r="15.9155"/><circle class="val" cx="18" cy="18" r="15.9155" stroke-dasharray="${n * 10} 100"/></svg><b>${n}</b></span>`;
+
+  function newsTop(it) {
     const sources = [...new Set(it.outlets.map((o) => o.source))];
     const time = new Date(it.published).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
-    const blk = (title, text, cls = "") => (text ? `<div class="blk ${cls}"><h5>${title}</h5><p>${esc(text)}</p></div>` : "");
-    const deal = it.deal ? `<div class="blk full"><h5>Deal</h5><p>${esc([it.deal.type, it.deal.buyer && `${it.deal.buyer} → ${it.deal.target}`, it.deal.value, it.deal.stage, it.deal.sector, it.deal.advisors && it.deal.advisors !== "não divulgado" ? `Assessores: ${it.deal.advisors}` : ""].filter(Boolean).join(" · "))}</p></div>` : "";
+    return `<div class="news-top">
+      <span class="cat-dot">${esc(catName(it.category))}</span>
+      <span class="dot-sep">${esc(sources[0])}${sources.length > 1 ? ` <span title="${esc(sources.join(", "))}">+${sources.length - 1}</span>` : ""}</span>
+      <span class="dot-sep" title="${esc(new Date(it.published).toLocaleString("pt-BR"))}">${time}</span></div>`;
+  }
+
+  function badges(it) {
+    const sent = { positivo: "pos", negativo: "neg", misto: "misto" }[it.sentiment];
+    return [
+      it.is_deal ? `<span class="badge deal">${esc(it.deal?.type || "Deal")}</span>` : "",
+      it.update ? `<span class="badge upd" title="Antes: ${esc(it.update.from)} (${esc(fmtDay(it.update.date))})">Atualização</span>` : "",
+      it.repeat ? `<span class="badge" title="Este deal já saiu numa edição anterior, sem mudança de estágio">Já noticiado em ${esc(fmtDay(it.repeat.date))}</span>` : "",
+      sent ? `<span class="badge ${sent}">${esc(it.sentiment.charAt(0).toUpperCase() + it.sentiment.slice(1))}</span>` : "",
+      it.ai === false ? `<span class="badge" title="Nota estimada por palavras-chave; a análise sai na próxima rodada do Claude">Sem análise</span>` : "",
+    ].join("");
+  }
+
+  function cardHTML(it) {
+    const read = state.read.has(it.id), saved = state.saved.has(it.id);
     return `
-    <article class="card ${state.read.has(it.id) ? "read" : ""}" data-id="${it.id}" style="${catVar(it.category)}">
-      <div class="card-top">
-        <span class="imp ${impClass(it.importance)}" style="--imp:${it.importance}" title="Nota ${it.importance}/10 · ${esc(it.importance_reason)}">${it.importance}</span>
-        <div class="card-main">
-          <h3 data-toggle="${it.id}">${esc(it.headline)}</h3>
-          <div class="meta">
-            <span class="cat-tag">${esc(catName(it.category))}</span>
-            ${it.is_deal ? `<span class="deal-tag">deal</span>` : ""}
-            ${it.repeat ? `<span class="multi" title="Este deal já saiu numa edição anterior, sem mudança de estágio">já noticiado em ${esc(fmtDay(it.repeat.date))}</span>` : ""}
-            ${it.update ? `<span class="multi upd" title="Antes: ${esc(it.update.from)} (${esc(fmtDay(it.update.date))})">atualização</span>` : ""}
-            <span>${esc(sources[0])}</span>
-            ${sources.length > 1 ? `<span class="multi" title="${esc(sources.join(", "))}">+${sources.length - 1} veículos</span>` : ""}
-            <span>${time} · ${ago(it.published)}</span>
-            ${it.sentiment && it.sentiment !== "neutro" ? `<span class="sent-${esc(it.sentiment)}">${esc(it.sentiment)}</span>` : ""}
-            ${it.ai === false ? `<span class="multi" title="Nota estimada por palavras-chave; a análise sai na próxima rodada do Claude">sem análise</span>` : ""}
-          </div>
-          ${it.summary ? `<p class="card-summary">${esc(it.summary)}</p>` : ""}
-          ${open ? `<div class="detail">
-            ${blk("O que envolve", it.involves)}
-            ${blk("Como interpretar", it.interpretation)}
-            ${blk("Impacto", it.impact)}
-            ${blk("Por que essa nota", it.importance_reason)}
-            ${deal}
-            <div class="blk full"><h5>Leia nos veículos</h5><div class="outlets">${it.outlets.map((o) => `<a href="${safeUrl(o.link)}" target="_blank" rel="noopener" data-readlink="${it.id}">${esc(o.source)} ↗</a>`).join("")}</div></div>
-          </div>` : ""}
-        </div>
-        <div class="card-actions">
-          <button class="ibtn" data-expand="${it.id}" title="Análise completa (Enter)">${open ? "−" : "+"}</button>
-          <button class="ibtn ${state.saved.has(it.id) ? "on" : ""}" data-save="${it.id}" title="Salvar (s)">${state.saved.has(it.id) ? "★" : "☆"}</button>
-          <button class="ibtn" data-read="${it.id}" title="Marcar como lida (m)">${state.read.has(it.id) ? "●" : "○"}</button>
-        </div>
+    <article class="card news ${read ? "read" : ""}" data-id="${it.id}" data-open="${it.id}" style="${catVar(it.category)}">
+      ${read ? "" : `<span class="unread-dot" title="Não lida"></span>`}${ring(it.importance)}
+      <div class="card-main">
+        ${newsTop(it)}
+        <h3>${esc(it.headline)}</h3>
+        ${it.summary ? `<p class="card-summary">${esc(it.summary)}</p>` : ""}
+        <div class="badges">${badges(it)}</div>
+      </div>
+      <div class="card-actions">
+        <button class="ibtn ${saved ? "on" : ""}" data-save="${it.id}" title="${saved ? "Remover dos salvos" : "Salvar"} (s)" aria-label="Salvar">${icon("star")}</button>
+        <button class="ibtn ${read ? "" : "done"}" data-read="${it.id}" title="${read ? "Marcar como não lida" : "Marcar como lida"} (m)" aria-label="Lida">${icon("check")}</button>
       </div>
     </article>`;
+  }
+
+  // ---------------------------------------------------------- leitor
+  const reader = { id: null, list: [] };
+  const findItem = (id) => [...(state.digest?.items || []), ...(state.digest?.upcoming || [])].find((i) => i.id === id);
+
+  function openReader(id, list) {
+    if (!findItem(id)) return;
+    reader.id = id;
+    reader.list = list && list.length ? list : [id];
+    state.read.add(id); persist();
+    renderReader();
+    const dlg = $("#reader");
+    if (!dlg.open) dlg.showModal();
+    $("#reader-body").scrollTop = 0;
+    rerenderLists();
+  }
+
+  function renderReader() {
+    const it = findItem(reader.id);
+    if (!it) return;
+    const pos = reader.list.indexOf(reader.id);
+    $("#reader-pos").textContent = reader.list.length > 1 ? `${pos + 1} de ${reader.list.length}` : "";
+    $('[data-reader="prev"]').disabled = pos <= 0;
+    $('[data-reader="next"]').disabled = pos < 0 || pos >= reader.list.length - 1;
+    const sv = $('[data-reader="save"]');
+    sv.classList.toggle("on", state.saved.has(it.id));
+    sv.title = state.saved.has(it.id) ? "Remover dos salvos (s)" : "Salvar (s)";
+    const sec = (title, text) => (text ? `<section class="reader-sec"><h4>${title}</h4><p>${esc(text)}</p></section>` : "");
+    const x = it.deal || {};
+    const dealRows = [["Tipo", x.type], ["Comprador ou investidor", x.buyer], ["Alvo", x.target], ["Valor", x.value], ["Estágio", x.stage], ["Setor", x.sector], ["Assessores", x.advisors]].filter(([, v]) => v);
+    $("#reader-body").innerHTML = `
+      <div style="${catVar(it.category)}">${newsTop(it)}</div>
+      <h2 class="reader-title">${esc(it.headline)}</h2>
+      ${it.summary ? `<p class="reader-lede">${esc(it.summary)}</p>` : ""}
+      <div class="reader-score">${ring(it.importance)}<p>${it.importance_reason ? esc(it.importance_reason) : `Nota ${it.importance} de 10.`}</p></div>
+      ${sec("O que envolve", it.involves)}
+      ${sec("Como interpretar", it.interpretation)}
+      ${sec("Impacto", it.impact)}
+      ${it.is_deal && dealRows.length ? `<section class="reader-sec"><h4>Deal${it.update ? ` · antes: ${esc(it.update.from)} (${esc(fmtDay(it.update.date))})` : ""}</h4>
+        <dl class="deal-grid">${dealRows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl></section>` : ""}
+      ${(it.entities || []).length ? `<section class="reader-sec"><h4>Quem está na notícia</h4><div class="chips-plain">${it.entities.map((e) => `<button type="button" data-search="${esc(e)}">${esc(e)}</button>`).join("")}</div></section>` : ""}
+      <section class="reader-sec"><h4>Leia nos veículos</h4>
+        <div class="outlets">${it.outlets.map((o) => `<a href="${safeUrl(o.link)}" target="_blank" rel="noopener">${esc(o.source)}${icon("ext")}</a>`).join("")}</div></section>
+      ${it.title && it.title !== it.headline ? `<p class="muted small">Título original: ${esc(it.title)}</p>` : ""}`;
+  }
+
+  function readerStep(dir) {
+    const i = reader.list.indexOf(reader.id) + dir;
+    if (i < 0 || i >= reader.list.length) return;
+    reader.id = reader.list[i];
+    state.read.add(reader.id); persist();
+    renderReader();
+    $("#reader-body").scrollTop = 0;
+    rerenderLists();
   }
 
   function filtered() {
@@ -550,6 +625,7 @@
     const d = state.digest;
     const counts = {};
     for (const i of d.items) counts[i.category] = (counts[i.category] || 0) + 1;
+    syncSegments();
     $("#cat-chips").innerHTML = `<button class="chip" data-cat="" aria-pressed="${!state.cat}">Todas<span class="n">${d.items.length}</span></button>` +
       CAT_ORDER.filter((c) => counts[c]).map((c) => `<button class="chip" data-cat="${c}" aria-pressed="${state.cat === c}">${esc(catName(c))}<span class="n">${counts[c]}</span></button>`).join("");
     const items = filtered();
@@ -565,7 +641,7 @@
     $("#deals-body").innerHTML = deals.map((i) => {
       const x = i.deal || {};
       return `<tr>
-        <td><span class="imp ${impClass(i.importance)}" style="--imp:${i.importance}">${i.importance}</span></td>
+        <td>${ring(i.importance, "sm")}</td>
         <td>${esc(x.type)}</td><td>${esc(x.buyer)}</td><td>${esc(x.target)}</td>
         <td>${esc(x.value)}</td><td><span class="stage">${esc(x.stage)}</span>${i.update ? `<div class="muted small">antes: ${esc(i.update.from)} (${esc(fmtDay(i.update.date))})</div>` : ""}</td><td>${esc(x.sector)}</td>
         <td><a href="#" data-jump="${i.id}">${esc(i.outlets[0].source)}</a></td></tr>`;
@@ -580,41 +656,71 @@
 
   // ---------------------------------------------------------- ações
   function toggle(set, id) { set.has(id) ? set.delete(id) : set.add(id); persist(); }
-  function rerenderLists() { renderBrief(); renderFeed(); }
+  function rerenderLists() {
+    renderBrief(); renderFeed(); renderLater();
+    renderTabs();
+    if ($("#reader").open) renderReader();
+  }
+
+  // controles segmentados: escrevem no campo escondido e disparam o mesmo evento dos filtros
+  function syncSegments() {
+    document.querySelectorAll(".segmented").forEach((seg) => {
+      const v = $("#" + seg.dataset.seg).value;
+      seg.querySelectorAll("button").forEach((b) => { b.setAttribute("role", "radio"); b.setAttribute("aria-checked", String(b.dataset.v === v)); });
+    });
+  }
+  document.querySelectorAll(".segmented").forEach((seg) => seg.addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-v]");
+    if (!b) return;
+    const field = $("#" + seg.dataset.seg);
+    field.value = b.dataset.v;
+    if (seg.dataset.seg === "minimp") $("#minimp-val").textContent = b.dataset.v;
+    field.dispatchEvent(new Event("input"));
+  }));
 
   function jumpTo(id) {
-    setTab("feed");
-    state.cat = ""; $("#q").value = ""; $("#minimp").value = 1; $("#minimp-val").textContent = 1;
-    $("#region").value = ""; $("#unread").checked = false; $("#saved").checked = false;
-    state.open.add(id);
-    renderFeed();
-    const el = document.querySelector(`#feed .card[data-id="${id}"]`);
-    if (el) { el.scrollIntoView({ behavior: "smooth", block: "center" }); el.classList.add("focus"); setTimeout(() => el.classList.remove("focus"), 1600); }
+    const list = [...document.querySelectorAll(`#view-${state.tab} [data-open]`)].map((el) => el.dataset.open);
+    openReader(id, list.includes(id) ? list : null);
   }
 
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-tab],[data-toggle],[data-expand],[data-save],[data-read],[data-cat],[data-jump],[data-search],[data-goto],[data-readlink]");
+    const t = e.target.closest("[data-tab],[data-save],[data-read],[data-cat],[data-jump],[data-search],[data-goto],[data-reader],[data-cmdk],[data-more],[data-shortcuts],[data-prefs-open],[data-open]");
     if (!t) return;
     const ds = t.dataset;
     if (ds.tab) return setTab(ds.tab);
     if (ds.goto) return setTab(ds.goto);
-    if (ds.readlink) { state.read.add(ds.readlink); persist(); return; }
-    if (ds.toggle || ds.expand) {
-      const id = ds.toggle || ds.expand;
-      toggle(state.open, id);
-      state.read.add(id); persist();
-      return rerenderLists();
+    if (ds.cmdk !== undefined) return openCmdk();
+    if (ds.more !== undefined) return $("#more").showModal();
+    if (ds.shortcuts !== undefined) return $("#shortcuts").showModal();
+    if (ds.prefsOpen !== undefined) { $("#more").close(); return openPrefs(); }
+    if (ds.reader) {
+      if (ds.reader === "close") return $("#reader").close();
+      if (ds.reader === "prev") return readerStep(-1);
+      if (ds.reader === "next") return readerStep(1);
+      if (ds.reader === "save") { toggle(state.saved, reader.id); return rerenderLists(); }
     }
-    if (ds.save) { toggle(state.saved, ds.save); return rerenderLists(); }
-    if (ds.read) { toggle(state.read, ds.read); return rerenderLists(); }
+    if (ds.save) { e.stopPropagation(); toggle(state.saved, ds.save); return rerenderLists(); }
+    if (ds.read) { e.stopPropagation(); toggle(state.read, ds.read); return rerenderLists(); }
     if (ds.jump) { e.preventDefault(); return jumpTo(ds.jump); }
-    if (ds.search) { setTab("feed"); $("#q").value = ds.search; state.cat = ""; return renderFeed(); }
+    if (ds.search) {
+      if ($("#reader").open) $("#reader").close();
+      setTab("feed"); $("#q").value = ds.search; state.cat = ""; return renderFeed();
+    }
     if (ds.cat !== undefined) {
       if (t.classList.contains("map-row")) setTab("feed");
       state.cat = state.cat === ds.cat ? "" : ds.cat;
       return renderFeed();
     }
+    if (ds.open) {
+      if (e.target.closest("a")) return;
+      const list = [...t.closest(".cards").querySelectorAll("[data-open]")].map((el) => el.dataset.open);
+      return openReader(ds.open, list);
+    }
   });
+  // clique no fundo escuro fecha o leitor e as folhas
+  for (const id of ["reader", "more", "shortcuts", "prefs", "cmdk"]) {
+    $("#" + id).addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
+  }
 
   for (const id of ["q", "region", "sort", "unread", "saved"]) $("#" + id).addEventListener("input", () => { state.focus = -1; renderFeed(); });
   $("#base-q").addEventListener("input", renderBase);
@@ -635,9 +741,13 @@
     if (!l) return;
     navigator.clipboard.writeText(leadText(l)).then(() => toast("Resumo copiado"), () => toast("Não consegui copiar"));
   });
-  $("#minimp").addEventListener("input", (e) => { $("#minimp-val").textContent = e.target.value; renderFeed(); });
+  $("#minimp").addEventListener("input", () => renderFeed());
   $("#btn-refresh").onclick = () => load().then(() => toast("Atualizado"));
   $("#archive").onchange = (e) => { state.edition = e.target.value || null; state.open.clear(); load(); };
+
+  // título grande que vira título compacto na barra ao rolar
+  new IntersectionObserver(([en]) => document.body.classList.toggle("scrolled", !en.isIntersecting), { rootMargin: "-52px 0px 0px 0px" })
+    .observe($("#page-title"));
 
   // tema
   const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
@@ -650,14 +760,15 @@
 
   // personalização
   const dlg = $("#prefs");
-  $("#btn-prefs").onclick = () => {
+  function openPrefs() {
     const p = state.prefs;
     $("#pref-boost").value = p.boost.join("\n");
     $("#pref-mute").value = p.mute.join("\n");
     $("#pref-notify").checked = !!p.notify;
     $("#pref-cats").innerHTML = CAT_ORDER.map((c) => `<label>${esc(catName(c))}<input type="range" min="0" max="2" step="0.25" data-cw="${c}" value="${p.catWeight[c] ?? 1}"></label>`).join("");
     dlg.showModal();
-  };
+  }
+  $("#btn-prefs").onclick = openPrefs;
   $("#pref-save").onclick = () => {
     const lines = (s) => s.split("\n").map((x) => x.trim()).filter(Boolean);
     const catWeight = {};
@@ -668,7 +779,66 @@
     rerenderLists();
   };
 
-  // atalhos de teclado
+  // ---------------------------------------------------------- busca universal (⌘K)
+  const cmdk = { sel: 0, opts: [] };
+  function openCmdk() {
+    if (!state.digest) return;
+    if ($("#more").open) $("#more").close();
+    $("#cmdk-q").value = "";
+    renderCmdk();
+    $("#cmdk").showModal();
+    $("#cmdk-q").focus();
+  }
+  function renderCmdk() {
+    const q = fold($("#cmdk-q").value.trim());
+    const has = (s) => !q || fold(s).includes(q);
+    const groups = [];
+    const tabs = tabsAvailable().filter((t) => has(t.label)).map((t) => ({ ic: icon(t.icon), title: t.label, sub: "Ir para a aba", run: () => setTab(t.id) }));
+    if (has("Companhias abertas CVM")) tabs.push({ ic: icon("cias"), title: "Companhias", sub: "Companhias abertas e documentos na CVM", run: () => { location.href = "cias.html"; } });
+    const items = [...state.digest.items].filter((i) => q && has(`${i.headline} ${i.title} ${(i.entities || []).join(" ")} ${(i.tags || []).join(" ")}`))
+      .sort((a, z) => z.importance - a.importance).slice(0, 8)
+      .map((i) => ({ ic: `<span class="opt-ic" style="color:var(--c-${CAT_ORDER.includes(i.category) ? i.category : "outros"})">${i.importance}</span>`, raw: true, title: i.headline, sub: `${catName(i.category)} · ${i.outlets[0].source}`, run: () => openReader(i.id) }));
+    const leads = Object.values((state.leads || {}).leads || {}).filter((l) => q && has(`${l.company} ${l.sector} ${l.counterparty} ${l.advisors}`)).slice(0, 5)
+      .map((l) => ({ ic: icon("leads"), title: l.company, sub: `Lead · ${l.signal}${l.sector ? ` · ${l.sector}` : ""}`, run: () => { setTab("leads"); $("#leads-q").value = l.company; $("#leads-period").value = "9999"; $("#leads-closed").checked = true; renderLeads(); renderTabs(); } }));
+    const deals = Object.values((state.base || {}).deals || {}).filter((d) => q && has(`${d.buyer} ${d.target} ${d.sector} ${d.advisors}`)).slice(0, 5)
+      .map((d) => ({ ic: icon("base"), title: `${d.buyer} → ${d.target}`, sub: `Base de deals · ${d.stage}${d.value ? ` · ${d.value}` : ""}`, run: () => { setTab("base"); $("#base-q").value = d.target || d.buyer; renderBase(); } }));
+    if (q) {
+      if (items.length) groups.push(["Notícias", items]);
+      if (leads.length) groups.push(["Leads", leads]);
+      if (deals.length) groups.push(["Base de deals", deals]);
+      if (tabs.length) groups.push(["Abas", tabs]);
+    } else groups.push(["Abas", tabs]);
+    cmdk.opts = groups.flatMap(([, o]) => o);
+    cmdk.sel = Math.min(cmdk.sel, Math.max(0, cmdk.opts.length - 1));
+    let n = 0;
+    $("#cmdk-list").innerHTML = groups.map(([g, opts]) => `<li class="grp" role="presentation">${g}</li>` + opts.map((o) => {
+      const i = n++;
+      return `<li class="opt" role="option" data-i="${i}" aria-selected="${i === cmdk.sel}">${o.raw ? o.ic : `<span class="opt-ic">${o.ic}</span>`}<span class="opt-txt"><b>${esc(o.title)}</b><span class="sub">${esc(o.sub)}</span></span></li>`;
+    }).join("")).join("") || `<li class="none">Nada encontrado para "${esc($("#cmdk-q").value)}".</li>`;
+    $("#cmdk-list [aria-selected='true']")?.scrollIntoView({ block: "nearest" });
+  }
+  function runCmdk(i) {
+    const o = cmdk.opts[i];
+    if (!o) return;
+    $("#cmdk").close();
+    o.run();
+  }
+  $("#cmdk-q").addEventListener("input", () => { cmdk.sel = 0; renderCmdk(); });
+  $("#cmdk-q").addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      cmdk.sel = (cmdk.sel + (e.key === "ArrowDown" ? 1 : -1) + cmdk.opts.length) % Math.max(1, cmdk.opts.length);
+      renderCmdk();
+    } else if (e.key === "Enter") { e.preventDefault(); runCmdk(cmdk.sel); }
+    else if (e.key === "Escape") { e.preventDefault(); $("#cmdk").close(); }
+  });
+  $("#cmdk-list").addEventListener("click", (e) => { const o = e.target.closest(".opt"); if (o) runCmdk(+o.dataset.i); });
+  $("#cmdk-list").addEventListener("mousemove", (e) => {
+    const o = e.target.closest(".opt");
+    if (o && +o.dataset.i !== cmdk.sel) { cmdk.sel = +o.dataset.i; $("#cmdk-list").querySelectorAll(".opt").forEach((x) => x.setAttribute("aria-selected", String(x === o))); }
+  });
+
+  // ---------------------------------------------------------- atalhos de teclado
   function feedCards() { return [...document.querySelectorAll("#feed .card")]; }
   function highlightFocus() {
     const cards = feedCards();
@@ -676,12 +846,24 @@
     cards[state.focus]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
   document.addEventListener("keydown", (e) => {
-    if (e.target.matches("input, textarea, select") || e.metaKey || e.ctrlKey || e.altKey || dlg.open) {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); return $("#cmdk").open ? $("#cmdk").close() : openCmdk(); }
+    if ($("#cmdk").open || dlg.open || $("#more").open || $("#shortcuts").open) return;
+    if (e.target.matches("input, textarea, select") || e.metaKey || e.ctrlKey || e.altKey) {
       if (e.key === "Escape" && e.target.id === "q") e.target.blur();
       return;
     }
     const k = e.key;
-    if (k >= "1" && k <= "4") return setTab(TABS[+k - 1].id);
+    if ($("#reader").open) {
+      const it = findItem(reader.id);
+      if (k === "j" || k === "ArrowDown") { e.preventDefault(); readerStep(1); }
+      else if (k === "k" || k === "ArrowUp") { e.preventDefault(); readerStep(-1); }
+      else if (k === "s") { toggle(state.saved, reader.id); rerenderLists(); }
+      else if (k === "m") { toggle(state.read, reader.id); rerenderLists(); }
+      else if (k === "o" && it && /^https?:\/\//i.test(it.link)) window.open(it.link, "_blank", "noopener");
+      return;
+    }
+    if (k === "?") return $("#shortcuts").showModal();
+    if (k >= "1" && k <= "8") { const t = tabsAvailable()[+k - 1]; return t && setTab(t.id); }
     if (k === "/") { e.preventDefault(); setTab("feed"); $("#q").focus(); return; }
     if (k === "r") return load().then(() => toast("Atualizado"));
     if (state.tab !== "feed") return;
@@ -694,7 +876,7 @@
     const id = cards[state.focus]?.dataset.id;
     if (!id) return;
     const item = state.digest.items.find((i) => i.id === id);
-    if (k === "Enter") { toggle(state.open, id); state.read.add(id); persist(); renderFeed(); }
+    if (k === "Enter") openReader(id, cards.map((c) => c.dataset.id));
     else if (k === "o") { state.read.add(id); persist(); if (/^https?:\/\//i.test(item.link)) window.open(item.link, "_blank", "noopener"); renderFeed(); }
     else if (k === "m") { toggle(state.read, id); renderFeed(); }
     else if (k === "s") { toggle(state.saved, id); renderFeed(); }
