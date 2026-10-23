@@ -67,10 +67,27 @@ jobs:
           key: cias-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: cias-
 
+      - name: Perfis das companhias (FCA, FRE, DFP e ITR da CVM; refeitos uma vez por dia)
+        continue-on-error: true
+        timeout-minutes: 15
+        run: python scripts/perfis.py base
+
+      - name: Cotações e ofertas públicas
+        continue-on-error: true
+        timeout-minutes: 8
+        run: |
+          python scripts/perfis.py precos
+          python scripts/perfis.py ofertas
+
       - name: Montar a base de companhias abertas
         continue-on-error: true
         timeout-minutes: 10
         run: python scripts/cias.py build
+
+      - name: Ligar notícias, deals, leads e ofertas às companhias
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/perfis.py montar
 
       - name: Forçar o navegador a carregar o visual novo a cada publicação
         run: sed -i "s#styles.css\"#styles.css?v=${GITHUB_SHA::7}\"#; s#app.js\"#app.js?v=${GITHUB_SHA::7}\"#; s#cias.js\"#cias.js?v=${GITHUB_SHA::7}\"#" site/index.html site/cias.html

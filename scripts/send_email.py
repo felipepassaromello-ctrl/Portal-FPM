@@ -139,6 +139,23 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
                          + (f'<p style="margin:0 0 8px;font:500 13.5px/1.5 {SANS};color:{INK2}">Setores mais ativos: {e(top_sec)}</p>' if top_sec else "")
                          + f'<ul style="margin:0;padding-left:18px;font:500 14px/1.5 {SANS};color:{INK}">{rows}</ul></div>')
 
+    # leads que apareceram nesta edição: empresas com transação em aberto (para a equipe abordar)
+    leads_db = json.loads((DATA / "leads_db.json").read_text(encoding="utf-8")) if (DATA / "leads_db.json").exists() else {}
+    fresh_leads = sorted([x for x in leads_db.get("leads", {}).values() if x.get("first_seen") == digest.get("date") and x.get("status") == "Em aberto"],
+                         key=lambda x: -x.get("importance", 0))[:6]
+    leads_html = ""
+    if fresh_leads:
+        rows = "".join(
+            f'<tr><td style="padding:11px 0;border-bottom:1px solid {LINE};font:500 14px/1.5 {SANS};color:{INK}">'
+            f'<span style="font-weight:700">{e(x.get("company"))}</span> '
+            f'<span style="font:700 10.5px {SANS};color:#c2185b;background:#fde7ef;padding:2px 8px;border-radius:999px">{e(x.get("signal"))}</span><br>'
+            f'<span style="color:{INK2};font-size:13.5px">{e(x.get("why"))}</span>'
+            + (f'<br><span style="color:{MUTED};font-size:12.5px">Contraparte: {e(x.get("counterparty"))} · Assessores: {e(x.get("advisors") or "não divulgado")}</span>'
+               if x.get("counterparty") and x.get("counterparty") != "não divulgado" else "")
+            + '</td></tr>' for x in fresh_leads)
+        leads_html = (f'<h2 style="{label};margin-top:30px">Leads novos</h2>'
+                      f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{rows}</table>')
+
     watch = "".join(f'<li style="margin:6px 0">{e(w)}</li>' for w in b.get("watchlist", []))
     watch_html = (f'<div style="margin-top:30px;background:{PAPER};border:1px solid {LINE};border-radius:16px;padding:18px 20px">'
                   f'<h2 style="{label}">No radar</h2>'
@@ -163,6 +180,7 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
   <table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{tldr}</table>
   {week_html}
   {deals_html}
+  {leads_html}
   {watch_html}
   <table role="presentation" cellspacing="0" cellpadding="0" style="margin:30px 0 0"><tr><td style="background:{INK};border-radius:999px">
     <a href="{SITE_URL}?e={today:%Y%m%d}" style="display:inline-block;padding:13px 24px;font:700 14px {SANS};color:#ffffff;text-decoration:none">Abrir a edição completa →</a>
@@ -176,6 +194,7 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
     text = "\n".join([
         f"PORTAL FPM · {long_date(today)}", "", b["headline"], b.get("mood", ""), "", "PRINCIPAIS PONTOS",
         *[f"{n:02d}. {t}" for n, t in enumerate(b.get("tldr", []), 1)], "",
+        *(["LEADS NOVOS", *[f"- {x.get('company')} ({x.get('signal')}): {x.get('why')}" for x in fresh_leads], ""] if fresh_leads else []),
         f"Edição completa: {SITE_URL}?e={today:%Y%m%d}", "",
         "Resumo gerado automaticamente. As análises são feitas por IA; confira a fonte original antes de usar.",
     ])

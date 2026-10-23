@@ -2,9 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Companhias · Portal FPM</title>
-  <meta name="description" content="Companhias abertas e seus documentos na CVM: fatos relevantes, comunicados e avisos, com resumo.">
+  <meta name="description" content="Companhias abertas: perfil, acionistas, administração, financeiro, notícias, operações e documentos na CVM.">
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
@@ -12,136 +16,195 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><text x='16' y='20.5' font-family='-apple-system,Helvetica,Arial' font-size='10' font-weight='700' text-anchor='middle' fill='%23fff'>FPM</text></svg>">
   <script>try { const t = JSON.parse(localStorage.getItem("n1:theme")); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
 </head>
-<body class="cias-page">
-  <header class="masthead">
-    <div class="wrap masthead-row">
-      <a class="brand brand-link" href="index.html" title="Voltar ao briefing">
-        <span class="logo">FPM</span>
-        <div>
-          <h1>Companhias abertas</h1>
+<body class="cias-page loading">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="3"/><path d="M7.5 8.5h9M7.5 12h9M7.5 15.5h5"/></symbol>
+      <symbol id="i-feed" viewBox="0 0 24 24"><path d="M8.5 6.5h11M8.5 12h11M8.5 17.5h11"/><circle cx="4.5" cy="6.5" r=".9"/><circle cx="4.5" cy="12" r=".9"/><circle cx="4.5" cy="17.5" r=".9"/></symbol>
+      <symbol id="i-agenda" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-deals" viewBox="0 0 24 24"><path d="M4 8.5h13.5M14 5l3.5 3.5L14 12M20 15.5H6.5M10 12l-3.5 3.5L10 19"/></symbol>
+      <symbol id="i-leads" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+      <symbol id="i-base" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1.5"/><path d="M5 9v8.5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9M10 13h4"/></symbol>
+      <symbol id="i-ofertas" viewBox="0 0 24 24"><path d="M4 19.5h16M6.5 16v-4M10.5 16V8M14.5 16v-6M18.5 16V5"/></symbol>
+      <symbol id="i-official" viewBox="0 0 24 24"><path d="M3.5 9 12 4.5 20.5 9M5 19.5h14M6.5 10.5v6.5M10 10.5v6.5M14 10.5v6.5M17.5 10.5v6.5"/></symbol>
+      <symbol id="i-sources" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.6"/><path d="M8.2 15.8a5.4 5.4 0 0 1 0-7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6M5.4 18.6a9.3 9.3 0 0 1 0-13.2M18.6 5.4a9.3 9.3 0 0 1 0 13.2"/></symbol>
+      <symbol id="i-cias" viewBox="0 0 24 24"><path d="M4.5 20V7.5l6-3V20M10.5 9.5l9 3V20M3 20h18M7 10h1M7 13h1M7 16h1M14 14.5h1M14 17.5h1"/></symbol>
+      <symbol id="i-docs" viewBox="0 0 24 24"><path d="M7 3.5h7l4.5 4.5v12.5H7z"/><path d="M14 3.5V8h4.5M9.5 12.5h6M9.5 16h6"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></symbol>
+      <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17Z" fill="currentColor"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4 2.4 5 5.4.6-4 3.7 1.1 5.3L12 16l-4.9 2.6 1.1-5.3-4-3.7 5.4-.6Z"/></symbol>
+      <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8M17 14v4a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 5 18V8.5A1.5 1.5 0 0 1 6.5 7H10"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V3.5M8 7.5l4-4 4 4M6 11v8.5h12V11"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="Navegação">
+      <a class="side-brand" href="index.html" aria-label="Portal FPM"><span class="logo">FPM</span><span class="side-brand-name">Portal FPM</span></a>
+      <button class="side-search" id="side-finder" type="button" title="Buscar companhia ( / )">
+        <svg class="ic"><use href="#i-search"/></svg><span>Buscar companhia</span><kbd>/</kbd>
+      </button>
+      <nav class="side-nav" aria-label="Seções">
+        <div class="nav-group">Hoje</div>
+        <a class="nav-item" href="index.html#brief"><svg class="ic"><use href="#i-brief"/></svg><span>Briefing</span></a>
+        <a class="nav-item" href="index.html#feed"><svg class="ic"><use href="#i-feed"/></svg><span>Notícias</span></a>
+        <a class="nav-item" href="index.html#agenda"><svg class="ic"><use href="#i-agenda"/></svg><span>Agenda</span></a>
+        <div class="nav-group">Deals</div>
+        <a class="nav-item" href="index.html#deals"><svg class="ic"><use href="#i-deals"/></svg><span>Deals do dia</span></a>
+        <a class="nav-item" href="index.html#leads"><svg class="ic"><use href="#i-leads"/></svg><span>Leads</span></a>
+        <a class="nav-item" href="index.html#ofertas"><svg class="ic"><use href="#i-ofertas"/></svg><span>Ofertas públicas</span></a>
+        <a class="nav-item" href="index.html#base"><svg class="ic"><use href="#i-base"/></svg><span>Base de deals</span></a>
+        <div class="nav-group">Companhias</div>
+        <a class="nav-item" href="#cias" data-view="cias"><svg class="ic"><use href="#i-cias"/></svg><span>Companhias</span></a>
+        <a class="nav-item" href="#docs" data-view="docs"><svg class="ic"><use href="#i-docs"/></svg><span>Documentos CVM</span></a>
+        <div id="side-favs"></div>
+        <div class="nav-group">Fontes</div>
+        <a class="nav-item" href="index.html#official"><svg class="ic"><use href="#i-official"/></svg><span>Oficiais</span></a>
+        <a class="nav-item" href="index.html#sources"><svg class="ic"><use href="#i-sources"/></svg><span>Fontes</span></a>
+      </nav>
+      <div class="side-foot"><span id="footer-gen" class="small muted"></span></div>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <a class="tb-btn mobile-only" href="index.html" title="Voltar ao portal" aria-label="Voltar ao portal"><svg class="ic"><use href="#i-back"/></svg></a>
+        <span id="bar-title" class="bar-title"></span>
+        <div class="topbar-actions">
+          <button id="btn-share" class="tb-btn" type="button" title="Copiar o link desta página" aria-label="Compartilhar" hidden><svg class="ic"><use href="#i-share"/></svg></button>
+          <button id="btn-theme" class="tb-btn" type="button" title="Tema claro/escuro" aria-label="Tema"><svg class="ic"><use href="#i-theme"/></svg></button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="page-head">
+          <h1 id="page-title" class="large-title">Companhias</h1>
           <p id="dateline" class="dateline">Carregando a base da CVM…</p>
         </div>
-      </a>
-      <div class="masthead-actions">
-        <button id="btn-theme" class="ctl icon" title="Tema claro/escuro">◐</button>
-        <a class="ctl primary" href="index.html">← Portal</a>
-      </div>
-    </div>
-    <nav class="wrap tabs" id="tabs" role="tablist">
-      <a class="tab" role="tab" href="#docs" data-view="docs">Documentos</a>
-      <a class="tab" role="tab" href="#cias" data-view="cias">Companhias</a>
-      <a class="tab" role="tab" href="#" data-view="cia" id="tab-cia" hidden></a>
-    </nav>
-  </header>
+        <div id="banner" class="banner" hidden></div>
 
-  <main class="wrap">
-    <div id="banner" class="banner" hidden></div>
-
-    <section class="finder">
-      <div class="finder-box">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="finder" type="search" placeholder="Buscar companhia por nome, ticker ou CNPJ  ( / )" autocomplete="off" aria-label="Buscar companhia" aria-controls="finder-list" aria-expanded="false" role="combobox">
-      </div>
-      <ul id="finder-list" class="finder-list" role="listbox" hidden></ul>
-      <div id="favs" class="favs"></div>
-    </section>
-
-    <!-- DOCUMENTOS: todas as companhias -->
-    <section id="view-docs" class="view" hidden>
-      <div class="filters card">
-        <div class="filter-row">
-          <label class="fl">Período
-            <select id="d-period" class="ctl">
-              <option value="1">Hoje e ontem</option>
-              <option value="7" selected>Últimos 7 dias</option>
-              <option value="30">Últimos 30 dias</option>
-              <option value="90">Últimos 90 dias</option>
-              <option value="365">Últimos 12 meses</option>
-              <option value="730">Últimos 2 anos</option>
-              <option value="custom">Escolher datas…</option>
-            </select>
-          </label>
-          <label class="fl" id="d-custom" hidden>De <input id="d-from" class="ctl" type="date"> até <input id="d-to" class="ctl" type="date"></label>
-          <input id="d-q" class="ctl search" type="search" placeholder="Buscar no assunto, no resumo ou no nome da companhia…" autocomplete="off">
-        </div>
-        <div class="filter-row">
-          <span class="fl-label">Documento</span>
-          <div id="d-cats" class="chips"></div>
-        </div>
-        <div class="filter-row">
-          <span class="fl-label">Tema</span>
-          <div id="d-temas" class="chips"></div>
-        </div>
-        <div class="filter-row">
-          <label class="ctl check"><input id="d-listed" type="checkbox"> Só listadas na B3</label>
-          <label class="ctl check"><input id="d-favs" type="checkbox"> Só minhas companhias</label>
-          <label class="ctl check"><input id="d-sum" type="checkbox"> Só com resumo</label>
-          <span class="spacer"></span>
-          <button id="d-export" class="ctl">Exportar CSV</button>
-        </div>
-      </div>
-      <p id="d-count" class="muted small"></p>
-      <div id="d-list" class="doc-days"></div>
-      <button id="d-more" class="ctl more" hidden>Mostrar mais</button>
-    </section>
-
-    <!-- DIRETÓRIO DE COMPANHIAS -->
-    <section id="view-cias" class="view" hidden>
-      <div class="toolbar">
-        <input id="c-q" class="ctl search" type="search" placeholder="Filtrar por nome, ticker, setor, cidade…" autocomplete="off">
-        <select id="c-setor" class="ctl" aria-label="Setor"><option value="">Todos os setores</option></select>
-        <select id="c-seg" class="ctl" aria-label="Segmento de listagem"><option value="">Todos os segmentos</option></select>
-        <select id="c-sort" class="ctl" aria-label="Ordenar">
-          <option value="act">Mais ativas (12 meses)</option>
-          <option value="fr">Mais fatos relevantes</option>
-          <option value="last">Documento mais recente</option>
-          <option value="name">Nome</option>
-        </select>
-        <label class="ctl check"><input id="c-listed" type="checkbox" checked> Só listadas na B3</label>
-      </div>
-      <p id="c-count" class="muted small"></p>
-      <div id="c-grid" class="cia-grid"></div>
-      <button id="c-more" class="ctl more" hidden>Mostrar mais</button>
-    </section>
-
-    <!-- UMA COMPANHIA -->
-    <section id="view-cia" class="view" hidden>
-      <div id="cia-head"></div>
-      <div class="cia-body">
-        <aside class="cia-side">
-          <div class="card">
-            <h3 class="section-label">Atividade · documentos por mês (5 anos)</h3>
-            <div id="cia-chart" class="activity"></div>
-            <p class="muted small" id="cia-chart-note"></p>
+        <section class="finder">
+          <div class="finder-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="finder" type="search" placeholder="Buscar companhia por nome, ticker ou CNPJ" autocomplete="off" aria-label="Buscar companhia" aria-controls="finder-list" aria-expanded="false" role="combobox">
           </div>
-          <div class="card">
-            <h3 class="section-label">Ficha</h3>
-            <dl id="cia-facts" class="facts"></dl>
+          <ul id="finder-list" class="finder-list" role="listbox" hidden></ul>
+          <div id="favs" class="favs"></div>
+        </section>
+
+        <!-- DIRETÓRIO DE COMPANHIAS -->
+        <section id="view-cias" class="view" hidden>
+          <div class="filterbar">
+            <div class="filter-row">
+              <label class="search-field grow"><svg class="ic"><use href="#i-search"/></svg><input id="c-q" type="search" placeholder="Filtrar por nome, ticker, setor, cidade, controlador" autocomplete="off"></label>
+            </div>
+            <div class="filter-row">
+              <label class="select-wrap pill"><select id="c-setor" aria-label="Setor"><option value="">Todos os setores</option></select></label>
+              <label class="select-wrap pill"><select id="c-seg" aria-label="Segmento de listagem"><option value="">Todos os segmentos</option></select></label>
+              <label class="select-wrap pill"><select id="c-sort" aria-label="Ordenar">
+                <option value="mc">Maior valor de mercado</option>
+                <option value="news">Mais citadas nas notícias</option>
+                <option value="act">Mais documentos (12 meses)</option>
+                <option value="fr">Mais fatos relevantes</option>
+                <option value="y1">Maior alta em 12 meses</option>
+                <option value="last">Documento mais recente</option>
+                <option value="name">Nome</option>
+              </select></label>
+              <label class="toggle-chip"><input id="c-listed" type="checkbox" checked><span>Só listadas na B3</span></label>
+              <label class="toggle-chip"><input id="c-favs" type="checkbox"><span>Minhas companhias</span></label>
+            </div>
           </div>
-        </aside>
-        <div class="cia-docs">
+          <p id="c-count" class="count-line"></p>
+          <div id="c-grid" class="cia-grid"></div>
+          <button id="c-more" class="btn more" type="button" hidden>Mostrar mais</button>
+        </section>
+
+        <!-- DOCUMENTOS: todas as companhias -->
+        <section id="view-docs" class="view" hidden>
           <div class="filters card">
             <div class="filter-row">
-              <input id="e-q" class="ctl search" type="search" placeholder="Buscar nos documentos desta companhia…" autocomplete="off">
-              <label class="fl">De <input id="e-from" class="ctl" type="date"></label>
-              <label class="fl">até <input id="e-to" class="ctl" type="date"></label>
+              <label class="fl">Período
+                <span class="select-wrap pill"><select id="d-period">
+                  <option value="1">Hoje e ontem</option>
+                  <option value="7" selected>Últimos 7 dias</option>
+                  <option value="30">Últimos 30 dias</option>
+                  <option value="90">Últimos 90 dias</option>
+                  <option value="365">Últimos 12 meses</option>
+                  <option value="730">Últimos 2 anos</option>
+                  <option value="custom">Escolher datas…</option>
+                </select></span>
+              </label>
+              <label class="fl" id="d-custom" hidden>De <input id="d-from" class="ctl" type="date"> até <input id="d-to" class="ctl" type="date"></label>
+              <label class="search-field grow"><svg class="ic"><use href="#i-search"/></svg><input id="d-q" type="search" placeholder="Buscar no assunto, no resumo ou no nome da companhia" autocomplete="off"></label>
             </div>
-            <div class="filter-row"><div id="e-cats" class="chips"></div></div>
-            <div class="filter-row" id="e-temas-row"><span class="fl-label">Tema</span><div id="e-temas" class="chips"></div></div>
+            <div class="filter-row"><span class="fl-label">Documento</span><div id="d-cats" class="chips"></div></div>
+            <div class="filter-row"><span class="fl-label">Tema</span><div id="d-temas" class="chips"></div></div>
+            <div class="filter-row">
+              <label class="toggle-chip"><input id="d-listed" type="checkbox"><span>Só listadas na B3</span></label>
+              <label class="toggle-chip"><input id="d-favs" type="checkbox"><span>Só minhas companhias</span></label>
+              <label class="toggle-chip"><input id="d-sum" type="checkbox"><span>Só com resumo</span></label>
+              <span class="spacer"></span>
+              <button id="d-export" class="btn" type="button">Exportar CSV</button>
+            </div>
           </div>
-          <p id="e-count" class="muted small"></p>
-          <div id="e-list" class="doc-days"></div>
-          <button id="e-more" class="ctl more" hidden>Mostrar mais</button>
-        </div>
-      </div>
-    </section>
-  </main>
+          <p id="d-count" class="count-line"></p>
+          <div id="d-list" class="doc-days"></div>
+          <button id="d-more" class="btn more" type="button" hidden>Mostrar mais</button>
+        </section>
 
-  <footer class="wrap footer muted small">
-    <span>Fonte: CVM (dados abertos e consulta pública do Empresas.NET). Resumos feitos por IA a partir do texto do documento; confira sempre o original. <kbd>/</kbd> buscar companhia</span>
-    <span id="footer-gen"></span>
-  </footer>
-  <div id="toast" class="toast" hidden></div>
+        <!-- UMA COMPANHIA -->
+        <section id="view-cia" class="view" hidden>
+          <div id="cia-head"></div>
+          <div class="cia-tabs-wrap"><nav id="cia-tabs" class="segmented cia-tabs" role="tablist" aria-label="Seções da companhia"></nav></div>
+
+          <div id="pane-geral" class="pane"></div>
+          <div id="pane-noticias" class="pane" hidden></div>
+          <div id="pane-acionistas" class="pane" hidden></div>
+          <div id="pane-adm" class="pane" hidden></div>
+          <div id="pane-fin" class="pane" hidden></div>
+          <div id="pane-divida" class="pane" hidden></div>
+          <div id="pane-docs" class="pane" hidden>
+            <div class="cia-body">
+              <aside class="cia-side">
+                <div class="card">
+                  <h3 class="section-label">Documentos por mês (5 anos)</h3>
+                  <div id="cia-chart" class="activity"></div>
+                  <p class="muted small" id="cia-chart-note"></p>
+                </div>
+              </aside>
+              <div class="cia-docs">
+                <div class="filters card">
+                  <div class="filter-row">
+                    <label class="search-field grow"><svg class="ic"><use href="#i-search"/></svg><input id="e-q" type="search" placeholder="Buscar nos documentos desta companhia" autocomplete="off"></label>
+                    <label class="fl">De <input id="e-from" class="ctl" type="date"></label>
+                    <label class="fl">até <input id="e-to" class="ctl" type="date"></label>
+                  </div>
+                  <div class="filter-row"><div id="e-cats" class="chips"></div></div>
+                  <div class="filter-row" id="e-temas-row"><span class="fl-label">Tema</span><div id="e-temas" class="chips"></div></div>
+                </div>
+                <p id="e-count" class="count-line"></p>
+                <div id="e-list" class="doc-days"></div>
+                <button id="e-more" class="btn more" type="button" hidden>Mostrar mais</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <p class="footnote muted small">Fontes: CVM (cadastro, Formulário Cadastral, Formulário de Referência, DFP, ITR, documentos e ofertas) e cotações do Yahoo Finance com atraso. Resumos de documentos feitos por IA a partir do texto; confira sempre o original.</p>
+      </main>
+    </div>
+  </div>
+
+  <nav class="tabbar tabbar-links" aria-label="Navegação">
+    <a href="index.html#brief"><svg class="ic"><use href="#i-brief"/></svg><span>Briefing</span></a>
+    <a href="index.html#feed"><svg class="ic"><use href="#i-feed"/></svg><span>Notícias</span></a>
+    <a href="index.html#deals"><svg class="ic"><use href="#i-deals"/></svg><span>Deals</span></a>
+    <a href="#cias" aria-current="page"><svg class="ic"><use href="#i-cias"/></svg><span>Companhias</span></a>
+    <a href="index.html#leads"><svg class="ic"><use href="#i-leads"/></svg><span>Leads</span></a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" hidden></div>
   <script src="cias.js"></script>
 </body>
 </html>

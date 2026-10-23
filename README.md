@@ -20,6 +20,10 @@ GitHub Actions (de hora em hora)
           editoria, radar, conexões entre notícias e uma pergunta para a reunião
        6. busca cotações (Ibovespa, dólar, euro, S&P, Nasdaq, Treasury 10a, Brent, ouro, bitcoin)
   └─ grava site/data/digest.json + histórico em site/data/archive/
+  └─ scripts/perfis.py (dados abertos da CVM e cotações do Yahoo, refeitos uma vez por dia)
+       FCA, Formulário de Referência, DFP e ITR → ficha, acionistas, administração, financeiro de cada companhia;
+       ofertas públicas da Resolução 160; liga notícias, deals e leads às companhias (config/aliases.json)
+  └─ scripts/cias.py: todos os documentos entregues à CVM (IPE), com resumo
   └─ publica o site no GitHub Pages
 ```
 
@@ -31,13 +35,16 @@ O site (`site/`) é HTML/CSS/JS puro, sem build. Ele confere a cada 5 minutos se
 
 ### O que dá para fazer no site
 
-- **Briefing**: o resumo do dia para ler em 2–3 minutos, com o top 8 por relevância, o mapa do dia (volume e notícias importantes por editoria) e quem está nas notícias.
-- **Todas as notícias**: busca, filtro por editoria, região, nota mínima, só não lidas e salvas, e ordenação por relevância para você, importância ou horário. Clique numa manchete para abrir a análise completa e os links de todos os veículos que publicaram.
-- **Deals**: tabela de transações com tipo, comprador, alvo, valor, estágio, setor e assessores.
-- **Fontes**: quais veículos responderam nesta edição.
-- **Edições anteriores** (últimos 90 dias), tema claro/escuro, notificação do navegador para notícias com nota ≥ 8.
+- **Briefing**: o resumo do dia para ler em 2–3 minutos, com mercados, as suas companhias, leads novos, os próximos dias da agenda, os destaques, o mapa do dia e quem está nas notícias. Nomes de companhias no texto levam ao perfil delas.
+- **Notícias**: busca, filtro por editoria, região, nota mínima, só não lidas, salvas ou das suas companhias, e ordenação por relevância, nota ou horário. Clique numa notícia para abrir a análise num painel lateral, copiar um resumo para o WhatsApp ou copiar o link da notícia.
+- **Agenda**: assembleias convocadas pelas companhias listadas, vencimentos de títulos de dívida acima de R$ 50 milhões e os pontos de atenção do briefing.
+- **Deals do dia**, **Leads** e **Base de deals** (com o ranking dos assessores mais citados).
+- **Ofertas públicas**: ações, debêntures e notas comerciais registradas na CVM, com volume, coordenador líder e ranking dos coordenadores.
+- **Companhias** (`cias.html`): perfil de cada companhia aberta com cotação, valor de mercado e múltiplos, acionistas e controladores (com quem está por trás de cada um), conselho, diretoria e comitês, remuneração, empregados, controladas, demonstrações dos últimos 5 anos e dos últimos 12 meses, títulos de dívida, ofertas, partes relacionadas, notícias, deals e leads ligados a ela, e todos os documentos entregues à CVM com resumo. Marque ☆ para acompanhar.
+- **Busca universal** com `⌘K`: companhias, notícias, leads, deals e abas.
+- **Edições anteriores** (setas ao lado da data), tema claro/escuro, impressão do briefing, links compartilháveis (`#leads`, `#n/{id}@{data}`, `cias.html#cia/{código}`) e instalação como app no celular (Compartilhar → Adicionar à Tela de Início).
 - **Personalizar**: termos para priorizar ou esconder e peso por editoria. Fica salvo no navegador.
-- **Atalhos**: `j`/`k` navegar, `Enter` abrir a análise, `o` abrir a matéria, `m` marcar como lida, `s` salvar, `/` buscar, `1`–`4` trocar de aba, `r` atualizar.
+- **Atalhos**: `j`/`k` navegar, `Enter` abrir a análise, `o` abrir a matéria, `m` marcar como lida, `s` salvar, `/` buscar nas notícias, `⌘K` buscar em tudo, `1`–`9` trocar de aba, `r` atualizar, `?` atalhos.
 
 ## Análise por IA: dois modos
 

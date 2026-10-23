@@ -1,0 +1,680 @@
+{
+ "_comentario": "Nomes pelos quais a imprensa chama cada companhia, pela raiz do ticker na B3. Ligam notícias, deals e leads ao perfil da companhia. Nomes curtos que também são palavras comuns (Vale, Gol, Oi) só casam com entidades extraídas pela IA, nunca com texto livre.",
+ "PETR": [
+  "Petrobras",
+  "Petróleo Brasileiro"
+ ],
+ "VALE": [
+  "Vale"
+ ],
+ "ITUB": [
+  "Itaú",
+  "Itaú Unibanco",
+  "Itau Unibanco",
+  "Itaú BBA"
+ ],
+ "ITSA": [
+  "Itaúsa"
+ ],
+ "BBDC": [
+  "Bradesco"
+ ],
+ "BBAS": [
+  "Banco do Brasil",
+  "BB"
+ ],
+ "SANB": [
+  "Santander Brasil",
+  "Santander"
+ ],
+ "BPAC": [
+  "BTG Pactual",
+  "BTG"
+ ],
+ "BPAN": [
+  "Banco Pan"
+ ],
+ "ABCB": [
+  "ABC Brasil",
+  "Banco ABC"
+ ],
+ "BRSR": [
+  "Banrisul"
+ ],
+ "BMGB": [
+  "Banco BMG",
+  "BMG"
+ ],
+ "BRBI": [
+  "BR Partners"
+ ],
+ "BSLI": [
+  "BRB",
+  "Banco de Brasília",
+  "BRB Banco de Brasília"
+ ],
+ "BBSE": [
+  "BB Seguridade"
+ ],
+ "CXSE": [
+  "Caixa Seguridade"
+ ],
+ "PSSA": [
+  "Porto Seguro"
+ ],
+ "IRBR": [
+  "IRB",
+  "IRB Re",
+  "IRB Brasil RE"
+ ],
+ "B3SA": [
+  "B3 S.A.",
+  "B3 S.A. Brasil Bolsa Balcão"
+ ],
+ "ABEV": [
+  "Ambev"
+ ],
+ "PCAR": [
+  "GPA",
+  "Pão de Açúcar",
+  "Grupo Pão de Açúcar"
+ ],
+ "BHIA": [
+  "Casas Bahia",
+  "Grupo Casas Bahia"
+ ],
+ "AMER": [
+  "Americanas"
+ ],
+ "MGLU": [
+  "Magazine Luiza",
+  "Magalu"
+ ],
+ "ASAI": [
+  "Assaí",
+  "Assaí Atacadista",
+  "Sendas"
+ ],
+ "CRFB": [
+  "Carrefour Brasil",
+  "Atacadão",
+  "Grupo Carrefour Brasil"
+ ],
+ "GMAT": [
+  "Grupo Mateus"
+ ],
+ "RADL": [
+  "Raia Drogasil",
+  "RD Saúde"
+ ],
+ "PGMN": [
+  "Pague Menos"
+ ],
+ "PNVL": [
+  "Panvel",
+  "Dimed"
+ ],
+ "LREN": [
+  "Lojas Renner",
+  "Renner"
+ ],
+ "GUAR": [
+  "Guararapes",
+  "Riachuelo"
+ ],
+ "CEAB": [
+  "C&A",
+  "C&A Brasil"
+ ],
+ "AZZA": [
+  "Azzas",
+  "Azzas 2154",
+  "Arezzo",
+  "Soma"
+ ],
+ "VIVA": [
+  "Vivara"
+ ],
+ "ALPA": [
+  "Alpargatas"
+ ],
+ "GRND": [
+  "Grendene"
+ ],
+ "VULC": [
+  "Vulcabras"
+ ],
+ "SBFG": [
+  "Grupo SBF",
+  "Centauro"
+ ],
+ "PETZ": [
+  "Petz",
+  "Petz Cobasi"
+ ],
+ "LJQQ": [
+  "Quero-Quero",
+  "Lojas Quero-Quero"
+ ],
+ "AMAR": [
+  "Marisa",
+  "Lojas Marisa"
+ ],
+ "NTCO": [
+  "Natura",
+  "Natura &Co"
+ ],
+ "RAIZ": [
+  "Raízen"
+ ],
+ "CSAN": [
+  "Cosan"
+ ],
+ "RAIL": [
+  "Rumo"
+ ],
+ "UGPA": [
+  "Ultrapar",
+  "Ipiranga"
+ ],
+ "VBBR": [
+  "Vibra",
+  "Vibra Energia",
+  "BR Distribuidora"
+ ],
+ "PRIO": [
+  "Prio",
+  "PetroRio"
+ ],
+ "RECV": [
+  "PetroRecôncavo"
+ ],
+ "BRAV": [
+  "Brava",
+  "Brava Energia",
+  "3R Petroleum",
+  "Enauta"
+ ],
+ "ENEV": [
+  "Eneva"
+ ],
+ "CSNA": [
+  "CSN",
+  "Companhia Siderúrgica Nacional"
+ ],
+ "CMIN": [
+  "CSN Mineração"
+ ],
+ "GGBR": [
+  "Gerdau"
+ ],
+ "GOAU": [
+  "Metalúrgica Gerdau"
+ ],
+ "USIM": [
+  "Usiminas"
+ ],
+ "CBAV": [
+  "CBA",
+  "Companhia Brasileira de Alumínio"
+ ],
+ "BRAP": [
+  "Bradespar"
+ ],
+ "BRKM": [
+  "Braskem"
+ ],
+ "UNIP": [
+  "Unipar"
+ ],
+ "SUZB": [
+  "Suzano"
+ ],
+ "KLBN": [
+  "Klabin"
+ ],
+ "DXCO": [
+  "Dexco",
+  "Duratex"
+ ],
+ "RANI": [
+  "Irani"
+ ],
+ "JBSS": [
+  "JBS"
+ ],
+ "BRFS": [
+  "BRF"
+ ],
+ "MRFG": [
+  "Marfrig"
+ ],
+ "MBRF": [
+  "MBRF"
+ ],
+ "BEEF": [
+  "Minerva",
+  "Minerva Foods"
+ ],
+ "MDIA": [
+  "M. Dias Branco",
+  "M Dias Branco"
+ ],
+ "CAML": [
+  "Camil"
+ ],
+ "SMTO": [
+  "São Martinho"
+ ],
+ "SLCE": [
+  "SLC Agrícola",
+  "SLC"
+ ],
+ "AGRO": [
+  "BrasilAgro"
+ ],
+ "TTEN": [
+  "3tentos"
+ ],
+ "JALL": [
+  "Jalles Machado"
+ ],
+ "WEGE": [
+  "WEG"
+ ],
+ "EMBR": [
+  "Embraer"
+ ],
+ "EMBJ": [
+  "Embraer"
+ ],
+ "AZUL": [
+  "Azul",
+  "Azul Linhas Aéreas"
+ ],
+ "GOLL": [
+  "Gol",
+  "Gol Linhas Aéreas"
+ ],
+ "RENT": [
+  "Localiza"
+ ],
+ "MOVI": [
+  "Movida"
+ ],
+ "VAMO": [
+  "Vamos"
+ ],
+ "SIMH": [
+  "Simpar"
+ ],
+ "TUPY": [
+  "Tupy"
+ ],
+ "RAPT": [
+  "Randon",
+  "Randoncorp"
+ ],
+ "POMO": [
+  "Marcopolo"
+ ],
+ "LEVE": [
+  "Mahle Metal Leve",
+  "Metal Leve"
+ ],
+ "FRAS": [
+  "Fras-le",
+  "Frasle"
+ ],
+ "MYPK": [
+  "Iochpe-Maxion",
+  "Iochpe"
+ ],
+ "KEPL": [
+  "Kepler Weber"
+ ],
+ "SHUL": [
+  "Schulz"
+ ],
+ "ARML": [
+  "Armac"
+ ],
+ "MILS": [
+  "Mills"
+ ],
+ "SBSP": [
+  "Sabesp"
+ ],
+ "SAPR": [
+  "Sanepar"
+ ],
+ "CSMG": [
+  "Copasa"
+ ],
+ "ELET": [
+  "Eletrobras",
+  "Axia",
+  "Axia Energia"
+ ],
+ "AXIA": [
+  "Axia",
+  "Axia Energia",
+  "Eletrobras"
+ ],
+ "CPLE": [
+  "Copel"
+ ],
+ "CMIG": [
+  "Cemig"
+ ],
+ "EQTL": [
+  "Equatorial",
+  "Equatorial Energia"
+ ],
+ "ENGI": [
+  "Energisa"
+ ],
+ "EGIE": [
+  "Engie Brasil",
+  "Engie Brasil Energia"
+ ],
+ "CPFE": [
+  "CPFL",
+  "CPFL Energia"
+ ],
+ "NEOE": [
+  "Neoenergia"
+ ],
+ "TAEE": [
+  "Taesa"
+ ],
+ "ALUP": [
+  "Alupar"
+ ],
+ "ISAE": [
+  "ISA Energia",
+  "ISA CTEEP",
+  "CTEEP"
+ ],
+ "TRPL": [
+  "ISA CTEEP",
+  "CTEEP"
+ ],
+ "AURE": [
+  "Auren",
+  "Auren Energia",
+  "AES Brasil"
+ ],
+ "LIGT": [
+  "Light"
+ ],
+ "SRNA": [
+  "Serena",
+  "Serena Energia",
+  "Omega Energia"
+ ],
+ "EMAE": [
+  "EMAE"
+ ],
+ "TIMS": [
+  "TIM",
+  "TIM Brasil"
+ ],
+ "VIVT": [
+  "Vivo",
+  "Telefônica Brasil"
+ ],
+ "OIBR": [
+  "Oi"
+ ],
+ "BRST": [
+  "Brisanet"
+ ],
+ "FIQE": [
+  "Unifique"
+ ],
+ "DESK": [
+  "Desktop"
+ ],
+ "TOTS": [
+  "Totvs"
+ ],
+ "LWSA": [
+  "Locaweb"
+ ],
+ "INTB": [
+  "Intelbras"
+ ],
+ "POSI": [
+  "Positivo",
+  "Positivo Tecnologia"
+ ],
+ "CASH": [
+  "Méliuz"
+ ],
+ "CYRE": [
+  "Cyrela"
+ ],
+ "MRVE": [
+  "MRV",
+  "MRV&Co"
+ ],
+ "EZTC": [
+  "EZTec"
+ ],
+ "TEND": [
+  "Tenda",
+  "Construtora Tenda"
+ ],
+ "DIRR": [
+  "Direcional"
+ ],
+ "CURY": [
+  "Cury"
+ ],
+ "PLPL": [
+  "Plano & Plano"
+ ],
+ "EVEN": [
+  "Even Construtora"
+ ],
+ "TRIS": [
+  "Trisul"
+ ],
+ "GFSA": [
+  "Gafisa"
+ ],
+ "HBOR": [
+  "Helbor"
+ ],
+ "JHSF": [
+  "JHSF"
+ ],
+ "MULT": [
+  "Multiplan"
+ ],
+ "IGTI": [
+  "Iguatemi"
+ ],
+ "ALOS": [
+  "Allos",
+  "Aliansce Sonae"
+ ],
+ "LOGG": [
+  "Log Commercial Properties",
+  "LOG CP"
+ ],
+ "RDOR": [
+  "Rede D'Or",
+  "Rede D'Or São Luiz"
+ ],
+ "HAPV": [
+  "Hapvida",
+  "Hapvida NotreDame Intermédica"
+ ],
+ "FLRY": [
+  "Fleury",
+  "Grupo Fleury"
+ ],
+ "DASA": [
+  "Dasa",
+  "Diagnósticos da América"
+ ],
+ "ONCO": [
+  "Oncoclínicas"
+ ],
+ "MATD": [
+  "Mater Dei"
+ ],
+ "KRSA": [
+  "Kora Saúde"
+ ],
+ "ODPV": [
+  "Odontoprev"
+ ],
+ "QUAL": [
+  "Qualicorp"
+ ],
+ "HYPE": [
+  "Hypera",
+  "Hypera Pharma"
+ ],
+ "BLAU": [
+  "Blau",
+  "Blau Farmacêutica"
+ ],
+ "COGN": [
+  "Cogna"
+ ],
+ "YDUQ": [
+  "Yduqs"
+ ],
+ "ANIM": [
+  "Ânima",
+  "Ânima Educação"
+ ],
+ "SEER": [
+  "Ser Educacional"
+ ],
+ "CSED": [
+  "Cruzeiro do Sul Educacional"
+ ],
+ "CVCB": [
+  "CVC",
+  "CVC Corp"
+ ],
+ "ECOR": [
+  "Ecorodovias"
+ ],
+ "MOTV": [
+  "Motiva",
+  "CCR"
+ ],
+ "CCRO": [
+  "CCR",
+  "Motiva"
+ ],
+ "STBP": [
+  "Santos Brasil"
+ ],
+ "HBSA": [
+  "Hidrovias do Brasil"
+ ],
+ "AMBP": [
+  "Ambipar"
+ ],
+ "ORVR": [
+  "Orizon"
+ ],
+ "ZAMP": [
+  "Zamp",
+  "Burger King Brasil"
+ ],
+ "MEAL": [
+  "IMC",
+  "International Meal Company"
+ ],
+ "VLID": [
+  "Valid"
+ ],
+ "WIZC": [
+  "Wiz Co"
+ ],
+ "SEQL": [
+  "Sequoia",
+  "Sequoia Logística"
+ ],
+ "IFCM": [
+  "Infracommerce"
+ ],
+ "TECN": [
+  "Technos"
+ ],
+ "EUCA": [
+  "Eucatex"
+ ],
+ "FESA": [
+  "Ferbasa"
+ ],
+ "PTBL": [
+  "Portobello"
+ ],
+ "CGRA": [
+  "Grazziotin"
+ ],
+ "GRAO": [
+  "Grão"
+ ],
+ "NEXP": [
+  "Nexpe"
+ ],
+ "MLAS": [
+  "Grupo Multi",
+  "Multilaser"
+ ],
+ "AERI": [
+  "Aeris",
+  "Aeris Energy"
+ ],
+ "VITT": [
+  "Vittia"
+ ],
+ "ESPA": [
+  "Espaçolaser"
+ ],
+ "TFCO": [
+  "Track & Field"
+ ],
+ "SOJA": [
+  "Boa Safra"
+ ],
+ "PORT": [
+  "Wilson Sons"
+ ],
+ "MTRE": [
+  "Mitre",
+  "Mitre Realty"
+ ],
+ "MELK": [
+  "Melnick"
+ ],
+ "LAVV": [
+  "Lavvi"
+ ],
+ "PDTC": [
+  "Padtec"
+ ],
+ "BRIT": [
+  "Brisanet"
+ ],
+ "AALR": [
+  "Alliança Saúde",
+  "Alliar"
+ ],
+ "PARD": [
+  "Hermes Pardini"
+ ],
+ "OPCT": [
+  "OceanPact"
+ ]
+}
