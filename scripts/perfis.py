@@ -78,17 +78,25 @@ def fold(s: str) -> str:
 SMALL = {"de", "da", "do", "das", "dos", "e", "em", "para", "por", "a", "o", "na", "no", "s.a.", "sa", "ltda", "ltda."}
 
 
+ACRONYMS = {"bndes", "bndespar", "kpmg", "pwc", "ey", "btg", "xp", "jbs", "brf", "csn", "cpfl", "tim", "irb", "weg", "ccr", "cba",
+            "ltda", "s/a", "sa", "spe", "ri", "cvm", "b3", "ii", "iii", "iv", "bb", "cef", "mrv", "bv", "llc", "lp", "inc", "plc", "ag",
+            "gmbh", "nv", "spa", "sgps", "fip", "fia", "fim", "fii", "fidc", "dtvm", "cctvm", "bdo", "rsm", "grant", "pkf", "uhy"}
+
+
 def title(s: str) -> str:
-    """Nome em caixa alta → caixa de título, mantendo siglas curtas e partículas."""
+    """Nome em caixa alta → caixa de título, mantendo siglas e partículas."""
     s = re.sub(r"\s+", " ", (s or "").strip())
     if not s or (s != s.upper() and s != s.lower()):
         return s
     out = []
     for i, w in enumerate(s.lower().split(" ")):
-        if i and w in SMALL:
+        bare = w.strip(".,;:()")
+        if bare == "ltda":
+            out.append(w.replace("ltda", "Ltda"))
+        elif bare in ACRONYMS and bare not in ("sa", "s/a", "ltda") or (bare and not re.search(r"[aeiouáéíóúâêôãõà]", bare) and bare.isalpha()):
+            out.append(w.upper())
+        elif i and w in SMALL:
             out.append("S.A." if w in ("s.a.", "sa") else w)
-        elif len(w) <= 3 and w.isalpha() and w not in ("rua", "av", "sao", "são"):
-            out.append(w.upper() if i == 0 or len(w) <= 2 else w.capitalize())
         else:
             out.append("-".join(p[:1].upper() + p[1:] for p in w.split("-")))
     return " ".join(out)
@@ -198,7 +206,7 @@ def shareholders(rows: list[dict]) -> list[dict]:
              "dt": r.get("Data_Ultima_Alteracao", "")}
         if depth < 3:
             kids = [node(c, depth + 1) for c in by_rel.get(r.get("ID_Acionista", ""), [])
-                    if not (c.get("Acionista", "").strip().lower() in ("ações tesouraria", "outros") and not num(c.get("Percentual_Total_Acoes_Circulacao")))]
+                    if c.get("Acionista", "").strip().lower() not in ("ações tesouraria", "outros", "acoes tesouraria")]
             kids = [k for k in kids if k.get("n", "").lower() not in ("ações tesouraria",)]
             if kids:
                 n["de"] = sorted(kids, key=lambda k: -(k.get("tot") or 0))[:8]
@@ -660,7 +668,7 @@ def cmd_precos(args) -> None:
         log("Sem tickers (rode 'base' antes).")
         return
     t0 = time.time()
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=12) as pool:
         res = dict(zip(tks, pool.map(yahoo, tks)))
     quotes = {t: q for t, q in res.items() if q}
     log(f"Cotações: {len(quotes)} de {len(tks)} tickers em {time.time() - t0:.0f}s.")
@@ -914,14 +922,14 @@ def market_value(p: dict, q: dict) -> dict:
     cap = p.get("capital") or {}
     on, pn = acoes.get("on"), acoes.get("pn")
     on_t, pn_t = acoes.get("on_t") or 0, acoes.get("pn_t") or 0
-    # a composição do capital da DFP/ITR às vezes vem em milhares: confere com o Formulário de Referência
-    if cap.get("total") and acoes.get("tot") and 900 < cap["total"] / acoes["tot"] < 1100:
-        on, pn, on_t, pn_t = [(x or 0) * 1000 for x in (on, pn, on_t, pn_t)]
+    fin = (p.get("fin") or {}).get("ltm") or {}
     if not (on or pn):
         on, pn = cap.get("on"), cap.get("pn")
     if not (on or pn):
         return {}
-    on_n, pn_n = max(0, (on or 0) - on_t), max(0, (pn or 0) - pn_t)
+    # a composição do capital às vezes vem em milhares (na DFP/ITR ou no Formulário de Referência): entre as
+    # escalas possíveis, fica a que dá um preço sobre valor patrimonial plausível
+    scales = [1, 1000] if cap.get("total") and acoes.get("tot") and 900 < cap["total"] / acoes["tot"] < 1100 else [1]
     px_on = next((q[t]["p"] for t in q if t.endswith("3")), None)
     px_pn = next((q[t]["p"] for t in sorted(q) if t[-1] in "4567"), None)
     unit = next((t for t in q if t.endswith("11")), None)
@@ -936,12 +944,24 @@ def market_value(p: dict, q: dict) -> dict:
     px_pn = px_pn if px_pn is not None else px_on
     if px_on is None:
         return {}
-    mc = on_n * px_on + pn_n * px_pn
-    if mc <= 0:
+    import math
+    book = fin.get("plc") or fin.get("pl")
+    best = None
+    for sc in scales:
+        on_n, pn_n = max(0, (on or 0) - on_t) * sc, max(0, (pn or 0) - pn_t) * sc
+        mc = on_n * px_on + pn_n * px_pn
+        if mc <= 0:
+            continue
+        score = abs(math.log(mc / book) - math.log(1.5)) if book and book > 0 else (0 if sc == 1 else 1)
+        if best is None or score < best[0]:
+            best = (score, mc, on_n, pn_n)
+    if not best:
+        return {}
+    _, mc, on_n, pn_n = best
+    if book and book > 0 and not 0.03 <= mc / book <= 30:  # fora disso, quase sempre é erro de escala no dado
         return {}
     main = (sorted(q, key=lambda t: -q[t].get("adv", 0)) or [None])[0]
     out = {"mc": round(mc), "tk": main, "acoes": round(on_n + pn_n), "ref": max((x.get("t", "") for x in q.values()), default="")}
-    fin = (p.get("fin") or {}).get("ltm") or {}
     if not fin.get("fin") and fin.get("dl") is not None:
         out["ev"] = round(mc + fin["dl"])
         if fin.get("ebitda") and fin["ebitda"] > 0:

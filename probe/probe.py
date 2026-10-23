@@ -54,3 +54,15 @@ alias = json.loads((OUT / "alias.json").read_text())
 print("\napelidos:", len(alias))
 for a in ("petrobras", "vale", "itau", "casas bahia", "gpa", "braskem", "raizen", "oncoclinicas", "b3", "helbor", "vinci", "afya"):
     print(a, "→", alias.get(a), names.get(alias.get(a)))
+
+print("\n--- depuração")
+for k in ("17450", "25062", "23574", "20028", "6505"):
+    f = OUT / "perfil" / f"{k}.json"
+    if not f.exists():
+        print(k, "sem perfil"); continue
+    p = json.loads(f.read_text())
+    print(k, names.get(k), "mercado:", p.get("mercado"), "| capital:", p.get("capital"), "| ações:", (p.get("fin") or {}).get("acoes"), "| PL:", ((p.get("fin") or {}).get("ltm") or {}).get("plc"))
+    for s in p.get("acionistas", [])[:6]:
+        print("   ", s.get("n"), s.get("tot"), s.get("on"), "ctl" if s.get("ctl") else "", [(x.get("n"), x.get("tot")) for x in s.get("de", [])][:4])
+    for n in p.get("noticias", [])[:5]:
+        print("    notícia:", n.get("h"))
