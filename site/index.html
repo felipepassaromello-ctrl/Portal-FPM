@@ -2,236 +2,353 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Portal FPM</title>
   <meta name="description" content="Briefing diário personalizado: M&A, mercados, política, macro e internacional.">
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232537EE'/><text x='16' y='21' font-family='monospace' font-size='10' font-weight='700' text-anchor='middle' fill='%23ffffff'>FPM</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><text x='16' y='20.5' font-family='-apple-system,Helvetica,Arial' font-size='10' font-weight='700' text-anchor='middle' fill='%23fff'>FPM</text></svg>">
+  <script>try { const t = JSON.parse(localStorage.getItem("n1:theme")); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
 </head>
-<body>
-  <div id="ticker" class="ticker" aria-label="Mercado"></div>
+<body class="loading">
+  <!-- ícones (desenho no estilo SF Symbols, traço de 1,8) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="3"/><path d="M7.5 8.5h9M7.5 12h9M7.5 15.5h5"/></symbol>
+      <symbol id="i-feed" viewBox="0 0 24 24"><path d="M8.5 6.5h11M8.5 12h11M8.5 17.5h11"/><circle cx="4.5" cy="6.5" r=".9"/><circle cx="4.5" cy="12" r=".9"/><circle cx="4.5" cy="17.5" r=".9"/></symbol>
+      <symbol id="i-later" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+      <symbol id="i-deals" viewBox="0 0 24 24"><path d="M4 8.5h13.5M14 5l3.5 3.5L14 12M20 15.5H6.5M10 12l-3.5 3.5L10 19"/></symbol>
+      <symbol id="i-leads" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+      <symbol id="i-base" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1.5"/><path d="M5 9v8.5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9M10 13h4"/></symbol>
+      <symbol id="i-official" viewBox="0 0 24 24"><path d="M3.5 9 12 4.5 20.5 9M5 19.5h14M6.5 10.5v6.5M10 10.5v6.5M14 10.5v6.5M17.5 10.5v6.5"/></symbol>
+      <symbol id="i-sources" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.6"/><path d="M8.2 15.8a5.4 5.4 0 0 1 0-7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6M5.4 18.6a9.3 9.3 0 0 1 0-13.2M18.6 5.4a9.3 9.3 0 0 1 0 13.2"/></symbol>
+      <symbol id="i-cias" viewBox="0 0 24 24"><path d="M4.5 20V7.5l6-3V20M10.5 9.5l9 3V20M3 20h18M7 10h1M7 13h1M7 16h1M14 14.5h1M14 17.5h1"/></symbol>
+      <symbol id="i-more" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18" cy="12" r="1.3"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.5v4h-4"/></symbol>
+      <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17Z" fill="currentColor"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4 2.4 5 5.4.6-4 3.7 1.1 5.3L12 16l-4.9 2.6 1.1-5.3-4-3.7 5.4-.6Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m8.3 12.2 2.6 2.6 4.9-5.2"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7 7 17"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="m6.5 14.5 5.5-5.5 5.5 5.5"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="m6.5 9.5 5.5 5.5 5.5-5.5"/></symbol>
+      <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8M17 14v4a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 5 18V8.5A1.5 1.5 0 0 1 6.5 7H10"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+    </defs>
+  </svg>
 
-  <header class="masthead">
-    <div class="wrap masthead-row">
-      <div class="brand">
+  <div class="app">
+    <!-- barra lateral (desktop) -->
+    <aside class="sidebar" aria-label="Navegação">
+      <a class="side-brand" href="index.html" aria-label="Portal FPM">
         <span class="logo">FPM</span>
-        <div>
-          <h1>Portal FPM</h1>
-          <p id="dateline" class="dateline">Carregando…</p>
-        </div>
-      </div>
-      <div class="masthead-actions">
+        <span class="side-brand-name">Portal FPM</span>
+      </a>
+      <button class="side-search" data-cmdk type="button">
+        <svg class="ic"><use href="#i-search"/></svg><span>Buscar</span><kbd>⌘K</kbd>
+      </button>
+      <nav id="tabs" class="side-nav" aria-label="Seções"></nav>
+      <div class="side-foot">
         <span id="status" class="status-pill" title="Última atualização"></span>
-        <select id="archive" class="ctl" aria-label="Edições anteriores"></select>
-        <button id="btn-refresh" class="ctl icon" title="Atualizar agora (R)">⟳</button>
-        <button id="btn-theme" class="ctl icon" title="Tema claro/escuro">◐</button>
-        <button id="btn-prefs" class="ctl" title="Personalizar">Personalizar</button>
+        <span id="footer-gen" class="small muted"></span>
+        <button class="link-btn small" data-shortcuts type="button">Atalhos de teclado</button>
+      </div>
+    </aside>
+
+    <div class="content">
+      <!-- barra superior: o título compacto aparece ao rolar -->
+      <header class="topbar">
+        <span class="logo logo-sm mobile-only" aria-hidden="true">FPM</span>
+        <span id="bar-title" class="bar-title"></span>
+        <div class="topbar-actions">
+          <label class="select-wrap" title="Edições anteriores">
+            <select id="archive" aria-label="Edições anteriores"></select>
+          </label>
+          <button class="tb-btn" data-cmdk type="button" title="Buscar (⌘K)" aria-label="Buscar"><svg class="ic"><use href="#i-search"/></svg></button>
+          <button id="btn-refresh" class="tb-btn" type="button" title="Atualizar (R)" aria-label="Atualizar"><svg class="ic"><use href="#i-refresh"/></svg></button>
+          <button id="btn-theme" class="tb-btn" type="button" title="Tema claro/escuro" aria-label="Tema"><svg class="ic"><use href="#i-theme"/></svg></button>
+          <button id="btn-prefs" class="tb-btn" type="button" title="Personalizar" aria-label="Personalizar"><svg class="ic"><use href="#i-sliders"/></svg></button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="page-head">
+          <h1 id="page-title" class="large-title">Briefing</h1>
+          <p id="dateline" class="dateline"><span class="skel skel-line" style="width:280px"></span></p>
+        </div>
+
+        <div id="banner" class="banner" hidden></div>
+
+        <!-- BRIEFING -->
+        <section id="view-brief" class="view">
+          <div class="brief-layout">
+            <article class="brief">
+              <div class="eyebrow-row">
+                <span class="eyebrow">Manchete do dia</span>
+                <span id="brief-meta" class="muted small"></span>
+              </div>
+              <h2 id="brief-headline" class="brief-headline"><span class="skel skel-title"></span><span class="skel skel-title" style="width:70%"></span></h2>
+              <p id="brief-mood" class="brief-mood"></p>
+              <h3 class="group-label">O essencial</h3>
+              <ol id="brief-tldr" class="tldr">
+                <li class="skel-li"><span class="skel skel-line"></span><span class="skel skel-line" style="width:80%"></span></li>
+                <li class="skel-li"><span class="skel skel-line"></span><span class="skel skel-line" style="width:60%"></span></li>
+                <li class="skel-li"><span class="skel skel-line"></span><span class="skel skel-line" style="width:72%"></span></li>
+              </ol>
+            </article>
+
+            <aside class="brief-aside">
+              <div class="widget">
+                <div class="widget-head"><h3 class="group-label">Mercados</h3><span id="market-note" class="muted small"></span></div>
+                <div id="market" class="market"></div>
+              </div>
+              <div class="widget side-block">
+                <h3 class="group-label">No radar</h3>
+                <ul id="brief-watch" class="list-plain"></ul>
+              </div>
+              <div class="widget side-block">
+                <h3 class="group-label">Conexões</h3>
+                <ul id="brief-conn" class="list-plain conn"></ul>
+              </div>
+            </aside>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><h2 class="title-2">Por editoria</h2></div>
+            <div id="brief-sections" class="brief-sections"></div>
+          </div>
+
+          <div class="split section">
+            <div>
+              <div class="section-head">
+                <h2 class="title-2">Destaques</h2>
+                <button class="link-btn" data-goto="feed" type="button">Ver todas <svg class="ic ic-sm"><use href="#i-chev"/></svg></button>
+              </div>
+              <div id="top-list" class="cards grouped"></div>
+            </div>
+            <div>
+              <div class="section-head"><h2 class="title-2">Mapa do dia</h2></div>
+              <div id="map" class="map widget"></div>
+              <div class="section-head" style="margin-top:28px"><h2 class="title-2">Quem está nas notícias</h2></div>
+              <div id="entities" class="chips"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NOTÍCIAS -->
+        <section id="view-feed" class="view" hidden>
+          <div class="filterbar">
+            <label class="search-field">
+              <svg class="ic"><use href="#i-search"/></svg>
+              <input id="q" type="search" placeholder="Buscar empresa, pessoa, tema" autocomplete="off">
+              <kbd class="kbd-hint">/</kbd>
+            </label>
+            <div class="filter-row">
+              <div class="segmented" data-seg="minimp" role="radiogroup" aria-label="Importância mínima">
+                <button type="button" data-v="1">Todas</button><button type="button" data-v="5">Nota 5+</button><button type="button" data-v="7">7+</button><button type="button" data-v="9">9+</button>
+              </div>
+              <div class="segmented" data-seg="region" role="radiogroup" aria-label="Região">
+                <button type="button" data-v="">Tudo</button><button type="button" data-v="BR">Brasil</button><button type="button" data-v="INTL">Mundo</button>
+              </div>
+              <div class="segmented" data-seg="sort" role="radiogroup" aria-label="Ordenar">
+                <button type="button" data-v="rel">Para mim</button><button type="button" data-v="imp">Nota</button><button type="button" data-v="new">Recentes</button>
+              </div>
+              <label class="toggle-chip"><input id="unread" type="checkbox"><span>Não lidas</span></label>
+              <label class="toggle-chip"><input id="saved" type="checkbox"><span>Salvas</span></label>
+            </div>
+            <input id="minimp" type="hidden" value="1"><span id="minimp-val" hidden>1</span>
+            <select id="region" hidden><option value=""></option><option value="BR"></option><option value="INTL"></option></select>
+            <select id="sort" hidden><option value="rel"></option><option value="imp"></option><option value="new"></option></select>
+          </div>
+          <div id="cat-chips" class="chips scroller"></div>
+          <p id="feed-count" class="count-line"></p>
+          <div id="feed" class="cards grouped"></div>
+        </section>
+
+        <!-- DEALS DO DIA -->
+        <section id="view-deals" class="view" hidden>
+          <p id="deals-count" class="count-line"></p>
+          <div class="table-wrap">
+            <table class="deals">
+              <thead><tr><th>Nota</th><th>Tipo</th><th>Comprador / Investidor</th><th>Alvo</th><th>Valor</th><th>Estágio</th><th>Setor</th><th>Fonte</th></tr></thead>
+              <tbody id="deals-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- LEADS -->
+        <section id="view-leads" class="view" hidden>
+          <p class="intro">Empresas com transação ainda em aberto: avaliando venda, buscando investidor, preparando IPO, em reestruturação ou em negociação. A base cresce a cada edição, e quando o negócio é anunciado o lead aparece como <b>virou deal</b>. Status e anotações ficam salvos neste navegador.</p>
+          <div class="filterbar">
+            <label class="search-field">
+              <svg class="ic"><use href="#i-search"/></svg>
+              <input id="leads-q" type="search" placeholder="Buscar empresa, setor, assessor, contraparte" autocomplete="off">
+            </label>
+            <div class="filter-row">
+              <label class="select-wrap pill"><select id="leads-signal" aria-label="Sinal"><option value="">Todos os sinais</option></select></label>
+              <label class="select-wrap pill"><select id="leads-period" aria-label="Período">
+                <option value="7">Últimos 7 dias</option>
+                <option value="30" selected>Últimos 30 dias</option>
+                <option value="90">Últimos 90 dias</option>
+                <option value="9999">Tudo</option>
+              </select></label>
+              <label class="select-wrap pill"><select id="leads-track" aria-label="Meu status">
+                <option value="">Qualquer status</option>
+                <option value="novo">Novos (sem status)</option>
+                <option value="contatar">A contatar</option>
+                <option value="contato">Em contato</option>
+                <option value="assessorando">Assessorando</option>
+                <option value="descartado">Descartados</option>
+              </select></label>
+              <label class="toggle-chip"><input id="leads-noadv" type="checkbox"><span>Sem assessor</span></label>
+              <label class="toggle-chip"><input id="leads-closed" type="checkbox"><span>Incluir os que viraram deal</span></label>
+              <span class="spacer"></span>
+              <span id="leads-count" class="muted small"></span>
+              <button id="leads-export" class="btn" type="button">Exportar</button>
+            </div>
+          </div>
+          <div id="leads-list" class="leads"></div>
+        </section>
+
+        <!-- BASE DE DEALS -->
+        <section id="view-base" class="view" hidden>
+          <div id="base-summary"></div>
+          <div class="filterbar">
+            <label class="search-field">
+              <svg class="ic"><use href="#i-search"/></svg>
+              <input id="base-q" type="search" placeholder="Buscar comprador, alvo, setor, assessor" autocomplete="off">
+            </label>
+            <div class="filter-row">
+              <label class="select-wrap pill"><select id="base-sector" aria-label="Setor"><option value="">Todos os setores</option></select></label>
+              <span class="spacer"></span>
+              <span id="base-count" class="muted small"></span>
+              <button id="base-export" class="btn btn-primary" type="button">Exportar para Excel</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="deals">
+              <thead><tr><th>Desde</th><th>Tipo</th><th>Comprador / Investidor</th><th>Alvo</th><th>Valor</th><th>Estágio atual</th><th>Setor</th><th>Linha do tempo</th></tr></thead>
+              <tbody id="base-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- OFICIAIS -->
+        <section id="view-official" class="view" hidden>
+          <div class="split split-even">
+            <div>
+              <div class="section-head"><h2 class="title-2">Fatos relevantes e comunicados</h2><span class="muted small">CVM</span></div>
+              <p class="intro small">A CVM publica os dados abertos com alguns dias de atraso. Cada edição traz o que ficou disponível desde a anterior, com a data de entrega de cada documento.</p>
+              <div id="official-filings" class="cards grouped"></div>
+            </div>
+            <div>
+              <div class="section-head"><h2 class="title-2">Antitruste</h2><span class="muted small">Cade</span></div>
+              <p class="intro small">Fusões e aquisições acima de certo porte precisam da aprovação do Cade. <b>Novo negócio</b> quer dizer que as empresas acabaram de notificar o deal, às vezes antes da imprensa. <b>Aprovação</b> quer dizer que o Cade liberou a operação. Fonte: Diário Oficial da União.</p>
+              <div id="official-cade" class="cards grouped"></div>
+              <div class="section-head" style="margin-top:28px"><h2 class="title-2">Macro</h2><span class="muted small">Banco Central</span></div>
+              <div class="side-block widget"><ul id="macro" class="list-plain macro"></ul></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- DESDE AS 8H -->
+        <section id="view-later" class="view" hidden>
+          <p id="later-count" class="count-line"></p>
+          <div id="later" class="cards grouped"></div>
+        </section>
+
+        <!-- FONTES -->
+        <section id="view-sources" class="view" hidden>
+          <p id="sources-stats" class="count-line"></p>
+          <div id="sources" class="sources"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- barra de abas (celular) -->
+  <nav id="tabbar" class="tabbar" aria-label="Navegação"></nav>
+
+  <!-- leitor de notícia -->
+  <dialog id="reader" class="reader" aria-label="Análise da notícia">
+    <div class="reader-bar">
+      <div class="reader-nav">
+        <button class="tb-btn" data-reader="prev" type="button" title="Anterior (k)" aria-label="Anterior"><svg class="ic"><use href="#i-up"/></svg></button>
+        <button class="tb-btn" data-reader="next" type="button" title="Próxima (j)" aria-label="Próxima"><svg class="ic"><use href="#i-down"/></svg></button>
+        <span id="reader-pos" class="muted small"></span>
+      </div>
+      <div class="reader-actions">
+        <button class="tb-btn" data-reader="save" type="button" title="Salvar (s)" aria-label="Salvar"><svg class="ic"><use href="#i-star"/></svg></button>
+        <button class="tb-btn" data-reader="close" type="button" title="Fechar (Esc)" aria-label="Fechar"><svg class="ic"><use href="#i-close"/></svg></button>
       </div>
     </div>
-    <nav class="wrap tabs" id="tabs" role="tablist"></nav>
-  </header>
+    <div id="reader-body" class="reader-body"></div>
+  </dialog>
 
-  <main class="wrap">
-    <div id="banner" class="banner" hidden></div>
+  <!-- busca universal -->
+  <dialog id="cmdk" class="cmdk" aria-label="Buscar">
+    <label class="cmdk-field">
+      <svg class="ic"><use href="#i-search"/></svg>
+      <input id="cmdk-q" type="search" placeholder="Buscar notícias, leads, deals, abas" autocomplete="off" role="combobox" aria-controls="cmdk-list" aria-expanded="true">
+      <kbd>esc</kbd>
+    </label>
+    <ul id="cmdk-list" class="cmdk-list" role="listbox"></ul>
+  </dialog>
 
-    <!-- BRIEFING -->
-    <section id="view-brief" class="view">
-      <article class="brief">
-        <div class="brief-head">
-          <span class="kicker">Briefing do dia</span>
-          <span id="brief-meta" class="muted small"></span>
-        </div>
-        <h2 id="brief-headline" class="brief-headline"></h2>
-        <p id="brief-mood" class="brief-mood"></p>
-        <div class="brief-grid">
-          <div>
-            <h3 class="section-label">O que você precisa saber</h3>
-            <ol id="brief-tldr" class="tldr"></ol>
-          </div>
-          <aside class="brief-side">
-            <div class="side-block">
-              <h3 class="section-label">No radar</h3>
-              <ul id="brief-watch" class="bullets"></ul>
-            </div>
-            <div class="side-block">
-              <h3 class="section-label">Conexões</h3>
-              <ul id="brief-conn" class="bullets"></ul>
-            </div>
-          </aside>
-        </div>
-        <div id="brief-sections" class="brief-sections"></div>
-      </article>
+  <!-- mais (celular) -->
+  <dialog id="more" class="sheet" aria-label="Mais">
+    <div class="sheet-grab" aria-hidden="true"></div>
+    <h3 class="title-2">Mais</h3>
+    <div id="more-list" class="inset-list"></div>
+    <form method="dialog" class="sheet-actions"><button class="btn">Fechar</button></form>
+  </dialog>
 
-      <section class="split">
-        <div>
-          <div class="row-head">
-            <h3 class="section-label">Top do dia</h3>
-            <button class="link-btn" data-goto="feed">ver todas →</button>
-          </div>
-          <div id="top-list" class="cards"></div>
-        </div>
-        <div>
-          <div class="row-head">
-            <h3 class="section-label">Mapa do dia</h3>
-          </div>
-          <div id="map" class="map"></div>
-          <div class="row-head" style="margin-top:20px">
-            <h3 class="section-label">Quem está nas notícias</h3>
-          </div>
-          <div id="entities" class="chips"></div>
-        </div>
-      </section>
-    </section>
+  <!-- atalhos -->
+  <dialog id="shortcuts" class="sheet" aria-label="Atalhos de teclado">
+    <h3 class="title-2">Atalhos de teclado</h3>
+    <dl class="keys">
+      <dt><kbd>⌘</kbd> <kbd>K</kbd></dt><dd>Buscar em tudo</dd>
+      <dt><kbd>/</kbd></dt><dd>Buscar nas notícias</dd>
+      <dt><kbd>j</kbd> <kbd>k</kbd></dt><dd>Próxima e anterior</dd>
+      <dt><kbd>Enter</kbd></dt><dd>Abrir a análise</dd>
+      <dt><kbd>o</kbd></dt><dd>Abrir a matéria original</dd>
+      <dt><kbd>m</kbd></dt><dd>Marcar como lida</dd>
+      <dt><kbd>s</kbd></dt><dd>Salvar</dd>
+      <dt><kbd>1</kbd> a <kbd>8</kbd></dt><dd>Trocar de aba</dd>
+      <dt><kbd>r</kbd></dt><dd>Atualizar</dd>
+    </dl>
+    <form method="dialog" class="sheet-actions"><button class="btn btn-primary">Fechar</button></form>
+  </dialog>
 
-    <!-- FEED -->
-    <section id="view-feed" class="view" hidden>
-      <div class="toolbar">
-        <input id="q" class="ctl search" type="search" placeholder="Buscar empresa, pessoa, tema…  ( / )" autocomplete="off">
-        <label class="ctl range">Importância ≥ <b id="minimp-val">1</b>
-          <input id="minimp" type="range" min="1" max="10" value="1">
-        </label>
-        <select id="region" class="ctl" aria-label="Região">
-          <option value="">Brasil + Mundo</option>
-          <option value="BR">Brasil</option>
-          <option value="INTL">Internacional</option>
-        </select>
-        <select id="sort" class="ctl" aria-label="Ordenar">
-          <option value="rel">Relevância para mim</option>
-          <option value="imp">Importância</option>
-          <option value="new">Mais recentes</option>
-        </select>
-        <label class="ctl check"><input id="unread" type="checkbox"> Só não lidas</label>
-        <label class="ctl check"><input id="saved" type="checkbox"> Salvas</label>
-      </div>
-      <div id="cat-chips" class="chips cat-chips"></div>
-      <p id="feed-count" class="muted small"></p>
-      <div id="feed" class="cards"></div>
-    </section>
-
-    <!-- DEALS -->
-    <section id="view-deals" class="view" hidden>
-      <div class="row-head">
-        <h3 class="section-label">Deal tracker</h3>
-        <span id="deals-count" class="muted small"></span>
-      </div>
-      <div class="table-wrap">
-        <table class="deals">
-          <thead><tr><th>Nota</th><th>Tipo</th><th>Comprador / Investidor</th><th>Alvo</th><th>Valor</th><th>Estágio</th><th>Setor</th><th>Fonte</th></tr></thead>
-          <tbody id="deals-body"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- FONTES -->
-    <section id="view-leads" class="view" hidden>
-      <p class="muted small leads-intro">Empresas com sinal de transação ainda em aberto: avaliando venda, buscando investidor, preparando IPO, em reestruturação ou em negociação. A base se acumula edição a edição; quando o negócio é anunciado, o lead aparece como <b>virou deal</b>. Status e anotações ficam salvos neste navegador.</p>
-      <div class="toolbar leads-toolbar">
-        <input id="leads-q" class="ctl search" type="search" placeholder="Buscar empresa, setor, assessor, contraparte…" autocomplete="off">
-        <select id="leads-signal" class="ctl" aria-label="Sinal"><option value="">Todos os sinais</option></select>
-        <select id="leads-period" class="ctl" aria-label="Período">
-          <option value="7">Últimos 7 dias</option>
-          <option value="30" selected>Últimos 30 dias</option>
-          <option value="90">Últimos 90 dias</option>
-          <option value="9999">Tudo</option>
-        </select>
-        <select id="leads-track" class="ctl" aria-label="Meu status">
-          <option value="">Qualquer status</option>
-          <option value="novo">Novos (sem status)</option>
-          <option value="contatar">A contatar</option>
-          <option value="contato">Em contato</option>
-          <option value="assessorando">Assessorando</option>
-          <option value="descartado">Descartados</option>
-        </select>
-        <label class="ctl check"><input id="leads-noadv" type="checkbox"> Sem assessor conhecido</label>
-        <label class="ctl check"><input id="leads-closed" type="checkbox"> Incluir os que viraram deal</label>
-        <span id="leads-count" class="muted small"></span>
-        <button id="leads-export" class="ctl">Exportar</button>
-      </div>
-      <div id="leads-list" class="leads"></div>
-    </section>
-
-    <section id="view-base" class="view" hidden>
-      <div id="base-summary"></div>
-      <div class="toolbar base-toolbar">
-        <input id="base-q" class="ctl search" type="search" placeholder="Buscar comprador, alvo, setor, assessor…" autocomplete="off">
-        <select id="base-sector" class="ctl" aria-label="Setor"><option value="">Todos os setores</option></select>
-        <span id="base-count" class="muted small"></span>
-        <button id="base-export" class="ctl primary">Exportar para Excel</button>
-      </div>
-      <div class="table-wrap">
-        <table class="deals">
-          <thead><tr><th>Desde</th><th>Tipo</th><th>Comprador / Investidor</th><th>Alvo</th><th>Valor</th><th>Estágio atual</th><th>Setor</th><th>Linha do tempo</th></tr></thead>
-          <tbody id="base-body"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="view-official" class="view" hidden>
-      <div class="split">
-        <div>
-          <div class="row-head"><h3 class="section-label">Fatos relevantes e comunicados · CVM</h3></div>
-          <p class="muted small">A CVM publica os dados abertos com alguns dias de atraso. Cada edição traz o que ficou disponível desde a anterior, com a data de entrega de cada documento.</p>
-          <div id="official-filings" class="cards"></div>
-        </div>
-        <div>
-          <div class="row-head"><h3 class="section-label">Antitruste · Cade</h3></div>
-          <p class="muted small">Toda fusão ou aquisição acima de certo porte precisa ser aprovada pelo Cade, o órgão de defesa da concorrência. <b>Novo negócio</b> = as empresas acabaram de notificar o deal (às vezes antes da imprensa). <b>Aprovação</b> = o Cade liberou a operação. Fonte: Diário Oficial da União.</p>
-          <div id="official-cade" class="cards"></div>
-          <div class="row-head" style="margin-top:20px"><h3 class="section-label">Macro · Banco Central</h3></div>
-          <div class="side-block"><ul id="macro" class="bullets macro"></ul></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="view-later" class="view" hidden>
-      <div class="row-head">
-        <h3 class="section-label">Desde as 8h</h3>
-      </div>
-      <p id="later-count" class="muted small"></p>
-      <div id="later" class="cards"></div>
-    </section>
-
-    <section id="view-sources" class="view" hidden>
-      <div class="row-head">
-        <h3 class="section-label">Fontes vasculhadas nesta edição</h3>
-        <span id="sources-stats" class="muted small"></span>
-      </div>
-      <div id="sources" class="sources"></div>
-    </section>
-  </main>
-
-  <footer class="wrap footer muted small">
-    <span>Atalhos: <kbd>j</kbd>/<kbd>k</kbd> navegar · <kbd>Enter</kbd> abrir análise · <kbd>o</kbd> abrir matéria · <kbd>m</kbd> marcar lida · <kbd>s</kbd> salvar · <kbd>/</kbd> buscar · <kbd>1</kbd>–<kbd>4</kbd> abas</span>
-    <span id="footer-gen"></span>
-  </footer>
-
-  <!-- Painel de personalização -->
-  <dialog id="prefs" class="prefs">
+  <!-- personalização -->
+  <dialog id="prefs" class="sheet prefs" aria-label="Personalizar">
     <form method="dialog">
-      <h3>Personalizar</h3>
-      <p class="muted small">Ajusta a ordem "Relevância para mim" neste navegador. Para mudar o que a IA considera importante, edite <code>config/profile.json</code> no repositório.</p>
-      <label>Termos que quero ver primeiro (um por linha)
-        <textarea id="pref-boost" rows="5" placeholder="Ex.: Itaú&#10;saneamento&#10;Patria"></textarea>
+      <h3 class="title-2">Personalizar</h3>
+      <p class="muted small">Ajusta a ordem "Para mim" neste navegador. Para mudar o que a IA considera importante, edite <code>config/profile.json</code> no repositório.</p>
+      <label class="field">Termos que quero ver primeiro (um por linha)
+        <textarea id="pref-boost" rows="4" placeholder="Ex.: Itaú&#10;saneamento&#10;Patria"></textarea>
       </label>
-      <label>Termos que quero esconder
-        <textarea id="pref-mute" rows="3" placeholder="Ex.: futebol"></textarea>
+      <label class="field">Termos que quero esconder
+        <textarea id="pref-mute" rows="2" placeholder="Ex.: futebol"></textarea>
       </label>
-      <fieldset>
+      <fieldset class="field">
         <legend>Peso por editoria</legend>
         <div id="pref-cats" class="pref-cats"></div>
       </fieldset>
-      <label class="check"><input id="pref-notify" type="checkbox"> Notificar no navegador quando chegar notícia com nota ≥ 8</label>
-      <div class="prefs-actions">
-        <button value="cancel" class="ctl">Fechar</button>
-        <button id="pref-save" value="save" class="ctl primary">Salvar</button>
+      <label class="switch-row"><span>Avisar no navegador quando chegar notícia com nota 8 ou mais</span><input id="pref-notify" type="checkbox" class="switch"></label>
+      <div class="sheet-actions">
+        <button value="cancel" class="btn">Cancelar</button>
+        <button id="pref-save" value="save" class="btn btn-primary">Salvar</button>
       </div>
     </form>
   </dialog>
 
-  <div id="toast" class="toast" hidden></div>
+  <div id="toast" class="toast" role="status" hidden></div>
   <script src="app.js"></script>
 </body>
 </html>
