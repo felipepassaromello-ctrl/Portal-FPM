@@ -1,6 +1,6 @@
 /* Portal FPM — service worker: rede primeiro (o portal muda a cada hora) e, sem conexão, a última versão vista. */
-const CACHE = "fpm-v1";
-const SHELL = ["./", "index.html", "cias.html", "styles.css", "app.js", "cias.js", "manifest.webmanifest", "icons/icon-192.png"];
+const CACHE = "fpm-v2";
+const SHELL = ["./", "index.html", "cias.html", "styles.css", "app.js", "cias.js", "manifest.webmanifest", "icons/icon-192.png?v=2"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).catch(() => {}));
