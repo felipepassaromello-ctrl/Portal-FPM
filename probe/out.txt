@@ -1,41 +1,41 @@
 
-$ scripts/perfis.py base --force  (51s, código 0)
-[01:08:59] FCA: 725 companhias, tabelas ['auditor', 'canal_divulgacao', 'dri', 'endereco', 'escriturador', 'geral', 'pais_estrangeiro_negociacao', 'valor_mobiliario']
-[01:09:01] FRE: 707 companhias, tabelas ['acao_entregue', 'administrador_PCD', 'administrador_declaracao_genero', 'administrador_declaracao_raca', 'administrador_membro_conselho_fiscal', 'auditor', 'capital_social', 'capital_social_classe_acao', 'capital_social_titulo_conversivel', 'distribuicao_capital', 'distribuicao_capital_classe_acao', 'empregado_PCD', 'empregado_local_declaracao_genero', 'empregado_local_declaracao_raca', 'empregado_local_faixa_etaria', 'empregado_posicao_declaracao_genero', 'empregado_posicao_declaracao_raca', 'empregado_posicao_faixa_etaria', 'empregado_posicao_local', 'membro_comite', 'mercado_estrangeiro', 'outro_valor_mobiliario', 'participacao_sociedade', 'posicao_acionaria', 'posicao_acionaria_classe_acao', 'relacao_familiar', 'relacao_subordinacao', 'remuneracao_acao', 'remuneracao_maxima_minima_media', 'remuneracao_total_orgao', 'remuneracao_variavel', 'responsavel', 'titular_valor_mobiliario', 'titulo_exterior', 'transacao_parte_relacionada']
-[01:09:06] DFP 2021: 765 companhias
-[01:09:09] DFP 2022: 729 companhias
-[01:09:13] DFP 2023: 732 companhias
-[01:09:18] DFP 2024: 709 companhias
-[01:09:22] DFP 2025: 669 companhias
-[01:09:33] ITR 2025: 708 companhias
-[01:09:41] ITR 2026: 645 companhias
-[01:09:47] Perfis: 726 companhias gravadas em /home/runner/work/Portal-FPM/Portal-FPM/site/data/cias/base/perfis.json.
+$ scripts/perfis.py base --force  (41s, código 0)
+[01:14:27] FCA: 725 companhias, tabelas ['auditor', 'canal_divulgacao', 'dri', 'endereco', 'escriturador', 'geral', 'pais_estrangeiro_negociacao', 'valor_mobiliario']
+[01:14:29] FRE: 707 companhias, tabelas ['acao_entregue', 'administrador_PCD', 'administrador_declaracao_genero', 'administrador_declaracao_raca', 'administrador_membro_conselho_fiscal', 'auditor', 'capital_social', 'capital_social_classe_acao', 'capital_social_titulo_conversivel', 'distribuicao_capital', 'distribuicao_capital_classe_acao', 'empregado_PCD', 'empregado_local_declaracao_genero', 'empregado_local_declaracao_raca', 'empregado_local_faixa_etaria', 'empregado_posicao_declaracao_genero', 'empregado_posicao_declaracao_raca', 'empregado_posicao_faixa_etaria', 'empregado_posicao_local', 'membro_comite', 'mercado_estrangeiro', 'outro_valor_mobiliario', 'participacao_sociedade', 'posicao_acionaria', 'posicao_acionaria_classe_acao', 'relacao_familiar', 'relacao_subordinacao', 'remuneracao_acao', 'remuneracao_maxima_minima_media', 'remuneracao_total_orgao', 'remuneracao_variavel', 'responsavel', 'titular_valor_mobiliario', 'titulo_exterior', 'transacao_parte_relacionada']
+[01:14:32] DFP 2021: 765 companhias
+[01:14:36] DFP 2022: 729 companhias
+[01:14:39] DFP 2023: 732 companhias
+[01:14:42] DFP 2024: 709 companhias
+[01:14:45] DFP 2025: 669 companhias
+[01:14:55] ITR 2025: 708 companhias
+[01:15:01] ITR 2026: 645 companhias
+[01:15:06] Perfis: 726 companhias gravadas em /home/runner/work/Portal-FPM/Portal-FPM/site/data/cias/base/perfis.json.
 
 
 
-$ scripts/perfis.py precos --force  (151s, código 0)
-[01:12:19] Cotações: 382 de 446 tickers em 151s.
+$ scripts/perfis.py precos --force  (114s, código 0)
+[01:17:01] Cotações: 382 de 446 tickers em 114s.
 
 
 
 $ scripts/perfis.py ofertas --force  (1s, código 0)
-[01:12:20] Ofertas: 1433 desde 2025-04-21.
+[01:17:02] Ofertas: 1433 desde 2025-04-21.
 
 
 
-$ scripts/cias.py build  (17s, código 0)
-[01:12:34] Documentos: 219901 · {'ipe2022': 49168, 'ipe2023': 49919, 'ipe2024': 50125, 'ipe2025': 49277, 'ipe2026': 37434, 'tempo_real': 3097, 'dados_abertos_ate': '2026-10-17'}
-[01:12:34] Companhias: 1638
-[01:12:37] Gravado: 1638 companhias com documentos, 58 meses.
+$ scripts/cias.py build  (16s, código 0)
+[01:17:15] Documentos: 219901 · {'ipe2022': 49168, 'ipe2023': 49919, 'ipe2024': 50125, 'ipe2025': 49277, 'ipe2026': 37434, 'tempo_real': 3097, 'dados_abertos_ate': '2026-10-17'}
+[01:17:15] Companhias: 1638
+[01:17:18] Gravado: 1638 companhias com documentos, 58 meses.
 
 
 
 $ scripts/perfis.py montar  (1s, código 0)
-[01:12:38] Montado: 745 resumos, 189 vínculos de notícias, 45 de deals, 9 de leads, 592 de ofertas; 2442 apelidos.
+[01:17:19] Montado: 745 resumos, 189 vínculos de notícias, 45 de deals, 9 de leads, 592 de ofertas; 2442 apelidos.
 
 
 
-resumo: 745 companhias; com valor de mercado: 291
+resumo: 745 companhias; com valor de mercado: 281
 9512 PETROBRAS {"nm": "Petrobras", "mc": 796706812104, "tk": "PETR4", "p": 57.83, "d1": -0.65, "y1": 93.7, "rec": 548493000000, "ll": 133376000000, "nn": 27, "no": 1, "ctl": "União Federal", "ceo": "Magda Maria de Regina Chambriard"}
 19348 ITAÚ UNIBANCO {"nm": "Itaú", "mc": 556183554690, "tk": "ITUB4", "p": 48.0, "d1": -1.64, "y1": 29.7, "rec": 385985000000, "ll": 46828000000, "nn": 7, "nd": 4, "ctl": "IUPAR - Itaú Unibanco Participações S.A.", "ceo": "Milton Maluhy Filho"}
 23264 AMBEV S.A {"nm": "Ambev", "mc": 261152235500, "tk": "ABEV3", "p": 16.9, "d1": 0.3, "y1": 40.0, "rec": 88268294000, "ll": 16246910000, "ctl": "Interbrew International BV", "ceo": "Carlos Eduardo Klutzenschell Lisboa"}
@@ -73,9 +73,9 @@ resumo: 745 companhias; com valor de mercado: 291
 15253 ENERGISA {"nm": "Energisa", "mc": 33279380298, "tk": "ENGI11", "p": 65.93, "d1": -2.31, "y1": 43.4, "rec": 36704056000, "ll": 1516835000, "no": 1, "ctl": "Gipar S.A."}
 16659 PORTO SEGURO SA {"nm": "Porto Seguro", "mc": 33139303099, "tk": "PSSA3", "p": 51.7, "d1": -1.75, "y1": 9.5, "rec": 42631412000, "ll": 3684011000, "ctl": "Porto Seguro Itaú Unibanco Participações S.A.", "ceo": "Paulo Sérgio Kakinoff"}
 25062 LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A {"nm": "Lavvi", "mc": 30096890208, "tk": "LAVV3", "p": 15.4, "d1": -1.41, "y1": 12.9, "rec": 1813209000, "ll": 361088000, "ctl": "Cyrela Brazil Realty S.A. Emprendimentos e Parts", "ceo": "Ralph Horn"}
-23574 INTERNATIONAL MEAL COMAPANY ALIMENTAÇÃO S.A. {"nm": "IMC", "mc": 28380977460, "tk": "MEAL3", "p": 0.9, "d1": -5.26, "y1": -27.4, "rec": 1656434000, "ceo": "Fernando Cesar Calamita"}
 19992 TOTVS S.A {"nm": "Totvs", "mc": 25077281381, "tk": "TOTS3", "p": 43.75, "d1": 3.99, "y1": 5.4, "rec": 6591677000, "ll": 1425728000, "no": 2, "ceo": "Dennis Herszkowicz"}
 19445 COPASA MG {"nm": "Copasa", "mc": 23873235760, "tk": "CSMG3", "p": 62.96, "d1": -0.93, "y1": 73.9, "rec": 8688550000, "ll": 1293036000, "no": 5}
+18376 CTEEP {"nm": "ISA Energia", "mc": 20403692497, "tk": "ISAE4", "p": 28.35, "d1": -2.58, "y1": 16.4, "rec": 10674519000, "ll": 2817169000, "no": 7, "ctl": "Isa Capital do Brasil S.A.", "ceo": "Rui Chammas"}
 
 mais notícias:
 21610 B3 31 1 None
@@ -126,3 +126,43 @@ b3 → 21610 B3
 helbor → 20877 HELBOR
 vinci → None None
 afya → None None
+
+--- depuração
+17450 ALL - AMÉRICA LATINA LOGÍSTICA S.A. mercado: {'mc': 34425845245, 'tk': 'RAIL3', 'acoes': 1855840714, 'ref': '2026-10-22 17:05', 'ev': 51880114245, 'ev_ebitda': 7.2, 'pl': 28.1, 'pvp': 2.38} | capital: {'tipo': 'Capital Integralizado', 'valor': 12579725503.52, 'on': 1858828617.0, 'pn': 0.0, 'total': 1858828617.0, 'data': '2025-06-27', 'autorizado': 3500000000.0} | ações: {'ref': '2026-06-30', 'on': 1858828617.0, 'pn': 0.0, 'tot': 1858828617.0, 'on_t': 2987903.0, 'pn_t': 0.0} | PL: 14469212000
+    Maglev Fundo de Investimento em Participações Multiestratégia 20.326 20.326  [('Cosan S.A.', 100.0)]
+    Capital Research Global Investors 9.845 9.845  []
+    BNP Paribas Financial Markets 5.088 5.088  []
+    GIC Private Limited 5.024 5.024  []
+    BlackRock, Inc. 4.995 4.995  []
+    Julia Dora Antonia Koranyi Arduini 3.82 3.82 ctl []
+    notícia: JP Morgan eleva Rumo para compra, corta Localiza para neutro e vê Motiva como top pick
+25062 LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A mercado: {'mc': 30096890208, 'tk': 'LAVV3', 'acoes': 1954343520, 'ref': '2026-10-22 17:05', 'ev': 30631027208, 'ev_ebitda': 67.4, 'pl': 83.4, 'pvp': 20.76} | capital: {'tipo': 'Capital Integralizado', 'valor': 1133580652.0, 'on': 195434352.0, 'pn': 0.0, 'total': 195434352.0, 'data': '2025-02-04'} | ações: {'ref': '2026-06-30', 'on': 1954343520.0, 'pn': 0.0, 'tot': 1954343520.0, 'on_t': 0.0, 'pn_t': 0.0} | PL: 1450077000
+    Cyrela Brazil Realty S.A. Emprendimentos e Parts 24.526 24.526 ctl [('Elie Horn', 20.764), ('Eirenor S.A.', 5.703), ('EH Capital Management', 1.954), ('Susette Horn', None)]
+    Tarpon Capital 19.023 19.023  []
+    RH Empreendimentos Imobiliários Ltda. 16.473 16.473 ctl [('Ralph Horn', 83.334), ('Ovadia Horn', 16.666)]
+    Ralph Horn 9.899 9.899 ctl []
+    Seller Consultoria imob.e representações ltda 3.831 3.831 ctl [('Cyrela Brazil Realty S.A. Emprendimentos e Parts', 100.0)]
+    Moshe Mordehai Horn 2.559 2.559 ctl []
+23574 INTERNATIONAL MEAL COMAPANY ALIMENTAÇÃO S.A. mercado: None | capital: {'tipo': 'Capital Integralizado', 'valor': 1170868817.89, 'on': 286676540.0, 'pn': 0.0, 'total': 286676540.0, 'data': '2025-04-17'} | ações: {'ref': '2026-06-30', 'on': 28667654000.0, 'pn': 2866765400.0, 'tot': 31534419400.0, 'on_t': 0.0, 'pn_t': 0.0} | PL: 752159000
+    UV Gestora de Ativos Financeiros Ltda 35.535 35.535  []
+    BFFC do Brasil Comercio e Participacoes Ltda 5.965 5.965  []
+    Charles Pimentel Martins 3.263 3.263  []
+    Lincoln Pimentel Martins 3.002 3.002  []
+    Carlos Roberto Wizard Martins 2.825 2.825  []
+    Pizza Hut International LLC 0.925 0.925  []
+20028 AMERICAN BANKNOTE COMPANY mercado: {'mc': 1514003540, 'tk': 'VLID3', 'acoes': 78243077, 'ref': '2026-10-22 17:04', 'ev': 1655181540, 'ev_ebitda': 4.0, 'pl': 6.7, 'pvp': 0.88} | capital: {'tipo': 'Capital Integralizado', 'valor': 1037549475.27, 'on': 79836375.0, 'pn': 0.0, 'total': 79836375.0, 'data': '2026-06-17'} | ações: {'ref': '2026-06-30', 'on': 79836375.0, 'pn': 0.0, 'tot': 79836375.0, 'on_t': 1593298.0, 'pn_t': 0.0} | PL: 1713420000
+    Alaska Asset Management 46.262 46.262  []
+    BTG Pactual Gestão e Consultoria de Investimentos Ltda. 11.917 11.917  []
+    Outros 39.735 39.735  []
+    Ações Tesouraria 2.086 2.086  []
+    notícia: Valid (VLID3): Anuncia 12ª emissão de debêntures no valor de R$ 200 milhões
+    notícia: Valid (VLID3): Anuncia 12ª emissão de debêntures no valor de R$ 200 milhões
+    notícia: Valid (VLID3) registra elevação de rating para AA+.br pela Moody’s
+6505 PONTO FRIO mercado: {'mc': 1288122, 'tk': 'BHIA3', 'acoes': 975850, 'ref': '2026-10-22 17:04', 'ev': 5739288122} | capital: {'tipo': 'Capital Integralizado', 'valor': 7138908767.07, 'on': 1013760396.0, 'pn': 0.0, 'total': 1013760396.0, 'data': '2026-07-16', 'autorizado': 5837956814.83} | ações: {'ref': '2026-06-30', 'on': 975865.0, 'pn': 0.0, 'tot': 975865.0, 'on_t': 15.0, 'pn_t': 0.0} | PL: -8270000000
+    Domus Vii Participações S.A. 82.113 82.113 ctl [('Mapa Capital Participações e Consultoria Ltda.', 100.0)]
+    Outros 17.886 17.886  []
+    Ações Tesouraria 0.001 0.001  []
+    notícia: Justiça de SP aprova recuperação judicial do Grupo Casas Bahia, com passivo de cerca de R$ 17 bi
+    notícia: Americanas e Casas Bahia disparam mais de 20% na B3
+    notícia: BHIA3 cai 20,8% e Ibovespa recua 0,8% na B3
+    notícia: BHIA3 recua 19,4% com Ibovespa perto da estabilidade
