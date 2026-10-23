@@ -25,6 +25,7 @@
   const nf = (v, d = 0) => Number(v).toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
   const icon = (name, cls = "ic") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
   const isNum = (v) => typeof v === "number" && isFinite(v);
+  const city = (s) => String(s || "").replace(/ (De|Da|Do|Dos|Das|E) /g, (m) => m.toLowerCase());
 
   // R$ abreviado: 1,2 tri · 34,5 bi · 812 mi · 45 mil
   function brl(v, { sign = false, unit = "R$ " } = {}) {
@@ -39,6 +40,8 @@
   }
   const pct = (v, d = 1, sign = false) => (isNum(v) ? `${sign && v > 0 ? "+" : v < 0 ? "−" : ""}${nf(Math.abs(v), d)}%` : "–");
   const mult = (v) => (isNum(v) ? `${nf(v, 1)}x` : "–");
+  // contagens grandes: 7,44 bi · 812 mi
+  const qty = (v) => (!isNum(v) ? "–" : v >= 1e9 ? `${nf(v / 1e9, 2)} bi` : v >= 1e6 ? `${nf(v / 1e6, 1)} mi` : nf(v));
   const ratio = (a, b) => (isNum(a) && isNum(b) && b !== 0 ? a / b : null);
 
   function dayLabel(d) {
@@ -133,7 +136,7 @@
     const tk = r.tk || (c.tk || [])[0];
     const initials = ciaName(c).replace(/[^A-Za-zÀ-ÿ0-9 ]/g, "").split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
     const hue = [...c.k].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) % 360, 7);
-    return `<span class="cia-logo ${size}" style="--h:${hue}"><span>${esc(initials || "?")}</span>${tk ? `<img src="https://icons.brapi.dev/icons/${esc(tk)}.svg" alt="" loading="lazy" onerror="this.remove()">` : ""}</span>`;
+    return `<span class="cia-logo ${size}" style="--h:${hue}"><span>${esc(initials || "?")}</span>${tk ? `<img src="https://icons.brapi.dev/icons/${esc(tk)}.svg" alt="" loading="lazy" onload="this.naturalWidth > 1 ? this.classList.add('ok') : this.remove()" onerror="this.remove()">` : ""}</span>`;
   }
 
   // ---------------------------------------------------------- renderização de documentos
@@ -386,7 +389,7 @@
             <div>
               <div class="cia-tags">${tickersHtml(c)}${c.sg ? `<span class="seg">${esc(c.sg)}</span>` : ""}${c.sit && c.sit !== "ATIVO" ? `<span class="seg warn">Registro ${esc(c.sit.toLowerCase())}</span>` : ""}${(p.leads || []).some((l) => l.status === "Em aberto") ? `<span class="seg lead">Lead em aberto</span>` : ""}</div>
               <h2>${esc(ciaName(c))}</h2>
-              <p class="muted">${esc(p.razao || c.n)}${c.st ? ` · ${esc(c.st)}` : ""}${c.mun ? ` · ${esc(c.mun)}/${esc(c.uf)}` : ""}</p>
+              <p class="muted">${esc(p.razao || c.n)}${c.st ? ` · ${esc(c.st)}` : ""}${c.mun ? ` · ${esc(city(c.mun))}/${esc(c.uf)}` : ""}</p>
             </div>
           </div>
           <div class="cia-actions">
@@ -419,7 +422,7 @@
     const out = [];
     const ctl = controlLine(p);
     if (ctl) out.push(ctl);
-    if (p.ctl) out.push(`Controle acionário ${p.ctl.toLowerCase()}.`);
+    if (p.ctl) out.push(`Espécie de controle acionário: ${p.ctl.toLowerCase().replace(" holding", " (holding)")}.`);
     const d = p.dispersao || {};
     if (isNum(d.ff)) out.push(`${pct(d.ff)} das ações em circulação${d.pf ? `; ${nf(d.pf)} acionistas pessoas físicas, ${nf(d.inst || 0)} institucionais` : ""}.`);
     const acoes = (p.vm || []).filter((v) => /^A[çc][õo]es|Units?/i.test(v.t) && v.tk);
@@ -458,7 +461,7 @@
   function factsHtml(c, p) {
     const facts = [
       ["Razão social", p.razao || c.n], ["CNPJ", c.cnpj], ["Código CVM", c.k], ["Setor", p.setor || c.st],
-      ["Sede", p.sede || [c.mun, c.uf].filter(Boolean).join(" / ")], ["Fundação", p.const ? fmtDate(p.const) : ""],
+      ["Sede", p.sede || [city(c.mun), c.uf].filter(Boolean).join(" / ")], ["Fundação", p.const ? fmtDate(p.const) : ""],
       ["Registro na CVM", [p.reg ? `desde ${fmtDate(p.reg)}` : "", p.cat].filter(Boolean).join(" · ")],
       ["Situação", p.sit || c.se], ["Controle acionário", p.ctl || c.ctl], ["Exercício social", p.exerc ? `termina em ${MONTHS[+p.exerc - 1] || p.exerc}` : ""],
       ["Auditor", p.auditor || c.aud], ["Escriturador", p.escriturador], ["Nome anterior", p.ant ? `${p.ant}${p.ant_d ? ` (até ${fmtDate(p.ant_d)})` : ""}` : ""],
@@ -552,8 +555,8 @@
     const inv = p.investe_em || [];
     const capCards = [
       ["Capital social", cap.valor ? brl(cap.valor) : null, cap.data ? `aprovado em ${fmtDate(cap.data)}` : ""],
-      ["Ações ordinárias (ON)", cap.on ? nf(cap.on) : null, ""],
-      ["Ações preferenciais (PN)", cap.pn ? nf(cap.pn) : null, ""],
+      ["Ações ordinárias (ON)", cap.on ? qty(cap.on) : null, cap.on ? nf(cap.on) : ""],
+      ["Ações preferenciais (PN)", cap.pn ? qty(cap.pn) : null, cap.pn ? nf(cap.pn) : ""],
       ["Capital autorizado", cap.autorizado ? brl(cap.autorizado) : null, "aumento sem assembleia"],
       ["Em circulação (free float)", isNum(d.ff) ? pct(d.ff) : null, isNum(d.ff_on) ? `${pct(d.ff_on)} das ON · ${pct(d.ff_pn)} das PN` : ""],
       ["Acionistas", d.pf ? nf((d.pf || 0) + (d.pj || 0) + (d.inst || 0)) : null, d.pf ? `${nf(d.pf)} PF · ${nf(d.pj || 0)} PJ · ${nf(d.inst || 0)} institucionais` : ""],
@@ -641,7 +644,7 @@
   function quarterChart(p) {
     const q = p.fin?.tri || [];
     if (q.length < 2) return "";
-    const W = 640, H = 220, pad = 28, bw = (W - pad * 2) / q.length;
+    const W = 1000, H = 250, pad = 30, bw = (W - pad * 2) / q.length;
     const vals = q.flatMap((x) => [x.rec || 0, x.llc ?? x.ll ?? 0]);
     const max = Math.max(...vals, 1), min = Math.min(0, ...vals);
     const y = (v) => H - pad - ((v - min) / (max - min)) * (H - pad * 2);
@@ -776,6 +779,7 @@
       renderEntDocs();
     }
     showPane(state.pane);
+    if (pane && pane !== "geral" && changed) requestAnimationFrame(() => $("#cia-tabs").scrollIntoView({ block: "start" }));
     state.recent = [k, ...(store.get("cias-recent", []).filter((x) => x !== k))].slice(0, 8);
     store.set("cias-recent", state.recent);
   }
@@ -860,6 +864,7 @@
       if (a.dataset.view === state.view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     }
     $(".finder").hidden = state.view === "cia";
+    document.body.classList.toggle("in-cia", state.view === "cia");
     $("#btn-share").hidden = state.view !== "cia";
     if (state.view === "docs") { setTitle("Documentos CVM"); renderDocs(); }
     else if (state.view === "cias") { setTitle("Companhias"); renderDir(); }

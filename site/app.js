@@ -169,7 +169,7 @@
     renderMacro();
     loadBase();
     loadLeads();
-    loadCias().then(() => { renderBriefSide(); renderAgenda(); renderOfertas(); renderDeals(); renderTabs(); if ($("#reader").open) renderReader(); });
+    loadCias().then(() => { renderBrief(); renderBriefSide(); renderAgenda(); renderOfertas(); renderDeals(); renderLeads(); renderTabs(); if ($("#reader").open) renderReader(); });
   }
 
   // ---------------------------------------------------------- companhias (perfis), agenda e ofertas
@@ -196,6 +196,24 @@
     return null;
   }
   const ciaHref = (k) => `cias.html#cia/${encodeURIComponent(k)}`;
+  // nomes de companhias no texto do briefing viram link para o perfil (só os nomes de mercado, com maiúscula;
+  // nomes que também são palavras comuns ficam de fora)
+  const AMBIGUOUS = new Set(["Vale", "Gol", "Oi", "Via", "Light", "Inter", "Pan", "Porto", "Mega", "Even", "Log", "TIM", "Vivo", "Natura", "Cury", "Mills", "Rumo", "Grão", "Serena", "Mateus", "Desktop", "Valid", "Ambipar"]);
+  let nameRe = null, nameMap = null;
+  function linkify(text) {
+    const t = esc(text);
+    if (!cias.loaded) return t;
+    if (!nameRe) {
+      nameMap = {};
+      for (const [k, r] of Object.entries(cias.resumo)) {
+        if (!r.nm || r.nm.length < 3 || AMBIGUOUS.has(r.nm) || !(r.mc || r.nn)) continue;
+        if (!nameMap[r.nm] || (cias.resumo[nameMap[r.nm]]?.mc || 0) < (r.mc || 0)) nameMap[r.nm] = k;
+      }
+      const names = Object.keys(nameMap).sort((a, z) => z.length - a.length).map((n) => esc(n).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+      nameRe = names.length ? new RegExp(`(^|[^\\wÀ-ÿ&])(${names.join("|")})(?![\\wÀ-ÿ])`, "g") : null;
+    }
+    return nameRe ? t.replace(nameRe, (m, pre, nm) => `${pre}<a class="cia-link quiet" href="${ciaHref(nameMap[nm.replace(/&amp;/g, "&")] || nameMap[nm])}">${nm}</a>`) : t;
+  }
   const ciaName = (k) => cias.resumo[k]?.nm || "";
   // texto com link para o perfil da companhia, quando o portal reconhece o nome
   function ciaLinked(text) {
@@ -464,8 +482,8 @@
       const a = d.advisors || "";
       if (!a || /n[aã]o divulgad|n[aã]o informad|^-+$/i.test(a)) continue;
       for (let n of a.split(/\s*[;,/]\s*|\s+e\s+|\s*\(|\)\s*/)) {
-        n = n.replace(/^(assessor(ado|ia)?|assessores|pelo|pela|do|da|de)\s+/i, "").replace(/[.:]$/, "").trim();
-        if (n.length < 2 || /^(comprador|vendedor|alvo|financeiro|jur[ií]dico|legal|lado)$/i.test(n)) continue;
+        n = n.replace(/^(assessor(ado|ia)?|assessores|pelo|pela|pelos|pelas|do|da|de|dos|das)\s+/i, "").replace(/[.:]$/, "").trim();
+        if (n.length < 2 || /^(comprador|compradora|vendedor|vendedora|alvo|financeiro|jur[ií]dico|legal|lado|credores|acionistas|empresa|companhia|n[aã]o divulgad[oa]s?)$/i.test(n)) continue;
         count[n] = (count[n] || 0) + 1;
       }
     }
@@ -656,8 +674,8 @@
     const hhmm = (iso) => new Date(iso).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
     const an = d.analysis || {};
     $("#brief-meta").textContent = `${mins} min de leitura · ` + (an.updated_at ? `análise às ${hhmm(an.updated_at)}` : `notícias às ${hhmm(d.generated_at)}`);
-    $("#brief-tldr").innerHTML = (b.tldr || []).map((t) => `<li>${esc(t)}</li>`).join("");
-    const list = (sel, arr) => { $(sel).innerHTML = (arr || []).map((t) => `<li>${esc(t)}</li>`).join(""); $(sel).closest(".widget").hidden = !(arr || []).length; };
+    $("#brief-tldr").innerHTML = (b.tldr || []).map((t) => `<li>${linkify(t)}</li>`).join("");
+    const list = (sel, arr) => { $(sel).innerHTML = (arr || []).map((t) => `<li>${linkify(t)}</li>`).join(""); $(sel).closest(".widget").hidden = !(arr || []).length; };
     list("#brief-watch", b.watchlist);
     list("#brief-conn", b.connections);
 
@@ -665,7 +683,7 @@
     $("#brief-sections").innerHTML = secs.map((s) => `
       <div class="bsec" style="${catVar(s.category)}">
         <h4>${esc(catName(s.category))}</h4>
-        <p>${esc(s.text)}</p>
+        <p>${linkify(s.text)}</p>
         <div class="refs">${(s.item_ids || []).filter((id) => byId[id]).map((id) =>
           `<button class="ref" data-jump="${id}" title="${esc(byId[id].headline)}">${esc(byId[id].outlets[0].source)}</button>`).join("")}</div>
       </div>`).join("");
@@ -810,12 +828,15 @@
     const region = $("#region").value;
     const onlyUnread = $("#unread").checked;
     const onlySaved = $("#saved").checked;
+    const onlyFavs = $("#favs-only").checked;
+    const fset = favs();
     let items = d.items.filter((i) =>
       i.importance >= minImp &&
       (!state.cat || i.category === state.cat) &&
       (!region || i.region === region) &&
       (!onlyUnread || !state.read.has(i.id)) &&
       (!onlySaved || state.saved.has(i.id)) &&
+      (!onlyFavs || [...(i.entities || []), i.deal?.buyer, i.deal?.target, i.lead?.company].some((e) => e && fset.has(companyOf(e)))) &&
       !muted(i) &&
       (!q || fold(`${i.headline} ${i.title} ${i.summary} ${i.involves} ${(i.entities || []).join(" ")} ${(i.tags || []).join(" ")} ${i.outlets.map((o) => o.source).join(" ")}`).includes(q)));
     const sort = $("#sort").value;
@@ -928,7 +949,7 @@
     $("#" + id).addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
   }
 
-  for (const id of ["q", "region", "sort", "unread", "saved"]) $("#" + id).addEventListener("input", () => { state.focus = -1; renderFeed(); });
+  for (const id of ["q", "region", "sort", "unread", "saved", "favs-only"]) $("#" + id).addEventListener("input", () => { state.focus = -1; renderFeed(); });
   $("#base-q").addEventListener("input", renderBase);
   document.addEventListener("click", (e) => { const b = e.target.closest("[data-advq]"); if (b) { $("#base-q").value = b.dataset.advq; renderBase(); } });
   $("#base-sector").addEventListener("input", renderBase);

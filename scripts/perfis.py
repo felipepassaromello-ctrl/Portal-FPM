@@ -851,6 +851,30 @@ def cmd_montar(args) -> None:
                                      "valor": d.get("value"), "estagio": d.get("stage"), "setor": d.get("sector"), "assessores": d.get("advisors"),
                                      "desde": d.get("first_seen"), "ate": d.get("last_seen"), "h": d.get("headline"), "l": d.get("link"),
                                      "imp": d.get("importance"), "tl": [{"d": t.get("date"), "e": t.get("stage")} for t in d.get("timeline", [])][-6:]})
+    # a base de deals às vezes registra o mesmo negócio várias vezes (uma por manchete): junta por tipo e papel
+    for k, lst in deals.items():
+        merged: dict[tuple, dict] = {}
+        for d in sorted(lst, key=lambda x: (x.get("ate") or "", x.get("imp") or 0)):
+            tipo = fold(d.get("tipo") or "")
+            if re.search(r"reestrutur|recupera", tipo):  # a companhia é o assunto, seja qual for o papel registrado
+                d["papel"] = "alvo"
+                key = (tipo, "", "")
+            else:
+                key = (tipo, d["papel"], fold(d.get("alvo") or "")[:6] if d["papel"] == "comprador" else "")
+            m = merged.get(key)
+            if not m:
+                merged[key] = dict(d)
+                continue
+            for f in ("valor", "assessores", "setor", "comprador", "alvo"):
+                if (not m.get(f) or fold(m[f]).startswith("nao divulg")) and d.get(f):
+                    m[f] = d[f]
+            m["desde"] = min(m.get("desde") or "9999", d.get("desde") or "9999")
+            m.update({f: d[f] for f in ("ate", "estagio", "h", "l") if d.get(f)})
+            seen_tl = {(t["d"], t["e"]) for t in m.get("tl", [])}
+            m["tl"] = sorted(m.get("tl", []) + [t for t in d.get("tl", []) if (t["d"], t["e"]) not in seen_tl], key=lambda t: t["d"] or "")[-6:]
+            m["imp"] = max(m.get("imp") or 0, d.get("imp") or 0)
+            m["n"] = m.get("n", 1) + 1
+        deals[k] = sorted(merged.values(), key=lambda x: x.get("ate") or "", reverse=True)
     leads_db = load_json(DATA / "leads_db.json", {}).get("leads", {})
     leads: dict[str, list] = defaultdict(list)
     for lead in leads_db.values():
