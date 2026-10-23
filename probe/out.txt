@@ -1,81 +1,81 @@
 
-$ scripts/perfis.py base --force  (41s, código 0)
-[01:14:27] FCA: 725 companhias, tabelas ['auditor', 'canal_divulgacao', 'dri', 'endereco', 'escriturador', 'geral', 'pais_estrangeiro_negociacao', 'valor_mobiliario']
-[01:14:29] FRE: 707 companhias, tabelas ['acao_entregue', 'administrador_PCD', 'administrador_declaracao_genero', 'administrador_declaracao_raca', 'administrador_membro_conselho_fiscal', 'auditor', 'capital_social', 'capital_social_classe_acao', 'capital_social_titulo_conversivel', 'distribuicao_capital', 'distribuicao_capital_classe_acao', 'empregado_PCD', 'empregado_local_declaracao_genero', 'empregado_local_declaracao_raca', 'empregado_local_faixa_etaria', 'empregado_posicao_declaracao_genero', 'empregado_posicao_declaracao_raca', 'empregado_posicao_faixa_etaria', 'empregado_posicao_local', 'membro_comite', 'mercado_estrangeiro', 'outro_valor_mobiliario', 'participacao_sociedade', 'posicao_acionaria', 'posicao_acionaria_classe_acao', 'relacao_familiar', 'relacao_subordinacao', 'remuneracao_acao', 'remuneracao_maxima_minima_media', 'remuneracao_total_orgao', 'remuneracao_variavel', 'responsavel', 'titular_valor_mobiliario', 'titulo_exterior', 'transacao_parte_relacionada']
-[01:14:32] DFP 2021: 765 companhias
-[01:14:36] DFP 2022: 729 companhias
-[01:14:39] DFP 2023: 732 companhias
-[01:14:42] DFP 2024: 709 companhias
-[01:14:45] DFP 2025: 669 companhias
-[01:14:55] ITR 2025: 708 companhias
-[01:15:01] ITR 2026: 645 companhias
-[01:15:06] Perfis: 726 companhias gravadas em /home/runner/work/Portal-FPM/Portal-FPM/site/data/cias/base/perfis.json.
+$ scripts/perfis.py base --force  (31s, código 0)
+[01:19:47] FCA: 725 companhias, tabelas ['auditor', 'canal_divulgacao', 'dri', 'endereco', 'escriturador', 'geral', 'pais_estrangeiro_negociacao', 'valor_mobiliario']
+[01:19:49] FRE: 707 companhias, tabelas ['acao_entregue', 'administrador_PCD', 'administrador_declaracao_genero', 'administrador_declaracao_raca', 'administrador_membro_conselho_fiscal', 'auditor', 'capital_social', 'capital_social_classe_acao', 'capital_social_titulo_conversivel', 'distribuicao_capital', 'distribuicao_capital_classe_acao', 'empregado_PCD', 'empregado_local_declaracao_genero', 'empregado_local_declaracao_raca', 'empregado_local_faixa_etaria', 'empregado_posicao_declaracao_genero', 'empregado_posicao_declaracao_raca', 'empregado_posicao_faixa_etaria', 'empregado_posicao_local', 'membro_comite', 'mercado_estrangeiro', 'outro_valor_mobiliario', 'participacao_sociedade', 'posicao_acionaria', 'posicao_acionaria_classe_acao', 'relacao_familiar', 'relacao_subordinacao', 'remuneracao_acao', 'remuneracao_maxima_minima_media', 'remuneracao_total_orgao', 'remuneracao_variavel', 'responsavel', 'titular_valor_mobiliario', 'titulo_exterior', 'transacao_parte_relacionada']
+[01:19:51] DFP 2021: 765 companhias
+[01:19:54] DFP 2022: 729 companhias
+[01:19:56] DFP 2023: 732 companhias
+[01:19:58] DFP 2024: 709 companhias
+[01:20:01] DFP 2025: 669 companhias
+[01:20:08] ITR 2025: 708 companhias
+[01:20:12] ITR 2026: 645 companhias
+[01:20:16] Perfis: 726 companhias gravadas em /home/runner/work/Portal-FPM/Portal-FPM/site/data/cias/base/perfis.json.
 
 
 
 $ scripts/perfis.py precos --force  (114s, código 0)
-[01:17:01] Cotações: 382 de 446 tickers em 114s.
+[01:22:12] Cotações: 382 de 446 tickers em 114s.
 
 
 
 $ scripts/perfis.py ofertas --force  (1s, código 0)
-[01:17:02] Ofertas: 1433 desde 2025-04-21.
+[01:22:12] Ofertas: 1433 desde 2025-04-21.
 
 
 
-$ scripts/cias.py build  (16s, código 0)
-[01:17:15] Documentos: 219901 · {'ipe2022': 49168, 'ipe2023': 49919, 'ipe2024': 50125, 'ipe2025': 49277, 'ipe2026': 37434, 'tempo_real': 3097, 'dados_abertos_ate': '2026-10-17'}
-[01:17:15] Companhias: 1638
-[01:17:18] Gravado: 1638 companhias com documentos, 58 meses.
+$ scripts/cias.py build  (15s, código 0)
+[01:22:24] Documentos: 219901 · {'ipe2022': 49168, 'ipe2023': 49919, 'ipe2024': 50125, 'ipe2025': 49277, 'ipe2026': 37434, 'tempo_real': 3097, 'dados_abertos_ate': '2026-10-17'}
+[01:22:24] Companhias: 1638
+[01:22:27] Gravado: 1638 companhias com documentos, 58 meses.
 
 
 
 $ scripts/perfis.py montar  (1s, código 0)
-[01:17:19] Montado: 745 resumos, 189 vínculos de notícias, 45 de deals, 9 de leads, 592 de ofertas; 2442 apelidos.
+[01:22:27] Montado: 745 resumos, 189 vínculos de notícias, 45 de deals, 9 de leads, 592 de ofertas; 2442 apelidos.
 
 
 
-resumo: 745 companhias; com valor de mercado: 281
+resumo: 745 companhias; com valor de mercado: 285
 9512 PETROBRAS {"nm": "Petrobras", "mc": 796706812104, "tk": "PETR4", "p": 57.83, "d1": -0.65, "y1": 93.7, "rec": 548493000000, "ll": 133376000000, "nn": 27, "no": 1, "ctl": "União Federal", "ceo": "Magda Maria de Regina Chambriard"}
-19348 ITAÚ UNIBANCO {"nm": "Itaú", "mc": 556183554690, "tk": "ITUB4", "p": 48.0, "d1": -1.64, "y1": 29.7, "rec": 385985000000, "ll": 46828000000, "nn": 7, "nd": 4, "ctl": "IUPAR - Itaú Unibanco Participações S.A.", "ceo": "Milton Maluhy Filho"}
-23264 AMBEV S.A {"nm": "Ambev", "mc": 261152235500, "tk": "ABEV3", "p": 16.9, "d1": 0.3, "y1": 40.0, "rec": 88268294000, "ll": 16246910000, "ctl": "Interbrew International BV", "ceo": "Carlos Eduardo Klutzenschell Lisboa"}
-4170 VALE {"nm": "Vale", "mc": 250409785340, "tk": "VALE3", "p": 61.49, "d1": -6.04, "y1": -0.6, "rec": 218069000000, "ll": 10369000000, "nn": 11, "nd": 1, "nl": 1, "no": 1, "ceo": "Gustavo Duarte Pimenta"}
-906 BANCO BRADESCO S.A. {"nm": "Bradesco", "mc": 201512457202, "tk": "BBDC4", "p": 20.22, "d1": -2.22, "y1": 13.7, "rec": 299942971000, "nn": 4, "nd": 1, "ctl": "Cidade de Deus Cia Cial Participações", "ceo": "Marcelo de Araújo Noronha"}
+19348 ITAÚ UNIBANCO {"nm": "Itaú", "mc": 556183563795, "tk": "ITUB4", "p": 48.0, "d1": -1.64, "y1": 29.7, "rec": 385985000000, "ll": 46828000000, "nn": 7, "nd": 4, "ctl": "IUPAR - Itaú Unibanco Participações S.A.", "ceo": "Milton Maluhy Filho"}
+4170 VALE {"nm": "Vale", "mc": 261686852358, "tk": "VALE3", "p": 61.49, "d1": -6.04, "y1": -0.6, "rec": 218069000000, "ll": 10369000000, "nn": 11, "nd": 1, "nl": 1, "no": 1, "ceo": "Gustavo Duarte Pimenta"}
+23264 AMBEV S.A {"nm": "Ambev", "mc": 256437133624, "tk": "ABEV3", "p": 16.9, "d1": 0.3, "y1": 40.0, "rec": 88268294000, "ll": 16246910000, "ctl": "Interbrew International BV", "ceo": "Carlos Eduardo Klutzenschell Lisboa"}
+906 BANCO BRADESCO S.A. {"nm": "Bradesco", "mc": 213042935393, "tk": "BBDC4", "p": 20.22, "d1": -2.22, "y1": 13.7, "rec": 299942971000, "nn": 4, "nd": 1, "ctl": "Cidade de Deus Cia Cial Participações", "ceo": "Marcelo de Araújo Noronha"}
 5410 WEG SA {"nm": "WEG", "mc": 184616506404, "tk": "WEGE3", "p": 44.0, "d1": -9.82, "y1": 9.9, "rec": 40130180000, "ll": 6254051000, "nn": 1, "ctl": "WPA Participações e Serviços S.A.", "ceo": "Alberto Yoshikazu Kuba"}
-7617 ITAÚSA {"nm": "Itaúsa", "mc": 172166109120, "tk": "ITSA4", "p": 15.3, "d1": -3.16, "y1": 38.8, "rec": 8475000000, "ll": 18161000000, "no": 1, "ctl": "Alfredo Egydio Arruda Villela Filho"}
-2437 AXIA ENERGIA S.A. {"nm": "Axia", "mc": 169680009320, "tk": "AXIA3", "p": 59.08, "d1": -0.29, "y1": 9.2, "rec": 44568350000, "ll": 12055712000, "no": 7, "ceo": "Ivan de Souza Monteiro"}
+7617 ITAÚSA {"nm": "Itaúsa", "mc": 172166106751, "tk": "ITSA4", "p": 15.3, "d1": -3.16, "y1": 38.8, "rec": 8475000000, "ll": 18161000000, "no": 1, "ctl": "Alfredo Egydio Arruda Villela Filho"}
+2437 AXIA ENERGIA S.A. {"nm": "Axia", "mc": 165559418201, "tk": "AXIA3", "p": 59.08, "d1": -0.29, "y1": 9.2, "rec": 44568350000, "ll": 12055712000, "no": 7, "ceo": "Ivan de Souza Monteiro"}
 1023 BANCO DO BRASIL S.A. {"nm": "Banco do Brasil", "mc": 136558597754, "tk": "BBAS3", "p": 23.92, "d1": -1.16, "y1": 15.6, "rec": 330956647000, "nn": 4, "ctl": "Ministério da Economia / Secretaria do Tesouro Nacional"}
 21610 B3 {"nm": "B3 S.A.", "mc": 116210441241, "tk": "B3SA3", "p": 23.25, "d1": -1.94, "y1": 86.7, "rec": 12001729000, "ll": 5329711000, "nn": 31, "nd": 1, "no": 1, "ceo": "Christian George Egan"}
 14443 SABESP {"nm": "Sabesp", "mc": 111517209169, "tk": "SBSP3", "p": 31.8, "d1": -2.27, "y1": 26.0, "rec": 40875064000, "ll": 3196215000, "nn": 1, "no": 9, "ceo": "Carlos Augusto Leone Piani"}
 17671 TELEFÔNICA BRASIL {"nm": "Vivo", "mc": 106030218759, "tk": "VIVT3", "p": 33.18, "d1": 3.08, "y1": 0.2, "rec": 61774050000, "ll": 6598880000, "nn": 5, "ctl": "Telefónica S.A.", "ceo": "Christian Mauad Gebara"}
-20532 BANCO SANTANDER (BRASIL) S.A. {"nm": "Santander Brasil", "mc": 104124477360, "tk": "SANB11", "p": 27.75, "d1": -1.63, "y1": -2.5, "rec": 168572521000, "ceo": "Gilson Finkelsztain"}
+20532 BANCO SANTANDER (BRASIL) S.A. {"nm": "Santander Brasil", "mc": 104124478070, "tk": "SANB11", "p": 27.75, "d1": -1.63, "y1": -2.5, "rec": 168572521000, "ceo": "Gilson Finkelsztain"}
 24821 REDE D'OR SÃO LUIZ S.A. {"nm": "Rede D'Or", "mc": 95994542785, "tk": "RDOR3", "p": 44.03, "d1": -0.14, "y1": 4.6, "rec": 57792339000, "ll": 4822607000, "nn": 1, "no": 6, "ctl": "Jorge Neval Moll Filho"}
 23159 BB SEGURIDADE PARTICIPAÇÕES S.A. {"nm": "BB Seguridade", "mc": 84114299412, "tk": "BBSE3", "p": 43.33, "d1": 2.41, "y1": 35.0, "ll": 9189317000, "ctl": "Banco do Brasil S.A."}
 23795 CAIXA SEGURIDADE PARTICIPAÇÕES S.A. {"nm": "Caixa Seguridade", "mc": 63900000000, "tk": "CXSE3", "p": 21.3, "d1": 0.05, "y1": 43.4, "ll": 4291560000, "nn": 1, "ctl": "Caixa Econômica Federal", "ceo": "Luiz Gustavo Silva Portela"}
-20087 EMBRAER {"nm": "Embraer", "mc": 62320979150, "tk": "EMBJ3", "p": 87.55, "d1": -3.6, "y1": 3.3, "rec": 44127914000, "ll": 2329172000, "nn": 3, "nd": 3, "ceo": "Francisco Gomes Neto"}
-21237 ENEVA SA {"nm": "Eneva", "mc": 61216160000, "tk": "ENEV3", "p": 32.0, "y1": 92.8, "rec": 19136661000, "ll": 962660000, "no": 2, "ceo": "Lino Lopes Cançado"}
-20010 EQUATORIAL S.A. {"nm": "Equatorial", "mc": 60454856517, "tk": "EQTL3", "p": 48.17, "d1": -2.84, "y1": 31.7, "rec": 54713129000, "ll": 958423000, "nn": 2, "nd": 1, "ceo": "Augusto Miranda da Paz Júnior"}
+20087 EMBRAER {"nm": "Embraer", "mc": 62320983002, "tk": "EMBJ3", "p": 87.55, "d1": -3.6, "y1": 3.3, "rec": 44127914000, "ll": 2329172000, "nn": 3, "nd": 3, "ceo": "Francisco Gomes Neto"}
+21237 ENEVA SA {"nm": "Eneva", "mc": 61451720480, "tk": "ENEV3", "p": 32.0, "y1": 92.8, "rec": 19136661000, "ll": 962660000, "no": 2, "ceo": "Lino Lopes Cançado"}
+20010 EQUATORIAL S.A. {"nm": "Equatorial", "mc": 60457337272, "tk": "EQTL3", "p": 48.17, "d1": -2.84, "y1": 31.7, "rec": 54713129000, "ll": 958423000, "nn": 2, "nd": 1, "ceo": "Augusto Miranda da Paz Júnior"}
 22187 PETRO RIO S.A. {"nm": "Prio", "mc": 57971719417, "tk": "PRIO3", "p": 72.63, "d1": 1.94, "y1": 100.6, "rec": 21361551000, "ll": 3868893000, "nn": 2, "ceo": "Roberto Bernardes Monteiro"}
 18660 CPFL ENERGIA S.A. {"nm": "CPFL", "mc": 57025072236, "tk": "CPFE3", "p": 49.49, "d1": -1.16, "y1": 21.7, "rec": 45612395000, "ll": 6004881000, "ctl": "State Grid Brazil Power Participações S.A.", "ceo": "Kedi Wang"}
 19739 LOCALIZA RENT A CAR {"nm": "Localiza", "mc": 56957551684, "tk": "RENT3", "p": 51.6, "d1": -2.38, "y1": 36.5, "rec": 46353378000, "ll": 3424267000, "nn": 2, "no": 8, "ceo": "Bruno Sebastian Lasansky"}
 13986 SUZANO PAPEL E CELULOSE SA {"nm": "Suzano", "mc": 53000216312, "tk": "SUZB3", "p": 42.98, "d1": 1.37, "y1": -10.9, "rec": 47825412000, "ll": 8168699000, "no": 3, "ctl": "Suzano Holding S.A.", "ceo": "João Alberto Fernandez de Abreu"}
 14311 COPEL {"nm": "Copel", "mc": 51917693877, "tk": "CPLE3", "p": 17.48, "d1": -0.96, "y1": 37.7, "rec": 27985378000, "ll": 3134132000, "ceo": "Daniel Pimentel Slaviero"}
-3980 GERDAU S.A. {"nm": "Gerdau", "mc": 47411923301, "tk": "GGBR4", "p": 25.48, "d1": -2.93, "y1": 41.6, "rec": 69543739000, "ll": 2237081000, "no": 1, "ctl": "Metalúrgica Gerdau S.A.", "ceo": "Gustavo Werneck da Cunha"}
+3980 GERDAU S.A. {"nm": "Gerdau", "mc": 47230638197, "tk": "GGBR4", "p": 25.48, "d1": -2.93, "y1": 41.6, "rec": 69543739000, "ll": 2237081000, "no": 1, "ctl": "Metalúrgica Gerdau S.A.", "ceo": "Gustavo Werneck da Cunha"}
 20125 BRADSAÚDE S.A. {"nm": "Bradsaúde S.A.", "mc": 46980124830, "tk": "SAUD3", "p": 16.07, "d1": 2.49, "y1": 22.2, "rec": 9924962000, "ll": 1053996000, "ctl": "Banco Bradesco S.A.", "ceo": "Carlos Alberto Iwata Marinelli"}
-24929 TIM S.A. {"nm": "TIM", "mc": 46579032279, "tk": "TIMS3", "p": 19.5, "d1": 2.42, "y1": -17.8, "rec": 13771614000, "ll": 1786664000, "nn": 3, "ctl": "TIM Brasil Serviços e Participações S.A."}
-24295 VIBRA ENERGIA S/A {"nm": "Vibra", "mc": 44259881000, "tk": "VBBR3", "p": 37.0, "d1": 0.87, "y1": 69.9, "rec": 203974000000, "ll": 5056000000, "nn": 1, "no": 2, "ceo": "Ernesto Peres Pousada Júnior"}
+24929 TIM S.A. {"nm": "TIM", "mc": 46321632279, "tk": "TIMS3", "p": 19.5, "d1": 2.42, "y1": -17.8, "rec": 13771614000, "ll": 1786664000, "nn": 3, "ctl": "TIM Brasil Serviços e Participações S.A."}
+24295 VIBRA ENERGIA S/A {"nm": "Vibra", "mc": 44259900647, "tk": "VBBR3", "p": 37.0, "d1": 0.87, "y1": 69.9, "rec": 203974000000, "ll": 5056000000, "nn": 1, "no": 2, "ceo": "Ernesto Peres Pousada Júnior"}
+17329 TRACTEBEL ENERGIA {"nm": "Engie Brasil", "mc": 44035301457, "tk": "EGIE3", "p": 31.09, "d1": -0.48, "y1": 10.7, "rec": 13680975000, "ll": 3959345000, "no": 4, "ctl": "ENGIE Brasil Participações Ltda.", "ceo": "Eduardo Antonio Gori Sattamini"}
 18465 ULTRAPAR PARTICIPAÇÕES SA {"nm": "Ultrapar", "mc": 42670041222, "tk": "UGPA3", "p": 39.12, "d1": -1.63, "y1": 91.8, "rec": 153258052000, "ll": 3457072000, "ceo": "Rodrigo de Almeida Pizzinatto"}
 18821 MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A. {"nm": "Motiva", "mc": 40259085821, "tk": "MOTV3", "p": 20.03, "d1": -1.81, "y1": 31.3, "rec": 20122645000, "ll": 3877585000, "nn": 1, "no": 2, "ctl": "Votorantim S.A", "ceo": "Miguel Nuno Simões Nunes Ferreira Setas"}
-2453 CEMIG {"nm": "Cemig", "mc": 38989937900, "tk": "CMIG4", "p": 11.66, "d1": -1.44, "y1": 8.6, "rec": 43739538000, "ll": 4595105000, "ctl": "Estado de Minas Gerais (Casa Civil)", "ceo": "Marco Aurélio Martins da Costa Vasconcelos"}
+2453 CEMIG {"nm": "Cemig", "mc": 38989936151, "tk": "CMIG4", "p": 11.66, "d1": -1.44, "y1": 8.6, "rec": 43739538000, "ll": 4595105000, "ctl": "Estado de Minas Gerais (Casa Civil)", "ceo": "Marco Aurélio Martins da Costa Vasconcelos"}
 5258 DROGASIL SA {"nm": "Raia Drogasil", "mc": 35530256336, "tk": "RADL3", "p": 20.32, "d1": -5.97, "y1": 6.6, "rec": 46533850000, "ll": 1342385000, "no": 1, "ctl": "Wells Holding Limited", "ceo": "Renato Cepollina Raduan"}
-17329 TRACTEBEL ENERGIA {"nm": "Engie Brasil", "mc": 35514070811, "tk": "EGIE3", "p": 31.09, "d1": -0.48, "y1": 10.7, "rec": 13680975000, "ll": 3959345000, "no": 4, "ctl": "ENGIE Brasil Participações Ltda.", "ceo": "Eduardo Antonio Gori Sattamini"}
 17450 ALL - AMÉRICA LATINA LOGÍSTICA S.A. {"nm": "Rumo", "mc": 34425845245, "tk": "RAIL3", "p": 18.55, "d1": -3.89, "y1": 20.7, "rec": 14392211000, "ll": 1227118000, "nn": 1, "no": 1, "ctl": "Julia Dora Antonia Koranyi Arduini", "ceo": "Daniel Rockenbach"}
 15253 ENERGISA {"nm": "Energisa", "mc": 33279380298, "tk": "ENGI11", "p": 65.93, "d1": -2.31, "y1": 43.4, "rec": 36704056000, "ll": 1516835000, "no": 1, "ctl": "Gipar S.A."}
 16659 PORTO SEGURO SA {"nm": "Porto Seguro", "mc": 33139303099, "tk": "PSSA3", "p": 51.7, "d1": -1.75, "y1": 9.5, "rec": 42631412000, "ll": 3684011000, "ctl": "Porto Seguro Itaú Unibanco Participações S.A.", "ceo": "Paulo Sérgio Kakinoff"}
-25062 LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A {"nm": "Lavvi", "mc": 30096890208, "tk": "LAVV3", "p": 15.4, "d1": -1.41, "y1": 12.9, "rec": 1813209000, "ll": 361088000, "ctl": "Cyrela Brazil Realty S.A. Emprendimentos e Parts", "ceo": "Ralph Horn"}
-19992 TOTVS S.A {"nm": "Totvs", "mc": 25077281381, "tk": "TOTS3", "p": 43.75, "d1": 3.99, "y1": 5.4, "rec": 6591677000, "ll": 1425728000, "no": 2, "ceo": "Dennis Herszkowicz"}
-19445 COPASA MG {"nm": "Copasa", "mc": 23873235760, "tk": "CSMG3", "p": 62.96, "d1": -0.93, "y1": 73.9, "rec": 8688550000, "ll": 1293036000, "no": 5}
-18376 CTEEP {"nm": "ISA Energia", "mc": 20403692497, "tk": "ISAE4", "p": 28.35, "d1": -2.58, "y1": 16.4, "rec": 10674519000, "ll": 2817169000, "no": 7, "ctl": "Isa Capital do Brasil S.A.", "ceo": "Rui Chammas"}
+19992 TOTVS S.A {"nm": "Totvs", "mc": 24202281381, "tk": "TOTS3", "p": 43.75, "d1": 3.99, "y1": 5.4, "rec": 6591677000, "ll": 1425728000, "no": 2, "ceo": "Dennis Herszkowicz"}
+19445 COPASA MG {"nm": "Copasa", "mc": 23873240104, "tk": "CSMG3", "p": 62.96, "d1": -0.93, "y1": 73.9, "rec": 8688550000, "ll": 1293036000, "no": 5}
+18376 CTEEP {"nm": "ISA Energia", "mc": 21663692485, "tk": "ISAE4", "p": 28.35, "d1": -2.58, "y1": 16.4, "rec": 10674519000, "ll": 2817169000, "no": 7, "ctl": "Isa Capital do Brasil S.A.", "ceo": "Rui Chammas"}
+19836 COSAN SA INDUSTRIA E COMERCIO {"nm": "Cosan", "mc": 19800719654, "tk": "CSAN3", "p": 5.02, "d1": -4.74, "y1": -15.6, "rec": 40083074000, "ll": -8892040000, "nn": 2, "no": 2, "ctl": "Aguassanta Participações S.A.", "ceo": "Marcelo Eduardo Martins"}
 
 mais notícias:
 21610 B3 31 1 None
@@ -128,41 +128,8 @@ vinci → None None
 afya → None None
 
 --- depuração
-17450 ALL - AMÉRICA LATINA LOGÍSTICA S.A. mercado: {'mc': 34425845245, 'tk': 'RAIL3', 'acoes': 1855840714, 'ref': '2026-10-22 17:05', 'ev': 51880114245, 'ev_ebitda': 7.2, 'pl': 28.1, 'pvp': 2.38} | capital: {'tipo': 'Capital Integralizado', 'valor': 12579725503.52, 'on': 1858828617.0, 'pn': 0.0, 'total': 1858828617.0, 'data': '2025-06-27', 'autorizado': 3500000000.0} | ações: {'ref': '2026-06-30', 'on': 1858828617.0, 'pn': 0.0, 'tot': 1858828617.0, 'on_t': 2987903.0, 'pn_t': 0.0} | PL: 14469212000
-    Maglev Fundo de Investimento em Participações Multiestratégia 20.326 20.326  [('Cosan S.A.', 100.0)]
-    Capital Research Global Investors 9.845 9.845  []
-    BNP Paribas Financial Markets 5.088 5.088  []
-    GIC Private Limited 5.024 5.024  []
-    BlackRock, Inc. 4.995 4.995  []
-    Julia Dora Antonia Koranyi Arduini 3.82 3.82 ctl []
-    notícia: JP Morgan eleva Rumo para compra, corta Localiza para neutro e vê Motiva como top pick
-25062 LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A mercado: {'mc': 30096890208, 'tk': 'LAVV3', 'acoes': 1954343520, 'ref': '2026-10-22 17:05', 'ev': 30631027208, 'ev_ebitda': 67.4, 'pl': 83.4, 'pvp': 20.76} | capital: {'tipo': 'Capital Integralizado', 'valor': 1133580652.0, 'on': 195434352.0, 'pn': 0.0, 'total': 195434352.0, 'data': '2025-02-04'} | ações: {'ref': '2026-06-30', 'on': 1954343520.0, 'pn': 0.0, 'tot': 1954343520.0, 'on_t': 0.0, 'pn_t': 0.0} | PL: 1450077000
-    Cyrela Brazil Realty S.A. Emprendimentos e Parts 24.526 24.526 ctl [('Elie Horn', 20.764), ('Eirenor S.A.', 5.703), ('EH Capital Management', 1.954), ('Susette Horn', None)]
-    Tarpon Capital 19.023 19.023  []
-    RH Empreendimentos Imobiliários Ltda. 16.473 16.473 ctl [('Ralph Horn', 83.334), ('Ovadia Horn', 16.666)]
-    Ralph Horn 9.899 9.899 ctl []
-    Seller Consultoria imob.e representações ltda 3.831 3.831 ctl [('Cyrela Brazil Realty S.A. Emprendimentos e Parts', 100.0)]
-    Moshe Mordehai Horn 2.559 2.559 ctl []
-23574 INTERNATIONAL MEAL COMAPANY ALIMENTAÇÃO S.A. mercado: None | capital: {'tipo': 'Capital Integralizado', 'valor': 1170868817.89, 'on': 286676540.0, 'pn': 0.0, 'total': 286676540.0, 'data': '2025-04-17'} | ações: {'ref': '2026-06-30', 'on': 28667654000.0, 'pn': 2866765400.0, 'tot': 31534419400.0, 'on_t': 0.0, 'pn_t': 0.0} | PL: 752159000
-    UV Gestora de Ativos Financeiros Ltda 35.535 35.535  []
-    BFFC do Brasil Comercio e Participacoes Ltda 5.965 5.965  []
-    Charles Pimentel Martins 3.263 3.263  []
-    Lincoln Pimentel Martins 3.002 3.002  []
-    Carlos Roberto Wizard Martins 2.825 2.825  []
-    Pizza Hut International LLC 0.925 0.925  []
-20028 AMERICAN BANKNOTE COMPANY mercado: {'mc': 1514003540, 'tk': 'VLID3', 'acoes': 78243077, 'ref': '2026-10-22 17:04', 'ev': 1655181540, 'ev_ebitda': 4.0, 'pl': 6.7, 'pvp': 0.88} | capital: {'tipo': 'Capital Integralizado', 'valor': 1037549475.27, 'on': 79836375.0, 'pn': 0.0, 'total': 79836375.0, 'data': '2026-06-17'} | ações: {'ref': '2026-06-30', 'on': 79836375.0, 'pn': 0.0, 'tot': 79836375.0, 'on_t': 1593298.0, 'pn_t': 0.0} | PL: 1713420000
-    Alaska Asset Management 46.262 46.262  []
-    BTG Pactual Gestão e Consultoria de Investimentos Ltda. 11.917 11.917  []
-    Outros 39.735 39.735  []
-    Ações Tesouraria 2.086 2.086  []
-    notícia: Valid (VLID3): Anuncia 12ª emissão de debêntures no valor de R$ 200 milhões
-    notícia: Valid (VLID3): Anuncia 12ª emissão de debêntures no valor de R$ 200 milhões
-    notícia: Valid (VLID3) registra elevação de rating para AA+.br pela Moody’s
-6505 PONTO FRIO mercado: {'mc': 1288122, 'tk': 'BHIA3', 'acoes': 975850, 'ref': '2026-10-22 17:04', 'ev': 5739288122} | capital: {'tipo': 'Capital Integralizado', 'valor': 7138908767.07, 'on': 1013760396.0, 'pn': 0.0, 'total': 1013760396.0, 'data': '2026-07-16', 'autorizado': 5837956814.83} | ações: {'ref': '2026-06-30', 'on': 975865.0, 'pn': 0.0, 'tot': 975865.0, 'on_t': 15.0, 'pn_t': 0.0} | PL: -8270000000
-    Domus Vii Participações S.A. 82.113 82.113 ctl [('Mapa Capital Participações e Consultoria Ltda.', 100.0)]
-    Outros 17.886 17.886  []
-    Ações Tesouraria 0.001 0.001  []
-    notícia: Justiça de SP aprova recuperação judicial do Grupo Casas Bahia, com passivo de cerca de R$ 17 bi
-    notícia: Americanas e Casas Bahia disparam mais de 20% na B3
-    notícia: BHIA3 cai 20,8% e Ibovespa recua 0,8% na B3
-    notícia: BHIA3 recua 19,4% com Ibovespa perto da estabilidade
+25062 LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A {'mc': 3009689021, 'tk': 'LAVV3', 'acoes': 195434352, 'ref': '2026-10-22 17:05', 'ev': 3543826021, 'ev_ebitda': 7.8, 'pl': 8.3, 'pvp': 2.08}
+23574 INTERNATIONAL MEAL COMAPANY ALIMENTAÇÃO S.A. {'mc': 258008886, 'tk': 'MEAL3', 'acoes': 286676540, 'ref': '2026-10-22 17:03', 'ev': 450976886, 'ev_ebitda': 2.2, 'pvp': 0.34}
+6505 PONTO FRIO {'mc': 1338143923, 'tk': 'BHIA3', 'acoes': 1013745396, 'ref': '2026-10-22 17:04', 'ev': 7076143923}
+19348 ITAÚ UNIBANCO {'mc': 556183563795, 'tk': 'ITUB4', 'acoes': 11021872192, 'ref': '2026-10-22 17:05', 'pl': 11.9, 'pvp': 2.55}
+9512 PETROBRAS {'mc': 796706812104, 'tk': 'PETR4', 'acoes': 12888732761, 'ref': '2026-10-22 17:05', 'ev': 1109475812104, 'ev_ebitda': 4.1, 'pl': 6.0, 'pvp': 1.66}
