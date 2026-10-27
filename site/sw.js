@@ -1,5 +1,5 @@
 /* Portal FPM — service worker: rede primeiro (o portal muda a cada hora) e, sem conexão, a última versão vista. */
-const CACHE = "fpm-v5";
+const CACHE = "fpm-v6";
 const SHELL = ["./", "index.html", "cias.html", "styles.css", "app.js", "cias.js", "manifest.webmanifest", "icons/icon-192.png?v=2"];
 
 self.addEventListener("install", (e) => {
