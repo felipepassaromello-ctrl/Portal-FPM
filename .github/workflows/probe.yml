@@ -1,0 +1,26 @@
+name: Sondar base (temporário)
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+    paths: [".github/workflows/probe.yml"]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache/restore@v4
+        with:
+          path: site/data/cias
+          key: cias-none
+          restore-keys: cias-
+      - run: |
+          mkdir -p probe
+          tar -C site/data/cias -cJf probe/cias.tar.xz perfil index.json resumo.json pessoas.json
+          ls -la probe
+          git config user.name "portal-bot"
+          git config user.email "portal-bot@users.noreply.github.com"
+          git add probe
+          git commit -m "Sonda: base completa"
+          git push
