@@ -10,6 +10,8 @@ Gera arquivos estáticos em site/data/cias/ (não versionados; o workflow refaz 
   alias.json           nome → código CVM, para ligar notícias e entidades às companhias
   ofertas.json         ofertas dos últimos 12 meses, para a aba Ofertas do portal
   agenda.json          assembleias convocadas e vencimentos de dívida próximos
+  pessoas.json         índice de pessoas e investidores (administradores, membros de comitês, acionistas)
+  pessoa/{xxx}.json    perfil de cada pessoa ou investidor, agrupado pelas três primeiras letras do nome
 
 Uso:
   python scripts/perfis.py base      # FCA, FRE, DFP e ITR (pula se a base tiver menos de 20 h)
@@ -826,6 +828,7 @@ def cmd_montar(args) -> None:
     # notícias do arquivo (cada edição) e da edição atual
     news: dict[str, list] = defaultdict(list)
     seen_ids: set[str] = set()
+    all_items: list[tuple[str, dict]] = []
     files = sorted(ARCHIVE.glob("20*.json"), reverse=True)
     for f in files:
         ed = load_json(f, {})
@@ -833,6 +836,7 @@ def cmd_montar(args) -> None:
             if it["id"] in seen_ids or it.get("dup_of"):
                 continue
             seen_ids.add(it["id"])
+            all_items.append((ed.get("date") or it.get("published", "")[:10], it))
             for k in item_companies(it, alias):
                 src = (it.get("outlets") or [{}])[0]
                 news[k].append({k2: v for k2, v in {
@@ -897,6 +901,7 @@ def cmd_montar(args) -> None:
         for p in perfil_dir.glob("*.json"):
             p.unlink()
     resumo = {}
+    profiles: dict[str, dict] = {}
     for k, c in by_k.items():
         p = dict(perfis.get(k, {}))
         q = {tk: quotes[tk] for tk in c.get("tk", []) if tk in quotes}
@@ -912,6 +917,7 @@ def cmd_montar(args) -> None:
             continue
         p["nm"] = next((curated[tk[:4]][0] for tk in c.get("tk", []) if tk[:4] in curated), None) or title(c.get("nc") or c.get("n") or "")
         save_json(perfil_dir / f"{k}.json", p, compact=True)
+        profiles[k] = p
         ltm = p.get("fin", {}).get("ltm", {})
         main_tk = mkt.get("tk") if mkt else None
         nm = next((curated[tk[:4]][0] for tk in c.get("tk", []) if tk[:4] in curated), None) or title(c.get("nc") or c.get("n") or "")
@@ -932,9 +938,170 @@ def cmd_montar(args) -> None:
     save_json(OUT / "ofertas.json", {"generated_at": load_json(OFERTAS_BASE, {}).get("generated_at"),
                                      "ofertas": [o for o in ofertas if o["d"] >= year_ago]}, compact=True)
     build_agenda(by_k, perfis)
+    build_people(profiles, all_items, alias)
     log(f"Montado: {len(resumo)} resumos, {sum(map(len, news.values()))} vínculos de notícias, "
         f"{sum(map(len, deals.values()))} de deals, {sum(map(len, leads.values()))} de leads, {sum(map(len, of_k.values()))} de ofertas; "
         f"{len(alias)} apelidos.")
+
+
+# ---------------------------------------------------------------- pessoas e investidores
+# Quem administra, compõe comitês ou é acionista das companhias, a partir do Formulário de Referência. A CVM identifica
+# as pessoas por CPF, que não publicamos; aqui a mesma pessoa é reconhecida pelo nome completo. Homônimos exatos
+# aparecem juntos, e a página avisa disso. Investidores pessoa jurídica entram pelo nome sem o sufixo societário.
+PJ_TAIL = {"s", "a", "sa", "ltda", "inc", "llc", "ltd", "plc", "lp", "corp", "co", "eireli", "the"}
+HOLDER_SKIP = re.compile(r"^(outros|demais|a[cç][oõ]es (em )?tesouraria|tesouraria|free float|pessoas? f[ií]sicas?|"
+                         r"administradores|a[cç][oõ]es em circula[cç][aã]o)\b", re.I)
+NAME_GLUE = {"de", "da", "do", "das", "dos", "e"}
+
+
+def person_slug(name: str, pj: bool = False) -> str:
+    """Mesma regra de personSlug() em site/cias.js: nome sem acentos e pontuação, palavras ligadas por hífen."""
+    w = re.sub(r"[^a-z0-9]+", " ", fold(name)).split()
+    if pj:
+        while len(w) > 1 and w[-1] in PJ_TAIL:
+            w.pop()
+    return "-".join(w)[:80]
+
+
+def name_words(s: str) -> list[str]:
+    return [w for w in re.sub(r"[^a-z0-9]+", " ", fold(s)).split() if w not in NAME_GLUE]
+
+
+def role_rank(c: dict) -> int:
+    t = fold(f"{c.get('c', '')} {c.get('f', '')}")
+    if "presidente do conselho" in t or "presidente do c.a" in t:
+        return 0
+    if re.search(r"diretor presidente|\bceo\b|presidente / superintendente", t):
+        return 1
+    if "vice" in t and "conselho" in t:
+        return 2
+    if c.get("o") in ("C", "DC"):
+        return 3
+    if c.get("o") == "D":
+        return 4
+    return 5
+
+
+def build_people(profiles: dict[str, dict], items: list[tuple[str, dict]], alias: dict[str, str]) -> None:
+    ppl: dict[str, dict] = {}
+
+    def entry(name: str, pj: bool) -> dict | None:
+        slug = person_slug(name, pj)
+        if not slug or HOLDER_SKIP.match(name.strip()):
+            return None
+        e = ppl.get(slug)
+        if not e:
+            e = ppl[slug] = {"n": name, "t": "J" if pj else "F", "cargos": [], "comites": [], "acoes": []}
+        return e
+
+    for k, p in profiles.items():
+        for a in p.get("adm", []):
+            e = entry(a["n"], False)
+            if not e:
+                continue
+            e["cargos"].append({"k": k, **{f: a[f] for f in ("o", "c", "f", "el", "pm", "ind", "ec", "mand") if a.get(f)}})
+            for f in ("pr", "nasc"):
+                if a.get(f) and not e.get(f):
+                    e[f] = a[f]
+            if len(a.get("ex", "")) > len(e.get("ex", "")):
+                e["ex"] = a["ex"]
+        for cm in p.get("comites", []):
+            for n, cg in cm.get("m", []):
+                e = entry(n, False)
+                if e and not any(x["k"] == k and x["cm"] == cm["c"] for x in e["comites"]):
+                    e["comites"].append({"k": k, "cm": cm["c"], **({"c": cg} if cg and cg != "Outros" else {})})
+
+        def walk(nodes: list[dict], via: list[str], factor: float) -> None:
+            for sh in nodes:
+                n = sh.get("n", "")
+                pj = sh.get("t") == "PJ"
+                eff = factor * (sh.get("tot") or 0) / 100
+                e = entry(n, pj) if n else None
+                if e:
+                    if pj:
+                        e["t"] = "J"
+                        if sh.get("doc") and not e.get("doc"):
+                            e["doc"] = sh["doc"]
+                    row = {"k": k, **{f: sh[f] for f in ("on", "pn", "tot", "ctl", "ac", "dt", "pais") if sh.get(f) not in (None, "", False)}}
+                    if via:
+                        row["via"] = via
+                        row["ef"] = round(eff, 3)
+                    if not any(x["k"] == k and x.get("via") == row.get("via") for x in e["acoes"]):
+                        e["acoes"].append(row)
+                if sh.get("de") and len(via) < 3 and n:
+                    walk(sh["de"], via + [n], eff)
+        walk(p.get("acionistas", []), [], 100.0)
+
+    # notícias: a entidade citada na notícia precisa bater com o primeiro e o último nome de uma única pessoa da base,
+    # e ter três ou mais palavras ou vir numa notícia que fala de uma companhia onde a pessoa tem cargo ou ações
+    by_fl: dict[tuple, list[str]] = defaultdict(list)
+    words = {}
+    for slug, e in ppl.items():
+        if e["t"] == "F":
+            w = name_words(e["n"])
+            words[slug] = set(w)
+            if len(w) >= 2:
+                by_fl[(w[0], w[-1])].append(slug)
+    for d, it in sorted(items, key=lambda x: x[0], reverse=True):
+        ks = None
+        for ent in it.get("entities") or []:
+            w = name_words(ent)
+            if len(w) < 2:
+                continue
+            hits = [s for s in by_fl.get((w[0], w[-1]), []) if set(w) <= words[s]]
+            if len(hits) != 1:
+                continue
+            e = ppl[hits[0]]
+            if len(w) < 3:
+                if ks is None:
+                    ks = item_companies(it, alias)
+                mine = {x["k"] for x in e["cargos"] + e["acoes"]}
+                if not ks & mine:
+                    continue
+            lst = e.setdefault("noticias", [])
+            if len(lst) < 40 and not any(x["id"] == it["id"] for x in lst):
+                src = (it.get("outlets") or [{}])[0]
+                lst.append({f: v for f, v in {"id": it["id"], "d": d, "h": it.get("headline") or it.get("title"), "s": src.get("source", ""),
+                                              "l": src.get("link") or it.get("link"), "imp": it.get("importance")}.items() if v not in ("", None)})
+
+    names = {k: p.get("nm", "") for k, p in profiles.items()}
+    mcap = {k: (p.get("mercado") or {}).get("mc") or 0 for k, p in profiles.items()}
+    index, shards = [], defaultdict(dict)
+    for slug, e in ppl.items():
+        e["cargos"].sort(key=lambda c: (role_rank(c), -mcap.get(c["k"], 0)))
+        e["acoes"].sort(key=lambda a: (bool(a.get("via")), not a.get("ctl"), -(a.get("ef") or a.get("tot") or 0)))
+        ks = {x["k"] for x in e["cargos"] + e["comites"] + e["acoes"]}
+        if not ks:
+            continue
+        # índice enxuto para a busca: [slug, nome, F/J, nº de companhias, companhia do papel principal, papel].
+        # O papel vem como a CVM escreve (o site traduz) ou um código: =C controlador, =A acionista, =I indireto, =M comitê.
+        top = e["cargos"][0] if e["cargos"] else None
+        direct = [a for a in e["acoes"] if not a.get("via")]
+        if top:
+            generic = re.match(r"outros (diretores|conselheiros)$", fold(top.get("c", "")))
+            role, rk = (top.get("f") if generic and top.get("f") else top.get("c") or top.get("f") or ""), top["k"]
+        elif direct:
+            role, rk = ("=C" if direct[0].get("ctl") else "=A"), direct[0]["k"]
+        elif e["acoes"]:
+            role, rk = "=I", e["acoes"][0]["k"]
+        else:
+            role, rk = "=M", e["comites"][0]["k"]
+        score = len(ks) * 10 + sum(5 for a in e["acoes"] if a.get("ctl")) + (8 if top and role_rank(top) < 2 else 0) \
+            + max((mcap.get(k, 0) for k in ks), default=0) / 1e11
+        index.append([slug, e["n"], e["t"], len(ks), rk, cut(role, 70), score])
+        e["slug"] = slug
+        shards[slug[:3]][slug] = {f: v for f, v in e.items() if v not in ([], "", None)}
+    index.sort(key=lambda r: -r[6])
+    index = [r[:6] for r in index]
+    pdir = OUT / "pessoa"
+    if pdir.exists():
+        for f in pdir.glob("*.json"):
+            f.unlink()
+    for sh, data in shards.items():
+        save_json(pdir / f"{sh}.json", data, compact=True)
+    save_json(OUT / "pessoas.json", {"generated_at": now_brt().isoformat(timespec="minutes"), "p": index}, compact=True)
+    log(f"Pessoas: {sum(1 for r in index if r[2] == 'F')} pessoas e {sum(1 for r in index if r[2] == 'J')} investidores PJ, "
+        f"{sum(len(e.get('noticias', [])) for e in ppl.values())} vínculos com notícias.")
 
 
 def market_value(p: dict, q: dict) -> dict:
