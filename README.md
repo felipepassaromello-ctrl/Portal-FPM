@@ -83,6 +83,12 @@ No modo API, cada notícia é analisada uma única vez. As análises ficam em ca
 
 As chamadas usam `fallbacks: "default"`: se o modelo recusar um lote, a API repete a chamada em outro modelo automaticamente.
 
+## Skills de design
+
+`.claude/skills/` traz as skills de interface de [emilkowalski/skills](https://github.com/emilkowalski/skills) (MIT):
+animação, princípios da Apple, sensação de app no celular e teste com dados extremos. O Claude Code usa essas skills
+sozinho quando mexe em `site/`. A lista e o motivo de cada uma estão em `.claude/skills/README.md`.
+
 ## Rodar localmente
 
 ```bash

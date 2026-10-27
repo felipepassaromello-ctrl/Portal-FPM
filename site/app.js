@@ -766,7 +766,8 @@
     state.read.add(id); persist();
     renderReader();
     const dlg = $("#reader");
-    if (!dlg.open) dlg.showModal();
+    // Foco no texto, não no primeiro botão: sem anel de foco ao abrir, e as setas e o espaço já rolam a notícia.
+    if (!dlg.open) { dlg.showModal(); $("#reader-body").focus({ preventScroll: true }); }
     history.replaceState(null, "", `#n/${id}@${state.edition || state.digest?.date || ""}`);
     $("#reader-body").scrollTop = 0;
     rerenderLists();
@@ -1005,7 +1006,7 @@
     .observe($("#page-title"));
 
   // tema
-  const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
+  const applyTheme = (t) => fpmTheme(t);
   applyTheme(store.get("theme", null));
   $("#btn-theme").onclick = () => {
     const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
@@ -1103,7 +1104,7 @@
   function highlightFocus() {
     const cards = feedCards();
     cards.forEach((c, i) => c.classList.toggle("focus", i === state.focus));
-    cards[state.focus]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    cards[state.focus]?.scrollIntoView({ block: "nearest" }); // j/k pelo teclado: sem rolagem animada
   }
   document.addEventListener("keydown", (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); return $("#cmdk").open ? $("#cmdk").close() : openCmdk(); }

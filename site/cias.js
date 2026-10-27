@@ -933,7 +933,7 @@
       navigator.clipboard.writeText(location.href).then(() => toast("Link copiado"), () => toast("Não consegui copiar o link"));
     };
 
-    const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
+    const applyTheme = (t) => fpmTheme(t);
     $("#btn-theme").onclick = () => {
       const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
       const next = dark ? "light" : "dark";
