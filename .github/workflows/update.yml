@@ -89,8 +89,17 @@ jobs:
         timeout-minutes: 5
         run: python scripts/perfis.py montar
 
+      # O mapa de quem é dono de quem: o grafo sai dos perfis (Python) e as posições do ForceAtlas2 (Node). Sem mudança
+      # na estrutura, as posições da rodada anterior são mantidas e o passo leva menos de um segundo.
+      - name: Mundo das companhias (grafo e posições no mapa)
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          python scripts/mundo.py
+          cd scripts && npm ci --no-audit --no-fund && node mundo_layout.mjs
+
       - name: Forçar o navegador a carregar o visual novo a cada publicação
-        run: sed -i "s#styles.css\"#styles.css?v=${GITHUB_SHA::7}\"#; s#app.js\"#app.js?v=${GITHUB_SHA::7}\"#; s#cias.js\"#cias.js?v=${GITHUB_SHA::7}\"#" site/index.html site/cias.html
+        run: sed -i "s#styles.css\"#styles.css?v=${GITHUB_SHA::7}\"#; s#app.js\"#app.js?v=${GITHUB_SHA::7}\"#; s#cias.js\"#cias.js?v=${GITHUB_SHA::7}\"#; s#mundo.css\"#mundo.css?v=${GITHUB_SHA::7}\"#; s#mundo.js\"#mundo.js?v=${GITHUB_SHA::7}\"#" site/index.html site/cias.html site/mundo.html
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

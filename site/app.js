@@ -623,7 +623,8 @@
       if (t.group !== group) { group = t.group; html += `<div class="nav-group">${group}</div>`; }
       html += navBtn(t);
       if (id === "sources") html += `<a class="nav-item" href="cias.html">${icon("cias")}<span>Companhias</span>${icon("chev", "ext")}</a>`
-        + `<a class="nav-item" href="cias.html#pessoas">${icon("people")}<span>Pessoas</span>${icon("chev", "ext")}</a>`;
+        + `<a class="nav-item" href="cias.html#pessoas">${icon("people")}<span>Pessoas</span>${icon("chev", "ext")}</a>`
+        + `<a class="nav-item" href="mundo.html">${icon("globe")}<span>Mundo das companhias</span>${icon("chev", "ext")}</a>`;
     }
     $("#tabs").innerHTML = html;
     // celular: quatro abas fixas + "Mais"
@@ -634,6 +635,7 @@
     $("#more-list").innerHTML = NAV_ORDER.filter((id) => byId[id] && !byId[id].short).map((id) => navBtn(byId[id])).join("")
       + `<a class="nav-item" href="cias.html">${icon("cias")}<span>Companhias</span>${icon("chev", "ext")}</a>`
       + `<a class="nav-item" href="cias.html#pessoas">${icon("people")}<span>Pessoas</span>${icon("chev", "ext")}</a>`
+      + `<a class="nav-item" href="mundo.html">${icon("globe")}<span>Mundo das companhias</span>${icon("chev", "ext")}</a>`
       + `<button class="nav-item" data-prefs-open>${icon("sliders")}<span>Personalizar</span></button>`;
     for (const t of TABS) $(`#view-${t.id}`).hidden = state.tab !== t.id;
     const title = (byId[state.tab] || TABS[0]).label;
@@ -1061,6 +1063,7 @@
     const groups = [];
     const tabs = tabsAvailable().filter((t) => has(t.label)).map((t) => ({ ic: icon(t.icon), title: t.label, sub: "Ir para a aba", run: () => setTab(t.id) }));
     if (has("Documentos CVM fatos relevantes")) tabs.push({ ic: icon("docs"), title: "Documentos CVM", sub: "Fatos relevantes e comunicados de todas as companhias", run: () => { location.href = "cias.html#docs"; } });
+    if (has("Mundo das companhias mapa grupos controladores acionistas")) tabs.push({ ic: icon("globe"), title: "Mundo das companhias", sub: "O mapa de quem é dono de quem", run: () => { location.href = "mundo.html"; } });
     if (has("Companhias abertas CVM")) tabs.push({ ic: icon("cias"), title: "Companhias", sub: "Companhias abertas e documentos na CVM", run: () => { location.href = "cias.html"; } });
     const items = [...state.digest.items].filter((i) => q && has(`${i.headline} ${i.title} ${(i.entities || []).join(" ")} ${(i.tags || []).join(" ")}`))
       .sort((a, z) => z.importance - a.importance).slice(0, 8)
