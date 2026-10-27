@@ -40,6 +40,7 @@
       <symbol id="i-official" viewBox="0 0 24 24"><path d="M3.5 9 12 4.5 20.5 9M5 19.5h14M6.5 10.5v6.5M10 10.5v6.5M14 10.5v6.5M17.5 10.5v6.5"/></symbol>
       <symbol id="i-sources" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.6"/><path d="M8.2 15.8a5.4 5.4 0 0 1 0-7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6M5.4 18.6a9.3 9.3 0 0 1 0-13.2M18.6 5.4a9.3 9.3 0 0 1 0 13.2"/></symbol>
       <symbol id="i-cias" viewBox="0 0 24 24"><path d="M4.5 20V7.5l6-3V20M10.5 9.5l9 3V20M3 20h18M7 10h1M7 13h1M7 16h1M14 14.5h1M14 17.5h1"/></symbol>
+      <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 19.5c.6-3.4 3.2-5.5 6.5-5.5s5.9 2.1 6.5 5.5"/><circle cx="17" cy="9.5" r="2.6"/><path d="M16.5 14.2c2.6.1 4.5 1.9 5 4.8"/></symbol>
       <symbol id="i-docs" viewBox="0 0 24 24"><path d="M7 3.5h7l4.5 4.5v12.5H7z"/><path d="M14 3.5V8h4.5M9.5 12.5h6M9.5 16h6"/></symbol>
       <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></symbol>
       <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17Z" fill="currentColor"/></symbol>
@@ -54,8 +55,8 @@
   <div class="app">
     <aside class="sidebar" aria-label="Navegação">
       <a class="side-brand" href="index.html" aria-label="Portal FPM"><span class="logo">FPM</span><span class="side-brand-name">Portal FPM</span></a>
-      <button class="side-search" id="side-finder" type="button" title="Buscar companhia ( / )">
-        <svg class="ic"><use href="#i-search"/></svg><span>Buscar companhia</span><kbd>/</kbd>
+      <button class="side-search" id="side-finder" type="button" title="Buscar companhia ou pessoa ( / )">
+        <svg class="ic"><use href="#i-search"/></svg><span>Buscar empresa ou pessoa</span><kbd>/</kbd>
       </button>
       <nav class="side-nav" aria-label="Seções">
         <div class="nav-group">Hoje</div>
@@ -69,6 +70,7 @@
         <a class="nav-item" href="index.html#base"><svg class="ic"><use href="#i-base"/></svg><span>Base de deals</span></a>
         <div class="nav-group">Companhias</div>
         <a class="nav-item" href="#cias" data-view="cias"><svg class="ic"><use href="#i-cias"/></svg><span>Companhias</span></a>
+        <a class="nav-item" href="#pessoas" data-view="pessoas"><svg class="ic"><use href="#i-people"/></svg><span>Pessoas</span></a>
         <a class="nav-item" href="#docs" data-view="docs"><svg class="ic"><use href="#i-docs"/></svg><span>Documentos CVM</span></a>
         <div id="side-favs"></div>
         <div class="nav-group">Fontes</div>
@@ -98,7 +100,7 @@
         <section class="finder">
           <div class="finder-box">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            <input id="finder" type="search" placeholder="Buscar companhia por nome, ticker ou CNPJ" autocomplete="off" aria-label="Buscar companhia" aria-controls="finder-list" aria-expanded="false" role="combobox">
+            <input id="finder" type="search" placeholder="Buscar companhia (nome, ticker, CNPJ) ou pessoa" autocomplete="off" aria-label="Buscar companhia ou pessoa" aria-controls="finder-list" aria-expanded="false" role="combobox">
           </div>
           <ul id="finder-list" class="finder-list" role="listbox" hidden></ul>
           <div id="favs" class="favs"></div>
@@ -129,6 +131,29 @@
           <p id="c-count" class="count-line"></p>
           <div id="c-grid" class="cia-grid"></div>
           <button id="c-more" class="btn more" type="button" hidden>Mostrar mais</button>
+        </section>
+
+        <!-- PESSOAS E INVESTIDORES -->
+        <section id="view-pessoas" class="view" hidden>
+          <p class="intro">Conselheiros, diretores, membros de comitês e acionistas de todas as companhias abertas, a partir do Formulário de Referência entregue à CVM. Abra uma pessoa para ver onde ela tem cargo, de quais empresas é acionista, com quanto do capital, e com quem divide conselhos.</p>
+          <div class="filterbar">
+            <div class="filter-row">
+              <label class="search-field grow"><svg class="ic"><use href="#i-search"/></svg><input id="p-q" type="search" placeholder="Nome da pessoa ou do investidor (ex.: Lemann, BlackRock)" autocomplete="off" enterkeyhint="search"></label>
+              <div id="p-kind" class="segmented" role="radiogroup" aria-label="Tipo">
+                <button type="button" role="radio" data-kind="" aria-checked="true">Todos</button>
+                <button type="button" role="radio" data-kind="F" aria-checked="false">Pessoas</button>
+                <button type="button" role="radio" data-kind="J" aria-checked="false">Investidores PJ</button>
+              </div>
+            </div>
+          </div>
+          <p id="p-count" class="count-line"></p>
+          <div id="p-list" class="cards grouped p-list"></div>
+          <button id="p-more" class="btn more" type="button" hidden>Mostrar mais</button>
+        </section>
+
+        <!-- UMA PESSOA -->
+        <section id="view-pessoa" class="view" hidden>
+          <div id="person"></div>
         </section>
 
         <!-- DOCUMENTOS: todas as companhias -->

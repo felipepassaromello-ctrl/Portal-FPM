@@ -108,6 +108,10 @@
     docs: { cats: new Set(store.get("cias-cats", null) || []), tema: "", shown: PAGE, rows: [] },
     dir: { shown: 60 },
     ent: { cats: new Set(), tema: "", shown: PAGE, rows: [], all: [] },
+    people: null, // Promise<índice de pessoas>, carregado na primeira busca
+    pshard: new Map(), // três letras -> Promise<perfis>
+    pdir: { kind: "", shown: 60 },
+    person: null,
   };
   const saveFavs = () => store.set("cias-fav", [...state.favs]);
 
@@ -454,7 +458,7 @@
       ["Relações com investidores", find(/relacoes com investidores/)],
     ].filter(([, a]) => a);
     if (!rows.length && !p.ri) return "";
-    return `<div class="widget"><h3 class="group-label">Pessoas-chave</h3><dl class="kv">${rows.map(([k, a]) => `<dt>${k}</dt><dd>${esc(a.n)}</dd>`).join("")}
+    return `<div class="widget"><h3 class="group-label">Pessoas-chave</h3><dl class="kv">${rows.map(([k, a]) => `<dt>${k}</dt><dd>${personLink(a.n, false, "cia-link")}</dd>`).join("")}
       ${p.ri ? `<dt>Contato de RI</dt><dd>${esc(p.ri.n)}${p.ri.email ? `<br><a href="mailto:${esc(p.ri.email.split(/[;,/ ]/)[0])}">${esc(p.ri.email)}</a>` : ""}${p.ri.tel ? `<br>${esc(p.ri.tel)}` : ""}</dd>` : ""}</dl></div>`;
   }
 
@@ -544,7 +548,7 @@
   function holderRow(s, depth = 0) {
     const kids = (s.de || []).map((k) => holderRow(k, depth + 1)).join("");
     const badges = [s.ctl ? `<span class="badge pos">Controlador</span>` : "", s.ac ? `<span class="badge">Acordo de acionistas</span>` : "", s.pais ? `<span class="badge">${esc(s.pais)}</span>` : ""].join("");
-    return `<tr class="d${depth}"><td><div class="holder">${depth ? `<span class="tree">↳</span>` : ""}<span>${esc(s.n)}${s.doc ? `<small>${esc(s.doc)}</small>` : ""}</span>${badges}</div></td>
+    return `<tr class="d${depth}"><td><div class="holder">${depth ? `<span class="tree">↳</span>` : ""}<span>${/^(outros|ações tesouraria|ações em tesouraria)$/i.test(s.n) ? esc(s.n) : personLink(s.n, s.t === "PJ", "cia-link quiet")}${s.doc ? `<small>${esc(s.doc)}</small>` : ""}</span>${badges}</div></td>
       <td class="num">${pct(s.on, 2)}</td><td class="num">${pct(s.pn, 2)}</td><td class="num"><b>${pct(s.tot, 2)}</b></td></tr>${kids}`;
   }
 
@@ -580,12 +584,13 @@
     const badges = [a.ind ? `<span class="badge pos">Independente</span>` : "", a.ec ? `<span class="badge">Eleito pelo controlador</span>` : ""].join("");
     return `<details class="person"><summary>
         <span class="avatar">${esc(a.n.split(" ").filter(Boolean).slice(0, 2).map((w) => w[0]).join(""))}</span>
-        <span class="who"><b>${esc(a.n)}</b><small>${esc(a.f || a.c)}${a.f && a.c && !fold(a.f).includes(fold(a.c).slice(0, 12)) ? ` · ${esc(a.c)}` : ""}</small></span>
+        <span class="who"><b>${esc(a.n)}</b><small>${esc(cargoLabel(a.c, a.f, a.o))}${a.f && !fold(cargoLabel(a.c, a.f, a.o)).includes(fold(a.f).slice(0, 14)) ? ` · ${esc(a.f)}` : ""}</small></span>
         <span class="meta">${badges}${a.el ? `<small class="muted">eleito em ${esc(fmtDate(a.el))}</small>` : ""}</span>
       </summary>
       <div class="person-body">
         <dl class="kv compact">${a.pr ? `<dt>Formação</dt><dd>${esc(a.pr)}</dd>` : ""}${age ? `<dt>Idade</dt><dd>${age} anos</dd>` : ""}${a.pm ? `<dt>Mandato</dt><dd>${esc(a.pm)}</dd>` : ""}${a.mand ? `<dt>Mandatos seguidos</dt><dd>${a.mand}</dd>` : ""}</dl>
         ${a.ex ? `<p>${esc(a.ex)}</p>` : ""}
+        <p><a class="link-btn small" href="#pessoa/${esc(personSlug(a.n))}">Ver perfil completo: cargos, empresas e participações ${icon("chev", "ic ic-sm")}</a></p>
       </div></details>`;
   }
 
@@ -605,7 +610,7 @@
       <div class="col">
         ${groups.map(([g, l]) => `<div class="section-head"><h2 class="title-2">${g}</h2><span class="muted small">${plural(l.length, "membro", "membros")}${g.startsWith("Conselho de") && board.length ? ` · ${ind} independente${ind === 1 ? "" : "s"}` : ""}</span></div>
           <div class="people">${l.map(personRow).join("")}</div>`).join("")}
-        ${(p.comites || []).length ? `<div class="section-head mt"><h2 class="title-2">Comitês</h2></div><div class="people">${p.comites.map((cm) => `<details class="person"><summary><span class="who"><b>${esc(cm.c)}</b><small>${plural(cm.m.length, "membro", "membros")}</small></span></summary><div class="person-body"><ul class="list-plain">${cm.m.map(([n, cg]) => `<li>${esc(n)}${cg ? ` <span class="muted">· ${esc(cg)}</span>` : ""}</li>`).join("")}</ul></div></details>`).join("")}</div>` : ""}
+        ${(p.comites || []).length ? `<div class="section-head mt"><h2 class="title-2">Comitês</h2></div><div class="people">${p.comites.map((cm) => `<details class="person"><summary><span class="who"><b>${esc(cm.c)}</b><small>${plural(cm.m.length, "membro", "membros")}</small></span></summary><div class="person-body"><ul class="list-plain">${cm.m.map(([n, cg]) => `<li>${personLink(n, false, "cia-link quiet")}${cg ? ` <span class="muted">· ${esc(cg)}</span>` : ""}</li>`).join("")}</ul></div></details>`).join("")}</div>` : ""}
       </div>
       <div class="col">
         ${rem.orgaos?.length ? `<div class="widget"><h3 class="group-label">Remuneração em ${esc(rem.ano)}</h3><table class="mini"><thead><tr><th>Órgão</th><th class="num">Membros</th><th class="num">Total</th><th class="num">Maior individual</th></tr></thead><tbody>
@@ -784,6 +789,225 @@
     store.set("cias-recent", state.recent);
   }
 
+  // ---------------------------------------------------------- pessoas e investidores
+  // Quem administra, está em comitês ou é acionista das companhias, montado do Formulário de Referência pelo
+  // scripts/perfis.py (build_people). A pessoa é reconhecida pelo nome completo; personSlug() repete a regra de lá.
+  const PJ_TAIL = new Set(["s", "a", "sa", "ltda", "inc", "llc", "ltd", "plc", "lp", "corp", "co", "eireli", "the"]);
+  function personSlug(name, pj) {
+    const w = fold(name).replace(/[^a-z0-9]+/g, " ").trim().split(/\s+/).filter(Boolean);
+    if (pj) while (w.length > 1 && PJ_TAIL.has(w[w.length - 1])) w.pop();
+    return w.join("-").slice(0, 80);
+  }
+  const personLink = (name, pj, cls = "person-link") => `<a class="${cls}" href="#pessoa/${esc(personSlug(name, pj))}">${esc(name)}</a>`;
+  const initialsOf = (n) => String(n || "").replace(/[^A-Za-zÀ-ÿ0-9 ]/g, "").split(/\s+/).filter((w) => w && !/^(de|da|do|das|dos|e)$/i.test(w)).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
+  const kName = (k) => (state.byK.has(k) ? ciaName(state.byK.get(k)) : `Companhia ${k}`);
+
+  // os cargos chegam como a CVM abrevia ("C.F.(Suplent)Eleito p/Minor.Ordinaristas"); aqui viram português corrido
+  const electedBy = (s) => (/controlador/i.test(s) ? "pelo controlador" : /minor/i.test(s) ? "pelos minoritários (ON)" : /prefer/i.test(s) ? "pelos preferencialistas" : `por ${s}`);
+  const supl = (t) => (/supl/i.test(t) ? " (suplente)" : "");
+  const CARGO_RULES = [
+    [/^C\.F\.\s*\((Efetivo|Suplente?)\)\s*Eleito p\/\s*(.+)$/i, (m, t, by) => `Conselho Fiscal${supl(t)}, eleito ${electedBy(by)}`],
+    [/^Pres\.\s*C\.F\.\s*Eleito p\/\s*(.+)$/i, (m, by) => `Presidente do Conselho Fiscal, eleito ${electedBy(by)}`],
+    [/^Presidente do Conselho de Administra[çc][ãa]o( Independente)?$/i, (m, i) => `Presidente do Conselho${i ? " (independente)" : ""}`],
+    [/^Vice Presidente Cons\. de Administra[çc][ãa]o( Independente)?$/i, (m, i) => `Vice-presidente do Conselho${i ? " (independente)" : ""}`],
+    [/^Conselho de Adm\. Independente \((Efetivo|Suplente)\)$/i, (m, t) => `Conselheiro independente${supl(t)}`],
+    [/^Conselho de Administra[çc][ãa]o \((Efetivo|Suplente)\)$/i, (m, t) => `Conselheiro${supl(t)}`],
+    [/^Diretor Presidente \/ Superintendente$/i, () => "Diretor-presidente (CEO)"],
+    [/^Diretor Vice Presidente\s*\/\s*Superintendente$/i, () => "Diretor vice-presidente"],
+    [/^Diretor Financeiro \/ Diretor de Rela[çc][õo]es com Investidores$/i, () => "Diretor financeiro (CFO) e de RI"],
+    [/^Diretor Presidente \/ Diretor de Rela[çc][õo]es com Investidores$/i, () => "Diretor-presidente (CEO) e de RI"],
+    [/^Diretor de Rela[çc][õo]es com Investidores$/i, () => "Diretor de relações com investidores"],
+    [/^Diretor Financeiro$/i, () => "Diretor financeiro (CFO)"],
+    [/^Conselheiro\s*\((Efetivo|Suplente)\) e Dir\. Presidente$/i, (m, t) => `Conselheiro${supl(t)} e diretor-presidente (CEO)`],
+    [/^Conselheiro\s*\((Efetivo|Suplente)\) e Dir\. Vice Pres\.$/i, (m, t) => `Conselheiro${supl(t)} e diretor vice-presidente`],
+    [/^Vice Pres\. C\.A\. e Diretor Presidente$/i, () => "Vice-presidente do Conselho e diretor-presidente (CEO)"],
+    [/^Vice Pres\. C\.A\. e Vice Dir\. Presidente$/i, () => "Vice-presidente do Conselho e diretor vice-presidente"],
+    [/^Outros (Conselheiros|Diretores)(\s*\/\s*Diretores)?$/i, () => ""],
+  ];
+  function cargoLabel(c, f, o) {
+    const parts = String(c || "").split(" · ").map((x) => {
+      for (const [re, fn] of CARGO_RULES) { const m = x.trim().match(re); if (m) return fn(...m); }
+      return x.trim();
+    });
+    const named = [...new Set(parts.filter(Boolean))];
+    if (named.length) return named.join(" · ");
+    return f || (o === "D" ? "Diretor" : o === "F" ? "Conselho Fiscal" : "Conselheiro");
+  }
+  const ROLE_CODE = { "=C": "Controlador", "=A": "Acionista", "=I": "Acionista indireto", "=M": "Membro de comitê" };
+  const roleLabel = (r) => ROLE_CODE[r] || cargoLabel(r);
+
+  const loadPeople = () => {
+    state.people = state.people || fetchJson("data/cias/pessoas.json")
+      .then((r) => (r.p || []).map(([s, n, t, nc, k, role], i) => ({ s, n, t, nc, k, role, i, f: fold(n) })))
+      .catch(() => []);
+    return state.people;
+  };
+  // listas vazias não vêm no arquivo
+  const loadPerson = (slug) => memo(state.pshard, slug.slice(0, 3), `data/cias/pessoa/${slug.slice(0, 3)}.json`, {})
+    .then((sh) => sh[slug] && { cargos: [], comites: [], acoes: [], ...sh[slug] });
+
+  function searchPeople(list, q, n = 6) {
+    const f = fold(q.trim());
+    if (f.length < 2) return [];
+    const words = f.split(/\s+/);
+    const out = [];
+    for (const r of list) {
+      let s = 0;
+      if (r.f === f) s = 100;
+      else if (r.f.startsWith(f)) s = 70;
+      else if (words.every((w) => r.f.includes(w))) s = r.f.split(" ").some((w) => w.startsWith(words[0])) ? 45 : 25;
+      if (s) out.push([s - r.i / 1e5, r]);
+    }
+    return out.sort((a, b) => b[0] - a[0]).slice(0, n).map(([, r]) => r);
+  }
+  const personSub = (r) => `${roleLabel(r.role)} · ${kName(r.k)}${r.nc > 1 ? ` · mais ${r.nc - 1}` : ""}`;
+  const personAvatar = (n, t, size = "") => t === "J"
+    ? `<span class="p-avatar pj ${size}">${icon("cias")}</span>`
+    : `<span class="p-avatar ${size}" style="--h:${[...fold(n)].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) % 360, 11)}">${esc(initialsOf(n))}</span>`;
+
+  // diretório: a busca e os mais conectados
+  async function renderPeopleDir() {
+    const list = await loadPeople();
+    if (state.view !== "pessoas") return;
+    const q = $("#p-q").value, kind = state.pdir.kind;
+    const pool = kind ? list.filter((r) => r.t === kind) : list;
+    const rows = q.trim() ? searchPeople(pool, q, 200) : pool;
+    const nF = list.filter((r) => r.t === "F").length;
+    if (list.length) $("#dateline").textContent = `${nf(nF)} pessoas e ${nf(list.length - nF)} investidores pessoa jurídica`;
+    $("#p-count").textContent = q.trim()
+      ? plural(rows.length, "resultado", "resultados")
+      : "Ordenados por em quantas companhias estão e quanto poder têm nelas";
+    $("#p-list").innerHTML = rows.slice(0, state.pdir.shown).map((r) => `
+      <a class="p-row" href="#pessoa/${esc(r.s)}">${personAvatar(r.n, r.t)}
+        <span class="who"><b>${esc(r.n)}</b><small>${esc(personSub(r))}</small></span>
+        ${r.nc > 1 ? `<span class="p-nc">${r.nc} companhias</span>` : ""}${icon("chev", "ic ic-sm chev")}</a>`).join("")
+      || `<div class="empty">${list.length ? "Ninguém com esse nome na base." : "A base de pessoas ainda não foi gerada. Ela é montada a cada atualização do portal."}</div>`;
+    $("#p-more").hidden = rows.length <= state.pdir.shown;
+  }
+
+  // participação econômica estimada numa companhia: direta + soma do que chega pelas cadeias de holdings
+  function stakeSummary(rows) {
+    const direct = rows.find((a) => !a.via);
+    const indirect = rows.filter((a) => a.via && isNum(a.ef));
+    const ind = indirect.reduce((s, a) => s + a.ef, 0);
+    return { direct, indirect, ind, total: (direct?.tot || 0) + ind, ctl: rows.some((a) => a.ctl) };
+  }
+
+  function companyBlock(k, e) {
+    const c = state.byK.get(k);
+    const cargos = e.cargos.filter((x) => x.k === k);
+    const coms = e.comites.filter((x) => x.k === k);
+    const st = stakeSummary(e.acoes.filter((x) => x.k === k));
+    const r = state.resumo[k] || {};
+    const roleRows = cargos.map((a) => {
+      const label = cargoLabel(a.c, a.f, a.o);
+      const extra = a.f && !fold(label).includes(fold(a.f).slice(0, 14)) ? a.f : "";
+      const badges = [a.ind ? `<span class="badge pos">Independente</span>` : "", a.ec ? `<span class="badge">Eleito pelo controlador</span>` : ""].join("");
+      return `<li><span class="p-role">${esc(label)}</span>${extra ? `<small class="muted">${esc(extra)}</small>` : ""}
+        <small class="muted">${[a.el ? `eleito em ${fmtDate(a.el)}` : "", a.pm ? `mandato: ${a.pm}` : "", a.mand > 1 ? `${a.mand} mandatos seguidos` : ""].filter(Boolean).map(esc).join(" · ")}</small>${badges ? `<span class="badges">${badges}</span>` : ""}</li>`;
+    }).join("");
+    const comRows = coms.map((x) => `<li><span class="p-role">${esc(x.cm)}</span>${x.c ? `<small class="muted">${esc(x.c)}</small>` : ""}</li>`).join("");
+    const pctOf = (a) => [isNum(a.on) ? `${pct(a.on, 2)} das ON` : "", isNum(a.pn) ? `${pct(a.pn, 2)} das PN` : ""].filter(Boolean).join(" · ");
+    const stake = st.direct || st.indirect.length ? `<div class="p-stake">
+        <div class="p-stake-top"><span>${st.ctl ? "Controlador" : "Acionista"}${st.direct?.ac ? " · acordo de acionistas" : ""}</span>
+          <b>${st.indirect.length ? "≈ " : ""}${pct(st.total, 2)}</b><small>${st.indirect.length ? "participação estimada no capital" : "do capital"}</small></div>
+        ${st.direct ? `<div class="p-chain"><span>Direta</span><span>${esc(pctOf(st.direct))}</span><b>${pct(st.direct.tot, 2)}</b></div>` : ""}
+        ${st.indirect.map((a) => `<div class="p-chain"><span>Via ${a.via.map(esc).join(" → ")}</span><span title="Fatia que tem no último elo da cadeia">detém ${pct(a.tot, 1)}</span><b>≈ ${pct(a.ef, 2)}</b></div>`).join("")}
+      </div>` : "";
+    return `<article class="card p-co">
+      <header class="p-co-head">${c ? logoHtml(c, "sm") : ""}<div class="who"><a class="cia-link" href="#cia/${esc(k)}"><b>${esc(kName(k))}</b></a>
+        <small>${esc([c?.st, r.mc ? `valor de mercado ${brl(r.mc)}` : ""].filter(Boolean).join(" · "))}</small></div>${quoteBadge(r)}</header>
+      ${roleRows || comRows ? `<ul class="p-roles">${roleRows}${comRows}</ul>` : ""}
+      ${stake}
+    </article>`;
+  }
+
+  async function openPerson(slug) {
+    $("#person").innerHTML = `<div class="cia-hero card"><span class="skel skel-title" style="width:40%"></span><span class="skel skel-line" style="width:60%"></span></div>`;
+    const [e, list] = await Promise.all([loadPerson(slug), loadPeople()]);
+    if (state.view !== "pessoa" || state.person !== slug) return;
+    if (!e) {
+      setTitle("Pessoa não encontrada");
+      $("#person").innerHTML = `<div class="empty">Não achei essa pessoa na base. Ela é montada com os Formulários de Referência das companhias abertas; tente buscar pelo nome completo.</div>`;
+      return;
+    }
+    setTitle(e.n);
+    const pj = e.t === "J";
+    const ks = [...new Set([...e.cargos, ...e.comites, ...e.acoes].map((x) => x.k))];
+    // ordem: onde preside ou controla, depois cargos, depois participações; dentro de cada, a maior companhia
+    const weight = (k) => {
+      const cg = e.cargos.filter((x) => x.k === k), st = stakeSummary(e.acoes.filter((x) => x.k === k));
+      const top = cg.some((x) => /presidente|ceo/i.test(cargoLabel(x.c, x.f, x.o)) && !/fiscal|vice/i.test(cargoLabel(x.c, x.f, x.o)));
+      return (top ? 4 : 0) + (st.ctl ? 3 : 0) + (cg.length ? 2 : 0) + Math.min(st.total, 100) / 50 + Math.log10((state.resumo[k]?.mc || 1)) / 20;
+    };
+    ks.sort((a, b) => weight(b) - weight(a));
+    const boards = e.cargos.filter((x) => x.o === "C" || x.o === "DC").length;
+    const execs = e.cargos.filter((x) => x.o === "D" || x.o === "DC").length;
+    const fiscal = e.cargos.filter((x) => x.o === "F").length;
+    const holdings = new Set(e.acoes.map((x) => x.k)).size;
+    const ctlOf = ks.filter((k) => e.acoes.some((x) => x.k === k && x.ctl));
+    const age = e.nasc ? new Date().getFullYear() - +e.nasc : null;
+    const stats = [
+      ["Companhias", ks.length], ["Conselhos de administração", boards], ["Diretorias", execs], ["Conselhos fiscais", fiscal],
+      ["Comitês", e.comites.length], ["Participações acionárias", holdings], ["Controla", ctlOf.length],
+    ].filter(([, v]) => v);
+    // frase de resumo
+    const bits = [];
+    const lead = e.cargos.filter((x) => /presidente|ceo/i.test(cargoLabel(x.c, x.f, x.o)) && !/fiscal/i.test(cargoLabel(x.c, x.f, x.o)));
+    if (lead.length) bits.push(lead.slice(0, 3).map((x) => `${cargoLabel(x.c, x.f, x.o)} da ${kName(x.k)}`).join("; "));
+    if (ctlOf.length) bits.push(`controlador${ctlOf.length > 1 ? "" : ""} de ${ctlOf.slice(0, 4).map(kName).join(", ")}${ctlOf.length > 4 ? ` e mais ${ctlOf.length - 4}` : ""}`);
+    const others = ks.length - new Set([...lead.map((x) => x.k), ...ctlOf]).size;
+    if (others > 0 && bits.length) bits.push(`presente em mais ${plural(others, "companhia aberta", "companhias abertas")}`);
+    const summary = bits.length ? `${bits.join("; ")}.`.replace(/^./, (m) => m.toUpperCase()) : "";
+    $("#person").innerHTML = `
+      <div class="cia-hero card p-hero">
+        <div class="cia-id">${personAvatar(e.n, e.t, "lg")}<div>
+          <span class="eyebrow">${pj ? "Investidor pessoa jurídica" : "Pessoa"}</span>
+          <h2>${esc(e.n)}</h2>
+          <p class="muted">${esc([pj ? e.doc : "", e.pr, age && age < 110 ? `${age} anos` : ""].filter(Boolean).join(" · "))}</p></div></div>
+        ${summary ? `<p class="lede p-sum">${esc(summary)}</p>` : ""}
+        <div class="stat-row">${stats.map(([k, v]) => `<div class="stat"><span>${k}</span><b>${v}</b></div>`).join("")}</div>
+      </div>
+      <div class="cia-grid2 mt">
+        <div class="col">
+          <div class="section-head"><h2 class="title-2">Onde está</h2><span class="muted small">${plural(ks.length, "companhia aberta", "companhias abertas")}</span></div>
+          ${ks.map((k) => companyBlock(k, e)).join("")}
+        </div>
+        <div class="col">
+          ${e.ex ? `<div class="widget"><h3 class="group-label">Trajetória</h3><p class="p-ex">${esc(e.ex)}</p><p class="muted small">Como consta no Formulário de Referência.</p></div>` : ""}
+          <div class="widget" id="p-net" hidden></div>
+          ${(e.noticias || []).length ? `<div class="widget"><h3 class="group-label">Nas notícias</h3><ul class="list-plain">${e.noticias.slice(0, 12).map((x) => `<li><a class="cia-link quiet" href="${safeUrl(x.l)}" target="_blank" rel="noopener">${esc(x.h)}</a><small class="muted block">${esc([fmtDate(x.d), x.s].filter(Boolean).join(" · "))}</small></li>`).join("")}</ul></div>` : ""}
+          <p class="muted small">Dados do Formulário de Referência que cada companhia entrega à CVM. A pessoa é reconhecida pelo nome completo, então homônimos exatos aparecem juntos. Participação indireta estimada multiplicando o percentual em cada elo da cadeia de controle.</p>
+        </div>
+      </div>`;
+    window.scrollTo({ top: 0 });
+    if (!pj) network(e, ks, slug);
+  }
+
+  // com quem a pessoa divide conselhos e diretorias
+  async function network(e, ks, slug) {
+    const mine = ks.filter((k) => e.cargos.some((x) => x.k === k)).slice(0, 12);
+    if (!mine.length) return;
+    const perfis = await Promise.all(mine.map(loadPerfil));
+    if (state.person !== slug) return;
+    const peers = new Map();
+    perfis.forEach((p, i) => {
+      for (const a of p.adm || []) {
+        const s = personSlug(a.n);
+        if (s === slug || a.o === "F") continue;
+        const x = peers.get(s) || { n: a.n, ks: new Set() };
+        x.ks.add(mine[i]);
+        peers.set(s, x);
+      }
+    });
+    const top = [...peers.entries()].sort((a, b) => b[1].ks.size - a[1].ks.size || a[1].n.localeCompare(b[1].n)).slice(0, 14);
+    if (!top.length) return;
+    const el = $("#p-net");
+    el.hidden = false;
+    el.innerHTML = `<h3 class="group-label">Divide conselho ou diretoria com</h3><div class="p-peers">${top.map(([s, x]) =>
+      `<a class="p-peer" href="#pessoa/${esc(s)}">${personAvatar(x.n, "F", "xs")}<span><b>${esc(x.n)}</b><small>${esc([...x.ks].map(kName).join(", "))}</small></span></a>`).join("")}</div>`;
+  }
+
   // ---------------------------------------------------------- busca de companhias e favoritas
   function searchCias(q) {
     const f = fold(q.trim());
@@ -807,21 +1031,35 @@
   let finderSel = 0, finderRows = [];
   function renderFinder() {
     const list = $("#finder-list");
-    finderRows = searchCias($("#finder").value);
+    const q = $("#finder").value;
+    const cias = searchCias(q).slice(0, 6).map((c) => ({ href: `#cia/${c.k}`, c }));
+    // pessoas: o índice vem na primeira busca; enquanto carrega, mostra só as companhias e redesenha depois
+    let people = [];
+    if (state.peopleList) people = searchPeople(state.peopleList, q, cias.length ? 4 : 8).map((r) => ({ href: `#pessoa/${r.s}`, r }));
+    else if (q.trim().length >= 2) loadPeople().then((l) => { state.peopleList = l; if ($("#finder").value === q) renderFinder(); });
+    finderRows = [...cias, ...people];
     finderSel = Math.min(finderSel, Math.max(0, finderRows.length - 1));
-    list.hidden = !$("#finder").value.trim();
+    list.hidden = !q.trim();
     $("#finder").setAttribute("aria-expanded", String(!list.hidden));
-    list.innerHTML = finderRows.map((c, i) => {
-      const r = state.resumo[c.k] || {};
-      return `<li role="option" aria-selected="${i === finderSel}" data-k="${esc(c.k)}">
-        ${logoHtml(c, "xs")}<span class="fi-name">${esc(ciaName(c))}</span>${tickersHtml(c)}${quoteBadge(r)}
-        <span class="fi-meta">${esc(c.st || "")}${r.mc ? ` · valor de mercado ${brl(r.mc)}` : ""}${c.last ? ` · último documento ${esc(fmtDay(c.last))}` : ""}</span>
-      </li>`;
-    }).join("") || `<li class="fi-empty">Nenhuma companhia encontrada.</li>`;
+    const row = (x, i) => {
+      if (x.c) {
+        const c = x.c, r = state.resumo[c.k] || {};
+        return `<li role="option" aria-selected="${i === finderSel}" data-href="${esc(x.href)}">
+          ${logoHtml(c, "xs")}<span class="fi-name">${esc(ciaName(c))}</span>${tickersHtml(c)}${quoteBadge(r)}
+          <span class="fi-meta">${esc(c.st || "")}${r.mc ? ` · valor de mercado ${brl(r.mc)}` : ""}${c.last ? ` · último documento ${esc(fmtDay(c.last))}` : ""}</span></li>`;
+      }
+      return `<li role="option" aria-selected="${i === finderSel}" data-href="${esc(x.href)}">
+        ${personAvatar(x.r.n, x.r.t, "xs")}<span class="fi-name">${esc(x.r.n)}</span>
+        <span class="fi-meta">${esc(personSub(x.r))}</span></li>`;
+    };
+    const hc = cias.length, hp = people.length;
+    list.innerHTML = (hc ? `<li class="fi-grp" role="presentation">Companhias</li>${cias.map((x, i) => row(x, i)).join("")}` : "")
+      + (hp ? `<li class="fi-grp" role="presentation">Pessoas e investidores</li>${people.map((x, i) => row(x, hc + i)).join("")}` : "")
+      || `<li class="fi-empty">${state.peopleList || q.trim().length < 2 ? "Nenhuma companhia ou pessoa encontrada." : "Buscando…"}</li>`;
   }
-  function pickFinder(k) {
+  function pickFinder(href) {
     $("#finder").value = ""; $("#finder-list").hidden = true; $("#finder").blur();
-    location.hash = `#cia/${k}`;
+    location.hash = href;
   }
 
   function renderFavs() {
@@ -858,16 +1096,19 @@
     const h = decodeURIComponent(location.hash.replace(/^#/, ""));
     const [view, k, pane] = h.split("/");
     const prev = state.view;
-    state.view = view === "cia" && k ? "cia" : view === "docs" ? "docs" : "cias";
-    for (const v of ["docs", "cias", "cia"]) $(`#view-${v}`).hidden = state.view !== v;
+    state.view = view === "cia" && k ? "cia" : view === "pessoa" && k ? "pessoa" : ["docs", "pessoas"].includes(view) ? view : "cias";
+    for (const v of ["docs", "cias", "cia", "pessoas", "pessoa"]) $(`#view-${v}`).hidden = state.view !== v;
     for (const a of document.querySelectorAll(".side-nav [data-view]")) {
-      if (a.dataset.view === state.view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+      if (a.dataset.view === state.view || (a.dataset.view === "pessoas" && state.view === "pessoa")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     }
-    $(".finder").hidden = state.view === "cia";
-    document.body.classList.toggle("in-cia", state.view === "cia");
-    $("#btn-share").hidden = state.view !== "cia";
+    $(".finder").hidden = ["cia", "pessoa", "pessoas"].includes(state.view);
+    if (state.dateline) $("#dateline").textContent = state.dateline;
+    document.body.classList.toggle("in-cia", state.view === "cia" || state.view === "pessoa");
+    $("#btn-share").hidden = state.view !== "cia" && state.view !== "pessoa";
     if (state.view === "docs") { setTitle("Documentos CVM"); renderDocs(); }
     else if (state.view === "cias") { setTitle("Companhias"); renderDir(); }
+    else if (state.view === "pessoas") { setTitle("Pessoas e investidores"); state.pdir.shown = 60; renderPeopleDir(); }
+    else if (state.view === "pessoa") { state.person = k; openPerson(k); }
     else openCia(k, pane);
     renderFavs();
     if (!(state.view === "cia" && prev === "cia" && state.cia === k)) window.scrollTo({ top: 0 });
@@ -888,6 +1129,17 @@
     $("#c-more").onclick = () => { state.dir.shown += 60; renderDir(); };
     $("#c-sort").value = store.get("cias-sort", "mc");
 
+    const peopleAgain = () => { state.pdir.shown = 60; renderPeopleDir(); };
+    $("#p-q").oninput = debounce(peopleAgain, 120);
+    $("#p-kind").onclick = (e) => {
+      const b = e.target.closest("button[data-kind]");
+      if (!b) return;
+      state.pdir.kind = b.dataset.kind;
+      for (const x of $("#p-kind").querySelectorAll("button")) x.setAttribute("aria-checked", String(x === b));
+      peopleAgain();
+    };
+    $("#p-more").onclick = () => { state.pdir.shown += 60; renderPeopleDir(); };
+
     const entAgain = () => { state.ent.shown = PAGE; renderEntDocs(); };
     $("#e-q").oninput = debounce(entAgain);
     $("#e-from").onchange = entAgain; $("#e-to").onchange = entAgain;
@@ -902,8 +1154,8 @@
       if (qtk) { state.quoteTk = qtk.dataset.qtk; openCia(state.cia, state.pane); return; }
       const card = e.target.closest("[data-open]");
       if (card && !e.target.closest("a")) { location.hash = `#cia/${card.dataset.open}`; return; }
-      const li = e.target.closest("#finder-list li[data-k]");
-      if (li) pickFinder(li.dataset.k);
+      const li = e.target.closest("#finder-list li[data-href]");
+      if (li) pickFinder(li.dataset.href);
       else if (!e.target.closest(".finder")) $("#finder-list").hidden = true;
     });
     document.addEventListener("input", (e) => {
@@ -918,7 +1170,7 @@
         e.preventDefault();
         finderSel = (finderSel + (e.key === "ArrowDown" ? 1 : -1) + finderRows.length) % Math.max(1, finderRows.length);
         renderFinder();
-      } else if (e.key === "Enter" && finderRows[finderSel]) pickFinder(finderRows[finderSel].k);
+      } else if (e.key === "Enter" && finderRows[finderSel]) pickFinder(finderRows[finderSel].href);
       else if (e.key === "Escape") { $("#finder-list").hidden = true; $("#finder").blur(); }
     };
     const focusFinder = () => {
@@ -963,7 +1215,8 @@
     for (const c of idx.companies) state.byK.set(c.k, c);
     if (state.docs.cats.size === 0 && store.get("cias-cats", null) === null) idx.summary_cats.forEach((c) => state.docs.cats.add(c));
     const listed = idx.companies.filter((c) => c.tk.length).length;
-    $("#dateline").textContent = `${plural(idx.companies.length, "companhia", "companhias")} · ${listed} listadas na B3 · atualizada ${ago(idx.generated_at)}`;
+    state.dateline = `${plural(idx.companies.length, "companhia", "companhias")} · ${listed} listadas na B3 · atualizada ${ago(idx.generated_at)}`;
+    $("#dateline").textContent = state.dateline;
     $("#footer-gen").textContent = `Dados abertos da CVM até ${fmtDate(idx.status?.dados_abertos_ate)}; dias seguintes pela consulta em tempo real.`;
     if (typeof idx.status?.tempo_real === "string") {
       $("#banner").hidden = false;

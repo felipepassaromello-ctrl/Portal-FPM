@@ -622,7 +622,8 @@
       if (!t) continue;
       if (t.group !== group) { group = t.group; html += `<div class="nav-group">${group}</div>`; }
       html += navBtn(t);
-      if (id === "sources") html += `<a class="nav-item" href="cias.html">${icon("cias")}<span>Companhias</span>${icon("chev", "ext")}</a>`;
+      if (id === "sources") html += `<a class="nav-item" href="cias.html">${icon("cias")}<span>Companhias</span>${icon("chev", "ext")}</a>`
+        + `<a class="nav-item" href="cias.html#pessoas">${icon("people")}<span>Pessoas</span>${icon("chev", "ext")}</a>`;
     }
     $("#tabs").innerHTML = html;
     // celular: quatro abas fixas + "Mais"
@@ -632,6 +633,7 @@
       + `<button data-more ${inMore ? 'aria-current="page"' : ""}>${icon("more")}<span>Mais</span></button>`;
     $("#more-list").innerHTML = NAV_ORDER.filter((id) => byId[id] && !byId[id].short).map((id) => navBtn(byId[id])).join("")
       + `<a class="nav-item" href="cias.html">${icon("cias")}<span>Companhias</span>${icon("chev", "ext")}</a>`
+      + `<a class="nav-item" href="cias.html#pessoas">${icon("people")}<span>Pessoas</span>${icon("chev", "ext")}</a>`
       + `<button class="nav-item" data-prefs-open>${icon("sliders")}<span>Personalizar</span></button>`;
     for (const t of TABS) $(`#view-${t.id}`).hidden = state.tab !== t.id;
     const title = (byId[state.tab] || TABS[0]).label;
@@ -1037,8 +1039,16 @@
 
   // ---------------------------------------------------------- busca universal (⌘K)
   const cmdk = { sel: 0, opts: [] };
+  // pessoas e investidores das companhias abertas (índice montado pelo scripts/perfis.py), carregado na primeira busca
+  let peopleIdx = null;
+  const loadPeopleIdx = () => {
+    peopleIdx = peopleIdx || fetch("data/cias/pessoas.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : { p: [] }))
+      .then((r) => (r.p || []).map(([s, n, t, nc, k]) => ({ s, n, t, nc, k, f: fold(n) }))).catch(() => []);
+    return peopleIdx;
+  };
   function openCmdk() {
     if (!state.digest) return;
+    loadPeopleIdx().then((l) => { cmdk.people = l; if ($("#cmdk").open && $("#cmdk-q").value.trim()) renderCmdk(); });
     if ($("#more").open) $("#more").close();
     $("#cmdk-q").value = "";
     renderCmdk();
@@ -1062,8 +1072,14 @@
     const ciasHits = Object.entries(cias.resumo).filter(([, r]) => q && (fold(r.nm || "").includes(q) || fold(r.tk || "") === q || fold(r.tk || "").startsWith(q)))
       .sort((a, z) => (fold(z[1].tk || "") === q) - (fold(a[1].tk || "") === q) || (fold(z[1].nm || "").startsWith(q)) - (fold(a[1].nm || "").startsWith(q)) || (z[1].mc || 0) - (a[1].mc || 0)).slice(0, 5)
       .map(([k, r]) => ({ ic: icon("cias"), title: r.nm, sub: ["Companhia", r.tk, r.mc ? `valor de mercado ${brl(r.mc)}` : "", r.nn ? `${r.nn} notícias` : ""].filter(Boolean).join(" · "), run: () => { location.href = ciaHref(k); } }));
+    const words = q.split(/\s+/).filter(Boolean);
+    const peopleHits = q.length >= 3 ? (cmdk.people || []).filter((r) => words.every((w) => r.f.includes(w)))
+      .sort((a, z) => z.f.startsWith(q) - a.f.startsWith(q)).slice(0, 5)
+      .map((r) => ({ ic: icon(r.t === "J" ? "cias" : "people"), title: r.n, sub: [r.t === "J" ? "Investidor" : "Pessoa", cias.resumo[r.k]?.nm, r.nc > 1 ? `${r.nc} companhias` : ""].filter(Boolean).join(" · "),
+        run: () => { location.href = `cias.html#pessoa/${encodeURIComponent(r.s)}`; } })) : [];
     if (q) {
       if (ciasHits.length) groups.push(["Companhias", ciasHits]);
+      if (peopleHits.length) groups.push(["Pessoas", peopleHits]);
       if (items.length) groups.push(["Notícias", items]);
       if (leads.length) groups.push(["Leads", leads]);
       if (deals.length) groups.push(["Base de deals", deals]);
