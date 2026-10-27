@@ -1941,15 +1941,6 @@
         request();
       } else flyTo(fitView(), 800);
     };
-    $("#m-theme").onclick = () => {
-      const isDark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
-      const next = isDark ? "light" : "dark";
-      fpmTheme(next); store.set("mundo-theme", next);
-      requestAnimationFrame(() => { readTheme(); renderLegend(); renderRank(); if (ui.sel >= 0) renderPanel(ui.sel); else if (ui.group >= 0) renderGroupPanel(ui.group); request(); });
-    };
-    // no celular o tema fica no menu de camadas
-    const sw = $("#m-theme-sw");
-    if (sw) { sw.checked = dark; sw.onchange = () => { $("#m-theme").click(); requestAnimationFrame(() => { sw.checked = dark; }); }; }
     $("#m-layers-btn").onclick = (e) => { e.stopPropagation(); const p = $("#m-layers"); p.hidden = !p.hidden; $("#m-layers-btn").setAttribute("aria-expanded", String(!p.hidden)); };
     document.addEventListener("pointerdown", (e) => { if (!e.target.closest("#m-layers, #m-layers-btn")) { $("#m-layers").hidden = true; $("#m-layers-btn").setAttribute("aria-expanded", "false"); } });
     for (const inp of document.querySelectorAll("#m-layers [data-layer]")) {
