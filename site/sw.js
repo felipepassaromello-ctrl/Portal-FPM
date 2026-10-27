@@ -1,5 +1,5 @@
 /* Portal FPM — service worker: rede primeiro (o portal muda a cada hora) e, sem conexão, a última versão vista. */
-const CACHE = "fpm-v6";
+const CACHE = "fpm-v7";
 const SHELL = ["./", "index.html", "cias.html", "styles.css", "app.js", "cias.js", "manifest.webmanifest", "icons/icon-192.png?v=2"];
 
 self.addEventListener("install", (e) => {
@@ -16,8 +16,10 @@ self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
   // os dados vêm com ?t=… para furar cache; guarda sem a query, para achar de volta offline
   const key = url.pathname.includes("/data/") ? url.origin + url.pathname : e.request;
+  // páginas sempre revalidadas no servidor: o cache HTTP do GitHub Pages (10 min) não pode segurar uma versão velha
+  const page = e.request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.endsWith("/");
   e.respondWith(
-    fetch(e.request)
+    fetch(page ? new Request(e.request, { cache: "no-cache" }) : e.request)
       .then((res) => {
         if (res.ok && (url.pathname.includes("/data/digest") || url.pathname.includes("/data/cias/resumo") || !url.pathname.includes("/data/"))) {
           const copy = res.clone();
