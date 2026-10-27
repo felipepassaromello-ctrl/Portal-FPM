@@ -398,6 +398,7 @@
           </div>
           <div class="cia-actions">
             <button class="btn ${fav ? "btn-primary" : ""}" data-fav="${esc(c.k)}">${icon("star", "ic ic-sm")} ${fav ? "Acompanhando" : "Acompanhar"}</button>
+            <a class="btn" href="mundo.html#n/c${esc(encodeURIComponent(c.k))}" title="Quem é dono, o que ela controla e com quem se liga, no mapa">${icon("globe", "ic ic-sm")} Ver no Mundo</a>
             ${url ? `<a class="btn" href="${safeUrl(url)}" target="_blank" rel="noopener">Site ${icon("ext", "ic ic-sm")}</a>` : ""}
           </div>
         </div>
@@ -966,6 +967,7 @@
           <h2>${esc(e.n)}</h2>
           <p class="muted">${esc([pj ? e.doc : "", e.pr, age && age < 110 ? `${age} anos` : ""].filter(Boolean).join(" · "))}</p></div></div>
         ${summary ? `<p class="lede p-sum">${esc(summary)}</p>` : ""}
+        <div class="cia-actions p-actions"><a class="btn" href="mundo.html#${pj && e.doc ? `n/j${esc(String(e.doc).replace(/\D/g, ""))}` : `s/${esc(encodeURIComponent(slug))}`}">${icon("globe", "ic ic-sm")} Ver no Mundo</a></div>
         <div class="stat-row">${stats.map(([k, v]) => `<div class="stat"><span>${k}</span><b>${v}</b></div>`).join("")}</div>
       </div>
       <div class="cia-grid2 mt">
