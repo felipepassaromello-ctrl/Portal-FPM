@@ -396,7 +396,7 @@ def main() -> None:
     # guarda as posições anteriores para o layout partir delas (o mapa não muda de lugar a cada hora)
     if prev.get("pos") and prev.get("nodes"):
         old = {n["id"]: prev["pos"][2 * i: 2 * i + 2] for i, n in enumerate(prev["nodes"]) if 2 * i + 1 < len(prev["pos"])}
-        save_json(OUT / "base" / "mundo_pos.json", {"sig": prev.get("sig"), "pos": old}, compact=True)
+        save_json(OUT / "base" / "mundo_pos.json", {"sig": prev.get("sig"), "v": prev.get("layout"), "ring": prev.get("ring"), "pos": old}, compact=True)
     save_json(OUT / "mundo.json", world, compact=True)
     s = world["stats"]
     log(f"Mundo: {s['cias']} companhias, {s['acionistas']} acionistas, {s['pessoas_conselho']} pessoas em mais de um conselho, "
