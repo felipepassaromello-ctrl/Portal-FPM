@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T01:06:33.715180-03:00",
+ "generated_at": "2026-10-27T01:21:23.925250-03:00",
  "date": "2026-10-26",
  "window": {
   "start": "2026-10-25T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-10-26T08:32:00.838151-03:00",
-  "analyzed": 48
+  "analyzed": 54
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -193,41 +193,92 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 109.76,
-   "change_pct": -5.962989331659285,
+   "price": 109.79,
+   "change_pct": -5.198167416891575,
    "spark": [
     113.16999816894531,
     116.72000122070312,
-    115.80999755859375
+    115.80999755859375,
+    109.79000091552734
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4027.5,
-   "change_pct": 0.48903660604866506,
+   "price": 4035.6,
+   "change_pct": -0.06933197334234587,
    "spark": [
     4060.39990234375,
     4007.89990234375,
-    4038.39990234375
+    4038.39990234375,
+    4035.60009765625
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 79704.15,
-   "change_pct": -0.3997023158968105,
+   "price": 79665.32,
+   "change_pct": -0.4482252542767129,
    "spark": [
     81074.1875,
     80790.8359375,
     80024.0078125,
-    79704.1484375
+    79665.3203125
    ]
   }
  ],
  "items": [
+  {
+   "id": "4f65c7870c38",
+   "title": "Fundo de ações brasileiras despenca 26% em Nova York após reeleição de Lula",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/mercado-financeiro-acoes-brasileiras-bolsa-eua.ghtml",
+   "published": "2026-10-26T00:43:01+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/mercado-financeiro-acoes-brasileiras-bolsa-eua.ghtml",
+     "title": "Fundo de ações brasileiras despenca 26% em Nova York após reeleição de Lula"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/25/ewz-desaba-19percent-apos-reeleicao-de-lula.ghtml",
+     "title": "Após reeleição de Lula, fundo de ações brasileiras despenca 19% nos EUA e antecipa reação do mercado"
+    }
+   ],
+   "ids": [
+    "4f65c7870c38",
+    "7c2a6d0f5197"
+   ],
+   "snippet": "Fundo de ações brasileiras despenca 19% nos EUA após reeleição de Lula O fundo de investimentos EWZ, que acompanha o desempenho de ações de grandes empresas brasileiras na bolsa de Nova York, registrava queda de 27,35% no pré-mercado desta segunda-feira (26), após a confirmação da reeleição do presidente Luiz Inácio Lula da Silva (PT). Por volta das 14h38 (horário de Brasília), o fundo registrava queda de 20,86%, cotado a US$ 33,71, ante US$ 42,59 no fechamento de sexta-feira (23). 🗒️Tem alguma sugestão de reportagem? Mande para o g1 A pressão também atingiu o mercado de câmbio brasileiro. O d",
+   "prescore": 2.8,
+   "headline": "EWZ cai 19% no after-hours após reeleição de Lula e antecipa reação do mercado",
+   "category": "mercados",
+   "importance": 9,
+   "importance_reason": "Sinal imediato de forte pressão sobre ativos brasileiros na abertura da segunda.",
+   "summary": "O EWZ, ETF de ações brasileiras nos EUA, caía 19% no after-hours às 21h37 de domingo (25), após a confirmação da reeleição de Lula. Havia fechado sexta (23) em alta de 1,77%.",
+   "involves": "EWZ, Lula, B3, mercado de ações.",
+   "interpretation": "Negociação de after-hours tem baixa liquidez e pode exagerar movimento; ainda assim indica mau humor de investidores com o resultado.",
+   "impact": "Provável abertura negativa de Ibovespa, câmbio pressionado e curva de juros mais alta; aumenta cautela em janelas de IPO e follow-on.",
+   "sentiment": "negativo",
+   "entities": [
+    "EWZ",
+    "Lula",
+    "Ibovespa",
+    "B3"
+   ],
+   "tags": [
+    "Ibovespa",
+    "EWZ",
+    "reeleição",
+    "câmbio"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
   {
    "id": "0f1fb556d5c5",
    "title": "Itaú compra NeoSpace por R$ 2,9 bilhões e avança na inteligência artificial",
@@ -251,24 +302,14 @@
      "title": "Itaú compra startup brasileira de inteligência artificial por R$ 2,9 bilhões"
     },
     {
-     "source": "Times Brasil | CNBC",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1RNeFFQSEp2V2RVbFFhMEh4V2VFRE9obTdKaUx3NVZGZ0dIdE9lT1hCUmtlck9EbEZ4TV8yUGc3eU0zWDdXMy1nM3ZyRHI2b3NzQnBPU1dZbjVFRFpjNk16cG5zOVRpRUNiRTdINGFBRGtSY2QzaG1KeWJON1pEWG5rcEIwOUdnYmdRZm1UYnh2dmlGRGF6Y0VISFZUQm1DUTJYa0FJbFM1V0p0QnpWcnZ0WEVwWElUSjRMVQ?oc=5",
-     "title": "Itaú compra a totalidade da NeoSpace, startup de inteligência artificial, por R$ 2,9 bilhões"
-    },
-    {
-     "source": "ADVFN",
-     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVmRZRDJ3b3dvWVpGU1hCS2wzQTZ2RjBjbDkyU2NjbDNOTklYS3V1WnhCQkV6cWs5YjkxYlB4eldYQkFoYmJyMjU5a3ZZVWt5M3VySDE3dGRKcG1tVHk4REtCY1gzMUl4RjBzTmw2dUVId1ZSR2V2a0ZJczNJcnVkSGZabVE5VF8wQkZ4Tk0tSnFQUXFWSVdnTEpIUDM0TzRPa3pxeVpJRWxzYmlXTnRlbTNhd19BcWJ0MHZvTVVybUJkOVpUcGZJ?oc=5",
-     "title": "Itaú compra NeoSpace por R$ 2,925 bilhões para acelerar estratégia de inteligência artificial"
-    },
-    {
      "source": "Brasil 247",
      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2RINDh5MWowOUllWUg3ekJaNFFoMV9ZZWxWdTIwWG0zVHF0YnNMRU5wS2RZVEhuTmpDYmhzUmw3Tm1aODFnR0JOQUlQZ2VVdFBDbzlRUDVLYU5YYklSd3pWYnZhZ1piWXRZbUVOa2dCaS1NMWNpeDhaTXdzc2lSVTRZRzBTZUF3dGU0bXp2WnNIMUJseks2WEVoTEF1anFsNlo2OUNmenFDOWdKY0pDeQ?oc=5",
      "title": "Itaú compra startup brasileira de inteligência artificial por R$ 2,92 bilhões"
     },
     {
-     "source": "BPMoney",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcHhmLVNlQ0FCLUk0bmtzTDZEMWRXVTFUUzdHdTVqT2dGUUtyWjdPZHFZUFBKdnZqbXJUWFZocTFYRDRockpsNVdkQ3J0SXl6QTBrUGl1cndyb09RZmNvTGFpYkYyRmdOalE4akI3S25rUTRvc20tcmRObXJ4cXF4RzR3?oc=5",
-     "title": "Itaú compra startup de IA NeoSpace por R$ 2,9 bilhões e amplia aposta em inteligência artificial"
+     "source": "Times Brasil | CNBC",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1RNeFFQSEp2V2RVbFFhMEh4V2VFRE9obTdKaUx3NVZGZ0dIdE9lT1hCUmtlck9EbEZ4TV8yUGc3eU0zWDdXMy1nM3ZyRHI2b3NzQnBPU1dZbjVFRFpjNk16cG5zOVRpRUNiRTdINGFBRGtSY2QzaG1KeWJON1pEWG5rcEIwOUdnYmdRZm1UYnh2dmlGRGF6Y0VISFZUQm1DUTJYa0FJbFM1V0p0QnpWcnZ0WEVwWElUSjRMVQ?oc=5",
+     "title": "Itaú compra a totalidade da NeoSpace, startup de inteligência artificial, por R$ 2,9 bilhões"
     },
     {
      "source": "Exame",
@@ -285,10 +326,8 @@
     "0f1fb556d5c5",
     "65cfd489acae",
     "33a8c8b5996e",
-    "0766e5394037",
-    "ad0beec10021",
     "26848e1a2f9c",
-    "ae2911428b1f",
+    "0766e5394037",
     "9eaf4f2e8f93",
     "6d4d19eeb82c"
    ],
@@ -964,6 +1003,89 @@
    "ai": true
   },
   {
+   "id": "546ba293e5d3",
+   "title": "O que Lula promete para o seu bolso? Veja as propostas para trabalhadores, aposentados e empresários",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/lula-eleito-propostas-economia.ghtml",
+   "published": "2026-10-26T03:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/lula-eleito-propostas-economia.ghtml",
+     "title": "O que Lula promete para o seu bolso? Veja as propostas para trabalhadores, aposentados e empresários"
+    }
+   ],
+   "ids": [
+    "546ba293e5d3"
+   ],
+   "snippet": "O presidente brasileiro Luiz Inácio Lula da Silva, candidato do Partido dos Trabalhadores (PT) à reeleição, gesticula durante um comício de campanha antes do segundo turno das eleições, em Juiz de Fora, Minas Gerais, Brasil, em 16 de outubro de 2026 REUTERS/Pilar Olivares Reeleito neste domingo (25), Luiz Inácio Lula da Silva (PT) dará início ao quarto mandato de sua carreira política em janeiro de 2027. O plano de governo traz uma série de diretrizes para temas estruturais do país. No mercado de trabalho, por exemplo, Lula concentra propostas na renda e na jornada de trabalho, enquanto, na ec",
+   "prescore": 2.8,
+   "headline": "O que Lula promete para trabalhadores, aposentados e empresários no quarto mandato",
+   "category": "politica",
+   "importance": 6,
+   "importance_reason": "Programa de governo guia expectativas de política econômica e regulação.",
+   "summary": "Reeleito, Lula inicia o quarto mandato em janeiro de 2027. O plano traz diretrizes para temas estruturais, com propostas para trabalhadores, aposentados e empresários. O trecho não detalha as medidas.",
+   "involves": "Lula (PT), plano de governo.",
+   "interpretation": "Ainda é preciso ver como as promessas se traduzem em orçamento e regulação. O trecho não permite avaliar o impacto fiscal.",
+   "impact": "Atenção a reforma tributária, crédito e gasto social, que afetam juros, Selic e valuation de empresas.",
+   "sentiment": "neutro",
+   "entities": [
+    "Lula",
+    "PT",
+    "governo federal"
+   ],
+   "tags": [
+    "plano de governo",
+    "fiscal",
+    "2027"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "3693747c8f81",
+   "title": "PIB cresceu, desemprego caiu, mas juros e dívidas pesaram: veja o balanço da economia de Lula 3",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/pib-cresceu-desemprego-caiu-mas-juros-e-dividas-pesaram-veja-o-balanco-da-economia-de-lula-3.ghtml",
+   "published": "2026-10-26T03:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/pib-cresceu-desemprego-caiu-mas-juros-e-dividas-pesaram-veja-o-balanco-da-economia-de-lula-3.ghtml",
+     "title": "PIB cresceu, desemprego caiu, mas juros e dívidas pesaram: veja o balanço da economia de Lula 3"
+    }
+   ],
+   "ids": [
+    "3693747c8f81"
+   ],
+   "snippet": "O presidente brasileiro Luiz Inácio Lula da Silva, candidato do Partido dos Trabalhadores (PT) à reeleição, discursa durante cerimônia no Palácio do Planalto, em Brasília, Brasil, em 13 de outubro de 2026 REUTERS/Adriano Machado A economia brasileira cresceu, o desemprego caiu para o menor nível da série histórica e a renda média do trabalho avançou durante o terceiro mandato de Luiz Inácio Lula da Silva (PT). Mesmo com a melhora dos indicadores, Lula não teve vida fácil para derrotar Flávio Bolsonaro (PL) no segundo turno. Lula foi reeleito com 51,79% dos votos válidos, ante 48,21% do adversá",
+   "prescore": 2.8,
+   "headline": "Balanço do governo Lula 3: PIB e emprego avançaram, mas juros e dívida pesaram",
+   "category": "macro",
+   "importance": 6,
+   "importance_reason": "Contexto macro para o novo mandato.",
+   "summary": "Segundo o g1, a economia cresceu, o desemprego caiu para o menor nível da série e a renda média avançou no terceiro mandato, mas juros altos e dívida pesaram; Lula teve disputa difícil com Flávio.",
+   "involves": "Lula, economia brasileira, juros, dívida pública.",
+   "interpretation": "O balanço mostra a combinação de atividade forte e aperto monetário, a base do debate fiscal do próximo governo.",
+   "impact": "Juros elevados e dívida limitam espaço; mantém Selic e fiscal como foco do mercado.",
+   "sentiment": "misto",
+   "entities": [
+    "Lula",
+    "Banco Central",
+    "IBGE"
+   ],
+   "tags": [
+    "PIB",
+    "desemprego",
+    "dívida",
+    "Selic"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "6029930fec46",
    "title": "TSE desmente Flávio Bolsonaro e diz que não retirou fiscais do PL de sala-cofre",
    "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/tse-desmente-flavio-bolsonaro-e-diz-que-nao-retirou-fiscais-do-pl-da-sala-cofre.shtml",
@@ -1483,45 +1605,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "6131353bff02",
-   "title": "Tesla pode virar peso para SpaceX em potencial fusão que daria ainda mais poder a Musk",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSENzVHJ0NnR4ME1DU25OTDZkTG4zQWlUeUtqbmpWejdOYTlaTEdIRlJGZnZkX09Hd2xXNVRWR0hFNVlfcFM0Nzl4NEVWQVdmeEdqbFRUZ2RMQXh6a2M3STlNaWE0SGhfMWZsMU5kREhLNDZhYTJBVTg2V01ENEsxTTFWMF9tMjZQZDkxcVVpZTlSRkF6REtkY3g3LUpRcl9SQzY5a1ZyN0YtWHZjRlQycVp2Vm9lbkgtclFuZlJhTF94dnhSbk1uTFc3YXJINjJkUkR4WUxfTktHY05FZ3RHNNIB4AFBVV95cUxQSENzVHJ0NnR4ME1DU25OTDZkTG4zQWlUeUtqbmpWejdOYTlaTEdIRlJGZnZkX09Hd2xXNVRWR0hFNVlfcFM0Nzl4NEVWQVdmeEdqbFRUZ2RMQXh6a2M3STlNaWE0SGhfMWZsMU5kREhLNDZhYTJBVTg2V01ENEsxTTFWMF9tMjZQZDkxcVVpZTlSRkF6REtkY3g3LUpRcl9SQzY5a1ZyN0YtWHZjRlQycVp2Vm9lbkgtclFuZlJhTF94dnhSbk1uTFc3YXJINjJkUkR4WUxfTktHY05FZ3RHNA?oc=5",
-   "published": "2026-10-26T10:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Bloomberg Línea Brasil",
-     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSENzVHJ0NnR4ME1DU25OTDZkTG4zQWlUeUtqbmpWejdOYTlaTEdIRlJGZnZkX09Hd2xXNVRWR0hFNVlfcFM0Nzl4NEVWQVdmeEdqbFRUZ2RMQXh6a2M3STlNaWE0SGhfMWZsMU5kREhLNDZhYTJBVTg2V01ENEsxTTFWMF9tMjZQZDkxcVVpZTlSRkF6REtkY3g3LUpRcl9SQzY5a1ZyN0YtWHZjRlQycVp2Vm9lbkgtclFuZlJhTF94dnhSbk1uTFc3YXJINjJkUkR4WUxfTktHY05FZ3RHNNIB4AFBVV95cUxQSENzVHJ0NnR4ME1DU25OTDZkTG4zQWlUeUtqbmpWejdOYTlaTEdIRlJGZnZkX09Hd2xXNVRWR0hFNVlfcFM0Nzl4NEVWQVdmeEdqbFRUZ2RMQXh6a2M3STlNaWE0SGhfMWZsMU5kREhLNDZhYTJBVTg2V01ENEsxTTFWMF9tMjZQZDkxcVVpZTlSRkF6REtkY3g3LUpRcl9SQzY5a1ZyN0YtWHZjRlQycVp2Vm9lbkgtclFuZlJhTF94dnhSbk1uTFc3YXJINjJkUkR4WUxfTktHY05FZ3RHNA?oc=5",
-     "title": "Tesla pode virar peso para SpaceX em potencial fusão que daria ainda mais poder a Musk"
-    },
-    {
-     "source": "Bloomberg Línea",
-     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOekJsVk1lNEsyanZiU3l1S0VGYldSZmJHcjczekNpNkJDU3dpZ2xETlgyNTRjR045S0hCN1hnOGdoZWk4YWU4WEFGZEFtMzlLTkpOUTlTZ3BUSXpzUnJ6RjExVjZvXzM1X2pkLWdnbk9hSTlINkstWmo5Ulk3YmhWeVB2RWk2X3hQNW84akE4M3hUckhMdW9mb3J1ZDdPQ3dJeE83ZXlWdmI0bGM3V1F0QjI2X2Z2UFlmU1hsQkhpVXNSMmN2anBjYjN2TUPSAeABQVVfeXFMUEhDc1RydDZ0eDBNQ1NuTkw2ZExuM0FpVHlLam5qVno3TmE5WkxHSEZSRmZ2ZF9PR3dsVzVUVkdIRTVZX3BTNDc5eDRFVkFXZnhHamxUVGdkTEF4emtjN0k5TWlhNEhoXzFmbDFOZERISzQ2YWEyQVU4NldNRDRLMU0xVjBfbTI2UGQ5MXFVaWU5UkZBekRLZGN4Ny1KUXJfUkM2OWtWcjdGLVh2Y0ZUMnFadlZvZW5ILXJRbmZSYUxfeHZ4Um5NbkxXN2FySDYyZFJEeFlMX05LR2NORWd0RzQ?oc=5",
-     "title": "Tesla pode virar peso para SpaceX em potencial fusão que daria ainda mais poder a Musk"
-    }
-   ],
-   "ids": [
-    "6131353bff02",
-    "441365218d47"
-   ],
-   "snippet": "",
-   "prescore": 6.9,
-   "headline": "Tesla pode virar peso para SpaceX em potencial fusão que daria ainda mais poder a Musk",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "180aadddfcf0",
@@ -2593,6 +2676,46 @@
    "ai": true
   },
   {
+   "id": "527abc105dcd",
+   "title": "Eleições 2026: Anac diz não ter identificado anormalidades na programação de voos comerciais",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/25/eleicoes-2026-anac-diz-nao-ter-identificado-anormalidades-na-programacao-de-voos-comerciais.ghtml",
+   "published": "2026-10-25T20:58:14+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/25/eleicoes-2026-anac-diz-nao-ter-identificado-anormalidades-na-programacao-de-voos-comerciais.ghtml",
+     "title": "Eleições 2026: Anac diz não ter identificado anormalidades na programação de voos comerciais"
+    }
+   ],
+   "ids": [
+    "527abc105dcd"
+   ],
+   "snippet": "A Agência Nacional de Aviação Civil (Anac) informou neste domingo (25) que o fluxo aéreo brasileiro operou dentro da regularidade e sem registro de anormalidades durante o fim de semana do segundo turno das Eleições 2026. A agência enviou a manifestação ao g1 após repercussão de queixas nas redes sociais envolvendo cancelamentos e atrasos de voos. Segundo a Anac: 3.797 voos estavam programados para este fim de semana, dias 24 e 25 de outubro; 35 cancelamentos foram contabilizados até as 13h de domingo. Suspensão de voos da Gol impacta passageiros em Campina Grande O volume, segundo a agência, ",
+   "prescore": 1.8,
+   "headline": "Anac diz não ter identificado anormalidades em voos no fim de semana do 2º turno",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Resposta oficial a queixas sobre voos, ligada à controvérsia do horário de votação.",
+   "summary": "A Anac informou que o fluxo aéreo operou com regularidade. Eram 3.797 voos programados em 24 e 25 de outubro, com 35 cancelamentos até as 13h de domingo.",
+   "involves": "Anac; companhias aéreas.",
+   "interpretation": "Rebate as queixas de cancelamentos nas redes.",
+   "impact": "Sem efeito para companhias aéreas.",
+   "sentiment": "neutro",
+   "entities": [
+    "Anac",
+    "g1"
+   ],
+   "tags": [
+    "Anac",
+    "voos",
+    "eleições"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "1cb7311fc5f2",
    "title": "Bloqueios de redes nos EUA e no Brasil foram falhas ou cumprimentos da Meta?",
    "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/colunas/bianca-santana/2026/10/bloqueios-de-redes-nos-eua-e-no-brasil-foram-falhas-ou-cumprimentos-da-meta.shtml",
@@ -3441,25 +3564,25 @@
    "ai": false
   },
   {
-   "id": "a369b634fe5f",
-   "title": "JPMorgan vê taxa de papéis do Tesouro em até 15,5% após reeleição de Lula",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSG9JZmU3cEZuelVsbHZZdVI3UXNpc1c0YkViZDdYME1sZVUwNjZTcEJnQ1k1RmpVcVJwcFVLa1EweHhBRU15OVFrcnZwQlM2bG8xdFBYTkNoZEdaYlZJNWFRY0NURkFDbTRjVERyNF9DS3lTUW1fVFJyMWxUNmszd2VXeUlQSzFOZVZ3UUxFbEZ3eml4NlFXZ1htZXBUVGphY2hIZUhNcFVzaGRkLU15VFJxT24zQdIBuwFBVV95cUxPbU9EZFN3eXBNT0VwVHpyUGdEdDNlbWxpYnV2bDdZcmpOTFNadmMteEdjTjVsdkYzazZpTU9KMmFNMkg2ZndZeVhmRzZtOVZ1aTNZR25aVFR1OUZnZ21UeDRjV3l6VGVNdmY5R0sxYUxWMHJVMDZ4bGhleE10Qm5jclo5Q2Z2VUFCelNPdUVReFFCdUw4eHpQUkVwVzlnd0xEc2RvZXR3cW9FMmRLSGFlNVpJbTlPbzZDRllN?oc=5",
-   "published": "2026-10-26T10:48:59+00:00",
-   "region": "BR",
+   "id": "d2d2cba10ee7",
+   "title": "Kim Jong Un Makes Surprise Trip to China, Crosses New Bridge",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcjBPZ3dxSHBGNGpJN0dCX1JYT09lUDgyQW1SSUZKRHNRWF90SW5NVENhZEtQRHZjUzYyVnVYLXdRWkxuVmt2RGtTSDVSalVrVURxbFlTQzZ5UFd3b2dxelVhVkNuS3J6cmF2Y2h4NEJfQWNsSklmZk1MSWxtbEFOb3lIUTV0RzNwenNCZVVYUGxSUVZIblpUS2VYdzMxZ1RX?oc=5",
+   "published": "2026-10-25T14:45:00+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSG9JZmU3cEZuelVsbHZZdVI3UXNpc1c0YkViZDdYME1sZVUwNjZTcEJnQ1k1RmpVcVJwcFVLa1EweHhBRU15OVFrcnZwQlM2bG8xdFBYTkNoZEdaYlZJNWFRY0NURkFDbTRjVERyNF9DS3lTUW1fVFJyMWxUNmszd2VXeUlQSzFOZVZ3UUxFbEZ3eml4NlFXZ1htZXBUVGphY2hIZUhNcFVzaGRkLU15VFJxT24zQdIBuwFBVV95cUxPbU9EZFN3eXBNT0VwVHpyUGdEdDNlbWxpYnV2bDdZcmpOTFNadmMteEdjTjVsdkYzazZpTU9KMmFNMkg2ZndZeVhmRzZtOVZ1aTNZR25aVFR1OUZnZ21UeDRjV3l6VGVNdmY5R0sxYUxWMHJVMDZ4bGhleE10Qm5jclo5Q2Z2VUFCelNPdUVReFFCdUw4eHpQUkVwVzlnd0xEc2RvZXR3cW9FMmRLSGFlNVpJbTlPbzZDRllN?oc=5",
-     "title": "JPMorgan vê taxa de papéis do Tesouro em até 15,5% após reeleição de Lula"
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcjBPZ3dxSHBGNGpJN0dCX1JYT09lUDgyQW1SSUZKRHNRWF90SW5NVENhZEtQRHZjUzYyVnVYLXdRWkxuVmt2RGtTSDVSalVrVURxbFlTQzZ5UFd3b2dxelVhVkNuS3J6cmF2Y2h4NEJfQWNsSklmZk1MSWxtbEFOb3lIUTV0RzNwenNCZVVYUGxSUVZIblpUS2VYdzMxZ1RX?oc=5",
+     "title": "Kim Jong Un Makes Surprise Trip to China, Crosses New Bridge"
     }
    ],
    "ids": [
-    "a369b634fe5f"
+    "d2d2cba10ee7"
    ],
    "snippet": "",
-   "prescore": 3.4,
-   "headline": "JPMorgan vê taxa de papéis do Tesouro em até 15,5% após reeleição de Lula",
-   "category": "macro",
+   "prescore": 3.6,
+   "headline": "Kim Jong Un Makes Surprise Trip to China, Crosses New Bridge",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -3558,6 +3681,39 @@
    "snippet": "",
    "prescore": 3.2,
    "headline": "‘Vitória histórica’ e revés para Trump: imprensa internacional destaca reeleição de Lula",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "12345e44a05b",
+   "title": "Lula: Os desafios econômicos para o quarto mandato",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcFpWYlZRVW9nSFdiN2o0NE9tZU53VW5qRmUwcG5MWFNWQzdtVDFPREJaSlJPOFc3S1hMVzFKRlJtaUdsbVlnd3F6dmczRGxJaDdMNnV1aWRZNzJRXzBXdlFscFBXdVNaQjBfMnR3bmctd2hGVXNmOWdlM1RIa09PYkJkeXJzY0hodDRNYWpXdjMxSnVRa2ZfcmJJTnVvTW9rOXU4WjVobmUyLWNZMTBVU01iY2R5enNrRE4xTXRkaE8xNjhRR1gtdFNn?oc=5",
+   "published": "2026-10-26T04:04:36+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcFpWYlZRVW9nSFdiN2o0NE9tZU53VW5qRmUwcG5MWFNWQzdtVDFPREJaSlJPOFc3S1hMVzFKRlJtaUdsbVlnd3F6dmczRGxJaDdMNnV1aWRZNzJRXzBXdlFscFBXdVNaQjBfMnR3bmctd2hGVXNmOWdlM1RIa09PYkJkeXJzY0hodDRNYWpXdjMxSnVRa2ZfcmJJTnVvTW9rOXU4WjVobmUyLWNZMTBVU01iY2R5enNrRE4xTXRkaE8xNjhRR1gtdFNn?oc=5",
+     "title": "Lula: Os desafios econômicos para o quarto mandato"
+    }
+   ],
+   "ids": [
+    "12345e44a05b"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Lula: Os desafios econômicos para o quarto mandato",
    "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -3888,39 +4044,6 @@
    "snippet": "",
    "prescore": 3.2,
    "headline": "Mercado indica reação negativa com eleição de Lula",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "bb0b1cfb0ca1",
-   "title": "Lula bate recorde de votos em Garanhuns, sua cidade natal",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ2Etb2pxd2QtQktLUGU5RHAtVk5xQ3FscnNDMTJtZXIwS0lyejNCZmdFQkx4YjRjWngzS2otWGQzTVJvWnNGMEFDR0xjQU85enI4bHJ0YzdWWlF6NjNTb2lLME0wVHAwRzYtY1ljQWJneFhONFRoa0JuRW15QnEzUU8tZHFtcmgzOHhPQVdzQ0FKTGZqcEN6TFpoNGs2MktVX0ZjYVNUcF9leTNpa2F1etIBtgFBVV95cUxPdTFqQnplZHpQdENSR0dSNlpueGgwazByZ1NkUmVXM3RtYi1VUnJrZmdDb0NsQlZSWlR6VV9rN1VHcTJWU0JSWHoxdDYycDR1U2ZZcHB2U1RPc0lmTEtwdHgzVl9rcTNCQU54Njd3eGg2czhmNk0wV2E2UUhFcXlleFdycVVyaU9FVTZ5VUJYOUF6VUZObk5kQVVrQlYxeE9EbnhRb0tjbFpteER5VVlmUng1UVNJdw?oc=5",
-   "published": "2026-10-26T00:27:31+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ2Etb2pxd2QtQktLUGU5RHAtVk5xQ3FscnNDMTJtZXIwS0lyejNCZmdFQkx4YjRjWngzS2otWGQzTVJvWnNGMEFDR0xjQU85enI4bHJ0YzdWWlF6NjNTb2lLME0wVHAwRzYtY1ljQWJneFhONFRoa0JuRW15QnEzUU8tZHFtcmgzOHhPQVdzQ0FKTGZqcEN6TFpoNGs2MktVX0ZjYVNUcF9leTNpa2F1etIBtgFBVV95cUxPdTFqQnplZHpQdENSR0dSNlpueGgwazByZ1NkUmVXM3RtYi1VUnJrZmdDb0NsQlZSWlR6VV9rN1VHcTJWU0JSWHoxdDYycDR1U2ZZcHB2U1RPc0lmTEtwdHgzVl9rcTNCQU54Njd3eGg2czhmNk0wV2E2UUhFcXlleFdycVVyaU9FVTZ5VUJYOUF6VUZObk5kQVVrQlYxeE9EbnhRb0tjbFpteER5VVlmUng1UVNJdw?oc=5",
-     "title": "Lula bate recorde de votos em Garanhuns, sua cidade natal"
-    }
-   ],
-   "ids": [
-    "bb0b1cfb0ca1"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "Lula bate recorde de votos em Garanhuns, sua cidade natal",
    "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -5049,6 +5172,39 @@
    "ai": false
   },
   {
+   "id": "1a3eb2bd81ba",
+   "title": "Indonesia meeting Singapore gas terms despite supply cut, minister says",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTGRBUmV5aU1iVUE5Y1pEVTRYUjZjMzNOdEZpY0VvRE02Ym5JaHBBcWljM3k0UnoydFo5bE9yRWRUeFBDWklUMVR2bmxZT1Q0M01FTlFKQlhjTGhXOGxKWHdscnBKM3dKM2NLSWZxXy13OHA3Q1BxUFhzeG1CaENld256Q0U3VTZTckpwOEVCSFlpMHVMQXBSd3RuOFhZUGpqeEhaLVhkTDZXVDFpX3V5RFdsSWVteTlPeUVKenpSUnh6WVJRbUlHQnRfMTU?oc=5",
+   "published": "2026-10-26T08:48:38+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTGRBUmV5aU1iVUE5Y1pEVTRYUjZjMzNOdEZpY0VvRE02Ym5JaHBBcWljM3k0UnoydFo5bE9yRWRUeFBDWklUMVR2bmxZT1Q0M01FTlFKQlhjTGhXOGxKWHdscnBKM3dKM2NLSWZxXy13OHA3Q1BxUFhzeG1CaENld256Q0U3VTZTckpwOEVCSFlpMHVMQXBSd3RuOFhZUGpqeEhaLVhkTDZXVDFpX3V5RFdsSWVteTlPeUVKenpSUnh6WVJRbUlHQnRfMTU?oc=5",
+     "title": "Indonesia meeting Singapore gas terms despite supply cut, minister says"
+    }
+   ],
+   "ids": [
+    "1a3eb2bd81ba"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Indonesia meeting Singapore gas terms despite supply cut, minister says",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "1642cec5e683",
    "title": "Russia says it caught Ukrainian agents preparing close range drone attack on Moscow's air defences",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQN3A5aE9Xa2dualF4VlpwNDE3bEJicGF4emJMQmgxZUtqT1MyNHdOVWlFT2VpNHgzR3plTFZHSFc4OWJCNVE3Y2ttRXdLekNpdVNnaDh1WVhIT3JObld6Nk5Pd0xydkhYVUxtVE1CNURoeGx0TXlKdDIxS04wd0ZYVm5FMmR4TVlRM1BEc1lMdHJGX2Q2NmZIaTNWRzZ1RUo5WHRWVnEzcW5oVGI3V1BiVmt3YlVwTXBuMjJtQnk0eFdkMmVkWWxWVEJaeG9JeHF6N3c?oc=5",
@@ -5643,39 +5799,6 @@
    "ai": false
   },
   {
-   "id": "6710c8f37d0f",
-   "title": "AstraZeneca Readies New Portfolio of Targeted Cancer Therapies",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnhINGdPMFVCdVRsWVFvMno4MU15NmRWSWpBUlk5X3EwUzNMcjJvNjNtVGhZWk1LbEI0cHhwNFJmb3dnM21tN1RLdWFfeVY3UWRwRzZvYk1Nc0djdkd6eWhrZlBwc2swMUM5X1lCZUdKdW5Fa09VTGdna3YzNzZIYldNVGdMVEp0TjZFaXhuNDY2N3pFSF9tRW43VC1UQUV2dW54UzhkZGo?oc=5",
-   "published": "2026-10-26T01:12:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnhINGdPMFVCdVRsWVFvMno4MU15NmRWSWpBUlk5X3EwUzNMcjJvNjNtVGhZWk1LbEI0cHhwNFJmb3dnM21tN1RLdWFfeVY3UWRwRzZvYk1Nc0djdkd6eWhrZlBwc2swMUM5X1lCZUdKdW5Fa09VTGdna3YzNzZIYldNVGdMVEp0TjZFaXhuNDY2N3pFSF9tRW43VC1UQUV2dW54UzhkZGo?oc=5",
-     "title": "AstraZeneca Readies New Portfolio of Targeted Cancer Therapies"
-    }
-   ],
-   "ids": [
-    "6710c8f37d0f"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "AstraZeneca Readies New Portfolio of Targeted Cancer Therapies",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "204e16eecca7",
    "title": "Norway joins the list of countries Trump has abused in vulgar terms",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXhaU2ZZaldmV2c3LU1hT0FHOFpEUko5d0ZaSDN0SG50cUMzYXdsX2tEUHM3bzR6N01JSzhVWEFjMS1jQVc5c3J0REc2ZjVVZl83WUFEeEpIQXFnUHVWcXlhNW02NkUxbUZCV0N6bTFuakdZblJMRTdPaUg5bmZ0c3AzbVNGXzRPSU5sUllUT3VTQV9TbHRoN1BjNU9GQ002cmhYNA?oc=5",
@@ -5794,6 +5917,39 @@
    "prescore": 2.6,
    "headline": "World stocks gain ahead of 'formidable' week for risk; oil prices fall",
    "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6710c8f37d0f",
+   "title": "AstraZeneca Readies New Portfolio of Targeted Cancer Therapies",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnhINGdPMFVCdVRsWVFvMno4MU15NmRWSWpBUlk5X3EwUzNMcjJvNjNtVGhZWk1LbEI0cHhwNFJmb3dnM21tN1RLdWFfeVY3UWRwRzZvYk1Nc0djdkd6eWhrZlBwc2swMUM5X1lCZUdKdW5Fa09VTGdna3YzNzZIYldNVGdMVEp0TjZFaXhuNDY2N3pFSF9tRW43VC1UQUV2dW54UzhkZGo?oc=5",
+   "published": "2026-10-26T00:12:50+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnhINGdPMFVCdVRsWVFvMno4MU15NmRWSWpBUlk5X3EwUzNMcjJvNjNtVGhZWk1LbEI0cHhwNFJmb3dnM21tN1RLdWFfeVY3UWRwRzZvYk1Nc0djdkd6eWhrZlBwc2swMUM5X1lCZUdKdW5Fa09VTGdna3YzNzZIYldNVGdMVEp0TjZFaXhuNDY2N3pFSF9tRW43VC1UQUV2dW54UzhkZGo?oc=5",
+     "title": "AstraZeneca Readies New Portfolio of Targeted Cancer Therapies"
+    }
+   ],
+   "ids": [
+    "6710c8f37d0f"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "AstraZeneca Readies New Portfolio of Targeted Cancer Therapies",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -6507,6 +6663,44 @@
    "ai": true
   },
   {
+   "id": "0899c4d0386c",
+   "title": "INSS inicia pagamento de benefícios de outubro; veja calendário",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/inss-inicia-pagamento-de-beneficios-de-outubro-veja-calendario.ghtml",
+   "published": "2026-10-26T03:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/inss-inicia-pagamento-de-beneficios-de-outubro-veja-calendario.ghtml",
+     "title": "INSS inicia pagamento de benefícios de outubro; veja calendário"
+    }
+   ],
+   "ids": [
+    "0899c4d0386c"
+   ],
+   "snippet": "Simulador do INSS mostra valores e tempo de contribuição pelas novas regras de aposentados Os aposentados, pensionistas e beneficiários do Instituto Nacional do Seguro Social (INSS) começam a receber os pagamentos referentes ao mês de outubro a partir desta segunda-feira (26) O calendário é definido conforme o número final do cartão do benefício, sem considerar o dígito verificador (número que aparece após o traço). 🗒️Tem alguma sugestão de reportagem? Mande para o g1 Recebem primeiro os segurados que ganham até um salário mínimo. Quem recebe acima do piso nacional terá o pagamento liberado na",
+   "prescore": 1.8,
+   "headline": "INSS inicia pagamento de benefícios de outubro",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Calendário de pagamentos, rotina.",
+   "summary": "Aposentados e pensionistas começam a receber os benefícios de outubro nesta segunda-feira (26), conforme o final do cartão.",
+   "involves": "INSS.",
+   "interpretation": "Notícia de serviço.",
+   "impact": "Efeito marginal em consumo.",
+   "sentiment": "neutro",
+   "entities": [
+    "INSS"
+   ],
+   "tags": [
+    "INSS",
+    "benefícios"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "82da0c3c4f6f",
    "title": "Veja lista de todos os presidentes do Brasil desde a Proclamação da República",
    "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/veja-lista-de-todos-os-presidentes-do-brasil-desde-a-proclamacao-da-republica.shtml",
@@ -6545,39 +6739,6 @@
    "ai": true
   },
   {
-   "id": "6da974e1d52e",
-   "title": "Do chat à compra: a jornada omnichannel dos pluriconsumidores",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbjBIREtkTC1xc3ZwNlRGcElXSEV6dDUwVXBWUUpuNDZ6YnR5SGhHMlQ4dGgtVlNYckt4dWgxME5PRkF1TWRJWTB3S1JnamhvSU5wSFhsUjNGRmxvRHpyQTNMTkI4ZTA3OTJwZm5JeG1wWnEtM0kxb29kQloyUU9nZjhXYWlVYm0wTUg3N0lwTkFJRmJ6YS1UaGxreTNlU0xya2N4Y21iY3lINnpxTHcyNmtxd1J2SEtoMVc0ejE4WTNTcnNi0gHTAUFVX3lxTE1EaVM1V0VRczV1VzZ3dXZnclF3X19aMDAxUG5yR01pR2pVdTZvU0hsdnJxT1I4dGY2cHF5M1RPY05HdnE5a213RXdlYWxlZl9rWV9US0k3RXBzc2N6eW9KM0dTSDY3UjVFSzhRbDVndVpuSndkREk5U2UzZUpRMlVCbHFzWFd6TDdROUlLNG4tVjFQck9sX1hBZF9VYWRFVXNaWDZVdEUzMG9qNllHM3RCUGFta1ZldGdIMVhCZ2NpUnd1RWxUNi1CY0hSZ215V1c1R1k?oc=5",
-   "published": "2026-10-26T10:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Globo Gente",
-     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbjBIREtkTC1xc3ZwNlRGcElXSEV6dDUwVXBWUUpuNDZ6YnR5SGhHMlQ4dGgtVlNYckt4dWgxME5PRkF1TWRJWTB3S1JnamhvSU5wSFhsUjNGRmxvRHpyQTNMTkI4ZTA3OTJwZm5JeG1wWnEtM0kxb29kQloyUU9nZjhXYWlVYm0wTUg3N0lwTkFJRmJ6YS1UaGxreTNlU0xya2N4Y21iY3lINnpxTHcyNmtxd1J2SEtoMVc0ejE4WTNTcnNi0gHTAUFVX3lxTE1EaVM1V0VRczV1VzZ3dXZnclF3X19aMDAxUG5yR01pR2pVdTZvU0hsdnJxT1I4dGY2cHF5M1RPY05HdnE5a213RXdlYWxlZl9rWV9US0k3RXBzc2N6eW9KM0dTSDY3UjVFSzhRbDVndVpuSndkREk5U2UzZUpRMlVCbHFzWFd6TDdROUlLNG4tVjFQck9sX1hBZF9VYWRFVXNaWDZVdEUzMG9qNllHM3RCUGFta1ZldGdIMVhCZ2NpUnd1RWxUNi1CY0hSZ215V1c1R1k?oc=5",
-     "title": "Do chat à compra: a jornada omnichannel dos pluriconsumidores"
-    }
-   ],
-   "ids": [
-    "6da974e1d52e"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Do chat à compra: a jornada omnichannel dos pluriconsumidores",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "da7b851bbdaa",
    "title": "Comércio agêntico: como se adaptar quando o cliente é a IA? - E-Commerce Brasil",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOM2JjTWE1Q19qSGdGbHEwUXNEQ0pFTVV5QTVxSmZtbVlIT3RIMkRxY1FhY2ZpbFg1QU9EdEQ2NGFraTVjN1JjNm1rVkEzWC01R1k5LVZlc3pkX0R5MmgyYXVKSjF3amZSd2NkdXlCTzhlTEZTUEdoZVg1NU03VWFaWG9mVGg2WkVWc08xMDVWYWRobnZ1MGtHamNEa0Y0WnlEdlE?oc=5",
@@ -6611,157 +6772,25 @@
    "ai": false
   },
   {
-   "id": "5844f9fd7a6d",
-   "title": "Galp anuncia lucros de 682 milhões e falhanço no acordo com a Moeve",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNanZXc3h3enlyd3AyODBDeUhGMHVtQVhTcnBWQ05ieGpIWEVRSjNickZScjlGZHJQNTBxdldUdkRWSjlUQUVsQkYxUHdOc1YwWmx0a2x1dzR6bEwzTktNYUZ0cTNqbHkzSThocDZ1LVMzVHc0YWZ6OTZ3M1FxQUM2UUt6WkRhMk1DVlBaTC02YWp1ZjdY?oc=5",
-   "published": "2026-10-26T08:00:46+00:00",
+   "id": "62772ff980d7",
+   "title": "Pesquisa Atlas: Pazolini tem 51,2% dos votos válidos ao governo do ES; Ferraço marca 48,8%",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSTNyN3pYNFVvZ2czdDdIUEc5U2JrVGh0T0x5ZjdOYk4xZzdEcXR3SHQ4aTMxUEJlMlVOYWhNN01Tc19XWk40dVdLV3dNSlBId3FfS3g3bGJRLU5CTFV4ZWR5dzlyRnlPUnpoMVlhNEluTzh2VFRGUHRERElwRUstajh5X2ZVVHZWT3NRa0ZDSHRGU2Zia2dIMXFMZHRJNzFRaUg5bVRmdFVJem5BdXl5YUZHb1ZhaXozcGVILTctSmZyWmtXb2xtTjVlTTMyOUlmNmZwaQ?oc=5",
+   "published": "2026-10-26T10:53:57+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Dinheiro Vivo",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNanZXc3h3enlyd3AyODBDeUhGMHVtQVhTcnBWQ05ieGpIWEVRSjNickZScjlGZHJQNTBxdldUdkRWSjlUQUVsQkYxUHdOc1YwWmx0a2x1dzR6bEwzTktNYUZ0cTNqbHkzSThocDZ1LVMzVHc0YWZ6OTZ3M1FxQUM2UUt6WkRhMk1DVlBaTC02YWp1ZjdY?oc=5",
-     "title": "Galp anuncia lucros de 682 milhões e falhanço no acordo com a Moeve"
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSTNyN3pYNFVvZ2czdDdIUEc5U2JrVGh0T0x5ZjdOYk4xZzdEcXR3SHQ4aTMxUEJlMlVOYWhNN01Tc19XWk40dVdLV3dNSlBId3FfS3g3bGJRLU5CTFV4ZWR5dzlyRnlPUnpoMVlhNEluTzh2VFRGUHRERElwRUstajh5X2ZVVHZWT3NRa0ZDSHRGU2Zia2dIMXFMZHRJNzFRaUg5bVRmdFVJem5BdXl5YUZHb1ZhaXozcGVILTctSmZyWmtXb2xtTjVlTTMyOUlmNmZwaQ?oc=5",
+     "title": "Pesquisa Atlas: Pazolini tem 51,2% dos votos válidos ao governo do ES; Ferraço marca 48,8%"
     }
    ],
    "ids": [
-    "5844f9fd7a6d"
+    "62772ff980d7"
    ],
    "snippet": "",
-   "prescore": 2.4,
-   "headline": "Galp anuncia lucros de 682 milhões e falhanço no acordo com a Moeve",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "69786a52cc05",
-   "title": "Lucro da Galp aumenta 68% para 682 milhões de euros no 3.º trimestre",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMm1yeHVHWmh3LWliczhXc1BUSnRLYkhIdjZ6V3Q2aGFBVTBVT3o4OVZDS3dJZTFTYkFGUV9wdHRHTzlScGlwY19pakd6ZHd1b1FsNkRQOVlWTE1YVWRIaXh2MFZjM1hrVE5DSU9LcE5pODNZT1dIRmpwTHNia2t2U0VpeWpmTHdFdHVzSmZZdGRWTDNuc0dQMEdGekJaRmdEdGfSAaIBQVVfeXFMTjJtcnh1R1pody1pYnM4V3NQVEp0S2JISHY2eld0NmhhQVUwVU96ODlWQ0t3SWUxU2JBRlFfcHR0R085UnBpcGNfaWpHemR3dW9RbDZEUDlZVkxNWFVkSGl4djBWYzNYa1ROQ0lPS3BOaTgzWU9XSEZqcExzYmtrdlNFaXlqZkx3RXR1c0pmWXRkVkwzbnNHUDBHRnpCWkZnRHRn?oc=5",
-   "published": "2026-10-26T07:40:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "SÁBADO",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMm1yeHVHWmh3LWliczhXc1BUSnRLYkhIdjZ6V3Q2aGFBVTBVT3o4OVZDS3dJZTFTYkFGUV9wdHRHTzlScGlwY19pakd6ZHd1b1FsNkRQOVlWTE1YVWRIaXh2MFZjM1hrVE5DSU9LcE5pODNZT1dIRmpwTHNia2t2U0VpeWpmTHdFdHVzSmZZdGRWTDNuc0dQMEdGekJaRmdEdGfSAaIBQVVfeXFMTjJtcnh1R1pody1pYnM4V3NQVEp0S2JISHY2eld0NmhhQVUwVU96ODlWQ0t3SWUxU2JBRlFfcHR0R085UnBpcGNfaWpHemR3dW9RbDZEUDlZVkxNWFVkSGl4djBWYzNYa1ROQ0lPS3BOaTgzWU9XSEZqcExzYmtrdlNFaXlqZkx3RXR1c0pmWXRkVkwzbnNHUDBHRnpCWkZnRHRn?oc=5",
-     "title": "Lucro da Galp aumenta 68% para 682 milhões de euros no 3.º trimestre"
-    }
-   ],
-   "ids": [
-    "69786a52cc05"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Lucro da Galp aumenta 68% para 682 milhões de euros no 3.º trimestre",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b7e59c4d9e2e",
-   "title": "Professora de 44 anos tem notebook novo travado com uma semana de uso e ganha R$ 4.500 da fabricante",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPX2xvbHFqS0JaNERUMFlMSWVnckE0UGRuanZoWTVQd2tjc1Rxd2VDMEhSUUcycUtWMlZtbXJNbHpwLW1KLVM3dGU4ckpjbFU3QW5OUzVINTI4c3d2SWNoXzVBYlVWUDl4U1RxSm1EQXNna2pCbWZYY01tY1lPRzJubnpHeUdYb1dRTExwNUo4QzRaWWNCTjcyXzZyR3BwS3Z0eFlzbnc5VzR6TG5lNTdYUndvNXRXVjhTQUhwRUxfMV9nSGVUbkVnMGFycGpVNXM3QXh6emtVeEl3dw?oc=5",
-   "published": "2026-10-26T04:45:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Midiamax",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPX2xvbHFqS0JaNERUMFlMSWVnckE0UGRuanZoWTVQd2tjc1Rxd2VDMEhSUUcycUtWMlZtbXJNbHpwLW1KLVM3dGU4ckpjbFU3QW5OUzVINTI4c3d2SWNoXzVBYlVWUDl4U1RxSm1EQXNna2pCbWZYY01tY1lPRzJubnpHeUdYb1dRTExwNUo4QzRaWWNCTjcyXzZyR3BwS3Z0eFlzbnc5VzR6TG5lNTdYUndvNXRXVjhTQUhwRUxfMV9nSGVUbkVnMGFycGpVNXM3QXh6emtVeEl3dw?oc=5",
-     "title": "Professora de 44 anos tem notebook novo travado com uma semana de uso e ganha R$ 4.500 da fabricante"
-    }
-   ],
-   "ids": [
-    "b7e59c4d9e2e"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Professora de 44 anos tem notebook novo travado com uma semana de uso e ganha R$ 4.500 da fabricante",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "4f043f654521",
-   "title": "Pequenos negócios brasileiros estão cada vez mais conectados",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZGtmTFF6aW81ci1qanJPWVFHVldNUS0zYXFJRWFJTmYyLUVfNzltR3JDMVZmTGpWQ2VVM003YVB4TmJleG1iMnhsT3p2TVVXazZyYVA0bUxyWWVuYUV6a3F1Rmd4eGQ4bUZyRmZxcWpyR21tejEzSUV6U1dMUm5pY3A3NmFmMGlTTFU0LXVhWXBOeUducHV2RGtLaGtkZnc0RjRNRFV0N2k3NmFCM3ItNU130gGyAUFVX3lxTE5ka2ZMUXppbzVyLWpqck9ZUUdWV01RLTNhcUlFYUlOZjItRV83OW1HckMxVmZMalZDZVUzTTdhUHhOYmV4bWIyeGxPenZNVVdrNnJhUDRtTHJZZW5hRXprcXVGZ3h4ZDhtRnJGZnFxanJHbW16MTNJRXpTV0xSbmljcDc2YWYwaVNMVTQtdWFZcE55R25wdXZEa0toa2RmdzRGNE1EVXQ3aTc2YUIzci01TXc?oc=5",
-   "published": "2026-10-25T18:41:48+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Bem Paraná",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZGtmTFF6aW81ci1qanJPWVFHVldNUS0zYXFJRWFJTmYyLUVfNzltR3JDMVZmTGpWQ2VVM003YVB4TmJleG1iMnhsT3p2TVVXazZyYVA0bUxyWWVuYUV6a3F1Rmd4eGQ4bUZyRmZxcWpyR21tejEzSUV6U1dMUm5pY3A3NmFmMGlTTFU0LXVhWXBOeUducHV2RGtLaGtkZnc0RjRNRFV0N2k3NmFCM3ItNU130gGyAUFVX3lxTE5ka2ZMUXppbzVyLWpqck9ZUUdWV01RLTNhcUlFYUlOZjItRV83OW1HckMxVmZMalZDZVUzTTdhUHhOYmV4bWIyeGxPenZNVVdrNnJhUDRtTHJZZW5hRXprcXVGZ3h4ZDhtRnJGZnFxanJHbW16MTNJRXpTV0xSbmljcDc2YWYwaVNMVTQtdWFZcE55R25wdXZEa0toa2RmdzRGNE1EVXQ3aTc2YUIzci01TXc?oc=5",
-     "title": "Pequenos negócios brasileiros estão cada vez mais conectados"
-    }
-   ],
-   "ids": [
-    "4f043f654521"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Pequenos negócios brasileiros estão cada vez mais conectados",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "119f8f6285b7",
-   "title": "O que avaliar em uma construtora na hora de comprar o primeiro imóvel",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTlhHRlBuMGhVcHJRLVFmT05EZ2tsMDUtRU8wN1V3Y0xCUlVKYUxLMms0S3BnTHZmQ2trN25DUDhqQzFSd1ZkQ29sT1VMSnUwc1RpYkZFdHdfN29aOURsYUZUb0NSNkR2NWZVU0ZXMDZaM0dTeHB5djVBTElxa0ktQThzSlA0Rmt2TDFROUJTQUVoTmtHR19sWDVnQkhlVmNHemw5NjVwUGFfRWwyaXh4V3VNN2huSEhHdXNEOWRUbXBOLTQ?oc=5",
-   "published": "2026-10-25T13:00:08+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "CNN Brasil",
-     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTlhHRlBuMGhVcHJRLVFmT05EZ2tsMDUtRU8wN1V3Y0xCUlVKYUxLMms0S3BnTHZmQ2trN25DUDhqQzFSd1ZkQ29sT1VMSnUwc1RpYkZFdHdfN29aOURsYUZUb0NSNkR2NWZVU0ZXMDZaM0dTeHB5djVBTElxa0ktQThzSlA0Rmt2TDFROUJTQUVoTmtHR19sWDVnQkhlVmNHemw5NjVwUGFfRWwyaXh4V3VNN2huSEhHdXNEOWRUbXBOLTQ?oc=5",
-     "title": "O que avaliar em uma construtora na hora de comprar o primeiro imóvel"
-    }
-   ],
-   "ids": [
-    "119f8f6285b7"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "O que avaliar em uma construtora na hora de comprar o primeiro imóvel",
-   "category": "empresas",
+   "prescore": 2.2,
+   "headline": "Pesquisa Atlas: Pazolini tem 51,2% dos votos válidos ao governo do ES; Ferraço marca 48,8%",
+   "category": "politica",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -6809,39 +6838,6 @@
    "ai": false
   },
   {
-   "id": "e50aa3123843",
-   "title": "Google muda política para usar dados do Gmail e Fotos em publicidade",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOX3hKc3N3V1gza2VQRXZBVTRjRTNkSUxETmNhRkYtZ3daLUdaVldQWERUVmFWSW04ZXYzRkNPbUVrSlVBMENobW5jX1h1a3Q3dTltQUxROHhFLTVpNlFuakd5Q1RvQWRNZU9NbVVMSmNPVWJneHhUVVc5VGEtN21FTk5XeVlIODJTaVZfeDRnaVhwMDBhcDNhVk56ZFlSQ1JNanpsM3VzRkFEODZqVDNtVkltYjR0N0hXV0dYRTV5Sm03QzV4aG9hNzNn?oc=5",
-   "published": "2026-10-26T09:45:41+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOX3hKc3N3V1gza2VQRXZBVTRjRTNkSUxETmNhRkYtZ3daLUdaVldQWERUVmFWSW04ZXYzRkNPbUVrSlVBMENobW5jX1h1a3Q3dTltQUxROHhFLTVpNlFuakd5Q1RvQWRNZU9NbVVMSmNPVWJneHhUVVc5VGEtN21FTk5XeVlIODJTaVZfeDRnaVhwMDBhcDNhVk56ZFlSQ1JNanpsM3VzRkFEODZqVDNtVkltYjR0N0hXV0dYRTV5Sm03QzV4aG9hNzNn?oc=5",
-     "title": "Google muda política para usar dados do Gmail e Fotos em publicidade"
-    }
-   ],
-   "ids": [
-    "e50aa3123843"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Google muda política para usar dados do Gmail e Fotos em publicidade",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "6f90e72b5ba7",
    "title": "Telefónica España takes a 10% stake in OGA and incorporates its AI into the B2B business.",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMFJleEVWVGtnRjBfaWRWRU5fbDlqdGZKbUtBblBvZDFoSm9IQkVGYXdTOWxMX0VYMjdaWG9tX2dYVUZjdGp1Rm84UVdPN0JWZ0lXOG1HT2pMaVI2NjVxMlpoN1QwMHM2WHVZZHd6TWlDTWZUb2ZNcGVHcWFKVXVNb2s5eW54OE1nVy0yTFljVzJZN3pTTjZXVkM0MkJ6MmVoZEtNWGFxUnhfNDYyeFpwY0dEWFR3dFd2Ui1fZElkX3NvUdIBxwFBVV95cUxOTDA5ZTVZeTFwRmx1bUJtN08wUFdrckJmcDFEVkthbWxRSmswZldPVS1Na2VXX0Q5VVFkRi1OdUIyOUhSUGFvYWxqRGtrQnNYTi1FVnRzMUFPaHhmQTVhRzFJSm1QN2NDM1N2MTVZNEhWNENEbDAzVDYzb0tSbHRGR0U2ZjQ1NFg0RGpvQWdES0tQSC1sSWhwVFBQMWx4c05fUVhzSFR1bXE5b2p6MXFfUHpIUnJqRmpuU3pVRnBuUmFEMFJFQzNB?oc=5",
@@ -6860,39 +6856,6 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Telefónica España takes a 10% stake in OGA and incorporates its AI into the B2B business.",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "2dabb50a06d8",
-   "title": "Como a Salesforce usa a IA para transformar o atendimento ao cliente",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa0N0TlNJZ2VibGlKZ0FHaVhLNFA4QnZpZU9LbHdPWEF6UXlXRGEtM2Mtem1wNE9jZGU0bmtxTEh0a3ZBZDhITEdyak9aLTZPdm91QjRCUFMyMi0zbGpKTEkxbzA4SUp2UDkxNzhJV2ZNNWR2RThZLUxPM2pqc254NEpDNWxHQUxSdXluUGFPQzRjQklYS0pCM000clpaSzB6cGoxdFhaRlcxMXRYWTVaOGNfYnLSAboBQVVfeXFMTUpMczBxdzFESmZfc2hwWWhhNGJUenRtNHhKUzVFSVJwNDRHdUozVXhJZXh3VlVjcGRvSHNZblR4d1pJNGlpWjJRcERpLXdqczFMRkZ6QlhGTHJSQ3F1ZVNXYmFBYXIydXhhaVdLV1BzNzdhSjJrUFI4WUNlakxPYkhLbEpFZlRYaWtCS1RJRzNZcDFLMy1RSzd0dXJWWTZpaF9ZdTZUbXFuU3Z4bVkyb3QzZE9kQnlvMnh3?oc=5",
-   "published": "2026-10-26T09:04:24+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa0N0TlNJZ2VibGlKZ0FHaVhLNFA4QnZpZU9LbHdPWEF6UXlXRGEtM2Mtem1wNE9jZGU0bmtxTEh0a3ZBZDhITEdyak9aLTZPdm91QjRCUFMyMi0zbGpKTEkxbzA4SUp2UDkxNzhJV2ZNNWR2RThZLUxPM2pqc254NEpDNWxHQUxSdXluUGFPQzRjQklYS0pCM000clpaSzB6cGoxdFhaRlcxMXRYWTVaOGNfYnLSAboBQVVfeXFMTUpMczBxdzFESmZfc2hwWWhhNGJUenRtNHhKUzVFSVJwNDRHdUozVXhJZXh3VlVjcGRvSHNZblR4d1pJNGlpWjJRcERpLXdqczFMRkZ6QlhGTHJSQ3F1ZVNXYmFBYXIydXhhaVdLV1BzNzdhSjJrUFI4WUNlakxPYkhLbEpFZlRYaWtCS1RJRzNZcDFLMy1RSzd0dXJWWTZpaF9ZdTZUbXFuU3Z4bVkyb3QzZE9kQnlvMnh3?oc=5",
-     "title": "Como a Salesforce usa a IA para transformar o atendimento ao cliente"
-    }
-   ],
-   "ids": [
-    "2dabb50a06d8"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Como a Salesforce usa a IA para transformar o atendimento ao cliente",
    "category": "tech",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7304,6 +7267,39 @@
    "ai": false
   },
   {
+   "id": "f9242e0f5541",
+   "title": "Bolsa Família: como garantir proteção sem desestimular a busca por trabalho?",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZnlXRzdZUXdBNWFOb2IydWRqa2RXaFlIaEFpUUxIeFZnaDF3OGN6Qi10V1Z1UWMwZEhXbGdyeHdYS3psWUFDY0F4UU9EaTVZU0Fad09OcXNzZk50UUkzZDVjNnZ6MGM4ZWJ3cGVtTFpyZkY0ek1Gb2RIYy1yYkxweHpVbzFYOU1ZSXVLWjYwTElibERmX2RuY3B2UlBZUm9hOTVYaWVURVVqWjB2ZGFmRzFqTjdIZFF5TlEtX1ppTFh0VzM2V2lTR1BnUlp3ck42THfSAdcBQVVfeXFMT2tKbUN0X1dFR29md0NNQmJHb0FaSGlIOVJjSDhmMkZMYm1wVUVlUlBLX2RyaEZlWnpkMUxteGo4anNPWnJkTDFVSlV6ejR5RG50cnA2dURuUkk1UHBFbHp4VGdqejhmb3dlSGM5TXJPb0VIZ2JKN3dEd083X1hXeUNKZW9qNXprR0dKbEN5MDJTaXp1dm5Ic0kxbGNad2xISnc1YjZUMy1FdENwQWlVQWVqWVVCVDhvbVBiYnZzMG8yOFZRTzhUV09QZEc1WldWaWVtVFZiQjQ?oc=5",
+   "published": "2026-10-25T18:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZnlXRzdZUXdBNWFOb2IydWRqa2RXaFlIaEFpUUxIeFZnaDF3OGN6Qi10V1Z1UWMwZEhXbGdyeHdYS3psWUFDY0F4UU9EaTVZU0Fad09OcXNzZk50UUkzZDVjNnZ6MGM4ZWJ3cGVtTFpyZkY0ek1Gb2RIYy1yYkxweHpVbzFYOU1ZSXVLWjYwTElibERmX2RuY3B2UlBZUm9hOTVYaWVURVVqWjB2ZGFmRzFqTjdIZFF5TlEtX1ppTFh0VzM2V2lTR1BnUlp3ck42THfSAdcBQVVfeXFMT2tKbUN0X1dFR29md0NNQmJHb0FaSGlIOVJjSDhmMkZMYm1wVUVlUlBLX2RyaEZlWnpkMUxteGo4anNPWnJkTDFVSlV6ejR5RG50cnA2dURuUkk1UHBFbHp4VGdqejhmb3dlSGM5TXJPb0VIZ2JKN3dEd083X1hXeUNKZW9qNXprR0dKbEN5MDJTaXp1dm5Ic0kxbGNad2xISnc1YjZUMy1FdENwQWlVQWVqWVVCVDhvbVBiYnZzMG8yOFZRTzhUV09QZEc1WldWaWVtVFZiQjQ?oc=5",
+     "title": "Bolsa Família: como garantir proteção sem desestimular a busca por trabalho?"
+    }
+   ],
+   "ids": [
+    "f9242e0f5541"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Bolsa Família: como garantir proteção sem desestimular a busca por trabalho?",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "811728cc8261",
    "title": "OPA da Oncoclínicas é suspensa por liminar a pedido do Centaurus",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcUlwXzJSMU5sQVFSVFc1YmFETkp3QVRNOC1LcjF6dTZic1NmSWl5Z3V1dDF1UmpwTXBtcUdCdzlkeTM5UGlWMkxhaWl0ZVNOLW1weFgtYU95T3V0d3NZZ3BlcTAtcFI4TTZtSU80VlMtdVFQX0RhVi1jZkExemx2bkFQaWtWVWNYcHRubTA0TVZUeTN0T2I5NDlGZEttbmxjcFNDTlVua3JtUW1t0gHAAUFVX3lxTE16RzRHSWlmZ1JwS0Q1XzJaZXhnUkNPTm1qV3NUMVd1ZHlOUG5lQTR1aFd4Zk1JSTZBMVJJZG5fRV9jWExHVXBsVjJiSmdfX0NDZTNFRkxPalRDbGVPVVJWajlSaFhybTZRVjNrS0hrTEVqWVVsZ0dLa2pPUldYN1d3NTVTbTc3bHJYVnBZdVk1UWZLX2RsdnhRWTl5NHlvTG1idkgtMUxnZkYxQW5td0M1VFBzR1VVcldCMUx6UURtOA?oc=5",
@@ -7537,40 +7533,6 @@
    "ai": false
   },
   {
-   "id": "d0e425eb0e09",
-   "title": "Belchior 80 anos: como cantor 'sumiu' da vida pública em vida itinerante no RS em seus últimos anos",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTzlEQ1NhRUZUaC1zeUpzWjl0QTQwUFczSDVsczNKT2V2NzJ6NkJDX292bXlZMTdIWFZ4ZjBnTXlGZWI5TjJYLXMzMVNPQ0w5NVpuZ2tWUzRqZUZyNmlvZ3lnRE1VbkVyN2tWYVoyd1VlcnVfNElYbXY0eThLLU12R1FHVXluMm9oTWM2QlI3Z9IBngFBVV95cUxOejVlc296VHJFRUMzbWhlWGt3ZlZ3bEM5dlRhRUk2VV9WeVBrZ0JFWFJTZWVobEpHUzB6LXRIVXVoLXVsbkJMdEg4UThwbmdTX2ZsQjNjLUNUb01KVFhyQ1Z0anZaWXYyNWRrX3pEYVpHUkd1WHo4UFhJTkxsbE10VDhBQjVoWFpBelFhYzJETDE2ODhlc1BwYndlUndQUQ?oc=5",
-   "published": "2026-10-26T04:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTzlEQ1NhRUZUaC1zeUpzWjl0QTQwUFczSDVsczNKT2V2NzJ6NkJDX292bXlZMTdIWFZ4ZjBnTXlGZWI5TjJYLXMzMVNPQ0w5NVpuZ2tWUzRqZUZyNmlvZ3lnRE1VbkVyN2tWYVoyd1VlcnVfNElYbXY0eThLLU12R1FHVXluMm9oTWM2QlI3Z9IBngFBVV95cUxOejVlc296VHJFRUMzbWhlWGt3ZlZ3bEM5dlRhRUk2VV9WeVBrZ0JFWFJTZWVobEpHUzB6LXRIVXVoLXVsbkJMdEg4UThwbmdTX2ZsQjNjLUNUb01KVFhyQ1Z0anZaWXYyNWRrX3pEYVpHUkd1WHo4UFhJTkxsbE10VDhBQjVoWFpBelFhYzJETDE2ODhlc1BwYndlUndQUQ?oc=5",
-     "title": "Belchior 80 anos: como cantor 'sumiu' da vida pública em vida itinerante no RS em seus últimos anos"
-    }
-   ],
-   "ids": [
-    "d0e425eb0e09",
-    "d0e425eb0e09"
-   ],
-   "snippet": "",
-   "prescore": 1.8,
-   "headline": "Belchior 80 anos: como cantor 'sumiu' da vida pública em vida itinerante no RS em seus últimos anos",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "8a0d8670611b",
    "title": "Flávio chama resultado do segundo turno de 'sacanagem', diz ser 'impossível' reconhecer derrota e que tentará anulação",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT1dKdV9yeml1MWhPeFVwMHBSMlN0RE51V0M0eno4b2ZOaGY5STg4YmluM0lHNDBzN2c1a1E2V1pkaHBfaVZYNVl0ZFRNRzdTTTZ2T19SbkxpS0V4RHBMU0xSRFZZbmhxVGxHTndtTkIwam5nNGRjZURFVXlPTHFQU3ZsQ01EZ2lRU0JWNmF6TWRfZUtENVBMczVTRkl6U1hl0gGvAUFVX3lxTE9KZDZsS1pERzZkaVhCZVlOLTM0cUotM3kzNmxEYmpOU281c1ZiaE5FZzRkUmc0aG10dU1WVDlCMGtYcnZkeDdQTDNmdlpzdW55TkZqOFdZYTRXb09MRHRTZkxxeEhIc081OWFjRzdWZzhJc3UxMGdTY1ZLWkpfNG5abi1tdnhFZExUeTA1aGlsQ21qb2Y1RWJBQ3RuOHgtT2N1NzlEdkY2VnFBZkZhTnM?oc=5",
@@ -7671,6 +7633,44 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "7bf5026b46b6",
+   "title": "Mega-Sena acumulada: prêmio estimado de R$ 300 milhões pode ser o 2º maior da história dos sorteios regulares",
+   "link": "https://g1.globo.com/loterias/mega-sena/noticia/2026/10/25/mega-sena-acumulada-premio-estimado-de-r-300-milhoes-maiores-historia-sorteios-regulares.ghtml",
+   "published": "2026-10-25T12:34:15+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/loterias/mega-sena/noticia/2026/10/25/mega-sena-acumulada-premio-estimado-de-r-300-milhoes-maiores-historia-sorteios-regulares.ghtml",
+     "title": "Mega-Sena acumulada: prêmio estimado de R$ 300 milhões pode ser o 2º maior da história dos sorteios regulares"
+    }
+   ],
+   "ids": [
+    "7bf5026b46b6"
+   ],
+   "snippet": "Mega-Sena, concurso 3074: confira os números sorteados O prêmio da Mega-Sena acumulou em R$ 300 milhões após nenhuma aposta acertar as seis dezenas do concurso 3074, realizado neste sábado (24). O próximo sorteio será nesta segunda-feira (26). 📱Favorite o g1 no Google e acompanhe as principais notícias do dia Clique aqui para seguir o canal de Loterias do g1 no WhatsApp O valor estimado para o concurso 3075 pode se tornar o segundo maior prêmio da história da Mega-Sena em sorteios regulares, desconsiderando a Mega da Virada e outros concursos especiais, segundo o histórico de premiações da Cai",
+   "prescore": 1.8,
+   "headline": "Mega-Sena acumulada em R$ 300 milhões",
+   "category": "outros",
+   "importance": 1,
+   "importance_reason": "Loteria, sem relevância.",
+   "summary": "O concurso 3074 acumulou. O prêmio estimado de R$ 300 milhões para o concurso 3075 pode ser o segundo maior em sorteios regulares.",
+   "involves": "Mega-Sena.",
+   "interpretation": "Notícia de serviço.",
+   "impact": "Nenhum.",
+   "sentiment": "neutro",
+   "entities": [
+    "Mega-Sena"
+   ],
+   "tags": [
+    "Mega-Sena",
+    "loteria"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
   }
  ],
  "deals": [
@@ -7697,24 +7697,14 @@
      "title": "Itaú compra startup brasileira de inteligência artificial por R$ 2,9 bilhões"
     },
     {
-     "source": "Times Brasil | CNBC",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1RNeFFQSEp2V2RVbFFhMEh4V2VFRE9obTdKaUx3NVZGZ0dIdE9lT1hCUmtlck9EbEZ4TV8yUGc3eU0zWDdXMy1nM3ZyRHI2b3NzQnBPU1dZbjVFRFpjNk16cG5zOVRpRUNiRTdINGFBRGtSY2QzaG1KeWJON1pEWG5rcEIwOUdnYmdRZm1UYnh2dmlGRGF6Y0VISFZUQm1DUTJYa0FJbFM1V0p0QnpWcnZ0WEVwWElUSjRMVQ?oc=5",
-     "title": "Itaú compra a totalidade da NeoSpace, startup de inteligência artificial, por R$ 2,9 bilhões"
-    },
-    {
-     "source": "ADVFN",
-     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVmRZRDJ3b3dvWVpGU1hCS2wzQTZ2RjBjbDkyU2NjbDNOTklYS3V1WnhCQkV6cWs5YjkxYlB4eldYQkFoYmJyMjU5a3ZZVWt5M3VySDE3dGRKcG1tVHk4REtCY1gzMUl4RjBzTmw2dUVId1ZSR2V2a0ZJczNJcnVkSGZabVE5VF8wQkZ4Tk0tSnFQUXFWSVdnTEpIUDM0TzRPa3pxeVpJRWxzYmlXTnRlbTNhd19BcWJ0MHZvTVVybUJkOVpUcGZJ?oc=5",
-     "title": "Itaú compra NeoSpace por R$ 2,925 bilhões para acelerar estratégia de inteligência artificial"
-    },
-    {
      "source": "Brasil 247",
      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2RINDh5MWowOUllWUg3ekJaNFFoMV9ZZWxWdTIwWG0zVHF0YnNMRU5wS2RZVEhuTmpDYmhzUmw3Tm1aODFnR0JOQUlQZ2VVdFBDbzlRUDVLYU5YYklSd3pWYnZhZ1piWXRZbUVOa2dCaS1NMWNpeDhaTXdzc2lSVTRZRzBTZUF3dGU0bXp2WnNIMUJseks2WEVoTEF1anFsNlo2OUNmenFDOWdKY0pDeQ?oc=5",
      "title": "Itaú compra startup brasileira de inteligência artificial por R$ 2,92 bilhões"
     },
     {
-     "source": "BPMoney",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcHhmLVNlQ0FCLUk0bmtzTDZEMWRXVTFUUzdHdTVqT2dGUUtyWjdPZHFZUFBKdnZqbXJUWFZocTFYRDRockpsNVdkQ3J0SXl6QTBrUGl1cndyb09RZmNvTGFpYkYyRmdOalE4akI3S25rUTRvc20tcmRObXJ4cXF4RzR3?oc=5",
-     "title": "Itaú compra startup de IA NeoSpace por R$ 2,9 bilhões e amplia aposta em inteligência artificial"
+     "source": "Times Brasil | CNBC",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1RNeFFQSEp2V2RVbFFhMEh4V2VFRE9obTdKaUx3NVZGZ0dIdE9lT1hCUmtlck9EbEZ4TV8yUGc3eU0zWDdXMy1nM3ZyRHI2b3NzQnBPU1dZbjVFRFpjNk16cG5zOVRpRUNiRTdINGFBRGtSY2QzaG1KeWJON1pEWG5rcEIwOUdnYmdRZm1UYnh2dmlGRGF6Y0VISFZUQm1DUTJYa0FJbFM1V0p0QnpWcnZ0WEVwWElUSjRMVQ?oc=5",
+     "title": "Itaú compra a totalidade da NeoSpace, startup de inteligência artificial, por R$ 2,9 bilhões"
     },
     {
      "source": "Exame",
@@ -7731,10 +7721,8 @@
     "0f1fb556d5c5",
     "65cfd489acae",
     "33a8c8b5996e",
-    "0766e5394037",
-    "ad0beec10021",
     "26848e1a2f9c",
-    "ae2911428b1f",
+    "0766e5394037",
     "9eaf4f2e8f93",
     "6d4d19eeb82c"
    ],
@@ -7837,14 +7825,9 @@
      "title": "Itaú compra startup de IA NeoSpace por R$ 2,9 bilhões e reforça transformação digital"
     },
     {
-     "source": "Forbes Brasil",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaVI2d3BpblZkM0luTHFPSFEtbXMwQ2xoSmZNbXhIbEZLdy1jOHl2eWxRcmN3N1BWOC1UdTAya25xSVlTSjNtamE5Unh5WG0zVGQxRlB6ZktiMkZiMS1MaWZ0WTRic2dKR0NMWFdHT1FMYWt5aG5rUTk4Sk5RSjJoRDhOQU9IbUFvUTcxa2swT0VaZVJCa3c?oc=5",
-     "title": "Itaú Compra Startup de IA NeoSpace por R$2,925 Bi"
-    },
-    {
-     "source": "Terra",
-     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZy1TbVFNOEduSjVZZGR1SXRwYjNUWWFPbFdsdDhaLS00M0FzOXllZzcyWEtMdEtsQWVDR0NPMGJsdUMtclppd3FObVRDMXR3MGVNYl8yNzItck5VWkVtNmlXTHhkWUZJOEtOd1RNOVhNdlBwRmhHdmJydmJvZmszVjFmeHBTd3Q2ZWJTVG9FMGFWUnkxY3I3Y0dLN0drTFpIX1M3cXd2RjV4SVctNk1kRWtiTXFDcW5HZE55MlM5c0gxOUtPeWNEclBRYnZHYWQwUzZMaF9SUHpnTUpyMEwzbDB3?oc=5",
-     "title": "Itaú Unibanco anuncia compra da startup IA NeoSpace por R$ 2,9 bilhões"
+     "source": "Folha PE",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb0U2LWFGMHNZTk1DTUp1dmJqNDgxSF9INnJrYmFkUnhiQlZ2VEpobFV0Z1JBcjVhaVpha29DRS1WTHp4M25GWU5iSDJ2dUczVmtJMk9DSnhCem9KMm8tWF95M1ZnaFBTcmZ0cFI5UVc0eFk1aWlTNEd0azZjcVBnR3RQZXBkVTMxUE5zTHJSQWlmbjZFcTdPOUZaUUpLcTlOc0YyaFBKWUpwMHdWSTB6Tmln0gGyAUFVX3lxTE9vRTYtYUYwc1lOTUNNSnV2Ymo0ODFIX0g2cmtiYWRSeGJCVnZUSmhsVXRnUkFyNWFpWmFrb0NFLVZMengzbkZZTmJIMnZ1RzNWa0kyT0NKeEJ6b0oyby1YX3kzVmdoUFNyZnRwUjlRVzR4WTVpaVM0R3RrNmNxUGdHdFBlcGRVMzFQTnNMclJBaWZuNkVxN085RlpRSktxOU5zRjJoUEpZSnAwd1ZJMHpOaWc?oc=5",
+     "title": "Itaú Unibanco anuncia compra da startup de ia NeoSpace por R$ 2,925 bilhões"
     },
     {
      "source": "Estadão",
@@ -7856,8 +7839,7 @@
     "6cd79ae9a2f2",
     "d1466794d61b",
     "67f7d9a159f6",
-    "5d686fb7cccd",
-    "75abdd31a429",
+    "8b3c5c518ea7",
     "b9eb00242ae2",
     "67f7d9a159f6"
    ],
@@ -7940,6 +7922,51 @@
    "importance": 5,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5e475b6e5712",
+   "title": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e revela prejuízo bilionário",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oclpaOFBPNnJpa2p4OWNfTmRsTVNvYWtkcTEzb0xMMjA1NFozYlNYRkN1MEhjMjNFRV9Ca2VteFNDX1gwVkg2NFppWjlWTmUtRVFRaFc0SkNCaUVEVU9YZF9fbG1ZdFFUQmJldl9HeUhJOVJDcG54UEQ0dlRuRTDSAY4BQVVfeXFMTk1YRWNjR3ZzNER4S1RXMEtMUmNfbFJKU1d3cjVrS2dKODZJLXQ3T2IwcTk2SU5fV3I4azlVSnlfR1NES2dBd0Z3NnZtRndJY3l1ZmJNTXRwSGlVUnJrQlczb1lDQ29VNkM4WUwtZnZpVDB2RDdrSUZPTHdnME1PTW1KSUtBMVdlMGMzYkxQdw?oc=5",
+   "published": "2026-10-26T13:43:40+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "G1",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oclpaOFBPNnJpa2p4OWNfTmRsTVNvYWtkcTEzb0xMMjA1NFozYlNYRkN1MEhjMjNFRV9Ca2VteFNDX1gwVkg2NFppWjlWTmUtRVFRaFc0SkNCaUVEVU9YZF9fbG1ZdFFUQmJldl9HeUhJOVJDcG54UEQ0dlRuRTDSAY4BQVVfeXFMTk1YRWNjR3ZzNER4S1RXMEtMUmNfbFJKU1d3cjVrS2dKODZJLXQ3T2IwcTk2SU5fV3I4azlVSnlfR1NES2dBd0Z3NnZtRndJY3l1ZmJNTXRwSGlVUnJrQlczb1lDQ29VNkM4WUwtZnZpVDB2RDdrSUZPTHdnME1PTW1KSUtBMVdlMGMzYkxQdw?oc=5",
+     "title": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e revela prejuízo bilionário"
+    },
+    {
+     "source": "ConvergenciaDigital",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNblVGUXpLVHdsWEpYQUlzdkdtS3VFV2tSNTlfUVFEQThmRC1pMF91OXlITnpJeHZ6R28zQk5wdnBxSzBTQ2lGc1RJdFM2Ukx3VkJLR2tOMnNoUVVTcDV6VHhoUWhlWWgzM0RFZDhBNE5weEgzUk9hSEtuUEJFZlVzamxpTDUtVExZSHFjVWFsZ0ZxVFpEel8yWHpEOTh2dFZWSTJ4d19GekZwaDNTM2NLd1k5Z1ZyNWlGTFpjaDZFdXkta2d3cTMtQlc0dC13czhlZHQ0SEtNWmZRQVFINGdwMVd3?oc=5",
+     "title": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e acende sinal vermelho para prejuízo bilionário"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/tecnologia/noticia/2026/10/26/anthropic-ipo-eua.ghtml",
+     "title": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e revela prejuízo bilionário"
+    }
+   ],
+   "ids": [
+    "5e475b6e5712",
+    "a341d118c7c5",
+    "c0620d487aea"
+   ],
+   "snippet": "Anthropic é a criadora do assistente de IA Claude Matteo Della Torre/NurPhoto via Getty Images/BBC A Anthropic, uma das principais empresas de inteligência artificial do mundo e desenvolvedora do Claude, divulgou nesta segunda-feira (26) seus planos de abrir capital na bolsa dos Estados Unidos. A operação pode se tornar uma das maiores do mercado e servirá como teste para avaliar se o crescimento acelerado do setor de IA pode se traduzir em lucros. 🗒️Tem alguma sugestão de reportagem? Mande para o g1 A companhia, que havia apresentado um pedido confidencial em junho, tornou públicos os documen",
+   "prescore": 8.4,
+   "headline": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e revela prejuízo bilionário",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Anthropic é a criadora do assistente de IA Claude Matteo Della Torre/NurPhoto via Getty Images/BBC A Anthropic, uma das principais empresas de inteligência artificial do mundo e desenvolvedora do Claude, divulgou nesta segunda-feira (26) seus planos de abrir capital na bolsa dos Estados Unidos. A operação pode se tornar uma das maiores do mercado e servirá como teste para avaliar se o crescimento ",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8157,34 +8184,28 @@
    "ai": false
   },
   {
-   "id": "5e475b6e5712",
-   "title": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e revela prejuízo bilionário",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oclpaOFBPNnJpa2p4OWNfTmRsTVNvYWtkcTEzb0xMMjA1NFozYlNYRkN1MEhjMjNFRV9Ca2VteFNDX1gwVkg2NFppWjlWTmUtRVFRaFc0SkNCaUVEVU9YZF9fbG1ZdFFUQmJldl9HeUhJOVJDcG54UEQ0dlRuRTDSAY4BQVVfeXFMTk1YRWNjR3ZzNER4S1RXMEtMUmNfbFJKU1d3cjVrS2dKODZJLXQ3T2IwcTk2SU5fV3I4azlVSnlfR1NES2dBd0Z3NnZtRndJY3l1ZmJNTXRwSGlVUnJrQlczb1lDQ29VNkM4WUwtZnZpVDB2RDdrSUZPTHdnME1PTW1KSUtBMVdlMGMzYkxQdw?oc=5",
-   "published": "2026-10-26T13:43:40+00:00",
+   "id": "b838defc303d",
+   "title": "O que é circuit breaker? Entenda o mecanismo que suspende negociações quando a bolsa despenca",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/o-que-e-circuit-breaker-entenda-o-mecanismo-que-suspende-negociacoes-quando-a-bolsa-despenca.ghtml",
+   "published": "2026-10-26T13:12:39+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "G1",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oclpaOFBPNnJpa2p4OWNfTmRsTVNvYWtkcTEzb0xMMjA1NFozYlNYRkN1MEhjMjNFRV9Ca2VteFNDX1gwVkg2NFppWjlWTmUtRVFRaFc0SkNCaUVEVU9YZF9fbG1ZdFFUQmJldl9HeUhJOVJDcG54UEQ0dlRuRTDSAY4BQVVfeXFMTk1YRWNjR3ZzNER4S1RXMEtMUmNfbFJKU1d3cjVrS2dKODZJLXQ3T2IwcTk2SU5fV3I4azlVSnlfR1NES2dBd0Z3NnZtRndJY3l1ZmJNTXRwSGlVUnJrQlczb1lDQ29VNkM4WUwtZnZpVDB2RDdrSUZPTHdnME1PTW1KSUtBMVdlMGMzYkxQdw?oc=5",
-     "title": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e revela prejuízo bilionário"
-    },
-    {
-     "source": "ConvergenciaDigital",
-     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNblVGUXpLVHdsWEpYQUlzdkdtS3VFV2tSNTlfUVFEQThmRC1pMF91OXlITnpJeHZ6R28zQk5wdnBxSzBTQ2lGc1RJdFM2Ukx3VkJLR2tOMnNoUVVTcDV6VHhoUWhlWWgzM0RFZDhBNE5weEgzUk9hSEtuUEJFZlVzamxpTDUtVExZSHFjVWFsZ0ZxVFpEel8yWHpEOTh2dFZWSTJ4d19GekZwaDNTM2NLd1k5Z1ZyNWlGTFpjaDZFdXkta2d3cTMtQlc0dC13czhlZHQ0SEtNWmZRQVFINGdwMVd3?oc=5",
-     "title": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e acende sinal vermelho para prejuízo bilionário"
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/o-que-e-circuit-breaker-entenda-o-mecanismo-que-suspende-negociacoes-quando-a-bolsa-despenca.ghtml",
+     "title": "O que é circuit breaker? Entenda o mecanismo que suspende negociações quando a bolsa despenca"
     }
    ],
    "ids": [
-    "5e475b6e5712",
-    "a341d118c7c5"
+    "b838defc303d"
    ],
-   "snippet": "",
-   "prescore": 6.9,
-   "headline": "Anthropic, dona do Claude, divulga pedido de IPO nos EUA e revela prejuízo bilionário",
-   "category": "mna",
+   "snippet": "Circuit breaker: entenda o que é a suspensão das negociações quando a bolsa despenca A reeleição do presidente Luiz Inácio Lula da Silva (PT) provocou forte turbulência no mercado financeiro nesta segunda-feira (26), com disparada do dólar e queda acentuada do Ibovespa, principal índice da bolsa brasileira. Diante do movimento, a B3 acionou o \"circuit breaker\", mecanismo que interrompe temporariamente as negociações em momentos de forte queda do mercado. A suspensão ocorreu logo no início do pregão e teve duração prevista de 30 minutos. 🗒️Tem alguma sugestão de reportagem? Mande para o g1 Segu",
+   "prescore": 6.8,
+   "headline": "O que é circuit breaker? Entenda o mecanismo que suspende negociações quando a bolsa despenca",
+   "category": "mercados",
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
+   "summary": "Circuit breaker: entenda o que é a suspensão das negociações quando a bolsa despenca A reeleição do presidente Luiz Inácio Lula da Silva (PT) provocou forte turbulência no mercado financeiro nesta segunda-feira (26), com disparada do dólar e queda acentuada do Ibovespa, principal índice da bolsa brasileira. Diante do movimento, a B3 acionou o \"circuit breaker\", mecanismo que interrompe temporariam",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8218,6 +8239,45 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "247e3076519b",
+   "title": "Ibovespa cai mais 17% após 'circuit breaker' e dólar sobe 10%; ações caem até 60%",
+   "link": "https://exame.com/invest/mercados/ibovespa-cai-mais-17-apos-circuit-breaker-e-dolar-sobe-10-acoes-caem-ate-60/",
+   "published": "2026-10-26T11:28:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Exame",
+     "link": "https://exame.com/invest/mercados/ibovespa-cai-mais-17-apos-circuit-breaker-e-dolar-sobe-10-acoes-caem-ate-60/",
+     "title": "Ibovespa cai mais 17% após 'circuit breaker' e dólar sobe 10%; ações caem até 60%"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/dolar-ibovespa.ghtml",
+     "title": "Ibovespa cai mais de 13% após 'circuit breaker' e dólar fecha a R$ 5,40"
+    }
+   ],
+   "ids": [
+    "247e3076519b",
+    "dd296e3f2eba"
+   ],
+   "snippet": "O tombo da bolsa é disseminado, com dez ações do Ibovespa registrando perdas superiores a 40%",
+   "prescore": 6.5,
+   "headline": "Ibovespa cai mais 17% após 'circuit breaker' e dólar sobe 10%; ações caem até 60%",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O tombo da bolsa é disseminado, com dez ações do Ibovespa registrando perdas superiores a 40%",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8317,6 +8377,51 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Ao anunciar a compra de 100% da NeoSpace na manhã desta segunda-feira, 26 de outubro, em um negócio de R$ 2,92 bilhões, o Itaú estabeleceu um novo marco no relacionamento com a startup de grandes modelos fundacionais de inteligência artificial (IA) na qual investia desde o início de 2025. A aquisição de 100% da companhia […] O post Milton Maluhy Filho explica por que o Itaú desembolsou R$ 2,92 bil",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4c8aa995ae48",
+   "title": "Meta (META) anuncia oferta de ações de US$ 35 bilhões para financiar investimentos em IA",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQekNFYTVuS05sWi1WdlJ5WHlwclg5Wi15eVRfWmVnT1lyX0dqbW1ua2tTakthRHJyQVB4QWYtaVQyTGh0SUZGNVA3dm94aTROdDN3Y3E4RGVWeGx0eWdldk1yOXZlaVd0S1k0LXVjSVNYSk5sQW5TNHdGd2RKRVpDQk5GZk50dnZlaGtkb0xlQ2VjQ0lpYUtfaV9fT19qSTY3a1VqQUxB?oc=5",
+   "published": "2026-10-26T13:58:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "ADVFN",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQekNFYTVuS05sWi1WdlJ5WHlwclg5Wi15eVRfWmVnT1lyX0dqbW1ua2tTakthRHJyQVB4QWYtaVQyTGh0SUZGNVA3dm94aTROdDN3Y3E4RGVWeGx0eWdldk1yOXZlaVd0S1k0LXVjSVNYSk5sQW5TNHdGd2RKRVpDQk5GZk50dnZlaGtkb0xlQ2VjQ0lpYUtfaV9fT19qSTY3a1VqQUxB?oc=5",
+     "title": "Meta (META) anuncia oferta de ações de US$ 35 bilhões para financiar investimentos em IA"
+    },
+    {
+     "source": "melhorinvestimento.net",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSlR3eVNQMEtmRG9PVnZWVE9LTlhYZkdycFByNGgtNFdJU3dKQS1mTzhKYUhjYU56V2pfR1RKR1FUNnljbi1ILV8yYm12Nlo2MHYtejdMTHVWTWhNWW9TRkJLWGladVVkREV2VF9tRWQ3Q21MSnVheTJnVFg0MFRJcVIwTQ?oc=5",
+     "title": "Meta lança oferta de ações de US$ 35 bilhões para financiar expansão em IA"
+    },
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/meta-lanca-oferta-de-acoes-de-us-35-bilhoes-para-financiar-expansao-da-ia.shtml",
+     "title": "Meta lança oferta de ações de US$ 35 bilhões para financiar expansão da IA"
+    }
+   ],
+   "ids": [
+    "4c8aa995ae48",
+    "de1b85838d22",
+    "2503ac89b427"
+   ],
+   "snippet": "A Meta lançou nesta segunda-feira (26) uma oferta pública de cerca de US$ 35 bilhões (R$ 174,2 bilhões) em ações ordinárias e ações preferenciais conversíveis, à medida que a controladora do Facebook busca financiar sua expansão na área de IA. Leia mais (10/26/2026 - 10h58)",
+   "prescore": 6.4,
+   "headline": "Meta (META) anuncia oferta de ações de US$ 35 bilhões para financiar investimentos em IA",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Meta lançou nesta segunda-feira (26) uma oferta pública de cerca de US$ 35 bilhões (R$ 174,2 bilhões) em ações ordinárias e ações preferenciais conversíveis, à medida que a controladora do Facebook busca financiar sua expansão na área de IA. Leia mais (10/26/2026 - 10h58)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8637,45 +8742,6 @@
    "ai": false
   },
   {
-   "id": "75581967d7ae",
-   "title": "Varejo, saúde e construção lideram tombo do Ibovespa pós-eleições",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZk80alNjVnQ2ZGtsc2g0THZLV1pPelRyUkpSejc0VC1yVmNBZ0F3UGdQOHVpYklnWWxHNlhpdGNGUmx4T2dVZTZMQWV0dUswdFZ1S0l2bXB6R1hvMEN6NGwxZkIzbVpuUXM4TmstRF9kMy02UVg5RUtJNVYyb3pvakZPRGhuOXlLU0ZkZk85THcyb1lzTnhpRzlxSHpLVmJSRmZuNUdOTE9Fc0pTMnJvbWw5eUdoT2t3VDZIdjFGVWdhd3c3N1B0blFhcXV4ZDY3NGttbUtUckV2TWM?oc=5",
-   "published": "2026-10-26T16:36:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha de S.Paulo",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZk80alNjVnQ2ZGtsc2g0THZLV1pPelRyUkpSejc0VC1yVmNBZ0F3UGdQOHVpYklnWWxHNlhpdGNGUmx4T2dVZTZMQWV0dUswdFZ1S0l2bXB6R1hvMEN6NGwxZkIzbVpuUXM4TmstRF9kMy02UVg5RUtJNVYyb3pvakZPRGhuOXlLU0ZkZk85THcyb1lzTnhpRzlxSHpLVmJSRmZuNUdOTE9Fc0pTMnJvbWw5eUdoT2t3VDZIdjFGVWdhd3c3N1B0blFhcXV4ZDY3NGttbUtUckV2TWM?oc=5",
-     "title": "Varejo, saúde e construção lideram tombo do Ibovespa pós-eleições"
-    },
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/acoes-de-empresas-sensiveis-aos-juros-como-varejistas-chegam-a-cair-55-apos-vitoria-de-lula.shtml",
-     "title": "Varejo, saúde e construção lideram tombo do Ibovespa pós-eleições"
-    }
-   ],
-   "ids": [
-    "75581967d7ae",
-    "e84d799322f4"
-   ],
-   "snippet": "Uma série de empresas mais sensíveis aos juros , como varejistas , companhias de saúde e incorporadoras imobiliárias, registrou as maiores perdas do Ibovespa nesta segunda-feira (26). Leia mais (10/26/2026 - 13h36)",
-   "prescore": 5.9,
-   "headline": "Varejo, saúde e construção lideram tombo do Ibovespa pós-eleições",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Uma série de empresas mais sensíveis aos juros , como varejistas , companhias de saúde e incorporadoras imobiliárias, registrou as maiores perdas do Ibovespa nesta segunda-feira (26). Leia mais (10/26/2026 - 13h36)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "3ef16a8b466c",
    "title": "AI Trade Bounces Back as Anthropic IPO Eases Funding Jitters",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/asian-chip-stocks-rise-as-anthropic-ipo-filing-rekindles-ai-bets",
@@ -8709,39 +8775,6 @@
    "ai": false
   },
   {
-   "id": "6470cacdabfe",
-   "title": "Dave Lee: Anthropic Brings ‘Anti-Sell’ Strategy to Its IPO",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-26/dave-lee-anthropic-brings-anti-sell-strategy-to-ipo-video",
-   "published": "2026-10-26T22:26:18+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-10-26/dave-lee-anthropic-brings-anti-sell-strategy-to-ipo-video",
-     "title": "Dave Lee: Anthropic Brings ‘Anti-Sell’ Strategy to Its IPO"
-    }
-   ],
-   "ids": [
-    "6470cacdabfe"
-   ],
-   "snippet": "Dave Lee, Bloomberg Opinion US Technology Columnist, joins Bloomberg Businessweek Daily to discuss his piece about Anthropic's IPO announcement. Lee writes about the firm's S-1 containing warnings about the company and prospects for humanity as AI technology continues to advance. Lee adds that the filing is described as “a pitch deliberately designed to be unappealing to those who are a poor fit … while appealing to the type of person we want to hire.” Lee speaks with Carol Massar and Tim Stenovec. (Source: Bloomberg)",
-   "prescore": 5.8,
-   "headline": "Dave Lee: Anthropic Brings ‘Anti-Sell’ Strategy to Its IPO",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Dave Lee, Bloomberg Opinion US Technology Columnist, joins Bloomberg Businessweek Daily to discuss his piece about Anthropic's IPO announcement. Lee writes about the firm's S-1 containing warnings about the company and prospects for humanity as AI technology continues to advance. Lee adds that the filing is described as “a pitch deliberately designed to be unappealing to those who are a poor fit …",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "aad2d4de3e02",
    "title": "Stocks Extend Gains on Anthropic IPO, Oil Falls: Markets Wrap",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/stock-market-today-dow-s-p-live-updates",
@@ -8764,39 +8797,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Global stocks extended gains as Anthropic PBC’s filing for an initial public offering renewed optimism over the artificial intelligence trade following recent strains. Crude oil declined further.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "3359c1478085",
-   "title": "Anthropic Mum on Investment Grade as It Warns of More Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-remains-mum-on-investment-grade-as-it-flags-more-debt",
-   "published": "2026-10-26T20:56:09+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-remains-mum-on-investment-grade-as-it-flags-more-debt",
-     "title": "Anthropic Mum on Investment Grade as It Warns of More Debt"
-    }
-   ],
-   "ids": [
-    "3359c1478085"
-   ],
-   "snippet": "Anthropic PBC warned it may need to seek more financing sooner than the artificial-intelligence company had anticipated while saying little about its potential path to an investment-grade credit rating in its closely watched IPO filing.",
-   "prescore": 5.8,
-   "headline": "Anthropic Mum on Investment Grade as It Warns of More Debt",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Anthropic PBC warned it may need to seek more financing sooner than the artificial-intelligence company had anticipated while saying little about its potential path to an investment-grade credit rating in its closely watched IPO filing.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8874,20 +8874,53 @@
    "ai": false
   },
   {
-   "id": "aa23c2731e9a",
+   "id": "1b46ab740696",
+   "title": "Ibovespa desaba após reeleição de Lula e ações recuam até 58%; veja as maiores quedas",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/ibovespa-desaba-reeleicao-lula-acoes-recuam.ghtml",
+   "published": "2026-10-26T20:05:56+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/ibovespa-desaba-reeleicao-lula-acoes-recuam.ghtml",
+     "title": "Ibovespa desaba após reeleição de Lula e ações recuam até 58%; veja as maiores quedas"
+    }
+   ],
+   "ids": [
+    "1b46ab740696"
+   ],
+   "snippet": "Bolsa despenca 13% após vitória de Lula A bolsa brasileira teve um pregão de forte turbulência nesta segunda-feira (26), após a reeleição de Luiz Inácio Lula da Silva (PT). O Ibovespa, principal índice da B3, caiu mais de 10% nos primeiros minutos de negociação e acionou o circuit breaker. No fechamento do dia, o índice caiu 13,88%, aos 176.608 pontos. A reação refletiu a surpresa de parte dos investidores com o resultado das urnas e a revisão das expectativas para a condução da política econômica, os juros e as contas públicas. 🗒️ Tem alguma sugestão de reportagem? Envie para o g1 Entre as aç",
+   "prescore": 5.8,
+   "headline": "Ibovespa desaba após reeleição de Lula e ações recuam até 58%; veja as maiores quedas",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Bolsa despenca 13% após vitória de Lula A bolsa brasileira teve um pregão de forte turbulência nesta segunda-feira (26), após a reeleição de Luiz Inácio Lula da Silva (PT). O Ibovespa, principal índice da B3, caiu mais de 10% nos primeiros minutos de negociação e acionou o circuit breaker. No fechamento do dia, o índice caiu 13,88%, aos 176.608 pontos. A reação refletiu a surpresa de parte dos inv",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "fad711fae335",
    "title": "Anthropic entra com pedido de IPO em meio à corrida por IA",
-   "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxQN2U2dHpEbS1VdEwzV1VPaTQ1QXN0Tm96Y3p5UVRYVVM4cS01dmFid3RBaVNGRk1MczRjdXFFalJjSlN4M1QyaXNZVDREMGpwZk10TVoxZy1BUkVhRzluRHRtRDFyTU1FaWkyamN3YUdTT1RsOGpZaS1XSjNHc3IySjZhck5haTFoNXp2VUc3d3dtVVBzS2VqMEhGMlNDUjkzMVYxaTNGcVZrMVlRU1o3TFBVNFlGUjBiTjhBaTAyQVpHdWZMUkhzcGV5bVF5VUJUV1ZEQ3hYa09iZVl1eU1TT0kweVRsWmtvN05lRjhzMndmdW5VbWxnUHV5UjFGN3pIMVVCSExGLW56YU94UFp5V3NhV3NEUGZjWHpyNHRWT3gwU3pHUlE5N2FpbTVPOTVVc0J0WWZDQ19jOU42NHFxdw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaVFqSHFiVHdIVGlfOXppbERXV1V4RF9JUzJuY0NUUThRWTFpX0FxZElBbUp2Y01LSXJDVndmTnN5LUFrYzNBbFVwb3U5T2s3RGJJNXk0WlBwb1g2ZDBjOFdTYi16YWJmUDVWNDVuM2V1WTJqc2EyZlRkQmJMZVlGTExRdnNnTWRIQXlrNjU0eV9ySWlsMVFzZ2dVa2R3S1FQTk1TN1VvbFp6VXRUUlE?oc=5",
    "published": "2026-10-26T19:25:53+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxQN2U2dHpEbS1VdEwzV1VPaTQ1QXN0Tm96Y3p5UVRYVVM4cS01dmFid3RBaVNGRk1MczRjdXFFalJjSlN4M1QyaXNZVDREMGpwZk10TVoxZy1BUkVhRzluRHRtRDFyTU1FaWkyamN3YUdTT1RsOGpZaS1XSjNHc3IySjZhck5haTFoNXp2VUc3d3dtVVBzS2VqMEhGMlNDUjkzMVYxaTNGcVZrMVlRU1o3TFBVNFlGUjBiTjhBaTAyQVpHdWZMUkhzcGV5bVF5VUJUV1ZEQ3hYa09iZVl1eU1TT0kweVRsWmtvN05lRjhzMndmdW5VbWxnUHV5UjFGN3pIMVVCSExGLW56YU94UFp5V3NhV3NEUGZjWHpyNHRWT3gwU3pHUlE5N2FpbTVPOTVVc0J0WWZDQ19jOU42NHFxdw?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaVFqSHFiVHdIVGlfOXppbERXV1V4RF9JUzJuY0NUUThRWTFpX0FxZElBbUp2Y01LSXJDVndmTnN5LUFrYzNBbFVwb3U5T2s3RGJJNXk0WlBwb1g2ZDBjOFdTYi16YWJmUDVWNDVuM2V1WTJqc2EyZlRkQmJMZVlGTExRdnNnTWRIQXlrNjU0eV9ySWlsMVFzZ2dVa2R3S1FQTk1TN1VvbFp6VXRUUlE?oc=5",
      "title": "Anthropic entra com pedido de IPO em meio à corrida por IA"
     }
    ],
    "ids": [
-    "aa23c2731e9a"
+    "fad711fae335"
    ],
    "snippet": "",
    "prescore": 5.8,
@@ -8940,6 +8973,39 @@
    "ai": false
   },
   {
+   "id": "610b6abf2315",
+   "title": "Por que as eleições mexem tanto com dólar e bolsa?",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/por-que-as-eleicoes-mexem-tanto-com-dolar-e-bolsa.ghtml",
+   "published": "2026-10-26T13:05:31+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/por-que-as-eleicoes-mexem-tanto-com-dolar-e-bolsa.ghtml",
+     "title": "Por que as eleições mexem tanto com dólar e bolsa?"
+    }
+   ],
+   "ids": [
+    "610b6abf2315"
+   ],
+   "snippet": "Como as eleições mexem com a Bolsa e o dólar Antes mesmo de os brasileiros irem às urnas no último domingo (25), as eleições já estavam no radar dos mercados. Desde o começo do ano, foram vários os momentos de altas e baixas no dólar, na bolsa e nas taxas de juros, associados a falas de candidatos e pesquisas eleitorais. As movimentações refletem as apostas do mercado sobre os rumos da economia no próximo governo. Não à toa, a virada do presidente Lula (PT) no 2º turno já trouxe um forte impacto para os mercados financeiros nesta segunda-feira (26). Acompanhe as cotações do dólar e do Ibovespa",
+   "prescore": 5.8,
+   "headline": "Por que as eleições mexem tanto com dólar e bolsa?",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Como as eleições mexem com a Bolsa e o dólar Antes mesmo de os brasileiros irem às urnas no último domingo (25), as eleições já estavam no radar dos mercados. Desde o começo do ano, foram vários os momentos de altas e baixas no dólar, na bolsa e nas taxas de juros, associados a falas de candidatos e pesquisas eleitorais. As movimentações refletem as apostas do mercado sobre os rumos da economia no",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ad4354e0e080",
    "title": "Ibovespa futuro recua quase 20% após virada de Lula; mercado espera ‘circuit breaker’ na bolsa",
    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPR0ZmUTBmUkRCcGl6cWJXUG11REN4ZEZmSHl2REIydHVreElZYU05aVRoWkFfOEI1ZDVNM3BmT2pJZWF1Nl9mbTlWZzBaU2xleUxhdS1xUjFMa004YW5iZlI2ZmpqNW9CWXB5X2lXUXMtamxKdUJyRVA4b2ltREljY0FJR2Q2QzR5eHBXOGtEV2pVZERiZHRLRTFyTW5zLXBVOFJsbkZMaFF4TzNpdV8yeVkzVTRQWVlKVjVrWm1NOWdZTVZWUC10RlJkcWlvVk1vZHVROUgyWHkxVEZrVmRhNWNMM250VkdyZF800gH6AUFVX3lxTE9vWFYzWkVkeWd3blVqeUU2OWs4NHF1bE51NEQ2QjVXQnFWMlIxWWRjd2hqUGpWV3I2eHpNdnhNZ3AtNGpUb0FkWXhZQzJiNV84TE1sR1N0dXJCRmFUZDJyNVVZUkM1cjhjS3hZWTI5QjF3SEI0UFY3NmJ4YU9NWEd5SE84VExVLUY5dHFOeVlKUXFqTjFEck1pWE5BNXFwelBaYWJtSjRzSlFoanV2dlJfUmJISzkxa1NWY3FScFo2aUpUZVg5T0dZS1JJRldYdzR2S0VZWlJ0cGVPUWxGUDJ2di1XLWdyYndwb0prQUVKS0piUm10VkZTaGc?oc=5",
@@ -8962,6 +9028,39 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a13ec81174cd",
+   "title": "Mercado financeiro baixa estimativa de inflação e de alta do PIB neste ano",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/mercado-financeiro-baixa-estimativa-de-inflacao-e-de-alta-do-pib-neste-ano.ghtml",
+   "published": "2026-10-26T11:34:42+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/mercado-financeiro-baixa-estimativa-de-inflacao-e-de-alta-do-pib-neste-ano.ghtml",
+     "title": "Mercado financeiro baixa estimativa de inflação e de alta do PIB neste ano"
+    }
+   ],
+   "ids": [
+    "a13ec81174cd"
+   ],
+   "snippet": "O mercado financeiro reduziu sua estimativa de inflação neste ano e também passou a projetar uma alta menor da atividade econômica neste ano. As informações fazem parte do \"Boletim Focus\", divulgado nesta segunda-feira (26) pelo Banco Central (BC), com base em pesquisa realizada na última semana com mais de 100 instituições financeiras. A queda na estimativa de inflação acontece apesar da continuidade da guerra no Oriente Médio, que eleva o preço do petróleo, com potencial de pressionar a inflação brasileira (via aumento dos combustíveis). ➡️ Para 2026, a estimativa de inflação recuou de 5,22%",
+   "prescore": 5.8,
+   "headline": "Mercado financeiro baixa estimativa de inflação e de alta do PIB neste ano",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O mercado financeiro reduziu sua estimativa de inflação neste ano e também passou a projetar uma alta menor da atividade econômica neste ano. As informações fazem parte do \"Boletim Focus\", divulgado nesta segunda-feira (26) pelo Banco Central (BC), com base em pesquisa realizada na última semana com mais de 100 instituições financeiras. A queda na estimativa de inflação acontece apesar da continui",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -9156,6 +9255,39 @@
    "snippet": "",
    "prescore": 5.6,
    "headline": "Anthropic's potential mega IPO joins ranks of world's biggest listings",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c35b382b575d",
+   "title": "Tech Shares Rally After Anthropic Files for Historic IPO",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTEZaVk14eGNmSE1wRGRfUU5HN2ZYVW1tOGNFaFA0MWNuSHczWm1hV3VpdC02U01YZEFaQWlwbWhEQTRGNmFqNUNGRm1NblZTT0k3X1B6SnVDWmZrOE5ZZzVmWjAyTS1fYnJNZVFqMW1MQjRpOWtUajRMX3BPYWxHSkpqMjZ2NkY0TFRTUXphcUJOLWREQmV3MkxlNjFoUE4wMEpYazdR?oc=5",
+   "published": "2026-10-26T18:53:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTEZaVk14eGNmSE1wRGRfUU5HN2ZYVW1tOGNFaFA0MWNuSHczWm1hV3VpdC02U01YZEFaQWlwbWhEQTRGNmFqNUNGRm1NblZTT0k3X1B6SnVDWmZrOE5ZZzVmWjAyTS1fYnJNZVFqMW1MQjRpOWtUajRMX3BPYWxHSkpqMjZ2NkY0TFRTUXphcUJOLWREQmV3MkxlNjFoUE4wMEpYazdR?oc=5",
+     "title": "Tech Shares Rally After Anthropic Files for Historic IPO"
+    }
+   ],
+   "ids": [
+    "c35b382b575d"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Tech Shares Rally After Anthropic Files for Historic IPO",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -9436,20 +9568,53 @@
    "ai": false
   },
   {
-   "id": "4ac0173b51af",
+   "id": "717a369291b2",
+   "title": "Wall Street sobe impulsionada por techs e anúncio de IPO da Anthropic",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTDdXU2Z5TXcxcFVocUQ1eWlMUVZfTFdPR090MjhDUmVjNllERnVDM0dyNkZzQXgtV3NqR1ZfSmJKQnZ1OVRFZmtwZzlRVXJadG1nLWlreWNuaVhERXdXeVgxOXIzeThKcHU4YncyUGpsUGtIQWZteDBla0JmemRXWlNDQVdoY0toQWRVX0J5SGVSenR0Wng0dVc2QklEVks4RHFoUDA1WTM4ZGQzMEY4b0g4dVpDUnlodXB2TENIMA?oc=5",
+   "published": "2026-10-26T21:34:12+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTDdXU2Z5TXcxcFVocUQ1eWlMUVZfTFdPR090MjhDUmVjNllERnVDM0dyNkZzQXgtV3NqR1ZfSmJKQnZ1OVRFZmtwZzlRVXJadG1nLWlreWNuaVhERXdXeVgxOXIzeThKcHU4YncyUGpsUGtIQWZteDBla0JmemRXWlNDQVdoY0toQWRVX0J5SGVSenR0Wng0dVc2QklEVks4RHFoUDA1WTM4ZGQzMEY4b0g4dVpDUnlodXB2TENIMA?oc=5",
+     "title": "Wall Street sobe impulsionada por techs e anúncio de IPO da Anthropic"
+    }
+   ],
+   "ids": [
+    "717a369291b2"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Wall Street sobe impulsionada por techs e anúncio de IPO da Anthropic",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9746e1dd22dc",
    "title": "Bolsas de NY fecham em alta com impulso de techs e anúncio de IPO da Anthropic",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNlRjcWhNQm9lU3JPX093d25MX1kwTDhZSmFGdGxBWEQtOG15N0loMEt6MFRnUl9pSU4tUmZKU2E4LThfUTVJeFh0YmwxM1VEUDJVYVpKb1JLdGo5dUJfQ1ZpVEVORDJrMGdCUE8xaktyNUp0WlVER1BMVV9yVFdYeEMyeDRCUHNfOER2Z2hDYl9BLUtvSXhlelp3QlM4TFJIOUhuYXRVWFJBQWxERGNCOE13R2xxbjZW0gG-AUFVX3lxTE8wRDJKYXdMSmctRmhtVzYzcUhYOWRvMjZoUWUxcXllZ3I3ZVVyRFpPc19fb21vTHE5blcwdEMyLTV4MGpDZTh1NEtjOEMzbkFEZE5UWElIQlBaNklteHNYZEY4bFJEQmpBZ3RybXdLVEVaczg2cDQzWVRFWTg0UFBVZ2NBZ21tNVo3dTZ3M0pNME5wdmNrY3JtNmRzb2FLbEdwWFJLSXdkRnI4amRmdzdObVVmWUFHdDlYYTlibnc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMEQySmF3TEpnLUZobVc2M3FIWDlkbzI2aFFlMXF5ZWdyN2VVckRaT3NfX29tb0xxOW5XMHRDMi01eDBqQ2U4dTRLYzhDM25BRGROVFhJSEJQWjZJbXhzWGRGOGxSREJqQWd0cm13S1RFWnM4NnA0M1lURVk4NFBQVWdjQWdtbTVaN3U2dzNKTTBOcHZja2NybTZkc29hS2xHcFhSS0l3ZEZyOGpkZnc3Tm1VZllBR3Q5WGE5Ym530gG-AUFVX3lxTE8wRDJKYXdMSmctRmhtVzYzcUhYOWRvMjZoUWUxcXllZ3I3ZVVyRFpPc19fb21vTHE5blcwdEMyLTV4MGpDZTh1NEtjOEMzbkFEZE5UWElIQlBaNklteHNYZEY4bFJEQmpBZ3RybXdLVEVaczg2cDQzWVRFWTg0UFBVZ2NBZ21tNVo3dTZ3M0pNME5wdmNrY3JtNmRzb2FLbEdwWFJLSXdkRnI4amRmdzdObVVmWUFHdDlYYTlibnc?oc=5",
    "published": "2026-10-26T21:20:11+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "InfoMoney",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNlRjcWhNQm9lU3JPX093d25MX1kwTDhZSmFGdGxBWEQtOG15N0loMEt6MFRnUl9pSU4tUmZKU2E4LThfUTVJeFh0YmwxM1VEUDJVYVpKb1JLdGo5dUJfQ1ZpVEVORDJrMGdCUE8xaktyNUp0WlVER1BMVV9yVFdYeEMyeDRCUHNfOER2Z2hDYl9BLUtvSXhlelp3QlM4TFJIOUhuYXRVWFJBQWxERGNCOE13R2xxbjZW0gG-AUFVX3lxTE8wRDJKYXdMSmctRmhtVzYzcUhYOWRvMjZoUWUxcXllZ3I3ZVVyRFpPc19fb21vTHE5blcwdEMyLTV4MGpDZTh1NEtjOEMzbkFEZE5UWElIQlBaNklteHNYZEY4bFJEQmpBZ3RybXdLVEVaczg2cDQzWVRFWTg0UFBVZ2NBZ21tNVo3dTZ3M0pNME5wdmNrY3JtNmRzb2FLbEdwWFJLSXdkRnI4amRmdzdObVVmWUFHdDlYYTlibnc?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMEQySmF3TEpnLUZobVc2M3FIWDlkbzI2aFFlMXF5ZWdyN2VVckRaT3NfX29tb0xxOW5XMHRDMi01eDBqQ2U4dTRLYzhDM25BRGROVFhJSEJQWjZJbXhzWGRGOGxSREJqQWd0cm13S1RFWnM4NnA0M1lURVk4NFBQVWdjQWdtbTVaN3U2dzNKTTBOcHZja2NybTZkc29hS2xHcFhSS0l3ZEZyOGpkZnc3Tm1VZllBR3Q5WGE5Ym530gG-AUFVX3lxTE8wRDJKYXdMSmctRmhtVzYzcUhYOWRvMjZoUWUxcXllZ3I3ZVVyRFpPc19fb21vTHE5blcwdEMyLTV4MGpDZTh1NEtjOEMzbkFEZE5UWElIQlBaNklteHNYZEY4bFJEQmpBZ3RybXdLVEVaczg2cDQzWVRFWTg0UFBVZ2NBZ21tNVo3dTZ3M0pNME5wdmNrY3JtNmRzb2FLbEdwWFJLSXdkRnI4amRmdzdObVVmWUFHdDlYYTlibnc?oc=5",
      "title": "Bolsas de NY fecham em alta com impulso de techs e anúncio de IPO da Anthropic"
     }
    ],
    "ids": [
-    "4ac0173b51af"
+    "9746e1dd22dc"
    ],
    "snippet": "",
    "prescore": 5.4,
@@ -9487,6 +9652,39 @@
    "snippet": "",
    "prescore": 5.4,
    "headline": "IPO da Anthropic: o que se sabe até agora sobre a estreia na bolsa",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "95dfa615dc9b",
+   "title": "Bolsa de Nova York cresce com recuperação de semicondutores e otimismo sobre IPO da Anthropic, destacando o comércio de inteligência artificial",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNcFMzSmZ3bWpvSXlMWENRV0ZxNkRrLU51QXhuRWxHMk9hM2VXZVZJWVR4VWVrVC1manNPUUMyU1R3d2pwaDI1NkRGa1JhMWpxNnF0UzdBengwaUVYSU9ZNlhOLXBjUy1JWlhnbDJIc1Yzd0p6d2ZDNmtOMXFUQXo1NTh5SDFIcnhYMUVXWWphZVRsTExtaUY0UGZQSEFxbGsxQXg3elUtc202M0dtbXc0WDdZOUhxalJhOWJ3OW5ZNGJudTlmbm1NZzhqN1FLS052QnVjdHAyVWtxSnpRbU5qczRYR3M2eHlTcE9LZzZlTjNMUXVDdTRSbWVHUGEwZERpdWtR?oc=5",
+   "published": "2026-10-26T20:50:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Repórter Maceió",
+     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNcFMzSmZ3bWpvSXlMWENRV0ZxNkRrLU51QXhuRWxHMk9hM2VXZVZJWVR4VWVrVC1manNPUUMyU1R3d2pwaDI1NkRGa1JhMWpxNnF0UzdBengwaUVYSU9ZNlhOLXBjUy1JWlhnbDJIc1Yzd0p6d2ZDNmtOMXFUQXo1NTh5SDFIcnhYMUVXWWphZVRsTExtaUY0UGZQSEFxbGsxQXg3elUtc202M0dtbXc0WDdZOUhxalJhOWJ3OW5ZNGJudTlmbm1NZzhqN1FLS052QnVjdHAyVWtxSnpRbU5qczRYR3M2eHlTcE9LZzZlTjNMUXVDdTRSbWVHUGEwZERpdWtR?oc=5",
+     "title": "Bolsa de Nova York cresce com recuperação de semicondutores e otimismo sobre IPO da Anthropic, destacando o comércio de inteligência artificial"
+    }
+   ],
+   "ids": [
+    "95dfa615dc9b"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Bolsa de Nova York cresce com recuperação de semicondutores e otimismo sobre IPO da Anthropic, destacando o comércio de inteligência artificial",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -9851,6 +10049,39 @@
    "prescore": 5.4,
    "headline": "Ibovespa cai 10% após reeleição de Lula",
    "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "506faff6098f",
+   "title": "Anthropic divulga documentos para o IPO que pode superar recorde da SpaceX",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa1Q4OEpyT3JiQ1kzYWxEMjJpX0JjSmV3LXpQblFaRWVYSFVPelZGRUpLeElUWHNHLTRzbzlJSXdHQWJBd0xQMy1DdlhiSHM1TjJwNzN4WmV6T0MydGpDN1EzM1JSZUxwZjZTZ3B3UFdxc0pOTzhkTmRYVUxXWGtsOG1QNmdUNnU2clFrbjFVVHp3UEMwRlhiR3RfNzNaenhmczJSY2xXVmFfLTNrT2JERFBqMERSTi1rR3Bkd2hCNA?oc=5",
+   "published": "2026-10-26T14:39:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Times Brasil | CNBC",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa1Q4OEpyT3JiQ1kzYWxEMjJpX0JjSmV3LXpQblFaRWVYSFVPelZGRUpLeElUWHNHLTRzbzlJSXdHQWJBd0xQMy1DdlhiSHM1TjJwNzN4WmV6T0MydGpDN1EzM1JSZUxwZjZTZ3B3UFdxc0pOTzhkTmRYVUxXWGtsOG1QNmdUNnU2clFrbjFVVHp3UEMwRlhiR3RfNzNaenhmczJSY2xXVmFfLTNrT2JERFBqMERSTi1rR3Bkd2hCNA?oc=5",
+     "title": "Anthropic divulga documentos para o IPO que pode superar recorde da SpaceX"
+    }
+   ],
+   "ids": [
+    "506faff6098f"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Anthropic divulga documentos para o IPO que pode superar recorde da SpaceX",
+   "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -10297,6 +10528,39 @@
    "snippet": "",
    "prescore": 5.2,
    "headline": "Vinci Compass to acquire Brazilian reinsurer for $68M",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "441365218d47",
+   "title": "Tesla pode virar peso para SpaceX em potencial fusão que daria ainda mais poder a Musk",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOekJsVk1lNEsyanZiU3l1S0VGYldSZmJHcjczekNpNkJDU3dpZ2xETlgyNTRjR045S0hCN1hnOGdoZWk4YWU4WEFGZEFtMzlLTkpOUTlTZ3BUSXpzUnJ6RjExVjZvXzM1X2pkLWdnbk9hSTlINkstWmo5Ulk3YmhWeVB2RWk2X3hQNW84akE4M3hUckhMdW9mb3J1ZDdPQ3dJeE83ZXlWdmI0bGM3V1F0QjI2X2Z2UFlmU1hsQkhpVXNSMmN2anBjYjN2TUPSAeABQVVfeXFMUEhDc1RydDZ0eDBNQ1NuTkw2ZExuM0FpVHlLam5qVno3TmE5WkxHSEZSRmZ2ZF9PR3dsVzVUVkdIRTVZX3BTNDc5eDRFVkFXZnhHamxUVGdkTEF4emtjN0k5TWlhNEhoXzFmbDFOZERISzQ2YWEyQVU4NldNRDRLMU0xVjBfbTI2UGQ5MXFVaWU5UkZBekRLZGN4Ny1KUXJfUkM2OWtWcjdGLVh2Y0ZUMnFadlZvZW5ILXJRbmZSYUxfeHZ4Um5NbkxXN2FySDYyZFJEeFlMX05LR2NORWd0RzQ?oc=5",
+   "published": "2026-10-26T14:30:40+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOekJsVk1lNEsyanZiU3l1S0VGYldSZmJHcjczekNpNkJDU3dpZ2xETlgyNTRjR045S0hCN1hnOGdoZWk4YWU4WEFGZEFtMzlLTkpOUTlTZ3BUSXpzUnJ6RjExVjZvXzM1X2pkLWdnbk9hSTlINkstWmo5Ulk3YmhWeVB2RWk2X3hQNW84akE4M3hUckhMdW9mb3J1ZDdPQ3dJeE83ZXlWdmI0bGM3V1F0QjI2X2Z2UFlmU1hsQkhpVXNSMmN2anBjYjN2TUPSAeABQVVfeXFMUEhDc1RydDZ0eDBNQ1NuTkw2ZExuM0FpVHlLam5qVno3TmE5WkxHSEZSRmZ2ZF9PR3dsVzVUVkdIRTVZX3BTNDc5eDRFVkFXZnhHamxUVGdkTEF4emtjN0k5TWlhNEhoXzFmbDFOZERISzQ2YWEyQVU4NldNRDRLMU0xVjBfbTI2UGQ5MXFVaWU5UkZBekRLZGN4Ny1KUXJfUkM2OWtWcjdGLVh2Y0ZUMnFadlZvZW5ILXJRbmZSYUxfeHZ4Um5NbkxXN2FySDYyZFJEeFlMX05LR2NORWd0RzQ?oc=5",
+     "title": "Tesla pode virar peso para SpaceX em potencial fusão que daria ainda mais poder a Musk"
+    }
+   ],
+   "ids": [
+    "441365218d47"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Tesla pode virar peso para SpaceX em potencial fusão que daria ainda mais poder a Musk",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -10879,67 +11143,28 @@
    "ai": false
   },
   {
-   "id": "247e3076519b",
-   "title": "Ibovespa cai mais 17% após 'circuit breaker' e dólar sobe 10%; ações caem até 60%",
-   "link": "https://exame.com/invest/mercados/ibovespa-cai-mais-17-apos-circuit-breaker-e-dolar-sobe-10-acoes-caem-ate-60/",
-   "published": "2026-10-26T11:28:43+00:00",
+   "id": "b35e65ebe4b0",
+   "title": "É hora de comprar ações? Veja o que avaliar após o tombo do Ibovespa",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/27/comprar-acoes-veja-o-que-avaliar-apos-tombo-do-ibovespa.ghtml",
+   "published": "2026-10-27T03:00:02+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Exame",
-     "link": "https://exame.com/invest/mercados/ibovespa-cai-mais-17-apos-circuit-breaker-e-dolar-sobe-10-acoes-caem-ate-60/",
-     "title": "Ibovespa cai mais 17% após 'circuit breaker' e dólar sobe 10%; ações caem até 60%"
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/27/comprar-acoes-veja-o-que-avaliar-apos-tombo-do-ibovespa.ghtml",
+     "title": "É hora de comprar ações? Veja o que avaliar após o tombo do Ibovespa"
     }
    ],
    "ids": [
-    "247e3076519b"
+    "b35e65ebe4b0"
    ],
-   "snippet": "O tombo da bolsa é disseminado, com dez ações do Ibovespa registrando perdas superiores a 40%",
-   "prescore": 5.0,
-   "headline": "Ibovespa cai mais 17% após 'circuit breaker' e dólar sobe 10%; ações caem até 60%",
+   "snippet": "Bolsa despenca 13% após vitória de Lula A forte queda da bolsa brasileira após a reeleição de Luiz Inácio Lula da Silva (PT), nesta segunda-feira (26), levantou uma dúvida entre investidores: é hora de aproveitar os preços mais baixos para comprar ações ou esperar que o mercado se estabilize? O Ibovespa recuou 13,88%, aos 176.608 pontos, registrando a maior queda diária desde março de 2020, no início da pandemia de Covid-19. No dia 20 daquele mês, o índice caiu 13,92%. 🗒️ Tem alguma sugestão de reportagem? Envie para o g1 Com a queda desta segunda-feira, a bolsa brasileira perdeu R$ 734 bilhõe",
+   "prescore": 4.8,
+   "headline": "É hora de comprar ações? Veja o que avaliar após o tombo do Ibovespa",
    "category": "mercados",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O tombo da bolsa é disseminado, com dez ações do Ibovespa registrando perdas superiores a 40%",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "4c8aa995ae48",
-   "title": "Meta (META) anuncia oferta de ações de US$ 35 bilhões para financiar investimentos em IA",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQekNFYTVuS05sWi1WdlJ5WHlwclg5Wi15eVRfWmVnT1lyX0dqbW1ua2tTakthRHJyQVB4QWYtaVQyTGh0SUZGNVA3dm94aTROdDN3Y3E4RGVWeGx0eWdldk1yOXZlaVd0S1k0LXVjSVNYSk5sQW5TNHdGd2RKRVpDQk5GZk50dnZlaGtkb0xlQ2VjQ0lpYUtfaV9fT19qSTY3a1VqQUxB?oc=5",
-   "published": "2026-10-26T13:58:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "ADVFN",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQekNFYTVuS05sWi1WdlJ5WHlwclg5Wi15eVRfWmVnT1lyX0dqbW1ua2tTakthRHJyQVB4QWYtaVQyTGh0SUZGNVA3dm94aTROdDN3Y3E4RGVWeGx0eWdldk1yOXZlaVd0S1k0LXVjSVNYSk5sQW5TNHdGd2RKRVpDQk5GZk50dnZlaGtkb0xlQ2VjQ0lpYUtfaV9fT19qSTY3a1VqQUxB?oc=5",
-     "title": "Meta (META) anuncia oferta de ações de US$ 35 bilhões para financiar investimentos em IA"
-    },
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/10/meta-lanca-oferta-de-acoes-de-us-35-bilhoes-para-financiar-expansao-da-ia.shtml",
-     "title": "Meta lança oferta de ações de US$ 35 bilhões para financiar expansão da IA"
-    }
-   ],
-   "ids": [
-    "4c8aa995ae48",
-    "2503ac89b427"
-   ],
-   "snippet": "A Meta lançou nesta segunda-feira (26) uma oferta pública de cerca de US$ 35 bilhões (R$ 174,2 bilhões) em ações ordinárias e ações preferenciais conversíveis, à medida que a controladora do Facebook busca financiar sua expansão na área de IA. Leia mais (10/26/2026 - 10h58)",
-   "prescore": 4.9,
-   "headline": "Meta (META) anuncia oferta de ações de US$ 35 bilhões para financiar investimentos em IA",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Meta lançou nesta segunda-feira (26) uma oferta pública de cerca de US$ 35 bilhões (R$ 174,2 bilhões) em ações ordinárias e ações preferenciais conversíveis, à medida que a controladora do Facebook busca financiar sua expansão na área de IA. Leia mais (10/26/2026 - 10h58)",
+   "summary": "Bolsa despenca 13% após vitória de Lula A forte queda da bolsa brasileira após a reeleição de Luiz Inácio Lula da Silva (PT), nesta segunda-feira (26), levantou uma dúvida entre investidores: é hora de aproveitar os preços mais baixos para comprar ações ou esperar que o mercado se estabilize? O Ibovespa recuou 13,88%, aos 176.608 pontos, registrando a maior queda diária desde março de 2020, no iní",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11116,6 +11341,39 @@
    "ai": false
   },
   {
+   "id": "c6c83cd939a6",
+   "title": "Em dia de nervosismo no mercado, Tesouro Nacional recompra R$ 7,1 bilhões em títulos públicos",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/em-dia-de-nervosismo-no-mercado-tesouro-nacional-recompra-r-71-bilhoes-em-titulos-publicos.ghtml",
+   "published": "2026-10-26T15:53:39+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/em-dia-de-nervosismo-no-mercado-tesouro-nacional-recompra-r-71-bilhoes-em-titulos-publicos.ghtml",
+     "title": "Em dia de nervosismo no mercado, Tesouro Nacional recompra R$ 7,1 bilhões em títulos públicos"
+    }
+   ],
+   "ids": [
+    "c6c83cd939a6"
+   ],
+   "snippet": "Circuit breaker: entenda o que é a suspensão das negociações quando a bolsa despenca A Secretaria do Tesouro Nacional realizou nesta segunda-feira (26) a recompra de títulos públicos no valor de R$ 7,1 bilhões. Foram realizadas três operações. Os leilões de recompra foram realizados um dia após a vitória de Luiz Inácio Lula da Silva (PT) nas eleições presidenciais, algo que surpreendeu e gerou tensão no mercado financeiro. Nesta segunda, o Ibovespa, principal índice da bolsa brasileira, teve as negociações interrompidas por 30 minutos após registrar queda de mais de 10% nos primeiros minutos d",
+   "prescore": 4.8,
+   "headline": "Em dia de nervosismo no mercado, Tesouro Nacional recompra R$ 7,1 bilhões em títulos públicos",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Circuit breaker: entenda o que é a suspensão das negociações quando a bolsa despenca A Secretaria do Tesouro Nacional realizou nesta segunda-feira (26) a recompra de títulos públicos no valor de R$ 7,1 bilhões. Foram realizadas três operações. Os leilões de recompra foram realizados um dia após a vitória de Luiz Inácio Lula da Silva (PT) nas eleições presidenciais, algo que surpreendeu e gerou ten",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "6632340b46e2",
    "title": "Ibovespa cai 14%, dólar sobe a R$ 5,40, mas nem todo mundo perdeu — entenda o caos nos mercados",
    "link": "https://www.seudinheiro.com/2026/bolsa-dolar/ibovespa-cai-17-dolar-vai-a-r-550-mas-nem-todo-mundo-perde-entenda-o-caos-nos-mercados-hoje-ccgg/",
@@ -11171,6 +11429,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f97748ab1b4e",
+   "title": "Aplicativos de bancos e corretoras têm instabilidade em meio à turbulência nos mercados",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/corretoras-instabilidade.ghtml",
+   "published": "2026-10-26T14:06:04+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/corretoras-instabilidade.ghtml",
+     "title": "Aplicativos de bancos e corretoras têm instabilidade em meio à turbulência nos mercados"
+    }
+   ],
+   "ids": [
+    "f97748ab1b4e"
+   ],
+   "snippet": "Oscilações do mercado. Jornal Nacional/ Reprodução Aplicativos de diversos bancos e corretoras apresentavam instabilidade nesta segunda-feira (26), em meio à forte volatilidade nos mercados após a vitória de Luiz Inácio Lula da Silva (PT) no segundo turno das eleições presidenciais. Segundo o site Downdetector, que monitora relatos de problemas em serviços digitais, as corretoras Rico e Clear registravam notificações, assim como Inter, XP Investimentos, Nubank, Itaú Unibanco, Santander, Bradesco e C6 Bank. 🗒️ Tem alguma sugestão de reportagem? Envie para o g1 Em nota, o Nubank e o Itaú informa",
+   "prescore": 4.8,
+   "headline": "Aplicativos de bancos e corretoras têm instabilidade em meio à turbulência nos mercados",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Oscilações do mercado. Jornal Nacional/ Reprodução Aplicativos de diversos bancos e corretoras apresentavam instabilidade nesta segunda-feira (26), em meio à forte volatilidade nos mercados após a vitória de Luiz Inácio Lula da Silva (PT) no segundo turno das eleições presidenciais. Segundo o site Downdetector, que monitora relatos de problemas em serviços digitais, as corretoras Rico e Clear regi",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11485,34 +11776,35 @@
    "ai": false
   },
   {
-   "id": "1287ab79eb3c",
-   "title": "Trump diz que gosta de Lula, mas afirma, sem provas, que eleição parece ter sido fraudada",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/trump-diz-que-gosta-de-lula-mas-que-eleicao-parece-ter-sido-fraudada.shtml",
-   "published": "2026-10-26T19:36:06+00:00",
+   "id": "4eeae949ec77",
+   "title": "Alexandre de Moraes manda Flávio Bolsonaro entregar passaportes e proíbe contato com Willer Tomaz",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQdUFRbDQzSlg1ZjFfanpYUGpDMkJXOVhMRlc3S1dWZWxEbm5QLTRNZTdmRWs0Q1k2SjNOa1hVS083MXQyY2RRNVgtd2w3aVhxMGJVNnpkNkEwUlVpeUlUSWlEU1JjRWtZS0ZKTWJzN3FoU2lPSFBkTEQ0S0w3dWd1bGQ1LWtEbEZ1bHROOE5wT2twNWVobjRrd0NoRHRkX0h2ZlhSZFl3Q1A1ZEJrcV92QzUzUzAzZEN2WVRfRXN2MkFpeWMwYjZsQ190UVhmRDd1OTlN0gHiAUFVX3lxTE1jekpkVEc0eHdZZkxJQWU3V2tWTmJKYVdyUFBVUnpBUUdWOHNFUlRmd3dJaHlNVVlWT2V3cUNJNW9hU3I2TlBQeDdqLU84aHpkRWpPX2pxLThyOWVYZUl0RDFDZkE4dDF6blB2RWN6S0ZCUjhhbW9XWlpnX2V3TUlIcGZLeFVoNWpQUThhcnRtTl92NU9WUmJBX1pQRndOTVJJOG04amJyQzVZeUxNWnM5Y2pfYjliY2RxR01tYnFzNVBzZ2JCQ3RKOWg2RWJoSWpYemVzd19WZWFacFdNeDJzLVE?oc=5",
+   "published": "2026-10-26T19:54:54+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/trump-diz-que-gosta-de-lula-mas-que-eleicao-parece-ter-sido-fraudada.shtml",
-     "title": "Trump diz que gosta de Lula, mas afirma, sem provas, que eleição parece ter sido fraudada"
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQdUFRbDQzSlg1ZjFfanpYUGpDMkJXOVhMRlc3S1dWZWxEbm5QLTRNZTdmRWs0Q1k2SjNOa1hVS083MXQyY2RRNVgtd2w3aVhxMGJVNnpkNkEwUlVpeUlUSWlEU1JjRWtZS0ZKTWJzN3FoU2lPSFBkTEQ0S0w3dWd1bGQ1LWtEbEZ1bHROOE5wT2twNWVobjRrd0NoRHRkX0h2ZlhSZFl3Q1A1ZEJrcV92QzUzUzAzZEN2WVRfRXN2MkFpeWMwYjZsQ190UVhmRDd1OTlN0gHiAUFVX3lxTE1jekpkVEc0eHdZZkxJQWU3V2tWTmJKYVdyUFBVUnpBUUdWOHNFUlRmd3dJaHlNVVlWT2V3cUNJNW9hU3I2TlBQeDdqLU84aHpkRWpPX2pxLThyOWVYZUl0RDFDZkE4dDF6blB2RWN6S0ZCUjhhbW9XWlpnX2V3TUlIcGZLeFVoNWpQUThhcnRtTl92NU9WUmJBX1pQRndOTVJJOG04amJyQzVZeUxNWnM5Y2pfYjliY2RxR01tYnFzNVBzZ2JCQ3RKOWg2RWJoSWpYemVzd19WZWFacFdNeDJzLVE?oc=5",
+     "title": "Alexandre de Moraes manda Flávio Bolsonaro entregar passaportes e proíbe contato com Willer Tomaz"
     },
     {
      "source": "g1",
-     "link": "https://g1.globo.com/mundo/noticia/2026/10/26/trump-fala-sobre-eleicao-no-brasil-pareceu-mais-uma-eleicao-fraudada.ghtml",
-     "title": "Sem apresentar provas, Trump diz que eleição no Brasil 'pareceu fraudada' e afirma que 'gosta do Lula'"
+     "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPM0lfbTVpY2hGenVJc1VvME9jSGI2YXZtSlNjd3UxdXI4MmhIY2I0OVQ1b2x1UVdhRVhHNWYtdGpIQ0h1aVp4cGlUYno0Z1dlNnhHLVppNl9IY1pOTXk3RGEyV3JGTEY0MS02QnBuZnFJUzJLWVhGdXVfZ28tLUgtbVhGUTBuSk1KQXRtZWdwdXp3UWFYbVV4N2ppckZtTm40NFVZeGhJUEpCMXRmeHpMMGpwTlcxUXFiLTlTZ0lIeG8yWVJ6V0I4TzVwd2ZqV3hxajU2SnlzeTA5UHZZTExCMF9hS3o0LWttcXJ2dHNiMElHeXluZUxnbmJCbGNwZzZOMmNGcEl3RU7SAZcCQVVfeXFMTi1ITWF0MzEwVmJDdVZBaEJVbl90Q2JUZWNNZDZETWdVUXY1dWpocVRmN3lyUGxDcUw1VVRoc054b2hvMXNVeG5pelVCbXJldE00MzByeDZ4UDBWeHoxOGxVb29Cc1VxYWp3UGVpQVFwZW14TFoyUXBRNmg2XzJDbHNOMEpoempUdk9IRmZjbGI1NXcwTUtrS250aTBPRC16YThsaFNBRVE4N3BtckpvNXp6aFJubThNYjdfdzhuTE9ydjV3NnJVUDQzQnVDaXhCMWUyOW16NS1velE4YUsyZGFiYXFMdEVUOEZFUG9FSnduTVE5RHYtQnhXd3RWX1RtOGNmblZzUm5seEZ4ZlBLVjN4bnFWY0VF?oc=5",
+     "title": "Moraes determina que Flávio Bolsonaro entregue os passaportes à PF e proíbe senador de ter contato com Willer Tomaz"
     }
    ],
    "ids": [
-    "1287ab79eb3c",
-    "4122ab41226d"
+    "4eeae949ec77",
+    "4a81b7631fc3",
+    "4a81b7631fc3"
    ],
-   "snippet": "O presidente dos Estados Unidos , Donald Trump , disse que gosta do presidente Lula (PT), mas que a eleição no Brasil \"parece ter sido fraudada\". Leia mais (10/26/2026 - 16h44)",
+   "snippet": "",
    "prescore": 4.3,
-   "headline": "Trump diz que gosta de Lula, mas afirma, sem provas, que eleição parece ter sido fraudada",
-   "category": "politica",
+   "headline": "Alexandre de Moraes manda Flávio Bolsonaro entregar passaportes e proíbe contato com Willer Tomaz",
+   "category": "empresas",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O presidente dos Estados Unidos , Donald Trump , disse que gosta do presidente Lula (PT), mas que a eleição no Brasil \"parece ter sido fraudada\". Leia mais (10/26/2026 - 16h44)",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11843,6 +12135,39 @@
    "ai": false
   },
   {
+   "id": "e84d799322f4",
+   "title": "Varejo, saúde e construção lideram tombo do Ibovespa pós-eleições",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/acoes-de-empresas-sensiveis-aos-juros-como-varejistas-chegam-a-cair-55-apos-vitoria-de-lula.shtml",
+   "published": "2026-10-26T16:36:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/acoes-de-empresas-sensiveis-aos-juros-como-varejistas-chegam-a-cair-55-apos-vitoria-de-lula.shtml",
+     "title": "Varejo, saúde e construção lideram tombo do Ibovespa pós-eleições"
+    }
+   ],
+   "ids": [
+    "e84d799322f4"
+   ],
+   "snippet": "Uma série de empresas mais sensíveis aos juros , como varejistas , companhias de saúde e incorporadoras imobiliárias, registrou as maiores perdas do Ibovespa nesta segunda-feira (26). Leia mais (10/26/2026 - 13h36)",
+   "prescore": 4.0,
+   "headline": "Varejo, saúde e construção lideram tombo do Ibovespa pós-eleições",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Uma série de empresas mais sensíveis aos juros , como varejistas , companhias de saúde e incorporadoras imobiliárias, registrou as maiores perdas do Ibovespa nesta segunda-feira (26). Leia mais (10/26/2026 - 13h36)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b95cb313e241",
    "title": "Entenda o que é o circuit breaker e quantas vezes o mecanismo já foi acionado na Bolsa",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/entenda-o-que-e-o-circuit-breaker-e-quantas-vezes-o-mecanismo-ja-foi-acionado-na-bolsa.shtml",
@@ -12041,45 +12366,6 @@
    "ai": false
   },
   {
-   "id": "0054d41a00c8",
-   "title": "20 anos, projetos em nove países e €30 milhões: como uma empresa do interior de Portugal fez do Brasil sua base para conquistar o mundo",
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOZHI3MDk4cHVnaGlsREI4Q1pYWm5acUoxaHFBd3FFdEhPdWtNVjk0dnlaOHcwU3pTRDlhZGJXY0VJSEZfXy1NaUhoeS16YmQ2UmQ1XzdyYnlrdVhPWGoxWHB3cTRBbjdxNXF3QmRBMExNWEt5SW51bWZJSUJ0dEpSM1hsV1lYZm52ZHlPQnpadGFnME9IRUg0NVVxVkpGdXRfay1iZUhiV1dkWlRtdmxDWFlKTldYMjZESWUzQ1JYU1NfSzhtTXgyQXFJb3pocFdhVkd2UkpxM1VUaDY4V1h0NU5QNTh0MnNaSUZlMlNMdG1mLTMyNWlya092UlFmT0VhUTZub0lSNUZtNGs?oc=5",
-   "published": "2026-10-26T17:32:06+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": ":: Bahia Jornal ::",
-     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOZHI3MDk4cHVnaGlsREI4Q1pYWm5acUoxaHFBd3FFdEhPdWtNVjk0dnlaOHcwU3pTRDlhZGJXY0VJSEZfXy1NaUhoeS16YmQ2UmQ1XzdyYnlrdVhPWGoxWHB3cTRBbjdxNXF3QmRBMExNWEt5SW51bWZJSUJ0dEpSM1hsV1lYZm52ZHlPQnpadGFnME9IRUg0NVVxVkpGdXRfay1iZUhiV1dkWlRtdmxDWFlKTldYMjZESWUzQ1JYU1NfSzhtTXgyQXFJb3pocFdhVkd2UkpxM1VUaDY4V1h0NU5QNTh0MnNaSUZlMlNMdG1mLTMyNWlya092UlFmT0VhUTZub0lSNUZtNGs?oc=5",
-     "title": "20 anos, projetos em nove países e €30 milhões: como uma empresa do interior de Portugal fez do Brasil sua base para conquistar o mundo"
-    },
-    {
-     "source": "Itamaraju Notícias",
-     "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOV25md0U2YW5xbmpHdnhBOHdCRFdaWTl2V0N0dG0tV0VPcVFVR0RtdmV0VTkyelFJeE91clM0U1JJZXNOSHdhTUF1OVBaVHRkd2Q0eWNqWGFUdVVncERwVDdvS21HMmlxN1lndjN6dm03MC1ITlhuSGZ1NjNMQ2ZUUnJjUWdsMm05TVVCQng5b2tjN2lvRGJpbWktTW5KY0ZjZ3RYbG90OWRFS2xSRGp2YUM0RWgzOW8zaXdXWi0tSmRyRm9nQ3QxZ09adi1jR21DOEhsbm55b28yVEVFSTZYMjlGaE01Tjd6dy1OT1d2RGo3bW1jNE5RSEhHREFScDRLZ1JxN2kweXZ2bm9yVXM2dGFRdVc?oc=5",
-     "title": "20 anos, projetos em nove países e €30 milhões: como uma empresa do interior de Portugal fez do Brasil sua base para conquistar o mundo"
-    }
-   ],
-   "ids": [
-    "0054d41a00c8",
-    "91be0953cd59"
-   ],
-   "snippet": "",
-   "prescore": 3.9,
-   "headline": "20 anos, projetos em nove países e €30 milhões: como uma empresa do interior de Portugal fez do Brasil sua base para conquistar o mundo",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "d268709fca57",
    "title": "Samsung Life Prices Record Dollar Bond as Investors Defy Turmoil",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/samsung-life-insurance-south-korea-coupon-note-debt-dollar-bond-sale",
@@ -12179,72 +12465,6 @@
    "ai": false
   },
   {
-   "id": "82ca33c5dbd0",
-   "title": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026",
-   "link": "https://g1.globo.com/politica/noticia/2026/10/27/para-facilitar-aprovacao-governistas-defendem-acelerar-pautas-no-congresso-ainda-em-2026.ghtml",
-   "published": "2026-10-27T03:04:12+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/10/27/para-facilitar-aprovacao-governistas-defendem-acelerar-pautas-no-congresso-ainda-em-2026.ghtml",
-     "title": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026"
-    }
-   ],
-   "ids": [
-    "82ca33c5dbd0"
-   ],
-   "snippet": "Em discurso da vitória, Lula fala de Constituição e oposição no Congresso Parlamentares da base do presidente Luiz Inácio Lula da Silva (PT) avaliam que o governo precisa aproveitar os últimos dois meses deste ano para a aprovação de matérias de seu interesse. O argumento é que as pautas podem ter maior dificuldade de serem aprovadas na nova formação do Congresso Nacional eleita nestas eleições. Entre as prioridades estão: aprovação da proposta de emenda à Constituição (PEC) da Segurança Pública; envio e aprovação de um nome para ocupar o cargo de ministro do Supremo Tribunal Federal (STF); e ",
-   "prescore": 3.8,
-   "headline": "Para facilitar aprovação, governistas defendem acelerar pautas no Congresso ainda em 2026",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Em discurso da vitória, Lula fala de Constituição e oposição no Congresso Parlamentares da base do presidente Luiz Inácio Lula da Silva (PT) avaliam que o governo precisa aproveitar os últimos dois meses deste ano para a aprovação de matérias de seu interesse. O argumento é que as pautas podem ter maior dificuldade de serem aprovadas na nova formação do Congresso Nacional eleita nestas eleições. E",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e956595e13a7",
-   "title": "Presidente mais velho da história, Lula completa 81 anos nesta terça, dois dias após ser reeleito para quarto mandato",
-   "link": "https://g1.globo.com/politica/noticia/2026/10/27/presidente-mais-velho-da-historia-lula-completa-81-anos-nesta-terca-dois-dias-apos-ser-reeleito-para-quarto-mandato.ghtml",
-   "published": "2026-10-27T03:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/10/27/presidente-mais-velho-da-historia-lula-completa-81-anos-nesta-terca-dois-dias-apos-ser-reeleito-para-quarto-mandato.ghtml",
-     "title": "Presidente mais velho da história, Lula completa 81 anos nesta terça, dois dias após ser reeleito para quarto mandato"
-    }
-   ],
-   "ids": [
-    "e956595e13a7"
-   ],
-   "snippet": "Agora no g1 Presidente da República mais velho a governar, Luiz Inácio Lula da Silva (PT) completa 81 anos nesta terça-feira (27), dois dias depois de conquistar sua quarta vitória em uma eleição presidencial. O petista chega enfrenta o desafio de se reinventar para governar por mais quatro anos. Lula terá de lidar com uma oposição que saiu fortalecida no Congresso Nacional e ao avanço da extrema-direita no comanda de países da América do Sul. Lula derrotou o senador Flávio Bolsonaro (PL), filho do ex-presidente Jair Bolsonaro (PL), no segundo turno de domingo (25) e se tornou o primeiro presi",
-   "prescore": 3.8,
-   "headline": "Presidente mais velho da história, Lula completa 81 anos nesta terça, dois dias após ser reeleito para quarto mandato",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Agora no g1 Presidente da República mais velho a governar, Luiz Inácio Lula da Silva (PT) completa 81 anos nesta terça-feira (27), dois dias depois de conquistar sua quarta vitória em uma eleição presidencial. O petista chega enfrenta o desafio de se reinventar para governar por mais quatro anos. Lula terá de lidar com uma oposição que saiu fortalecida no Congresso Nacional e ao avanço da extrema-",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "52b2fd12157c",
    "title": "Fiscal na mira do mercado: BTG avalia cenário político e possíveis nomes para a Fazenda no Lula 4; confira",
    "link": "https://www.seudinheiro.com/2026/economia/fiscal-na-mira-do-mercado-btg-avalia-cenario-politico-e-possiveis-nomes-para-a-fazenda-no-lula-4-confira/",
@@ -12311,35 +12531,28 @@
    "ai": false
   },
   {
-   "id": "ac6351ed320d",
-   "title": "Após mínima histórica, aprovação de Trump sobe 1% e chega a 32% antes das eleições nos EUA",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWWlsZ0ZzZHNZenRDcFFWSlcyYTRnejU3SE1xRkFpR0poeFZHMlEtVnZYZDNsNlNBTlNseEVHOExYRWVVSFBIVE5CbDN1SUpSbGRDOFFfN3BSbmZ6NjlrcjRUWTl3TmVRbXdNWUx1OE5PcjZvakMzX1JQamJUS1I3elBTS1d3RHRTUl9MX2ZrOGdzamN6Q2xiVThieVB3VzRkX09sekcyVG5MQWdKM3IyMVJUX2FNWUZkSXZYNk5yWHUtWU0waWdlZnpNUdIB2gFBVV95cUxPSUhUamp1b2pBX0FFX0Q0Tm5HTjVGd3U5YjlNaWNBZEtET2xqTHR5VWxwSll1YjFrUmRIWWRwdm5PWmRMamYwemhLWF85WEk4ai1zdTRxY3Z3cUI2Zng2dEkxcnJsbFBhakduRHBSajRGSGdNQ1JER1FkYVJOUWc5Y1dUWGkzdXQ0bGF1MHVXYkotbFJoRGtfblAwV3cza3EtMnVYanpXSDNfYWNaV2xiMkFsRkZuakFMcFBjSlRNcjZpYTZ3SFNrcjV4dFJTREd4T1NXVXJSTklSQQ?oc=5",
-   "published": "2026-10-26T20:57:33+00:00",
+   "id": "a7a3fc31f76a",
+   "title": "Circuit breaker é acionado pela primeira vez desde a pandemia de Covid-19; relembre todas as vezes em que a Bolsa parou",
+   "link": "https://g1.globo.com/economia/noticia/2026/10/26/circuit-breaker-e-acionado-pela-primeira-vez-desde-a-pandemia-de-covid-19-relembre-todas-as-vezes-em-que-a-bolsa-parou.ghtml",
+   "published": "2026-10-26T20:54:28+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "g1",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWWlsZ0ZzZHNZenRDcFFWSlcyYTRnejU3SE1xRkFpR0poeFZHMlEtVnZYZDNsNlNBTlNseEVHOExYRWVVSFBIVE5CbDN1SUpSbGRDOFFfN3BSbmZ6NjlrcjRUWTl3TmVRbXdNWUx1OE5PcjZvakMzX1JQamJUS1I3elBTS1d3RHRTUl9MX2ZrOGdzamN6Q2xiVThieVB3VzRkX09sekcyVG5MQWdKM3IyMVJUX2FNWUZkSXZYNk5yWHUtWU0waWdlZnpNUdIB2gFBVV95cUxPSUhUamp1b2pBX0FFX0Q0Tm5HTjVGd3U5YjlNaWNBZEtET2xqTHR5VWxwSll1YjFrUmRIWWRwdm5PWmRMamYwemhLWF85WEk4ai1zdTRxY3Z3cUI2Zng2dEkxcnJsbFBhakduRHBSajRGSGdNQ1JER1FkYVJOUWc5Y1dUWGkzdXQ0bGF1MHVXYkotbFJoRGtfblAwV3cza3EtMnVYanpXSDNfYWNaV2xiMkFsRkZuakFMcFBjSlRNcjZpYTZ3SFNrcjV4dFJTREd4T1NXVXJSTklSQQ?oc=5",
-     "title": "Após mínima histórica, aprovação de Trump sobe 1% e chega a 32% antes das eleições nos EUA"
-    },
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/mundo/noticia/2026/10/26/aprovacao-de-trump-sobe-1percent-e-chega-a-32percent-antes-das-eleicoes-nos-eua.ghtml",
-     "title": "Após mínima histórica, aprovação de Trump sobe 1% e chega a 32% antes das eleições nos EUA"
+     "link": "https://g1.globo.com/economia/noticia/2026/10/26/circuit-breaker-e-acionado-pela-primeira-vez-desde-a-pandemia-de-covid-19-relembre-todas-as-vezes-em-que-a-bolsa-parou.ghtml",
+     "title": "Circuit breaker é acionado pela primeira vez desde a pandemia de Covid-19; relembre todas as vezes em que a Bolsa parou"
     }
    ],
    "ids": [
-    "ac6351ed320d",
-    "5a00e7bfeea8",
-    "ac6351ed320d"
+    "a7a3fc31f76a"
    ],
-   "snippet": "Sem apresentar provas, Trump fala de 'eleição fraudada' no Brasil e que gosta de Lula A aprovação do presidente dos Estados Unidos, Donald Trump, subiu para 32%, um ponto percentual acima do menor nível registrado na semana anterior, segundo pesquisa Reuters/Ipsos divulgada nesta segunda-feira (26). ✅ Siga o canal de notícias internacionais do g1 no WhatsApp O levantamento foi realizado antes das eleições legislativas de 3 de novembro - conhecidas como midterms -, que vão definir os representantes do Congresso dos Estados Unidos. Os republicanos, partido de Trump, tentam manter a maioria na Câ",
+   "snippet": "Circuit breaker: entenda o que é a suspensão das negociações quando a bolsa despenca Luiz Inácio Lula da Silva (PT) foi reeleito presidente da República neste domingo (25) e governará o Brasil por mais quatro anos. Com a vitória do petista e a derrota de Flávio Bolsonaro (PL) nas urnas, o mercado financeiro passou esta segunda-feira (26) no vermelho, chegando a registrar queda de 16,48% e acionando o circuit breaker — algo que não acontecia desde o início da pandemia de Covid-19 no Brasil, em 2020. 🔎 O circuit breaker é um mecanismo de segurança da Bolsa de Valores brasileira (B3) que interrom",
    "prescore": 3.8,
-   "headline": "Após mínima histórica, aprovação de Trump sobe 1% e chega a 32% antes das eleições nos EUA",
-   "category": "politica",
+   "headline": "Circuit breaker é acionado pela primeira vez desde a pandemia de Covid-19; relembre todas as vezes em que a Bolsa parou",
+   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Sem apresentar provas, Trump fala de 'eleição fraudada' no Brasil e que gosta de Lula A aprovação do presidente dos Estados Unidos, Donald Trump, subiu para 32%, um ponto percentual acima do menor nível registrado na semana anterior, segundo pesquisa Reuters/Ipsos divulgada nesta segunda-feira (26). ✅ Siga o canal de notícias internacionais do g1 no WhatsApp O levantamento foi realizado antes das ",
+   "summary": "Circuit breaker: entenda o que é a suspensão das negociações quando a bolsa despenca Luiz Inácio Lula da Silva (PT) foi reeleito presidente da República neste domingo (25) e governará o Brasil por mais quatro anos. Com a vitória do petista e a derrota de Flávio Bolsonaro (PL) nas urnas, o mercado financeiro passou esta segunda-feira (26) no vermelho, chegando a registrar queda de 16,48% e acionand",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12646,237 +12859,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "bff6d36acfe4",
-   "title": "Triunfo de Lula evita guinada do Brasil em clima e desmatamento",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY2xUckgzN3B1S1M3dWlabWlnLWpEZ2Fmd3RVVmNlR09QYjJfcFZkeWJrWUFJUXZsZVJyTnRrTUxnajBQMVRuVUswSS1SYzlaRlVnRWlVNVZtSG1NVVJiQm9kOHFpajVsYzVkV0QyZVdTc21sQnllTzEyNFh2bGFWSlZnYlFldzBfYmlTUTdXUVZJWFRuSWU4X195dEE0a3p3TkVhUmdWVE85RXF1U1ZKeEdfTDY?oc=5",
-   "published": "2026-10-26T17:59:27+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY2xUckgzN3B1S1M3dWlabWlnLWpEZ2Fmd3RVVmNlR09QYjJfcFZkeWJrWUFJUXZsZVJyTnRrTUxnajBQMVRuVUswSS1SYzlaRlVnRWlVNVZtSG1NVVJiQm9kOHFpajVsYzVkV0QyZVdTc21sQnllTzEyNFh2bGFWSlZnYlFldzBfYmlTUTdXUVZJWFRuSWU4X195dEE0a3p3TkVhUmdWVE85RXF1U1ZKeEdfTDY?oc=5",
-     "title": "Triunfo de Lula evita guinada do Brasil em clima e desmatamento"
-    }
-   ],
-   "ids": [
-    "bff6d36acfe4"
-   ],
-   "snippet": "",
-   "prescore": 3.8,
-   "headline": "Triunfo de Lula evita guinada do Brasil em clima e desmatamento",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ffd15cc6b140",
-   "title": "Bolsas europeias fecham em alta com alívio no preço do petróleo e nos juros",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVHBwcGNNRm9IX05yd09hZDE1Q2hoTERSeWZmXzdkWmdVN0M2cERqRjhSTFJLa2x0dk02UWZxMmgxSzNXdXhELUI1dFVjYlF1Y2toZFdTWHNoYm55SG1PNVNDSTIxTzB2d0FTY3h0SHMyX0V2QnRQT0ZZcEpLUHhhakRfTXdfMlEteUZMUzlhVEZxMnhDSC05X2RjLU9QM2o0eE1KeDE2RHBzcExDQTc1VExxMURIeDE1dkVyZUdScy01NUEtelFpdy1vWXhId9IB3AFBVV95cUxOVGZ6OVJZak5mVzlfVnNlU0pJbmpWNFZYZm04OFVBQU9UejhFdWpBSDBjYkEtalpvV2tLUUhaejU3cUpZTUprMF8taTZsZUpRM2FGaTJqX2Q1OHk0dWxNckt4NEYyT2FPaDJnWndCZEN2ZG1mSjFMSXZkMEZHdGc1UzBRRHFPd28zOWhDN3FiVnp6WkkzYzFfVkxLT3d5QzdxQ09zeWx5QUROS2U4WHJxNWVrdkVEdUVucmVCOVdVcVJHdzdLOWIzU3lzZVZ0V0o2YS02aXpsVjVrLWF3?oc=5",
-   "published": "2026-10-26T16:56:40+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVHBwcGNNRm9IX05yd09hZDE1Q2hoTERSeWZmXzdkWmdVN0M2cERqRjhSTFJLa2x0dk02UWZxMmgxSzNXdXhELUI1dFVjYlF1Y2toZFdTWHNoYm55SG1PNVNDSTIxTzB2d0FTY3h0SHMyX0V2QnRQT0ZZcEpLUHhhakRfTXdfMlEteUZMUzlhVEZxMnhDSC05X2RjLU9QM2o0eE1KeDE2RHBzcExDQTc1VExxMURIeDE1dkVyZUdScy01NUEtelFpdy1vWXhId9IB3AFBVV95cUxOVGZ6OVJZak5mVzlfVnNlU0pJbmpWNFZYZm04OFVBQU9UejhFdWpBSDBjYkEtalpvV2tLUUhaejU3cUpZTUprMF8taTZsZUpRM2FGaTJqX2Q1OHk0dWxNckt4NEYyT2FPaDJnWndCZEN2ZG1mSjFMSXZkMEZHdGc1UzBRRHFPd28zOWhDN3FiVnp6WkkzYzFfVkxLT3d5QzdxQ09zeWx5QUROS2U4WHJxNWVrdkVEdUVucmVCOVdVcVJHdzdLOWIzU3lzZVZ0V0o2YS02aXpsVjVrLWF3?oc=5",
-     "title": "Bolsas europeias fecham em alta com alívio no preço do petróleo e nos juros"
-    }
-   ],
-   "ids": [
-    "ffd15cc6b140"
-   ],
-   "snippet": "",
-   "prescore": 3.8,
-   "headline": "Bolsas europeias fecham em alta com alívio no preço do petróleo e nos juros",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "aac77dd7c3ed",
-   "title": "Dólar a R$ 6, bolsa em queda de até 30% e juros mais altos: o que Wall Street espera do Brasil após a reeleição de Lula",
-   "link": "https://www.seudinheiro.com/2026/bolsa-dolar/dolar-a-r-6-bolsa-em-queda-de-ate-30-e-juros-mais-altos-o-que-wall-street-espera-do-brasil-apos-a-reeleicao-de-lula-miql/",
-   "published": "2026-10-26T16:51:18+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Seu Dinheiro",
-     "link": "https://www.seudinheiro.com/2026/bolsa-dolar/dolar-a-r-6-bolsa-em-queda-de-ate-30-e-juros-mais-altos-o-que-wall-street-espera-do-brasil-apos-a-reeleicao-de-lula-miql/",
-     "title": "Dólar a R$ 6, bolsa em queda de até 30% e juros mais altos: o que Wall Street espera do Brasil após a reeleição de Lula"
-    }
-   ],
-   "ids": [
-    "aac77dd7c3ed"
-   ],
-   "snippet": "Morgan Stanley, UBS e Goldman Sachs veem espaço para uma correção dos ativos brasileiros e elegem o risco fiscal como catalisador crucial para os próximos meses The post Dólar a R$ 6, bolsa em queda de até 30% e juros mais altos: o que Wall Street espera do Brasil após a reeleição de Lula appeared first on Seu Dinheiro .",
-   "prescore": 3.8,
-   "headline": "Dólar a R$ 6, bolsa em queda de até 30% e juros mais altos: o que Wall Street espera do Brasil após a reeleição de Lula",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Morgan Stanley, UBS e Goldman Sachs veem espaço para uma correção dos ativos brasileiros e elegem o risco fiscal como catalisador crucial para os próximos meses The post Dólar a R$ 6, bolsa em queda de até 30% e juros mais altos: o que Wall Street espera do Brasil após a reeleição de Lula appeared first on Seu Dinheiro .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "01776ee1063e",
-   "title": "O Tesouro IPCA+ 8% está de volta: Tesouro Direto abre com altos retornos e tombo de mais de 20% nos títulos públicos",
-   "link": "https://www.seudinheiro.com/2026/renda-fixa/o-tesouro-ipca-8-esta-de-volta-tesouro-direto-abre-com-retornos-bem-mais-altos-e-tombo-nos-titulos-publicos-julw/",
-   "published": "2026-10-26T16:19:22+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Seu Dinheiro",
-     "link": "https://www.seudinheiro.com/2026/renda-fixa/o-tesouro-ipca-8-esta-de-volta-tesouro-direto-abre-com-retornos-bem-mais-altos-e-tombo-nos-titulos-publicos-julw/",
-     "title": "O Tesouro IPCA+ 8% está de volta: Tesouro Direto abre com altos retornos e tombo de mais de 20% nos títulos públicos"
-    }
-   ],
-   "ids": [
-    "01776ee1063e"
-   ],
-   "snippet": "Negociações permaneceram fechadas durante toda a manhã devido à alta volatilidade das taxas de juros após a vitória de Lula nas eleições presidenciais The post O Tesouro IPCA+ 8% está de volta: Tesouro Direto abre com altos retornos e tombo de mais de 20% nos títulos públicos appeared first on Seu Dinheiro .",
-   "prescore": 3.8,
-   "headline": "O Tesouro IPCA+ 8% está de volta: Tesouro Direto abre com altos retornos e tombo de mais de 20% nos títulos públicos",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Negociações permaneceram fechadas durante toda a manhã devido à alta volatilidade das taxas de juros após a vitória de Lula nas eleições presidenciais The post O Tesouro IPCA+ 8% está de volta: Tesouro Direto abre com altos retornos e tombo de mais de 20% nos títulos públicos appeared first on Seu Dinheiro .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "007b36bf8dd9",
-   "title": "Lula enfrentará Congresso à direita, crise no STF e precisará conciliar promessas com economia no 4º mandato",
-   "link": "https://g1.globo.com/politica/noticia/2026/10/26/lula-enfrentara-congresso-a-direita-crise-no-stf-e-precisara-conciliar-promessas-com-economia-no-4o-mandato.ghtml",
-   "published": "2026-10-26T15:27:32+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/10/26/lula-enfrentara-congresso-a-direita-crise-no-stf-e-precisara-conciliar-promessas-com-economia-no-4o-mandato.ghtml",
-     "title": "Lula enfrentará Congresso à direita, crise no STF e precisará conciliar promessas com economia no 4º mandato"
-    }
-   ],
-   "ids": [
-    "007b36bf8dd9"
-   ],
-   "snippet": "Entenda os desafios de Lula em seu 4º mandato Reeleito para um quarto mandato, Luiz Inácio Lula da Silva (PT) terá pela frente o desafio de governar com um Congresso com maioria da oposição, lidar com uma crise interna no Supremo Tribunal Federal (STF) e conciliar promessas de campanha com equilíbrio fiscal. A articulação política para aprovar propostas no Legislativo, a relação com o Judiciário e a condução da política econômica estarão entre os principais pontos de atenção de um novo ciclo do governo, que começa em janeiro de 2027. Lula discursa na avenida Paulista REUTERS Na Câmara dos Depu",
-   "prescore": 3.8,
-   "headline": "Lula enfrentará Congresso à direita, crise no STF e precisará conciliar promessas com economia no 4º mandato",
-   "category": "macro",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Entenda os desafios de Lula em seu 4º mandato Reeleito para um quarto mandato, Luiz Inácio Lula da Silva (PT) terá pela frente o desafio de governar com um Congresso com maioria da oposição, lidar com uma crise interna no Supremo Tribunal Federal (STF) e conciliar promessas de campanha com equilíbrio fiscal. A articulação política para aprovar propostas no Legislativo, a relação com o Judiciário e",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "51921f431889",
-   "title": "China abre reunião do Partido Comunista com foco em disciplina e combate à corrupção",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQN2pOTDV6MkluT1daZjBfZVhnb05BRFF5UV9MdktZQUlJLS1jME8zUVJFb1g3YmJBdVdWX1hFTjNoZmtwSWlMRjkyeTN2cm5QQS1xRmJKTGhhWkU0VnpoQVI1OG1rMEpjdHdkZm9YYlZMTnVwOFdvazdEWWlsdTBCMzU2SGtKNWdIbmtlQTZrYlJaOWlRZHB6c19GQlNUZDNJRk0wYWlYYTBicTdoLXlJTHRKTTQ3c2lXVXlpbWxKYUpOeWtLWllJYWs1bFNYaHfSAd4BQVVfeXFMTXVtNHo5NWZ6R2tScVBWcmZGdzZkLU1vbkU0VloyNlR0cDdsR1QxbTNreFVBUkZ0aEYzYkctcWtKVzltTjY1dnBXbVBPd1FtYWVpQk1wV1FhekdsUkJKUEJRXzNySHY0YUhOdmxVN0VrTUlBeG5veURGNFFGaTlqVkVYWnJTWTN0UklnRVdwTGFmeUVZcy13a2FFZ2MzMWxiVjQyLXk3SkxVZGxDX3Q5Qjd6WGdZckYxYlgzVW9VX1BGeHQ1RWYtWDhHeERoZDFIUThGdndOeEhwT3RkcmVR?oc=5",
-   "published": "2026-10-26T15:27:01+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQN2pOTDV6MkluT1daZjBfZVhnb05BRFF5UV9MdktZQUlJLS1jME8zUVJFb1g3YmJBdVdWX1hFTjNoZmtwSWlMRjkyeTN2cm5QQS1xRmJKTGhhWkU0VnpoQVI1OG1rMEpjdHdkZm9YYlZMTnVwOFdvazdEWWlsdTBCMzU2SGtKNWdIbmtlQTZrYlJaOWlRZHB6c19GQlNUZDNJRk0wYWlYYTBicTdoLXlJTHRKTTQ3c2lXVXlpbWxKYUpOeWtLWllJYWs1bFNYaHfSAd4BQVVfeXFMTXVtNHo5NWZ6R2tScVBWcmZGdzZkLU1vbkU0VloyNlR0cDdsR1QxbTNreFVBUkZ0aEYzYkctcWtKVzltTjY1dnBXbVBPd1FtYWVpQk1wV1FhekdsUkJKUEJRXzNySHY0YUhOdmxVN0VrTUlBeG5veURGNFFGaTlqVkVYWnJTWTN0UklnRVdwTGFmeUVZcy13a2FFZ2MzMWxiVjQyLXk3SkxVZGxDX3Q5Qjd6WGdZckYxYlgzVW9VX1BGeHQ1RWYtWDhHeERoZDFIUThGdndOeEhwT3RkcmVR?oc=5",
-     "title": "China abre reunião do Partido Comunista com foco em disciplina e combate à corrupção"
-    }
-   ],
-   "ids": [
-    "51921f431889"
-   ],
-   "snippet": "",
-   "prescore": 3.8,
-   "headline": "China abre reunião do Partido Comunista com foco em disciplina e combate à corrupção",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "431e33e87496",
-   "title": "Presidente do União Brasil cumprimenta Lula e diz que resultado deve ser respeitado",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbDVHQTB5dzYwTTY5R19hLV9qWDU5M2k2S2xSMGNNMGExdWx4VVZ4QzlXUzNkczE4aEliNVB5SF84M01BNmJNQW1qZ1A0dExqXy1xM3lRb3poM25JZl9laHlPa2VvR3laTzVZMVJHaWxWbjd2MlR4TFY3YWJ1MmxtNm9EVUV4THRqZVgxcDUxSWpKWld0Q2pUaUliczlOTjdzVndpYTJNYi1ScEJWcm8yRGVyVnFEejBpcVRIZEdDWkVwSVgyY1FoQld6SnkxSVVEY0VsRzRrcDcyNTR2RTgzZTJCcDltcnlyZkHSAfgBQVVfeXFMTzNaQnR1aWhTNENNRVJZRjdjOGJtUjRXSUNoMXRoLVVsZVMtbDJsZEgyeVNablNTb1BoUmxzaTlKNjR6NDFOaWF2X3VCaGJsNHY2N0VfNUxabDdCY0FlQkphck9VV0cxclNWUm91TTRURFRMQUJ6dTNZNHpST1VqVFRZOF9MSWtkX3R2QzJOMWdYTDhCT1VkdFJXeFBTaGFIZFdFaWhlb0dpZk9wSjhWRzZyLUZaSFp6aFB0YXktRi13OTVEbnB1UlhwWUd2eTJNWFU2UXFSUTdtaEMwNl9WZTNNMndidVV0YnJTc3REVmhvdlJJdWRVeWQ?oc=5",
-   "published": "2026-10-26T15:14:13+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbDVHQTB5dzYwTTY5R19hLV9qWDU5M2k2S2xSMGNNMGExdWx4VVZ4QzlXUzNkczE4aEliNVB5SF84M01BNmJNQW1qZ1A0dExqXy1xM3lRb3poM25JZl9laHlPa2VvR3laTzVZMVJHaWxWbjd2MlR4TFY3YWJ1MmxtNm9EVUV4THRqZVgxcDUxSWpKWld0Q2pUaUliczlOTjdzVndpYTJNYi1ScEJWcm8yRGVyVnFEejBpcVRIZEdDWkVwSVgyY1FoQld6SnkxSVVEY0VsRzRrcDcyNTR2RTgzZTJCcDltcnlyZkHSAfgBQVVfeXFMTzNaQnR1aWhTNENNRVJZRjdjOGJtUjRXSUNoMXRoLVVsZVMtbDJsZEgyeVNablNTb1BoUmxzaTlKNjR6NDFOaWF2X3VCaGJsNHY2N0VfNUxabDdCY0FlQkphck9VV0cxclNWUm91TTRURFRMQUJ6dTNZNHpST1VqVFRZOF9MSWtkX3R2QzJOMWdYTDhCT1VkdFJXeFBTaGFIZFdFaWhlb0dpZk9wSjhWRzZyLUZaSFp6aFB0YXktRi13OTVEbnB1UlhwWUd2eTJNWFU2UXFSUTdtaEMwNl9WZTNNMndidVV0YnJTc3REVmhvdlJJdWRVeWQ?oc=5",
-     "title": "Presidente do União Brasil cumprimenta Lula e diz que resultado deve ser respeitado"
-    }
-   ],
-   "ids": [
-    "431e33e87496"
-   ],
-   "snippet": "",
-   "prescore": 3.8,
-   "headline": "Presidente do União Brasil cumprimenta Lula e diz que resultado deve ser respeitado",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -12968,7 +12950,7 @@
    "id": "g1-economia",
    "name": "g1",
    "ok": true,
-   "count": 60,
+   "count": 24,
    "error": null
   },
   {
@@ -13052,14 +13034,14 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 47,
+   "count": 30,
    "error": null
   },
   {
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 46,
+   "count": 49,
    "error": null
   },
   {
@@ -13227,11 +13209,11 @@
   }
  ],
  "stats": {
-  "raw": 935,
-  "unique": 212,
-  "unique_all": 805,
+  "raw": 885,
+  "unique": 211,
+  "unique_all": 772,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.8
+  "seconds": 4.2
  }
 }
