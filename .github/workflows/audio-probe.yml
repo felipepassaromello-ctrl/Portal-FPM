@@ -1,0 +1,48 @@
+name: Amostras de voz (temporário)
+
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+    paths: [".github/workflows/audio-probe.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install edge-tts
+      - name: Gerar amostras
+        run: |
+          mkdir -p probe-audio
+          python - <<'PY'
+          import asyncio, json, sys
+          sys.path.insert(0, "scripts")
+          import brief_audio as b, edge_tts
+          async def main():
+              vs = await edge_tts.list_voices()
+              open("probe-audio/vozes.txt", "w").write("\n".join(f"{v['ShortName']} {v.get('Gender')}" for v in vs if v["Locale"].startswith("pt")))
+              d = json.load(open("site/data/digest.json"))
+              txt = " ".join(s["speech"] for s in b.script(d)[:5])
+              for v in ["pt-BR-FranciscaNeural", "pt-BR-ThalitaMultilingualNeural", "pt-BR-AntonioNeural"]:
+                  try:
+                      open(f"probe-audio/{v}.mp3", "wb").write(await b.synth(txt, v))
+                      print("ok", v)
+                  except Exception as e:
+                      print("falhou", v, e)
+          asyncio.run(main())
+          PY
+          ls -la probe-audio
+      - name: Devolver as amostras ao branch
+        run: |
+          git config user.name "portal-bot"
+          git config user.email "portal-bot@users.noreply.github.com"
+          git add probe-audio
+          git commit -m "Amostras de voz do briefing"
+          git push
