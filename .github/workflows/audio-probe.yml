@@ -60,12 +60,15 @@ jobs:
       - run: sudo apt-get install -y -q ffmpeg espeak-ng
       - name: Instalar
         run: |
-          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          # torch 2.9 passou a exigir o torchcodec para ler áudio, que quebra no runner: fica na 2.8
+          pip install -q torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          printf "torch==2.8.0\ntorchaudio==2.8.0\n" > /tmp/c.txt
           case "${{ matrix.engine }}" in
-            chatterbox) pip install -q chatterbox-tts ;;
-            xtts) pip install -q "coqui-tts[codec]" ;;
-            f5) pip install -q f5-tts huggingface_hub ;;
+            xtts) pip install -q -c /tmp/c.txt "coqui-tts" ;;
+            f5) pip install -q -c /tmp/c.txt f5-tts huggingface_hub ;;
           esac
+          pip uninstall -y -q torchcodec || true
+          python -c "import torch, torchaudio; print(torch.__version__, torchaudio.__version__)"
       - name: Gerar
         env:
           COQUI_TOS_AGREED: "1"
@@ -136,6 +139,6 @@ jobs:
           git config user.name "portal-bot"
           git config user.email "portal-bot@users.noreply.github.com"
           git add -A probe-audio
-          git commit -m "Amostras de voz do briefing (rodada 5)"
+          git commit -m "Amostras de voz do briefing (rodada 6)"
           git pull --rebase -X theirs || true
           git push
