@@ -670,14 +670,101 @@
   }
 
   // ---------------------------------------------------------- ouvir o briefing
-  // Lê o briefing em voz alta com a voz do próprio aparelho (Web Speech API): sem servidor, sem custo, funciona sem
-  // internet. Escolhe a melhor voz em português do Brasil disponível, fala em trechos curtos (alguns navegadores
-  // cortam falas longas) e destaca na página o trecho que está sendo lido.
+  // O briefing narrado. De preferência o áudio do dia com voz neural, gerado no CI (scripts/brief_audio.py, em
+  // audio/briefing.mp3), com os trechos marcados no tempo: a página destaca o trecho em leitura, dá para pular entre
+  // eles e o celular mostra os controles na tela de bloqueio. Sem esse áudio (edição antiga, ainda não gerado), lê com
+  // a voz do próprio aparelho (Web Speech API).
   const listen = (() => {
     const synth = "speechSynthesis" in window ? window.speechSynthesis : null;
     const RATES = [1, 1.15, 1.3, 1.5, 0.9];
-    let voice = null, segs = [], si = 0, chunks = [], ci = 0, playing = false, cur = null;
     let rate = store.get("listen-rate", 1);
+    let mode = null, segs = [], si = 0, playing = false;
+    let meta = null, audio = null; // áudio neural
+    let voice = null, chunks = [], ci = 0, cur = null; // voz do aparelho
+    const REDUCED = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const mmss = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
+
+    // onde cada trecho está na página
+    const elFor = (sel) => {
+      if (!sel) return null;
+      if (sel === "headline") return $("#brief-headline");
+      if (sel === "mood") return $("#brief-mood");
+      if (sel.startsWith("tldr:")) return document.querySelectorAll("#brief-tldr > li")[+sel.slice(5)] || null;
+      if (sel.startsWith("sec:")) return document.querySelector(`#brief-sections .bsec[data-cat="${CSS.escape(sel.slice(4))}"]`);
+      if (sel === "watch") return $("#brief-watch")?.closest(".widget");
+      if (sel === "conn") return $("#brief-conn")?.closest(".widget");
+      return null;
+    };
+    const mark = () => {
+      document.querySelectorAll(".speaking").forEach((e) => e.classList.remove("speaking"));
+      const el = mode ? elFor(segs[si]?.sel) : null;
+      if (!el) return;
+      el.classList.add("speaking");
+      const r = el.getBoundingClientRect();
+      if (r.top < 70 || r.bottom > innerHeight - 110) el.scrollIntoView({ block: "center", behavior: REDUCED() ? "auto" : "smooth" });
+    };
+    const ui = () => {
+      const bar = $("#listen-bar");
+      let frac = 0, label = segs[si]?.label || "Briefing";
+      if (mode === "audio" && audio) {
+        const dur = audio.duration || meta.duration || 1;
+        frac = audio.currentTime / dur;
+        label += ` · ${mmss(Math.max(0, dur - audio.currentTime))}`;
+      } else if (mode === "voice") frac = segs.length ? (si + (chunks.length ? ci / chunks.length : 0)) / segs.length : 0;
+      $("#lb-label").textContent = label;
+      $("#lb-fill").style.width = `${Math.min(100, frac * 100)}%`;
+      $("#lb-play").innerHTML = `<svg class="ic"><use href="#i-${playing ? "pause" : "play"}"/></svg>`;
+      $("#lb-play").setAttribute("aria-label", playing ? "Pausar" : "Continuar");
+      $("#lb-rate").textContent = `${String(rate).replace(".", ",")}×`;
+      $("#brief-listen").classList.toggle("on", !bar.hidden);
+      if ("mediaSession" in navigator) navigator.mediaSession.playbackState = mode ? (playing ? "playing" : "paused") : "none";
+    };
+
+    // ---- áudio neural
+    function startAudio() {
+      mode = "audio";
+      segs = meta.segments; si = 0;
+      const a = (audio = new Audio(`audio/${meta.file}?v=${meta.key}`));
+      a.preload = "auto";
+      a.playbackRate = rate;
+      // eventos de um áudio já encerrado (o usuário fechou ou recomeçou) são ignorados
+      const live = () => a === audio;
+      a.addEventListener("timeupdate", () => {
+        if (!live()) return;
+        const t = a.currentTime;
+        const k = segs.findIndex((s) => t >= s.start && t < s.end);
+        if (k >= 0 && k !== si) { si = k; mark(); }
+        ui();
+      });
+      a.addEventListener("play", () => { if (live()) { playing = true; ui(); } });
+      a.addEventListener("pause", () => { if (live()) { playing = false; ui(); } });
+      a.addEventListener("ended", () => { if (live()) stop(); });
+      // o arquivo sumiu ou não carrega: segue com a voz do aparelho, do mesmo trecho
+      a.addEventListener("error", () => { if (!live()) return; const from = si; audio = null; startVoice(from); });
+      $("#listen-bar").hidden = false;
+      playing = true;
+      a.play().catch(() => { if (live()) { playing = false; ui(); } });
+      session();
+      mark(); ui();
+    }
+    const seekSeg = (k) => { if (!audio) return; si = Math.max(0, Math.min(segs.length - 1, k)); audio.currentTime = segs[si].start + 0.01; mark(); ui(); };
+    function session() {
+      if (!("mediaSession" in navigator)) return;
+      const ms = navigator.mediaSession;
+      try {
+        ms.metadata = new MediaMetadata({ title: "Briefing do dia", artist: "Portal FPM", album: state.digest?.brief?.headline || "",
+          artwork: [{ src: "icons/icon-512.png", sizes: "512x512", type: "image/png" }] });
+        ms.setActionHandler("play", () => toggle());
+        ms.setActionHandler("pause", () => toggle());
+        ms.setActionHandler("previoustrack", () => jump(-1));
+        ms.setActionHandler("nexttrack", () => jump(1));
+        ms.setActionHandler("seekbackward", (e) => { if (audio) audio.currentTime = Math.max(0, audio.currentTime - (e.seekOffset || 10)); });
+        ms.setActionHandler("seekforward", (e) => { if (audio) audio.currentTime = Math.min(audio.duration || 1e9, audio.currentTime + (e.seekOffset || 10)); });
+        ms.setActionHandler("seekto", (e) => { if (audio && e.seekTime != null) audio.currentTime = e.seekTime; });
+      } catch { /* navegador sem algum desses controles */ }
+    }
+
+    // ---- voz do aparelho
     const pickVoice = () => {
       const vs = synth.getVoices().filter((v) => /^pt[-_]BR/i.test(v.lang));
       const all = vs.length ? vs : synth.getVoices().filter((v) => /^pt/i.test(v.lang));
@@ -690,15 +777,14 @@
       .replace(/<[^>]+>/g, "")
       .replace(/\b([1-4])T(\d{2})\b/g, (m, q, y) => `${ORD[q]} trimestre de 20${y}`)
       .replace(/(\d[\d.,]*)\s?bi\b/g, "$1 bilhões").replace(/(\d[\d.,]*)\s?mi\b/g, "$1 milhões").replace(/(\d[\d.,]*)\s?tri\b/g, "$1 trilhões")
-      .replace(/US\$\s?([\d.,]+)( bilhões| milhões| trilhões)?/g, (m, n, u) => `${n}${u || ""} de dólares`.replace(/^(1)( de dólares)$/, "1 dólar"))
+      .replace(/US\$\s?([\d.,]+)( bilhões| milhões| trilhões)?/g, (m, n, u) => `${n}${u || ""} de dólares`)
       .replace(/R\$\s?([\d.,]+) (bilhões|milhões|trilhões)/g, "$1 $2 de reais")
       .replace(/(^|[\s(])[-−](\d)/g, "$1menos $2")
       .replace(/\s+·\s+/g, ", ").replace(/[“”"«»]/g, "").replace(/\s*\(([^)]*)\)/g, ", $1,")
       .replace(/\s+/g, " ").trim();
-    // frases curtas; frase muito longa quebra nas vírgulas
+    // frases curtas (alguns navegadores cortam falas longas); quebra só onde a pontuação vem seguida de espaço
     const split = (t) => {
       const out = [];
-      // quebra só onde a pontuação vem seguida de espaço: "175.705" e "R$ 5,35" ficam inteiros
       for (const sent of t.split(/(?<=[.!?;:])\s+/)) {
         let x = sent.trim();
         while (x.length > 220) { const cut = x.lastIndexOf(",", 200); const at = cut > 60 ? cut + 1 : 200; out.push(x.slice(0, at)); x = x.slice(at).trim(); }
@@ -706,43 +792,23 @@
       }
       return out;
     };
-    function build() {
+    function voiceScript() {
       const b = state.digest?.brief || {};
       const list = [];
       const day = new Date((state.digest?.generated_at) || Date.now()).toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
-      list.push({ label: "Abertura", text: `Bom dia. Este é o briefing do Portal FPM de ${day}.`, el: null });
-      if (b.headline) list.push({ label: "Manchete", text: b.headline, el: $("#brief-headline") });
-      if (b.mood) list.push({ label: "Clima do dia", text: b.mood, el: $("#brief-mood") });
-      const tl = b.tldr || [], lis = [...document.querySelectorAll("#brief-tldr > li")];
-      tl.forEach((t, i) => list.push({ label: `O essencial · ${i + 1} de ${tl.length}`, text: (i === 0 ? "O essencial. " : "") + t, el: lis[i] || null }));
-      const secs = [...document.querySelectorAll("#brief-sections .bsec")];
-      for (const el of secs) list.push({ label: el.querySelector("h4")?.textContent || "Seção", text: `${el.querySelector("h4")?.textContent || ""}. ${el.querySelector("p")?.textContent || ""}`, el });
-      if ((b.watchlist || []).length) list.push({ label: "No radar", text: `No radar para hoje: ${b.watchlist.join("; ")}.`, el: $("#brief-watch")?.closest(".widget") });
-      if ((b.connections || []).length) list.push({ label: "Conexões", text: `Conexões do dia. ${b.connections.join(" ")}`, el: $("#brief-conn")?.closest(".widget") });
-      list.push({ label: "Fim", text: "Esse foi o briefing de hoje. Bom trabalho.", el: null });
+      list.push({ sel: "", label: "Abertura", text: `Bom dia. Este é o briefing do Portal FPM de ${day}.` });
+      if (b.headline) list.push({ sel: "headline", label: "Manchete", text: b.headline });
+      if (b.mood) list.push({ sel: "mood", label: "Clima do dia", text: b.mood });
+      (b.tldr || []).forEach((t, i, a) => list.push({ sel: `tldr:${i}`, label: `O essencial · ${i + 1} de ${a.length}`, text: (i === 0 ? "O essencial. " : "") + t }));
+      for (const s of b.sections || []) list.push({ sel: `sec:${s.category}`, label: catName(s.category), text: `${catName(s.category)}. ${s.text}` });
+      if ((b.watchlist || []).length) list.push({ sel: "watch", label: "No radar", text: `No radar para hoje: ${b.watchlist.join("; ")}.` });
+      if ((b.connections || []).length) list.push({ sel: "conn", label: "Conexões", text: `Conexões do dia. ${b.connections.join(" ")}` });
+      list.push({ sel: "", label: "Fim", text: "Esse foi o briefing de hoje. Bom trabalho." });
       return list.map((x) => ({ ...x, chunks: split(spoken(x.text)) }));
     }
-    const mark = () => {
-      document.querySelectorAll(".speaking").forEach((e) => e.classList.remove("speaking"));
-      const el = playing || cur ? segs[si]?.el : null;
-      if (el) {
-        el.classList.add("speaking");
-        const r = el.getBoundingClientRect();
-        if (r.top < 70 || r.bottom > innerHeight - 110) el.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-      }
-    };
-    const ui = () => {
-      const bar = $("#listen-bar");
-      $("#lb-label").textContent = segs[si]?.label || "Briefing";
-      $("#lb-fill").style.width = `${segs.length ? ((si + (chunks.length ? ci / chunks.length : 0)) / segs.length) * 100 : 0}%`;
-      $("#lb-play").innerHTML = `<svg class="ic"><use href="#i-${playing ? "pause" : "play"}"/></svg>`;
-      $("#lb-play").setAttribute("aria-label", playing ? "Pausar" : "Continuar");
-      $("#lb-rate").textContent = `${String(rate).replace(".", ",")}×`;
-      $("#brief-listen").classList.toggle("on", !bar.hidden);
-    };
-    const halt = () => { if (cur) cur._stop = true; synth.cancel(); cur = null; };
+    const halt = () => { if (cur) cur._stop = true; synth?.cancel(); cur = null; };
     function next() {
-      if (!playing) return;
+      if (!playing || mode !== "voice") return;
       if (ci >= chunks.length) {
         si++;
         if (si >= segs.length) { stop(); return; }
@@ -757,24 +823,38 @@
       synth.speak(u);
       ui();
     }
-    function start(from = 0) {
-      if (!synth) return;
+    function startVoice(from = 0) {
+      if (!synth) { stop(); return; }
       halt();
       if (!voice) pickVoice();
-      segs = build(); si = Math.max(0, Math.min(from, segs.length - 1)); chunks = segs[si].chunks; ci = 0;
+      mode = "voice";
+      segs = voiceScript(); si = Math.max(0, Math.min(from, segs.length - 1)); chunks = segs[si].chunks; ci = 0;
       playing = true;
       $("#listen-bar").hidden = false;
       mark(); next();
     }
+
+    // ---- controles
+    function start() {
+      stop();
+      if (meta && !state.edition) startAudio(); else startVoice();
+    }
     function toggle() {
-      if (!segs.length) return start();
+      if (!mode) return start();
+      if (mode === "audio" && audio) { audio.paused ? audio.play().catch(() => {}) : audio.pause(); return; }
       if (playing) { playing = false; halt(); ui(); return; }
       playing = true; next();
     }
     function jump(d) {
-      if (!segs.length) return;
+      if (!mode) return;
+      if (mode === "audio") {
+        // voltar no meio de um trecho recomeça o trecho; no começo, vai para o anterior
+        const back = d < 0 && audio && audio.currentTime - segs[si].start > 2;
+        seekSeg(back ? si : si + d);
+        if (audio.paused) audio.play().catch(() => {});
+        return;
+      }
       halt();
-      // voltar no meio de um trecho recomeça o trecho; no começo, vai para o anterior
       si = d < 0 && ci > 0 ? si : Math.max(0, Math.min(segs.length - 1, si + d));
       chunks = segs[si].chunks; ci = 0;
       playing = true;
@@ -782,35 +862,54 @@
     }
     function stop() {
       playing = false;
+      if (audio) { audio.pause(); audio.removeAttribute("src"); audio.load(); audio = null; }
       if (synth) halt();
-      segs = []; si = 0; chunks = []; ci = 0;
+      mode = null; segs = []; si = 0; chunks = []; ci = 0;
       $("#listen-bar").hidden = true;
       mark(); ui();
     }
-    if (synth) {
-      pickVoice();
-      synth.addEventListener?.("voiceschanged", pickVoice);
-      $("#brief-listen").onclick = () => ($("#listen-bar").hidden ? start() : stop());
-      $("#lb-play").onclick = toggle;
-      $("#lb-next").onclick = () => jump(1);
-      $("#lb-prev").onclick = () => jump(-1);
-      $("#lb-close").onclick = stop;
-      $("#lb-rate").onclick = () => {
-        rate = RATES[(RATES.indexOf(rate) + 1) % RATES.length];
-        store.set("listen-rate", rate);
-        // a velocidade vale a partir da próxima frase; reinicia a atual para sentir na hora
-        if (playing) { halt(); next(); } else ui();
-      };
-      addEventListener("pagehide", () => synth.cancel());
+    // o áudio do dia é procurado ao abrir o briefing, para o toque em Ouvir já tocar (o iPhone só deixa tocar som
+    // dentro do próprio toque)
+    async function loadMeta() {
+      const want = state.digest?.brief?.headline;
+      meta = null;
+      if (!want || state.edition) return;
+      try {
+        const m = await fetch(`audio/briefing.json?t=${Date.now()}`, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null));
+        if (m && m.headline === want && m.segments?.length) meta = m;
+      } catch { /* sem áudio: fica a voz do aparelho */ }
+      const btn = $("#brief-listen");
+      btn.querySelector("span").textContent = meta ? `Ouvir · ${Math.max(1, Math.round(meta.duration / 60))} min` : "Ouvir";
+      btn.hidden = !(meta || synth);
     }
+    $("#brief-listen").onclick = () => ($("#listen-bar").hidden ? start() : stop());
+    $("#lb-play").onclick = toggle;
+    $("#lb-next").onclick = () => jump(1);
+    $("#lb-prev").onclick = () => jump(-1);
+    $("#lb-close").onclick = stop;
+    $("#lb-rate").onclick = () => {
+      rate = RATES[(RATES.indexOf(rate) + 1) % RATES.length];
+      store.set("listen-rate", rate);
+      if (audio) audio.playbackRate = rate;
+      // na voz do aparelho, a velocidade vale a partir da frase; reinicia a atual para sentir na hora
+      else if (mode === "voice" && playing) { halt(); next(); }
+      ui();
+    };
+    // tocar na barra de progresso pula para aquele ponto do áudio
+    $("#listen-bar .lb-track").addEventListener("click", (e) => {
+      if (!audio) return;
+      const r = e.currentTarget.getBoundingClientRect();
+      audio.currentTime = ((e.clientX - r.left) / r.width) * (audio.duration || meta.duration);
+    });
+    if (synth) { pickVoice(); synth.addEventListener?.("voiceschanged", pickVoice); }
+    addEventListener("pagehide", () => synth?.cancel());
+
     function refresh() {
-        const has = !!(synth && state.digest?.brief?.headline);
-        $("#brief-listen").hidden = !has;
-        const key = `${state.edition || ""}|${state.digest?.brief?.headline || ""}`;
-        if (segs.length && key !== refresh.key) stop();
-        refresh.key = key;
+      $("#brief-listen").hidden = !(state.digest?.brief?.headline && (synth || meta));
+      const key = `${state.edition || ""}|${state.digest?.brief?.headline || ""}`;
+      if (key !== refresh.key) { if (mode) stop(); refresh.key = key; loadMeta(); }
     }
-    // mostra o botão quando há briefing e o aparelho sabe falar; trocar de edição encerra a leitura
+    // mostra o botão quando há briefing; trocar de edição encerra a leitura
     return { refresh };
   })();
 
@@ -830,7 +929,7 @@
 
     const secs = [...(b.sections || [])].sort((a, z) => CAT_ORDER.indexOf(a.category) - CAT_ORDER.indexOf(z.category));
     $("#brief-sections").innerHTML = secs.map((s) => `
-      <div class="bsec" style="${catVar(s.category)}">
+      <div class="bsec" data-cat="${esc(s.category)}" style="${catVar(s.category)}">
         <h4>${esc(catName(s.category))}</h4>
         <p>${linkify(s.text)}</p>
         <div class="refs">${(s.item_ids || []).filter((id) => byId[id]).map((id) =>
