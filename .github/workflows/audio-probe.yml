@@ -11,38 +11,71 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install edge-tts
+      - name: Instalar motores de voz
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q espeak-ng ffmpeg
+          pip install -q edge-tts piper-tts "kokoro>=0.9.4" soundfile "misaki[pt]" || pip install -q edge-tts piper-tts kokoro soundfile
       - name: Gerar amostras
         run: |
           mkdir -p probe-audio
           python - <<'PY'
-          import asyncio, json, sys
+          import asyncio, json, sys, subprocess, os, traceback
           sys.path.insert(0, "scripts")
-          import brief_audio as b, edge_tts
-          async def main():
-              vs = await edge_tts.list_voices()
-              open("probe-audio/vozes.txt", "w").write("\n".join(f"{v['ShortName']} {v.get('Gender')}" for v in vs if v["Locale"].startswith("pt")))
-              d = json.load(open("site/data/digest.json"))
-              txt = " ".join(s["speech"] for s in b.script(d)[:5])
-              for v in ["pt-BR-FranciscaNeural", "pt-BR-ThalitaMultilingualNeural", "pt-BR-AntonioNeural"]:
+          import brief_audio as b
+          d = json.load(open("site/data/digest.json"))
+          txt = " ".join(s["speech"] for s in b.script(d)[:4])
+          open("probe-audio/texto.txt", "w").write(txt)
+          log = open("probe-audio/log.txt", "w")
+          def mp3(wav, name):
+              subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-ac", "1", "-b:a", "64k", f"probe-audio/{name}.mp3"], check=True)
+              os.remove(wav)
+          # 1) Microsoft Edge (neural, nuvem): vozes pt-BR e multilíngues de outros idiomas
+          import edge_tts
+          async def edge():
+              for v in ["pt-BR-ThalitaMultilingualNeural", "pt-BR-FranciscaNeural", "pt-BR-AntonioNeural",
+                        "en-US-AvaMultilingualNeural", "en-US-AndrewMultilingualNeural", "en-US-EmmaMultilingualNeural", "en-US-BrianMultilingualNeural",
+                        "fr-FR-VivienneMultilingualNeural", "fr-FR-RemyMultilingualNeural", "de-DE-SeraphinaMultilingualNeural", "de-DE-FlorianMultilingualNeural",
+                        "it-IT-GiuseppeMultilingualNeural", "ko-KR-HyunsuMultilingualNeural"]:
                   try:
-                      open(f"probe-audio/{v}.mp3", "wb").write(await b.synth(txt, v))
-                      print("ok", v)
+                      open(f"probe-audio/edge - {v}.mp3", "wb").write(await b.synth(txt, v)); print("ok", v, file=log)
                   except Exception as e:
-                      print("falhou", v, e)
-          asyncio.run(main())
+                      print("falhou", v, e, file=log)
+          asyncio.run(edge())
+          # 2) Kokoro (código aberto, roda no próprio servidor)
+          try:
+              from kokoro import KPipeline
+              import soundfile as sf, numpy as np
+              pipe = KPipeline(lang_code="p")
+              for v in ["pf_dora", "pm_alex", "pm_santa"]:
+                  audio = np.concatenate([a for _, _, a in pipe(txt, voice=v, speed=1.0)])
+                  sf.write("/tmp/k.wav", audio, 24000); mp3("/tmp/k.wav", f"kokoro - {v}"); print("ok kokoro", v, file=log)
+          except Exception:
+              traceback.print_exc(file=log)
+          # 3) Piper (código aberto, leve)
+          base = "https://huggingface.co/rhasspy/piper-voices/resolve/main/pt/pt_BR"
+          for name, path in [("faber-medium", "faber/medium/pt_BR-faber-medium"), ("cadu-medium", "cadu/medium/pt_BR-cadu-medium"),
+                             ("jeff-medium", "jeff/medium/pt_BR-jeff-medium"), ("edresson-low", "edresson/low/pt_BR-edresson-low")]:
+              try:
+                  for ext in (".onnx", ".onnx.json"):
+                      subprocess.run(["curl", "-sSfL", "-o", f"/tmp/v{ext}", f"{base}/{path}{ext}"], check=True)
+                  subprocess.run(["python", "-m", "piper", "-m", "/tmp/v.onnx", "-f", "/tmp/p.wav"], input=txt.encode(), check=True)
+                  mp3("/tmp/p.wav", f"piper - {name}"); print("ok piper", name, file=log)
+              except Exception:
+                  traceback.print_exc(file=log)
+          log.close()
           PY
-          ls -la probe-audio
+          cat probe-audio/log.txt; ls -la probe-audio
       - name: Devolver as amostras ao branch
         run: |
           git config user.name "portal-bot"
           git config user.email "portal-bot@users.noreply.github.com"
           git add probe-audio
-          git commit -m "Amostras de voz do briefing"
+          git commit -m "Amostras de voz do briefing (rodada 2)"
+          git pull --rebase -X theirs || true
           git push
