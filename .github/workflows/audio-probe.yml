@@ -50,7 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        engine: [chatterbox, xtts, f5]
+        engine: [xtts, f5]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -63,7 +63,7 @@ jobs:
           pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
           case "${{ matrix.engine }}" in
             chatterbox) pip install -q chatterbox-tts ;;
-            xtts) pip install -q coqui-tts ;;
+            xtts) pip install -q "coqui-tts[codec]" ;;
             f5) pip install -q f5-tts huggingface_hub ;;
           esac
       - name: Gerar
@@ -108,7 +108,7 @@ jobs:
                   voc = [f for f in files if f.endswith("vocab.txt")]
                   vocp = hf_hub_download(repo, voc[0]) if voc else ""
                   for nome, ref in refs.items():
-                      cmd = ["f5-tts_infer-cli", "--model", "F5TTS_Base", "--ckp_file", ckp, "--ref_audio", ref, "--ref_text", reftxt,
+                      cmd = ["f5-tts_infer-cli", "--model", "F5TTS_Base", "--ckpt_file", ckp, "--ref_audio", ref, "--ref_text", reftxt,
                              "--gen_text", txt, "--output_dir", "/tmp/f5", "--output_file", "o.wav", "--speed", "0.95"]
                       if vocp: cmd += ["--vocab_file", vocp]
                       r = subprocess.run(cmd, capture_output=True, text=True); print(r.stdout[-1500:], r.stderr[-3000:])
@@ -136,6 +136,6 @@ jobs:
           git config user.name "portal-bot"
           git config user.email "portal-bot@users.noreply.github.com"
           git add -A probe-audio
-          git commit -m "Amostras de voz do briefing (rodada 4)"
+          git commit -m "Amostras de voz do briefing (rodada 5)"
           git pull --rebase -X theirs || true
           git push
