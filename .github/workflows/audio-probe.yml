@@ -1,0 +1,76 @@
+name: Amostras de voz Qwen3-TTS (temporário)
+
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+    paths: [".github/workflows/audio-probe.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  qwen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        v: [design-a, design-b, design-c, custom]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: sudo apt-get install -y -q ffmpeg sox
+      - run: pip install -q torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu && pip install -q qwen-tts && pip uninstall -y -q torchcodec || true
+      - name: Gerar
+        env: { V: "${{ matrix.v }}" }
+        run: |
+          mkdir -p out
+          python - <<'PY'
+          import json, os, sys, time, torch, soundfile as sf, numpy as np
+          sys.path.insert(0, "scripts")
+          import brief_audio as b
+          from qwen_tts import Qwen3TTSModel
+          torch.set_num_threads(os.cpu_count())
+          segs = b.script(json.load(open("site/data/digest.json")))[:3]
+          texts = [s["speech"] for s in segs]
+          v = os.environ["V"]
+          BASE = ("Locutora brasileira de uns 30 anos, sotaque paulistano neutro, português do Brasil nativo. "
+                  "Voz feminina bonita, quente e suave, timbre médio. ")
+          DESIGN = {
+            "design-a": BASE + "Lê as notícias da manhã com calma, ritmo tranquilo e um pouco devagar, como uma apresentadora de podcast de economia, natural e próxima.",
+            "design-b": BASE + "Fala como uma âncora de telejornal: clara, confiante e elegante, com pausas naturais e ritmo moderado, sem pressa.",
+            "design-c": "Mulher brasileira jovem, voz doce e aveludada, fala de forma muito natural e conversada, como se contasse as notícias para um amigo, devagar e com sorriso na voz. Português do Brasil, sem sotaque estrangeiro.",
+          }
+          t0 = time.time()
+          if v == "custom":
+              m = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice", dtype=torch.float32)
+              print("speakers:", m.model.get_supported_speakers() if hasattr(m.model, "get_supported_speakers") else "?")
+              for spk in ["Serena", "Vivian"]:
+                  wavs, sr = m.generate_custom_voice(text=texts, speaker=spk, language="Portuguese",
+                      instruct="Fale em português do Brasil, com calma, ritmo tranquilo e voz natural de locutora.")
+                  sf.write(f"out/Qwen {spk}.wav", np.concatenate([np.concatenate([w, np.zeros(int(sr*0.35))]) for w in wavs]), sr)
+          else:
+              m = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", dtype=torch.float32)
+              wavs, sr = m.generate_voice_design(text=texts, instruct=DESIGN[v], language="Portuguese")
+              sf.write(f"out/Qwen {v}.wav", np.concatenate([np.concatenate([w, np.zeros(int(sr*0.35))]) for w in wavs]), sr)
+          print(f"ok em {time.time()-t0:.0f}s")
+          PY
+          for f in out/*.wav; do ffmpeg -loglevel error -y -i "$f" -b:a 96k "${f%.wav}.mp3"; rm "$f"; done
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with: { name: "out-${{ matrix.v }}", path: out }
+
+  juntar:
+    needs: qwen
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: probe-audio, pattern: "out-*", merge-multiple: true }
+      - run: |
+          ls -la probe-audio || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -f probe-audio && git commit -m "Amostras de voz Qwen3-TTS" && git pull --rebase -q && git push
