@@ -9,67 +9,133 @@ permissions:
   contents: write
 
 jobs:
-  probe:
+  # referência: voz feminina brasileira nativa (Microsoft) e o texto de teste
+  ref:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Instalar motores de voz
+        with: { python-version: "3.12" }
+      - run: sudo apt-get install -y -q ffmpeg && pip install -q edge-tts
+      - name: Referências e Edge mais devagar
         run: |
-          sudo apt-get update -q && sudo apt-get install -y -q espeak-ng ffmpeg
-          pip install -q "kokoro>=0.9.4" soundfile "misaki[pt]" || pip install -q kokoro soundfile
-      - name: Gerar amostras
-        run: |
-          rm -rf probe-audio && mkdir -p probe-audio
+          mkdir -p out ref
           python - <<'PY'
-          import asyncio, json, sys, subprocess, os, traceback
+          import asyncio, json, sys, edge_tts
           sys.path.insert(0, "scripts")
           import brief_audio as b
           d = json.load(open("site/data/digest.json"))
           txt = " ".join(s["speech"] for s in b.script(d)[:4])
-          open("probe-audio/texto.txt", "w").write(txt)
-          log = open("probe-audio/log.txt", "w")
-          def mp3(wav, name):
-              subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-ac", "1", "-b:a", "64k", f"probe-audio/{name}.mp3"], check=True)
-              os.remove(wav)
-          # Kokoro: timbres femininos do modelo e misturas com a Dora, sempre com pronúncia em português (lang_code "p")
-          try:
-              from kokoro import KPipeline
-              import soundfile as sf, numpy as np, torch
-              pipe = KPipeline(lang_code="p")
-              def voz(spec):
-                  # "pf_dora:0.6+if_sara:0.4" vira a média ponderada dos vetores de estilo
-                  parts = [(p.split(":")[0], float(p.split(":")[1]) if ":" in p else 1.0) for p in spec.split("+")]
-                  tot = sum(w for _, w in parts)
-                  return sum(pipe.load_single_voice(v) * (w / tot) for v, w in parts)
-              testes = {
-                  "Sara (italiana)": "if_sara", "Heart (americana)": "af_heart", "Bella (americana)": "af_bella",
-                  "Nicole (americana, suave)": "af_nicole", "Emma (britanica)": "bf_emma", "Siwis (francesa)": "ff_siwis",
-                  "Dora espanhola": "ef_dora",
-                  "Dora + Sara": "pf_dora:0.55+if_sara:0.45", "Dora + Heart": "pf_dora:0.55+af_heart:0.45",
-                  "Dora + Bella": "pf_dora:0.55+af_bella:0.45", "Dora + Nicole": "pf_dora:0.6+af_nicole:0.4",
-                  "Sara + Heart": "if_sara:0.5+af_heart:0.5", "Dora + Sara + Heart": "pf_dora:0.4+if_sara:0.3+af_heart:0.3",
-              }
-              for nome, spec in testes.items():
-                  try:
-                      v = voz(spec)
-                      audio = np.concatenate([a for _, _, a in pipe(txt, voice=v, speed=1.0)])
-                      sf.write("/tmp/k.wav", audio, 24000); mp3("/tmp/k.wav", f"kokoro3 - {nome}"); print("ok", nome, file=log)
-                  except Exception:
-                      print("falhou", nome, file=log); traceback.print_exc(file=log)
-          except Exception:
-              traceback.print_exc(file=log)
-          log.close()
+          open("ref/texto.txt", "w").write(txt)
+          # frase de referência para clonagem: fala natural, ~12 s
+          REF = "Olá, tudo bem? Hoje eu vou contar com calma o que aconteceu no mercado, quais empresas estão negociando e o que vale acompanhar ao longo do dia."
+          open("ref/ref.txt", "w").write(REF)
+          async def go():
+              for v, r in [("pt-BR-ThalitaMultilingualNeural", "-8%"), ("pt-BR-FranciscaNeural", "-8%")]:
+                  await edge_tts.Communicate(txt, v, rate=r).save(f"out/Edge - {v.split('-')[2].replace('MultilingualNeural','').replace('Neural','')} mais devagar.mp3")
+                  await edge_tts.Communicate(REF, v, rate="-5%").save(f"ref/{v}.mp3")
+          asyncio.run(go())
           PY
-          cat probe-audio/log.txt; ls -la probe-audio
+          for f in ref/*.mp3; do ffmpeg -loglevel error -y -i "$f" -ar 24000 -ac 1 "${f%.mp3}.wav"; done
+          ls -la out ref
+      - uses: actions/upload-artifact@v4
+        with: { name: ref, path: ref }
+      - uses: actions/upload-artifact@v4
+        with: { name: out-edge, path: out }
+
+  clone:
+    needs: ref
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [chatterbox, xtts, f5]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/download-artifact@v4
+        with: { name: ref, path: ref }
+      - run: sudo apt-get install -y -q ffmpeg espeak-ng
+      - name: Instalar
+        run: |
+          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          case "${{ matrix.engine }}" in
+            chatterbox) pip install -q chatterbox-tts ;;
+            xtts) pip install -q coqui-tts ;;
+            f5) pip install -q f5-tts huggingface_hub ;;
+          esac
+      - name: Gerar
+        env:
+          COQUI_TOS_AGREED: "1"
+        run: |
+          mkdir -p out
+          python - <<'PY' 2>&1 | tail -60
+          import os, re, subprocess, traceback, glob
+          eng = "${{ matrix.engine }}"
+          txt = open("ref/texto.txt").read()
+          reftxt = open("ref/ref.txt").read()
+          refs = {"ref Thalita": "ref/pt-BR-ThalitaMultilingualNeural.wav", "ref Francisca": "ref/pt-BR-FranciscaNeural.wav"}
+          sents = [s for s in re.split(r"(?<=[.!?:])\s+", txt) if s.strip()]
+          def tomp3(wav, name):
+              subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-ac", "1", "-b:a", "64k", f"out/{name}.mp3"], check=True)
+          try:
+              if eng == "chatterbox":
+                  import torch, torchaudio as ta
+                  from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+                  m = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+                  for nome, ref in refs.items():
+                      for ex, cfg in [(0.5, 0.5), (0.4, 0.3)]:
+                          parts = [m.generate(s, language_id="pt", audio_prompt_path=ref, exaggeration=ex, cfg_weight=cfg) for s in sents]
+                          gap = torch.zeros(1, int(m.sr * 0.25))
+                          wav = torch.cat([x for p in parts for x in (p, gap)], dim=1)
+                          ta.save("/tmp/o.wav", wav, m.sr)
+                          tomp3("/tmp/o.wav", f"Chatterbox - {nome}" + (" calma" if cfg < 0.5 else ""))
+                          print("ok", nome, ex, cfg)
+              elif eng == "xtts":
+                  from TTS.api import TTS
+                  tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2")
+                  for nome, ref in refs.items():
+                      tts.tts_to_file(text=txt, speaker_wav=ref, language="pt", file_path="/tmp/o.wav", speed=0.95)
+                      tomp3("/tmp/o.wav", f"XTTS - {nome}"); print("ok", nome)
+              elif eng == "f5":
+                  from huggingface_hub import list_repo_files, hf_hub_download
+                  repo = "firstpixel/F5-TTS-pt-br"
+                  files = list_repo_files(repo); print(files)
+                  ck = sorted([f for f in files if f.endswith((".safetensors", ".pt"))], key=lambda f: ("last" not in f, f))[0]
+                  ckp = hf_hub_download(repo, ck)
+                  voc = [f for f in files if f.endswith("vocab.txt")]
+                  vocp = hf_hub_download(repo, voc[0]) if voc else ""
+                  for nome, ref in refs.items():
+                      cmd = ["f5-tts_infer-cli", "--model", "F5TTS_Base", "--ckp_file", ckp, "--ref_audio", ref, "--ref_text", reftxt,
+                             "--gen_text", txt, "--output_dir", "/tmp/f5", "--output_file", "o.wav", "--speed", "0.95"]
+                      if vocp: cmd += ["--vocab_file", vocp]
+                      r = subprocess.run(cmd, capture_output=True, text=True); print(r.stdout[-1500:], r.stderr[-3000:])
+                      tomp3("/tmp/f5/o.wav", f"F5 pt-BR - {nome}"); print("ok", nome)
+          except Exception:
+              traceback.print_exc()
+          print(glob.glob("out/*"))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: "out-${{ matrix.engine }}", path: out, if-no-files-found: ignore }
+
+  juntar:
+    needs: [ref, clone]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { pattern: "out-*", path: dl, merge-multiple: true }
       - name: Devolver as amostras ao branch
         run: |
+          rm -rf probe-audio && mkdir -p probe-audio && cp dl/*.mp3 probe-audio/ 2>/dev/null || true
+          ls -la probe-audio
           git config user.name "portal-bot"
           git config user.email "portal-bot@users.noreply.github.com"
-          git add probe-audio
-          git commit -m "Amostras de voz do briefing (rodada 3)"
+          git add -A probe-audio
+          git commit -m "Amostras de voz do briefing (rodada 4)"
           git pull --rebase -X theirs || true
           git push
