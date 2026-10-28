@@ -669,6 +669,151 @@
     }).join("");
   }
 
+  // ---------------------------------------------------------- ouvir o briefing
+  // Lê o briefing em voz alta com a voz do próprio aparelho (Web Speech API): sem servidor, sem custo, funciona sem
+  // internet. Escolhe a melhor voz em português do Brasil disponível, fala em trechos curtos (alguns navegadores
+  // cortam falas longas) e destaca na página o trecho que está sendo lido.
+  const listen = (() => {
+    const synth = "speechSynthesis" in window ? window.speechSynthesis : null;
+    const RATES = [1, 1.15, 1.3, 1.5, 0.9];
+    let voice = null, segs = [], si = 0, chunks = [], ci = 0, playing = false, cur = null;
+    let rate = store.get("listen-rate", 1);
+    const pickVoice = () => {
+      const vs = synth.getVoices().filter((v) => /^pt[-_]BR/i.test(v.lang));
+      const all = vs.length ? vs : synth.getVoices().filter((v) => /^pt/i.test(v.lang));
+      const score = (v) => (/natural|neural|online|premium|enhanced|melhorad/i.test(v.name) ? 4 : 0) + (/luciana|francisca|thalita|google/i.test(v.name) ? 2 : 0) + (v.localService ? 0 : 1);
+      voice = all.sort((a, b) => score(b) - score(a))[0] || null;
+    };
+    // texto para a voz: siglas e abreviações que soariam mal viram palavras
+    const ORD = ["", "primeiro", "segundo", "terceiro", "quarto"];
+    const spoken = (t) => String(t || "")
+      .replace(/<[^>]+>/g, "")
+      .replace(/\b([1-4])T(\d{2})\b/g, (m, q, y) => `${ORD[q]} trimestre de 20${y}`)
+      .replace(/(\d[\d.,]*)\s?bi\b/g, "$1 bilhões").replace(/(\d[\d.,]*)\s?mi\b/g, "$1 milhões").replace(/(\d[\d.,]*)\s?tri\b/g, "$1 trilhões")
+      .replace(/US\$\s?([\d.,]+)( bilhões| milhões| trilhões)?/g, (m, n, u) => `${n}${u || ""} de dólares`.replace(/^(1)( de dólares)$/, "1 dólar"))
+      .replace(/R\$\s?([\d.,]+) (bilhões|milhões|trilhões)/g, "$1 $2 de reais")
+      .replace(/(^|[\s(])[-−](\d)/g, "$1menos $2")
+      .replace(/\s+·\s+/g, ", ").replace(/[“”"«»]/g, "").replace(/\s*\(([^)]*)\)/g, ", $1,")
+      .replace(/\s+/g, " ").trim();
+    // frases curtas; frase muito longa quebra nas vírgulas
+    const split = (t) => {
+      const out = [];
+      // quebra só onde a pontuação vem seguida de espaço: "175.705" e "R$ 5,35" ficam inteiros
+      for (const sent of t.split(/(?<=[.!?;:])\s+/)) {
+        let x = sent.trim();
+        while (x.length > 220) { const cut = x.lastIndexOf(",", 200); const at = cut > 60 ? cut + 1 : 200; out.push(x.slice(0, at)); x = x.slice(at).trim(); }
+        if (x) out.push(x);
+      }
+      return out;
+    };
+    function build() {
+      const b = state.digest?.brief || {};
+      const list = [];
+      const day = new Date((state.digest?.generated_at) || Date.now()).toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
+      list.push({ label: "Abertura", text: `Bom dia. Este é o briefing do Portal FPM de ${day}.`, el: null });
+      if (b.headline) list.push({ label: "Manchete", text: b.headline, el: $("#brief-headline") });
+      if (b.mood) list.push({ label: "Clima do dia", text: b.mood, el: $("#brief-mood") });
+      const tl = b.tldr || [], lis = [...document.querySelectorAll("#brief-tldr > li")];
+      tl.forEach((t, i) => list.push({ label: `O essencial · ${i + 1} de ${tl.length}`, text: (i === 0 ? "O essencial. " : "") + t, el: lis[i] || null }));
+      const secs = [...document.querySelectorAll("#brief-sections .bsec")];
+      for (const el of secs) list.push({ label: el.querySelector("h4")?.textContent || "Seção", text: `${el.querySelector("h4")?.textContent || ""}. ${el.querySelector("p")?.textContent || ""}`, el });
+      if ((b.watchlist || []).length) list.push({ label: "No radar", text: `No radar para hoje: ${b.watchlist.join("; ")}.`, el: $("#brief-watch")?.closest(".widget") });
+      if ((b.connections || []).length) list.push({ label: "Conexões", text: `Conexões do dia. ${b.connections.join(" ")}`, el: $("#brief-conn")?.closest(".widget") });
+      list.push({ label: "Fim", text: "Esse foi o briefing de hoje. Bom trabalho.", el: null });
+      return list.map((x) => ({ ...x, chunks: split(spoken(x.text)) }));
+    }
+    const mark = () => {
+      document.querySelectorAll(".speaking").forEach((e) => e.classList.remove("speaking"));
+      const el = playing || cur ? segs[si]?.el : null;
+      if (el) {
+        el.classList.add("speaking");
+        const r = el.getBoundingClientRect();
+        if (r.top < 70 || r.bottom > innerHeight - 110) el.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      }
+    };
+    const ui = () => {
+      const bar = $("#listen-bar");
+      $("#lb-label").textContent = segs[si]?.label || "Briefing";
+      $("#lb-fill").style.width = `${segs.length ? ((si + (chunks.length ? ci / chunks.length : 0)) / segs.length) * 100 : 0}%`;
+      $("#lb-play").innerHTML = `<svg class="ic"><use href="#i-${playing ? "pause" : "play"}"/></svg>`;
+      $("#lb-play").setAttribute("aria-label", playing ? "Pausar" : "Continuar");
+      $("#lb-rate").textContent = `${String(rate).replace(".", ",")}×`;
+      $("#brief-listen").classList.toggle("on", !bar.hidden);
+    };
+    const halt = () => { if (cur) cur._stop = true; synth.cancel(); cur = null; };
+    function next() {
+      if (!playing) return;
+      if (ci >= chunks.length) {
+        si++;
+        if (si >= segs.length) { stop(); return; }
+        chunks = segs[si].chunks; ci = 0;
+        mark();
+      }
+      const u = new SpeechSynthesisUtterance(chunks[ci]);
+      u.lang = "pt-BR"; if (voice) u.voice = voice; u.rate = rate;
+      u.onend = () => { if (u._stop) return; ci++; ui(); next(); };
+      u.onerror = (e) => { if (u._stop || e.error === "interrupted" || e.error === "canceled") return; ci++; next(); };
+      cur = u;
+      synth.speak(u);
+      ui();
+    }
+    function start(from = 0) {
+      if (!synth) return;
+      halt();
+      if (!voice) pickVoice();
+      segs = build(); si = Math.max(0, Math.min(from, segs.length - 1)); chunks = segs[si].chunks; ci = 0;
+      playing = true;
+      $("#listen-bar").hidden = false;
+      mark(); next();
+    }
+    function toggle() {
+      if (!segs.length) return start();
+      if (playing) { playing = false; halt(); ui(); return; }
+      playing = true; next();
+    }
+    function jump(d) {
+      if (!segs.length) return;
+      halt();
+      // voltar no meio de um trecho recomeça o trecho; no começo, vai para o anterior
+      si = d < 0 && ci > 0 ? si : Math.max(0, Math.min(segs.length - 1, si + d));
+      chunks = segs[si].chunks; ci = 0;
+      playing = true;
+      mark(); next();
+    }
+    function stop() {
+      playing = false;
+      if (synth) halt();
+      segs = []; si = 0; chunks = []; ci = 0;
+      $("#listen-bar").hidden = true;
+      mark(); ui();
+    }
+    if (synth) {
+      pickVoice();
+      synth.addEventListener?.("voiceschanged", pickVoice);
+      $("#brief-listen").onclick = () => ($("#listen-bar").hidden ? start() : stop());
+      $("#lb-play").onclick = toggle;
+      $("#lb-next").onclick = () => jump(1);
+      $("#lb-prev").onclick = () => jump(-1);
+      $("#lb-close").onclick = stop;
+      $("#lb-rate").onclick = () => {
+        rate = RATES[(RATES.indexOf(rate) + 1) % RATES.length];
+        store.set("listen-rate", rate);
+        // a velocidade vale a partir da próxima frase; reinicia a atual para sentir na hora
+        if (playing) { halt(); next(); } else ui();
+      };
+      addEventListener("pagehide", () => synth.cancel());
+    }
+    function refresh() {
+        const has = !!(synth && state.digest?.brief?.headline);
+        $("#brief-listen").hidden = !has;
+        const key = `${state.edition || ""}|${state.digest?.brief?.headline || ""}`;
+        if (segs.length && key !== refresh.key) stop();
+        refresh.key = key;
+    }
+    // mostra o botão quando há briefing e o aparelho sabe falar; trocar de edição encerra a leitura
+    return { refresh };
+  })();
+
   function renderBrief() {
     const d = state.digest, b = d.brief || {};
     const byId = Object.fromEntries(d.items.map((i) => [i.id, i]));
@@ -695,6 +840,7 @@
     const top = d.items.filter((i) => !muted(i) && !i.repeat && !i.dup_of).sort((a, z) => relevance(z) - relevance(a)).slice(0, 8);
     $("#top-list").innerHTML = top.map(cardHTML).join("");
     $("#brief-sections").closest(".section").hidden = !secs.length;
+    listen.refresh();
 
     // mapa do dia: volume por editoria + quantas são importantes
     const cats = {};
