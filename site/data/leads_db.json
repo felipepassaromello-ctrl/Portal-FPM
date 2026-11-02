@@ -466,6 +466,13 @@
      "link": "https://neofeed.com.br/negocios/csn-fecha-acordo-de-exclusividade-de-r-127-bilhoes-com-a-huaxin-para-a-venda-da-csn-cimentos/",
      "source": "NeoFeed",
      "signal": "Venda"
+    },
+    {
+     "date": "2026-11-02",
+     "headline": "Huaxin avança em negociações de US$ 2,33 bi pela CSN Cimentos",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMmpzWWxDMmk5cW9HWmRPUXN2ZktwYnV1Y3RjRXVqeUdOcWpYX0FCMFB3ZHRwRl9PUmF6SWxIeDh2WXVTcjc1enJfVTFFMktaR2piOWkyT2VSRFJ3QjRvZkh2eWZPQW1BTWQtNmhKeEpCUGZ4R01HR1hLVkpCQ0F2UlFlenNYRmdFS2tlZFVFSm1KNnhHTFhZY21zZE5fMVU3MEd5MQ?oc=5",
+     "source": "CemNet.com",
+     "signal": "Venda"
     }
    ],
    "ids": [
@@ -474,15 +481,16 @@
     "37ca162e2b70",
     "c84cdff43806",
     "41a8ecb24068",
-    "4cea2889e2c3"
+    "4cea2889e2c3",
+    "87e4d4a6e00d"
    ],
    "importance": 9,
    "signal": "Venda",
-   "counterparty": "Huaxin Building Materials Group",
+   "counterparty": "Huaxin",
    "advisors": "não divulgado",
-   "why": "não divulgado",
+   "why": "Negociação avançada: escritórios podem se oferecer para a CSN (vendedora) ou para a Huaxin na estruturação, regulatório e Cade; a CSN já tem processo em curso.",
    "sector": "Cimento / materiais de construção",
-   "last_seen": "2026-10-30",
+   "last_seen": "2026-11-02",
    "status": "Em aberto"
   },
   "raizen": {
@@ -1260,8 +1268,57 @@
    "sector": "Portos / automotivo",
    "last_seen": "2026-10-30",
    "status": "Em aberto"
+  },
+  "inb": {
+   "key": "inb",
+   "company": "INB (Indústrias Nucleares do Brasil)",
+   "first_seen": "2026-11-02",
+   "events": [
+    {
+     "date": "2026-11-02",
+     "headline": "Corrida pelo urânio brasileiro atrai grupos estrangeiros e ex-integrantes do governo Bolsonaro",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/corrida-pelo-uranio-brasileiro-atrai-grupos-estrangeiros-e-ex-integrantes-do-governo-bolsonaro.shtml",
+     "source": "Folha",
+     "signal": "Entrada de investidor"
+    }
+   ],
+   "ids": [
+    "1c3d951fa6a6"
+   ],
+   "importance": 7,
+   "signal": "Entrada de investidor",
+   "counterparty": "não divulgado",
+   "advisors": "não divulgado",
+   "why": "O governo prepara regras para parcerias privadas com a INB e vários grupos se posicionam. Faz sentido abordar os grupos interessados e a estrutura de JVs e concessões.",
+   "last_seen": "2026-11-02",
+   "status": "Em aberto"
+  },
+  "mercadobitcoin": {
+   "key": "mercadobitcoin",
+   "company": "Mercado Bitcoin",
+   "first_seen": "2026-11-02",
+   "events": [
+    {
+     "date": "2026-11-02",
+     "headline": "Mercado Bitcoin avalia comprar empresas de pagamentos com USDT e outras stablecoins",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeV93ZE03V1Nfajg4VEJsQmVwaEZKRW9wWEV1TktTX0FkMkFYZU44bzRkcEVpa0xnOGdzbEdjZEkxRm9adlJvOUl3VmhTRE1ubmR2RUlkSlI3T18zZnAtNzlqeGZKS05Mb2NSWmUyYXZTTl9samZkZXVudEIzMWJSeDZOT25NRHZnVjd6MnFoSEZtUWl2dlYxbTBVcE5NdzVqQVZtdFYtVHZNbXVwVFNrOXB0MUlEUHZuR05XRjFUUGJBTmZkTjVMa0ZDd2VQaThxSnU0?oc=5",
+     "source": "BitNotícias",
+     "signal": "Aquisição"
+    }
+   ],
+   "ids": [
+    "102581096e59"
+   ],
+   "importance": 6,
+   "signal": "Aquisição",
+   "counterparty": "não divulgado",
+   "advisors": "não divulgado",
+   "why": "Empresa declara interesse em comprar no setor; um banco ou escritório pode se oferecer para mapear alvos e estruturar a compra. Fintechs de pagamento com operação em stablecoins seriam os vendedores naturais.",
+   "sector": "Fintech / Cripto",
+   "last_seen": "2026-11-02",
+   "status": "Em aberto"
   }
  },
  "backfilled": true,
- "updated_at": "2026-11-02T08:28:48.096467-03:00"
+ "updated_at": "2026-11-02T08:34:21.487539-03:00"
 }
