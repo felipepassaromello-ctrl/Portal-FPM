@@ -318,6 +318,7 @@
     // companhia: todas as palavras do nome (ou o ticker) estão na pergunta, e o nome não é só palavra genérica
     const list = await companies();
     let cia = null, ciaScore = 0;
+    const allCias = [];
     for (const c of list) {
       let best = 0;
       if (c.tk) { const tk = fold(c.tk), root = tk.replace(/\d+$/, ""); if (set.has(tk) || (root.length >= 4 && !GENERIC.has(root) && !COMMON.has(root) && set.has(root))) best = 120; }
@@ -327,6 +328,7 @@
         if (nt.every((w) => set.has(w))) best = Math.max(best, 70 + nt.length * 6);
       }
       const sc = best ? best + Math.log10(1 + c.mc) / 2 : 0;
+      if (sc) allCias.push({ c, sc });
       if (sc > ciaScore) { cia = c; ciaScore = sc; }
     }
     // pessoa ou investidor: nome próprio que aparece na pergunta
@@ -347,7 +349,16 @@
       if (ciaScore >= 100 && perScore < 90) per = null;
       else if (perScore > ciaScore) cia = null; else per = null;
     }
-    return cia ? { kind: "cia", c: cia } : per ? { kind: "pessoa", p: per } : null;
+    // várias companhias citadas ("Itaú ou Bradesco"): as que não estão contidas no nome de outra citada
+    allCias.sort((a, z) => z.sc - a.sc);
+    const many = [];
+    for (const x of allCias) {
+      const nt = nameTokens(fuzzy(x.c.nm));
+      if (many.some((y) => nameTokens(fuzzy(y.nm)).join(" ").includes(nt.join(" ")) || nt.join(" ").includes(nameTokens(fuzzy(y.nm)).join(" ")))) continue;
+      many.push(x.c);
+      if (many.length === 4) break;
+    }
+    return cia ? { kind: "cia", c: cia, many } : per ? { kind: "pessoa", p: per, many: [] } : null;
   }
 
   const deaccent = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -396,8 +407,405 @@
     const r = resumo.cias?.[c.k] || {};
     const facts = [r.tk || c.tk, r.mc ? `valor de mercado ${brl(r.mc)}` : "", r.ctl ? `controle: ${r.ctl}` : "", r.ceo ? `CEO: ${r.ceo}` : ""].filter(Boolean);
     const news = [...(d.items || []), ...(d.upcoming || [])].filter((i) => aboutCompany(i, c));
-    return { html: `<p><b>${esc(c.nm)}</b>${facts.length ? `: ${esc(facts.join(" · "))}` : ""}.</p>${news.length ? `<p>${news.length === 1 ? "Uma notícia" : `${news.length} notícias`} hoje:</p><ol class="fa-list">${news.sort((a, z) => (z.importance || 0) - (a.importance || 0)).slice(0, 3).map(newsLi).join("")}</ol>` : `<p class="fa-sub">Sem notícias dela hoje.</p>`}
-      <p class="fa-more">${link(ciaHref(c.k), "Página da companhia")} · ${link(ciaHref(c.k, "docs"), "Documentos")} · ${link(treeHref(`k${c.k}`), "Ver no Mundo")}</p>` };
+    const prof = await perfil(c.k);
+    const ltm = prof.fin?.ltm, ct = prof.cotacoes?.[r.tk || c.tk];
+    const nums = [ltm?.rec != null ? `receita de ${money(ltm.rec)}` : "", lucro(ltm) != null ? `lucro de ${money(lucro(ltm))}` : ""].filter(Boolean);
+    const numsHtml = nums.length || ct ? `<p class="fa-sub">${nums.length ? `Últimos 12 meses: ${esc(nums.join(", "))}.` : ""}${ct?.y1 != null ? ` Ação ${ct.y1 >= 0 ? "+" : "−"}${Math.abs(ct.y1).toFixed(1).replace(".", ",")}% em 12 meses.` : ""}</p>` : "";
+    return { html: `<p><b>${esc(c.nm)}</b>${facts.length ? `: ${esc(facts.join(" · "))}` : ""}.</p>${numsHtml}${news.length ? `<p>${news.length === 1 ? "Uma notícia" : `${news.length} notícias`} hoje:</p><ol class="fa-list">${news.sort((a, z) => (z.importance || 0) - (a.importance || 0)).slice(0, 3).map(newsLi).join("")}</ol>` : `<p class="fa-sub">Sem notícias dela hoje.</p>`}
+      <p class="fa-more">${link(ciaHref(c.k), "Página da companhia")} · ${link(ciaHref(c.k, "fin"), "Financeiro")} · ${link(ciaHref(c.k, "docs"), "Documentos")} · ${link(treeHref(`k${c.k}`), "Ver no Mundo")}</p>` };
+  }
+
+
+  // ---------------------------------------------------------------- números das companhias
+  // Demonstrações (DFP anual, ITR trimestral, últimos 12 meses), múltiplos e cotação do perfil de cada companhia
+  // (data/cias/perfil/{k}.json), e o resumo de todas (data/cias/resumo.json) para rankings.
+  const perfil = (k) => getJSON(`data/cias/perfil/${encodeURIComponent(k)}.json`, {});
+  const lucro = (r) => r?.llc ?? r?.ll;
+  const div0 = (a, b) => (a == null || b == null || !b ? null : a / b);
+  const METRICS = [
+    { id: "alav", re: /alavancag|divida liquida ?(\/|sobre|por) ?ebitda/, label: "Dívida líquida / EBITDA", unit: "x", v: (r) => div0(r.dl, r.ebitda), better: -1, noTri: true },
+    { id: "mliq", re: /margem liquida/, label: "Margem líquida", unit: "pct", v: (r) => div0(lucro(r), r.rec), better: 1 },
+    { id: "mebitda", re: /margem ebitda/, label: "Margem EBITDA", unit: "pct", v: (r) => div0(r.ebitda, r.rec), better: 1, noTri: true },
+    { id: "mebit", re: /margem (ebit|operacional)|\bmargem\b/, label: "Margem EBIT", unit: "pct", v: (r) => div0(r.ebit, r.rec), better: 1 },
+    { id: "roe", re: /\broe\b|retorno sobre (o )?patrimonio|rentabilidade/, label: "ROE", unit: "pct", v: (r) => div0(lucro(r), r.plc ?? r.pl), better: 1, noTri: true },
+    { id: "ebitda", re: /ebitda/, label: "EBITDA", unit: "brl", v: (r) => r.ebitda, better: 1, noTri: true },
+    { id: "ebit", re: /\bebit\b|resultado operacional|lucro operacional/, label: "EBIT (resultado operacional)", unit: "brl", v: (r) => r.ebit, better: 1 },
+    { id: "ll", re: /lucr|prejuiz|resultado liquido|\bganh(ou|o)\b/, label: "Lucro líquido", unit: "brl", v: lucro, better: 1 },
+    { id: "rec", re: /receita|faturament|\bvendas\b|\bfatur/, label: "Receita líquida", unit: "brl", v: (r) => r.rec, better: 1 },
+    { id: "dl", re: /divida liquida|endividament|\bdivida\b/, label: "Dívida líquida", unit: "brl", v: (r) => r.dl, better: -1, noTri: true },
+    { id: "caixa", re: /\bcaixa\b(?! operacional)/, label: "Caixa e aplicações", unit: "brl", v: (r) => r.caixa, better: 1, noTri: true },
+    { id: "fco", re: /fluxo de caixa|geracao de caixa|caixa operacional/, label: "Fluxo de caixa operacional", unit: "brl", v: (r) => r.fco, better: 1, noTri: true },
+    { id: "capex", re: /\bcapex\b|investiu|investimentos? em (ativos|imobilizado)/, label: "Capex", unit: "brl", v: (r) => r.capex, better: 0, noTri: true },
+    { id: "pl", re: /patrimonio liquido|\bpatrimonio\b/, label: "Patrimônio líquido", unit: "brl", v: (r) => r.plc ?? r.pl, better: 1, noTri: true },
+    { id: "at", re: /ativo total|\bativos\b/, label: "Ativo total", unit: "brl", v: (r) => r.at, better: 1, noTri: true },
+  ];
+  const MARKET = [
+    { id: "preco", re: /\bpreco\b|cotac|quanto (esta|ta|vale|custa) (a )?(acao|papel)|acao (da|do|de) .* (esta|ta)|\bvalendo\b/, label: "Cotação" },
+    { id: "var", re: /(quanto )?(subiu|caiu|valorizou|desvalorizou|rendeu|variacao|desempenho da acao|performance)/, label: "Variação" },
+    { id: "mc", re: /valor de mercado|market cap|quanto vale (a|o) /, label: "Valor de mercado" },
+    { id: "pe", re: /\bp ?\/ ?l\b|preco ?\/ ?lucro|\bp ?l\b/, label: "P/L" },
+    { id: "pvp", re: /p ?\/ ?vp|preco ?\/ ?valor patrimonial/, label: "P/VP" },
+    { id: "evebitda", re: /ev ?\/ ?ebitda/, label: "EV/EBITDA" },
+    { id: "multiplos", re: /multiplos?|esta (cara|barata)|valuation/, label: "Múltiplos" },
+  ];
+  const FACTS = [
+    { id: "func", re: /funcionari|empregad|colaborador|trabalham/ },
+    { id: "rem", re: /remunerac|salari|quanto ganha|ganham|bonus/ },
+    { id: "ceo", re: /\bceo\b|presidente( executivo)?\b(?! do conselho)|diretor[ -]presidente|quem (comanda|manda|dirige)/ },
+    { id: "conselho", re: /conselh|presidente do conselho|chairman|conselheir/ },
+    { id: "diretoria", re: /diretori|diretores|\bcfo\b|diretor financeiro|executivos/ },
+    { id: "auditor", re: /auditor|auditoria/ },
+    { id: "sede", re: /\bsede\b|onde fica|endereco/ },
+    { id: "ri", re: /\bri\b|relacoes com investidores|contato/ },
+    { id: "ff", re: /free ?float|acoes em circulacao|quantos acionistas|dispersao/ },
+    { id: "titulos", re: /debentur|bonds?\b|titulos? de divida|emissoes de divida|vencimentos/ },
+    { id: "controladas", re: /controladas|subsidiarias|participacoes da|em quais empresas (a|o) .* (tem|investe)|investe em/ },
+    { id: "setor", re: /\bsetor\b|o que (a|o) .* faz|atividade|ramo/ },
+  ];
+  const money = (v) => {
+    if (v == null) return "–";
+    const a = Math.abs(v), sg = v < 0 ? "−" : "";
+    const f = (x, d) => x.toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
+    if (a >= 1e12) return `${sg}R$ ${f(a / 1e12, 2)} tri`;
+    if (a >= 1e9) return `${sg}R$ ${f(a / 1e9, a >= 1e11 ? 1 : 2)} bi`;
+    if (a >= 1e6) return `${sg}R$ ${f(a / 1e6, a >= 1e8 ? 0 : 1)} mi`;
+    return `${sg}R$ ${f(a / 1e3, 0)} mil`;
+  };
+  const fmtVal = (m, v) => (v == null || !isFinite(v) ? "–" : m.unit === "pct" ? `${(v * 100).toFixed(1).replace(".", ",")}%` : m.unit === "x" ? `${v.toFixed(1).replace(".", ",")}x` : money(v));
+  // variação entre dois valores: % (ou pontos percentuais para margens), com cor de melhor/pior
+  function delta(m, a, b) {
+    if (a == null || b == null || !isFinite(a) || !isFinite(b)) return { txt: "", cls: "", good: null };
+    let txt, d;
+    if (m.unit === "pct") { d = (a - b) * 100; txt = `${d >= 0 ? "+" : "−"}${Math.abs(d).toFixed(1).replace(".", ",")} p.p.`; }
+    else if (m.unit === "x") { d = a - b; txt = `${d >= 0 ? "+" : "−"}${Math.abs(d).toFixed(1).replace(".", ",")}x`; }
+    else {
+      if (!b) return { txt: "", cls: "", good: null };
+      if (Math.sign(a) !== Math.sign(b)) { d = a - b; txt = a > b ? "virou positivo" : "virou negativo"; }
+      else { d = (a - b) / Math.abs(b) * 100; txt = `${d >= 0 ? "+" : "−"}${Math.abs(d).toFixed(1).replace(".", ",")}%`; }
+    }
+    const good = m.better ? (d > 0) === (m.better > 0) : null;
+    return { txt, cls: good == null || Math.abs(d) < 0.05 ? "" : good ? "fa-pos" : "fa-neg", good };
+  }
+  const QWORD = { primeiro: 1, segundo: 2, terceiro: 3, quarto: 4 };
+  // períodos citados na pergunta: trimestres (3T, 3T25, terceiro trimestre), anos (2024, esse ano, ano passado), 12 meses
+  function periodsOf(q, fin) {
+    const tri = fin.tri || [], years = (fin.anual || []).map((r) => +r.ref.slice(0, 4));
+    const curYear = tri.length ? +tri[tri.length - 1].ref.slice(0, 4) : new Date().getFullYear();
+    const out = [];
+    const yy = (y) => (y ? (y.length === 2 ? 2000 + +y : +y) : null);
+    const re = /\b(?:([1-4])\s?(?:o\s|º\s?)?(?:t|tri|trim|trimestre)\b\s?(?:de\s)?(\d{4}|\d{2})?|(primeiro|segundo|terceiro|quarto) trimestre(?: de)?\s?(\d{4}|\d{2})?)/g;
+    let m;
+    while ((m = re.exec(q))) out.push({ kind: "q", n: +(m[1] || QWORD[m[3]]), y: yy(m[2] || m[4]), at: m.index });
+    // "3T comparado ao 2", "3T vs 2T": número solto depois de um trimestre
+    const loose = /\b(?:comparad[oa] (?:ao|com o|com)|contra o?|vs\.?|versus|x|com o|em relacao ao|frente ao)\s+([1-4])(?:o|º)?\b(?!\s?(?:t|tri|trimestre)\b)/g;
+    if (out.length) while ((m = loose.exec(q))) out.push({ kind: "q", n: +m[1], y: null, at: m.index });
+    if (/\b(ultimo|esse|este) trimestre\b|trimestre (passado|mais recente)/.test(q)) out.push({ kind: "q", last: 0, at: q.search(/trimestre/) });
+    if (/trimestre anterior|penultimo trimestre/.test(q)) out.push({ kind: "q", last: 1, at: q.search(/trimestre anterior|penultimo/) });
+    const yre = /\b(20[12]\d)\b/g;
+    while ((m = yre.exec(q))) if (!out.some((o) => o.kind === "q" && o.y === +m[1] && Math.abs(o.at - m.index) < 14)) out.push({ kind: "y", y: +m[1], at: m.index });
+    if (/\b(esse|este|neste|nesse) ano\b|\bno ano\b|acumulado do ano|\bytd\b/.test(q)) out.push({ kind: "y", y: curYear, ytd: true, at: q.search(/ano/) });
+    if (/ano passado|ano anterior|\bultimo ano\b/.test(q)) out.push({ kind: "y", y: curYear - 1, at: q.search(/ano (passado|anterior)/) });
+    if (/12 meses|\bltm\b|ultimos doze/.test(q)) out.push({ kind: "ltm", at: q.search(/12 meses|ltm|doze/) });
+    out.sort((a, b) => a.at - b.at);
+    // trimestre sem ano: o ano do mais recente disponível com esse número (ou o ano citado ao lado)
+    const yHint = out.find((o) => o.kind === "y" && !o.ytd)?.y;
+    for (const o of out) if (o.kind === "q" && o.last == null && !o.y) o.y = yHint || curYear;
+    return { list: out.filter((o, i) => out.findIndex((x) => x.kind === o.kind && x.n === o.n && x.y === o.y && x.last === o.last && x.ytd === o.ytd) === i), curYear, years };
+  }
+  // valores de um período: trimestre do ITR, ano da DFP, acumulado do ano (soma dos trimestres), 12 meses
+  function periodData(fin, o) {
+    const tri = fin.tri || [];
+    if (o.kind === "q") {
+      const row = o.last != null ? tri[tri.length - 1 - o.last] : tri.find((r) => r.p === `${o.n}T${String(o.y).slice(2)}`);
+      return row ? { label: row.p, row, tri: true } : { label: o.last != null ? "trimestre" : `${o.n}T${String(o.y).slice(2)}`, missing: true, tri: true };
+    }
+    if (o.kind === "ltm") return fin.ltm ? { label: "Últimos 12 meses", row: fin.ltm } : { label: "Últimos 12 meses", missing: true };
+    if (o.kind === "y") {
+      const an = (fin.anual || []).find((r) => r.ref.startsWith(String(o.y)));
+      if (an && !o.ytd) return { label: String(o.y), row: an };
+      // ano em curso: soma dos trimestres já divulgados
+      const qs = tri.filter((r) => r.ref.startsWith(String(o.y)));
+      if (!qs.length) return { label: String(o.y), missing: true };
+      const sum = {};
+      for (const k of ["rec", "ebit", "ll", "llc"]) { const vals = qs.map((r) => r[k]).filter((v) => v != null); if (vals.length === qs.length) sum[k] = vals.reduce((a, b) => a + b, 0); }
+      return { label: `${o.y} até o ${qs[qs.length - 1].p}`, row: sum, ytd: qs.map((r) => r.p), tri: true };
+    }
+    return { label: "?", missing: true };
+  }
+  const metricOf = (q) => METRICS.find((m) => m.re.test(q));
+  const tableRows = (rows) => `<table class="fa-table"><tbody>${rows.map((r) => `<tr>${r.map((c, i) => `<${i ? "td" : "th"}${c && c.cls ? ` class="${c.cls}"` : ""}>${c && c.html != null ? c.html : esc(c ?? "")}</${i ? "td" : "th"}>`).join("")}</tr>`).join("")}</tbody></table>`;
+  const finLinks = (c) => `<p class="fa-more">${link(ciaHref(c.k, "fin"), "Ver o financeiro completo")}</p>`;
+
+  const lc = (label) => (/^[A-Z]{2,}/.test(label) ? label : label[0].toLowerCase() + label.slice(1));
+  const inLabel = (lab) => (/^\d{4}$|^\d{4} até/.test(lab) ? `em ${lab}` : /12 meses/i.test(lab) ? `nos ${lab.replace(/^Últimos /, "últimos ")}` : `no ${lab}`);
+  const prevYearQ = (p) => `${p[0]}T${String(+p.slice(2) - 1).padStart(2, "0")}`;
+  async function answerFin(c, q, mHint) {
+    const prof = await perfil(c.k);
+    const fin = prof.fin || {};
+    if (!fin.tri && !fin.anual) return { html: `<p><b>${esc(c.nm)}</b>: o portal ainda não tem as demonstrações financeiras dessa companhia.</p>${finLinks(c)}` };
+    const m = metricOf(q) || mHint;
+    const { list: per, curYear } = periodsOf(q, fin);
+    if (!m) return answerFinOverview(c, prof, per);
+    const isFin = fin.ltm?.fin || fin.anual?.[fin.anual.length - 1]?.fin;
+    const label = isFin && m.id === "rec" ? "Receita (intermediação financeira)" : m.label;
+    const tri = fin.tri || [], anual = fin.anual || [];
+    const lastTri = tri[tri.length - 1];
+    const ltmLabel = `12 meses até o ${lastTri?.p || fin.ltm?.ref?.slice(0, 7) || ""}`;
+    let notes = [];
+    let perUse = per;
+    if (m.noTri && per.some((o) => o.kind === "q")) {
+      perUse = per.filter((o) => o.kind !== "q");
+      notes.push(`${label} não sai por trimestre nos dados da CVM; mostro anos e 12 meses.`);
+    }
+    const val = (row) => (row ? m.v(row) : null);
+    const pt = (lab, row, extra = {}) => ({ lab, row, v: val(row), ...extra });
+    // um trimestre (ou nenhum período): o trimestre contra o anterior e o mesmo do ano passado, mais 12 meses e o último ano
+    const focusQ = (cur) => {
+      const prev = tri[tri.indexOf(cur) - 1], yAgo = tri.find((r) => r.p === prevYearQ(cur.p));
+      const a = val(cur);
+      const comp = [prev && pt(prev.p, prev), yAgo && pt(yAgo.p, yAgo)].filter((x) => x && x.v != null);
+      if (a == null) return null;
+      const rows = [[cur.p, fmtVal(m, a), ""]].concat(comp.map((x) => { const d = delta(m, a, x.v); return [x.lab, fmtVal(m, x.v), { html: d.txt ? `${d.txt} no ${cur.p}` : "", cls: d.cls }]; }));
+      if (fin.ltm && val(fin.ltm) != null) rows.push([ltmLabel, fmtVal(m, val(fin.ltm)), ""]);
+      const an = anual[anual.length - 1];
+      if (an && val(an) != null) rows.push([an.ref.slice(0, 4), fmtVal(m, val(an)), ""]);
+      const parts = comp.map((x) => { const d = delta(m, a, x.v); return d.txt ? `<span class="${d.cls}">${d.txt}</span> contra o ${esc(x.lab)}` : ""; }).filter(Boolean);
+      // veredito pela comparação anual (sem sazonalidade); sem ela, contra o trimestre anterior
+      const basis = comp.find((x) => x.lab === prevYearQ(cur.p)) || comp[0];
+      const good = basis ? delta(m, a, basis.v).good : null;
+      const word = good == null ? "" : `: <b>${good ? "melhor" : "pior"}</b> que ${basis.lab === prevYearQ(cur.p) ? "um ano antes" : "no trimestre anterior"}`;
+      return `<p><b>${esc(c.nm)}</b>: ${esc(lc(label))} de <b>${fmtVal(m, a)}</b> no ${esc(cur.p)}${parts.length ? `, ${parts.join(" e ")}` : ""}${word}.</p>${tableRows(rows)}`;
+    };
+    let pts = null;
+    const quarters = perUse.filter((o) => o.kind === "q");
+    if (!perUse.length) {
+      if (!m.noTri && lastTri && val(lastTri) != null) return { html: focusQ(lastTri) + notesHtml(notes) + finLinks(c) };
+      pts = [...anual.slice(-4).map((r) => pt(r.ref.slice(0, 4), r)), ...(fin.ltm ? [pt(ltmLabel, fin.ltm)] : [])];
+    } else if (perUse.length === 1 && quarters.length === 1) {
+      const d = periodData(fin, quarters[0]);
+      if (d.row && val(d.row) != null) return { html: focusQ(d.row) + notesHtml(notes) + finLinks(c) };
+      pts = [pt(d.label, null, { missing: true })];
+    } else {
+      const ytd = perUse.find((o) => o.kind === "y" && o.ytd);
+      const prevY = perUse.find((o) => o.kind === "y" && !o.ytd && o.y === curYear - 1);
+      if (ytd && (perUse.length === 1 || prevY)) {
+        // "esse ano" contra o ano passado: mesmos meses dos dois anos; sem os trimestres do ano passado, 12 meses contra o último ano fechado
+        const cur = periodData(fin, ytd);
+        const prevQs = (cur.ytd || []).map((p) => tri.find((r) => r.p === prevYearQ(p)));
+        if (cur.row && prevQs.length && prevQs.every(Boolean)) {
+          const sum = {};
+          for (const k of ["rec", "ebit", "ll", "llc"]) { const vs = prevQs.map((r) => r[k]); if (vs.every((v) => v != null)) sum[k] = vs.reduce((a, b) => a + b, 0); }
+          pts = [pt(`${curYear - 1} até o ${prevQs[prevQs.length - 1].p}`, sum), pt(cur.label, cur.row)];
+          notes.push(`Mesmos trimestres nos dois anos (${cur.ytd.join(", ")} contra ${prevQs.map((r) => r.p).join(", ")}).`);
+        } else {
+          const an = anual.find((r) => r.ref.startsWith(String(curYear - 1))) || anual[anual.length - 1];
+          pts = [an && pt(an.ref.slice(0, 4), an), fin.ltm && pt(ltmLabel, fin.ltm)].filter(Boolean);
+          if (cur.row && val(cur.row) != null) notes.push(`Acumulado de ${cur.label}: ${fmtVal(m, val(cur.row))}. Para comparar períodos do mesmo tamanho, uso os 12 meses até o ${lastTri?.p} contra o ano de ${an?.ref.slice(0, 4)} inteiro (faltam trimestres do ano passado na base).`);
+        }
+      } else if (perUse.length === 1 && perUse[0].kind === "y") {
+        const y = perUse[0].y, cur = anual.find((r) => r.ref.startsWith(String(y))), prev = anual.find((r) => r.ref.startsWith(String(y - 1)));
+        pts = cur ? [prev && pt(String(y - 1), prev), pt(String(y), cur)].filter(Boolean) : [pt(String(y), null, { missing: true })];
+      } else if (perUse.length === 1 && perUse[0].kind === "ltm") {
+        const an = anual[anual.length - 1];
+        pts = [an && pt(an.ref.slice(0, 4), an), fin.ltm && pt(ltmLabel, fin.ltm)].filter(Boolean);
+      } else {
+        // vários períodos citados: em ordem cronológica
+        const key = (o) => (o.kind === "q" ? (o.last != null ? 99990 - o.last : o.y * 10 + o.n) : o.kind === "y" ? o.y * 10 + (o.ytd ? 3 : 4.5) : 99999);
+        pts = [...perUse].sort((a, z) => key(a) - key(z)).map((o) => { const d = periodData(fin, o); return pt(d.label, d.row, { missing: d.missing }); });
+      }
+    }
+    const have = pts.filter((x) => x.v != null), missing = pts.filter((x) => x.v == null);
+    if (!have.length) {
+      let html = `<p><b>${esc(c.nm)}</b>: sem ${esc(lc(label))} para ${esc(missing.map((x) => x.lab).join(" e "))} nos dados da CVM${lastTri ? ` (o último trimestre disponível é o ${lastTri.p})` : ""}.</p>`;
+      const rel = await latestRelease(c);
+      if (rel?.sm) html += `<p>Pelo release mais recente (${esc(rel.s || "resultado")}, ${ddmm(rel.d)}):</p><p>${esc(rel.sm.resumo)}</p>`;
+      return { html: html + finLinks(c) };
+    }
+    const rows = have.map((x, i) => { const d = i ? delta(m, x.v, have[i - 1].v) : null; return [x.lab, fmtVal(m, x.v), d && d.txt ? { html: d.txt, cls: d.cls } : ""]; });
+    const first = have[0], last = have[have.length - 1];
+    const d = have.length > 1 ? delta(m, last.v, first.v) : null;
+    let html;
+    if (d && d.txt) {
+      const word = d.good == null ? (last.v >= first.v ? "maior" : "menor") : d.good ? "melhor" : "pior";
+      html = `<p><b>${esc(c.nm)}</b>: ${esc(lc(label))} de <b>${fmtVal(m, last.v)}</b> ${esc(inLabel(last.lab))}, <span class="${d.cls}">${d.txt}</span> contra ${esc(inLabel(first.lab).replace(/^(no|nos|em) /, (w) => (w === "em " ? "" : w === "no " ? "o " : "os ")))} (${fmtVal(m, first.v)}): <b>${word}</b>.</p>`;
+    } else html = `<p><b>${esc(c.nm)}</b>, ${esc(lc(label))}:</p>`;
+    html += tableRows(rows);
+    if (missing.length) notes.push(`Sem dado para ${missing.map((x) => x.lab).join(", ")}${lastTri ? ` (último trimestre na CVM: ${lastTri.p})` : ""}.`);
+    if (isFin && m.id === "rec") notes.push("Em banco, a receita é a de intermediação financeira (juros e afins), sem descontar as despesas de captação.");
+    return { html: html + notesHtml(notes) + finLinks(c) };
+  }
+  const notesHtml = (notes) => notes.map((n) => `<p class="fa-sub">${esc(n)}</p>`).join("");
+  async function latestRelease(c) {
+    const [month, own] = await Promise.all([recentDocs(), getJSON(`data/cias/emp/${encodeURIComponent(c.k)}.json`, [])]);
+    return [...month.filter((x) => x.k === c.k), ...own].filter(isRelease).sort((a, z) => `${z.d} ${z.h || ""}`.localeCompare(`${a.d} ${a.h || ""}`))[0] || null;
+  }
+  // visão geral do resultado: último trimestre contra o anterior e o mesmo do ano passado, e 12 meses
+  async function answerFinOverview(c, prof, per) {
+    const fin = prof.fin || {};
+    const t = fin.tri || [];
+    let cur = t[t.length - 1];
+    const asked = per.find((o) => o.kind === "q" && o.last == null);
+    if (asked) cur = t.find((r) => r.p === `${asked.n}T${String(asked.y).slice(2)}`) || null;
+    const prev = cur && t[t.indexOf(cur) - 1];
+    const yAgo = cur && t.find((r) => r.p === `${cur.p[0]}T${String(+cur.p.slice(2) - 1).padStart(2, "0")}`);
+    const ms = ["rec", "ll", "ebit", "mebit"].map((id) => METRICS.find((m) => m.id === id));
+    let html = "";
+    if (!cur) {
+      const want = asked ? `${asked.n}T${String(asked.y).slice(2)}` : "o trimestre pedido";
+      html += `<p><b>${esc(c.nm)}</b>: ${esc(want)} ainda não está nos dados da CVM${t.length ? ` (o último é o ${t[t.length - 1].p})` : ""}.</p>`;
+      const rel = await latestRelease(c);
+      if (rel) html += rel.sm ? `<p>Release mais recente (${esc(rel.s || "resultado")}, ${ddmm(rel.d)}):</p><p>${esc(rel.sm.resumo)}</p>${(rel.sm.pontos || []).length ? `<ul class="fa-list fa-bullets">${rel.sm.pontos.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}` : `<p class="fa-sub">Release mais recente: ${esc(rel.s || "")} em ${ddmm(rel.d)}.</p>`;
+      if (t.length) { const r2 = await answerFinOverview(c, prof, []); html += r2.html; return { html }; }
+      return { html: html + finLinks(c) };
+    }
+    const head = ["", cur.p, prev ? `vs ${prev.p}` : "", yAgo ? `vs ${yAgo.p}` : ""];
+    const rows = ms.filter((m) => m.v(cur) != null).map((m) => {
+      const a = m.v(cur), b = prev ? m.v(prev) : null, y = yAgo ? m.v(yAgo) : null;
+      const d1 = delta(m, a, b), d2 = delta(m, a, y);
+      return [m.label.replace(" (resultado operacional)", ""), fmtVal(m, a), prev ? { html: d1.txt || "–", cls: d1.cls } : "", yAgo ? { html: d2.txt || "–", cls: d2.cls } : ""];
+    });
+    html += `<p>Resultado de <b>${esc(c.nm)}</b> no <b>${esc(cur.p)}</b> (dados da CVM):</p><table class="fa-table"><thead><tr>${head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((x, i) => `<${i ? "td" : "th"}${x && x.cls ? ` class="${x.cls}"` : ""}>${x && x.html != null ? x.html : esc(x ?? "")}</${i ? "td" : "th"}>`).join("")}</tr>`).join("")}</tbody></table>`;
+    const llm = METRICS.find((m) => m.id === "ll");
+    if (yAgo && llm.v(cur) != null && llm.v(yAgo) != null) {
+      const d = delta(llm, llm.v(cur), llm.v(yAgo));
+      html += `<p>Lucro ${d.good ? "maior" : "menor"} que um ano antes (${d.txt}).</p>`;
+    }
+    if (fin.ltm) html += `<p class="fa-sub">Últimos 12 meses: receita ${money(fin.ltm.rec)}${lucro(fin.ltm) != null ? `, lucro ${money(lucro(fin.ltm))}` : ""}${fin.ltm.ebitda != null ? `, EBITDA ${money(fin.ltm.ebitda)}` : ""}.</p>`;
+    return { html: html + finLinks(c) };
+  }
+  // dois ou mais nomes: a mesma conta lado a lado (12 meses, ou o último trimestre comum)
+  async function answerFinCompare(cs, q) {
+    const m = metricOf(q) || METRICS.find((x) => x.id === "ll");
+    const profs = await Promise.all(cs.map((c) => perfil(c.k)));
+    const perQ = /trimestr|\b[1-4] ?t\b/.test(q);
+    const rows = cs.map((c, i) => {
+      const fin = profs[i].fin || {};
+      let row = fin.ltm, lab = "12 meses";
+      if (perQ && fin.tri?.length && !m.noTri) { row = fin.tri[fin.tri.length - 1]; lab = row.p; }
+      return { c, v: row ? m.v(row) : null, lab };
+    });
+    const ok = rows.filter((r) => r.v != null).sort((a, z) => (m.better < 0 ? a.v - z.v : z.v - a.v));
+    if (!ok.length) return { html: `<p>Sem ${esc(m.label.toLowerCase())} dessas companhias nos dados da CVM.</p>` };
+    const best = ok[0];
+    let html = `<p>${esc(m.label)}${ok.every((r) => r.lab === ok[0].lab) ? ` (${esc(ok[0].lab)})` : ""}: ${m.better ? (m.better > 0 ? "maior" : "menor") : "maior"} é ${link(ciaHref(best.c.k, "fin"), best.c.nm)}.</p>`;
+    html += tableRows(ok.map((r) => [r.c.nm, fmtVal(m, r.v), r.lab]));
+    const miss = rows.filter((r) => r.v == null);
+    if (miss.length) html += `<p class="fa-sub">Sem dado: ${esc(miss.map((r) => r.c.nm).join(", "))}.</p>`;
+    return { html };
+  }
+  // cotação, variação e múltiplos
+  async function answerMarket1(c, q) {
+    const prof = await perfil(c.k);
+    const mk = prof.mercado || {}, cots = prof.cotacoes || {};
+    const tks = Object.keys(cots);
+    const tk = tks.find((t) => q.includes(fold(t))) || mk.tk || tks[0];
+    const ct = cots[tk];
+    const pct = (v) => (v == null ? "–" : `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(2).replace(".", ",")}%`);
+    const num = (v, d = 2) => (v == null ? "–" : v.toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d }));
+    const rows = [];
+    if (ct) {
+      rows.push([`Cotação ${tk}`, `R$ ${num(ct.p)}`, { html: `${pct(ct.d1)} no dia`, cls: ct.d1 >= 0 ? "fa-pos" : "fa-neg" }]);
+      rows.push(["Em 12 meses", { html: pct(ct.y1), cls: ct.y1 >= 0 ? "fa-pos" : "fa-neg" }, `mín. R$ ${num(ct.lo)} · máx. R$ ${num(ct.hi)}`]);
+    }
+    if (mk.mc) rows.push(["Valor de mercado", money(mk.mc), mk.ev ? `EV ${money(mk.ev)}` : ""]);
+    if (mk.pl != null || mk.pvp != null || mk.ev_ebitda != null) rows.push(["Múltiplos", [mk.pl != null ? `P/L ${num(mk.pl, 1)}` : "", mk.pvp != null ? `P/VP ${num(mk.pvp, 2)}` : "", mk.ev_ebitda != null ? `EV/EBITDA ${num(mk.ev_ebitda, 1)}` : ""].filter(Boolean).join(" · "), ""]);
+    if (!rows.length) return { html: `<p><b>${esc(c.nm)}</b> não tem cotação no portal (talvez não seja negociada na bolsa).</p>` };
+    const when = ct?.t || mk.ref;
+    return { html: `<p><b>${esc(c.nm)}</b>${when ? ` <span class="fa-note">(cotação de ${esc(ddmm(when.slice(0, 10)))} ${esc(when.slice(11, 16))}, com atraso)</span>` : ""}:</p>${tableRows(rows)}<p class="fa-more">${link(ciaHref(c.k), "Página da companhia")}</p>` };
+  }
+  // dados cadastrais e de governança do perfil
+  async function answerFact(c, f, q) {
+    const p = await perfil(c.k);
+    const nm = `<b>${esc(c.nm)}</b>`;
+    const adm = p.adm || [];
+    const who = (re) => adm.filter((a) => re.test(fold(a.c || "")));
+    const person = (a) => `${link(personHref(personSlugOf(a.n)), a.n)}${a.c ? ` <span class="fa-note">(${esc(a.c)})</span>` : ""}`;
+    switch (f.id) {
+      case "func": {
+        const e = p.empregados;
+        if (!e?.total) return { html: `<p>${nm}: número de funcionários não informado.</p>` };
+        return { html: `<p>${nm} tem <b>${e.total.toLocaleString("pt-BR")}</b> empregados${e.lideranca ? `, ${e.lideranca.toLocaleString("pt-BR")} em liderança` : ""}${e.mulheres_lideranca != null ? ` (${String(e.mulheres_lideranca).replace(".", ",")}% de mulheres na liderança)` : ""}, segundo o Formulário de Referência.</p>` };
+      }
+      case "rem": {
+        const r = p.rem;
+        if (!r?.orgaos?.length) return { html: `<p>${nm}: remuneração não informada.</p>` };
+        return { html: `<p>Remuneração de ${nm} em ${esc(r.ano)} (Formulário de Referência):</p>${tableRows(r.orgaos.map((o) => [o.o, money(o.v), [o.m ? `${String(o.m).replace(".", ",")} membros` : "", o.max ? `maior ${money(o.max)}` : "", o.med ? `média ${money(o.med)}` : ""].filter(Boolean).join(" · ")]))}` };
+      }
+      case "ceo": {
+        const ceo = who(/diretor[ -]presidente|presidente executivo|\bceo\b|presidente da diretoria|diretor geral/)[0];
+        return ceo ? { html: `<p>CEO de ${nm}: ${person(ceo)}${ceo.el ? `, eleito em ${ddmm(ceo.el)}/${ceo.el.slice(0, 4)}` : ""}.</p>${ceo.pr ? `<p class="fa-sub">${esc(ceo.pr)}</p>` : ""}` } : null;
+      }
+      case "conselho": {
+        const pres = who(/presidente do conselho/)[0];
+        const cons = adm.filter((a) => a.o === "C" || /conselho de administracao|conselheiro/.test(fold(a.c || "")));
+        if (!cons.length && !pres) return null;
+        return { html: `<p>Conselho de administração de ${nm}${pres ? `: presidido por ${person(pres)}` : ""}${cons.length ? `, com ${cons.length} membros` : ""}.</p>${cons.length ? `<ul class="fa-list fa-plain">${cons.slice(0, 12).map((a) => `<li>${person(a)}</li>`).join("")}</ul>` : ""}<p class="fa-more">${link(ciaHref(c.k, "adm"), "Ver a administração")}</p>` };
+      }
+      case "diretoria": {
+        const d = adm.filter((a) => a.o === "D" || /diretor/.test(fold(a.c || "")));
+        if (!d.length) return null;
+        return { html: `<p>Diretoria de ${nm} (${d.length}):</p><ul class="fa-list fa-plain">${d.slice(0, 12).map((a) => `<li>${person(a)}</li>`).join("")}</ul><p class="fa-more">${link(ciaHref(c.k, "adm"), "Ver a administração")}</p>` };
+      }
+      case "auditor": return p.auditor ? { html: `<p>Auditor de ${nm}: <b>${esc(p.auditor)}</b>${p.auditor_desde ? ` (desde ${esc(String(p.auditor_desde).slice(0, 4))})` : ""}.</p>` } : null;
+      case "sede": return p.sede ? { html: `<p>Sede de ${nm}: ${esc(p.sede)}.</p>${p.web ? `<p class="fa-more"><a href="${esc(p.web)}" target="_blank" rel="noopener">Site</a></p>` : ""}` } : null;
+      case "ri": return p.ri ? { html: `<p>Relações com investidores de ${nm}: ${esc(p.ri.n || "")}${p.ri.email ? ` · ${esc(p.ri.email)}` : ""}${p.ri.tel ? ` · ${esc(p.ri.tel)}` : ""}.</p>` } : null;
+      case "ff": {
+        const d = p.dispersao;
+        if (!d) return null;
+        return { html: `<p>${nm}: free float de <b>${String(d.ff ?? "–").replace(".", ",")}%</b>${d.ff_on != null ? ` (${String(d.ff_on).replace(".", ",")}% das ON, ${String(d.ff_pn ?? "–").replace(".", ",")}% das PN)` : ""}; ${[d.pf ? `${d.pf.toLocaleString("pt-BR")} acionistas pessoa física` : "", d.pj ? `${d.pj.toLocaleString("pt-BR")} pessoa jurídica` : "", d.inst ? `${d.inst.toLocaleString("pt-BR")} institucionais` : ""].filter(Boolean).join(", ")}${d.ago ? ` (posição da AGO de ${ddmm(d.ago)}/${d.ago.slice(0, 4)})` : ""}.</p>` };
+      }
+      case "titulos": {
+        const t = (p.titulos || []).filter((x) => !x.vc || x.vc >= new Date().toISOString().slice(0, 10)).sort((a, z) => String(a.vc).localeCompare(String(z.vc)));
+        if (!t.length) return { html: `<p>${nm}: nenhum título de dívida em circulação no Formulário de Referência.</p>` };
+        const tot = t.reduce((a, x) => a + (x.s || 0), 0);
+        return { html: `<p>${nm} tem ${t.length} títulos de dívida em circulação${tot ? `, com saldo de ${money(tot)}` : ""}. Próximos vencimentos:</p>${tableRows(t.slice(0, 6).map((x) => [x.id || x.t, x.vc ? `${ddmm(x.vc)}/${x.vc.slice(0, 4)}` : "–", x.s ? money(x.s) : ""]))}<p class="fa-more">${link(ciaHref(c.k, "divida"), "Ver dívida e ofertas")}</p>` };
+      }
+      case "controladas": {
+        const inv = p.investe_em || [], parts = p.participacoes || [];
+        if (!inv.length && !parts.length) return null;
+        const list = await companies();
+        const nmk = (k) => list.find((x) => x.k === k)?.nm || k;
+        return { html: `<p>${nm} tem participação em:</p><ul class="fa-list fa-plain">${[...inv.map((x) => `<li>${link(ciaHref(x.k), nmk(x.k))} <span class="fa-note">${String(x.pct).replace(".", ",")}%${x.ctl ? " · controle" : ""}</span></li>`), ...parts.slice(0, 10).map((x) => `<li>${esc(x.n)} <span class="fa-note">${String(x.pct).replace(".", ",")}%</span></li>`)].join("")}</ul>` };
+      }
+      case "setor": return { html: `<p>${nm}: ${esc(p.setor || "")}${p.ativ ? `. ${esc(p.ativ)}` : ""}</p>` };
+    }
+    return null;
+  }
+  // mesmo critério do portal para o endereço do perfil de uma pessoa
+  const personSlugOf = (name) => fold(name).replace(/[^a-z0-9]+/g, " ").trim().split(/\s+/).join("-").slice(0, 80);
+
+  // rankings com o resumo de todas as companhias: maiores por valor de mercado, receita, lucro, alta ou queda
+  const SECTORS = [
+    [/banc/, /bancos|intermediacao financeira/, "bancos"], [/eletric|energia/, /energia eletrica/, "energia elétrica"], [/petrol|oleo e gas|\bgas\b/, /petroleo e gas/, "petróleo e gás"],
+    [/varej|comercio|lojas/, /comercio/, "varejo"], [/construt|incorporad|construcao/, /construcao civil/, "construção"], [/saude|hospita|medic/, /servicos medicos/, "saúde"],
+    [/minera|mineracao/, /extracao mineral/, "mineração"], [/siderurg|metalurg|\baco\b/, /metalurgia e siderurgia/, "siderurgia"], [/telecom|telefon/, /telecomunicacoes/, "telecom"],
+    [/segurad/, /seguradoras/, "seguradoras"], [/saneament|\bagua\b/, /saneamento/, "saneamento"], [/agro|acucar|etanol/, /agricultura/, "agro"], [/aliment|frigorif/, /alimentos/, "alimentos"],
+    [/logistic|transport/, /transporte/, "transporte e logística"], [/educac/, /educacao/, "educação"], [/papel|celulose/, /papel e celulose/, "papel e celulose"], [/farmac/, /farmaceutico/, "farmacêuticas"],
+    [/tecnolog|software|informatica/, /comunicacao e informatica/, "tecnologia"],
+  ];
+  async function answerRanking(q) {
+    const [resumo, idx] = await Promise.all([getJSON("data/cias/resumo.json", { cias: {} }), getJSON("data/cias/index.json", { companies: [] })]);
+    const st = new Map((idx.companies || []).map((c) => [c.k, fold(c.st || "")]));
+    const sec = SECTORS.find(([re]) => re.test(q));
+    const KEYS = [
+      [/valor de mercado|maiores empresas|mais valiosas|maior(es)? da bolsa|tamanho/, "mc", "valor de mercado", money, -1],
+      [/lucr/, "ll", "lucro em 12 meses", money, -1], [/receita|faturament/, "rec", "receita em 12 meses", money, -1],
+      [/(subiu|subiram|alta|valoriz|ganharam)/, "y1", "alta em 12 meses", (v) => `+${v.toFixed(1).replace(".", ",")}%`, -1],
+      [/(caiu|cairam|queda|desvaloriz|perderam)/, "y1", "queda em 12 meses", (v) => `${v.toFixed(1).replace(".", ",")}%`, 1],
+    ];
+    let k = KEYS.find(([re]) => re.test(q)) || KEYS[0];
+    let field = k[1];
+    if ((k[1] === "y1") && /\bhoje\b|no dia|ontem/.test(q)) field = "d1";
+    const asc = /menor(es)?|piores?/.test(q) && k[1] !== "y1" ? 1 : k[4];
+    let rows = Object.entries(resumo.cias || {}).map(([kk, r]) => ({ k: kk, ...r })).filter((r) => r[field] != null && r.tk);
+    if (sec) rows = rows.filter((r) => sec[1].test(st.get(r.k) || ""));
+    if (field === "y1" || field === "d1") rows = rows.filter((r) => (k[4] < 0 ? r[field] > 0 : r[field] < 0));
+    rows.sort((a, z) => (asc > 0 ? a[field] - z[field] : z[field] - a[field]));
+    const n = /\btop ?(\d+)|(\d+) maiores/.exec(q); const lim = Math.min(15, +(n?.[1] || n?.[2]) || 8);
+    if (!rows.length) return { html: "<p>Não achei companhias com esse dado.</p>" };
+    const what = field === "d1" ? (k[4] < 0 ? "alta no dia" : "queda no dia") : k[2];
+    const fmt = field === "d1" ? (v) => `${v >= 0 ? "+" : ""}${v.toFixed(1).replace(".", ",")}%` : k[3];
+    return { html: `<p>${asc > 0 && k[1] !== "y1" ? "Menores" : "Maiores"} por ${esc(what)}${sec ? ` entre ${esc(sec[2])}` : " na bolsa"}:</p><ol class="fa-list">${rows.slice(0, lim).map((r) => `<li><a href="${esc(ciaHref(r.k, field === "mc" ? "" : "fin"))}"><b>${esc(r.nm)}</b></a> <span class="fa-sub">${esc(r.tk)} · ${esc(fmt(r[field]))}</span></li>`).join("")}</ol><p class="fa-sub">Lucro e receita: últimos 12 meses na CVM; cotações com atraso.</p>` };
   }
 
   const DEST = [
@@ -407,14 +815,38 @@
     [/\bcompanhias\b|\bempresas\b/, "cias.html", "Companhias"],
   ];
 
+  // contexto da conversa: a última companhia ou pessoa e a pergunta sobre ela ("e o lucro?", "e o Itaú?")
+  let ctx = store.get("fa-ctx", null);
+  const INTENT_WORDS = /\bacao\b|\bacoes\b|\bpapel\b|lucr|receit|faturament|ebitda|\bebit\b|margem|divida|alavanc|caixa|patrimon|\broe\b|resultad|balanc|trimestr|\b[1-4] ?t\b|ano passado|esse ano|preco|cotac|subiu|caiu|valor de mercado|multiplo|p ?\/ ?l|funcionari|remunera|ceo|presidente|conselh|diretor|auditor|sede|free float|debentur|titulos|acionist|dono|controla|noticia|fato|document|deal|lead/;
   async function answer(raw) {
     const q = fold(raw).replace(/[?!.,;:"“”'()]/g, " ").replace(/\s+/g, " ").trim();
     if (!q) return null;
+    let ent = await spot(q);
+    let qq = q;
+    const short = q.split(" ").length <= 5;
+    if (!ent && ctx && (INTENT_WORDS.test(q) && (/^e\b/.test(q) || short || /\b(dela|dele|desse|dessa|deste|desta|nela|nele)\b/.test(q)))) {
+      // "e o lucro?": mesma companhia da pergunta anterior
+      ent = await spot(ctx.name);
+    } else if (ent && ctx && /^e\b/.test(q) && short && !INTENT_WORDS.test(q) && ctx.intent) {
+      // "e o Itaú?": mesma pergunta anterior, outra companhia
+      qq = `${ctx.intent} ${q.replace(/^e\s+/, "")}`;
+    }
+    const r = await answerCore(raw, qq, ent);
+    if (ent && r) {
+      const name = ent.kind === "cia" ? ent.c.nm : ent.p.n;
+      const nameRe = new RegExp(`\\b(${nameTokens(fuzzy(name)).concat(ent.c?.tk ? [fold(ent.c.tk)] : []).join("|")})\\b`, "g");
+      const intent = fuzzy(qq).replace(nameRe, " ").replace(/\s+/g, " ").trim();
+      ctx = { name, intent: INTENT_WORDS.test(intent) ? intent : ctx?.intent || "" };
+      store.set("fa-ctx", ctx);
+    }
+    return r;
+  }
+
+  async function answerCore(raw, q, ent) {
     const has = (re) => re.test(q);
     const today = has(/\bhoje\b|desde ontem|\bagora\b/);
     const wantsNav = has(/\b(me lev[ae]|lev[ae]|abr[ae]|abrir|ir (para|pra|a|ao)|va(i)? (para|pra)|mostr[ae]|quero ver|entr[ae] n[ao])\b/);
     const superl = has(/\b(mais (legal|legais|importante|importantes|interessante|interessantes|relevante|relevantes|quente|quentes)|maior(es)?|principa(l|is)|melhor(es)?|top|destaques?)\b/);
-    const ent = await spot(q);
 
     if (!ent && has(/^(oi|ola|bom dia|boa tarde|boa noite|e ai|opa)\b/) && q.split(" ").length <= 3) return { html: "Oi! Pergunte sobre as notícias e os deals de hoje, resultados e fatos relevantes de uma companhia, quem é dono de quê, ou peça para eu abrir uma página." };
     if (has(/\b(ajuda|o que voce (faz|sabe)|como (funciona|usar|te uso))\b/)) return { html: HELP };
@@ -426,11 +858,26 @@
       if (ent.kind === "cia") return { html: `Abrindo a estrutura societária de <b>${esc(ent.c.nm)}</b> no Mundo das companhias.`, go: treeHref(`k${ent.c.k}`), alt: [[ciaHref(ent.c.k, "acionistas"), "Ver os acionistas na página da companhia"]] };
       return { html: `Abrindo as participações de <b>${esc(ent.p.n)}</b> no Mundo das companhias.`, go: treeHref(ent.p.s), alt: [[personHref(ent.p.s), "Ver o perfil completo"]] };
     }
+    // números: ranking, comparação entre companhias, cotação, dados do perfil, demonstrações
+    const fm = metricOf(q), mk = MARKET.find((x) => x.re.test(q)), fact = FACTS.find((x) => x.re.test(q));
+    const ranking = has(/\b(maior(es)?|menor(es)?|ranking|top ?\d*|quem (mais|menos)|mais (subiram|cairam|valiosas?|lucrativ[oa]s?)|quais? (as|os)? ?(empresas|bancos|companhias|acoes))\b/);
+    if (ranking && (!ent || ent.kind !== "cia" || (ent.many || []).length < 2) && (fm?.id === "ll" || fm?.id === "rec" || has(/valor de mercado|valios|subi|cai|queda|alta|lucrativ|maiores empresas|da bolsa/)) && !(ent?.kind === "cia" && !has(/\b(empresas|bancos|companhias|acoes|setor|bolsa)\b/))) return answerRanking(q);
+    if (ent?.kind === "cia" && (ent.many || []).length >= 2 && (fm || has(/compar|melhor|pior|maior|menor|\bmais\b|versus|\bvs\b|\bou\b|\be\b/)) && !wantsNav) return answerFinCompare(ent.many, q);
+    if (ent?.kind === "cia" && !wantsNav) {
+      if (mk && !fm) return answerMarket1(ent.c, q);
+      if (fact && !fm) { const r = await answerFact(ent.c, fact, q); if (r) return r; }
+      if (fm) return answerFin(ent.c, q);
+    }
     // participações de uma pessoa ou investidor
     if (ent?.kind === "pessoa" && !wantsNav && !has(/noticia|saiu|novidade|imprensa|falando|deals?|leads?/)) return answerHoldings(ent.p);
     // resultado do trimestre
     if (has(/resultad|balanc|\blucro\b|\bprejuizo\b|trimestr|\b[1-4]t(\d{2})?\b|release|\bebitda\b/) && !wantsNav) {
-      if (ent?.kind === "cia") return answerResult(ent.c);
+      if (ent?.kind === "cia") {
+        const prof = await perfil(ent.c.k);
+        const ov = prof.fin?.tri?.length ? await answerFinOverview(ent.c, prof, periodsOf(q, prof.fin).list) : { html: "" };
+        const rel = await answerResult(ent.c);
+        return { html: ov.html.replace(/<p class="fa-more">[^]*?<\/p>$/, "") + rel.html.replace(/<p><b>[^<]*<\/b>: nenhum release[^]*?<\/p>/, "") };
+      }
       if (!ent) return answerAllResults();
     }
     // fatos relevantes e documentos da CVM
@@ -478,8 +925,12 @@
     <li>“Notícias da Vale” e “resultado do Itaú”</li>
     <li>“Me leve para a Petrobras” ou “abre os acionistas da Vale”</li>
     <li>“Estrutura societária do Alfredo Villela” ou “quantas empresas a BlackRock tem?”</li>
-    <li>“Resultado do Itaú” ou “abre o Mundo das companhias”</li></ul>`;
-  const SUGGEST = ["Notícias mais importantes", "Principais deals de hoje", "Saiu fato relevante do Itaú hoje?", "Me leve para a Petrobras", "Estrutura societária do Alfredo Villela"];
+    <li>“Resultado do Itaú”, “lucro da Petrobras no 2T contra o 1T”, “receita do Bradesco esse ano contra o ano passado”</li>
+    <li>“Itaú ou Bradesco, quem lucra mais?”, “maiores lucros entre os bancos”, “ações que mais subiram em 12 meses”</li>
+    <li>“Quanto está a ação da Vale?”, “P/L da Petrobras”, “quantos funcionários tem a Ambev?”, “quem é o CEO da Vale?”</li>
+    <li>Depois de perguntar de uma companhia: “e o lucro?” ou “e o Itaú?”</li></ul>`;
+  const SUGGEST = ["Notícias mais importantes", "Principais deals de hoje", "Resultado do Itaú", "Lucro da Petrobras em 2025 contra 2024", "Maiores lucros entre os bancos", "Quanto está a ação da Vale?"];
+  const SUGGEST_OLD = ["Notícias mais importantes", "Principais deals de hoje", "Saiu fato relevante do Itaú hoje?", "Me leve para a Petrobras", "Estrutura societária do Alfredo Villela"];
 
   // ---------------------------------------------------------------- interface
   const ICON_CHAT = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c4.97 0 9 3.36 9 7.5s-4.03 7.5-9 7.5c-.9 0-1.77-.11-2.6-.32L5 19.8l1.06-3.3C4.17 15.1 3 13.16 3 11c0-4.14 4.03-7.5 9-7.5Z" fill="currentColor"/><path d="m12 7.6.78 1.9 1.92.75-1.92.75L12 12.9l-.78-1.9-1.92-.75 1.92-.75Z" fill="var(--fa-fab-ink, #fff)"/></svg>`;

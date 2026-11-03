@@ -478,9 +478,14 @@ def metrics(slot: dict, ordem="ÚLTIMO", period=None) -> dict:
     m = {}
     m["rec"] = pick(dre, is_code("3.01"), ordem, period)
     m["ebit"] = pick(dre, ds_has("resultado antes do resultado financeiro", lvl=1), ordem, period)
+    # bancos e parte das companhias usam "Lucro ou Prejuízo Líquido Consolidado do Período" e "Atribuído aos Sócios"
     m["ll"] = first(pick(dre, ds_has("lucro/prejuizo consolidado do periodo", lvl=1), ordem, period),
-                    pick(dre, ds_has("lucro/prejuizo do periodo", lvl=1), ordem, period))
-    m["llc"] = first(pick(dre, ds_has("atribuido a socios da empresa controladora", lvl=2), ordem, period), m["ll"])
+                    pick(dre, ds_has("lucro/prejuizo do periodo", lvl=1), ordem, period),
+                    pick(dre, ds_has("lucro ou prejuizo liquido consolidado do periodo", lvl=1), ordem, period),
+                    pick(dre, ds_has("lucro ou prejuizo liquido do periodo", lvl=1), ordem, period),
+                    pick(dre, ds_has("lucro ou prejuizo do periodo", lvl=1), ordem, period))
+    m["llc"] = first(pick(dre, ds_has("atribuido a socios da empresa controladora", lvl=2), ordem, period),
+                     pick(dre, ds_has("atribuido aos socios da empresa controladora", lvl=2), ordem, period), m["ll"])
     m["fin"] = m["ebit"] is None and m["rec"] is not None
     if period != "tri":
         da = pick(dfc, lambda r: r.get("CD_CONTA", "").startswith("6.01.01") and r.get("CD_CONTA", "").count(".") == 3, ordem, period)
