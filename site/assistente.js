@@ -484,6 +484,8 @@
   // ---------------------------------------------------------------- interface
   const ICON_CHAT = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c4.97 0 9 3.36 9 7.5s-4.03 7.5-9 7.5c-.9 0-1.77-.11-2.6-.32L5 19.8l1.06-3.3C4.17 15.1 3 13.16 3 11c0-4.14 4.03-7.5 9-7.5Z" fill="currentColor"/><path d="m12 7.6.78 1.9 1.92.75-1.92.75L12 12.9l-.78-1.9-1.92-.75 1.92-.75Z" fill="var(--fa-fab-ink, #fff)"/></svg>`;
   const ICON_X = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
+  const ICON_BIG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-6.5 6.5M4 20l6.5-6.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const ICON_SMALL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10h-6V4M4 14h6v6M14 10l6.5-6.5M10 14l-6.5 6.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   const ICON_SEND = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
   const root = document.createElement("div");
@@ -492,8 +494,9 @@
     <button class="fa-fab" type="button" aria-label="Abrir o assistente" aria-expanded="false" aria-controls="fa-panel">${ICON_CHAT}</button>
     <section class="fa-panel" id="fa-panel" role="dialog" aria-label="Assistente do portal" hidden>
       <header class="fa-head">
-        <div><b>Assistente</b><small>Notícias, deals, companhias e pessoas</small></div>
-        <button class="fa-close" type="button" aria-label="Fechar">${ICON_X}</button>
+        <div class="fa-title"><b>Assistente</b><small>Notícias, deals, companhias e pessoas</small></div>
+        <button class="fa-big fa-hbtn" type="button" aria-label="Ampliar" title="Ampliar">${ICON_BIG}</button>
+        <button class="fa-close fa-hbtn" type="button" aria-label="Fechar" title="Fechar">${ICON_X}</button>
       </header>
       <div class="fa-log" aria-live="polite"></div>
       <div class="fa-chips"></div>
@@ -529,6 +532,7 @@
     fab.setAttribute("aria-expanded", "true");
     store.set("fa-open", true);
     renderLog();
+    applyGeom();
     // dados começam a chegar enquanto a pessoa digita
     digest(); companies();
     if (matchMedia("(hover: hover)").matches) input.focus();
@@ -570,6 +574,109 @@
       if (narrow()) close();
     } else location.href = url.href;
   }
+
+  // ---------------------------------------------------------------- tamanho e posição (no computador)
+  // O painel pode ser arrastado pela barra de cima, ampliado pelo botão (ou duplo clique na barra) e redimensionado pelo
+  // canto de baixo à direita. Fica guardado neste navegador. No celular ele é uma folha de baixo; ampliar ocupa a tela toda.
+  const geomStore = {
+    get() { try { return JSON.parse(localStorage.getItem("fa-geom") || "{}"); } catch { return {}; } },
+    set(v) { try { localStorage.setItem("fa-geom", JSON.stringify(v)); } catch { /* sem armazenamento: só não lembra */ } },
+  };
+  let geom = geomStore.get();
+  const bigBtn = $(".fa-big");
+  const BIG = () => ({ w: Math.min(820, innerWidth - 48), h: Math.min(Math.round(innerHeight * .86), 960) });
+  const SMALL = { w: 400, h: 600 };
+  function clamp() {
+    const r = panel.getBoundingClientRect();
+    const x = Math.min(Math.max(8, r.left), Math.max(8, innerWidth - r.width - 8));
+    const y = Math.min(Math.max(8, r.top), Math.max(8, innerHeight - r.height - 8));
+    panel.style.left = `${x}px`; panel.style.top = `${y}px`;
+    return { x, y };
+  }
+  function setBigUi() {
+    bigBtn.innerHTML = geom.big ? ICON_SMALL : ICON_BIG;
+    bigBtn.setAttribute("aria-label", geom.big ? "Reduzir" : "Ampliar");
+    bigBtn.title = geom.big ? "Reduzir" : "Ampliar";
+    root.classList.toggle("fa-is-big", !!geom.big);
+  }
+  function applyGeom() {
+    setBigUi();
+    if (narrow()) { for (const k of ["left", "top", "width", "height", "right", "bottom"]) panel.style[k] = ""; return; }
+    const size = geom.big ? BIG() : { w: geom.w || SMALL.w, h: geom.h || SMALL.h };
+    panel.style.width = `${Math.min(size.w, innerWidth - 16)}px`;
+    panel.style.height = `${Math.min(size.h, innerHeight - 16)}px`;
+    if (geom.x != null && geom.y != null) {
+      panel.classList.add("fa-free");
+      panel.style.left = `${geom.x}px`; panel.style.top = `${geom.y}px`;
+      clamp();
+    } else if (geom.big) {
+      // ampliado sem posição escolhida: centralizado
+      panel.classList.add("fa-free");
+      const r = panel.getBoundingClientRect();
+      panel.style.left = `${(innerWidth - r.width) / 2}px`; panel.style.top = `${(innerHeight - r.height) / 2}px`;
+    } else {
+      panel.classList.remove("fa-free");
+      panel.style.left = panel.style.top = "";
+    }
+  }
+  function toggleBig() {
+    if (narrow()) { geom.big = !geom.big; setBigUi(); return; }
+    const r = panel.getBoundingClientRect();
+    geom.big = !geom.big;
+    // amplia a partir do centro do painel, sem sair da tela
+    const size = geom.big ? BIG() : { w: geom.w || SMALL.w, h: geom.h || SMALL.h };
+    const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+    geom.x = Math.round(cx - Math.min(size.w, innerWidth - 16) / 2);
+    geom.y = Math.round(cy - Math.min(size.h, innerHeight - 16) / 2);
+    applyGeom();
+    Object.assign(geom, clamp());
+    geomStore.set(geom);
+  }
+  bigBtn.addEventListener("click", toggleBig);
+  const head = $(".fa-head");
+  head.addEventListener("dblclick", (e) => { if (!e.target.closest("button")) toggleBig(); });
+  let drag = null;
+  head.addEventListener("pointerdown", (e) => {
+    if (narrow() || e.button !== 0 || e.target.closest("button")) return;
+    const r = panel.getBoundingClientRect();
+    drag = { dx: e.clientX - r.left, dy: e.clientY - r.top, id: e.pointerId };
+    head.setPointerCapture(e.pointerId);
+    panel.classList.add("fa-free", "fa-dragging");
+    panel.style.left = `${r.left}px`; panel.style.top = `${r.top}px`;
+    e.preventDefault();
+  });
+  head.addEventListener("pointermove", (e) => {
+    if (!drag || e.pointerId !== drag.id) return;
+    const r = panel.getBoundingClientRect();
+    panel.style.left = `${Math.min(Math.max(8 - r.width + 120, e.clientX - drag.dx), innerWidth - 120)}px`;
+    panel.style.top = `${Math.min(Math.max(8, e.clientY - drag.dy), innerHeight - 60)}px`;
+  });
+  const endDrag = (e) => {
+    if (!drag || e.pointerId !== drag.id) return;
+    drag = null;
+    panel.classList.remove("fa-dragging");
+    Object.assign(geom, clamp());
+    geomStore.set(geom);
+  };
+  head.addEventListener("pointerup", endDrag);
+  head.addEventListener("pointercancel", endDrag);
+  // tamanho escolhido pelo canto de redimensionar
+  let resizing = null;
+  new ResizeObserver(() => {
+    if (panel.hidden || narrow() || drag) return;
+    clearTimeout(resizing);
+    resizing = setTimeout(() => {
+      const r = panel.getBoundingClientRect();
+      const big = BIG();
+      // tamanho mudado à mão: deixa de ser o "ampliado" fixo e passa a ser o tamanho preferido
+      if (geom.big && (Math.abs(r.width - Math.min(big.w, innerWidth - 16)) > 4 || Math.abs(r.height - Math.min(big.h, innerHeight - 16)) > 4)) geom.big = false;
+      if (!geom.big) { geom.w = Math.round(r.width); geom.h = Math.round(r.height); }
+      if (panel.classList.contains("fa-free")) Object.assign(geom, clamp());
+      setBigUi();
+      geomStore.set(geom);
+    }, 250);
+  }).observe(panel);
+  addEventListener("resize", () => { if (!panel.hidden) applyGeom(); });
 
   fab.addEventListener("click", () => (panel.hidden ? open() : close()));
   $(".fa-close").addEventListener("click", close);
