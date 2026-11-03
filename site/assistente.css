@@ -56,6 +56,7 @@
 .fa-list b { font-weight: 600; }
 .fa-list.fa-plain { list-style: none; padding: 0; gap: 3px; }
 .fa-sub { display: block; font-size: 12px; color: var(--fa-muted); margin-top: 1px; }
+.fa-note { font-size: 12px; color: var(--fa-muted); }
 .fa-why { display: block; font-size: 12.5px; color: var(--fa-ink); opacity: .82; margin-top: 3px; }
 .fa-more { font-size: 13px; }
 .fa-pos { color: var(--pos, #248a3d); } .fa-neg { color: var(--neg, #d70015); }
@@ -98,3 +99,10 @@
 }
 @media print { .fa { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { .fa-panel { animation: none; } .fa-dots i { animation: none; opacity: .6; } }
+/* tabelas de números (demonstrações, cotação, rankings) */
+.fa-table { width: 100%; border-collapse: collapse; margin: 8px 0 4px; font-size: 13px; font-variant-numeric: tabular-nums; }
+.fa-table th, .fa-table td { padding: 5px 6px; text-align: right; border-bottom: .5px solid var(--fa-sep); white-space: nowrap; }
+.fa-table th:first-child { text-align: left; font-weight: 600; white-space: normal; }
+.fa-table thead th { font-size: 11.5px; font-weight: 600; color: var(--fa-muted); }
+.fa-table tr:last-child th, .fa-table tr:last-child td { border-bottom: 0; }
+.fa-msg .fa-table + p { margin-top: 6px; }
