@@ -1,0 +1,18 @@
+name: Sonda formularios
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for k in 19348 4170 9512; do
+            curl -s "https://felipepassaromello-ctrl.github.io/Portal-FPM/data/cias/perfil/$k.json?x=$RANDOM" | python3 -c "
+          import json,sys,collections
+          e=json.load(sys.stdin).get('entregas',[])
+          print('$k',len(e),dict(collections.Counter(x['t'] for x in e)))
+          for x in e[:3]: print('  ',x)"
+          done
+          curl -sI "$(curl -s https://felipepassaromello-ctrl.github.io/Portal-FPM/data/cias/perfil/19348.json | python3 -c "import json,sys;print(json.load(sys.stdin)['entregas'][0]['u'])")" | head -3
+          curl -s https://felipepassaromello-ctrl.github.io/Portal-FPM/assistente.js | grep -c answerForm
