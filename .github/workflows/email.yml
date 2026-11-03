@@ -2,7 +2,8 @@ name: Enviar edição por e-mail
 
 on:
   schedule:
-    # Dias úteis, horário de Brasília = UTC-3. A segunda execução só envia se a primeira não tiver enviado.
+    # Reserva: o envio normal sai da publicação da manhã (update.yml, job email). Dias úteis, horário de Brasília = UTC-3.
+    # Cada execução só envia se o e-mail do dia ainda não saiu, e nunca depois das 10:30 (agendamento atrasado).
     - cron: "52 11 * * 1-5"   # 08:52
     - cron: "32 12 * * 1-5"   # 09:32 (caso a análise do dia atrase)
   workflow_dispatch:
@@ -28,7 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # a versão mais nova da main: se o envio do dia já saiu pela publicação da manhã, não manda de novo
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
