@@ -111,7 +111,7 @@
   }
   // a parte da pergunta que nomeia alguém: tira as palavras do pedido ("me leve para a aba da Petrobras" → "Petrobras")
   const FILLER = new RegExp("\\b(" + [
-    "me leve", "me leva", "me levar", "leve", "leva", "levar", "abre", "abra", "abrir", "ir para", "ir pra", "vai para", "vai pra", "va para", "va pra",
+    "formulario de referencia", "formulario cadastral", "formularios", "formulario", "fre", "dfp", "itr", "fca", "me leve", "me leva", "me levar", "leve", "leva", "levar", "abre", "abra", "abrir", "ir para", "ir pra", "vai para", "vai pra", "va para", "va pra",
     "mostra", "mostre", "mostrar", "quero ver", "quero", "queria", "gostaria", "pode", "poderia", "por favor", "por exemplo", "ver", "veja", "aba", "abas",
     "pagina", "pagina", "dentro", "da companhia", "na companhia", "companhia", "empresa", "perfil", "estrutura societaria", "estrutura acionaria",
     "estrutura", "organograma", "arvore", "quem e o dono", "quem sao os donos", "quem e dono", "quem controla", "controlador", "controladores",
@@ -493,7 +493,7 @@
     const curYear = tri.length ? +tri[tri.length - 1].ref.slice(0, 4) : new Date().getFullYear();
     const out = [];
     const yy = (y) => (y ? (y.length === 2 ? 2000 + +y : +y) : null);
-    const re = /\b(?:([1-4])\s?(?:o\s|º\s?)?(?:t|tri|trim|trimestre)\b\s?(?:de\s)?(\d{4}|\d{2})?|(primeiro|segundo|terceiro|quarto) trimestre(?: de)?\s?(\d{4}|\d{2})?)/g;
+    const re = /\b(?:([1-4])\s?(?:o\s|º\s?)?(?:trimestre|trim|tri|t)(?![a-z])\s?(?:de\s)?(\d{4}|\d{2})?\b|(primeiro|segundo|terceiro|quarto) trimestre(?: de)?\s?(\d{4}|\d{2})?)/g;
     let m;
     while ((m = re.exec(q))) out.push({ kind: "q", n: +(m[1] || QWORD[m[3]]), y: yy(m[2] || m[4]), at: m.index });
     // "3T comparado ao 2", "3T vs 2T": número solto depois de um trimestre
@@ -842,6 +842,36 @@
     return r;
   }
 
+  // formulários oficiais entregues à CVM: DFP, ITR, FRE, FCA (perfil.entregas, montado pelo perfis.py)
+  const FORMS = [
+    ["FRE", /\bfre\b|formularios? de referencia/, "Formulário de Referência"],
+    ["FCA", /\bfca\b|formularios? cadastra/, "Formulário Cadastral"],
+    ["ITR", /\bitrs?\b|informac\w* trimestra/, "ITR"],
+    ["DFP", /\bdfps?\b|demonstrac\w* financeiras?( padronizadas| anuais| completas| auditadas)?\b|balanco (anual|completo|auditado)/, "DFP"],
+  ];
+  const formOf = (q) => FORMS.find(([, re]) => re.test(q));
+  const formPer = (e) => (e.t === "ITR" ? `${((+e.ref.slice(5, 7) - 1) / 3 + 1) | 0}T${e.ref.slice(2, 4)}` : e.ref.slice(0, 4));
+  async function answerForm(c, f, q) {
+    const [t, , name] = f;
+    const prof = await perfil(c.k);
+    const all = prof.entregas;
+    const docsLink = `<p class="fa-more">${link(ciaHref(c.k, "docs"), "Ver todos os formulários na página da companhia")}</p>`;
+    if (!all) return { html: `<p>Os links dos formulários de <b>${esc(c.nm)}</b> entram na próxima atualização diária dos perfis. Enquanto isso, os documentos da CVM estão na aba Documentos.</p>${docsLink}` };
+    const list = all.filter((e) => e.t === t);
+    if (!list.length) return { html: `<p>Não encontrei ${esc(name)} de <b>${esc(c.nm)}</b> entre as entregas à CVM.</p>${docsLink}` };
+    const per = periodsOf(q, prof.fin || {}).list.find((o) => o.kind === "q" || o.kind === "y");
+    let e = list[0], miss = "";
+    if (per) {
+      const want = per.kind === "q" ? (per.last != null ? null : `${per.n}T${String(per.y).slice(2)}`) : String(per.y);
+      const hit = want == null ? list[per.last] : list.find((x) => (t === "ITR" && per.kind === "y" ? x.ref.startsWith(want) : formPer(x) === want));
+      if (hit) e = hit; else if (want) miss = `<p>Não encontrei ${esc(name)} de ${esc(want)}; o mais recente é este:</p>`;
+    }
+    const when = e.rec ? `, entregue em ${e.rec.split("-").reverse().join("/")}` : "";
+    const others = list.filter((x) => x !== e).slice(0, 4);
+    return { html: `${miss}<p><b>${esc(c.nm)}</b> · ${esc(name)} ${esc(formPer(e))}${e.v > 1 ? ` (versão ${esc(e.v)})` : ""}${esc(when)}.</p>
+      <p><a href="${esc(e.u)}" target="_blank" rel="noopener">Abrir o documento na CVM</a></p>
+      ${others.length ? `<p class="fa-note">Outros: ${others.map((x) => `<a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(formPer(x))}</a>`).join(" · ")}</p>` : ""}${docsLink}` };
+  }
   async function answerCore(raw, q, ent) {
     const has = (re) => re.test(q);
     const today = has(/\bhoje\b|desde ontem|\bagora\b/);
@@ -858,6 +888,10 @@
       if (ent.kind === "cia") return { html: `Abrindo a estrutura societária de <b>${esc(ent.c.nm)}</b> no Mundo das companhias.`, go: treeHref(`k${ent.c.k}`), alt: [[ciaHref(ent.c.k, "acionistas"), "Ver os acionistas na página da companhia"]] };
       return { html: `Abrindo as participações de <b>${esc(ent.p.n)}</b> no Mundo das companhias.`, go: treeHref(ent.p.s), alt: [[personHref(ent.p.s), "Ver o perfil completo"]] };
     }
+    // formulários oficiais (FRE, DFP, ITR, FCA)
+    const form = formOf(q);
+    if (form && ent?.kind === "cia") return answerForm(ent.c, form, q);
+    if (form && !ent) return { html: `Me diga de qual companhia: por exemplo, "abre o ${form[0]} do Itaú".` };
     // números: ranking, comparação entre companhias, cotação, dados do perfil, demonstrações
     const fm = metricOf(q), mk = MARKET.find((x) => x.re.test(q)), fact = FACTS.find((x) => x.re.test(q));
     const ranking = has(/\b(maior(es)?|menor(es)?|ranking|top ?\d*|quem (mais|menos)|mais (subiram|cairam|valiosas?|lucrativ[oa]s?)|quais? (as|os)? ?(empresas|bancos|companhias|acoes))\b/);

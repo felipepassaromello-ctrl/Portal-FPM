@@ -500,6 +500,19 @@
       <a class="link-btn small" href="${safeUrl(docUrl(r))}" target="_blank" rel="noopener">Abrir o release na CVM ${icon("ext", "ic ic-sm")}</a></div>`;
   }
 
+  // formulários oficiais entregues à CVM (DFP, ITR, FRE, FCA), com o link do documento no sistema da CVM
+  const FORM_NAMES = { DFP: "Demonstrações financeiras anuais (DFP)", ITR: "Informações trimestrais (ITR)", FRE: "Formulário de Referência (FRE)", FCA: "Formulário Cadastral (FCA)" };
+  const formPeriod = (e) => (e.t === "ITR" ? `${(+e.ref.slice(5, 7) - 1) / 3 + 1 | 0}T${e.ref.slice(2, 4)}` : e.ref.slice(0, 4));
+  function formsHtml(p) {
+    const list = p.entregas || [];
+    if (!list.length) return "";
+    const by = (t) => list.filter((e) => e.t === t);
+    const groups = ["DFP", "ITR", "FRE", "FCA"].map((t) => [t, by(t)]).filter(([, l]) => l.length);
+    return `<div class="card forms-card"><div class="widget-head"><h3 class="group-label">Formulários oficiais na CVM</h3><span class="muted small">versão mais recente de cada período</span></div>
+      ${groups.map(([t, l]) => `<div class="form-row"><span class="form-name">${esc(FORM_NAMES[t])}</span><span class="form-links">${l.slice(0, t === "ITR" ? 6 : 5).map((e) =>
+        `<a class="chip" href="${safeUrl(e.u)}" target="_blank" rel="noopener" title="Versão ${esc(e.v)}${e.rec ? `, entregue em ${esc(fmtDate(e.rec))}` : ""}">${esc(formPeriod(e))}${e.v > 1 ? ` <small>v${esc(e.v)}</small>` : ""}</a>`).join("")}</span></div>`).join("")}</div>`;
+  }
+
   function paneGeral(c, p, docs) {
     const hl = highlights(c, p);
     return `<div class="cia-grid2">
@@ -790,6 +803,7 @@
     $("#pane-adm").innerHTML = paneAdm(c, p);
     $("#pane-fin").innerHTML = paneFin(c, p);
     $("#pane-divida").innerHTML = paneDivida(c, p);
+    $("#e-forms").innerHTML = formsHtml(p);
     if (changed || !state.ent.all.length) {
       Object.assign(state.ent, { all: docs, cats: new Set(), tema: "", shown: PAGE });
       $("#e-q").value = ""; $("#e-from").value = ""; $("#e-to").value = "";
