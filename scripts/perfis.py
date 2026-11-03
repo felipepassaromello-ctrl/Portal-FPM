@@ -160,7 +160,7 @@ def note_entrega(kind: str, r: dict) -> None:
         return
     key, v = (kind.upper(), ref), int(r.get("VERSAO") or 0)
     if v >= ENTREGAS[cnpj].get(key, {}).get("v", -1):
-        ENTREGAS[cnpj][key] = {"t": kind.upper(), "ref": ref, "v": v, "rec": (r.get("DT_RECEB") or "")[:10], "u": r["LINK_DOC"]}
+        ENTREGAS[cnpj][key] = {"t": kind.upper(), "ref": ref, "v": v, "rec": (r.get("DT_RECEB") or "")[:10], "u": re.sub(r"^http:", "https:", r["LINK_DOC"])}
 
 
 # ---------------------------------------------------------------- FCA e FRE

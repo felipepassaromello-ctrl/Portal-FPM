@@ -869,8 +869,8 @@
     const when = e.rec ? `, entregue em ${e.rec.split("-").reverse().join("/")}` : "";
     const others = list.filter((x) => x !== e).slice(0, 4);
     return { html: `${miss}<p><b>${esc(c.nm)}</b> · ${esc(name)} ${esc(formPer(e))}${e.v > 1 ? ` (versão ${esc(e.v)})` : ""}${esc(when)}.</p>
-      <p><a href="${esc(e.u)}" target="_blank" rel="noopener">Abrir o documento na CVM</a></p>
-      ${others.length ? `<p class="fa-note">Outros: ${others.map((x) => `<a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(formPer(x))}</a>`).join(" · ")}</p>` : ""}${docsLink}` };
+      <p><a href="${esc(e.u.replace(/^http:/, "https:"))}" target="_blank" rel="noopener">Abrir o documento na CVM</a></p>
+      ${others.length ? `<p class="fa-note">Outros: ${others.map((x) => `<a href="${esc(x.u.replace(/^http:/, "https:"))}" target="_blank" rel="noopener">${esc(formPer(x))}</a>`).join(" · ")}</p>` : ""}${docsLink}` };
   }
   async function answerCore(raw, q, ent) {
     const has = (re) => re.test(q);
