@@ -1766,7 +1766,7 @@
     else if (kind === "g" && W.groups[+a]) selectGroup(+a, { push: false });
     else if (kind === "e" && node(a) >= 0) openTree(node(a), { push: false });
     else if (kind === "c" && node(a) >= 0 && node(b) >= 0) showPath(node(a), node(b), { push: false });
-    else if (kind === "n" || kind === "s") toast("Essa entidade não está no mapa: ela não tem participação relevante em companhia aberta.");
+    else if (kind === "n" || kind === "s" || kind === "e") toast("Essa entidade não está no mapa: ela não tem participação relevante em companhia aberta.");
   }
 
   // ---------------------------------------------------------- interação com o mapa

@@ -115,7 +115,7 @@ jobs:
         run: python scripts/brief_audio.py
 
       - name: Forçar o navegador a carregar o visual novo a cada publicação
-        run: sed -i "s#styles.css\"#styles.css?v=${GITHUB_SHA::7}\"#; s#app.js\"#app.js?v=${GITHUB_SHA::7}\"#; s#cias.js\"#cias.js?v=${GITHUB_SHA::7}\"#; s#mundo.css\"#mundo.css?v=${GITHUB_SHA::7}\"#; s#mundo.js\"#mundo.js?v=${GITHUB_SHA::7}\"#" site/index.html site/cias.html site/mundo.html
+        run: sed -i "s#styles.css\"#styles.css?v=${GITHUB_SHA::7}\"#; s#app.js\"#app.js?v=${GITHUB_SHA::7}\"#; s#cias.js\"#cias.js?v=${GITHUB_SHA::7}\"#; s#mundo.css\"#mundo.css?v=${GITHUB_SHA::7}\"#; s#mundo.js\"#mundo.js?v=${GITHUB_SHA::7}\"#; s#assistente.css\"#assistente.css?v=${GITHUB_SHA::7}\"#; s#assistente.js\"#assistente.js?v=${GITHUB_SHA::7}\"#" site/index.html site/cias.html site/mundo.html
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
