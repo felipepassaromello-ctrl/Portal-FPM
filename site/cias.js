@@ -500,6 +500,8 @@
       <a class="link-btn small" href="${safeUrl(docUrl(r))}" target="_blank" rel="noopener">Abrir o release na CVM ${icon("ext", "ic ic-sm")}</a></div>`;
   }
 
+  // link do documento → visualizador da CVM (grupos e quadros navegáveis), não o download
+  const cvmView = (u) => { const m = /NumeroSequencialDocumento=(\d+)/.exec(u || ""); return m ? `https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=${m[1]}&CodigoTipoInstituicao=1` : String(u || "").replace(/^http:/, "https:"); };
   // formulários oficiais entregues à CVM (DFP, ITR, FRE, FCA), com o link do documento no sistema da CVM
   const FORM_NAMES = { DFP: "Demonstrações financeiras anuais (DFP)", ITR: "Informações trimestrais (ITR)", FRE: "Formulário de Referência (FRE)", FCA: "Formulário Cadastral (FCA)" };
   const formPeriod = (e) => (e.t === "ITR" ? `${(+e.ref.slice(5, 7) - 1) / 3 + 1 | 0}T${e.ref.slice(2, 4)}` : e.ref.slice(0, 4));
@@ -510,7 +512,7 @@
     const groups = ["DFP", "ITR", "FRE", "FCA"].map((t) => [t, by(t)]).filter(([, l]) => l.length);
     return `<div class="card forms-card"><div class="widget-head"><h3 class="group-label">Formulários oficiais na CVM</h3><span class="muted small">versão mais recente de cada período</span></div>
       ${groups.map(([t, l]) => `<div class="form-row"><span class="form-name">${esc(FORM_NAMES[t])}</span><span class="form-links">${l.slice(0, t === "ITR" ? 6 : 5).map((e) =>
-        `<a class="chip" href="${safeUrl(e.u.replace(/^http:/, "https:"))}" target="_blank" rel="noopener" title="Versão ${esc(e.v)}${e.rec ? `, entregue em ${esc(fmtDate(e.rec))}` : ""}">${esc(formPeriod(e))}${e.v > 1 ? ` <small>v${esc(e.v)}</small>` : ""}</a>`).join("")}</span></div>`).join("")}</div>`;
+        `<a class="chip" href="${safeUrl(cvmView(e.u))}" target="_blank" rel="noopener" title="Versão ${esc(e.v)}${e.rec ? `, entregue em ${esc(fmtDate(e.rec))}` : ""}">${esc(formPeriod(e))}${e.v > 1 ? ` <small>v${esc(e.v)}</small>` : ""}</a>`).join("")}</span></div>`).join("")}</div>`;
   }
 
   function paneGeral(c, p, docs) {
