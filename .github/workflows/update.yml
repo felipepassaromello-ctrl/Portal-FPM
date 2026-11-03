@@ -125,3 +125,36 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           timeout: 1200000   # 20 min: o GitHub Pages às vezes demora mais que os 10 min padrão
+
+  # E-mail da manhã: sai logo depois da publicação que leva a análise do dia (o push da rotina), às 08:52, sem
+  # depender do agendador do GitHub, que às vezes atrasa horas. Nas outras execuções termina na hora: o envio do dia já
+  # foi feito, a análise de hoje ainda não saiu, ou já passou das 10:30.
+  email:
+    needs: update
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency:
+      group: email
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Enviar
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          MAIL_CC: ${{ secrets.MAIL_CC }}
+        run: python scripts/send_email.py --wait-until 08:52
+      - name: Registrar envio
+        run: |
+          git add site/data/email_sent.json 2>/dev/null || exit 0
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "portal-bot"
+          git config user.email "portal-bot@users.noreply.github.com"
+          git commit -m "E-mail da edição enviado"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done

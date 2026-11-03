@@ -20,7 +20,8 @@ import os
 import re
 import smtplib
 import sys
-from datetime import datetime, timedelta, timezone
+import time
+from datetime import datetime, time as dtime, timedelta, timezone
 from email.message import EmailMessage
 from email.utils import formataddr
 from pathlib import Path
@@ -30,6 +31,7 @@ DATA = ROOT / "site" / "data"
 BRT = timezone(timedelta(hours=-3))
 SITE_URL = "https://felipepassaromello-ctrl.github.io/Portal-FPM/"
 SENT_FILE = DATA / "email_sent.json"  # evita mandar duas vezes no mesmo dia
+SEND_UNTIL = dtime(10, 30)  # depois disso o envio do dia é cancelado (horário de Brasília)
 
 WEEKDAYS = ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"]
 MONTHS = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro",
@@ -227,6 +229,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="envia mesmo sem a análise de hoje")
     ap.add_argument("--dry-run", metavar="ARQ.html", help="só grava o HTML, sem enviar")
+    ap.add_argument("--wait-until", metavar="HH:MM",
+                    help="se a edição está pronta antes desse horário, espera até ele para enviar (no máximo 45 min)")
     ap.add_argument("--alert-if-missing", action="store_true",
                     help="se a edição de hoje não saiu, manda um aviso para a própria conta (GMAIL_USER)")
     args = ap.parse_args()
@@ -248,10 +252,25 @@ def main() -> int:
         return 0
 
     override = os.environ.get("MAIL_TO_OVERRIDE", "").strip()
+    # o e-mail é da manhã: o agendador do GitHub às vezes roda com horas de atraso, e aí não envia mais
+    if today.time() > SEND_UNTIL and not (override or args.force or args.dry_run):
+        print(f"Já passou das {SEND_UNTIL:%H:%M}: e-mail de hoje não enviado (agendamento atrasado).")
+        return 0
     sent = json.loads(SENT_FILE.read_text()) if SENT_FILE.exists() else {}
     if sent.get("date") == today.date().isoformat() and not (override or args.force or args.dry_run):
         print("A edição de hoje já foi enviada.")
         return 0
+    if args.wait_until and not override:
+        h, m = map(int, args.wait_until.split(":"))
+        target = today.replace(hour=h, minute=m, second=0, microsecond=0)
+        wait = (target - today).total_seconds()
+        if wait > 45 * 60:
+            print(f"Cedo demais para o envio das {args.wait_until}; fica para a próxima execução.")
+            return 0
+        if wait > 0:
+            print(f"Edição pronta; esperando até {args.wait_until} para enviar.")
+            time.sleep(wait)
+            today = datetime.now(BRT)
 
     subject, body, text = build(digest, today)
     if args.dry_run:
