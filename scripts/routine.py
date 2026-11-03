@@ -190,6 +190,9 @@ avisos aos acionistas etc.) para um profissional de M&A. Para cada documento, es
   nomes, valores, prazos e datas que estiverem no texto. Nada de "a companhia informa que"; vá direto ao fato.
 - pontos: 0 a 3 tópicos curtos com detalhes úteis (preço por ação, contraparte, condições, cronograma, próximos passos).
 - tema: um destes: {temas}.
+Release de resultados (press-release do trimestre): no resumo, o lucro líquido, a receita e o indicador central do
+setor (EBITDA e margem, ROE para bancos, carteira de crédito, produção) com a variação contra o mesmo trimestre do ano
+anterior; nos pontos, os destaques (dividendos, guidance, alavancagem, eventos não recorrentes). Tema: Resultados.
 Use só o que está no texto. Se o texto estiver vazio, ilegível ou não disser nada além do título, não inclua o documento.
 Formato do arquivo: {{"items": [{{"id": "...", "resumo": "...", "pontos": ["..."], "tema": "..."}}]}}"""
 

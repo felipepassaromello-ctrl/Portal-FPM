@@ -118,7 +118,8 @@
     "acionistas", "participacoes", "saiu", "teve", "tem", "ha", "houve", "algum", "alguma", "alguns", "algumas", "fatos relevantes", "fato relevante",
     "comunicados", "comunicado", "documentos", "documento", "da cvm", "na cvm", "cvm", "noticias", "noticia", "novidade", "novidades", "hoje", "ontem",
     "sobre", "qual", "quais", "foram", "o que", "como", "esta", "estao", "deals", "deal", "leads", "lead", "ultimos", "ultimas", "ultimo", "ultima",
-    "recentes", "recente", "administracao", "diretoria", "conselho", "financeiro", "balanco", "resultados", "resultado", "divida", "debentures",
+    "recentes", "recente", "resultado", "resultados", "balanco", "balancos", "lucro", "trimestre", "trimestral", "tri", "release",
+    "divulgou", "divulgaram", "divulgacao", "saiu o", "quem", "administracao", "diretoria", "conselho", "financeiro", "balanco", "resultados", "resultado", "divida", "debentures",
     "ofertas", "mapa", "mundo", "no mundo", "principais", "principal", "maiores", "mais", "importantes", "importante", "legais", "melhores",
     "top", "quentes", "interessantes", "relevantes", "destaques", "em aberto", "aberto", "abertos", "estrutura", "lista", "listar", "todos", "todas", "me", "mim", "eu", "pra", "para", "de", "do", "da", "dos", "das", "o", "a", "os", "as", "um", "uma", "no", "na", "nos", "nas", "e",
   ].map((w) => w.replace(/ /g, "\\s+")).join("|") + ")\\b", "g");
@@ -193,7 +194,7 @@
     // companhia: vale o nome nas entidades da análise ou escrito com maiúscula no texto ("Vale", e não "vale-alimentação")
     const deaccent = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     const cased = ent?.kind === "cia" ? new RegExp(`(^|[^A-Za-z0-9-])${deaccent(ent.c.nm).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![A-Za-z0-9-])`) : null;
-    const hits = (d.items || []).filter((i) => cased
+    const hits = [...(d.items || []), ...(d.upcoming || [])].filter((i) => cased
       ? mentions((i.entities || []).join(" | "), terms) || cased.test(deaccent(`${i.headline} | ${i.title} | ${i.involves || ""}`))
       : mentions(`${i.headline} ${i.title} ${(i.entities || []).join(" ")} ${i.involves || ""}`, terms)).sort((a, z) => (z.importance || 0) - (a.importance || 0));
     const name = ent?.kind === "cia" ? ent.c.nm : ent?.kind === "pessoa" ? ent.p.n : phrase;
@@ -218,6 +219,38 @@
     if (!fresh.length) return { html: `<p><b>${esc(c.nm)}</b>: nenhum ${kind} nos dois últimos meses.</p>${more}` };
     return { html: `<p><b>${esc(c.nm)}</b>, ${onlyFR ? "fatos relevantes" : "documentos"} ${todayOnly ? "desde ontem às 8h" : "mais recentes"}:</p><ol class="fa-list">${fresh.slice(0, 3).map(li).join("")}</ol>${more}` };
   }
+  // release de resultados do trimestre (press-release entregue à CVM) e as notícias de hoje sobre o resultado
+  const isRelease = (x) => x.c === "Dados Econômico-Financeiros" && x.t === "Press-release";
+  const RESULT_NEWS = /resultad|lucro|prejuizo|balanc|trimestr|\b[1-4]t\d{2}\b|receita|ebitda/;
+  async function answerResult(c) {
+    const [docs, d] = await Promise.all([recentDocs(), digest()]);
+    const rel = docs.filter((x) => x.k === c.k && isRelease(x)).sort((a, z) => `${z.d} ${z.h || ""}`.localeCompare(`${a.d} ${a.h || ""}`))[0];
+    const name = fold(c.nm);
+    const news = [...(d.items || []), ...(d.upcoming || [])].filter((i) => {
+      const t = `${i.headline || ""} ${i.title || ""}`;
+      return mentions(`${t} ${(i.entities || []).join(" ")}`, [name, ...(c.tk ? [fold(c.tk)] : [])]) && RESULT_NEWS.test(fold(t));
+    }).sort((a, z) => String(z.published).localeCompare(String(a.published)));
+    let html = "";
+    if (rel) {
+      html += `<p><b>${esc(c.nm)}</b>: ${esc(rel.s || "release de resultados")}, entregue à CVM em ${ddmm(rel.d)}${rel.h ? ` às ${rel.h}` : ""}.</p>`;
+      html += rel.sm ? `<p>${esc(rel.sm.resumo)}</p>${(rel.sm.pontos || []).length ? `<ul class="fa-list fa-bullets">${rel.sm.pontos.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}`
+        : `<p class="fa-sub">O resumo com os números sai na rotina da manhã seguinte.</p>`;
+      html += `<p class="fa-more"><a href="${esc(docUrl(rel))}" target="_blank" rel="noopener">Abrir o release</a></p>`;
+    } else html += `<p><b>${esc(c.nm)}</b>: nenhum release de resultados entregue à CVM nos dois últimos meses.</p>`;
+    if (news.length) html += `<p>${news.length === 1 ? "Notícia" : "Notícias"} de hoje sobre o resultado:</p><ol class="fa-list">${news.slice(0, 4).map(newsLi).join("")}</ol>`;
+    html += `<p class="fa-more">${link(ciaHref(c.k, "fin"), "Ver o financeiro da companhia")}</p>`;
+    return { html };
+  }
+  async function answerAllResults() {
+    const [docs, d, list] = await Promise.all([recentDocs(), digest(), companies()]);
+    const start = (d.window?.start || "").slice(0, 10);
+    const names = new Map(list.map((c) => [c.k, c.nm]));
+    const rows = docs.filter((x) => isRelease(x) && (!start || x.d >= start)).sort((a, z) => `${z.d} ${z.h || ""}`.localeCompare(`${a.d} ${a.h || ""}`));
+    if (!rows.length) return { html: `<p>Nenhuma companhia entregou release de resultados à CVM desde ontem às 8h.</p>` };
+    const li = rows.slice(0, 10).map((x) => `<li><a href="${esc(ciaHref(x.k))}"><b>${esc(names.get(x.k) || x.n)}</b></a><span class="fa-sub">${esc(x.s || "Release de resultados")} · ${ddmm(x.d)}${x.h ? ` ${x.h}` : ""}</span>${x.sm?.resumo ? `<span class="fa-why">${esc(x.sm.resumo)}</span>` : ""}</li>`).join("");
+    return { html: `<p>${rows.length === 1 ? "Uma companhia divulgou" : `${rows.length} companhias divulgaram`} resultado desde ontem às 8h:</p><ol class="fa-list">${li}</ol>` };
+  }
+
   async function resolve(phrase) {
     if (!phrase) return null;
     const [c, p] = await Promise.all([findCompany(phrase), findPerson(phrase)]);
@@ -269,6 +302,12 @@
       if (ent.kind === "cia") return { html: `Abrindo a estrutura societária de <b>${esc(ent.c.nm)}</b> no Mundo das companhias.`, go: treeHref(`k${ent.c.k}`), alt: [[ciaHref(ent.c.k, "acionistas"), "Ver os acionistas na página da companhia"]] };
       return { html: `Abrindo as participações de <b>${esc(ent.p.n)}</b> no Mundo das companhias.`, go: treeHref(ent.p.s), alt: [[personHref(ent.p.s), "Ver o perfil completo"]] };
     }
+    const wantsResult = /resultad|balanc|\blucro\b|trimestr|\b[1-4]t\d{0,2}\b|release/.test(q) && !wantsNav;
+    if (wantsResult) {
+      const ent = phrase ? await resolve(phrase.replace(/\b([1-4]t\d{0,2}|tri|trimestre|release|lucro|balanco|resultado)\b/g, " ").trim()) : null;
+      if (ent?.kind === "cia") return answerResult(ent.c);
+      if (!phrase || !ent) return answerAllResults();
+    }
     if (wantsDocs && phrase) {
       const ent = await resolve(phrase);
       if (ent?.kind === "cia") return answerDocs(ent.c, /fatos? relevantes?/.test(q), today);
@@ -310,7 +349,7 @@
     <li>“Quais as notícias mais importantes?” ou “o briefing de hoje”</li>
     <li>“Principais deals de hoje” e “leads em aberto”</li>
     <li>“Saiu fato relevante do Itaú hoje?”</li>
-    <li>“Notícias da Vale”</li>
+    <li>“Notícias da Vale” e “resultado do Itaú”</li>
     <li>“Me leve para a Petrobras” ou “abre os acionistas da Vale”</li>
     <li>“Estrutura societária do Alfredo Villela”</li></ul>`;
   const SUGGEST = ["Notícias mais importantes", "Principais deals de hoje", "Saiu fato relevante do Itaú hoje?", "Me leve para a Petrobras", "Estrutura societária do Alfredo Villela"];

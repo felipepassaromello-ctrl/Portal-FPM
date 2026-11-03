@@ -489,11 +489,23 @@
         <div class="tl-title">${e.l ? `<a href="${safeUrl(e.l)}" target="_blank" rel="noopener">${esc(e.t)}</a>` : esc(e.t)}</div>${e.sub ? `<p>${esc(e.sub)}</p>` : ""}</div></li>`).join("")}</ol></div>`;
   }
 
+  // último release de resultados (press-release do trimestre) entregue à CVM, com o resumo da rotina quando já existe
+  function lastResult(docs) {
+    const r = docs.find((d) => d.c === "Dados Econômico-Financeiros" && d.t === "Press-release");
+    if (!r || r.d < new Date(Date.now() - 150 * 864e5).toISOString().slice(0, 10)) return "";
+    return `<div class="widget"><div class="widget-head"><h3 class="group-label">Último resultado</h3><button class="link-btn small" data-pane="fin" type="button">Financeiro ${icon("chev", "ic ic-sm")}</button></div>
+      <div class="tl-meta">${esc(r.s || "Release de resultados")} · ${esc(fmtDate(r.d))}${r.h ? ` às ${esc(r.h)}` : ""}</div>
+      ${r.sm ? `<p class="lede">${esc(r.sm.resumo)}</p>${(r.sm.pontos || []).length ? `<ul class="list-plain">${r.sm.pontos.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}`
+        : `<p class="muted small">Release entregue à CVM; o resumo com os números sai na rotina da manhã seguinte.</p>`}
+      <a class="link-btn small" href="${safeUrl(docUrl(r))}" target="_blank" rel="noopener">Abrir o release na CVM ${icon("ext", "ic ic-sm")}</a></div>`;
+  }
+
   function paneGeral(c, p, docs) {
     const hl = highlights(c, p);
     return `<div class="cia-grid2">
       <div class="col">
         ${p.ativ || c.at ? `<div class="widget"><h3 class="group-label">O que faz</h3><p class="lede">${esc(p.ativ || c.at)}</p></div>` : ""}
+        ${lastResult(docs)}
         ${hl.length ? `<div class="widget"><h3 class="group-label">Destaques</h3><ul class="list-plain">${hl.map((h) => `<li>${esc(h)}</li>`).join("")}</ul></div>` : ""}
         ${timeline(c, p, docs)}
       </div>
