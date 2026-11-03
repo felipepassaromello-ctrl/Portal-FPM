@@ -154,13 +154,21 @@ def part(name: str) -> str:
 ENTREGAS: dict[str, dict] = defaultdict(dict)
 
 
+def cvm_viewer(link: str) -> str:
+    """Link do índice → visualizador da CVM (índice de grupos e quadros), não o download do arquivo."""
+    m = re.search(r"NumeroSequencialDocumento=(\d+)", link)
+    if not m:
+        return re.sub(r"^http:", "https:", link)
+    return f"https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento={m[1]}&CodigoTipoInstituicao=1"
+
+
 def note_entrega(kind: str, r: dict) -> None:
     cnpj, ref = r.get("CNPJ_CIA", ""), r.get("DT_REFER", "")
     if not cnpj or not ref or not r.get("LINK_DOC"):
         return
     key, v = (kind.upper(), ref), int(r.get("VERSAO") or 0)
     if v >= ENTREGAS[cnpj].get(key, {}).get("v", -1):
-        ENTREGAS[cnpj][key] = {"t": kind.upper(), "ref": ref, "v": v, "rec": (r.get("DT_RECEB") or "")[:10], "u": re.sub(r"^http:", "https:", r["LINK_DOC"])}
+        ENTREGAS[cnpj][key] = {"t": kind.upper(), "ref": ref, "v": v, "rec": (r.get("DT_RECEB") or "")[:10], "u": cvm_viewer(r["LINK_DOC"])}
 
 
 # ---------------------------------------------------------------- FCA e FRE
