@@ -1,0 +1,48 @@
+name: Sonda DRE de bancos (temporário)
+
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+    paths: [".github/workflows/audio-probe.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  dre:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r scripts/requirements.txt
+      - name: Contas da DRE
+        run: |
+          mkdir -p probe-dre
+          python - <<'PY' > probe-dre/dre.txt
+          import sys
+          sys.path.insert(0, "scripts")
+          import perfis as P
+          bancos = {"60.746.948/0001-12": "Bradesco", "60.872.504/0001-23": "Itau", "00.000.000/0001-91": "BB", "90.400.888/0001-42": "Santander", "30.306.294/0001-45": "BTG", "33.000.167/0001-01": "Petrobras"}
+          itr = P.load_fin("itr", 2026)
+          for cnpj, nome in bancos.items():
+              slots = itr.get(cnpj, {})
+              if not slots:
+                  print("==", nome, "sem ITR 2026"); continue
+              ref = max(slots)
+              slot = slots[ref]
+              rows = P.statement(slot, "DRE")
+              print("==", nome, ref, "linhas", len(rows))
+              seen = set()
+              for r in rows:
+                  key = (r.get("CD_CONTA"), r.get("DS_CONTA"))
+                  if key in seen or r.get("ORDEM_EXERC") != "ÚLTIMO": continue
+                  seen.add(key)
+                  print(r.get("CD_CONTA"), "|", r.get("DS_CONTA"), "|", r.get("DT_INI_EXERC"), r.get("DT_FIM_EXERC"), r.get("VL_CONTA"))
+          PY
+          head -c 400 probe-dre/dre.txt
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -f probe-dre && git commit -m "Sonda DRE de bancos" && git push
