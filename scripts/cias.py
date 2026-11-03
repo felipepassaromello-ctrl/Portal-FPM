@@ -56,6 +56,10 @@ SUMMARY_CATS = {
     "Comunicação sobre Transação entre Partes Relacionadas", "Comunicação sobre demandas societárias",
     "Acordo de Acionistas", "Informações de Companhias em Recuperação Judicial ou Extrajudicial",
 }
+# Release de resultados (press-release do trimestre) das listadas também ganha resumo, com mais texto: os números
+# principais costumam vir nas primeiras páginas.
+RELEASE = ("Dados Econômico-Financeiros", "Press-release")
+RELEASE_CHARS = 14000
 SUMMARY_LOOKBACK_DAYS = 7
 MAX_PDFS_PER_RUN = 60
 TEXT_CHARS = 6000
@@ -406,8 +410,12 @@ def summary_universe(now: datetime) -> tuple[set[str], set[str]]:
     return listed, active
 
 
+def is_release(d: dict) -> bool:
+    return (d.get("c"), d.get("t")) == RELEASE
+
+
 def wants_summary(d: dict, listed: set[str], active: set[str]) -> bool:
-    return (d["k"] in listed and d["c"] in SUMMARY_CATS) or (d["c"] == "Fato Relevante" and d["k"] in active)
+    return (d["k"] in listed and (d["c"] in SUMMARY_CATS or is_release(d))) or (d["c"] == "Fato Relevante" and d["k"] in active)
 
 
 def _fetch_text(d: dict, chars: int) -> dict | None:
@@ -417,6 +425,8 @@ def _fetch_text(d: dict, chars: int) -> dict | None:
     except Exception as exc:  # noqa: BLE001
         log(f"PDF {d['id']} ({d['nome']}): {type(exc).__name__}: {exc}")
         return None
+    if is_release(d):
+        chars = max(chars, RELEASE_CHARS)
     return {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"], "texto": texto[:chars]}
 
 
@@ -448,11 +458,11 @@ def cmd_textos(args) -> None:
         fila = {k: v for k, v in fila.items() if k not in resumos and v.get("d", "") >= cutoff}
     else:
         fila = {k: v for k, v in fila.items() if k not in resumos}
-    cats = {"fr": {"Fato Relevante"}}.get(args.cats, SUMMARY_CATS)
+    cats = {"fr": {"Fato Relevante"}, "releases": {RELEASE[0]}}.get(args.cats, SUMMARY_CATS | {RELEASE[0]})
     todo = [d for d in docs if wants_summary(d, listed, active) and d["c"] in cats and d["d"] >= since
             and d["id"] not in resumos and d["id"] not in fila and d["id"] not in other and d.get("u")]
     todo.sort(key=lambda d: (d["d"], d["h"]), reverse=True)
-    todo.sort(key=lambda d: d["c"] != "Fato Relevante")  # fatos relevantes primeiro, depois os mais novos
+    todo.sort(key=lambda d: (d["c"] != "Fato Relevante", not is_release(d)))  # fatos relevantes, releases, depois o resto
     limit = args.max or MAX_PDFS_PER_RUN
     deadline = time.time() + 60 * (args.minutos or 30)
     got = 0
@@ -481,7 +491,7 @@ def main() -> None:
     t.add_argument("--hist", action="store_true", help="histórico dos 5 anos, em cvm_fila_hist.json")
     t.add_argument("--dias", type=int, help="só documentos dos últimos N dias")
     t.add_argument("--max", type=int, help="máximo de PDFs nesta execução")
-    t.add_argument("--cats", choices=["fr", "principais"], default="principais")
+    t.add_argument("--cats", choices=["fr", "releases", "principais"], default="principais")
     t.add_argument("--chars", type=int, help="caracteres de texto guardados por documento")
     t.add_argument("--minutos", type=int, help="tempo máximo de execução")
     t.set_defaults(fn=cmd_textos)

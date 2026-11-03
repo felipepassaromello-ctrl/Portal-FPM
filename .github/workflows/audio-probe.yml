@@ -1,0 +1,26 @@
+name: Textos dos releases de resultados (temporário)
+
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+    paths: [".github/workflows/audio-probe.yml"]
+
+permissions:
+  contents: write
+
+# uma vez: baixa o texto dos releases de resultados da temporada (últimos 35 dias) para a rotina resumir
+jobs:
+  releases:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q -r scripts/requirements.txt
+      - run: python scripts/cias.py textos --dias 35 --cats releases --max 200 --minutos 40
+      - run: |
+          mkdir -p probe-releases && cp site/data/cvm_fila.json probe-releases/fila.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -f probe-releases && git commit -m "Textos dos releases de resultados" && git push
