@@ -141,35 +141,39 @@
     if (!top.length) return { html: "A edição de hoje ainda não saiu." };
     return { html: `<p>As mais importantes da edição de hoje:</p><ol class="fa-list">${top.map(newsLi).join("")}</ol><p class="fa-more">${link(tabHref("feed"), "Ver todas as notícias")}</p>` };
   }
-  async function answerDeals(phrase) {
+  async function answerDeals(ent, one) {
     const d = await digest();
     let deals = [...(d.deals || [])];
-    const found = phrase ? await findCompany(phrase) : null;
-    const c = found && found.score >= 80 ? found : null;
-    const name = c ? c.nm : phrase;
-    if (name) deals = deals.filter((i) => mentions(`${i.headline} ${i.title} ${(i.entities || []).join(" ")} ${i.deal?.buyer} ${i.deal?.target}`, [fold(name), ...(c?.tk ? [fold(c.tk)] : [])]));
-    deals.sort((a, z) => (z.importance || 0) - (a.importance || 0));
-    if (!deals.length) return { html: name ? `Nenhum deal com <b>${esc(name)}</b> na edição de hoje. ${link(tabHref("deals"), "Ver todos os deals")}` : "Nenhum deal na edição de hoje." };
-    const li = deals.slice(0, 6).map((i) => {
+    const name = ent?.kind === "cia" ? ent.c.nm : ent?.kind === "pessoa" ? ent.p.n : "";
+    if (name) deals = deals.filter((i) => mentions(`${i.headline} ${i.title} ${(i.entities || []).join(" ")} ${i.deal?.buyer} ${i.deal?.target}`, [fold(name), ...(ent.c?.tk ? [fold(ent.c.tk)] : [])]));
+    // brasileiros primeiro quando a nota empata
+    deals.sort((a, z) => (z.importance || 0) - (a.importance || 0) || (z.region === "BR") - (a.region === "BR"));
+    if (!deals.length) return { html: name ? `<p>Nenhum deal com <b>${esc(name)}</b> na edição de hoje.</p><p class="fa-more">${ent.kind === "cia" ? `${link(ciaHref(ent.c.k, "noticias"), "Ver o histórico de operações")} · ` : ""}${link(tabHref("base"), "Base de deals")}</p>` : "Nenhum deal na edição de hoje." };
+    const item = (i, rich) => {
       const x = i.deal || {};
       const who = [x.buyer, x.target].filter((v) => v && v !== "não divulgado").join(" → ");
       const meta = [x.type, x.value && x.value !== "não divulgado" ? x.value : "", x.stage].filter(Boolean).join(" · ");
-      return `<li><a href="${esc(newsHref(i))}"><b>${esc(who || i.headline)}</b></a><span class="fa-sub">${esc(meta)}</span></li>`;
-    }).join("");
-    return { html: `<p>${deals.length > 6 ? `Os 6 principais de ${deals.length} deals` : deals.length === 1 ? "O deal" : `Os ${deals.length} deals`} da edição de hoje:</p><ol class="fa-list">${li}</ol><p class="fa-more">${link(tabHref("deals"), "Abrir Deals do dia")}</p>` };
+      return `<li><a href="${esc(newsHref(i))}"><b>${esc(who || i.headline)}</b></a><span class="fa-sub">${esc(meta)}</span>${rich && i.summary ? `<span class="fa-why">${esc(i.summary)}</span>` : ""}</li>`;
+    };
+    if (one) {
+      const top = deals[0];
+      return { html: `<p>O destaque de hoje:</p><ol class="fa-list">${item(top, true)}</ol>${top.impact ? `<p class="fa-sub">${esc(top.impact)}</p>` : ""}${deals.length > 1 ? `<p class="fa-more">Outros: ${deals.slice(1, 4).map((i) => link(newsHref(i), [i.deal?.buyer, i.deal?.target].filter((v) => v && v !== "não divulgado").join(" → ") || i.headline)).join(" · ")}</p>` : ""}` };
+    }
+    return { html: `<p>${deals.length > 6 ? `Os 6 principais de ${deals.length} deals` : deals.length === 1 ? "O deal" : `Os ${deals.length} deals`}${name ? ` com ${esc(name)}` : ""} da edição de hoje:</p><ol class="fa-list">${deals.slice(0, 6).map((i) => item(i, false)).join("")}</ol><p class="fa-more">${link(tabHref("deals"), "Abrir Deals do dia")}</p>` };
   }
-  async function answerLeads(phrase) {
+  async function answerLeads(ent) {
     const db = await leadsDb();
     let rows = Object.values(db.leads || {}).filter((l) => l.status === "Em aberto");
-    if (phrase) {
-      const f = fold(phrase);
-      const hit = rows.filter((l) => fold(`${l.company} ${l.sector} ${l.counterparty}`).includes(f));
-      if (hit.length) rows = hit; else return { html: `Nenhum lead em aberto sobre “${esc(phrase)}”. ${link(tabHref("leads"), "Ver todos os leads")}` };
+    const name = ent?.kind === "cia" ? ent.c.nm : ent?.kind === "pessoa" ? ent.p.n : "";
+    if (name) {
+      const hit = rows.filter((l) => mentions(`${l.company} ${l.counterparty} ${(l.events || []).map((e) => e.headline).join(" ")}`, [fold(name)]));
+      if (!hit.length) return { html: `Nenhum lead em aberto com <b>${esc(name)}</b>. ${link(tabHref("leads"), "Ver todos os leads")}` };
+      rows = hit;
     }
     rows.sort((a, z) => String(z.last_seen).localeCompare(String(a.last_seen)) || (z.importance || 0) - (a.importance || 0));
     if (!rows.length) return { html: "Não há leads em aberto agora." };
     const li = rows.slice(0, 5).map((l) => `<li><b>${esc(l.company)}</b><span class="fa-sub">${esc([l.signal, l.sector, `visto em ${ddmm(l.last_seen)}`].filter(Boolean).join(" · "))}</span>${l.why ? `<span class="fa-why">${esc(l.why)}</span>` : ""}</li>`).join("");
-    return { html: `<p>Leads em aberto mais recentes:</p><ol class="fa-list">${li}</ol><p class="fa-more">${link(tabHref("leads"), "Abrir a aba Leads")}</p>` };
+    return { html: `<p>Leads em aberto mais recentes${name ? ` com ${esc(name)}` : ""}:</p><ol class="fa-list">${li}</ol><p class="fa-more">${link(tabHref("leads"), "Abrir a aba Leads")}</p>` };
   }
   async function answerBrief() {
     const d = await digest();
@@ -223,7 +227,8 @@
   const isRelease = (x) => x.c === "Dados Econômico-Financeiros" && x.t === "Press-release";
   const RESULT_NEWS = /resultad|lucro|prejuizo|balanc|trimestr|\b[1-4]t\d{2}\b|receita|ebitda/;
   async function answerResult(c) {
-    const [docs, d] = await Promise.all([recentDocs(), digest()]);
+    const [month, own, d] = await Promise.all([recentDocs(), getJSON(`data/cias/emp/${encodeURIComponent(c.k)}.json`, []), digest()]);
+    const docs = [...month, ...own.map((x) => ({ ...x, k: c.k }))];
     const rel = docs.filter((x) => x.k === c.k && isRelease(x)).sort((a, z) => `${z.d} ${z.h || ""}`.localeCompare(`${a.d} ${a.h || ""}`))[0];
     const name = fold(c.nm);
     const news = [...(d.items || []), ...(d.upcoming || [])].filter((i) => {
@@ -234,7 +239,7 @@
     if (rel) {
       html += `<p><b>${esc(c.nm)}</b>: ${esc(rel.s || "release de resultados")}, entregue à CVM em ${ddmm(rel.d)}${rel.h ? ` às ${rel.h}` : ""}.</p>`;
       html += rel.sm ? `<p>${esc(rel.sm.resumo)}</p>${(rel.sm.pontos || []).length ? `<ul class="fa-list fa-bullets">${rel.sm.pontos.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}`
-        : `<p class="fa-sub">O resumo com os números sai na rotina da manhã seguinte.</p>`;
+        : rel.d >= new Date(Date.now() - 2 * 864e5).toISOString().slice(0, 10) ? `<p class="fa-sub">O resumo com os números sai na rotina da manhã seguinte.</p>` : "";
       html += `<p class="fa-more"><a href="${esc(docUrl(rel))}" target="_blank" rel="noopener">Abrir o release</a></p>`;
     } else html += `<p><b>${esc(c.nm)}</b>: nenhum release de resultados entregue à CVM nos dois últimos meses.</p>`;
     if (news.length) html += `<p>${news.length === 1 ? "Notícia" : "Notícias"} de hoje sobre o resultado:</p><ol class="fa-list">${news.slice(0, 4).map(newsLi).join("")}</ol>`;
@@ -284,65 +289,186 @@
     [/\boficiais\b|\bcade\b/, "official", "Oficiais"], [/desde as 8/, "later", "Desde as 8h"], [/\bnoticias\b|\bfeed\b/, "feed", "Notícias"],
   ];
 
+  // ---------------------------------------------------------------- quem é citado na pergunta (em qualquer posição)
+  // palavras que sozinhas não identificam ninguém: um nome só vale se tiver ao menos uma palavra fora desta lista
+  const GENERIC = new Set(("a o as os de do da dos das e em no na nos nas um uma para pra com por sobre que qual quais quanto quantos quantas " +
+    "s sa cia companhia companhias empresa empresas grupo grupos holding holdings participacoes part inc ltd ltda llc plc lp corp co " +
+    "the of and fund fundo fundos fia fim fip master investimento investimentos gestao gestora asset assets management capital partners " +
+    "trust bank banco brasil brazil international global fundacao previdencia filho junior neto sobrinho " +
+    "mundo mapa legal legais deal deals noticia noticias hoje ontem agora mais menos bom boa melhor maior top dia dias novo nova " +
+    "resultado resultados lucro balanco fato fatos relevante relevantes documento documentos cvm aba pagina abre abra abrir leve leva " +
+    "mostra mostre quero ver tem teve saiu sao e ser foi oi ola obrigado valeu").split(" "));
+  // palavras comuns que coincidem com a raiz de algum ticker (QUAL3, CASH3, LOGG3...)
+  const COMMON = new Set("qual cash logg tend mais casa vale bens dias hoje real rede loja pague tota sobre hype".split(" "));
+  let personIdx = null;
+  async function peopleIndex() {
+    if (personIdx) return personIdx;
+    const list = await people();
+    const by = new Map();
+    for (const r of list) {
+      r.core = r.w.filter((w) => !GENERIC.has(w) && w.length >= 3);
+      for (const w of new Set(r.core)) { if (!by.has(w)) by.set(w, []); by.get(w).push(r); }
+    }
+    personIdx = by;
+    return by;
+  }
+  async function spot(q) {
+    const toks = [...new Set(words(fuzzy(q)))];
+    const set = new Set(toks);
+    // companhia: todas as palavras do nome (ou o ticker) estão na pergunta, e o nome não é só palavra genérica
+    const list = await companies();
+    let cia = null, ciaScore = 0;
+    for (const c of list) {
+      let best = 0;
+      if (c.tk) { const tk = fold(c.tk), root = tk.replace(/\d+$/, ""); if (set.has(tk) || (root.length >= 4 && !GENERIC.has(root) && !COMMON.has(root) && set.has(root))) best = 120; }
+      for (const nm of c.names) {
+        const nt = nameTokens(nm);
+        if (!nt.length || nt.every((w) => GENERIC.has(w))) continue;
+        if (nt.every((w) => set.has(w))) best = Math.max(best, 70 + nt.length * 6);
+      }
+      const sc = best ? best + Math.log10(1 + c.mc) / 2 : 0;
+      if (sc > ciaScore) { cia = c; ciaScore = sc; }
+    }
+    // pessoa ou investidor: nome próprio que aparece na pergunta
+    const idx = await peopleIndex();
+    const cands = new Set();
+    for (const w of toks) for (const r of idx.get(w) || []) cands.add(r);
+    let per = null, perScore = 0;
+    for (const r of cands) {
+      const hit = r.core.filter((w) => set.has(w)).length;
+      if (!hit) continue;
+      let sc = 0;
+      if (r.t === "J") { if (hit === r.core.length) sc = 60 + hit * 10 + Math.min(r.nc, 80) / 4; }
+      else if (hit >= 2 && set.has(r.core[0])) sc = 50 + hit * 12 + (hit === r.core.length ? 6 : 0) + Math.min(r.nc, 30) / 6;
+      if (sc > perScore) { per = r; perScore = sc; }
+    }
+    // os dois batem: vale o que cobre mais palavras da pergunta (Itaú Unibanco, a companhia; Itaú Unibanco Holding, o investidor)
+    if (cia && per) {
+      if (ciaScore >= 100 && perScore < 90) per = null;
+      else if (perScore > ciaScore) cia = null; else per = null;
+    }
+    return cia ? { kind: "cia", c: cia } : per ? { kind: "pessoa", p: per } : null;
+  }
+
+  const deaccent = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  function aboutCompany(i, c) {
+    const terms = [fold(c.nm), ...(c.tk ? [fold(c.tk)] : [])];
+    const cased = new RegExp(`(^|[^A-Za-z0-9-])${deaccent(c.nm).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![A-Za-z0-9-])`);
+    return mentions((i.entities || []).join(" | "), terms) || cased.test(deaccent(`${i.headline || ""} | ${i.title || ""} | ${i.involves || ""}`)) || (c.tk && reWord(fold(c.tk)).test(fold(i.title)));
+  }
+  async function personProfile(slug) {
+    const shard = await getJSON(`data/cias/pessoa/${encodeURIComponent(slug.slice(0, 3))}.json`, {});
+    return shard[slug] || null;
+  }
+  // em quantas e em quais companhias abertas a pessoa ou o investidor aparece
+  async function answerHoldings(p) {
+    const prof = await personProfile(p.s);
+    const list = await companies();
+    const nm = (k) => list.find((c) => c.k === k)?.nm || `companhia ${k}`;
+    const direct = (prof?.acoes || []).filter((a) => !a.via).sort((a, z) => (z.tot || 0) - (a.tot || 0));
+    const indirect = (prof?.acoes || []).filter((a) => a.via);
+    const cargos = prof?.cargos || [];
+    const nInd = new Set(indirect.map((a) => a.k)).size, nCargo = new Set(cargos.map((c) => c.k)).size;
+    const parts = [direct.length ? `participação relevante (5% ou mais, ou controle) em ${direct.length}` : "", nInd ? `participação indireta em ${nInd}` : "", nCargo ? `cargo em ${nCargo}` : ""].filter(Boolean);
+    let html = `<p><b>${esc(p.n)}</b> aparece em ${p.nc === 1 ? "1 companhia aberta" : `${p.nc} companhias abertas`}${parts.length ? `: ${parts.join(", ").replace(/, ([^,]*)$/, " e $1")}` : ""}.</p>`;
+    const viaList = [...new Map(indirect.map((a) => [a.k, a])).values()].sort((a, z) => (z.ef || 0) - (a.ef || 0));
+    if (!direct.length && viaList.length) html += `<ol class="fa-list">${viaList.slice(0, 8).map((a) => `<li><a href="${esc(ciaHref(a.k, "acionistas"))}"><b>${esc(nm(a.k))}</b></a><span class="fa-sub">indireta, via ${esc((a.via || []).join(" → "))}${a.ef != null ? ` · ${String(a.ef.toFixed(2)).replace(".", ",")}% efetivo` : ""}</span></li>`).join("")}</ol>`;
+    if (direct.length) html += `<ol class="fa-list">${direct.slice(0, 8).map((a) => `<li><a href="${esc(ciaHref(a.k, "acionistas"))}"><b>${esc(nm(a.k))}</b></a><span class="fa-sub">${a.tot != null ? `${String(a.tot.toFixed(2)).replace(".", ",")}% do capital` : ""}${a.dt ? ` · posição de ${ddmm(a.dt)}/${a.dt.slice(2, 4)}` : ""}</span></li>`).join("")}</ol>${direct.length > 8 ? `<p class="fa-sub">e mais ${direct.length - 8}.</p>` : ""}`;
+    else if (cargos.length && !viaList.length) html += `<ol class="fa-list">${cargos.slice(0, 6).map((c) => `<li><a href="${esc(ciaHref(c.k, "adm"))}"><b>${esc(nm(c.k))}</b></a><span class="fa-sub">${esc(c.f || c.c || "")}</span></li>`).join("")}</ol>`;
+    html += `<p class="fa-more">${link(personHref(p.s), "Ver o perfil completo")} · ${link(treeHref(p.s), "Ver no Mundo")}</p>`;
+    return { html };
+  }
+  // acionistas relevantes (5% ou mais) do Formulário de Referência
+  async function answerShareholders(c) {
+    const prof = await getJSON(`data/cias/perfil/${encodeURIComponent(c.k)}.json`, {});
+    const sh = (prof.acionistas || []).filter((a) => (a.tot != null || a.on != null) && !/^(outros|acoes em tesouraria|tesouraria)$/i.test(fold(a.n).trim())).sort((a, z) => (z.tot ?? z.on ?? 0) - (a.tot ?? a.on ?? 0));
+    const more = `<p class="fa-more">${link(ciaHref(c.k, "acionistas"), "Ver os acionistas")} · ${link(treeHref(`k${c.k}`), "Estrutura no Mundo")}</p>`;
+    if (!sh.length) return { html: `<p><b>${esc(c.nm)}</b>: sem acionistas relevantes informados à CVM.</p>${more}` };
+    const pct = (v) => (v == null ? "" : `${String(v.toFixed(2)).replace(".", ",")}%`);
+    const li = sh.slice(0, 7).map((a) => `<li><b>${esc(a.n)}</b><span class="fa-sub">${[a.tot != null ? `${pct(a.tot)} do capital` : "", a.on != null && a.on !== a.tot ? `${pct(a.on)} das ON` : "", a.pais && a.pais !== "Brasil" ? a.pais : ""].filter(Boolean).join(" · ")}</span></li>`).join("");
+    return { html: `<p>Acionistas relevantes de <b>${esc(c.nm)}</b>${prof.ctl ? ` (controle ${esc(String(prof.ctl).toLowerCase())})` : ""}:</p><ol class="fa-list">${li}</ol>${more}` };
+  }
+  // ficha rápida de quem foi citado, quando a pergunta não pede nada específico
+  async function answerCard(ent) {
+    if (ent.kind === "pessoa") return answerHoldings(ent.p);
+    const c = ent.c;
+    const [resumo, d] = await Promise.all([getJSON("data/cias/resumo.json", { cias: {} }), digest()]);
+    const r = resumo.cias?.[c.k] || {};
+    const facts = [r.tk || c.tk, r.mc ? `valor de mercado ${brl(r.mc)}` : "", r.ctl ? `controle: ${r.ctl}` : "", r.ceo ? `CEO: ${r.ceo}` : ""].filter(Boolean);
+    const news = [...(d.items || []), ...(d.upcoming || [])].filter((i) => aboutCompany(i, c));
+    return { html: `<p><b>${esc(c.nm)}</b>${facts.length ? `: ${esc(facts.join(" · "))}` : ""}.</p>${news.length ? `<p>${news.length === 1 ? "Uma notícia" : `${news.length} notícias`} hoje:</p><ol class="fa-list">${news.sort((a, z) => (z.importance || 0) - (a.importance || 0)).slice(0, 3).map(newsLi).join("")}</ol>` : `<p class="fa-sub">Sem notícias dela hoje.</p>`}
+      <p class="fa-more">${link(ciaHref(c.k), "Página da companhia")} · ${link(ciaHref(c.k, "docs"), "Documentos")} · ${link(treeHref(`k${c.k}`), "Ver no Mundo")}</p>` };
+  }
+
+  const DEST = [
+    [/\bmundo( das companhias)?\b|\bmapa\b/, "mundo.html", "o Mundo das companhias"],
+    [/documentos( da)? cvm|\bdocumentos\b|\bcvm\b/, "cias.html#docs", "os documentos da CVM"],
+    [/\bpessoas\b|\binvestidores\b/, "cias.html#pessoas", "Pessoas e investidores"],
+    [/\bcompanhias\b|\bempresas\b/, "cias.html", "Companhias"],
+  ];
+
   async function answer(raw) {
-    const q = fold(raw).trim();
+    const q = fold(raw).replace(/[?!.,;:"“”'()]/g, " ").replace(/\s+/g, " ").trim();
     if (!q) return null;
-    const today = /\bhoje\b|desde ontem|\bagora\b/.test(q);
-    const wantsNav = /\b(me lev[ae]|lev[ae]|abr[ae]|abrir|ir (para|pra)|va(i)? (para|pra)|mostr[ae]|quero ver|ir a)\b/.test(q);
-    const wantsStruct = /estrutura (societaria|acionaria)|\bestrutura\b|organograma|arvore|quem (e|sao) (o |os )?donos?|quem controla|controlador/.test(q);
-    const wantsDocs = /fatos? relevantes?|comunicados?|documentos?|\bcvm\b/.test(q);
-    const phrase = entityPhrase(raw);
+    const has = (re) => re.test(q);
+    const today = has(/\bhoje\b|desde ontem|\bagora\b/);
+    const wantsNav = has(/\b(me lev[ae]|lev[ae]|abr[ae]|abrir|ir (para|pra|a|ao)|va(i)? (para|pra)|mostr[ae]|quero ver|entr[ae] n[ao])\b/);
+    const superl = has(/\b(mais (legal|legais|importante|importantes|interessante|interessantes|relevante|relevantes|quente|quentes)|maior(es)?|principa(l|is)|melhor(es)?|top|destaques?)\b/);
+    const ent = await spot(q);
 
-    if (/^(oi|ola|bom dia|boa tarde|boa noite|e ai)\b/.test(q) && phrase.length < 3) return { html: "Oi! Pergunte sobre as notícias e os deals de hoje, fatos relevantes de uma companhia, ou peça para eu abrir uma página." };
-    if (/\b(ajuda|o que voce (faz|sabe)|como (funciona|usar))\b/.test(q)) return { html: HELP };
+    if (!ent && has(/^(oi|ola|bom dia|boa tarde|boa noite|e ai|opa)\b/) && q.split(" ").length <= 3) return { html: "Oi! Pergunte sobre as notícias e os deals de hoje, resultados e fatos relevantes de uma companhia, quem é dono de quê, ou peça para eu abrir uma página." };
+    if (has(/\b(ajuda|o que voce (faz|sabe)|como (funciona|usar|te uso))\b/)) return { html: HELP };
 
-    if (wantsStruct && phrase) {
-      const ent = await resolve(phrase);
-      if (!ent) return notFound(phrase);
+    // acionistas de uma companhia
+    if (ent?.kind === "cia" && !wantsNav && has(/acionist|quem (e|sao) (o |os )?donos?|de quem e|composicao acionaria|participacao acionaria|quem tem (acoes|participacao)/)) return answerShareholders(ent.c);
+    // estrutura societária: no Mundo
+    if (has(/estrutura (societaria|acionaria)|\bestrutura\b|organograma|arvore|quem controla|\bcontrolador/) && ent) {
       if (ent.kind === "cia") return { html: `Abrindo a estrutura societária de <b>${esc(ent.c.nm)}</b> no Mundo das companhias.`, go: treeHref(`k${ent.c.k}`), alt: [[ciaHref(ent.c.k, "acionistas"), "Ver os acionistas na página da companhia"]] };
       return { html: `Abrindo as participações de <b>${esc(ent.p.n)}</b> no Mundo das companhias.`, go: treeHref(ent.p.s), alt: [[personHref(ent.p.s), "Ver o perfil completo"]] };
     }
-    const wantsResult = /resultad|balanc|\blucro\b|trimestr|\b[1-4]t\d{0,2}\b|release/.test(q) && !wantsNav;
-    if (wantsResult) {
-      const ent = phrase ? await resolve(phrase.replace(/\b([1-4]t\d{0,2}|tri|trimestre|release|lucro|balanco|resultado)\b/g, " ").trim()) : null;
+    // participações de uma pessoa ou investidor
+    if (ent?.kind === "pessoa" && !wantsNav && !has(/noticia|saiu|novidade|imprensa|falando|deals?|leads?/)) return answerHoldings(ent.p);
+    // resultado do trimestre
+    if (has(/resultad|balanc|\blucro\b|\bprejuizo\b|trimestr|\b[1-4]t(\d{2})?\b|release|\bebitda\b/) && !wantsNav) {
       if (ent?.kind === "cia") return answerResult(ent.c);
-      if (!phrase || !ent) return answerAllResults();
+      if (!ent) return answerAllResults();
     }
-    if (wantsDocs && phrase) {
-      const ent = await resolve(phrase);
-      if (ent?.kind === "cia") return answerDocs(ent.c, /fatos? relevantes?/.test(q), today);
-      if (ent?.kind === "pessoa") return { html: `${esc(ent.p.n)} é pessoa, não companhia. ${link(personHref(ent.p.s), "Ver o perfil")}` };
-      return notFound(phrase);
+    // fatos relevantes e documentos da CVM
+    if (has(/fatos? relevantes?|comunicados?|documentos?|\bcvm\b|aviso aos acionistas/) && !wantsNav) {
+      if (ent?.kind === "cia") return answerDocs(ent.c, has(/fatos? relevantes?/), today);
+      if (!ent) return answerAllFR();
     }
-    if (wantsDocs && !phrase && !wantsNav) return answerAllFR();
-    if (wantsNav) {
-      if (/\bmundo\b|\bmapa\b/.test(q) && !phrase) return { html: "Abrindo o Mundo das companhias.", go: "mundo.html" };
-      if (/documentos (da )?cvm|fatos relevantes/.test(q) && !phrase) return { html: "Abrindo os documentos da CVM.", go: "cias.html#docs" };
-      if (/\bpessoas\b/.test(q) && !phrase) return { html: "Abrindo Pessoas e investidores.", go: "cias.html#pessoas" };
-      if (/\bcompanhias\b/.test(q) && !phrase) return { html: "Abrindo Companhias.", go: "cias.html" };
-      if (phrase) {
-        const ent = await resolve(phrase);
-        if (ent?.kind === "cia") {
-          const pane = PANE_WORDS.find(([re]) => re.test(q));
-          return { html: `Abrindo <b>${esc(ent.c.nm)}</b>${pane ? ` · ${pane[2]}` : ""}.`, go: ciaHref(ent.c.k, pane?.[1]) };
-        }
-        if (ent?.kind === "pessoa") return { html: `Abrindo o perfil de <b>${esc(ent.p.n)}</b>.`, go: personHref(ent.p.s) };
+    // abrir páginas
+    if (wantsNav || (!ent && DEST.some(([re]) => re.test(q)) && q.split(" ").length <= 4)) {
+      if (ent?.kind === "cia") {
+        if (has(/\bmundo\b|\bmapa\b/)) return { html: `Abrindo <b>${esc(ent.c.nm)}</b> no Mundo das companhias.`, go: `mundo.html#n/k${ent.c.k}` };
+        const pane = PANE_WORDS.find(([re]) => re.test(q));
+        return { html: `Abrindo <b>${esc(ent.c.nm)}</b>${pane ? ` · ${pane[2]}` : ""}.`, go: ciaHref(ent.c.k, pane?.[1]) };
       }
+      if (ent?.kind === "pessoa") return has(/\bmundo\b|\bmapa\b/) ? { html: `Abrindo <b>${esc(ent.p.n)}</b> no Mundo das companhias.`, go: treeHref(ent.p.s) } : { html: `Abrindo o perfil de <b>${esc(ent.p.n)}</b>.`, go: personHref(ent.p.s) };
       const tab = TABS.find(([re]) => re.test(q));
+      const dest = DEST.find(([re]) => re.test(q));
+      // "abre o mundo das companhias": o destino vence a aba; "abre os leads": a aba
+      if (dest && (!tab || /mundo|mapa|documentos|cvm|pessoas|investidores/.test(q))) return { html: `Abrindo ${esc(dest[2])}.`, go: dest[1] };
       if (tab) return { html: `Abrindo ${esc(tab[2])}.`, go: tabHref(tab[1]) };
-      if (phrase) return notFound(phrase);
+      if (dest) return { html: `Abrindo ${esc(dest[2])}.`, go: dest[1] };
     }
-    if (/\bleads?\b|oportunidades?/.test(q)) return answerLeads(phrase);
-    if (/\bdeals?\b|\boperac(ao|oes)\b|\btransac|\bm ?& ?a\b|aquisic(ao|oes)|fus(ao|oes)/.test(q) && !/noticias? (de|do|da|sobre)/.test(q)) return answerDeals(phrase);
-    if (/briefing|resumo do dia|manchete|o que (aconteceu|importa|preciso saber)/.test(q)) return answerBrief();
-    if (/(noticias|manchetes|destaques)/.test(q) && /(legais|importantes|principais|relevantes|quentes|top|melhores|destaques|mais lidas)/.test(q) && phrase.length < 3) return answerTopNews();
-    if (/\b(ibovespa|ibov|dolar|cotac|cambio|bolsa hoje|mercado hoje|como (esta|fechou) (o|a) (mercado|bolsa))\b/.test(q) && phrase.length < 12) return answerMarket();
-    if (phrase.length >= 2) {
-      const ent = await resolve(phrase);
-      return answerNewsAbout(phrase, ent);
+    if (has(/\bleads?\b|oportunidades?/)) return answerLeads(ent);
+    if (has(/\bdeals?\b|\bm ?& ?a\b|\boperac(ao|oes)\b|\btransac|aquisic(ao|oes)|\bcompras?\b|fus(ao|oes)|\bipos?\b/) && !has(/noticias? (de|do|da|sobre)/)) return answerDeals(ent, superl && has(/\b(mais|o|a)\b.*\b(legal|interessante|importante|relevante|quente|maior|melhor|top)\b/) && !has(/\bdeals\b/));
+    if (has(/briefing|resumo do dia|manchete|o que (aconteceu|importa|preciso saber|rolou)/)) return answerBrief();
+    if (has(/\b(ibovespa|ibov|dolar|cotac|cambio|juros futuros|petroleo|brent)\b|como (esta|fechou|ta) (o |a )?(mercado|bolsa)/) && !ent) return answerMarket();
+    if (ent) {
+      if (has(/noticia|saiu|novidade|aconteceu|falando|imprensa/)) return answerNewsAbout(ent.kind === "cia" ? ent.c.nm : ent.p.n, ent);
+      return answerCard(ent);
     }
-    if (/noticias?/.test(q)) return answerTopNews();
-    return { html: `Não entendi. ${HELP}` };
+    if (has(/noticias?|manchetes?|destaques?/) || superl) return answerTopNews();
+    // termo livre: procura nas notícias de hoje
+    const phrase = entityPhrase(raw);
+    if (phrase.length >= 3) {
+      const r = await answerNewsAbout(phrase, null);
+      if (!/^Nada sobre/.test(r.html)) return r;
+    }
+    return { html: `<p>Não entendi essa. Tente de outro jeito, ou um destes exemplos:</p>${HELP.replace(/^<p>.*?<\/p>/, "")}` };
   }
 
   const HELP = `<p>Posso ajudar com:</p><ul class="fa-list fa-bullets">
@@ -351,7 +477,8 @@
     <li>“Saiu fato relevante do Itaú hoje?”</li>
     <li>“Notícias da Vale” e “resultado do Itaú”</li>
     <li>“Me leve para a Petrobras” ou “abre os acionistas da Vale”</li>
-    <li>“Estrutura societária do Alfredo Villela”</li></ul>`;
+    <li>“Estrutura societária do Alfredo Villela” ou “quantas empresas a BlackRock tem?”</li>
+    <li>“Resultado do Itaú” ou “abre o Mundo das companhias”</li></ul>`;
   const SUGGEST = ["Notícias mais importantes", "Principais deals de hoje", "Saiu fato relevante do Itaú hoje?", "Me leve para a Petrobras", "Estrutura societária do Alfredo Villela"];
 
   // ---------------------------------------------------------------- interface
