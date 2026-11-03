@@ -1,0 +1,15 @@
+name: Sonda visualizador CVM
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for seq in 161558 160139 161642; do for t in 1 2; do
+            u="https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=$seq&CodigoTipoInstituicao=$t"
+            echo "== $seq tipo $t"
+            curl -sL -A "Mozilla/5.0" -o p.html -w "%{http_code} %{url_effective} %{size_download}\n" "$u"
+            grep -oiE "<title>[^<]*</title>|Formul[^<\"]{0,60}|Demonstra[^<\"]{0,60}|Informa[^<\"]{0,60}|cmbQuadro|cmbGrupo|Erro[^<\"]{0,80}|ITA[UÚ][^<\"]{0,30}" p.html | sort | uniq -c | sort -rn | head -12
+          done; done
