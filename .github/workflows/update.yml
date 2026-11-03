@@ -7,7 +7,12 @@ on:
     - cron: "7 9-23 * * 1-5"      # dias úteis: de hora em hora, 06:07 às 20:07
     - cron: "1 11 * * *"          # 08:01 — fecha a edição do dia logo após as 08h (o das 08:07 costuma atrasar)
     - cron: "7 12,18,22 * * 0,6"  # fim de semana: 09:07, 15:07 e 19:07
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      refazer_perfis:
+        description: Refazer os perfis das companhias agora (em vez de esperar a rodada diária)
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["site/**", "config/**", "scripts/**", ".github/workflows/update.yml"]
@@ -70,7 +75,7 @@ jobs:
       - name: Perfis das companhias (FCA, FRE, DFP e ITR da CVM; refeitos uma vez por dia)
         continue-on-error: true
         timeout-minutes: 15
-        run: python scripts/perfis.py base
+        run: python scripts/perfis.py base ${{ inputs.refazer_perfis && '--force' || '' }}
 
       - name: Cotações e ofertas públicas
         continue-on-error: true
