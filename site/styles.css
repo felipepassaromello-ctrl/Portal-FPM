@@ -1133,3 +1133,13 @@ h1, h2, h3, h4, .lede, .card-summary { overflow-wrap: break-word; }
 @media (max-width: 900px) { .listen-bar { bottom: calc(74px + env(safe-area-inset-bottom)); } }
 @media print { .listen-btn, .listen-bar { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { .listen-bar, .listen-bar[hidden] { transform: translateX(-50%) !important; } }
+
+/* formulários oficiais (DFP, ITR, FRE, FCA) na aba Documentos da companhia */
+.forms-card { padding: 16px 18px; margin-bottom: 14px; }
+.forms-card .widget-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.form-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-top: .5px solid var(--sep); flex-wrap: wrap; }
+.form-row:first-of-type { border-top: 0; }
+.form-name { flex: 1 1 220px; font-size: 14px; font-weight: 500; }
+.form-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.form-links .chip { text-decoration: none; font-variant-numeric: tabular-nums; }
+.form-links .chip small { color: var(--muted); font-size: 10.5px; margin-left: 2px; }

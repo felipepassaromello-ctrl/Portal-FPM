@@ -148,6 +148,21 @@ def part(name: str) -> str:
     return (m[1] if m else name).strip("_") or "doc"
 
 
+# ---------------------------------------------------------------- entregas dos formulários (para link do documento na CVM)
+
+# CNPJ → {(tipo, data de referência): entrega mais recente}; preenchido ao ler os zips de FCA, FRE, DFP e ITR
+ENTREGAS: dict[str, dict] = defaultdict(dict)
+
+
+def note_entrega(kind: str, r: dict) -> None:
+    cnpj, ref = r.get("CNPJ_CIA", ""), r.get("DT_REFER", "")
+    if not cnpj or not ref or not r.get("LINK_DOC"):
+        return
+    key, v = (kind.upper(), ref), int(r.get("VERSAO") or 0)
+    if v >= ENTREGAS[cnpj].get(key, {}).get("v", -1):
+        ENTREGAS[cnpj][key] = {"t": kind.upper(), "ref": ref, "v": v, "rec": (r.get("DT_RECEB") or "")[:10], "u": r["LINK_DOC"]}
+
+
 # ---------------------------------------------------------------- FCA e FRE
 
 def latest_docs(index_rows: list[dict]) -> dict[str, tuple]:
@@ -173,6 +188,8 @@ def load_form(kind: str, years: list[int]) -> tuple[dict, dict[str, dict[str, li
     for y, f in files.items():
         for n, rows in f.items():
             if part(n) == "doc" or n == f"{kind}_cia_aberta_{y}.csv":
+                for r in rows:
+                    note_entrega(kind, r)
                 for cnpj, key in latest_docs(rows).items():
                     if key > index.get(cnpj, ("",)):
                         index[cnpj] = key
@@ -411,7 +428,12 @@ def load_fin(kind: str, year: int) -> dict:
     url = f"{DADOS}/DOC/{kind.upper()}/DADOS/{kind}_cia_aberta_{year}.zip"
     data: dict = defaultdict(lambda: defaultdict(lambda: {"rows": defaultdict(list)}))
     try:
-        for n, r in stream_rows(url, lambda n: any(f in n for f in FIN_FILES), fin_keep):
+        index_name = f"{kind}_cia_aberta_{year}.csv"
+        for n, r in stream_rows(url, lambda n: any(f in n for f in FIN_FILES) or n == index_name,
+                                lambda n, r: n == index_name or fin_keep(n, r)):
+            if n == index_name:  # índice das entregas: só o link do documento
+                note_entrega(kind, r)
+                continue
             cnpj, ref = r.get("CNPJ_CIA", ""), r.get("DT_REFER", "")
             slot = data[cnpj][ref]
             v = int(r.get("VERSAO") or 0)
@@ -605,6 +627,8 @@ def cmd_base(args) -> None:
             continue
         p = {"cnpj": cnpj}
         p.update(fca_profile(fca, cnpj))
+        if ENTREGAS.get(cnpj):
+            p["entregas"] = sorted(ENTREGAS[cnpj].values(), key=lambda e: (e["ref"], e["t"]), reverse=True)[:40]
         if cnpj in fre_idx:
             ref, ver, doc, _ = fre_idx[cnpj]
             p["fre"] = {"ref": ref, "v": ver, "doc": doc}
