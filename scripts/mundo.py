@@ -397,7 +397,7 @@ def main() -> None:
     if prev.get("pos") and prev.get("nodes"):
         old = {n["id"]: prev["pos"][2 * i: 2 * i + 2] for i, n in enumerate(prev["nodes"]) if 2 * i + 1 < len(prev["pos"])}
         save_json(OUT / "base" / "mundo_pos.json", {"sig": prev.get("sig"), "v": prev.get("layout"), "ring": prev.get("ring"), "pos": old,
-                                                   "globo": prev.get("globo")}, compact=True)
+                                                   "mapa": prev.get("mapa"), "mapaV": prev.get("mapaV")}, compact=True)
     save_json(OUT / "mundo.json", world, compact=True)
     s = world["stats"]
     log(f"Mundo: {s['cias']} companhias, {s['acionistas']} acionistas, {s['pessoas_conselho']} pessoas em mais de um conselho, "

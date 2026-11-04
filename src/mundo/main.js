@@ -1,16 +1,18 @@
 /* Portal FPM — Mundo das companhias (3D).
  *
- * Fonte de site/mundo.js (gerado com `npm run build` nesta pasta). O planeta (globe.js) mostra as companhias abertas
- * como torres sobre continentes de setores, os acionistas no chão, os investidores institucionais em órbita e as
- * ligações de controle como arcos; a estrutura societária de uma entidade abre numa mesa 3D (tree.js), com a companhia
- * no centro e cabos com energia correndo de quem é dono para quem é possuído.
+ * Fonte de site/mundo.js (gerado com `npm run build` nesta pasta). O mapa (map.js) é um tabuleiro em que cada setor é
+ * um bloco com o nome escrito, todos à vista; companhias abertas são prédios, capital fechado blocos baixos, holdings
+ * placas, pessoas peões e investidores institucionais diamantes (no bloco próprio). As ligações de controle são arcos;
+ * ao selecionar, viram cabos com energia de quem é dono para quem é possuído. A estrutura societária de uma entidade
+ * abre numa mesa 3D vista de cima (tree.js).
  *
- * Os dados vêm de data/cias/mundo.json (scripts/mundo.py, scripts/mundo_layout.mjs e scripts/mundo_globo.mjs).
- * Endereços compartilháveis: #n/<id> (entidade), #g/<grupo>, #e/<id> (estrutura), #c/<id>/<id> (caminho).
+ * Os dados vêm de data/cias/mundo.json (scripts/mundo.py, scripts/mundo_layout.mjs e scripts/mundo_mapa.mjs).
+ * Endereços compartilháveis: #n/<id> (entidade), #g/<grupo>, #e/<id> (estrutura), #c/<id>/<id> (caminho),
+ * #setor/<setor>.
  */
-import { createGlobe, clamp } from "./globe.js";
+import { createMap, clamp } from "./map.js";
 import { createTree } from "./tree.js";
-import { fallbackGlobe } from "./fallback.js";
+import { mapLayout, ASPECT_TALL } from "../../scripts/mundo_mapa.mjs";
 
 // ---------------------------------------------------------------- utilidades
 const $ = (s, r = document) => r.querySelector(s);
@@ -40,7 +42,7 @@ function toast(msg) {
 }
 
 // ---------------------------------------------------------------- cores
-// Setores em tons de pó (mesma luminosidade, matiz girando na ordem dos continentes): distinguem sem gritar.
+// Setores em tons de pó (mesma luminosidade, matiz girando na ordem dos blocos): distinguem sem gritar.
 const SECTOR = {
   fin: ["#8fb8e8", "Bancos e serviços financeiros", "Financeiro"], tech: ["#7cc6d9", "Telecom, mídia e tecnologia", "Tecnologia"],
   saude: ["#78cfc0", "Saúde e educação", "Saúde"], log: ["#8ccfa3", "Transporte e logística", "Logística"],
@@ -50,15 +52,18 @@ const SECTOR = {
   imob: ["#b9a0dd", "Construção e imóveis", "Imobiliário"], out: ["#a8b3bf", "Holdings e outros", "Holdings"],
 };
 const KIND = {
-  pf: ["#d8c2a6", "Pessoa física"], hold: ["#9fb0c4", "Holding ou empresa"], fund: ["#a3b0e6", "Gestora ou fundo"],
-  pen: ["#bfaee6", "Fundo de pensão"], gov: ["#e6cb86", "Governo"], sub: ["#93cfb3", "Controlada em comum"],
+  pf: ["#f0c9a0", "Pessoa física"], hold: ["#8ea3bd", "Holding ou empresa"], fund: ["#a9a2f5", "Gestora ou fundo"],
+  pen: ["#d39af0", "Fundo de pensão"], gov: ["#f2d37a", "Governo"], sub: ["#7fd6b4", "Controlada em comum"],
 };
+const INVESTOR = "#b3a6f7";
 const ACCENT = "#3cf0b4";
 const sectorColor = (c) => (SECTOR[c] || SECTOR.out)[0];
 const kindKey = (n) => (n.t === "s" ? "sub" : n.t === "p" ? "pf" : KIND[n.c] ? n.c : "hold");
 const colorOf = (n) => (n.t === "c" ? sectorColor(n.c) : KIND[kindKey(n)][0]);
 const kindLabel = (n) => (n.t === "c" ? "Companhia aberta" : KIND[kindKey(n)][1]);
-const palette = { sector: sectorColor, kind: (n) => KIND[kindKey(n)][0] };
+const palette = { sector: sectorColor, kind: (n) => KIND[kindKey(n)][0], investor: INVESTOR };
+// nome do tipo pela forma no mapa (a legenda usa os mesmos nomes)
+const shapeLabel = (i) => ({ tower: "Companhia aberta", block: "Companhia de capital fechado", tile: "Holding ou empresa", sub: "Controlada em comum", pawn: "Pessoa física", inv: "Investidor institucional" })[map?.shape[i]] || kindLabel(W.nodes[i]);
 
 // ---------------------------------------------------------------- dados
 const W = { ready: false };
@@ -98,7 +103,7 @@ const prio = (i) => { const n = W.nodes[i]; return n.t === "c" ? 1e15 + (n.mc ||
 // ---------------------------------------------------------------- estado
 const ui = {
   mode: "world", // world | tree | path
-  hover: -1, sel: -1, group: -1,
+  hover: -1, sel: -1, group: -1, sector: -1, shape: null,
   hl: null, // Set de nós em destaque
   layers: { people: true, funds: true, board: false, ctlonly: false, groups: true, ...store.get("mundo-layers", {}) },
   pathIds: null,
@@ -117,10 +122,10 @@ function computeVisibility() {
     if (L.ctlonly && n.t !== "c" && !W.out[i].some((j) => W.ef[j] & 1)) v = 0;
     vis[i] = v;
   }
-  globe?.setVisible(vis);
+  map?.setVisible(vis);
 }
 
-let globe = null, tree = null;
+let map = null, tree = null;
 
 // ---------------------------------------------------------------- destaque
 function neighborhood(i) {
@@ -132,24 +137,26 @@ function neighborhood(i) {
 }
 function setHighlight(nodes, edges, brd, focus = [], dimTo = 0.75, bright = false) {
   ui.hl = nodes;
-  if (!globe) return;
-  if (!nodes) { globe.setHighlight(null); globe.setFlows([]); return; }
+  if (!map) return;
+  if (!nodes) { map.setHighlight(null); map.setFlows([]); return; }
   const lv = new Map();
   for (const i of nodes) lv.set(i, 0.5);
   for (const i of focus) lv.set(i, 1);
-  globe.setHighlight(lv, dimTo);
+  map.setHighlight(lv, dimTo);
   const flows = [];
   for (const j of edges || []) flows.push([W.es[j], W.et[j], bright ? 1 : W.ef[j] & 1]);
   for (const j of brd || []) flows.push([W.bs[j], W.bt[j], bright ? 1 : 0]);
   // controle primeiro (os cabos de controle são desenhados mesmo quando há centenas de ligações)
   flows.sort((a, b) => b[2] - a[2]);
-  globe.setFlows(flows);
+  map.setFlows(flows);
 }
 
 function select(i, { fly = true, push = true } = {}) {
   if (ui.mode !== "world") exitMode(false);
   hideHint();
   ui.sel = i; ui.group = -1;
+  clearSector();
+  clearShape();
   if (i < 0) {
     setHighlight(null);
     closePanel();
@@ -160,7 +167,7 @@ function select(i, { fly = true, push = true } = {}) {
   setHighlight(nb.nodes, nb.edges, nb.brd, [i]);
   renderPanel(i);
   markRank();
-  if (fly) globe.flyToNode(i, [...nb.nodes].filter((x) => x !== i && globe.surf[x]), { minDist: W.nodes[i].t === "c" ? 1.45 : 1.6 });
+  if (fly) map.flyToNodes([...nb.nodes], { minSpan: 18 });
   if (push) route(`n/${W.nodes[i].id}`);
 }
 function selectGroup(gi, { push = true } = {}) {
@@ -168,21 +175,58 @@ function selectGroup(gi, { push = true } = {}) {
   hideHint();
   const g = W.groups[gi];
   ui.sel = -1; ui.group = gi;
+  clearSector();
+  clearShape();
   const nodes = new Set(g.m), edges = new Set();
   for (const m of g.m) for (const j of W.out[m]) if (nodes.has(W.et[j])) edges.add(j);
   setHighlight(nodes, edges, new Set(), g.m.filter((m) => W.nodes[m].t === "c"));
   renderGroupPanel(gi);
   markRank();
-  globe.flyToNodes(g.m.filter((m) => W.nodes[m].t === "c"), { minDist: 1.6 });
+  map.flyToNodes(g.m, { minSpan: 20 });
   if (push) route(`g/${gi}`);
 }
-function flyToSector(c) {
-  const cont = (W.data.globo.cont || []).find((x) => x[0] === c);
-  if (!cont) return;
+// setor em foco: o bloco inteiro enquadrado, os outros escurecem e o painel lista todas as companhias do setor
+const plateIndex = (c) => (W.data.mapa.plates || []).findIndex((p) => p.c === c);
+function focusSector(j, { push = true, fly = true } = {}) {
+  if (j < 0) return;
   if (ui.mode !== "world") exitMode(false);
-  select(-1);
-  globe.flyTo(cont[1], cont[2], clamp(1.6 + cont[3] / 18, 2.1, 3.2), 1600);
+  hideHint();
+  ui.sel = -1; ui.group = -1; ui.sector = j;
+  clearShape();
+  setHighlight(null);
+  map.setFocusPlate(j);
+  // o painel primeiro: o enquadramento usa o espaço que sobra ao lado (ou acima) dele
+  renderSectorPanel(j);
+  if (fly) map.flyToPlate(j);
+  markRank();
+  if (push) route(`setor/${W.data.mapa.plates[j].c}`);
 }
+function clearSector() {
+  if (ui.sector < 0) return;
+  ui.sector = -1;
+  map?.setFocusPlate(-1);
+}
+const flyToSector = (c) => focusSector(plateIndex(c));
+// legenda clicável: destaca no mapa todas as peças de um tipo (companhias abertas, pessoas, investidores...)
+function showShape(k) {
+  if (!map || ui.mode !== "world") return;
+  if (ui.shape === k || !k) { clearShape(); if (ui.sel >= 0) select(ui.sel, { fly: false, push: false }); else setHighlight(null); return; }
+  if (ui.sel >= 0 || ui.group >= 0) { ui.sel = -1; ui.group = -1; if (ui.sector < 0) closePanel(); route(ui.sector >= 0 ? `setor/${W.data.mapa.plates[ui.sector].c}` : ""); markRank(); }
+  hideHint();
+  ui.shape = k;
+  markKey();
+  const set = new Set(), lv = new Map();
+  for (let i = 0; i < W.N; i++) if (vis[i] && map.shape[i] === k && (ui.sector < 0 || W.data.mapa.plate[i] === ui.sector)) { set.add(i); lv.set(i, 0.02); }
+  ui.hl = set;
+  map.setHighlight(lv, 0.85);
+  map.setFlows([]);
+}
+function clearShape() {
+  if (!ui.shape) return;
+  ui.shape = null;
+  markKey();
+}
+const markKey = () => { for (const el of document.querySelectorAll("#m-key [data-shape]")) el.classList.toggle("on", el.dataset.shape === ui.shape); };
 
 // ---------------------------------------------------------------- controle societário
 function mainController(i) {
@@ -281,7 +325,7 @@ function renderPanel(i) {
     ${g && g.nc >= 2 ? `<div class="m-chips"><button class="m-chip gold" data-group="${g.i}" type="button">${icon("cias", "ic ic-xs")}Grupo ${esc(g.n)} · ${plural(g.nc, "companhia", "companhias")}</button></div>` : ""}
     <div class="m-stats">${stats.map(([a, b]) => `<div class="m-stat"><span>${a}</span><b>${esc(b)}</b></div>`).join("")}</div>
     <div class="m-btns">
-      ${inTree && ui.treeFocus === i ? `<button class="m-btn primary" type="button" data-act="world">${icon("globe")}Ver no planeta</button>` : `<button class="m-btn primary" type="button" data-act="tree">${icon("tree")}Estrutura societária</button>`}
+      ${inTree && ui.treeFocus === i ? `<button class="m-btn primary" type="button" data-act="world">${icon("map")}Ver no mapa</button>` : `<button class="m-btn primary" type="button" data-act="tree">${icon("tree")}Estrutura societária</button>`}
       <button class="m-btn" type="button" data-act="path">${icon("path")}Conectar com…</button>
       ${profile ? `<a class="m-btn wide ghost" href="${profile}">${n.t === "c" ? "Perfil completo da companhia" : "Perfil completo"} ${icon("ext")}</a>` : ""}
     </div>
@@ -323,17 +367,20 @@ function renderGroupPanel(gi) {
 }
 function openPanel() {
   const p = $("#m-panel");
-  // no celular a folha abre baixa: o planeta (ou a mesa) continua à vista; puxar pela alça mostra tudo
+  // no celular a folha abre baixa: o mapa (ou a mesa) continua à vista; puxar pela alça mostra tudo
   if (innerWidth <= 760 && (p.hidden || ui.mode !== "world")) p.classList.add("peek");
   p.hidden = false;
   document.body.classList.add("panel-open");
   $("#m-panel-body").scrollTop = 0;
   layoutChanged();
+  // a folha do celular entra deslizando: mede de novo quando ela para
+  clearTimeout(layoutChanged.t); layoutChanged.t = setTimeout(layoutChanged, 450);
 }
 function closePanel() {
   $("#m-panel").hidden = true;
   document.body.classList.remove("panel-open");
   layoutChanged();
+  clearTimeout(layoutChanged.t); layoutChanged.t = setTimeout(layoutChanged, 450);
 }
 
 // ---------------------------------------------------------------- caminho entre duas entidades
@@ -362,9 +409,13 @@ function showPath(a, b, { push = true } = {}) {
   if (ui.mode === "tree") exitMode(false);
   ui.mode = "path";
   ui.sel = -1;
+  clearShape();
   const nodes = new Set(r.path), edges = new Set(), brd = new Set();
   for (const e of r.ev) { if (e >= 0) edges.add(e); else brd.add(-2 - e); }
   ui.pathIds = [a, b];
+  if (ui.forceVis) { ui.forceVis = null; map.setVisible(vis); }
+  // quem faz a ponte aparece no mapa mesmo se a camada dele estiver desligada (um conselheiro, por exemplo)
+  if (r.path.some((i) => !vis[i])) { ui.forceVis = new Set(r.path); const v2 = vis.slice(); for (const i of r.path) v2[i] = 1; map.setVisible(v2); }
   hideHint();
   setHighlight(nodes, edges, brd, r.path, 0.85, true);
   $("#m-mode").hidden = false;
@@ -385,7 +436,7 @@ function showPath(a, b, { push = true } = {}) {
     <div class="m-btns"><button class="m-btn wide" type="button" data-sel="${a}">Voltar para ${esc(shortName(W.nodes[a].n))}</button><button class="m-btn wide" type="button" data-sel="${b}">Ir para ${esc(shortName(W.nodes[b].n))}</button></div>
     <p class="m-foot">Ligações por participação acionária (5% ou mais, ou controle) e por pessoas que estão no conselho ou na diretoria das duas. Gestoras e fundos não contam como ponte.</p>`;
   openPanel();
-  globe.flyToNodes(r.path, { minDist: 1.6 });
+  map.flyToNodes(r.path, { minSpan: 20 });
   if (push) route(`c/${W.nodes[a].id}/${W.nodes[b].id}`);
 }
 
@@ -405,18 +456,21 @@ async function openTree(i, { push = true } = {}) {
   if (wasWorld) await fade();
   ui.mode = "tree";
   ui.sel = i; ui.group = -1; ui.treeFocus = i;
+  clearSector();
+  clearShape();
   hideHint();
   showTip(-1);
   ui.hover = -1;
   setHighlight(null);
   document.body.classList.add("in-tree");
   renderPanel(i);
-  tree.open(i, extra, { from: wasWorld ? globe.project(i, {}) : null });
+  tree.open(i, extra, { from: wasWorld ? map.project(i, {}) : null });
   $("#m-mode").hidden = false;
   $("#m-mode-text").innerHTML = `<span class="m-mode-k">Estrutura societária</span><b>${esc(n.n)}</b>`;
+  layoutChanged();
   if (push) route(`e/${n.id}`);
 }
-// passagem entre o planeta e a mesa: escurece rápido, troca a cena e clareia
+// passagem entre o mapa e a mesa: escurece rápido, troca a cena e clareia
 function fade() {
   const f = $("#m-fade");
   if (!f || REDUCED) return Promise.resolve();
@@ -430,6 +484,7 @@ function exitMode(push = true) {
   ui.mode = "world";
   $("#m-mode").hidden = true;
   ui.pathIds = null;
+  if (ui.forceVis) { ui.forceVis = null; map.setVisible(vis); }
   if (push) {
     if (ui.sel >= 0) select(ui.sel);
     else { setHighlight(null); route(""); }
@@ -525,13 +580,35 @@ function renderRank() {
 function markRank() {
   for (const li of $("#m-rank").children) li.classList.toggle("on", (li.dataset.group != null && +li.dataset.group === ui.group) || (li.dataset.go != null && +li.dataset.go === ui.sel));
 }
+// ícones das formas do mapa (legenda fixa e menu de camadas)
+const SHAPES = [
+  ["tower", "Companhia aberta", '<svg viewBox="0 0 20 20"><path d="M6 18V5.5L11 3.5V18" fill="#dfe3ea"/><path d="M11 3.5 14 5v13h-3z" fill="#9aa4b3"/><path d="M6 5.5 11 3.5 14 5 9 7z" fill="var(--c)"/></svg>'],
+  ["block", "Capital fechado", '<svg viewBox="0 0 20 20"><path d="M4 16v-5l6-2.5 6 2.5v5l-6 2.5z" fill="#c9ced6"/><path d="M4 11l6-2.5 6 2.5-6 2.5z" fill="var(--c)"/></svg>'],
+  ["tile", "Holding ou empresa", '<svg viewBox="0 0 20 20"><path d="M3 12.5 10 9.5l7 3-7 3z" fill="#8ea3bd"/><path d="M3 12.5v1.2l7 3v-1.2zM17 12.5v1.2l-7 3v-1.2z" fill="#5f7088"/></svg>'],
+  ["sub", "Controlada em comum", '<svg viewBox="0 0 20 20"><path d="M3 12.5 10 9.5l7 3-7 3z" fill="#7fd6b4"/><path d="M3 12.5v1.2l7 3v-1.2zM17 12.5v1.2l-7 3v-1.2z" fill="#4f9a7e"/></svg>'],
+  ["pawn", "Pessoa física", '<svg viewBox="0 0 20 20"><circle cx="10" cy="6" r="2.6" fill="#f0c9a0"/><path d="M7.4 15.5 8.4 9.4h3.2l1 6.1z" fill="#f0c9a0"/><ellipse cx="10" cy="16" rx="4.6" ry="1.6" fill="#c99e74"/></svg>'],
+  ["inv", "Investidor institucional", '<svg viewBox="0 0 20 20"><path d="M10 2.5 15 9 10 17.5 5 9z" fill="#b3a6f7"/><path d="M10 2.5 15 9H5z" fill="#d6cffb"/><path d="M10 17.5 15 9H10z" fill="#8576d6"/></svg>'],
+];
+const SHAPE_SHORT = { tower: "Aberta", block: "Fechada", tile: "Holding", sub: "Controlada", pawn: "Pessoa", inv: "Investidor" };
+const shapeKeyHtml = () => SHAPES.map(([k, label, svg]) => `<button type="button" class="m-key-i" data-shape="${k}" title="Destacar no mapa: ${label}" style="--c:${sectorColor("util")}">${svg}<span class="l">${label}</span><span class="s">${SHAPE_SHORT[k]}</span></button>`).join("")
+  + `<span class="m-key-i m-key-ctl"><i class="m-key-ln"></i><span class="l">Controle</span><span class="s">Controle</span></span>`;
+function sectorStats() {
+  const M = W.data.mapa, st = M.plates.map(() => ({ n: 0, listed: 0, mc: 0 }));
+  for (let i = 0; i < W.N; i++) {
+    const n = W.nodes[i], s2 = st[M.plate[i]];
+    if (n.t === "c") { s2.n++; if (n.mc) { s2.listed++; s2.mc += n.mc; } }
+    else if (map?.isInv[i]) { s2.n++; s2.mc += n.v || 0; }
+  }
+  return st;
+}
+const plateName = (p) => (p.c === "inv" ? "Investidores institucionais" : SECTOR[p.c]?.[1] || p.c);
+const plateShort = (p) => (p.c === "inv" ? "Investidores" : SECTOR[p.c]?.[2] || p.c);
+const plateColor = (p) => (p.c === "inv" ? INVESTOR : sectorColor(p.c));
 function renderLegend() {
-  const conts = (W.data.globo.cont || []).map((c) => c[0]);
-  const count = {}, mc = {};
-  for (const n of W.nodes) if (n.t === "c") { count[n.c] = (count[n.c] || 0) + 1; mc[n.c] = (mc[n.c] || 0) + (n.mc || 0); }
-  $("#m-legend").innerHTML = `<div class="m-lg-sec">${conts.map((c) => `<button class="lg" type="button" data-sector="${c}"><i style="--c:${sectorColor(c)}"></i><span>${esc(SECTOR[c]?.[1] || c)}</span><small>${nf(count[c] || 0)}</small></button>`).join("")}</div>
-    <div class="m-lg-kinds">${Object.keys(KIND).map((k) => `<span class="lg"><i class="sm" style="--c:${KIND[k][0]}"></i>${KIND[k][1]}</span>`).join("")}
-    <span class="lg"><i class="ln" style="--c:${ACCENT}"></i>Controle</span><span class="lg"><i class="ln thin"></i>Participação</span></div>`;
+  const st = sectorStats();
+  const order = W.data.mapa.plates.map((p, j) => j).sort((a, b) => st[b].mc - st[a].mc);
+  $("#m-legend").innerHTML = `<div class="m-lg-sec">${order.map((j) => { const p = W.data.mapa.plates[j]; return `<button class="lg" type="button" data-plate="${j}"><i style="--c:${plateColor(p)}"></i><span>${esc(plateName(p))}</span><small>${nf(st[j].n)}</small></button>`; }).join("")}</div>`;
+  $("#m-key").innerHTML = shapeKeyHtml();
 }
 
 // ---------------------------------------------------------------- endereço (links compartilháveis)
@@ -555,6 +632,7 @@ function readRoute() {
   else if (kind === "g" && W.groups[+a]) selectGroup(+a, { push: false });
   else if (kind === "e" && node(a) >= 0) openTree(node(a), { push: false });
   else if (kind === "c" && node(a) >= 0 && node(b) >= 0) showPath(node(a), node(b), { push: false });
+  else if (kind === "setor" && plateIndex(a) >= 0) focusSector(plateIndex(a), { push: false });
   else if (kind === "n" || kind === "s" || kind === "e") toast("Essa entidade não está no mapa: ela não tem participação relevante em companhia aberta.");
 }
 
@@ -568,58 +646,116 @@ function glassRects() {
   if (now - uiRectsT < 300) return uiRects;
   uiRectsT = now;
   uiRects = [];
-  for (const el of document.querySelectorAll(".m-top > :not(.m-pop), #m-explore, #m-panel, .m-nav > *, #m-hud, #m-mode, #m-hint, .m-rail")) {
+  for (const el of document.querySelectorAll(".m-top > :not(.m-pop), #m-explore, #m-panel, .m-nav > *, #m-hud, #m-key, #m-mode, #m-hint")) {
     if (el.hidden || el.offsetParent === null) continue;
     const r = el.getBoundingClientRect();
     if (r.width && r.height) uiRects.push([r.left - 6, r.top - 6, r.right + 6, r.bottom + 6]);
   }
   return uiRects;
 }
+let plateTop = null;
+function plateTopLists() {
+  if (plateTop) return plateTop;
+  plateTop = W.data.mapa.plates.map(() => []);
+  for (const i of W.labelOrder) if (W.nodes[i].t === "c" || map.isInv[i]) plateTop[W.data.mapa.plate[i]].push(i);
+  return plateTop;
+}
 function labelText(i) {
   const n = W.nodes[i];
   if (n.t === "c") return [shortName(n.n), [n.tk, n.mc ? brl(n.mc).replace("R$ ", "R$ ").toUpperCase() : "capital fechado"].filter(Boolean).join(" · ")];
   return [shortName(n.n), [kindLabel(n), n.v ? `≈ ${brl(n.v)}` : ""].filter(Boolean).join(" · ")];
 }
+// nomes dos setores escritos sobre os blocos (canto de cima, à esquerda)
+const plateLabels = [];
+function buildPlateLabels() {
+  const st = sectorStats(), layer = $("#m-plates");
+  layer.innerHTML = "";
+  W.data.mapa.plates.forEach((p, j) => {
+    const el = document.createElement("button");
+    el.type = "button"; el.className = "m-plate"; el.dataset.plate = j;
+    el.style.setProperty("--c", plateColor(p));
+    const what = p.c === "inv" ? plural(st[j].n, "investidor", "investidores") : plural(st[j].n, "companhia", "companhias");
+    el.innerHTML = `<b><span class="full">${esc(plateName(p))}</span><span class="short">${esc(plateShort(p))}</span></b><small>${what}${st[j].mc ? ` · ${brl(st[j].mc)}` : ""}</small>`;
+    el.title = `Ver o setor ${plateName(p)} inteiro`;
+    layer.appendChild(el);
+    plateLabels[j] = { el, p };
+  });
+}
+const _o = {};
+function updatePlateLabels(placed) {
+  const ppu = map.pxPerUnit();
+  plateLabels.forEach(({ el }, j) => {
+    const pl = map.plates[j];
+    const a = map.projectPoint(pl.x0 + 0.9, map.PLATE_H + 0.1, pl.z0 + 0.7, _o);
+    const wpx = (pl.x1 - pl.x0) * ppu;
+    const show = !!a.f && wpx > 46 && ui.mode !== "tree";
+    el.classList.toggle("on", show);
+    el.classList.toggle("compact", wpx < 210);
+    el.classList.toggle("dim", ui.sector >= 0 && ui.sector !== j);
+    if (!show) return;
+    el.style.transform = `translate3d(${a.x.toFixed(1)}px, ${a.y.toFixed(1)}px, 0)`;
+    el.style.maxWidth = `${Math.max(60, wpx - 18).toFixed(0)}px`;
+    const r = el.getBoundingClientRect();
+    if (r.width) placed.push([r.left - 4, r.top - 4, r.right + 4, r.bottom + 4]);
+  });
+}
 function updateLabels() {
-  if (!globe || ui.mode === "tree") { for (const el of labels.used.values()) el.classList.remove("on"); return; }
+  if (!map || ui.mode === "tree") { for (const el of labels.used.values()) el.classList.remove("on"); for (const { el } of plateLabels) el.classList.remove("on"); return; }
   const Wd = innerWidth, Hd = innerHeight;
   const placed = [...glassRects()];
+  updatePlateLabels(placed);
   const fits = (x0, y0, x1, y1) => {
     if (x0 < 8 || y0 < 8 || x1 > Wd - 8 || y1 > Hd - 8) return false;
     for (const r of placed) if (x0 < r[2] && x1 > r[0] && y0 < r[3] && y1 > r[1]) return false;
     return true;
   };
-  const z = 1 - clamp((globe.cam.dist - 1.4) / 4.2, 0, 1); // 0 longe, 1 perto
-  const budget = Math.round((TOUCH ? 7 : 14) + z * z * (TOUCH ? 22 : 46));
+  // quantas chamadas cabem: pela escala (de longe, só as maiores; de perto, quase todas)
+  const ppu = map.pxPerUnit();
+  const z = clamp((ppu - 6) / 40, 0, 1);
+  let budget = Math.round((TOUCH ? 6 : 12) + z * (TOUCH ? 26 : 60));
   const hl = ui.hl;
-  const order = hl ? [...hl].sort((a, b) => prio(b) - prio(a)).slice(0, 40).concat(W.labelOrder.slice(0, 160)) : W.labelOrder.slice(0, 220);
+  let order;
+  if (hl) order = [...hl].sort((a, b) => prio(b) - prio(a)).slice(0, 60);
+  else if (ui.sector < 0 && z < 0.5) {
+    // visão geral: as maiores de cada setor, em rodadas (todo bloco ganha a sua principal antes de outro ganhar a segunda)
+    const lists = plateTopLists(), ppu2 = ppu * ppu;
+    const quota = map.plates.map((pl) => clamp(Math.round(((pl.x1 - pl.x0) * (pl.z1 - pl.z0) * ppu2) / 42000), 1, 6));
+    order = [];
+    for (let r = 0; r < 6; r++) for (let j = 0; j < lists.length; j++) if (r < quota[j] && lists[j][r] != null) order.push(lists[j][r]);
+    budget = Math.max(budget, TOUCH ? 12 : 34);
+  } else if (ui.sector >= 0) {
+    // setor em foco: todas as companhias dele, das maiores para as menores
+    order = W.labelOrder.filter((i) => W.data.mapa.plate[i] === ui.sector && (W.nodes[i].t === "c" || map.isInv[i]));
+    budget = Math.max(budget, TOUCH ? 18 : 48);
+  } else order = W.labelOrder.slice(0, 260);
   const want = new Map();
   const o = {};
   let shown = 0;
   for (const i of order) {
     if (shown >= budget) break;
-    if (want.has(i) || !vis[i]) continue;
+    if (want.has(i) || (!vis[i] && !ui.forceVis?.has(i))) continue;
     const n = W.nodes[i];
     const inHl = hl && hl.has(i);
-    if (hl && !inHl) continue;
-    if (!inHl && n.t !== "c" && z < 0.75) continue;
-    globe.project(i, o);
-    if (o.f < 0.18) continue;
+    if (!inHl && n.t !== "c" && !map.isInv[i] && z < 0.55) continue;
+    map.project(i, o);
+    if (!o.f) continue;
     const [name, sub] = labelText(i);
     const big = n.t === "c" && W.crank[i] < 10;
     const w = Math.max(name.length * (big ? 7.6 : 6.9), sub.length * 6.1) + 14;
     const h = 30;
-    // chamada para cima e para a direita; se não couber, para a esquerda
-    const lx = o.x + 14, ly = o.y - 34;
-    let x0 = lx, side = "r";
-    if (!fits(lx, ly, lx + w, ly + h)) { x0 = o.x - 14 - w; side = "l"; if (!fits(x0, ly, x0 + w, ly + h)) continue; }
-    placed.push([x0, ly, x0 + w, ly + h], [o.x - 4, o.y - 4, o.x + 4, o.y + 4]);
-    want.set(i, { x: o.x, y: o.y, side, a: clamp((o.f - 0.18) / 0.25, 0, 1), hl: inHl, big });
+    // acima à direita; se não couber, acima à esquerda, abaixo à direita, abaixo à esquerda
+    let spot = null;
+    for (const [side, below] of [["r", false], ["l", false], ["r", true], ["l", true]]) {
+      const x0 = side === "r" ? o.x + 14 : o.x - 14 - w, y0 = below ? o.y + 8 : o.y - 34;
+      if (fits(x0, y0, x0 + w, y0 + h)) { spot = { side, below, x0, y0 }; break; }
+    }
+    if (!spot) continue;
+    placed.push([spot.x0, spot.y0, spot.x0 + w, spot.y0 + h], [o.x - 4, o.y - 4, o.x + 4, o.y + 4]);
+    want.set(i, { x: o.x, y: o.y, side: spot.side, below: spot.below, a: 1, hl: inHl, big });
     shown++;
   }
-  // aplica no DOM: reaproveita os elementos
   for (const [i, el] of labels.used) if (!want.has(i)) { el.classList.remove("on"); labels.used.delete(i); labels.pool.push(el); }
-  for (const [i, s] of want) {
+  for (const [i, s2] of want) {
     let el = labels.used.get(i);
     if (!el) {
       el = labels.pool.pop() || Object.assign(document.createElement("div"), { className: "m-lab" });
@@ -630,30 +766,26 @@ function updateLabels() {
       el.classList.remove("on");
       el._t = performance.now();
       labels.used.set(i, el);
-    } else if (!el.classList.contains("on") && performance.now() - el._t > 20) el.classList.add("on"); // entra com fade
-    el.classList.toggle("l", s.side === "l");
-    el.classList.toggle("hl", !!s.hl);
-    el.classList.toggle("big", s.big);
-    el.style.transform = `translate3d(${s.x.toFixed(1)}px, ${s.y.toFixed(1)}px, 0)`;
-    el.style.setProperty("--a", s.a.toFixed(2));
+    } else if (!el.classList.contains("on") && performance.now() - el._t > 20) el.classList.add("on");
+    el.classList.toggle("l", s2.side === "l");
+    el.classList.toggle("b", !!s2.below);
+    el.classList.toggle("hl", !!s2.hl);
+    el.classList.toggle("big", s2.big);
+    el.style.transform = `translate3d(${s2.x.toFixed(1)}px, ${s2.y.toFixed(1)}px, 0)`;
+    el.style.setProperty("--a", "1");
   }
 }
 
 // ---------------------------------------------------------------- leitura de posição (canto de baixo)
 function updateHud() {
-  const c = globe.cam;
-  const lat = ((c.lat % 360) + 360) % 360 > 180 ? c.lat - 360 : c.lat;
-  let lon = ((c.lon + 180) % 360 + 360) % 360 - 180;
-  // continente sob o centro da tela
-  let near = null, best = 1e9;
-  for (const [s, la, lo, r] of W.data.globo.cont || []) {
-    const d = Math.acos(clamp(Math.sin(la * Math.PI / 180) * Math.sin(lat * Math.PI / 180) + Math.cos(la * Math.PI / 180) * Math.cos(lat * Math.PI / 180) * Math.cos((lo - lon) * Math.PI / 180), -1, 1)) * 180 / Math.PI;
-    if (d < r * 1.3 && d < best) { best = d; near = s; }
-  }
-  const alt = (c.dist - 1).toFixed(2).replace(".", ",");
-  const txt = `<span>LAT ${lat >= 0 ? "+" : "−"}${Math.abs(lat).toFixed(1).replace(".", ",")}°</span><span>LON ${lon >= 0 ? "+" : "−"}${Math.abs(lon).toFixed(1).replace(".", ",")}°</span><span>ALT ${alt} R</span>${near ? `<span class="m-hud-sec" style="--c:${sectorColor(near)}">${esc((SECTOR[near]?.[1] || near).toUpperCase())}</span>` : ""}`;
+  const j = map.plateAt(innerWidth / 2 + map.view.offX, innerHeight / 2 + map.view.offY);
+  const p = j >= 0 ? W.data.mapa.plates[j] : null;
+  const zx = fitAllD / Math.max(1, map.cam.d);
+  // na visão geral não diz nada (os blocos têm nome); de perto, o zoom e o setor no centro da tela
+  const txt = zx < 1.45 ? "" : `<span>ZOOM ${zx.toFixed(1).replace(".", ",")}×</span>${p ? `<span class="m-hud-sec" style="--c:${plateColor(p)}">${esc(plateName(p).toUpperCase())}</span>` : ""}`;
   if (txt !== updateHud.last) { $("#m-hud").innerHTML = txt; updateHud.last = txt; }
 }
+let fitAllD = 160;
 
 // ---------------------------------------------------------------- dica ao passar o mouse
 function showTip(i, px, py) {
@@ -678,46 +810,47 @@ function showTip(i, px, py) {
 // ---------------------------------------------------------------- área livre e laço de desenho
 function layoutChanged() {
   uiRectsT = 0;
-  if (!globe) return;
-  // o planeta fica no meio do espaço que sobra entre os painéis
-  const ex = $("#m-explore"), pn = $("#m-panel");
+  if (!map) return;
+  // o mapa fica no meio do espaço que sobra entre os painéis, a barra de cima, a legenda e os botões de zoom
+  const ex = $("#m-explore"), pn = $("#m-panel"), key = $("#m-key").getBoundingClientRect();
+  const panelOpen = pn && !pn.hidden;
   let left = 0, right = 0, bottom = 0;
+  const top = $(".m-top").getBoundingClientRect().bottom + 6;
   if (innerWidth > 760) {
     if (ex && !ex.classList.contains("collapsed") && ex.offsetParent) left = ex.getBoundingClientRect().right;
-    if (pn && !pn.hidden) right = innerWidth - pn.getBoundingClientRect().left;
-  } else if (pn && !pn.hidden) bottom = innerHeight - pn.getBoundingClientRect().top;
-  globe.setOffset((left - right) / 2, -bottom / 2);
-  tree?.setFree(left, right, bottom);
+    right = panelOpen ? innerWidth - pn.offsetLeft : 62;
+    if (key.height) bottom = innerHeight - key.top + 6;
+  } else if (panelOpen) bottom = pn.offsetHeight; // a folha de baixo: a altura final, mesmo enquanto ela ainda sobe
+  else bottom = key.height ? innerHeight - key.top + 6 : 64;
+  map.setInsets(left, right, ui.mode === "tree" ? 0 : top, bottom);
+  // na estrutura: a faixa de contexto (no alto, no meio) também ocupa espaço
+  const mode = $("#m-mode");
+  const treeTop = mode && !mode.hidden ? Math.max(top, mode.getBoundingClientRect().bottom + 6) : top;
+  tree?.setFree(left, right, bottom, treeTop);
 }
 let raf = 0, lastLabels = 0;
 function frame(now) {
   raf = requestAnimationFrame(frame);
   if (document.hidden) return;
-  // gira devagar sozinho quando ninguém mexe e nada está selecionado
-  const idle = now - ui.lastInput > 7000 && ui.sel < 0 && ui.group < 0 && ui.mode === "world" && !REDUCED;
-  globe.cam.auto += ((idle ? 1.6 : 0) - globe.cam.auto) * 0.02;
-  if (Math.abs(globe.cam.auto) < 1e-3) globe.cam.auto = 0;
   if (ui.mode === "tree") tree.frame(now);
   else {
-    globe.update(now);
-    globe.render();
-    if (now - lastLabels > 32) {
-      updateLabels(); updateHud(); lastLabels = now;
-      document.body.classList.toggle("m-close", globe.closeness() > 0.25);
-    }
+    map.update(now);
+    map.render();
+    if (now - lastLabels > 32) { updateLabels(); updateHud(); lastLabels = now; }
   }
 }
 
-// ---------------------------------------------------------------- interação com o planeta
+// ---------------------------------------------------------------- interação com o mapa
 const pointers = new Map();
 let drag = null, pinch = null, lastTap = 0, hoverT = 0, hoverPending = null;
 function onDown(e) {
+  if (ui.mode === "tree") return;
   const cv = e.currentTarget;
   cv.setPointerCapture(e.pointerId);
   pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
   ui.lastInput = performance.now();
   hideHint();
-  globe.cam.vLat = globe.cam.vLon = 0; globe.cam.fly = null;
+  map.cam.vx = map.cam.vz = 0; map.cam.fly = null;
   if (pointers.size === 2) {
     const [p, q] = [...pointers.values()];
     pinch = { d: Math.hypot(p.x - q.x, p.y - q.y), mx: (p.x + q.x) / 2, my: (p.y + q.y) / 2 };
@@ -733,8 +866,8 @@ function onMove(e) {
   if (pinch && pointers.size === 2) {
     const [p, q] = [...pointers.values()];
     const d = Math.hypot(p.x - q.x, p.y - q.y), mx = (p.x + q.x) / 2, my = (p.y + q.y) / 2;
-    globe.zoom(pinch.d / Math.max(1, d), mx, my);
-    globe.rotate(mx - pinch.mx, my - pinch.my);
+    map.zoom(pinch.d / Math.max(1, d), mx, my);
+    map.pan(mx - pinch.mx, my - pinch.my);
     pinch = { d, mx, my };
     return;
   }
@@ -742,7 +875,7 @@ function onMove(e) {
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
     if (!drag.moved && Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > (TOUCH ? 8 : 4)) { drag.moved = true; e.currentTarget.classList.add("dragging"); showTip(-1); }
     if (drag.moved) {
-      globe.rotate(dx, dy);
+      map.pan(dx, dy);
       drag.x = e.clientX; drag.y = e.clientY;
       const now = performance.now();
       drag.hist.push({ x: e.clientX, y: e.clientY, t: now });
@@ -754,22 +887,35 @@ function onMove(e) {
 }
 function doHover() {
   hoverT = 0;
-  if (!hoverPending) return;
+  if (!hoverPending || ui.mode === "tree") return;
   const [px, py] = hoverPending;
-  const i = globe.pick(px, py, vis);
+  const i = map.pick(px, py, vis);
+  const j = i < 0 ? map.plateAt(px, py) : -1;
   const cv = $("#map");
-  cv.classList.toggle("pointing", i >= 0);
+  cv.classList.toggle("pointing", i >= 0 || j >= 0);
   if (i !== ui.hover) {
     ui.hover = i;
     clearTimeout(doHover.t);
-    if (ui.sel < 0 && ui.group < 0 && ui.mode === "world") {
+    if (ui.sel < 0 && ui.group < 0 && !ui.shape && ui.mode === "world") {
       doHover.t = setTimeout(() => {
-        if (ui.sel >= 0 || ui.group >= 0 || ui.mode !== "world" || ui.hover !== i) return;
+        if (ui.sel >= 0 || ui.group >= 0 || ui.shape || ui.mode !== "world" || ui.hover !== i) return;
         if (i >= 0) { const nb = neighborhood(i); setHighlight(nb.nodes, nb.edges, nb.brd, [i], 0.45); } else setHighlight(null);
       }, i >= 0 ? 140 : 90);
     }
   }
-  showTip(i, px, py);
+  if (i >= 0) showTip(i, px, py);
+  else if (j >= 0 && j !== ui.sector) showPlateTip(j, px, py);
+  else showTip(-1);
+}
+function showPlateTip(j, px, py) {
+  const tip = $("#m-tip");
+  if (TOUCH) { tip.hidden = true; return; }
+  const p = W.data.mapa.plates[j], st = sectorStats()[j];
+  tip.innerHTML = `<div class="m-tip-head"><i style="background:${plateColor(p)}"></i><b>${esc(plateName(p))}</b></div><div class="row"><span>${p.c === "inv" ? "Investidores" : "Companhias"}</span><span>${nf(st.n)}</span></div><div class="row"><span>${p.c === "inv" ? "Valor investido" : "Valor de mercado"}</span><span>${st.mc ? brl(st.mc) : "–"}</span></div><div class="row muted"><span>Clique para ver o setor inteiro</span></div>`;
+  tip.hidden = false;
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = `${clamp(px + 18, 8, innerWidth - w - 8)}px`;
+  tip.style.top = `${py + 18 + h > innerHeight - 8 ? py - h - 14 : py + 18}px`;
 }
 function onUp(e) {
   pointers.delete(e.pointerId);
@@ -782,17 +928,20 @@ function onUp(e) {
     const h = d.hist;
     if (h.length >= 2 && !REDUCED) {
       const a = h[0], b = h[h.length - 1], dt = Math.max(16, b.t - a.t);
-      if (performance.now() - b.t < 80) globe.fling((b.x - a.x) / dt, (b.y - a.y) / dt);
+      if (performance.now() - b.t < 80) map.fling((b.x - a.x) / dt, (b.y - a.y) / dt);
     }
     return;
   }
   const now = performance.now(), dbl = now - lastTap < 320;
   lastTap = now;
-  const i = globe.pick(e.clientX, e.clientY, vis);
+  const i = map.pick(e.clientX, e.clientY, vis);
   if (dbl && i >= 0) { openTree(i); return; }
   if (i >= 0) { select(i); return; }
-  if (dbl) { globe.zoom(0.6, e.clientX, e.clientY); return; }
-  if (ui.sel >= 0 || ui.group >= 0 || ui.mode === "path") { if (ui.mode === "path") exitMode(false); select(-1); }
+  if (dbl) { map.zoom(0.55, e.clientX, e.clientY); return; }
+  // clique no chão de um bloco: o setor inteiro
+  const j = map.plateAt(e.clientX, e.clientY);
+  if (j >= 0 && ui.mode === "world") { if (j !== ui.sector || ui.sel >= 0 || ui.group >= 0) focusSector(j); return; }
+  if (ui.sel >= 0 || ui.group >= 0 || ui.sector >= 0 || ui.shape || ui.mode === "path") { if (ui.mode === "path") exitMode(false); select(-1); }
 }
 function onWheel(e) {
   e.preventDefault();
@@ -800,16 +949,73 @@ function onWheel(e) {
   hideHint();
   if (ui.mode === "tree") return;
   const f = Math.exp(e.deltaY * (e.ctrlKey ? 0.012 : e.deltaMode === 1 ? 0.05 : 0.0018));
-  globe.zoom(f, e.clientX, e.clientY);
+  map.zoom(f, e.clientX, e.clientY);
 }
 
 let hintTimer = 0;
 function hideHint() { const h = $("#m-hint"); if (h && !h.hidden) { h.hidden = true; store.set("mundo-hint", 1); uiRectsT = 0; } clearTimeout(hintTimer); }
 
+// ---------------------------------------------------------------- painel de um setor
+function renderSectorPanel(j) {
+  const M = W.data.mapa, p = M.plates[j];
+  const mem = [];
+  for (let i = 0; i < W.N; i++) if (M.plate[i] === j) mem.push(i);
+  const byMc = (a, b) => (W.nodes[b].mc || 0) - (W.nodes[a].mc || 0) || W.nodes[a].n.localeCompare(W.nodes[b].n);
+  const col = plateColor(p);
+  panelRows = {};
+  if (p.c === "inv") {
+    const invs = mem.sort((a, b) => (W.nodes[b].v || 0) - (W.nodes[a].v || 0));
+    panelRows.inv = invs.map((i) => {
+      const cos = new Set(W.out[i].map((e) => W.et[e]).filter((t) => W.nodes[t].t === "c")).size;
+      return rowHtml(i, W.nodes[i].v ? brl(W.nodes[i].v) : "", `${kindLabel(W.nodes[i])} · ${plural(cos, "companhia", "companhias")}`, false);
+    });
+    const tot = invs.reduce((s2, i) => s2 + (W.nodes[i].v || 0), 0);
+    $("#m-panel-body").innerHTML = `
+      <div class="m-kicker" style="--c:${col}"><i></i>Bloco dos investidores</div>
+      <div class="m-head"><span class="m-badge" style="--c:${col}">${icon("cias")}</span><div><h2>Investidores institucionais</h2><p>gestoras, fundos de pensão e governo</p></div></div>
+      <div class="m-stats"><div class="m-stat"><span>Investidores</span><b>${nf(invs.length)}</b></div><div class="m-stat"><span>Valor investido</span><b>${esc(tot ? brl(tot) : "–")}</b></div><div class="m-stat"><span>Participações</span><b>${nf(invs.reduce((s2, i) => s2 + W.out[i].length, 0))}</b></div></div>
+      <div class="m-sec"><h3>Pelo valor investido<small>participação × valor de mercado</small></h3>${listHtml(panelRows.inv, 15, "inv")}</div>
+      <p class="m-foot">Quem tem 5% ou mais de duas ou mais companhias abertas e não tem dono no mapa, mais o governo. Os demais acionistas ficam no setor das companhias em que investem.</p>`;
+    openPanel();
+    return;
+  }
+  const cos = mem.filter((i) => W.nodes[i].t === "c").sort(byMc);
+  const listed = cos.filter((i) => W.nodes[i].mc);
+  const mcTot = listed.reduce((s2, i) => s2 + W.nodes[i].mc, 0);
+  // segmentos (o setor da CVM de cada companhia), do maior para o menor
+  const segs = new Map();
+  for (const i of cos) { const k = W.nodes[i].st || "Outros"; (segs.get(k) || segs.set(k, []).get(k)).push(i); }
+  const segList = [...segs.entries()].map(([k, l]) => [k, l, l.reduce((s2, i) => s2 + (W.nodes[i].mc || 0), 0)]).sort((a, b) => b[2] - a[2] || b[1].length - a[1].length);
+  const segHtml = segList.map(([k, l, mc], si) => {
+    panelRows[`seg${si}`] = l.map((i) => rowHtml(i, W.nodes[i].mc ? brl(W.nodes[i].mc) : "", [W.nodes[i].tk || "capital fechado", W.nodes[i].g != null && W.groups[W.nodes[i].g]?.nc >= 2 ? `grupo ${W.groups[W.nodes[i].g].n}` : ""].filter(Boolean).join(" · "), false));
+    return `<div class="m-seg"><h4><span>${esc(k)}</span><small>${plural(l.length, "companhia", "companhias")}${mc ? ` · ${brl(mc)}` : ""}</small></h4>${listHtml(panelRows[`seg${si}`], 5, `seg${si}`)}</div>`;
+  }).join("");
+  // grupos econômicos com companhias neste setor (um grupo pode estar em vários)
+  const inHere = (g) => g.m.filter((m) => W.nodes[m].t === "c" && M.plate[m] === j).length;
+  const groups = W.groups.filter((g) => g.nc >= 2 && inHere(g) > 0).slice(0, 12);
+  const grpHtml = groups.map((g) => { const k = inHere(g); return `<li data-group="${g.i}"><span class="m-dot" style="--c:${sectorColor(g.sector)}"></span><span class="nm">Grupo ${esc(g.n)}</span><span class="pc">${g.mc ? brl(g.mc) : ""}</span><small>${k === g.nc ? plural(g.nc, "companhia", "companhias") : `${k} de ${g.nc} companhias aqui`}${g.r.length ? ` · ${esc(g.r.slice(0, 2).map((r) => shortName(W.nodes[r].n)).join(", "))}` : ""}</small></li>`; }).join("");
+  // investidores institucionais com fatia nas companhias do setor
+  const invAgg = new Map();
+  for (const i of cos) for (const e of W.inc[i]) { const o = W.es[e]; if (!map.isInv[o]) continue; const a = invAgg.get(o) || { n: 0, v: 0 }; a.n++; a.v += (Math.max(0, W.ep[e]) / 100) * (W.nodes[i].mc || 0); invAgg.set(o, a); }
+  const invTop = [...invAgg.entries()].sort((a, b) => b[1].n - a[1].n || b[1].v - a[1].v).slice(0, 8);
+  const invHtml = invTop.map(([o, a]) => rowHtml(o, a.v ? `≈ ${brl(a.v)}` : "", `${kindLabel(W.nodes[o])} · em ${plural(a.n, "companhia", "companhias")} do setor`, false)).join("");
+  const nPeople = mem.filter((i) => W.nodes[i].t === "p").length, nHold = mem.filter((i) => W.nodes[i].t === "j" || W.nodes[i].t === "s").length;
+  $("#m-panel-body").innerHTML = `
+    <div class="m-kicker" style="--c:${col}"><i></i>Setor</div>
+    <div class="m-head"><span class="m-badge" style="--c:${col}">${icon("cias")}</span><div><h2>${esc(plateName(p))}</h2><p>${plural(cos.length, "companhia", "companhias")} · ${plural(segList.length, "segmento", "segmentos")} · ${plural(groups.length, "grupo", "grupos")}</p></div></div>
+    <div class="m-stats"><div class="m-stat"><span>Valor de mercado</span><b>${esc(mcTot ? brl(mcTot) : "–")}</b></div><div class="m-stat"><span>Na bolsa</span><b>${nf(listed.length)}</b></div><div class="m-stat"><span>Capital fechado</span><b>${nf(cos.length - listed.length)}</b></div></div>
+    <p class="m-note m-sec-note">No bloco também estão ${plural(nHold, "holding ou empresa", "holdings e empresas")} e ${plural(nPeople, "pessoa física", "pessoas físicas")} ligadas a essas companhias.</p>
+    <div class="m-sec"><h3>Companhias por segmento<small>valor de mercado</small></h3>${segHtml}</div>
+    ${grpHtml ? `<div class="m-sec"><h3>Grupos econômicos<small>valor de mercado</small></h3><ul class="m-list">${grpHtml}</ul></div>` : ""}
+    ${invHtml ? `<div class="m-sec"><h3>Investidores mais presentes<small>companhias do setor</small></h3><ul class="m-list">${invHtml}</ul></div>` : ""}
+    <p class="m-foot">Cada companhia fica no bloco do seu setor; holdings e pessoas, no setor das companhias que controlam. Segmento é o setor de atividade declarado à CVM.</p>`;
+  openPanel();
+}
+
 // ---------------------------------------------------------------- ligações dos controles
 function wire() {
   const cv = $("#map");
-  addEventListener("resize", () => { globe.resize(innerWidth, innerHeight); tree?.resize(innerWidth, innerHeight); layoutChanged(); });
+  addEventListener("resize", () => { map.resize(innerWidth, innerHeight); tree?.resize(innerWidth, innerHeight); layoutChanged(); });
   cv.addEventListener("pointerdown", onDown);
   cv.addEventListener("pointermove", onMove);
   cv.addEventListener("pointerup", onUp);
@@ -817,7 +1023,7 @@ function wire() {
   cv.addEventListener("pointerleave", () => {
     if (drag || ui.mode === "tree") return;
     showTip(-1);
-    if (ui.hover >= 0) { ui.hover = -1; if (ui.sel < 0 && ui.group < 0 && ui.mode === "world") setHighlight(null); }
+    if (ui.hover >= 0) { ui.hover = -1; if (ui.sel < 0 && ui.group < 0 && !ui.shape && ui.mode === "world") setHighlight(null); }
   });
   cv.addEventListener("wheel", onWheel, { passive: false });
   labels.layer.addEventListener("click", (e) => {
@@ -828,10 +1034,11 @@ function wire() {
     const el = e.target.closest(".m-lab");
     if (el) openTree(+el.dataset.i);
   });
-  const zoomBtn = (f) => () => { ui.lastInput = performance.now(); if (ui.mode === "tree") tree.zoom(f); else globe.zoom(f); };
-  $("#m-zin").onclick = zoomBtn(0.72);
-  $("#m-zout").onclick = zoomBtn(1 / 0.72);
-  $("#m-zfit").onclick = () => { if (ui.mode === "tree") tree.fit(); else globe.flyTo(globe.cam.lat * 0.4 + 6, globe.cam.lon, globe.fitDist(0.82), 1200); };
+  $("#m-plates").addEventListener("click", (e) => { const el = e.target.closest("[data-plate]"); if (el) focusSector(+el.dataset.plate); });
+  const zoomBtn = (f) => () => { ui.lastInput = performance.now(); if (ui.mode === "tree") tree.zoom(f); else map.zoom(f); };
+  $("#m-zin").onclick = zoomBtn(0.7);
+  $("#m-zout").onclick = zoomBtn(1 / 0.7);
+  $("#m-zfit").onclick = () => { if (ui.mode === "tree") tree.fit(); else map.fitAll(); };
   $("#m-layers-btn").onclick = (e) => { e.stopPropagation(); const p = $("#m-layers"); p.hidden = !p.hidden; $("#m-layers-btn").setAttribute("aria-expanded", String(!p.hidden)); };
   document.addEventListener("pointerdown", (e) => { if (!e.target.closest("#m-layers, #m-layers-btn")) { $("#m-layers").hidden = true; $("#m-layers-btn").setAttribute("aria-expanded", "false"); } });
   for (const inp of document.querySelectorAll("#m-layers [data-layer]")) {
@@ -841,17 +1048,18 @@ function wire() {
       store.set("mundo-layers", ui.layers);
       computeVisibility();
       if (ui.sel >= 0 && ui.mode === "world") { const nb = neighborhood(ui.sel); setHighlight(nb.nodes, nb.edges, nb.brd, [ui.sel]); }
+      else if (ui.shape) { const k = ui.shape; ui.shape = null; showShape(k); }
       renderRank();
     };
   }
-  const goSector = (e) => {
-    const b = e.target.closest("[data-sector]");
+  const goPlate = (e) => {
+    const b = e.target.closest("[data-plate]");
     if (!b) return;
     $("#m-layers").hidden = true;
-    flyToSector(b.dataset.sector);
+    focusSector(+b.dataset.plate);
   };
-  $("#m-legend").onclick = goSector;
-  $("#m-rail").onclick = goSector;
+  $("#m-legend").onclick = goPlate;
+  $("#m-key").onclick = (e) => { const b = e.target.closest("[data-shape]"); if (b) showShape(b.dataset.shape); };
   $("#m-explore-toggle").onclick = () => {
     const ex = $("#m-explore");
     ex.classList.toggle("collapsed");
@@ -869,7 +1077,7 @@ function wire() {
   };
   $(".m-grab").onclick = () => { $("#m-panel").classList.toggle("peek"); setTimeout(layoutChanged, 420); };
   $("#m-panel-close").onclick = () => { if (ui.mode !== "world") exitMode(false); select(-1); };
-  $("#m-mode-close").onclick = () => { const s = ui.sel; exitMode(false); if (s >= 0) select(s); else select(-1); };
+  $("#m-mode-close").onclick = () => { const s2 = ui.sel; exitMode(false); if (s2 >= 0) select(s2); else select(-1); };
   document.addEventListener("click", (e) => {
     const more = e.target.closest("[data-more]");
     if (more) { const id = more.dataset.more; more.closest("ul").innerHTML = panelRows[id].join(""); return; }
@@ -888,21 +1096,21 @@ function wire() {
     if (act) {
       const i = act.dataset.node != null ? +act.dataset.node : ui.sel;
       if (act.dataset.act === "tree" && i >= 0) openTree(i);
-      if (act.dataset.act === "world") { const s = ui.sel; exitMode(false); if (s >= 0) select(s); }
+      if (act.dataset.act === "world") { const s2 = ui.sel; exitMode(false); if (s2 >= 0) select(s2); }
       if (act.dataset.act === "path" && i >= 0) openPicker(i);
     }
   });
   document.addEventListener("keydown", (e) => {
     if (e.target.matches("input[type=search], input[type=text], textarea")) return;
     if (e.key === "/" || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k")) { e.preventDefault(); $("#m-q").focus(); }
-    else if (e.key === "Escape") { if (ui.mode !== "world") { const s = ui.sel; exitMode(false); s >= 0 ? select(s) : select(-1); } else select(-1); }
+    else if (e.key === "Escape") { if (ui.mode !== "world") { const s2 = ui.sel; exitMode(false); s2 >= 0 ? select(s2) : select(-1); } else select(-1); }
     else if (e.key === "+" || e.key === "=") $("#m-zin").click();
     else if (e.key === "-") $("#m-zout").click();
     else if (e.key === "0") $("#m-zfit").click();
     else if (ui.mode === "world" && e.key.startsWith("Arrow")) {
       ui.lastInput = performance.now();
-      const s = 40;
-      globe.rotate(e.key === "ArrowLeft" ? -s : e.key === "ArrowRight" ? s : 0, e.key === "ArrowUp" ? -s : e.key === "ArrowDown" ? s : 0);
+      const s2 = 80;
+      map.pan(e.key === "ArrowLeft" ? s2 : e.key === "ArrowRight" ? -s2 : 0, e.key === "ArrowUp" ? s2 : e.key === "ArrowDown" ? -s2 : 0);
     }
   });
   wireSearch($("#m-q"), $("#m-results"), (r) => { if (r.g != null) selectGroup(r.g); else if (ui.mode === "tree") openTree(r.i); else select(r.i); });
@@ -920,7 +1128,7 @@ function openPicker(from) {
 // ---------------------------------------------------------------- início
 async function init() {
   labels.layer = $("#m-labels");
-  // o planeta é a primeira coisa: o painel Explorar começa fechado (abre pelo botão e lembra a escolha)
+  // o mapa é a primeira coisa: o painel Explorar começa fechado (abre pelo botão e lembra a escolha)
   if (innerWidth <= 760 || store.get("mundo-explore", false) === false) $("#m-explore").classList.add("collapsed");
   let data;
   try {
@@ -931,10 +1139,16 @@ async function init() {
     document.body.classList.remove("loading");
     return;
   }
-  if (!data.globo || !data.globo.lat || data.globo.lat.length !== data.nodes.length) data.globo = fallbackGlobe(data);
+  // celular (ou tablet) em pé: o arranjo em pé, que ocupa a tela; senão, o deitado. Sem as posições (o CI ainda não
+  // rodou a versão nova), calcula aqui mesmo.
+  const ok = (m) => m && m.x && m.x.length === data.nodes.length;
+  const tall = innerHeight > innerWidth * 1.15;
+  if (tall) data.mapa = ok(data.mapaV) ? data.mapaV : mapLayout(data, { aspect: ASPECT_TALL });
+  else if (!ok(data.mapa)) data.mapa = mapLayout(data);
+  delete data.mapaV;
   prepare(data);
   try {
-    globe = createGlobe($("#map"), data, { palette, sectorOrder: data.globo.order, accent: ACCENT });
+    map = createMap($("#map"), data, { palette, accent: ACCENT });
   } catch (err) {
     console.error(err);
     $("#m-empty").hidden = false;
@@ -942,38 +1156,34 @@ async function init() {
     document.body.classList.remove("loading");
     return;
   }
-  tree = createTree(globe.renderer, { W, colorOf, sectorColor, kindLabel, shortName, brl, pct, accent: ACCENT, onPick: (i, dbl) => { if (dbl) openTree(i); else { ui.sel = i; renderPanel(i); } }, onExt: (x) => toast(`${x.n}: controlada de capital fechado (${pct(x.pct)})`), canvas: $("#map") });
-  globe.resize(innerWidth, innerHeight);
+  data.mapa.plates.forEach((p, j) => { p.j = j; });
+  tree = createTree(map.renderer, { W, colorOf, sectorColor, kindLabel, shortName, brl, pct, accent: ACCENT, onPick: (i, dbl) => { if (dbl) openTree(i); else { ui.sel = i; renderPanel(i); } }, onExt: (x) => toast(`${x.n}: controlada de capital fechado (${pct(x.pct)})`), canvas: $("#map") });
+  map.resize(innerWidth, innerHeight);
   tree.resize(innerWidth, innerHeight);
   computeVisibility();
   const s = data.stats || {};
   $("#m-sub").textContent = `${nf(s.cias || 0)} companhias · ${nf(s.grupos || 0)} grupos · ${nf((s.acionistas || 0) + (s.pessoas_conselho || 0))} acionistas e conselheiros`;
   renderLegend();
-  renderRail();
+  buildPlateLabels();
   renderRank();
   wire();
   layoutChanged();
-  globe.setOffset(globe.view.toX, globe.view.toY, true);
+  map.setOffset(map.view.toX, map.view.toY, true);
+  // a fonte da legenda muda a altura dela: mede de novo quando as fontes chegam
+  document.fonts?.ready.then(() => layoutChanged());
   document.body.classList.remove("loading");
-  // abertura: a câmera chega de longe enquanto as torres sobem
-  const start = (data.globo.cont || []).find((c) => c[0] === "util") || [0, 18, 0];
-  globe.warmup();
+  // abertura: o mapa inteiro, com os prédios subindo
+  map.warmup();
+  map.fitAll(0);
+  map.cam.x = map.cam.tx; map.cam.z = map.cam.tz; map.cam.d = map.cam.td; map.cam.fly = null;
+  fitAllD = map.cam.td;
   if (!location.hash && !REDUCED) {
-    Object.assign(globe.cam, { lat: start[1] - 6, lon: start[2] - 40, dist: 8.5, tDist: 8.5 });
-    globe.intro(start[1], start[2]);
-    globe.flyTo(start[1] - 4, start[2] - 8, globe.fitDist(0.82), 2600);
-  } else Object.assign(globe.cam, { lat: start[1] - 4, lon: start[2] - 8, dist: globe.fitDist(0.82), tDist: globe.fitDist(0.82) });
+    map.intro();
+    map.cam.d = fitAllD * 1.35;
+  }
   raf = requestAnimationFrame(frame);
   readRoute();
   if (!store.get("mundo-hint", 0) && !location.hash) setTimeout(() => { if (ui.sel < 0 && ui.mode === "world") { $("#m-hint").hidden = false; uiRectsT = 0; hintTimer = setTimeout(hideHint, 9000); } }, 3200);
-  if (/[?&]debug\b/.test(location.search)) window.__mundo = { ui, W, globe, tree, select, openTree, showPath, selectGroup };
-}
-// trilho de setores: atalhos para cada continente (canto de baixo)
-function renderRail() {
-  const count = {}, mc = {};
-  for (const n of W.nodes) if (n.t === "c") { count[n.c] = (count[n.c] || 0) + 1; mc[n.c] = (mc[n.c] || 0) + (n.mc || 0); }
-  const conts = (W.data.globo.cont || []).map((c) => c[0]).sort((a, b) => (mc[b] || 0) - (mc[a] || 0));
-  const tot = Object.values(mc).reduce((a, b) => a + b, 0) || 1;
-  $("#m-rail").innerHTML = `<h3><span>Continentes</span><small>valor de mercado</small></h3>` + conts.map((c) => `<button type="button" data-sector="${c}" title="Ir até ${esc(SECTOR[c]?.[1] || c)}" style="--c:${sectorColor(c)};--w:${((mc[c] || 0) / tot * 100).toFixed(1)}%"><i></i><span>${esc(SECTOR[c]?.[2] || c)}</span><small>${nf(count[c] || 0)}</small><b>${mc[c] ? brl(mc[c]).replace("R$ ", "") : "–"}</b></button>`).join("");
+  if (/[?&]debug\b/.test(location.search)) window.__mundo = { ui, W, map, tree, select, openTree, showPath, selectGroup, focusSector };
 }
 init();

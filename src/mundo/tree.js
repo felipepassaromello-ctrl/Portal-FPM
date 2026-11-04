@@ -1,12 +1,12 @@
 /* Mundo das companhias — estrutura societária em 3D.
  *
- * Uma mesa escura com a entidade no centro (uma peça redonda com anel de luz), quem é dono dela atrás (cartões, em
- * fileiras por nível, do controlador final ao acionista direto) e o que ela tem na frente (controladas e
- * participações). Cabos sobre a mesa ligam cada cartão ao seu dono, com pulsos de energia correndo de quem é dono para
- * quem é possuído; os cabos de controle são mais grossos e acesos.
+ * Uma mesa escura vista de cima, reta, como um organograma: a entidade no centro (uma peça redonda com anel de luz),
+ * quem é dono dela acima (cartões, em faixas por nível, do controlador final ao acionista direto) e o que ela tem
+ * abaixo (controladas e participações). Cada faixa tem o nome escrito na mesa. Cabos ligam cada cartão ao seu dono,
+ * com pulsos de energia correndo de quem é dono para quem é possuído; os cabos de controle são mais grossos e acesos.
  *
- * Usa o mesmo renderizador do planeta (um contexto WebGL só). Arrastar move a mesa, rolar ou pinçar aproxima, um
- * clique num cartão mostra os detalhes, dois cliques recentralizam a estrutura nele.
+ * Usa o mesmo renderizador do mapa (um contexto WebGL só). Arrastar move a mesa, rolar ou pinçar aproxima, um clique
+ * num cartão mostra os detalhes, dois cliques recentralizam a estrutura nele.
  */
 import * as THREE from "three";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
@@ -25,8 +25,8 @@ export function createTree(renderer, opts) {
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x07090d);
-  scene.fog = new THREE.Fog(0x07090d, 18, 46);
-  const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 120);
+  scene.fog = new THREE.Fog(0x07090d, 24, 60);
+  const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 200);
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
   scene.environmentIntensity = 0.55;
@@ -56,12 +56,12 @@ export function createTree(renderer, opts) {
         vec2 g = abs(fract(vWp.xz / 0.5 + 0.5) - 0.5) * 0.5;
         float dotk = 1.0 - smoothstep(0.012, 0.022, length(g));
         float r = length(vWp.xz);
-        diffuseColor.rgb += vec3(0.06, 0.075, 0.09) * dotk * (1.0 - smoothstep(6.0, 22.0, r));
-        diffuseColor.rgb *= 1.0 - 0.45 * smoothstep(8.0, 26.0, r);`)
+        diffuseColor.rgb += vec3(0.06, 0.075, 0.09) * dotk * (1.0 - smoothstep(10.0, 40.0, r));
+        diffuseColor.rgb *= 1.0 - 0.45 * smoothstep(14.0, 48.0, r);`)
       .replace("#include <emissivemap_fragment>", `#include <emissivemap_fragment>
         totalEmissiveRadiance += uAcc * uGlow * 0.3 * exp(-pow(length(vWp.xz) / 2.0, 2.0));`);
   };
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(120, 120), floorMat);
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(260, 260), floorMat);
   floor.rotation.x = -Math.PI / 2;
   floor.receiveShadow = true;
   scene.add(floor);
@@ -253,7 +253,7 @@ export function createTree(renderer, opts) {
   });
 
   // ------------------------------------------------------------------ montar a estrutura
-  const T = { open: false, focus: -1, items: [], cables: null, hub: null, t0: 0, a: 0, aTo: 0, hover: null, bounds: null };
+  const T = { open: false, focus: -1, items: [], cables: null, hub: null, t0: 0, a: 0, aTo: 0, hover: null, bounds: null, bands: [] };
   const cam = { x: 0, z: 1.2, dist: 15, tx: 0, tz: 1.2, tdist: 15, vx: 0, vz: 0, yaw: 0 };
   function clear() {
     for (const o of [...content.children]) {
@@ -322,7 +322,14 @@ export function createTree(renderer, opts) {
       for (let k = nodes.length - 1; k >= 0; k--) if (nodes[k].lvl > 0 && !keep.has(nodes[k])) nodes.splice(k, 1);
       for (let k = links.length - 1; k >= 0; k--) if (!nodes.includes(links[k].b) || !nodes.includes(links[k].a)) links.splice(k, 1);
     }
-    layout(nodes, links);
+    const bands = layout(nodes, links);
+    T.bands = bands;
+
+    // o nome de cada faixa escrito na mesa, alinhado à esquerda da faixa
+    for (const b of bands) {
+      const lab = bandLabel(b);
+      if (lab) content.add(lab);
+    }
 
     // a peça central
     const hub = new THREE.Group();
@@ -402,10 +409,15 @@ export function createTree(renderer, opts) {
     // limites para enquadrar
     let x0 = -2, x1 = 2, z0 = -2, z1 = 2;
     for (const nd of nodes) { x0 = Math.min(x0, nd.x - CARD.w / 2); x1 = Math.max(x1, nd.x + CARD.w / 2); z0 = Math.min(z0, nd.z - CARD.d / 2); z1 = Math.max(z1, nd.z + CARD.d / 2); }
+    for (const b of bands) z0 = Math.min(z0, b.zLab - 0.3);
     T.bounds = { x0, x1, z0, z1 };
     // enquadramento inicial: o centro, os donos diretos e as primeiras fileiras do que ela tem
-    const firstFront = nodes.filter((d) => d.lvl === 1).sort((a, b) => a.z - b.z || a.x - b.x).slice(0, small() ? 6 : 10);
-    T.near = nodes.filter((d) => d.lvl === 0 || d.lvl === -1).concat(firstFront);
+    // (no celular, só as duas fileiras de acionistas mais perto do centro: cartões grandes o bastante para ler)
+    const per = small() ? 3 : 5;
+    const firstFront = nodes.filter((d) => d.lvl === 1).sort((a, b) => a.z - b.z || a.x - b.x).slice(0, per * 2);
+    const owners = nodes.filter((d) => d.lvl === -1).sort((a, b) => b.z - a.z || a.x - b.x);
+    T.near = nodes.filter((d) => d.lvl === 0).concat(small() ? owners.slice(0, per * 2) : owners, firstFront);
+    T.nearAllOwners = !small() || owners.length <= per * 2;
   }
   function mergeTubes(geos) {
     let nv = 0, ni = 0;
@@ -428,7 +440,35 @@ export function createTree(renderer, opts) {
     return out;
   }
 
-  // fileiras: atrás do centro os donos (do mais distante ao mais próximo), na frente o que a entidade tem
+  // nome de uma faixa (texto deitado na mesa, legível de cima)
+  const BAND = {
+    "-1": "Acionistas diretos", "-2": "Quem controla os acionistas", "-3": "Controle acima", "-4": "Controle final",
+    1: "Participações e controladas", 2: "Controladas das controladas",
+  };
+  function bandLabel(b) {
+    const text = `${BAND[b.lvl] || (b.lvl < 0 ? "Controle acima" : "Mais abaixo")} · ${b.n}`.toUpperCase();
+    const hpx = 34, scale = 0.3 / hpx; // 0,3 de altura na mesa
+    const meas = document.createElement("canvas").getContext("2d");
+    meas.font = `600 17px ${MONO}`;
+    const wpx = Math.ceil(meas.measureText(text).width + 30);
+    const tex = textTexture(wpx, hpx, (x, w, h) => {
+      x.clearRect(0, 0, w, h);
+      x.fillStyle = b.lvl < 0 ? "rgba(150,170,200,.9)" : "rgba(60,240,180,.85)";
+      x.beginPath(); x.arc(8, h / 2, 4, 0, Math.PI * 2); x.fill();
+      x.font = `600 17px ${MONO}`;
+      x.textBaseline = "middle";
+      x.fillStyle = "rgba(205,214,226,.82)";
+      x.fillText(text, 22, h / 2 + 1);
+    });
+    const g = new THREE.PlaneGeometry(wpx * scale, hpx * scale);
+    g.rotateX(-Math.PI / 2);
+    const m = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, toneMapped: false }));
+    m.position.set(b.x0 + (wpx * scale) / 2, 0.012, b.zLab);
+    m.userData.band = b.lvl;
+    return m;
+  }
+
+  // fileiras: acima do centro os donos (do mais distante ao mais próximo), abaixo o que a entidade tem
   function layout(nodes, links) {
     const per = small() ? 3 : 5;
     const gapX = 0.45, rowZ = 1.75, levelZ = 3.1;
@@ -438,6 +478,8 @@ export function createTree(renderer, opts) {
     const childX = (nd) => { const cs = links.filter((l) => l.a === nd).map((l) => l.b.x || 0); return cs.length ? cs.reduce((a, b) => a + b, 0) / cs.length : 0; };
     const nodes0 = byLvl.get(0)[0];
     nodes0.x = 0; nodes0.z = 0;
+    const bands = [];
+    const bandX0 = (n) => { const k = Math.min(per, n); return -(k * CARD.w + (k - 1) * gapX) / 2; };
     let z = -levelZ + 0.4;
     for (const lvl of [...byLvl.keys()].filter((l) => l < 0).sort((a, b) => b - a)) {
       const list = byLvl.get(lvl);
@@ -448,12 +490,15 @@ export function createTree(renderer, opts) {
         row.forEach((nd, k) => { nd.x = -tw / 2 + CARD.w / 2 + k * (CARD.w + gapX); nd.z = z; });
         z -= rowZ;
       }
+      // o nome da faixa fica logo acima da fileira mais alta dela
+      bands.push({ lvl, n: list.length, x0: bandX0(list.length), zLab: z + rowZ - CARD.d / 2 - 0.36 });
       z -= levelZ - rowZ;
     }
     z = levelZ - 0.4;
     for (const lvl of [...byLvl.keys()].filter((l) => l > 0).sort((a, b) => a - b)) {
       const list = byLvl.get(lvl);
       if (lvl > 1) list.sort((a, b) => parentsX(a) - parentsX(b));
+      bands.push({ lvl, n: list.length, x0: bandX0(list.length), zLab: z - CARD.d / 2 - 0.36 });
       for (let r = 0; r < list.length; r += per) {
         const row = list.slice(r, r + per);
         const tw = row.length * CARD.w + (row.length - 1) * gapX;
@@ -462,13 +507,17 @@ export function createTree(renderer, opts) {
       }
       z += levelZ - rowZ;
     }
+    return bands;
   }
 
   // ------------------------------------------------------------------ câmera da mesa
-  const view = { W: 1, H: 1, offX: 0, offY: 0, freeW: 1, freeH: 1 };
+  const view = { W: 1, H: 1, offX: 0, offY: 0, freeW: 1, freeH: 1, top: 0 };
   function applyOffset() { camera.setViewOffset(view.W, view.H, -view.offX, -view.offY, view.W, view.H); }
   function frameNear(instant) {
     const b = T.near && T.near.length > 1 ? T.near.reduce((acc, nd) => ({ x0: Math.min(acc.x0, nd.x - CARD.w / 2), x1: Math.max(acc.x1, nd.x + CARD.w / 2), z0: Math.min(acc.z0, nd.z - CARD.d / 2), z1: Math.max(acc.z1, nd.z + CARD.d / 2) }), { x0: -2, x1: 2, z0: -2, z1: 2 }) : T.bounds;
+    // o nome da faixa dos acionistas diretos também entra no quadro
+    const lab = T.bands.find((x) => x.lvl === -1);
+    if (lab && b !== T.bounds && T.nearAllOwners) b.z0 = Math.min(b.z0, lab.zLab - 0.3);
     fitBox(b, instant);
   }
   function fitBox(b, instant) {
@@ -476,13 +525,13 @@ export function createTree(renderer, opts) {
     const aspect = view.freeW / view.H;
     const halfV = (camera.fov * Math.PI) / 360;
     const distW = wv / 2 / Math.tan(halfV) / aspect;
-    const distD = (dv / 2 / Math.tan(halfV)) * 0.82 * (view.H / Math.max(200, view.freeH));
-    cam.tdist = clamp(Math.max(distW, distD) * 1.05, 6, 60);
-    cam.tx = (b.x0 + b.x1) / 2; cam.tz = (b.z0 + b.z1) / 2 + 0.6;
+    const distD = (dv / 2 / Math.tan(halfV)) * (view.H / Math.max(200, view.freeH));
+    cam.tdist = clamp(Math.max(distW, distD) * 1.04, 6, 90);
+    cam.tx = (b.x0 + b.x1) / 2; cam.tz = (b.z0 + b.z1) / 2;
     if (instant) { cam.dist = cam.tdist; cam.x = cam.tx; cam.z = cam.tz; }
   }
   function placeCamera() {
-    const tilt = 0.86; // ~49° acima da mesa
+    const tilt = 1.5; // quase 90°: a mesa vista reta, de cima (um nada de perspectiva dá volume aos cartões)
     camera.position.set(cam.x + Math.sin(cam.yaw) * Math.cos(tilt) * cam.dist, Math.sin(tilt) * cam.dist, cam.z + Math.cos(cam.yaw) * Math.cos(tilt) * cam.dist);
     camera.lookAt(cam.x, 0, cam.z);
     key.position.set(cam.x - 6, 14, cam.z + 7);
@@ -522,7 +571,7 @@ export function createTree(renderer, opts) {
     if (pinch && ptrs.size === 2) {
       const [a, b] = [...ptrs.values()];
       const d = Math.hypot(a.x - b.x, a.y - b.y);
-      cam.tdist = clamp(cam.tdist * (pinch.d / Math.max(1, d)), 6.5, 70); cam.dist = cam.tdist;
+      cam.tdist = clamp(cam.tdist * (pinch.d / Math.max(1, d)), 5, 90); cam.dist = cam.tdist;
       pinch.d = d;
       return;
     }
@@ -566,7 +615,7 @@ export function createTree(renderer, opts) {
     const f = Math.exp(e.deltaY * (e.ctrlKey ? 0.012 : 0.0016));
     // aproxima em direção ao cursor
     const g = groundAt(e.clientX, e.clientY);
-    const nd = clamp(cam.tdist * f, 6.5, 70);
+    const nd = clamp(cam.tdist * f, 5, 90);
     const k = 1 - nd / cam.tdist;
     cam.tx += (g.x - cam.tx) * k; cam.tz += (g.z - cam.tz) * k;
     cam.tdist = nd;
@@ -610,10 +659,11 @@ export function createTree(renderer, opts) {
     }
     cam.dist += (cam.tdist - cam.dist) * Math.min(1, dt * 7);
     // a névoa acompanha a distância: o que está enquadrado fica nítido, o resto da mesa some no escuro
-    scene.fog.near = cam.dist * 1.05; scene.fog.far = cam.dist * 2.6;
-    // um leve giro de entrada, depois parado
-    cam.yaw = 0.18 * (1 - easeInOut(k));
+    scene.fog.near = cam.dist * 1.35; scene.fog.far = cam.dist * 3.2;
+    cam.yaw = 0;
     placeCamera();
+    // a mesa se mexe (cartões entrando, cartão sob o cursor): sombra refeita a cada quadro (o mapa desliga isso)
+    renderer.shadowMap.needsUpdate = true;
     renderer.render(scene, camera);
   }
 
@@ -629,13 +679,13 @@ export function createTree(renderer, opts) {
     frame,
     resize(w, h) { view.W = w; view.H = h; camera.aspect = w / h; camera.updateProjectionMatrix(); applyOffset(); },
     // a mesa fica no meio do espaço entre os painéis
-    setFree(left, right, bottom) {
-      view.offX = (left - right) / 2; view.offY = -bottom / 2;
-      view.freeW = Math.max(200, view.W - left - right); view.freeH = Math.max(200, view.H - bottom);
+    setFree(left, right, bottom, top = 0) {
+      view.offX = (left - right) / 2; view.offY = (top - bottom) / 2;
+      view.freeW = Math.max(200, view.W - left - right); view.freeH = Math.max(200, view.H - bottom - top);
       applyOffset();
       if (T.open) frameNear(false);
     },
-    zoom(f) { cam.tdist = clamp(cam.tdist * f, 6.5, 70); },
+    zoom(f) { cam.tdist = clamp(cam.tdist * f, 5, 90); },
     fit() { if (T.bounds) fitBox(T.bounds); },
   };
 }
