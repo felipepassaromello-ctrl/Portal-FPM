@@ -19,6 +19,7 @@ import { fileURLToPath } from "node:url";
 import Graph from "graphology";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import noverlap from "graphology-layout-noverlap";
+import { globeLayout, GLOBO_VERSION } from "./mundo_globo.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = join(ROOT, "site/data/cias/mundo.json");
@@ -192,6 +193,15 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log("Mundo: estrutura igual à da rodada anterior; posições mantidas.");
   } else Object.assign(world, layout(world, { prev, log: (m) => console.log(m) }));
   world.layout = VERSION;
+  // o planeta (página 3D): refeito só quando as posições 2D mudam; senão, o da rodada anterior
+  const t1 = Date.now();
+  if (saved && saved.globo && saved.globo.v === GLOBO_VERSION && saved.globo.sig === world.sig && saved.globo.lat?.length === world.nodes.length) {
+    world.globo = saved.globo;
+    console.log("Mundo: globo igual ao da rodada anterior.");
+  } else {
+    world.globo = { ...globeLayout(world, { log: (m) => console.log(m) }), sig: world.sig };
+    console.log(`Mundo: globo em ${((Date.now() - t1) / 1000).toFixed(1)} s.`);
+  }
   writeFileSync(FILE, JSON.stringify(world));
   console.log(`Mundo: posições de ${world.nodes.length} nós em ${((Date.now() - t0) / 1000).toFixed(1)} s.`);
 }
