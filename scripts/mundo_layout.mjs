@@ -10,6 +10,10 @@
 // Se houver posições da rodada anterior (site/data/cias/base/mundo_pos.json), parte delas e roda menos iterações: o mapa
 // fica no mesmo lugar de um dia para o outro e só acomoda o que mudou.
 //
+// Depois, o mapa da página 3D (scripts/mundo_mapa.mjs): um bloco por setor, cada nó dentro do seu bloco, partindo
+// destas posições, deitado ("mapa") e em pé para o celular ("mapaV"). Só é refeito quando a estrutura ou os setores
+// mudam.
+//
 // Uso: cd scripts && npm ci && node mundo_layout.mjs
 
 import { createHash } from "node:crypto";
@@ -19,7 +23,7 @@ import { fileURLToPath } from "node:url";
 import Graph from "graphology";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import noverlap from "graphology-layout-noverlap";
-import { globeLayout, GLOBO_VERSION } from "./mundo_globo.mjs";
+import { mapLayout, MAPA_VERSION, ASPECT_WIDE, ASPECT_TALL } from "./mundo_mapa.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = join(ROOT, "site/data/cias/mundo.json");
@@ -193,14 +197,19 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log("Mundo: estrutura igual à da rodada anterior; posições mantidas.");
   } else Object.assign(world, layout(world, { prev, log: (m) => console.log(m) }));
   world.layout = VERSION;
-  // o planeta (página 3D): refeito só quando as posições 2D mudam; senão, o da rodada anterior
-  const t1 = Date.now();
-  if (saved && saved.globo && saved.globo.v === GLOBO_VERSION && saved.globo.sig === world.sig && saved.globo.lat?.length === world.nodes.length) {
-    world.globo = saved.globo;
-    console.log("Mundo: globo igual ao da rodada anterior.");
-  } else {
-    world.globo = { ...globeLayout(world, { log: (m) => console.log(m) }), sig: world.sig };
-    console.log(`Mundo: globo em ${((Date.now() - t1) / 1000).toFixed(1)} s.`);
+  // os mapas de blocos (página 3D): refeitos só quando a estrutura ou os setores mudam; senão, os da rodada anterior
+  delete world.globo;
+  for (const [key, aspect] of [["mapa", ASPECT_WIDE], ["mapaV", ASPECT_TALL]]) {
+    const t1 = Date.now();
+    const sig = createHash("sha1").update(`${MAPA_VERSION}|${aspect}|${world.sig}|${world.nodes.map((n) => n.c || "").join(",")}`).digest("hex").slice(0, 16);
+    const old = saved && saved[key];
+    if (old && old.v === MAPA_VERSION && old.sig === sig && old.x?.length === world.nodes.length) {
+      world[key] = old;
+      console.log(`Mundo: ${key} igual ao da rodada anterior.`);
+    } else {
+      world[key] = { ...mapLayout(world, { log: (m) => console.log(m), aspect }), sig };
+      console.log(`Mundo: ${key} em ${((Date.now() - t1) / 1000).toFixed(1)} s.`);
+    }
   }
   writeFileSync(FILE, JSON.stringify(world));
   console.log(`Mundo: posições de ${world.nodes.length} nós em ${((Date.now() - t0) / 1000).toFixed(1)} s.`);
