@@ -1,0 +1,17 @@
+name: Sonda mundo 3D
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          B=https://felipepassaromello-ctrl.github.io/Portal-FPM
+          curl -s "$B/mundo.html?x=$RANDOM" | grep -o 'mundo.js[^"]*"' | head -2
+          V=$(curl -s "$B/mundo.html?x=$RANDOM" | grep -o 'mundo.js?v=[0-9a-f]*' | head -1)
+          curl -s "$B/$V" | head -c 140; echo
+          curl -s "$B/data/cias/mundo.json?x=$RANDOM" | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin); g=d.get('globo') or {}
+          print('nodes', len(d['nodes']), 'globo', g.get('v'), len(g.get('lat',[])), 'cont', [c[0] for c in g.get('cont',[])])"
