@@ -1,0 +1,14 @@
+{
+  "name": "portal-fpm-mundo-3d",
+  "private": true,
+  "description": "Mundo das companhias em 3D. Fonte de site/mundo.js (gerado: npm run build).",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild main.js --bundle --minify --format=esm --target=es2020,safari15 --legal-comments=eof --banner:js=\"/* Portal FPM — Mundo das companhias. Gerado de src/mundo (npm run build); não edite à mão. Inclui three.js (MIT). */\" --outfile=../../site/mundo.js",
+    "dev": "esbuild main.js --bundle --format=esm --target=es2020,safari15 --sourcemap --outfile=../../site/mundo.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "three": "0.186.1"
+  }
+}
