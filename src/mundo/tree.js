@@ -139,6 +139,7 @@ export function createTree(renderer, opts) {
 
   // ------------------------------------------------------------------ peças
   const CARD = { w: 2.9, h: 0.26, d: 1.12 };
+  const HUB_R = 1.25; // raio da peça central
   const cardGeo = new RoundedBoxGeometry(CARD.w, CARD.h, CARD.d, 5, 0.12);
   const labelGeo = new THREE.PlaneGeometry(CARD.w - 0.16, CARD.d - 0.12);
   labelGeo.rotateX(-Math.PI / 2);
@@ -253,7 +254,7 @@ export function createTree(renderer, opts) {
   });
 
   // ------------------------------------------------------------------ montar a estrutura
-  const T = { open: false, focus: -1, items: [], cables: null, hub: null, t0: 0, a: 0, aTo: 0, hover: null, bounds: null, bands: [] };
+  const T = { open: false, focus: -1, items: [], cables: null, hub: null, t0: 0, a: 0, aTo: 0, hover: null, bounds: null };
   const cam = { x: 0, z: 1.2, dist: 15, tx: 0, tz: 1.2, tdist: 15, vx: 0, vz: 0, yaw: 0 };
   function clear() {
     for (const o of [...content.children]) {
@@ -323,17 +324,13 @@ export function createTree(renderer, opts) {
       for (let k = links.length - 1; k >= 0; k--) if (!nodes.includes(links[k].b) || !nodes.includes(links[k].a)) links.splice(k, 1);
     }
     const bands = layout(nodes, links);
-    T.bands = bands;
 
-    // o nome de cada faixa escrito na mesa, alinhado à esquerda da faixa
-    for (const b of bands) {
-      const lab = bandLabel(b);
-      if (lab) content.add(lab);
-    }
+    // o nome de cada faixa escrito na mesa
+    const bandLabs = bands.map((b) => { const lab = bandLabel(b); content.add(lab); return lab; });
 
     // a peça central
     const hub = new THREE.Group();
-    const R = 1.25;
+    const R = HUB_R;
     const prof = [[0, 0], [R, 0], [R + 0.06, 0.05], [R + 0.08, 0.16], [R + 0.06, 0.34], [R, 0.4], [R - 0.12, 0.42], [0, 0.42]].map(([a, b]) => new THREE.Vector2(a, b));
     const body = new THREE.Mesh(new THREE.LatheGeometry(prof, 96), new THREE.MeshStandardMaterial({ color: 0x103a33, roughness: 0.32, metalness: 0.55 }));
     body.castShadow = true; body.receiveShadow = true;
@@ -409,7 +406,7 @@ export function createTree(renderer, opts) {
     // limites para enquadrar
     let x0 = -2, x1 = 2, z0 = -2, z1 = 2;
     for (const nd of nodes) { x0 = Math.min(x0, nd.x - CARD.w / 2); x1 = Math.max(x1, nd.x + CARD.w / 2); z0 = Math.min(z0, nd.z - CARD.d / 2); z1 = Math.max(z1, nd.z + CARD.d / 2); }
-    for (const b of bands) z0 = Math.min(z0, b.zLab - 0.3);
+    for (const lab of bandLabs) { const u = lab.userData; x0 = Math.min(x0, u.x0); x1 = Math.max(x1, u.x1); z0 = Math.min(z0, u.z - 0.3); z1 = Math.max(z1, u.z + 0.3); }
     T.bounds = { x0, x1, z0, z1 };
     // enquadramento inicial: o centro, os donos diretos e as primeiras fileiras do que ela tem
     // (no celular, só as duas fileiras de acionistas mais perto do centro: cartões grandes o bastante para ler)
@@ -417,7 +414,6 @@ export function createTree(renderer, opts) {
     const firstFront = nodes.filter((d) => d.lvl === 1).sort((a, b) => a.z - b.z || a.x - b.x).slice(0, per * 2);
     const owners = nodes.filter((d) => d.lvl === -1).sort((a, b) => b.z - a.z || a.x - b.x);
     T.near = nodes.filter((d) => d.lvl === 0).concat(small() ? owners.slice(0, per * 2) : owners, firstFront);
-    T.nearAllOwners = !small() || owners.length <= per * 2;
   }
   function mergeTubes(geos) {
     let nv = 0, ni = 0;
@@ -445,7 +441,11 @@ export function createTree(renderer, opts) {
     "-1": "Acionistas diretos", "-2": "Quem controla os acionistas", "-3": "Controle acima", "-4": "Controle final",
     1: "Participações e controladas", 2: "Controladas das controladas",
   };
+  // Onde fica: as duas faixas vizinhas do centro (acionistas diretos e participações) têm o nome ao lado da peça
+  // central, com uma seta para cima ou para baixo (ali não passa cabo); as outras, no alto da faixa, e as estreitas
+  // (um ou dois cartões, com o cabo descendo pelo meio) à esquerda da coluna.
   function bandLabel(b) {
+    const beside = b.lvl === -1 || b.lvl === 1;
     const text = `${BAND[b.lvl] || (b.lvl < 0 ? "Controle acima" : "Mais abaixo")} · ${b.n}`.toUpperCase();
     const hpx = 34, scale = 0.3 / hpx; // 0,3 de altura na mesa
     const meas = document.createElement("canvas").getContext("2d");
@@ -454,17 +454,24 @@ export function createTree(renderer, opts) {
     const tex = textTexture(wpx, hpx, (x, w, h) => {
       x.clearRect(0, 0, w, h);
       x.fillStyle = b.lvl < 0 ? "rgba(150,170,200,.9)" : "rgba(60,240,180,.85)";
-      x.beginPath(); x.arc(8, h / 2, 4, 0, Math.PI * 2); x.fill();
+      x.beginPath();
+      if (beside && b.lvl < 0) { x.moveTo(2, h / 2 + 5); x.lineTo(14, h / 2 + 5); x.lineTo(8, h / 2 - 6); }
+      else if (beside) { x.moveTo(2, h / 2 - 5); x.lineTo(14, h / 2 - 5); x.lineTo(8, h / 2 + 6); }
+      else x.arc(8, h / 2, 4, 0, Math.PI * 2);
+      x.fill();
       x.font = `600 17px ${MONO}`;
       x.textBaseline = "middle";
       x.fillStyle = "rgba(205,214,226,.82)";
       x.fillText(text, 22, h / 2 + 1);
     });
-    const g = new THREE.PlaneGeometry(wpx * scale, hpx * scale);
+    const w = wpx * scale;
+    const g = new THREE.PlaneGeometry(w, hpx * scale);
     g.rotateX(-Math.PI / 2);
     const m = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, toneMapped: false }));
-    m.position.set(b.x0 + (wpx * scale) / 2, 0.012, b.zLab);
-    m.userData.band = b.lvl;
+    const x0 = beside ? HUB_R + 0.45 : b.n <= 2 ? Math.min(b.x0, -w - 1.7) : b.x0;
+    const z = beside ? (b.lvl < 0 ? -0.36 : 0.36) : b.zLab;
+    m.position.set(x0 + w / 2, 0.012, z);
+    m.userData = { band: b.lvl, x0, x1: x0 + w, z };
     return m;
   }
 
@@ -515,9 +522,6 @@ export function createTree(renderer, opts) {
   function applyOffset() { camera.setViewOffset(view.W, view.H, -view.offX, -view.offY, view.W, view.H); }
   function frameNear(instant) {
     const b = T.near && T.near.length > 1 ? T.near.reduce((acc, nd) => ({ x0: Math.min(acc.x0, nd.x - CARD.w / 2), x1: Math.max(acc.x1, nd.x + CARD.w / 2), z0: Math.min(acc.z0, nd.z - CARD.d / 2), z1: Math.max(acc.z1, nd.z + CARD.d / 2) }), { x0: -2, x1: 2, z0: -2, z1: 2 }) : T.bounds;
-    // o nome da faixa dos acionistas diretos também entra no quadro
-    const lab = T.bands.find((x) => x.lvl === -1);
-    if (lab && b !== T.bounds && T.nearAllOwners) b.z0 = Math.min(b.z0, lab.zLab - 0.3);
     fitBox(b, instant);
   }
   function fitBox(b, instant) {
