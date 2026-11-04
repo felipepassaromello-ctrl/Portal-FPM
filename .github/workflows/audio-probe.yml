@@ -1,0 +1,19 @@
+name: Sonda dados do Mundo
+on:
+  push:
+    branches: [claude/news-portal-ma-personalized-ejb59l]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          B=https://felipepassaromello-ctrl.github.io/Portal-FPM
+          mkdir -p dev-data/perfil
+          curl -sf "$B/data/cias/mundo.json?x=$RANDOM" -o dev-data/mundo.json
+          for k in 9512 19348 4170 23264 18660; do curl -sf "$B/data/cias/perfil/$k.json" -o dev-data/perfil/$k.json || true; done
+          ls -la dev-data dev-data/perfil
+          git config user.name portal-bot; git config user.email portal-bot@users.noreply.github.com
+          git add -f dev-data && git commit -qm "Dados temporários para desenvolvimento do Mundo" && git push -q origin HEAD:claude/news-portal-ma-personalized-ejb59l
