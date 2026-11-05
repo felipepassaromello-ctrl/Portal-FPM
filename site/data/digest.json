@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T08:24:24.162014-03:00",
+ "generated_at": "2026-11-05T08:52:30.252611-03:00",
  "date": "2026-11-05",
  "window": {
   "start": "2026-11-04T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-05T08:23:58.786525-03:00",
-  "analyzed": 294
+  "analyzed": 283
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -157,14 +157,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.1321,
-   "change_pct": -0.1694116763000464,
+   "price": 6.1294,
+   "change_pct": -0.21336767644256627,
    "spark": [
     6.0192999839782715,
     6.065499782562256,
     6.07902717590332,
     6.142506122589111,
-    6.1321001052856445
+    6.12939977645874
    ]
   },
   {
@@ -213,40 +213,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 96.13,
-   "change_pct": 1.59585416358754,
+   "price": 96.39,
+   "change_pct": 1.8706374995131947,
    "spark": [
     104.7699966430664,
     103.5999984741211,
     94.62000274658203,
-    96.12999725341797
+    96.38999938964844
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 4140.9,
-   "change_pct": 1.6670758654554252,
+   "price": 4144.4,
+   "change_pct": 1.753007611097468,
    "spark": [
     3969.60009765625,
     3940.39990234375,
     4073.0,
-    4140.89990234375
+    4144.39990234375
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 80258.87,
-   "change_pct": -0.1821012823997048,
+   "price": 80279.1,
+   "change_pct": -0.15694124599427983,
    "spark": [
     78248.453125,
     76677.296875,
     77345.046875,
     80405.2890625,
-    80258.8671875
+    80279.1015625
    ]
   }
  ],
@@ -1618,56 +1618,6 @@
    "ai": true
   },
   {
-   "id": "a5d4d7f31daa",
-   "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWU1MYTRpWmVYU2dfWXBkTjR3U3ZERnVWUGtMVkttTjFPT3JPUE43NUdIRE1KcHVzcEpRNHpDaHdHOXEzbHQxcEJEVkNYNGRnY2lhV0ctZFRvb19adzJLcENWLXlINk1DRkNSUl9LQWlrVlRDaFVhb3dSVWF6c1l3Y3NGd3dQdFR5Z2ZLQWlvMFNhV1dtQVIyNVF2SFQycm9iS1Y4dQ?oc=5",
-   "published": "2026-11-05T09:52:19+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWU1MYTRpWmVYU2dfWXBkTjR3U3ZERnVWUGtMVkttTjFPT3JPUE43NUdIRE1KcHVzcEpRNHpDaHdHOXEzbHQxcEJEVkNYNGRnY2lhV0ctZFRvb19adzJLcENWLXlINk1DRkNSUl9LQWlrVlRDaFVhb3dSVWF6c1l3Y3NGd3dQdFR5Z2ZLQWlvMFNhV1dtQVIyNVF2SFQycm9iS1Y4dQ?oc=5",
-     "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech"
-    }
-   ],
-   "ids": [
-    "a5d4d7f31daa"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "China bloqueia acordo de US$ 5,4 bi da SoftBank em robótica, em demonstração de controle sobre tecnologia de IA",
-   "category": "internacional",
-   "importance": 7,
-   "importance_reason": "Veto regulatório chinês a deal bilionário sinaliza risco para M&A cross-border em tecnologia.",
-   "summary": "Segundo o WSJ, a China bloqueou um negócio de robótica de US$ 5,4 bilhões da SoftBank. O trecho não traz detalhes sobre a contraparte ou o fundamento do veto.",
-   "involves": "SoftBank, governo chinês, setor de robótica e IA; US$ 5,4 bilhões.",
-   "interpretation": "Reforça que Pequim usa a aprovação antitruste/regulatória como instrumento de política tecnológica, em linha com a disputa EUA-China. Faltam detalhes no material disponível.",
-   "impact": "Aumenta o prêmio de risco regulatório em deals tecnológicos com exposição à China; negativo para SoftBank e para estruturas que dependem de aprovação em Pequim.",
-   "sentiment": "negativo",
-   "entities": [
-    "SoftBank",
-    "China",
-    "Wall Street Journal"
-   ],
-   "tags": [
-    "China",
-    "SoftBank",
-    "robótica",
-    "regulação"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "SoftBank",
-    "target": "negócio de robótica (detalhes não divulgados)",
-    "value": "US$ 5,4 bilhões",
-    "stage": "Cancelado",
-    "sector": "Robótica / IA",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "bcdfc266d470",
    "title": "De ‘credit crunch' a ‘moral hazard’: o que o CEO do Itaú disse a analistas sobre 2027",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWHB6SWRYZVhnRTN1MXIydFNsWUxseDBPcGxRb2dLNGVXSW82ZGlIako5TGptT1kwdmF4SmwzLVhZWEhvWW1LTVoxTTNFZjA0Mld2d1BTclN4OVQwOGJuZUVVcWwtS3M0TnpTeVpHVDI0MmlwTW85eDJlT2hBLVF6aVF0c0ZfdWwyWEFydGJVWGhsM1NNc2xPUW9ZT285ckxNbFJULVNpaU9Wcl8ybHNCZHV2VDlWV0hvdkRBWXZGbEsxZ9IB1gFBVV95cUxPLTBCeVBURnZoTDV0T19xMk1IUGNwcTlsWHZmYk9Dc0pSUVZwb2VLNDdFcUVvZFJhWDR5aTVwVzZadmlrT3Z4Vjd5bWZ6a3BUWEs0dDY5Q2VUNmJNWGZHYVNXM01KYTRQeXZUU3Y0M0lLSVNnQ2ZZR1pzYlhKVXhfUG4ySmpnTXpXOFNpMFczc2I1SGlHdlB5enFjc1hNbFhqTV9WUTRFb1U0NG90VHMwOVNrLThlc25INjZYNDhhTlkxNlllMFpTcTY0M0dpNzF4ZFRPUkRn?oc=5",
@@ -2481,64 +2431,6 @@
    "dup_of": "49d9f9dbe3c1"
   },
   {
-   "id": "6ab78fbe0024",
-   "title": "Saipem, Subsea7 Merger Approved in Brazil",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTTRRc1FoVnVpZlBUOTdmQm9fcWY5UjJMREhFeFdBdkNjNEpDOWdKcDM2Ny13eEtIcEpNV2R5SF9HNDNGU0ZoS1BWNWZ0bHdLUVJsVHNBSmZvcHh4bF9LdnJ0a1d0ZmZZOHNfSTVGZXAtYXhZSk12U2JpeUJucGlfdWJ6UWdRWHBkUUE?oc=5",
-   "published": "2026-11-04T17:34:26+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Offshore Engineer Magazine",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTTRRc1FoVnVpZlBUOTdmQm9fcWY5UjJMREhFeFdBdkNjNEpDOWdKcDM2Ny13eEtIcEpNV2R5SF9HNDNGU0ZoS1BWNWZ0bHdLUVJsVHNBSmZvcHh4bF9LdnJ0a1d0ZmZZOHNfSTVGZXAtYXhZSk12U2JpeUJucGlfdWJ6UWdRWHBkUUE?oc=5",
-     "title": "Saipem, Subsea7 Merger Approved in Brazil"
-    },
-    {
-     "source": "Upstream Online",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORFpLMTVBcWNIOXJNNkJ0T21NMFN2SUUxMjNFaWNXbzZBcklNejhFR0pOQmNCRmpjMWlzdGF2Z0pMWmQ4Vks1dEl2aEJEUGxCb1o5RWtBZFZNejA5YkxXT3lxYVdRUGVzbVc2dk1iWFpBQ1Y0S3Y1MUNIUGgxc194cnBWcENlSlNaUS1DQk9YcUtadUJGSDVfOXlWM241TzF6TVdVOEZmVjZ6bG8?oc=5",
-     "title": "Brazil antitrust watchdog approves Saipem-Subsea7 merger"
-    }
-   ],
-   "ids": [
-    "6ab78fbe0024",
-    "bc8ea6400760"
-   ],
-   "snippet": "",
-   "prescore": 6.7,
-   "headline": "Fusão Saipem-Subsea7 é aprovada no Brasil",
-   "category": "mna",
-   "importance": 6,
-   "importance_reason": "Fusão global de grande porte aprovada pelo Cade com remédio e resistência da Petrobras; coberta por muitos veículos.",
-   "summary": "A fusão entre Saipem e Subsea7 recebeu aprovação no Brasil, segundo veículos setoriais internacionais.",
-   "involves": "Saipem, Subsea7, Cade, Petrobras; receita combinada de cerca de € 21 bilhões",
-   "interpretation": "O Cade aprovou com restrições, exigindo a venda de uma embarcação offshore (citada como Seven Borealis), o que mostra preocupação concorrencial no mercado brasileiro de serviços submarinos, onde a Petrobras é cliente dominante. A aprovação remove um dos últimos obstáculos para a estreia da Saipem7.",
-   "impact": "Fusão consolida fornecedor global de infraestrutura offshore e dá poder de barganha frente à Petrobras. Concorrentes e fornecedores locais devem rever posicionamento; o remédio comportamental/estrutural vira precedente para operações no setor de óleo e gás.",
-   "sentiment": "misto",
-   "entities": [
-    "Saipem",
-    "Subsea7",
-    "Cade",
-    "Petrobras"
-   ],
-   "tags": [
-    "Cade",
-    "óleo e gás",
-    "offshore",
-    "fusão"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Fusão",
-    "buyer": "Saipem",
-    "target": "Subsea7",
-    "value": "receita combinada de cerca de € 21 bilhões (valor da transação não divulgado)",
-    "stage": "Aprovado pelo Cade (com restrições)",
-    "sector": "Óleo e gás / serviços offshore",
-    "advisors": "não divulgado"
-   },
-   "ai": true,
-   "dup_of": "49d9f9dbe3c1"
-  },
-  {
    "id": "d3aa9e4dadae",
    "title": "Brazil approves Saipem-Subsea 7 merger on condition of vessel sale",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRHAxbWc3THFqRlRsY0lFYVU2NDFwVXVMYlpkMFlnajhoWW81cHA1MjduS1dvN3VoMnV0NmlfN0huaGp1WjdSVnNXaTJHY1VxLUFfMzRmWEhOa0M3cDRudjhuWUVJM2JtVG9udVRWcUluUjdFRzZjQXVUUy1NSDBSSDJXVzBxVXhxeHhKakZkbFBxYWc?oc=5",
@@ -2732,6 +2624,58 @@
    "ai": true
   },
   {
+   "id": "6ab78fbe0024",
+   "title": "Saipem, Subsea7 Merger Approved in Brazil",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTTRRc1FoVnVpZlBUOTdmQm9fcWY5UjJMREhFeFdBdkNjNEpDOWdKcDM2Ny13eEtIcEpNV2R5SF9HNDNGU0ZoS1BWNWZ0bHdLUVJsVHNBSmZvcHh4bF9LdnJ0a1d0ZmZZOHNfSTVGZXAtYXhZSk12U2JpeUJucGlfdWJ6UWdRWHBkUUE?oc=5",
+   "published": "2026-11-05T08:46:51+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Offshore Engineer Magazine",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTTRRc1FoVnVpZlBUOTdmQm9fcWY5UjJMREhFeFdBdkNjNEpDOWdKcDM2Ny13eEtIcEpNV2R5SF9HNDNGU0ZoS1BWNWZ0bHdLUVJsVHNBSmZvcHh4bF9LdnJ0a1d0ZmZZOHNfSTVGZXAtYXhZSk12U2JpeUJucGlfdWJ6UWdRWHBkUUE?oc=5",
+     "title": "Saipem, Subsea7 Merger Approved in Brazil"
+    }
+   ],
+   "ids": [
+    "6ab78fbe0024"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Fusão Saipem-Subsea7 é aprovada no Brasil",
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Fusão global de grande porte aprovada pelo Cade com remédio e resistência da Petrobras; coberta por muitos veículos.",
+   "summary": "A fusão entre Saipem e Subsea7 recebeu aprovação no Brasil, segundo veículos setoriais internacionais.",
+   "involves": "Saipem, Subsea7, Cade, Petrobras; receita combinada de cerca de € 21 bilhões",
+   "interpretation": "O Cade aprovou com restrições, exigindo a venda de uma embarcação offshore (citada como Seven Borealis), o que mostra preocupação concorrencial no mercado brasileiro de serviços submarinos, onde a Petrobras é cliente dominante. A aprovação remove um dos últimos obstáculos para a estreia da Saipem7.",
+   "impact": "Fusão consolida fornecedor global de infraestrutura offshore e dá poder de barganha frente à Petrobras. Concorrentes e fornecedores locais devem rever posicionamento; o remédio comportamental/estrutural vira precedente para operações no setor de óleo e gás.",
+   "sentiment": "misto",
+   "entities": [
+    "Saipem",
+    "Subsea7",
+    "Cade",
+    "Petrobras"
+   ],
+   "tags": [
+    "Cade",
+    "óleo e gás",
+    "offshore",
+    "fusão"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Fusão",
+    "buyer": "Saipem",
+    "target": "Subsea7",
+    "value": "receita combinada de cerca de € 21 bilhões (valor da transação não divulgado)",
+    "stage": "Aprovado pelo Cade (com restrições)",
+    "sector": "Óleo e gás / serviços offshore",
+    "advisors": "não divulgado"
+   },
+   "ai": true,
+   "dup_of": "49d9f9dbe3c1"
+  },
+  {
    "id": "8118245f503a",
    "title": "Saipem7 closing in on its debut as Brazil clears Saipem-Subsea7 merger",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRkV6MVk1czBKOTJvRHc0UUVDSTRYODF2YlRrZVpZTmMwZ0ZQeUFmRGlKcE9PRGV1QmRjM0N6eTJwY1JOWHkydnJMa0FuVFRsd0xXTFhvZUFQZmRKeHdGcnVaMEpaY0ZsM2dvZXo5R2w5dTBSUVlWRFZsN1h2Y1NpOHFJQ2dDYk9tMUlzWUIxTmJJbFZBLUtLN1hCeWc0OTN5SHpFeUxoQU8yRkNjLUNibXVFdw?oc=5",
@@ -2877,53 +2821,6 @@
     "fiscal",
     "grau de investimento",
     "Itaú"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "4986e6c73137",
-   "title": "Fachin dá 15 dias para PGR se manifestar sobre indiciamento de Vorcaro e mais 14",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSjlkcDZNWkpmQ0gwX3EwV1RPUGtzUno4QzZXWjN1NUtYTWplaE42M3hVNE5GVEpXaklNY0o1WlhseTdsR2x5S2xlTlpRZkhUbTlWSUlka1lObVVqc01ZSk5NM3RIVHhOSGM5UVZTTXpOaENBTkxET2tUek5DLWNPbnA1M1NwQkc0a3R5ZHQta2J0TG1QY2xwZnNVcW8tTmoyaWc4eWJmYzdVSk5JSFhSazF0bmZTdFpQaTRFbWRkVkZiUDk3ZTlDUmFTMTZTdzREaGVtTdIB4wFBVV95cUxOMGc4dGlPWHlRZW5veU9pS1Y3blhuMHdtOXlEWlpCN3B3dGhUUG9PMUkzcUVtbTZBeWh6X2JuZWJqV245SFk3ZG9vbTYxbWtOMUIxa2xpYV9EMktFUzduRFU4MkNGRmlOaWthNmpmUE1Cb1dGOGw3RENpd0JPSkFLWTI5eEdpdW1sME1oaHo3ZEVfUGtCcHJMZ0dfbmxoSXpETDl5VFVVZ3FKNFBOcVJtR3lHVEpRWkd3V0lzWTVkTmcyQkJJTXZCbUpXbjQ4TFl1bE9MaTQ1R283Sk9DUDAzOEs3Yw?oc=5",
-   "published": "2026-11-05T00:11:41+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSjlkcDZNWkpmQ0gwX3EwV1RPUGtzUno4QzZXWjN1NUtYTWplaE42M3hVNE5GVEpXaklNY0o1WlhseTdsR2x5S2xlTlpRZkhUbTlWSUlka1lObVVqc01ZSk5NM3RIVHhOSGM5UVZTTXpOaENBTkxET2tUek5DLWNPbnA1M1NwQkc0a3R5ZHQta2J0TG1QY2xwZnNVcW8tTmoyaWc4eWJmYzdVSk5JSFhSazF0bmZTdFpQaTRFbWRkVkZiUDk3ZTlDUmFTMTZTdzREaGVtTdIB4wFBVV95cUxOMGc4dGlPWHlRZW5veU9pS1Y3blhuMHdtOXlEWlpCN3B3dGhUUG9PMUkzcUVtbTZBeWh6X2JuZWJqV245SFk3ZG9vbTYxbWtOMUIxa2xpYV9EMktFUzduRFU4MkNGRmlOaWthNmpmUE1Cb1dGOGw3RENpd0JPSkFLWTI5eEdpdW1sME1oaHo3ZEVfUGtCcHJMZ0dfbmxoSXpETDl5VFVVZ3FKNFBOcVJtR3lHVEpRWkd3V0lzWTVkTmcyQkJJTXZCbUpXbjQ4TFl1bE9MaTQ1R283Sk9DUDAzOEs3Yw?oc=5",
-     "title": "Fachin dá 15 dias para PGR se manifestar sobre indiciamento de Vorcaro e mais 14"
-    },
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/fachin-da-prazo-de-15-dias-para-pgr-se-manifestar-sobre-indiciamento-de-vorcaro/",
-     "title": "Fachin dá prazo de 15 dias para PGR se manifestar sobre indiciamento de Vorcaro"
-    }
-   ],
-   "ids": [
-    "4986e6c73137",
-    "578c9f3a2d96"
-   ],
-   "snippet": "Vorcaro está preso desde março enquanto é investigado por fraude contra o sistema financeiro nacional na emissão de títulos falsos The post Fachin dá prazo de 15 dias para PGR se manifestar sobre indiciamento de Vorcaro appeared first on InfoMoney .",
-   "prescore": 4.3,
-   "headline": "Fachin dá 15 dias para PGR se manifestar sobre indiciamento de Vorcaro e mais 14",
-   "category": "politica",
-   "importance": 6,
-   "importance_reason": "Caso de alto perfil no sistema financeiro.",
-   "summary": "O ministro Edson Fachin deu 15 dias à PGR para se manifestar sobre o indiciamento de Daniel Vorcaro e outras 14 pessoas.",
-   "involves": "Edson Fachin, PGR, Daniel Vorcaro",
-   "interpretation": "Avanço do caso envolvendo Vorcaro, ligado ao Banco Master, mantém risco jurídico e reputacional no sistema financeiro.",
-   "impact": "Atenção a efeitos sobre FGC, bancos médios e eventuais ativos em venda ligados ao grupo.",
-   "sentiment": "negativo",
-   "entities": [
-    "Edson Fachin",
-    "PGR",
-    "Daniel Vorcaro"
-   ],
-   "tags": [
-    "STF",
-    "Vorcaro",
-    "Banco Master"
    ],
    "is_deal": false,
    "deal": null,
@@ -3423,6 +3320,53 @@
    "ai": true
   },
   {
+   "id": "d295164781dc",
+   "title": "Vó Alzira quer crescer o bolo antes de vender outra fatia",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbGhNSXVfQUpKOXRPM0ZNTmZxRW1BSTRvNDBiV3kwUUlPb1FWZHRiTHBEcVktX1BnZFA4VnN1ZU9INkIyNHZBUWtidjZSWXJVa1RMbEN2S25vRm9QdzNBdUd5ZFd6LVpGQzZIaXNEbmV2WGZmdVlJdmlRMjFiQjdON1JvMEd2RGQxVktRdUpiQzlIT3hGUzlISF9lTUNlTjFGRmlEYWxSWkN2Y2ZlNlUzbNIBvwFBVV95cUxOQUY2NGFlTkJXeXhRV2owVTRjY201RmFycl9wTUF5SjN1QkJ4NU1sWXFyQmlWM0Z1d2tUcVNJSmJIdFNPc0g1N3MwaEcwMnR3aWg4MVNmNjBaZXotVHhPUUNwdHJhYjgyVGRtQ1JhTU9QUVJvLWhBSzlXUEZwSC1LdVh0YThpdGExMTlMQkpiNjdIeUZuNy1lT3YtX0poYnVqQzByTG4tb25TZGNmdkZpeWZnZTR3RFVnd180cXprWQ?oc=5",
+   "published": "2026-11-05T10:00:01+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Pipeline (Valor)",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbGhNSXVfQUpKOXRPM0ZNTmZxRW1BSTRvNDBiV3kwUUlPb1FWZHRiTHBEcVktX1BnZFA4VnN1ZU9INkIyNHZBUWtidjZSWXJVa1RMbEN2S25vRm9QdzNBdUd5ZFd6LVpGQzZIaXNEbmV2WGZmdVlJdmlRMjFiQjdON1JvMEd2RGQxVktRdUpiQzlIT3hGUzlISF9lTUNlTjFGRmlEYWxSWkN2Y2ZlNlUzbNIBvwFBVV95cUxOQUY2NGFlTkJXeXhRV2owVTRjY201RmFycl9wTUF5SjN1QkJ4NU1sWXFyQmlWM0Z1d2tUcVNJSmJIdFNPc0g1N3MwaEcwMnR3aWg4MVNmNjBaZXotVHhPUUNwdHJhYjgyVGRtQ1JhTU9QUVJvLWhBSzlXUEZwSC1LdVh0YThpdGExMTlMQkpiNjdIeUZuNy1lT3YtX0poYnVqQzByTG4tb25TZGNmdkZpeWZnZTR3RFVnd180cXprWQ?oc=5",
+     "title": "Vó Alzira quer crescer o bolo antes de vender outra fatia"
+    }
+   ],
+   "ids": [
+    "d295164781dc"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Vó Alzira quer crescer o bolo antes de vender outra fatia",
+   "category": "mna",
+   "importance": 6,
+   "importance_reason": "Sinaliza possível nova venda de participação em marca de alimentos.",
+   "summary": "O Pipeline (Valor) indica que a Vó Alzira quer crescer antes de vender outra participação. O texto não traz valores ou participantes.",
+   "involves": "Vó Alzira, acionistas, investidores.",
+   "interpretation": "A frase sugere nova rodada de venda adiada até haver mais escala, para melhorar a avaliação.",
+   "impact": "Possível oportunidade para investidores de consumo e alimentos no médio prazo.",
+   "sentiment": "neutro",
+   "entities": [
+    "Vó Alzira",
+    "Pipeline (Valor)"
+   ],
+   "tags": [
+    "Vó Alzira",
+    "alimentos",
+    "venda"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "lead": {
+    "signal": "Entrada de investidor",
+    "company": "Vó Alzira",
+    "counterparty": "não divulgado",
+    "advisors": "não divulgado",
+    "why": "A companhia admite vender outra fatia do capital após crescer, o que indica uma futura entrada de investidor. Fundos de PE e estratégicos de alimentos fariam sentido para abordagem."
+   },
+   "ai": true
+  },
+  {
    "id": "af3c2c0728ff",
    "title": "Porto prevê 'PIB zero' em 2027 e reforça proteção contra calotes em R$ 300 milhões",
    "link": "https://exame.com/invest/mercados/porto-preve-pib-zero-em-2027-e-reforca-protecao-contra-calotes-em-r-300-milhoes/",
@@ -3585,45 +3529,6 @@
    "ai": true
   },
   {
-   "id": "9ea7416e3803",
-   "title": "BOE Set to Hike Rates for First Time in Three Years",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-05/boe-set-to-hike-rates-for-first-time-three-years-video",
-   "published": "2026-11-05T07:50:30+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-05/boe-set-to-hike-rates-for-first-time-three-years-video",
-     "title": "BOE Set to Hike Rates for First Time in Three Years"
-    }
-   ],
-   "ids": [
-    "9ea7416e3803"
-   ],
-   "snippet": "The Bank of England looks ready to raise interest rates by a quarter point to 4%, its first hike in more than three years. Ana Andrade of Bloomberg Economics has a preview of the decision. (Source: Bloomberg)",
-   "prescore": 2.8,
-   "headline": "Banco da Inglaterra deve subir juros para 4% pela primeira vez em mais de três anos",
-   "category": "macro",
-   "importance": 6,
-   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
-   "summary": "O BoE parece pronto para elevar os juros em 25 pb, para 4%, na primeira alta em mais de três anos, segundo economista da Bloomberg Economics.",
-   "involves": "Bank of England",
-   "interpretation": "Alta num contexto de pressão de energia sugere que o ciclo global de afrouxamento está se invertendo em parte dos desenvolvidos.",
-   "impact": "Pressão sobre gilts e libra; sinal de juros globais mais altos por mais tempo, negativo para emergentes e para financiamento de LBOs.",
-   "sentiment": "negativo",
-   "entities": [
-    "Bank of England"
-   ],
-   "tags": [
-    "BoE",
-    "Juros",
-    "Reino Unido"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "a109628321f9",
    "title": "Fim da escala 6x1: O que fazer se a empresa não respeitar a nova jornada? Veja como denunciar",
    "link": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/11/05/fim-da-escala-6x1-veja-como-denunciar-empresa-que-nao-respeitar-a-nova-jornada.ghtml",
@@ -3705,6 +3610,47 @@
    "ai": true
   },
   {
+   "id": "4986e6c73137",
+   "title": "Fachin dá 15 dias para PGR se manifestar sobre indiciamento de Vorcaro e mais 14",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSjlkcDZNWkpmQ0gwX3EwV1RPUGtzUno4QzZXWjN1NUtYTWplaE42M3hVNE5GVEpXaklNY0o1WlhseTdsR2x5S2xlTlpRZkhUbTlWSUlka1lObVVqc01ZSk5NM3RIVHhOSGM5UVZTTXpOaENBTkxET2tUek5DLWNPbnA1M1NwQkc0a3R5ZHQta2J0TG1QY2xwZnNVcW8tTmoyaWc4eWJmYzdVSk5JSFhSazF0bmZTdFpQaTRFbWRkVkZiUDk3ZTlDUmFTMTZTdzREaGVtTdIB4wFBVV95cUxOMGc4dGlPWHlRZW5veU9pS1Y3blhuMHdtOXlEWlpCN3B3dGhUUG9PMUkzcUVtbTZBeWh6X2JuZWJqV245SFk3ZG9vbTYxbWtOMUIxa2xpYV9EMktFUzduRFU4MkNGRmlOaWthNmpmUE1Cb1dGOGw3RENpd0JPSkFLWTI5eEdpdW1sME1oaHo3ZEVfUGtCcHJMZ0dfbmxoSXpETDl5VFVVZ3FKNFBOcVJtR3lHVEpRWkd3V0lzWTVkTmcyQkJJTXZCbUpXbjQ4TFl1bE9MaTQ1R283Sk9DUDAzOEs3Yw?oc=5",
+   "published": "2026-11-05T00:11:41+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSjlkcDZNWkpmQ0gwX3EwV1RPUGtzUno4QzZXWjN1NUtYTWplaE42M3hVNE5GVEpXaklNY0o1WlhseTdsR2x5S2xlTlpRZkhUbTlWSUlka1lObVVqc01ZSk5NM3RIVHhOSGM5UVZTTXpOaENBTkxET2tUek5DLWNPbnA1M1NwQkc0a3R5ZHQta2J0TG1QY2xwZnNVcW8tTmoyaWc4eWJmYzdVSk5JSFhSazF0bmZTdFpQaTRFbWRkVkZiUDk3ZTlDUmFTMTZTdzREaGVtTdIB4wFBVV95cUxOMGc4dGlPWHlRZW5veU9pS1Y3blhuMHdtOXlEWlpCN3B3dGhUUG9PMUkzcUVtbTZBeWh6X2JuZWJqV245SFk3ZG9vbTYxbWtOMUIxa2xpYV9EMktFUzduRFU4MkNGRmlOaWthNmpmUE1Cb1dGOGw3RENpd0JPSkFLWTI5eEdpdW1sME1oaHo3ZEVfUGtCcHJMZ0dfbmxoSXpETDl5VFVVZ3FKNFBOcVJtR3lHVEpRWkd3V0lzWTVkTmcyQkJJTXZCbUpXbjQ4TFl1bE9MaTQ1R283Sk9DUDAzOEs3Yw?oc=5",
+     "title": "Fachin dá 15 dias para PGR se manifestar sobre indiciamento de Vorcaro e mais 14"
+    }
+   ],
+   "ids": [
+    "4986e6c73137"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Fachin dá 15 dias para PGR se manifestar sobre indiciamento de Vorcaro e mais 14",
+   "category": "politica",
+   "importance": 6,
+   "importance_reason": "Caso de alto perfil no sistema financeiro.",
+   "summary": "O ministro Edson Fachin deu 15 dias à PGR para se manifestar sobre o indiciamento de Daniel Vorcaro e outras 14 pessoas.",
+   "involves": "Edson Fachin, PGR, Daniel Vorcaro",
+   "interpretation": "Avanço do caso envolvendo Vorcaro, ligado ao Banco Master, mantém risco jurídico e reputacional no sistema financeiro.",
+   "impact": "Atenção a efeitos sobre FGC, bancos médios e eventuais ativos em venda ligados ao grupo.",
+   "sentiment": "negativo",
+   "entities": [
+    "Edson Fachin",
+    "PGR",
+    "Daniel Vorcaro"
+   ],
+   "tags": [
+    "STF",
+    "Vorcaro",
+    "Banco Master"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "40648de14c0f",
    "title": "Lucro da CBA cresce 367% no 3º trimestre",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTEVuY2pBdkVLd1BYS3RhTGNvVlA4M045bWVfa3VKcndEaVp4VEs0U1hQOUhfTWhRaVFBYzRBMWUxOVlTVjZrdFJwWG9LTzFtS3VfUUp0TVNWelFOZ0pWZTZWRTRLYlRfMDVmOEtnOEhqOFlNVU5rQUppTEJFblZQZnNkcWs3a2xvRUNLOHppdFdGNXR0enhMMnhGQ1ZOZnA4MnRlbXN5VdIBtgFBVV95cUxQb2xjTGtnUDNfYXVzQ21iUFhaX0dzOVpFQ0dCODVPRjNRZTRYSDhIYlRlbWZEZ3lOM2NLd2g2QUQxRUhIcXk1M24zZm4zTFl0Mnc5MzFKblA2UDNXQUc2T3NCM0lZeWRBTVlLWTF4M3c5RzBNbDJVTnBBYjFaT0I0S2U4NV9sdEcyWWVvUVFranQ2Nzlub1RvSDNEMVFwOFE3U1FOV25XZExMb3YybXNsNi1DdGtkdw?oc=5",
@@ -3760,7 +3706,7 @@
    "ids": [
     "bfb014673182"
    ],
-   "snippet": "Brent oil held near a two-month low after tumbling almost 9% in the previous session as investors bet that a Democratic sweep in the US midterm elections could accelerate efforts to end the war in the Middle East.",
+   "snippet": "Brent crude rose from a two-month low after tumbling almost 9% in the previous session as investors bet that a Democratic sweep in the US midterm elections could accelerate efforts to end the war in the Middle East.",
    "prescore": 2.8,
    "headline": "Petróleo: Brent perto de mínima de dois meses após queda de quase 9%",
    "category": "mercados",
@@ -3909,7 +3855,7 @@
    "id": "fef8d7463cbf",
    "title": "Oil Prices Rise but Stay Below $100 as Traders Weigh Iran Diplomacy, Supply Outlook",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNFRHX3ZFOFQ1SHJRd3R1M0R5dU4zY1NnckI5ODFjRmtWQUVXOC1WRTJiQTBYTEVEbWJlOW94WlF3a1R2aUVMLXg3VnJ0aVZrQktIZHpmZnNpTWktYVgyZXVNMGVpRGdjSlhfRDhQSHczQ3BDdWhybUx2c043YmQwdkRuWW9WeGE3amVpZFE2VEVDTlRxZktZc0JLSFRxdnplcUxUdVhuZm5Bbl9nb3Q3aW0xdFFDam1XcEstMVFB?oc=5",
-   "published": "2026-11-05T10:38:00+00:00",
+   "published": "2026-11-05T10:44:53+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -4478,6 +4424,88 @@
    "ai": true
   },
   {
+   "id": "a409f7e5810f",
+   "title": "CADE Reaches Agreement and Approves Merger Between Saipem and Subsea7",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYjlVaDkwdGRPRVFyYjRoSnBndWduVW1CMjQ5Mll5SU1pa2JwUlc5SGtfa1pQVFhSM043TWp5LWtzYk4teTNQM3RROE5zVUhrd3JaS2xtdGlHekk2RmNzT0RrMkR0Unp0U01qczNtczRoMnBYczZLQ1l6RFptbkM2SmhGU0Q0aFc5SEM1R3QzaTBGcHNLS0hwWU43aURsdFVpSFhmTVB6UjdMY1NDYUE?oc=5",
+   "published": "2026-11-04T15:14:33+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "www.gov.br",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYjlVaDkwdGRPRVFyYjRoSnBndWduVW1CMjQ5Mll5SU1pa2JwUlc5SGtfa1pQVFhSM043TWp5LWtzYk4teTNQM3RROE5zVUhrd3JaS2xtdGlHekk2RmNzT0RrMkR0Unp0U01qczNtczRoMnBYczZLQ1l6RFptbkM2SmhGU0Q0aFc5SEM1R3QzaTBGcHNLS0hwWU43aURsdFVpSFhmTVB6UjdMY1NDYUE?oc=5",
+     "title": "CADE Reaches Agreement and Approves Merger Between Saipem and Subsea7"
+    }
+   ],
+   "ids": [
+    "a409f7e5810f"
+   ],
+   "snippet": "",
+   "prescore": 8.2,
+   "headline": "CADE Reaches Agreement and Approves Merger Between Saipem and Subsea7",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [
+    "Copom",
+    "Banco Central",
+    "Lula"
+   ],
+   "tags": [
+    "Copom",
+    "Selic",
+    "juros"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "cef08b5a525f",
+   "title": "Brasil amplia distância e segue com o maior juro real do mundo após Copom manter Selic; veja ranking",
+   "link": "https://g1.globo.com/economia/noticia/2026/11/04/ranking-juro-real-novembro.ghtml",
+   "published": "2026-11-04T21:31:45+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/04/ranking-juro-real-novembro.ghtml",
+     "title": "Brasil amplia distância e segue com o maior juro real do mundo após Copom manter Selic; veja ranking"
+    }
+   ],
+   "ids": [
+    "cef08b5a525f"
+   ],
+   "snippet": "Copom mantém taxa básica de juros da economia em 13,75% ao ano O Brasil ampliou a distância para o segundo colocado e segue com o maior juro real do mundo após o Comitê de Política Monetária (Copom) do Banco Central (BC) manter a Selic em 13,75% ao ano nesta quarta-feira (4). 🔎 O juro real é formado, entre outros pontos, pela taxa de juros nominal subtraída da inflação prevista para os próximos 12 meses. Assim, segundo levantamento compilado pelo MoneYou, o indicador no país ficou em 9,49%. 📱Favorite o g1 no Google e acompanhe as principais notícias do dia A Turquia passou a ocupar a segunda c",
+   "prescore": 8.8,
+   "headline": "Brasil amplia distância e segue com maior juro real do mundo após Copom",
+   "category": "macro",
+   "importance": 5,
+   "importance_reason": "Dado de contexto, sem mudança de rumo.",
+   "summary": "Segundo o ranking, o Brasil ampliou a distância para o segundo colocado e segue com o maior juro real do mundo após a manutenção da Selic.",
+   "involves": "Copom, Banco Central, Selic a 13,75% ao ano",
+   "interpretation": "Decisão em linha com o esperado, mas encerra o ciclo de cortes após cinco reuniões, em meio a turbulência nos mercados, piora das projeções locais e primeira reunião pós-reeleição de Lula. O rumo futuro depende mais da política fiscal do governo do que do BC.",
+   "impact": "Juro real elevado segue pressionando valuations e o custo de capital, o que adia IPOs e follow-ons e reforça a atratividade da renda fixa pós-fixada; favorece caixa e ativos indexados e é negativo para empresas alavancadas e para o ritmo de M&A financiado por dívida.",
+   "sentiment": "neutro",
+   "entities": [
+    "Copom",
+    "Banco Central",
+    "Lula"
+   ],
+   "tags": [
+    "Copom",
+    "Selic",
+    "juros"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "60ae5e929b81",
    "title": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
    "link": "https://exame.com/invest/mercados/ibovespa-ensaia-recuperacao-apos-seis-quedas-com-bom-humor-global-em-dia-de-copom/",
@@ -4510,52 +4538,6 @@
    "tags": [
     "Ibovespa",
     "midterms"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "e3ad7530cd73",
-   "title": "Eve, da Embraer, fecha acordo com startup FlyBIS para venda de até 12 ‘carros voadores’",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbVMyVHhVTGMwaHlEQXJQM1lNSlJRVm5LUWpBMUFlcnZyLUdmX0t2Zk8wNEVjdVdZNFgyRWNvQmZoR1FJZGVxVzdiRDM2MV9lR2VzTFJXdTR4TkpnTFZsNTg1Q18tcGdoVEljUHhpSXlhclpNQTE2ZVh1SHFaS2Rra05FME8xcHR0T1NudUtlaVgyaURVSFIySXoxMmnSAaIBQVVfeXFMT1E0UldTdkRMc2U2dldtbEtXajNVYm9fTVZRS3F0cHgtUlV2alZhdzlzeDZxMENfV1BRaGJHTlFVMlQyX1FwV3BHNHFoSURlYXM3aFdZUnpfZ0hSRlhacnVicEQ4aVJjVW5KLVdibU9nQ1BtTG12Z0hxRW9iOUlRSHZtaTJndjhHQmRPcjVEZnRUeDFvSFhfR1RJRzB1alZxMDB3?oc=5",
-   "published": "2026-11-04T13:18:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbVMyVHhVTGMwaHlEQXJQM1lNSlJRVm5LUWpBMUFlcnZyLUdmX0t2Zk8wNEVjdVdZNFgyRWNvQmZoR1FJZGVxVzdiRDM2MV9lR2VzTFJXdTR4TkpnTFZsNTg1Q18tcGdoVEljUHhpSXlhclpNQTE2ZVh1SHFaS2Rra05FME8xcHR0T1NudUtlaVgyaURVSFIySXoxMmnSAaIBQVVfeXFMT1E0UldTdkRMc2U2dldtbEtXajNVYm9fTVZRS3F0cHgtUlV2alZhdzlzeDZxMENfV1BRaGJHTlFVMlQyX1FwV3BHNHFoSURlYXM3aFdZUnpfZ0hSRlhacnVicEQ4aVJjVW5KLVdibU9nQ1BtTG12Z0hxRW9iOUlRSHZtaTJndjhHQmRPcjVEZnRUeDFvSFhfR1RJRzB1alZxMDB3?oc=5",
-     "title": "Eve, da Embraer, fecha acordo com startup FlyBIS para venda de até 12 ‘carros voadores’"
-    },
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/eve-da-embraer-fecha-acordo-de-venda-de-ate-12-carros-voadores-para-startup-flybis.shtml",
-     "title": "Eve, da Embraer, fecha acordo de venda de até 12 carros voadores para startup Flybis"
-    }
-   ],
-   "ids": [
-    "e3ad7530cd73",
-    "239be0b004ef"
-   ],
-   "snippet": "A startup brasileira Flybis fechou acordo com a Eve, da Embraer , para aquisição de até 12 eVTOLs (aeronaves de pouso e decolagem na vertical, também conhecidas como carros voadores). O acordo inclui dois pedidos firmes e direitos de compra para dez unidades adicionais. Leia mais (11/04/2026 - 12h02)",
-   "prescore": 6.7,
-   "headline": "Eve, da Embraer, fecha acordo de até 12 eVTOLs com a startup Flybis",
-   "category": "empresas",
-   "importance": 5,
-   "importance_reason": "Pedido relevante para a Eve, mas pequeno em escala.",
-   "summary": "A startup brasileira Flybis fechou acordo com a Eve, da Embraer, para até 12 eVTOLs, com dois pedidos firmes e direitos para os demais.",
-   "involves": "Eve, Embraer, Flybis",
-   "interpretation": "Reforça a carteira de pedidos da Eve, ainda pré-operacional.",
-   "impact": "Positivo para a Eve e para o ecossistema de mobilidade aérea no Brasil.",
-   "sentiment": "positivo",
-   "entities": [
-    "Eve",
-    "Embraer",
-    "Flybis"
-   ],
-   "tags": [
-    "Embraer",
-    "eVTOL"
    ],
    "is_deal": false,
    "deal": null,
@@ -4619,7 +4601,7 @@
    "id": "071193bbe0e6",
    "title": "OpenAI to Bring Pierre Computer’s Code Storage to Codex Through Acquisition",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMHB3WDNrSi01NF8zXzUyZWdSb0U0ZUZyVlZWUF9jeVBfeHVTNkpESjFRSk1FWTk1aFZNcVl2LTRXdlpnR2N5eTRURXJMZkVRM0o5dlVSZWRuY0dVc2ZRTGRLb3M1WVZjRk54Z0doRGt2MVlDTURZaHR6LWpPR3RiT0FmU19vWWd6dE5iY3FLOWozZkNhSHJENktiRGtmc3dJM2xXSDFyOFNlM0N2b2FLWQ?oc=5",
-   "published": "2026-11-04T18:34:11+00:00",
+   "published": "2026-11-04T17:24:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -4888,45 +4870,6 @@
    "ai": true
   },
   {
-   "id": "867c2447f391",
-   "title": "China’s Copper Squeeze Deepens as Buyers Scramble For Metal",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-05/china-s-copper-squeeze-deepens-as-buyers-scramble-for-spot-metal",
-   "published": "2026-11-05T02:30:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-05/china-s-copper-squeeze-deepens-as-buyers-scramble-for-spot-metal",
-     "title": "China’s Copper Squeeze Deepens as Buyers Scramble For Metal"
-    }
-   ],
-   "ids": [
-    "867c2447f391"
-   ],
-   "snippet": "Copper buyers in China are scrambling for physical metal, with spot premiums soaring as supplies tighten sharply in the world’s biggest consumer.",
-   "prescore": 3.8,
-   "headline": "Aperto de cobre na China se agrava com compradores atrás de metal físico",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Commodity relevante para mineração.",
-   "summary": "Compradores chineses disputam cobre físico e os prêmios spot sobem com a oferta mais apertada.",
-   "involves": "Compradores de cobre na China.",
-   "interpretation": "Sinal de demanda forte e estoque curto.",
-   "impact": "Favorece produtores e a tese de mineração.",
-   "sentiment": "misto",
-   "entities": [
-    "China"
-   ],
-   "tags": [
-    "cobre",
-    "China",
-    "commodities"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "e6738c5ac422",
    "title": "'Creio que governo Lula deu demonstrações importantíssimas de confiança para os mercados', diz Botín, do Santander",
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQMEdhdzhOZG9EQjVFQ1JRUEdHbU1LV1Jxa244d1hwZFZ5cm5ZX1BmRk5ndHJzcTFtZTkyS2dZM0J2bEhPaC1uWUd3b3c1bWc0a3lha2c3cktVblZKbDdVMkVCbHYxNG1NeVJYaGZRZWVoeWpTalU0NTdEOUdISHh5U0otRUJTTUZfcjdaRENMRmV4UVh2MjFMYUJzZmhlUlZIUHRCYld3VUhaWWNBX2JoWS1ybjhJb29mdlVHNjRYcW5qWWhsS2E1TzFHM2hpQy02NUZZMTliZW83ajVjR0RkbGVqaTZBSVBDNXVSZnhlZmRZQkdDeURWSVFVcErSAYsCQVVfeXFMT0J3RWdWQVE2VkFVdTNfQ0tWNzhtbE1DZmI4UlVFOGV3cjNVc2liVkhWNmlVNXh5dzR0eG0tNlIxbjBWTWVPaWI2QmV1QW4xdEFkc1B4eGg5aGdEcVpwRmVQTjg3NmtNZVRRUk9IZVhsbFFOWi1sd3VaTTJxaDZaM3o5QVJOcFdVeU5HR3B5S29GYUtEbnBNNVZVUE5MV09ITnc3RGtlQzMxZ3Z0THNIa0VKLWd4MDRMWGlicU5HMmc2LVBJbXhONlVBVUVoTktBNUc2QjhhODE1djZjc3AyOEtZMk1fVnVTV2FGamxNUml4SVNKVXNIYi1FeHNyM09majdvbmNVaWRvS2Y4?oc=5",
@@ -5056,47 +4999,6 @@
     "Ásia",
     "bolsas",
     "eleições EUA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "7c1456107710",
-   "title": "Stock Rotation Hits Chips, Boosts China",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-05/stock-rotation-hits-chips-boosts-china-video",
-   "published": "2026-11-05T06:37:10+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-05/stock-rotation-hits-chips-boosts-china-video",
-     "title": "Stock Rotation Hits Chips, Boosts China"
-    }
-   ],
-   "ids": [
-    "7c1456107710"
-   ],
-   "snippet": "A stock-rotation trade fueled by the US midterm elections swept Asia, denting regional chipmakers and boosting unfavored markets from China to Australia. Bloomberg's Anthony Stephens reports. (Source: Bloomberg)",
-   "prescore": 3.4,
-   "headline": "Rotação de ações atinge chips na Ásia e favorece a China",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Mostra reprecificação do trade de IA após as eleições americanas.",
-   "summary": "Uma rotação nas bolsas, impulsionada pelas eleições de meio de mandato nos EUA, derrubou fabricantes de chips asiáticos e favoreceu mercados menos queridos, da China à Austrália.",
-   "involves": "Fabricantes de chips asiáticos, bolsas da China e da Austrália.",
-   "interpretation": "Sugere que investidores reduzem exposição a IA e migram para mercados baratos.",
-   "impact": "Positivo para emergentes não ligados a tecnologia; negativo para semicondutores.",
-   "sentiment": "misto",
-   "entities": [
-    "Bloomberg",
-    "China",
-    "Austrália"
-   ],
-   "tags": [
-    "rotação",
-    "chips",
-    "Ásia"
    ],
    "is_deal": false,
    "deal": null,
@@ -5507,7 +5409,7 @@
   },
   {
    "id": "8d9d77161f50",
-   "title": "Stock Rotation Rolls On as Chipmakers Retreat: Markets Wrap",
+   "title": "Stock Rotation Rolls On as Chipmakers Lose Ground: Markets Wrap",
    "link": "https://www.bloomberg.com/news/articles/2026-11-04/stock-market-today-dow-s-p-live-updates",
    "published": "2026-11-04T22:15:04+00:00",
    "region": "INTL",
@@ -5515,7 +5417,7 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-04/stock-market-today-dow-s-p-live-updates",
-     "title": "Stock Rotation Rolls On as Chipmakers Retreat: Markets Wrap"
+     "title": "Stock Rotation Rolls On as Chipmakers Lose Ground: Markets Wrap"
     }
    ],
    "ids": [
@@ -6106,45 +6008,6 @@
     "sector": "Petróleo e gás",
     "advisors": "não divulgado"
    },
-   "ai": true
-  },
-  {
-   "id": "5a10966add39",
-   "title": "Gold Climbs to Two-Week High on Softer Dollar, Falling Treasury Yields After U.S. Midterms",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOcFI3cFhBdGVIM0ZjZXphYkZOaEd6S0txd2wyYV9UcG5KN1R5a2daV001ZXVYZzZuV0F3ajJ4NXk0dnRRRWFZYUhQY0JzQkU1NkR3R3pRdkpWNTE0YjBIWUw2UDFta2NnWWVfNGpoS1VkOUY2VEhMREYtY3BaY3dDc0JpZGZEUHA5akJjcTVfLVFvTXBZdnhlcFhKVQ?oc=5",
-   "published": "2026-11-05T08:16:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOcFI3cFhBdGVIM0ZjZXphYkZOaEd6S0txd2wyYV9UcG5KN1R5a2daV001ZXVYZzZuV0F3ajJ4NXk0dnRRRWFZYUhQY0JzQkU1NkR3R3pRdkpWNTE0YjBIWUw2UDFta2NnWWVfNGpoS1VkOUY2VEhMREYtY3BaY3dDc0JpZGZEUHA5akJjcTVfLVFvTXBZdnhlcFhKVQ?oc=5",
-     "title": "Gold Climbs to Two-Week High on Softer Dollar, Falling Treasury Yields After U.S. Midterms"
-    }
-   ],
-   "ids": [
-    "5a10966add39"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Ouro sobe a máxima de duas semanas com dólar fraco e queda de juros após midterms",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Movimento de safe haven e dólar.",
-   "summary": "O ouro atingiu a máxima em duas semanas com dólar mais fraco e queda dos yields após as eleições.",
-   "involves": "Ouro, dólar, Treasuries.",
-   "interpretation": "Reflete menos prêmio de juros e dólar fraco.",
-   "impact": "Favorável a mineradoras de ouro e ao real.",
-   "sentiment": "positivo",
-   "entities": [
-    "Ouro"
-   ],
-   "tags": [
-    "ouro",
-    "dólar",
-    "juros"
-   ],
-   "is_deal": false,
-   "deal": null,
    "ai": true
   },
   {
@@ -6739,6 +6602,46 @@
    "ai": true
   },
   {
+   "id": "e3ad7530cd73",
+   "title": "Eve, da Embraer, fecha acordo com startup FlyBIS para venda de até 12 ‘carros voadores’",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbVMyVHhVTGMwaHlEQXJQM1lNSlJRVm5LUWpBMUFlcnZyLUdmX0t2Zk8wNEVjdVdZNFgyRWNvQmZoR1FJZGVxVzdiRDM2MV9lR2VzTFJXdTR4TkpnTFZsNTg1Q18tcGdoVEljUHhpSXlhclpNQTE2ZVh1SHFaS2Rra05FME8xcHR0T1NudUtlaVgyaURVSFIySXoxMmnSAaIBQVVfeXFMT1E0UldTdkRMc2U2dldtbEtXajNVYm9fTVZRS3F0cHgtUlV2alZhdzlzeDZxMENfV1BRaGJHTlFVMlQyX1FwV3BHNHFoSURlYXM3aFdZUnpfZ0hSRlhacnVicEQ4aVJjVW5KLVdibU9nQ1BtTG12Z0hxRW9iOUlRSHZtaTJndjhHQmRPcjVEZnRUeDFvSFhfR1RJRzB1alZxMDB3?oc=5",
+   "published": "2026-11-04T13:18:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbVMyVHhVTGMwaHlEQXJQM1lNSlJRVm5LUWpBMUFlcnZyLUdmX0t2Zk8wNEVjdVdZNFgyRWNvQmZoR1FJZGVxVzdiRDM2MV9lR2VzTFJXdTR4TkpnTFZsNTg1Q18tcGdoVEljUHhpSXlhclpNQTE2ZVh1SHFaS2Rra05FME8xcHR0T1NudUtlaVgyaURVSFIySXoxMmnSAaIBQVVfeXFMT1E0UldTdkRMc2U2dldtbEtXajNVYm9fTVZRS3F0cHgtUlV2alZhdzlzeDZxMENfV1BRaGJHTlFVMlQyX1FwV3BHNHFoSURlYXM3aFdZUnpfZ0hSRlhacnVicEQ4aVJjVW5KLVdibU9nQ1BtTG12Z0hxRW9iOUlRSHZtaTJndjhHQmRPcjVEZnRUeDFvSFhfR1RJRzB1alZxMDB3?oc=5",
+     "title": "Eve, da Embraer, fecha acordo com startup FlyBIS para venda de até 12 ‘carros voadores’"
+    }
+   ],
+   "ids": [
+    "e3ad7530cd73"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Eve, da Embraer, fecha acordo de até 12 eVTOLs com a startup Flybis",
+   "category": "empresas",
+   "importance": 5,
+   "importance_reason": "Pedido relevante para a Eve, mas pequeno em escala.",
+   "summary": "A startup brasileira Flybis fechou acordo com a Eve, da Embraer, para até 12 eVTOLs, com dois pedidos firmes e direitos para os demais.",
+   "involves": "Eve, Embraer, Flybis",
+   "interpretation": "Reforça a carteira de pedidos da Eve, ainda pré-operacional.",
+   "impact": "Positivo para a Eve e para o ecossistema de mobilidade aérea no Brasil.",
+   "sentiment": "positivo",
+   "entities": [
+    "Eve",
+    "Embraer",
+    "Flybis"
+   ],
+   "tags": [
+    "Embraer",
+    "eVTOL"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "5f395aa477fa",
    "title": "Selic em 13,75% mantém atratividade da renda fixa pós-fixada; veja como ficam os investimentos",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/selic-em-1375-mantem-atratividade-da-renda-fixa-pos-fixada-veja-como-ficam-os-investimentos.shtml",
@@ -6771,44 +6674,6 @@
    "tags": [
     "renda fixa",
     "Selic"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "f4b1612eb9d1",
-   "title": "Agenda econômica: o que pode mexer com a Bolsa e o dólar nesta quinta-feira (5)",
-   "link": "https://www.moneytimes.com.br/agenda-economica-o-que-pode-mexer-com-a-bolsa-e-o-dolar-nesta-quinta-feira-mlem-2/",
-   "published": "2026-11-05T09:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/agenda-economica-o-que-pode-mexer-com-a-bolsa-e-o-dolar-nesta-quinta-feira-mlem-2/",
-     "title": "Agenda econômica: o que pode mexer com a Bolsa e o dólar nesta quinta-feira (5)"
-    }
-   ],
-   "ids": [
-    "f4b1612eb9d1"
-   ],
-   "snippet": "Além da digestão da decisão de juros do Copom na noite de ontem (4), os investidores acompanham nesta quinta-feira (5) uma agenda econômica recheada. Entre os indicadores, estão a atividade no Brasil e no exterior, decisões e discursos de importantes de autoridades monetárias, que podem mexer com o Ibovespa e com o dólar. No Brasil, […]",
-   "prescore": 6.8,
-   "headline": "Agenda do dia: atividade e decisões de bancos centrais mexem com bolsa e dólar",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Agenda de rotina.",
-   "summary": "Além da digestão da decisão do Copom, a agenda de quinta-feira (5) traz indicadores de atividade no Brasil e no exterior e discursos de autoridades.",
-   "involves": "Investidores, Copom, indicadores de atividade",
-   "interpretation": "Agenda de rotina, sem evento único dominante.",
-   "impact": "Eventual volatilidade pontual.",
-   "sentiment": "neutro",
-   "entities": [
-    "Copom"
-   ],
-   "tags": [
-    "agenda",
-    "mercados"
    ],
    "is_deal": false,
    "deal": null,
@@ -7812,47 +7677,6 @@
    "ai": true
   },
   {
-   "id": "9484c384e475",
-   "title": "BOE Decision Day: With a Hike Baked in Traders Look to December",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-11-05/boe-decision-day-with-a-hike-baked-in-traders-look-to-december",
-   "published": "2026-11-05T07:45:03+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/newsletters/2026-11-05/boe-decision-day-with-a-hike-baked-in-traders-look-to-december",
-     "title": "BOE Decision Day: With a Hike Baked in Traders Look to December"
-    }
-   ],
-   "ids": [
-    "9484c384e475"
-   ],
-   "snippet": "Plus earnings from Next and Diageo",
-   "prescore": 2.8,
-   "headline": "Dia de BoE: com alta precificada, operadores olham para dezembro",
-   "category": "macro",
-   "importance": 4,
-   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
-   "summary": "Com a alta de juros já embutida nos preços, o mercado se volta para a reunião de dezembro do BoE. A agenda traz ainda resultados de Next e Diageo.",
-   "involves": "Bank of England, Next, Diageo",
-   "interpretation": "O foco é a comunicação sobre próximos passos, não a decisão em si.",
-   "impact": "Impacto restrito ao Reino Unido; relevante para referência de juros globais.",
-   "sentiment": "neutro",
-   "entities": [
-    "Bank of England",
-    "Next",
-    "Diageo"
-   ],
-   "tags": [
-    "BoE",
-    "Juros",
-    "Resultados"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "05891167e752",
    "title": "Air France-KLM Deepens Dutch Airline Overhaul; Stock Surges",
    "link": "https://www.bloomberg.com/news/articles/2026-11-05/air-france-klm-to-deepen-dutch-airline-overhaul-amid-high-costs",
@@ -8449,7 +8273,7 @@
    "id": "e16076a58e45",
    "title": "Rheinmetall Shares Plunge After Order Delays Force Arms Maker to Trim Guidance Again",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcG5vUmpPcnZVd0hzakhCekNSS283STBkV0d4TVVhSkxsdm1nTVRPZE94ZURLdmNXcWxpdnFmTEpRVVZPdGJzQ1AtdWxyTURCU0V1OXpkMmRGV0p2YXZ2eWhTaFRkT0FuekduUTdNSzdLal9QamlqUmItMVJabkl0MExWdzVfVnlGblhPQTlRZjFIQ3lpaFlhM3JEdUxnTmI1RXRZcl9TRXNrT3dOUTNQQVJINDNxUmVIalFRcTh0eWxSaUNTT2FjTGN6VQ?oc=5",
-   "published": "2026-11-05T08:34:00+00:00",
+   "published": "2026-11-05T08:37:14+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -8488,7 +8312,7 @@
    "id": "2d18bfac79ff",
    "title": "Siemens Healthineers to Rebrand as Healthineers as Diagnostics Carve-Out Begins",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZG5LYkxnQ0NhbkR2UG94WVY3aDRDWVY5aEk5bHBfNzRoTThWeUF3SWV2ZTFvOWdSOENSZnZCRkxGT0FOb3lRMUFVSzZDWmVhcmptaV9EMEFyak85QnpBY0VnX1NIN1ZHYXFLb01OcnZIN1p6dmxtSWEzeGN4TExYdWpSaVZJTGFYcURlNGFRSFpNWG5BTHg0VUwtSjZ6bnlFVkd5dnZtWHJ2TXg5YzR5OEIxaGh1bGIt?oc=5",
-   "published": "2026-11-05T07:09:47+00:00",
+   "published": "2026-11-05T07:08:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -8938,84 +8762,6 @@
    "ai": true
   },
   {
-   "id": "7bb2037c8eb6",
-   "title": "How Democrats pulled off the blue wave in maps and charts",
-   "link": "https://www.ft.com/content/f27626ac-8427-45d7-a995-a8dfe8d01bd9?syn-25a6b1a6=1",
-   "published": "2026-11-04T19:12:33+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/f27626ac-8427-45d7-a995-a8dfe8d01bd9?syn-25a6b1a6=1",
-     "title": "How Democrats pulled off the blue wave in maps and charts"
-    }
-   ],
-   "ids": [
-    "7bb2037c8eb6"
-   ],
-   "snippet": "Party on track for largest swing in their favour in House elections in more than 75 years",
-   "prescore": 2.6,
-   "headline": "Como os democratas fizeram a onda azul, em mapas e gráficos",
-   "category": "politica",
-   "importance": 4,
-   "importance_reason": "Contexto do resultado.",
-   "summary": "O FT mostra que os democratas caminham para a maior virada na Câmara em mais de 75 anos.",
-   "involves": "Partido Democrata; Câmara dos EUA",
-   "interpretation": "Dimensiona a magnitude da rejeição a Trump.",
-   "impact": "Reforça governo dividido.",
-   "sentiment": "neutro",
-   "entities": [
-    "Partido Democrata",
-    "Financial Times"
-   ],
-   "tags": [
-    "Câmara",
-    "onda azul"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "1aeb6bd0d0e0",
-   "title": "Netanyahu rivals seize on Democrats' sweep of US Congress, seeking his ouster",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMXFMUXhNOFRueTBpaDBRdk9WX0pJUW5DT21NakZ4WHlIZERjUWpfZHdjUkZ5OTRlSml1WnFNOGIxUEpBakFJbG90ZnFZMFh0Y2VwMGJ0VWJXVWZyMnBMWk5pMGpEa2NyQUN1dExweU1wYVhIdUtFUVBWcEViMlFTS2VBZDNaQmRsU0dfQ09Gd1FKOE9WN2ZDeFlTYjdlQ2k0QnJXeUpUeWgzWENBTkoyTmlwa2lvRkRuRURnZUFsdkw?oc=5",
-   "published": "2026-11-04T19:12:12+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMXFMUXhNOFRueTBpaDBRdk9WX0pJUW5DT21NakZ4WHlIZERjUWpfZHdjUkZ5OTRlSml1WnFNOGIxUEpBakFJbG90ZnFZMFh0Y2VwMGJ0VWJXVWZyMnBMWk5pMGpEa2NyQUN1dExweU1wYVhIdUtFUVBWcEViMlFTS2VBZDNaQmRsU0dfQ09Gd1FKOE9WN2ZDeFlTYjdlQ2k0QnJXeUpUeWgzWENBTkoyTmlwa2lvRkRuRURnZUFsdkw?oc=5",
-     "title": "Netanyahu rivals seize on Democrats' sweep of US Congress, seeking his ouster"
-    }
-   ],
-   "ids": [
-    "1aeb6bd0d0e0"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Rivais de Netanyahu usam vitória democrata para pedir sua saída",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Reflexo político em Israel.",
-   "summary": "A Reuters relata que adversários de Netanyahu usam o resultado dos EUA para pedir sua saída.",
-   "involves": "Netanyahu; Israel",
-   "interpretation": "Pressão sobre Netanyahu pode mudar o cenário regional.",
-   "impact": "Risco geopolítico no Oriente Médio.",
-   "sentiment": "neutro",
-   "entities": [
-    "Netanyahu",
-    "Israel"
-   ],
-   "tags": [
-    "Israel",
-    "Netanyahu"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "87cffb49d3f6",
    "title": "Dozens dead and missing after Russian strike on Ukrainian aid centre, officials say",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTnJMX1lSSDlPU0otVy01QlBuQzZyUm5LWlpyMDM3QVlGcU5BczEyYUh6LWlJakluTEtTSVdLZFhfUERZQ3JPbEdGc1cyR2dlWlp4dC1wbDdvdXdMbWJjRUdmSDl2Y2VNNkxPS1U1TDB6WjJMZTlRdV9hSy05OWVPTVlfTWRQVC1RbExnWUV1eWl1bmpvVWR6QXgtcHhSbHRoUWNXUjhIb1FpM1RuRm00OFVKLVgtZ1hIS2g2dmdlbl8zdw?oc=5",
@@ -9088,6 +8834,45 @@
    "tags": [
     "midterms",
     "imprensa"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "1aeb6bd0d0e0",
+   "title": "Netanyahu rivals seize on Democrats' sweep of US Congress, seeking his ouster",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMXFMUXhNOFRueTBpaDBRdk9WX0pJUW5DT21NakZ4WHlIZERjUWpfZHdjUkZ5OTRlSml1WnFNOGIxUEpBakFJbG90ZnFZMFh0Y2VwMGJ0VWJXVWZyMnBMWk5pMGpEa2NyQUN1dExweU1wYVhIdUtFUVBWcEViMlFTS2VBZDNaQmRsU0dfQ09Gd1FKOE9WN2ZDeFlTYjdlQ2k0QnJXeUpUeWgzWENBTkoyTmlwa2lvRkRuRURnZUFsdkw?oc=5",
+   "published": "2026-11-04T11:08:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMXFMUXhNOFRueTBpaDBRdk9WX0pJUW5DT21NakZ4WHlIZERjUWpfZHdjUkZ5OTRlSml1WnFNOGIxUEpBakFJbG90ZnFZMFh0Y2VwMGJ0VWJXVWZyMnBMWk5pMGpEa2NyQUN1dExweU1wYVhIdUtFUVBWcEViMlFTS2VBZDNaQmRsU0dfQ09Gd1FKOE9WN2ZDeFlTYjdlQ2k0QnJXeUpUeWgzWENBTkoyTmlwa2lvRkRuRURnZUFsdkw?oc=5",
+     "title": "Netanyahu rivals seize on Democrats' sweep of US Congress, seeking his ouster"
+    }
+   ],
+   "ids": [
+    "1aeb6bd0d0e0"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Rivais de Netanyahu usam vitória democrata para pedir sua saída",
+   "category": "internacional",
+   "importance": 4,
+   "importance_reason": "Reflexo político em Israel.",
+   "summary": "A Reuters relata que adversários de Netanyahu usam o resultado dos EUA para pedir sua saída.",
+   "involves": "Netanyahu; Israel",
+   "interpretation": "Pressão sobre Netanyahu pode mudar o cenário regional.",
+   "impact": "Risco geopolítico no Oriente Médio.",
+   "sentiment": "neutro",
+   "entities": [
+    "Netanyahu",
+    "Israel"
+   ],
+   "tags": [
+    "Israel",
+    "Netanyahu"
    ],
    "is_deal": false,
    "deal": null,
@@ -9263,51 +9048,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "58789a4ee694",
-   "title": "Governo define alíquotas do Imposto Seletivo para 2027 em medida provisória",
-   "link": "https://www.infomoney.com.br/politica/governo-define-aliquotas-do-imposto-seletivo-para-2027-em-medida-provisoria/",
-   "published": "2026-11-05T01:16:39+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/governo-define-aliquotas-do-imposto-seletivo-para-2027-em-medida-provisoria/",
-     "title": "Governo define alíquotas do Imposto Seletivo para 2027 em medida provisória"
-    },
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/governo-define-aliquotas-do-imposto-seletivo-para-2027-em-medida-provisoria/",
-     "title": "‘Imposto do pecado’: Governo define alíquotas para 2027 em medida provisória"
-    },
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/economia/noticia/2026/11/04/governo-edita-medida-provisoria-que-define-aliquotas-do-imposto-do-pecado.ghtml",
-     "title": "Governo edita medida provisória que define alíquotas do 'imposto do pecado'"
-    }
-   ],
-   "ids": [
-    "58789a4ee694",
-    "2b566510776e",
-    "57b92718fd0e"
-   ],
-   "snippet": "A previsão, segundo nota do governo, é de que a cobrança comece ​em 2 de fevereiro de 2027, simultaneamente à redução a zero das ​alíquotas do Imposto sobre Produtos Industrializados (IPI) The post Governo define alíquotas do Imposto Seletivo para 2027 em medida provisória appeared first on InfoMoney .",
-   "prescore": 5.2,
-   "headline": "Governo define alíquotas do Imposto Seletivo para 2027 em medida provisória",
-   "category": "politica",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A previsão, segundo nota do governo, é de que a cobrança comece ​em 2 de fevereiro de 2027, simultaneamente à redução a zero das ​alíquotas do Imposto sobre Produtos Industrializados (IPI) The post Governo define alíquotas do Imposto Seletivo para 2027 em medida provisória appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "e180c25afae7",
@@ -9730,47 +9470,6 @@
    "ai": true
   },
   {
-   "id": "5ff5f8861f07",
-   "title": "China Audits Australia’s Canola Supply in Sign of Trade Thaw",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-05/china-audits-australia-s-canola-supply-in-sign-of-trade-thaw",
-   "published": "2026-11-05T07:13:57+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-05/china-audits-australia-s-canola-supply-in-sign-of-trade-thaw",
-     "title": "China Audits Australia’s Canola Supply in Sign of Trade Thaw"
-    }
-   ],
-   "ids": [
-    "5ff5f8861f07"
-   ],
-   "snippet": "Chinese officials traveled to Australia in late October to audit the country’s canola supply chain, according to Agriculture Minister Julie Collins, the latest sign that the two countries are moving toward normalizing trade in the crop.",
-   "prescore": 3.4,
-   "headline": "China audita cadeia de canola da Austrália, sinal de normalização comercial",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Tema periférico de commodities agrícolas fora do Brasil.",
-   "summary": "Autoridades chinesas foram à Austrália no fim de outubro auditar a cadeia de canola, segundo a ministra Julie Collins, sinal de normalização do comércio do produto.",
-   "involves": "China, Austrália, ministra Julie Collins, canola.",
-   "interpretation": "Indica degelo nas relações comerciais sino-australianas após restrições anteriores.",
-   "impact": "Efeito marginal sobre oleaginosas; possível concorrência indireta para exportadores brasileiros de grãos.",
-   "sentiment": "neutro",
-   "entities": [
-    "China",
-    "Austrália",
-    "Julie Collins"
-   ],
-   "tags": [
-    "canola",
-    "China",
-    "comércio"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "801fc5a515b5",
    "title": "Agricultura deverá continuar sob comando do PSD no governo Lula 4; veja nomes cotados",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPd01tV3pmbTBaQ1MzemhjZkJtbC03aV9uWVJobzNoZlE2cnU5cFR4Ujl4dWJqc3JNcUk5UHNRSHhYSjBUZnc1bm14QUpjd1h3NWo5bTdfSU5FM2NGR2VZaTh6ZnJqX0lQSGJPUVlRWVZxRGFBXy0yeGRRSExBN0V0SWJMc2lfbm82SUh4Tm9xRkVvWFV2ZWlWc0R6VHNCY2o0VjRsZWRjTEJXbnpBS2U2ZGRwU3ZoVC1UcFE1QnBYM2p3RjF3Q3Bz0gHMAUFVX3lxTFBNcDJpN2N6Ry1xVlQtaFFqNDlLeXlyTU9MWEtVdjd0TEJZc0t6RXVUM1dncTF5Y1NMakI4RlowSW04R2RZalJ2Nnpuek85aVpQeHBiQnlzOWE2aXRoQzd2NTJwYkxTY2ViU0czdW40MUpDYVFkTGc1Qks3NmZvZmduRFZsazlFT0NnTmczUEcybTBwQ3lzejlzWklrVU5PN01PcUs2Vnd5X1hxRnREUFdoMk15RzRRS1huTi0wQWl3ZWplVjdKUFZ0NEJTSg?oc=5",
@@ -9965,6 +9664,1224 @@
     "Segurança",
     "Crime organizado"
    ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "56f857ce02f2",
+   "title": "Como os democratas ampliaram o alcance eleitoral e conquistaram regiões rurais dos EUA",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZEh4Zm1aX1p6U2stekJJQ28zVEtmRjRIOHhxektZaVVfSHZuS2hZRmRvRldnb0xpMWlsR1lCQU5JRjFQb1dTb3pjcHN4cVlSQTBCd2dxMUpKcksyWm1WaTFOaFZYMFlGLWlxODluVEpRQVhnYmF4NjZkQ05MeWNrakllMkhmTWRvNTQ5cmphajlQSkE1N21idS1aZVgyVk1BdHJTY3cwblg4RVZNbkNGRjM2QzBDTXpua2FwRHg0TW5nWmRPNmtJNkctdDgyWWI4NzJmbHV2b9IB5gFBVV95cUxNbnNsTURDVkVudjdKNzMxYUhoMUExN0Z3ZmNxc1FxU2dENFJwLXM2NjdUdDBIUmRJdkVFSGJQalFfWTA3WGlMZm92aE1ZTTNRQnNBQ183bUxaT1haMC1Lcm9tYVpvMTd2dHotRjYyN2ZhNlJLYkJkMzJ4bXQ0R0Y3QmdDbHNHYWVtUGlqYTVGM1hWOEJQV1pxaUxBd0FvV3BoZU03VFNMTGJQVTAzMVFhb1dueGl1RkYxS2NHeWloXzBZd1YzZldRZWZJMm5ydWVzbk9XckJRdmE4RFE5YVFoQktXdHZOUQ?oc=5",
+   "published": "2026-11-04T20:50:59+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZEh4Zm1aX1p6U2stekJJQ28zVEtmRjRIOHhxektZaVVfSHZuS2hZRmRvRldnb0xpMWlsR1lCQU5JRjFQb1dTb3pjcHN4cVlSQTBCd2dxMUpKcksyWm1WaTFOaFZYMFlGLWlxODluVEpRQVhnYmF4NjZkQ05MeWNrakllMkhmTWRvNTQ5cmphajlQSkE1N21idS1aZVgyVk1BdHJTY3cwblg4RVZNbkNGRjM2QzBDTXpua2FwRHg0TW5nWmRPNmtJNkctdDgyWWI4NzJmbHV2b9IB5gFBVV95cUxNbnNsTURDVkVudjdKNzMxYUhoMUExN0Z3ZmNxc1FxU2dENFJwLXM2NjdUdDBIUmRJdkVFSGJQalFfWTA3WGlMZm92aE1ZTTNRQnNBQ183bUxaT1haMC1Lcm9tYVpvMTd2dHotRjYyN2ZhNlJLYkJkMzJ4bXQ0R0Y3QmdDbHNHYWVtUGlqYTVGM1hWOEJQV1pxaUxBd0FvV3BoZU03VFNMTGJQVTAzMVFhb1dueGl1RkYxS2NHeWloXzBZd1YzZldRZWZJMm5ydWVzbk9XckJRdmE4RFE5YVFoQktXdHZOUQ?oc=5",
+     "title": "Como os democratas ampliaram o alcance eleitoral e conquistaram regiões rurais dos EUA"
+    }
+   ],
+   "ids": [
+    "56f857ce02f2"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Como os democratas ampliaram alcance eleitoral e conquistaram regiões rurais",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "Análise sobre como os democratas avançaram em áreas rurais dos EUA nas eleições.",
+   "involves": "Partido Democrata",
+   "interpretation": "Leitura política de fundo.",
+   "impact": "Pouco impacto imediato em ativos.",
+   "sentiment": "neutro",
+   "entities": [
+    "Partido Democrata"
+   ],
+   "tags": [
+    "EUA",
+    "Eleições"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "5591dada85a0",
+   "title": "Alcolumbre adia votação da PEC da redução da maioridade penal",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZXk3eHRvMkxSdmJjS3NyRVMzYkVCMnlDS1phazRLa3hUVnUtRHFoZ0NIQXZDTDVnTlBVeVJ2MUZLLXdQQWxBZjBNazZCTElLUFZBdVk4X18xZTg2VnowcFgyNTg0VXZJdjdpMFZ1aGJUWHNHUW9ObkR1Wmh2Tm9KNFE0UUxTbEZ4elhtenVoXzVtdDVIQ1M2ZHNIem5vRDY4U3dpUUxXdXEzank5S2t5MkdDdmx3b3RxTXVrTC1pUTRsQ2tIVGI5QWk2b1NWNmvSAd4BQVVfeXFMTUo0Z2t4bXVjakM3YXBLV0NyN0pHRElaR2J4MUZWUUF1ZWw0NVZhZnZwekZlNHV5UUptNWJZUDdtVUw3RDFIQUVIRGo0aEptTDhOekNoSnA4NjRLbWNSU2oweklFM2lvY1RSdzVFY1Rfd2YyN2xxZUx1RWJTbm02LXdDY01LNzJvUGtuWk1pYUFGTFNZaGxCSlZfc2ZBWFplM1AtazFUeTRyYVlPNVc3QnU0dE5lZ0ZRQU1hWUV5OHFUa3otbGZma0VvY3NncDNYb3VLbmNsMk1pRVdSN09B?oc=5",
+   "published": "2026-11-04T19:57:27+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZXk3eHRvMkxSdmJjS3NyRVMzYkVCMnlDS1phazRLa3hUVnUtRHFoZ0NIQXZDTDVnTlBVeVJ2MUZLLXdQQWxBZjBNazZCTElLUFZBdVk4X18xZTg2VnowcFgyNTg0VXZJdjdpMFZ1aGJUWHNHUW9ObkR1Wmh2Tm9KNFE0UUxTbEZ4elhtenVoXzVtdDVIQ1M2ZHNIem5vRDY4U3dpUUxXdXEzank5S2t5MkdDdmx3b3RxTXVrTC1pUTRsQ2tIVGI5QWk2b1NWNmvSAd4BQVVfeXFMTUo0Z2t4bXVjakM3YXBLV0NyN0pHRElaR2J4MUZWUUF1ZWw0NVZhZnZwekZlNHV5UUptNWJZUDdtVUw3RDFIQUVIRGo0aEptTDhOekNoSnA4NjRLbWNSU2oweklFM2lvY1RSdzVFY1Rfd2YyN2xxZUx1RWJTbm02LXdDY01LNzJvUGtuWk1pYUFGTFNZaGxCSlZfc2ZBWFplM1AtazFUeTRyYVlPNVc3QnU0dE5lZ0ZRQU1hWUV5OHFUa3otbGZma0VvY3NncDNYb3VLbmNsMk1pRVdSN09B?oc=5",
+     "title": "Alcolumbre adia votação da PEC da redução da maioridade penal"
+    }
+   ],
+   "ids": [
+    "5591dada85a0"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Alcolumbre adia votação da PEC da redução da maioridade penal",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "O presidente do Senado, Davi Alcolumbre, adiou a votação da PEC que reduz a maioridade penal.",
+   "involves": "Davi Alcolumbre, Senado",
+   "interpretation": "Adiamento sinaliza falta de consenso.",
+   "impact": "Sem efeito direto em mercado.",
+   "sentiment": "neutro",
+   "entities": [
+    "Davi Alcolumbre",
+    "Senado"
+   ],
+   "tags": [
+    "PEC",
+    "Senado"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "d8ddb7a2ff0d",
+   "title": "Presidente do PT discute formação de Lula 4 com partidos e mapeia convergências com o governo",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/04/presidente-do-pt-discute-formacao-de-lula-4-com-partidos-e-mapeia-convergencias-com-o-governo.ghtml",
+   "published": "2026-11-04T19:41:45+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/04/presidente-do-pt-discute-formacao-de-lula-4-com-partidos-e-mapeia-convergencias-com-o-governo.ghtml",
+     "title": "Presidente do PT discute formação de Lula 4 com partidos e mapeia convergências com o governo"
+    }
+   ],
+   "ids": [
+    "d8ddb7a2ff0d"
+   ],
+   "snippet": "O presidente do PT, Edinho Silva, foi escalado pelo presidente Luiz Inácio Lula da Silva (PT) para se reunir com dirigentes de partidos e discutir a formação da base do quarto mandato do petista. Edinho Silva se reúne desde a semana passada com presidentes de legendas e deve concluir essa primeira rodada de conversas até o final desta semana. Estão no cronograma partidos como Podemos, PSD, MDB, Republicanos e União Brasil. Agora no g1 Segundo auxiliares do presidente, o dirigente do PT conversa com diversos partidos de centro e recebeu de Lula a missão de mapear a agenda das legendas e identif",
+   "prescore": 2.8,
+   "headline": "Presidente do PT discute 'Lula 4' com partidos e mapeia convergências",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "Edinho Silva, presidente do PT, foi escalado por Lula para conversar com dirigentes de partidos sobre a formação de apoio, incluindo o projeto 'Lula 4'.",
+   "involves": "Edinho Silva, PT, Lula",
+   "interpretation": "Articulação política de longo prazo.",
+   "impact": "Pouco impacto imediato; relevante para governabilidade.",
+   "sentiment": "neutro",
+   "entities": [
+    "Edinho Silva",
+    "PT",
+    "Lula"
+   ],
+   "tags": [
+    "PT",
+    "Lula 4",
+    "Partidos"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "b783d821813d",
+   "title": "Governador da Flórida diz que derrota republicana foi algo próximo ao nível de extinção",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVlFnT2V4TXdtNWZZLVJYeVlTTDZMNGpBN0FnQy1nVWJ3Q29UdXViVFh0WlZfTTVwYTRTalpNMXNRSlVjSlI5akpyTEJZeEhzSTFmYmVXVXFiV0p3enJEYzI1SlZPbTA5Vk5tSHl2TEd0OXZrZzAyM1RHN0VQS2REVmxxSEtyeTU5QlVha0cyTlVwVWVEQmdwX0lVVm9YUEhnaktkQ20xbDJmbVVTVnZVVk5GSmZCWkpCTmdFT3hMUWhoZGtSNWxYTnJVYU5HTkJLNVpr0gHiAUFVX3lxTE9CbkNWUk4yWEl5MFpidlpLa3JGOFJXOWlZQWFCeS1TRXFMMEFKYTNkY3p1YUVxSXBnLU9pMHVpQ2ZQYllwLVBkVzRVYnExYm1JLV9pWF9rajBMQUxIWnpmMnhKWjNXVldYRnlHcDd0b2o5a1pTRUx6eWVzeU1adWFYX28tVEVkVWd2YnZqNDg1SE1DamhhbWFvV1lubDI2RFlZU05raUdfc01vZWxMdzVETUc0XzljdUxmWTVIbDU1OEx0QzF4Z3FFRjc3MG1TbHJpenJfV0RvTnRUVnBOZzNjYmc?oc=5",
+   "published": "2026-11-04T18:00:19+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVlFnT2V4TXdtNWZZLVJYeVlTTDZMNGpBN0FnQy1nVWJ3Q29UdXViVFh0WlZfTTVwYTRTalpNMXNRSlVjSlI5akpyTEJZeEhzSTFmYmVXVXFiV0p3enJEYzI1SlZPbTA5Vk5tSHl2TEd0OXZrZzAyM1RHN0VQS2REVmxxSEtyeTU5QlVha0cyTlVwVWVEQmdwX0lVVm9YUEhnaktkQ20xbDJmbVVTVnZVVk5GSmZCWkpCTmdFT3hMUWhoZGtSNWxYTnJVYU5HTkJLNVpr0gHiAUFVX3lxTE9CbkNWUk4yWEl5MFpidlpLa3JGOFJXOWlZQWFCeS1TRXFMMEFKYTNkY3p1YUVxSXBnLU9pMHVpQ2ZQYllwLVBkVzRVYnExYm1JLV9pWF9rajBMQUxIWnpmMnhKWjNXVldYRnlHcDd0b2o5a1pTRUx6eWVzeU1adWFYX28tVEVkVWd2YnZqNDg1SE1DamhhbWFvV1lubDI2RFlZU05raUdfc01vZWxMdzVETUc0XzljdUxmWTVIbDU1OEx0QzF4Z3FFRjc3MG1TbHJpenJfV0RvTnRUVnBOZzNjYmc?oc=5",
+     "title": "Governador da Flórida diz que derrota republicana foi algo próximo ao nível de extinção"
+    }
+   ],
+   "ids": [
+    "b783d821813d"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Governador da Flórida diz que derrota republicana foi próxima de 'extinção'",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "O governador da Flórida afirmou que a derrota republicana nas eleições foi quase um evento de extinção.",
+   "involves": "Governador da Flórida, Partido Republicano",
+   "interpretation": "Fala indica divisão interna no partido.",
+   "impact": "Pouco efeito direto.",
+   "sentiment": "negativo",
+   "entities": [
+    "Governador da Flórida",
+    "Partido Republicano"
+   ],
+   "tags": [
+    "Republicanos",
+    "Midterms"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "1f4f9743f788",
+   "title": "Contas bancárias somem antes do amanhecer em choque no Paraguai",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcDBUTmxxeGVCLWkzdE1OS0lNOEpiVk9DTDUwcXljS3lUMmdjaDg3a0s2UVhObENBS2JrMjJ4cFFaWFJjLXl5UExXM0VGaVgzMWRqdmZVT0RNalhYT09fbkNnWmdVeTVDOVZNQ0p4SUdrT2FfeG1hU3Z6Tnl4LWF6YjNpcUp4VXQtdEZkSmVienZpQ25hOWV3V2gteG9FMDgtLXVHYkI1NGtWRl9RTE81WHBvNW0?oc=5",
+   "published": "2026-11-04T17:50:22+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcDBUTmxxeGVCLWkzdE1OS0lNOEpiVk9DTDUwcXljS3lUMmdjaDg3a0s2UVhObENBS2JrMjJ4cFFaWFJjLXl5UExXM0VGaVgzMWRqdmZVT0RNalhYT09fbkNnWmdVeTVDOVZNQ0p4SUdrT2FfeG1hU3Z6Tnl4LWF6YjNpcUp4VXQtdEZkSmVienZpQ25hOWV3V2gteG9FMDgtLXVHYkI1NGtWRl9RTE81WHBvNW0?oc=5",
+     "title": "Contas bancárias somem antes do amanhecer em choque no Paraguai"
+    }
+   ],
+   "ids": [
+    "1f4f9743f788"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Contas bancárias somem antes do amanhecer em choque no Paraguai",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "A Bloomberg relata sumiço de contas bancárias no Paraguai antes do amanhecer; detalhes não disponíveis no trecho.",
+   "involves": "Paraguai",
+   "interpretation": "Indício de falha ou ação no sistema financeiro paraguaio, sem detalhes.",
+   "impact": "Risco operacional e reputacional para bancos locais.",
+   "sentiment": "negativo",
+   "entities": [
+    "Paraguai"
+   ],
+   "tags": [
+    "Paraguai",
+    "Bancos"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "df2228f7c3e0",
+   "title": "CEO da OpenAI muda nome para ‘Ram Altman’ no X após polêmica sobre memória de computadores",
+   "link": "https://g1.globo.com/tecnologia/noticia/2026/11/04/ceo-da-openai-muda-nome-para-ram-altman-no-x-apos-polemica-sobre-memoria-de-computadores.ghtml",
+   "published": "2026-11-04T15:35:19+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/tecnologia/noticia/2026/11/04/ceo-da-openai-muda-nome-para-ram-altman-no-x-apos-polemica-sobre-memoria-de-computadores.ghtml",
+     "title": "CEO da OpenAI muda nome para ‘Ram Altman’ no X após polêmica sobre memória de computadores"
+    }
+   ],
+   "ids": [
+    "df2228f7c3e0"
+   ],
+   "snippet": "Crise da memória RAM pode deixar celulares, notebooks e até carros mais caros no Brasil O CEO da OpenAI, Sam Altman, alterou seu nome de perfil para \"Ram Altman\" na rede social X após ser criticado por declarações sobre o uso da memória RAM. Em entrevista ao podcast Cheeky Pint, no dia 29 de outubro, ele afirmou que a memória seria mais bem aproveitada em data centers do que em computadores pessoais. 🗒️ Tem alguma sugestão de reportagem? Mande para o g1 Segundo Altman, diante da oferta limitada do componente, seria mais eficiente concentrar a memória nessas instalações, utilizadas por empresas",
+   "prescore": 2.8,
+   "headline": "Sam Altman muda nome para 'Ram Altman' após polêmica sobre memória",
+   "category": "tech",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "O CEO da OpenAI mudou seu nome no X após polêmica sobre a crise de memória RAM, que pode encarecer celulares, notebooks e carros.",
+   "involves": "Sam Altman, OpenAI",
+   "interpretation": "A demanda de IA por memória pressiona preços de eletrônicos.",
+   "impact": "Custos maiores para fabricantes de hardware e consumidores.",
+   "sentiment": "negativo",
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ],
+   "tags": [
+    "RAM",
+    "IA",
+    "Hardware"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "dd6d35b3769e",
+   "title": "Hacker chinês usa IA para espionar governos na América Latina, diz relatório",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/hacker-chines-usa-ia-para-espionar-governos-na-america-latina-diz-relatorio.shtml",
+   "published": "2026-11-04T15:35:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/hacker-chines-usa-ia-para-espionar-governos-na-america-latina-diz-relatorio.shtml",
+     "title": "Hacker chinês usa IA para espionar governos na América Latina, diz relatório"
+    }
+   ],
+   "ids": [
+    "dd6d35b3769e"
+   ],
+   "snippet": "Esta é a edição da newsletter China, terra do meio desta quarta-feira (04). Quer recebê-la toda semana no seu email? Inscreva-se abaixo: Leia mais (11/04/2026 - 12h35)",
+   "prescore": 2.8,
+   "headline": "Hacker chinês usa IA para espionar governos na América Latina",
+   "category": "tech",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "Relatório diz que hacker chinês usa IA para espionar governos latino-americanos.",
+   "involves": "China, América Latina",
+   "interpretation": "Segurança cibernética e geopolítica.",
+   "impact": "Risco para governos e empresas da região.",
+   "sentiment": "negativo",
+   "entities": [
+    "China",
+    "América Latina"
+   ],
+   "tags": [
+    "Ciberataque",
+    "IA",
+    "China"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "0a50e8910e88",
+   "title": "'Trump continua sendo presidente', diz Casa Branca a americanos nas redes sociais",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSzBJNHl5c1U3YUtxUlAwM2J1X0E2c2h6cVFDRGVLS3lTQ2xWc1lzdV9kb2VXb3JsN1pwSDQ5RW9RaWhmSWhXMzY1NnZFZDI1MlYtZGRyMXhzdlQ2ZDd3djdUWE5TdmJxWWQzYjVSY25WMHFqVjd2cnlEWXNHdHpJYWdKZkdWdExsb3RIWHV4bUtFVGZ2UXFfWUpVRzhER3JoZDQyaTB4VnloUTBjWnVGSjlDWXVJdHo0aGFSbU4tRGJhaEpyMFB3X3VsNTFHUdIB3AFBVV95cUxPYW9iX3J4UkRseFZyNFpnbk1RYk4yNm1mdUl5c19EUW5ieG9aN1JnU29VZzZrSTRjeUktLTY3RXlDNWh0NjdRc1JVMWF5ZlRaQ3dkc2NGTkFIbDRpMVBjVVBxRm03R1RJdkxtSHNMM0tXY2hJWFk0ZVV4ZzRXY1Jjc0E0bTlCbURNYUNTb2hjcWJpV2prVFNSU2ZjdXdlZFVaOEZHT1dzT25GdGJMRGV3dTRudk5UM1FBSlBlX05oTFFydEkyUXJCdlRNRTc2SzRkY1lSRGFWN1E2MmVS?oc=5",
+   "published": "2026-11-04T14:41:06+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSzBJNHl5c1U3YUtxUlAwM2J1X0E2c2h6cVFDRGVLS3lTQ2xWc1lzdV9kb2VXb3JsN1pwSDQ5RW9RaWhmSWhXMzY1NnZFZDI1MlYtZGRyMXhzdlQ2ZDd3djdUWE5TdmJxWWQzYjVSY25WMHFqVjd2cnlEWXNHdHpJYWdKZkdWdExsb3RIWHV4bUtFVGZ2UXFfWUpVRzhER3JoZDQyaTB4VnloUTBjWnVGSjlDWXVJdHo0aGFSbU4tRGJhaEpyMFB3X3VsNTFHUdIB3AFBVV95cUxPYW9iX3J4UkRseFZyNFpnbk1RYk4yNm1mdUl5c19EUW5ieG9aN1JnU29VZzZrSTRjeUktLTY3RXlDNWh0NjdRc1JVMWF5ZlRaQ3dkc2NGTkFIbDRpMVBjVVBxRm03R1RJdkxtSHNMM0tXY2hJWFk0ZVV4ZzRXY1Jjc0E0bTlCbURNYUNTb2hjcWJpV2prVFNSU2ZjdXdlZFVaOEZHT1dzT25GdGJMRGV3dTRudk5UM1FBSlBlX05oTFFydEkyUXJCdlRNRTc2SzRkY1lSRGFWN1E2MmVS?oc=5",
+     "title": "'Trump continua sendo presidente', diz Casa Branca a americanos nas redes sociais"
+    }
+   ],
+   "ids": [
+    "0a50e8910e88"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "'Trump continua sendo presidente', diz Casa Branca após derrota",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Contexto relevante, sem efeito direto em deals.",
+   "summary": "A Casa Branca reforçou nas redes que Trump continua presidente após a derrota nas eleições.",
+   "involves": "Casa Branca, Donald Trump",
+   "interpretation": "Resposta defensiva.",
+   "impact": "Sem efeito direto.",
+   "sentiment": "neutro",
+   "entities": [
+    "Casa Branca",
+    "Donald Trump"
+   ],
+   "tags": [
+    "Casa Branca",
+    "Midterms"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "1e7e4f86e575",
+   "title": "Evento do Valor e O Globo debate quem paga a conta da transição energética",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOREw2Q3hBOFh5UEZCeWUwZWFXZ2p5cFNzcnY2MFc4ZzRNVWoycVhNazNOWmxKdmtTMkZnTm53aW5iSUVxNGk2RlRJTXNIUVhqVUJIbGo3WWN6YUR2Vy1hMEFweEhRZ0F5LWZJdVFrbm9RdmRVeEpIVm14emg3V2swV2M5UjhZQ1IwbnEtaXhKUFhtdml3dEgwTjUtdU9zajFVeks3TGZCTXhka1dNM3pMeGVEZWpCVlpFc0ZDOHluRGEydnZWS2l6a0d4R0RNa2IzZmpKVWs0WER4VE1PSm44dHB5WDdYQdIB9AFBVV95cUxOTGUzemlkMV9vTTk2aGcwSDJ2RlF6NWc5OTdrZWpCTzZ0bndPeGViUk9nRW5vYllNa2tmbmkyZHVDWEpfWkhhX0ZIODY5Y0ozZGtDck9VM1NpZWR6THJHOHp4OC1HcnA2YklQYS1QcFo5RWI1V0s5R2N0S0VPT1Z5RWtZbVpxWTBwdXRTZ01mYkpTVzg1UUhZblNRdnFWYVFkd0RISjVQNmdiMndWcGtCTm11QXJkNk9mRDV4SU5wUUZTMF9IeVpZakt3bHhac3NfWlRGdDlZc2x1aUFZa21DeU01M2laV25GVDFSRlJDLXZfRUcx?oc=5",
+   "published": "2026-11-04T14:01:55+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOREw2Q3hBOFh5UEZCeWUwZWFXZ2p5cFNzcnY2MFc4ZzRNVWoycVhNazNOWmxKdmtTMkZnTm53aW5iSUVxNGk2RlRJTXNIUVhqVUJIbGo3WWN6YUR2Vy1hMEFweEhRZ0F5LWZJdVFrbm9RdmRVeEpIVm14emg3V2swV2M5UjhZQ1IwbnEtaXhKUFhtdml3dEgwTjUtdU9zajFVeks3TGZCTXhka1dNM3pMeGVEZWpCVlpFc0ZDOHluRGEydnZWS2l6a0d4R0RNa2IzZmpKVWs0WER4VE1PSm44dHB5WDdYQdIB9AFBVV95cUxOTGUzemlkMV9vTTk2aGcwSDJ2RlF6NWc5OTdrZWpCTzZ0bndPeGViUk9nRW5vYllNa2tmbmkyZHVDWEpfWkhhX0ZIODY5Y0ozZGtDck9VM1NpZWR6THJHOHp4OC1HcnA2YklQYS1QcFo5RWI1V0s5R2N0S0VPT1Z5RWtZbVpxWTBwdXRTZ01mYkpTVzg1UUhZblNRdnFWYVFkd0RISjVQNmdiMndWcGtCTm11QXJkNk9mRDV4SU5wUUZTMF9IeVpZakt3bHhac3NfWlRGdDlZc2x1aUFZa21DeU01M2laV25GVDFSRlJDLXZfRUcx?oc=5",
+     "title": "Evento do Valor e O Globo debate quem paga a conta da transição energética"
+    }
+   ],
+   "ids": [
+    "1e7e4f86e575"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Evento do Valor e O Globo debate quem paga a conta da transição energética",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Evento setorial sem fato novo no título.",
+   "summary": "O Valor e O Globo promovem evento sobre quem arcará com os custos da transição energética. O material não traz detalhes de participantes ou números.",
+   "involves": "Valor Econômico, O Globo, setor de energia.",
+   "interpretation": "Tema recorrente de debate regulatório (subsídios, tarifas, encargos); sem decisão associada.",
+   "impact": "Periférico; pode antecipar discussões sobre custo da energia e investimentos em renováveis.",
+   "sentiment": "neutro",
+   "entities": [
+    "Valor Econômico",
+    "O Globo"
+   ],
+   "tags": [
+    "energia",
+    "transição",
+    "evento"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "5c651e6bd64a",
+   "title": "Em 'efeito Mamdani', EUA terão número recorde de socialistas no Congresso",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/em-efeito-mamdani-eua-terao-numero-recorde-de-socialistas-no-congresso.shtml",
+   "published": "2026-11-04T12:47:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/em-efeito-mamdani-eua-terao-numero-recorde-de-socialistas-no-congresso.shtml",
+     "title": "Em 'efeito Mamdani', EUA terão número recorde de socialistas no Congresso"
+    }
+   ],
+   "ids": [
+    "5c651e6bd64a"
+   ],
+   "snippet": "O Congresso dos Estados Unidos terá, a partir de 2027, um número recorde de deputados que se autodenominam socialistas democratas, uma corrente do Partido Democrata que tem crescido ao longo dos últimos anos impulsionada em especial pelos mais jovens. Leia mais (11/04/2026 - 09h47)",
+   "prescore": 2.8,
+   "headline": "Em 'efeito Mamdani', EUA terão número recorde de socialistas no Congresso",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Detalhe político dos EUA, efeito econômico indireto.",
+   "summary": "A partir de 2027, o Congresso dos EUA terá número recorde de deputados que se dizem socialistas democratas, segundo a Folha.",
+   "involves": "Partido Democrata, ala socialista, Congresso dos EUA.",
+   "interpretation": "Indica deslocamento à esquerda do Partido Democrata, com agenda de taxação e regulação.",
+   "impact": "Risco regulatório e tributário a longo prazo para empresas americanas; efeito imediato limitado no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Mamdani",
+    "Partido Democrata",
+    "Congresso dos EUA"
+   ],
+   "tags": [
+    "EUA",
+    "Democratas",
+    "política"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "d5195cfef261",
+   "title": "Rivais de Netanyahu aproveitam vitória democrata nos EUA para tentar tirá-lo do poder",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZHhRWHZWOEQ4bE91a096aHFtcHFfZ0JfNEhlY3hKaUE2V25OS3UwMWtmNXd2RE5iYmR1V0RVck9SUGxkeUVESUVfQ0hMZVpiNnhJU1pLVHF5R2FRMmdpNDNLUElNelNwbHhuTXRRQTlhZEIxZHhqelhVZkdzclBkdHdGZnZGQ3BqcEU5N1ptcERkdjN5YXh4VHFLaUpKYzduMjZYR3hacFlleHhteFRhUjQ2ODByaGlLbjlPcU5tLUJRU0hxTnN6LXhvY0h0VFFYdkRvMtIB4wFBVV95cUxQUFdDVEZXV3dtRzFqSHFRMmxVS0R2OHFWeWx1aFhPa254d3pHTHpMWTBDeVQ3OTA5QTd0QkFBQ1k2d05iQmpxelZXbWR0TGNjMC1tbGN4VGEzWF9vMVVZSjVXcTJFWEFYXzZqdFA3ZjVqbThrbmNBYXR4WkxvWl90RnFJbUhYNGlZRjhScUl5aXV2SkZMRENVT0d3R09ZZEYwZzZrNmtMOUJOMDlZS3hJVHNTSWJUQldDRUtXOWlBVWhuRUk3RFBhQ3JxalZuSDhnOTd5T1pGOFpkdTZTX2JhRW5rbw?oc=5",
+   "published": "2026-11-04T12:27:44+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZHhRWHZWOEQ4bE91a096aHFtcHFfZ0JfNEhlY3hKaUE2V25OS3UwMWtmNXd2RE5iYmR1V0RVck9SUGxkeUVESUVfQ0hMZVpiNnhJU1pLVHF5R2FRMmdpNDNLUElNelNwbHhuTXRRQTlhZEIxZHhqelhVZkdzclBkdHdGZnZGQ3BqcEU5N1ptcERkdjN5YXh4VHFLaUpKYzduMjZYR3hacFlleHhteFRhUjQ2ODByaGlLbjlPcU5tLUJRU0hxTnN6LXhvY0h0VFFYdkRvMtIB4wFBVV95cUxQUFdDVEZXV3dtRzFqSHFRMmxVS0R2OHFWeWx1aFhPa254d3pHTHpMWTBDeVQ3OTA5QTd0QkFBQ1k2d05iQmpxelZXbWR0TGNjMC1tbGN4VGEzWF9vMVVZSjVXcTJFWEFYXzZqdFA3ZjVqbThrbmNBYXR4WkxvWl90RnFJbUhYNGlZRjhScUl5aXV2SkZMRENVT0d3R09ZZEYwZzZrNmtMOUJOMDlZS3hJVHNTSWJUQldDRUtXOWlBVWhuRUk3RFBhQ3JxalZuSDhnOTd5T1pGOFpkdTZTX2JhRW5rbw?oc=5",
+     "title": "Rivais de Netanyahu aproveitam vitória democrata nos EUA para tentar tirá-lo do poder"
+    }
+   ],
+   "ids": [
+    "d5195cfef261"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Rivais de Netanyahu aproveitam vitória democrata nos EUA para tentar tirá-lo do poder",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Política israelense, efeito de mercado indireto.",
+   "summary": "Adversários de Netanyahu usam o resultado das eleições nos EUA para tentar removê-lo do poder, segundo o Valor.",
+   "involves": "Benjamin Netanyahu, oposição israelense, Democratas.",
+   "interpretation": "Perda de apoio político em Washington enfraquece Netanyahu internamente.",
+   "impact": "Ligado ao risco geopolítico no Oriente Médio e ao petróleo; efeito no Brasil é indireto.",
+   "sentiment": "neutro",
+   "entities": [
+    "Benjamin Netanyahu",
+    "Partido Democrata"
+   ],
+   "tags": [
+    "Israel",
+    "geopolítica",
+    "EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "35e73dfbde17",
+   "title": "The next US presidential race has begun",
+   "link": "https://www.ft.com/content/a7fe8e95-bd9a-4cd7-a308-f156073cd074?syn-25a6b1a6=1",
+   "published": "2026-11-05T05:00:07+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/a7fe8e95-bd9a-4cd7-a308-f156073cd074?syn-25a6b1a6=1",
+     "title": "The next US presidential race has begun"
+    }
+   ],
+   "ids": [
+    "35e73dfbde17"
+   ],
+   "snippet": "The Republicans and Democrats positioning themselves for a run at the Oval Office in 2028",
+   "prescore": 2.6,
+   "headline": "A corrida presidencial americana de 2028 já começou",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Longo prazo.",
+   "summary": "Republicanos e Democratas já se movimentam para 2028.",
+   "involves": "Partidos dos EUA.",
+   "interpretation": "Início antecipado da sucessão.",
+   "impact": "Sem efeito imediato.",
+   "sentiment": "neutro",
+   "entities": [
+    "Partido Republicano",
+    "Partido Democrata"
+   ],
+   "tags": [
+    "2028",
+    "EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "676c8aeef270",
+   "title": "Trump’s economic agenda wasn’t Republican enough",
+   "link": "https://www.ft.com/content/800da770-639b-406c-a46a-a30552aa1128",
+   "published": "2026-11-05T05:00:07+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/800da770-639b-406c-a46a-a30552aa1128",
+     "title": "Trump’s economic agenda wasn’t Republican enough"
+    }
+   ],
+   "ids": [
+    "676c8aeef270"
+   ],
+   "snippet": "The president promised — but did not deliver — more manufacturing jobs and higher employment rates for native-born Americans",
+   "prescore": 2.6,
+   "headline": "A agenda econômica de Trump não foi republicana o bastante",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Opinião.",
+   "summary": "O FT diz que Trump prometeu mais empregos industriais e não entregou.",
+   "involves": "Trump.",
+   "interpretation": "Crítica à política econômica.",
+   "impact": "Pouco efeito imediato.",
+   "sentiment": "negativo",
+   "entities": [
+    "Donald Trump"
+   ],
+   "tags": [
+    "Trump",
+    "economia",
+    "opinião"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "1218f80ee897",
+   "title": "ANC support falls sharply in early South Africa municipal election results",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUnN3dFFLUkpFd0tTREdxWjlLMlRWTzRRcGhNdVVuMTl3OEJybmJFNndpQmZ1Y0RUYXF1dW94akRDVGFIbVQyUmIxdmIxZFR2dkdiNm52ZzB5TUxyU1NzRjR1VlNXRzBNZDlyLW8tLXZqeVpKN085NDdvN2tqNjdJU0VPeUduTk5HN0pMaFdNNFpsOExwMk8tYVROOG42R0x1MVVacUJBc013YnJ2Uml3cEtvcTZWZw?oc=5",
+   "published": "2026-11-05T04:12:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUnN3dFFLUkpFd0tTREdxWjlLMlRWTzRRcGhNdVVuMTl3OEJybmJFNndpQmZ1Y0RUYXF1dW94akRDVGFIbVQyUmIxdmIxZFR2dkdiNm52ZzB5TUxyU1NzRjR1VlNXRzBNZDlyLW8tLXZqeVpKN085NDdvN2tqNjdJU0VPeUduTk5HN0pMaFdNNFpsOExwMk8tYVROOG42R0x1MVVacUJBc013YnJ2Uml3cEtvcTZWZw?oc=5",
+     "title": "ANC support falls sharply in early South Africa municipal election results"
+    }
+   ],
+   "ids": [
+    "1218f80ee897"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Apoio ao ANC cai forte nos primeiros resultados municipais da África do Sul",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Política de emergente.",
+   "summary": "O apoio ao ANC cai bastante nas apurações iniciais.",
+   "involves": "ANC, África do Sul.",
+   "interpretation": "Enfraquecimento do partido governista.",
+   "impact": "Risco político em emergentes; efeito no Brasil é baixo.",
+   "sentiment": "negativo",
+   "entities": [
+    "ANC",
+    "África do Sul"
+   ],
+   "tags": [
+    "África do Sul",
+    "eleição"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "b00ab890e27e",
+   "title": "Aborto, atletas trans e taxa para bilionários: veja resultados de referendos polêmicos nos EUA",
+   "link": "https://g1.globo.com/mundo/noticia/2026/11/05/aborto-atletas-trans-e-taxa-para-bilionarios-veja-resultados-de-referendos-polemicos-nos-eua.ghtml",
+   "published": "2026-11-05T03:00:01+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/11/05/aborto-atletas-trans-e-taxa-para-bilionarios-veja-resultados-de-referendos-polemicos-nos-eua.ghtml",
+     "title": "Aborto, atletas trans e taxa para bilionários: veja resultados de referendos polêmicos nos EUA"
+    }
+   ],
+   "ids": [
+    "b00ab890e27e"
+   ],
+   "snippet": "Aborto, armas, direitos trans: eleições nos EUA tem referendos em 39 estados Eleitores de diferentes estados dos Estados Unidos aprovaram medidas para restringir a participação de mulheres e meninas trans em equipes esportivas femininas, enquanto rejeitaram propostas que ampliariam ou restabeleceriam proibições ao aborto. MAPA mostra como ficou o Congresso após derrota do partido de Trump Os resultados fazem parte de cerca de 150 consultas populares realizadas em mais de 30 estados durante as eleições de meio de mandato, na terça-feira (3). As propostas, conhecidas como \"ballot measures\", perm",
+   "prescore": 2.6,
+   "headline": "Referendos polêmicos nos EUA: aborto, atletas trans e taxa para bilionários",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Pauta social, com a taxa sobre bilionários relevante.",
+   "summary": "Eleitores aprovaram medidas em 39 estados, incluindo restrições a mulheres em esportes e a taxa para bilionários.",
+   "involves": "Eleitores de 39 estados.",
+   "interpretation": "Mostra polarização.",
+   "impact": "Taxa para bilionários é sinal tributário.",
+   "sentiment": "neutro",
+   "entities": [
+    "Estados dos EUA"
+   ],
+   "tags": [
+    "referendos",
+    "EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "086cd3856c33",
+   "title": "Indian benchmarks near three-month highs as oil slides after US Democratic win",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmJaMVVmaUE0cUtPUW9iRklDNUNCV2k4c1NXYzllRGYzeUdXOFJkeGVEOUNsdkhwc0pfc3pkSVdvb3Nwc3FMSE0xTVBnbEtiQ29Gd2NzbmFtMU9rVXNoNXF3MkRrMEtHczdSX0VGUExrTDkyNHAxYWI0SGFWbVRSZWhDaGlvNkhLdUtiZGdDaWVQaFJ0NkRkckJvQ0ZzSnM2dmFUd2tZXzdQaWZBaFN4Y3BNYXo0UkVZRGpQTkdTUQ?oc=5",
+   "published": "2026-11-05T02:37:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmJaMVVmaUE0cUtPUW9iRklDNUNCV2k4c1NXYzllRGYzeUdXOFJkeGVEOUNsdkhwc0pfc3pkSVdvb3Nwc3FMSE0xTVBnbEtiQ29Gd2NzbmFtMU9rVXNoNXF3MkRrMEtHczdSX0VGUExrTDkyNHAxYWI0SGFWbVRSZWhDaGlvNkhLdUtiZGdDaWVQaFJ0NkRkckJvQ0ZzSnM2dmFUd2tZXzdQaWZBaFN4Y3BNYXo0UkVZRGpQTkdTUQ?oc=5",
+     "title": "Indian benchmarks near three-month highs as oil slides after US Democratic win"
+    }
+   ],
+   "ids": [
+    "086cd3856c33"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Bolsas da Índia perto de máximas de três meses com queda do petróleo após vitória democrata",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Emergente.",
+   "summary": "Índices indianos se aproximam das máximas de três meses com a queda do petróleo.",
+   "involves": "Índia, petróleo.",
+   "interpretation": "Beneficiada por petróleo barato.",
+   "impact": "Mostra apetite a emergentes.",
+   "sentiment": "positivo",
+   "entities": [
+    "Índia"
+   ],
+   "tags": [
+    "Índia",
+    "bolsa",
+    "petróleo"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "d11e2e11aaf8",
+   "title": "Zillow Traffic Slides as High Mortgage Rates Freeze Housing Market",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRHpDNFVHMndpa1g0R1RmNE1kSnRJYXJ4VDkza2tIWjd1ZXNVSXFKMS1ZdmJNdWNyVFpvdk9oQ3F5QlVVcDBCSHZKR3RsaUNjQklTOHNYckRPSVI5N3pxZWVMSmQzWEE2Q3lad2czNkJmMWFuTEYtOFRWeEVkUGQtcWhCUjZBMklDdnIxejg1dEFXMVNfOW8tUlc5WjlXNkpNNkZLdWtaQjFGc3dwTlhqZEQ3QU5WTEsz?oc=5",
+   "published": "2026-11-04T23:35:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRHpDNFVHMndpa1g0R1RmNE1kSnRJYXJ4VDkza2tIWjd1ZXNVSXFKMS1ZdmJNdWNyVFpvdk9oQ3F5QlVVcDBCSHZKR3RsaUNjQklTOHNYckRPSVI5N3pxZWVMSmQzWEE2Q3lad2czNkJmMWFuTEYtOFRWeEVkUGQtcWhCUjZBMklDdnIxejg1dEFXMVNfOW8tUlc5WjlXNkpNNkZLdWtaQjFGc3dwTlhqZEQ3QU5WTEsz?oc=5",
+     "title": "Zillow Traffic Slides as High Mortgage Rates Freeze Housing Market"
+    }
+   ],
+   "ids": [
+    "d11e2e11aaf8"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Tráfego da Zillow cai com juros de hipoteca altos paralisando o mercado imobiliário",
+   "category": "empresas",
+   "importance": 3,
+   "importance_reason": "Setor imobiliário americano, periférico.",
+   "summary": "O WSJ relata queda do tráfego na Zillow, reflexo dos juros altos de hipoteca que congelam o mercado de moradias nos EUA.",
+   "involves": "Zillow; mercado imobiliário dos EUA",
+   "interpretation": "Mostra o efeito prolongado dos juros longos sobre a atividade imobiliária.",
+   "impact": "Pressão em plataformas imobiliárias e construtoras americanas.",
+   "sentiment": "negativo",
+   "entities": [
+    "Zillow",
+    "Wall Street Journal"
+   ],
+   "tags": [
+    "Zillow",
+    "imobiliário",
+    "juros"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "aa97ea6b7924",
+   "title": "Appeals Court Gives Mamdani Administration Green Light on Pied-à-Terre Rollout",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWlZoS1c3dkFuUFZ2cDVMVl9SamE2U2dGY29BMUVsLVJGNDVfTVJIQ1JDYVJHLW56LTh6bENyc18tak9CZ2daMGxiX1hRcGJBVExaSEU0TW9uSS1KVVRoRWE4bDU1eXZQTDVoX3hvd3V6aDM0UGZDOHlRR1NjWW9rLTlRZWNaRWFBRjBXWVNRUWQwdHdabWVWUU1WQXhMeU5LTi1RSXZWR2FRWWZraF9iVHlZanhIQQ?oc=5",
+   "published": "2026-11-04T21:57:25+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWlZoS1c3dkFuUFZ2cDVMVl9SamE2U2dGY29BMUVsLVJGNDVfTVJIQ1JDYVJHLW56LTh6bENyc18tak9CZ2daMGxiX1hRcGJBVExaSEU0TW9uSS1KVVRoRWE4bDU1eXZQTDVoX3hvd3V6aDM0UGZDOHlRR1NjWW9rLTlRZWNaRWFBRjBXWVNRUWQwdHdabWVWUU1WQXhMeU5LTi1RSXZWR2FRWWZraF9iVHlZanhIQQ?oc=5",
+     "title": "Appeals Court Gives Mamdani Administration Green Light on Pied-à-Terre Rollout"
+    }
+   ],
+   "ids": [
+    "aa97ea6b7924"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Tribunal libera gestão Mamdani a implementar taxa sobre segundas residências em Nova York",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Regulação local nos EUA, periférico.",
+   "summary": "O WSJ relata que um tribunal de apelações liberou a gestão Mamdani a implantar a taxa pied-à-terre em Nova York.",
+   "involves": "Zohran Mamdani; Nova York",
+   "interpretation": "Vitória para a agenda tributária da prefeitura.",
+   "impact": "Pressão sobre o mercado imobiliário de luxo de Nova York.",
+   "sentiment": "negativo",
+   "entities": [
+    "Mamdani",
+    "Nova York"
+   ],
+   "tags": [
+    "Nova York",
+    "imposto",
+    "imobiliário"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "30233cff1655",
+   "title": "FICO Declines to Share Guidance Amid Price Structure Change",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUG1aRmxtVlBwUnZuMXl0LWx5MGwzS09KREhZbVdlNW04aXJWMUZ6ckxLXzg1Z3FmR1BnMHg1cFYyY3BRYU85WW1sTnBIYmNqaEgtY1lDUFBkcDhKcmF3VWdVWVJyVHlJQ01Xa183cFRQWUNDVklCZ1ZXTzNKNzZxMTVGbDdnZzd3SkdONEYxZzNfamVrY2dzWmVYcjlIWWJhNWQ5WWlCTk9zZw?oc=5",
+   "published": "2026-11-04T21:54:13+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUG1aRmxtVlBwUnZuMXl0LWx5MGwzS09KREhZbVdlNW04aXJWMUZ6ckxLXzg1Z3FmR1BnMHg1cFYyY3BRYU85WW1sTnBIYmNqaEgtY1lDUFBkcDhKcmF3VWdVWVJyVHlJQ01Xa183cFRQWUNDVklCZ1ZXTzNKNzZxMTVGbDdnZzd3SkdONEYxZzNfamVrY2dzWmVYcjlIWWJhNWQ5WWlCTk9zZw?oc=5",
+     "title": "FICO Declines to Share Guidance Amid Price Structure Change"
+    }
+   ],
+   "ids": [
+    "30233cff1655"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "FICO não dá projeções em meio a mudança na estrutura de preços",
+   "category": "empresas",
+   "importance": 3,
+   "importance_reason": "Resultado de empresa de crédito dos EUA, periférico.",
+   "summary": "O WSJ informa que a FICO se recusou a divulgar projeções por causa de mudança na estrutura de preços.",
+   "involves": "FICO",
+   "interpretation": "Falta de guidance eleva a incerteza sobre receitas.",
+   "impact": "Pode pressionar a ação e birôs de crédito.",
+   "sentiment": "negativo",
+   "entities": [
+    "FICO",
+    "Wall Street Journal"
+   ],
+   "tags": [
+    "FICO",
+    "guidance",
+    "crédito"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "03186e704673",
+   "title": "‘Rupert does not want to be with a loser’: Murdoch’s media empire cools on Trump",
+   "link": "https://www.ft.com/content/ead0309f-537a-4cc1-9d65-a3b9de01e69d?syn-25a6b1a6=1",
+   "published": "2026-11-04T20:58:24+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/ead0309f-537a-4cc1-9d65-a3b9de01e69d?syn-25a6b1a6=1",
+     "title": "‘Rupert does not want to be with a loser’: Murdoch’s media empire cools on Trump"
+    }
+   ],
+   "ids": [
+    "03186e704673"
+   ],
+   "snippet": "Fox News hosts question Iran war strategy while New York Post has ‘Blue Tsunami’ on front page after Republicans’ defeat",
+   "prescore": 2.6,
+   "headline": "Império de mídia de Murdoch esfria com Trump",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Mídia e política americana.",
+   "summary": "O FT relata que a Fox News questiona a estratégia no Irã e o New York Post destacou 'Blue Tsunami' após a derrota republicana.",
+   "involves": "Rupert Murdoch; Fox News; Donald Trump",
+   "interpretation": "Perda de apoio da mídia conservadora enfraquece Trump.",
+   "impact": "Sem efeito direto em ativos.",
+   "sentiment": "neutro",
+   "entities": [
+    "Rupert Murdoch",
+    "Fox News"
+   ],
+   "tags": [
+    "Murdoch",
+    "mídia",
+    "Trump"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "a1fb571c8b2b",
+   "title": "Ethan Allen Shareholders Hand Board Control to Activist Investor Doug Bergeron",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT2paaGlVa2ZsUzROdVlucHNOOS05OEFoTmNvY0lvMEY3eWpYRklCVk9pbFVxdDhxSGN2ZWIxSDFNa2I0Ykw1OXlPZ1AwcHEwY01WUFRZbm9SZDg0ZDYzQUVKNTdaQUNYT0VRMkxhSEN5NG1JVUpZN2VVU21QMmpkXzBrZnpjRzZUdWo2M0pMaWIzcGpYem9mTHU1MDNUcDJSdUdrMnFhdTQ2YWF0dHJUOEl0Ml9Lbk5POGpldFNNcVo?oc=5",
+   "published": "2026-11-04T20:08:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT2paaGlVa2ZsUzROdVlucHNOOS05OEFoTmNvY0lvMEY3eWpYRklCVk9pbFVxdDhxSGN2ZWIxSDFNa2I0Ykw1OXlPZ1AwcHEwY01WUFRZbm9SZDg0ZDYzQUVKNTdaQUNYT0VRMkxhSEN5NG1JVUpZN2VVU21QMmpkXzBrZnpjRzZUdWo2M0pMaWIzcGpYem9mTHU1MDNUcDJSdUdrMnFhdTQ2YWF0dHJUOEl0Ml9Lbk5POGpldFNNcVo?oc=5",
+     "title": "Ethan Allen Shareholders Hand Board Control to Activist Investor Doug Bergeron"
+    }
+   ],
+   "ids": [
+    "a1fb571c8b2b"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Acionistas da Ethan Allen dão controle do conselho ao ativista Doug Bergeron",
+   "category": "empresas",
+   "importance": 3,
+   "importance_reason": "Ativismo em empresa pequena.",
+   "summary": "O WSJ informa que acionistas da Ethan Allen deram o controle do conselho ao investidor ativista Doug Bergeron.",
+   "involves": "Ethan Allen; Doug Bergeron",
+   "interpretation": "Ativismo pode levar a mudanças estratégicas ou venda.",
+   "impact": "Referência de ativismo em varejo.",
+   "sentiment": "neutro",
+   "entities": [
+    "Ethan Allen",
+    "Doug Bergeron"
+   ],
+   "tags": [
+    "ativismo",
+    "conselho",
+    "Ethan Allen"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "f7990ceaa15d",
+   "title": "The beginning of the end of the age of Trump",
+   "link": "https://www.ft.com/content/ab004bd1-4ae7-46a1-a41f-2266cd0f270c?syn-25a6b1a6=1",
+   "published": "2026-11-04T17:42:56+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/ab004bd1-4ae7-46a1-a41f-2266cd0f270c?syn-25a6b1a6=1",
+     "title": "The beginning of the end of the age of Trump"
+    }
+   ],
+   "ids": [
+    "f7990ceaa15d"
+   ],
+   "snippet": "A stunning rebuke by Americans offers a chance to start rebuilding US democracy",
+   "prescore": 2.6,
+   "headline": "O começo do fim da era Trump",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Editorial do FT.",
+   "summary": "O FT avalia que a derrota é uma chance de reconstruir a democracia americana.",
+   "involves": "Trump; eleitores",
+   "interpretation": "Opinião.",
+   "impact": "Sem efeito direto.",
+   "sentiment": "neutro",
+   "entities": [
+    "Financial Times",
+    "Trump"
+   ],
+   "tags": [
+    "opinião",
+    "Trump"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "965137b3662f",
+   "title": "HD Securities (HDS): O preço do IPO fechou em VND 38.900, e a avaliação da empresa ultrapassou US$ 1,8 bilhão.",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOWpHdVJpQkZwSE1TRnUwcDR6QjBCZkxRdEViOVh6ekY3WjBNM05USkI0ZFotc2I2SXVyemM1eWd1eXZTLTVBV1EyUERUN3hjY0taN09kdlZnOHVPaHdjNEFvbUtxc1RMSDd0WmtIbHNZWXgtVkFHTWJzUUFIXzdPX1hTZWphYmlJWEhsWXZzR250Y3VzaXEydUhVQnhacTdweldNY1V3bmNFT0ZoZjgtRQ?oc=5",
+   "published": "2026-11-04T11:23:17+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Vietnam.vn",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOWpHdVJpQkZwSE1TRnUwcDR6QjBCZkxRdEViOVh6ekY3WjBNM05USkI0ZFotc2I2SXVyemM1eWd1eXZTLTVBV1EyUERUN3hjY0taN09kdlZnOHVPaHdjNEFvbUtxc1RMSDd0WmtIbHNZWXgtVkFHTWJzUUFIXzdPX1hTZWphYmlJWEhsWXZzR250Y3VzaXEydUhVQnhacTdweldNY1V3bmNFT0ZoZjgtRQ?oc=5",
+     "title": "HD Securities (HDS): O preço do IPO fechou em VND 38.900, e a avaliação da empresa ultrapassou US$ 1,8 bilhão."
+    }
+   ],
+   "ids": [
+    "965137b3662f"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "HD Securities (HDS) precifica IPO a VND 38.900 e avaliação passa de US$ 1,8 bi",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "IPO no Vietnã.",
+   "summary": "O IPO da HD Securities fechou a VND 38.900 por ação, com avaliação acima de US$ 1,8 bilhão.",
+   "involves": "HD Securities",
+   "interpretation": "IPO local.",
+   "impact": "Sem efeito no Brasil.",
+   "sentiment": "positivo",
+   "entities": [
+    "HD Securities"
+   ],
+   "tags": [
+    "IPO",
+    "Vietnã"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "",
+    "target": "HD Securities",
+    "value": "avaliação acima de US$ 1,8 bilhão",
+    "stage": "Concluído",
+    "sector": "Corretagem / financeiro",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "752c5d7c2419",
+   "title": "NativeSeed Group Acquires the Assets of Sharp Brothers Seed Company, Expanding Native Seed Cleaning Across the Great Plains",
+   "link": "https://www.prnewswire.com/news-releases/nativeseed-group-acquires-the-assets-of-sharp-brothers-seed-company-expanding-native-seed-cleaning-across-the-great-plains-302929925.html",
+   "published": "2026-11-05T10:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/nativeseed-group-acquires-the-assets-of-sharp-brothers-seed-company-expanding-native-seed-cleaning-across-the-great-plains-302929925.html",
+     "title": "NativeSeed Group Acquires the Assets of Sharp Brothers Seed Company, Expanding Native Seed Cleaning Across the Great Plains"
+    }
+   ],
+   "ids": [
+    "752c5d7c2419"
+   ],
+   "snippet": "DENVER, Nov. 5, 2026 /PRNewswire/ -- NativeSeed Group today announced that it has acquired the assets of Sharp Brothers Seed Company in Healy, Kansas, a specialist in cleaning, processing and conditioning warm-season native grasses. The acquisition of these assets adds Sharp Brothers'...",
+   "prescore": 5.0,
+   "headline": "NativeSeed Group adquire ativos da Sharp Brothers Seed",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Deal pequeno nos EUA.",
+   "summary": "A NativeSeed Group adquiriu os ativos da Sharp Brothers Seed Company, em Healy, Kansas.",
+   "involves": "NativeSeed Group, Sharp Brothers Seed",
+   "interpretation": "Add-on regional.",
+   "impact": "Sem efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "NativeSeed Group"
+   ],
+   "tags": [
+    "agro",
+    "sementes"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição de ativos",
+    "buyer": "NativeSeed Group",
+    "target": "Sharp Brothers Seed Company",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Agro / sementes",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "9dd93daf8fd1",
+   "title": "Construction Partners, Inc. Completes Georgia Acquisition",
+   "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-georgia-acquisition-302929808.html",
+   "published": "2026-11-04T21:25:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/construction-partners-inc-completes-georgia-acquisition-302929808.html",
+     "title": "Construction Partners, Inc. Completes Georgia Acquisition"
+    }
+   ],
+   "ids": [
+    "9dd93daf8fd1"
+   ],
+   "snippet": "Transaction Expands Company's Operations Along Growing Interstate 85 Corridor DOTHAN, Ala., Nov. 4, 2026 /PRNewswire/ -- Construction Partners, Inc. (NASDAQ: ROAD) (\"CPI\" or the \"Company\"), a vertically integrated civil infrastructure company specializing in the construction and...",
+   "prescore": 5.0,
+   "headline": "Construction Partners conclui aquisição na Geórgia ao longo do corredor da I-85",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Add-on pequeno nos EUA, sem relação com o Brasil.",
+   "summary": "A Construction Partners (NASDAQ: ROAD) concluiu aquisição na Geórgia que amplia sua operação no corredor da Interstate 85. Valor não divulgado no trecho.",
+   "involves": "Construction Partners, ativo na Geórgia; infraestrutura rodoviária.",
+   "interpretation": "Estratégia de roll-up regional em pavimentação e asfalto, seguindo o crescimento do corredor.",
+   "impact": "Efeito restrito ao mercado americano de construção pesada.",
+   "sentiment": "positivo",
+   "entities": [
+    "Construction Partners"
+   ],
+   "tags": [
+    "infraestrutura",
+    "EUA",
+    "add-on"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Construction Partners",
+    "target": "Operação na Geórgia",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Construção e infraestrutura",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "c1121491df53",
+   "title": "Dover Completes Acquisition of Leistung",
+   "link": "https://www.prnewswire.com/news-releases/dover-completes-acquisition-of-leistung-302929655.html",
+   "published": "2026-11-04T21:15:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/dover-completes-acquisition-of-leistung-302929655.html",
+     "title": "Dover Completes Acquisition of Leistung"
+    }
+   ],
+   "ids": [
+    "c1121491df53"
+   ],
+   "snippet": "DOWNERS GROVE, Ill., Nov. 4, 2026 /PRNewswire/ -- Dover Corporation (NYSE: DOV) today announced that it has completed the previously reported acquisition of Leistung Engineering Pvt. Ltd., which will become part of OPW Fluid Transfer Solutions within Dover's Clean Energy & Fueling segment....",
+   "prescore": 5.0,
+   "headline": "Dover conclui aquisição da Leistung",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Add-on industrial americano de pequena relevância para o leitor.",
+   "summary": "A Dover Corporation (NYSE: DOV) concluiu a aquisição, antes anunciada, da Leistung. Termos financeiros não constam do trecho.",
+   "involves": "Dover Corporation, Leistung; setor industrial.",
+   "interpretation": "Fechamento de operação já conhecida, sem novidade de tese.",
+   "impact": "Sem impacto no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Dover",
+    "Leistung"
+   ],
+   "tags": [
+    "industrial",
+    "aquisição"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Dover Corporation",
+    "target": "Leistung",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Industrial",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "5d032cd5c7ca",
+   "title": "The Braff Group Completes 400th Health Care Services M&A Transaction",
+   "link": "https://www.prnewswire.com/news-releases/the-braff-group-completes-400th-health-care-services-ma-transaction-302924637.html",
+   "published": "2026-11-04T20:41:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/the-braff-group-completes-400th-health-care-services-ma-transaction-302924637.html",
+     "title": "The Braff Group Completes 400th Health Care Services M&A Transaction"
+    }
+   ],
+   "ids": [
+    "5d032cd5c7ca"
+   ],
+   "snippet": "Milestone reflects the firm's longstanding commitment to exclusively representing sellers in health care services mergers and acquisitions PITTSBURGH, Nov. 4, 2026 /PRNewswire/ -- The Braff Group, a leading mergers and acquisitions advisory firm specializing exclusively in sell-side...",
+   "prescore": 5.0,
+   "headline": "Braff Group chega à 400ª transação de M&A em serviços de saúde",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Marco institucional de boutique americana; ruído para o leitor.",
+   "summary": "A assessora Braff Group, que representa exclusivamente vendedores, concluiu sua 400ª transação de M&A em serviços de saúde.",
+   "involves": "The Braff Group (Pittsburgh); saúde.",
+   "interpretation": "Sinal de atividade contínua no mid-market de saúde nos EUA, mas é release institucional.",
+   "impact": "Sem efeito direto no mercado brasileiro.",
+   "sentiment": "positivo",
+   "entities": [
+    "The Braff Group"
+   ],
+   "tags": [
+    "saúde",
+    "assessoria",
+    "EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "cc274706cfdf",
+   "title": "AMTD IDEA in advanced dialogue to attempt to acquire a third hotel in New York City",
+   "link": "https://www.prnewswire.com/news-releases/amtd-idea-in-advanced-dialogue-to-attempt-to-acquire-a-third-hotel-in-new-york-city-302929670.html",
+   "published": "2026-11-04T19:20:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/amtd-idea-in-advanced-dialogue-to-attempt-to-acquire-a-third-hotel-in-new-york-city-302929670.html",
+     "title": "AMTD IDEA in advanced dialogue to attempt to acquire a third hotel in New York City"
+    }
+   ],
+   "ids": [
+    "cc274706cfdf"
+   ],
+   "snippet": "PARIS and NEW YORK and SINGAPORE, Nov. 4, 2026 /PRNewswire/ -- AMTD IDEA Group (\"AMTD IDEA\") (NYSE: AMTD; SGX: HKB) announces that AMTD IDEA Group is in advanced dialogue to acquire a third hotel in New York City. AMTD IDEA earlier this year acquired the Hilton garden inn hotel in Tribeca...",
+   "prescore": 5.0,
+   "headline": "AMTD IDEA negocia compra de um terceiro hotel em Nova York",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Deal imobiliário pequeno e fora do radar brasileiro.",
+   "summary": "A AMTD IDEA Group anunciou estar em diálogo avançado para adquirir um terceiro hotel em Nova York, após comprar o Hilton Garden Inn em Tribeca neste ano. Valor não divulgado.",
+   "involves": "AMTD IDEA Group (NYSE: AMTD; SGX: HKB), hotelaria em Nova York.",
+   "interpretation": "Estratégia de acumular ativos hoteleiros; estágio avançado, sem preço.",
+   "impact": "Irrelevante para o Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "AMTD IDEA"
+   ],
+   "tags": [
+    "hotelaria",
+    "Nova York"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "AMTD IDEA Group",
+    "target": "Hotel em Nova York",
+    "value": "não divulgado",
+    "stage": "Em negociação",
+    "sector": "Hotelaria / Imobiliário",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "58b86d6ae149",
+   "title": "Nexxus Capital Strengthens Market Position with Latest E-Commerce Acquisition",
+   "link": "https://www.prnewswire.com/news-releases/nexxus-capital-strengthens-market-position-with-latest-e-commerce-acquisition-302929597.html",
+   "published": "2026-11-04T18:07:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/nexxus-capital-strengthens-market-position-with-latest-e-commerce-acquisition-302929597.html",
+     "title": "Nexxus Capital Strengthens Market Position with Latest E-Commerce Acquisition"
+    }
+   ],
+   "ids": [
+    "58b86d6ae149"
+   ],
+   "snippet": "CLEARWATER, Fla., Nov. 4, 2026 /PRNewswire/ -- Nexxus Capital, LLC, a premier e-commerce acquirer and operations company, today officially announced the finalization of a multi-stage transaction originally completed in April 2026. This milestone marks the successful acquisition and...",
+   "prescore": 5.0,
+   "headline": "Nexxus Capital finaliza aquisição de e-commerce iniciada em abril",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Add-on pequeno de adquirente de e-commerce nos EUA.",
+   "summary": "A Nexxus Capital anunciou a finalização de uma transação em múltiplas etapas, originalmente concluída em abril de 2026, de um negócio de e-commerce. Valor não divulgado.",
+   "involves": "Nexxus Capital (Clearwater, FL); e-commerce.",
+   "interpretation": "Anúncio tardio de fechamento; reflete o modelo de aggregators de e-commerce.",
+   "impact": "Sem relevância para o Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Nexxus Capital"
+   ],
+   "tags": [
+    "e-commerce",
+    "aquisição"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Nexxus Capital",
+    "target": "Negócio de e-commerce não identificado",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "E-commerce",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "7c39f175817b",
+   "title": "Treasuries Gain as US Vote Fuels Hopes for Curbing Bond Supply",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-05/treasuries-gain-as-us-vote-fuels-hopes-for-curbing-bond-supply",
+   "published": "2026-11-05T03:12:09+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-05/treasuries-gain-as-us-vote-fuels-hopes-for-curbing-bond-supply",
+     "title": "Treasuries Gain as US Vote Fuels Hopes for Curbing Bond Supply"
+    }
+   ],
+   "ids": [
+    "7c39f175817b"
+   ],
+   "snippet": "Treasuries headed for a second day of gains, after a Democratic sweep in the midterms fueled expectations that the Trump administration’s tax and spending plans may be contained.",
+   "prescore": 3.8,
+   "headline": "Treasuries Gain as US Vote Fuels Hopes for Curbing Bond Supply",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Treasuries headed for a second day of gains, after a Democratic sweep in the midterms fueled expectations that the Trump administration’s tax and spending plans may be contained.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
    "is_deal": false,
    "deal": null,
    "ai": true
@@ -11308,6 +12225,45 @@
    "ai": true
   },
   {
+   "id": "8bf1a6be5cd9",
+   "title": "Governo define alíquotas do 'imposto do pecado' para 2027 e propõe manutenção do IPI em janeiro",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-define-aliquotas-do-imposto-do-pecado-para-2027-e-propoe-manutencao-do-ipi-em-janeiro.shtml",
+   "published": "2026-11-05T02:03:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-define-aliquotas-do-imposto-do-pecado-para-2027-e-propoe-manutencao-do-ipi-em-janeiro.shtml",
+     "title": "Governo define alíquotas do 'imposto do pecado' para 2027 e propõe manutenção do IPI em janeiro"
+    },
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/governo-define-aliquotas-do-imposto-seletivo-para-2027-em-medida-provisoria/",
+     "title": "‘Imposto do pecado’: Governo define alíquotas para 2027 em medida provisória"
+    }
+   ],
+   "ids": [
+    "8bf1a6be5cd9",
+    "2b566510776e"
+   ],
+   "snippet": "O governo federal definiu na noite desta quarta-feira (4), por meio de MP (medida provisória), as alíquotas do Imposto Seletivo , criado pela reforma tributária para desestimular o consumo de produtos prejudiciais à saúde e ao meio ambiente. Leia mais (11/04/2026 - 23h03)",
+   "prescore": 3.5,
+   "headline": "Governo define alíquotas do 'imposto do pecado' para 2027 e propõe manutenção do IPI em janeiro",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O governo federal definiu na noite desta quarta-feira (4), por meio de MP (medida provisória), as alíquotas do Imposto Seletivo , criado pela reforma tributária para desestimular o consumo de produtos prejudiciais à saúde e ao meio ambiente. Leia mais (11/04/2026 - 23h03)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "81cbadf3589c",
    "title": "Ativista Joshua Wong é condenado a mais 10 anos de prisão em Hong Kong",
    "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/ativista-joshua-wong-e-condenado-a-mais-10-anos-de-prisao-em-hong-kong.shtml",
@@ -11816,6 +12772,77 @@
    "ai": true
   },
   {
+   "id": "004682714115",
+   "title": "Impeachments, Iran and the presidency: what’s next after the midterms?",
+   "link": "https://www.ft.com/content/18e00ce0-aef2-41e9-ab7f-8a5dd8a9c217?syn-25a6b1a6=1",
+   "published": "2026-11-04T19:06:34+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/18e00ce0-aef2-41e9-ab7f-8a5dd8a9c217?syn-25a6b1a6=1",
+     "title": "Impeachments, Iran and the presidency: what’s next after the midterms?"
+    }
+   ],
+   "ids": [
+    "004682714115"
+   ],
+   "snippet": "A sweeping victory for Democrats has started a jostle for presidential hopefuls",
+   "prescore": 2.6,
+   "headline": "Impeachments, Iran and the presidency: what’s next after the midterms?",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A sweeping victory for Democrats has started a jostle for presidential hopefuls",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [
+    "El-Sayed"
+   ],
+   "tags": [
+    "Senado",
+    "eleições"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1d9f0d34caf5",
+   "title": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRldRbWU0X0ZoSjl6aTVHYnRncGtQUlFQbmZISDZkVHpGUEduYXUzYmZkVml4NzRIVWx0UExXaXZYakRtak9JaU1JWGZsVG9uX3ZWVmFSMDY5MWpvUXlGSUZ1bUxLWHlhR1pseFVQMlg2UnVPQTRCTDM4d3RVVzc1T2R4VkNneVJUMjFxZGExQ3FpZlkxTDhwdTVOQkhxVGtYSHc?oc=5",
+   "published": "2026-11-04T17:39:06+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRldRbWU0X0ZoSjl6aTVHYnRncGtQUlFQbmZISDZkVHpGUEduYXUzYmZkVml4NzRIVWx0UExXaXZYakRtak9JaU1JWGZsVG9uX3ZWVmFSMDY5MWpvUXlGSUZ1bUxLWHlhR1pseFVQMlg2UnVPQTRCTDM4d3RVVzc1T2R4VkNneVJUMjFxZGExQ3FpZlkxTDhwdTVOQkhxVGtYSHc?oc=5",
+     "title": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports"
+    }
+   ],
+   "ids": [
+    "1d9f0d34caf5"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5a2800c74059",
    "title": "Opinion | Republicans Forgot How to Win Elections",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOW9KbG9Oc3hWTFhrdmJNU1VYMzlHcGMtWjd0YkR3ZEllb1oyVmp0SVZzeGw1ckM5WWExRUUyMUZBdWRiZnZJellDMmJoaEtpamw1RU9YLVBpZzhJLThudmtzbnJKclRzY0c0SVZKQURaN2FKZlR3X2ZuVjBCWDJMRW13?oc=5",
@@ -11871,39 +12898,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Billionaire industrialist Dangote launches $2.5 billion Namibia fuel storage project",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1d9f0d34caf5",
-   "title": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRldRbWU0X0ZoSjl6aTVHYnRncGtQUlFQbmZISDZkVHpGUEduYXUzYmZkVml4NzRIVWx0UExXaXZYakRtak9JaU1JWGZsVG9uX3ZWVmFSMDY5MWpvUXlGSUZ1bUxLWHlhR1pseFVQMlg2UnVPQTRCTDM4d3RVVzc1T2R4VkNneVJUMjFxZGExQ3FpZlkxTDhwdTVOQkhxVGtYSHc?oc=5",
-   "published": "2026-11-04T16:26:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRldRbWU0X0ZoSjl6aTVHYnRncGtQUlFQbmZISDZkVHpGUEduYXUzYmZkVml4NzRIVWx0UExXaXZYakRtak9JaU1JWGZsVG9uX3ZWVmFSMDY5MWpvUXlGSUZ1bUxLWHlhR1pseFVQMlg2UnVPQTRCTDM4d3RVVzc1T2R4VkNneVJUMjFxZGExQ3FpZlkxTDhwdTVOQkhxVGtYSHc?oc=5",
-     "title": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports"
-    }
-   ],
-   "ids": [
-    "1d9f0d34caf5"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12544,6 +13538,277 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "9ed9e74b4e1a",
+   "title": "Google to Invest $15 Billion in Malaysia Over Two Years",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM1BiQ3NWWWpodG83amdyWWZlcDN6eU9RcGxfUEFJY1VOejFWOWtnYjNhWDdDRmdpWFNPTnNyeUVCREN0T2FCT2FoTzBBdV9aajlfaXB3Umo4bDB3aUU4NmNLb1FBcW1fcVFabWZ4UEVNQTdvZEFqMThpUG8xOC1WczJHOFV5MFRpWDE1S29SR1JiZw?oc=5",
+   "published": "2026-11-04T11:06:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM1BiQ3NWWWpodG83amdyWWZlcDN6eU9RcGxfUEFJY1VOejFWOWtnYjNhWDdDRmdpWFNPTnNyeUVCREN0T2FCT2FoTzBBdV9aajlfaXB3Umo4bDB3aUU4NmNLb1FBcW1fcVFabWZ4UEVNQTdvZEFqMThpUG8xOC1WczJHOFV5MFRpWDE1S29SR1JiZw?oc=5",
+     "title": "Google to Invest $15 Billion in Malaysia Over Two Years"
+    }
+   ],
+   "ids": [
+    "9ed9e74b4e1a"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Google to Invest $15 Billion in Malaysia Over Two Years",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1c473b204fce",
+   "title": "Democrats Take Congress as Trump Says Iran War Is Partly to Blame for GOP Losses",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWTdDcl95ZWRjVHlORVdINFFmUnpoa1hEVVAyd09haUZvOEpLdGNJNV9aZlh0ejR1MEFYWkFla2lFcnlmWjVRUnBQc0piRGtvRjBhb1h3TlhPZmlZaVBiT0hDRjY1akEyOTNqalZ3SlBqLWZQZUZ0b0FsVm10TkZLZ01mSEVDRW1kNG02d0hiQ0otOFJYTi1vUXBaSld5NXVickpfZ2xNbmhJUFdPdHU0dW9WUXdmQQ?oc=5",
+   "published": "2026-11-04T11:03:53+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWTdDcl95ZWRjVHlORVdINFFmUnpoa1hEVVAyd09haUZvOEpLdGNJNV9aZlh0ejR1MEFYWkFla2lFcnlmWjVRUnBQc0piRGtvRjBhb1h3TlhPZmlZaVBiT0hDRjY1akEyOTNqalZ3SlBqLWZQZUZ0b0FsVm10TkZLZ01mSEVDRW1kNG02d0hiQ0otOFJYTi1vUXBaSld5NXVickpfZ2xNbmhJUFdPdHU0dW9WUXdmQQ?oc=5",
+     "title": "Democrats Take Congress as Trump Says Iran War Is Partly to Blame for GOP Losses"
+    }
+   ],
+   "ids": [
+    "1c473b204fce"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Democrats Take Congress as Trump Says Iran War Is Partly to Blame for GOP Losses",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b6ac002cbb07",
+   "title": "Número recorde de mulheres democratas integrará o próximo Congresso dos EUA",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRlNZczJXaXlKVVlkdDM2Qkt5XzVyY0xpVEdWUTBmZWZaLTBLU2x4bkczUk1oNTVTSy1TU0JjeTZJYlB2QW5tdUtrQWlSY2tiM0ZiLUU1U0EyNmQ4ZVB1MUVoaUVQU0pCSnJJQ0VQbmU0SUs4V2t5OUhONUV0dVNSRnNscXFBMVF2dFlaaHZsTzFwdjlNY25TWHBGeW9uODZlalhqejByX2RpZ3VWdjZNRTNTRlk4U1dnWjExMXJJeEVVMmNxSWfSAdQBQVVfeXFMT0ttV0ZOWGhFSHNaWjBjZmpLOUJad3FEcXpDWnpjdFV5dkJpNm9MLXZfN0tjMlBGS2hkMTMxT285LXUzR0JhNS1GcjFDZEhSQVRYX1NOTWRtNjdab1JEOUMyWmZwVUZsLVM5MnVBbmMyRm5LRWh3eGQ3NTltYnZ3RkxYQkhZV1FPSXM3dmxPcUVUbkRIZlZSQUI4RFh3dF9JYzhSU18ySWpVTkFoNjN5M2ttSHhRTWtFWjlXQkxpVTk1MmhhbmdBdGF1VGdlNGE5TkN6cFU?oc=5",
+   "published": "2026-11-04T14:18:16+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRlNZczJXaXlKVVlkdDM2Qkt5XzVyY0xpVEdWUTBmZWZaLTBLU2x4bkczUk1oNTVTSy1TU0JjeTZJYlB2QW5tdUtrQWlSY2tiM0ZiLUU1U0EyNmQ4ZVB1MUVoaUVQU0pCSnJJQ0VQbmU0SUs4V2t5OUhONUV0dVNSRnNscXFBMVF2dFlaaHZsTzFwdjlNY25TWHBGeW9uODZlalhqejByX2RpZ3VWdjZNRTNTRlk4U1dnWjExMXJJeEVVMmNxSWfSAdQBQVVfeXFMT0ttV0ZOWGhFSHNaWjBjZmpLOUJad3FEcXpDWnpjdFV5dkJpNm9MLXZfN0tjMlBGS2hkMTMxT285LXUzR0JhNS1GcjFDZEhSQVRYX1NOTWRtNjdab1JEOUMyWmZwVUZsLVM5MnVBbmMyRm5LRWh3eGQ3NTltYnZ3RkxYQkhZV1FPSXM3dmxPcUVUbkRIZlZSQUI4RFh3dF9JYzhSU18ySWpVTkFoNjN5M2ttSHhRTWtFWjlXQkxpVTk1MmhhbmdBdGF1VGdlNGE5TkN6cFU?oc=5",
+     "title": "Número recorde de mulheres democratas integrará o próximo Congresso dos EUA"
+    }
+   ],
+   "ids": [
+    "b6ac002cbb07"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Recorde de mulheres democratas no próximo Congresso dos EUA",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Sem efeito de mercado.",
+   "summary": "O próximo Congresso terá número recorde de mulheres democratas.",
+   "involves": "Partido Democrata.",
+   "interpretation": "Marco político.",
+   "impact": "Nenhum.",
+   "sentiment": "neutro",
+   "entities": [
+    "Partido Democrata"
+   ],
+   "tags": [
+    "EUA",
+    "Congresso"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "ee1f549b4568",
+   "title": "Sete brasileiros são eleitos nos EUA; veja quem são",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/sete-brasileiros-sao-eleitos-nos-eua-veja-quem-sao.shtml",
+   "published": "2026-11-04T13:48:01+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/sete-brasileiros-sao-eleitos-nos-eua-veja-quem-sao.shtml",
+     "title": "Sete brasileiros são eleitos nos EUA; veja quem são"
+    },
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/mundo/noticia/2026/11/04/eleicoes-nos-eua-seis-brasileiros-sao-eleitos-deputados-estaduais.ghtml",
+     "title": "Eleições nos EUA: sete brasileiros são eleitos deputados estaduais"
+    }
+   ],
+   "ids": [
+    "ee1f549b4568",
+    "17cc3b6e7b88"
+   ],
+   "snippet": "Sete brasileiros foram eleitos ou reeleitos para cargos legislativos nas eleições de meio de mandato dos Estados Unidos , realizadas na terça-feira (3). Segundo resultados divulgados nesta quarta-feira (4), eles representarão quatro estados: Flórida, Massachusetts, Connecticut e Nevada. Leia mais (11/04/2026 - 14h24)",
+   "prescore": 3.3,
+   "headline": "Sete brasileiros são eleitos nos EUA",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Curiosidade eleitoral sem impacto econômico.",
+   "summary": "Sete brasileiros foram eleitos ou reeleitos para legislativos estaduais na Flórida, Massachusetts, Connecticut e Nevada.",
+   "involves": "Brasileiros eleitos nos EUA.",
+   "interpretation": "Notícia de diáspora, sem repercussão econômica.",
+   "impact": "Nenhum.",
+   "sentiment": "neutro",
+   "entities": [
+    "Folha",
+    "g1"
+   ],
+   "tags": [
+    "eleições EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "408173aeedb0",
+   "title": "Votação de Janones para deputado federal cai 67% em MG de 2022 para 2026",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/votacao-de-janones-para-deputado-federal-cai-67-em-mg-de-2022-para-2026.shtml",
+   "published": "2026-11-05T07:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/votacao-de-janones-para-deputado-federal-cai-67-em-mg-de-2022-para-2026.shtml",
+     "title": "Votação de Janones para deputado federal cai 67% em MG de 2022 para 2026"
+    }
+   ],
+   "ids": [
+    "408173aeedb0"
+   ],
+   "snippet": "Chamado de \"general\" pelo presidente reeleito Luiz Inácio Lula da Silva ( PT ), em vista de sua atuação como coordenador do grupo de WhatsApp \"Exército do Lula\" , André Janones ( Rede -MG), 42, viu sua votação encolher significativamente na sua cidade natal, Ituiutaba, e no estado de Minas Gerais . Leia mais (11/05/2026 - 04h00)",
+   "prescore": 3.0,
+   "headline": "Votação de Janones cai 67% em MG de 2022 para 2026",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Notícia política de baixo interesse econômico.",
+   "summary": "André Janones teve queda de 67% em votos em Minas Gerais entre 2022 e 2026.",
+   "involves": "André Janones, Rede, Lula.",
+   "interpretation": "Nota sobre desempenho eleitoral individual.",
+   "impact": "Nenhum.",
+   "sentiment": "neutro",
+   "entities": [
+    "André Janones",
+    "Lula"
+   ],
+   "tags": [
+    "eleições",
+    "Janones"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "0ffcaf29a4c1",
+   "title": "Eleição nos EUA com revés de Trump tem celebração de lulistas e crítica de Nikolas a Janja",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/eleicao-nos-eua-com-reves-de-trump-tem-celebracao-de-lulistas-e-critica-de-nikolas-a-janja.shtml",
+   "published": "2026-11-04T23:05:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/eleicao-nos-eua-com-reves-de-trump-tem-celebracao-de-lulistas-e-critica-de-nikolas-a-janja.shtml",
+     "title": "Eleição nos EUA com revés de Trump tem celebração de lulistas e crítica de Nikolas a Janja"
+    },
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/poder/2026/11/eleicao-nos-eua-com-reves-de-trump-tem-celebracao-de-lulistas-e-critica-de-nikolas-a-janja.shtml",
+     "title": "Eleição nos EUA com revés de Trump tem celebração de lulistas e crítica de Nikolas a Janja"
+    }
+   ],
+   "ids": [
+    "0ffcaf29a4c1",
+    "7ae9cfb4b58d"
+   ],
+   "snippet": "A vitória do Partido Democrata nas eleições de meio de mandato dos Estados Unidos , realizadas na terça-feira (3), foi celebrada nas redes sociais por políticos e apoiadores do governo Lula ( PT ). Parte deles associou o revés de Donald Trump à reeleição do presidente brasileiro, no fim de outubro. Leia mais (11/04/2026 - 20h05)",
+   "prescore": 3.0,
+   "headline": "Revés de Trump é celebrado por lulistas; Nikolas critica Janja",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Repercussão em redes sociais.",
+   "summary": "A vitória democrata foi celebrada por apoiadores de Lula, que associaram o revés de Trump à reeleição.",
+   "involves": "Lulistas, Nikolas Ferreira, Janja.",
+   "interpretation": "Disputa simbólica de narrativa.",
+   "impact": "Sem impacto.",
+   "sentiment": "neutro",
+   "entities": [
+    "Lula",
+    "Trump",
+    "Nikolas Ferreira"
+   ],
+   "tags": [
+    "redes",
+    "eleições EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "a5560bc6f4ef",
+   "title": "Este país tem uma Constituição",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/conrado-hubner-mendes/2026/11/este-pais-tem-uma-constituicao.shtml",
+   "published": "2026-11-04T22:01:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/conrado-hubner-mendes/2026/11/este-pais-tem-uma-constituicao.shtml",
+     "title": "Este país tem uma Constituição"
+    }
+   ],
+   "ids": [
+    "a5560bc6f4ef"
+   ],
+   "snippet": "\"A democracia está novamente em xeque.\" \"O Brasil continuará sendo um país soberano.\" \"Ninguém está acima da lei.\" \"A floresta vale mais em pé do que destruída.\" Leia mais (11/04/2026 - 19h01)",
+   "prescore": 3.0,
+   "headline": "Este país tem uma Constituição",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Coluna de opinião sem fato novo.",
+   "summary": "Texto de opinião sobre democracia, soberania e Estado de Direito.",
+   "involves": "Folha, colunista.",
+   "interpretation": "Opinião, sem fato econômico.",
+   "impact": "Nenhum.",
+   "sentiment": "neutro",
+   "entities": [
+    "Folha"
+   ],
+   "tags": [
+    "opinião",
+    "democracia"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
   }
  ],
  "deals": [
@@ -12749,56 +14014,6 @@
     "value": "não divulgado",
     "stage": "Concluído",
     "sector": "Assessoria de investimentos / wealth",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
-   "id": "a5d4d7f31daa",
-   "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWU1MYTRpWmVYU2dfWXBkTjR3U3ZERnVWUGtMVkttTjFPT3JPUE43NUdIRE1KcHVzcEpRNHpDaHdHOXEzbHQxcEJEVkNYNGRnY2lhV0ctZFRvb19adzJLcENWLXlINk1DRkNSUl9LQWlrVlRDaFVhb3dSVWF6c1l3Y3NGd3dQdFR5Z2ZLQWlvMFNhV1dtQVIyNVF2SFQycm9iS1Y4dQ?oc=5",
-   "published": "2026-11-05T09:52:19+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWU1MYTRpWmVYU2dfWXBkTjR3U3ZERnVWUGtMVkttTjFPT3JPUE43NUdIRE1KcHVzcEpRNHpDaHdHOXEzbHQxcEJEVkNYNGRnY2lhV0ctZFRvb19adzJLcENWLXlINk1DRkNSUl9LQWlrVlRDaFVhb3dSVWF6c1l3Y3NGd3dQdFR5Z2ZLQWlvMFNhV1dtQVIyNVF2SFQycm9iS1Y4dQ?oc=5",
-     "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech"
-    }
-   ],
-   "ids": [
-    "a5d4d7f31daa"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "China bloqueia acordo de US$ 5,4 bi da SoftBank em robótica, em demonstração de controle sobre tecnologia de IA",
-   "category": "internacional",
-   "importance": 7,
-   "importance_reason": "Veto regulatório chinês a deal bilionário sinaliza risco para M&A cross-border em tecnologia.",
-   "summary": "Segundo o WSJ, a China bloqueou um negócio de robótica de US$ 5,4 bilhões da SoftBank. O trecho não traz detalhes sobre a contraparte ou o fundamento do veto.",
-   "involves": "SoftBank, governo chinês, setor de robótica e IA; US$ 5,4 bilhões.",
-   "interpretation": "Reforça que Pequim usa a aprovação antitruste/regulatória como instrumento de política tecnológica, em linha com a disputa EUA-China. Faltam detalhes no material disponível.",
-   "impact": "Aumenta o prêmio de risco regulatório em deals tecnológicos com exposição à China; negativo para SoftBank e para estruturas que dependem de aprovação em Pequim.",
-   "sentiment": "negativo",
-   "entities": [
-    "SoftBank",
-    "China",
-    "Wall Street Journal"
-   ],
-   "tags": [
-    "China",
-    "SoftBank",
-    "robótica",
-    "regulação"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "SoftBank",
-    "target": "negócio de robótica (detalhes não divulgados)",
-    "value": "US$ 5,4 bilhões",
-    "stage": "Cancelado",
-    "sector": "Robótica / IA",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -13063,7 +14278,7 @@
    "id": "071193bbe0e6",
    "title": "OpenAI to Bring Pierre Computer’s Code Storage to Codex Through Acquisition",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMHB3WDNrSi01NF8zXzUyZWdSb0U0ZUZyVlZWUF9jeVBfeHVTNkpESjFRSk1FWTk1aFZNcVl2LTRXdlpnR2N5eTRURXJMZkVRM0o5dlVSZWRuY0dVc2ZRTGRLb3M1WVZjRk54Z0doRGt2MVlDTURZaHR6LWpPR3RiT0FmU19vWWd6dE5iY3FLOWozZkNhSHJENktiRGtmc3dJM2xXSDFyOFNlM0N2b2FLWQ?oc=5",
-   "published": "2026-11-04T18:34:11+00:00",
+   "published": "2026-11-04T17:24:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -13352,7 +14567,7 @@
    "id": "2d18bfac79ff",
    "title": "Siemens Healthineers to Rebrand as Healthineers as Diagnostics Carve-Out Begins",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZG5LYkxnQ0NhbkR2UG94WVY3aDRDWVY5aEk5bHBfNzRoTThWeUF3SWV2ZTFvOWdSOENSZnZCRkxGT0FOb3lRMUFVSzZDWmVhcmptaV9EMEFyak85QnpBY0VnX1NIN1ZHYXFLb01OcnZIN1p6dmxtSWEzeGN4TExYdWpSaVZJTGFYcURlNGFRSFpNWG5BTHg0VUwtSjZ6bnlFVkd5dnZtWHJ2TXg5YzR5OEIxaGh1bGIt?oc=5",
-   "published": "2026-11-05T07:09:47+00:00",
+   "published": "2026-11-05T07:08:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -13586,20 +14801,20 @@
    "ai": true
   },
   {
-   "id": "6fa6cd158b63",
+   "id": "7831d6cf6f23",
    "title": "/R E P E A T --AVENIR GLOBAL expands global reach and technology expertise with acquisition of Marker Collective/",
-   "link": "https://www.prnewswire.com/news-releases/-r-e-p-e-a-t-avenir-global-expands-global-reach-and-technology-expertise-with-acquisition-of-marker-collective--832006170.html",
+   "link": "https://www.prnewswire.com/news-releases/avenir-global-expands-global-reach-and-technology-expertise-with-acquisition-of-marker-collective-302930411.html",
    "published": "2026-11-05T07:36:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/-r-e-p-e-a-t-avenir-global-expands-global-reach-and-technology-expertise-with-acquisition-of-marker-collective--832006170.html",
+     "link": "https://www.prnewswire.com/news-releases/avenir-global-expands-global-reach-and-technology-expertise-with-acquisition-of-marker-collective-302930411.html",
      "title": "/R E P E A T --AVENIR GLOBAL expands global reach and technology expertise with acquisition of Marker Collective/"
     },
     {
      "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/avenir-global-expands-global-reach-and-technology-expertise-with-acquisition-of-marker-collective-302930411.html",
+     "link": "https://www.prnewswire.com/news-releases/-r-e-p-e-a-t-avenir-global-expands-global-reach-and-technology-expertise-with-acquisition-of-marker-collective--832006170.html",
      "title": "/R E P E A T --AVENIR GLOBAL expands global reach and technology expertise with acquisition of Marker Collective/"
     },
     {
@@ -13609,12 +14824,12 @@
     }
    ],
    "ids": [
-    "6fa6cd158b63",
     "7831d6cf6f23",
+    "6fa6cd158b63",
     "7831d6cf6f23",
     "eec6575d891b"
    ],
-   "snippet": "Acquisition adds three established communications agencies and a proprietary AI platform, placing AVENIR GLOBAL among the world's 15 largest communications firms MONTREAL, Nov. 5, 2026 /CNW/ -- AVENIR GLOBAL, a Montreal-based holding and management company of specialist communications...",
+   "snippet": "Acquisition adds three established communications agencies and a proprietary AI platform, placing AVENIR GLOBAL among the world's 15 largest communications firms MONTREAL, Nov. 5, 2026 /PRNewswire/ -- AVENIR GLOBAL, a Montreal-based holding and management company of specialist...",
    "prescore": 5.0,
    "headline": "Avenir Global compra Marker Collective e entra entre as 15 maiores firmas de comunicação do mundo",
    "category": "mna",
@@ -13975,16 +15190,66 @@
  ],
  "upcoming": [
   {
+   "id": "a5d4d7f31daa",
+   "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWU1MYTRpWmVYU2dfWXBkTjR3U3ZERnVWUGtMVkttTjFPT3JPUE43NUdIRE1KcHVzcEpRNHpDaHdHOXEzbHQxcEJEVkNYNGRnY2lhV0ctZFRvb19adzJLcENWLXlINk1DRkNSUl9LQWlrVlRDaFVhb3dSVWF6c1l3Y3NGd3dQdFR5Z2ZLQWlvMFNhV1dtQVIyNVF2SFQycm9iS1Y4dQ?oc=5",
+   "published": "2026-11-05T11:12:12+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWU1MYTRpWmVYU2dfWXBkTjR3U3ZERnVWUGtMVkttTjFPT3JPUE43NUdIRE1KcHVzcEpRNHpDaHdHOXEzbHQxcEJEVkNYNGRnY2lhV0ctZFRvb19adzJLcENWLXlINk1DRkNSUl9LQWlrVlRDaFVhb3dSVWF6c1l3Y3NGd3dQdFR5Z2ZLQWlvMFNhV1dtQVIyNVF2SFQycm9iS1Y4dQ?oc=5",
+     "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech"
+    }
+   ],
+   "ids": [
+    "a5d4d7f31daa"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "China bloqueia acordo de US$ 5,4 bi da SoftBank em robótica, em demonstração de controle sobre tecnologia de IA",
+   "category": "internacional",
+   "importance": 7,
+   "importance_reason": "Veto regulatório chinês a deal bilionário sinaliza risco para M&A cross-border em tecnologia.",
+   "summary": "Segundo o WSJ, a China bloqueou um negócio de robótica de US$ 5,4 bilhões da SoftBank. O trecho não traz detalhes sobre a contraparte ou o fundamento do veto.",
+   "involves": "SoftBank, governo chinês, setor de robótica e IA; US$ 5,4 bilhões.",
+   "interpretation": "Reforça que Pequim usa a aprovação antitruste/regulatória como instrumento de política tecnológica, em linha com a disputa EUA-China. Faltam detalhes no material disponível.",
+   "impact": "Aumenta o prêmio de risco regulatório em deals tecnológicos com exposição à China; negativo para SoftBank e para estruturas que dependem de aprovação em Pequim.",
+   "sentiment": "negativo",
+   "entities": [
+    "SoftBank",
+    "China",
+    "Wall Street Journal"
+   ],
+   "tags": [
+    "China",
+    "SoftBank",
+    "robótica",
+    "regulação"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "SoftBank",
+    "target": "negócio de robótica (detalhes não divulgados)",
+    "value": "US$ 5,4 bilhões",
+    "stage": "Cancelado",
+    "sector": "Robótica / IA",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "116e74f693ce",
-   "title": "World's largest olive oil company plummets 19% after rivals agree to takeover deal",
+   "title": "World's largest olive oil company plummets 18% after rivals agree to takeover deal",
    "link": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
-   "published": "2026-11-05T11:15:05+00:00",
+   "published": "2026-11-05T11:42:28+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "CNBC",
      "link": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
-     "title": "World's largest olive oil company plummets 19% after rivals agree to takeover deal"
+     "title": "World's largest olive oil company plummets 18% after rivals agree to takeover deal"
     }
    ],
    "ids": [
@@ -13992,11 +15257,44 @@
    ],
    "snippet": "The world's largest olive oil company, Deoleo, plummeted in early trading after two of its rivals announced plans to acquire the firm.",
    "prescore": 8.0,
-   "headline": "World's largest olive oil company plummets 19% after rivals agree to takeover deal",
+   "headline": "World's largest olive oil company plummets 18% after rivals agree to takeover deal",
    "category": "mna",
    "importance": 5,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "The world's largest olive oil company, Deoleo, plummeted in early trading after two of its rivals announced plans to acquire the firm.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "08620c73db55",
+   "title": "Copom: mercado vê interrupção no ciclo de corte da Selic, mas afasta chance de alta da taxa",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdEVaV3F3cGQ5X2xZOE1ldnZiR05haGphc1NyTXdJS3pHekdVZXYzblpvOFd3UlFmZ25ieHh3NGR3NGJUclNuSUd0ejR3alpaR2JMWGw3ZFY1cW5BTnJuUjhrQ3hITWhiSUJYTWxZWGp4ZHZzTWZaajlBejFmSmNYX1Rjdjl5YzdYdHJocFNHZWoyUV9Pam9pUVNiX05oMDTSAaQBQVVfeXFMTTFBSjZ4TXJTdjlGYjZkaTkxRzQtb2hCcmFKRzFIdncwWWtOT2RHV21qRElIVE9jeWp0QnpVaEhLTXhwX3lJSmlZa2g0aV9yTVFlSF9VRG15c3FEeEhZV09KR1JuNWV0MmNZVlEtb0w0Vy1adDlFby1IUVpheXo0Ymx2eWNMbTZ6Njd2TGhrR0RpQ09EWkNxQTAtSlBZUWxVWG1fbm0?oc=5",
+   "published": "2026-11-05T11:45:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdEVaV3F3cGQ5X2xZOE1ldnZiR05haGphc1NyTXdJS3pHekdVZXYzblpvOFd3UlFmZ25ieHh3NGR3NGJUclNuSUd0ejR3alpaR2JMWGw3ZFY1cW5BTnJuUjhrQ3hITWhiSUJYTWxZWGp4ZHZzTWZaajlBejFmSmNYX1Rjdjl5YzdYdHJocFNHZWoyUV9Pam9pUVNiX05oMDTSAaQBQVVfeXFMTTFBSjZ4TXJTdjlGYjZkaTkxRzQtb2hCcmFKRzFIdncwWWtOT2RHV21qRElIVE9jeWp0QnpVaEhLTXhwX3lJSmlZa2g0aV9yTVFlSF9VRG15c3FEeEhZV09KR1JuNWV0MmNZVlEtb0w0Vy1adDlFby1IUVpheXo0Ymx2eWNMbTZ6Njd2TGhrR0RpQ09EWkNxQTAtSlBZUWxVWG1fbm0?oc=5",
+     "title": "Copom: mercado vê interrupção no ciclo de corte da Selic, mas afasta chance de alta da taxa"
+    }
+   ],
+   "ids": [
+    "08620c73db55"
+   ],
+   "snippet": "",
+   "prescore": 6.2,
+   "headline": "Copom: mercado vê interrupção no ciclo de corte da Selic, mas afasta chance de alta da taxa",
+   "category": "macro",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14041,6 +15339,39 @@
    "ai": false
   },
   {
+   "id": "eaccc2b617aa",
+   "title": "China Plans Debut Yuan Bond Sales in Canada Amid Warming Ties",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-05/china-plans-debut-yuan-bond-sales-in-canada-amid-warming-ties",
+   "published": "2026-11-05T11:25:06+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-05/china-plans-debut-yuan-bond-sales-in-canada-amid-warming-ties",
+     "title": "China Plans Debut Yuan Bond Sales in Canada Amid Warming Ties"
+    }
+   ],
+   "ids": [
+    "eaccc2b617aa"
+   ],
+   "snippet": "China is planning to issue yuan-dominated sovereign bonds in Canada for the first time as the two nations strengthen bilateral ties following years of diplomatic strain.",
+   "prescore": 4.8,
+   "headline": "China Plans Debut Yuan Bond Sales in Canada Amid Warming Ties",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "China is planning to issue yuan-dominated sovereign bonds in Canada for the first time as the two nations strengthen bilateral ties following years of diplomatic strain.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "cc3aece5f76b",
    "title": "Elevador dos juros parado: decisão do Copom e temporada de balanços movimentam a bolsa nesta quinta-feira",
    "link": "https://www.seudinheiro.com/2026/colunistas/elevador-juros-parado-decisao-copom-balancos-movimentam-bolsa-nesta-quinta-feira-rsgp/",
@@ -14072,6 +15403,111 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "26f1bf6d86e2",
+   "title": "Oposição pede impeachment de presidente do Paraguai",
+   "link": "https://www.infomoney.com.br/mundo/oposicao-pede-impeachment-de-presidente-do-paraguai/",
+   "published": "2026-11-05T11:24:54+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/oposicao-pede-impeachment-de-presidente-do-paraguai/",
+     "title": "Oposição pede impeachment de presidente do Paraguai"
+    }
+   ],
+   "ids": [
+    "26f1bf6d86e2"
+   ],
+   "snippet": "A medida ocorre um dia depois de o Banco Central do Paraguai determinar a intervenção no Ueno Bank por causa de uma grave insuficiência de capital The post Oposição pede impeachment de presidente do Paraguai appeared first on InfoMoney .",
+   "prescore": 4.2,
+   "headline": "Oposição pede impeachment de presidente do Paraguai",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A medida ocorre um dia depois de o Banco Central do Paraguai determinar a intervenção no Ueno Bank por causa de uma grave insuficiência de capital The post Oposição pede impeachment de presidente do Paraguai appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "0116b4cfd679",
+   "title": "Paraguai indica novo presidente de BC e Fitch corta rating do Banco Ueno para default",
+   "link": "https://www.infomoney.com.br/mundo/paraguai-indica-novo-presidente-de-bc-e-fitch-corta-rating-do-banco-ueno-para-default/",
+   "published": "2026-11-05T11:24:34+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/paraguai-indica-novo-presidente-de-bc-e-fitch-corta-rating-do-banco-ueno-para-default/",
+     "title": "Paraguai indica novo presidente de BC e Fitch corta rating do Banco Ueno para default"
+    }
+   ],
+   "ids": [
+    "0116b4cfd679"
+   ],
+   "snippet": "Santiago Penã encaminhou ao Senado o pedido de aprovação da nomeação do economista Raúl Vera Bogado como novo presidente do Banco Central do país The post Paraguai indica novo presidente de BC e Fitch corta rating do Banco Ueno para default appeared first on InfoMoney .",
+   "prescore": 4.2,
+   "headline": "Paraguai indica novo presidente de BC e Fitch corta rating do Banco Ueno para default",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Santiago Penã encaminhou ao Senado o pedido de aprovação da nomeação do economista Raúl Vera Bogado como novo presidente do Banco Central do país The post Paraguai indica novo presidente de BC e Fitch corta rating do Banco Ueno para default appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "2364fdcdc99c",
+   "title": "Opinion | The Beginning of Trump’s Long Goodbye",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBVRkJIUUJhcUE4WXk4MkZycEQ4SjVZR05OazIyZUIybHpsTDNBSnBaNmZBRm9ZU1ZLeFM4d2poLVNNV0IzX0FlZnpQc2xvSHdFX0ZNQXI0YXNLUTFqSFNaUmRnVTZJS2lFQVVQeEJ4NmR1MlZoNy1yTzV6TnRHZw?oc=5",
+   "published": "2026-11-05T11:20:54+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBVRkJIUUJhcUE4WXk4MkZycEQ4SjVZR05OazIyZUIybHpsTDNBSnBaNmZBRm9ZU1ZLeFM4d2poLVNNV0IzX0FlZnpQc2xvSHdFX0ZNQXI0YXNLUTFqSFNaUmRnVTZJS2lFQVVQeEJ4NmR1MlZoNy1yTzV6TnRHZw?oc=5",
+     "title": "Opinion | The Beginning of Trump’s Long Goodbye"
+    }
+   ],
+   "ids": [
+    "2364fdcdc99c"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinião: o início da 'longa despedida' de Trump",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Opinião sobre o impacto político das midterms.",
+   "summary": "Artigo de opinião do WSJ sobre o enfraquecimento político de Trump. Sem dados novos no trecho.",
+   "involves": "Donald Trump, WSJ.",
+   "interpretation": "Leitura editorial do pós-midterms.",
+   "impact": "Sem impacto direto.",
+   "sentiment": "neutro",
+   "entities": [
+    "Donald Trump",
+    "Wall Street Journal"
+   ],
+   "tags": [
+    "opinião",
+    "Trump"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
   },
   {
    "id": "a9cd0229256b",
@@ -14107,6 +15543,105 @@
    "ai": false
   },
   {
+   "id": "ef90b73ba81b",
+   "title": "Volvo Car Sales Drop on Continued China, U.S. Weakness",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeThxc2FES2hIbDZMM25YZVlNWFZnOUI1eUtsVEw3M0RrMUMtYWxMcEIzYVdpa3htb1pBUXZYTl90SUdsd1ZhVVhZc1Z0Wm5SSTBQRnlrQU9BTmlreks3b084UnlTUFVLUUhLdzBXSGtDZ3lhNGdmWU5iQXZwMFdqbHZDR0RnTFpxbEtZZ3VEaW1feVN0UkhJZl91M1k?oc=5",
+   "published": "2026-11-05T11:43:02+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeThxc2FES2hIbDZMM25YZVlNWFZnOUI1eUtsVEw3M0RrMUMtYWxMcEIzYVdpa3htb1pBUXZYTl90SUdsd1ZhVVhZc1Z0Wm5SSTBQRnlrQU9BTmlreks3b084UnlTUFVLUUhLdzBXSGtDZ3lhNGdmWU5iQXZwMFdqbHZDR0RnTFpxbEtZZ3VEaW1feVN0UkhJZl91M1k?oc=5",
+     "title": "Volvo Car Sales Drop on Continued China, U.S. Weakness"
+    }
+   ],
+   "ids": [
+    "ef90b73ba81b"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "Volvo Car Sales Drop on Continued China, U.S. Weakness",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5d757f35c216",
+   "title": "Treasury, European Bond Yields Tumble as Markets Lifted By U.S. Democrats’ Victory",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdld4SERJUnFrU2lIQ2NMNTJkZy1mVGZUbUFRaEtBQllGTHdQODM2WkhrV1lwd0tCaEd0UUJWclh4M2t6Y0RxMEZWTTBGRHRvNkpMaUV6YkZweVR5MlFwVThma29VWEI4dzdPMTNaSGR1Y28wRnBDWGZQWk02SnhXbnNQbWkycmo0QU50Wm9MNnFGa2lLR2czVU5Vd0thSTNkUEZyTGZDVHR6dWd2RkhoQ18zdnl3b1k0U3QxdWs1Qk5kQQ?oc=5",
+   "published": "2026-11-05T11:15:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdld4SERJUnFrU2lIQ2NMNTJkZy1mVGZUbUFRaEtBQllGTHdQODM2WkhrV1lwd0tCaEd0UUJWclh4M2t6Y0RxMEZWTTBGRHRvNkpMaUV6YkZweVR5MlFwVThma29VWEI4dzdPMTNaSGR1Y28wRnBDWGZQWk02SnhXbnNQbWkycmo0QU50Wm9MNnFGa2lLR2czVU5Vd0thSTNkUEZyTGZDVHR6dWd2RkhoQ18zdnl3b1k0U3QxdWs1Qk5kQQ?oc=5",
+     "title": "Treasury, European Bond Yields Tumble as Markets Lifted By U.S. Democrats’ Victory"
+    }
+   ],
+   "ids": [
+    "5d757f35c216"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "Treasury, European Bond Yields Tumble as Markets Lifted By U.S. Democrats’ Victory",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "baa0328369be",
+   "title": "Trump Faces Backlash After Midterm Election Rout",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-05/the-pulse-11-5-2026-video",
+   "published": "2026-11-05T11:25:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-05/the-pulse-11-5-2026-video",
+     "title": "Trump Faces Backlash After Midterm Election Rout"
+    }
+   ],
+   "ids": [
+    "baa0328369be"
+   ],
+   "snippet": "\"The Pulse With Francine Lacqua\" is all about conversations with high profile guests in the beating heart of global business, economics, finance and politics. Based in London, we go wherever the story is, bringing you exclusive interviews and market-moving scoops. Today's guests: Jari Stehn, Goldman Sachs Chief European Economist; Estelle Brachlianoff, Veolia CEO; Caroline Behringer, CB Strategies Founder; Amanda Sloat, IE University Professor. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Trump Faces Backlash After Midterm Election Rout",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "\"The Pulse With Francine Lacqua\" is all about conversations with high profile guests in the beating heart of global business, economics, finance and politics. Based in London, we go wherever the story is, bringing you exclusive interviews and market-moving scoops. Today's guests: Jari Stehn, Goldman Sachs Chief European Economist; Estelle Brachlianoff, Veolia CEO; Caroline Behringer, CB Strategies",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "1eac9bb8dcba",
    "title": "The Case for a Year-End US Stocks Rally",
    "link": "https://www.bloomberg.com/news/newsletters/2026-11-05/the-case-for-a-year-end-us-stocks-rally",
@@ -14129,6 +15664,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Wall Street trading desks are betting that the path of least resistance for stocks is up.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "67a9a2ffb8a6",
+   "title": "South African Stocks Rally Most in Seven Months as Miners Soar",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-05/south-african-stocks-rally-most-in-seven-months-as-miners-soar",
+   "published": "2026-11-05T11:15:33+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-05/south-african-stocks-rally-most-in-seven-months-as-miners-soar",
+     "title": "South African Stocks Rally Most in Seven Months as Miners Soar"
+    }
+   ],
+   "ids": [
+    "67a9a2ffb8a6"
+   ],
+   "snippet": "South African stocks jumped the most in almost seven months, carried higher by a surge in precious metals producers as the price of gold soared.",
+   "prescore": 2.8,
+   "headline": "South African Stocks Rally Most in Seven Months as Miners Soar",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "South African stocks jumped the most in almost seven months, carried higher by a surge in precious metals producers as the price of gold soared.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14254,7 +15822,7 @@
    "ids": [
     "d5e19150b8ad"
    ],
-   "snippet": "O secretário de Defesa dos Estados Unidos, Pete Hegseth, fala durante uma declaração à imprensa ao chegar para uma reunião de ministros da defesa da OTAN na sede da organização em Bruxelas, quinta-feira, 18 de junho de 2026. AP Photo/Virginia Mayo Após derrota do governo Trump nas midterms, deputados do Congresso dos Estados Unidos podem votar o impeachment do chefe do Pentágono, Pete Hegseth, já na próxima semana, segundo a TV CNN Internacional. ✅ Siga o canal de notícias internacionais do g1 no WhatsApp O movimento ocorre após derrota do governo Trump nas eleições de meio de mandato, conheci",
+   "snippet": "O secretário de Defesa dos Estados Unidos, Pete Hegseth, fala durante uma declaração à imprensa ao chegar para uma reunião de ministros da defesa da OTAN na sede da organização em Bruxelas, quinta-feira, 18 de junho de 2026. AP Photo/Virginia Mayo Após derrota do governo Trump nas midterms, deputados do Congresso dos Estados Unidos podem votar o impeachment do chefe do Pentágono, Pete Hegseth, já na próxima semana, segundo a TV CNN Internacional. ✅ Siga o canal de notícias internacionais do g1 no WhatsApp O movimento ocorre após uma derrota histórica do governo Trump nas eleições de meio de ma",
    "prescore": 2.6,
    "headline": "Após governo Trump perder midterms, deputados dos EUA podem votar impeachment do chefe do Pentágono, diz TV",
    "category": "politica",
@@ -14305,6 +15873,105 @@
    "ai": false
   },
   {
+   "id": "97a37684b14b",
+   "title": "Wall Street bets Democratic sweep will empower moderates in Washington",
+   "link": "https://www.ft.com/content/18739027-d5cc-4e18-825e-d43ac7d1ef9f?syn-25a6b1a6=1",
+   "published": "2026-11-05T11:00:07+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/18739027-d5cc-4e18-825e-d43ac7d1ef9f?syn-25a6b1a6=1",
+     "title": "Wall Street bets Democratic sweep will empower moderates in Washington"
+    }
+   ],
+   "ids": [
+    "97a37684b14b"
+   ],
+   "snippet": "Investors expect midterm election to restrain sway of extremes in American politics",
+   "prescore": 2.6,
+   "headline": "Wall Street bets Democratic sweep will empower moderates in Washington",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Investors expect midterm election to restrain sway of extremes in American politics",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ca86d55ab257",
+   "title": "SocGen’s Kabra Sees the End Derating Phase for S&P 500",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-05/socgen-s-kabra-sees-the-end-derating-phase-for-s-p-500-video",
+   "published": "2026-11-05T11:47:15+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-05/socgen-s-kabra-sees-the-end-derating-phase-for-s-p-500-video",
+     "title": "SocGen’s Kabra Sees the End Derating Phase for S&P 500"
+    }
+   ],
+   "ids": [
+    "ca86d55ab257"
+   ],
+   "snippet": "Manish Kabra, head of US equity strategy at Societe Generale, says investors can lean into history as he offers perspective on market performance following midterm elections. He speaks on “Bloomberg Surveillance.” (Source: Bloomberg)",
+   "prescore": 2.4,
+   "headline": "SocGen’s Kabra Sees the End Derating Phase for S&P 500",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Manish Kabra, head of US equity strategy at Societe Generale, says investors can lean into history as he offers perspective on market performance following midterm elections. He speaks on “Bloomberg Surveillance.” (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6e64b3af76c4",
+   "title": "The GOP's Gerrymandering Failure",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-05/opinion-the-gop-s-gerrymandering-failure-video",
+   "published": "2026-11-05T11:41:29+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-05/opinion-the-gop-s-gerrymandering-failure-video",
+     "title": "The GOP's Gerrymandering Failure"
+    }
+   ],
+   "ids": [
+    "6e64b3af76c4"
+   ],
+   "snippet": "At the president's urging, Republicans gerrymandered new maps based on Trump’s 2024 performance, wrongly assuming the midterm electorate would match his presidential coalition. Despite their failure, this may be just the beginning of the redistricting wars, Bloomberg Opinion columnist Mary Ellen Klas says. (Source: Bloomberg)",
+   "prescore": 2.4,
+   "headline": "The GOP's Gerrymandering Failure",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "At the president's urging, Republicans gerrymandered new maps based on Trump’s 2024 performance, wrongly assuming the midterm electorate would match his presidential coalition. Despite their failure, this may be just the beginning of the redistricting wars, Bloomberg Opinion columnist Mary Ellen Klas says. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b524ab2df0f4",
    "title": "Carney Faces Harder Sell on Canada’s Deficit After US Vote",
    "link": "https://www.bloomberg.com/news/articles/2026-11-05/carney-faces-harder-sell-on-canada-s-deficit-after-us-vote",
@@ -14327,6 +15994,171 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Prime Minister Mark Carney has used much of Canada’s fiscal room to begin restructuring the economy in the face of a trade war. Now the question is how much leeway he has left.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a5e925d8e18f",
+   "title": "Guinness e Smirnoff Ice impulsionam vendas da Diageo e reforçam aposta do novo CEO",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQLThzWmRVdDFPWE9aYjV3eFJVZWN6RGJHX2VSVU5ZMW5sTzZVZmxVbW1JMUlsY1JCMVBPdi1SNi1VSUhzNlp6Yjg2OW1vbVNoWTdTYWYxeVRuVTM2VzlIOHV5V21IUjFTVDR5ei1pV1lQdmFfM3N5YTdSdGdlMHJab1NaSVdzekN3R18wUVdoVEROb09mWHF6UUQ0cS00NHhzVzlKQndBWVNMX0JUbHNvbWtGTVhuNVhsQllPU1R6WkNJMy0x0gHYAUFVX3lxTFB3OEJRMkNnVl9rTy1XWmxua3hGc3REZXA3Mzl2THZta0VrbkRkWlFhZnNrMzJGeVBhVld1dTlySTgwWVRaUTF4ODZUeTduZE5jb0dBT3RtX0d2R0FqWkdGc2RGcFJYdzZaZXlzWUlSVUhRRWNYUGxYMzRYeW9OQkFMd0dOYlFNaVFwNWZkbXhQWkFwZVdOWFVESXVPVXRMbUJSSWlWbUFPaTJkUmhGLWtvWVduWll1c0xPTnowSE9wd2YxdVlBNnZ4WFdxRjh2YVNSdFZoX01COQ?oc=5",
+   "published": "2026-11-05T11:35:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQLThzWmRVdDFPWE9aYjV3eFJVZWN6RGJHX2VSVU5ZMW5sTzZVZmxVbW1JMUlsY1JCMVBPdi1SNi1VSUhzNlp6Yjg2OW1vbVNoWTdTYWYxeVRuVTM2VzlIOHV5V21IUjFTVDR5ei1pV1lQdmFfM3N5YTdSdGdlMHJab1NaSVdzekN3R18wUVdoVEROb09mWHF6UUQ0cS00NHhzVzlKQndBWVNMX0JUbHNvbWtGTVhuNVhsQllPU1R6WkNJMy0x0gHYAUFVX3lxTFB3OEJRMkNnVl9rTy1XWmxua3hGc3REZXA3Mzl2THZta0VrbkRkWlFhZnNrMzJGeVBhVld1dTlySTgwWVRaUTF4ODZUeTduZE5jb0dBT3RtX0d2R0FqWkdGc2RGcFJYdzZaZXlzWUlSVUhRRWNYUGxYMzRYeW9OQkFMd0dOYlFNaVFwNWZkbXhQWkFwZVdOWFVESXVPVXRMbUJSSWlWbUFPaTJkUmhGLWtvWVduWll1c0xPTnowSE9wd2YxdVlBNnZ4WFdxRjh2YVNSdFZoX01COQ?oc=5",
+     "title": "Guinness e Smirnoff Ice impulsionam vendas da Diageo e reforçam aposta do novo CEO"
+    }
+   ],
+   "ids": [
+    "a5e925d8e18f"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Guinness e Smirnoff Ice impulsionam vendas da Diageo e reforçam aposta do novo CEO",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "033cb7ef449c",
+   "title": "Hackers desviam mais de 100 milhões de euros de banco francês em ataque cibernético",
+   "link": "https://www.infomoney.com.br/mundo/hackers-desviam-mais-de-100-milhoes-de-euros-de-banco-frances-em-ataque-cibernetico/",
+   "published": "2026-11-05T11:33:28+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/hackers-desviam-mais-de-100-milhoes-de-euros-de-banco-frances-em-ataque-cibernetico/",
+     "title": "Hackers desviam mais de 100 milhões de euros de banco francês em ataque cibernético"
+    }
+   ],
+   "ids": [
+    "033cb7ef449c"
+   ],
+   "snippet": "Crédit Mutuel Arkéa afirma que criminosos acessaram uma conta da própria instituição e transferiram recursos para outros bancos; clientes não tiveram perdas The post Hackers desviam mais de 100 milhões de euros de banco francês em ataque cibernético appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Hackers desviam mais de 100 milhões de euros de banco francês em ataque cibernético",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Crédit Mutuel Arkéa afirma que criminosos acessaram uma conta da própria instituição e transferiram recursos para outros bancos; clientes não tiveram perdas The post Hackers desviam mais de 100 milhões de euros de banco francês em ataque cibernético appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "289962e39636",
+   "title": "Relator da PEC da Maioridade Penal vai apresentar parecer até final do mês",
+   "link": "https://www.infomoney.com.br/politica/relator-da-pec-da-maioridade-penal-vai-apresentar-parecer-ate-final-do-mes/",
+   "published": "2026-11-05T11:31:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/politica/relator-da-pec-da-maioridade-penal-vai-apresentar-parecer-ate-final-do-mes/",
+     "title": "Relator da PEC da Maioridade Penal vai apresentar parecer até final do mês"
+    }
+   ],
+   "ids": [
+    "289962e39636"
+   ],
+   "snippet": "A comissão também aprovou requerimentos para a realização de audiências públicas antes da apresentação do relatório The post Relator da PEC da Maioridade Penal vai apresentar parecer até final do mês appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Relator da PEC da Maioridade Penal vai apresentar parecer até final do mês",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A comissão também aprovou requerimentos para a realização de audiências públicas antes da apresentação do relatório The post Relator da PEC da Maioridade Penal vai apresentar parecer até final do mês appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "674f6ac9dc79",
+   "title": "Axia, PRIO, Vibra, Azzas, Oncoclínicas e mais ações para acompanhar hoje",
+   "link": "https://www.infomoney.com.br/mercados/axia-prio-vibra-azzas-oncoclinicas-e-mais-acoes-para-acompanhar-hoje/",
+   "published": "2026-11-05T11:29:06+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/axia-prio-vibra-azzas-oncoclinicas-e-mais-acoes-para-acompanhar-hoje/",
+     "title": "Axia, PRIO, Vibra, Azzas, Oncoclínicas e mais ações para acompanhar hoje"
+    }
+   ],
+   "ids": [
+    "674f6ac9dc79"
+   ],
+   "snippet": "Veja os principais destaques desta quinta-feira (5) The post Axia, PRIO, Vibra, Azzas, Oncoclínicas e mais ações para acompanhar hoje appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Axia, PRIO, Vibra, Azzas, Oncoclínicas e mais ações para acompanhar hoje",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Veja os principais destaques desta quinta-feira (5) The post Axia, PRIO, Vibra, Azzas, Oncoclínicas e mais ações para acompanhar hoje appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8dc601801a82",
+   "title": "Lavvi, Méliuz, Pague Menos, Mills e Iochpe-Maxion divulgam resultados no 3T26",
+   "link": "https://www.infomoney.com.br/mercados/lavvi-meliuz-pague-menos-mills-e-iochpe-maxion-divulgam-resultados-no-3t26/",
+   "published": "2026-11-05T11:26:28+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/lavvi-meliuz-pague-menos-mills-e-iochpe-maxion-divulgam-resultados-no-3t26/",
+     "title": "Lavvi, Méliuz, Pague Menos, Mills e Iochpe-Maxion divulgam resultados no 3T26"
+    }
+   ],
+   "ids": [
+    "8dc601801a82"
+   ],
+   "snippet": "Companhias registraram desempenhos distintos The post Lavvi, Méliuz, Pague Menos, Mills e Iochpe-Maxion divulgam resultados no 3T26 appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Lavvi, Méliuz, Pague Menos, Mills e Iochpe-Maxion divulgam resultados no 3T26",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Companhias registraram desempenhos distintos The post Lavvi, Méliuz, Pague Menos, Mills e Iochpe-Maxion divulgam resultados no 3T26 appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14404,6 +16236,39 @@
    "ai": false
   },
   {
+   "id": "bb22042d7b5b",
+   "title": "CFO do Mercado Livre defende investimentos ousados após lucro abaixo das estimativas",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcG1obGR1UVVvQU5VT19tN2NOYUYxaHFDUzdSdjBRdnNId0txYklHdzRnMlJYVzBXNTJJWWVyMWV6V0NodlMxWmxiaDgwalFwUllTNXZ3cnhuSU0yM1lyZzlKallVeFJzUllYajNQZVVUMjRtN0xjMGg1Mk5JY2hWYnZyM2h2YUNvOGJTS1U5RVhDOEtiOXE5TVRDYU8wSWJ1SE9nMnRQZW1TaFB0M1l6WmdONG1NNTFXaEQtVElkUEI2d2gyZTFJ?oc=5",
+   "published": "2026-11-05T11:20:58+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcG1obGR1UVVvQU5VT19tN2NOYUYxaHFDUzdSdjBRdnNId0txYklHdzRnMlJYVzBXNTJJWWVyMWV6V0NodlMxWmxiaDgwalFwUllTNXZ3cnhuSU0yM1lyZzlKallVeFJzUllYajNQZVVUMjRtN0xjMGg1Mk5JY2hWYnZyM2h2YUNvOGJTS1U5RVhDOEtiOXE5TVRDYU8wSWJ1SE9nMnRQZW1TaFB0M1l6WmdONG1NNTFXaEQtVElkUEI2d2gyZTFJ?oc=5",
+     "title": "CFO do Mercado Livre defende investimentos ousados após lucro abaixo das estimativas"
+    }
+   ],
+   "ids": [
+    "bb22042d7b5b"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "CFO do Mercado Livre defende investimentos ousados após lucro abaixo das estimativas",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "e20e9d8f44e4",
    "title": "Senado irá analisar possibilidade de Flávio participar de outras votações dos EUA",
    "link": "https://www.infomoney.com.br/politica/senado-ira-analisar-possibilidade-de-flavio-participar-de-outras-votacoes-dos-eua/",
@@ -14470,127 +16335,28 @@
    "ai": false
   },
   {
-   "id": "e5e6c2fa9eff",
-   "title": "Nova onda de ameaças de bomba atinge voos de passageiros na Europa",
-   "link": "https://www.infomoney.com.br/mundo/nova-onda-de-ameacas-de-bomba-atinge-voos-de-passageiros-na-europa/",
-   "published": "2026-11-05T11:18:09+00:00",
+   "id": "7541dd61d319",
+   "title": "Preferimos plantação de milho a um data center, diz moradora de cidade que ameaça projeto da Meta",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/preferimos-plantacao-de-milho-a-um-data-center-diz-moradora-de-cidade-que-ameaca-projeto-da-meta.shtml",
+   "published": "2026-11-05T11:46:00+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mundo/nova-onda-de-ameacas-de-bomba-atinge-voos-de-passageiros-na-europa/",
-     "title": "Nova onda de ameaças de bomba atinge voos de passageiros na Europa"
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/preferimos-plantacao-de-milho-a-um-data-center-diz-moradora-de-cidade-que-ameaca-projeto-da-meta.shtml",
+     "title": "Preferimos plantação de milho a um data center, diz moradora de cidade que ameaça projeto da Meta"
     }
    ],
    "ids": [
-    "e5e6c2fa9eff"
+    "7541dd61d319"
    ],
-   "snippet": "Embora nenhum país tenha atribuído a responsabilidade pelas ameaças, elas ocorrem em um momento em que autoridades europeias vêm culpando tanto a Rússia quanto o Irã pelo que descrevem como “ataques híbridos” e atos de sabotagem The post Nova onda de ameaças de bomba atinge voos de passageiros na Europa appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Nova onda de ameaças de bomba atinge voos de passageiros na Europa",
+   "snippet": "Eleitores de dezenas de cidades dos EUA aprovaram restrições ou proibições totais a data centers durante as eleições de meio de mandato de terça-feira (3), em um dos sinais mais claros de que a crescente onda de indignação com o boom da inteligência artificial atravessou as divisões políticas. Leia mais (11/05/2026 - 08h46)",
+   "prescore": 2.0,
+   "headline": "Preferimos plantação de milho a um data center, diz moradora de cidade que ameaça projeto da Meta",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Embora nenhum país tenha atribuído a responsabilidade pelas ameaças, elas ocorrem em um momento em que autoridades europeias vêm culpando tanto a Rússia quanto o Irã pelo que descrevem como “ataques híbridos” e atos de sabotagem The post Nova onda de ameaças de bomba atinge voos de passageiros na Europa appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "fb7ed1979ae7",
-   "title": "Senado aprova renegociação de dívidas de Estados e municípios no fim de mandato",
-   "link": "https://www.infomoney.com.br/politica/senado-aprova-renegociacao-de-dividas-de-estados-e-municipios-no-fim-de-mandato/",
-   "published": "2026-11-05T11:16:17+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/senado-aprova-renegociacao-de-dividas-de-estados-e-municipios-no-fim-de-mandato/",
-     "title": "Senado aprova renegociação de dívidas de Estados e municípios no fim de mandato"
-    }
-   ],
-   "ids": [
-    "fb7ed1979ae7"
-   ],
-   "snippet": "O texto altera a Resolução que restringe a contratação de operações de crédito nos últimos 120 dias de mandato The post Senado aprova renegociação de dívidas de Estados e municípios no fim de mandato appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Senado aprova renegociação de dívidas de Estados e municípios no fim de mandato",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O texto altera a Resolução que restringe a contratação de operações de crédito nos últimos 120 dias de mandato The post Senado aprova renegociação de dívidas de Estados e municípios no fim de mandato appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0a26867ff7bb",
-   "title": "Ações de Hong Kong têm maior alta diária em 21 meses com ganhos em tecnologia",
-   "link": "https://www.infomoney.com.br/mercados/acoes-de-hong-kong-tem-maior-alta-diaria-em-21-meses-com-ganhos-em-tecnologia/",
-   "published": "2026-11-05T11:13:29+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/acoes-de-hong-kong-tem-maior-alta-diaria-em-21-meses-com-ganhos-em-tecnologia/",
-     "title": "Ações de Hong Kong têm maior alta diária em 21 meses com ganhos em tecnologia"
-    }
-   ],
-   "ids": [
-    "0a26867ff7bb"
-   ],
-   "snippet": "O Hang Seng Tech subiu 5,6% o Alibaba e a Tencent registrando ganhos de mais de 8% e 7%, respectivamente The post Ações de Hong Kong têm maior alta diária em 21 meses com ganhos em tecnologia appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Ações de Hong Kong têm maior alta diária em 21 meses com ganhos em tecnologia",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O Hang Seng Tech subiu 5,6% o Alibaba e a Tencent registrando ganhos de mais de 8% e 7%, respectivamente The post Ações de Hong Kong têm maior alta diária em 21 meses com ganhos em tecnologia appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f1f2fb4d6961",
-   "title": "Encomendas à indústria na Alemanha sobem 4,4% em setembro, acima do esperado",
-   "link": "https://www.infomoney.com.br/economia/encomendas-a-industria-na-alemanha-sobem-44-em-setembro-acima-do-esperado/",
-   "published": "2026-11-05T11:11:33+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/economia/encomendas-a-industria-na-alemanha-sobem-44-em-setembro-acima-do-esperado/",
-     "title": "Encomendas à indústria na Alemanha sobem 4,4% em setembro, acima do esperado"
-    }
-   ],
-   "ids": [
-    "f1f2fb4d6961"
-   ],
-   "snippet": "Analistas consultados pela FactSet previam avanço de 3% no mês The post Encomendas à indústria na Alemanha sobem 4,4% em setembro, acima do esperado appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Encomendas à indústria na Alemanha sobem 4,4% em setembro, acima do esperado",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Analistas consultados pela FactSet previam avanço de 3% no mês The post Encomendas à indústria na Alemanha sobem 4,4% em setembro, acima do esperado appeared first on InfoMoney .",
+   "summary": "Eleitores de dezenas de cidades dos EUA aprovaram restrições ou proibições totais a data centers durante as eleições de meio de mandato de terça-feira (3), em um dos sinais mais claros de que a crescente onda de indignação com o boom da inteligência artificial atravessou as divisões políticas. Leia mais (11/05/2026 - 08h46)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14690,6 +16456,139 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Even as travel and experiences top the wish list, consumers are still prioritizing spending on physical gifts this holiday season.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "98984ac5df47",
+   "title": "Axia Energia (AXIA3) conclui cancelamento de registro na SEC",
+   "link": "https://www.moneytimes.com.br/axia-energia-axia3-conclui-cancelamento-de-registro-na-sec-lmrs/",
+   "published": "2026-11-05T11:51:14+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/axia-energia-axia3-conclui-cancelamento-de-registro-na-sec-lmrs/",
+     "title": "Axia Energia (AXIA3) conclui cancelamento de registro na SEC"
+    }
+   ],
+   "ids": [
+    "98984ac5df47"
+   ],
+   "snippet": "A Axia Energia (AXIA3) informou nesta quinta-feira (5) que o cancelamento de seu registro perante a U.S. Securities and Exchange Commission (SEC) se tornou efetivo. Com isso, a companhia deixa de estar sujeita às obrigações de reporte previstas nas Sections 13(a) e 15(d) do Securities Exchange Act de 1934. Na prática, a empresa não precisará […]",
+   "prescore": 1.8,
+   "headline": "Axia Energia (AXIA3) conclui cancelamento de registro na SEC",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Axia Energia (AXIA3) informou nesta quinta-feira (5) que o cancelamento de seu registro perante a U.S. Securities and Exchange Commission (SEC) se tornou efetivo. Com isso, a companhia deixa de estar sujeita às obrigações de reporte previstas nas Sections 13(a) e 15(d) do Securities Exchange Act de 1934. Na prática, a empresa não precisará […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "eee6e28e0a35",
+   "title": "Alcolumbre retira maioridade penal da pauta e vai aguardar Câmara",
+   "link": "https://www.moneytimes.com.br/alcolumbre-retira-maioridade-penal-da-pauta-e-vai-aguardar-camara/",
+   "published": "2026-11-05T11:42:14+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/alcolumbre-retira-maioridade-penal-da-pauta-e-vai-aguardar-camara/",
+     "title": "Alcolumbre retira maioridade penal da pauta e vai aguardar Câmara"
+    }
+   ],
+   "ids": [
+    "eee6e28e0a35"
+   ],
+   "snippet": "O presidente do Senado, Davi Alcolumbre (União-AP), retirou da pauta desta quarta-feira (4) a proposta de Emenda à Constituição (PEC) que reduz a maioridade penal de 18 anos para 16 anos. Alcolumbre disse que atendeu a um pedido do presidente da Câmara, Hugo Motta (Republicanos-PB). Agora, caberá à Câmara dos Deputados debater o tema em […]",
+   "prescore": 1.8,
+   "headline": "Alcolumbre retira maioridade penal da pauta e vai aguardar Câmara",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O presidente do Senado, Davi Alcolumbre (União-AP), retirou da pauta desta quarta-feira (4) a proposta de Emenda à Constituição (PEC) que reduz a maioridade penal de 18 anos para 16 anos. Alcolumbre disse que atendeu a um pedido do presidente da Câmara, Hugo Motta (Republicanos-PB). Agora, caberá à Câmara dos Deputados debater o tema em […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d6bbafbd056b",
+   "title": "Oncoclínicas (ONCO3) amplia apoio ao plano de recuperação extrajudicial e alcança adesão de 74,6% da base credora",
+   "link": "https://www.moneytimes.com.br/oncoclinicas-onco3-amplia-apoio-ao-plano-de-recuperacao-extrajudicial-e-alcanca-adesao-de-746-dos-creditos-lmrs/",
+   "published": "2026-11-05T11:29:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/oncoclinicas-onco3-amplia-apoio-ao-plano-de-recuperacao-extrajudicial-e-alcanca-adesao-de-746-dos-creditos-lmrs/",
+     "title": "Oncoclínicas (ONCO3) amplia apoio ao plano de recuperação extrajudicial e alcança adesão de 74,6% da base credora"
+    }
+   ],
+   "ids": [
+    "d6bbafbd056b"
+   ],
+   "snippet": "A Oncoclínicas (ONCO3) informou ao mercado sobre o recebimento de novas adesões ao seu plano de recuperação extrajudicial. Agora, a companhia conta com a adesão de credores titulares de créditos que ultrapassam R$ 4,3 bilhões, correspondentes a 74,6% da base de créditos abrangidos. A base total de créditos considerada no processo soma cerca de R$ […]",
+   "prescore": 1.8,
+   "headline": "Oncoclínicas (ONCO3) amplia apoio ao plano de recuperação extrajudicial e alcança adesão de 74,6% da base credora",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Oncoclínicas (ONCO3) informou ao mercado sobre o recebimento de novas adesões ao seu plano de recuperação extrajudicial. Agora, a companhia conta com a adesão de credores titulares de créditos que ultrapassam R$ 4,3 bilhões, correspondentes a 74,6% da base de créditos abrangidos. A base total de créditos considerada no processo soma cerca de R$ […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1cc0580680f5",
+   "title": "Imposto do pecado começa em fevereiro; cerveja será taxada em 4,2%",
+   "link": "https://g1.globo.com/economia/noticia/2026/11/05/imposto-do-pecado-comeca-em-fevereiro-cerveja-sera-taxada-em-42percent.ghtml",
+   "published": "2026-11-05T11:28:39+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/05/imposto-do-pecado-comeca-em-fevereiro-cerveja-sera-taxada-em-42percent.ghtml",
+     "title": "Imposto do pecado começa em fevereiro; cerveja será taxada em 4,2%"
+    }
+   ],
+   "ids": [
+    "1cc0580680f5",
+    "1cc0580680f5"
+   ],
+   "snippet": "Medida Provisória publicada no \"Diário Oficial da União\" desta quarta-feira (2) à noite estabelece a cobrança do imposto seletivo, conhecido também como \"imposto do pecado\", a partir de 2 de fevereiro de 2027. Como o imposto tem noventena, o prazo de cobrança foi fixado para começar a valer noventa dias após a publicação da MP, que tem força de lei. O prazo de vigência de uma Medida Provisória é de 60 dias, prorrogável automaticamente por mais 60 dias. No total, ela pode valer por até 120 dias antes de perder a validade, caso não seja votada e convertida em lei pela Câmara dos Deputados e pelo",
+   "prescore": 1.8,
+   "headline": "Imposto do pecado começa em fevereiro; cerveja será taxada em 4,2%",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Medida Provisória publicada no \"Diário Oficial da União\" desta quarta-feira (2) à noite estabelece a cobrança do imposto seletivo, conhecido também como \"imposto do pecado\", a partir de 2 de fevereiro de 2027. Como o imposto tem noventena, o prazo de cobrança foi fixado para começar a valer noventa dias após a publicação da MP, que tem força de lei. O prazo de vigência de uma Medida Provisória é d",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14910,7 +16809,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 43,
+   "count": 44,
    "error": null
   },
   {
@@ -14924,7 +16823,7 @@
    "id": "bloomberg-deals",
    "name": "Bloomberg",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -14945,7 +16844,7 @@
    "id": "ft",
    "name": "Financial Times",
    "ok": true,
-   "count": 12,
+   "count": 13,
    "error": null
   },
   {
@@ -14980,14 +16879,14 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 22,
+   "count": 19,
    "error": null
   },
   {
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 22,
+   "count": 21,
    "error": null
   },
   {
@@ -15332,11 +17231,11 @@
   }
  ],
  "stats": {
-  "raw": 885,
-  "unique": 551,
-  "unique_all": 827,
+  "raw": 883,
+  "unique": 543,
+  "unique_all": 829,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.2
+  "seconds": 2.5
  }
 }
