@@ -37,11 +37,13 @@ WEEKDAYS = ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "se
 MONTHS = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro",
           "novembro", "dezembro"]
 
-# Paleta do site (versão clara): fundo lilás-acinzentado, card branco, azul elétrico nos detalhes, pílula preta.
-INK, INK2, MUTED, LINE, PAPER = "#0b0d1a", "#3c4060", "#7b809b", "#e6e8f2", "#f4f5fb"
-ACCENT, ACCENT_SOFT, VIOLET = "#3448ff", "#eceeff", "#8b3dff"
-GRAD = f"linear-gradient(90deg,{ACCENT},{VIOLET},#17b3ff)"
-SANS = "'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+# Visual do portal (padrão de apps da Apple, versão clara): fundo cinza-claro, cartão branco, azul da Apple nos
+# detalhes, fonte do sistema. Cores em hexadecimal (sem rgba) porque nem todo leitor de e-mail entende transparência.
+INK, INK2, MUTED, SEP, BG = "#1d1d1f", "#59595f", "#8a8a8e", "#e4e4e5", "#f5f5f7"
+ACCENT, ACCENT_SOFT, POS, NEG = "#0071e3", "#e6f1fc", "#248a3d", "#d70015"
+SIGNAL, SIGNAL_SOFT = "#b25000", "#fff2e0"
+FONT = "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+FONT_D = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
 
 
 def e(s) -> str:
@@ -71,49 +73,64 @@ def unique_deals(deals: list[dict], n: int = 6) -> list[dict]:
     return out
 
 
+def parties(*names) -> str:
+    """Comprador → alvo, sem os lados que a notícia não revelou."""
+    known = [n.strip() for n in names if n and n.strip() and not n.strip().lower().startswith(("não divulgad", "nao divulgad"))]
+    return " → ".join(known)
+
+
 def build(digest: dict, today: datetime) -> tuple[str, str, str]:
     b = digest["brief"]
     subject = f"Briefing FPM · {today:%d/%m} · {b['headline']}"
     if len(subject) > 110:
         subject = subject[:108].rsplit(" ", 1)[0].rstrip(",;:") + "…"
 
+    # rótulos como os do site: "O essencial", "Mercados", "No radar" (cinza, sem caixa alta)
+    label = f"margin:30px 0 10px;font:600 13px/1.3 {FONT};color:{MUTED}"
+    box = f"background:{BG};border-radius:16px;padding:6px 18px"
+
+    # mercados: uma linha por ativo, valor à direita e a variação numa pílula verde ou vermelha (como no portal)
     market = {q["name"]: q for q in digest.get("market", [])}
-    mk_cells = []
+    mk_rows = []
     for name in ["Ibovespa", "Dólar", "S&P 500", "Treasury 10a", "Brent"]:
         q = market.get(name)
         if not q:
             continue
         dec = 4 if q["unit"] == "R$" else 0 if q["price"] > 1000 else 2
-        color = "#12935e" if q["change_pct"] >= 0 else "#e0453a"
-        arrow = "▲" if q["change_pct"] >= 0 else "▼"
-        mk_cells.append(
-            f'<td style="padding:12px 14px;border-right:1px solid {LINE};font:500 12px {SANS};white-space:nowrap">'
-            f'<div style="color:{MUTED};font-size:11px">{e(name)}</div>'
-            f'<div style="color:{INK};font-size:15px;font-weight:700;margin-top:2px">{fmt_num(q["price"], dec)}</div>'
-            f'<div style="color:{color};font-size:11.5px;font-weight:600">{arrow} {fmt_num(abs(q["change_pct"]), 2)}%</div></td>')
-    market_html = (f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%;background:{PAPER};border:1px solid {LINE};'
-                   f'border-radius:14px;border-collapse:separate;margin:0 0 26px"><tr>{"".join(mk_cells)}</tr></table>'
-                   if mk_cells else "")
+        up = q["change_pct"] >= 0
+        sep = f"border-top:1px solid {SEP};" if mk_rows else ""
+        mk_rows.append(
+            f'<tr><td style="{sep}padding:10px 0;font:500 14.5px {FONT};color:{INK}">{e(name)}</td>'
+            f'<td align="right" style="{sep}padding:10px 12px 10px 0;font:600 14.5px {FONT};color:{INK};white-space:nowrap">{fmt_num(q["price"], dec)}</td>'
+            f'<td align="right" style="{sep}padding:10px 0;width:74px"><span style="display:inline-block;min-width:58px;text-align:center;'
+            f'font:600 12.5px {FONT};color:#ffffff;background:{POS if up else NEG};border-radius:6px;padding:3px 7px">'
+            f'{"+" if up else "−"}{fmt_num(abs(q["change_pct"]), 2)}%</span></td></tr>')
+    market_html = (f'<h2 style="{label}">Mercados</h2><table role="presentation" cellspacing="0" cellpadding="0" style="width:100%;{box}">'
+                   f'<tr><td style="padding:2px 0"><table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">'
+                   f'{"".join(mk_rows)}</table></td></tr></table>' if mk_rows else "")
 
-    label = f"margin:0 0 8px;font:700 11px {SANS};letter-spacing:.08em;text-transform:uppercase;color:{MUTED}"
+    # o essencial: número num círculo azul-claro, como na lista do briefing do site
     tldr = "".join(
-        f'<tr><td style="vertical-align:top;padding:10px 12px 10px 0;width:26px">'
-        f'<div style="width:24px;height:24px;line-height:24px;border-radius:12px;background:{ACCENT};background-image:{GRAD};'
-        f'color:#ffffff;text-align:center;font:700 12px/24px {SANS}">{n}</div></td>'
-        f'<td style="padding:11px 0;border-bottom:1px solid {LINE};font:500 15px/1.55 {SANS};color:{INK}">{e(t)}</td></tr>'
+        f'<tr><td style="vertical-align:top;padding:13px 14px 13px 0;width:24px;{"" if n == 1 else f"border-top:1px solid {SEP};"}">'
+        f'<div style="width:24px;height:24px;border-radius:12px;background:{ACCENT_SOFT};color:{ACCENT};text-align:center;'
+        f'font:600 12.5px/24px {FONT}">{n}</div></td>'
+        f'<td style="padding:13px 0;{"" if n == 1 else f"border-top:1px solid {SEP};"}font:400 15.5px/1.5 {FONT};color:{INK}">{e(t)}</td></tr>'
         for n, t in enumerate(b.get("tldr", []), 1))
 
+    pill = lambda text, fg, bg: (f'<span style="display:inline-block;font:600 11.5px {FONT};color:{fg};background:{bg};'  # noqa: E731
+                                 f'padding:2px 8px;border-radius:6px">{e(text)}</span>')
+
     deal_rows = ""
-    for it in unique_deals(digest.get("deals", [])):
+    for k, it in enumerate(unique_deals(digest.get("deals", []))):
         d = it["deal"]
-        parts = " → ".join(p for p in [d.get("buyer"), d.get("target")] if p)
+        parts = parties(d.get("buyer"), d.get("target"))
+        sep = f"border-top:1px solid {SEP};" if k else ""
         deal_rows += (
-            f'<tr><td style="padding:12px 0;border-bottom:1px solid {LINE};font:500 14px/1.5 {SANS};color:{INK}">'
-            f'<span style="display:inline-block;font:700 10.5px {SANS};letter-spacing:.05em;text-transform:uppercase;color:{ACCENT};'
-            f'background:{ACCENT_SOFT};padding:2px 9px;border-radius:999px">{e(d.get("type"))}</span><br>'
-            f'<span style="font-weight:700">{e(parts)}</span><br><span style="color:{MUTED};font-size:13px">{e(d.get("value"))} · {e(d.get("stage"))}'
+            f'<tr><td style="{sep}padding:12px 0;font:400 14.5px/1.5 {FONT};color:{INK}">'
+            f'{pill(d.get("type"), ACCENT, ACCENT_SOFT)}<br>'
+            f'<span style="font-weight:600">{e(parts)}</span><br><span style="color:{MUTED};font-size:13.5px">{e(d.get("value"))} · {e(d.get("stage"))}'
             f'{" · " + e(d.get("sector")) if d.get("sector") else ""}</span></td></tr>')
-    deals_html = (f'<h2 style="{label};margin-top:30px">Deals do dia</h2>'
+    deals_html = (f'<h2 style="{label}">Deals do dia</h2>'
                   f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{deal_rows}</table>'
                   if deal_rows else "")
 
@@ -131,15 +148,15 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
                 sectors[x.get("sector") or "Outros"] = sectors.get(x.get("sector") or "Outros", 0) + 1
             top_sec = ", ".join(f"{k} ({n})" for k, n in sorted(sectors.items(), key=lambda kv: -kv[1])[:4])
             rows = "".join(
-                f'<li style="margin:6px 0"><b>{e(x.get("buyer"))} → {e(x.get("target"))}</b>'
+                f'<li style="margin:6px 0"><span style="font-weight:600">{e(parties(x.get("buyer"), x.get("target")))}</span>'
                 f'<span style="color:{MUTED}"> · {e(x.get("type"))} · {e(x.get("value") or "valor não divulgado")} · {e(x.get("stage"))}</span></li>'
                 for x in sorted(week, key=lambda x: -x.get("importance", 0))[:8])
-            week_html = (f'<div style="margin-top:30px;background:{ACCENT_SOFT};border-radius:16px;padding:18px 20px">'
-                         f'<h2 style="{label};color:{ACCENT}">M&amp;A da semana</h2>'
-                         f'<p style="margin:0 0 8px;font:600 15px/1.5 {SANS};color:{INK}">{len(week)} deals novos e {len(moved)} '
+            week_html = (f'<h2 style="{label}">M&amp;A da semana</h2>'
+                         f'<div style="background:{ACCENT_SOFT};border-radius:16px;padding:16px 18px">'
+                         f'<p style="margin:0 0 6px;font:600 15px/1.5 {FONT};color:{INK}">{len(week)} deals novos e {len(moved)} '
                          f'mudanças de estágio nos últimos 7 dias.</p>'
-                         + (f'<p style="margin:0 0 8px;font:500 13.5px/1.5 {SANS};color:{INK2}">Setores mais ativos: {e(top_sec)}</p>' if top_sec else "")
-                         + f'<ul style="margin:0;padding-left:18px;font:500 14px/1.5 {SANS};color:{INK}">{rows}</ul></div>')
+                         + (f'<p style="margin:0 0 6px;font:400 14px/1.5 {FONT};color:{INK2}">Setores mais ativos: {e(top_sec)}</p>' if top_sec else "")
+                         + f'<ul style="margin:0;padding-left:18px;font:400 14px/1.5 {FONT};color:{INK}">{rows}</ul></div>')
 
     # leads que apareceram nesta edição: empresas com transação em aberto (para a equipe abordar)
     leads_db = json.loads((DATA / "leads_db.json").read_text(encoding="utf-8")) if (DATA / "leads_db.json").exists() else {}
@@ -148,56 +165,68 @@ def build(digest: dict, today: datetime) -> tuple[str, str, str]:
     leads_html = ""
     if fresh_leads:
         rows = "".join(
-            f'<tr><td style="padding:11px 0;border-bottom:1px solid {LINE};font:500 14px/1.5 {SANS};color:{INK}">'
-            f'<span style="font-weight:700">{e(x.get("company"))}</span> '
-            f'<span style="font:700 10.5px {SANS};color:#c2185b;background:#fde7ef;padding:2px 8px;border-radius:999px">{e(x.get("signal"))}</span><br>'
-            f'<span style="color:{INK2};font-size:13.5px">{e(x.get("why"))}</span>'
-            + (f'<br><span style="color:{MUTED};font-size:12.5px">Contraparte: {e(x.get("counterparty"))} · Assessores: {e(x.get("advisors") or "não divulgado")}</span>'
+            f'<tr><td style="{f"border-top:1px solid {SEP};" if k else ""}padding:12px 0;font:400 14.5px/1.5 {FONT};color:{INK}">'
+            f'<span style="font-weight:600">{e(x.get("company"))}</span> {pill(x.get("signal"), SIGNAL, SIGNAL_SOFT)}<br>'
+            f'<span style="color:{INK2};font-size:14px">{e(x.get("why"))}</span>'
+            + (f'<br><span style="color:{MUTED};font-size:13px">Contraparte: {e(x.get("counterparty"))} · Assessores: {e(x.get("advisors") or "não divulgado")}</span>'
                if x.get("counterparty") and x.get("counterparty") != "não divulgado" else "")
-            + '</td></tr>' for x in fresh_leads)
-        leads_html = (f'<h2 style="{label};margin-top:30px">Leads novos</h2>'
+            + '</td></tr>' for k, x in enumerate(fresh_leads))
+        leads_html = (f'<h2 style="{label}">Leads novos</h2>'
                       f'<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{rows}</table>')
 
-    watch = "".join(f'<li style="margin:6px 0">{e(w)}</li>' for w in b.get("watchlist", []))
-    watch_html = (f'<div style="margin-top:30px;background:{PAPER};border:1px solid {LINE};border-radius:16px;padding:18px 20px">'
-                  f'<h2 style="{label}">No radar</h2>'
-                  f'<ul style="margin:0;padding-left:18px;font:500 14px/1.55 {SANS};color:{INK2}">{watch}</ul></div>'
-                  if watch else "")
+    def bullets(title: str, items: list[str]) -> str:
+        if not items:
+            return ""
+        lis = "".join(f'<li style="margin:8px 0">{e(w)}</li>' for w in items)
+        return (f'<h2 style="{label}">{title}</h2><div style="background:{BG};border-radius:16px;padding:8px 18px 8px 16px">'
+                f'<ul style="margin:0;padding-left:18px;font:400 14.5px/1.5 {FONT};color:{INK2}">{lis}</ul></div>')
+
+    watch_html = bullets("No radar", b.get("watchlist", []))
+    conn_html = bullets("Conexões", b.get("connections", []))
+    link = f"{SITE_URL}?e={today:%Y%m%d}"
 
     body = f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"></head>
-<body style="margin:0;padding:0;background:{PAPER}">
-<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%;background:{PAPER}"><tr><td align="center" style="padding:28px 12px">
-<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%;max-width:640px;background:#ffffff;border:1px solid {LINE};border-radius:22px;border-collapse:separate;overflow:hidden">
-<tr><td style="height:4px;line-height:4px;font-size:0;background:{ACCENT};background-image:{GRAD}">&nbsp;</td></tr>
-<tr><td style="padding:30px 32px 32px">
+<meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>{e(subject)}</title></head>
+<body style="margin:0;padding:0;background:{BG};-webkit-text-size-adjust:100%">
+<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%;background:{BG}"><tr><td align="center" style="padding:24px 10px 32px">
+<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%;max-width:640px">
+<tr><td style="padding:0 4px 14px">
   <table role="presentation" cellspacing="0" cellpadding="0" style="width:100%"><tr>
-    <td><span style="display:inline-block;font:700 11px {SANS};letter-spacing:.1em;text-transform:uppercase;color:{ACCENT};background:{ACCENT_SOFT};padding:5px 12px;border-radius:999px">Briefing do dia</span></td>
-    <td align="right" style="font:500 12px {SANS};color:{MUTED}">Portal FPM · {e(long_date(today))}</td>
+    <td style="width:32px"><div style="width:32px;height:32px;border-radius:9px;background:#000000;background-image:linear-gradient(160deg,#3a3a3c,#000000);
+      color:#ffffff;text-align:center;font:700 10.5px/32px {FONT};letter-spacing:.02em">FPM</div></td>
+    <td style="padding-left:10px;font:600 15px {FONT};color:{INK}">Portal FPM</td>
+    <td align="right" style="font:400 13px {FONT};color:{MUTED}">{e(long_date(today))}</td>
   </tr></table>
-  <h1 style="margin:18px 0 10px;font:800 28px/1.15 {SANS};letter-spacing:-.02em;color:{INK}">{e(b["headline"])}</h1>
-  <p style="margin:0 0 24px;font:500 16px/1.55 {SANS};color:{INK2}">{e(b.get("mood"))}</p>
-  {market_html}
-  <h2 style="{label}">O que você precisa saber</h2>
+</td></tr>
+<tr><td style="background:#ffffff;border:1px solid {SEP};border-radius:22px;padding:28px 26px 30px">
+  <div style="font:600 12px/1 {FONT};letter-spacing:.04em;text-transform:uppercase;color:{ACCENT}">Manchete do dia</div>
+  <h1 style="margin:14px 0 12px;font:700 28px/1.16 {FONT_D};letter-spacing:-.03em;color:{INK}">{e(b["headline"])}</h1>
+  <p style="margin:0;font:400 17px/1.45 {FONT};color:{INK2}">{e(b.get("mood"))}</p>
+  <h2 style="{label}">O essencial</h2>
   <table role="presentation" cellspacing="0" cellpadding="0" style="width:100%">{tldr}</table>
+  {market_html}
   {week_html}
   {deals_html}
   {leads_html}
   {watch_html}
-  <table role="presentation" cellspacing="0" cellpadding="0" style="margin:30px 0 0"><tr><td style="background:{INK};border-radius:999px">
-    <a href="{SITE_URL}?e={today:%Y%m%d}" style="display:inline-block;padding:13px 24px;font:700 14px {SANS};color:#ffffff;text-decoration:none">Abrir a edição completa →</a>
+  {conn_html}
+  <table role="presentation" cellspacing="0" cellpadding="0" style="margin:30px 0 0"><tr><td style="background:{ACCENT};border-radius:980px">
+    <a href="{link}" style="display:inline-block;padding:12px 22px;font:600 15px {FONT};color:#ffffff;text-decoration:none">Abrir a edição completa</a>
   </td></tr></table>
-</td></tr></table>
-<p style="max-width:640px;margin:16px auto 0;font:500 12px/1.5 {SANS};color:{MUTED};text-align:center">
+</td></tr>
+<tr><td style="padding:16px 12px 0;font:400 12px/1.5 {FONT};color:{MUTED};text-align:center">
   Resumo gerado automaticamente a partir de {digest["stats"]["sources_ok"]} veículos nacionais e internacionais.
-  As análises são feitas por IA; confira a fonte original antes de usar.</p>
+  As análises são feitas por IA; confira a fonte original antes de usar.</td></tr>
+</table>
 </td></tr></table></body></html>"""
 
     text = "\n".join([
-        f"PORTAL FPM · {long_date(today)}", "", b["headline"], b.get("mood", ""), "", "PRINCIPAIS PONTOS",
+        f"PORTAL FPM · {long_date(today)}", "", b["headline"], b.get("mood", ""), "", "O ESSENCIAL",
         *[f"{n:02d}. {t}" for n, t in enumerate(b.get("tldr", []), 1)], "",
         *(["LEADS NOVOS", *[f"- {x.get('company')} ({x.get('signal')}): {x.get('why')}" for x in fresh_leads], ""] if fresh_leads else []),
-        f"Edição completa: {SITE_URL}?e={today:%Y%m%d}", "",
+        *(["NO RADAR", *[f"- {w}" for w in b.get("watchlist", [])], ""] if b.get("watchlist") else []),
+        *(["CONEXÕES", *[f"- {c}" for c in b.get("connections", [])], ""] if b.get("connections") else []),
+        f"Edição completa: {link}", "",
         "Resumo gerado automaticamente. As análises são feitas por IA; confira a fonte original antes de usar.",
     ])
     return subject, body, text
