@@ -26,7 +26,10 @@ import http.cookiejar
 import io
 import json
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.request
 import zipfile
@@ -63,6 +66,14 @@ RELEASE_CHARS = 14000
 SUMMARY_LOOKBACK_DAYS = 7
 MAX_PDFS_PER_RUN = 60
 TEXT_CHARS = 6000
+PDF_PAGES = 15  # páginas lidas de cada PDF (a leitura para antes, quando já juntou texto suficiente)
+OCR_PAGES = 6  # páginas lidas por OCR quando o PDF não tem texto de verdade
+OCR_SECONDS = 240  # teto de tempo do OCR por execução: o que sobrar fica para a próxima, sem atrasar a coleta
+TEXT_VERSION = 2  # versão do extrator: textos da fila feitos com uma versão anterior são refeitos uma vez
+REDO_PER_RUN = 20  # quantos textos antigos refazer por execução
+# página de aviso legal: o título vem no alto da página ("Aviso legal", "Disclaimer"...)
+BOILERPLATE = re.compile(r"aviso legal|disclaimer|declarações prospectivas|declarações sobre o futuro|"
+                         r"forward[- ]looking statements|informações prospectivas", re.IGNORECASE)
 TEMAS = ["M&A", "Mercado de capitais", "Dívida", "Proventos", "Resultados", "Governança", "Assembleia",
          "Operacional", "Regulatório e jurídico", "Reestruturação", "Outros"]
 
@@ -388,13 +399,50 @@ def cmd_build(args) -> None:
 # ---------------------------------------------------------------- textos para resumo
 
 def pdf_text(raw: bytes) -> str:
+    """Texto das primeiras páginas do PDF. Apresentações e relatórios abrem com capa, índice e aviso legal: as
+    páginas de aviso legal ficam de fora e a leitura segue até juntar texto suficiente (no máximo PDF_PAGES)."""
     import pypdf
     reader = pypdf.PdfReader(io.BytesIO(raw))
-    parts = []
-    for page in reader.pages[:5]:
-        parts.append(page.extract_text() or "")
+    parts: list[str] = []
+    for page in reader.pages[:PDF_PAGES]:
+        t = page.extract_text() or ""
+        if BOILERPLATE.search(t[:200]) and len(reader.pages) > 1:
+            continue
+        parts.append(t)
         if sum(len(p) for p in parts) > TEXT_CHARS * 1.5:
             break
+    return re.sub(r"[ \t]+", " ", "\n".join(parts)).strip()
+
+
+def legible(texto: str) -> bool:
+    """False quando o PDF não tem texto de verdade: só códigos de glifo (fonte sem mapa de caracteres, que o pypdf
+    devolve como "/12 /3 /15"), linhas "RGB: ..." de apresentação feita com imagens, ou quase nenhuma letra."""
+    s = (texto or "").strip()
+    if len(s) < 120:
+        return False
+    toks = s.split()
+    codes = sum(1 for w in toks if re.fullmatch(r"/\d+|□|RGB:?", w)) / len(toks)
+    letters = sum(c.isalpha() for c in s) / len(s)
+    return codes < 0.2 and letters >= 0.25
+
+
+def ocr_text(raw: bytes, pages: int = OCR_PAGES) -> str:
+    """Lê o PDF por OCR em português (pdftoppm + tesseract): para apresentações em imagem e fontes sem mapa."""
+    with tempfile.TemporaryDirectory() as tmp:
+        pdf = Path(tmp) / "doc.pdf"
+        pdf.write_bytes(raw)
+        subprocess.run(["pdftoppm", "-r", "150", "-gray", "-png", "-f", "1", "-l", str(pages), str(pdf), str(Path(tmp) / "p")],
+                       check=True, timeout=90, capture_output=True)
+        parts: list[str] = []
+        for png in sorted(Path(tmp).glob("p-*.png")):
+            out = subprocess.run(["tesseract", str(png), "-", "-l", "por+eng"], capture_output=True, text=True, timeout=60,
+                                 check=False)
+            t = out.stdout or ""
+            if BOILERPLATE.search(t[:200]):
+                continue
+            parts.append(t)
+            if sum(len(p) for p in parts) > TEXT_CHARS * 1.5:
+                break
     return re.sub(r"[ \t]+", " ", "\n".join(parts)).strip()
 
 
@@ -421,13 +469,18 @@ def wants_summary(d: dict, listed: set[str], active: set[str]) -> bool:
 def _fetch_text(d: dict, chars: int) -> dict | None:
     try:
         raw = get(d["u"], timeout=60)
-        texto = pdf_text(raw) if raw[:5] == b"%PDF-" else ""
+        is_pdf = raw[:5] == b"%PDF-"
+        texto = pdf_text(raw) if is_pdf else ""
     except Exception as exc:  # noqa: BLE001
         log(f"PDF {d['id']} ({d['nome']}): {type(exc).__name__}: {exc}")
         return None
     if is_release(d):
         chars = max(chars, RELEASE_CHARS)
-    return {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"], "texto": texto[:chars]}
+    item = {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"], "texto": texto[:chars],
+            "u": d["u"], "x": TEXT_VERSION}
+    if is_pdf and not legible(texto):
+        item["ocr"] = 1  # PDF sem texto de verdade (só imagem, ou fonte sem mapa): o passo de OCR do workflow lê as páginas
+    return item
 
 
 def cmd_textos(args) -> None:
@@ -463,6 +516,13 @@ def cmd_textos(args) -> None:
             and d["id"] not in resumos and d["id"] not in fila and d["id"] not in other and d.get("u")]
     todo.sort(key=lambda d: (d["d"], d["h"]), reverse=True)
     todo.sort(key=lambda d: (d["c"] != "Fato Relevante", not is_release(d)))  # fatos relevantes, releases, depois o resto
+    if not args.hist:
+        # textos da fila feitos por uma versão anterior do extrator (só 5 páginas, sem OCR) são refeitos uma vez
+        by_id = {d["id"]: d for d in docs if d.get("u")}
+        redo = [by_id[k] for k, v in fila.items() if v.get("x", 1) < TEXT_VERSION and k in by_id][:REDO_PER_RUN]
+        if redo:
+            log(f"Refazendo {len(redo)} textos da fila com o extrator novo.")
+        todo = redo + todo
     limit = args.max or MAX_PDFS_PER_RUN
     deadline = time.time() + 60 * (args.minutos or 30)
     got = 0
@@ -483,6 +543,39 @@ def cmd_textos(args) -> None:
     log(f"Textos: {got} novos (de {len(todo)} pendentes); fila com {len(fila)}.")
 
 
+def cmd_ocr(args) -> None:
+    """Lê por OCR os PDFs da fila cujo texto saiu ilegível (imagem ou fonte sem mapa de caracteres).
+
+    --check sai com código 0 se houver algum para ler e 1 se não houver: o workflow só instala o OCR quando precisa."""
+    fila = load_json(FILA, {})
+    pend = [k for k, v in fila.items() if v.get("ocr") == 1 and v.get("u")]
+    if args.check:
+        log(f"OCR: {len(pend)} documentos esperando leitura.")
+        sys.exit(0 if pend else 1)
+    if not (shutil.which("tesseract") and shutil.which("pdftoppm")):
+        log("OCR: tesseract ou pdftoppm não instalado; nada feito.")
+        return
+    pend = pend[: args.max or 12]
+    deadline = time.monotonic() + OCR_SECONDS
+    ok = done = 0
+    for k in pend:
+        if time.monotonic() > deadline:
+            break
+        v = fila[k]
+        try:
+            texto = ocr_text(get(v["u"], timeout=60))
+        except Exception as exc:  # noqa: BLE001
+            log(f"OCR {k} ({v.get('empresa')}): {type(exc).__name__}: {exc}")
+            texto = ""
+        v["ocr"] = 2  # tentado: não tenta de novo
+        done += 1
+        if legible(texto):
+            v["texto"] = texto[: RELEASE_CHARS if is_release(v) else TEXT_CHARS]
+            ok += 1
+    save_json(FILA, fila)
+    log(f"OCR: {ok} de {done} documentos lidos agora com texto legível; {len(pend) - done} ficam para a próxima.")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -495,6 +588,10 @@ def main() -> None:
     t.add_argument("--chars", type=int, help="caracteres de texto guardados por documento")
     t.add_argument("--minutos", type=int, help="tempo máximo de execução")
     t.set_defaults(fn=cmd_textos)
+    o = sub.add_parser("ocr", help="lê por OCR os PDFs da fila sem texto de verdade")
+    o.add_argument("--check", action="store_true", help="só diz se há documento esperando OCR (código de saída 0 = há)")
+    o.add_argument("--max", type=int, help="máximo de documentos nesta execução")
+    o.set_defaults(fn=cmd_ocr)
     args = ap.parse_args()
     args.fn(args)
 
