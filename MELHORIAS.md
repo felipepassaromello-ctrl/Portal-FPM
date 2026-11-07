@@ -37,14 +37,22 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
    - um cron externo gratuito (cron-job.org) chamando a API do GitHub. Exige que o Felipe crie uma conta e um token só com permissão de Actions neste repositório.
 2. **Notícia repetida em vários cartões.** Em 05/11, a aprovação da fusão Saipem-Subsea7 apareceu em 11 itens: veículos e idiomas diferentes, mesmo fato. Proposta: juntar no mesmo cartão as notícias sobre o mesmo evento (mesmas empresas e mesmo fato no mesmo dia), mesmo com títulos e idiomas diferentes.
 3. **"M&A da semana" e aba Deals: separar Brasil e exterior.** Os 102 "deals novos" da semana são em boa parte comunicados de empresas estrangeiras pequenas. Proposta: Brasil primeiro, com contagem própria, e do exterior só os relevantes.
+   - Achado de 06/11: o campo `region` das notícias diz se o veículo é brasileiro, não onde está o negócio. Marvell–Lumentum aparece como Brasil (noticiado pelo Valor), e Huaxin–CSN Cimentos como exterior. Também não serve para os deals antigos: 354 dos 635 não acham mais a matéria no arquivo.
+   - Caminho: classificar o próprio deal, em duas frentes:
+     - o comprador ou o alvo é companhia brasileira da base, o valor está em R$ ou a manchete cita o Brasil;
+     - a análise da manhã ganha o campo "país do negócio". Mexe no routine.py, então fazer com cuidado.
 4. **Análise da rotina da manhã.** Os itens de pouca relevância saem com texto genérico. Proposta:
    - lotes menores, com o trecho completo da notícia para quem analisa;
    - análise curta, de propósito, para os itens de nota 1 a 3.
 5. **Mundo das companhias no celular de verdade.** Os testes rodam em navegador sem placa de vídeo. Falta saber como fica a fluidez num iPhone real; pedir ao Felipe ou medir pelo próprio site.
 6. **CVM: conferir o OCR na prática.** Ver nos próximos dias quantos documentos o OCR recupera e se algum ainda fica sem resumo por texto ilegível.
+7. **E-mail preso à publicação no GitHub Pages.** O job do e-mail só roda se a publicação der certo. Se o Pages travar na execução da manhã, o e-mail não sai, e a reserva das 08:52 roda 7 horas depois, quando o corte das 10:30 já barra o envio.
+   - Com a nova tentativa de publicação (#62), o risco caiu.
+   - Proposta, que precisa do ok do Felipe porque mexe em quando o e-mail é tentado: rodar o job do e-mail sempre que a edição foi salva no repositório, mesmo se a publicação falhar. As regras do send_email.py continuam iguais.
 
 ## Feito
 
+- 07/11 — Publicação no GitHub Pages: quando fica presa na fila e estoura os 10 minutos, é tentada de novo uma vez, em vez de deixar o site sem a edição até a próxima execução (#62).
 - 07/11 — Documentos da CVM com texto ilegível, que ficavam sem resumo (7 de 66 em 05/11), agora são lidos (#61):
   - PDF só com imagem ou com fonte sem mapa de caracteres: OCR em português nas 6 primeiras páginas;
   - leitura de até 15 páginas (eram 5), pulando as de aviso legal;
