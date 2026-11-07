@@ -29,10 +29,10 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40   # folga para a segunda tentativa de publicação (10 minutos no máximo cada)
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -138,10 +138,18 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
+      # O GitHub Pages às vezes deixa a publicação parada na fila até estourar os 10 minutos que o deploy-pages aceita
+      # (foi o que derrubou a execução das 14h48 de 06/11). O deploy-pages cancela a publicação presa; aqui ela é
+      # tentada de novo uma vez, para a edição não ficar fora do ar até a próxima execução.
       - id: deploy
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 1200000   # 20 min: o GitHub Pages às vezes demora mais que os 10 min padrão
+        continue-on-error: true
+      - name: Esperar antes de tentar publicar de novo
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+      - id: deploy_retry
+        if: steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@v4
 
   # E-mail da manhã: sai logo depois da publicação que leva a análise do dia (o push da rotina), às 08:52, sem
   # depender do agendador do GitHub, que às vezes atrasa horas. Nas outras execuções termina na hora: o envio do dia já
