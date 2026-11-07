@@ -55,6 +55,18 @@ jobs:
         continue-on-error: true
         run: python scripts/cias.py textos
 
+      # PDF sem texto de verdade (apresentação em imagem, fonte sem mapa de caracteres): OCR em português. O OCR só é
+      # instalado quando há algum documento esperando, e este passo nunca derruba a execução.
+      - name: Ler por OCR os PDFs da CVM sem texto
+        continue-on-error: true
+        timeout-minutes: 8
+        run: |
+          if python scripts/cias.py ocr --check; then
+            timeout 150 sudo apt-get update -qq || true
+            timeout 150 sudo apt-get install -y -qq --no-install-recommends tesseract-ocr tesseract-ocr-por poppler-utils > /dev/null
+            python scripts/cias.py ocr
+          fi
+
       - name: Salvar edição no repositório (histórico)
         run: |
           git config user.name "portal-bot"
