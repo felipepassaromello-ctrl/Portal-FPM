@@ -31,6 +31,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import urllib.error
 import urllib.request
 import zipfile
 from collections import Counter, defaultdict
@@ -71,6 +72,8 @@ OCR_PAGES = 6  # páginas lidas por OCR quando o PDF não tem texto de verdade
 OCR_SECONDS = 240  # teto de tempo do OCR por execução: o que sobrar fica para a próxima, sem atrasar a coleta
 TEXT_VERSION = 2  # versão do extrator: textos da fila feitos com uma versão anterior são refeitos uma vez
 REDO_PER_RUN = 20  # quantos textos antigos refazer por execução
+TEXT_MINUTES = 8  # teto do download dos textos na execução de hora em hora: o resto fica para a próxima
+DOWN_STOP = 3  # downloads seguidos sem resposta da CVM (tempo esgotado, conexão recusada) que encerram a rodada
 # página de aviso legal: o título vem no alto da página ("Aviso legal", "Disclaimer"...)
 BOILERPLATE = re.compile(r"aviso legal|disclaimer|declarações prospectivas|declarações sobre o futuro|"
                          r"forward[- ]looking statements|informações prospectivas", re.IGNORECASE)
@@ -105,16 +108,17 @@ def save_json(path: Path, data, compact: bool = False) -> None:
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
-def get(url: str, timeout: int = 120) -> bytes:
+def get(url: str, timeout: int = 120, tries: int = 3) -> bytes:
     last = None
-    for attempt in range(3):
+    for attempt in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read()
         except Exception as exc:  # noqa: BLE001
             last = exc
-            time.sleep(3 * (attempt + 1))
+            if attempt + 1 < tries:
+                time.sleep(3 * (attempt + 1))
     raise last  # type: ignore[misc]
 
 
@@ -466,14 +470,22 @@ def wants_summary(d: dict, listed: set[str], active: set[str]) -> bool:
     return (d["k"] in listed and (d["c"] in SUMMARY_CATS or is_release(d))) or (d["c"] == "Fato Relevante" and d["k"] in active)
 
 
-def _fetch_text(d: dict, chars: int) -> dict | None:
+def network_error(exc: BaseException) -> bool:
+    """A CVM não respondeu (tempo esgotado, conexão recusada), o que é diferente de um documento com erro (404, PDF ruim)."""
+    if isinstance(exc, urllib.error.HTTPError):
+        return False
+    return isinstance(exc, (urllib.error.URLError, TimeoutError, ConnectionError))
+
+
+def _fetch_text(d: dict, chars: int) -> dict | str | None:
+    """Texto do documento para a fila. None se o documento deu erro; "rede" se a CVM não respondeu."""
     try:
-        raw = get(d["u"], timeout=60)
+        raw = get(d["u"], timeout=40, tries=2)
         is_pdf = raw[:5] == b"%PDF-"
         texto = pdf_text(raw) if is_pdf else ""
     except Exception as exc:  # noqa: BLE001
         log(f"PDF {d['id']} ({d['nome']}): {type(exc).__name__}: {exc}")
-        return None
+        return "rede" if network_error(exc) else None
     if is_release(d):
         chars = max(chars, RELEASE_CHARS)
     item = {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"], "texto": texto[:chars],
@@ -517,25 +529,33 @@ def cmd_textos(args) -> None:
     todo.sort(key=lambda d: (d["d"], d["h"]), reverse=True)
     todo.sort(key=lambda d: (d["c"] != "Fato Relevante", not is_release(d)))  # fatos relevantes, releases, depois o resto
     if not args.hist:
-        # textos da fila feitos por uma versão anterior do extrator (só 5 páginas, sem OCR) são refeitos uma vez
+        # textos da fila feitos por uma versão anterior do extrator (só 5 páginas, sem OCR) são refeitos uma vez, só os
+        # da janela dos resumos (sem a data, a reserva dos dados abertos, que traz o ano todo, refazia os velhos)
         by_id = {d["id"]: d for d in docs if d.get("u")}
-        redo = [by_id[k] for k, v in fila.items() if v.get("x", 1) < TEXT_VERSION and k in by_id][:REDO_PER_RUN]
+        redo = [by_id[k] for k, v in fila.items()
+                if v.get("x", 1) < TEXT_VERSION and k in by_id and v.get("d", "") >= since][:REDO_PER_RUN]
         if redo:
             log(f"Refazendo {len(redo)} textos da fila com o extrator novo.")
         todo = redo + todo
     limit = args.max or MAX_PDFS_PER_RUN
-    deadline = time.time() + 60 * (args.minutos or 30)
-    got = 0
+    deadline = time.time() + 60 * (args.minutos or (30 if args.hist else TEXT_MINUTES))
+    # no modo normal, um documento por vez: o teto de tempo e a parada por CVM fora do ar valem a cada download
+    step = 40 if args.hist else 1
+    got = down = 0
     with ThreadPoolExecutor(max_workers=4 if args.hist else 1) as pool:
-        for i in range(0, min(limit, len(todo)), 40):
+        for i in range(0, min(limit, len(todo)), step):
             if time.time() > deadline:
                 log("Tempo esgotado; o resto fica para a próxima execução.")
                 break
-            batch = todo[i:min(i + 40, limit)]
+            batch = todo[i:min(i + step, limit)]
             for d, item in zip(batch, pool.map(lambda x: _fetch_text(x, args.chars or TEXT_CHARS), batch)):
-                if item:
+                if isinstance(item, dict):
                     fila[d["id"]] = item
                     got += 1
+                down = down + 1 if item == "rede" else 0
+            if not args.hist and down >= DOWN_STOP:
+                log(f"A CVM não respondeu a {down} downloads seguidos; o resto fica para a próxima execução.")
+                break
             if args.hist and i % 400 == 0:
                 save_json(target, fila)
                 log(f"... {got} textos")
@@ -563,7 +583,7 @@ def cmd_ocr(args) -> None:
             break
         v = fila[k]
         try:
-            texto = ocr_text(get(v["u"], timeout=60))
+            texto = ocr_text(get(v["u"], timeout=40, tries=2))
         except Exception as exc:  # noqa: BLE001
             log(f"OCR {k} ({v.get('empresa')}): {type(exc).__name__}: {exc}")
             texto = ""

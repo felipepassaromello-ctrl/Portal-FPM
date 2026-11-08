@@ -519,7 +519,8 @@ fieldset.field legend { padding: 0; margin-bottom: 8px; }
 .tabbar { display: none; }
 
 @media (max-width: 1080px) {
-  .brief-layout, .split, .split-even { grid-template-columns: 1fr; }
+  /* minmax(0, …): a coluna não estica com o conteúdo largo (tabela de ofertas); a tabela rola dentro do quadro */
+  .brief-layout, .split, .split-even { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 900px) {
   .app { grid-template-columns: 1fr; }
