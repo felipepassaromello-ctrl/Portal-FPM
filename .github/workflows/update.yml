@@ -51,8 +51,10 @@ jobs:
           MAX_ANALYZE: ${{ vars.MAX_ANALYZE || '90' }}
         run: python scripts/build_digest.py
 
+      # o próprio script para em 8 minutos ou quando a CVM não responde; o teto do passo é a última garantia
       - name: Baixar o texto dos documentos da CVM a resumir
         continue-on-error: true
+        timeout-minutes: 12
         run: python scripts/cias.py textos
 
       # PDF sem texto de verdade (apresentação em imagem, fonte sem mapa de caracteres): OCR em português. O OCR só é

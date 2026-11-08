@@ -19,16 +19,16 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Saúde
 
-**06/11, noite:**
-- Site no ar sem erro de console, sem requisição com falha e sem nada escapando da tela. Foram conferidas 8 páginas (briefing, leads, deals, agenda, oficiais, companhias, perfil e Mundo), no computador e no iPhone.
-- 27 de 27 fontes de notícia e 3 de 3 fontes oficiais (CVM, Diário Oficial e Banco Central) funcionando.
-- O e-mail de 06/11 saiu às 08:52.
-- "Atualizar portal": a execução das 14h48 falhou só no deploy do GitHub Pages (fila de 10 minutos do próprio GitHub). A seguinte passou.
-- O agendador do GitHub está atrasando cerca de 7 horas e descartando a maior parte das execuções:
-  - em 06/11, das 17 coletas agendadas, só 4 rodaram, todas depois das 13h;
-  - o portal ficou sem atualização das 08:52 às 13:17 e depois das 19:02;
-  - o envio reserva do e-mail (08:52 e 09:32) rodou às 15:31 e 16:38, sem enviar, por causa do corte das 10:30;
-  - a edição da manhã e o e-mail só saem na hora porque a rotina da manhã dispara a coleta manualmente às 08:15.
+**07/11, noite:**
+- Site no ar sem erro de console e sem requisição com falha. Foram conferidas 11 páginas (todas as abas do index, companhias, perfil e Mundo), no computador e no iPhone.
+- Um problema no site: a aba Ofertas, no iPhone, rolava para o lado, porque a tabela de 787 px esticava a coluna. Corrigido no #63.
+- 27 de 27 fontes de notícia e 3 de 3 fontes oficiais funcionando.
+- "Atualizar portal": todas as execuções passaram. A das 14h43 levou 35 minutos:
+  - a CVM (rad.cvm.gov.br) não respondia, e o script caiu na reserva dos dados abertos;
+  - nessa reserva, a releitura do #61 tentou 9 documentos antigos, fora da janela de 7 dias, gastando cerca de 199 s em cada um;
+  - corrigido no #63.
+- Fim de semana: a edição sai sem análise de IA (299 de 300 itens), sem deals e sem leads, porque a rotina da manhã só roda em dias úteis. Ver o item 8 da fila.
+- O agendador do GitHub continua atrasado e irregular. No sábado, as execuções foram às 12:08, 13:43, 14:43 e 18:43, para horários marcados às 09:07, 15:07 e 19:07.
 
 ## Fila (da maior para a menor prioridade)
 
@@ -45,15 +45,21 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
    - lotes menores, com o trecho completo da notícia para quem analisa;
    - análise curta, de propósito, para os itens de nota 1 a 3.
 5. **Mundo das companhias no celular de verdade.** Os testes rodam em navegador sem placa de vídeo. Falta saber como fica a fluidez num iPhone real; pedir ao Felipe ou medir pelo próprio site.
-6. **CVM: conferir o OCR na prática.** Ver nos próximos dias quantos documentos o OCR recupera e se algum ainda fica sem resumo por texto ilegível.
+6. **CVM: conferir o OCR na prática.** Em 06/11 o OCR recuperou 3 documentos (2 apresentações da Irani e o plano de recuperação da Aeris). Seguir olhando quantos recupera e se algum ainda fica sem resumo por texto ilegível.
 7. **E-mail preso à publicação no GitHub Pages.** O job do e-mail só roda se a publicação der certo. Se o Pages travar na execução da manhã, o e-mail não sai, e a reserva das 08:52 roda 7 horas depois, quando o corte das 10:30 já barra o envio.
    - Com a nova tentativa de publicação (#62), o risco caiu.
    - Proposta, que precisa do ok do Felipe porque mexe em quando o e-mail é tentado: rodar o job do e-mail sempre que a edição foi salva no repositório, mesmo se a publicação falhar. As regras do send_email.py continuam iguais.
+8. **Notícias do fim de semana sem análise.** A rotina da manhã só roda de segunda a sexta. As edições de sábado e domingo, que cobrem de sexta às 08h a domingo às 08h, nunca são analisadas: ficam sem deals, sem leads e sem entrar nas bases. Proposta, que precisa do ok do Felipe porque consome uso do Claude: rodar a análise também no sábado e no domingo, sem e-mail.
 
 ## Feito
 
-- 07/11 — Publicação no GitHub Pages: quando fica presa na fila e estoura os 10 minutos, é tentada de novo uma vez, em vez de deixar o site sem a edição até a próxima execução (#62).
-- 07/11 — Documentos da CVM com texto ilegível, que ficavam sem resumo (7 de 66 em 05/11), agora são lidos (#61):
+- 07/11 — Coleta protegida quando a CVM sai do ar, e aba Ofertas sem rolagem lateral no iPhone (#63):
+  - a releitura dos textos fica só na janela de 7 dias;
+  - o download dos textos tem teto de 8 minutos e para depois de 3 downloads seguidos sem resposta;
+  - cada PDF tem 2 tentativas de 40 s, em vez de 3 de 60 s;
+  - na Ofertas, a tabela rola dentro do quadro.
+- 06/11 — Publicação no GitHub Pages: quando fica presa na fila e estoura os 10 minutos, é tentada de novo uma vez, em vez de deixar o site sem a edição até a próxima execução (#62).
+- 06/11 — Documentos da CVM com texto ilegível, que ficavam sem resumo (7 de 66 em 05/11), agora são lidos (#61):
   - PDF só com imagem ou com fonte sem mapa de caracteres: OCR em português nas 6 primeiras páginas;
   - leitura de até 15 páginas (eram 5), pulando as de aviso legal;
   - os textos que já estavam na fila são extraídos de novo pelo extrator novo, 20 por execução.
