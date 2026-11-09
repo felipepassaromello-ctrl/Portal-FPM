@@ -27,6 +27,7 @@
   };
   const state = {
     digest: null,
+    openDups: new Set(), // cartões com as repetidas abertas: continuam abertos quando a lista é redesenhada
     edition: null, // null = edição atual; senão "YYYY-MM-DD"
     tab: store.get("tab", "brief"),
     cat: "",
@@ -581,7 +582,7 @@
   function renderLater() {
     const later = [...(state.digest.upcoming || [])].sort((a, z) => z.published.localeCompare(a.published));
     $("#later-count").textContent = `${later.length} notícias publicadas depois do fechamento desta edição. Elas entram na edição de amanhã, com análise.`;
-    $("#later").innerHTML = later.map(cardHTML).join("") || `<div class="empty">Nada novo desde o fechamento da edição.</div>`;
+    $("#later").innerHTML = later.map((it) => cardHTML(it)).join("") || `<div class="empty">Nada novo desde o fechamento da edição.</div>`;
   }
 
   function updateStatus() {
@@ -602,7 +603,8 @@
   function tabCounts() {
     const d = state.digest;
     const off = d.official || {};
-    return { feed: d.items.filter((i) => !state.read.has(i.id)).length || null, deals: d.deals.length, later: (d.upcoming || []).length,
+    const hidden = groupedDups(d.items);
+    return { feed: d.items.filter((i) => !state.read.has(i.id) && !hidden.has(i.id)).length || null, deals: d.deals.length, later: (d.upcoming || []).length,
              base: Object.keys((state.base || {}).deals || {}).length || null,
              leads: state.leads ? leadRows().length : null,
              official: (off.filings || []).length + (off.cade || []).length,
@@ -937,7 +939,9 @@
       </div>`).join("");
 
     const top = d.items.filter((i) => !muted(i) && !i.repeat && !i.dup_of).sort((a, z) => relevance(z) - relevance(a)).slice(0, 8);
-    $("#top-list").innerHTML = top.map(cardHTML).join("");
+    const hidden = groupedDups(d.items), dups = {};
+    for (const i of d.items) if (hidden.has(i.id) && !muted(i)) (dups[i.dup_of] ||= []).push(i);
+    $("#top-list").innerHTML = top.map((it) => cardHTML(it, dups[it.id])).join("");
     $("#brief-sections").closest(".section").hidden = !secs.length;
     listen.refresh();
 
@@ -986,7 +990,23 @@
     ].join("");
   }
 
-  function cardHTML(it) {
+  // Matérias repetidas sobre o mesmo deal (dup_of, marcado na coleta) entram no cartão principal, abertas sob demanda.
+  // Ids das que ficam agrupadas: as que apontam para um principal presente na lista.
+  function groupedDups(items) {
+    const ids = new Set(items.map((i) => i.id));
+    return new Set(items.filter((i) => i.dup_of && i.dup_of !== i.id && ids.has(i.dup_of)).map((i) => i.id));
+  }
+
+  function dupsHTML(list, id) {
+    if (!list || !list.length) return "";
+    const n = list.length;
+    return `<details class="dups"${state.openDups.has(id) ? " open" : ""}>
+      <summary>${icon("chev", "ic ic-sm")}Mais ${n} ${n === 1 ? "matéria" : "matérias"} sobre este deal</summary>
+      <ul>${list.map((d) => `<li><button type="button" class="dup-row" data-dup="${d.id}"><span class="dup-src">${esc(d.outlets[0]?.source || "")}</span>${esc(d.headline)}</button></li>`).join("")}</ul>
+    </details>`;
+  }
+
+  function cardHTML(it, dups) {
     const read = state.read.has(it.id), saved = state.saved.has(it.id);
     return `
     <article class="card news ${read ? "read" : ""}" data-id="${it.id}" data-open="${it.id}" style="${catVar(it.category)}">
@@ -996,6 +1016,7 @@
         <h3>${esc(it.headline)}</h3>
         ${it.summary ? `<p class="card-summary">${esc(it.summary)}</p>` : ""}
         <div class="badges">${badges(it)}</div>
+        ${dupsHTML(dups, it.id)}
       </div>
       <div class="card-actions">
         <button class="ibtn ${saved ? "on" : ""}" data-save="${it.id}" title="${saved ? "Remover dos salvos" : "Salvar"} (s)" aria-label="Salvar">${icon("star")}</button>
@@ -1099,14 +1120,21 @@
   function renderFeed() {
     const d = state.digest;
     const counts = {};
-    for (const i of d.items) counts[i.category] = (counts[i.category] || 0) + 1;
+    const byId = Object.fromEntries(d.items.map((i) => [i.id, i]));
+    const hidden = groupedDups(d.items);
+    // numa categoria, a repetida só some se o principal também for dela (senão aparece sozinha naquele filtro)
+    for (const i of d.items) if (!(hidden.has(i.id) && byId[i.dup_of].category === i.category)) counts[i.category] = (counts[i.category] || 0) + 1;
     syncSegments();
-    $("#cat-chips").innerHTML = `<button class="chip" data-cat="" aria-pressed="${!state.cat}">Todas<span class="n">${d.items.length}</span></button>` +
+    $("#cat-chips").innerHTML = `<button class="chip" data-cat="" aria-pressed="${!state.cat}">Todas<span class="n">${d.items.length - hidden.size}</span></button>` +
       CAT_ORDER.filter((c) => counts[c]).map((c) => `<button class="chip" data-cat="${c}" aria-pressed="${state.cat === c}">${esc(catName(c))}<span class="n">${counts[c]}</span></button>`).join("");
     const items = filtered();
-    const unread = items.filter((i) => !state.read.has(i.id)).length;
-    $("#feed-count").textContent = `${items.length} notícias · ${unread} não lidas`;
-    $("#feed").innerHTML = items.map(cardHTML).join("") || `<div class="empty">Nada com esses filtros.</div>`;
+    const grouped = groupedDups(items);
+    const dups = {};
+    for (const i of items) if (grouped.has(i.id)) (dups[i.dup_of] ||= []).push(i);
+    const top = items.filter((i) => !grouped.has(i.id));
+    const unread = top.filter((i) => !state.read.has(i.id)).length;
+    $("#feed-count").textContent = `${top.length} notícias · ${unread} não lidas${grouped.size ? ` · ${grouped.size} repetidas agrupadas` : ""}`;
+    $("#feed").innerHTML = top.map((it) => cardHTML(it, dups[it.id])).join("") || `<div class="empty">Nada com esses filtros.</div>`;
     if (state.focus >= 0) highlightFocus();
   }
 
@@ -1159,7 +1187,7 @@
   }
 
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-tab],[data-save],[data-read],[data-cat],[data-jump],[data-search],[data-goto],[data-reader],[data-cmdk],[data-more],[data-shortcuts],[data-prefs-open],[data-open]");
+    const t = e.target.closest("[data-tab],[data-save],[data-read],[data-cat],[data-jump],[data-dup],[data-search],[data-goto],[data-reader],[data-cmdk],[data-more],[data-shortcuts],[data-prefs-open],[data-open]");
     if (!t) return;
     const ds = t.dataset;
     if (ds.tab) return setTab(ds.tab);
@@ -1179,6 +1207,10 @@
     if (ds.save) { e.stopPropagation(); toggle(state.saved, ds.save); return rerenderLists(); }
     if (ds.read) { e.stopPropagation(); toggle(state.read, ds.read); return rerenderLists(); }
     if (ds.jump) { e.preventDefault(); return jumpTo(ds.jump); }
+    if (ds.dup) { // repetida aberta pelo cartão principal: o leitor anda pelo grupo (principal e repetidas)
+      const card = t.closest("[data-open]");
+      return openReader(ds.dup, [card.dataset.open, ...[...card.querySelectorAll("[data-dup]")].map((b) => b.dataset.dup)]);
+    }
     if (ds.search) {
       if ($("#reader").open) $("#reader").close();
       setTab("feed"); $("#q").value = ds.search; state.cat = ""; return renderFeed();
@@ -1189,11 +1221,16 @@
       return renderFeed();
     }
     if (ds.open) {
-      if (e.target.closest("a")) return;
+      if (e.target.closest("a, .dups")) return;
       const list = [...t.closest(".cards").querySelectorAll("[data-open]")].map((el) => el.dataset.open);
       return openReader(ds.open, list);
     }
   });
+  // o evento toggle não sobe pela árvore: escutado na captura, guarda quais grupos de repetidas estão abertos
+  document.addEventListener("toggle", (e) => {
+    const id = e.target.classList?.contains("dups") && e.target.closest("[data-open]")?.dataset.open;
+    if (id) e.target.open ? state.openDups.add(id) : state.openDups.delete(id);
+  }, true);
   // clique no fundo escuro fecha o leitor e as folhas
   for (const id of ["reader", "more", "shortcuts", "prefs", "cmdk"]) {
     $("#" + id).addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
@@ -1401,6 +1438,7 @@
     const id = cards[state.focus]?.dataset.id;
     if (!id) return;
     const item = state.digest.items.find((i) => i.id === id);
+    if (k === "Enter" && e.target.closest("button, summary, a")) return;
     if (k === "Enter") openReader(id, cards.map((c) => c.dataset.id));
     else if (k === "o") { state.read.add(id); persist(); if (/^https?:\/\//i.test(item.link)) window.open(item.link, "_blank", "noopener"); renderFeed(); }
     else if (k === "m") { toggle(state.read, id); renderFeed(); }
