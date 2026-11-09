@@ -309,6 +309,25 @@ kbd { display: inline-block; min-width: 18px; text-align: center; font: 500 11px
 .unread-dot { position: absolute; left: 6px; top: 31px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
 .badges:empty { display: none; }
+/* Matérias repetidas sobre o mesmo deal, dentro do cartão principal. Abrem na hora (é usado muitas vezes ao dia): só a
+   seta gira, para mostrar o estado. */
+.dups { margin-top: 8px; }
+.dups > summary { display: inline-flex; align-items: center; gap: 4px; min-height: 28px; list-style: none; cursor: pointer;
+  color: var(--accent); font-size: 13.5px; font-weight: 500; border-radius: 6px; transition: transform .14s var(--ease-out); transform-origin: left center; }
+.dups > summary::-webkit-details-marker { display: none; }
+.dups > summary .ic { width: 14px; height: 14px; transition: transform .15s var(--ease-out); }
+.dups[open] > summary .ic { transform: rotate(90deg); }
+.dups > summary:active { transform: scale(.97); }
+@media (hover: hover) and (pointer: fine) { .dups > summary:hover { text-decoration: underline; text-underline-offset: 3px; } }
+.dups ul { list-style: none; margin: 6px 0 0; padding: 0; border-left: 2px solid var(--sep-strong); }
+.dup-row { display: block; width: 100%; text-align: left; border: 0; background: none; padding: 6px 10px; border-radius: 0 8px 8px 0;
+  font-size: 13.5px; line-height: 1.4; color: var(--ink-2); text-wrap: pretty; }
+.dup-src { display: block; font-size: 11.5px; font-weight: 600; color: var(--muted); }
+@media (hover: hover) and (pointer: fine) { .dup-row:hover { background: var(--fill-2); } }
+.dup-row:active { background: var(--fill-2); }
+/* tocar no disclosure não "aperta" o cartão inteiro */
+.news:active:has(.dups :active) { background: var(--bg-elev); }
+@media (prefers-reduced-motion: reduce) { .dups > summary, .dups > summary .ic { transition: none; } }
 .badge { font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 6px; background: var(--fill-2); color: var(--ink-2); }
 .badge.deal { background: var(--accent-soft); color: var(--accent); }
 .badge.upd { background: color-mix(in srgb, var(--c-internacional) 15%, transparent); color: var(--c-internacional); }
