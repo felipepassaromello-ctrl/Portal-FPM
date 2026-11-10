@@ -1,0 +1,53 @@
+name: Relógio das coletas
+
+# O agendador do GitHub (schedule) está atrasando horas e pulando a maior parte das coletas do dia (em 09/11, o portal
+# ficou sem atualização das 08:52 às 16:08). Este workflow mantém o portal atualizado de hora em hora sem depender dele:
+# ao fim de cada "Atualizar portal", um job fica esperando no ambiente "relogio" e, quando a espera acaba, dispara a
+# próxima atualização.
+#
+# A espera vem do "Wait timer" do ambiente relogio, que só o dono do repositório configura:
+#   Settings → Environments → relogio → Wait timer: 55 minutos.
+# Enquanto ele não existir, o job roda na hora, vê que acabou de haver uma atualização e não faz nada: o relógio fica
+# desligado. A espera não usa minutos de máquina do GitHub Actions.
+#
+# Uma espera nova cancela a anterior (concurrency), então nunca há mais de uma na fila. Só dispara em dias úteis, das
+# 06h às 20h30 de Brasília, e se nenhuma atualização tiver começado nos últimos 45 minutos. Fora desse horário o
+# relógio para, e volta com a primeira atualização do dia seguinte (a rotina da manhã dispara uma às 08h15).
+on:
+  workflow_run:
+    workflows: ["Atualizar portal"]
+    types: [completed]
+
+permissions:
+  actions: write
+
+concurrency:
+  group: relogio
+  cancel-in-progress: true
+
+jobs:
+  proxima:
+    runs-on: ubuntu-latest
+    environment: relogio
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Disparar a próxima atualização
+        run: |
+          hhmm=$(TZ=America/Sao_Paulo date +%H%M)
+          dow=$(TZ=America/Sao_Paulo date +%u)
+          if [ "$dow" -gt 5 ] || [ "$hhmm" -lt 600 ] || [ "$hhmm" -gt 2030 ]; then
+            echo "Fora do horário (dias úteis, das 06h às 20h30): o relógio para até a próxima atualização."
+            exit 0
+          fi
+          since=$(date -u -d '45 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+          recent=$(gh api "repos/$REPO/actions/workflows/update.yml/runs?per_page=10" \
+            --jq "[.workflow_runs[] | select(.created_at > \"$since\")] | length")
+          if [ "$recent" -gt 0 ]; then
+            echo "Houve atualização nos últimos 45 minutos ($recent): nada a fazer."
+            exit 0
+          fi
+          gh workflow run update.yml --repo "$REPO" --ref main
+          echo "Próxima atualização disparada."

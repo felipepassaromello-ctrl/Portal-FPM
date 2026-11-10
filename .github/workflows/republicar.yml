@@ -1,0 +1,52 @@
+name: Republicar depois de falha no GitHub Pages
+
+# Quando o "Atualizar portal" cai porque o GitHub Pages deixou a publicação presa na fila (as duas tentativas do
+# deploy-pages estouram os 10 minutos, como em 06/11, 08/11 e 09/11), a edição já está salva no repositório, mas o site
+# fica com a edição anterior até a próxima execução, que com o agendador do GitHub atrasado pode levar horas.
+# Aqui, 15 minutos depois, a atualização é disparada de novo, com as mesmas regras de sempre. Só uma vez: uma execução
+# disparada à mão ou por aqui (workflow_dispatch) que falhe não gera outra tentativa, e nada é feito se uma execução
+# mais nova já estiver rodando ou tiver publicado nesse meio-tempo.
+on:
+  workflow_run:
+    workflows: ["Atualizar portal"]
+    types: [completed]
+
+permissions:
+  actions: write
+
+jobs:
+  republicar:
+    if: github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.event != 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      RUN_ID: ${{ github.event.workflow_run.id }}
+      CREATED: ${{ github.event.workflow_run.created_at }}
+    steps:
+      - name: Só se a falha foi na publicação
+        id: check
+        run: |
+          failed=$(gh api "repos/$REPO/actions/runs/$RUN_ID/jobs" --jq '[.jobs[].steps[] | select(.conclusion == "failure") | .name] | join(", ")')
+          echo "Passos que falharam: ${failed:-nenhum}"
+          case "$failed" in
+            *deploy-pages*) echo "retry=1" >> "$GITHUB_OUTPUT" ;;
+            *) echo "A falha não foi na publicação: nada a fazer." ;;
+          esac
+
+      - name: Esperar o GitHub Pages destravar
+        if: steps.check.outputs.retry == '1'
+        run: sleep 900
+
+      - name: Disparar a atualização de novo, se nenhuma outra publicou nesse meio-tempo
+        if: steps.check.outputs.retry == '1'
+        run: |
+          newer=$(gh api "repos/$REPO/actions/workflows/update.yml/runs?branch=main&per_page=20" \
+            --jq "[.workflow_runs[] | select(.created_at > \"$CREATED\" and (.status != \"completed\" or .conclusion == \"success\"))] | length")
+          if [ "$newer" -gt 0 ]; then
+            echo "Já há uma execução mais nova do Atualizar portal ($newer): nada a fazer."
+            exit 0
+          fi
+          gh workflow run update.yml --repo "$REPO" --ref main
+          echo "Atualização disparada de novo."
