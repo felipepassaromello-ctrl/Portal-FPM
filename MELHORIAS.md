@@ -11,6 +11,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 4. Atualiza este arquivo (fila e histórico) e manda um resumo ao Felipe.
 
 **Regras:**
+- O Felipe pediu, em 10/11: fazer sempre o que for melhor, sem esperar aprovação, exceto o que não tem volta ou custa dinheiro.
 - Nada é publicado entre 07h30 e 09h30, por causa da rotina da manhã e do e-mail das 08h52.
 - O envio do e-mail (horário, destinatários e regras) não muda sem pedido do Felipe.
 - Nenhum dado licenciado vai para o site público.
@@ -31,6 +32,8 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 - Fila da CVM: os 72 documentos novos foram resumidos na rotina da manhã. Ficaram 5 sem resumo, com motivo; os antigos ilegíveis saem da fila sozinhos.
 
 ## Fila (da maior para a menor prioridade)
+
+0. **Publicação mais leve no GitHub Pages.** O Pages travou a publicação em 5 execuções em 5 dias (06/11, 08/11, 09/11 e duas vezes em 10/11). A cada execução sobe um artefato de ~41 MB, com milhares de arquivos de perfis de pessoas e companhias. Proposta: medir o que mais pesa e publicar só o que muda, ou empacotar os perfis em menos arquivos, sem quebrar o site.
 
 1. **Coletas do dia dependem do agendador do GitHub, que atrasa horas.** O relógio das coletas (#65) resolve sem custo, mas precisa de um ajuste do Felipe, de 1 minuto, para ligar:
    - em Settings → Environments → relogio, marcar "Wait timer" e pôr 55 minutos;
@@ -59,6 +62,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 10/11 — E-mail só sai com a edição refeita com a análise do dia (#66). Em 10/11, uma execução começou o envio 21 s depois da análise chegar e mandaria a edição sem análise; foi cancelada a tempo.
 - 09/11 — Publicação e coletas sem depender da sorte com o GitHub (#65):
   - **republicar.yml:** quando o "Atualizar portal" cai por causa do Pages, dispara a atualização de novo 15 minutos depois. É uma vez só, e nada é feito se uma execução mais nova já tiver publicado;
   - **relogio.yml:** atualização de hora em hora nos dias úteis, desligada até o Felipe pôr o wait timer no ambiente relogio (item 1 da fila).

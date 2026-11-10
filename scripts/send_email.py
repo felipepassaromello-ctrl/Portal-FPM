@@ -279,6 +279,12 @@ def main() -> int:
         if args.alert_if_missing:
             send_alert(today, digest, routine)
         return 0
+    # a análise de hoje já está no repositório, mas a edição ainda não foi refeita com ela (o briefing da edição é o
+    # automático): quem envia é a próxima execução, que monta a edição com a análise. Em 10/11 uma execução começou o
+    # envio segundos depois da análise chegar e mandaria a edição sem análise.
+    if not args.force and (digest.get("brief") or {}).get("headline") != routine["brief"].get("headline"):
+        print("A edição ainda não foi refeita com a análise de hoje; o envio fica para a próxima execução.")
+        return 0
 
     override = os.environ.get("MAIL_TO_OVERRIDE", "").strip()
     # o e-mail é da manhã: o agendador do GitHub às vezes roda com horas de atraso, e aí não envia mais
