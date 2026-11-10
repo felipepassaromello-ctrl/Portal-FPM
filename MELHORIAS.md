@@ -19,19 +19,24 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Saúde
 
-**08/11, noite:**
-- Site no ar sem erro de console, sem requisição com falha e sem nada escapando da tela. Foram 22 conferências: 11 páginas (todas as abas do index, companhias, perfil e Mundo), no computador e no iPhone.
-- "Atualizar portal": as 5 execuções desde 07/11 à noite passaram, em 1 a 4 minutos. O passo dos textos da CVM voltou a levar segundos (#63).
-- 26 de 27 fontes de notícia e 3 de 3 fontes oficiais funcionando.
-  - O feed "deals" da Bloomberg passou a responder 404 na execução das 18h57. Antes trazia só 1 a 3 itens; o feed "markets" (20 itens) continua cobrindo a Bloomberg. Ver o item 9 da fila.
-- Fila da CVM: só sobram 8 documentos antigos (26 a 29/10) com texto ilegível, que saem da fila sozinhos.
-- Fim de semana: edição sem análise de IA, como esperado (item 8 da fila).
+**09/11, noite:**
+- Site no ar sem erro de console, sem requisição com falha e sem nada escapando da tela. Foram 22 conferências: 11 páginas, no computador e no iPhone.
+- O e-mail de 09/11 saiu às 08:52. A rotina da manhã disparou a coleta às 08:21, porque as de 05:40 e 08:01 não rodaram.
+- 27 de 27 fontes de notícia funcionando: o feed "deals" da Bloomberg voltou sozinho às 16:07.
+- O GitHub Pages travou a publicação de novo, nas execuções de 08/11 às 22:39 e de 09/11 às 18:17.
+  - As duas tentativas do deploy estouraram os 10 minutos; a nova tentativa do #62, 30 s depois, não ajuda quando o Pages fica preso mais tempo.
+  - A edição fica salva, mas o site mostra a anterior até a próxima execução. Em 09/11, o site ficou com a das 16:42.
+  - Corrigido no #65 com uma nova tentativa 15 minutos depois.
+- O agendador do GitHub continua atrasado: em 09/11, depois do e-mail, o portal só voltou a atualizar às 16:08.
+- Fila da CVM: os 72 documentos novos foram resumidos na rotina da manhã. Ficaram 5 sem resumo, com motivo; os antigos ilegíveis saem da fila sozinhos.
 
 ## Fila (da maior para a menor prioridade)
 
-1. **Coletas do dia dependem do agendador do GitHub, que atrasa cerca de 7 horas.** Ver a saúde de 06/11. Há duas reservas que não dependem dele, e as duas precisam do ok do Felipe:
-   - um agendamento do Claude que dispara a coleta de 2 em 2 horas nos dias úteis. Não exige nada do Felipe, mas consome um pouco do uso do Claude;
-   - um cron externo gratuito (cron-job.org) chamando a API do GitHub. Exige que o Felipe crie uma conta e um token só com permissão de Actions neste repositório.
+1. **Coletas do dia dependem do agendador do GitHub, que atrasa horas.** O relógio das coletas (#65) resolve sem custo, mas precisa de um ajuste do Felipe, de 1 minuto, para ligar:
+   - em Settings → Environments → relogio, marcar "Wait timer" e pôr 55 minutos;
+   - o ambiente aparece depois da primeira atualização com o workflow novo;
+   - com isso, o portal passa a atualizar de hora em hora nos dias úteis, das 06h às 20h30, sem depender do agendador;
+   - a espera não gasta minutos do GitHub Actions; sem o ajuste, o relógio fica desligado e nada muda.
 2. **Notícia repetida em vários cartões.** Em 05/11, a aprovação da fusão Saipem-Subsea7 apareceu em 9 itens: veículos e idiomas diferentes, mesmo fato.
    - Feito no #64: as matérias que a análise marca como o mesmo deal agora entram no cartão principal. No caso do Saipem, 6 das 8 repetidas.
    - Falta o resto: as matérias sobre o mesmo fato que a análise não marcou como deal (no caso do Saipem, 2 das 8 vieram sem comprador e alvo) continuam em cartões próprios.
@@ -46,14 +51,17 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
    - análise curta, de propósito, para os itens de nota 1 a 3.
 5. **Mundo das companhias no celular de verdade.** Os testes rodam em navegador sem placa de vídeo. Falta saber como fica a fluidez num iPhone real; pedir ao Felipe ou medir pelo próprio site.
 6. **CVM: conferir o OCR na prática.** Em 06/11 o OCR recuperou 3 documentos (2 apresentações da Irani e o plano de recuperação da Aeris). Seguir olhando quantos recupera e se algum ainda fica sem resumo por texto ilegível.
-7. **E-mail preso à publicação no GitHub Pages.** O job do e-mail só roda se a publicação der certo. Se o Pages travar na execução da manhã, o e-mail não sai, e a reserva das 08:52 roda 7 horas depois, quando o corte das 10:30 já barra o envio.
-   - Com a nova tentativa de publicação (#62), o risco caiu.
-   - Proposta, que precisa do ok do Felipe porque mexe em quando o e-mail é tentado: rodar o job do e-mail sempre que a edição foi salva no repositório, mesmo se a publicação falhar. As regras do send_email.py continuam iguais.
+7. **E-mail preso à publicação no GitHub Pages.** O job do e-mail só roda se a publicação der certo.
+   - Antes, se o Pages travasse na execução da manhã, o e-mail não saía: a reserva das 08:52 roda 7 horas depois, quando o corte das 10:30 já barra o envio.
+   - Agora, com a nova tentativa no mesmo deploy (#62) e a republicação 15 minutos depois (#65), ele sai mais tarde, por volta das 09:30. As mesmas regras continuam valendo: uma vez por dia, só com a análise do dia e até as 10:30.
+   - Fica a proposta, que precisa do ok do Felipe: rodar o job do e-mail sempre que a edição foi salva, mesmo se a publicação falhar.
 8. **Notícias do fim de semana sem análise.** A rotina da manhã só roda de segunda a sexta. As edições de sábado e domingo, que cobrem de sexta às 08h a domingo às 08h, nunca são analisadas: ficam sem deals, sem leads e sem entrar nas bases. Proposta, que precisa do ok do Felipe porque consome uso do Claude: rodar a análise também no sábado e no domingo, sem e-mail.
-9. **Feed "deals" da Bloomberg com 404 desde 08/11 18h57.** Se continuar, trocar pela consulta do Google News (site:bloomberg.com com termos de M&A), como já é feito para WSJ e outros.
 
 ## Feito
 
+- 09/11 — Publicação e coletas sem depender da sorte com o GitHub (#65):
+  - **republicar.yml:** quando o "Atualizar portal" cai por causa do Pages, dispara a atualização de novo 15 minutos depois. É uma vez só, e nada é feito se uma execução mais nova já tiver publicado;
+  - **relogio.yml:** atualização de hora em hora nos dias úteis, desligada até o Felipe pôr o wait timer no ambiente relogio (item 1 da fila).
 - 08/11 — Notícias repetidas sobre o mesmo deal agrupadas no cartão principal, no feed e no briefing (#64):
   - "Mais N matérias sobre este deal" abre a lista com o veículo e o título de cada uma;
   - cada uma abre no leitor, que anda pelo grupo;
