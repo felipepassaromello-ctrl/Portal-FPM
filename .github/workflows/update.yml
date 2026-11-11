@@ -137,9 +137,15 @@ jobs:
         run: sed -i "s#styles.css\"#styles.css?v=${GITHUB_SHA::7}\"#; s#app.js\"#app.js?v=${GITHUB_SHA::7}\"#; s#cias.js\"#cias.js?v=${GITHUB_SHA::7}\"#; s#mundo.css\"#mundo.css?v=${GITHUB_SHA::7}\"#; s#mundo.js\"#mundo.js?v=${GITHUB_SHA::7}\"#; s#assistente.css\"#assistente.css?v=${GITHUB_SHA::7}\"#; s#assistente.js\"#assistente.js?v=${GITHUB_SHA::7}\"#" site/index.html site/cias.html site/mundo.html
 
       - uses: actions/configure-pages@v5
+      # O site publicado não leva as bases internas de trabalho (data/cias/base: perfis brutos da CVM, cotações, ofertas,
+      # posições do Mundo). O site não as lê, e a base de perfis trazia dados pessoais do Formulário de Referência.
+      - name: Montar o que vai para o site (sem as bases internas)
+        run: |
+          rm -rf _site && cp -a site _site
+          rm -rf _site/data/cias/base
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
       # O GitHub Pages às vezes deixa a publicação parada na fila até estourar os 10 minutos que o deploy-pages aceita
       # (foi o que derrubou a execução das 14h48 de 06/11). O deploy-pages cancela a publicação presa; aqui ela é
       # tentada de novo uma vez, para a edição não ficar fora do ar até a próxima execução.

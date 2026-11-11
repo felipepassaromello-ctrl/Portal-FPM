@@ -109,6 +109,34 @@ def cut(s: str, n: int) -> str:
     return s if len(s) <= n else s[:n].rsplit(" ", 1)[0] + "…"
 
 
+# Dados pessoais que vêm no texto livre do Formulário de Referência (qualificação de administradores): CPF,
+# identidade, registro profissional e endereço não vão para o site público. Vale para qualquer texto dos perfis.
+PII = [
+    re.compile(r",?\s*(?:e\s+)?(?:devidamente\s+)?inscrit[oa]s?\s+n[oa]\s+CPF(?:/MF)?[^,;]*?\d{3}\.?\d{3}\.?\d{3}-?\d{2}", re.IGNORECASE),
+    re.compile(r",?\s*CPF(?:/MF)?\s*(?:sob\s+o\s+)?(?:n[º°o.]*\s*)?[:\s]*\d{3}\.?\d{3}\.?\d{3}-?\d{2}", re.IGNORECASE),
+    re.compile(r"(?<!\d)\d{3}\.\d{3}\.\d{3}-\d{2}(?!\d)"),
+    re.compile(r",?\s*portador[a]?\s+d[ao]\s+(?:documento|carteira|c[ée]dula)\s+de\s+identidade[^,;]*(?:,\s*(?:expedid|emitid)[ao][^,;]*)?", re.IGNORECASE),
+    re.compile(r",?\s*\bRG\b\s*(?:n[º°o.]*\s*)?[\d.\-xX/]+[^,;]*", re.IGNORECASE),
+    re.compile(r",?\s*(?:e\s+)?inscrit[oa]\s+n[ao]\s+(?:OAB|CRC|CREA|CRM|Corecon)\b[^,;]*", re.IGNORECASE),
+    re.compile(r",?\s*residente\s+e\s+domiciliad[oa][^.;]*", re.IGNORECASE),
+]
+
+
+def scrub(v):
+    """Tira CPF, identidade, registro profissional e endereço de textos (em qualquer nível de listas e dicionários)."""
+    if isinstance(v, str):
+        if not re.search(r"\d{3}\.?\d{3}\.?\d{3}-?\d{2}|identidade|\bRG\b|inscrit[oa]\s+n[ao]|domiciliad", v, re.IGNORECASE):
+            return v
+        for rx in PII:
+            v = rx.sub("", v)
+        return re.sub(r"\s*,(\s*,)+", ",", re.sub(r"\s{2,}", " ", v)).strip(" ,")
+    if isinstance(v, list):
+        return [scrub(x) for x in v]
+    if isinstance(v, dict):
+        return {k: scrub(x) for k, x in v.items()}
+    return v
+
+
 def fmt_cnpj(d: str) -> str:
     d = re.sub(r"\D", "", d or "")
     if len(d) != 14 or set(d) == {"0"}:
@@ -254,7 +282,7 @@ def people(rows: list[dict]) -> list[dict]:
         nasc = (r.get("Data_Nascimento") or "")[:4]
         p = {"n": title(r.get("Nome", "")), "o": o, "c": cargo, "f": cut(r.get("Outro_Cargo_Funcao") or r.get("Complemento_Cargo_Eletivo_Ocupado") or "", 120),
              "el": r.get("Data_Eleicao", ""), "pm": cut(r.get("Prazo_Mandato", ""), 60), "pr": cut(r.get("Profissao", ""), 60),
-             "ex": cut(r.get("Experiencia_Profissional", ""), 700), "nasc": nasc if nasc.isdigit() else "",
+             "ex": cut(scrub(r.get("Experiencia_Profissional", "")), 700), "nasc": nasc if nasc.isdigit() else "",
              "ind": "ndependente" in cargo, "ec": r.get("Eleito_Controlador") == "S",
              "mand": int(num(r.get("Numero_Mandatos_Consecutivos")) or 0)}
         if key in seen:  # mesma pessoa com dois cargos no mesmo órgão
@@ -953,7 +981,7 @@ def cmd_montar(args) -> None:
         if not p:
             continue
         p["nm"] = next((curated[tk[:4]][0] for tk in c.get("tk", []) if tk[:4] in curated), None) or title(c.get("nc") or c.get("n") or "")
-        save_json(perfil_dir / f"{k}.json", p, compact=True)
+        save_json(perfil_dir / f"{k}.json", scrub(p), compact=True)
         profiles[k] = p
         ltm = p.get("fin", {}).get("ltm", {})
         main_tk = mkt.get("tk") if mkt else None
@@ -1135,7 +1163,7 @@ def build_people(profiles: dict[str, dict], items: list[tuple[str, dict]], alias
         for f in pdir.glob("*.json"):
             f.unlink()
     for sh, data in shards.items():
-        save_json(pdir / f"{sh}.json", data, compact=True)
+        save_json(pdir / f"{sh}.json", scrub(data), compact=True)
     save_json(OUT / "pessoas.json", {"generated_at": now_brt().isoformat(timespec="minutes"), "p": index}, compact=True)
     log(f"Pessoas: {sum(1 for r in index if r[2] == 'F')} pessoas e {sum(1 for r in index if r[2] == 'J')} investidores PJ, "
         f"{sum(len(e.get('noticias', [])) for e in ppl.values())} vínculos com notícias.")
