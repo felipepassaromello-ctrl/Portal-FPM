@@ -33,8 +33,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Fila (da maior para a menor prioridade)
 
-0. **Publicação mais leve no GitHub Pages.** O Pages travou a publicação em 5 execuções em 5 dias (06/11, 08/11, 09/11 e duas vezes em 10/11). A cada execução sobe um artefato de ~41 MB, com milhares de arquivos de perfis de pessoas e companhias. Proposta: medir o que mais pesa e publicar só o que muda, ou empacotar os perfis em menos arquivos, sem quebrar o site.
-
+0. **Publicação mais leve no GitHub Pages.** O Pages travou a publicação em 5 execuções em 5 dias. Feito o primeiro corte (#67, 16 MB de bases internas). O artefato ainda tem cerca de 3.300 arquivos: 1.510 de pessoas, 919 de documentos por empresa e 744 de perfis, e o arquivo de edições tem 29 MB. Próximo passo: medir se a falha do Pages acompanha o tamanho; se acompanhar, empacotar os perfis em menos arquivos.
 1. **Coletas do dia dependem do agendador do GitHub, que atrasa horas.** O relógio das coletas (#65) resolve sem custo, mas precisa de um ajuste do Felipe, de 1 minuto, para ligar:
    - em Settings → Environments → relogio, marcar "Wait timer" e pôr 55 minutos;
    - o ambiente aparece depois da primeira atualização com o workflow novo;
@@ -62,6 +61,10 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 10/11 — Dados pessoais fora do site público (#67):
+  - o site publicava data/cias/base/perfis.json (14,7 MB, base interna que o site nem lê) com 47 CPFs, números de identidade e endereços, vindos do texto livre do Formulário de Referência; e os perfis de pessoas tinham 27 CPFs;
+  - as bases internas não vão mais para o Pages (16 MB a menos por publicação);
+  - CPF, identidade, registro profissional e endereço saem de todo texto dos perfis antes de gravar.
 - 10/11 — E-mail só sai com a edição refeita com a análise do dia (#66). Em 10/11, uma execução começou o envio 21 s depois da análise chegar e mandaria a edição sem análise; foi cancelada a tempo.
 - 09/11 — Publicação e coletas sem depender da sorte com o GitHub (#65):
   - **republicar.yml:** quando o "Atualizar portal" cai por causa do Pages, dispara a atualização de novo 15 minutos depois. É uma vez só, e nada é feito se uma execução mais nova já tiver publicado;
