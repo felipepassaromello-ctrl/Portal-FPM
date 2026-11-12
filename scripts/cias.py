@@ -72,6 +72,7 @@ OCR_PAGES = 6  # páginas lidas por OCR quando o PDF não tem texto de verdade
 OCR_SECONDS = 240  # teto de tempo do OCR por execução: o que sobrar fica para a próxima, sem atrasar a coleta
 TEXT_VERSION = 2  # versão do extrator: textos da fila feitos com uma versão anterior são refeitos uma vez
 REDO_PER_RUN = 20  # quantos textos antigos refazer por execução
+NOPDF_TRIES = 4  # quantas vezes baixar de novo um documento que a CVM devolveu sem o PDF
 TEXT_MINUTES = 8  # teto do download dos textos na execução de hora em hora: o resto fica para a próxima
 DOWN_STOP = 3  # downloads seguidos sem resposta da CVM (tempo esgotado, conexão recusada) que encerram a rodada
 # página de aviso legal: o título vem no alto da página ("Aviso legal", "Disclaimer"...)
@@ -477,20 +478,47 @@ def network_error(exc: BaseException) -> bool:
     return isinstance(exc, (urllib.error.URLError, TimeoutError, ConnectionError))
 
 
+def unpack_pdf(raw: bytes) -> tuple[bytes | None, str]:
+    """O PDF dentro do que a CVM devolveu, e o que veio. A CVM às vezes entrega o arquivo dentro de um .zip, e às
+    vezes devolve uma página HTML (documento indisponível ou ainda sendo processado) em vez do arquivo."""
+    if raw[:5] == b"%PDF-":
+        return raw, "pdf"
+    if raw[:4] == b"PK\x03\x04":
+        try:
+            with zipfile.ZipFile(io.BytesIO(raw)) as z:
+                pdfs = [n for n in z.namelist() if n.lower().endswith(".pdf")]
+                if pdfs:
+                    return z.read(pdfs[0]), f"zip ({', '.join(z.namelist())[:120]})"
+                return None, f"zip sem PDF ({', '.join(z.namelist())[:120]})"
+        except zipfile.BadZipFile:
+            return None, "zip inválido"
+    head = raw[:600].decode("latin-1", "replace")
+    if "<html" in head.lower() or "<!doctype" in head.lower():
+        title = re.search(r"<title>(.*?)</title>", head, re.I | re.S)
+        body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw[:4000].decode("utf-8", "replace"))).strip()
+        return None, f"HTML ({(title[1].strip() if title else '')[:60]}): {body[:160]}"
+    return None, f"{len(raw)} bytes, começa com {raw[:40]!r}"
+
+
 def _fetch_text(d: dict, chars: int) -> dict | str | None:
     """Texto do documento para a fila. None se o documento deu erro; "rede" se a CVM não respondeu."""
     try:
         raw = get(d["u"], timeout=40, tries=2)
-        is_pdf = raw[:5] == b"%PDF-"
-        texto = pdf_text(raw) if is_pdf else ""
+        pdf, kind = unpack_pdf(raw)
+        texto = pdf_text(pdf) if pdf else ""
     except Exception as exc:  # noqa: BLE001
         log(f"PDF {d['id']} ({d['nome']}): {type(exc).__name__}: {exc}")
         return "rede" if network_error(exc) else None
+    if kind != "pdf":
+        log(f"PDF {d['id']} ({d['nome']}): veio {kind}")
     if is_release(d):
         chars = max(chars, RELEASE_CHARS)
     item = {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"], "texto": texto[:chars],
             "u": d["u"], "x": TEXT_VERSION}
-    if is_pdf and not legible(texto):
+    if pdf is None:
+        # sem o arquivo (página de erro da CVM): tenta de novo nas próximas execuções, até NOPDF_TRIES vezes
+        item["np"] = int(d.get("np", 0)) + 1
+    elif not legible(texto):
         item["ocr"] = 1  # PDF sem texto de verdade (só imagem, ou fonte sem mapa): o passo de OCR do workflow lê as páginas
     return item
 
@@ -536,7 +564,14 @@ def cmd_textos(args) -> None:
                 if v.get("x", 1) < TEXT_VERSION and k in by_id and v.get("d", "") >= since][:REDO_PER_RUN]
         if redo:
             log(f"Refazendo {len(redo)} textos da fila com o extrator novo.")
-        todo = redo + todo
+        # documentos em que a CVM devolveu outra coisa no lugar do PDF (ou textos antigos vazios, de antes de isso ser
+        # marcado): nova tentativa, até NOPDF_TRIES vezes
+        again = [dict(by_id[k], np=v.get("np", 0)) for k, v in fila.items()
+                 if k in by_id and v.get("d", "") >= since and not v.get("texto") and not v.get("ocr")
+                 and v.get("np", 0) < NOPDF_TRIES and k not in {d["id"] for d in redo}][:REDO_PER_RUN]
+        if again:
+            log(f"Tentando de novo {len(again)} documentos que vieram sem PDF.")
+        todo = redo + again + todo
     limit = args.max or MAX_PDFS_PER_RUN
     deadline = time.time() + 60 * (args.minutos or (30 if args.hist else TEXT_MINUTES))
     # no modo normal, um documento por vez: o teto de tempo e a parada por CVM fora do ar valem a cada download
