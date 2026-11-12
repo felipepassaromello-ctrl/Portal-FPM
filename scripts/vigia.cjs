@@ -106,7 +106,7 @@ async function checkPages(pdf) {
       if (wide) warn("página", `${url} (${dev}): conteúdo escapando da tela (${wide})`);
       if (fr && url === `cias.html#cia/${fr.k}` && dev === "iPhone") {
         // o link "PDF" do fato relevante tem de abrir a cópia do site, não a CVM
-        const link = p.locator(`a.doc-open[href*="${fr.id}"]`).first();
+        const link = p.locator(`a[href*="${fr.id}"]:visible`).first(); // o perfil repete o link em abas escondidas
         if (await link.count()) {
           const [pop] = await Promise.all([ctx.waitForEvent("page", { timeout: 15000 }).catch(() => null), link.click().catch(() => null)]);
           await p.waitForTimeout(1500);
