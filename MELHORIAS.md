@@ -61,6 +61,10 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 12/11 — Documentos da CVM que vinham sem PDF (#70 e #71):
+  - o Felipe não conseguiu abrir o fato relevante do Santander de 12/11 (OPA); na coleta, o mesmo documento tinha vindo sem PDF, e 54 da fila estavam assim desde 11/11;
+  - causa: a CVM está instável. A consulta em tempo real cai ("service unavailable"), e o download às vezes devolve a página "ENET Download de Documento" em vez do arquivo; tentando de novo, 35 de 40 vieram certos;
+  - agora o PDF de dentro de um .zip é aberto, o log diz o que veio no lugar do PDF, e esses documentos são baixados de novo até 4 vezes, os mais recentes primeiro, usando o link guardado na fila, mesmo com a consulta da CVM fora do ar.
 - 11/11 — Áudio do briefing resiste a falha do serviço de voz (#68):
   - na edição das 08:28 de 11/11, o edge-tts recusou trechos 7 vezes e o passo caiu depois de 5 minutos, sem áudio; o portal ficou com a leitura do navegador até a execução seguinte, às 08:57, que refez os 19 trechos do zero;
   - agora cada trecho pronto fica guardado em cache; se o serviço falhar no meio, a execução seguinte só refaz os que faltaram, e um briefing com uma seção reescrita só refaz os trechos novos;

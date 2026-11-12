@@ -566,9 +566,14 @@ def cmd_textos(args) -> None:
             log(f"Refazendo {len(redo)} textos da fila com o extrator novo.")
         # documentos em que a CVM devolveu outra coisa no lugar do PDF (ou textos antigos vazios, de antes de isso ser
         # marcado): nova tentativa, até NOPDF_TRIES vezes
-        again = [dict(by_id[k], np=v.get("np", 0)) for k, v in fila.items()
-                 if k in by_id and v.get("d", "") >= since and not v.get("texto") and not v.get("ocr")
-                 and v.get("np", 0) < NOPDF_TRIES and k not in {d["id"] for d in redo}][:REDO_PER_RUN]
+        # (com o link guardado na fila: funciona mesmo quando a consulta em tempo real da CVM está fora do ar)
+        again = [{"id": k, "k": v.get("k", ""), "nome": v.get("empresa", ""), "c": v.get("c", ""), "t": v.get("t", ""),
+                  "s": v.get("s", ""), "d": v.get("d", ""), "u": v["u"], "np": v.get("np", 0)}
+                 for k, v in fila.items()
+                 if v.get("u") and v.get("d", "") >= since and not v.get("texto") and not v.get("ocr")
+                 and v.get("np", 0) < NOPDF_TRIES and k not in {d["id"] for d in redo}]
+        again.sort(key=lambda d: d["d"], reverse=True)  # os mais recentes primeiro
+        again = again[:REDO_PER_RUN]
         if again:
             log(f"Tentando de novo {len(again)} documentos que vieram sem PDF.")
         todo = redo + again + todo
