@@ -33,7 +33,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Fila (da maior para a menor prioridade)
 
-0. **Publicação mais leve no GitHub Pages.** O Pages travou a publicação em 5 execuções em 5 dias. Feito o primeiro corte (#67, 16 MB de bases internas). O artefato ainda tem cerca de 3.300 arquivos: 1.510 de pessoas, 919 de documentos por empresa e 744 de perfis, e o arquivo de edições tem 29 MB. Próximo passo: medir se a falha do Pages acompanha o tamanho; se acompanhar, empacotar os perfis em menos arquivos.
+0. **Publicação no GitHub Pages: só acompanhar.** Depois do #67 (artefato de cerca de 41 MB, sem as bases internas), as 13 execuções de 10/11 à tarde até 11/11 à noite publicaram sem travar, cada deploy em cerca de 12 s; antes, foram 5 travadas em 5 dias. Se voltar a travar, o próximo passo é empacotar os perfis em menos arquivos (hoje são cerca de 3.300).
 1. **Coletas do dia dependem do agendador do GitHub, que atrasa horas.** O relógio das coletas (#65) resolve sem custo, mas precisa de um ajuste do Felipe, de 1 minuto, para ligar:
    - em Settings → Environments → relogio, marcar "Wait timer" e pôr 55 minutos;
    - o ambiente aparece depois da primeira atualização com o workflow novo;
@@ -61,6 +61,11 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 11/11 — Áudio do briefing resiste a falha do serviço de voz (PR_AUDIO):
+  - na edição das 08:28 de 11/11, o edge-tts recusou trechos 7 vezes e o passo caiu depois de 5 minutos, sem áudio; o portal ficou com a leitura do navegador até a execução seguinte, às 08:57, que refez os 19 trechos do zero;
+  - agora cada trecho pronto fica guardado em cache; se o serviço falhar no meio, a execução seguinte só refaz os que faltaram, e um briefing com uma seção reescrita só refaz os trechos novos;
+  - cada trecho tem 5 tentativas, em vez de 3, e a síntese para depois de 4 minutos, para não segurar a publicação;
+  - a primeira execução depois da mudança refaz o áudio inteiro uma vez, porque o cache mudou de formato.
 - 10/11 — Dados pessoais fora do site público (#67):
   - o site publicava data/cias/base/perfis.json (14,7 MB, base interna que o site nem lê) com 47 CPFs, números de identidade e endereços, vindos do texto livre do Formulário de Referência; e os perfis de pessoas tinham 27 CPFs;
   - as bases internas não vão mais para o Pages (16 MB a menos por publicação);
