@@ -51,6 +51,14 @@ jobs:
           MAX_ANALYZE: ${{ vars.MAX_ANALYZE || '90' }}
         run: python scripts/build_digest.py
 
+      # Cópia própria dos PDFs recentes da CVM (site/pdf): o portal abre a cópia em vez do link da CVM, que falha às vezes.
+      # Não vai para o repositório; o cache guarda as cópias entre as execuções e o script apaga as de mais de 7 dias.
+      - uses: actions/cache@v4
+        with:
+          path: site/pdf
+          key: pdf-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: pdf-
+
       # o próprio script para em 8 minutos ou quando a CVM não responde; o teto do passo é a última garantia
       - name: Baixar o texto dos documentos da CVM a resumir
         continue-on-error: true

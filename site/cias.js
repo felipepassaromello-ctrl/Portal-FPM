@@ -130,6 +130,20 @@
     const [seq, ver] = String(d.q || "").split(".");
     return `https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=${d.id}&numSequencia=${seq}&numVersao=${ver || 1}`;
   };
+
+  // PDFs da CVM: o portal guarda uma cópia dos recentes (pdf/<protocolo>.pdf), porque o download da CVM às vezes
+  // devolve uma página de erro no lugar do arquivo. Ao clicar num link da CVM que tem cópia, o link passa a abrir a cópia.
+  let pdfCopies = null;
+  fetch("pdf/index.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).then((j) => { pdfCopies = new Set(Object.keys(j || {})); }).catch(() => {});
+  const pdfCopyOf = (href) => {
+    const m = /(?:numProtocolo|NumeroProtocoloEntrega)=(\d+)/i.exec(href || "");
+    return m && pdfCopies?.has(m[1]) ? `pdf/${m[1]}.pdf` : "";
+  };
+  document.addEventListener("click", (ev) => {
+    const a = ev.target.closest?.('a[href*="rad.cvm.gov.br"]');
+    const copy = a && pdfCopyOf(a.getAttribute("href"));
+    if (copy) a.setAttribute("href", copy);
+  }, true);
   const docTitle = (d) => d.s || d.e || d.t || catShort(d.c);
   const docText = (d) => fold([d.s, d.e, d.t, d.c, d.n, d.tr, d.sm?.resumo, (d.sm?.pontos || []).join(" ")].join(" "));
   const ciaLink = (k, label) => (state.byK.has(k) ? `<a class="cia-link" href="#cia/${esc(k)}">${esc(label || ciaName(state.byK.get(k)))}</a>` : esc(label || ""));

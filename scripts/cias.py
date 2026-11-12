@@ -73,6 +73,16 @@ OCR_SECONDS = 240  # teto de tempo do OCR por execução: o que sobrar fica para
 TEXT_VERSION = 2  # versão do extrator: textos da fila feitos com uma versão anterior são refeitos uma vez
 REDO_PER_RUN = 20  # quantos textos antigos refazer por execução
 NOPDF_TRIES = 4  # quantas vezes baixar de novo um documento que a CVM devolveu sem o PDF
+# Cópia própria dos PDFs recentes, publicada com o site em pdf/: o link do portal abre a cópia e não depende da CVM,
+# que em novembro de 2026 passou a falhar no download (devolve a página "ENET Download de Documento" no lugar do
+# arquivo). Fatos relevantes de até 6 MB e os demais documentos com resumo de até 1,5 MB, dos últimos PDF_DAYS dias.
+PDF_DIR = ROOT / "site" / "pdf"
+PDF_INDEX = PDF_DIR / "index.json"
+PDF_DAYS = 7
+PDF_TOTAL = 80_000_000  # teto do conjunto publicado: acima disso saem as cópias mais antigas (fatos relevantes por último)
+PDF_MAX = {"Fato Relevante": 6_000_000}
+PDF_MAX_OTHER = 1_500_000
+PDF_BACKFILL = 30  # cópias de documentos já lidos antes (sem cópia) baixadas por execução
 TEXT_MINUTES = 8  # teto do download dos textos na execução de hora em hora: o resto fica para a próxima
 DOWN_STOP = 3  # downloads seguidos sem resposta da CVM (tempo esgotado, conexão recusada) que encerram a rodada
 # página de aviso legal: o título vem no alto da página ("Aviso legal", "Disclaimer"...)
@@ -500,6 +510,66 @@ def unpack_pdf(raw: bytes) -> tuple[bytes | None, str]:
     return None, f"{len(raw)} bytes, começa com {raw[:40]!r}"
 
 
+_pdf_index: dict | None = None
+KEEP_PDFS = False
+
+
+def pdf_index() -> dict:
+    global _pdf_index
+    if _pdf_index is None:
+        _pdf_index = load_json(PDF_INDEX, {})
+    return _pdf_index
+
+
+def keep_pdf(d: dict, pdf: bytes) -> bool:
+    """Guarda a cópia do PDF em site/pdf, se o documento for recente e do tipo e tamanho que valem a cópia."""
+    if not KEEP_PDFS or not d.get("id"):
+        return False
+    limit = PDF_MAX.get(d.get("c", ""), PDF_MAX_OTHER if d.get("c") in SUMMARY_CATS or is_release(d) else 0)
+    cutoff = (datetime.now(BRT) - timedelta(days=PDF_DAYS)).strftime("%Y-%m-%d")
+    if len(pdf) > limit or d.get("d", "") < cutoff:
+        return False
+    PDF_DIR.mkdir(parents=True, exist_ok=True)
+    (PDF_DIR / f"{d['id']}.pdf").write_bytes(pdf)
+    pdf_index()[str(d["id"])] = {"d": d.get("d", ""), "c": d.get("c", ""), "b": len(pdf)}
+    return True
+
+
+def save_pdfs(candidates: list[dict], deadline: float) -> None:
+    """Cópias que faltam (documentos lidos antes de haver a cópia) e limpeza das velhas; grava o índice."""
+    idx = pdf_index()
+    cutoff = (datetime.now(BRT) - timedelta(days=PDF_DAYS)).strftime("%Y-%m-%d")
+    want = [d for d in candidates if d.get("u") and str(d.get("id")) not in idx and d.get("d", "") >= cutoff
+            and (d.get("c") in PDF_MAX or d.get("c") in SUMMARY_CATS or is_release(d))]
+    want.sort(key=lambda d: d.get("d", ""), reverse=True)
+    want.sort(key=lambda d: d.get("c") != "Fato Relevante")
+    got = 0
+    for d in want[:PDF_BACKFILL]:
+        if time.time() > deadline:
+            break
+        try:
+            pdf, _ = unpack_pdf(get(d["u"], timeout=40, tries=2))
+        except Exception:  # noqa: BLE001
+            continue
+        if pdf and keep_pdf(d, pdf):
+            got += 1
+    for k in [k for k, v in idx.items() if v.get("d", "") < cutoff]:
+        idx.pop(k)
+    total = 0
+    for k, v in sorted(idx.items(), key=lambda kv: (kv[1].get("c") == "Fato Relevante", kv[1].get("d", "")), reverse=True):
+        total += v.get("b", 0)
+        if total > PDF_TOTAL:
+            idx.pop(k)
+    if PDF_DIR.exists():
+        for f in PDF_DIR.glob("*.pdf"):
+            if f.stem not in idx:
+                f.unlink()
+    if idx or PDF_DIR.exists():
+        save_json(PDF_INDEX, idx)
+    mb = sum(v.get("b", 0) for v in idx.values()) / 1e6
+    log(f"Cópias de PDF: {got} novas de documentos já lidos; {len(idx)} no site ({mb:.1f} MB).")
+
+
 def _fetch_text(d: dict, chars: int) -> dict | str | None:
     """Texto do documento para a fila. None se o documento deu erro; "rede" se a CVM não respondeu."""
     try:
@@ -511,6 +581,8 @@ def _fetch_text(d: dict, chars: int) -> dict | str | None:
         return "rede" if network_error(exc) else None
     if kind != "pdf":
         log(f"PDF {d['id']} ({d['nome']}): veio {kind}")
+    if pdf:
+        keep_pdf(d, pdf)
     if is_release(d):
         chars = max(chars, RELEASE_CHARS)
     item = {"k": d["k"], "empresa": d["nome"], "c": d["c"], "t": d["t"], "s": d["s"], "d": d["d"], "texto": texto[:chars],
@@ -578,6 +650,8 @@ def cmd_textos(args) -> None:
             log(f"Tentando de novo {len(again)} documentos que vieram sem PDF.")
         todo = redo + again + todo
     limit = args.max or MAX_PDFS_PER_RUN
+    global KEEP_PDFS
+    KEEP_PDFS = not args.hist
     deadline = time.time() + 60 * (args.minutos or (30 if args.hist else TEXT_MINUTES))
     # no modo normal, um documento por vez: o teto de tempo e a parada por CVM fora do ar valem a cada download
     step = 40 if args.hist else 1
@@ -601,6 +675,12 @@ def cmd_textos(args) -> None:
                 log(f"... {got} textos")
     save_json(target, fila)
     log(f"Textos: {got} novos (de {len(todo)} pendentes); fila com {len(fila)}.")
+    if KEEP_PDFS:
+        seen = {d["id"] for d in docs}
+        cands = [d for d in docs if wants_summary(d, listed, active) or d["c"] == "Fato Relevante"]
+        cands += [{"id": k, "nome": v.get("empresa", ""), "c": v.get("c", ""), "t": v.get("t", ""), "d": v.get("d", ""),
+                   "u": v.get("u", "")} for k, v in fila.items() if k not in seen]
+        save_pdfs(cands, deadline + 120)
 
 
 def cmd_ocr(args) -> None:

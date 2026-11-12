@@ -61,6 +61,9 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 12/11 — PDFs da CVM abrem pela cópia do portal, e o vigia confere o site várias vezes ao dia (#72):
+  - o portal guarda cópia dos PDFs dos últimos 7 dias (fatos relevantes de até 6 MB e os demais documentos com resumo de até 1,5 MB, no máximo 80 MB), em pdf/<protocolo>.pdf; clicar num link da CVM que tem cópia abre a cópia;
+  - scripts/vigia.cjs testa o site no ar como o Felipe usa: abas no computador e no iPhone, edição e e-mail do dia, áudio, cópia e link dos PDFs dos fatos relevantes, execuções do GitHub. A tarefa agendada "Portal FPM – vigia" roda o vigia em dias úteis às 10h, 13h, 16h e 19h e corrige o que achar.
 - 12/11 — Documentos da CVM que vinham sem PDF (#70 e #71):
   - o Felipe não conseguiu abrir o fato relevante do Santander de 12/11 (OPA); na coleta, o mesmo documento tinha vindo sem PDF, e 54 da fila estavam assim desde 11/11;
   - causa: a CVM está instável. A consulta em tempo real cai ("service unavailable"), e o download às vezes devolve a página "ENET Download de Documento" em vez do arquivo; tentando de novo, 35 de 40 vieram certos;

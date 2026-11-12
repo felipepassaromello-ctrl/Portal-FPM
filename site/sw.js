@@ -21,7 +21,8 @@ self.addEventListener("fetch", (e) => {
   e.respondWith(
     fetch(page ? new Request(e.request, { cache: "no-cache" }) : e.request)
       .then((res) => {
-        if (res.ok && (url.pathname.includes("/data/digest") || url.pathname.includes("/data/cias/resumo") || !url.pathname.includes("/data/"))) {
+        // as cópias de PDF da CVM (pdf/) não entram no cache do aparelho: são muitas e grandes
+        if (res.ok && !url.pathname.includes("/pdf/") && (url.pathname.includes("/data/digest") || url.pathname.includes("/data/cias/resumo") || !url.pathname.includes("/data/"))) {
           const copy = res.clone();
           caches.open(CACHE).then((c) => c.put(key, copy));
         }
