@@ -61,6 +61,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 12/11 — Vigia avisa quando o portal passa de 2h30 sem atualizar em dia útil, das 09h às 21h, porque o agendador do GitHub atrasou 3 horas em 12/11 (#74).
 - 12/11 — PDFs da CVM abrem pela cópia do portal, e o vigia confere o site várias vezes ao dia (#72):
   - o portal guarda cópia dos PDFs dos últimos 7 dias (fatos relevantes de até 6 MB e os demais documentos com resumo de até 1,5 MB, no máximo 80 MB), em pdf/<protocolo>.pdf; clicar num link da CVM que tem cópia abre a cópia;
   - scripts/vigia.cjs testa o site no ar como o Felipe usa: abas no computador e no iPhone, edição e e-mail do dia, áudio, cópia e link dos PDFs dos fatos relevantes, execuções do GitHub. A tarefa agendada "Portal FPM – vigia" roda o vigia em dias úteis às 10h, 13h, 16h e 19h e corrige o que achar.

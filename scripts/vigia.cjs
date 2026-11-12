@@ -11,7 +11,7 @@
 //   - áudio do briefing igual ao briefing publicado;
 //   - PDFs: cada fato relevante dos últimos 2 dias tem cópia no site (pdf/<protocolo>.pdf) e a cópia abre como PDF;
 //   - links "PDF" das companhias apontam para a cópia quando ela existe;
-//   - execuções recentes do "Atualizar portal" e do e-mail sem falha.
+//   - execuções recentes do "Atualizar portal" e do e-mail sem falha, e o portal atualizado nas últimas 2h30 em dia útil.
 const { chromium, devices } = require("playwright");
 
 const SITE = "https://felipepassaromello-ctrl.github.io/Portal-FPM/";
@@ -70,6 +70,14 @@ async function checkRuns() {
     for (const r of bad) warn("execução", `${r.name} #${r.run_number} falhou (${r.html_url})`);
     const stuck = j.workflow_runs.filter((r) => r.status !== "completed" && Date.now() - new Date(r.created_at) > 45 * 6e4);
     for (const r of stuck) warn("execução", `${r.name} #${r.run_number} está há mais de 45 minutos sem terminar (${r.html_url})`);
+    if (wf === "update.yml") {
+      // o agendador do GitHub atrasa horas: em dia útil, das 09h às 21h, o portal não pode ficar mais de 2h30 sem atualizar
+      const now = brt(), h = now.getHours(), weekday = now.getDay() >= 1 && now.getDay() <= 5;
+      const last = j.workflow_runs.find((r) => r.conclusion === "success");
+      const age = last ? (Date.now() - new Date(last.created_at)) / 6e4 : Infinity;
+      if (weekday && h >= 9 && h < 21 && age > 150 && !j.workflow_runs.some((r) => r.status !== "completed"))
+        warn("execução", `o portal não é atualizado há ${Math.round(age / 60 * 10) / 10} h (agendador do GitHub atrasado): dispare o update.yml`);
+    }
   }
 }
 
