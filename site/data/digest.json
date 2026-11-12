@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T20:23:56.209775-03:00",
+ "generated_at": "2026-11-11T21:24:02.541962-03:00",
  "date": "2026-11-11",
  "window": {
   "start": "2026-11-10T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-11T08:27:09.703091-03:00",
-  "analyzed": 179
+  "analyzed": 168
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -141,11 +141,10 @@
    "price": 5.5829,
    "change_pct": 1.348795734763386,
    "spark": [
-    5.458700180053711,
     5.503499984741211,
     5.503399848937988,
     5.508600234985352,
-    5.582900047302246
+    5.582699775695801
    ]
   },
   {
@@ -155,11 +154,10 @@
    "price": 6.1887,
    "change_pct": 0.19505786367077782,
    "spark": [
-    6.127450942993164,
     6.172840118408203,
     6.1312079429626465,
     6.176651954650879,
-    6.188700199127197
+    6.23052978515625
    ]
   },
   {
@@ -221,27 +219,26 @@
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3990.2,
-   "change_pct": -0.992505375824948,
+   "price": 3979.1,
+   "change_pct": -1.2679259538231236,
    "spark": [
     4074.89990234375,
     4114.5,
     4030.199951171875,
-    3990.199951171875
+    3979.10009765625
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 73525.35,
-   "change_pct": -0.2641981523233694,
+   "price": 73963.57,
+   "change_pct": 0.33023931836788645,
    "spark": [
-    75747.578125,
     74584.6484375,
     75223.1484375,
     73720.1171875,
-    73525.3515625
+    73963.5703125
    ]
   }
  ],
@@ -760,45 +757,6 @@
    "ai": true
   },
   {
-   "id": "3130f0fcc9f1",
-   "title": "Dólar atinge maior cotação em 15 meses e se aproxima de R$ 6: até onde a moeda pode ir?",
-   "link": "https://exame.com/invest/mercados/dolar-atinge-maior-cotacao-em-15-meses-e-se-aproxima-de-r-6-ate-onde-a-moeda-pode-ir/",
-   "published": "2026-11-10T18:06:58+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/mercados/dolar-atinge-maior-cotacao-em-15-meses-e-se-aproxima-de-r-6-ate-onde-a-moeda-pode-ir/",
-     "title": "Dólar atinge maior cotação em 15 meses e se aproxima de R$ 6: até onde a moeda pode ir?"
-    }
-   ],
-   "ids": [
-    "3130f0fcc9f1"
-   ],
-   "snippet": "Alta reflete a força global da moeda americana, juros nos Estados Unidos e incertezas fiscais no Brasil; especialistas avaliam os próximos movimentos do câmbio",
-   "prescore": 3.0,
-   "headline": "Dólar atinge maior cotação em 15 meses e se aproxima de R$ 6",
-   "category": "mercados",
-   "importance": 8,
-   "importance_reason": "Câmbio no nível mais alto em 15 meses afeta custo de capital e deals.",
-   "summary": "O dólar chegou à maior cotação em 15 meses, perto de R$ 6. O movimento reflete a força global da moeda, juros nos EUA e incertezas fiscais no Brasil.",
-   "involves": "Dólar, juros dos EUA, risco fiscal brasileiro",
-   "interpretation": "Mistura fator externo com prêmio de risco local; o trecho não traz projeções específicas.",
-   "impact": "Pressiona importadores e empresas endividadas em dólar; favorece exportadoras; encarece captações externas.",
-   "sentiment": "negativo",
-   "entities": [
-    "Dólar"
-   ],
-   "tags": [
-    "câmbio",
-    "dólar",
-    "fiscal"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "bc931a6f13d8",
    "title": "Instant view: Hot October inflation report rattles markets",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRGxVcWRPUjR6aDlqZEVjYjNScVg4MHpQRXQ0Z1VBLU5WbENmYi1XWlJUOWt3MFdlNGdJcVlaRjEtUzZUd0dYVXJDTEY2Ung1Nm9meGZfWFpUYnVPbElHQjJIaW9pVUQwWWY0czJsMEV0YkNTNmh0SDA5MVM3dVhaRUI1Q19JLTlIVFM3SHJKSEU3MmNZczROOExR?oc=5",
@@ -834,47 +792,6 @@
     "Fed",
     "juros",
     "EUA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "afb9a756b911",
-   "title": "U.S., Iran Exchange Strikes on Islands as They Fight for Control of Strait",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQnNCdG05QV90X2xsbjY3QmtkNERKeDBUV3NYM1BQTTNtRzQ1T1lSc2FZTUJaQzdRYmpoaVFnOEZUZHRyMWZOWG1VQ3FnYnMzUTk2SG1oZkhNT1lCdVAyMlVlbU82aWQ5a0VPd2k1SWg1MW5NeUFTTlBScVJCeGxvbllOSXJGZXQtTjVoNlpESWs0SExHUVo5c3MyYVlETERRUnhVWi1LRkN0emdvYnBvN2dZY2lsdHhpd2Nz?oc=5",
-   "published": "2026-11-10T13:09:11+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQnNCdG05QV90X2xsbjY3QmtkNERKeDBUV3NYM1BQTTNtRzQ1T1lSc2FZTUJaQzdRYmpoaVFnOEZUZHRyMWZOWG1VQ3FnYnMzUTk2SG1oZkhNT1lCdVAyMlVlbU82aWQ5a0VPd2k1SWg1MW5NeUFTTlBScVJCeGxvbllOSXJGZXQtTjVoNlpESWs0SExHUVo5c3MyYVlETERRUnhVWi1LRkN0emdvYnBvN2dZY2lsdHhpd2Nz?oc=5",
-     "title": "U.S., Iran Exchange Strikes on Islands as They Fight for Control of Strait"
-    }
-   ],
-   "ids": [
-    "afb9a756b911"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "EUA e Irã trocam ataques em ilhas na disputa pelo controle do estreito",
-   "category": "internacional",
-   "importance": 8,
-   "importance_reason": "Escalada militar em rota crítica de petróleo.",
-   "summary": "EUA e Irã trocaram ataques em ilhas enquanto disputam o controle do estreito. O trecho não detalha qual estreito nem as baixas.",
-   "involves": "EUA; Irã",
-   "interpretation": "Escalada direta indica conflito ativo em rota energética.",
-   "impact": "Risco de alta do petróleo, aversão a risco e impacto em inflação e juros globais.",
-   "sentiment": "negativo",
-   "entities": [
-    "EUA",
-    "Irã"
-   ],
-   "tags": [
-    "Irã",
-    "petróleo",
-    "guerra",
-    "estreito"
    ],
    "is_deal": false,
    "deal": null,
@@ -1320,53 +1237,6 @@
    "ai": true
   },
   {
-   "id": "e5cd12599571",
-   "title": "US Stocks Climb as Wall Street Gets Fresh AI Fuel: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-10/stock-market-today-dow-s-p-live-updates",
-   "published": "2026-11-10T22:32:05+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-10/stock-market-today-dow-s-p-live-updates",
-     "title": "US Stocks Climb as Wall Street Gets Fresh AI Fuel: Markets Wrap"
-    }
-   ],
-   "ids": [
-    "e5cd12599571"
-   ],
-   "snippet": "A rally in tech giants lifted stocks on bets the artificial-intelligence trade that has powered the bull market has more room to run.",
-   "prescore": 2.8,
-   "headline": "Ações de IA sobem com resultado da CoreWeave e forte demanda no IPO da Anthropic",
-   "category": "mna",
-   "importance": 7,
-   "importance_reason": "IPO de grande empresa de IA, referência global.",
-   "summary": "Os futuros dos EUA subiram após bons resultados da CoreWeave e demanda robusta pelo IPO da Anthropic.",
-   "involves": "CoreWeave, Anthropic, Wall Street",
-   "interpretation": "Janela de IPOs em tech aquecida. Tamanho não divulgado.",
-   "impact": "Referência para IPOs de tecnologia.",
-   "sentiment": "positivo",
-   "entities": [
-    "CoreWeave",
-    "Anthropic"
-   ],
-   "tags": [
-    "IA",
-    "IPO"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "IPO",
-    "buyer": "Investidores",
-    "target": "Anthropic PBC",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Tecnologia / IA",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "01c4efc4a087",
    "title": "TSMC Approves Up to $1 Billion Investment Plan in Anthropic, OpenAI",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT3ZlYXlWNllKZkZETDl2YUpGcXdKYnBpc01rZ2pMenZYcXJrcmVhbFdlUW5oQnFWeTZ1dlN2S2RwVFFUaVJIUWk0UVJsOHk4R25nSGt4NnlfYTZVNXZvTzlrcXU4V2ZGNUNQQTY1amMwcHZ3bC00aTFBMTRKcFExdThaQlY2Nmp4ek1qSXRDdVVuLUlOSWVPQWMtSHlqT0g3RmlCbQ?oc=5",
@@ -1431,20 +1301,14 @@
      "source": "InfoMoney",
      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMEZubGNKYjY2QzhDQV96MUE5dWNLMm9uY2FPVUx3eVZ1eUZjT1AyZmxIUU91bWdWSk5wcU41cnp3Nk9uUzhjY1JRTW9kSDlIdXF5MVVPdHVNeGtabklQX1hkdXhfaUNpelZxdThTa2FnX0YyNUNzcWRyUmEtTHZMRnhJanN2Z1lvR09pdFgzNmxBcG5KMXFYU0pGMkMtZ1NwaUhYLXZBVFRXeXlRVy0xRTl1NjdMU0dncjUxdGs1NFbSAcYBQVVfeXFMUE5FdnhSNkxyQUFxUDhoc3JhSlhKRVNsa3J4N1pfdU9nX0VfVWdyVzNnQUl3YnFNdVpDcm5pcTlOZllKZUlWN05GWHN6QURwNUFZdnVOT0JGZS1OcldRcU44UWxzTHhXdFhkVnhEcnhIbTFla1cwOF8zTXRSXzA4SXNZRExhVU5VOHJudEFVOExDd2JFZmUyeml1emZCM0hsX1o2ekxHcjlmV0tOU0tTRTJCcXdFRS0tOW53NXdGbjROblp0WExB?oc=5",
      "title": "Brasil Terrenos obtém registro de companhia aberta na CVM e avança em listagem na B3"
-    },
-    {
-     "source": "BM&C",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWE9OU29fZEVaUEF4WWgtdlN2Zk54cnRUaW9ydHdSMkYyTGlsbFVfc0hQN1RDcWpPSGZrMTZRSEN0WkZReE91bXFnUTlydjFUdlVKUkRsR1FuUE1FTlVsYlFVN2VBTUNlQWNMSFFwZ2tzNmR0SWhrMmtlaHN4SnBaUEhzVzhxMXE4UFlXUXBXSV9zdVNqel9rTFQzS2N2Rzc3dm1pS09Jb25RVVBT?oc=5",
-     "title": "Brasil Terrenos obtém registro na CVM e avança na listagem na B3"
     }
    ],
    "ids": [
     "1331a782c528",
-    "c08737ae432f",
-    "6f74563322b8"
+    "c08737ae432f"
    ],
    "snippet": "",
-   "prescore": 8.4,
+   "prescore": 6.9,
    "headline": "Brasil Terrenos obtém registro de companhia aberta na CVM e avança rumo à B3",
    "category": "mna",
    "importance": 6,
@@ -1481,45 +1345,6 @@
     "advisors": "não divulgado",
     "why": "Com registro na CVM, a empresa avança para a listagem na B3; é o momento de abordar a companhia e os acionistas para assessoria na oferta e na governança de companhia aberta."
    },
-   "ai": true
-  },
-  {
-   "id": "c328eeea8986",
-   "title": "Ibovespa quebra sequência de ganhos e fecha em baixa de 0,5%; Vale e exterior pesaram",
-   "link": "https://exame.com/invest/mercados/ibovespa-quebra-sequencia-de-ganhos-e-fecha-em-baixa-de-05-vale-e-exterior-pesaram/",
-   "published": "2026-11-10T18:33:50+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/mercados/ibovespa-quebra-sequencia-de-ganhos-e-fecha-em-baixa-de-05-vale-e-exterior-pesaram/",
-     "title": "Ibovespa quebra sequência de ganhos e fecha em baixa de 0,5%; Vale e exterior pesaram"
-    }
-   ],
-   "ids": [
-    "c328eeea8986"
-   ],
-   "snippet": "As bolsas de Nova York também fecharam em queda nesta terça-feira, 10, após os dados de inflação de outubro superarem as expectativas",
-   "prescore": 6.0,
-   "headline": "Ibovespa quebra sequência de ganhos e fecha em baixa de 0,5%; Vale e exterior pesaram",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Fechamento diário da bolsa, com o contexto de inflação nos EUA.",
-   "summary": "O Ibovespa fechou em queda de 0,5% e quebrou a sequência de altas, pressionado pela Vale e pelo exterior. As bolsas de Nova York também caíram após a inflação de outubro acima do esperado.",
-   "involves": "Ibovespa, Vale, bolsas de Nova York",
-   "interpretation": "Movimento de ajuste a juros globais mais altos.",
-   "impact": "Pressão sobre o índice; Vale é peso relevante.",
-   "sentiment": "negativo",
-   "entities": [
-    "Ibovespa",
-    "Vale"
-   ],
-   "tags": [
-    "Ibovespa",
-    "bolsa"
-   ],
-   "is_deal": false,
-   "deal": null,
    "ai": true
   },
   {
@@ -2176,46 +2001,6 @@
    "ai": true
   },
   {
-   "id": "8662ded77f93",
-   "title": "'Não elegemos Thatcher, nem Kirchner', diz André Esteves sobre reação dos mercados às eleições",
-   "link": "https://exame.com/invest/mercados/nao-elegemos-thatcher-nem-kirchner-diz-andre-esteves-sobre-reacao-dos-mercados-as-eleicoes/",
-   "published": "2026-11-10T15:41:06+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/mercados/nao-elegemos-thatcher-nem-kirchner-diz-andre-esteves-sobre-reacao-dos-mercados-as-eleicoes/",
-     "title": "'Não elegemos Thatcher, nem Kirchner', diz André Esteves sobre reação dos mercados às eleições"
-    }
-   ],
-   "ids": [
-    "8662ded77f93"
-   ],
-   "snippet": "Chairman do BTG diz que bolsa exagerou na euforia e na correção pós-eleição",
-   "prescore": 3.0,
-   "headline": "André Esteves: 'Não elegemos Thatcher, nem Kirchner' sobre reação do mercado às eleições",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Leitura do chairman do BTG sobre o mercado pós-eleição.",
-   "summary": "O chairman do BTG, André Esteves, disse que a bolsa exagerou tanto na euforia quanto na correção pós-eleição.",
-   "involves": "André Esteves; BTG",
-   "interpretation": "Sinaliza visão de que o governo eleito não é extremo nem em um sentido nem em outro.",
-   "impact": "Mensagem de calma para investidores; influencia o tom do mercado local.",
-   "sentiment": "neutro",
-   "entities": [
-    "André Esteves",
-    "BTG"
-   ],
-   "tags": [
-    "eleições",
-    "bolsa",
-    "BTG"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "0d9b8f514e9d",
    "title": "Pressão para adiar implementação da reforma tributária cresce, mas deputados descartam mudança no calendário",
    "link": "https://g1.globo.com/politica/noticia/2026/11/11/pressao-para-adiar-implementacao-da-reforma-tributaria-cresce-mas-deputados-descartam-mudanca-no-calendario.ghtml",
@@ -2248,50 +2033,6 @@
    "tags": [
     "reforma tributária",
     "2027"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "487148584886",
-   "title": "Latest Oil Market News and Analysis for Nov. 12",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-11/latest-oil-market-news-and-analysis-for-nov-12",
-   "published": "2026-11-10T23:01:04+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-11/latest-oil-market-news-and-analysis-for-nov-12",
-     "title": "Latest Oil Market News and Analysis for Nov. 12"
-    },
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-10/latest-oil-market-news-and-analysis-for-nov-11",
-     "title": "Latest Oil Market News and Analysis for Nov. 11"
-    }
-   ],
-   "ids": [
-    "487148584886",
-    "0779a8d3250c"
-   ],
-   "snippet": "Oil steadied as hostilities between Iran and the US remained muted with no indication of progress in peace talks.",
-   "prescore": 2.8,
-   "headline": "Petróleo sobe após dois dias de queda, com sinais mistos sobre fim da guerra com o Irã",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Commodity-chave com risco geopolítico.",
-   "summary": "O petróleo subiu após dois dias de queda, com investidores avaliando sinais mistos sobre a conclusão da guerra com o Irã.",
-   "involves": "Petróleo, Irã",
-   "interpretation": "Volatilidade segue ligada à geopolítica.",
-   "impact": "Afeta Petrobras e inflação.",
-   "sentiment": "misto",
-   "entities": [
-    "Irã"
-   ],
-   "tags": [
-    "petróleo",
-    "Irã"
    ],
    "is_deal": false,
    "deal": null,
@@ -2500,45 +2241,6 @@
     "big techs",
     "valor de mercado",
     "IA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "d88d4bfe1f3a",
-   "title": "SoftBank Posts $7 Billion Loss as AI Trade Falters",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZV9GaFNkemwwODVVTVMyS1d3dWxqSUlTVV9mQ0Y5d185blZxc3BWR1VBVjlhcG1PaU1RSnJzU3kzTTRROVBPbmlOMTZnWDE5Y3hzeW8wdUsyVW4tQ1dkRVhGZHU3Qk5WR2dJZk5aZjFxMUdabVZWTDBUbTEyNHFOUXcwUlgxY2NwZ0tKYUd4UDJCbXJGOVRNWnBOdEtlNm5xc3c5WTN3WTRxdUJDVjhTaENJb2VObHRjc29uWjBFRFFQUl9vZ0xUWFZBSm9qZllw?oc=5",
-   "published": "2026-11-10T14:05:12+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZV9GaFNkemwwODVVTVMyS1d3dWxqSUlTVV9mQ0Y5d185blZxc3BWR1VBVjlhcG1PaU1RSnJzU3kzTTRROVBPbmlOMTZnWDE5Y3hzeW8wdUsyVW4tQ1dkRVhGZHU3Qk5WR2dJZk5aZjFxMUdabVZWTDBUbTEyNHFOUXcwUlgxY2NwZ0tKYUd4UDJCbXJGOVRNWnBOdEtlNm5xc3c5WTN3WTRxdUJDVjhTaENJb2VObHRjc29uWjBFRFFQUl9vZ0xUWFZBSm9qZllw?oc=5",
-     "title": "SoftBank Posts $7 Billion Loss as AI Trade Falters"
-    }
-   ],
-   "ids": [
-    "d88d4bfe1f3a"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "SoftBank tem prejuízo de US$ 7 bilhões com tropeço do trade de IA",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Resultado de grande investidor em IA.",
-   "summary": "O WSJ informa que o SoftBank teve prejuízo de US$ 7 bilhões em meio à fraqueza do trade de IA.",
-   "involves": "SoftBank.",
-   "interpretation": "Reforça cautela com ativos de IA.",
-   "impact": "Pode afetar rodadas de IA.",
-   "sentiment": "negativo",
-   "entities": [
-    "SoftBank"
-   ],
-   "tags": [
-    "SoftBank",
-    "IA",
-    "prejuízo"
    ],
    "is_deal": false,
    "deal": null,
@@ -3414,7 +3116,7 @@
   },
   {
    "id": "374e095ca76a",
-   "title": "Stocks gain as CoreWeave eases worries; dollar strengthens",
+   "title": "Stocks rise on tech gains; Nvidia falls after hours",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxON2pqenNYSWUzSVBxc3U2RlhRT29TZGNJWFVMRVVQa0NkaDd6STY3VzhiZTB1b0RPcXB4c0ZEM1RwaGdkZUpkZHp2Q0ZCenBZZF90eTZFMnJvT2F4elJlZlMzOFFiaTVfUmxxNVcxNFZLOVpRY1ZHTjFITVpqVlJHdDJ6UXVUNXU4Z2NoOGZrVjB0QQ?oc=5",
    "published": "2026-11-11T02:05:00+00:00",
    "region": "INTL",
@@ -3422,7 +3124,7 @@
     {
      "source": "Reuters",
      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxON2pqenNYSWUzSVBxc3U2RlhRT29TZGNJWFVMRVVQa0NkaDd6STY3VzhiZTB1b0RPcXB4c0ZEM1RwaGdkZUpkZHp2Q0ZCenBZZF90eTZFMnJvT2F4elJlZlMzOFFiaTVfUmxxNVcxNFZLOVpRY1ZHTjFITVpqVlJHdDJ6UXVUNXU4Z2NoOGZrVjB0QQ?oc=5",
-     "title": "Stocks gain as CoreWeave eases worries; dollar strengthens"
+     "title": "Stocks rise on tech gains; Nvidia falls after hours"
     }
    ],
    "ids": [
@@ -3715,44 +3417,6 @@
    "ai": false
   },
   {
-   "id": "6ef14878d0d8",
-   "title": "Anthropic’s IPO is too important to fail",
-   "link": "https://www.ft.com/content/26fd23df-830e-481b-a3bc-19bcab48c5f6",
-   "published": "2026-11-11T10:23:49+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/26fd23df-830e-481b-a3bc-19bcab48c5f6",
-     "title": "Anthropic’s IPO is too important to fail"
-    }
-   ],
-   "ids": [
-    "6ef14878d0d8"
-   ],
-   "snippet": "Huge demand promises a blockbuster debut, but shadow insider sales and circular supply-chain backing may cause after-market indigestion",
-   "prescore": 5.6,
-   "headline": "O IPO da Anthropic é importante demais para falhar",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Opinião sobre riscos do pós-IPO.",
-   "summary": "Forte demanda promete estreia de destaque, mas vendas de insiders e apoio circular na cadeia de fornecimento podem causar indigestão no mercado secundário.",
-   "involves": "Anthropic",
-   "interpretation": "Alerta para riscos do desempenho pós-oferta.",
-   "impact": "Possível volatilidade pós-listagem.",
-   "sentiment": "misto",
-   "entities": [
-    "Anthropic"
-   ],
-   "tags": [
-    "IPO",
-    "IA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "2ecaba572cce",
    "title": "Asian Bond Yields Rise on Growing Expectations for Fed Rate Hike",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY0lWUTNMTnpyanJUcWctaTM1TjBEajVySEdCRG9FTVVtNmFJYkdULXo1cll5Yi1UbVZRVmg2UmZBZkJESG1pelM1NHluMG1OVVI5Z3hkamRIU0xFVVZvd1Q5Ymdma3J6MFRoVWNMUS1HZlhXaThDWG16aGh3Zllfd0dkUlJrTnE4bVhYY2QyNW9Ha3VvV3Flb2RoYVFwazZBUWM0?oc=5",
@@ -3886,10 +3550,48 @@
    }
   },
   {
+   "id": "6b2ab0f79823",
+   "title": "Anthropic vai lutar com a SpaceX pelo maior IPO de sempre: veja o calendário e os números",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNTDRUSHhfd1prMVdETk5wb2NVVmxCaUcwODFHdjNTNEtlbFlOVDZDMUpWOUVWTjZvdTR6Zk1NY1pxNG9aajVObVZfT3paOHBwNXFZekdPaU9mZUtPbWk5eTBWeWlDbWlJYktGMng5dFh1VlpTYVlCYnRnRGNDNm94czdhV2NSejRyMlhBWG5GQjZlOGxiQjRvZUJjeG02bG5YcGFybWd4RWN4TjhXcEdVaFlHZkFsSXNEb0wyQS1VMUx1WnF1NjFkaXNlV0NaZ0piYzVWbURUVVdlMUlYQy1lcXowNS1rZzcyZ3lOOEtwNA?oc=5",
+   "published": "2026-11-10T14:39:27+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Expresso",
+     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNTDRUSHhfd1prMVdETk5wb2NVVmxCaUcwODFHdjNTNEtlbFlOVDZDMUpWOUVWTjZvdTR6Zk1NY1pxNG9aajVObVZfT3paOHBwNXFZekdPaU9mZUtPbWk5eTBWeWlDbWlJYktGMng5dFh1VlpTYVlCYnRnRGNDNm94czdhV2NSejRyMlhBWG5GQjZlOGxiQjRvZUJjeG02bG5YcGFybWd4RWN4TjhXcEdVaFlHZkFsSXNEb0wyQS1VMUx1WnF1NjFkaXNlV0NaZ0piYzVWbURUVVdlMUlYQy1lcXowNS1rZzcyZ3lOOEtwNA?oc=5",
+     "title": "Anthropic vai lutar com a SpaceX pelo maior IPO de sempre: veja o calendário e os números"
+    }
+   ],
+   "ids": [
+    "6b2ab0f79823"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Anthropic vai disputar com a SpaceX o maior IPO de todos os tempos",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Comparação com a SpaceX.",
+   "summary": "O veículo português compara o IPO da Anthropic com o da SpaceX, com calendário e números.",
+   "involves": "Anthropic, SpaceX",
+   "interpretation": "Cobertura repetida.",
+   "impact": "Sem efeito novo.",
+   "sentiment": "neutro",
+   "entities": [
+    "Anthropic",
+    "SpaceX"
+   ],
+   "tags": [
+    "IPO"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "e2e45d49f007",
    "title": "Fed’s Paulson Urges Gradual Approach to Rate Hikes",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRHhlMkc2YmRSN3F5b3Ftd3RNQ2N0cV9HUV9ZVV9ORGtvUjdhWWVqdlExbVM0SEZSWi05cmdrb3psM2xXQlNTeThfUk9hdlI2SnU3dW04SGk3TkkyeHFoUVFUUUc1VGpubDJNMFdOdjVRRXZSTEg4ay1naXI0eGsyYkFQcE4wUUxQYl9qUWRuMGpvNXZJbTRzdV9SNGpBTHVqRS1sSw?oc=5",
-   "published": "2026-11-10T23:58:00+00:00",
+   "published": "2026-11-11T00:00:12+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -5124,47 +4826,6 @@
    "ai": true
   },
   {
-   "id": "ecc5e332e059",
-   "title": "In EU budget clash, Germany's Merz says all EU states must back Ukraine",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVExTdERDcjlMTVdhVllZOW9xZDhyZl9rSGt1YS1WNFdvMFRuZzBrZ0JWRW9vVWVzZFUxc2ZUd2k1cU5VSWZHTDc4TUVxc0NsQzRaaVlXSXpKdDczUW80a3BQUXF0Q3RXaXlVazJkcVBaWFhzN082T3QyaTNwODNQT2o3OGJDYnl5emtrcVhUVVUzSlhJTXpHakpOcTNNR1J5cFJXZ0lYSWN2ZU9q?oc=5",
-   "published": "2026-11-10T14:23:51+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVExTdERDcjlMTVdhVllZOW9xZDhyZl9rSGt1YS1WNFdvMFRuZzBrZ0JWRW9vVWVzZFUxc2ZUd2k1cU5VSWZHTDc4TUVxc0NsQzRaaVlXSXpKdDczUW80a3BQUXF0Q3RXaXlVazJkcVBaWFhzN082T3QyaTNwODNQT2o3OGJDYnl5emtrcVhUVVUzSlhJTXpHakpOcTNNR1J5cFJXZ0lYSWN2ZU9q?oc=5",
-     "title": "In EU budget clash, Germany's Merz says all EU states must back Ukraine"
-    }
-   ],
-   "ids": [
-    "ecc5e332e059"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Em disputa sobre orçamento da UE, Merz diz que todos devem apoiar a Ucrânia",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Financiamento da Ucrânia e orçamento europeu.",
-   "summary": "O chanceler alemão Merz disse que todos os países da UE devem apoiar a Ucrânia, em meio a impasse sobre o orçamento do bloco.",
-   "involves": "Merz; União Europeia; Ucrânia",
-   "interpretation": "Mostra divisão interna da UE sobre custo do apoio.",
-   "impact": "Efeito limitado em ativos no curto prazo.",
-   "sentiment": "neutro",
-   "entities": [
-    "Merz",
-    "União Europeia",
-    "Ucrânia"
-   ],
-   "tags": [
-    "UE",
-    "Ucrânia",
-    "orçamento"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "d108f41ef7c4",
    "title": "Papa faz referência ao conflito diplomático Argentina-Brasil, incitando Milei a superar tensões com Lula",
    "link": "https://g1.globo.com/mundo/noticia/2026/11/10/papa-faz-referencia-ao-conflito-diplomatico-argentina-brasil-incitando-milei-a-superar-tensoes-com-lula.ghtml",
@@ -5247,39 +4908,6 @@
    "ai": true
   },
   {
-   "id": "f1c0cba32586",
-   "title": "AkzoNobel-Axalta $25 Billion Merger Could Harm Competition, U.K. Regulator Warns",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOGdyS2xPc2JaZU8waEs3Nm9VU2hmbTREQ3kxRkhFbHBNdjQ2blJSODJaSTd0Vm85QnBUTFNJT0dHMWZuSEdjaUlMazhmdXhkYWdoamhwVDVCTEhiYmhNeFFBQWZUQ0lwTnZ2endrLXFpb3lEckNSWnZsMUU3R3JudGRRbjJCdjNzUHdPVm1oSDFGNC1SdE0zYlEwV1BibnhwV3JuZXZaMzVZdE5XMlhmXzU0cC1aRF9WNVVFZHRsdw?oc=5",
-   "published": "2026-11-11T09:18:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOGdyS2xPc2JaZU8waEs3Nm9VU2hmbTREQ3kxRkhFbHBNdjQ2blJSODJaSTd0Vm85QnBUTFNJT0dHMWZuSEdjaUlMazhmdXhkYWdoamhwVDVCTEhiYmhNeFFBQWZUQ0lwTnZ2endrLXFpb3lEckNSWnZsMUU3R3JudGRRbjJCdjNzUHdPVm1oSDFGNC1SdE0zYlEwV1BibnhwV3JuZXZaMzVZdE5XMlhmXzU0cC1aRF9WNVVFZHRsdw?oc=5",
-     "title": "AkzoNobel-Axalta $25 Billion Merger Could Harm Competition, U.K. Regulator Warns"
-    }
-   ],
-   "ids": [
-    "f1c0cba32586"
-   ],
-   "snippet": "",
-   "prescore": 5.6,
-   "headline": "AkzoNobel-Axalta $25 Billion Merger Could Harm Competition, U.K. Regulator Warns",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "ae11d881aa88",
    "title": "Estados Unidos: IPO da Anthropic revela planos da empresa de IA",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUk1aM3FZRm5hQnJyX2xacnA0bHJFWGVIMzliZGlIRHBOS25IaE5PMW9xMUFPNzRteThFak5pNGdtNDZ2OEIzaFpReFZtM2FtVDJNUmVqdlFmUFVmTGFRQlJmeTFSQmJFdFN4bURxanUyWW1WT25mQWRMbTFoZ1BtU2tUZGRYY05hWlVGa1dCRnJkcVJjV2ZCX21xWGpZYnQ2U2NnNDFaMmlDWlRwZWc?oc=5",
@@ -5349,39 +4977,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "e1700a63e577",
-   "title": "Anthropic vai lutar com a SpaceX pelo maior IPO de sempre: veja o calendário e os números",
-   "link": "https://news.google.com/rss/articles/CBMigARBVV95cUxORWtEbkZBOTVFOWJkVC1sNl8ydEtpTW5TT2R3VW1jeDBfTUF2MVk0MVEyMkExSDFjWkhqLVJGZWYzMXJ4ajVKVWtLenY4cm9lSGZ1dU9sR29YU0tCYWVUeFhDd3ZKUnVUWm11X1F5cDVGVEtJVVVSR2FzQ3JKNDdpakY0X2lsSU8xN0J4WlZlLWdaUnd5c084akYwMWhHTHlQLWEwcDRIaFlJWXBaVzZUMjV1R1FXVy1aTGhBdGZ0Q3lkd1ZxaWRZeHlHWG1RdUhSVkYtT1kyMnpUUGR2eFpjdVFpV0huZ21wRHVlODczdVI4XzFoa3NuVENyeUt1YzVTSF9feGp0enZIZXhPcXlrLWxBUUpzdUV4Qk5VX25GQ1M2YmcteWZSa2tzQ0JoVEI0ZjR2bTk3SDV3Z3pqaVJkRFRjR29DT2dYV3hmNy1TRHpwVEplVThHeDIwTTFfbk4yelZzMExfd2JDRURXMElDZG9JdnBRT1Y4blhtMTJWNnFBUnZfcWhNak5xQnhqV0s1V1Y2cEllQVJYWU9GakNNakdJTnhoRm5QQVdYS2xldHludUh0Q0hicmZzMGVpRmotUDRlQlc4THRGQ05UOFl1cnRHTjdvc0xnUTZPeEVPejlDSjV2N2tRYWFzN09nLVJwSlhUaXlTaUUyd21VRkFScA?oc=5",
-   "published": "2026-11-10T14:39:27+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Expresso",
-     "link": "https://news.google.com/rss/articles/CBMigARBVV95cUxORWtEbkZBOTVFOWJkVC1sNl8ydEtpTW5TT2R3VW1jeDBfTUF2MVk0MVEyMkExSDFjWkhqLVJGZWYzMXJ4ajVKVWtLenY4cm9lSGZ1dU9sR29YU0tCYWVUeFhDd3ZKUnVUWm11X1F5cDVGVEtJVVVSR2FzQ3JKNDdpakY0X2lsSU8xN0J4WlZlLWdaUnd5c084akYwMWhHTHlQLWEwcDRIaFlJWXBaVzZUMjV1R1FXVy1aTGhBdGZ0Q3lkd1ZxaWRZeHlHWG1RdUhSVkYtT1kyMnpUUGR2eFpjdVFpV0huZ21wRHVlODczdVI4XzFoa3NuVENyeUt1YzVTSF9feGp0enZIZXhPcXlrLWxBUUpzdUV4Qk5VX25GQ1M2YmcteWZSa2tzQ0JoVEI0ZjR2bTk3SDV3Z3pqaVJkRFRjR29DT2dYV3hmNy1TRHpwVEplVThHeDIwTTFfbk4yelZzMExfd2JDRURXMElDZG9JdnBRT1Y4blhtMTJWNnFBUnZfcWhNak5xQnhqV0s1V1Y2cEllQVJYWU9GakNNakdJTnhoRm5QQVdYS2xldHludUh0Q0hicmZzMGVpRmotUDRlQlc4THRGQ05UOFl1cnRHTjdvc0xnUTZPeEVPejlDSjV2N2tRYWFzN09nLVJwSlhUaXlTaUUyd21VRkFScA?oc=5",
-     "title": "Anthropic vai lutar com a SpaceX pelo maior IPO de sempre: veja o calendário e os números"
-    }
-   ],
-   "ids": [
-    "e1700a63e577"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Anthropic vai lutar com a SpaceX pelo maior IPO de sempre: veja o calendário e os números",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "5ed84fc150b6",
@@ -5591,45 +5186,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "e406afff14a1",
-   "title": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report",
-   "link": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
-   "published": "2026-11-10T21:37:43+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
-     "title": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report"
-    }
-   ],
-   "ids": [
-    "e406afff14a1"
-   ],
-   "snippet": "The rise in balances on HELOCs marks the 18th consecutive quarterly increase, according to a new report from the Federal Reserve Bank of New York.",
-   "prescore": 4.0,
-   "headline": "Saldos de HELOC têm maior salto desde 2005, diz NY Fed",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Dado de endividamento americano.",
-   "summary": "Relatório do NY Fed mostra maior alta dos saldos de HELOC desde 2005, com famílias usando o patrimônio imobiliário.",
-   "involves": "NY Fed; famílias americanas",
-   "interpretation": "Sinal de pressão sobre o consumidor.",
-   "impact": "Indicador de crédito americano; efeito indireto.",
-   "sentiment": "negativo",
-   "entities": [
-    "NY Fed"
-   ],
-   "tags": [
-    "crédito",
-    "EUA",
-    "HELOC"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
   },
   {
    "id": "7868890a3a0f",
@@ -6256,10 +5812,49 @@
    "ai": true
   },
   {
+   "id": "713ecfb552b0",
+   "title": "Trump administration finalizes $480 million loan to Arena, in first such aid to oil and gas",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRktLNWo1UVNPc3A4Yy0zWDFESVl1TDVwRnluOXVDY2w0RmF1OGFWb05icUx2ckVJLWViRy1Ra0ZUUXFCdndHNjVjdzNkY3hSTEl1WWtReGs3N3Y0ZUZTNDBkMy1ORFRQaVFWR0lVOHR3VE81bnQ2U3pqaHV3MzNPWmdmd252bTNPV25wdkNfWnhJUEFDSWxJU1JSWWg3YTRZaFY3cGk4dDVSUEU1SWlfYkpTUS14MUtJVHF0OHpVZTFNa0k?oc=5",
+   "published": "2026-11-10T22:27:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRktLNWo1UVNPc3A4Yy0zWDFESVl1TDVwRnluOXVDY2w0RmF1OGFWb05icUx2ckVJLWViRy1Ra0ZUUXFCdndHNjVjdzNkY3hSTEl1WWtReGs3N3Y0ZUZTNDBkMy1ORFRQaVFWR0lVOHR3VE81bnQ2U3pqaHV3MzNPWmdmd252bTNPV25wdkNfWnhJUEFDSWxJU1JSWWg3YTRZaFY3cGk4dDVSUEU1SWlfYkpTUS14MUtJVHF0OHpVZTFNa0k?oc=5",
+     "title": "Trump administration finalizes $480 million loan to Arena, in first such aid to oil and gas"
+    }
+   ],
+   "ids": [
+    "713ecfb552b0"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Governo Trump finaliza empréstimo de US$ 480 milhões à Arena, primeira ajuda a óleo e gás",
+   "category": "empresas",
+   "importance": 3,
+   "importance_reason": "Financiamento público nos EUA.",
+   "summary": "A Reuters diz que o governo Trump concluiu empréstimo de US$ 480 milhões à Arena, a primeira ajuda ao setor de óleo e gás.",
+   "involves": "Governo Trump, Arena.",
+   "interpretation": "Apoio público ao setor.",
+   "impact": "Pequeno efeito no setor.",
+   "sentiment": "positivo",
+   "entities": [
+    "Arena",
+    "Trump"
+   ],
+   "tags": [
+    "óleo e gás",
+    "empréstimo"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "04f14943687d",
    "title": "Opinion | How Do You Like Those Tariffs Now?",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhTlJVTXc2T1ZwQ2ZJYXR1SEhZZXNVSTBkR2JFMTRRMjd3LWJaVktFekxtQ1NVVER6VTNyRmMwMzVjUnNFN3pLckcwVjEyUFg0UG96MjR2U1JqWnVjYk1Nc08wand2M3NtWVRJcE1xUUIwX3hFNlg0NzJR?oc=5",
-   "published": "2026-11-10T21:12:49+00:00",
+   "published": "2026-11-10T21:12:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -6327,46 +5922,6 @@
     "IBM",
     "vistos",
     "consultoria"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "3a6400798ea1",
-   "title": "US confident Russian diesel cargo off US coast will sell in global market",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNVo1MXVxSmpTNTdreEFjWmk1cmpNUjRvM0tjelF5aVMyaDRyUkpyck1xNGlQVkNMWkZKVnVxTDFSaUZBUEU0aEE4UHRnVnZ1UnF3TVRQSzJwc2IyekZMc2VnZ1loRnVRN3c2SmZRYWo4SW5tZl9vc3JDWlFWbUk2QzM0cGh5NF80bjR0X2FlZElPb0xNWVlETk9PTFdCOFpFYVQ5TGF5NFpzQ1hacTRKUFRqMnFQSGY5LXRrZWVB?oc=5",
-   "published": "2026-11-10T20:47:39+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNVo1MXVxSmpTNTdreEFjWmk1cmpNUjRvM0tjelF5aVMyaDRyUkpyck1xNGlQVkNMWkZKVnVxTDFSaUZBUEU0aEE4UHRnVnZ1UnF3TVRQSzJwc2IyekZMc2VnZ1loRnVRN3c2SmZRYWo4SW5tZl9vc3JDWlFWbUk2QzM0cGh5NF80bjR0X2FlZElPb0xNWVlETk9PTFdCOFpFYVQ5TGF5NFpzQ1hacTRKUFRqMnFQSGY5LXRrZWVB?oc=5",
-     "title": "US confident Russian diesel cargo off US coast will sell in global market"
-    }
-   ],
-   "ids": [
-    "3a6400798ea1"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "EUA confiam que diesel russo na costa americana será vendido no mercado global",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Fluxo pontual de commodity, efeito limitado.",
-   "summary": "Autoridades americanas dizem confiar que a carga de diesel russo perto da costa dos EUA será vendida no mercado global.",
-   "involves": "EUA; Rússia; diesel",
-   "interpretation": "Mostra o desafio de aplicar sanções a fluxos de combustível.",
-   "impact": "Efeito marginal em preço de diesel.",
-   "sentiment": "neutro",
-   "entities": [
-    "EUA",
-    "Rússia"
-   ],
-   "tags": [
-    "diesel",
-    "sanções",
-    "petróleo"
    ],
    "is_deal": false,
    "deal": null,
@@ -6482,44 +6037,6 @@
    ],
    "tags": [
     "Miami"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "d56066ffc373",
-   "title": "Jim Cramer says Anthropic's explosive growth could justify a record-breaking IPO",
-   "link": "https://www.cnbc.com/2026/11/10/anthropic-ipo-revenue-growth-cramer.html",
-   "published": "2026-11-10T23:46:35+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/10/anthropic-ipo-revenue-growth-cramer.html",
-     "title": "Jim Cramer says Anthropic's explosive growth could justify a record-breaking IPO"
-    }
-   ],
-   "ids": [
-    "d56066ffc373"
-   ],
-   "snippet": "\"The fact that this deal is on is bullish for tech and the AI trade,\" CNBC's Jim Cramer said Tuesday.",
-   "prescore": 5.0,
-   "headline": "Jim Cramer: crescimento da Anthropic pode justificar IPO recorde",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Opinião.",
-   "summary": "Jim Cramer diz que o IPO é positivo para tecnologia e IA.",
-   "involves": "Jim Cramer, Anthropic",
-   "interpretation": "Opinião.",
-   "impact": "Sem efeito.",
-   "sentiment": "positivo",
-   "entities": [
-    "Jim Cramer",
-    "Anthropic"
-   ],
-   "tags": [
-    "IPO"
    ],
    "is_deal": false,
    "deal": null,
@@ -7287,39 +6804,6 @@
    "snippet": "",
    "prescore": 2.8,
    "headline": "Edição Impressa 10/11/2026",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b2443b033ce0",
-   "title": "Ex-Oracle, Fernando Almeida é o novo Head de Cloud da Tigabytes LATAM",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaXdwek4yYmY5dFNpVlAzNGVkRTFJSlljbDdoQkVURXJUY0ZEMDQ0NjFjNkRhNjFiVFRXNzNldDFIeEdUWklHRnBWdEdfbTRsTTRDYnR5Z29wLWdGdWZRcmJSNTdxYzNtc0hLOU9TX3hvVE5DQkF4YVRqY1JiUVU2b3M5aUhSS1pDeGxFOXB1czhDaWRzdjd5RlhhcTFZWVB1RTRwOWJHMWd6NDBCQTQzbkdZbGRZX0haZHB4SGJ1QXE0dWM4YXBFbk9HQ0N0TF9vNFd1bTNfQmFDZ9IB6AFBVV95cUxOMnI0U3pwZklKbmRfU3h4UUF5WERxVXdJX2ZLUXlWbFFZRnE5eDEyTHNGeHhrS2ZMZ2h4S1NSM3JUdzhwOFdlM3dLS3pxbFQtVlNkWWpRVzRHN3RqQTR6bEdoWUozX1JaS0UtNS14VFVJMjRlRy1vckpYUTMtRi1kbkgyNVhuZWN2TDdOVnd3Zi1fQ2lSX3lmNFFYRVNidnNhSUhNY2pObzctenZNVHhTbWtHdV9BOXoyQlZiMkEtaHVMQmtfNmtRTHY1TjJDam5MWjZRWEtjbFFDMXpEc01BRXFaUHl6dEh3?oc=5",
-   "published": "2026-11-10T20:12:32+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaXdwek4yYmY5dFNpVlAzNGVkRTFJSlljbDdoQkVURXJUY0ZEMDQ0NjFjNkRhNjFiVFRXNzNldDFIeEdUWklHRnBWdEdfbTRsTTRDYnR5Z29wLWdGdWZRcmJSNTdxYzNtc0hLOU9TX3hvVE5DQkF4YVRqY1JiUVU2b3M5aUhSS1pDeGxFOXB1czhDaWRzdjd5RlhhcTFZWVB1RTRwOWJHMWd6NDBCQTQzbkdZbGRZX0haZHB4SGJ1QXE0dWM4YXBFbk9HQ0N0TF9vNFd1bTNfQmFDZ9IB6AFBVV95cUxOMnI0U3pwZklKbmRfU3h4UUF5WERxVXdJX2ZLUXlWbFFZRnE5eDEyTHNGeHhrS2ZMZ2h4S1NSM3JUdzhwOFdlM3dLS3pxbFQtVlNkWWpRVzRHN3RqQTR6bEdoWUozX1JaS0UtNS14VFVJMjRlRy1vckpYUTMtRi1kbkgyNVhuZWN2TDdOVnd3Zi1fQ2lSX3lmNFFYRVNidnNhSUhNY2pObzctenZNVHhTbWtHdV9BOXoyQlZiMkEtaHVMQmtfNmtRTHY1TjJDam5MWjZRWEtjbFFDMXpEc01BRXFaUHl6dEh3?oc=5",
-     "title": "Ex-Oracle, Fernando Almeida é o novo Head de Cloud da Tigabytes LATAM"
-    }
-   ],
-   "ids": [
-    "b2443b033ce0"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Ex-Oracle, Fernando Almeida é o novo Head de Cloud da Tigabytes LATAM",
    "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -8216,44 +7700,6 @@
    "ai": true
   },
   {
-   "id": "a07f89be444e",
-   "title": "The Italians living atop one of the world’s ‘most dangerous volcanoes’",
-   "link": "https://www.ft.com/content/debd52d9-fe0f-4b6d-b7b4-047635de85b0?syn-25a6b1a6=1",
-   "published": "2026-11-11T09:52:19+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/debd52d9-fe0f-4b6d-b7b4-047635de85b0?syn-25a6b1a6=1",
-     "title": "The Italians living atop one of the world’s ‘most dangerous volcanoes’"
-    }
-   ],
-   "ids": [
-    "a07f89be444e"
-   ],
-   "snippet": "Earthquakes serve as reminder of risks of living near the ancient caldera called Campi Flegrei, north of Naples",
-   "prescore": 2.6,
-   "headline": "Italianos vivem sobre vulcão perigoso em Campi Flegrei, diz FT",
-   "category": "outros",
-   "importance": 1,
-   "importance_reason": "Sem relevância para o leitor.",
-   "summary": "Terremotos reacendem o alerta sobre os riscos de viver na caldeira de Campi Flegrei, ao norte de Nápoles.",
-   "involves": "Campi Flegrei, Nápoles.",
-   "interpretation": "Pauta de risco natural.",
-   "impact": "Nenhum.",
-   "sentiment": "negativo",
-   "entities": [
-    "Campi Flegrei"
-   ],
-   "tags": [
-    "vulcão",
-    "Itália"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "fc655de1ac18",
    "title": "Actor Stacy Keach, known for playing Hammer, Hamlet and Hemingway, dead at 85",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZmxxbFpSMDJDaWhmREhsVnJXMlF5UkdwVUZ4NEpfSWNxY0lTWlV5YVVFbWVWdnF2NWpjNndaRjVUZ3l4cVFKUW1ielRpeGgtdkhyY1dHS09xOEZVb1VNUXBrYzJoY2Q3b0MwaWg1bjhtenZrVU85VnJVYllBY3NKOGo4Y0FJOVlOSjBHRGZGdHZLclhweE5FYUREbDgxb0VERnNzQlRzOEZ4blhpXzBFbUp6UDFMdTRhbmtnZ1BsNA?oc=5",
@@ -8440,49 +7886,10 @@
    "ai": true
   },
   {
-   "id": "059eced49e79",
-   "title": "‘Avedon’ Review: Netflix’s Documentary on a Defining Portraitist",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZlQ1WWNOMy1XOHlxS0VSNFFGcW9Rb2ZJTjZSUk9DLVh1aDV6S2FSTG9ZWm5KZnNFaWJneEdOUUVFU0VVNjFPWkhJQ2JDRWRjQ2pSWGJmRFBJYkM4RnFFcHhSZHJhQlhqVU1BMUw2YTVtTzJHUzFDSWpLNmVOMVRtTERnMnU5Z21tbFNvWWVaTlQ1blN1Z2FoY3NLcEdWSkZEQWJvN2R4cV9ZRDNCMmROc3ZpZw?oc=5",
-   "published": "2026-11-10T21:43:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZlQ1WWNOMy1XOHlxS0VSNFFGcW9Rb2ZJTjZSUk9DLVh1aDV6S2FSTG9ZWm5KZnNFaWJneEdOUUVFU0VVNjFPWkhJQ2JDRWRjQ2pSWGJmRFBJYkM4RnFFcHhSZHJhQlhqVU1BMUw2YTVtTzJHUzFDSWpLNmVOMVRtTERnMnU5Z21tbFNvWWVaTlQ1blN1Z2FoY3NLcEdWSkZEQWJvN2R4cV9ZRDNCMmROc3ZpZw?oc=5",
-     "title": "‘Avedon’ Review: Netflix’s Documentary on a Defining Portraitist"
-    }
-   ],
-   "ids": [
-    "059eced49e79"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Resenha: documentário da Netflix sobre o fotógrafo Avedon",
-   "category": "outros",
-   "importance": 1,
-   "importance_reason": "Entretenimento, sem relação com o mandato do leitor.",
-   "summary": "Resenha do WSJ sobre documentário da Netflix dedicado ao retratista Avedon. Sem dados econômicos.",
-   "involves": "Netflix; Avedon",
-   "interpretation": "Conteúdo cultural.",
-   "impact": "Sem impacto relevante em mercado.",
-   "sentiment": "neutro",
-   "entities": [
-    "Netflix",
-    "Avedon"
-   ],
-   "tags": [
-    "cultura",
-    "Netflix"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "62b00d73514a",
    "title": "‘Carnaval de Luz’ Review: U2 Returns With a Stylistic Sampler",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdlpjYzJDNFA0d0w0cl8tMUIzRjNmeWxNOTN1SGxBR1BlcUFGcV9nck9XNk9fcVdoWnpfVEwwWmF6bHZ6UXAtdU5jV0ZBendGWmVzNjllWHJGZFMxV19BcHplRktETE1DU20tcU1idjhxYkM1MzZUUHh3LS1FOHgtR0EzVVdFYVZfMDFCQi1rRzhhUUJGYzdxb3MyaEVNd1N1RXNlc3RMTjQwUQ?oc=5",
-   "published": "2026-11-10T21:25:00+00:00",
+   "published": "2026-11-10T21:27:46+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -8510,6 +7917,43 @@
    ],
    "tags": [
     "música"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "88d01386fc94",
+   "title": "Exclusive | Bella Hadid Buys Historic Colorado Mountain Home for $5.5 Million",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPXy1kc2dHU0k4dk9iV0lJWHpQMGFrbndQc2d1Si05cnBNdk5YMV8wYzd5SnJxOHdScVQ2OElwUDJfaGlMTGtLMEtmdjVuMWRxLUZITVdDc1dwSlAxRG1sR3g1bEdhTUNxaTdtOEMzS0ZLVEtIQVBFaGdyU2d5MlJwLVpXWXlmWTlEZnVyUQ?oc=5",
+   "published": "2026-11-10T20:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPXy1kc2dHU0k4dk9iV0lJWHpQMGFrbndQc2d1Si05cnBNdk5YMV8wYzd5SnJxOHdScVQ2OElwUDJfaGlMTGtLMEtmdjVuMWRxLUZITVdDc1dwSlAxRG1sR3g1bEdhTUNxaTdtOEMzS0ZLVEtIQVBFaGdyU2d5MlJwLVpXWXlmWTlEZnVyUQ?oc=5",
+     "title": "Exclusive | Bella Hadid Buys Historic Colorado Mountain Home for $5.5 Million"
+    }
+   ],
+   "ids": [
+    "88d01386fc94"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Bella Hadid compra casa histórica no Colorado por US$ 5,5 milhões",
+   "category": "outros",
+   "importance": 1,
+   "importance_reason": "Celebridade, sem relevância.",
+   "summary": "O WSJ informa a compra de casa no Colorado por Bella Hadid, por US$ 5,5 milhões.",
+   "involves": "Bella Hadid.",
+   "interpretation": "Ruído.",
+   "impact": "Nenhum.",
+   "sentiment": "neutro",
+   "entities": [
+    "Bella Hadid"
+   ],
+   "tags": [
+    "imóveis"
    ],
    "is_deal": false,
    "deal": null,
@@ -9490,6 +8934,39 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Aço: Votorantim se desfaz da Acerbrag, na Argentina, em sua terceira venda de grandes ativos no ano",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "436264859641",
+   "title": "Canal de WhatsApp ‘Tropa do Flávio’ vira ‘Direita Já’ e ignora candidato derrotado",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPaWNJUHBmYWFtV2RndDNhbk1tTTNyMUZkVWZlbTg3a0hpRmNPRTJsVzhkNUpUdk02UzlReXd5S09wVFA4S2xEclM0S044U0M3SmtpbnEwM0JBRndhZzdtS1NpT3NqUmNVTXVGOTJKeEItQmtlUUJ2Rmc5dDFJS0luUm5aOWNXNlZ5Q281RTU1dk9OYzd3U2pFOC04REsxbXRPSWhBU0I0bzZKMkhCUDhvTHoyUVJvb2ZQY1hyNE9IclZSTmg3WDlSekdfaXZ6d9IB0wFBVV95cUxNcHpMZU9lZkRpRWYyZnM4ZGZzYzhWbnppMVdmZGRoNnlpYjdTTVd4OXhfaHZZbzZ3SmJ5UDZwa015elYxd29FNDBiR2FYSk9ZMEl0VHZHODRnZWpqblZOdkdyM0g5bWREQ0hrUTJ5X2tjSE1taWpQS19lOGMxaUxDVjNGNy1jQ2ZDOHBfbUV1M2VjaUREMTFRcFdqOWFaM3kzc1NNSXhKLTZueFpaWUxmakwxVE12REtUZkltQjlCd0ktRC1nRmlKR1JLQUxFUk5jSFdF?oc=5",
+   "published": "2026-11-10T22:38:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPaWNJUHBmYWFtV2RndDNhbk1tTTNyMUZkVWZlbTg3a0hpRmNPRTJsVzhkNUpUdk02UzlReXd5S09wVFA4S2xEclM0S044U0M3SmtpbnEwM0JBRndhZzdtS1NpT3NqUmNVTXVGOTJKeEItQmtlUUJ2Rmc5dDFJS0luUm5aOWNXNlZ5Q281RTU1dk9OYzd3U2pFOC04REsxbXRPSWhBU0I0bzZKMkhCUDhvTHoyUVJvb2ZQY1hyNE9IclZSTmg3WDlSekdfaXZ6d9IB0wFBVV95cUxNcHpMZU9lZkRpRWYyZnM4ZGZzYzhWbnppMVdmZGRoNnlpYjdTTVd4OXhfaHZZbzZ3SmJ5UDZwa015elYxd29FNDBiR2FYSk9ZMEl0VHZHODRnZWpqblZOdkdyM0g5bWREQ0hrUTJ5X2tjSE1taWpQS19lOGMxaUxDVjNGNy1jQ2ZDOHBfbUV1M2VjaUREMTFRcFdqOWFaM3kzc1NNSXhKLTZueFpaWUxmakwxVE12REtUZkltQjlCd0ktRC1nRmlKR1JLQUxFUk5jSFdF?oc=5",
+     "title": "Canal de WhatsApp ‘Tropa do Flávio’ vira ‘Direita Já’ e ignora candidato derrotado"
+    }
+   ],
+   "ids": [
+    "436264859641"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Canal de WhatsApp ‘Tropa do Flávio’ vira ‘Direita Já’ e ignora candidato derrotado",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11522,6 +10999,436 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "568dee7a394f",
+   "title": "O fim do inquérito das fake news e o STF ainda sob tensão - O Assunto #1843",
+   "link": "https://g1.globo.com/podcast/o-assunto/noticia/2026/11/11/o-fim-do-inquerito-das-fake-news-e-o-stf-ainda-sob-tensao-o-assunto-1843.ghtml",
+   "published": "2026-11-11T03:30:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/podcast/o-assunto/noticia/2026/11/11/o-fim-do-inquerito-das-fake-news-e-o-stf-ainda-sob-tensao-o-assunto-1843.ghtml",
+     "title": "O fim do inquérito das fake news e o STF ainda sob tensão - O Assunto #1843"
+    }
+   ],
+   "ids": [
+    "568dee7a394f"
+   ],
+   "snippet": "Em março de 2019, o ministro Dias Toffoli, então presidente do Supremo Tribunal Federal, decidiu abrir por iniciativa própria – uma prática incomum na Corte – um inquérito para investigar ataques ao STF e a seus integrantes. Toffoli designou como relator o ministro Alexandre de Moraes, fora do sistema de sorteio da Corte – outra prática inusual. Desde então Moraes coleciona controvérsias na condução do inquérito; a maior delas é a crítica sobre o objeto pouco delimitado da investigação. Durante a crise aberta que assolou o Supremo na esteira do escândalo do Banco Master, o presidente da Corte,",
+   "prescore": 1.8,
+   "headline": "O fim do inquérito das fake news e o STF ainda sob tensão - O Assunto #1843",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Em março de 2019, o ministro Dias Toffoli, então presidente do Supremo Tribunal Federal, decidiu abrir por iniciativa própria – uma prática incomum na Corte – um inquérito para investigar ataques ao STF e a seus integrantes. Toffoli designou como relator o ministro Alexandre de Moraes, fora do sistema de sorteio da Corte – outra prática inusual. Desde então Moraes coleciona controvérsias na conduç",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "056c8365a94d",
+   "title": "Quanto custa matar a saudade do Brasil? Comidas típicas são até 179% mais caras no exterior",
+   "link": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/11/quanto-custa-matar-a-saudade-do-brasil-comidas-tipicas-sao-ate-179percent-mais-caras-no-exterior.ghtml",
+   "published": "2026-11-11T03:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/11/quanto-custa-matar-a-saudade-do-brasil-comidas-tipicas-sao-ate-179percent-mais-caras-no-exterior.ghtml",
+     "title": "Quanto custa matar a saudade do Brasil? Comidas típicas são até 179% mais caras no exterior"
+    }
+   ],
+   "ids": [
+    "056c8365a94d"
+   ],
+   "snippet": "brigadeiro Unsplash Para os brasileiros que vivem no exterior, comer um pão de queijo ou um brigadeiro pode ajudar a matar a saudade de casa, mas também pode pesar no bolso. Uma pesquisa da fintech Remitly Global mostrou que consumir esses produtos em outros países pode custar até 179% a mais. O levantamento elaborou uma \"cesta da saudade\", contendo um pão de queijo, um cafezinho, uma coxinha e uma tigela de açaí. 🗒️Tem alguma sugestão de reportagem? Envie para o g1 Foram pesquisados os preços nos 10 países com as maiores comunidades brasileiras no exterior, segundo estimativas do Itamaraty co",
+   "prescore": 1.8,
+   "headline": "Quanto custa matar a saudade do Brasil? Comidas típicas são até 179% mais caras no exterior",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "brigadeiro Unsplash Para os brasileiros que vivem no exterior, comer um pão de queijo ou um brigadeiro pode ajudar a matar a saudade de casa, mas também pode pesar no bolso. Uma pesquisa da fintech Remitly Global mostrou que consumir esses produtos em outros países pode custar até 179% a mais. O levantamento elaborou uma \"cesta da saudade\", contendo um pão de queijo, um cafezinho, uma coxinha e um",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "efdaf7c158da",
+   "title": "Open Energy promete conta de luz mais baixa para quem compartilhar informações; saiba como vai funcionar",
+   "link": "https://g1.globo.com/economia/noticia/2026/11/11/open-energy-promete-conta-de-luz-mais-baixa-para-quem-compartilhar-informacoes-saiba-como-vai-funcionar.ghtml",
+   "published": "2026-11-11T03:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/11/open-energy-promete-conta-de-luz-mais-baixa-para-quem-compartilhar-informacoes-saiba-como-vai-funcionar.ghtml",
+     "title": "Open Energy promete conta de luz mais baixa para quem compartilhar informações; saiba como vai funcionar"
+    }
+   ],
+   "ids": [
+    "efdaf7c158da"
+   ],
+   "snippet": "A Câmara de Comercialização de Energia Elétrica (CCEE) está preparando a implantação do Open Energy, um sistema que permitirá aos consumidores autorizar o compartilhamento de seus dados de consumo com sua distribuidora e comercializadoras varejistas. 🔎 A CCEE é uma associação civil sem fins lucrativos, regulada e fiscalizada pela Agência Nacional de Energia Elétrica (Aneel), responsável administrar as operações de compra e venda de energia no Brasil. A proposta segue uma lógica semelhante à do Open Finance, modelo já utilizado no sistema financeiro, no qual os clientes podem autorizar o compar",
+   "prescore": 1.8,
+   "headline": "Open Energy promete conta de luz mais baixa para quem compartilhar informações; saiba como vai funcionar",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Câmara de Comercialização de Energia Elétrica (CCEE) está preparando a implantação do Open Energy, um sistema que permitirá aos consumidores autorizar o compartilhamento de seus dados de consumo com sua distribuidora e comercializadoras varejistas. 🔎 A CCEE é uma associação civil sem fins lucrativos, regulada e fiscalizada pela Agência Nacional de Energia Elétrica (Aneel), responsável administra",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d7a41fe1c0c7",
+   "title": "Pausamos o relógio nuclear do Irã, mas mudança de regime é necessária, diz ex-agente secreto de Israel",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/colunas/redesocial/2026/11/pausamos-o-relogio-nuclear-do-ira-mas-mudanca-de-regime-e-necessaria-diz-ex-agente-secreto-de-israel.shtml",
+   "published": "2026-11-11T02:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/colunas/redesocial/2026/11/pausamos-o-relogio-nuclear-do-ira-mas-mudanca-de-regime-e-necessaria-diz-ex-agente-secreto-de-israel.shtml",
+     "title": "Pausamos o relógio nuclear do Irã, mas mudança de regime é necessária, diz ex-agente secreto de Israel"
+    }
+   ],
+   "ids": [
+    "d7a41fe1c0c7"
+   ],
+   "snippet": "Após 24 anos no Mossad, o serviço de inteligência externa de Israel, Oded Ailam, 71, pediu demissão. \"Percebi que não podia continuar. Sou um péssimo político.\" Leia mais (11/10/2026 - 23h00)",
+   "prescore": 1.8,
+   "headline": "Pausamos o relógio nuclear do Irã, mas mudança de regime é necessária, diz ex-agente secreto de Israel",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Após 24 anos no Mossad, o serviço de inteligência externa de Israel, Oded Ailam, 71, pediu demissão. \"Percebi que não podia continuar. Sou um péssimo político.\" Leia mais (11/10/2026 - 23h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "35a3468b3951",
+   "title": "Gaza enfrenta novo inverno entre ruínas e enchentes enquanto plano de reconstrução emperra",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/gaza-enfrenta-novo-inverno-entre-ruinas-e-enchentes-enquanto-plano-de-reconstrucao-emperra.shtml",
+   "published": "2026-11-11T02:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/gaza-enfrenta-novo-inverno-entre-ruinas-e-enchentes-enquanto-plano-de-reconstrucao-emperra.shtml",
+     "title": "Gaza enfrenta novo inverno entre ruínas e enchentes enquanto plano de reconstrução emperra"
+    }
+   ],
+   "ids": [
+    "35a3468b3951"
+   ],
+   "snippet": "De Israel , a vista da Faixa de Gaza ainda é a de um território marcado pela destruição. Com a nova temporada de chuvas, tempestades atingiram no último fim de semana acampamentos onde vivem palestinos deslocados pela guerra. Barracas foram inundadas , e a precariedade dos abrigos se agravou. Leia mais (11/10/2026 - 23h00)",
+   "prescore": 1.8,
+   "headline": "Gaza enfrenta novo inverno entre ruínas e enchentes enquanto plano de reconstrução emperra",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "De Israel , a vista da Faixa de Gaza ainda é a de um território marcado pela destruição. Com a nova temporada de chuvas, tempestades atingiram no último fim de semana acampamentos onde vivem palestinos deslocados pela guerra. Barracas foram inundadas , e a precariedade dos abrigos se agravou. Leia mais (11/10/2026 - 23h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7de991e9e338",
+   "title": "Levantamento aponta que apenas 1/4 dos órgãos públicos avaliados cumpriram regras de transparência",
+   "link": "https://g1.globo.com/jornal-nacional/noticia/2026/11/10/levantamento-aponta-que-apenas-14-dos-orgaos-publicos-avaliados-cumpriram-regras-de-transparencia.ghtml",
+   "published": "2026-11-11T01:42:41+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/jornal-nacional/noticia/2026/11/10/levantamento-aponta-que-apenas-14-dos-orgaos-publicos-avaliados-cumpriram-regras-de-transparencia.ghtml",
+     "title": "Levantamento aponta que apenas 1/4 dos órgãos públicos avaliados cumpriram regras de transparência"
+    }
+   ],
+   "ids": [
+    "7de991e9e338"
+   ],
+   "snippet": "Levantamento aponta que apenas 1/4 dos órgãos públicos avaliados cumpriram regras de transparência Um levantamento dos tribunais de contas divulgado nesta terça-feira (10) revela que faltam informações sobre como o dinheiro público é gasto no Brasil. Apenas um quarto das instituições cumpre as regras de transparência. A fila à espera de uma vaga em um hospital público é sinal de que algo vai mal na saúde. Mas, quase sempre, o sintoma é invisível, já que muitas vezes o paciente aguarda em casa por um exame ou uma cirurgia, sem saber quando vai chegar a sua vez. São dois problemas em vez de um. ",
+   "prescore": 1.8,
+   "headline": "Levantamento aponta que apenas 1/4 dos órgãos públicos avaliados cumpriram regras de transparência",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Levantamento aponta que apenas 1/4 dos órgãos públicos avaliados cumpriram regras de transparência Um levantamento dos tribunais de contas divulgado nesta terça-feira (10) revela que faltam informações sobre como o dinheiro público é gasto no Brasil. Apenas um quarto das instituições cumpre as regras de transparência. A fila à espera de uma vaga em um hospital público é sinal de que algo vai mal n",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c3caf0c5f773",
+   "title": "Papa Leão encontra familiar de desaparecidos na ditadura após missa no interior da Argentina",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/papa-leao-encontra-familiar-de-desaparecidos-na-ditadura-apos-missa-no-interior-da-argentina.shtml",
+   "published": "2026-11-11T00:19:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/papa-leao-encontra-familiar-de-desaparecidos-na-ditadura-apos-missa-no-interior-da-argentina.shtml",
+     "title": "Papa Leão encontra familiar de desaparecidos na ditadura após missa no interior da Argentina"
+    }
+   ],
+   "ids": [
+    "c3caf0c5f773"
+   ],
+   "snippet": "Após rezar uma missa para 650 mil pessoas em Córdoba , o papa Leão 14 se encontrou nesta terça-feira (10), terceiro e penúltimo dia de sua visita à Argentina , com Alba Camargo, filha e sobrinha de desaparecidos na ditadura do país (1976?1983). Leia mais (11/10/2026 - 21h19)",
+   "prescore": 1.8,
+   "headline": "Papa Leão encontra familiar de desaparecidos na ditadura após missa no interior da Argentina",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Após rezar uma missa para 650 mil pessoas em Córdoba , o papa Leão 14 se encontrou nesta terça-feira (10), terceiro e penúltimo dia de sua visita à Argentina , com Alba Camargo, filha e sobrinha de desaparecidos na ditadura do país (1976?1983). Leia mais (11/10/2026 - 21h19)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "429998f1e8a9",
+   "title": "Mega-Sena, concurso 3084: prêmio vai para aposta única; confira números sorteados",
+   "link": "https://g1.globo.com/loterias/mega-sena/noticia/2026/11/10/mega-sena-concurso-3084-confira-os-numeros-sorteados.ghtml",
+   "published": "2026-11-11T00:03:47+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/loterias/mega-sena/noticia/2026/11/10/mega-sena-concurso-3084-confira-os-numeros-sorteados.ghtml",
+     "title": "Mega-Sena, concurso 3084: prêmio vai para aposta única; confira números sorteados"
+    }
+   ],
+   "ids": [
+    "429998f1e8a9"
+   ],
+   "snippet": "Como funciona a Mega-Sena? O sorteio do concurso 3.084 da Mega-Sena foi realizado na noite desta terça-feira (10), em São Paulo. Uma aposta única levou para casa o prêmio de quase R$ 3,3 milhões. O valor para o próximo sorteio será de R$ 20 milhões. (Correção: em uma primeira versão deste texto, o g1 errou ao informar que o prêmio o concurso tinha acumulado. Novas informações sobre o rateio foram divulgadas após a publicação. Na verdade, uma aposta única saiu vencedora do prêmio. A informação foi corrigida às 9h27.) 📱Favorite o g1 no Google e acompanhe as principais notícias do dia Clique aqui",
+   "prescore": 1.8,
+   "headline": "Mega-Sena, concurso 3084: prêmio vai para aposta única; confira números sorteados",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Como funciona a Mega-Sena? O sorteio do concurso 3.084 da Mega-Sena foi realizado na noite desta terça-feira (10), em São Paulo. Uma aposta única levou para casa o prêmio de quase R$ 3,3 milhões. O valor para o próximo sorteio será de R$ 20 milhões. (Correção: em uma primeira versão deste texto, o g1 errou ao informar que o prêmio o concurso tinha acumulado. Novas informações sobre o rateio foram ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "334ba4d218d6",
+   "title": "TSE decide multar Meta em R$ 7,5 milhões por descumprir decisão durante as eleições",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/10/tse-meta-descumprir-decisao-sobre-eleicoes.ghtml",
+   "published": "2026-11-11T00:01:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/10/tse-meta-descumprir-decisao-sobre-eleicoes.ghtml",
+     "title": "TSE decide multar Meta em R$ 7,5 milhões por descumprir decisão durante as eleições"
+    }
+   ],
+   "ids": [
+    "334ba4d218d6"
+   ],
+   "snippet": "O Tribunal Superior Eleitoral (TSE) decidiu nesta terça-feira (10), por unanimidade, multar em R$ 7,5 milhões a empresa Meta (dona do Facebook, WhatsApp e Instagram) por descumprimento de decisões da Corte durante as eleições. Os ministros seguiram o voto do relator, ministro Marco Aurélio Bellizze, para aplicar a punição à empresa Meta por deixar de cumprir integralmente determinações da Corte para garantir isonomia na disputal presidencial, substituindo prazos judiciais fixados pelo TSE por prazos próprios, além de falta de transparência. Além disso, afirma que a empresa apresentou informaçõ",
+   "prescore": 1.8,
+   "headline": "TSE decide multar Meta em R$ 7,5 milhões por descumprir decisão durante as eleições",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Tribunal Superior Eleitoral (TSE) decidiu nesta terça-feira (10), por unanimidade, multar em R$ 7,5 milhões a empresa Meta (dona do Facebook, WhatsApp e Instagram) por descumprimento de decisões da Corte durante as eleições. Os ministros seguiram o voto do relator, ministro Marco Aurélio Bellizze, para aplicar a punição à empresa Meta por deixar de cumprir integralmente determinações da Corte pa",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8b0a49a0d8a9",
+   "title": "Secretário de Defesa escapa de impeachment após manobra do Partido Republicano",
+   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/camara-dos-eua-barra-avanco-de-impeachment-de-secretario-de-defesa.shtml",
+   "published": "2026-11-10T23:22:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/camara-dos-eua-barra-avanco-de-impeachment-de-secretario-de-defesa.shtml",
+     "title": "Secretário de Defesa escapa de impeachment após manobra do Partido Republicano"
+    }
+   ],
+   "ids": [
+    "8b0a49a0d8a9"
+   ],
+   "snippet": "A Câmara dos Estados Unidos aprovou nesta terça-feira (10) uma manobra para barrar o avanço do pedido de impeachment contra o secretário de Defesa, Pete Hegseth, poupando um dos nomes fortes do governo Donald Trump de uma votação sobre seu afastamento após a derrota dos republicanos nas eleições legislativas da semana passada. Leia mais (11/10/2026 - 20h22)",
+   "prescore": 1.8,
+   "headline": "Secretário de Defesa escapa de impeachment após manobra do Partido Republicano",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Câmara dos Estados Unidos aprovou nesta terça-feira (10) uma manobra para barrar o avanço do pedido de impeachment contra o secretário de Defesa, Pete Hegseth, poupando um dos nomes fortes do governo Donald Trump de uma votação sobre seu afastamento após a derrota dos republicanos nas eleições legislativas da semana passada. Leia mais (11/10/2026 - 20h22)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a41f38e352bc",
+   "title": "Escala 6x1: Dino sinaliza que decisão em ação que questiona transição da nova jornada de trabalho sai até sexta",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/10/escala-6x1-dino-sinaliza-que-decisao-em-acao-que-questiona-transicao-da-nova-jornada-de-trabalho-sai-ate-sexta.ghtml",
+   "published": "2026-11-10T23:21:39+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/10/escala-6x1-dino-sinaliza-que-decisao-em-acao-que-questiona-transicao-da-nova-jornada-de-trabalho-sai-ate-sexta.ghtml",
+     "title": "Escala 6x1: Dino sinaliza que decisão em ação que questiona transição da nova jornada de trabalho sai até sexta"
+    }
+   ],
+   "ids": [
+    "a41f38e352bc",
+    "a41f38e352bc"
+   ],
+   "snippet": "Ministro Flávio Dino, do Supremo Tribunal Federal (STF), em sessão plenária do 21 de outubro de 2026. Gustavo Moreno/STF O ministro do Supremo Tribunal Federal (STF), Flávio Dino, afirmou nesta terça-feira (10) que publicará até sexta-feira (13) uma decisão na ação que discute o período de transição para a implementar a escala 5x2. Dino é relator dos pedidos feitos por entidades do setor produtivo para que seja concedido mais prazo para a adapatação à nova jornada de trabalho. A Proposta de Emenda à Constituição (PEC) que estabelceu a nova jornada de trabalho no país foi promulgada pelo Congre",
+   "prescore": 1.8,
+   "headline": "Escala 6x1: Dino sinaliza que decisão em ação que questiona transição da nova jornada de trabalho sai até sexta",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Ministro Flávio Dino, do Supremo Tribunal Federal (STF), em sessão plenária do 21 de outubro de 2026. Gustavo Moreno/STF O ministro do Supremo Tribunal Federal (STF), Flávio Dino, afirmou nesta terça-feira (10) que publicará até sexta-feira (13) uma decisão na ação que discute o período de transição para a implementar a escala 5x2. Dino é relator dos pedidos feitos por entidades do setor produtivo",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "059b54ec75a4",
+   "title": "Associação critica afastamento de delegados que elaboraram relatórios sobre ministros do STF e cobra autonomia da PF",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/10/associacao-critica-afastamento-de-delegados-que-elaboraram-relatorios-sobre-ministros-do-stf-e-cobra-autonomia-da-pf.ghtml",
+   "published": "2026-11-10T23:02:15+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/10/associacao-critica-afastamento-de-delegados-que-elaboraram-relatorios-sobre-ministros-do-stf-e-cobra-autonomia-da-pf.ghtml",
+     "title": "Associação critica afastamento de delegados que elaboraram relatórios sobre ministros do STF e cobra autonomia da PF"
+    }
+   ],
+   "ids": [
+    "059b54ec75a4"
+   ],
+   "snippet": "A Associação Nacional dos Delegados de Polícia Federal (ADPF) criticou o afastamento de dois delegados de funções de chefia na área de combate à corrupção da Polícia Federal e afirmou que o episódio pode representar uma ameaça à autonomia dos responsáveis pelas investigações. O afastamento ocorreu um dia após a conclusão de relatórios sobre o envolvimento de ministros do Supremo Tribunal Federal (STF) com Daniel Vorcaro, ex-dono do Banco Master. Em nota, a entidade questiona as circunstâncias dos afastamentos e a decisão de refazer relatórios produzidos pela PF sobre menções a ministros do Sup",
+   "prescore": 1.8,
+   "headline": "Associação critica afastamento de delegados que elaboraram relatórios sobre ministros do STF e cobra autonomia da PF",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Associação Nacional dos Delegados de Polícia Federal (ADPF) criticou o afastamento de dois delegados de funções de chefia na área de combate à corrupção da Polícia Federal e afirmou que o episódio pode representar uma ameaça à autonomia dos responsáveis pelas investigações. O afastamento ocorreu um dia após a conclusão de relatórios sobre o envolvimento de ministros do Supremo Tribunal Federal (",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "bb7b3db9cdd8",
+   "title": "Nvidia perde R$ 2,5 trilhões em 2 dias após denúncias de infidelidade e suspeita de espionagem envolvendo CEO",
+   "link": "https://g1.globo.com/economia/noticia/2026/11/10/nvidia-perde-r-25-trilhoes-em-2-dias-apos-denuncias-de-infidelidade-e-suspeita-de-espionagem-envolvendo-ceo.ghtml",
+   "published": "2026-11-10T21:32:56+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/10/nvidia-perde-r-25-trilhoes-em-2-dias-apos-denuncias-de-infidelidade-e-suspeita-de-espionagem-envolvendo-ceo.ghtml",
+     "title": "Nvidia perde R$ 2,5 trilhões em 2 dias após denúncias de infidelidade e suspeita de espionagem envolvendo CEO"
+    }
+   ],
+   "ids": [
+    "bb7b3db9cdd8"
+   ],
+   "snippet": "Como uma traição envolveu o CEO da Nvidia em investigação de espionagem As ações da Nvidia ampliaram as perdas nesta terça-feira (10) e fecharam em queda de 5,47%. Os papéis eliminaram US$ 470 bilhões (cerca de R$ 2,5 trilhões) em valor de mercado em apenas dois dias. A queda ocorre em meio à preocupação de investidores com as possíveis consequências de denúncias envolvendo o presidente-executivo da empresa, Jensen Huang, e uma empresária chinesa suspeita de atuar como espiã de Pequim. 🗒️ Tem alguma sugestão de reportagem? Envie para o g1 Segundo reportagem publicada pelo The Information nesta",
+   "prescore": 1.8,
+   "headline": "Nvidia perde R$ 2,5 trilhões em 2 dias após denúncias de infidelidade e suspeita de espionagem envolvendo CEO",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Como uma traição envolveu o CEO da Nvidia em investigação de espionagem As ações da Nvidia ampliaram as perdas nesta terça-feira (10) e fecharam em queda de 5,47%. Os papéis eliminaram US$ 470 bilhões (cerca de R$ 2,5 trilhões) em valor de mercado em apenas dois dias. A queda ocorre em meio à preocupação de investidores com as possíveis consequências de denúncias envolvendo o presidente-executivo ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "deals": [
@@ -11735,53 +11642,6 @@
    "ai": true
   },
   {
-   "id": "e5cd12599571",
-   "title": "US Stocks Climb as Wall Street Gets Fresh AI Fuel: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-10/stock-market-today-dow-s-p-live-updates",
-   "published": "2026-11-10T22:32:05+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-10/stock-market-today-dow-s-p-live-updates",
-     "title": "US Stocks Climb as Wall Street Gets Fresh AI Fuel: Markets Wrap"
-    }
-   ],
-   "ids": [
-    "e5cd12599571"
-   ],
-   "snippet": "A rally in tech giants lifted stocks on bets the artificial-intelligence trade that has powered the bull market has more room to run.",
-   "prescore": 2.8,
-   "headline": "Ações de IA sobem com resultado da CoreWeave e forte demanda no IPO da Anthropic",
-   "category": "mna",
-   "importance": 7,
-   "importance_reason": "IPO de grande empresa de IA, referência global.",
-   "summary": "Os futuros dos EUA subiram após bons resultados da CoreWeave e demanda robusta pelo IPO da Anthropic.",
-   "involves": "CoreWeave, Anthropic, Wall Street",
-   "interpretation": "Janela de IPOs em tech aquecida. Tamanho não divulgado.",
-   "impact": "Referência para IPOs de tecnologia.",
-   "sentiment": "positivo",
-   "entities": [
-    "CoreWeave",
-    "Anthropic"
-   ],
-   "tags": [
-    "IA",
-    "IPO"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "IPO",
-    "buyer": "Investidores",
-    "target": "Anthropic PBC",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Tecnologia / IA",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "01c4efc4a087",
    "title": "TSMC Approves Up to $1 Billion Investment Plan in Anthropic, OpenAI",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT3ZlYXlWNllKZkZETDl2YUpGcXdKYnBpc01rZ2pMenZYcXJrcmVhbFdlUW5oQnFWeTZ1dlN2S2RwVFFUaVJIUWk0UVJsOHk4R25nSGt4NnlfYTZVNXZvTzlrcXU4V2ZGNUNQQTY1amMwcHZ3bC00aTFBMTRKcFExdThaQlY2Nmp4ek1qSXRDdVVuLUlOSWVPQWMtSHlqT0g3RmlCbQ?oc=5",
@@ -11846,20 +11706,14 @@
      "source": "InfoMoney",
      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMEZubGNKYjY2QzhDQV96MUE5dWNLMm9uY2FPVUx3eVZ1eUZjT1AyZmxIUU91bWdWSk5wcU41cnp3Nk9uUzhjY1JRTW9kSDlIdXF5MVVPdHVNeGtabklQX1hkdXhfaUNpelZxdThTa2FnX0YyNUNzcWRyUmEtTHZMRnhJanN2Z1lvR09pdFgzNmxBcG5KMXFYU0pGMkMtZ1NwaUhYLXZBVFRXeXlRVy0xRTl1NjdMU0dncjUxdGs1NFbSAcYBQVVfeXFMUE5FdnhSNkxyQUFxUDhoc3JhSlhKRVNsa3J4N1pfdU9nX0VfVWdyVzNnQUl3YnFNdVpDcm5pcTlOZllKZUlWN05GWHN6QURwNUFZdnVOT0JGZS1OcldRcU44UWxzTHhXdFhkVnhEcnhIbTFla1cwOF8zTXRSXzA4SXNZRExhVU5VOHJudEFVOExDd2JFZmUyeml1emZCM0hsX1o2ekxHcjlmV0tOU0tTRTJCcXdFRS0tOW53NXdGbjROblp0WExB?oc=5",
      "title": "Brasil Terrenos obtém registro de companhia aberta na CVM e avança em listagem na B3"
-    },
-    {
-     "source": "BM&C",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWE9OU29fZEVaUEF4WWgtdlN2Zk54cnRUaW9ydHdSMkYyTGlsbFVfc0hQN1RDcWpPSGZrMTZRSEN0WkZReE91bXFnUTlydjFUdlVKUkRsR1FuUE1FTlVsYlFVN2VBTUNlQWNMSFFwZ2tzNmR0SWhrMmtlaHN4SnBaUEhzVzhxMXE4UFlXUXBXSV9zdVNqel9rTFQzS2N2Rzc3dm1pS09Jb25RVVBT?oc=5",
-     "title": "Brasil Terrenos obtém registro na CVM e avança na listagem na B3"
     }
    ],
    "ids": [
     "1331a782c528",
-    "c08737ae432f",
-    "6f74563322b8"
+    "c08737ae432f"
    ],
    "snippet": "",
-   "prescore": 8.4,
+   "prescore": 6.9,
    "headline": "Brasil Terrenos obtém registro de companhia aberta na CVM e avança rumo à B3",
    "category": "mna",
    "importance": 6,
@@ -12090,39 +11944,6 @@
  ],
  "upcoming": [
   {
-   "id": "3547d01849b9",
-   "title": "How Anthropic’s IPO Could Unleash a New Wave of Venture Capital",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-11/how-anthropic-s-ipo-could-unleash-new-wave-of-vc-video",
-   "published": "2026-11-11T19:07:58+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-11/how-anthropic-s-ipo-could-unleash-new-wave-of-vc-video",
-     "title": "How Anthropic’s IPO Could Unleash a New Wave of Venture Capital"
-    }
-   ],
-   "ids": [
-    "3547d01849b9"
-   ],
-   "snippet": "Anthropic’s IPO could have ripple effects well beyond the public markets. Canvas Ventures co-founder Rebecca Lynn says the listing could bring long-awaited liquidity back to venture capital, validate a new generation of AI-first startups and ultimately fuel fresh investment across Silicon Valley. She joins Riley Griffin on “Bloomberg Tech.” (Source: Bloomberg)",
-   "prescore": 7.4,
-   "headline": "How Anthropic’s IPO Could Unleash a New Wave of Venture Capital",
-   "category": "mna",
-   "importance": 5,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Anthropic’s IPO could have ripple effects well beyond the public markets. Canvas Ventures co-founder Rebecca Lynn says the listing could bring long-awaited liquidity back to venture capital, validate a new generation of AI-first startups and ultimately fuel fresh investment across Silicon Valley. She joins Riley Griffin on “Bloomberg Tech.” (Source: Bloomberg)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "653728441fdc",
    "title": "Oil Prices Rebound as Middle East Supply Risks Persist",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMG9QUTRTOFdKeFlQeU5fLTdmZnJjdllnZFFQb0tRcU4wOGUxaDdkUThaMERudUlRM3hyalVvMVVVZHJkZUM2OWVSWXR5ZThzSEVEOGo0WjdncmVET1NtcHZ3a1ZScFZTaGt4dlpWYnlMRGtpT3ZoM3p0cWhmN1FCNHk1LTI0dGxHMDZwQmpxcDgtSmNQNzNOZFJqbFFDVE44OVNYcERB?oc=5",
@@ -12161,12 +11982,17 @@
    "ai": true
   },
   {
-   "id": "4c6410aa9ab5",
-   "title": "Nasdaq Jumps After CoreWeave Re-Energizes AI Trade",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPem9ZTW5ac04yQXJsSXE2S29IZl8zSlU0YklYcm1xZW04OWptOVpvYjJMM0pIc2I0d3FkdXVhRjdhNVVSN2g4d2Vncm01SFhtUVduRHJXQVV4aGdnZmJ5VW5vLUtyVzFHd21iOFg3ZnpjMVI1RkRPNjFwcGdJaXFuRERTTWJfOU1IdGdVUldJSzQ2d0dfMGl3U3NKemtydVB2TkE?oc=5",
+   "id": "9ab7a7921c4b",
+   "title": "CoreWeave Jumps, Boosting the AI Trade",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUhQeDlhV3c3SWxRRWdDTzFpclEzY1RaNXZUdWhIRllXNTlnVk90NVVSNGR4c2JlaG1tak5GSVdZS3VaQkJ6N1QtNU1fSnhCNVF5a3JjX29uWHE1ai1uT045Y2tXd3N5YmQzRi1tOHRTeEM2Z2hkZlB2TmthNGNobDZ4ZDhPNlEy?oc=5",
    "published": "2026-11-11T19:36:00+00:00",
    "region": "INTL",
    "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUhQeDlhV3c3SWxRRWdDTzFpclEzY1RaNXZUdWhIRllXNTlnVk90NVVSNGR4c2JlaG1tak5GSVdZS3VaQkJ6N1QtNU1fSnhCNVF5a3JjX29uWHE1ai1uT045Y2tXd3N5YmQzRi1tOHRTeEM2Z2hkZlB2TmthNGNobDZ4ZDhPNlEy?oc=5",
+     "title": "CoreWeave Jumps, Boosting the AI Trade"
+    },
     {
      "source": "Wall Street Journal",
      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPem9ZTW5ac04yQXJsSXE2S29IZl8zSlU0YklYcm1xZW04OWptOVpvYjJMM0pIc2I0d3FkdXVhRjdhNVVSN2g4d2Vncm01SFhtUVduRHJXQVV4aGdnZmJ5VW5vLUtyVzFHd21iOFg3ZnpjMVI1RkRPNjFwcGdJaXFuRERTTWJfOU1IdGdVUldJSzQ2d0dfMGl3U3NKemtydVB2TkE?oc=5",
@@ -12174,6 +12000,7 @@
     }
    ],
    "ids": [
+    "9ab7a7921c4b",
     "4c6410aa9ab5"
    ],
    "snippet": "",
@@ -12237,39 +12064,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "9f9b4e3937d6",
-   "title": "Economistas esperam que fim da escala 6x1 aumente inflação em 0,3 ponto percentual em 2027, diz BC",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-esperam-que-fim-da-escala-6x1-aumente-inflacao-em-03-ponto-percentual-em-2027-diz-bc.shtml",
-   "published": "2026-11-11T12:48:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-esperam-que-fim-da-escala-6x1-aumente-inflacao-em-03-ponto-percentual-em-2027-diz-bc.shtml",
-     "title": "Economistas esperam que fim da escala 6x1 aumente inflação em 0,3 ponto percentual em 2027, diz BC"
-    }
-   ],
-   "ids": [
-    "9f9b4e3937d6"
-   ],
-   "snippet": "Economistas consultados às vésperas da reunião do Copom (Comitê de Política Monetária) esperam que, em 2027, a inflação fique 0,3 ponto percentual maior e o crescimento do PIB (Produto Interno Bruto) seja 0,2 ponto percentual menor com o fim da escala 6x1 . O resultado do questionário foi divulgado pelo Banco Central nesta quarta-feira (11). Leia mais (11/11/2026 - 09h48)",
-   "prescore": 7.0,
-   "headline": "Economistas esperam que fim da escala 6x1 aumente inflação em 0,3 ponto percentual em 2027, diz BC",
-   "category": "macro",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Economistas consultados às vésperas da reunião do Copom (Comitê de Política Monetária) esperam que, em 2027, a inflação fique 0,3 ponto percentual maior e o crescimento do PIB (Produto Interno Bruto) seja 0,2 ponto percentual menor com o fim da escala 6x1 . O resultado do questionário foi divulgado pelo Banco Central nesta quarta-feira (11). Leia mais (11/11/2026 - 09h48)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "3f08b26e37d1",
@@ -12360,39 +12154,6 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A oferta pública inicial de ações (IPO) da Anthropic chegou ao ponto do “too big to fail”? Com plano de levantar até US$ 90 bilhões, a dona do Claude terá de provar nos próximos dias que está grande demais para fracassar. Um bem-sucedido IPO da companhia, que deu início ao seu roadshow com investidores antes […] O post O IPO de US$ 1,4 trilhão da Anthropic é grande demais para fracassar? apareceu ",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "04f711953ebb",
-   "title": "IPO nos EUA: dá para entrar pelo preço da oferta morando no Brasil?",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMUc3V1BLU1A2dHVsd3FZNTJBbnZhYnhPZ3hGV0NpUlZNdU50UlprWWNiajBOblVGZURDWGJJem52eURLVmM5TG1FbWpkQmVtSldGSGxkSHA4aV9PakxiMFdyTjBORHYtczZiMGFDLV9QQzNadGo5U295eUh5S1hvSVdrQlRnQlZwdGRxSTB2U1RnRDFhd2dXNGhTZw?oc=5",
-   "published": "2026-11-11T13:11:44+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "ativovirtual.com.br",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMUc3V1BLU1A2dHVsd3FZNTJBbnZhYnhPZ3hGV0NpUlZNdU50UlprWWNiajBOblVGZURDWGJJem52eURLVmM5TG1FbWpkQmVtSldGSGxkSHA4aV9PakxiMFdyTjBORHYtczZiMGFDLV9QQzNadGo5U295eUh5S1hvSVdrQlRnQlZwdGRxSTB2U1RnRDFhd2dXNGhTZw?oc=5",
-     "title": "IPO nos EUA: dá para entrar pelo preço da oferta morando no Brasil?"
-    }
-   ],
-   "ids": [
-    "04f711953ebb"
-   ],
-   "snippet": "",
-   "prescore": 6.4,
-   "headline": "IPO nos EUA: dá para entrar pelo preço da oferta morando no Brasil?",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12569,6 +12330,39 @@
    "ai": false
   },
   {
+   "id": "040f1b92839f",
+   "title": "Rare IPO Bets on End of War and Economic Crisis in Myanmar",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-12/rare-ipo-bets-on-end-of-war-and-economic-crisis-in-myanmar",
+   "published": "2026-11-12T00:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-12/rare-ipo-bets-on-end-of-war-and-economic-crisis-in-myanmar",
+     "title": "Rare IPO Bets on End of War and Economic Crisis in Myanmar"
+    }
+   ],
+   "ids": [
+    "040f1b92839f"
+   ],
+   "snippet": "A Myanmar company is going public in the middle of a civil war and economic downturn, betting on an eventual recovery.",
+   "prescore": 5.8,
+   "headline": "Rare IPO Bets on End of War and Economic Crisis in Myanmar",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Myanmar company is going public in the middle of a civil war and economic downturn, betting on an eventual recovery.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "e46471b7710c",
    "title": "BC Partners to Buy Investcorp BDC Amid Private Credit Shakeout",
    "link": "https://www.bloomberg.com/news/articles/2026-11-11/bc-partners-to-buy-investcorp-bdc-amid-private-credit-shakeout",
@@ -12600,116 +12394,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "f263e6237539",
-   "title": "Anthropic IPO Is ‘Jenga Block’ Holding Up Next Leg of AI Trade",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-ipo-is-jenga-block-holding-up-next-leg-of-ai-trade",
-   "published": "2026-11-11T21:15:02+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-ipo-is-jenga-block-holding-up-next-leg-of-ai-trade",
-     "title": "Anthropic IPO Is ‘Jenga Block’ Holding Up Next Leg of AI Trade"
-    }
-   ],
-   "ids": [
-    "f263e6237539"
-   ],
-   "snippet": "Anthropic PBC’s long-awaited initial public offering will give investors a crucial look at the health of the artificial intelligence trade, and Wall Street hopes it will spur the next leg of the AI-fueled stock market rally that’s going on four years.",
-   "prescore": 5.8,
-   "headline": "Anthropic IPO Is ‘Jenga Block’ Holding Up Next Leg of AI Trade",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Anthropic PBC’s long-awaited initial public offering will give investors a crucial look at the health of the artificial intelligence trade, and Wall Street hopes it will spur the next leg of the AI-fueled stock market rally that’s going on four years.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e4e6c2d5784e",
-   "title": "US tech stocks rally as AI trade revives",
-   "link": "https://www.ft.com/content/639de881-6017-454f-abfa-cfb191d1e7cd?syn-25a6b1a6=1",
-   "published": "2026-11-11T21:04:17+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/639de881-6017-454f-abfa-cfb191d1e7cd?syn-25a6b1a6=1",
-     "title": "US tech stocks rally as AI trade revives"
-    }
-   ],
-   "ids": [
-    "e4e6c2d5784e"
-   ],
-   "snippet": "Nasdaq erases last week’s losses as CoreWeave results and prospect of higher Anthropic IPO valuation boost sentiment",
-   "prescore": 5.6,
-   "headline": "Ações de tecnologia dos EUA devem estender recuperação",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Humor de mercado, com resultado da CoreWeave e IPO da Anthropic.",
-   "summary": "Ações de tecnologia dos EUA devem estender a alta, impulsionadas por resultados da CoreWeave melhores que o esperado e pela perspectiva de valuation maior no IPO da Anthropic.",
-   "involves": "CoreWeave, Anthropic",
-   "interpretation": "Alívio no setor de tecnologia.",
-   "impact": "Positivo para risco global.",
-   "sentiment": "positivo",
-   "entities": [
-    "CoreWeave",
-    "Anthropic"
-   ],
-   "tags": [
-    "tecnologia",
-    "Nasdaq"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "dafeea6777c6",
-   "title": "Gold Futures Slip Back Under $4,000 Level",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdnJBZW5Fem9UUENmZGVOTTlwcnBqUVhocFcwSUtzRlB2aGk5Tk13akZlU3ZEbkNSUEZoeDNTT3hDMzZQWUFVdlBsVDBfV0dpNjk3RUtDTzJ6ZWtOTTB5QkhzY1lEMFBJd2FaenJEaGt3c1I5Tk10U21LbXNXUzl1SHNpZ3ZpbVdualFweXRwX2RDSDhtdm9uWDB0ZUx5TG0xRDQ3bg?oc=5",
-   "published": "2026-11-11T19:47:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdnJBZW5Fem9UUENmZGVOTTlwcnBqUVhocFcwSUtzRlB2aGk5Tk13akZlU3ZEbkNSUEZoeDNTT3hDMzZQWUFVdlBsVDBfV0dpNjk3RUtDTzJ6ZWtOTTB5QkhzY1lEMFBJd2FaenJEaGt3c1I5Tk10U21LbXNXUzl1SHNpZ3ZpbVdualFweXRwX2RDSDhtdm9uWDB0ZUx5TG0xRDQ3bg?oc=5",
-     "title": "Gold Futures Slip Back Under $4,000 Level"
-    }
-   ],
-   "ids": [
-    "dafeea6777c6"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Perspectiva do ouro segue favorável no longo prazo, diz WSJ",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Leitura de commodity; só o título foi divulgado.",
-   "summary": "O WSJ avalia que a perspectiva do ouro segue favorável no longo prazo. Detalhes não divulgados.",
-   "involves": "Ouro.",
-   "interpretation": "Visão estrutural, não movimento do dia.",
-   "impact": "Suporte a mineradoras de ouro.",
-   "sentiment": "positivo",
-   "entities": [
-    "ouro"
-   ],
-   "tags": [
-    "ouro",
-    "commodities"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
   },
   {
    "id": "be4349abb158",
@@ -12751,6 +12435,39 @@
    "ai": true
   },
   {
+   "id": "f1c0cba32586",
+   "title": "AkzoNobel-Axalta $25 Billion Merger Could Harm Competition, U.K. Regulator Warns",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOGdyS2xPc2JaZU8waEs3Nm9VU2hmbTREQ3kxRkhFbHBNdjQ2blJSODJaSTd0Vm85QnBUTFNJT0dHMWZuSEdjaUlMazhmdXhkYWdoamhwVDVCTEhiYmhNeFFBQWZUQ0lwTnZ2endrLXFpb3lEckNSWnZsMUU3R3JudGRRbjJCdjNzUHdPVm1oSDFGNC1SdE0zYlEwV1BibnhwV3JuZXZaMzVZdE5XMlhmXzU0cC1aRF9WNVVFZHRsdw?oc=5",
+   "published": "2026-11-12T00:19:19+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOGdyS2xPc2JaZU8waEs3Nm9VU2hmbTREQ3kxRkhFbHBNdjQ2blJSODJaSTd0Vm85QnBUTFNJT0dHMWZuSEdjaUlMazhmdXhkYWdoamhwVDVCTEhiYmhNeFFBQWZUQ0lwTnZ2endrLXFpb3lEckNSWnZsMUU3R3JudGRRbjJCdjNzUHdPVm1oSDFGNC1SdE0zYlEwV1BibnhwV3JuZXZaMzVZdE5XMlhmXzU0cC1aRF9WNVVFZHRsdw?oc=5",
+     "title": "AkzoNobel-Axalta $25 Billion Merger Could Harm Competition, U.K. Regulator Warns"
+    }
+   ],
+   "ids": [
+    "f1c0cba32586"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "AkzoNobel-Axalta $25 Billion Merger Could Harm Competition, U.K. Regulator Warns",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "045036c15413",
    "title": "EasyJet shareholders approve £5.7 billion Apollo takeover",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWF9EOFBOelFYUVhLOHVHTEh1VGdNWHN1ZzNHcHV4UXk1dFJtRjZnRGxHVTVKT2RYM2VnVGhxVy1JYmNVSjBqTmVUWDNoWlA0X1gzNHNIQ001YmlCN2lVTXVOMXQ5ZFJiLU9qMFI4WUw4empULTl1RTBqUWFMVWlabllYOXhKYk9qMHhUaF9ZT3hULXAyakU4dkJYb0xabnFoUnc?oc=5",
@@ -12787,7 +12504,7 @@
    "id": "80bc40bbca84",
    "title": "Western Union Scraps $500 Million International Money Express Takeover",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVkdFM1VxVmw2R1JFQTdjcXdmU29IWE5JU0ZxbjBEVU84TzhjX05aUmtSU1BGVlpDbUxSbUVwbk5QZ2pneFNodTJEWHhXTTRyWDVLYTQ5RW1vSng3cWVPZG5SUnhlREVmam84WGZCeGpJOG1lWnlLSlNCZVFNWjdCcmd6ZEliYVZUaUhVR1JsRnpkY3BvRzY1V3lsd3F1MF9CQTJxYjY0WnN1Wi0xZklfMlI0WQ?oc=5",
-   "published": "2026-11-11T12:03:00+00:00",
+   "published": "2026-11-11T12:20:53+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12982,20 +12699,20 @@
    "ai": false
   },
   {
-   "id": "8882e3401b3b",
+   "id": "c93467afe5b0",
    "title": "Bancos querem aumentar valor do IPO da Anthropic para 1,5 biliões de dólares",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc3l3a2ZTWUI0MmxJcUdSdTJmT2I4TVExMDdNdTI1ZkdNc1RrYnhuVDA5SExoWVBsbWZ6QU1qLW9XTG5GeTRkal92cXdjeHZ0NHM0OGhMYndMZ2xUdWM2cWRxXy0wYzBtLWl4dkNkcjlxNU9RZmZOaENNSERjNUcyTXRtUTg2V2VaSm4tcGtZNGZkcTAzZV9jLXZ0LUhKMnlSc1NHY0czTXpXMVlxWkt2N19FUjVwaUk4eVQzdkZmd3g3aEtGN2fSAcYBQVVfeXFMUHN5d2tmU1lCNDJsSXFHUnUyZk9iOE1RMTA3TXUyNWZHTXNUa2J4blQwOUhMaFlQbG1mekFNai1vV0xuRnk0ZGpfdnF3Y3h2dDRzNDhoTGJ3TGdsVHVjNnFkcV8tMGMwbS1peHZDZHI5cTVPUWZmTmhDTUhEYzVHMk10bVE4NldlWkpuLXBrWTRmZHEwM2VfYy12dC1ISjJ5UnNTR2NHM016VzFZcVpLdjdfRVI1cGlJOHlUM3ZGZnd4N2hLRjdn?oc=5",
-   "published": "2026-11-11T12:53:58+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaWY0TG9lWEZuZkN6Rll3RENicmpkeGFqYWNpc1dPNHlvUWhSamg2YzU5bkNoTFFFMWRQTnd1YkV2WHl6MHQ5LUoyRHpZV1FrXzRfOW1RVm1abWZ0NV9xSFlBMWxVS2JRMTlCdnAtZGFCYXhKRU8zUGx0Y3VTbXJ0Rm40ejlOamZpRHRYOVFwbDliRWUzSnBlQ3NEb3NQM3hzQVBIQlJPeGNuN0VzdWZmQkFiQ3VhaWlDeThlcmZVUlNvR3BBUDAwNEZCb9IBxgFBVV95cUxQc3l3a2ZTWUI0MmxJcUdSdTJmT2I4TVExMDdNdTI1ZkdNc1RrYnhuVDA5SExoWVBsbWZ6QU1qLW9XTG5GeTRkal92cXdjeHZ0NHM0OGhMYndMZ2xUdWM2cWRxXy0wYzBtLWl4dkNkcjlxNU9RZmZOaENNSERjNUcyTXRtUTg2V2VaSm4tcGtZNGZkcTAzZV9jLXZ0LUhKMnlSc1NHY0czTXpXMVlxWkt2N19FUjVwaUk4eVQzdkZmd3g3aEtGN2c?oc=5",
+   "published": "2026-11-11T12:51:20+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "Jornal de Negócios",
-     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQc3l3a2ZTWUI0MmxJcUdSdTJmT2I4TVExMDdNdTI1ZkdNc1RrYnhuVDA5SExoWVBsbWZ6QU1qLW9XTG5GeTRkal92cXdjeHZ0NHM0OGhMYndMZ2xUdWM2cWRxXy0wYzBtLWl4dkNkcjlxNU9RZmZOaENNSERjNUcyTXRtUTg2V2VaSm4tcGtZNGZkcTAzZV9jLXZ0LUhKMnlSc1NHY0czTXpXMVlxWkt2N19FUjVwaUk4eVQzdkZmd3g3aEtGN2fSAcYBQVVfeXFMUHN5d2tmU1lCNDJsSXFHUnUyZk9iOE1RMTA3TXUyNWZHTXNUa2J4blQwOUhMaFlQbG1mekFNai1vV0xuRnk0ZGpfdnF3Y3h2dDRzNDhoTGJ3TGdsVHVjNnFkcV8tMGMwbS1peHZDZHI5cTVPUWZmTmhDTUhEYzVHMk10bVE4NldlWkpuLXBrWTRmZHEwM2VfYy12dC1ISjJ5UnNTR2NHM016VzFZcVpLdjdfRVI1cGlJOHlUM3ZGZnd4N2hLRjdn?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaWY0TG9lWEZuZkN6Rll3RENicmpkeGFqYWNpc1dPNHlvUWhSamg2YzU5bkNoTFFFMWRQTnd1YkV2WHl6MHQ5LUoyRHpZV1FrXzRfOW1RVm1abWZ0NV9xSFlBMWxVS2JRMTlCdnAtZGFCYXhKRU8zUGx0Y3VTbXJ0Rm40ejlOamZpRHRYOVFwbDliRWUzSnBlQ3NEb3NQM3hzQVBIQlJPeGNuN0VzdWZmQkFiQ3VhaWlDeThlcmZVUlNvR3BBUDAwNEZCb9IBxgFBVV95cUxQc3l3a2ZTWUI0MmxJcUdSdTJmT2I4TVExMDdNdTI1ZkdNc1RrYnhuVDA5SExoWVBsbWZ6QU1qLW9XTG5GeTRkal92cXdjeHZ0NHM0OGhMYndMZ2xUdWM2cWRxXy0wYzBtLWl4dkNkcjlxNU9RZmZOaENNSERjNUcyTXRtUTg2V2VaSm4tcGtZNGZkcTAzZV9jLXZ0LUhKMnlSc1NHY0czTXpXMVlxWkt2N19FUjVwaUk4eVQzdkZmd3g3aEtGN2c?oc=5",
      "title": "Bancos querem aumentar valor do IPO da Anthropic para 1,5 biliões de dólares"
     }
    ],
    "ids": [
-    "8882e3401b3b"
+    "c93467afe5b0"
    ],
    "snippet": "",
    "prescore": 5.4,
@@ -13439,16 +13156,10 @@
      "source": "PR Newswire (M&A)",
      "link": "https://www.prnewswire.com/news-releases/hig-capital-signs-definitive-agreement-to-acquire-majority-stake-in-go-asia-302935623.html",
      "title": "H.I.G. Capital Signs Definitive Agreement to Acquire Majority Stake in go asia"
-    },
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/hig-capital-signs-definitive-agreement-to-acquire-majority-stake-in-go-asia-302935606.html",
-     "title": "H.I.G. Capital Signs Definitive Agreement to Acquire Majority Stake in go asia"
     }
    ],
    "ids": [
-    "62e11c8989b8",
-    "2a73caa236be"
+    "62e11c8989b8"
    ],
    "snippet": "HAMBURG, Germany, Nov. 11, 2026 /PRNewswire/ -- H.I.G. Capital (\"H.I.G.\"), a leading global private capital firm with $76 billion of capital under management, is pleased to announce that an affiliate has signed a definitive agreement to acquire a majority stake in go asia (\"go asia\" or...",
    "prescore": 5.0,
@@ -13468,28 +13179,28 @@
    "ai": false
   },
   {
-   "id": "533e1ea5109a",
-   "title": "Galípolo quer mudar atuação do Banco Central, mas descarta mexer nas metas de inflação; entenda",
-   "link": "https://www.seudinheiro.com/2026/economia/galipolo-quer-mudar-atuacao-do-banco-central-mas-descarta-mexer-nas-metas-de-inflacao-entenda/",
-   "published": "2026-11-11T20:48:00+00:00",
-   "region": "BR",
+   "id": "e681dfb1ffd0",
+   "title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-12/gold-holds-below-4-000-as-market-looks-ahead-to-fed-rate-hike",
+   "published": "2026-11-12T00:12:52+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "Seu Dinheiro",
-     "link": "https://www.seudinheiro.com/2026/economia/galipolo-quer-mudar-atuacao-do-banco-central-mas-descarta-mexer-nas-metas-de-inflacao-entenda/",
-     "title": "Galípolo quer mudar atuação do Banco Central, mas descarta mexer nas metas de inflação; entenda"
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-12/gold-holds-below-4-000-as-market-looks-ahead-to-fed-rate-hike",
+     "title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike"
     }
    ],
    "ids": [
-    "533e1ea5109a"
+    "e681dfb1ffd0"
    ],
-   "snippet": "Presidente do BC defende mudanças na regulação do crédito brasileiro para reduzir a taxa básica de juros The post Galípolo quer mudar atuação do Banco Central, mas descarta mexer nas metas de inflação; entenda appeared first on Seu Dinheiro .",
+   "snippet": "Gold held a drop below $4,000 an ounce, as persistent inflation and hawkish remarks from Federal Reserve officials fueled expectations for an interest-rate hike next month.",
    "prescore": 4.8,
-   "headline": "Galípolo quer mudar atuação do Banco Central, mas descarta mexer nas metas de inflação; entenda",
-   "category": "mna",
+   "headline": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike",
+   "category": "internacional",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Presidente do BC defende mudanças na regulação do crédito brasileiro para reduzir a taxa básica de juros The post Galípolo quer mudar atuação do Banco Central, mas descarta mexer nas metas de inflação; entenda appeared first on Seu Dinheiro .",
+   "summary": "Gold held a drop below $4,000 an ounce, as persistent inflation and hawkish remarks from Federal Reserve officials fueled expectations for an interest-rate hike next month.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13705,16 +13416,55 @@
    "ai": false
   },
   {
+   "id": "4aa38f898a20",
+   "title": "Scott Colom Wins Mississippi Senate Seat in Historic Victory",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLXBWUXlkQ1dVeWdsZ3BNdTlHZkY0Mmw1ZGdZdW9ZY01lUVBNZGN3MjJBeXFOYTNyT3BKdDhMM3dhcDdQMlpVWG5vb214aUpEc0tvNjNqWWNqQ3ppc3RtaXFQN0RrWHNnaEhyRTdBYWZ6YUxzYVVoM09YUWpkclZCN3FDSVNLVXZVY1lpYWlzc1plRFBTNXRrREU5NC10b3BtdXF3X3hnZ1RpS1hT?oc=5",
+   "published": "2026-11-11T23:38:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLXBWUXlkQ1dVeWdsZ3BNdTlHZkY0Mmw1ZGdZdW9ZY01lUVBNZGN3MjJBeXFOYTNyT3BKdDhMM3dhcDdQMlpVWG5vb214aUpEc0tvNjNqWWNqQ3ppc3RtaXFQN0RrWHNnaEhyRTdBYWZ6YUxzYVVoM09YUWpkclZCN3FDSVNLVXZVY1lpYWlzc1plRFBTNXRrREU5NC10b3BtdXF3X3hnZ1RpS1hT?oc=5",
+     "title": "Scott Colom Wins Mississippi Senate Seat in Historic Victory"
+    },
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/ed93bd25-3ae4-4845-ac2e-ccb6e9c741e6?syn-25a6b1a6=1",
+     "title": "Scott Colom wins historic Senate race in Mississippi"
+    }
+   ],
+   "ids": [
+    "4aa38f898a20",
+    "9c4064dadcc8"
+   ],
+   "snippet": "Democrat becomes the first Black man to represent the state since Reconstruction era",
+   "prescore": 4.1,
+   "headline": "Scott Colom Wins Mississippi Senate Seat in Historic Victory",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Democrat becomes the first Black man to represent the state since Reconstruction era",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "6880766e1d40",
-   "title": "Exclusive | Nvidia is Preparing to Oust CEO Jensen Huang",
+   "title": "Exclusive | Nvidia Is Preparing to Oust CEO Jensen Huang",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxON2VaZ01EcWdXc1ZGb3plNUNMM294WGZlT0tTbWw2SFNPOHZ3ZERtQlR6RkhLRWF2cHExRnNfWGZINm1NWVoxVjRSUDRTVXRFb1RaRGcyMXFUdEd0LWtlME5SVHJETVdzOHR6eHhyNXJLVXF6cldFbnhHMXcydFMzTGhzVnhWN2RQX2d0X1N4QVZvdUU?oc=5",
-   "published": "2026-11-11T22:41:00+00:00",
+   "published": "2026-11-11T22:48:43+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxON2VaZ01EcWdXc1ZGb3plNUNMM294WGZlT0tTbWw2SFNPOHZ3ZERtQlR6RkhLRWF2cHExRnNfWGZINm1NWVoxVjRSUDRTVXRFb1RaRGcyMXFUdEd0LWtlME5SVHJETVdzOHR6eHhyNXJLVXF6cldFbnhHMXcydFMzTGhzVnhWN2RQX2d0X1N4QVZvdUU?oc=5",
-     "title": "Exclusive | Nvidia is Preparing to Oust CEO Jensen Huang"
+     "title": "Exclusive | Nvidia Is Preparing to Oust CEO Jensen Huang"
     },
     {
      "source": "Bloomberg",
@@ -13728,7 +13478,7 @@
    ],
    "snippet": "Nvidia’s board is preparing to oust CEO Jensen Huang after multiple extramarital affairs, including one with a woman who is reportedly suspected of being a Chinese spy, the Wall Street Journal said Wednesday. (Source: Bloomberg)",
    "prescore": 4.1,
-   "headline": "Exclusive | Nvidia is Preparing to Oust CEO Jensen Huang",
+   "headline": "Exclusive | Nvidia Is Preparing to Oust CEO Jensen Huang",
    "category": "tech",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13781,6 +13531,72 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "d65933e10a69",
+   "title": "Americanas agora encara 'fase da corrida no triatlo', diz CEO após saída da recuperação judicial",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/americanas-agora-encara-fase-da-corrida-no-triatlo-diz-ceo-apos-saida-da-recuperacao-judicial.shtml",
+   "published": "2026-11-12T00:14:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/americanas-agora-encara-fase-da-corrida-no-triatlo-diz-ceo-apos-saida-da-recuperacao-judicial.shtml",
+     "title": "Americanas agora encara 'fase da corrida no triatlo', diz CEO após saída da recuperação judicial"
+    }
+   ],
+   "ids": [
+    "d65933e10a69"
+   ],
+   "snippet": "Se a trajetória das Lojas Americanas fosse uma prova de triatlo, a empresa acaba de finalizar a segunda etapa do circuito, a de bicicleta, e agora se prepara para começar a correr. Leia mais (11/11/2026 - 21h14)",
+   "prescore": 4.0,
+   "headline": "Americanas agora encara 'fase da corrida no triatlo', diz CEO após saída da recuperação judicial",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Se a trajetória das Lojas Americanas fosse uma prova de triatlo, a empresa acaba de finalizar a segunda etapa do circuito, a de bicicleta, e agora se prepara para começar a correr. Leia mais (11/11/2026 - 21h14)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f5ede940c2ca",
+   "title": "PGR pede ao STF manutenção da prisão de Daniel Vorcaro",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/pgr-pede-ao-stf-manutencao-da-prisao-de-daniel-vorcaro.shtml",
+   "published": "2026-11-11T23:37:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/pgr-pede-ao-stf-manutencao-da-prisao-de-daniel-vorcaro.shtml",
+     "title": "PGR pede ao STF manutenção da prisão de Daniel Vorcaro"
+    }
+   ],
+   "ids": [
+    "f5ede940c2ca"
+   ],
+   "snippet": "O procurador-geral da República, Paulo Gonet , defendeu manter a prisão de Daniel Vorcaro . A manifestação foi enviada ao STF (Supremo Tribunal Federal) nesta quarta-feira (11). O chefe do Ministério Público aponta o ex-dono do Banco Master como líder da organização criminosa que cooptou servidores do Banco Central e determinou intimidações. Leia mais (11/11/2026 - 20h37)",
+   "prescore": 4.0,
+   "headline": "PGR pede ao STF manutenção da prisão de Daniel Vorcaro",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O procurador-geral da República, Paulo Gonet , defendeu manter a prisão de Daniel Vorcaro . A manifestação foi enviada ao STF (Supremo Tribunal Federal) nesta quarta-feira (11). O chefe do Ministério Público aponta o ex-dono do Banco Master como líder da organização criminosa que cooptou servidores do Banco Central e determinou intimidações. Leia mais (11/11/2026 - 20h37)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "961781af915a",
@@ -14121,7 +13937,7 @@
   },
   {
    "id": "3f9f6971f05c",
-   "title": "B3 (B3SA3) fará aporte de R$ 40 milhões na IDEX Analytics de olho em crédito privado",
+   "title": "B3 (B3SA3) fará aporte de R$ 40 milhões junto com Leto na IDEX Analytics de olho em crédito privado",
    "link": "https://www.moneytimes.com.br/b3-b3sa3-fara-aporte-de-r-40-milhoes-na-idex-analytics-de-olho-em-credito-privado/",
    "published": "2026-11-11T21:58:05+00:00",
    "region": "BR",
@@ -14129,7 +13945,7 @@
     {
      "source": "Money Times",
      "link": "https://www.moneytimes.com.br/b3-b3sa3-fara-aporte-de-r-40-milhoes-na-idex-analytics-de-olho-em-credito-privado/",
-     "title": "B3 (B3SA3) fará aporte de R$ 40 milhões na IDEX Analytics de olho em crédito privado"
+     "title": "B3 (B3SA3) fará aporte de R$ 40 milhões junto com Leto na IDEX Analytics de olho em crédito privado"
     }
    ],
    "ids": [
@@ -14137,7 +13953,7 @@
    ],
    "snippet": "A B3 (B3SA3) anunciou nesta quarta-feira (11) um investimento estratégico na IDEX Analytics, empresa especializada em índices, dados, analytics e soluções de precificação para o mercado de crédito privado. A operação envolve um aporte total de cerca de R$ 40 milhões, realizado em conjunto com a gestora Leto Asset Management, atual controladora da companhia. Após […]",
    "prescore": 3.8,
-   "headline": "B3 (B3SA3) fará aporte de R$ 40 milhões na IDEX Analytics de olho em crédito privado",
+   "headline": "B3 (B3SA3) fará aporte de R$ 40 milhões junto com Leto na IDEX Analytics de olho em crédito privado",
    "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -14352,39 +14168,6 @@
    "ai": false
   },
   {
-   "id": "5045cfb57ccf",
-   "title": "Funds Warn Brazil $126 Billion Stock Market Rout Isn’t Over",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-11/funds-warn-brazil-126-billion-stock-market-rout-isn-t-over-yet",
-   "published": "2026-11-11T13:48:11+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-11/funds-warn-brazil-126-billion-stock-market-rout-isn-t-over-yet",
-     "title": "Funds Warn Brazil $126 Billion Stock Market Rout Isn’t Over"
-    }
-   ],
-   "ids": [
-    "5045cfb57ccf"
-   ],
-   "snippet": "The rout in Brazilian assets sparked by Luiz Inácio Lula da Silva’s re-election shows little sign of abating, with some of the nation’s biggest money managers saying a downturn that has already wiped out months of gains could get even worse.",
-   "prescore": 3.8,
-   "headline": "Funds Warn Brazil $126 Billion Stock Market Rout Isn’t Over",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The rout in Brazilian assets sparked by Luiz Inácio Lula da Silva’s re-election shows little sign of abating, with some of the nation’s biggest money managers saying a downturn that has already wiped out months of gains could get even worse.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "7fa9e3719fc9",
    "title": "Resort, restaurante e sede da Nvidia: suposta espiã e CEO tiveram encontros pelo mundo nos últimos 3 anos",
    "link": "https://g1.globo.com/tecnologia/noticia/2026/11/11/resort-restaurante-e-sede-da-nvidia-suposta-espia-e-ceo-tiveram-encontros-pelo-mundo-nos-ultimos-3-anos.ghtml",
@@ -14485,34 +14268,28 @@
    "ai": false
   },
   {
-   "id": "99d37c70cb3e",
-   "title": "Nvidia se prepara para destituir CEO Jensen Huang, diz WSJ; ação desaba 8%",
-   "link": "https://www.infomoney.com.br/mercados/nvidia-se-prepara-para-destituir-ceo-jensen-huang-diz-wsj-acao-desaba-8/",
-   "published": "2026-11-11T22:58:56+00:00",
-   "region": "BR",
+   "id": "94eedba64b6d",
+   "title": "How Nvidia CEO Jensen Huang got entangled in a China chip and spy scandal",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTVJmZ25HVWdCdEZubWhDTWI1WnM3TzAwc2JObjJlMVBENUZTOElPYUJXUXUxQjAwN3VoaHlkcENWYk9GbGJudDBGQmNnRWNMU0Y4Mmx1cmxxSGxjc1hhQ0g2dkFPYkNjTXIyYkNydVN0QzdrRnNUdHF0UEhyMV8xWTlMMGlVcjgzVkFQdGFzZWRjaUljQTI3VU1xcGF4WktRQllTbEwwMlVwN2JNeDlOZTFn?oc=5",
+   "published": "2026-11-11T20:59:43+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/nvidia-se-prepara-para-destituir-ceo-jensen-huang-diz-wsj-acao-desaba-8/",
-     "title": "Nvidia se prepara para destituir CEO Jensen Huang, diz WSJ; ação desaba 8%"
-    },
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/nvidia-se-prepara-para-destituir-o-ceo-jensen-huang-diz-jornal.shtml",
-     "title": "Nvidia se prepara para destituir o CEO Jensen Huang, diz jornal"
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTVJmZ25HVWdCdEZubWhDTWI1WnM3TzAwc2JObjJlMVBENUZTOElPYUJXUXUxQjAwN3VoaHlkcENWYk9GbGJudDBGQmNnRWNMU0Y4Mmx1cmxxSGxjc1hhQ0g2dkFPYkNjTXIyYkNydVN0QzdrRnNUdHF0UEhyMV8xWTlMMGlVcjgzVkFQdGFzZWRjaUljQTI3VU1xcGF4WktRQllTbEwwMlVwN2JNeDlOZTFn?oc=5",
+     "title": "How Nvidia CEO Jensen Huang got entangled in a China chip and spy scandal"
     }
    ],
    "ids": [
-    "99d37c70cb3e",
-    "ae5c763b1bb7"
+    "94eedba64b6d"
    ],
-   "snippet": "Mais cedo, o New York Times noticiou que Huang teve um caso extraconjugal com ‌uma executiva da ​empresa que se reportava diretamente a ele The post Nvidia se prepara para destituir CEO Jensen Huang, diz WSJ; ação desaba 8% appeared first on InfoMoney .",
-   "prescore": 3.7,
-   "headline": "Nvidia se prepara para destituir CEO Jensen Huang, diz WSJ; ação desaba 8%",
-   "category": "tech",
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "How Nvidia CEO Jensen Huang got entangled in a China chip and spy scandal",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Mais cedo, o New York Times noticiou que Huang teve um caso extraconjugal com ‌uma executiva da ​empresa que se reportava diretamente a ele The post Nvidia se prepara para destituir CEO Jensen Huang, diz WSJ; ação desaba 8% appeared first on InfoMoney .",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14527,7 +14304,7 @@
    "id": "73af655c3b4a",
    "title": "The 31-Year-Old Trader Who Called Out Jensen Huang’s ‘China Problem’—and Shorted Nvidia",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPU3B0dEx6NFJNd3BrRERfNktKdUdWN3U2MWRFc29LNExfVWgxcXhQcHhMQ2otRFV0SVRnVmZRVENUVTR1ai11TzZCaVdfNmM4ay10VFRZOUplOHUzam9jbXJEZzJJRHZOcngwdUNFSHJPelVZaEs3M3NnOXhvQUt1XzVsOA?oc=5",
-   "published": "2026-11-11T18:49:53+00:00",
+   "published": "2026-11-11T18:47:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -14560,7 +14337,7 @@
    "id": "e80559ac399a",
    "title": "Nissan, Back in Red, Cuts Sales View on China Slump",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNelhwVDNzeTRXQTB5ai1DTEM2b2Z3WWdzb1hWQVEzWE5PUW44aEhSWUZLMjdjcjBxNXVOVDNmYms4N0hQWmtXLUh2RWExUUtLRFpCQXRORlM4MkpPeHJ5ZkZiYVJGN3ExQ0ZtbmJLYWlmYUVRQ2dQQkxOLUkycTVoM0pKd0lZMVlpd296eHNwY1hsaUIwbmtZRTVzdEstMTRGOFJmMA?oc=5",
-   "published": "2026-11-11T11:25:53+00:00",
+   "published": "2026-11-11T11:09:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -14878,6 +14655,72 @@
    "ai": false
   },
   {
+   "id": "265d9e463818",
+   "title": "Petrobras defende política de preços atual diante da alta volatilidade do Brent",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRGRGemJrWEZxZzR1ZmwzLWpHellRVlFFbjJGdWRBVVNpUVNobnl4UTM1VXNCcF9LNk9Ya1BPZVIyNlIzU3NRcEZLSTZQa0VscEZYaGZkYUY0LVUzLS1oNjJ3c3ZzT2pNM0VVVHRWdWY4ZnFYYTI5c3J5aUhZZzdHR2hVZ3JGMEdHY0FDeGp1Y2Vnc29TLXAtelJYLUFrWXFCc3h1RWljU0I3QjV6YkdoMzcxUnJFQzVoTHBOblRKa2HSAdQBQVVfeXFMTWY4RlJGdTNPVkZKM2hOVE1XVjctZnhVcGp0YjN1QUR0dkRkcnNGQm4zbWFLZFYzdjU0cG9FOVhNT0VXSHJEc2VfZ2RackdSNndBR2twTFVTeUlXeUZmdEZQek5nMGk2bTExR3dBNTFjN2hOWmF3aXhpT1gwWGR0a2RPQk1Wek80MHd3SFVvaS12cmhVTGZ1QzBVTU1HOGNOMDhLY0VqQUtGOGY0VzBNSlAxSnBBTXh0eXJKdGQzak9UUnFON29aeHNhWENkT0hvcUpZa1M?oc=5",
+   "published": "2026-11-12T00:15:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRGRGemJrWEZxZzR1ZmwzLWpHellRVlFFbjJGdWRBVVNpUVNobnl4UTM1VXNCcF9LNk9Ya1BPZVIyNlIzU3NRcEZLSTZQa0VscEZYaGZkYUY0LVUzLS1oNjJ3c3ZzT2pNM0VVVHRWdWY4ZnFYYTI5c3J5aUhZZzdHR2hVZ3JGMEdHY0FDeGp1Y2Vnc29TLXAtelJYLUFrWXFCc3h1RWljU0I3QjV6YkdoMzcxUnJFQzVoTHBOblRKa2HSAdQBQVVfeXFMTWY4RlJGdTNPVkZKM2hOVE1XVjctZnhVcGp0YjN1QUR0dkRkcnNGQm4zbWFLZFYzdjU0cG9FOVhNT0VXSHJEc2VfZ2RackdSNndBR2twTFVTeUlXeUZmdEZQek5nMGk2bTExR3dBNTFjN2hOWmF3aXhpT1gwWGR0a2RPQk1Wek80MHd3SFVvaS12cmhVTGZ1QzBVTU1HOGNOMDhLY0VqQUtGOGY0VzBNSlAxSnBBTXh0eXJKdGQzak9UUnFON29aeHNhWENkT0hvcUpZa1M?oc=5",
+     "title": "Petrobras defende política de preços atual diante da alta volatilidade do Brent"
+    }
+   ],
+   "ids": [
+    "265d9e463818"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Petrobras defende política de preços atual diante da alta volatilidade do Brent",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "873e72ce95af",
+   "title": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVVQ1OGNyUzVVNGxFVThmbWVfR0NCUmxlNmNKZWt1eUlxQmJhUTNQU2JxUEl0WnJ0TGhmQzl4X3VUanNNa0pQS3pCaHBFNGVBbkhGRnBhaWotUlNiZS1HM085TFU2LUZKdmtjeU5oc29ZYzBjNVZqTVduOUQxd2pTZ1NreUFsbFhH0gGOAUFVX3lxTE8xTkhuVEhuVGJGSERHdDB3aW1OMWdZdWpoaUIybGI1SElUSTZDWlpOU0RpNmM5Q09pQmxIVWg0c0ZTaU9nX3VYSnZXOFUwZjhibU9TRVIwT2h5Mll2QnRCNktNTERPaFB2RUhyMHhCNFRXOVpmMnI5bVlKcTBZLWxuQTJwdFd3RHpoUWloZ2c?oc=5",
+   "published": "2026-11-11T23:21:16+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVVQ1OGNyUzVVNGxFVThmbWVfR0NCUmxlNmNKZWt1eUlxQmJhUTNQU2JxUEl0WnJ0TGhmQzl4X3VUanNNa0pQS3pCaHBFNGVBbkhGRnBhaWotUlNiZS1HM085TFU2LUZKdmtjeU5oc29ZYzBjNVZqTVduOUQxd2pTZ1NreUFsbFhH0gGOAUFVX3lxTE8xTkhuVEhuVGJGSERHdDB3aW1OMWdZdWpoaUIybGI1SElUSTZDWlpOU0RpNmM5Q09pQmxIVWg0c0ZTaU9nX3VYSnZXOFUwZjhibU9TRVIwT2h5Mll2QnRCNktNTERPaFB2RUhyMHhCNFRXOVpmMnI5bVlKcTBZLWxuQTJwdFd3RHpoUWloZ2c?oc=5",
+     "title": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas"
+    }
+   ],
+   "ids": [
+    "873e72ce95af"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "7607e727a5fc",
    "title": "Projeto prevê 120 dias para Congresso analisar supersalários; ministro estima impacto de R$ 3 bi",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMXVLd2UxblFqY2s3VnNfNXJQSWhCVXpSZHc0cHlteks2TkFsVnNrVkFUYkFtVnd4MHdIZk1fa2pPSFNRbFNJTGMtd1pSWVdqNXp3R0lBc29vLUJEV0ZkelJZM1NmY2xmcHBPcDFmWDR6cHAzTUtoc3JjNk9iTTg4dHoteFJiUFlkcmhXN3N5a2xQOXl6N3FYM0F0dlVoUE1SX0VsWXFFQ1d4bXdhbnZnVjNoeVZpaEpqbnNLYmdBbkZnUkdJb1VCUnNwTdIB0AFBVV95cUxQUmtvWUZhTTJrQ3ExY0djd3NMXzNDbENCbWJxQmdVeURJdkN0eE41VEdsZk1oU1RueUVzTzJSN3ZST01UYzNKVGRQdVpHbjdjX3EyMUxhWUVUbEluVVJIYkd4bDFrbC1OTV9GU2dXanU2QncxU0tmM3JOWXJmVnJVUFRKZUo4SWFmeUZSdk9HLTVwRTZPZDEyME9kUmhQdGVUQTQwa2EtNEo3QTJqRDBobEU2T191ZXByVUhRYk5FdE9qcEx3cDk0MWUzZ2I4VXpV?oc=5",
@@ -14897,39 +14740,6 @@
    "prescore": 3.2,
    "headline": "Projeto prevê 120 dias para Congresso analisar supersalários; ministro estima impacto de R$ 3 bi",
    "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "873e72ce95af",
-   "title": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVVQ1OGNyUzVVNGxFVThmbWVfR0NCUmxlNmNKZWt1eUlxQmJhUTNQU2JxUEl0WnJ0TGhmQzl4X3VUanNNa0pQS3pCaHBFNGVBbkhGRnBhaWotUlNiZS1HM085TFU2LUZKdmtjeU5oc29ZYzBjNVZqTVduOUQxd2pTZ1NreUFsbFhH0gGOAUFVX3lxTE8xTkhuVEhuVGJGSERHdDB3aW1OMWdZdWpoaUIybGI1SElUSTZDWlpOU0RpNmM5Q09pQmxIVWg0c0ZTaU9nX3VYSnZXOFUwZjhibU9TRVIwT2h5Mll2QnRCNktNTERPaFB2RUhyMHhCNFRXOVpmMnI5bVlKcTBZLWxuQTJwdFd3RHpoUWloZ2c?oc=5",
-   "published": "2026-11-11T22:49:42+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVVQ1OGNyUzVVNGxFVThmbWVfR0NCUmxlNmNKZWt1eUlxQmJhUTNQU2JxUEl0WnJ0TGhmQzl4X3VUanNNa0pQS3pCaHBFNGVBbkhGRnBhaWotUlNiZS1HM085TFU2LUZKdmtjeU5oc29ZYzBjNVZqTVduOUQxd2pTZ1NreUFsbFhH0gGOAUFVX3lxTE8xTkhuVEhuVGJGSERHdDB3aW1OMWdZdWpoaUIybGI1SElUSTZDWlpOU0RpNmM5Q09pQmxIVWg0c0ZTaU9nX3VYSnZXOFUwZjhibU9TRVIwT2h5Mll2QnRCNktNTERPaFB2RUhyMHhCNFRXOVpmMnI5bVlKcTBZLWxuQTJwdFd3RHpoUWloZ2c?oc=5",
-     "title": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas"
-    }
-   ],
-   "ids": [
-    "873e72ce95af"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas",
-   "category": "macro",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -15032,6 +14842,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "263d69bf55d2",
+   "title": "Ganhando tempo com o Plano Moretti",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/adriana-fernandes/2026/11/ganhando-tempo-com-o-plano-moretti.shtml",
+   "published": "2026-11-11T23:30:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/adriana-fernandes/2026/11/ganhando-tempo-com-o-plano-moretti.shtml",
+     "title": "Ganhando tempo com o Plano Moretti"
+    }
+   ],
+   "ids": [
+    "263d69bf55d2"
+   ],
+   "snippet": "O governo ganhou tempo com o plano Moretti de medidas orçamentárias de ajuste fiscal , anunciado nesta quarta-feira (11) após o dólar ter fechado na véspera em R$ 5,58, a maior cotação desde julho do ano passado. Leia mais (11/11/2026 - 20h30)",
+   "prescore": 3.0,
+   "headline": "Ganhando tempo com o Plano Moretti",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O governo ganhou tempo com o plano Moretti de medidas orçamentárias de ajuste fiscal , anunciado nesta quarta-feira (11) após o dólar ter fechado na véspera em R$ 5,58, a maior cotação desde julho do ano passado. Leia mais (11/11/2026 - 20h30)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15802,39 +15645,6 @@
    "ai": false
   },
   {
-   "id": "8c47b155c94a",
-   "title": "Escândalo com CEO da Nvidia expõe influência de Singapura para enviar chips à China",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/escandalo-com-ceo-da-nvidia-expoe-influencia-de-singapura-para-enviar-chips-a-china.shtml",
-   "published": "2026-11-11T12:53:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/escandalo-com-ceo-da-nvidia-expoe-influencia-de-singapura-para-enviar-chips-a-china.shtml",
-     "title": "Escândalo com CEO da Nvidia expõe influência de Singapura para enviar chips à China"
-    }
-   ],
-   "ids": [
-    "8c47b155c94a"
-   ],
-   "snippet": "Uma empresa pouco conhecida de Singapura, ligada a uma suposta espiã chinesa que teve um caso amoroso com Jensen Huang , CEO da Nvidia, expôs a crescente importância do país no comércio de processadores avançados de IA dos EUA para a China. Leia mais (11/11/2026 - 09h53)",
-   "prescore": 3.0,
-   "headline": "Escândalo com CEO da Nvidia expõe influência de Singapura para enviar chips à China",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Uma empresa pouco conhecida de Singapura, ligada a uma suposta espiã chinesa que teve um caso amoroso com Jensen Huang , CEO da Nvidia, expôs a crescente importância do país no comércio de processadores avançados de IA dos EUA para a China. Leia mais (11/11/2026 - 09h53)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "35bf693688dc",
    "title": "HRtechs retomam captações para benefícios e cultura corporativa fica fora do radar",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRVR5R3p0U3N2SXZBWUZCdnZlYktfOXNkUVlRdU1UUlRxT2Rhek9nODRXSGVMeTJsaThMTEpZMnRwTzdjN0pjZl93bC1zc2RQVkp4Y1loQnE1bXE1QkhEY1g2SlRreU5vaElHTkpMQ0U0Y0l1T3JoY0NfZUxKSmVYQUxFUzZRVUlVQW9SS0xCMnNRLUhVamFXeGpKZUt2eXVIUUZHZC12ckZzb1JsN202TENGODZ3blVlVy1fWXEwdWNxdUo2N012QkdKMXlzQ1Q5dWfSAeABQVVfeXFMT2tvV204TFNGZldVVG0zQTloQ2M3MkVFRnlLSlhnN3pxQU9VNnFZbFIyZXM0VUY3bV9JYUNZV0Rfd2JOLTJUR0h2OS03Z0hINEdNTGRoZWlxWklVVldIUUhKVm1wV0hNMTZPTGIyMVFqOE9YOXlxZWFNOW9qSWtDZU1zUW83THdEbThhZmU5UjRTRFVScjRiWENRbExPM2s5VTFoOVVTTFJodEZKQ1ctNHl3YmJLcUc1cEpaOEFjNVdRaGxaUmZDVHRZMVREMkJpTXdCelR6cS00N3JKVjVZUGY?oc=5",
@@ -15857,6 +15667,303 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4b219d21efc5",
+   "title": "Indonesia Bonds Lure Global Funds as Yields Hit Six-Year High",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-12/indonesia-bonds-lure-global-funds-as-yields-hit-six-year-high",
+   "published": "2026-11-12T00:05:36+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-12/indonesia-bonds-lure-global-funds-as-yields-hit-six-year-high",
+     "title": "Indonesia Bonds Lure Global Funds as Yields Hit Six-Year High"
+    }
+   ],
+   "ids": [
+    "4b219d21efc5"
+   ],
+   "snippet": "Indonesian government bonds are drawing bargain-hunters after the benchmark yields’ surge last week to the highest since 2020.",
+   "prescore": 2.8,
+   "headline": "Indonesia Bonds Lure Global Funds as Yields Hit Six-Year High",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Indonesian government bonds are drawing bargain-hunters after the benchmark yields’ surge last week to the highest since 2020.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f48f814a27cf",
+   "title": "UK Surveyors Face Weakest Housing Market Since 2023, RICS Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-12/uk-surveyors-face-weakest-housing-market-since-2023-rics-says",
+   "published": "2026-11-12T00:01:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-12/uk-surveyors-face-weakest-housing-market-since-2023-rics-says",
+     "title": "UK Surveyors Face Weakest Housing Market Since 2023, RICS Says"
+    }
+   ],
+   "ids": [
+    "f48f814a27cf"
+   ],
+   "snippet": "British property agents are more downbeat about home sales than at any point in over three years, according to a survey showing that soaring mortgage costs are sapping demand.",
+   "prescore": 2.8,
+   "headline": "UK Surveyors Face Weakest Housing Market Since 2023, RICS Says",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "British property agents are more downbeat about home sales than at any point in over three years, according to a survey showing that soaring mortgage costs are sapping demand.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1e1c2a795639",
+   "title": "The $150 Billion Catch in US Shipbuilding",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-12/opinion-the-150-billion-us-shipbuilding-catch-video",
+   "published": "2026-11-12T00:00:59+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-12/opinion-the-150-billion-us-shipbuilding-catch-video",
+     "title": "The $150 Billion Catch in US Shipbuilding"
+    }
+   ],
+   "ids": [
+    "1e1c2a795639"
+   ],
+   "snippet": "South Korea pledged $150 billion to revive US shipbuilding. But with the first shipbuilding contract between Hanwha Group and the US Navy worth only $269 million, it’s Washington’s turn to take the lead to ensure that promise is fulfilled, Bloomberg Opinion columnist Juliana Liu says. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "The $150 Billion Catch in US Shipbuilding",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "South Korea pledged $150 billion to revive US shipbuilding. But with the first shipbuilding contract between Hanwha Group and the US Navy worth only $269 million, it’s Washington’s turn to take the lead to ensure that promise is fulfilled, Bloomberg Opinion columnist Juliana Liu says. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "340bc5d8d538",
+   "title": "Quant Trading Firm IMC Plans to Double Staff in Hong Kong",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-12/quant-trading-firm-imc-plans-to-double-staff-in-hong-kong",
+   "published": "2026-11-12T00:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-12/quant-trading-firm-imc-plans-to-double-staff-in-hong-kong",
+     "title": "Quant Trading Firm IMC Plans to Double Staff in Hong Kong"
+    }
+   ],
+   "ids": [
+    "340bc5d8d538"
+   ],
+   "snippet": "IMC Trading expects to roughly double headcount in its Hong Kong office over the next two years, the latest sign of a rush among foreign firms to expand in the city.",
+   "prescore": 2.8,
+   "headline": "Quant Trading Firm IMC Plans to Double Staff in Hong Kong",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "IMC Trading expects to roughly double headcount in its Hong Kong office over the next two years, the latest sign of a rush among foreign firms to expand in the city.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "0fdfbd531941",
+   "title": "Japan Auto Stocks Eye Rebound as Cheaper Oil Brightens Outlook",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-11/japan-auto-stocks-eye-rebound-as-cheaper-oil-brightens-outlook",
+   "published": "2026-11-11T23:50:01+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-11/japan-auto-stocks-eye-rebound-as-cheaper-oil-brightens-outlook",
+     "title": "Japan Auto Stocks Eye Rebound as Cheaper Oil Brightens Outlook"
+    }
+   ],
+   "ids": [
+    "0fdfbd531941"
+   ],
+   "snippet": "Japanese automaker shares have surged since the US midterm elections, but their rebound may just be getting started, as the prospects of easing Middle East tensions and lower oil prices will likely have long-term implications for the industry, according to investors.",
+   "prescore": 2.8,
+   "headline": "Japan Auto Stocks Eye Rebound as Cheaper Oil Brightens Outlook",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Japanese automaker shares have surged since the US midterm elections, but their rebound may just be getting started, as the prospects of easing Middle East tensions and lower oil prices will likely have long-term implications for the industry, according to investors.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "bd543b1d6e00",
+   "title": "Pivotal Advisors CEO: Investors Should See AI as Part of Portfolio",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-11/mcghee-investors-should-see-ai-as-part-of-portfolio-video",
+   "published": "2026-11-11T23:48:05+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-11/mcghee-investors-should-see-ai-as-part-of-portfolio-video",
+     "title": "Pivotal Advisors CEO: Investors Should See AI as Part of Portfolio"
+    }
+   ],
+   "ids": [
+    "bd543b1d6e00"
+   ],
+   "snippet": "Tiffany McGhee, CEO and CIO of Pivotal Advisors, discusses last week’s sharp stock selloff and says AI demand remains strong, with hyperscalers reporting demand above supply and cloud growth accelerating. She speaks with Romaine Bostick and Vonnie Quinn on The Close before the news of Nvidia potentially ousting CEO Jensen Huang. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Pivotal Advisors CEO: Investors Should See AI as Part of Portfolio",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Tiffany McGhee, CEO and CIO of Pivotal Advisors, discusses last week’s sharp stock selloff and says AI demand remains strong, with hyperscalers reporting demand above supply and cloud growth accelerating. She speaks with Romaine Bostick and Vonnie Quinn on The Close before the news of Nvidia potentially ousting CEO Jensen Huang. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a47e286e6058",
+   "title": "Dana Telsey on the Future of Department Stores",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-11/dana-telsey-on-the-future-of-department-stores-video",
+   "published": "2026-11-11T23:35:13+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-11/dana-telsey-on-the-future-of-department-stores-video",
+     "title": "Dana Telsey on the Future of Department Stores"
+    }
+   ],
+   "ids": [
+    "a47e286e6058"
+   ],
+   "snippet": "Dana Telsey, CEO and chief research officer of Telsey Advisory Group, says Nordstrom’s transition to private ownership was the right decision. Telsey points to improving business performance, a wider range of brands in stores, and faster growth at Nordstrom Rack. She speaks with Romaine Bostick on The Close. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Dana Telsey on the Future of Department Stores",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Dana Telsey, CEO and chief research officer of Telsey Advisory Group, says Nordstrom’s transition to private ownership was the right decision. Telsey points to improving business performance, a wider range of brands in stores, and faster growth at Nordstrom Rack. She speaks with Romaine Bostick on The Close. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "afbf8b3fe63a",
+   "title": "Alckmin é favorito para Fazenda de Lula, mas Eurasia vê outro ministério como peça-chave para 2027",
+   "link": "https://www.moneytimes.com.br/alckmin-e-favorito-para-fazenda-de-lula-mas-eurasia-ve-outro-ministerio-como-peca-chave-para-2027-jcav/",
+   "published": "2026-11-11T23:29:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/alckmin-e-favorito-para-fazenda-de-lula-mas-eurasia-ve-outro-ministerio-como-peca-chave-para-2027-jcav/",
+     "title": "Alckmin é favorito para Fazenda de Lula, mas Eurasia vê outro ministério como peça-chave para 2027"
+    }
+   ],
+   "ids": [
+    "afbf8b3fe63a"
+   ],
+   "snippet": "O vice-presidente Geraldo Alckmin desponta como favorito para assumir o Ministério da Fazenda no quarto mandato do presidente Luiz Inácio Lula da Silva (PT). A avaliação é de Christopher Garman, da Eurasia Group, que considera a escolha do próximo ministro da Casa Civil ainda mais importante para a condução da política econômica em 2027. Durante […]",
+   "prescore": 2.8,
+   "headline": "Alckmin é favorito para Fazenda de Lula, mas Eurasia vê outro ministério como peça-chave para 2027",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O vice-presidente Geraldo Alckmin desponta como favorito para assumir o Ministério da Fazenda no quarto mandato do presidente Luiz Inácio Lula da Silva (PT). A avaliação é de Christopher Garman, da Eurasia Group, que considera a escolha do próximo ministro da Casa Civil ainda mais importante para a condução da política econômica em 2027. Durante […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "487148584886",
+   "title": "Latest Oil Market News and Analysis for Nov. 12",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-11/latest-oil-market-news-and-analysis-for-nov-12",
+   "published": "2026-11-11T23:04:06+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-11/latest-oil-market-news-and-analysis-for-nov-12",
+     "title": "Latest Oil Market News and Analysis for Nov. 12"
+    }
+   ],
+   "ids": [
+    "487148584886"
+   ],
+   "snippet": "Oil steadied as hostilities between Iran and the US remained muted with no indication of progress in peace talks.",
+   "prescore": 2.8,
+   "headline": "Latest Oil Market News and Analysis for Nov. 12",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Oil steadied as hostilities between Iran and the US remained muted with no indication of progress in peace talks.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15935,7 +16042,7 @@
   },
   {
    "id": "cf7889822cc5",
-   "title": "Nvidia Tumbles as Investors Consider Future Without CEO Huang",
+   "title": "Nvidia Falls as Investors Consider Future Without CEO Huang",
    "link": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-tumbles-as-investors-consider-future-without-ceo-huang",
    "published": "2026-11-11T22:48:40+00:00",
    "region": "INTL",
@@ -15943,7 +16050,7 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-tumbles-as-investors-consider-future-without-ceo-huang",
-     "title": "Nvidia Tumbles as Investors Consider Future Without CEO Huang"
+     "title": "Nvidia Falls as Investors Consider Future Without CEO Huang"
     }
    ],
    "ids": [
@@ -15951,7 +16058,7 @@
    ],
    "snippet": "Nvidia Corp. stock sank in extended trading Wednesday as investors grappled with the possibility of the company without Chief Executive Officer Jensen Huang at the helm.",
    "prescore": 2.8,
-   "headline": "Nvidia Tumbles as Investors Consider Future Without CEO Huang",
+   "headline": "Nvidia Falls as Investors Consider Future Without CEO Huang",
    "category": "tech",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -16015,13 +16122,13 @@
    "ids": [
     "4552b37d6d58"
    ],
-   "snippet": "US stock futures fell as turmoil at Nvidia Corp. sent a jolt through the artificial intelligence industry, tempering a rally in technology shares after the chipmaker was reported to be considering the removal of Chief Executive Officer Jensen Huang.",
+   "snippet": "US stock index futures fell after a report that Nvidia Corp.’s board was considering the removal of Chief Executive Officer Jensen Huang, tempering an earlier rally in technology shares.",
    "prescore": 2.8,
    "headline": "US Stock Futures Fall as Nvidia Turmoil Deepens: Markets Wrap",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "US stock futures fell as turmoil at Nvidia Corp. sent a jolt through the artificial intelligence industry, tempering a rally in technology shares after the chipmaker was reported to be considering the removal of Chief Executive Officer Jensen Huang.",
+   "summary": "US stock index futures fell after a report that Nvidia Corp.’s board was considering the removal of Chief Executive Officer Jensen Huang, tempering an earlier rally in technology shares.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16165,39 +16272,6 @@
    "ai": false
   },
   {
-   "id": "a88d3f907a09",
-   "title": "Why Nordstrom Decided to Go Private",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-11/why-nordstrom-decided-to-go-private-video",
-   "published": "2026-11-11T21:31:40+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-11/why-nordstrom-decided-to-go-private-video",
-     "title": "Why Nordstrom Decided to Go Private"
-    }
-   ],
-   "ids": [
-    "a88d3f907a09"
-   ],
-   "snippet": "Nordstrom Co-CEO Pete Nordstrom, says that there is \"a lot of headroom\" in the firm's Rack concept and that he and his brother, Co-CEO Erik Nordstrom, wanted more influence over some of the company's decisions in explaining why they took Nordstrom private in 2025. He speaks with Bloomberg's Romaine Bostick. (Source: Bloomberg)",
-   "prescore": 2.8,
-   "headline": "Why Nordstrom Decided to Go Private",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Nordstrom Co-CEO Pete Nordstrom, says that there is \"a lot of headroom\" in the firm's Rack concept and that he and his brother, Co-CEO Erik Nordstrom, wanted more influence over some of the company's decisions in explaining why they took Nordstrom private in 2025. He speaks with Bloomberg's Romaine Bostick. (Source: Bloomberg)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "667666f1d486",
    "title": "Por que a Petrobras (PETR4) decidiu acelerar os investimentos para este ano? CEO responde",
    "link": "https://www.seudinheiro.com/2026/empresas/por-que-a-petrobras-petr4-decidiu-acelerar-os-investimentos-para-este-ano-ceo-responde-e-tenta-acalmar-preocupacao-do-mercado-bdap/",
@@ -16231,72 +16305,6 @@
    "ai": false
   },
   {
-   "id": "e022e95f041a",
-   "title": "John Kerry on the Case for Clean Energy",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-11/john-kerry-on-the-case-for-clean-energy-video",
-   "published": "2026-11-11T20:35:25+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-11/john-kerry-on-the-case-for-clean-energy-video",
-     "title": "John Kerry on the Case for Clean Energy"
-    }
-   ],
-   "ids": [
-    "e022e95f041a"
-   ],
-   "snippet": "John Kerry, 68th US Secretary of State, discusses clean energy affordability, global climate progress and US leadership with Bloomberg's Aaron Rutkoff at Bloomberg Green at COP31 in Antalya, Türkiye. (Source: Bloomberg)",
-   "prescore": 2.8,
-   "headline": "John Kerry on the Case for Clean Energy",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "John Kerry, 68th US Secretary of State, discusses clean energy affordability, global climate progress and US leadership with Bloomberg's Aaron Rutkoff at Bloomberg Green at COP31 in Antalya, Türkiye. (Source: Bloomberg)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f811d16da51c",
-   "title": "Brazil, Venezuela Vow to Upgrade Ties With Oil Investment Talks",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-11/brazil-venezuela-vow-to-upgrade-ties-with-oil-investment-talks",
-   "published": "2026-11-11T20:32:57+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-11/brazil-venezuela-vow-to-upgrade-ties-with-oil-investment-talks",
-     "title": "Brazil, Venezuela Vow to Upgrade Ties With Oil Investment Talks"
-    }
-   ],
-   "ids": [
-    "f811d16da51c"
-   ],
-   "snippet": "Brazil’s energy minister will visit Venezuela before the end of the year to discuss opportunities in the oil sector, potentially marking a new chapter in bilateral ties after years of strained relations.",
-   "prescore": 2.8,
-   "headline": "Brazil, Venezuela Vow to Upgrade Ties With Oil Investment Talks",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Brazil’s energy minister will visit Venezuela before the end of the year to discuss opportunities in the oil sector, potentially marking a new chapter in bilateral ties after years of strained relations.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "2c81ee9db550",
    "title": "Associações de saúde criticam possível alteração pelo Congresso de regras sobre matéria-prima para vapes e cigarros eletrônicos",
    "link": "https://g1.globo.com/politica/noticia/2026/11/11/associacoes-de-saude-criticam-alteracao-pelo-congresso-de-regras-sobre-materia-prima-para-vapes-e-cigarros-eletronicos.ghtml",
@@ -16319,39 +16327,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Cigarro eletrônico Divulgação/Ministério da Saúde Entidades de saúde criticaram a decisão do líder do governo na Câmara, Paulo Pimenta (PT-RS), de propor uma alteração nas regras sobre a produção de insumos para cigarros eletrônicos e vapes no país. Segundo estes grupos, a inclusão – feita na Medida Provisória (MP) que trata da renegociação de dívidas rurais – traz insegurança sobre a proibição at",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f8b4ee563689",
-   "title": "Canadian Heavy Crude Rebounds Amid Cheaper Tanker Costs",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-11/canadian-heavy-crude-rebounds-amid-cheaper-tanker-costs",
-   "published": "2026-11-11T19:04:05+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-11/canadian-heavy-crude-rebounds-amid-cheaper-tanker-costs",
-     "title": "Canadian Heavy Crude Rebounds Amid Cheaper Tanker Costs"
-    }
-   ],
-   "ids": [
-    "f8b4ee563689"
-   ],
-   "snippet": "Canadian heavy crude has strengthened from the weakest in eight years as a surge in tanker rates subsides and oil prices drop.",
-   "prescore": 2.8,
-   "headline": "Canadian Heavy Crude Rebounds Amid Cheaper Tanker Costs",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Canadian heavy crude has strengthened from the weakest in eight years as a surge in tanker rates subsides and oil prices drop.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16495,28 +16470,61 @@
    "ai": false
   },
   {
-   "id": "65ad5679872f",
-   "title": "London Aluminum Market Faces Biggest Supply Squeeze in Decades",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-11/london-aluminum-market-faces-biggest-supply-squeeze-in-decades",
-   "published": "2026-11-11T17:05:03+00:00",
-   "region": "INTL",
+   "id": "a466172ebd69",
+   "title": "Tempestade perde força em Portugal e autoridades defendem prevenção adotada no país",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbkcxVThyLUJHZ1g3c3N1ZEVMSHpicEs2ZUNQV1U4WlZXakw4VmM2ZjFBOWJlTzZGbnJZbkVMT0J3cy1hM2t6T3NZclZqcXdCazZPd19kQkxvc3lEcnluZ1hDa3p2b3VLYUE1Zlk5cUxza3FkblgtWF9PaGlac2NpUG5NdjYxektMZnBPNHluZm44YzJleDdNN0tOTGt4WXJxTlNDb0F5MWFiLTdsZHJaN0ZrMVU3VlF1Q3Q4bFlnWTdTU2tfZi1ZWEpaSWl3NzDSAd4BQVVfeXFMUE8yTWxvRFN2LWM1d2JjOTFjdjgxTW4yVGFNTmtiaWY5NnBYN1pqNWotS0JFX1dCbXlBdjRoNkVkbmNZR1hNYjA5NjdtMXB2dmIwdkxHMV9UeE84cmhuUGNNdUNqdHptSlRMSmRkbVpjaFFHVmRyV0hGN3JpV3J5N3hUU2g5TGUyX0xlN1Q3ZU1NUkl0TUNVZXQ0VS1sNlRpZHRCREJaTjN4M3hoS3RicHpzSVBxaWdQN0k5RHFmUVR6NUdiaTQwa0xTaEI3NW0wVlBiSzdUMUJ6Tk1BcFVR?oc=5",
+   "published": "2026-11-11T17:50:30+00:00",
+   "region": "BR",
    "outlets": [
     {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-11/london-aluminum-market-faces-biggest-supply-squeeze-in-decades",
-     "title": "London Aluminum Market Faces Biggest Supply Squeeze in Decades"
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbkcxVThyLUJHZ1g3c3N1ZEVMSHpicEs2ZUNQV1U4WlZXakw4VmM2ZjFBOWJlTzZGbnJZbkVMT0J3cy1hM2t6T3NZclZqcXdCazZPd19kQkxvc3lEcnluZ1hDa3p2b3VLYUE1Zlk5cUxza3FkblgtWF9PaGlac2NpUG5NdjYxektMZnBPNHluZm44YzJleDdNN0tOTGt4WXJxTlNDb0F5MWFiLTdsZHJaN0ZrMVU3VlF1Q3Q4bFlnWTdTU2tfZi1ZWEpaSWl3NzDSAd4BQVVfeXFMUE8yTWxvRFN2LWM1d2JjOTFjdjgxTW4yVGFNTmtiaWY5NnBYN1pqNWotS0JFX1dCbXlBdjRoNkVkbmNZR1hNYjA5NjdtMXB2dmIwdkxHMV9UeE84cmhuUGNNdUNqdHptSlRMSmRkbVpjaFFHVmRyV0hGN3JpV3J5N3hUU2g5TGUyX0xlN1Q3ZU1NUkl0TUNVZXQ0VS1sNlRpZHRCREJaTjN4M3hoS3RicHpzSVBxaWdQN0k5RHFmUVR6NUdiaTQwa0xTaEI3NW0wVlBiSzdUMUJ6Tk1BcFVR?oc=5",
+     "title": "Tempestade perde força em Portugal e autoridades defendem prevenção adotada no país"
     }
    ],
    "ids": [
-    "65ad5679872f"
+    "a466172ebd69"
    ],
-   "snippet": "Aluminum buyers on the London Metal Exchange are facing the most severe squeeze in decades as inventories backing contracts plunge and much of the remaining stock comes under the control of just two traders.",
+   "snippet": "",
    "prescore": 2.8,
-   "headline": "London Aluminum Market Faces Biggest Supply Squeeze in Decades",
-   "category": "mna",
+   "headline": "Tempestade perde força em Portugal e autoridades defendem prevenção adotada no país",
+   "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Aluminum buyers on the London Metal Exchange are facing the most severe squeeze in decades as inventories backing contracts plunge and much of the remaining stock comes under the control of just two traders.",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6d059d43e672",
+   "title": "Na Faria Lima, plano fiscal não dissipa desconfiança e é visto como ‘mais do mesmo’",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQODVGT1ROdHQtVEtQcFIxbGVkaFh0VFkwSUhpTDlVbzAteFFPbC1JOVFqcFRrUE9zUldSWHVDajQ0SnlqRUJwdG9scmdDZzUwdnBrRllzYzk2WDdOUzFUS3F2YWdkYkRpRnhpWjI4ZkVIUXZEaklLTFRUV3dQbFBpV2M3R2tPdmtSeThEc1h6Z1dpSmdwak1hNDZMSDNCR2xFaEtVZjk2Uno3THV4bTFvYXRQa2FZSko4aXo2TG1xTVZIR3pLLTNHekNVdXVDcDQxUE1IR05LdlnSAecBQVVfeXFMTkxxQVJxbF82ZVp1UVFtdUM0Ui1DNXJmZGtNUkxwWGNMYlJBYUNCMlZHTl9ES2p2bndlcmw5M2dSbnhvNlhONE5yQXI1OEtid2w0Z1Jxb1ZlRHpZR3IyejBwVTE0bHhqekVVWW5BaURmVkV2V2U3WnVaVzNLWG0tOXU3Zkd3SG85MGVqZDB1ZjFEUzhwczNMS2JzaTFNdXdOdkxxOWJFQ1o1THJCNGhSU2tYYVM4VHRReUYzdWxFak16SnJxelMyNGdkZzFRWko0dFJPWmpzdXB3aHpGX01ZdVRlNC1oVHc0?oc=5",
+   "published": "2026-11-11T16:47:52+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQODVGT1ROdHQtVEtQcFIxbGVkaFh0VFkwSUhpTDlVbzAteFFPbC1JOVFqcFRrUE9zUldSWHVDajQ0SnlqRUJwdG9scmdDZzUwdnBrRllzYzk2WDdOUzFUS3F2YWdkYkRpRnhpWjI4ZkVIUXZEaklLTFRUV3dQbFBpV2M3R2tPdmtSeThEc1h6Z1dpSmdwak1hNDZMSDNCR2xFaEtVZjk2Uno3THV4bTFvYXRQa2FZSko4aXo2TG1xTVZIR3pLLTNHekNVdXVDcDQxUE1IR05LdlnSAecBQVVfeXFMTkxxQVJxbF82ZVp1UVFtdUM0Ui1DNXJmZGtNUkxwWGNMYlJBYUNCMlZHTl9ES2p2bndlcmw5M2dSbnhvNlhONE5yQXI1OEtid2w0Z1Jxb1ZlRHpZR3IyejBwVTE0bHhqekVVWW5BaURmVkV2V2U3WnVaVzNLWG0tOXU3Zkd3SG85MGVqZDB1ZjFEUzhwczNMS2JzaTFNdXdOdkxxOWJFQ1o1THJCNGhSU2tYYVM4VHRReUYzdWxFak16SnJxelMyNGdkZzFRWko0dFJPWmpzdXB3aHpGX01ZdVRlNC1oVHc0?oc=5",
+     "title": "Na Faria Lima, plano fiscal não dissipa desconfiança e é visto como ‘mais do mesmo’"
+    }
+   ],
+   "ids": [
+    "6d059d43e672"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Na Faria Lima, plano fiscal não dissipa desconfiança e é visto como ‘mais do mesmo’",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16893,6 +16901,72 @@
    "ai": false
   },
   {
+   "id": "65a106dc3a30",
+   "title": "Print Edition | Wall Street Journal",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE92ZWpiQmp0RDlBRl9mRUpvY2I3Q2NNaVA5Wl9OSVJyWTY2b1lDemRscDhCU1dPUXFMWXdObk41aFlsUDV0SFA0UndYQ0haM204XzRscDZYTmsyTk54N29CSHhn?oc=5",
+   "published": "2026-11-12T00:16:56+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE92ZWpiQmp0RDlBRl9mRUpvY2I3Q2NNaVA5Wl9OSVJyWTY2b1lDemRscDhCU1dPUXFMWXdObk41aFlsUDV0SFA0UndYQ0haM204XzRscDZYTmsyTk54N29CSHhn?oc=5",
+     "title": "Print Edition | Wall Street Journal"
+    }
+   ],
+   "ids": [
+    "65a106dc3a30"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Print Edition | Wall Street Journal",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "60a4428aa025",
+   "title": "Can India clean up Delhi’s deadly smog?",
+   "link": "https://www.ft.com/content/e58eec04-845b-4330-8d01-69b0313a60c1?syn-25a6b1a6=1",
+   "published": "2026-11-12T00:08:12+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/e58eec04-845b-4330-8d01-69b0313a60c1?syn-25a6b1a6=1",
+     "title": "Can India clean up Delhi’s deadly smog?"
+    }
+   ],
+   "ids": [
+    "60a4428aa025"
+   ],
+   "snippet": "Residents ask why a country that can land a spacecraft on the Moon cannot prevent citizens in its capital choking on bad air",
+   "prescore": 2.6,
+   "headline": "Can India clean up Delhi’s deadly smog?",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Residents ask why a country that can land a spacecraft on the Moon cannot prevent citizens in its capital choking on bad air",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ead8afff0c24",
    "title": "Nvidia board set to meet after revelations Huang had affair with top company executive",
    "link": "https://www.ft.com/content/d3838274-a055-4d5d-a1ff-48f2979a08f0?syn-25a6b1a6=1",
@@ -16924,237 +16998,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "e46a5ddacc68",
-   "title": "Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdEZkalllTkswSW1lWVlXanFsVFBfVnBSUmE0U1VNWTJ4c3BrS3dzTDZWQUhwM3NfOTFMdjVuaHBqZVRTVFBYU2JEOWtpX2VoR1ZtUzZVcDlTN0tKVzVtczFhYThSSHpDTjJXSHV4U1Rqc0doRElpcW1WTGQwdmF6bE1VN3BpU2J4U3V1Rld3S25XNXZxWkVVNVlRZDAzLWpIVGFHWG9Bd2M?oc=5",
-   "published": "2026-11-11T22:28:23+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdEZkalllTkswSW1lWVlXanFsVFBfVnBSUmE0U1VNWTJ4c3BrS3dzTDZWQUhwM3NfOTFMdjVuaHBqZVRTVFBYU2JEOWtpX2VoR1ZtUzZVcDlTN0tKVzVtczFhYThSSHpDTjJXSHV4U1Rqc0doRElpcW1WTGQwdmF6bE1VN3BpU2J4U3V1Rld3S25XNXZxWkVVNVlRZDAzLWpIVGFHWG9Bd2M?oc=5",
-     "title": "Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks"
-    }
-   ],
-   "ids": [
-    "e46a5ddacc68"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ba24831982d7",
-   "title": "Health Care Roundup: Market Talk",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nMDJEcWlWWjFMNHVha25acXVkaEFQMkdReVU4SGlldjRFLUZNLUduODZSeF8tT2Z1V0hLYVVpRGxnQlNjbGtlZW1zQlp2aDR2OUV6VEpDaEhNNUc2MGNuV0F5aGRNNU1zSGp5eFBMbGU4RmJFcnVWRg?oc=5",
-   "published": "2026-11-11T21:59:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nMDJEcWlWWjFMNHVha25acXVkaEFQMkdReVU4SGlldjRFLUZNLUduODZSeF8tT2Z1V0hLYVVpRGxnQlNjbGtlZW1zQlp2aDR2OUV6VEpDaEhNNUc2MGNuV0F5aGRNNU1zSGp5eFBMbGU4RmJFcnVWRg?oc=5",
-     "title": "Health Care Roundup: Market Talk"
-    }
-   ],
-   "ids": [
-    "ba24831982d7"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Health Care Roundup: Market Talk",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6edb5b2f0621",
-   "title": "Hegseth and Aides Are Reprimanded During Veterans Day Event",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQnpwRWNBSlpEU3RDb3pxNDRKRFdrd20tMUNXcmhkdHBkdGhrVlB4YlAtMVh2Y3VKVG1FdzZCMkptSklPZmc2VVhkNExFaXFHMm5ERHJjaDFWWjZYTlc4ZmQzbU0wQ1E5cVBpVmtQdkw5bVNkUGg1c2F1T1h1b0hQTFY3cFlNVFZxVjAzNFdvRW8xeFcyRUpZalZaMURmdw?oc=5",
-   "published": "2026-11-11T21:58:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQnpwRWNBSlpEU3RDb3pxNDRKRFdrd20tMUNXcmhkdHBkdGhrVlB4YlAtMVh2Y3VKVG1FdzZCMkptSklPZmc2VVhkNExFaXFHMm5ERHJjaDFWWjZYTlc4ZmQzbU0wQ1E5cVBpVmtQdkw5bVNkUGg1c2F1T1h1b0hQTFY3cFlNVFZxVjAzNFdvRW8xeFcyRUpZalZaMURmdw?oc=5",
-     "title": "Hegseth and Aides Are Reprimanded During Veterans Day Event"
-    }
-   ],
-   "ids": [
-    "6edb5b2f0621"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Hegseth and Aides Are Reprimanded During Veterans Day Event",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "4154f4bd1345",
-   "title": "Could Huang, Nvidia and company's board be held liable over affair scandal?",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMjZKSmVVbEFma0huZUVIajB2eVUzdUdEd2owTjNLbTZTbFQ5Z2F5OEs4WVp0QVdhZEpDU2xXQnhnTlJpQjlkMnREdGZEbkRyVW1hLXBsWklELTUxMU52bzVXMXJkeVRrVkx5aXV0YTMwcE1BVmJfTXJ2aTg3WGNkSnZRRTFLUllxTkVVVnZCc2JicjJmWGo0T08zRThvTmNQUHVfZkp2WUJwdXhIZGxNY2xFQ1ZZbVZsajJ0YWdB?oc=5",
-   "published": "2026-11-11T21:57:15+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMjZKSmVVbEFma0huZUVIajB2eVUzdUdEd2owTjNLbTZTbFQ5Z2F5OEs4WVp0QVdhZEpDU2xXQnhnTlJpQjlkMnREdGZEbkRyVW1hLXBsWklELTUxMU52bzVXMXJkeVRrVkx5aXV0YTMwcE1BVmJfTXJ2aTg3WGNkSnZRRTFLUllxTkVVVnZCc2JicjJmWGo0T08zRThvTmNQUHVfZkp2WUJwdXhIZGxNY2xFQ1ZZbVZsajJ0YWdB?oc=5",
-     "title": "Could Huang, Nvidia and company's board be held liable over affair scandal?"
-    }
-   ],
-   "ids": [
-    "4154f4bd1345"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Could Huang, Nvidia and company's board be held liable over affair scandal?",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "be7ec72a7fdc",
-   "title": "ExxonMobil launches legal challenge to EU carbon capture rules",
-   "link": "https://www.ft.com/content/377d2ae5-112f-411f-bfc1-5e498948cb7b?syn-25a6b1a6=1",
-   "published": "2026-11-11T21:26:48+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/377d2ae5-112f-411f-bfc1-5e498948cb7b?syn-25a6b1a6=1",
-     "title": "ExxonMobil launches legal challenge to EU carbon capture rules"
-    }
-   ],
-   "ids": [
-    "be7ec72a7fdc"
-   ],
-   "snippet": "US oil company invokes investment treaty to challenge Brussels’ green regulations and seek suspension of timing requirements",
-   "prescore": 2.6,
-   "headline": "ExxonMobil launches legal challenge to EU carbon capture rules",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "US oil company invokes investment treaty to challenge Brussels’ green regulations and seek suspension of timing requirements",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e5c7f3f28737",
-   "title": "Democrats pledge to expose ‘absolute avalanche of corruption’ under Trump",
-   "link": "https://www.ft.com/content/3d3fcb94-143d-446c-8b09-b1f830ca97e9?syn-25a6b1a6=1",
-   "published": "2026-11-11T21:01:55+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/3d3fcb94-143d-446c-8b09-b1f830ca97e9?syn-25a6b1a6=1",
-     "title": "Democrats pledge to expose ‘absolute avalanche of corruption’ under Trump"
-    }
-   ],
-   "ids": [
-    "e5c7f3f28737"
-   ],
-   "snippet": "Congress member Jamie Raskin says he will launch sweeping probe of president and allies but warns party to avoid impeachment ‘distraction’",
-   "prescore": 2.6,
-   "headline": "Democrats pledge to expose ‘absolute avalanche of corruption’ under Trump",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Congress member Jamie Raskin says he will launch sweeping probe of president and allies but warns party to avoid impeachment ‘distraction’",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e9be1139388b",
-   "title": "Hoax bomb alerts sent to schools in Italy, UK and Ireland in latest disruption",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLUZHS1hQdFNsS21tSW0zXzRnRDNsVEN2T1hITTBwX1l3d3VCWmw5MXVMaEYwM2ROMXpYNnR6cTNwMlVuSUNsekp2YmZtX1h2VE9wNnc2RThjc05OV2tBc0VNNzNicWNGcGtKVG9VTGo2Yzl5eUFxeE9IQ3JlZWpHb25vcWk5VmlWZkRwbmQzRmhzbDF2cmhWM1F0RmNlTGhtM0Zv?oc=5",
-   "published": "2026-11-11T20:47:43+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLUZHS1hQdFNsS21tSW0zXzRnRDNsVEN2T1hITTBwX1l3d3VCWmw5MXVMaEYwM2ROMXpYNnR6cTNwMlVuSUNsekp2YmZtX1h2VE9wNnc2RThjc05OV2tBc0VNNzNicWNGcGtKVG9VTGo2Yzl5eUFxeE9IQ3JlZWpHb25vcWk5VmlWZkRwbmQzRmhzbDF2cmhWM1F0RmNlTGhtM0Zv?oc=5",
-     "title": "Hoax bomb alerts sent to schools in Italy, UK and Ireland in latest disruption"
-    }
-   ],
-   "ids": [
-    "e9be1139388b"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Hoax bomb alerts sent to schools in Italy, UK and Ireland in latest disruption",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -17176,7 +17019,7 @@
    "id": "braziljournal",
    "name": "Brazil Journal",
    "ok": true,
-   "count": 14,
+   "count": 13,
    "error": null
   },
   {
@@ -17267,7 +17110,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 35,
+   "count": 37,
    "error": null
   },
   {
@@ -17302,7 +17145,7 @@
    "id": "ft",
    "name": "Financial Times",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -17330,7 +17173,7 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 31,
+   "count": 32,
    "error": null
   },
   {
@@ -17647,11 +17490,11 @@
   }
  ],
  "stats": {
-  "raw": 897,
-  "unique": 365,
-  "unique_all": 840,
+  "raw": 898,
+  "unique": 352,
+  "unique_all": 841,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.0
+  "seconds": 4.0
  }
 }
