@@ -118,10 +118,13 @@ jobs:
           cd scripts && npm ci --no-audit --no-fund && node mundo_layout.mjs
 
       # O briefing narrado (voz neural): só é refeito quando o briefing muda. Não vai para o repositório; o cache guarda
-      # o último áudio para as rodadas de hora em hora.
+      # o último áudio para as rodadas de hora em hora e, em .cache/tts, cada trecho já sintetizado: se o serviço de voz
+      # falhar no meio, a próxima execução só refaz os trechos que faltaram.
       - uses: actions/cache@v4
         with:
-          path: site/audio
+          path: |
+            site/audio
+            .cache/tts
           key: audio-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: audio-
 

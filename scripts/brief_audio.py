@@ -13,6 +13,10 @@ do edge-tts (as vozes do "Ler em voz alta" do Microsoft Edge), um pouco mais dev
 Só refaz quando o briefing muda (a chave é um hash do texto). site/audio não vai para o repositório: o CI guarda a
 última versão em cache.
 
+Cada trecho sintetizado fica guardado em .cache/tts (também no cache do CI). Se o serviço de voz falhar no meio, os
+trechos que deram certo não se perdem: a execução seguinte só sintetiza os que faltaram. E quando o briefing muda
+pouco (uma seção reescrita), só os trechos novos voltam a ser sintetizados.
+
 Uso: python scripts/brief_audio.py [--voice ID] [--out site/audio] [--force]
 """
 from __future__ import annotations
@@ -32,6 +36,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DIGEST = ROOT / "site" / "data" / "digest.json"
+SEG_CACHE = ROOT / ".cache" / "tts"
+# tempo máximo sintetizando numa execução: com o serviço de voz fora do ar, não segura a publicação; o que faltar sai
+# na execução seguinte
+BUDGET_SECONDS = 240
 EDGE_VOICE = "pt-BR-ThalitaMultilingualNeural"
 RATE = "-8%"
 # voz escolhida na biblioteca da ElevenLabs; o modelo multilíngue v2 é o mais natural em português
@@ -107,6 +115,13 @@ def brief_key(digest: dict, voice: str) -> str:
     return hashlib.sha1(raw.encode()).hexdigest()[:16]
 
 
+def seg_key(engine: str, voice: str, speech: str, prev: str, nxt: str) -> str:
+    """Chave de um trecho: o texto e tudo o que muda o som dele (na ElevenLabs, também os trechos vizinhos)."""
+    parts = [engine, voice, speech]
+    parts += [ELEVEN_MODEL, json.dumps(ELEVEN_SETTINGS, sort_keys=True), ELEVEN_FORMAT, prev, nxt] if engine == "eleven" else [RATE]
+    return hashlib.sha1("\x1f".join(parts).encode()).hexdigest()[:20]
+
+
 def synth_eleven(text: str, voice: str, key: str, prev: str = "", nxt: str = "") -> bytes:
     """Um trecho pela API da ElevenLabs; o texto vizinho entra só como contexto, para a entonação emendar."""
     body = {"text": text, "model_id": ELEVEN_MODEL, "voice_settings": ELEVEN_SETTINGS}
@@ -141,7 +156,7 @@ async def synth(text: str, voice: str) -> bytes:
     import edge_tts  # só aqui: o resto do script funciona sem a biblioteca
 
     chunks = []
-    for attempt in range(3):
+    for attempt in range(5):
         try:
             async for m in edge_tts.Communicate(text, voice, rate=RATE).stream():
                 if m["type"] == "audio":
@@ -149,7 +164,7 @@ async def synth(text: str, voice: str) -> bytes:
             return b"".join(chunks)
         except Exception as e:  # o serviço às vezes recusa uma conexão: tenta de novo
             chunks = []
-            if attempt == 2:
+            if attempt == 4:
                 raise
             print(f"  nova tentativa ({e})", file=sys.stderr)
             await asyncio.sleep(2 + attempt * 3)
@@ -174,14 +189,47 @@ async def build(out: Path, voice: str | None, force: bool) -> int:
         except ValueError:
             pass
     segs = script(digest)
-    audio, t = bytearray(), 0.0
+    SEG_CACHE.mkdir(parents=True, exist_ok=True)
+    datas, used, failed, made = [], set(), [], 0
+    t0 = time.monotonic()
     for i, s in enumerate(segs):
-        if engine == "eleven":
-            prev = segs[i - 1]["speech"] if i else ""
-            nxt = segs[i + 1]["speech"] if i + 1 < len(segs) else ""
-            data = await asyncio.to_thread(synth_eleven, s["speech"], voice, api_key, prev, nxt)
-        else:
-            data = await synth(s["speech"], voice)
+        prev = segs[i - 1]["speech"] if i else ""
+        nxt = segs[i + 1]["speech"] if i + 1 < len(segs) else ""
+        seg_path = SEG_CACHE / f"{seg_key(engine, voice, s['speech'], prev, nxt)}.mp3"
+        used.add(seg_path.name)
+        if not force and seg_path.exists() and seg_path.stat().st_size:
+            datas.append(seg_path.read_bytes())
+            continue
+        if time.monotonic() - t0 > BUDGET_SECONDS:
+            failed.append(i + 1)
+            datas.append(b"")
+            continue
+        try:
+            if engine == "eleven":
+                data = await asyncio.to_thread(synth_eleven, s["speech"], voice, api_key, prev, nxt)
+            else:
+                data = await synth(s["speech"], voice)
+        except Exception as e:  # segue com os outros trechos, para que fiquem guardados para a próxima execução
+            print(f"  trecho {i + 1} ({s['label']}) falhou: {e}", file=sys.stderr)
+            failed.append(i + 1)
+            datas.append(b"")
+            continue
+        if not data:
+            failed.append(i + 1)
+            datas.append(b"")
+            continue
+        seg_path.write_bytes(data)
+        made += 1
+        datas.append(data)
+    for f in SEG_CACHE.glob("*.mp3"):  # só os trechos do briefing atual ficam guardados
+        if f.name not in used:
+            f.unlink()
+    if failed:
+        print(f"Áudio: {len(failed)} de {len(segs)} trechos ficaram faltando ({', '.join(map(str, failed))}); "
+              f"os {len(segs) - len(failed)} prontos ficam guardados para a próxima execução.", file=sys.stderr)
+        return 1
+    audio, t = bytearray(), 0.0
+    for s, data in zip(segs, datas):
         dur = len(data) * 8 / BITRATE[engine]
         s["start"], s["end"] = round(t, 2), round(t + dur, 2)
         t += dur
@@ -195,7 +243,8 @@ async def build(out: Path, voice: str | None, force: bool) -> int:
     }
     meta_path.write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
     chars = sum(len(s["speech"]) for s in segs)
-    print(f"Áudio: {len(segs)} trechos, {chars} caracteres, {t / 60:.1f} min, {len(audio) / 1e6:.1f} MB, {engine} {voice}.")
+    print(f"Áudio: {len(segs)} trechos ({made} sintetizados agora, {len(segs) - made} guardados), {chars} caracteres, "
+          f"{t / 60:.1f} min, {len(audio) / 1e6:.1f} MB, {engine} {voice}.")
     return 0
 
 
