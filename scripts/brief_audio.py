@@ -37,9 +37,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DIGEST = ROOT / "site" / "data" / "digest.json"
 SEG_CACHE = ROOT / ".cache" / "tts"
-# tempo máximo sintetizando numa execução: com o serviço de voz fora do ar, não segura a publicação; o que faltar sai
+# tempo máximo sintetizando numa execução (o passo do CI tem 8 minutos; uma síntese normal leva de 4 a 5): com o serviço de
+# voz fora do ar, não segura a publicação; o que faltar sai
 # na execução seguinte
-BUDGET_SECONDS = 240
+BUDGET_SECONDS = 360
 EDGE_VOICE = "pt-BR-ThalitaMultilingualNeural"
 RATE = "-8%"
 # voz escolhida na biblioteca da ElevenLabs; o modelo multilíngue v2 é o mais natural em português
