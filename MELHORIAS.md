@@ -64,7 +64,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 - 11/11 — Áudio do briefing resiste a falha do serviço de voz (#68):
   - na edição das 08:28 de 11/11, o edge-tts recusou trechos 7 vezes e o passo caiu depois de 5 minutos, sem áudio; o portal ficou com a leitura do navegador até a execução seguinte, às 08:57, que refez os 19 trechos do zero;
   - agora cada trecho pronto fica guardado em cache; se o serviço falhar no meio, a execução seguinte só refaz os que faltaram, e um briefing com uma seção reescrita só refaz os trechos novos;
-  - cada trecho tem 5 tentativas, em vez de 3, e a síntese para depois de 4 minutos, para não segurar a publicação;
+  - cada trecho tem 5 tentativas, em vez de 3, e a síntese para depois de 6 minutos, para não segurar a publicação. O limite começou em 4 minutos, mas em 12/11 uma síntese normal, sem erro, passou disso e parou a 1 trecho do fim; a execução seguinte completou em 25 s. Subiu para 6 minutos, com folga para o trecho em andamento antes do teto de 8 minutos do passo, no #69;
   - a primeira execução depois da mudança refaz o áudio inteiro uma vez, porque o cache mudou de formato.
 - 10/11 — Dados pessoais fora do site público (#67):
   - o site publicava data/cias/base/perfis.json (14,7 MB, base interna que o site nem lê) com 47 CPFs, números de identidade e endereços, vindos do texto livre do Formulário de Referência; e os perfis de pessoas tinham 27 CPFs;
