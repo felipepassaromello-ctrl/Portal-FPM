@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T13:17:56.846102-03:00",
+ "generated_at": "2026-11-13T13:43:40.463115-03:00",
  "date": "2026-11-13",
  "window": {
   "start": "2026-11-12T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-13T08:26:51.075611-03:00",
-  "analyzed": 220
+  "analyzed": 219
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -119,70 +119,70 @@
    "symbol": "^BVSP",
    "name": "Ibovespa",
    "unit": "pts",
-   "price": 172526.28,
-   "change_pct": 0.7017580724241856,
+   "price": 172482.56,
+   "change_pct": 0.676239172561921,
    "spark": [
     172236.0,
     171337.0,
     172060.0,
     171324.0,
-    172526.28125
+    172482.5625
    ]
   },
   {
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.6351,
-   "change_pct": 0.949465008877115,
+   "price": 5.6398,
+   "change_pct": 1.0336627135392629,
    "spark": [
     5.503399848937988,
     5.508600234985352,
     5.582699775695801,
     5.582099914550781,
-    5.6350998878479
+    5.639800071716309
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.2171,
-   "change_pct": 0.4683340070673614,
+   "price": 6.2209,
+   "change_pct": 0.5297420058492319,
    "spark": [
     6.1312079429626465,
     6.176651954650879,
     6.23052978515625,
     6.188118934631348,
-    6.217100143432617
+    6.220900058746338
    ]
   },
   {
    "symbol": "^GSPC",
    "name": "S&P 500",
    "unit": "pts",
-   "price": 7512.67,
-   "change_pct": -1.0501278037151063,
+   "price": 7516.61,
+   "change_pct": -0.998233803785209,
    "spark": [
     7549.93994140625,
     7520.93017578125,
     7619.3798828125,
     7592.39990234375,
-    7512.669921875
+    7516.60986328125
    ]
   },
   {
    "symbol": "^IXIC",
    "name": "Nasdaq",
    "unit": "pts",
-   "price": 24900.78,
-   "change_pct": -1.8343774961620651,
+   "price": 24948.14,
+   "change_pct": -1.6476715423011101,
    "spark": [
     25253.140625,
     25065.869140625,
     25466.189453125,
     25366.08984375,
-    24900.779296875
+    24948.140625
    ]
   },
   {
@@ -203,42 +203,42 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 96.25,
-   "change_pct": 0.44875840799967204,
+   "price": 95.94,
+   "change_pct": 0.12523513416611287,
    "spark": [
     92.56999969482422,
     91.48999786376953,
     92.76000213623047,
     95.81999969482422,
-    96.25
+    95.94000244140625
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3880.2,
-   "change_pct": -0.1312652501487821,
+   "price": 3886.7,
+   "change_pct": 0.03603199635242582,
    "spark": [
     4114.5,
     4030.199951171875,
     4000.5,
     3885.300048828125,
-    3880.199951171875
+    3886.699951171875
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 68385.56,
-   "change_pct": -4.145340181123314,
+   "price": 68659.96,
+   "change_pct": -3.7607192369605413,
    "spark": [
     75223.1484375,
     73720.1171875,
     73964.46875,
     71342.96875,
-    68385.5625
+    68659.9609375
    ]
   }
  ],
@@ -3044,10 +3044,16 @@
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-12/stock-market-today-dow-s-p-live-updates",
      "title": "Stocks Fall as Chip Rout Outweighs Inflation Data: Markets Wrap"
+    },
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-13/stocks-fall-as-chip-rout-outweighs-inflation-data-video",
+     "title": "Stocks Fall as Chip Rout Outweighs Inflation Data"
     }
    ],
    "ids": [
-    "6488d8940628"
+    "6488d8940628",
+    "e3208aaafc9f"
    ],
    "snippet": "Another selloff in chipmakers weighed on stocks, overshadowing inflation data that eased concern about aggressive Federal Reserve rate hikes.",
    "prescore": 2.8,
@@ -8781,39 +8787,6 @@
    "ai": false
   },
   {
-   "id": "b9bc13512b37",
-   "title": "Gestão Tarcísio reduz gasto com dívida após acordo com governo Lula, mas contrapartida limita alívio",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUThuNDBJVmhsVzNGV3dJTmhNUFM3dnRSeG9Dc0x3c2RaWmFMOThkY2d2cXJybXU3eTlnNDcxcnIxdDhCTEFtQV9ESzhPQy1qMnJzZGdzVC0wQTlRRlVRbGxHN2ZDQlEybHBfclZqdXdzRWplX1RScnltMWt4S0w0TjdJdVVrY1o3YkpNXzdoOU5sN0xhYmhXcU91X0lTOG5CRlgzRVk2UHk1SEVMdnpwcHlZUTQ0VFpwV3dacTBrVEVhWGRYSTI4RlZ0bDhlWExMWlHSAdcBQVVfeXFMUEp2djkwWXEwTlRYaFBOUUZab0dFbHZ4LXdmSkxlM2hIX0R2YjRiUWRpRXo1MG1vTEdqUGpTTlM1MkVqay1HazBIOGdoSkUzN0dkczFaOWhaNldwSU5QZTdrc21ZV0lNYVBwQ3lhVXpIZUhOdVlTZm5Pak5iYXVwbWZIV0lUcU1mUHJOYllGZ19oU2xmTW1VVTdDU2Roc0xTdzg5cXE2c3V4UlVBVU5uRi1hRDF5clI5eTRKQnZjdFhrTlo1R3pLS2cxZDk4UzdqMlZldU5JeXM?oc=5",
-   "published": "2026-11-13T08:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUThuNDBJVmhsVzNGV3dJTmhNUFM3dnRSeG9Dc0x3c2RaWmFMOThkY2d2cXJybXU3eTlnNDcxcnIxdDhCTEFtQV9ESzhPQy1qMnJzZGdzVC0wQTlRRlVRbGxHN2ZDQlEybHBfclZqdXdzRWplX1RScnltMWt4S0w0TjdJdVVrY1o3YkpNXzdoOU5sN0xhYmhXcU91X0lTOG5CRlgzRVk2UHk1SEVMdnpwcHlZUTQ0VFpwV3dacTBrVEVhWGRYSTI4RlZ0bDhlWExMWlHSAdcBQVVfeXFMUEp2djkwWXEwTlRYaFBOUUZab0dFbHZ4LXdmSkxlM2hIX0R2YjRiUWRpRXo1MG1vTEdqUGpTTlM1MkVqay1HazBIOGdoSkUzN0dkczFaOWhaNldwSU5QZTdrc21ZV0lNYVBwQ3lhVXpIZUhOdVlTZm5Pak5iYXVwbWZIV0lUcU1mUHJOYllGZ19oU2xmTW1VVTdDU2Roc0xTdzg5cXE2c3V4UlVBVU5uRi1hRDF5clI5eTRKQnZjdFhrTlo1R3pLS2cxZDk4UzdqMlZldU5JeXM?oc=5",
-     "title": "Gestão Tarcísio reduz gasto com dívida após acordo com governo Lula, mas contrapartida limita alívio"
-    }
-   ],
-   "ids": [
-    "b9bc13512b37"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "Gestão Tarcísio reduz gasto com dívida após acordo com governo Lula, mas contrapartida limita alívio",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "237f48073dc2",
    "title": "Petrobras compra os 70% restantes da Logum Logística, incluindo fatia da Raízen, por R$ 620 milhões",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLUlkTkZxekM4ZllEVjZ0MG1sVWxFdjg5ZHlUNDNlVTVUNFNBa2NKbFdxbzlDZXNqaEt5MGE3X1FHd2s4Z01jOUNpOWl5dUtvZDEwUm5iTlQxQnVvbTVNeFVOYkZUTFlYQlBFY1VFT2wzT09DVkZpZkZ5ZkVrVlh1UWlHSEswWE52R2RUSFdHeEo1NzNfWnpKSXp3ZmhSOFRrQk1hYnNBcUzSAa4BQVVfeXFMUHVYUmZzTzBkaFFQajJLMWhtc0ZfMUJRb0Izcno1bWRIVk1nbWNtSkVoMzRLWENmVXFlNi15OVhkUXMtRWR1S0lPamJXc1FISWVIZFdVQXZXUks2U3Rnc3JOQ1p0MEJ6cVhIOGNEYWpRNmtFZzJMSGVnWVVYdkIxU25aMW9VMkZQYzhMX0VGM3JBd09MQ2dadWFCdUtCeG84RTV6SmdBUkM4NVVWbm5B?oc=5",
@@ -9860,6 +9833,39 @@
    "ai": false
   },
   {
+   "id": "4684a5194ecb",
+   "title": "JD.com seeks to lead Europe's online electronics retail with Ceconomy deal",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWFBaanFxZDRLWkM3UWNHMHYwX181VlJINXBhMkFuZC01bzZScmgxUFdiZFV0V00tRlJiQk1LbFNfbE83TXFQUzBvZ1lqYmN4ZjBZRHpxQk5GUzc5bGhqM2tzdWdvR1RSVmd3eGQxLWR5TEZMcTRJVExDYkMtSUlDYWNMMkJ2WXlZa29EcmJ5QVo4STFsbTNvZTFDRUZGWGRWMjdLeUQySEhuLTFFYm1KTnJiLWotRDJYTUZ4Wl9GQ1dldjJkcldsZnN3?oc=5",
+   "published": "2026-11-12T16:41:35+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWFBaanFxZDRLWkM3UWNHMHYwX181VlJINXBhMkFuZC01bzZScmgxUFdiZFV0V00tRlJiQk1LbFNfbE83TXFQUzBvZ1lqYmN4ZjBZRHpxQk5GUzc5bGhqM2tzdWdvR1RSVmd3eGQxLWR5TEZMcTRJVExDYkMtSUlDYWNMMkJ2WXlZa29EcmJ5QVo4STFsbTNvZTFDRUZGWGRWMjdLeUQySEhuLTFFYm1KTnJiLWotRDJYTUZ4Wl9GQ1dldjJkcldsZnN3?oc=5",
+     "title": "JD.com seeks to lead Europe's online electronics retail with Ceconomy deal"
+    }
+   ],
+   "ids": [
+    "4684a5194ecb"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "JD.com seeks to lead Europe's online electronics retail with Ceconomy deal",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b7b28adf5897",
    "title": "Four tankers struck by explosions in Strait of Hormuz, Iran says",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcDQ2cWxyeTFpazFaX1ZNM2RoS0t2ZVpEa0JpMElTZVFMUElROEF5c20tMlU0dEszWFlEdkhfR2VOb3hEQmo3MjRtdVlSaEhkZnpKXzExbE5QcXItQ3Z6REoyY1Fpak9IUUplYWp6NTQ2UjBiNVk1WDN0MmJjaFRkOHNLdDYxMU9xOWhuMnVaTlNiVXJNTlhLYV9EZEpnd1oxYmF0cG82b2VkMURkYnkzZkZBX0hhWHM?oc=5",
@@ -9879,6 +9885,39 @@
    "prescore": 2.6,
    "headline": "Four tankers struck by explosions in Strait of Hormuz, Iran says",
    "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8627053ac41a",
+   "title": "Nordic countries to work towards common defence deal",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ3l0WkhacFplemVmdldqMWxjWVZPVVFYaE94X0VtVEJfOGJXaEtTLW0zTGdyNk50a3NYeXJoYXpSUEpoVmx2MnRiUDhrM25rMHFTemE1U0piTUtwOGxhb1ZqYkVINW8xaTJDOXc4UnY1YXJNUV83WmNhOEY0Z1YwWFpvZlAwX3JxRTlObzVGakxmV1ZaVXpicVhfWmtUTTUyY2hRS1FSeF9QNWdxcXNyWjhFWU1nQUZzRDNJYmlydDFYQQ?oc=5",
+   "published": "2026-11-12T12:09:33+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ3l0WkhacFplemVmdldqMWxjWVZPVVFYaE94X0VtVEJfOGJXaEtTLW0zTGdyNk50a3NYeXJoYXpSUEpoVmx2MnRiUDhrM25rMHFTemE1U0piTUtwOGxhb1ZqYkVINW8xaTJDOXc4UnY1YXJNUV83WmNhOEY0Z1YwWFpvZlAwX3JxRTlObzVGakxmV1ZaVXpicVhfWmtUTTUyY2hRS1FSeF9QNWdxcXNyWjhFWU1nQUZzRDNJYmlydDFYQQ?oc=5",
+     "title": "Nordic countries to work towards common defence deal"
+    }
+   ],
+   "ids": [
+    "8627053ac41a"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Nordic countries to work towards common defence deal",
+   "category": "mna",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -10250,43 +10289,6 @@
    "ai": true
   },
   {
-   "id": "80874454c385",
-   "title": "Opinion | Don’t You Dare Listen to Your Employees",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc3VGQ3drRWdBRVY4SXM5bmptU25WR19JSGl4ZUpJb0lERlpXanBDdW5pOU5aaVBXWUtQZVd0NTZaU0JHTU1vdXlZS0xOYUgydm1lTnZiamRhb1V5VUNCVUwxNmJNd2ExeFl6RkVOcWZQNlJ1R1FFc1hmNmZaa295Rg?oc=5",
-   "published": "2026-11-12T22:10:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc3VGQ3drRWdBRVY4SXM5bmptU25WR19JSGl4ZUpJb0lERlpXanBDdW5pOU5aaVBXWUtQZVd0NTZaU0JHTU1vdXlZS0xOYUgydm1lTnZiamRhb1V5VUNCVUwxNmJNd2ExeFl6RkVOcWZQNlJ1R1FFc1hmNmZaa295Rg?oc=5",
-     "title": "Opinion | Don’t You Dare Listen to Your Employees"
-    }
-   ],
-   "ids": [
-    "80874454c385"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Opinião: não ouça seus funcionários",
-   "category": "outros",
-   "importance": 1,
-   "importance_reason": "Coluna de opinião.",
-   "summary": "Coluna de opinião do WSJ sobre gestão.",
-   "involves": "Wall Street Journal",
-   "interpretation": "Opinião.",
-   "impact": "Sem impacto.",
-   "sentiment": "neutro",
-   "entities": [
-    "Wall Street Journal"
-   ],
-   "tags": [
-    "opinião"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "0c3114fd9244",
    "title": "‘Ebenezer’ Review: Johnny Depp Steps Into Scrooge’s Slippers",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLUlTR2UyVEttblM1OVJWM0huREZBNFZrVm5TVm83am9VNG1tRGhwckIwM1pNdTFzcGdIb3V2UFZ4bjNaV2tHVGVHT0h0MUJnRVJxLWFwb1d3X2hxR0JDV3NBazdyNlFCT3pvN0l4RWYyMVJSd0VYay1KdnNSdnpHY3RtWUhSSER6N3B5aC1TRVp0LUhqWG15N1JLamtZQWhqNzNvckd3?oc=5",
@@ -10324,37 +10326,37 @@
    "ai": true
   },
   {
-   "id": "2ab94abd576e",
-   "title": "Men: Here’s How to Upgrade Your Office Wardrobe With Vintage Clothes",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNelV0anlhUWFuejdoNnNpVmZOUzYwanZvaTBnZXB5RFhkMTVsQXNLUF9jQ0ZpdC1sdEtwb240dXNfOC1YblJsWVV3R0Y5S1poYWNNWE82YXlqbFB4NUJxamdCMEhPQ24yRlcxNG9LeDdxOTd5NW5aR0Vjbm5YNXNJbw?oc=5",
-   "published": "2026-11-12T21:00:00+00:00",
+   "id": "087193a77adb",
+   "title": "‘How to Rob a Bank’ Review: An Electric Contemporary Caper",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVE1jUzVGaEZndnRWazZCM1lmUU1iX0s3WHhXaXYxVXdTMkNsS2JSNGNLckxrNVl2ZFhVRW1uZVJjTE5GeEFKckt4QURPTm11eXNKZjdBY2xwQThXSks2UEJ1cEgtYmVKN1ZpNG1uQ3Y4SUJsaGRySE94Yzl4ZExVTTlWemk2V3V3bEMwUVNoXzRjMEpobUJaUjYtdEtCTWNxZjVEdw?oc=5",
+   "published": "2026-11-12T21:02:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNelV0anlhUWFuejdoNnNpVmZOUzYwanZvaTBnZXB5RFhkMTVsQXNLUF9jQ0ZpdC1sdEtwb240dXNfOC1YblJsWVV3R0Y5S1poYWNNWE82YXlqbFB4NUJxamdCMEhPQ24yRlcxNG9LeDdxOTd5NW5aR0Vjbm5YNXNJbw?oc=5",
-     "title": "Men: Here’s How to Upgrade Your Office Wardrobe With Vintage Clothes"
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVE1jUzVGaEZndnRWazZCM1lmUU1iX0s3WHhXaXYxVXdTMkNsS2JSNGNLckxrNVl2ZFhVRW1uZVJjTE5GeEFKckt4QURPTm11eXNKZjdBY2xwQThXSks2UEJ1cEgtYmVKN1ZpNG1uQ3Y4SUJsaGRySE94Yzl4ZExVTTlWemk2V3V3bEMwUVNoXzRjMEpobUJaUjYtdEtCTWNxZjVEdw?oc=5",
+     "title": "‘How to Rob a Bank’ Review: An Electric Contemporary Caper"
     }
    ],
    "ids": [
-    "2ab94abd576e"
+    "087193a77adb"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Guia de roupas vintage para o guarda-roupa de escritório masculino",
+   "headline": "Resenha de peça teatral 'How to Rob a Bank'",
    "category": "outros",
    "importance": 1,
-   "importance_reason": "Matéria de estilo, sem relevância.",
-   "summary": "O WSJ publica guia de moda sobre como renovar o guarda-roupa de escritório com peças vintage.",
-   "involves": "Moda masculina",
-   "interpretation": "Conteúdo de estilo de vida.",
+   "importance_reason": "Crítica cultural, sem relação com as prioridades do leitor.",
+   "summary": "O WSJ publica resenha da peça 'How to Rob a Bank', descrita como um assalto contemporâneo e elétrico.",
+   "involves": "Peça teatral",
+   "interpretation": "Conteúdo de entretenimento.",
    "impact": "Sem impacto em mercado.",
    "sentiment": "neutro",
    "entities": [
     "Wall Street Journal"
    ],
    "tags": [
-    "moda"
+    "cultura"
    ],
    "is_deal": false,
    "deal": null,
@@ -10433,7 +10435,7 @@
   },
   {
    "id": "42dbcca0edfd",
-   "title": "More Than Half of Venezuelans Are Facing Near-Daily Blackouts",
+   "title": "More Than Half of Venezuelans Face Near-Daily Blackouts",
    "link": "https://www.bloomberg.com/news/articles/2026-11-13/more-than-half-of-venezuelans-are-facing-near-daily-blackouts",
    "published": "2026-11-13T10:00:00+00:00",
    "region": "INTL",
@@ -10441,7 +10443,7 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-13/more-than-half-of-venezuelans-are-facing-near-daily-blackouts",
-     "title": "More Than Half of Venezuelans Are Facing Near-Daily Blackouts"
+     "title": "More Than Half of Venezuelans Face Near-Daily Blackouts"
     }
    ],
    "ids": [
@@ -10449,7 +10451,7 @@
    ],
    "snippet": "A majority of Venezuelans are suffering power outages every day or nearly every day, underscoring the severity of the country’s electricity crisis.",
    "prescore": 2.4,
-   "headline": "More Than Half of Venezuelans Are Facing Near-Daily Blackouts",
+   "headline": "More Than Half of Venezuelans Face Near-Daily Blackouts",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -10973,7 +10975,6 @@
     }
    ],
    "ids": [
-    "593e19396a06",
     "593e19396a06"
    ],
    "snippet": "",
@@ -11012,39 +11013,6 @@
    "snippet": "",
    "prescore": 2.4,
    "headline": "Braskem (BRKM5) dá calote de R$ 1,2 bilhão em debêntures e usa recuperação extrajudicial como justificativa",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "c78118737636",
-   "title": "Calote da Braskem: debêntures da companhia pagam CDI+ 47% no mercado secundário",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOa3AxelVVYm1RUzZDS0Z5U09xMkQ5eWV4QmloeFpxZGpULW1kR29hT2lwdzhMR2UzNDRCNTVUS1dDaGU1dERzLWdqaVZVNzdrUWkxVGVkcWVKTUVsWDFHUGpkbGR4UDYyRU9pZmFKNkNxaTZMOE40MmxlTEFRVlJpZW1qMHlvX3VOUDZqZWRUSzY3TXBOYW9WNnl5RS1NRnpxS3NzTXFsQnFjT0lPRzhscjc1NW8xYjdj0gG-AUFVX3lxTFBCeE03Mk5COXhxRnpUX0k5WHY2ZEVhaTc3R25tWlNDVFpLMTByZUhkR21GU3doMlJDOGhVZmxjbTdkbENLcEFPNFF4YlJfaTE5OW16c0ZnRnZ4dVpSdHY3M2JKWWxETTYzcUVhcmdmeXlRVFU4NU1VaVpYeVhtM3hkaWo0VUVKLUpyTDNJWDhVc0lkdnVTSDNfNGtuZjlEVVhVN1FKWWN0VzZCSzZ3UE4yMk45S2JrcUMtSUtBT3c?oc=5",
-   "published": "2026-11-12T15:38:56+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InvestNews",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOa3AxelVVYm1RUzZDS0Z5U09xMkQ5eWV4QmloeFpxZGpULW1kR29hT2lwdzhMR2UzNDRCNTVUS1dDaGU1dERzLWdqaVZVNzdrUWkxVGVkcWVKTUVsWDFHUGpkbGR4UDYyRU9pZmFKNkNxaTZMOE40MmxlTEFRVlJpZW1qMHlvX3VOUDZqZWRUSzY3TXBOYW9WNnl5RS1NRnpxS3NzTXFsQnFjT0lPRzhscjc1NW8xYjdj0gG-AUFVX3lxTFBCeE03Mk5COXhxRnpUX0k5WHY2ZEVhaTc3R25tWlNDVFpLMTByZUhkR21GU3doMlJDOGhVZmxjbTdkbENLcEFPNFF4YlJfaTE5OW16c0ZnRnZ4dVpSdHY3M2JKWWxETTYzcUVhcmdmeXlRVFU4NU1VaVpYeVhtM3hkaWo0VUVKLUpyTDNJWDhVc0lkdnVTSDNfNGtuZjlEVVhVN1FKWWN0VzZCSzZ3UE4yMk45S2JrcUMtSUtBT3c?oc=5",
-     "title": "Calote da Braskem: debêntures da companhia pagam CDI+ 47% no mercado secundário"
-    }
-   ],
-   "ids": [
-    "c78118737636"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Calote da Braskem: debêntures da companhia pagam CDI+ 47% no mercado secundário",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11276,39 +11244,6 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Railway supply industry news round-up",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "fa97e620921e",
-   "title": "TVS Motor opens first Brazil store, targets 130,000-unit capacity by 2027",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOR1ExR0tMZTEtWlZ5Mkk1Rm1LSjMxNjlQYjBmd1RZNVR0d0llSXhKQThBQTJaRG9nVGptcTR0OTdaaEpXbnhqOXZEWXYwaTI0VHlBaW9GbkdjT2VyZlc0d1BVdmE4YzVlRkpYbE5HcnEtRUhQdUF1d3BzZlliYnViYklNREM2MjYtR2V4ZUtzTVpmeU5seUZjMFh4UERUNUJseWpVQkNFanhmblhEV0k1a3N5MGVPWGF4c3dHeEcySHdqUTZLVzhnTjJiVk90NEVpTFV6RlpGem_SAd4BQVVfeXFMT1VSMjJrWmllU09YaVVIaGdJSGFzYWhkc2YxbmpYRXkxNktWOGhUQkFhdDM4STVnSEgtSFlPcG5NS1BPNldCR0xWa25IZkJidExxMW5wc3BkX21wZUMzdWNHMVRTVFlNcFRLdGEyZW50Mm4yNVJOdXVaaDlXbk9KX3FxSWxkMFBWbGxhUHVRLWlLSWhDSmlnZUxFTVV2MjJNaDI5amVRTmVmbUt2SURSWXlZZFl1b2Y4a0hDY0RNSXNRdWUySm1uZUhHNlIxdnhlU3ZTd2lranFheG05OWFR?oc=5",
-   "published": "2026-11-13T03:46:12+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Business Standard",
-     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOR1ExR0tMZTEtWlZ5Mkk1Rm1LSjMxNjlQYjBmd1RZNVR0d0llSXhKQThBQTJaRG9nVGptcTR0OTdaaEpXbnhqOXZEWXYwaTI0VHlBaW9GbkdjT2VyZlc0d1BVdmE4YzVlRkpYbE5HcnEtRUhQdUF1d3BzZlliYnViYklNREM2MjYtR2V4ZUtzTVpmeU5seUZjMFh4UERUNUJseWpVQkNFanhmblhEV0k1a3N5MGVPWGF4c3dHeEcySHdqUTZLVzhnTjJiVk90NEVpTFV6RlpGem_SAd4BQVVfeXFMT1VSMjJrWmllU09YaVVIaGdJSGFzYWhkc2YxbmpYRXkxNktWOGhUQkFhdDM4STVnSEgtSFlPcG5NS1BPNldCR0xWa25IZkJidExxMW5wc3BkX21wZUMzdWNHMVRTVFlNcFRLdGEyZW50Mm4yNVJOdXVaaDlXbk9KX3FxSWxkMFBWbGxhUHVRLWlLSWhDSmlnZUxFTVV2MjJNaDI5amVRTmVmbUt2SURSWXlZZFl1b2Y4a0hDY0RNSXNRdWUySm1uZUhHNlIxdnhlU3ZTd2lranFheG05OWFR?oc=5",
-     "title": "TVS Motor opens first Brazil store, targets 130,000-unit capacity by 2027"
-    }
-   ],
-   "ids": [
-    "fa97e620921e"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "TVS Motor opens first Brazil store, targets 130,000-unit capacity by 2027",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12026,6 +11961,72 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Jensen Huang deixa o comando da Nvidia; CFO Colette Kress assume como CEO interina",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "93814232d193",
+   "title": "BB: sem crédito tributário, banco teria registrado prejuízo de R$ 832 milhões em vez de lucro",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQzlnWVpnNXprdTF0Y0lpUjNLZ0Z5aFNneFZWX2pBSnEwbkNmUWZfWUlmQXVMWVk4V1Q1YzBEQzlpdWtJWEx0VzRMZzBlNFNrYzNzZWxtQ1NFeTk3UFE2eEdYeEFLNmtTZDRPSkE0QjRjZ2VSWmVSM3JGUUwxOFF5dDhUZEVPeWdEWF9MdNIBkgFBVV95cUxNcEtSalgteWNmUkpIYjVxc0pDTHVQQ1VPQ1RmUjZrb0hSXzR3S3FvX042TkpjRTQ3N2lxSUlITFR1ME81RXNvay1jdFoteDMxRUdIb294dE55UjNyUVFUWC0tZXIxb1A1TEM2UUVpTzRaSjNiWndJbE5yUkkzRUJSMVY3UW9hcFh3Z1RETWgzRl84QQ?oc=5",
+   "published": "2026-11-12T16:57:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQzlnWVpnNXprdTF0Y0lpUjNLZ0Z5aFNneFZWX2pBSnEwbkNmUWZfWUlmQXVMWVk4V1Q1YzBEQzlpdWtJWEx0VzRMZzBlNFNrYzNzZWxtQ1NFeTk3UFE2eEdYeEFLNmtTZDRPSkE0QjRjZ2VSWmVSM3JGUUwxOFF5dDhUZEVPeWdEWF9MdNIBkgFBVV95cUxNcEtSalgteWNmUkpIYjVxc0pDTHVQQ1VPQ1RmUjZrb0hSXzR3S3FvX042TkpjRTQ3N2lxSUlITFR1ME81RXNvay1jdFoteDMxRUdIb294dE55UjNyUVFUWC0tZXIxb1A1TEM2UUVpTzRaSjNiWndJbE5yUkkzRUJSMVY3UW9hcFh3Z1RETWgzRl84QQ?oc=5",
+     "title": "BB: sem crédito tributário, banco teria registrado prejuízo de R$ 832 milhões em vez de lucro"
+    }
+   ],
+   "ids": [
+    "93814232d193"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "BB: sem crédito tributário, banco teria registrado prejuízo de R$ 832 milhões em vez de lucro",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "dd56abca2e80",
+   "title": "Veterana da Nvidia, CFO Colette Kress deixa bastidores e vira peça central na sucessão",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT2JQZXRITlZ1YnlaZEhhak43X2RkSFQ5ZlRvbW5BTjB1Nlk5OV9wdFYySHdnZ01PVkpWZWJzc09vaktzWGRjNE1wdU1vUmlGTWlBMWNHa3hwUWtkQXB2XzRKZ190TDIzM1o4dVl3N0NLRHRVdlJubWZJcUV3OHlSQnlKUl9ydVhsWmZvaHh3akZvU1pqd01WVmJMY2N1ejRBOUdXMjg4V3E1ZlI1dkI5T3RidENJdUUyS3I4TktZSEs1dFM3MjRiONIB3AFBVV95cUxNYllkUFMzektWcWZTaVBYN1JwWmFCMHZRRS05cHp0MUlRTUNkS0Ewd3pBRW5QMFhwSEVwd2VLRmZ2NFh1aUJ5NjR1RERzNHkzVnVNbU9zZDBkcWItRUxQTmxGV2Z4VGtBaTBWSmduUU0xSXh4X3JVUG5lN05pM2VucGpicVVnUFpaSW83U0xKNTJjdXh6al9mWWFrRTVDcGxhZGtxazlwZU5CZWU4VXpzWHZHb3UxM3pmaWpuSm5VYi1yU3dkcERUbFljNHo3dHVoU2d3Z2tpc0VZOU1I?oc=5",
+   "published": "2026-11-12T16:40:40+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT2JQZXRITlZ1YnlaZEhhak43X2RkSFQ5ZlRvbW5BTjB1Nlk5OV9wdFYySHdnZ01PVkpWZWJzc09vaktzWGRjNE1wdU1vUmlGTWlBMWNHa3hwUWtkQXB2XzRKZ190TDIzM1o4dVl3N0NLRHRVdlJubWZJcUV3OHlSQnlKUl9ydVhsWmZvaHh3akZvU1pqd01WVmJMY2N1ejRBOUdXMjg4V3E1ZlI1dkI5T3RidENJdUUyS3I4TktZSEs1dFM3MjRiONIB3AFBVV95cUxNYllkUFMzektWcWZTaVBYN1JwWmFCMHZRRS05cHp0MUlRTUNkS0Ewd3pBRW5QMFhwSEVwd2VLRmZ2NFh1aUJ5NjR1RERzNHkzVnVNbU9zZDBkcWItRUxQTmxGV2Z4VGtBaTBWSmduUU0xSXh4X3JVUG5lN05pM2VucGpicVVnUFpaSW83U0xKNTJjdXh6al9mWWFrRTVDcGxhZGtxazlwZU5CZWU4VXpzWHZHb3UxM3pmaWpuSm5VYi1yU3dkcERUbFljNHo3dHVoU2d3Z2tpc0VZOU1I?oc=5",
+     "title": "Veterana da Nvidia, CFO Colette Kress deixa bastidores e vira peça central na sucessão"
+    }
+   ],
+   "ids": [
+    "dd56abca2e80"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Veterana da Nvidia, CFO Colette Kress deixa bastidores e vira peça central na sucessão",
    "category": "tech",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13602,39 +13603,6 @@
    "ai": false
   },
   {
-   "id": "99395dc8bd24",
-   "title": "TMSA entra no capital da Kepler Weber (KEPL3) e adquire fatia de 7,19%",
-   "link": "https://www.moneytimes.com.br/tmsa-entra-no-capital-da-kepler-weber-kepl3-e-adquire-fatia-de-719-pads/",
-   "published": "2026-11-13T14:03:18+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/tmsa-entra-no-capital-da-kepler-weber-kepl3-e-adquire-fatia-de-719-pads/",
-     "title": "TMSA entra no capital da Kepler Weber (KEPL3) e adquire fatia de 7,19%"
-    }
-   ],
-   "ids": [
-    "99395dc8bd24"
-   ],
-   "snippet": "A Kepler Weber (KEPL3) informou ao mercado nesta sexta-feira (13) que recebeu comunicação da TMSA – Tecnologia em Movimentação S.A. informando a aquisição de uma participação relevante na companhia. Segundo a fabricante de soluções de armazenagem para o agronegócio, a TMSA passou a deter, direta e indiretamente, cerca de 7,19% do total de ações ordinárias […]",
-   "prescore": 7.8,
-   "headline": "TMSA entra no capital da Kepler Weber (KEPL3) e adquire fatia de 7,19%",
-   "category": "mna",
-   "importance": 5,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Kepler Weber (KEPL3) informou ao mercado nesta sexta-feira (13) que recebeu comunicação da TMSA – Tecnologia em Movimentação S.A. informando a aquisição de uma participação relevante na companhia. Segundo a fabricante de soluções de armazenagem para o agronegócio, a TMSA passou a deter, direta e indiretamente, cerca de 7,19% do total de ações ordinárias […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "49894ca29d81",
    "title": "Cravath Employee Is Charged With Insider Trading Using Confidential Deal Information",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQUkteDNEYnV5YWxaLWJDN1luZ01lY2RhOTViaXNzNy1sUTV1N1F1cDNpYUs0Q3poOVN1ZnlEU2E3SDNkWDY1b3ZsUW1rdDJUbDRoN00taUxBNzkyTzRKREVJaEs5dFNxcTJVekxYUUNmU2hyTGNVOVIzR2s2eHRiaXZUdlBPcEJDdkJZNVFsdDY0aUtRMnlueDdPb0hhREZnUnF1cXZQR0NQZlZRQ1htYVdBWDM0ZC11X21weE9FOHBIYUZYcHhuMWQ1TGw?oc=5",
@@ -13871,6 +13839,39 @@
    "ai": false
   },
   {
+   "id": "909bc59b4b6f",
+   "title": "JBS enters beauty market with US$542 M Flora acquisition.",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcXl2MUFlaFpVeGQyVWU0cENielF1SDU5a2ZwRDhmNTVxY1N4em5fNVIxc3g0SnVFMUx1a2ZyRmw5MGp4eEpzeDVvVjNUTkNTdnZFZlFhb1ZuTEMxRkMyN0xCTlpfdE5KeXJDN1NNX1dlYWR2b3F5akg5cndTT0V4Vg?oc=5",
+   "published": "2026-11-13T15:16:29+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Personal Care Insights",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcXl2MUFlaFpVeGQyVWU0cENielF1SDU5a2ZwRDhmNTVxY1N4em5fNVIxc3g0SnVFMUx1a2ZyRmw5MGp4eEpzeDVvVjNUTkNTdnZFZlFhb1ZuTEMxRkMyN0xCTlpfdE5KeXJDN1NNX1dlYWR2b3F5akg5cndTT0V4Vg?oc=5",
+     "title": "JBS enters beauty market with US$542 M Flora acquisition."
+    }
+   ],
+   "ids": [
+    "909bc59b4b6f"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "JBS enters beauty market with US$542 M Flora acquisition.",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "175252db1834",
    "title": "MBRF’s Q3 profit more than doubles on post-merger gains",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR0VfRWJGWmNZamVPbTJ3R1I3bEVUaEpLYm1YbnkxQlo0X01ISno3WTgyOHhiVXk3VTFGd19XZHhQYl9QUEdmTUtidnJoUjF1QU53XzFGaEwxNkpNNW1OY0tvc1h5LXU3MUtPdy1FbEVGOE81NkZEUC15NXFIaTYzNnpaSU9SOTMxaWhLVXVRbndMMXoyaFoyU1ZfU2ROU3BYVXdRUmJGdkU3X1pkUGVWN2pJMEt1a3dzMGJNVW90LTNnVDJI0gHTAUFVX3lxTE1RcThYYkM1c3VIYjQtbmI2SVVhcU90ZWViRDE4djMzMUI3MUhZVGp3akVSSGpiSVdKWmRWNktPaG50YjJRZ2dWeDVLbjVXRmUyLVFJTWdwY2cyTGxrdEhucm5jR3pMOGZhcE1zZ0c4OXB2b2E5VTMtSXFtczhQTld3VmNtSFhVZmhXTEV0WGtYbDFQRklkZHllVEQxcTlPTjNhRVlobUJ2ZEFBY011QmNRdGFQTFpRT21PUVliWnVBSE9GSERDVVhpVlpxNGpUWVZMSDg?oc=5",
@@ -13926,6 +13927,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "New creator economy investment platform combines talent management, brand relationships, content production, and creator monetization. Platform to expand through strategic acquisitions, leveraging H.I.G.'s strong M&A and operational experience. BOSTON, Nov. 13, 2026 /PRNewswire/ -- H.I.G....",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5746c9ef72f0",
+   "title": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic",
+   "link": "https://www.moneytimes.com.br/santander-ve-pib-mais-fraco-e-inflacao-mais-teimosa-no-brasil-ate-2027-selic-vai-sofrer-jcav/",
+   "published": "2026-11-13T16:30:11+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/santander-ve-pib-mais-fraco-e-inflacao-mais-teimosa-no-brasil-ate-2027-selic-vai-sofrer-jcav/",
+     "title": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic"
+    }
+   ],
+   "ids": [
+    "5746c9ef72f0"
+   ],
+   "snippet": "O Santander revisou para baixo suas projeções de crescimento da economia brasileira e elevou as estimativas de inflação para 2026 e 2027. Em relatório divulgado nesta sexta-feira (13), o banco passou a projetar uma expansão do Produto Interno Bruto (PIB) de apenas 0,8% no próximo ano, ante 1,3% anteriormente. Para 2026, a estimativa de crescimento […]",
+   "prescore": 4.8,
+   "headline": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Santander revisou para baixo suas projeções de crescimento da economia brasileira e elevou as estimativas de inflação para 2026 e 2027. Em relatório divulgado nesta sexta-feira (13), o banco passou a projetar uma expansão do Produto Interno Bruto (PIB) de apenas 0,8% no próximo ano, ante 1,3% anteriormente. Para 2026, a estimativa de crescimento […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14135,49 +14169,10 @@
    "ai": false
   },
   {
-   "id": "f888f70f528b",
-   "title": "Kassab diz que vê com otimismo posição do governo sobre ajuste fiscal",
-   "link": "https://www.infomoney.com.br/politica/kassab-diz-que-ve-com-otimismo-posicao-do-governo-sobre-ajuste-fiscal/",
-   "published": "2026-11-13T15:04:28+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/kassab-diz-que-ve-com-otimismo-posicao-do-governo-sobre-ajuste-fiscal/",
-     "title": "Kassab diz que vê com otimismo posição do governo sobre ajuste fiscal"
-    },
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/kassab-sobre-ajuste-fiscal-estou-vendo-com-bastante-otimismo-o-posicionamento-do-governo-jcav/",
-     "title": "Kassab, sobre ajuste fiscal: ‘Estou vendo com bastante otimismo o posicionamento do governo’"
-    }
-   ],
-   "ids": [
-    "f888f70f528b",
-    "0d511fdfee29"
-   ],
-   "snippet": "Os elogios ocorrem em meio às articulações para a participação do PSD no quarto mandato de Lula The post Kassab diz que vê com otimismo posição do governo sobre ajuste fiscal appeared first on InfoMoney .",
-   "prescore": 4.7,
-   "headline": "Kassab diz que vê com otimismo posição do governo sobre ajuste fiscal",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Os elogios ocorrem em meio às articulações para a participação do PSD no quarto mandato de Lula The post Kassab diz que vê com otimismo posição do governo sobre ajuste fiscal appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "1af1025ec1bc",
    "title": "Kevin Warsh Puts His Stamp on the Fed, One Canceled Rate Decision at a Time",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWWREYWtpWllac2NUdW9FOW1tdXZrTS1FclFzZnA4TEhkOEFJQ0liTEZZdElXbU5BUHMtTnNVME1zYUVpWHY5VXZmM0Z4YWRMY0U4YzVFdldTOEhEQUpSSnluaXNNM2VVVlQ0YnNXR0hUNHRhM1gwSWhtZXl3QlB2QXR5aUVXajZBTTlRdDhB?oc=5",
-   "published": "2026-11-13T15:02:00+00:00",
+   "published": "2026-11-13T15:03:13+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -14274,7 +14269,7 @@
   },
   {
    "id": "82ea0ff76ae8",
-   "title": "Dólar oscila com plano fiscal no radar; Bolsa avança com temporada de balanços",
+   "title": "Dólar cai com plano fiscal no radar; Bolsa avança com temporada de balanços",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-perto-da-estabilidade-com-aprovacao-de-plano-fiscal-no-radar.shtml",
    "published": "2026-11-13T12:48:00+00:00",
    "region": "BR",
@@ -14282,19 +14277,19 @@
     {
      "source": "Folha",
      "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-perto-da-estabilidade-com-aprovacao-de-plano-fiscal-no-radar.shtml",
-     "title": "Dólar oscila com plano fiscal no radar; Bolsa avança com temporada de balanços"
+     "title": "Dólar cai com plano fiscal no radar; Bolsa avança com temporada de balanços"
     }
    ],
    "ids": [
     "82ea0ff76ae8"
    ],
-   "snippet": "O dólar está oscilando nesta sexta-feira (13), com investidores repercutindo a aprovação do plano de ajuste fiscal do governo de Luiz Inácio Lula da Silva (PT) pelo Senado Federal, na véspera (12). A proposta reúne medidas para ajudar a equipe econômica a buscar o centro da meta de resultado primário, que corresponde à diferença entre receitas e despesas do governo, descontado o serviço da dívida pública. Leia mais (11/13/2026 - 09h48)",
+   "snippet": "O dólar está em queda nesta sexta-feira (13), com investidores repercutindo a aprovação do plano de ajuste fiscal do governo de Luiz Inácio Lula da Silva (PT) pelo Senado Federal, na véspera (12). A proposta reúne medidas para ajudar a equipe econômica a buscar o centro da meta de resultado primário, que corresponde à diferença entre receitas e despesas do governo, descontado o serviço da dívida pública. Leia mais (11/13/2026 - 09h48)",
    "prescore": 4.0,
-   "headline": "Dólar oscila com plano fiscal no radar; Bolsa avança com temporada de balanços",
+   "headline": "Dólar cai com plano fiscal no radar; Bolsa avança com temporada de balanços",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O dólar está oscilando nesta sexta-feira (13), com investidores repercutindo a aprovação do plano de ajuste fiscal do governo de Luiz Inácio Lula da Silva (PT) pelo Senado Federal, na véspera (12). A proposta reúne medidas para ajudar a equipe econômica a buscar o centro da meta de resultado primário, que corresponde à diferença entre receitas e despesas do governo, descontado o serviço da dívida ",
+   "summary": "O dólar está em queda nesta sexta-feira (13), com investidores repercutindo a aprovação do plano de ajuste fiscal do governo de Luiz Inácio Lula da Silva (PT) pelo Senado Federal, na véspera (12). A proposta reúne medidas para ajudar a equipe econômica a buscar o centro da meta de resultado primário, que corresponde à diferença entre receitas e despesas do governo, descontado o serviço da dívida p",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14339,6 +14334,39 @@
    "ai": false
   },
   {
+   "id": "2fe65d924eda",
+   "title": "Além do agro: entenda por que o lucro do Banco do Brasil despencou 66,5% e derrubou as ações",
+   "link": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/13/entenda-por-que-o-lucro-do-banco-do-brasil-despencou-e-derrubou-as-acoes.ghtml",
+   "published": "2026-11-13T16:15:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/agronegocios/noticia/2026/11/13/entenda-por-que-o-lucro-do-banco-do-brasil-despencou-e-derrubou-as-acoes.ghtml",
+     "title": "Além do agro: entenda por que o lucro do Banco do Brasil despencou 66,5% e derrubou as ações"
+    }
+   ],
+   "ids": [
+    "2fe65d924eda"
+   ],
+   "snippet": "Presidente do BB fala sobre crise com o agro A forte queda das ações do Banco do Brasil na quinta-feira (12) refletiu a reação negativa do mercado aos resultados do terceiro trimestre de 2026, divulgados na véspera. Os papéis recuaram 8,35% no Ibovespa, principal índice da bolsa brasileira. O banco atribuiu a queda de 66,5% no lucro ao aumento da inadimplência, principalmente no agronegócio. Mas os problemas no setor não explicam, sozinhos, o resultado abaixo das expectativas. 🗒️ Tem alguma sugestão de reportagem? Mande para o g1 O avanço dos calotes no cartão de crédito, a redução das receita",
+   "prescore": 3.8,
+   "headline": "Além do agro: entenda por que o lucro do Banco do Brasil despencou 66,5% e derrubou as ações",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Presidente do BB fala sobre crise com o agro A forte queda das ações do Banco do Brasil na quinta-feira (12) refletiu a reação negativa do mercado aos resultados do terceiro trimestre de 2026, divulgados na véspera. Os papéis recuaram 8,35% no Ibovespa, principal índice da bolsa brasileira. O banco atribuiu a queda de 66,5% no lucro ao aumento da inadimplência, principalmente no agronegócio. Mas o",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d1a3554529a6",
    "title": "Presidente do BC diz que debate sobre juro está maior que 'disputa de torcida organizada e comentário de postagem em rede social'",
    "link": "https://g1.globo.com/economia/noticia/2026/11/13/presidente-do-bc-critica-debate-sobre-juros-parece-disputa-de-torcida-organizada-e-postagem-em-rede-social.ghtml",
@@ -14362,45 +14390,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "O presidente do Banco Central (BC), Gabriel Galípolo, criticou o debate sobre o patamar da taxa de juros na economia brasileira, suas repercussões sobre a dívida pública e, também, sobre a inadimplência e o alto nível de endividamento da população brasileira. \"Queria trazer um pouco dessa complexidade em um ambiente que o debate econômico está mais conflagrado que disputa de torcida organizada e c",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "9e982b5907f9",
-   "title": "Veja as razões da PGR para rejeitar a revisão de condenação de Jair Bolsonaro",
-   "link": "https://www.infomoney.com.br/politica/veja-as-razoes-da-pgr-para-rejeitar-a-revisao-de-condenacao-de-jair-bolsonaro/",
-   "published": "2026-11-13T15:11:05+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/veja-as-razoes-da-pgr-para-rejeitar-a-revisao-de-condenacao-de-jair-bolsonaro/",
-     "title": "Veja as razões da PGR para rejeitar a revisão de condenação de Jair Bolsonaro"
-    },
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/veja-as-razoes-apontadas-pela-pgr-para-rejeitar-a-revisao-de-condenacao-de-jair-bolsonaro/",
-     "title": "As razões apontadas pela PGR para rejeitar revisão de condenação de Jair Bolsonaro"
-    }
-   ],
-   "ids": [
-    "9e982b5907f9",
-    "e21421eefd69"
-   ],
-   "snippet": "Entre os argumentos estão a inadequação da via processual e a rejeição dos argumentos de mérito e nulidade The post Veja as razões da PGR para rejeitar a revisão de condenação de Jair Bolsonaro appeared first on InfoMoney .",
-   "prescore": 3.7,
-   "headline": "Veja as razões da PGR para rejeitar a revisão de condenação de Jair Bolsonaro",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Entre os argumentos estão a inadequação da via processual e a rejeição dos argumentos de mérito e nulidade The post Veja as razões da PGR para rejeitar a revisão de condenação de Jair Bolsonaro appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14478,6 +14467,105 @@
    "ai": false
   },
   {
+   "id": "6ab382d997ef",
+   "title": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?",
+   "link": "https://www.infomoney.com.br/mercados/risco-fiscal-como-as-contas-publicas-podem-influenciar-dolar-juros-bolsa/",
+   "published": "2026-11-13T16:30:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/risco-fiscal-como-as-contas-publicas-podem-influenciar-dolar-juros-bolsa/",
+     "title": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?"
+    }
+   ],
+   "ids": [
+    "6ab382d997ef"
+   ],
+   "snippet": "Mais do que o tamanho da dívida pública, sua trajetória preocupa os investidores e pode determinar o comportamento dos ativos brasileiros The post Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa? appeared first on InfoMoney .",
+   "prescore": 3.2,
+   "headline": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Mais do que o tamanho da dívida pública, sua trajetória preocupa os investidores e pode determinar o comportamento dos ativos brasileiros The post Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa? appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "3340bcab1776",
+   "title": "UBS rebaixa Brasil entre ações emergentes e destaca países mais atrativos para 2027",
+   "link": "https://www.infomoney.com.br/mercados/ubs-rebaixa-brasil-entre-acoes-emergentes-e-destaca-paises-mais-atrativos-para-2027/",
+   "published": "2026-11-13T16:28:40+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/ubs-rebaixa-brasil-entre-acoes-emergentes-e-destaca-paises-mais-atrativos-para-2027/",
+     "title": "UBS rebaixa Brasil entre ações emergentes e destaca países mais atrativos para 2027"
+    }
+   ],
+   "ids": [
+    "3340bcab1776"
+   ],
+   "snippet": "Banco vê Brasil como um dos mercados mais desafiadores entre os emergentes, citando incerteza fiscal, inflação resistente e juros altos por mais tempo The post UBS rebaixa Brasil entre ações emergentes e destaca países mais atrativos para 2027 appeared first on InfoMoney .",
+   "prescore": 3.2,
+   "headline": "UBS rebaixa Brasil entre ações emergentes e destaca países mais atrativos para 2027",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Banco vê Brasil como um dos mercados mais desafiadores entre os emergentes, citando incerteza fiscal, inflação resistente e juros altos por mais tempo The post UBS rebaixa Brasil entre ações emergentes e destaca países mais atrativos para 2027 appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f4e931cf5186",
+   "title": "Dividendos de FIIs chegam a 1,34% nesta sexta-feira; confira os pagamentos",
+   "link": "https://www.infomoney.com.br/onde-investir/dividendos-de-fiis-chegam-a-134-nesta-sexta-confira-os-pagamentos/",
+   "published": "2026-11-13T16:28:06+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/onde-investir/dividendos-de-fiis-chegam-a-134-nesta-sexta-confira-os-pagamentos/",
+     "title": "Dividendos de FIIs chegam a 1,34% nesta sexta-feira; confira os pagamentos"
+    }
+   ],
+   "ids": [
+    "f4e931cf5186"
+   ],
+   "snippet": "Os investidores de fundos imobiliários (FIIs) recebem nesta sexta-feira (13) os dividendos de uma série de fundos listados na B3. The post Dividendos de FIIs chegam a 1,34% nesta sexta-feira; confira os pagamentos appeared first on InfoMoney .",
+   "prescore": 3.2,
+   "headline": "Dividendos de FIIs chegam a 1,34% nesta sexta-feira; confira os pagamentos",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Os investidores de fundos imobiliários (FIIs) recebem nesta sexta-feira (13) os dividendos de uma série de fundos listados na B3. The post Dividendos de FIIs chegam a 1,34% nesta sexta-feira; confira os pagamentos appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "54e089266c52",
    "title": "Plural, do grupo Genial, eleva proteção de fundos com incerteza sobre novo governo Lula",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPREdDM1ZBVFAwak1JeXU4c2NzRDB3dlAtaEVJd1lnR21RcExzS0ZXb3JnQ1dTUE5MNl9oZnB6Nkd0X3lURkVwOHdTZUxhcjNKVzBWUmNJanNSLUU3SHpjRzJHT3ZURUZWMlVYYUYzWm1kZDZGcGIta3lrZGZTc2Nxb2NJQkdkNjdZNkFUdHE3eVFEamdXUlBTNzMwcVpEWjhtQ2Q1SU9lVG1Kck1nRTRIZlozUkdwMFZDWXI4VG54Sng5ZmVEcVdUOElCZ9IB3wFBVV95cUxNNExHYWRnamd3djB6QmtfaDdJNlFOTDJxUERWRDM3d0k5MXl6TzZRVi1tMDF2bEw4SmcySk4tblhHUnJvZHA0ZU1wRFZQMHBVUnJKN1JpUDVndld3ZmF5bVVtbEpMd21ZWVY0eHdzdDUxaGswNTJ2WDJMSWd5WkxwLXRFM2szN01WRXFOSmdSa0lGWXQybWROaU5KbEQydW80ZmJucEczNGY5SHF3YjZMY2VJWDVhX21ldWJyRlJ5enZ5WmJJbVJkb3RmT3dkMm1RZVpDdzhrcDEwZWlLSE5v?oc=5",
@@ -14500,6 +14588,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c39504c02086",
+   "title": "Gilmar diz que trocas de delegados ocorrem todo dia e endossa fala de Lula para atacar Lava Jato",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/gilmar-diz-que-trocas-de-delegados-ocorrem-todo-dia-e-endossa-fala-de-lula-para-atacar-lava-jato.shtml",
+   "published": "2026-11-13T16:37:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/gilmar-diz-que-trocas-de-delegados-ocorrem-todo-dia-e-endossa-fala-de-lula-para-atacar-lava-jato.shtml",
+     "title": "Gilmar diz que trocas de delegados ocorrem todo dia e endossa fala de Lula para atacar Lava Jato"
+    }
+   ],
+   "ids": [
+    "c39504c02086"
+   ],
+   "snippet": "O ministro Gilmar Mendes , do STF (Supremo Tribunal Federal), afirmou nesta sexta-feira (13) que substituições de delegados fazem parte da rotina, em meio ao desgaste do diretor-geral da Polícia Federal , Andrei Rodrigues , após o afastamento de delegados do caso Master. Leia mais (11/13/2026 - 13h37)",
+   "prescore": 3.0,
+   "headline": "Gilmar diz que trocas de delegados ocorrem todo dia e endossa fala de Lula para atacar Lava Jato",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O ministro Gilmar Mendes , do STF (Supremo Tribunal Federal), afirmou nesta sexta-feira (13) que substituições de delegados fazem parte da rotina, em meio ao desgaste do diretor-geral da Polícia Federal , Andrei Rodrigues , após o afastamento de delegados do caso Master. Leia mais (11/13/2026 - 13h37)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15007,6 +15128,39 @@
    "ai": false
   },
   {
+   "id": "0d511fdfee29",
+   "title": "Kassab, sobre ajuste fiscal: ‘Estou vendo com bastante otimismo o posicionamento do governo’",
+   "link": "https://www.moneytimes.com.br/kassab-sobre-ajuste-fiscal-estou-vendo-com-bastante-otimismo-o-posicionamento-do-governo-jcav/",
+   "published": "2026-11-13T15:04:28+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/kassab-sobre-ajuste-fiscal-estou-vendo-com-bastante-otimismo-o-posicionamento-do-governo-jcav/",
+     "title": "Kassab, sobre ajuste fiscal: ‘Estou vendo com bastante otimismo o posicionamento do governo’"
+    }
+   ],
+   "ids": [
+    "0d511fdfee29"
+   ],
+   "snippet": "O presidente nacional do PSD, Gilberto Kassab, avaliou com otimismo nesta sexta-feira, 13, a postura do governo Luiz Inácio Lula da Silva (PT) em relação às contas públicas, ao comentar a aprovação do texto-base do ajuste fiscal pelo Senado. Segundo ele, as ações da equipe econômica trazem confiança e atendem às expectativas de empresários e […]",
+   "prescore": 2.8,
+   "headline": "Kassab, sobre ajuste fiscal: ‘Estou vendo com bastante otimismo o posicionamento do governo’",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O presidente nacional do PSD, Gilberto Kassab, avaliou com otimismo nesta sexta-feira, 13, a postura do governo Luiz Inácio Lula da Silva (PT) em relação às contas públicas, ao comentar a aprovação do texto-base do ajuste fiscal pelo Senado. Segundo ele, as ações da equipe econômica trazem confiança e atendem às expectativas de empresários e […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "32bfa3ea805e",
    "title": "Ukraine Hits Ninth Russian Oil Refinery Since Start of November",
    "link": "https://www.bloomberg.com/news/articles/2026-11-13/ukraine-hits-ninth-russian-oil-refinery-since-start-of-november",
@@ -15062,39 +15216,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Russian diesel exports slumped at the start of November as renewed Ukrainian attacks on refineries threatened to curb fuel output, even as stronger dirty-fuel shipments lifted the country’s overall oil-product flows.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f5122b0f8993",
-   "title": "Mexico Rate Cut Fuels Speculation Officials Want a Weaker Peso",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-13/mexico-rate-cut-fuels-speculation-officials-want-a-weaker-peso",
-   "published": "2026-11-13T14:53:13+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-13/mexico-rate-cut-fuels-speculation-officials-want-a-weaker-peso",
-     "title": "Mexico Rate Cut Fuels Speculation Officials Want a Weaker Peso"
-    }
-   ],
-   "ids": [
-    "f5122b0f8993"
-   ],
-   "snippet": "Traders are increasingly speculating Mexico’s central bank is pushing to weaken the currency whose strength threatened to weigh on exports and tourism.",
-   "prescore": 2.8,
-   "headline": "Mexico Rate Cut Fuels Speculation Officials Want a Weaker Peso",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Traders are increasingly speculating Mexico’s central bank is pushing to weaken the currency whose strength threatened to weigh on exports and tourism.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15337,6 +15458,39 @@
    "ai": false
   },
   {
+   "id": "3e500d053724",
+   "title": "Your Dog Is Too Fat: Why Everyone at the Vet’s Office Is at Each Other’s Throats",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQY3I4VGpsWV9NcW81ZjBKMkNwdWkyb0U4VnVzZmxlVXducWdSNFIwZXpEUXVmb1g1X1NCMm1OOUdKS3dTV0g0dFEydmVSQVhQdi05TlJZQU1kdVItSUc0UFJZSGF5cmZmR1hwaFl1bHlibkkwY0lLYkFLWjVlNUN6aTZpZ1pSXzc2VG5jdnJJMXFnSVdkb18yYXdra210cGVnSUtYNUNBTHBncHp3VVRreVpCcGJVVTA?oc=5",
+   "published": "2026-11-13T16:30:46+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQY3I4VGpsWV9NcW81ZjBKMkNwdWkyb0U4VnVzZmxlVXducWdSNFIwZXpEUXVmb1g1X1NCMm1OOUdKS3dTV0g0dFEydmVSQVhQdi05TlJZQU1kdVItSUc0UFJZSGF5cmZmR1hwaFl1bHlibkkwY0lLYkFLWjVlNUN6aTZpZ1pSXzc2VG5jdnJJMXFnSVdkb18yYXdra210cGVnSUtYNUNBTHBncHp3VVRreVpCcGJVVTA?oc=5",
+     "title": "Your Dog Is Too Fat: Why Everyone at the Vet’s Office Is at Each Other’s Throats"
+    }
+   ],
+   "ids": [
+    "3e500d053724"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Your Dog Is Too Fat: Why Everyone at the Vet’s Office Is at Each Other’s Throats",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "8150151464f1",
    "title": "U.S. Stocks Fall as Nvidia Shares Drop Again",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcEdLelU4VXpMTmdPeTgxTjBhZkd3NEIyZDg5ZnZCWXdtVnVFd3Fxbm95Z2ZfbkNZRnh2WVppWUhnR0pvZXZsRHdEaWdkaEJ1emVweFpFbG9WUTBPV3B1UktyeVNodWY0SXBtOGNUbXZQWXcyRmNWUnRGR21vYWt0WmxraHFsZ2haSGRCdHZacG1uTkpMTTlNQUpsNEFSRUY4Z2MzaUZn?oc=5",
@@ -15356,6 +15510,39 @@
    "prescore": 2.6,
    "headline": "U.S. Stocks Fall as Nvidia Shares Drop Again",
    "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f5776c16242e",
+   "title": "The Top Yankees Executive at the Center of College Sports’ Big Fight",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMnlkVGhseEZHNEpjTVZLdXdtcF85Y1JMeHJWdm9zRjI5X25tZ09RSm9ocXVqTEI4VzNrZzd1dTY4TXJEcWxOeENjYkNDQ2xYeUpNTjdNYkVvN29oLWRvOUkwQk9OUFRQd2wwY19JeFRwa2l1Ui1NQWg5OWxkaU5zMHlFYUNNbTJoSGdtZ3M4R1J5dlE?oc=5",
+   "published": "2026-11-13T15:11:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMnlkVGhseEZHNEpjTVZLdXdtcF85Y1JMeHJWdm9zRjI5X25tZ09RSm9ocXVqTEI4VzNrZzd1dTY4TXJEcWxOeENjYkNDQ2xYeUpNTjdNYkVvN29oLWRvOUkwQk9OUFRQd2wwY19JeFRwa2l1Ui1NQWg5OWxkaU5zMHlFYUNNbTJoSGdtZ3M4R1J5dlE?oc=5",
+     "title": "The Top Yankees Executive at the Center of College Sports’ Big Fight"
+    }
+   ],
+   "ids": [
+    "f5776c16242e"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "The Top Yankees Executive at the Center of College Sports’ Big Fight",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -15997,6 +16184,39 @@
    "ai": false
   },
   {
+   "id": "68f8864146c1",
+   "title": "MBRF tem fechado compra de grãos a preços confortáveis, diz vice-presidente",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ2hTNEpZZjlFSWxCQTZQRDRLdnoybnRRRTJRc08yMHhFQXFNNURuRUZ5UGJGMWJKVEFGWFlOdVVFNWtKWkJPYUxaMHpTdFk4RWlQTUFqRzMwSWdkTk1VMjVRRDduSkl2Y2NFQ2dsbmttWHJMNkxoTzRQMkZhcDVOTTNXdG5HaDJoS2FnTnVYZmVNSkNyNmRUdFVLa3pXTU95MjRYODZIemVOOU0tc2c?oc=5",
+   "published": "2026-11-13T16:36:23+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ2hTNEpZZjlFSWxCQTZQRDRLdnoybnRRRTJRc08yMHhFQXFNNURuRUZ5UGJGMWJKVEFGWFlOdVVFNWtKWkJPYUxaMHpTdFk4RWlQTUFqRzMwSWdkTk1VMjVRRDduSkl2Y2NFQ2dsbmttWHJMNkxoTzRQMkZhcDVOTTNXdG5HaDJoS2FnTnVYZmVNSkNyNmRUdFVLa3pXTU95MjRYODZIemVOOU0tc2c?oc=5",
+     "title": "MBRF tem fechado compra de grãos a preços confortáveis, diz vice-presidente"
+    }
+   ],
+   "ids": [
+    "68f8864146c1"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "MBRF tem fechado compra de grãos a preços confortáveis, diz vice-presidente",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "813489e46640",
    "title": "A “sexta-feira 13” da Microsoft: falha global, empresas sem comunicação e impacto na Bolsa",
    "link": "https://neofeed.com.br/negocios/a-sexta-feira-13-da-microsoft-falha-global-empresas-sem-comunicacao-e-impacto-na-bolsa/",
@@ -16151,6 +16371,39 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Finland reached out to Ukraine after one of Kyiv’s drones struck a Russian warship this week in what is the first time a naval vessel has been targeted in the busy Gulf of Finland.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "3f52e35b5cef",
+   "title": "Claude fora do Ar? Falha derruba IA da Anthropic dias antes de estreia na bolsa!",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORlBpdUsyeVk5VmtYSmx6YUwzM1NubzhjN2lHMzAxRjd6bGtHYVpiM2xXR2ZQSm5kTmZQRU1Ed0hBR0R4NE5uTXh3ZkZkUHFDaV9wTjZOVTZwRG5PcWdKdko3VWdYZG41NjBrNFpwYTh0SXJvaUVKY3ROaG84LWZ2RGltQUZYZjhwUlI5NVNPUnduYVJyc0xYb2ZYcnRPNEZVRzdPeQ?oc=5",
+   "published": "2026-11-13T13:39:25+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Celular.pro.br",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORlBpdUsyeVk5VmtYSmx6YUwzM1NubzhjN2lHMzAxRjd6bGtHYVpiM2xXR2ZQSm5kTmZQRU1Ed0hBR0R4NE5uTXh3ZkZkUHFDaV9wTjZOVTZwRG5PcWdKdko3VWdYZG41NjBrNFpwYTh0SXJvaUVKY3ROaG84LWZ2RGltQUZYZjhwUlI5NVNPUnduYVJyc0xYb2ZYcnRPNEZVRzdPeQ?oc=5",
+     "title": "Claude fora do Ar? Falha derruba IA da Anthropic dias antes de estreia na bolsa!"
+    }
+   ],
+   "ids": [
+    "3f52e35b5cef"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Claude fora do Ar? Falha derruba IA da Anthropic dias antes de estreia na bolsa!",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16360,6 +16613,39 @@
    "ai": false
   },
   {
+   "id": "840870a72e3d",
+   "title": "Moretti: governo fará qualquer medida em acréscimo para ter cenário fiscal benigno",
+   "link": "https://www.infomoney.com.br/politica/moretti-governo-fara-qualquer-medida-em-acrescimo-para-ter-cenario-fiscal-benigno/",
+   "published": "2026-11-13T16:35:58+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/politica/moretti-governo-fara-qualquer-medida-em-acrescimo-para-ter-cenario-fiscal-benigno/",
+     "title": "Moretti: governo fará qualquer medida em acréscimo para ter cenário fiscal benigno"
+    }
+   ],
+   "ids": [
+    "840870a72e3d"
+   ],
+   "snippet": "Ministro do Planejamento articula conversas na Câmara para viabilizar votação do PLP do ajuste fiscal The post Moretti: governo fará qualquer medida em acréscimo para ter cenário fiscal benigno appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Moretti: governo fará qualquer medida em acréscimo para ter cenário fiscal benigno",
+   "category": "macro",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Ministro do Planejamento articula conversas na Câmara para viabilizar votação do PLP do ajuste fiscal The post Moretti: governo fará qualquer medida em acréscimo para ter cenário fiscal benigno appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ac42dc1b3a9d",
    "title": "Do gráfico ao livro: como a metodologia de Júnior Vianna simplifica o Renko",
    "link": "https://www.infomoney.com.br/mercados/do-grafico-ao-livro-como-metodologia-de-junior-vianna-simplifica-renko/",
@@ -16382,6 +16668,39 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Da simplificação da leitura gráfica ao gerenciamento de risco, trader transforma sua experiência operacional em conhecimento estruturado para o day trade The post Do gráfico ao livro: como a metodologia de Júnior Vianna simplifica o Renko appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "dab6c299f919",
+   "title": "Comunicação à moda antiga: pane na Microsoft leva traders a apelar para telefone e fax",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU1hZWmNvYXhQd2k2XzI0ZXRuUkZRUndrNzc0enlYNUNkM2J0djk5NF9hcTNYM2hDVWd6NU10UlRqQm9kWlRMUmhSQTZzUW5UWk93R0dJQUNCWVlfRGJXcFFSeHM3MU9xekxqQWtCYk91b0U5TG15Nm14ZlFTTHF3RXBMUU5mcE14eDZPRENkYVhvT1J5SjFuTUFDazBUVFh4My1HdWZ6ZUdiMG96UWFZN283VDdNR2ZZY09VYURjeUJ5YUp2WVVUNtIB3AFBVV95cUxPcnZ5ZTRVN2dKZU5UMTlhZGhMRndhRnpROG9lSERIRUZ0UEhMNm5tTm1kZ003dmUyUlBtT0E1Xzd1RzIwd3h4NEIzZi0xS25rRTRHTGRhbVA5Z2t4enNYbmxPRHJ4VWZQT0loaTVkakllcEpnSl9hcFFMNUx3U1d2YjhNYTR5YTZTNmtXZThvWFdUZGF5bnBMMFBWM0JRN21NdktjeFFDSmwybEU1bm9rdDlZb2l0ZmJfbV9VaFJvNzhaOE92Wjl4RlUyNnNfUGMyOU50bkt0YzItR1o5?oc=5",
+   "published": "2026-11-13T16:11:15+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU1hZWmNvYXhQd2k2XzI0ZXRuUkZRUndrNzc0enlYNUNkM2J0djk5NF9hcTNYM2hDVWd6NU10UlRqQm9kWlRMUmhSQTZzUW5UWk93R0dJQUNCWVlfRGJXcFFSeHM3MU9xekxqQWtCYk91b0U5TG15Nm14ZlFTTHF3RXBMUU5mcE14eDZPRENkYVhvT1J5SjFuTUFDazBUVFh4My1HdWZ6ZUdiMG96UWFZN283VDdNR2ZZY09VYURjeUJ5YUp2WVVUNtIB3AFBVV95cUxPcnZ5ZTRVN2dKZU5UMTlhZGhMRndhRnpROG9lSERIRUZ0UEhMNm5tTm1kZ003dmUyUlBtT0E1Xzd1RzIwd3h4NEIzZi0xS25rRTRHTGRhbVA5Z2t4enNYbmxPRHJ4VWZQT0loaTVkakllcEpnSl9hcFFMNUx3U1d2YjhNYTR5YTZTNmtXZThvWFdUZGF5bnBMMFBWM0JRN21NdktjeFFDSmwybEU1bm9rdDlZb2l0ZmJfbV9VaFJvNzhaOE92Wjl4RlUyNnNfUGMyOU50bkt0YzItR1o5?oc=5",
+     "title": "Comunicação à moda antiga: pane na Microsoft leva traders a apelar para telefone e fax"
+    }
+   ],
+   "ids": [
+    "dab6c299f919"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Comunicação à moda antiga: pane na Microsoft leva traders a apelar para telefone e fax",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16580,72 +16899,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Banco avalia reajuste das taxas diante da disponibilidade de recursos The post Caixa estuda aumentar juros do financiamento imobiliário, diz vice-presidente appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0d6a1d900b66",
-   "title": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia",
-   "link": "https://www.infomoney.com.br/mercados/wall-street-devolve-ganhos-iniciais-com-queda-de-techs-por-turbulencia-com-nvidia/",
-   "published": "2026-11-13T15:54:18+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/wall-street-devolve-ganhos-iniciais-com-queda-de-techs-por-turbulencia-com-nvidia/",
-     "title": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia"
-    }
-   ],
-   "ids": [
-    "0d6a1d900b66"
-   ],
-   "snippet": "Dados que mostraram que ​os preços ao produtor nos EUA em outubro ficaram ligeiramente abaixo ‌do esperado ​pouco contribuíram para amenizar o clima no ⁠mercado The post Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Dados que mostraram que ​os preços ao produtor nos EUA em outubro ficaram ligeiramente abaixo ‌do esperado ​pouco contribuíram para amenizar o clima no ⁠mercado The post Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "290870724f6d",
-   "title": "Compass e Rumo sobem após balanços e “puxam” Cosan; veja o que agradou mercado",
-   "link": "https://www.infomoney.com.br/mercados/compass-e-rumo-sobem-apos-balancos-e-puxam-cosan-veja-o-que-agradou-mercado/",
-   "published": "2026-11-13T15:47:04+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/compass-e-rumo-sobem-apos-balancos-e-puxam-cosan-veja-o-que-agradou-mercado/",
-     "title": "Compass e Rumo sobem após balanços e “puxam” Cosan; veja o que agradou mercado"
-    }
-   ],
-   "ids": [
-    "290870724f6d"
-   ],
-   "snippet": "Compass e Rumo divulgaram resultados no terceiro trimestre de 2026 The post Compass e Rumo sobem após balanços e “puxam” Cosan; veja o que agradou mercado appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Compass e Rumo sobem após balanços e “puxam” Cosan; veja o que agradou mercado",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Compass e Rumo divulgaram resultados no terceiro trimestre de 2026 The post Compass e Rumo sobem após balanços e “puxam” Cosan; veja o que agradou mercado appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17098,6 +17351,72 @@
    "ai": false
   },
   {
+   "id": "d29d43d990e2",
+   "title": "Microsoft says email delivery and service availability 'improving' across more infrastructure",
+   "link": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+   "published": "2026-11-13T16:38:33+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+     "title": "Microsoft says email delivery and service availability 'improving' across more infrastructure"
+    }
+   ],
+   "ids": [
+    "d29d43d990e2"
+   ],
+   "snippet": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
+   "prescore": 2.0,
+   "headline": "Microsoft says email delivery and service availability 'improving' across more infrastructure",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "46c1eddb92a9",
+   "title": "Moraes acompanha Dino e vota pelo fim da escala 6x1 em julgamento no STF; entenda a decisão",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/moraes-acompanha-dino-e-vota-pelo-fim-da-escala-6x1-em-julgamento-no-stf.shtml",
+   "published": "2026-11-13T16:32:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/moraes-acompanha-dino-e-vota-pelo-fim-da-escala-6x1-em-julgamento-no-stf.shtml",
+     "title": "Moraes acompanha Dino e vota pelo fim da escala 6x1 em julgamento no STF; entenda a decisão"
+    }
+   ],
+   "ids": [
+    "46c1eddb92a9"
+   ],
+   "snippet": "O julgamento pelo fim da escala 6x1 no plenário virtual do STF (Supremo Tribunal Federal) tem dois votos a favor da implantação da mudança a partir de 16 de dezembro , como prevê a emenda constitucional 141. Leia mais (11/13/2026 - 13h32)",
+   "prescore": 2.0,
+   "headline": "Moraes acompanha Dino e vota pelo fim da escala 6x1 em julgamento no STF; entenda a decisão",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O julgamento pelo fim da escala 6x1 no plenário virtual do STF (Supremo Tribunal Federal) tem dois votos a favor da implantação da mudança a partir de 16 de dezembro , como prevê a emenda constitucional 141. Leia mais (11/13/2026 - 13h32)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "f97bbfcb87af",
    "title": "Binance diz que concluiu reposição de US$ 6,3 bilhões roubados por hackers",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/binance-diz-que-concluiu-reposicao-de-us-63-bilhoes-roubados-por-hackers.shtml",
@@ -17450,39 +17769,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "O pagamento do 13º salário vai injetar R$ 339,21 bilhões na economia brasileira em 2026, segundo levantamento do Dieese (Departamento Intersindical de Estatística e Estudos Socioeconômicos). O montante equivale a 2,9% do PIB (Produto Interno Bruto). Leia mais (11/13/2026 - 12h11)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d29d43d990e2",
-   "title": "Microsoft says email queues 'approaching normal levels' as Outlook issues persist",
-   "link": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "published": "2026-11-13T15:10:20+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-     "title": "Microsoft says email queues 'approaching normal levels' as Outlook issues persist"
-    }
-   ],
-   "ids": [
-    "d29d43d990e2"
-   ],
-   "snippet": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
-   "prescore": 2.0,
-   "headline": "Microsoft says email queues 'approaching normal levels' as Outlook issues persist",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -18086,303 +18372,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "3aeaac4b1af6",
-   "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
-   "link": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
-   "published": "2026-11-13T14:01:24+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
-     "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here"
-    }
-   ],
-   "ids": [
-    "3aeaac4b1af6"
-   ],
-   "snippet": "Nvidia is facing its biggest crisis in its 33 year history, with founder Jensen Huang resigning as CEO. Here's the story of the rise and fall of Jensen Huang.",
-   "prescore": 2.0,
-   "headline": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Nvidia is facing its biggest crisis in its 33 year history, with founder Jensen Huang resigning as CEO. Here's the story of the rise and fall of Jensen Huang.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "755cbe25209b",
-   "title": "TJ-SP suspende prazos, e TRFs ficam sem email após pane global da Microsoft",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/tec/2026/11/falha-da-microsoft-deixa-tribunais-federais-sem-acesso-a-emails.shtml",
-   "published": "2026-11-13T13:52:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/tec/2026/11/falha-da-microsoft-deixa-tribunais-federais-sem-acesso-a-emails.shtml",
-     "title": "TJ-SP suspende prazos, e TRFs ficam sem email após pane global da Microsoft"
-    }
-   ],
-   "ids": [
-    "755cbe25209b"
-   ],
-   "snippet": "O Tribunal de Justiça de São Paulo (TJ-SP) suspendeu os prazos processuais nesta sexta-feira (13) em razão da falha global nos serviços da Microsoft. Tribunais regionais federais (TRFs) também estão sem acesso aos e-mails. Os TRFs da 1ª, 3ª e 6ª Regiões confirmaram o problema à Folha . Leia mais (11/13/2026 - 10h52)",
-   "prescore": 2.0,
-   "headline": "TJ-SP suspende prazos, e TRFs ficam sem email após pane global da Microsoft",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O Tribunal de Justiça de São Paulo (TJ-SP) suspendeu os prazos processuais nesta sexta-feira (13) em razão da falha global nos serviços da Microsoft. Tribunais regionais federais (TRFs) também estão sem acesso aos e-mails. Os TRFs da 1ª, 3ª e 6ª Regiões confirmaram o problema à Folha . Leia mais (11/13/2026 - 10h52)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "eb8b2a3433bd",
-   "title": "Vendas no varejo do Brasil surpreendem com alta de 0,2% em setembro",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468051",
-   "published": "2026-11-13T13:42:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468051",
-     "title": "Vendas no varejo do Brasil surpreendem com alta de 0,2% em setembro"
-    }
-   ],
-   "ids": [
-    "eb8b2a3433bd"
-   ],
-   "snippet": "As vendas varejistas no Brasil surpreenderam ao aumentar 0,2% em setembro na comparação com o mês anterior, contrapondo-se às perdas da indústria e dos serviços no mês e reforçando um quadro de relativa estabilidade do setor. Leia mais (11/13/2026 - 10h42)",
-   "prescore": 2.0,
-   "headline": "Vendas no varejo do Brasil surpreendem com alta de 0,2% em setembro",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "As vendas varejistas no Brasil surpreenderam ao aumentar 0,2% em setembro na comparação com o mês anterior, contrapondo-se às perdas da indústria e dos serviços no mês e reforçando um quadro de relativa estabilidade do setor. Leia mais (11/13/2026 - 10h42)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "605aceb4189c",
-   "title": "Sete nomes cotados para substituir Jensen Huang na Nvidia",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/sete-nomes-cotados-para-substituir-jensen-huang-na-nvidia.shtml",
-   "published": "2026-11-13T13:41:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/sete-nomes-cotados-para-substituir-jensen-huang-na-nvidia.shtml",
-     "title": "Sete nomes cotados para substituir Jensen Huang na Nvidia"
-    }
-   ],
-   "ids": [
-    "605aceb4189c"
-   ],
-   "snippet": "Encontrar um sucessor para Jensen Huang na Nvidia tem sido comparado à tarefa de substituir Steve Jobs na Apple . Em muitos aspectos, porém, o desafio é ainda maior. Leia mais (11/13/2026 - 10h41)",
-   "prescore": 2.0,
-   "headline": "Sete nomes cotados para substituir Jensen Huang na Nvidia",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Encontrar um sucessor para Jensen Huang na Nvidia tem sido comparado à tarefa de substituir Steve Jobs na Apple . Em muitos aspectos, porém, o desafio é ainda maior. Leia mais (11/13/2026 - 10h41)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "556169e36dfc",
-   "title": "Relatório rejeitado na PF cita suspeita de Moraes antecipar voto a Vorcaro",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/relatorio-rejeitado-na-pf-cita-suspeita-de-moraes-antecipar-voto-a-vorcaro.shtml",
-   "published": "2026-11-13T13:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/relatorio-rejeitado-na-pf-cita-suspeita-de-moraes-antecipar-voto-a-vorcaro.shtml",
-     "title": "Relatório rejeitado na PF cita suspeita de Moraes antecipar voto a Vorcaro"
-    }
-   ],
-   "ids": [
-    "556169e36dfc"
-   ],
-   "snippet": "O relatório sobre Alexandre de Moraes e o Banco Master rejeitado pela cúpula da PF ( Polícia Federal ) cita mensagens indicando que o ministro teria antecipado um voto a Daniel Vorcaro em uma ação no STF (Supremo Tribunal Federal) sobre faculdades de medicina. Leia mais (11/13/2026 - 10h30)",
-   "prescore": 2.0,
-   "headline": "Relatório rejeitado na PF cita suspeita de Moraes antecipar voto a Vorcaro",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O relatório sobre Alexandre de Moraes e o Banco Master rejeitado pela cúpula da PF ( Polícia Federal ) cita mensagens indicando que o ministro teria antecipado um voto a Daniel Vorcaro em uma ação no STF (Supremo Tribunal Federal) sobre faculdades de medicina. Leia mais (11/13/2026 - 10h30)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ab376f0fd77d",
-   "title": "Farmacias Benavides Announces Definitive Agreement to Be Acquired by Farmacias del Ahorro",
-   "link": "https://www.prnewswire.com/news-releases/farmacias-benavides-announces-definitive-agreement-to-be-acquired-by-farmacias-del-ahorro-302938956.html",
-   "published": "2026-11-13T13:22:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/farmacias-benavides-announces-definitive-agreement-to-be-acquired-by-farmacias-del-ahorro-302938956.html",
-     "title": "Farmacias Benavides Announces Definitive Agreement to Be Acquired by Farmacias del Ahorro"
-    }
-   ],
-   "ids": [
-    "ab376f0fd77d"
-   ],
-   "snippet": "MONTERREY, N.L., Nov. 13, 2026 /PRNewswire/ -- Farmacias Benavides (the \"Company\") today announced that its controlling shareholder, The Boots Group, has entered into a definitive agreement to sell the Company to Farmacias del Ahorro. The Boots Group is majority owned by Sycamore...",
-   "prescore": 2.0,
-   "headline": "Farmacias Benavides Announces Definitive Agreement to Be Acquired by Farmacias del Ahorro",
-   "category": "mna",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "MONTERREY, N.L., Nov. 13, 2026 /PRNewswire/ -- Farmacias Benavides (the \"Company\") today announced that its controlling shareholder, The Boots Group, has entered into a definitive agreement to sell the Company to Farmacias del Ahorro. The Boots Group is majority owned by Sycamore...",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "7495c20ae317",
-   "title": "CFTC Chair Selig tells CNBC crypto industry is embracing agency rules as legislation hopes fade",
-   "link": "https://www.cnbc.com/2026/11/13/cftc-chair-selig-crypto-industry-opting-into-agencys-crypto-rules-.html",
-   "published": "2026-11-13T13:15:35+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/13/cftc-chair-selig-crypto-industry-opting-into-agencys-crypto-rules-.html",
-     "title": "CFTC Chair Selig tells CNBC crypto industry is embracing agency rules as legislation hopes fade"
-    }
-   ],
-   "ids": [
-    "7495c20ae317"
-   ],
-   "snippet": "The top U.S. commodities regulator in October announced proposed crypto rules to assert its jurisdiction over the asset class.",
-   "prescore": 2.0,
-   "headline": "CFTC Chair Selig tells CNBC crypto industry is embracing agency rules as legislation hopes fade",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The top U.S. commodities regulator in October announced proposed crypto rules to assert its jurisdiction over the asset class.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "bd40d3c7296f",
-   "title": "CSN tem prejuízo de R$ 1,25 bilhão no 3º trimestre, com pressão de mineração e custos de frete",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/csn-tem-prejuizo-de-r-125-bilhao-no-3o-trimestre-com-pressao-de-mineracao-e-custos-de-frete.shtml",
-   "published": "2026-11-13T13:07:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/csn-tem-prejuizo-de-r-125-bilhao-no-3o-trimestre-com-pressao-de-mineracao-e-custos-de-frete.shtml",
-     "title": "CSN tem prejuízo de R$ 1,25 bilhão no 3º trimestre, com pressão de mineração e custos de frete"
-    }
-   ],
-   "ids": [
-    "bd40d3c7296f"
-   ],
-   "snippet": "A CSN teve prejuízo líquido de R$ 1,25 bilhão no terceiro trimestre, revertendo resultado positivo de R$ 76 milhões obtido no mesmo período de 2025, segundo balanço divulgado na noite de quinta-feira. Leia mais (11/13/2026 - 10h07)",
-   "prescore": 2.0,
-   "headline": "CSN tem prejuízo de R$ 1,25 bilhão no 3º trimestre, com pressão de mineração e custos de frete",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A CSN teve prejuízo líquido de R$ 1,25 bilhão no terceiro trimestre, revertendo resultado positivo de R$ 76 milhões obtido no mesmo período de 2025, segundo balanço divulgado na noite de quinta-feira. Leia mais (11/13/2026 - 10h07)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1b59d5471552",
-   "title": "Trump says he wants to ‘get Cuba done’ before leaving office, would consider military force",
-   "link": "https://www.cnbc.com/2026/11/13/trump-cuba-us-military-force-iran.html",
-   "published": "2026-11-13T13:04:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/13/trump-cuba-us-military-force-iran.html",
-     "title": "Trump says he wants to ‘get Cuba done’ before leaving office, would consider military force"
-    }
-   ],
-   "ids": [
-    "1b59d5471552"
-   ],
-   "snippet": "It comes as the U.S. continues to enforce a comprehensive economic embargo against Cuba.",
-   "prescore": 2.0,
-   "headline": "Trump says he wants to ‘get Cuba done’ before leaving office, would consider military force",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "It comes as the U.S. continues to enforce a comprehensive economic embargo against Cuba.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -18481,7 +18470,7 @@
    "id": "g1-politica",
    "name": "g1",
    "ok": true,
-   "count": 54,
+   "count": 53,
    "error": null
   },
   {
@@ -18495,7 +18484,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 42,
+   "count": 43,
    "error": null
   },
   {
@@ -18764,10 +18753,10 @@
  ],
  "stats": {
   "raw": 893,
-  "unique": 456,
-  "unique_all": 845,
+  "unique": 453,
+  "unique_all": 847,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 2.6
+  "seconds": 3.2
  }
 }
