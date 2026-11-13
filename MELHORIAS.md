@@ -58,6 +58,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 13/11 — A checagem das execuções do GitHub no vigia nunca tinha funcionado (#76). O fetch do Node consultava a API do GitHub direto, sem autenticação, e levava 403 por limite de pedidos; o erro era engolido sem aviso. Por isso o portal ficou 3 horas sem atualizar em 13/11 sem alerta. Agora a API é lida pelo curl, que passa pelo proxy autenticado, e uma falha na leitura vira aviso do vigia.
 - 12/11 — Matérias sobre o mesmo assunto entram no cartão da de maior nota, em "Mais N matérias sobre o mesmo assunto", como já acontecia com as do mesmo deal (#75):
   - o critério é mesma categoria e mesmas entidades principais ou mesmas palavras no título;
   - conferido nas edições de 10 a 12/11: junta 7 a 13 cartões por edição, quase sempre o mesmo fato, como ajuste fiscal, IPO da Alibaba, tempestade em Portugal e as falas do Fed;
