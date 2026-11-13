@@ -107,6 +107,7 @@
           new Notification("Portal FPM", { body: hot[0].headline });
         }
       }
+      markTopicDups(d.items);
       state.digest = d;
       if (!state.edition) state.seenIds = new Set([...d.items, ...(d.upcoming || [])].map((i) => i.id));
       render();
@@ -1006,6 +1007,31 @@
 
   // Matérias repetidas sobre o mesmo deal (dup_of, marcado na coleta) entram no cartão principal, abertas sob demanda.
   // Ids das que ficam agrupadas: as que apontam para um principal presente na lista.
+  // Matérias sobre o mesmo fato que não são deal (a análise não deu comprador e alvo): mesma categoria e o mesmo
+  // assunto, pelas entidades principais e pelas palavras do título. Entram no cartão da de maior nota, como as do deal.
+  // Critério conservador, medido nas edições de 10 a 12/11: junta 7 a 13 cartões por edição, quase sempre o mesmo fato.
+  const TOPIC_STOP = new Set("a o e de da do das dos em no na nos nas para por com sem que se um uma ao aos as os mais diz apos sobre entre ate como ser sao tem vai pode deve the of and to in for on with".split(" "));
+  function markTopicDups(items) {
+    const toks = (i) => new Set((fold(i.headline || i.title).match(/[a-z0-9]{3,}/g) || []).filter((w) => !TOPIC_STOP.has(w)));
+    const ents = (i) => new Set((i.entities || []).slice(0, 4).map(fold));
+    const jac = (a, b) => { let n = 0; for (const x of a) if (b.has(x)) n++; return n / Math.max(1, a.size + b.size - n); };
+    const pool = items.filter((i) => i.summary && !i.dup_of && !i.repeat).map((i) => ({ i, t: toks(i), e: ents(i) }));
+    const used = new Set();
+    for (const a of pool) { // os itens vêm por nota: o primeiro de cada grupo fica com o cartão
+      if (used.has(a.i.id)) continue;
+      for (const b of pool) {
+        if (b === a || used.has(b.i.id) || b.i.category !== a.i.category) continue;
+        const tj = jac(a.t, b.t), ej = jac(a.e, b.e);
+        if ((ej >= 0.5 && tj >= 0.25) || (ej > 0 && tj >= 0.4) || tj >= 0.5) {
+          b.i.dup_of = a.i.id;
+          b.i.dup_kind = "topic";
+          used.add(b.i.id);
+          used.add(a.i.id);
+        }
+      }
+    }
+  }
+
   function groupedDups(items) {
     const ids = new Set(items.map((i) => i.id));
     return new Set(items.filter((i) => i.dup_of && i.dup_of !== i.id && ids.has(i.dup_of)).map((i) => i.id));
@@ -1015,7 +1041,7 @@
     if (!list || !list.length) return "";
     const n = list.length;
     return `<details class="dups"${state.openDups.has(id) ? " open" : ""}>
-      <summary>${icon("chev", "ic ic-sm")}Mais ${n} ${n === 1 ? "matéria" : "matérias"} sobre este deal</summary>
+      <summary>${icon("chev", "ic ic-sm")}Mais ${n} ${n === 1 ? "matéria" : "matérias"} sobre ${list.every((d) => d.dup_kind === "topic") ? "o mesmo assunto" : "este deal"}</summary>
       <ul>${list.map((d) => `<li><button type="button" class="dup-row" data-dup="${d.id}"><span class="dup-src">${esc(d.outlets[0]?.source || "")}</span>${esc(d.headline)}</button></li>`).join("")}</ul>
     </details>`;
   }

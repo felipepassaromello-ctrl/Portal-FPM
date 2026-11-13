@@ -39,10 +39,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
    - o ambiente aparece depois da primeira atualização com o workflow novo;
    - com isso, o portal passa a atualizar de hora em hora nos dias úteis, das 06h às 20h30, sem depender do agendador;
    - a espera não gasta minutos do GitHub Actions; sem o ajuste, o relógio fica desligado e nada muda.
-2. **Notícia repetida em vários cartões.** Em 05/11, a aprovação da fusão Saipem-Subsea7 apareceu em 9 itens: veículos e idiomas diferentes, mesmo fato.
-   - Feito no #64: as matérias que a análise marca como o mesmo deal agora entram no cartão principal. No caso do Saipem, 6 das 8 repetidas.
-   - Falta o resto: as matérias sobre o mesmo fato que a análise não marcou como deal (no caso do Saipem, 2 das 8 vieram sem comprador e alvo) continuam em cartões próprios.
-   - Proposta: marcar a repetida na coleta também por mesmas empresas, mesmo dia e mesma categoria, ou pedir na análise da manhã que o objeto deal venha sempre preenchido em notícia de transação. Mexe no build_digest.py ou no routine.py.
+2. **Notícia repetida em vários cartões: acompanhar.** Feito no #64 para o mesmo deal e no #75 para o mesmo assunto, junta 7 a 13 cartões por edição. Ainda ficam separadas as matérias do mesmo fato com títulos bem diferentes. Em 12/11, a crise da Nvidia teve 6 cartões e só 2 foram juntados. Se incomodar, o próximo passo é a análise da manhã marcar "mesmo fato que" (mexe no routine.py).
 3. **"M&A da semana" e aba Deals: separar Brasil e exterior.** Os 102 "deals novos" da semana são em boa parte comunicados de empresas estrangeiras pequenas. Proposta: Brasil primeiro, com contagem própria, e do exterior só os relevantes.
    - Achado de 06/11: o campo `region` das notícias diz se o veículo é brasileiro, não onde está o negócio. Marvell–Lumentum aparece como Brasil (noticiado pelo Valor), e Huaxin–CSN Cimentos como exterior. Também não serve para os deals antigos: 354 dos 635 não acham mais a matéria no arquivo.
    - Caminho: classificar o próprio deal, em duas frentes:
@@ -61,6 +58,11 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 12/11 — Matérias sobre o mesmo assunto entram no cartão da de maior nota, em "Mais N matérias sobre o mesmo assunto", como já acontecia com as do mesmo deal (#75):
+  - o critério é mesma categoria e mesmas entidades principais ou mesmas palavras no título;
+  - conferido nas edições de 10 a 12/11: junta 7 a 13 cartões por edição, quase sempre o mesmo fato, como ajuste fiscal, IPO da Alibaba, tempestade em Portugal e as falas do Fed;
+  - a conta é feita no navegador e não muda dados, e-mail nem rotina da manhã;
+  - também anotado: as cópias de PDF chegaram a 48 MB em um dia, perto do teto de 80 MB. Acompanhar se o deploy do Pages volta a travar.
 - 12/11 — Vigia avisa quando o portal passa de 2h30 sem atualizar em dia útil, das 09h às 21h, porque o agendador do GitHub atrasou 3 horas em 12/11 (#74).
 - 12/11 — PDFs da CVM abrem pela cópia do portal, e o vigia confere o site várias vezes ao dia (#72):
   - o portal guarda cópia dos PDFs dos últimos 7 dias (fatos relevantes de até 6 MB e os demais documentos com resumo de até 1,5 MB, no máximo 80 MB), em pdf/<protocolo>.pdf; clicar num link da CVM que tem cópia abre a cópia;
