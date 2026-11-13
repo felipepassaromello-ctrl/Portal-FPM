@@ -21,7 +21,16 @@ const warn = (area, msg) => problems.push(`[${area}] ${msg}`);
 
 const brt = () => new Date(new Date().toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
 const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const { execFileSync } = require("child_process");
 const getJson = async (url) => {
+  if (url.startsWith(API)) {
+    // a API do GitHub vai pelo curl: na sessão do vigia, o curl passa pelo proxy autenticado; o fetch do Node sai direto e
+    // cai no limite de 60 pedidos por hora sem autenticação (403 "API rate limit exceeded")
+    const out = execFileSync("curl", ["-sS", "--max-time", "30", "-H", "Accept: application/vnd.github+json", "-w", "\n%{http_code}", url], { encoding: "utf8" });
+    const cut = out.lastIndexOf("\n"), code = out.slice(cut + 1).trim();
+    if (code !== "200") throw new Error(`${code} em ${url}`);
+    return JSON.parse(out.slice(0, cut));
+  }
   const r = await fetch(`${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" });
   if (!r.ok) throw new Error(`${r.status} em ${url}`);
   return r.json();
@@ -64,7 +73,7 @@ async function checkData() {
 
 async function checkRuns() {
   for (const wf of ["update.yml", "email.yml"]) {
-    const j = await getJson(`${API}/actions/workflows/${wf}/runs?per_page=6`).catch(() => null);
+    const j = await getJson(`${API}/actions/workflows/${wf}/runs?per_page=6`).catch((e) => { warn("vigia", `não consegui ler as execuções de ${wf}: ${e.message}`); return null; });
     if (!j) continue;
     const bad = j.workflow_runs.filter((r) => r.conclusion === "failure" && Date.now() - new Date(r.created_at) < 864e5);
     for (const r of bad) warn("execução", `${r.name} #${r.run_number} falhou (${r.html_url})`);
