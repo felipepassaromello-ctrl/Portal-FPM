@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T08:28:05.438488-03:00",
+ "generated_at": "2026-11-13T08:52:30.355313-03:00",
  "date": "2026-11-13",
  "window": {
   "start": "2026-11-12T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-13T08:26:51.075611-03:00",
-  "analyzed": 295
+  "analyzed": 282
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -203,42 +203,42 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 95.74,
-   "change_pct": -0.08348955862973462,
+   "price": 95.9,
+   "change_pct": 0.08349019560693893,
    "spark": [
     92.56999969482422,
     91.48999786376953,
     92.76000213623047,
     95.81999969482422,
-    95.73999786376953
+    95.9000015258789
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3896.0,
-   "change_pct": 0.27539574903878705,
+   "price": 3893.4,
+   "change_pct": 0.20847685043832165,
    "spark": [
     4114.5,
     4030.199951171875,
     4000.5,
     3885.300048828125,
-    3896.0
+    3893.39990234375
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 69254.31,
-   "change_pct": -2.9276308325759226,
+   "price": 69248.71,
+   "change_pct": -2.9354802395996415,
    "spark": [
     75223.1484375,
     73720.1171875,
     73964.46875,
     71342.96875,
-    69254.3125
+    69248.7109375
    ]
   }
  ],
@@ -612,45 +612,6 @@
     "fiscal",
     "Senado",
     "PLP"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "56336ba5738c",
-   "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
-   "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "published": "2026-11-13T10:00:26+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-     "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight"
-    }
-   ],
-   "ids": [
-    "56336ba5738c"
-   ],
-   "snippet": "The most recent inflation reading for October had beaten expectations, coming in at 0.4% for the month.",
-   "prescore": 4.0,
-   "headline": "Fed esperava cortar juros este ano e agora se prepara para nova batalha contra a inflação",
-   "category": "internacional",
-   "importance": 8,
-   "importance_reason": "Mudança de rumo do Fed afeta juros, câmbio e fluxo para o Brasil.",
-   "summary": "A inflação de outubro nos EUA veio acima do esperado, com alta de 0,4% no mês. O Fed, que previa cortes de juros neste ano, agora se prepara para outra rodada de combate à inflação.",
-   "involves": "Fed, inflação dos EUA, política monetária",
-   "interpretation": "Pivô de corte para postura mais dura; o mercado precifica juros altos por mais tempo.",
-   "impact": "Negativo para ativos de risco e emergentes, dólar mais forte e juros futuros mais altos no Brasil; pesa em IPOs e follow-ons.",
-   "sentiment": "negativo",
-   "entities": [
-    "Fed"
-   ],
-   "tags": [
-    "Fed",
-    "inflação",
-    "juros EUA"
    ],
    "is_deal": false,
    "deal": null,
@@ -1369,46 +1330,6 @@
    "ai": true
   },
   {
-   "id": "6880766e1d40",
-   "title": "Jensen Huang Has Been Ousted as Nvidia CEO",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxON2VaZ01EcWdXc1ZGb3plNUNMM294WGZlT0tTbWw2SFNPOHZ3ZERtQlR6RkhLRWF2cHExRnNfWGZINm1NWVoxVjRSUDRTVXRFb1RaRGcyMXFUdEd0LWtlME5SVHJETVdzOHR6eHhyNXJLVXF6cldFbnhHMXcydFMzTGhzVnhWN2RQX2d0X1N4QVZvdUU?oc=5",
-   "published": "2026-11-12T16:09:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxON2VaZ01EcWdXc1ZGb3plNUNMM294WGZlT0tTbWw2SFNPOHZ3ZERtQlR6RkhLRWF2cHExRnNfWGZINm1NWVoxVjRSUDRTVXRFb1RaRGcyMXFUdEd0LWtlME5SVHJETVdzOHR6eHhyNXJLVXF6cldFbnhHMXcydFMzTGhzVnhWN2RQX2d0X1N4QVZvdUU?oc=5",
-     "title": "Jensen Huang Has Been Ousted as Nvidia CEO"
-    }
-   ],
-   "ids": [
-    "6880766e1d40"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Exclusivo: Nvidia se prepara para destituir o CEO Jensen Huang",
-   "category": "tech",
-   "importance": 8,
-   "importance_reason": "Mudança potencial de comando na maior empresa de IA.",
-   "summary": "Segundo o WSJ, a Nvidia se prepara para afastar o CEO Jensen Huang.",
-   "involves": "Nvidia, Jensen Huang",
-   "interpretation": "Evolução relevante da crise de governança, em linha com reportagem do FT e da Reuters.",
-   "impact": "Incerteza para Nvidia, cadeia de IA e bolsas globais.",
-   "sentiment": "negativo",
-   "entities": [
-    "Nvidia",
-    "Jensen Huang"
-   ],
-   "tags": [
-    "Nvidia",
-    "CEO",
-    "IA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "c12c9edf2a6f",
    "title": "Nvidia CEO Jensen Huang resigns in blow to AI boom he helped foster",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMEFwN0FWdjB6blNtR0RZaTBWZXZDaWVwYkhXREttY2FaYVNNVC1qNEFHYm9Yd1pDODBDN2tvNzhnMTY4cmxWYTg1WVFidzFlNVFEdlZNb3IyZG1nS2FKcHAzUERhQW9EdG9oOER6YmwydXZOd0t1VHRub1BCdFdoR1V4dktlUVUydjZWeU53aVdKMGwtOGFtZmd2T3VhODF3eXhPazVtbV81b0hpUi1vcw?oc=5",
@@ -1947,7 +1868,7 @@
   },
   {
    "id": "242da0c0776f",
-   "title": "Treasury Yield Surge Shatters Hopes Worst of Bond Rout Is Over",
+   "title": "Investors Warn Bond Rout Isn’t Over After Week of Soaring Yields",
    "link": "https://www.bloomberg.com/news/articles/2026-11-13/treasury-yield-surge-shatters-hopes-worst-of-bond-rout-is-over",
    "published": "2026-11-13T06:00:17+00:00",
    "region": "INTL",
@@ -1955,7 +1876,7 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-13/treasury-yield-surge-shatters-hopes-worst-of-bond-rout-is-over",
-     "title": "Treasury Yield Surge Shatters Hopes Worst of Bond Rout Is Over"
+     "title": "Investors Warn Bond Rout Isn’t Over After Week of Soaring Yields"
     }
    ],
    "ids": [
@@ -2124,45 +2045,6 @@
     "BTG",
     "balanço",
     "eleição"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "754713251d09",
-   "title": "Plano de negócios da Petrobras para 2027-2031 pode chegar a US$ 120 bi",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcDlUR085cTUtZTgzV1BQTHJTSUR0dzVTZkgzYzVfUS1OSVdFSWV0SDdfcy1zalpmUXB2ZXFNbEFGRURPeHRJLWw0RFVMS0NtY0NodVFiQXN0MDNMOVYxeld2Z2FKUXdLNHd0a1dSQ2c2N3ZLWnk3WWd0eUNnVjFTZnpISlpKVDJ4UzBVV0VTYTA0ZnNNZ2lOcm45WG5xVkVyaHQxNjQ1WVBYaURJajc0amdqaHVTLXBNTm1nVUttRC0xU09sb2lsTDln?oc=5",
-   "published": "2026-11-12T14:34:13+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcDlUR085cTUtZTgzV1BQTHJTSUR0dzVTZkgzYzVfUS1OSVdFSWV0SDdfcy1zalpmUXB2ZXFNbEFGRURPeHRJLWw0RFVMS0NtY0NodVFiQXN0MDNMOVYxeld2Z2FKUXdLNHd0a1dSQ2c2N3ZLWnk3WWd0eUNnVjFTZnpISlpKVDJ4UzBVV0VTYTA0ZnNNZ2lOcm45WG5xVkVyaHQxNjQ1WVBYaURJajc0amdqaHVTLXBNTm1nVUttRC0xU09sb2lsTDln?oc=5",
-     "title": "Plano de negócios da Petrobras para 2027-2031 pode chegar a US$ 120 bi"
-    }
-   ],
-   "ids": [
-    "754713251d09"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "Plano de negócios da Petrobras 2027-2031 pode chegar a US$ 120 bi",
-   "category": "empresas",
-   "importance": 7,
-   "importance_reason": "Capex da maior empresa da B3 define demanda para toda a cadeia de óleo e gás.",
-   "summary": "O plano de negócios da Petrobras para 2027-2031 pode chegar a US$ 120 bilhões, segundo o título. Composição dos investimentos e fontes não constam do material.",
-   "involves": "Petrobras; plano de negócios 2027-2031; US$ 120 bi",
-   "interpretation": "Número indicativo, ainda não aprovado. O que importa é a divisão entre E&P, refino e biocombustíveis e o impacto em dividendos.",
-   "impact": "Capex alto sustenta a cadeia de fornecedores e serviços, mas pode pressionar dividendos e o caixa da estatal.",
-   "sentiment": "neutro",
-   "entities": [
-    "Petrobras"
-   ],
-   "tags": [
-    "Petrobras",
-    "capex",
-    "plano de negócios"
    ],
    "is_deal": false,
    "deal": null,
@@ -3294,45 +3176,6 @@
    "ai": true
   },
   {
-   "id": "d8efc72fbdc9",
-   "title": "China’s Credit Growth Disappoints Despite Greater Policy Support",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-13/china-s-credit-growth-disappoints-despite-greater-policy-support",
-   "published": "2026-11-13T09:12:53+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-13/china-s-credit-growth-disappoints-despite-greater-policy-support",
-     "title": "China’s Credit Growth Disappoints Despite Greater Policy Support"
-    }
-   ],
-   "ids": [
-    "d8efc72fbdc9"
-   ],
-   "snippet": "China’s credit expansion fell short of expectations in October with loans contracting for the third time this year, as greater policy support struggled to offset persistently weak borrowing demand.",
-   "prescore": 3.8,
-   "headline": "Crédito na China decepciona em outubro mesmo com mais estímulo",
-   "category": "internacional",
-   "importance": 6,
-   "importance_reason": "Sinal de fraqueza da demanda chinesa, relevante para commodities.",
-   "summary": "A expansão do crédito na China ficou abaixo do esperado em outubro, com os empréstimos recuando pela terceira vez no ano, em meio a demanda por crédito fraca apesar de mais apoio de política.",
-   "involves": "China, crédito, política monetária",
-   "interpretation": "A política de apoio não vem sendo suficiente para reativar a demanda por crédito.",
-   "impact": "Negativo para minério de ferro e commodities, e para Vale e exportadoras brasileiras.",
-   "sentiment": "negativo",
-   "entities": [
-    "China"
-   ],
-   "tags": [
-    "China",
-    "crédito",
-    "commodities"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "112d3f1f2913",
    "title": "Petróleo sobe após Trump descartar a necessidade de acordo com o Irã",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbEZHREh4MldRbDV3SkpmTU1aWWxTZ3BkRHlIYjF2akhpcHlLUFhnRHNaU0RLdlpsSEx3VERkNVA0TlUyUW5YVEIxSENvTmZzVC1DenJIbkZWX0RGTzdvWlZ5bmFhSzNZS3NoV0lETWVTM3Y4dEd1MVRHa3hWb0pRYjJmNmpZMy1sbTZSTVR1WVoxbFVOa2dyMXZDcmtHWC1FMXVrUzdJNHNPQi1vdnVoWG5iX25KR0lwNVJaYUpqMmpmaDUz0gHTAUFVX3lxTE1GWWd5UDJ6c0p5RWNIQUI1UGR1M21laFNzTUkxZGNFRUJTR1lFR0pPdkh6bmZBTHJKYTR5c0xrY19jVkx2ZjB2TWFvTWhKOS12MHp1aWl1VWk1dmRHME9qUW1qWWZaSndOenFNdHU4X05YOG9EQVZvWEEtS1JEZnAxQnJJdlZHQXB0d3NITzJ6Nms0elBrNjFnUXFJX21JZ0VNX2JxUUpqckRyNFdqZTFOTmRNejdBcXVwWE05OG1nYXNTc1lPdFI0eUFIY0FLWlQtZUU?oc=5",
@@ -4158,15 +4001,15 @@
   },
   {
    "id": "57c4fad919b9",
-   "title": "Microsoft Working to Fix Widespread Outage",
+   "title": "Microsoft Struggles to Fix Widespread Outage",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTmhaT0diNlVIZzI4Mm1nSUpIV0RSeDJrM0RYYVIydVRzUzNHM2ZmcW40UjE2eW5xeEc4ZVROeGlBaTlUbl9hUXN5N0VrVHlHRnpvQ09odWw4RVNCZFBXTUxhWHNvWm1MSG1nV0doS191NHIyeXFMT09wbDY2YldsTDB3?oc=5",
-   "published": "2026-11-13T10:02:22+00:00",
+   "published": "2026-11-13T10:05:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTmhaT0diNlVIZzI4Mm1nSUpIV0RSeDJrM0RYYVIydVRzUzNHM2ZmcW40UjE2eW5xeEc4ZVROeGlBaTlUbl9hUXN5N0VrVHlHRnpvQ09odWw4RVNCZFBXTUxhWHNvWm1MSG1nV0doS191NHIyeXFMT09wbDY2YldsTDB3?oc=5",
-     "title": "Microsoft Working to Fix Widespread Outage"
+     "title": "Microsoft Struggles to Fix Widespread Outage"
     }
    ],
    "ids": [
@@ -4182,46 +4025,6 @@
    "involves": "Microsoft, Outlook, Teams",
    "interpretation": "Falha operacional e não ataque, segundo a empresa; o foco passa a ser o tempo de restabelecimento.",
    "impact": "Interrupção de produtividade corporativa; risco reputacional para a Microsoft e discussão sobre dependência de nuvem.",
-   "sentiment": "negativo",
-   "entities": [
-    "Microsoft",
-    "Outlook",
-    "Teams"
-   ],
-   "tags": [
-    "outage",
-    "nuvem"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "023cc410c666",
-   "title": "Microsoft races to restore services after global outage",
-   "link": "https://www.ft.com/content/025b2769-bca8-4a74-b9f5-5d7ad7da32c7?syn-25a6b1a6=1",
-   "published": "2026-11-13T09:42:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/025b2769-bca8-4a74-b9f5-5d7ad7da32c7?syn-25a6b1a6=1",
-     "title": "Microsoft races to restore services after global outage"
-    }
-   ],
-   "ids": [
-    "023cc410c666"
-   ],
-   "snippet": "Issue affecting Outlook, Teams and other services not caused by ‘malicious or cyber activity’, company says",
-   "prescore": 2.6,
-   "headline": "Microsoft corre para restabelecer serviços após pane global",
-   "category": "tech",
-   "importance": 6,
-   "importance_reason": "Pane global de grande empresa, coberta por FT e outros veículos.",
-   "summary": "A Microsoft tenta restaurar serviços após falha global que afeta Outlook, Teams e outros produtos. A empresa afirma que a causa não foi atividade maliciosa ou cibernética.",
-   "involves": "Microsoft, Outlook, Teams",
-   "interpretation": "Descartado ataque, a questão é a causa técnica e a duração.",
-   "impact": "Risco reputacional para a Microsoft e foco renovado em resiliência de nuvem.",
    "sentiment": "negativo",
    "entities": [
     "Microsoft",
@@ -4309,47 +4112,6 @@
    "tags": [
     "Nvidia",
     "mercados"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "4f42e1142753",
-   "title": "US cannot reach a deal to end Ukraine war without Europe, says Kushner",
-   "link": "https://www.ft.com/content/8d28a5be-af56-421f-a33d-779a0fcc7ad4?syn-25a6b1a6=1",
-   "published": "2026-11-13T02:08:58+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/8d28a5be-af56-421f-a33d-779a0fcc7ad4?syn-25a6b1a6=1",
-     "title": "US cannot reach a deal to end Ukraine war without Europe, says Kushner"
-    }
-   ],
-   "ids": [
-    "4f42e1142753"
-   ],
-   "snippet": "American envoy’s comments come as European leaders reject Russian push to overhaul continent’s security",
-   "prescore": 2.6,
-   "headline": "EUA não conseguem acordo para encerrar guerra na Ucrânia sem a Europa, diz Kushner",
-   "category": "internacional",
-   "importance": 6,
-   "importance_reason": "Sinal sobre negociação de paz na Ucrânia.",
-   "summary": "O enviado americano Kushner disse que os EUA não fecham acordo para encerrar a guerra sem a Europa, enquanto líderes europeus rejeitam a proposta russa de rever a segurança do continente.",
-   "involves": "Jared Kushner, EUA, Europa, Rússia",
-   "interpretation": "Mostra que a Europa tem peso nas negociações.",
-   "impact": "Efeito em defesa, energia e risco geopolítico europeu.",
-   "sentiment": "neutro",
-   "entities": [
-    "Kushner",
-    "EUA",
-    "Europa",
-    "Rússia"
-   ],
-   "tags": [
-    "Ucrânia",
-    "negociação"
    ],
    "is_deal": false,
    "deal": null,
@@ -4594,47 +4356,6 @@
    "ai": true
   },
   {
-   "id": "05a042932645",
-   "title": "Trump signals end to vice-president’s Iran peace deal push",
-   "link": "https://www.ft.com/content/3c1727bb-2966-4e5c-808b-873d14854fa2?syn-25a6b1a6=1",
-   "published": "2026-11-12T20:32:43+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/3c1727bb-2966-4e5c-808b-873d14854fa2?syn-25a6b1a6=1",
-     "title": "Trump signals end to vice-president’s Iran peace deal push"
-    }
-   ],
-   "ids": [
-    "05a042932645"
-   ],
-   "snippet": "President says US does not need an agreement with Tehran as he directs JD Vance to focus on domestic concerns",
-   "prescore": 2.6,
-   "headline": "Trump sinaliza fim da iniciativa de JD Vance por acordo de paz com o Irã",
-   "category": "internacional",
-   "importance": 6,
-   "importance_reason": "Muda o cenário de risco no Oriente Médio e afeta petróleo.",
-   "summary": "Trump disse que os EUA não precisam de acordo com Teerã e orientou o vice JD Vance a focar em questões domésticas, segundo o FT.",
-   "involves": "Donald Trump; JD Vance; Irã",
-   "interpretation": "Indica abandono da via diplomática no curto prazo e maior chance de manutenção da pressão sobre o Irã.",
-   "impact": "Risco de petróleo mais alto e de maior aversão a risco; positivo para petroleiras.",
-   "sentiment": "negativo",
-   "entities": [
-    "Donald Trump",
-    "JD Vance",
-    "Irã"
-   ],
-   "tags": [
-    "Irã",
-    "EUA",
-    "diplomacia"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "a39460321989",
    "title": "Yemen's Houthis say they attacked pumping station on Saudi Arabia's East-West oil pipeline",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOHNyWUhKaHR2QmJXUjJ6S0xNdDZnZmpKRzJQak9SWVc3cmttUGVfbk13NzBZclpqNnp5N1JFc0JYakw2Wl9hV3BYdm1mMnJQR3BKRFI2Zzh3cVRhTFFxejBSVWtTMkt2WTRGRUxFSkVocF83aFlIOU10Vk11d29TRERPcnFVWHRJYktFOUlGU0x4c0Q0UWVtT3JkUE91ZVNPQ09NTnhaMGxJajZxQnkwWTFvTzN4WnNpMTBYalNZOHFZdnUtX1VHeUVR?oc=5",
@@ -4794,6 +4515,60 @@
    ],
    "is_deal": false,
    "deal": null,
+   "ai": true
+  },
+  {
+   "id": "0c03c1848506",
+   "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
+   "published": "2026-11-12T12:33:55+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Pulse 2.0",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
+     "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil"
+    },
+    {
+     "source": "Security Informed",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNa3FtazMyMFpUYlhoUlg3clJqQ0ZhS3F1UEVsMllmNXROLUNFYUdjd1ZTeHN1X01XbUxDTzhjMmJ3QkRnQ0F3dThadnR0ZjNHdkM3d2E4Qjl5ZEVodU8wNFNjN3I2MVVCZnNSNmx6Zy1TY0RPN3Z0d1g3LWRyUVNBRTZERkk2Y1JvY1RTRHhjLVdhdVIxMUVkWFYtVTlueWNPUHhvUFdJZE50LVQ3cmdmdmVvSUI?oc=5",
+     "title": "Rometal Acquisition Strengthens ASSA ABLOY In Brazil"
+    }
+   ],
+   "ids": [
+    "0c03c1848506",
+    "59a48c1ae6c8"
+   ],
+   "snippet": "",
+   "prescore": 6.7,
+   "headline": "ASSA ABLOY compra a Rometal e amplia soluções de acesso no Brasil",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Aquisição de empresa brasileira por grupo global.",
+   "summary": "A ASSA ABLOY adquiriu a Rometal, ampliando o negócio de soluções de acesso no Brasil. Valor não consta no título.",
+   "involves": "ASSA ABLOY, Rometal; soluções de acesso",
+   "interpretation": "Continuação da estratégia de compras da ASSA ABLOY.",
+   "impact": "Consolidação no setor; outros alvos regionais podem atrair compradores.",
+   "sentiment": "neutro",
+   "entities": [
+    "ASSA ABLOY",
+    "Rometal"
+   ],
+   "tags": [
+    "ASSA ABLOY",
+    "Rometal",
+    "aquisição"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "ASSA ABLOY",
+    "target": "Rometal",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Soluções de acesso",
+    "advisors": "não divulgado"
+   },
    "ai": true
   },
   {
@@ -5010,54 +4785,6 @@
     "value": "US$ 34 milhões",
     "stage": "Anunciado",
     "sector": "Startup",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
-   "id": "0c03c1848506",
-   "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
-   "published": "2026-11-12T16:24:32+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Pulse 2.0",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
-     "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil"
-    }
-   ],
-   "ids": [
-    "0c03c1848506"
-   ],
-   "snippet": "",
-   "prescore": 5.2,
-   "headline": "ASSA ABLOY compra a Rometal e amplia soluções de acesso no Brasil",
-   "category": "mna",
-   "importance": 5,
-   "importance_reason": "Aquisição de empresa brasileira por grupo global.",
-   "summary": "A ASSA ABLOY adquiriu a Rometal, ampliando o negócio de soluções de acesso no Brasil. Valor não consta no título.",
-   "involves": "ASSA ABLOY, Rometal; soluções de acesso",
-   "interpretation": "Continuação da estratégia de compras da ASSA ABLOY.",
-   "impact": "Consolidação no setor; outros alvos regionais podem atrair compradores.",
-   "sentiment": "neutro",
-   "entities": [
-    "ASSA ABLOY",
-    "Rometal"
-   ],
-   "tags": [
-    "ASSA ABLOY",
-    "Rometal",
-    "aquisição"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "ASSA ABLOY",
-    "target": "Rometal",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Soluções de acesso",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -5380,47 +5107,6 @@
     "Fed",
     "FOMC",
     "calendário"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "04837e2bb902",
-   "title": "China’s AI Sector Caught in the Crossfire After Nvidia Ousts Huang",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-13/insight-with-haslinda-amin-11-13-2026-video",
-   "published": "2026-11-13T08:44:29+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-13/insight-with-haslinda-amin-11-13-2026-video",
-     "title": "China’s AI Sector Caught in the Crossfire After Nvidia Ousts Huang"
-    }
-   ],
-   "ids": [
-    "04837e2bb902"
-   ],
-   "snippet": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter. The show features prominent leaders spanning the worlds of business, finance, politics and culture. (Source: Bloomberg)",
-   "prescore": 3.8,
-   "headline": "Setor de IA da China fica no fogo cruzado após saída de Huang da Nvidia",
-   "category": "internacional",
-   "importance": 5,
-   "importance_reason": "Desdobramento geopolítico do caso Nvidia, sem números no trecho.",
-   "summary": "A Bloomberg discute como o setor de inteligência artificial da China é afetado após a saída de Jensen Huang da Nvidia. O trecho é apenas a descrição do programa Insight with Haslinda Amin.",
-   "involves": "Nvidia, Jensen Huang, setor de IA da China, Bloomberg",
-   "interpretation": "Liga a crise na Nvidia à disputa tecnológica EUA-China; faltam detalhes.",
-   "impact": "Risco de mais restrições a chips e volatilidade em techs.",
-   "sentiment": "negativo",
-   "entities": [
-    "Nvidia",
-    "Jensen Huang",
-    "Bloomberg"
-   ],
-   "tags": [
-    "Nvidia",
-    "IA",
-    "China"
    ],
    "is_deal": false,
    "deal": null,
@@ -6022,46 +5708,6 @@
    "tags": [
     "orçamento",
     "crédito suplementar"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "d7da0928c105",
-   "title": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
-   "published": "2026-11-12T16:34:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
-     "title": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto"
-    }
-   ],
-   "ids": [
-    "d7da0928c105"
-   ],
-   "snippet": "O governo dos Estados Unidos recebeu mais de US$ 12 bilhões (R$ 67,44 bilhões) em receitas provenientes das exportações de recursos naturais da Venezuela nos primeiros nove meses deste ano, segundo um relatório confidencial da KPMG, empresa global de serviços financeiros. Leia mais (11/12/2026 - 13h34)",
-   "prescore": 3.0,
-   "headline": "EUA receberam mais de US$ 12 bi em receitas do petróleo venezuelano, diz relatório secreto",
-   "category": "internacional",
-   "importance": 5,
-   "importance_reason": "Dado relevante para o mercado de petróleo e a geopolítica na região.",
-   "summary": "Os EUA receberam mais de US$ 12 bilhões (R$ 67,44 bilhões) em receitas de exportações de recursos naturais da Venezuela nos primeiros nove meses do ano, segundo relatório secreto.",
-   "involves": "EUA; Venezuela; petróleo",
-   "interpretation": "Mostra o grau de controle dos EUA sobre a renda do petróleo venezuelano.",
-   "impact": "Reforça o peso da Venezuela na oferta de petróleo e na geopolítica regional.",
-   "sentiment": "neutro",
-   "entities": [
-    "EUA",
-    "Venezuela"
-   ],
-   "tags": [
-    "Venezuela",
-    "petróleo",
-    "EUA"
    ],
    "is_deal": false,
    "deal": null,
@@ -7756,53 +7402,6 @@
    "ai": true
   },
   {
-   "id": "24cd86171501",
-   "title": "Mais uma: ex-CEO da Nvidia manteve relacionamento extraconjugal com uma terceira mulher, diz agência",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNjJ0LTFNQko2cmlZMWJwSHNSdThIdGliOW5pa1hNWHltT2U1WUZ3UFo3Xzg2MGxIS0w4c2F2YjYyc05hY3pzandGeXQtZUhvb0xnSlctTDRjdDVlZjZRUUQ4dUU4V05HMGdtRW1SeU1RNlFWdUlyeWpZTGdJQi0zSVUyanRUVWM3YmNuVnJIUmUxRWx2RGRuNWk0ZUxLYXhQ0gGmAUFVX3lxTE9YQkpnOWZvV2RKejM4d1RUSExjbkJoam1udmtWWUtVLVc2S2hOLVlVVU1ZcElKdE00S1BtRkVJaGktQmNTbDc3MTRBMjNsOUdZVDM5ZkpQcThDUkNaNHVaOXk0eGtGUzU5QVZIaW8xcjdSUUY0eXdFSC1EbHFSTmNXNTM3NFVFbURnZ1c3RUpyR0FNQUlLR2FhWENOVTBxc0ZSX0FRNFE?oc=5",
-   "published": "2026-11-12T19:34:08+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNjJ0LTFNQko2cmlZMWJwSHNSdThIdGliOW5pa1hNWHltT2U1WUZ3UFo3Xzg2MGxIS0w4c2F2YjYyc05hY3pzandGeXQtZUhvb0xnSlctTDRjdDVlZjZRUUQ4dUU4V05HMGdtRW1SeU1RNlFWdUlyeWpZTGdJQi0zSVUyanRUVWM3YmNuVnJIUmUxRWx2RGRuNWk0ZUxLYXhQ0gGmAUFVX3lxTE9YQkpnOWZvV2RKejM4d1RUSExjbkJoam1udmtWWUtVLVc2S2hOLVlVVU1ZcElKdE00S1BtRkVJaGktQmNTbDc3MTRBMjNsOUdZVDM5ZkpQcThDUkNaNHVaOXk0eGtGUzU5QVZIaW8xcjdSUUY0eXdFSC1EbHFSTmNXNTM3NFVFbURnZ1c3RUpyR0FNQUlLR2FhWENOVTBxc0ZSX0FRNFE?oc=5",
-     "title": "Mais uma: ex-CEO da Nvidia manteve relacionamento extraconjugal com uma terceira mulher, diz agência"
-    },
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/tecnologia/noticia/2026/11/12/ceo-nvidia-caso.ghtml",
-     "title": "Ex-CEO da Nvidia teve relacionamento extraconjugal com uma terceira mulher, diz agência"
-    }
-   ],
-   "ids": [
-    "24cd86171501",
-    "19ebffb4c600"
-   ],
-   "snippet": "Ex-CEO da Nvidia teria mantido terceiro relacionamento extraconjugal, diz imprensa O ex-presidente-executivo da Nvidia, Jensen Huang, teria mantido mais um relacionamento íntimo com outra funcionária da empresa, segundo duas fontes ouvidas pela Reuters. Com a nova revelação, este é o terceiro suposto caso extraconjugal atribuído ao executivo. A revelação dos dois primeiros casos ocorreu antes da renúncia de Huang, anunciada nesta quinta-feira (12). 🗒️ Tem alguma sugestão de reportagem? Envie para o g1 Os dois casos anteriores envolvem a empresária chinesa Alice Huang e Kimberly Powell, vice-pr",
-   "prescore": 3.7,
-   "headline": "Ex-CEO da Nvidia teria tido terceiro relacionamento extraconjugal, diz Reuters",
-   "category": "tech",
-   "importance": 4,
-   "importance_reason": "Desdobramento pessoal; o fato central é a saída do CEO.",
-   "summary": "Segundo duas fontes ouvidas pela Reuters, Jensen Huang teria mantido terceiro relacionamento com outra funcionária da Nvidia. Os dois primeiros casos foram revelados antes da renúncia dele, anunciada na quinta-feira (12).",
-   "involves": "Jensen Huang, Nvidia, Reuters",
-   "interpretation": "Detalhe de uma história já conhecida.",
-   "impact": "Mantém pressão de governança sobre a Nvidia.",
-   "sentiment": "negativo",
-   "entities": [
-    "Jensen Huang",
-    "Nvidia",
-    "Reuters"
-   ],
-   "tags": [
-    "Nvidia",
-    "governança",
-    "Huang"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "1caa106e0f2f",
    "title": "Eurozone Bond Yields Rise; Italy Might Get Ratings Upgrade",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdFFJNzZwOHpzaW9aR3UzZlhvemJ6OG9tVkJzbTJaVF9LLVR2bHBMdDl6ZGdCc3VmZzVLT25hRU9CQXhydkpsRWdCWFJidzdtdDVsSy1kWjFhbXR5YlBIeXVtTmxaV000dnduamh3UnNyc09DTDlVRWdHVU5TS2NvekNXeXJlM1ZEVG9LT19Xak54WGV5VjQ3bg?oc=5",
@@ -8431,6 +8030,44 @@
    "ai": true
   },
   {
+   "id": "faddc04c009b",
+   "title": "Federal Reserve to Forgo Rate Decision at October 2027 Meeting",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWkZiVk1uU2k5a1RQRGUxdFBJMEcxSVhtWEJfR0s3Q3E3T185OXRrZHRZMDVsQlhTdVpIbVlfQnNPem4zbGlTMDR6elFDRlM3RzhETUhCVzlTTDJvWmtfQzctcUFhRXZsVmxpVjBQUXpXTkRUTThQNVJwQV9YX19qaTZGVGswRGF1N2d0dktsZW5DVHlFWVNENmtQaERZYm5ZTmREdm8tMzVjX3ZCQUdqbTFCbWktdw?oc=5",
+   "published": "2026-11-13T10:57:25+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWkZiVk1uU2k5a1RQRGUxdFBJMEcxSVhtWEJfR0s3Q3E3T185OXRrZHRZMDVsQlhTdVpIbVlfQnNPem4zbGlTMDR6elFDRlM3RzhETUhCVzlTTDJvWmtfQzctcUFhRXZsVmxpVjBQUXpXTkRUTThQNVJwQV9YX19qaTZGVGswRGF1N2d0dktsZW5DVHlFWVNENmtQaERZYm5ZTmREdm8tMzVjX3ZCQUdqbTFCbWktdw?oc=5",
+     "title": "Federal Reserve to Forgo Rate Decision at October 2027 Meeting"
+    }
+   ],
+   "ids": [
+    "faddc04c009b"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Fed vai dispensar decisão de juros na reunião de outubro de 2027",
+   "category": "internacional",
+   "importance": 4,
+   "importance_reason": "Ajuste de calendário do Fed, sem efeito imediato.",
+   "summary": "O WSJ informa que o Federal Reserve não tomará decisão de juros na reunião de outubro de 2027. Motivos não constam no título.",
+   "involves": "Federal Reserve",
+   "interpretation": "Mudança de calendário de longo prazo; relevante só para o planejamento de mercado.",
+   "impact": "Sem impacto imediato em juros ou câmbio.",
+   "sentiment": "neutro",
+   "entities": [
+    "Federal Reserve"
+   ],
+   "tags": [
+    "Fed",
+    "juros"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "555d01f99d0b",
    "title": "Value Nvidia, not Huang",
    "link": "https://www.ft.com/content/1f76f0b0-96c6-41de-9725-9051545d32af?syn-25a6b1a6=1",
@@ -8586,46 +8223,6 @@
    "ai": true
   },
   {
-   "id": "e00c322c994a",
-   "title": "Kushner says US working toward 'largest prisoner exchange' of Russia's war in Ukraine",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdlhsUlJGZTlJTWxfaXhsOS1kNkFrSlRMLXNVZ09uQ0RvR0dobTRXWExCRk1SckN4aDZibm5Vdm9NWDUyWWdpRFR2aExsSFdscmNSX0U3QUlmTVRDYlpERWxHeVRUX2FUZjB3WVJBb05pYy1xZ2pILWpXQlQzaEVWNjljSUsxZ2xGVTdCZXNmazBFX21ZYkh3d1RqZTFCWEw2a09oanFWS0c0LTNwZkNOQThuamJkdk5HVFNROFFXQm1GS0E?oc=5",
-   "published": "2026-11-13T01:39:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdlhsUlJGZTlJTWxfaXhsOS1kNkFrSlRMLXNVZ09uQ0RvR0dobTRXWExCRk1SckN4aDZibm5Vdm9NWDUyWWdpRFR2aExsSFdscmNSX0U3QUlmTVRDYlpERWxHeVRUX2FUZjB3WVJBb05pYy1xZ2pILWpXQlQzaEVWNjljSUsxZ2xGVTdCZXNmazBFX21ZYkh3d1RqZTFCWEw2a09oanFWS0c0LTNwZkNOQThuamJkdk5HVFNROFFXQm1GS0E?oc=5",
-     "title": "Kushner says US working toward 'largest prisoner exchange' of Russia's war in Ukraine"
-    }
-   ],
-   "ids": [
-    "e00c322c994a"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Kushner diz que EUA trabalham por a maior troca de prisioneiros da guerra na Ucrânia",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Avanço humanitário, efeito limitado em mercado.",
-   "summary": "Kushner afirmou que os EUA trabalham na maior troca de prisioneiros da guerra entre Rússia e Ucrânia.",
-   "involves": "Jared Kushner, Rússia, Ucrânia",
-   "interpretation": "Possível sinal de distensão.",
-   "impact": "Efeito limitado em ativos.",
-   "sentiment": "positivo",
-   "entities": [
-    "Kushner",
-    "Rússia",
-    "Ucrânia"
-   ],
-   "tags": [
-    "Ucrânia",
-    "prisioneiros"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "fa9e1ec01b9d",
    "title": "Gold Edges Higher in Technical Rebound",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNamxuQUUwTTdBNURvMFNkM2I1ZDdkM0tVUFlGT0Q3VWx0YmpCMEQ3b3JEZTlOQ3ltM2E1RktiaDlGYnhXUmhOOERLRGlWUjNqbE91eVhGamZQS0hTVDd6cEQxOGJxaEF2M3EzeUR6X2JHV0plMWE0TkJGdERwLWNrNnRreVJqak5WcjRGbWlTVUx0bnY1dm5WeFZBZw?oc=5",
@@ -8667,7 +8264,7 @@
    "id": "3a17f84d191f",
    "title": "Iran’s New Cyber Playbook: Create Real-World Havoc",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWHhDQVhxRWctTTRqSVdYVHZkYXlsb2hZTmlfSFNVRFZVOHJlSU1lWW1PUHhyN1hUMGhHUmtNQUlJOGJwRm8wSDNIOGhValpYbVFOVWplZ1BfckdNbnlNWUhOcHp4SFVnOUNJVlB6dlVkRG9McFBmd0xta0w0a2FpaUF6NlZLWXZRR0lxSnVoZmV4dEFCN1JJcUZkTQ?oc=5",
-   "published": "2026-11-13T01:00:00+00:00",
+   "published": "2026-11-13T01:00:33+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -8900,44 +8497,6 @@
    "ai": true
   },
   {
-   "id": "faddc04c009b",
-   "title": "Federal Reserve to Forgo Rate Decision at October 2027 Meeting",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWkZiVk1uU2k5a1RQRGUxdFBJMEcxSVhtWEJfR0s3Q3E3T185OXRrZHRZMDVsQlhTdVpIbVlfQnNPem4zbGlTMDR6elFDRlM3RzhETUhCVzlTTDJvWmtfQzctcUFhRXZsVmxpVjBQUXpXTkRUTThQNVJwQV9YX19qaTZGVGswRGF1N2d0dktsZW5DVHlFWVNENmtQaERZYm5ZTmREdm8tMzVjX3ZCQUdqbTFCbWktdw?oc=5",
-   "published": "2026-11-12T18:33:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWkZiVk1uU2k5a1RQRGUxdFBJMEcxSVhtWEJfR0s3Q3E3T185OXRrZHRZMDVsQlhTdVpIbVlfQnNPem4zbGlTMDR6elFDRlM3RzhETUhCVzlTTDJvWmtfQzctcUFhRXZsVmxpVjBQUXpXTkRUTThQNVJwQV9YX19qaTZGVGswRGF1N2d0dktsZW5DVHlFWVNENmtQaERZYm5ZTmREdm8tMzVjX3ZCQUdqbTFCbWktdw?oc=5",
-     "title": "Federal Reserve to Forgo Rate Decision at October 2027 Meeting"
-    }
-   ],
-   "ids": [
-    "faddc04c009b"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Fed vai dispensar decisão de juros na reunião de outubro de 2027",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Ajuste de calendário do Fed, sem efeito imediato.",
-   "summary": "O WSJ informa que o Federal Reserve não tomará decisão de juros na reunião de outubro de 2027. Motivos não constam no título.",
-   "involves": "Federal Reserve",
-   "interpretation": "Mudança de calendário de longo prazo; relevante só para o planejamento de mercado.",
-   "impact": "Sem impacto imediato em juros ou câmbio.",
-   "sentiment": "neutro",
-   "entities": [
-    "Federal Reserve"
-   ],
-   "tags": [
-    "Fed",
-    "juros"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "759c0a8ce88f",
    "title": "Microsoft outage hits Outlook, Teams and Copilot worldwide",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQWpWeUZnbllhcFk4WktZS0s3T1N6T3k3Vnhhd3pfSE9SWF9iRmRIQUljdHZXN0UtWS1uZS1rbUNZSlVPd1NXLXRtVUVtc3NQNTgxMVFMWjVnT3pPb09EX1g1YUx3WkF2VHk0bUMwWlhkRHdpT0JFRE5SQ3pQRkdmSnpUOHNXLUo1dXNSY3lFdkpSdU5laDdwSlhWRDVnNjBFcUh2Y0FwMXNldE8tSFpPaw?oc=5",
@@ -8977,45 +8536,6 @@
    "ai": true
   },
   {
-   "id": "4fb36c288496",
-   "title": "Beijing Is Trying to Build a Chinese Rival for Insuring World Shipping",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMmkzaThBN0FzaTNNb0txSjRNeGJRNlE2X3NhTTdHemlOUmpiVGpra01haWFLdGlDWlVkY3MtQmw5QmwwWUhackU2NkdDWVlZSjh0dFRHYXRiU3F6aGdPV21wQXdJSnNTd1doSXpyVlRONXVuQWhyVnE2cmczb0JiZVc1UXdJekNFQUdvS0V0dk5jMHR6alBpR1JzS2EzZ2RfZTdQR1FKaEhOVjVDR0pDR3l4THRoZ3FpN0E?oc=5",
-   "published": "2026-11-12T17:44:24+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMmkzaThBN0FzaTNNb0txSjRNeGJRNlE2X3NhTTdHemlOUmpiVGpra01haWFLdGlDWlVkY3MtQmw5QmwwWUhackU2NkdDWVlZSjh0dFRHYXRiU3F6aGdPV21wQXdJSnNTd1doSXpyVlRONXVuQWhyVnE2cmczb0JiZVc1UXdJekNFQUdvS0V0dk5jMHR6alBpR1JzS2EzZ2RfZTdQR1FKaEhOVjVDR0pDR3l4THRoZ3FpN0E?oc=5",
-     "title": "Beijing Is Trying to Build a Chinese Rival for Insuring World Shipping"
-    }
-   ],
-   "ids": [
-    "4fb36c288496"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Pequim tenta criar rival chinês para o seguro marítimo mundial",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Movimento estratégico da China em serviços de comércio global.",
-   "summary": "Segundo o WSJ, Pequim tenta construir uma alternativa chinesa para o mercado de seguro de transporte marítimo mundial.",
-   "involves": "China; seguro marítimo",
-   "interpretation": "Parte da estratégia chinesa de reduzir dependência de estruturas ocidentais.",
-   "impact": "Longo prazo: pode afetar seguradoras e resseguradoras globais e fluxos de comércio.",
-   "sentiment": "neutro",
-   "entities": [
-    "China"
-   ],
-   "tags": [
-    "China",
-    "seguros",
-    "shipping"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "0cf77917d72c",
    "title": "Nvidia Shareholders Won’t Miss Jensen Huang for Long",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWEFoT3FBbG94TXpqVFdZSnh5dno5ZzF2LXh2N2hoNlV1ZEdiXzlxNTB5ZXR4b0ozRUN3ZVR1dW11amJCVk9YT2RPdkVGYVVuLTVlSHZDYmJVVXlMWFlOdUZYZVFURjlYSGQ2MG42Z1JQbnROREl3YXRMcnNEQlBQTHg3M0JOWUZsX0NmU004UnlDUEpCUVlQYUNUQQ?oc=5",
@@ -9049,6 +8569,45 @@
    "tags": [
     "Nvidia",
     "IA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "4fb36c288496",
+   "title": "Beijing Is Trying to Build a Chinese Rival for Insuring World Shipping",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMmkzaThBN0FzaTNNb0txSjRNeGJRNlE2X3NhTTdHemlOUmpiVGpra01haWFLdGlDWlVkY3MtQmw5QmwwWUhackU2NkdDWVlZSjh0dFRHYXRiU3F6aGdPV21wQXdJSnNTd1doSXpyVlRONXVuQWhyVnE2cmczb0JiZVc1UXdJekNFQUdvS0V0dk5jMHR6alBpR1JzS2EzZ2RfZTdQR1FKaEhOVjVDR0pDR3l4THRoZ3FpN0E?oc=5",
+   "published": "2026-11-12T17:43:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMmkzaThBN0FzaTNNb0txSjRNeGJRNlE2X3NhTTdHemlOUmpiVGpra01haWFLdGlDWlVkY3MtQmw5QmwwWUhackU2NkdDWVlZSjh0dFRHYXRiU3F6aGdPV21wQXdJSnNTd1doSXpyVlRONXVuQWhyVnE2cmczb0JiZVc1UXdJekNFQUdvS0V0dk5jMHR6alBpR1JzS2EzZ2RfZTdQR1FKaEhOVjVDR0pDR3l4THRoZ3FpN0E?oc=5",
+     "title": "Beijing Is Trying to Build a Chinese Rival for Insuring World Shipping"
+    }
+   ],
+   "ids": [
+    "4fb36c288496"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Pequim tenta criar rival chinês para o seguro marítimo mundial",
+   "category": "internacional",
+   "importance": 4,
+   "importance_reason": "Movimento estratégico da China em serviços de comércio global.",
+   "summary": "Segundo o WSJ, Pequim tenta construir uma alternativa chinesa para o mercado de seguro de transporte marítimo mundial.",
+   "involves": "China; seguro marítimo",
+   "interpretation": "Parte da estratégia chinesa de reduzir dependência de estruturas ocidentais.",
+   "impact": "Longo prazo: pode afetar seguradoras e resseguradoras globais e fluxos de comércio.",
+   "sentiment": "neutro",
+   "entities": [
+    "China"
+   ],
+   "tags": [
+    "China",
+    "seguros",
+    "shipping"
    ],
    "is_deal": false,
    "deal": null,
@@ -9268,59 +8827,39 @@
    "ai": true
   },
   {
-   "id": "5f4baaeddf83",
-   "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta",
-   "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13112026/",
-   "published": "2026-11-13T10:59:53+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13112026/",
-     "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta"
-    }
-   ],
-   "ids": [
-    "5f4baaeddf83"
-   ],
-   "snippet": "Índices futuros dos EUA operam de forma mista com Nvidia em foco The post Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta appeared first on InfoMoney .",
-   "prescore": 5.2,
-   "headline": "Ibovespa hoje ao vivo: o que movimenta bolsa, dólar e juros nesta sexta",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Cobertura de rotina.",
-   "summary": "Cobertura ao vivo do InfoMoney: índices futuros dos EUA operam mistos com a Nvidia em foco.",
-   "involves": "InfoMoney; Nvidia",
-   "interpretation": "Cobertura de rotina.",
-   "impact": "Sem sinal novo.",
-   "sentiment": "neutro",
-   "entities": [
-    "InfoMoney",
-    "Nvidia"
-   ],
-   "tags": [
-    "Ibovespa",
-    "mercados"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "00651b1eda07",
-   "title": "Greenland Energy Company Announces Recommended All-Share Acquisition of 80 Mile plc combination to consolidate 100% ownership of the Jameson Land Basin licenses in Greenland in a single Nasdaq-listed energy and critical minerals company",
-   "link": "https://www.prnewswire.com/news-releases/greenland-energy-company-announces-recommended-all-share-acquisition-of-80-mile-plc-combination-to-consolidate-100-ownership-of-the-jameson-land-basin-licenses-in-greenland-in-a-single-nasdaq-listed-energy-and-critical-minerals-c-302938395.html",
-   "published": "2026-11-12T20:45:00+00:00",
+   "id": "12e7efc71fc9",
+   "title": "US Treasuries set for worst week since Trump’s ‘liberation day’",
+   "link": "https://www.ft.com/content/7bebace2-dc87-410a-ae29-ffd9f3176def?syn-25a6b1a6=1",
+   "published": "2026-11-13T10:57:36+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/greenland-energy-company-announces-recommended-all-share-acquisition-of-80-mile-plc-combination-to-consolidate-100-ownership-of-the-jameson-land-basin-licenses-in-greenland-in-a-single-nasdaq-listed-energy-and-critical-minerals-c-302938395.html",
-     "title": "Greenland Energy Company Announces Recommended All-Share Acquisition of 80 Mile plc combination to consolidate 100% ownership of the Jameson Land Basin licenses in Greenland in a single Nasdaq-listed energy and critical minerals company"
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/7bebace2-dc87-410a-ae29-ffd9f3176def?syn-25a6b1a6=1",
+     "title": "US Treasuries set for worst week since Trump’s ‘liberation day’"
     }
    ],
    "ids": [
-    "00651b1eda07"
+    "12e7efc71fc9"
+   ],
+   "snippet": "Higher than expected inflation and hawkish remarks by Fed officials have stung investors who bet a global bond rout was over",
+   "prescore": 5.6,
+   "headline": "US Treasuries set for worst week since Trump’s ‘liberation day’",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Higher than expected inflation and hawkish remarks by Fed officials have stung investors who bet a global bond rout was over",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [
+    "Nscale",
+    "Nvidia"
+   ],
+   "tags": [
+    "IPO",
+    "Nscale"
    ],
    "snippet": "DENVER, Nov. 12, 2026 /PRNewswire/ -- Greenland Energy Company (NASDAQ: GLND) (\"the Company\" or \"Greenland Energy\"), an oil exploration company focused on East Greenland's Jameson Land Basin, today announced that it has agreed terms for a recommended all-share acquisition of 80 Mile plc...",
    "prescore": 5.0,
@@ -10848,40 +10387,39 @@
    "ai": true
   },
   {
-   "id": "5705934e676c",
-   "title": "White House set to extend Jones Act shipping waiver, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN3NCSlNCcXAta1ktOGttR0tIdTdwcmVDbWN4ZXFUSnJLYjdDUFYxTGJkM2NvMERGQzVuNEEtZFg3ejI0aXBEZS1Sa2NwbkpLQnJBMkpEVVFIbThhdTd0cUtvSFBRWFRyMFJsVjIweEk5SlpqWnozdHZDTkF0dDRGaGxNa3hKb1ppSGwyRnNHNUhfNDgtSVM0cEVDVEc4TGotaGVGNFZZNmdHeTQ?oc=5",
-   "published": "2026-11-12T17:58:40+00:00",
+   "id": "303e7a659992",
+   "title": "A Mystery Businessman Introduced Jensen Huang to His Paramour. It Was Her Husband.",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZkc3Y2w4dmZiUjk2UVBuWkFqVFVJUl9ERUotOE1MSXpzSldyWFBOdjQ4bl9ZV2U3cl9sUnZzRERfVzR6cmEyNW5NVVp3UGYzcG5IX2ZOcXc4QUZxN3piVDFmWlJmZld2RTdoVXRfZEEwNXA4TnhYQlIwckNZOEhEYkc5U1hJNWUwVjNlTi1wYXlpVzBhVUFMUHppWEJNOVJ6eTE5Vl9wQXVQOG4tZHc?oc=5",
+   "published": "2026-11-12T14:16:13+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN3NCSlNCcXAta1ktOGttR0tIdTdwcmVDbWN4ZXFUSnJLYjdDUFYxTGJkM2NvMERGQzVuNEEtZFg3ejI0aXBEZS1Sa2NwbkpLQnJBMkpEVVFIbThhdTd0cUtvSFBRWFRyMFJsVjIweEk5SlpqWnozdHZDTkF0dDRGaGxNa3hKb1ppSGwyRnNHNUhfNDgtSVM0cEVDVEc4TGotaGVGNFZZNmdHeTQ?oc=5",
-     "title": "White House set to extend Jones Act shipping waiver, sources say"
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZkc3Y2w4dmZiUjk2UVBuWkFqVFVJUl9ERUotOE1MSXpzSldyWFBOdjQ4bl9ZV2U3cl9sUnZzRERfVzR6cmEyNW5NVVp3UGYzcG5IX2ZOcXc4QUZxN3piVDFmWlJmZld2RTdoVXRfZEEwNXA4TnhYQlIwckNZOEhEYkc5U1hJNWUwVjNlTi1wYXlpVzBhVUFMUHppWEJNOVJ6eTE5Vl9wQXVQOG4tZHc?oc=5",
+     "title": "A Mystery Businessman Introduced Jensen Huang to His Paramour. It Was Her Husband."
     }
    ],
    "ids": [
-    "5705934e676c"
+    "303e7a659992"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Casa Branca deve prorrogar isenção da Lei Jones para o transporte marítimo",
-   "category": "internacional",
+   "headline": "Empresário misterioso apresentou Jensen Huang à amante, que era sua esposa",
+   "category": "outros",
    "importance": 3,
-   "importance_reason": "Regulação de cabotagem nos EUA, com efeito setorial pontual.",
-   "summary": "Fontes disseram à Reuters que a Casa Branca deve estender a isenção da Lei Jones, que regula o transporte marítimo entre portos americanos.",
-   "involves": "Casa Branca; Lei Jones",
-   "interpretation": "Mantém a flexibilização do transporte marítimo, sem detalhe de prazo no título.",
-   "impact": "Favorece operadores e a logística de combustíveis nos EUA.",
-   "sentiment": "neutro",
+   "importance_reason": "Fofoca com algum efeito de governança na Nvidia.",
+   "summary": "O WSJ relata que um empresário apresentou Jensen Huang a uma mulher com quem ele teve relacionamento. Detalhes completos não constam do trecho.",
+   "involves": "Jensen Huang, Nvidia",
+   "interpretation": "Peça de contexto do escândalo que ameaça a posição do CEO.",
+   "impact": "Relevância indireta, via risco de liderança na Nvidia.",
+   "sentiment": "negativo",
    "entities": [
-    "Casa Branca",
-    "Lei Jones"
+    "Jensen Huang",
+    "Nvidia"
    ],
    "tags": [
-    "Jones Act",
-    "transporte",
-    "EUA"
+    "Nvidia",
+    "escândalo"
    ],
    "is_deal": false,
    "deal": null,
@@ -10928,49 +10466,10 @@
    "ai": true
   },
   {
-   "id": "303e7a659992",
-   "title": "A Mystery Businessman Introduced Jensen Huang to His Paramour. It Was Her Husband.",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZkc3Y2w4dmZiUjk2UVBuWkFqVFVJUl9ERUotOE1MSXpzSldyWFBOdjQ4bl9ZV2U3cl9sUnZzRERfVzR6cmEyNW5NVVp3UGYzcG5IX2ZOcXc4QUZxN3piVDFmWlJmZld2RTdoVXRfZEEwNXA4TnhYQlIwckNZOEhEYkc5U1hJNWUwVjNlTi1wYXlpVzBhVUFMUHppWEJNOVJ6eTE5Vl9wQXVQOG4tZHc?oc=5",
-   "published": "2026-11-12T14:16:13+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZkc3Y2w4dmZiUjk2UVBuWkFqVFVJUl9ERUotOE1MSXpzSldyWFBOdjQ4bl9ZV2U3cl9sUnZzRERfVzR6cmEyNW5NVVp3UGYzcG5IX2ZOcXc4QUZxN3piVDFmWlJmZld2RTdoVXRfZEEwNXA4TnhYQlIwckNZOEhEYkc5U1hJNWUwVjNlTi1wYXlpVzBhVUFMUHppWEJNOVJ6eTE5Vl9wQXVQOG4tZHc?oc=5",
-     "title": "A Mystery Businessman Introduced Jensen Huang to His Paramour. It Was Her Husband."
-    }
-   ],
-   "ids": [
-    "303e7a659992"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Empresário misterioso apresentou Jensen Huang à amante, que era sua esposa",
-   "category": "outros",
-   "importance": 3,
-   "importance_reason": "Fofoca com algum efeito de governança na Nvidia.",
-   "summary": "O WSJ relata que um empresário apresentou Jensen Huang a uma mulher com quem ele teve relacionamento. Detalhes completos não constam do trecho.",
-   "involves": "Jensen Huang, Nvidia",
-   "interpretation": "Peça de contexto do escândalo que ameaça a posição do CEO.",
-   "impact": "Relevância indireta, via risco de liderança na Nvidia.",
-   "sentiment": "negativo",
-   "entities": [
-    "Jensen Huang",
-    "Nvidia"
-   ],
-   "tags": [
-    "Nvidia",
-    "escândalo"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "ef8203a0444a",
    "title": "‘The Ass-Kicking We Needed’: A Loss in GOP Heartland Exposes a Party in Pieces",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeVFha3pPSHFEVGRaeElSNGFpWjBvSng0UzN5SlNXRnRtbE5fOWNkZXJBaHNaQXZYWk5WR0U1NE9EckJwNGFTTkNldGxGb2J3TkdVYTBZUUVPODYteVRTU3JrSjRzTUkzdGtQbTlwbXNETTZySlpYM1piWnVGaS11akZlTGxPT3lqdzhWSW54R3lqaFQw?oc=5",
-   "published": "2026-11-12T14:00:08+00:00",
+   "published": "2026-11-12T14:38:51+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11333,34 +10832,100 @@
    "ai": false
   },
   {
-   "id": "fe07d2e7fb6a",
-   "title": "Microsoft tenta corrigir apagão que derruba sistemas, mas não vê indício de ataque",
-   "link": "https://www.infomoney.com.br/consumo/microsoft-tenta-corrigir-apagao-que-derruba-sistemas-mas-nao-ve-indicio-de-ataque/",
-   "published": "2026-11-13T10:32:42+00:00",
+   "id": "f831fe750629",
+   "title": "Falha global da Microsoft chega ao segundo dia e afeta empresas e governos no mundo",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZVpuMG9xeUVjazR6OUZSVnVtWENvLUZPY2xhWlpYRnRpelRkRjFlV2wyZ3FqZzZhTlBYam9zSzREdXRROGJwTnV1ODVKSlRaa0FQVjdqWWhFSnpWWmJpMW9mUGJOQ1NtNk5VMEZNNHR0UGFMN05EQ3owNk9ORDl3aEJmVWJjZmtKT2xMM2p1S3RhSFhGVzZId0hhbzZYM01KX0cxMFREOVB3SjNlLUpOX003b28wN3pNcUptRXFhODZUS29qX3fSAdoBQVVfeXFMUGZvVG5JYUgzaFdUcVlzU01PVlZUS2kySXhUTW1kUDVRY2JkNjJWOVVoLUpBVU4yNmNsTHE5MjhJRWJNSmdEbmFUbmRRZVFuRnRvaXlJcXZOb2FNN2RqUHRpV1hVTEE3NXkyTVpRT296c0ViMkstQ1llQmNGOEwyckhGSWUtOUZRRURLVUEzampoUnVQQW1WU2g3em9UdldaN3pjd3F3ZnlhazdQaTV2TEpaWVhGcjRwZmNRNlNsT3hYZlVRT3gwSGRSYnlnbDVlRV9nZlJhUzFCV2c?oc=5",
+   "published": "2026-11-13T10:20:00+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/consumo/microsoft-tenta-corrigir-apagao-que-derruba-sistemas-mas-nao-ve-indicio-de-ataque/",
-     "title": "Microsoft tenta corrigir apagão que derruba sistemas, mas não vê indício de ataque"
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZVpuMG9xeUVjazR6OUZSVnVtWENvLUZPY2xhWlpYRnRpelRkRjFlV2wyZ3FqZzZhTlBYam9zSzREdXRROGJwTnV1ODVKSlRaa0FQVjdqWWhFSnpWWmJpMW9mUGJOQ1NtNk5VMEZNNHR0UGFMN05EQ3owNk9ORDl3aEJmVWJjZmtKT2xMM2p1S3RhSFhGVzZId0hhbzZYM01KX0cxMFREOVB3SjNlLUpOX003b28wN3pNcUptRXFhODZUS29qX3fSAdoBQVVfeXFMUGZvVG5JYUgzaFdUcVlzU01PVlZUS2kySXhUTW1kUDVRY2JkNjJWOVVoLUpBVU4yNmNsTHE5MjhJRWJNSmdEbmFUbmRRZVFuRnRvaXlJcXZOb2FNN2RqUHRpV1hVTEE3NXkyTVpRT296c0ViMkstQ1llQmNGOEwyckhGSWUtOUZRRURLVUEzampoUnVQQW1WU2g3em9UdldaN3pjd3F3ZnlhazdQaTV2TEpaWVhGcjRwZmNRNlNsT3hYZlVRT3gwSGRSYnlnbDVlRV9nZlJhUzFCV2c?oc=5",
+     "title": "Falha global da Microsoft chega ao segundo dia e afeta empresas e governos no mundo"
     },
     {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/microsoft-tenta-corrigir-apagao-de-horas-que-derruba-sistemas-mas-nao-ve-indicio-de-ataque-rens/",
-     "title": "Microsoft tenta corrigir apagão de horas que derruba sistemas; empresa não vê indício de ataque"
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/tec/2026/11/pane-global-da-microsoft-chega-ao-segundo-dia-e-trava-atividades-em-empresas-e-governos.shtml",
+     "title": "Pane global da Microsoft chega ao segundo dia e trava atividades em empresas e governos"
     }
    ],
    "ids": [
-    "fe07d2e7fb6a",
-    "3b45427624cb"
+    "f831fe750629",
+    "8bf6a06c03ac"
    ],
-   "snippet": "O site Downdetector registrou dezenas de milhares de reclamações relacionadas a e-mail e à plataforma de reuniões online The post Microsoft tenta corrigir apagão que derruba sistemas, mas não vê indício de ataque appeared first on InfoMoney .",
+   "snippet": "A Microsoft corre para restabelecer seus serviços em meio a uma pane global que prejudica empresas e órgãos governamentais . Negócios que dependem da tecnologia da Microsoft informaram que não conseguiam realizar suas operações cotidianas nem usar ferramentas essenciais de comunicação. Leia mais (11/13/2026 - 07h20)",
    "prescore": 3.7,
-   "headline": "Microsoft tenta corrigir apagão que derruba sistemas, mas não vê indício de ataque",
+   "headline": "Falha global da Microsoft chega ao segundo dia e afeta empresas e governos no mundo",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O site Downdetector registrou dezenas de milhares de reclamações relacionadas a e-mail e à plataforma de reuniões online The post Microsoft tenta corrigir apagão que derruba sistemas, mas não vê indício de ataque appeared first on InfoMoney .",
+   "summary": "A Microsoft corre para restabelecer seus serviços em meio a uma pane global que prejudica empresas e órgãos governamentais . Negócios que dependem da tecnologia da Microsoft informaram que não conseguiam realizar suas operações cotidianas nem usar ferramentas essenciais de comunicação. Leia mais (11/13/2026 - 07h20)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c8e112d5c289",
+   "title": "Alcolumbre avalia ‘devolver’ indicação se Lula insistir em Messias para o STF",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSGxiOVBmVkhwd1VCdEd3eTlHLUZvamxwS25FZG5JUXVRVEZjdmZteHFFOUs4al9Sb3NkaHdabTB3eExEVGxkS1BrSXlab1ZlUUZWc2NrMkE3OTJHOXpoZUxCdjYya08tWl9MSWlnMkMtMTZWVDc2amt2TWVJNUlsTkpMWXhrX1NGNU53NElTaVJDU05wbTBwWUlqeHFpNVZpZXJCQWsyanRISW5OTGd1QjRLRWcwTXMzSG5ZTWdtRjNTUnNhTHdVMElR0gHPAUFVX3lxTFBtRFpUMHpmeVZfY3VDRlJiQ3ozZy1KZEJmTjUxSF90dlNrYXRycGJpbzd5RVBIdDBKaVUzNTlkNWhMeDlJdVBqaUtSN0s5TE5KWmZrenk3U3Y1d0RlaDhqdXZsSVRCY3pSLVR0NHMzTEJJXzJfTm1WWEVnVTRnemdsdHN6SC1uTzAxbkYxWnZVX1gweVNlck1tR2YxVmN0SlRpbXFybzJRR1lieHQ3MGRkeDNoRGVSUUdHZzdxRzQtMGQxcE01aUloaTYwbFVFaw?oc=5",
+   "published": "2026-11-12T19:50:56+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSGxiOVBmVkhwd1VCdEd3eTlHLUZvamxwS25FZG5JUXVRVEZjdmZteHFFOUs4al9Sb3NkaHdabTB3eExEVGxkS1BrSXlab1ZlUUZWc2NrMkE3OTJHOXpoZUxCdjYya08tWl9MSWlnMkMtMTZWVDc2amt2TWVJNUlsTkpMWXhrX1NGNU53NElTaVJDU05wbTBwWUlqeHFpNVZpZXJCQWsyanRISW5OTGd1QjRLRWcwTXMzSG5ZTWdtRjNTUnNhTHdVMElR0gHPAUFVX3lxTFBtRFpUMHpmeVZfY3VDRlJiQ3ozZy1KZEJmTjUxSF90dlNrYXRycGJpbzd5RVBIdDBKaVUzNTlkNWhMeDlJdVBqaUtSN0s5TE5KWmZrenk3U3Y1d0RlaDhqdXZsSVRCY3pSLVR0NHMzTEJJXzJfTm1WWEVnVTRnemdsdHN6SC1uTzAxbkYxWnZVX1gweVNlck1tR2YxVmN0SlRpbXFybzJRR1lieHQ3MGRkeDNoRGVSUUdHZzdxRzQtMGQxcE01aUloaTYwbFVFaw?oc=5",
+     "title": "Alcolumbre avalia ‘devolver’ indicação se Lula insistir em Messias para o STF"
+    }
+   ],
+   "ids": [
+    "c8e112d5c289"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Alcolumbre avalia ‘devolver’ indicação se Lula insistir em Messias para o STF",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "237f48073dc2",
+   "title": "Petrobras compra os 70% restantes da Logum Logística, incluindo fatia da Raízen, por R$ 620 milhões",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLUlkTkZxekM4ZllEVjZ0MG1sVWxFdjg5ZHlUNDNlVTVUNFNBa2NKbFdxbzlDZXNqaEt5MGE3X1FHd2s4Z01jOUNpOWl5dUtvZDEwUm5iTlQxQnVvbTVNeFVOYkZUTFlYQlBFY1VFT2wzT09DVkZpZkZ5ZkVrVlh1UWlHSEswWE52R2RUSFdHeEo1NzNfWnpKSXp3ZmhSOFRrQk1hYnNBcUzSAa4BQVVfeXFMUHVYUmZzTzBkaFFQajJLMWhtc0ZfMUJRb0Izcno1bWRIVk1nbWNtSkVoMzRLWENmVXFlNi15OVhkUXMtRWR1S0lPamJXc1FISWVIZFdVQXZXUks2U3Rnc3JOQ1p0MEJ6cVhIOGNEYWpRNmtFZzJMSGVnWVVYdkIxU25aMW9VMkZQYzhMX0VGM3JBd09MQ2dadWFCdUtCeG84RTV6SmdBUkM4NVVWbm5B?oc=5",
+   "published": "2026-11-12T11:46:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLUlkTkZxekM4ZllEVjZ0MG1sVWxFdjg5ZHlUNDNlVTVUNFNBa2NKbFdxbzlDZXNqaEt5MGE3X1FHd2s4Z01jOUNpOWl5dUtvZDEwUm5iTlQxQnVvbTVNeFVOYkZUTFlYQlBFY1VFT2wzT09DVkZpZkZ5ZkVrVlh1UWlHSEswWE52R2RUSFdHeEo1NzNfWnpKSXp3ZmhSOFRrQk1hYnNBcUzSAa4BQVVfeXFMUHVYUmZzTzBkaFFQajJLMWhtc0ZfMUJRb0Izcno1bWRIVk1nbWNtSkVoMzRLWENmVXFlNi15OVhkUXMtRWR1S0lPamJXc1FISWVIZFdVQXZXUks2U3Rnc3JOQ1p0MEJ6cVhIOGNEYWpRNmtFZzJMSGVnWVVYdkIxU25aMW9VMkZQYzhMX0VGM3JBd09MQ2dadWFCdUtCeG84RTV6SmdBUkM4NVVWbm5B?oc=5",
+     "title": "Petrobras compra os 70% restantes da Logum Logística, incluindo fatia da Raízen, por R$ 620 milhões"
+    }
+   ],
+   "ids": [
+    "237f48073dc2"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Petrobras compra os 70% restantes da Logum Logística, incluindo fatia da Raízen, por R$ 620 milhões",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11446,6 +11011,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "5c627b80a1bc",
+   "title": "Microsoft Races to Fix Outage, Stocks Slip of Inflation Test",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-13/the-opening-trade-11-13-2026-video",
+   "published": "2026-11-13T10:59:48+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-13/the-opening-trade-11-13-2026-video",
+     "title": "Microsoft Races to Fix Outage, Stocks Slip of Inflation Test"
+    }
+   ],
+   "ids": [
+    "5c627b80a1bc"
+   ],
+   "snippet": "Microsoft is struggling to restore access to its flagship software half a day after an outage began, leaving users unable to access email and chat services in one of the tech giant’s most severe disruptions in recent memory. US stock futures edged lower ahead of inflation data that will cap a dramatic week of mounting bets on Federal Reserve interest-rate hikes and the ouster of Jensen Huang at Nvidia. The Opening Trade has everything you need to know as markets open across Europe. With analysis you won't find anywhere else, we break down the biggest stories of the day and speak to top guests ",
+   "prescore": 2.8,
+   "headline": "Microsoft Races to Fix Outage, Stocks Slip of Inflation Test",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Microsoft is struggling to restore access to its flagship software half a day after an outage began, leaving users unable to access email and chat services in one of the tech giant’s most severe disruptions in recent memory. US stock futures edged lower ahead of inflation data that will cap a dramatic week of mounting bets on Federal Reserve interest-rate hikes and the ouster of Jensen Huang at Nv",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "613068fc336a",
@@ -11752,10 +11350,43 @@
    "ai": true
   },
   {
+   "id": "cb8fb2d722d9",
+   "title": "The Leadership Message in the Nvidia Saga",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQY0VXeGFZa195aFBScDY1b3h5eXlLTmRkUDRpT0dTWnF6d19CUGtMandKU2J3Xy16QjJNbFJrakczT0RWVjU4VHp3U0g0M2ZEYm1lRmlua2NPd0tNWGhEamUyaGlsTlFBMVV5U1JxYXF6MUlpRE1XR25TdWo2d3d5SXV2Ym42QQ?oc=5",
+   "published": "2026-11-13T10:57:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQY0VXeGFZa195aFBScDY1b3h5eXlLTmRkUDRpT0dTWnF6d19CUGtMandKU2J3Xy16QjJNbFJrakczT0RWVjU4VHp3U0g0M2ZEYm1lRmlua2NPd0tNWGhEamUyaGlsTlFBMVV5U1JxYXF6MUlpRE1XR25TdWo2d3d5SXV2Ym42QQ?oc=5",
+     "title": "The Leadership Message in the Nvidia Saga"
+    }
+   ],
+   "ids": [
+    "cb8fb2d722d9"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "The Leadership Message in the Nvidia Saga",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "0b1bcd05f41b",
    "title": "Biden’s Scaled-Back Book Tour Rekindles Questions Over His Health",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSTlSM3VFRzdWZUFDNDBETmNGa1ljTlQ3LUFtZ3B5MlU1ekpOa1JNVmdJcl8zRG9MZk9nLUZIM3lfSVpWSHhYTnVvYXJSRmFNcXFzSVlSSW53UmpVUmlod1BMLVlOUzFKT2JZUTU4SGxVOE1DQlQwSFAyOE9Eem54cXYtZE42b19MbzBWU0F3cE5aMHNlNjVDQllwX1hDeHpzQ09pTg?oc=5",
-   "published": "2026-11-13T10:01:06+00:00",
+   "published": "2026-11-13T10:00:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11830,7 +11461,7 @@
    "id": "8150151464f1",
    "title": "Stock Futures Lower as Investors Look to U.S. Inflation Data",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcEdLelU4VXpMTmdPeTgxTjBhZkd3NEIyZDg5ZnZCWXdtVnVFd3Fxbm95Z2ZfbkNZRnh2WVppWUhnR0pvZXZsRHdEaWdkaEJ1emVweFpFbG9WUTBPV3B1UktyeVNodWY0SXBtOGNUbXZQWXcyRmNWUnRGR21vYWt0WmxraHFsZ2haSGRCdHZacG1uTkpMTTlNQUpsNEFSRUY4Z2MzaUZn?oc=5",
-   "published": "2026-11-13T09:28:00+00:00",
+   "published": "2026-11-13T09:29:18+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11845,6 +11476,76 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Stock Futures Lower as Investors Look to U.S. Inflation Data",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Simbólico, sem efeito de mercado.",
+   "summary": "Kim Jong Un alterou a bandeira norte-coreana, abandonando a versão de inspiração soviética.",
+   "involves": "Kim Jong Un, Coreia do Norte",
+   "interpretation": "Gesto simbólico de afirmação política interna.",
+   "impact": "Sem impacto de mercado imediato.",
+   "sentiment": "neutro",
+   "entities": [
+    "Kim Jong Un"
+   ],
+   "tags": [
+    "Coreia do Norte"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "5880681508b2",
+   "title": "Four killed in Ukrainian drone strike on industrial zone in Russia's Volgograd, official says",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdmw0dUZybEJwcld4ZjVjZzlZUEJabnM2V3FHZ0wtMTFTTGp1U2w1VGk2TDY3R1dTZFdEb216RGFGV2ZqSDRaY18xSVlzZGhMN3NwR24wVXJ4cW1IRjBmOU9yd0xzVzItcXJnZlpUREg0ZUNsZnJoZXAydHR5QjJHNm5HWGQxY2UxRU5wY1RObFhoMm8xNkJlcERnbGNHRmpMMFhrdEJ6YlJwV2l5UHRzRDVPX1hWM2cwNVVqOEhGSG82Z2o2?oc=5",
+   "published": "2026-11-13T08:46:51+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdmw0dUZybEJwcld4ZjVjZzlZUEJabnM2V3FHZ0wtMTFTTGp1U2w1VGk2TDY3R1dTZFdEb216RGFGV2ZqSDRaY18xSVlzZGhMN3NwR24wVXJ4cW1IRjBmOU9yd0xzVzItcXJnZlpUREg0ZUNsZnJoZXAydHR5QjJHNm5HWGQxY2UxRU5wY1RObFhoMm8xNkJlcERnbGNHRmpMMFhrdEJ6YlJwV2l5UHRzRDVPX1hWM2cwNVVqOEhGSG82Z2o2?oc=5",
+     "title": "Four killed in Ukrainian drone strike on industrial zone in Russia's Volgograd, official says"
+    }
+   ],
+   "ids": [
+    "5880681508b2"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Four killed in Ukrainian drone strike on industrial zone in Russia's Volgograd, official says",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d5a2b25a91e9",
+   "title": "EXCLUSIVE: Japan warns arms suppliers of deep cuts to expected orders due to budget squeeze, sources say",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVHpSM2d5bFdOQ0pfSU9rT3FuUjU3RmQ4aGxYTENXOC1Yak5CVUZfNndFOHdBRWxUb0p0OWpTd3l3OXVQZ2MzdEZPZ3hMbElJTlhhS3AzNXBfTk1nOUpfZHVWZjhnX3hFdVJRYWhUcTI2Q3hyVEltTTlON2FSeWNXQk12RTZZdFZGMm91WFV6SER0aXFweWNNUmQyZ0gyd3prcmVvNTBuXzJyTlNNbTZ1blpCc2FVNVRmd0hDeXBwOXJqajQ2d2J6cEQzNV8yRXdaeXJMc2d1aw?oc=5",
+   "published": "2026-11-13T00:44:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVHpSM2d5bFdOQ0pfSU9rT3FuUjU3RmQ4aGxYTENXOC1Yak5CVUZfNndFOHdBRWxUb0p0OWpTd3l3OXVQZ2MzdEZPZ3hMbElJTlhhS3AzNXBfTk1nOUpfZHVWZjhnX3hFdVJRYWhUcTI2Q3hyVEltTTlON2FSeWNXQk12RTZZdFZGMm91WFV6SER0aXFweWNNUmQyZ0gyd3prcmVvNTBuXzJyTlNNbTZ1blpCc2FVNVRmd0hDeXBwOXJqajQ2d2J6cEQzNV8yRXdaeXJMc2d1aw?oc=5",
+     "title": "EXCLUSIVE: Japan warns arms suppliers of deep cuts to expected orders due to budget squeeze, sources say"
+    }
+   ],
+   "ids": [
+    "d5a2b25a91e9"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "EXCLUSIVE: Japan warns arms suppliers of deep cuts to expected orders due to budget squeeze, sources say",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11972,6 +11673,72 @@
    "ai": true
   },
   {
+   "id": "27d78dc7940e",
+   "title": "North Korean hackers steal more than $400 million using video images, FBI says",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYUJYTGpUb1lrNXVCaVFFUjN3all5a2w1cF9HdW51OWROWC1taVFOOFozQ0pkYmpReklqTEhtNm1McUhtYVBvWTVMM2tHczJlUFZaem14Q1U0VndNaWk2Z3AxdzFvVThleTFNUXpPd3E0WlU2ZkdPSFFXeXJqNktka05TYUZmTER4TExyS3dOVTFLVWNLcVVHejdkVTk3UXVkRnUtNmNrQ3B3anBHelhIaGlka0RFMTZ0bnNWUWREeU0xV0tRNXp1THBIdw?oc=5",
+   "published": "2026-11-12T21:41:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYUJYTGpUb1lrNXVCaVFFUjN3all5a2w1cF9HdW51OWROWC1taVFOOFozQ0pkYmpReklqTEhtNm1McUhtYVBvWTVMM2tHczJlUFZaem14Q1U0VndNaWk2Z3AxdzFvVThleTFNUXpPd3E0WlU2ZkdPSFFXeXJqNktka05TYUZmTER4TExyS3dOVTFLVWNLcVVHejdkVTk3UXVkRnUtNmNrQ3B3anBHelhIaGlka0RFMTZ0bnNWUWREeU0xV0tRNXp1THBIdw?oc=5",
+     "title": "North Korean hackers steal more than $400 million using video images, FBI says"
+    }
+   ],
+   "ids": [
+    "27d78dc7940e"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "North Korean hackers steal more than $400 million using video images, FBI says",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b7b28adf5897",
+   "title": "Four tankers struck by explosions in Strait of Hormuz, Iran says",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcDQ2cWxyeTFpazFaX1ZNM2RoS0t2ZVpEa0JpMElTZVFMUElROEF5c20tMlU0dEszWFlEdkhfR2VOb3hEQmo3MjRtdVlSaEhkZnpKXzExbE5QcXItQ3Z6REoyY1Fpak9IUUplYWp6NTQ2UjBiNVk1WDN0MmJjaFRkOHNLdDYxMU9xOWhuMnVaTlNiVXJNTlhLYV9EZEpnd1oxYmF0cG82b2VkMURkYnkzZkZBX0hhWHM?oc=5",
+   "published": "2026-11-12T16:27:35+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcDQ2cWxyeTFpazFaX1ZNM2RoS0t2ZVpEa0JpMElTZVFMUElROEF5c20tMlU0dEszWFlEdkhfR2VOb3hEQmo3MjRtdVlSaEhkZnpKXzExbE5QcXItQ3Z6REoyY1Fpak9IUUplYWp6NTQ2UjBiNVk1WDN0MmJjaFRkOHNLdDYxMU9xOWhuMnVaTlNiVXJNTlhLYV9EZEpnd1oxYmF0cG82b2VkMURkYnkzZkZBX0hhWHM?oc=5",
+     "title": "Four tankers struck by explosions in Strait of Hormuz, Iran says"
+    }
+   ],
+   "ids": [
+    "b7b28adf5897"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Four tankers struck by explosions in Strait of Hormuz, Iran says",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "4f379b302c7a",
    "title": "Bomb alert temporarily halts trains at Calais station, causing Eurostar delays",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ1FXQ09iU3RJb1dMVWo5WjZaWGFvQWJBaUZVU1dTbjZxYUhXNUotTWdJVjRWeWtreXZ3LWdTYVJaMkpLV00zcGdOMndEaTFWX1dTZEV2VXpoR016QUxzblVLMHZBTkprTXZ5cmJmUllrQWtnbnUwX0dvU2JQUFlqMlhFWmFOdWpEZEFMX0NTYU1CaUZWbWw1VDRtU2I3RHhVM2htRGhOUms?oc=5",
@@ -12009,39 +11776,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "7e706760e652",
-   "title": "VIEW India's October retail inflation at 6.09% on-year",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPREdNUGJpdVdzdFc0aWVJQ2dFU21LNTdob0R6QXFwS1I0amswSzdzZC1TbWJrRm95ZFFMU3k2STdocmxMWHJETUpXSU1QeWtwY05mR2p3eFlRTkJUYjloTlN3QlYzWDhCWElxci1rU2FwNldyUG9jSkc3OWtnWjRJUjhyLVR5YTJnNkJROFlQZjZiNG52a0FzdWhMYlE?oc=5",
-   "published": "2026-11-12T11:22:31+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPREdNUGJpdVdzdFc0aWVJQ2dFU21LNTdob0R6QXFwS1I0amswSzdzZC1TbWJrRm95ZFFMU3k2STdocmxMWHJETUpXSU1QeWtwY05mR2p3eFlRTkJUYjloTlN3QlYzWDhCWElxci1rU2FwNldyUG9jSkc3OWtnWjRJUjhyLVR5YTJnNkJROFlQZjZiNG52a0FzdWhMYlE?oc=5",
-     "title": "VIEW India's October retail inflation at 6.09% on-year"
-    }
-   ],
-   "ids": [
-    "7e706760e652"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "VIEW India's October retail inflation at 6.09% on-year",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "de928aae3076",
@@ -12478,7 +12212,7 @@
    "id": "0c3114fd9244",
    "title": "‘Ebenezer’ Review: Johnny Depp Steps Into Scrooge’s Slippers",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLUlTR2UyVEttblM1OVJWM0huREZBNFZrVm5TVm83am9VNG1tRGhwckIwM1pNdTFzcGdIb3V2UFZ4bjNaV2tHVGVHT0h0MUJnRVJxLWFwb1d3X2hxR0JDV3NBazdyNlFCT3pvN0l4RWYyMVJSd0VYay1KdnNSdnpHY3RtWUhSSER6N3B5aC1TRVp0LUhqWG15N1JLamtZQWhqNzNvckd3?oc=5",
-   "published": "2026-11-12T21:40:56+00:00",
+   "published": "2026-11-12T21:38:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12621,6 +12355,656 @@
    ],
    "is_deal": false,
    "deal": null,
+   "ai": true
+  },
+  {
+   "id": "a2d93f20ea55",
+   "title": "Argentina: Milei pierde apoyo y desempleo es la mayor preocupación",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-13/argentina-milei-pierde-apoyo-y-desempleo-es-la-mayor-preocupacion-mwet2oi8",
+   "published": "2026-11-13T10:00:02+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-13/argentina-milei-pierde-apoyo-y-desempleo-es-la-mayor-preocupacion-mwet2oi8",
+     "title": "Argentina: Milei pierde apoyo y desempleo es la mayor preocupación"
+    }
+   ],
+   "ids": [
+    "a2d93f20ea55"
+   ],
+   "snippet": "A un año de las elecciones, la popularidad de Javier Milei se ha deteriorado ante unos argentinos más preocupados por el empleo que por la inflación.",
+   "prescore": 2.4,
+   "headline": "Argentina: Milei pierde apoyo y desempleo es la mayor preocupación",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A un año de las elecciones, la popularidad de Javier Milei se ha deteriorado ante unos argentinos más preocupados por el empleo que por la inflación.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "42dbcca0edfd",
+   "title": "More Than Half of Venezuelans Are Facing Near-Daily Blackouts",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-13/more-than-half-of-venezuelans-are-facing-near-daily-blackouts",
+   "published": "2026-11-13T10:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-13/more-than-half-of-venezuelans-are-facing-near-daily-blackouts",
+     "title": "More Than Half of Venezuelans Are Facing Near-Daily Blackouts"
+    }
+   ],
+   "ids": [
+    "42dbcca0edfd"
+   ],
+   "snippet": "A majority of Venezuelans are suffering power outages every day or nearly every day, underscoring the severity of the country’s electricity crisis.",
+   "prescore": 2.4,
+   "headline": "More Than Half of Venezuelans Are Facing Near-Daily Blackouts",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A majority of Venezuelans are suffering power outages every day or nearly every day, underscoring the severity of the country’s electricity crisis.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f44ad46ccf0e",
+   "title": "Milei’s Image Sours With Argentines as Jobs Become Top Concern",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-13/milei-s-image-sours-with-argentines-as-jobs-become-top-concern",
+   "published": "2026-11-13T10:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-13/milei-s-image-sours-with-argentines-as-jobs-become-top-concern",
+     "title": "Milei’s Image Sours With Argentines as Jobs Become Top Concern"
+    }
+   ],
+   "ids": [
+    "f44ad46ccf0e"
+   ],
+   "snippet": "Argentines view Javier Milei more negatively than his top political rivals while rising unemployment ranks as their top concern a year before the country’s presidential election.",
+   "prescore": 2.4,
+   "headline": "Milei’s Image Sours With Argentines as Jobs Become Top Concern",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Argentines view Javier Milei more negatively than his top political rivals while rising unemployment ranks as their top concern a year before the country’s presidential election.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "dc4a7ea47fdf",
+   "title": "South Africa’s New Financial Sector Conduct Bill Nears Tabling",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-13/south-africa-s-new-financial-sector-conduct-bill-nears-tabling",
+   "published": "2026-11-13T09:03:40+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-13/south-africa-s-new-financial-sector-conduct-bill-nears-tabling",
+     "title": "South Africa’s New Financial Sector Conduct Bill Nears Tabling"
+    }
+   ],
+   "ids": [
+    "dc4a7ea47fdf"
+   ],
+   "snippet": "New legislation designed to overhaul how financial institutions are regulated in South Africa will soon be tabled to lawmakers, following months of procedural delays.",
+   "prescore": 2.4,
+   "headline": "South Africa’s New Financial Sector Conduct Bill Nears Tabling",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "New legislation designed to overhaul how financial institutions are regulated in South Africa will soon be tabled to lawmakers, following months of procedural delays.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "fd0ed8b0e343",
+   "title": "Dutch Premier Jetten to Hold Crisis Talks to Save Coalition",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-13/dutch-premier-jetten-to-hold-crisis-talks-to-salvage-coalition",
+   "published": "2026-11-13T08:34:55+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-13/dutch-premier-jetten-to-hold-crisis-talks-to-salvage-coalition",
+     "title": "Dutch Premier Jetten to Hold Crisis Talks to Save Coalition"
+    }
+   ],
+   "ids": [
+    "fd0ed8b0e343"
+   ],
+   "snippet": "Dutch Prime Minister Rob Jetten will meet with his coalition partners Friday morning in a bid to save his minority alliance and avoid a potential snap election.",
+   "prescore": 2.4,
+   "headline": "Dutch Premier Jetten to Hold Crisis Talks to Save Coalition",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Dutch Prime Minister Rob Jetten will meet with his coalition partners Friday morning in a bid to save his minority alliance and avoid a potential snap election.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [
+    "Nscale",
+    "Nvidia"
+   ],
+   "tags": [
+    "IPO",
+    "Nscale"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "",
+    "target": "Nscale",
+    "value": "não divulgado",
+    "stage": "Em negociação",
+    "sector": "Infraestrutura de IA",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "19cac194e31e",
+   "title": "Murdoch, Shankar firm to take majority stake in south Indian food chain for $180 million",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSnJBQzluM21RdXVDMXRUOGEtQU8taHotZnUxVi1oWGxnYjA0MmFway0tcldiOWZlbFZnN19aa2JIZ0t6THdtQ3QwNTlBUHo4QXpBdktOVkpKd0xRb0FCeXg1ZnRjcnh4NkV1c21uQ24zaGJyUW9HM3RwME9BbGJsNHRxSHZUdS0yVnc5aHVJUFhQTFVpX1NnOXJ4ZF9udjJ3LWp3QWRuaUh1TzZHb09YcHpMNnd1dVNWQjBYY1UxcG96Zw?oc=5",
+   "published": "2026-11-12T12:18:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSnJBQzluM21RdXVDMXRUOGEtQU8taHotZnUxVi1oWGxnYjA0MmFway0tcldiOWZlbFZnN19aa2JIZ0t6THdtQ3QwNTlBUHo4QXpBdktOVkpKd0xRb0FCeXg1ZnRjcnh4NkV1c21uQ24zaGJyUW9HM3RwME9BbGJsNHRxSHZUdS0yVnc5aHVJUFhQTFVpX1NnOXJ4ZF9udjJ3LWp3QWRuaUh1TzZHb09YcHpMNnd1dVNWQjBYY1UxcG96Zw?oc=5",
+     "title": "Murdoch, Shankar firm to take majority stake in south Indian food chain for $180 million"
+    }
+   ],
+   "ids": [
+    "19cac194e31e"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Murdoch e empresa de Shankar compram controle de rede de comida do sul da Índia por US$ 180 milhões",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Deal de porte médio, fora do Brasil.",
+   "summary": "Uma empresa ligada a Murdoch e Shankar vai assumir o controle de uma rede de alimentação do sul da Índia por US$ 180 milhões, segundo a Reuters. O nome da rede não consta no título.",
+   "involves": "Murdoch; Shankar; rede de comida indiana",
+   "interpretation": "Transação de private equity em consumo na Índia.",
+   "impact": "Sinal de apetite por consumo e food service na Índia.",
+   "sentiment": "positivo",
+   "entities": [
+    "Murdoch",
+    "Shankar"
+   ],
+   "tags": [
+    "Índia",
+    "food service",
+    "controle"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição de controle",
+    "buyer": "Empresa de Murdoch e Shankar",
+    "target": "Rede de comida do sul da Índia (nome não divulgado)",
+    "value": "US$ 180 milhões",
+    "stage": "Anunciado",
+    "sector": "Alimentação / consumo",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "a141f91ee2a9",
+   "title": "Amyris, Inc. to acquire industry-leading sweet protein innovator Oobli, adding a proven protein technology platform to its biomanufacturing capabilities",
+   "link": "https://www.prnewswire.com/news-releases/amyris-inc-to-acquire-industry-leading-sweet-protein-innovator-oobli-adding-a-proven-protein-technology-platform-to-its-biomanufacturing-capabilities-302937988.html",
+   "published": "2026-11-12T18:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/amyris-inc-to-acquire-industry-leading-sweet-protein-innovator-oobli-adding-a-proven-protein-technology-platform-to-its-biomanufacturing-capabilities-302937988.html",
+     "title": "Amyris, Inc. to acquire industry-leading sweet protein innovator Oobli, adding a proven protein technology platform to its biomanufacturing capabilities"
+    }
+   ],
+   "ids": [
+    "a141f91ee2a9"
+   ],
+   "snippet": "The acquisition pairs Oobli's industry-leading protein production platform and sweet protein portfolio with Amyris' market-proven strain engineering and biomanufacturing capabilities. EMERYVILLE, Calif., Nov. 12, 2026 /PRNewswire/ -- Today, Amyris, Inc., a vertically integrated...",
+   "prescore": 8.0,
+   "headline": "Amyris adquire a Oobli, desenvolvedora de proteínas adoçantes",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Deal de biotecnologia nos EUA, sem ligação com o Brasil.",
+   "summary": "A Amyris, Inc. anunciou a aquisição da Oobli, inovadora em proteínas adoçantes (sweet proteins), em 12/11. A operação une a plataforma de produção de proteínas da Oobli à engenharia de cepas e biomanufatura da Amyris. Valor não divulgado no trecho.",
+   "involves": "Amyris, Oobli; biomanufatura e ingredientes",
+   "interpretation": "Consolidação de tecnologia em ingredientes de base biológica. Sem termos financeiros no material.",
+   "impact": "Pouco efeito para o mercado brasileiro; sinaliza interesse em plataformas de proteínas para substituição de açúcar.",
+   "sentiment": "neutro",
+   "entities": [
+    "Amyris",
+    "Oobli"
+   ],
+   "tags": [
+    "biotecnologia",
+    "adoçantes",
+    "M&A"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Amyris, Inc.",
+    "target": "Oobli",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Biotecnologia / ingredientes",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "00651b1eda07",
+   "title": "Greenland Energy Company Announces Recommended All-Share Acquisition of 80 Mile plc combination to consolidate 100% ownership of the Jameson Land Basin licenses in Greenland in a single Nasdaq-listed energy and critical minerals company",
+   "link": "https://www.prnewswire.com/news-releases/greenland-energy-company-announces-recommended-all-share-acquisition-of-80-mile-plc-combination-to-consolidate-100-ownership-of-the-jameson-land-basin-licenses-in-greenland-in-a-single-nasdaq-listed-energy-and-critical-minerals-c-302938395.html",
+   "published": "2026-11-12T20:45:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/greenland-energy-company-announces-recommended-all-share-acquisition-of-80-mile-plc-combination-to-consolidate-100-ownership-of-the-jameson-land-basin-licenses-in-greenland-in-a-single-nasdaq-listed-energy-and-critical-minerals-c-302938395.html",
+     "title": "Greenland Energy Company Announces Recommended All-Share Acquisition of 80 Mile plc combination to consolidate 100% ownership of the Jameson Land Basin licenses in Greenland in a single Nasdaq-listed energy and critical minerals company"
+    }
+   ],
+   "ids": [
+    "00651b1eda07"
+   ],
+   "snippet": "DENVER, Nov. 12, 2026 /PRNewswire/ -- Greenland Energy Company (NASDAQ: GLND) (\"the Company\" or \"Greenland Energy\"), an oil exploration company focused on East Greenland's Jameson Land Basin, today announced that it has agreed terms for a recommended all-share acquisition of 80 Mile plc...",
+   "prescore": 5.0,
+   "headline": "Greenland Energy propõe aquisição em ações da 80 Mile plc",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Deal de energia na Groenlândia, sem ligação com o Brasil.",
+   "summary": "A Greenland Energy (NASDAQ: GLND) acertou termos de aquisição recomendada, toda em ações, da 80 Mile plc, consolidando 100% das licenças da Bacia de Jameson Land.",
+   "involves": "Greenland Energy, 80 Mile plc",
+   "interpretation": "Consolida licenças em uma única empresa listada.",
+   "impact": "Sem efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Greenland Energy",
+    "80 Mile plc"
+   ],
+   "tags": [
+    "energia",
+    "Groenlândia",
+    "M&A"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Greenland Energy Company",
+    "target": "80 Mile plc",
+    "value": "não divulgado (operação toda em ações)",
+    "stage": "Anunciado",
+    "sector": "Petróleo e minerais críticos",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "82cb11b9a3e1",
+   "title": "PAI Pharma Acquires Nexus Pharmaceuticals, Expanding Portfolio of Sterile Injectable Products",
+   "link": "https://www.prnewswire.com/news-releases/pai-pharma-acquires-nexus-pharmaceuticals-expanding-portfolio-of-sterile-injectable-products-302937821.html",
+   "published": "2026-11-12T18:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/pai-pharma-acquires-nexus-pharmaceuticals-expanding-portfolio-of-sterile-injectable-products-302937821.html",
+     "title": "PAI Pharma Acquires Nexus Pharmaceuticals, Expanding Portfolio of Sterile Injectable Products"
+    }
+   ],
+   "ids": [
+    "82cb11b9a3e1"
+   ],
+   "snippet": "Acquisition builds on PAI's investment in domestic sterile manufacturing and expands its hospital-focused pharmaceutical portfolio PARSIPPANY, N.J. and LINCOLNSHIRE, Ill., Nov. 12, 2026 /PRNewswire/ -- PAI Pharma (\"PAI\"), a portfolio company of Olympus Partners, and a leading U.S....",
+   "prescore": 5.0,
+   "headline": "PAI Pharma adquire a Nexus Pharmaceuticals",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Deal farmacêutico nos EUA.",
+   "summary": "A PAI Pharma, empresa do portfólio da Olympus Partners, adquiriu a Nexus Pharmaceuticals, ampliando injetáveis estéreis.",
+   "involves": "PAI Pharma, Olympus Partners, Nexus Pharmaceuticals",
+   "interpretation": "Add-on de plataforma de PE.",
+   "impact": "Sem efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "PAI Pharma",
+    "Olympus Partners",
+    "Nexus Pharmaceuticals"
+   ],
+   "tags": [
+    "farmacêutico",
+    "PE"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "PAI Pharma (Olympus Partners)",
+    "target": "Nexus Pharmaceuticals",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Farmacêutico",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "ea0f047bc126",
+   "title": "BlueMatrix Completes Acquisition of Aiera",
+   "link": "https://www.prnewswire.com/news-releases/bluematrix-completes-acquisition-of-aiera-302938033.html",
+   "published": "2026-11-12T15:15:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/bluematrix-completes-acquisition-of-aiera-302938033.html",
+     "title": "BlueMatrix Completes Acquisition of Aiera"
+    }
+   ],
+   "ids": [
+    "ea0f047bc126"
+   ],
+   "snippet": "NEW YORK and MIAMI, Nov. 12, 2026 /PRNewswire/ -- BlueMatrix, the global leader in capital markets content publishing technology, today announced that it has completed its acquisition of Aiera, a consortium-backed content delivery platform, bringing research authoring, governance and AI...",
+   "prescore": 5.0,
+   "headline": "BlueMatrix conclui a aquisição da Aiera",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Deal de tecnologia no mercado de capitais.",
+   "summary": "A BlueMatrix concluiu a aquisição da Aiera, plataforma de conteúdo.",
+   "involves": "BlueMatrix, Aiera",
+   "interpretation": "Integra pesquisa com IA.",
+   "impact": "Sem efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "BlueMatrix",
+    "Aiera"
+   ],
+   "tags": [
+    "fintech",
+    "M&A"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "BlueMatrix",
+    "target": "Aiera",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Tecnologia para mercado de capitais",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "c2e5be182a5e",
+   "title": "Branford Castle Acquires Floratine Products Group, Marking First Platform Investment in Fund III",
+   "link": "https://www.prnewswire.com/news-releases/branford-castle-acquires-floratine-products-group-marking-first-platform-investment-in-fund-iii-302937191.html",
+   "published": "2026-11-12T14:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/branford-castle-acquires-floratine-products-group-marking-first-platform-investment-in-fund-iii-302937191.html",
+     "title": "Branford Castle Acquires Floratine Products Group, Marking First Platform Investment in Fund III"
+    }
+   ],
+   "ids": [
+    "c2e5be182a5e"
+   ],
+   "snippet": "Branford Castle Fund III Putting Down its Roots with Leading Specialty Plant-Nutrition Provider BOCA RATON, Fla. and NEW YORK, Nov. 12, 2026 /PRNewswire/ -- Branford Castle Partners (\"Branford Castle\" or the \"Firm\"), a private equity firm focused on lower-middle-market investments in...",
+   "prescore": 5.0,
+   "headline": "Branford Castle adquire a Floratine Products Group, primeiro investimento do Fund III",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Deal de PE nos EUA.",
+   "summary": "A Branford Castle Partners adquiriu a Floratine Products Group, primeiro investimento de plataforma do Fund III.",
+   "involves": "Branford Castle Partners, Floratine",
+   "interpretation": "PE de middle market.",
+   "impact": "Sem efeito no Brasil.",
+   "sentiment": "neutro",
+   "entities": [
+    "Branford Castle Partners",
+    "Floratine Products Group"
+   ],
+   "tags": [
+    "PE",
+    "nutrição vegetal"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Investimento PE",
+    "buyer": "Branford Castle Partners (Fund III)",
+    "target": "Floratine Products Group",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Nutrição vegetal",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "7416162fa38d",
+   "title": "Open Road Resorts Expands into Wisconsin with Acquisition of Rustic Timbers Door County Camping",
+   "link": "https://www.prnewswire.com/news-releases/open-road-resorts-expands-into-wisconsin-with-acquisition-of-rustic-timbers-door-county-camping-302938310.html",
+   "published": "2026-11-12T19:02:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/open-road-resorts-expands-into-wisconsin-with-acquisition-of-rustic-timbers-door-county-camping-302938310.html",
+     "title": "Open Road Resorts Expands into Wisconsin with Acquisition of Rustic Timbers Door County Camping"
+    }
+   ],
+   "ids": [
+    "7416162fa38d"
+   ],
+   "snippet": "The company's 11th park becomes its first Wisconsin destination and ninth property using Campspot; reservations for the 2027 season open January 4, 2027. EGG HARBOR, Wis., Nov. 12, 2026 /PRNewswire/ -- Open Road Resorts (ORR), an outdoor hospitality company focused on owning and operating...",
+   "prescore": 5.0,
+   "headline": "Open Road Resorts compra o Rustic Timbers Door County Camping, em Wisconsin",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Deal pequeno nos EUA.",
+   "summary": "A Open Road Resorts adquiriu o Rustic Timbers Door County Camping, seu 11º parque e primeiro em Wisconsin.",
+   "involves": "Open Road Resorts",
+   "interpretation": "Expansão de rede.",
+   "impact": "Sem efeito.",
+   "sentiment": "neutro",
+   "entities": [
+    "Open Road Resorts"
+   ],
+   "tags": [
+    "camping",
+    "EUA"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Open Road Resorts",
+    "target": "Rustic Timbers Door County Camping",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Hospitalidade ao ar livre",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "5a07de1a4248",
+   "title": "Worker.ai acquires DeltaGen, launches with backing from billionaire Veeam founder Ratmir Timashev",
+   "link": "https://www.prnewswire.com/news-releases/workerai-acquires-deltagen-launches-with-backing-from-billionaire-veeam-founder-ratmir-timashev-302936953.html",
+   "published": "2026-11-12T12:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/workerai-acquires-deltagen-launches-with-backing-from-billionaire-veeam-founder-ratmir-timashev-302936953.html",
+     "title": "Worker.ai acquires DeltaGen, launches with backing from billionaire Veeam founder Ratmir Timashev"
+    }
+   ],
+   "ids": [
+    "5a07de1a4248"
+   ],
+   "snippet": "The acquisition brings DeltaGen's real-time AI technology to Worker's operating system for small businesses, as Timashev bets on AI to transform Main Street. RALEIGH, N.C., Nov. 12, 2026 /PRNewswire/ -- Worker.ai today announced the acquisition of Techstars-backed DeltaGen and launched...",
+   "prescore": 5.0,
+   "headline": "Worker.ai compra a DeltaGen e é lançada com apoio de Ratmir Timashev",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Deal pequeno de IA nos EUA.",
+   "summary": "A Worker.ai anunciou a aquisição da DeltaGen e foi lançada com apoio do fundador da Veeam, Ratmir Timashev.",
+   "involves": "Worker.ai, DeltaGen, Ratmir Timashev",
+   "interpretation": "Aposta em IA para pequenas empresas.",
+   "impact": "Sem efeito.",
+   "sentiment": "neutro",
+   "entities": [
+    "Worker.ai",
+    "DeltaGen",
+    "Ratmir Timashev"
+   ],
+   "tags": [
+    "IA"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Worker.ai",
+    "target": "DeltaGen",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Inteligência artificial",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "85b586afa180",
+   "title": "SchoolWise Partners Advises Wyalusing Valley and Wysox Children's Centers on Sale of Three Pennsylvania Locations",
+   "link": "https://www.prnewswire.com/news-releases/schoolwise-partners-advises-wyalusing-valley-and-wysox-childrens-centers-on-sale-of-three-pennsylvania-locations-302938088.html",
+   "published": "2026-11-12T15:57:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/schoolwise-partners-advises-wyalusing-valley-and-wysox-childrens-centers-on-sale-of-three-pennsylvania-locations-302938088.html",
+     "title": "SchoolWise Partners Advises Wyalusing Valley and Wysox Children's Centers on Sale of Three Pennsylvania Locations"
+    }
+   ],
+   "ids": [
+    "85b586afa180"
+   ],
+   "snippet": "Transaction includes the sale of the child care business and its real estate MIAMI, Nov. 9, 2026 /PRNewswire/ -- SchoolWise Partners, an M&A advisory firm specializing in early childhood education, is pleased to announce that it advised John and Robyn Lacy on the sale of Wyalusing Valley...",
+   "prescore": 5.0,
+   "headline": "SchoolWise Partners assessora venda de três creches na Pensilvânia",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Deal minúsculo nos EUA.",
+   "summary": "A SchoolWise Partners assessorou a venda de três unidades de creche, incluindo o imóvel, na Pensilvânia.",
+   "involves": "SchoolWise Partners",
+   "interpretation": "Deal local.",
+   "impact": "Sem efeito.",
+   "sentiment": "neutro",
+   "entities": [
+    "SchoolWise Partners"
+   ],
+   "tags": [
+    "educação infantil",
+    "EUA"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Venda de ativo",
+    "buyer": "não divulgado",
+    "target": "Três creches na Pensilvânia (Wyalusing Valley e Wysox)",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Educação infantil",
+    "advisors": "SchoolWise Partners (vendedores)"
+   },
+   "ai": true
+  },
+  {
+   "id": "7c4779d19804",
+   "title": "Bright Event Rentals and PEAK Event Services Strengthen Coast-to-Coast Presence Through Continued Growth and Investment",
+   "link": "https://www.prnewswire.com/news-releases/bright-event-rentals-and-peak-event-services-strengthen-coast-to-coast-presence-through-continued-growth-and-investment-302937155.html",
+   "published": "2026-11-12T15:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/bright-event-rentals-and-peak-event-services-strengthen-coast-to-coast-presence-through-continued-growth-and-investment-302937155.html",
+     "title": "Bright Event Rentals and PEAK Event Services Strengthen Coast-to-Coast Presence Through Continued Growth and Investment"
+    }
+   ],
+   "ids": [
+    "7c4779d19804"
+   ],
+   "snippet": "Recent Maine acquisition reflects a broader strategy focused on regional growth, expanded rental collections, and specialized event capabilities. BOSTON, Nov. 12, 2026 /PRNewswire/ -- Bright Event Rentals and PEAK Event Services continue to strengthen their coast-to-coast presence through...",
+   "prescore": 5.0,
+   "headline": "Bright Event Rentals e PEAK Event Services ampliam presença com aquisição no Maine",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Deal pequeno nos EUA.",
+   "summary": "As empresas reforçam presença com aquisição recente no Maine.",
+   "involves": "Bright Event Rentals, PEAK Event Services",
+   "interpretation": "Crescimento regional.",
+   "impact": "Sem efeito.",
+   "sentiment": "neutro",
+   "entities": [
+    "Bright Event Rentals",
+    "PEAK Event Services"
+   ],
+   "tags": [
+    "eventos"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Bright Event Rentals / PEAK Event Services",
+    "target": "Empresa no Maine (não divulgado)",
+    "value": "não divulgado",
+    "stage": "Concluído",
+    "sector": "Locação de eventos",
+    "advisors": "não divulgado"
+   },
    "ai": true
   }
  ],
@@ -13341,6 +13725,60 @@
    "ai": true
   },
   {
+   "id": "0c03c1848506",
+   "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
+   "published": "2026-11-12T12:33:55+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Pulse 2.0",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
+     "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil"
+    },
+    {
+     "source": "Security Informed",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNa3FtazMyMFpUYlhoUlg3clJqQ0ZhS3F1UEVsMllmNXROLUNFYUdjd1ZTeHN1X01XbUxDTzhjMmJ3QkRnQ0F3dThadnR0ZjNHdkM3d2E4Qjl5ZEVodU8wNFNjN3I2MVVCZnNSNmx6Zy1TY0RPN3Z0d1g3LWRyUVNBRTZERkk2Y1JvY1RTRHhjLVdhdVIxMUVkWFYtVTlueWNPUHhvUFdJZE50LVQ3cmdmdmVvSUI?oc=5",
+     "title": "Rometal Acquisition Strengthens ASSA ABLOY In Brazil"
+    }
+   ],
+   "ids": [
+    "0c03c1848506",
+    "59a48c1ae6c8"
+   ],
+   "snippet": "",
+   "prescore": 6.7,
+   "headline": "ASSA ABLOY compra a Rometal e amplia soluções de acesso no Brasil",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Aquisição de empresa brasileira por grupo global.",
+   "summary": "A ASSA ABLOY adquiriu a Rometal, ampliando o negócio de soluções de acesso no Brasil. Valor não consta no título.",
+   "involves": "ASSA ABLOY, Rometal; soluções de acesso",
+   "interpretation": "Continuação da estratégia de compras da ASSA ABLOY.",
+   "impact": "Consolidação no setor; outros alvos regionais podem atrair compradores.",
+   "sentiment": "neutro",
+   "entities": [
+    "ASSA ABLOY",
+    "Rometal"
+   ],
+   "tags": [
+    "ASSA ABLOY",
+    "Rometal",
+    "aquisição"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "ASSA ABLOY",
+    "target": "Rometal",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Soluções de acesso",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "d4997b41d79f",
    "title": "Exclusive | China’s Moonshot AI Restructures to Pave Way for IPO",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSmJIUXk3T0VkT1dRYXdlSmFyaVAxanY4N2dZd01uVS1Sc2ZJbzQyeVlvbUhOdENhMnNIY1BCR19lZmY0R1JaUUtTQWhsa2lpS096blNHUm15bFYtVzBXY1JjQ3ZtOWNWdVRBcklRT21ESkVJaGFicFVvdmZjeUc4YXhrbTRPc1RGbkZudS13?oc=5",
@@ -13432,54 +13870,6 @@
     "value": "US$ 34 milhões",
     "stage": "Anunciado",
     "sector": "Startup",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
-   "id": "0c03c1848506",
-   "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
-   "published": "2026-11-12T16:24:32+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Pulse 2.0",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjFrTlA2azNYSklwYlFCenBBMERnT041TmFuSW1ZZ0c1N25uM1o0NGdTYVR4dFRVTGtpQVFzTTZpbGppN25vQ1lBNGRReVkxSXE3NFpsUF93TUZVTGc3Nzk0SW9tRnVlSWNVWk1vLWxGU2JHTnNXOGRPRzNHVzc2Z25YQ2pNV3JEZ25IdFFCc1JiRGZmQlJkS0Fn?oc=5",
-     "title": "ASSA ABLOY: Rometal Acquisition Expands Access Solutions Business In Brazil"
-    }
-   ],
-   "ids": [
-    "0c03c1848506"
-   ],
-   "snippet": "",
-   "prescore": 5.2,
-   "headline": "ASSA ABLOY compra a Rometal e amplia soluções de acesso no Brasil",
-   "category": "mna",
-   "importance": 5,
-   "importance_reason": "Aquisição de empresa brasileira por grupo global.",
-   "summary": "A ASSA ABLOY adquiriu a Rometal, ampliando o negócio de soluções de acesso no Brasil. Valor não consta no título.",
-   "involves": "ASSA ABLOY, Rometal; soluções de acesso",
-   "interpretation": "Continuação da estratégia de compras da ASSA ABLOY.",
-   "impact": "Consolidação no setor; outros alvos regionais podem atrair compradores.",
-   "sentiment": "neutro",
-   "entities": [
-    "ASSA ABLOY",
-    "Rometal"
-   ],
-   "tags": [
-    "ASSA ABLOY",
-    "Rometal",
-    "aquisição"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "ASSA ABLOY",
-    "target": "Rometal",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Soluções de acesso",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -14194,6 +14584,264 @@
  ],
  "upcoming": [
   {
+   "id": "56336ba5738c",
+   "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
+   "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "published": "2026-11-13T11:31:10+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+     "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight"
+    }
+   ],
+   "ids": [
+    "56336ba5738c"
+   ],
+   "snippet": "The most recent inflation reading for October was higher than expected, coming in at 0.4% for the month.",
+   "prescore": 4.0,
+   "headline": "Fed esperava cortar juros este ano e agora se prepara para nova batalha contra a inflação",
+   "category": "internacional",
+   "importance": 8,
+   "importance_reason": "Mudança de rumo do Fed afeta juros, câmbio e fluxo para o Brasil.",
+   "summary": "A inflação de outubro nos EUA veio acima do esperado, com alta de 0,4% no mês. O Fed, que previa cortes de juros neste ano, agora se prepara para outra rodada de combate à inflação.",
+   "involves": "Fed, inflação dos EUA, política monetária",
+   "interpretation": "Pivô de corte para postura mais dura; o mercado precifica juros altos por mais tempo.",
+   "impact": "Negativo para ativos de risco e emergentes, dólar mais forte e juros futuros mais altos no Brasil; pesa em IPOs e follow-ons.",
+   "sentiment": "negativo",
+   "entities": [
+    "Fed"
+   ],
+   "tags": [
+    "Fed",
+    "inflação",
+    "juros EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "023cc410c666",
+   "title": "Microsoft races to restore services after global outage",
+   "link": "https://www.ft.com/content/025b2769-bca8-4a74-b9f5-5d7ad7da32c7?syn-25a6b1a6=1",
+   "published": "2026-11-13T11:33:12+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/025b2769-bca8-4a74-b9f5-5d7ad7da32c7?syn-25a6b1a6=1",
+     "title": "Microsoft races to restore services after global outage"
+    }
+   ],
+   "ids": [
+    "023cc410c666"
+   ],
+   "snippet": "Issue affecting Outlook, Teams and other services not caused by ‘malicious or cyber activity’, company says",
+   "prescore": 2.6,
+   "headline": "Microsoft corre para restabelecer serviços após pane global",
+   "category": "tech",
+   "importance": 6,
+   "importance_reason": "Pane global de grande empresa, coberta por FT e outros veículos.",
+   "summary": "A Microsoft tenta restaurar serviços após falha global que afeta Outlook, Teams e outros produtos. A empresa afirma que a causa não foi atividade maliciosa ou cibernética.",
+   "involves": "Microsoft, Outlook, Teams",
+   "interpretation": "Descartado ataque, a questão é a causa técnica e a duração.",
+   "impact": "Risco reputacional para a Microsoft e foco renovado em resiliência de nuvem.",
+   "sentiment": "negativo",
+   "entities": [
+    "Microsoft",
+    "Outlook",
+    "Teams"
+   ],
+   "tags": [
+    "outage",
+    "nuvem"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "2c510aef857d",
+   "title": "Nvidia’s Disappearing Singapore Sales Deepen Mystery Around Megaspeed",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTVMxMWYtSHpfTEN1dUVzcTRpZDBkRUR4ZVBENFJxODZHaEg5WHp0ekZFdENtZEZrNDl5eENKWW11LVJFSGd4T0Y0TVNEQU0wRUhoMW5HMVdsUmZmQThZVV9WdmVXc3ZGM0F5Wk1kRlM0TEFXbG51WUNyWGt3WXlRU1I2cmNoNmNocEtkdkktdU9NTVA1dUhiWHlYRG44aUxTM3VlVmdzOU41T3Z4aGxKbkw4VG5RZw?oc=5",
+   "published": "2026-11-13T11:30:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTVMxMWYtSHpfTEN1dUVzcTRpZDBkRUR4ZVBENFJxODZHaEg5WHp0ekZFdENtZEZrNDl5eENKWW11LVJFSGd4T0Y0TVNEQU0wRUhoMW5HMVdsUmZmQThZVV9WdmVXc3ZGM0F5Wk1kRlM0TEFXbG51WUNyWGt3WXlRU1I2cmNoNmNocEtkdkktdU9NTVA1dUhiWHlYRG44aUxTM3VlVmdzOU41T3Z4aGxKbkw4VG5RZw?oc=5",
+     "title": "Nvidia’s Disappearing Singapore Sales Deepen Mystery Around Megaspeed"
+    }
+   ],
+   "ids": [
+    "2c510aef857d"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Vendas da Nvidia em Singapura somem e aprofundam mistério em torno da Megaspeed",
+   "category": "tech",
+   "importance": 5,
+   "importance_reason": "Risco regulatório de exportação de chips.",
+   "summary": "O WSJ relata que as vendas da Nvidia em Singapura desapareceram, aprofundando o mistério sobre a Megaspeed.",
+   "involves": "Nvidia, Megaspeed, Singapura",
+   "interpretation": "Sugere possível triangulação de chips, tema sensível nos controles de exportação.",
+   "impact": "Aumenta risco regulatório para a Nvidia.",
+   "sentiment": "negativo",
+   "entities": [
+    "Nvidia",
+    "Megaspeed",
+    "Singapura"
+   ],
+   "tags": [
+    "Nvidia",
+    "exportação",
+    "chips"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "5f4baaeddf83",
+   "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta",
+   "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13112026/",
+   "published": "2026-11-13T11:41:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13112026/",
+     "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta"
+    }
+   ],
+   "ids": [
+    "5f4baaeddf83"
+   ],
+   "snippet": "Índices futuros dos EUA caem com incertezas sobre a Nvidia e inflação ao produtor no radar The post Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta appeared first on InfoMoney .",
+   "prescore": 6.2,
+   "headline": "Ibovespa hoje ao vivo: o que movimenta bolsa, dólar e juros nesta sexta",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Cobertura de rotina.",
+   "summary": "Cobertura ao vivo do InfoMoney: índices futuros dos EUA operam mistos com a Nvidia em foco.",
+   "involves": "InfoMoney; Nvidia",
+   "interpretation": "Cobertura de rotina.",
+   "impact": "Sem sinal novo.",
+   "sentiment": "neutro",
+   "entities": [
+    "InfoMoney",
+    "Nvidia"
+   ],
+   "tags": [
+    "Ibovespa",
+    "mercados"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "c74a61c9c03c",
+   "title": "O equilíbrio possível: Ibovespa reage a pacote fiscal enquanto investidores monitoram inflação nos EUA, Nvidia e pane na Microsoft",
+   "link": "https://www.seudinheiro.com/2026/colunistas/equilibrio-desejavel-ibovespa-reage-pacote-fiscal-enquanto-investidores-monitoram-inflacao-eua-nvidia-pane-microsoft-rsgp/",
+   "published": "2026-11-13T11:48:05+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/colunistas/equilibrio-desejavel-ibovespa-reage-pacote-fiscal-enquanto-investidores-monitoram-inflacao-eua-nvidia-pane-microsoft-rsgp/",
+     "title": "O equilíbrio possível: Ibovespa reage a pacote fiscal enquanto investidores monitoram inflação nos EUA, Nvidia e pane na Microsoft"
+    }
+   ],
+   "ids": [
+    "c74a61c9c03c"
+   ],
+   "snippet": "Além do ajuste fiscal, os investidores acompanham nesta sexta-feira novos dados de inflação nos EUA e o impacto da pane na Microsoft sobre as ações de tecnologia The post O equilíbrio possível: Ibovespa reage a pacote fiscal enquanto investidores monitoram inflação nos EUA, Nvidia e pane na Microsoft appeared first on Seu Dinheiro .",
+   "prescore": 4.8,
+   "headline": "O equilíbrio possível: Ibovespa reage a pacote fiscal enquanto investidores monitoram inflação nos EUA, Nvidia e pane na Microsoft",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Além do ajuste fiscal, os investidores acompanham nesta sexta-feira novos dados de inflação nos EUA e o impacto da pane na Microsoft sobre as ações de tecnologia The post O equilíbrio possível: Ibovespa reage a pacote fiscal enquanto investidores monitoram inflação nos EUA, Nvidia e pane na Microsoft appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "17d56110708d",
+   "title": "Huang e secretário dos EUA são convocados para depor no Congresso sobre suposta espionagem",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/huang-e-secretario-dos-eua-sao-convocados-para-depor-no-congresso-sobre-suposta-espionagem.shtml",
+   "published": "2026-11-13T11:47:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/huang-e-secretario-dos-eua-sao-convocados-para-depor-no-congresso-sobre-suposta-espionagem.shtml",
+     "title": "Huang e secretário dos EUA são convocados para depor no Congresso sobre suposta espionagem"
+    }
+   ],
+   "ids": [
+    "17d56110708d"
+   ],
+   "snippet": "Parlamentares dos EUA convocaram Jensen Huang, ex-CEO da Nvidia , e o secretário de Comércio dos EUA, Howard Lutnick, para depor em dezembro em um comitê do Senado sobre uma suposta espionagem da qual o executivo teria sido alvo da China. Leia mais (11/13/2026 - 08h47)",
+   "prescore": 4.0,
+   "headline": "Huang e secretário dos EUA são convocados para depor no Congresso sobre suposta espionagem",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Parlamentares dos EUA convocaram Jensen Huang, ex-CEO da Nvidia , e o secretário de Comércio dos EUA, Howard Lutnick, para depor em dezembro em um comitê do Senado sobre uma suposta espionagem da qual o executivo teria sido alvo da China. Leia mais (11/13/2026 - 08h47)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8b1398cf2a25",
+   "title": "New City of London Lord Mayor Seeks to Get Trillions of UK Pensions Invested",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-13/new-city-of-london-lord-mayor-seeks-to-get-trillions-of-uk-pensions-invested",
+   "published": "2026-11-13T11:26:41+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-13/new-city-of-london-lord-mayor-seeks-to-get-trillions-of-uk-pensions-invested",
+     "title": "New City of London Lord Mayor Seeks to Get Trillions of UK Pensions Invested"
+    }
+   ],
+   "ids": [
+    "8b1398cf2a25"
+   ],
+   "snippet": "Bronek Masojada had a reputation as a tough leader in the insurance world he worked in for three decades. He’s now planning to bring that same rigor to his role as Lord Mayor of the City of London in a push to boost the UK’s competitiveness — and put its trillions of pension savings to work.",
+   "prescore": 2.8,
+   "headline": "New City of London Lord Mayor Seeks to Get Trillions of UK Pensions Invested",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Bronek Masojada had a reputation as a tough leader in the insurance world he worked in for three decades. He’s now planning to bring that same rigor to his role as Lord Mayor of the City of London in a push to boost the UK’s competitiveness — and put its trillions of pension savings to work.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "48da226f8f16",
    "title": "Alckmin na Agricultura poderia melhorar a relação do governo Lula com o agro",
    "link": "https://g1.globo.com/politica/blog/julia-duailibi/post/2026/11/13/alckmin-agricultura-governo-lula-agro.ghtml",
@@ -14261,7 +14909,7 @@
   },
   {
    "id": "4ce7bd7e79dc",
-   "title": "Lula chega a Manila para visita de Estado e reunião bilateral com Canadá e Singapura",
+   "title": "Lula chega a Manila para visita de Estado e reuniões bilaterais com Canadá e Singapura",
    "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/lula-chega-a-manila-para-visita-de-estado-e-reuniao-bilateral-com-canada-e-singapura.shtml",
    "published": "2026-11-13T11:07:00+00:00",
    "region": "BR",
@@ -14269,7 +14917,7 @@
     {
      "source": "Folha",
      "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/lula-chega-a-manila-para-visita-de-estado-e-reuniao-bilateral-com-canada-e-singapura.shtml",
-     "title": "Lula chega a Manila para visita de Estado e reunião bilateral com Canadá e Singapura"
+     "title": "Lula chega a Manila para visita de Estado e reuniões bilaterais com Canadá e Singapura"
     }
    ],
    "ids": [
@@ -14277,7 +14925,7 @@
    ],
    "snippet": "O presidente Luiz Inácio Lula da Silva ( PT ) chegou na madrugada desta sexta-feira (13), no horário de Brasília, em Manila, capital das Filipinas , para participar de uma visita de Estado e da cúpula dos líderes da Asean (Associação de Nações do Sudeste Asiático, em português), na qual também deverá se reunir com os primeiros ministros do Canadá e de Singapura . Leia mais (11/13/2026 - 08h07)",
    "prescore": 2.8,
-   "headline": "Lula chega a Manila para visita de Estado e reunião bilateral com Canadá e Singapura",
+   "headline": "Lula chega a Manila para visita de Estado e reuniões bilaterais com Canadá e Singapura",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -14315,6 +14963,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b6986e2eae48",
+   "title": "Re-energised Atlantic grouping will be swifter than Nato, says UK",
+   "link": "https://www.ft.com/content/2500879f-9849-45e8-8e22-082e9fa53228?syn-25a6b1a6=1",
+   "published": "2026-11-13T11:05:03+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/2500879f-9849-45e8-8e22-082e9fa53228?syn-25a6b1a6=1",
+     "title": "Re-energised Atlantic grouping will be swifter than Nato, says UK"
+    }
+   ],
+   "ids": [
+    "b6986e2eae48"
+   ],
+   "snippet": "The Joint Expeditionary Force is little known outside defence circles, but the mounting Russian threat to the High North and Baltic Sea regions has given it new purpose",
+   "prescore": 2.6,
+   "headline": "Re-energised Atlantic grouping will be swifter than Nato, says UK",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The Joint Expeditionary Force is little known outside defence circles, but the mounting Russian threat to the High North and Baltic Sea regions has given it new purpose",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14381,6 +15062,105 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "The legal battlefields for the 2028 presidential race are already taking shape, even as ballots are still being counted in last week’s US midterm elections.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "391fe67e0509",
+   "title": "Sabre de luz de Darth Vader é leiloado pelo valor recorde de R$ 27,5 milhões",
+   "link": "https://www.infomoney.com.br/consumo/sabre-de-luz-de-darth-vader-e-leiloado-pelo-valor-recorde-de-r-275-milhoes/",
+   "published": "2026-11-13T11:34:46+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/consumo/sabre-de-luz-de-darth-vader-e-leiloado-pelo-valor-recorde-de-r-275-milhoes/",
+     "title": "Sabre de luz de Darth Vader é leiloado pelo valor recorde de R$ 27,5 milhões"
+    }
+   ],
+   "ids": [
+    "391fe67e0509"
+   ],
+   "snippet": "A cobiçada peça usada na famosa cena “Eu sou o seu pai” foi um dos 27 itens leiloados na quinta-feira (12) pela Heritage Auctions; em julho, outro sabre de luz original tinha sido vendido por US$ 3,75 milhões The post Sabre de luz de Darth Vader é leiloado pelo valor recorde de R$ 27,5 milhões appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Sabre de luz de Darth Vader é leiloado pelo valor recorde de R$ 27,5 milhões",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A cobiçada peça usada na famosa cena “Eu sou o seu pai” foi um dos 27 itens leiloados na quinta-feira (12) pela Heritage Auctions; em julho, outro sabre de luz original tinha sido vendido por US$ 3,75 milhões The post Sabre de luz de Darth Vader é leiloado pelo valor recorde de R$ 27,5 milhões appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "923122d32d42",
+   "title": "Irã relata explosão de navio de GNL em Ormuz e de sistema de radar dos EUA no Bahrein",
+   "link": "https://www.infomoney.com.br/mundo/ira-relata-explosao-de-navio-de-gnl-em-ormuz-e-de-sistema-de-radar-dos-eua-no-bahrein/",
+   "published": "2026-11-13T11:34:10+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/ira-relata-explosao-de-navio-de-gnl-em-ormuz-e-de-sistema-de-radar-dos-eua-no-bahrein/",
+     "title": "Irã relata explosão de navio de GNL em Ormuz e de sistema de radar dos EUA no Bahrein"
+    }
+   ],
+   "ids": [
+    "923122d32d42"
+   ],
+   "snippet": "O comandante-chefe Ahmad Vahidi afirmou que o \"inimigo\" deveria aprender com \"derrotas sucessivas\" e que \"lições maiores\" estariam a caminho The post Irã relata explosão de navio de GNL em Ormuz e de sistema de radar dos EUA no Bahrein appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Irã relata explosão de navio de GNL em Ormuz e de sistema de radar dos EUA no Bahrein",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O comandante-chefe Ahmad Vahidi afirmou que o \"inimigo\" deveria aprender com \"derrotas sucessivas\" e que \"lições maiores\" estariam a caminho The post Irã relata explosão de navio de GNL em Ormuz e de sistema de radar dos EUA no Bahrein appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "63145f61ef19",
+   "title": "Fim da escala 6×1: STF começa a votar hoje decisão de Flávio Dino",
+   "link": "https://www.infomoney.com.br/mercados/fim-da-escala-6x1-stf-comeca-a-votar-hoje-decisao-de-flavio-dino/",
+   "published": "2026-11-13T11:29:12+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/fim-da-escala-6x1-stf-comeca-a-votar-hoje-decisao-de-flavio-dino/",
+     "title": "Fim da escala 6×1: STF começa a votar hoje decisão de Flávio Dino"
+    }
+   ],
+   "ids": [
+    "63145f61ef19"
+   ],
+   "snippet": "Avaliação na Corte é de que plenário deve referendar liminar que manteve redução da jornada para 42 horas em dezembro e estabeleceu medidas de transição The post Fim da escala 6×1: STF começa a votar hoje decisão de Flávio Dino appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Fim da escala 6×1: STF começa a votar hoje decisão de Flávio Dino",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Avaliação na Corte é de que plenário deve referendar liminar que manteve redução da jornada para 42 horas em dezembro e estabeleceu medidas de transição The post Fim da escala 6×1: STF começa a votar hoje decisão de Flávio Dino appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14524,6 +15304,72 @@
    "ai": false
   },
   {
+   "id": "f72c7564ed30",
+   "title": "NHL’s next media deal will test the league’s strength",
+   "link": "https://www.cnbc.com/2026/11/13/nhls-next-media-deal-will-test-the-leagues-strength.html",
+   "published": "2026-11-13T11:48:56+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/13/nhls-next-media-deal-will-test-the-leagues-strength.html",
+     "title": "NHL’s next media deal will test the league’s strength"
+    }
+   ],
+   "ids": [
+    "f72c7564ed30"
+   ],
+   "snippet": "How do the world's biggest media companies judge the value of non-NFL rights? The NHL is giving us our first window into a new era in media values.",
+   "prescore": 2.0,
+   "headline": "NHL’s next media deal will test the league’s strength",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "How do the world's biggest media companies judge the value of non-NFL rights? The NHL is giving us our first window into a new era in media values.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "47b12924da98",
+   "title": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up",
+   "link": "https://www.cnbc.com/2026/11/13/cnbcs-official-nhl-team-valuations-2026-how-the-32-clubs-stack-up.html",
+   "published": "2026-11-13T11:48:31+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/13/cnbcs-official-nhl-team-valuations-2026-how-the-32-clubs-stack-up.html",
+     "title": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up"
+    }
+   ],
+   "ids": [
+    "47b12924da98"
+   ],
+   "snippet": "The average NHL team is worth $2.71 billion, 23% more than a year ago.",
+   "prescore": 2.0,
+   "headline": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The average NHL team is worth $2.71 billion, 23% more than a year ago.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d29d43d990e2",
    "title": "Widespread Microsoft outage continues, taking down Outlook and other 365 services",
    "link": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
@@ -14590,28 +15436,160 @@
    "ai": false
   },
   {
-   "id": "47b12924da98",
-   "title": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up",
-   "link": "https://www.cnbc.com/2026/11/13/cnbcs-official-nhl-team-valuations-2026-how-the-32-clubs-stack-up.html",
-   "published": "2026-11-13T11:07:04+00:00",
-   "region": "INTL",
+   "id": "ca7a19d49182",
+   "title": "Zanin nega pedido de segundo turno no Rio",
+   "link": "https://www.moneytimes.com.br/zanin-nega-pedido-de-segundo-turno-no-rio/",
+   "published": "2026-11-13T11:48:30+00:00",
+   "region": "BR",
    "outlets": [
     {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/13/cnbcs-official-nhl-team-valuations-2026-how-the-32-clubs-stack-up.html",
-     "title": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up"
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/zanin-nega-pedido-de-segundo-turno-no-rio/",
+     "title": "Zanin nega pedido de segundo turno no Rio"
     }
    ],
    "ids": [
-    "47b12924da98"
+    "ca7a19d49182"
    ],
-   "snippet": "The average NHL team is worth $2.71 billion, 23% more than a year ago.",
-   "prescore": 2.0,
-   "headline": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up",
-   "category": "internacional",
+   "snippet": "O ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), negou nesta quinta-feira, 12, pedido do PSD para realização de segundo turno no Rio de Janeiro, onde Douglas Ruas (PL) foi eleito. A legenda concorreu com o prefeito da capital, Eduardo Paes, e pediu a anulação de decisão do Tribunal Superior Eleitoral (TSE) que considerou nulos […]",
+   "prescore": 1.8,
+   "headline": "Zanin nega pedido de segundo turno no Rio",
+   "category": "politica",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The average NHL team is worth $2.71 billion, 23% more than a year ago.",
+   "summary": "O ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), negou nesta quinta-feira, 12, pedido do PSD para realização de segundo turno no Rio de Janeiro, onde Douglas Ruas (PL) foi eleito. A legenda concorreu com o prefeito da capital, Eduardo Paes, e pediu a anulação de decisão do Tribunal Superior Eleitoral (TSE) que considerou nulos […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "62736146a251",
+   "title": "Flávio Bolsonaro diz que quer disputar Presidência de novo e prevê eleição antecipada: ‘O Brasil vai quebrar’",
+   "link": "https://www.moneytimes.com.br/flavio-bolsonaro-nao-se-abala-com-rotulo-de-fugitivo-e-mira-nova-candidatura-a-presidencia/",
+   "published": "2026-11-13T11:24:26+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/flavio-bolsonaro-nao-se-abala-com-rotulo-de-fugitivo-e-mira-nova-candidatura-a-presidencia/",
+     "title": "Flávio Bolsonaro diz que quer disputar Presidência de novo e prevê eleição antecipada: ‘O Brasil vai quebrar’"
+    }
+   ],
+   "ids": [
+    "62736146a251"
+   ],
+   "snippet": "Em sua primeira viagem a Washington desde a derrota na eleição presidencial, o senador Flávio Bolsonaro rechaçou questionamentos sobre sua liderança na direita brasileira e afirmou que planeja disputar novamente a Presidência pelo Partido Liberal em uma eleição que, segundo ele, pode ser antecipada. Em entrevista à agência de notícias Reuters entre reuniões para resolver […]",
+   "prescore": 1.8,
+   "headline": "Flávio Bolsonaro diz que quer disputar Presidência de novo e prevê eleição antecipada: ‘O Brasil vai quebrar’",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Em sua primeira viagem a Washington desde a derrota na eleição presidencial, o senador Flávio Bolsonaro rechaçou questionamentos sobre sua liderança na direita brasileira e afirmou que planeja disputar novamente a Presidência pelo Partido Liberal em uma eleição que, segundo ele, pode ser antecipada. Em entrevista à agência de notícias Reuters entre reuniões para resolver […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "3b45427624cb",
+   "title": "Microsoft tenta corrigir apagão de horas que derruba sistemas; empresa não vê indício de ataque",
+   "link": "https://www.moneytimes.com.br/microsoft-tenta-corrigir-apagao-de-horas-que-derruba-sistemas-mas-nao-ve-indicio-de-ataque-rens/",
+   "published": "2026-11-13T11:22:33+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/microsoft-tenta-corrigir-apagao-de-horas-que-derruba-sistemas-mas-nao-ve-indicio-de-ataque-rens/",
+     "title": "Microsoft tenta corrigir apagão de horas que derruba sistemas; empresa não vê indício de ataque"
+    }
+   ],
+   "ids": [
+    "3b45427624cb"
+   ],
+   "snippet": "A Microsoft (MSFT) informou que trabalha para corrigir uma interrupção generalizada, com duração de horas, que afetou serviços como Outlook e Teams e atingiu usuários de departamentos governamentais e escolas dos Estados Unidos à Austrália. Em atualização divulgada na noite da quinta-feira (12), uma porta-voz disse que a empresa atua para resolver problemas que impactam […]",
+   "prescore": 1.8,
+   "headline": "Microsoft tenta corrigir apagão de horas que derruba sistemas; empresa não vê indício de ataque",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Microsoft (MSFT) informou que trabalha para corrigir uma interrupção generalizada, com duração de horas, que afetou serviços como Outlook e Teams e atingiu usuários de departamentos governamentais e escolas dos Estados Unidos à Austrália. Em atualização divulgada na noite da quinta-feira (12), uma porta-voz disse que a empresa atua para resolver problemas que impactam […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "85e12b76d41d",
+   "title": "Microsoft descarta ataque hacker após falha global afetar Outlook, Teams e Copilot",
+   "link": "https://g1.globo.com/tecnologia/noticia/2026/11/13/microsoft-descarta-ataque-hacker-apos-falha-global-afetar-outlook-teams-e-copilot.ghtml",
+   "published": "2026-11-13T11:21:38+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/tecnologia/noticia/2026/11/13/microsoft-descarta-ataque-hacker-apos-falha-global-afetar-outlook-teams-e-copilot.ghtml",
+     "title": "Microsoft descarta ataque hacker após falha global afetar Outlook, Teams e Copilot"
+    }
+   ],
+   "ids": [
+    "85e12b76d41d"
+   ],
+   "snippet": "Outlook fora do ar: serviços da Microsoft apresentam instabilidade nesta quinta A Microsoft descartou nesta sexta-feira (13) que um ataque hacker tenha provocado a falha global que afeta o serviço de e-mail Outlook, o aplicativo Teams e o assistente de IA Copilot. A empresa afirmou ter obtido os primeiros \"resultados positivos\" na recuperação dos serviços, mas não informou um prazo para o restabelecimento completo. A companhia atribuiu a interrupção, que já dura várias horas, a uma \"carga elevada\" em sua infraestrutura em diferentes regiões. “Até o momento, não temos conhecimento de nenhuma at",
+   "prescore": 1.8,
+   "headline": "Microsoft descarta ataque hacker após falha global afetar Outlook, Teams e Copilot",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Outlook fora do ar: serviços da Microsoft apresentam instabilidade nesta quinta A Microsoft descartou nesta sexta-feira (13) que um ataque hacker tenha provocado a falha global que afeta o serviço de e-mail Outlook, o aplicativo Teams e o assistente de IA Copilot. A empresa afirmou ter obtido os primeiros \"resultados positivos\" na recuperação dos serviços, mas não informou um prazo para o restabel",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e1bb51f26ee7",
+   "title": "O menu degustação não morreu; justificá-lo é que ficou mais difícil",
+   "link": "https://www.seudinheiro.com/2026/lifestyle/o-menu-degustacao-nao-morreu-justificar-e-o-que-ficou-mais-dificil-edvl/",
+   "published": "2026-11-13T11:16:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/lifestyle/o-menu-degustacao-nao-morreu-justificar-e-o-que-ficou-mais-dificil-edvl/",
+     "title": "O menu degustação não morreu; justificá-lo é que ficou mais difícil"
+    }
+   ],
+   "ids": [
+    "e1bb51f26ee7"
+   ],
+   "snippet": "Da revolução do elBulli às propostas híbridas e à busca por acolhimento, a alta gastronomia precisa conciliar criatividade, público e negócios. E reconhecer quem construiu essa história. The post O menu degustação não morreu; justificá-lo é que ficou mais difícil appeared first on Seu Dinheiro .",
+   "prescore": 1.8,
+   "headline": "O menu degustação não morreu; justificá-lo é que ficou mais difícil",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Da revolução do elBulli às propostas híbridas e à busca por acolhimento, a alta gastronomia precisa conciliar criatividade, público e negócios. E reconhecer quem construiu essa história. The post O menu degustação não morreu; justificá-lo é que ficou mais difícil appeared first on Seu Dinheiro .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14832,7 +15810,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 45,
+   "count": 46,
    "error": null
   },
   {
@@ -14895,7 +15873,7 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 26,
+   "count": 25,
    "error": null
   },
   {
@@ -15101,10 +16079,10 @@
  ],
  "stats": {
   "raw": 904,
-  "unique": 552,
-  "unique_all": 843,
+  "unique": 542,
+  "unique_all": 846,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 2.8
+  "seconds": 2.5
  }
 }
