@@ -35,11 +35,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 0. **Publicação no GitHub Pages: só acompanhar.** Depois do #67 (artefato de cerca de 41 MB, sem as bases internas), as 13 execuções de 10/11 à tarde até 11/11 à noite publicaram sem travar, cada deploy em cerca de 12 s; antes, foram 5 travadas em 5 dias. Se voltar a travar, o próximo passo é empacotar os perfis em menos arquivos (hoje são cerca de 3.300).
 2. **Notícia repetida em vários cartões: acompanhar.** Feito no #64 para o mesmo deal e no #75 para o mesmo assunto, junta 7 a 13 cartões por edição. Ainda ficam separadas as matérias do mesmo fato com títulos bem diferentes. Em 12/11, a crise da Nvidia teve 6 cartões e só 2 foram juntados. Se incomodar, o próximo passo é a análise da manhã marcar "mesmo fato que" (mexe no routine.py).
-3. **"M&A da semana" e aba Deals: separar Brasil e exterior.** Os 102 "deals novos" da semana são em boa parte comunicados de empresas estrangeiras pequenas. Proposta: Brasil primeiro, com contagem própria, e do exterior só os relevantes.
-   - Achado de 06/11: o campo `region` das notícias diz se o veículo é brasileiro, não onde está o negócio. Marvell–Lumentum aparece como Brasil (noticiado pelo Valor), e Huaxin–CSN Cimentos como exterior. Também não serve para os deals antigos: 354 dos 635 não acham mais a matéria no arquivo.
-   - Caminho: classificar o próprio deal, em duas frentes:
-     - o comprador ou o alvo é companhia brasileira da base, o valor está em R$ ou a manchete cita o Brasil;
-     - a análise da manhã ganha o campo "país do negócio". Mexe no routine.py, então fazer com cuidado.
+3. **Deals: Brasil e exterior, acompanhar.** Feito no #78 na Base de deals. A classificação é feita no navegador: companhia aberta da base, grupo brasileiro conhecido, valor em R$ ou menção ao Brasil, a um estado, ao Cade, à B3 ou à CVM. Conferido na semana de 07 a 13/11: 53 de 129 deals no Brasil. Ainda escapam ativos brasileiros de compradores estrangeiros sem menção ao Brasil, como o projeto Cabaçal, da Meridian. Próximo passo, se precisar: a análise da manhã ganhar o campo "país do negócio" (mexe no routine.py).
 4. **Análise da rotina da manhã.** Os itens de pouca relevância saem com texto genérico. Proposta:
    - lotes menores, com o trecho completo da notícia para quem analisa;
    - análise curta, de propósito, para os itens de nota 1 a 3.
@@ -53,6 +49,10 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 13/11 — Base de deals separa Brasil e exterior (#78):
+  - filtro "Brasil e exterior", "Só Brasil" ou "Só exterior";
+  - o resumo da semana passa a mostrar "N deals novos no Brasil" e "mais M no exterior";
+  - em "Maiores da semana", os do Brasil vêm primeiro e os do exterior aparecem marcados.
 - 13/11 — O relógio das coletas passa a funcionar sem depender de ajuste manual (#77). A espera de 55 minutos entre uma atualização e a próxima agora é um sleep dentro do job, e não mais o "Wait timer" do ambiente relogio, que nunca foi ligado. Como o repositório é público, os minutos do Actions são gratuitos. Com isso, o portal atualiza de hora em hora nos dias úteis, das 06h às 20h30, mesmo quando o agendador do GitHub atrasa, como em 12 e 13/11, com 3 horas sem coleta à tarde.
 - 13/11 — A checagem das execuções do GitHub no vigia nunca tinha funcionado (#76). O fetch do Node consultava a API do GitHub direto, sem autenticação, e levava 403 por limite de pedidos; o erro era engolido sem aviso. Por isso o portal ficou 3 horas sem atualizar em 13/11 sem alerta. Agora a API é lida pelo curl, que passa pelo proxy autenticado, e uma falha na leitura vira aviso do vigia.
 - 12/11 — Matérias sobre o mesmo assunto entram no cartão da de maior nota, em "Mais N matérias sobre o mesmo assunto", como já acontecia com as do mesmo deal (#75):
