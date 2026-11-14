@@ -171,7 +171,7 @@
     renderMacro();
     loadBase();
     loadLeads();
-    loadCias().then(() => { renderBrief(); renderBriefSide(); renderAgenda(); renderOfertas(); renderDeals(); renderLeads(); renderTabs(); if ($("#reader").open) renderReader(); });
+    loadCias().then(() => { renderBrief(); renderBriefSide(); renderAgenda(); renderOfertas(); renderDeals(); renderLeads(); if (state.base) renderBase(); renderTabs(); if ($("#reader").open) renderReader(); });
   }
 
   // ---------------------------------------------------------- companhias (perfis), agenda e ofertas
@@ -481,12 +481,32 @@
     renderTabs();
   }
 
+  // Deal no Brasil ou no exterior: comprador ou alvo é companhia aberta brasileira da base, grupo brasileiro conhecido,
+  // valor em reais ou menção ao Brasil, a estado, ao Cade, à B3 ou à CVM. O campo region das notícias diz onde está o
+  // veículo, não o negócio, e por isso não serve. Conferido na semana de 07 a 13/11: 46 de 129 deals no Brasil.
+  const BR_GROUPS = /\b(jbs|j&f|csn|votorantim|btg|xp|ig4|souza aguiar|ra[ií]zen|cosan|ita[uú]|bradesco|ambev|gerdau|embraer|marfrig|minerva|brf|suzano|eletrobras|axia|sabesp|copel|cemig|magalu|americanas|nubank|pagbank|totvs|localiza|rede d'or|hapvida|klabin|ultrapar|vibra|prio|equatorial|energisa|neoenergia|cpfl|taesa|p[aá]tria|vinci|kinea|spx|g[aá]vea|conasa|odebrecht|novonor|andrade gutierrez|camargo corr[eê]a|safra|caixa|bndes|petrobras|vale s\.?a|conta azul)\b/;
+  const BR_TEXT = /r\$|brasil|brasileir|\bcade\b|\bb3\b|\bcvm\b|s[aã]o paulo|rio de janeiro|minas gerais|goi[aá]s|mato grosso|paran[aá]|bahia|pernambuco|cear[aá]|santa catarina|rio grande do sul|esp[ií]rito santo|amazonas|\bbr-\d|recupera[cç][aã]o (extra)?judicial|deb[eê]ntures?/;
+  const brCache = new Map();
+  function isBrDeal(d) {
+    const key = d.key || `${d.buyer}|${d.target}`;
+    if (cias.loaded && brCache.has(key)) return brCache.get(key);
+    const names = `${d.buyer || ""} ${d.target || ""}`;
+    const text = fold(`${names} ${d.value || ""} ${d.headline || ""}`);
+    // "Fleury (50,01%) e Atlântica Hospitais": cada parte do nome é procurada na base de companhias
+    const parts = [d.buyer, d.target, ...names.split(/[;,/()]|\s+e\s+/)].map((x) => (x || "").trim()).filter((x) => x.length > 2);
+    const br = Boolean(parts.some(companyOf) || BR_GROUPS.test(text) || BR_TEXT.test(text));
+    if (cias.loaded) brCache.set(key, br);
+    return br;
+  }
+
   function baseRows() {
     const deals = Object.values((state.base || {}).deals || {});
     const q = fold($("#base-q").value.trim());
     const sector = $("#base-sector").value;
+    const geo = $("#base-geo").value;
     return deals
       .filter((d) => !sector || d.sector === sector)
+      .filter((d) => !geo || (geo === "br") === isBrDeal(d))
       .filter((d) => !q || fold(`${d.buyer} ${d.target} ${d.sector} ${d.type} ${d.advisors} ${d.headline}`).includes(q))
       .sort((a, z) => (z.last_seen || "").localeCompare(a.last_seen || "") || z.importance - a.importance);
   }
@@ -517,16 +537,18 @@
     const bySector = {};
     for (const d of week) bySector[d.sector || "Outros"] = (bySector[d.sector || "Outros"] || 0) + 1;
     const topSectors = Object.entries(bySector).sort((a, z) => z[1] - a[1]).slice(0, 5);
-    const topDeals = [...week].sort((a, z) => z.importance - a.importance).slice(0, 5);
+    const weekBr = week.filter(isBrDeal);
+    // os maiores da semana: primeiro os do Brasil; os do exterior só completam a lista
+    const topDeals = [...week].sort((a, z) => isBrDeal(z) - isBrDeal(a) || z.importance - a.importance).slice(0, 5);
     $("#base-summary").innerHTML = `
       <div class="week-grid">
         <div class="side-block"><h3 class="section-label">Últimos 7 dias</h3>
-          <p class="week-big">${week.length}<span> deals novos</span></p>
-          <p class="muted small">${moved.length} deals antigos mudaram de estágio · base com ${deals.length} deals</p></div>
+          <p class="week-big">${weekBr.length}<span> deals novos no Brasil</span></p>
+          <p class="muted small">mais ${week.length - weekBr.length} no exterior · ${moved.length} deals antigos mudaram de estágio · base com ${deals.length} deals</p></div>
         <div class="side-block"><h3 class="section-label">Setores mais ativos</h3>
           <ul class="bullets macro">${topSectors.map(([k, n]) => `<li><b>${esc(k)}</b> ${n}</li>`).join("") || "<li>–</li>"}</ul></div>
         <div class="side-block"><h3 class="section-label">Maiores da semana</h3>
-          <ul class="bullets">${topDeals.map((d) => `<li>${esc(d.buyer)} → ${esc(d.target)} <span class="muted">· ${esc(d.value || "valor não divulgado")}</span></li>`).join("") || "<li>–</li>"}</ul></div>
+          <ul class="bullets">${topDeals.map((d) => `<li>${esc(d.buyer)} → ${esc(d.target)} <span class="muted">· ${esc(d.value || "valor não divulgado")}${isBrDeal(d) ? "" : " · exterior"}</span></li>`).join("") || "<li>–</li>"}</ul></div>
         <div class="side-block"><h3 class="section-label">Assessores mais citados</h3>
           <ul class="bullets macro adv-rank">${advisorRank(deals).map(([n, c]) => `<li><button class="link-btn" type="button" data-advq="${esc(n)}">${esc(n)}</button> ${c}</li>`).join("") || "<li>Sem assessores divulgados na base.</li>"}</ul></div>
       </div>`;
@@ -1280,6 +1302,7 @@
   $("#base-q").addEventListener("input", renderBase);
   document.addEventListener("click", (e) => { const b = e.target.closest("[data-advq]"); if (b) { $("#base-q").value = b.dataset.advq; renderBase(); } });
   $("#base-sector").addEventListener("input", renderBase);
+  $("#base-geo").addEventListener("input", renderBase);
   $("#base-export").onclick = exportBase;
   for (const id of ["leads-q", "leads-signal", "leads-period", "leads-track", "leads-noadv", "leads-closed"])
     $("#" + id).addEventListener("input", () => { renderLeads(); renderTabs(); });
