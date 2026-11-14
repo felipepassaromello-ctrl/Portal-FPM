@@ -1,18 +1,17 @@
 name: Relógio das coletas
 
-# O agendador do GitHub (schedule) está atrasando horas e pulando a maior parte das coletas do dia (em 09/11, o portal
-# ficou sem atualização das 08:52 às 16:08). Este workflow mantém o portal atualizado de hora em hora sem depender dele:
-# ao fim de cada "Atualizar portal", um job fica esperando no ambiente "relogio" e, quando a espera acaba, dispara a
-# próxima atualização.
+# O agendador do GitHub (schedule) atrasa horas e pula a maior parte das coletas do dia: em 09/11, o portal ficou sem
+# atualização das 08:52 às 16:08; em 12 e 13/11, três horas à tarde. Este workflow mantém o portal atualizado de hora em
+# hora sem depender dele: ao fim de cada "Atualizar portal", um job espera até completar 55 minutos desde o início
+# daquela atualização e então dispara a próxima.
 #
-# A espera vem do "Wait timer" do ambiente relogio, que só o dono do repositório configura:
-#   Settings → Environments → relogio → Wait timer: 55 minutos.
-# Enquanto ele não existir, o job roda na hora, vê que acabou de haver uma atualização e não faz nada: o relógio fica
-# desligado. A espera não usa minutos de máquina do GitHub Actions.
+# A espera é um sleep dentro do job. Como o repositório é público, os minutos do GitHub Actions são gratuitos: a espera
+# não custa nada. (Antes a espera vinha do "Wait timer" do ambiente relogio, que dependia de um ajuste manual nas
+# configurações do repositório e nunca foi ligado.)
 #
-# Uma espera nova cancela a anterior (concurrency), então nunca há mais de uma na fila. Só dispara em dias úteis, das
-# 06h às 20h30 de Brasília, e se nenhuma atualização tiver começado nos últimos 45 minutos. Fora desse horário o
-# relógio para, e volta com a primeira atualização do dia seguinte (a rotina da manhã dispara uma às 08h15).
+# Uma espera nova cancela a anterior (concurrency), então nunca há mais de uma. Só dispara em dias úteis, das 06h às
+# 20h30 de Brasília, e se nenhuma atualização tiver começado nos últimos 45 minutos. Fora desse horário o relógio para,
+# e volta com a primeira atualização do dia seguinte (a rotina da manhã dispara uma às 08h15).
 on:
   workflow_run:
     workflows: ["Atualizar portal"]
@@ -28,12 +27,26 @@ concurrency:
 jobs:
   proxima:
     runs-on: ubuntu-latest
-    environment: relogio
-    timeout-minutes: 5
+    timeout-minutes: 70
     env:
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
+      STARTED: ${{ github.event.workflow_run.run_started_at || github.event.workflow_run.created_at }}
     steps:
+      - name: Esperar até 55 minutos depois do início da última atualização
+        run: |
+          hhmm=$(TZ=America/Sao_Paulo date +%H%M)
+          dow=$(TZ=America/Sao_Paulo date +%u)
+          if [ "$dow" -gt 5 ] || [ "$hhmm" -lt 600 ] || [ "$hhmm" -gt 2030 ]; then
+            echo "Fora do horário (dias úteis, das 06h às 20h30): o relógio para até a próxima atualização."
+            exit 0
+          fi
+          wait=$(( $(date -d "$STARTED" +%s) + 55 * 60 - $(date +%s) ))
+          if [ "$wait" -gt 0 ]; then
+            echo "Esperando $((wait / 60)) minutos."
+            sleep "$wait"
+          fi
+
       - name: Disparar a próxima atualização
         run: |
           hhmm=$(TZ=America/Sao_Paulo date +%H%M)

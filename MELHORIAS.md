@@ -34,11 +34,6 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 ## Fila (da maior para a menor prioridade)
 
 0. **Publicação no GitHub Pages: só acompanhar.** Depois do #67 (artefato de cerca de 41 MB, sem as bases internas), as 13 execuções de 10/11 à tarde até 11/11 à noite publicaram sem travar, cada deploy em cerca de 12 s; antes, foram 5 travadas em 5 dias. Se voltar a travar, o próximo passo é empacotar os perfis em menos arquivos (hoje são cerca de 3.300).
-1. **Coletas do dia dependem do agendador do GitHub, que atrasa horas.** O relógio das coletas (#65) resolve sem custo, mas precisa de um ajuste do Felipe, de 1 minuto, para ligar:
-   - em Settings → Environments → relogio, marcar "Wait timer" e pôr 55 minutos;
-   - o ambiente aparece depois da primeira atualização com o workflow novo;
-   - com isso, o portal passa a atualizar de hora em hora nos dias úteis, das 06h às 20h30, sem depender do agendador;
-   - a espera não gasta minutos do GitHub Actions; sem o ajuste, o relógio fica desligado e nada muda.
 2. **Notícia repetida em vários cartões: acompanhar.** Feito no #64 para o mesmo deal e no #75 para o mesmo assunto, junta 7 a 13 cartões por edição. Ainda ficam separadas as matérias do mesmo fato com títulos bem diferentes. Em 12/11, a crise da Nvidia teve 6 cartões e só 2 foram juntados. Se incomodar, o próximo passo é a análise da manhã marcar "mesmo fato que" (mexe no routine.py).
 3. **"M&A da semana" e aba Deals: separar Brasil e exterior.** Os 102 "deals novos" da semana são em boa parte comunicados de empresas estrangeiras pequenas. Proposta: Brasil primeiro, com contagem própria, e do exterior só os relevantes.
    - Achado de 06/11: o campo `region` das notícias diz se o veículo é brasileiro, não onde está o negócio. Marvell–Lumentum aparece como Brasil (noticiado pelo Valor), e Huaxin–CSN Cimentos como exterior. Também não serve para os deals antigos: 354 dos 635 não acham mais a matéria no arquivo.
@@ -58,6 +53,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 13/11 — O relógio das coletas passa a funcionar sem depender de ajuste manual (#77). A espera de 55 minutos entre uma atualização e a próxima agora é um sleep dentro do job, e não mais o "Wait timer" do ambiente relogio, que nunca foi ligado. Como o repositório é público, os minutos do Actions são gratuitos. Com isso, o portal atualiza de hora em hora nos dias úteis, das 06h às 20h30, mesmo quando o agendador do GitHub atrasa, como em 12 e 13/11, com 3 horas sem coleta à tarde.
 - 13/11 — A checagem das execuções do GitHub no vigia nunca tinha funcionado (#76). O fetch do Node consultava a API do GitHub direto, sem autenticação, e levava 403 por limite de pedidos; o erro era engolido sem aviso. Por isso o portal ficou 3 horas sem atualizar em 13/11 sem alerta. Agora a API é lida pelo curl, que passa pelo proxy autenticado, e uma falha na leitura vira aviso do vigia.
 - 12/11 — Matérias sobre o mesmo assunto entram no cartão da de maior nota, em "Mais N matérias sobre o mesmo assunto", como já acontecia com as do mesmo deal (#75):
   - o critério é mesma categoria e mesmas entidades principais ou mesmas palavras no título;
