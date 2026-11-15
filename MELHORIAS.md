@@ -49,6 +49,11 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 14/11 — Leads duplicados por nome escrito de outro jeito são juntados (#79):
+  - "Grupo Casas Bahia" e "Casas Bahia", e "Giga+ / Sky" e "Giga+ (ex-Alloha) e Sky", viravam leads separados. Agora o nome é comparado sem "Grupo", "S.A.", parênteses e conectivos, e os 2 pares que já estavam na base foram juntados (67 → 65 leads);
+  - fica a chave do mais antigo, e a outra vira apelido: o status e a anotação dados no registro antigo continuam aparecendo;
+  - ainda escapam leads do mesmo negócio com nomes bem diferentes, como a fatia da BP descrita como "bloco offshore" e como "maior descoberta em 25 anos";
+  - também: o vigia não reclama mais da edição sem análise no fim de semana, quando ela fica assim de propósito.
 - 13/11 — Base de deals separa Brasil e exterior (#78):
   - filtro "Brasil e exterior", "Só Brasil" ou "Só exterior";
   - o resumo da semana passa a mostrar "N deals novos no Brasil" e "mais M no exterior";

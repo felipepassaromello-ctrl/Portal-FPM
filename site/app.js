@@ -400,7 +400,7 @@
       .filter((l) => !sig || l.signal === sig)
       .filter((l) => !$("#leads-noadv").checked || noAdvisor(l))
       .filter((l) => {
-        const t = (state.track[l.key] || {}).s || "";
+        const t = trackOf(l).s || "";
         if (!tr) return t !== "descartado";
         return tr === "novo" ? !t : t === tr;
       })
@@ -408,13 +408,17 @@
       .sort((a, z) => (z.last_seen || "").localeCompare(a.last_seen || "") || z.importance - a.importance);
   }
 
+  // status e anotação que o Felipe deu ao lead; quando dois registros do mesmo lead são juntados na base, o que foi
+  // marcado na chave antiga (apelido) continua valendo
+  const trackOf = (l) => state.track[l.key] || (l.aliases || []).map((a) => state.track[a]).find(Boolean) || {};
+
   function renderLeads() {
     const box = $("#leads-list");
     if (!state.leads) { box.innerHTML = `<div class="empty">A base de leads começa a ser montada na próxima coleta.</div>`; return; }
     const rows = leadRows();
     $("#leads-count").textContent = `${rows.length} leads`;
     box.innerHTML = rows.map((l) => {
-      const t = state.track[l.key] || {};
+      const t = trackOf(l);
       const ev = [...(l.events || [])].reverse().slice(0, 3);
       return `<article class="card lead ${l.status !== "Em aberto" ? "lead-closed" : ""}" data-lead="${esc(l.key)}">
         <div class="lead-head">
@@ -447,7 +451,9 @@
   }
 
   function saveTrack(key, patch) {
-    state.track[key] = { ...(state.track[key] || {}), ...patch, at: new Date().toISOString().slice(0, 10) };
+    const lead = Object.values((state.leads || {}).leads || {}).find((l) => l.key === key);
+    const prev = state.track[key] || (lead ? trackOf(lead) : {});
+    state.track[key] = { ...prev, ...patch, at: new Date().toISOString().slice(0, 10) };
     if (!state.track[key].s && !state.track[key].n) delete state.track[key];
     store.set("leads-track", state.track);
   }
@@ -463,7 +469,7 @@
     const cols = ["Empresa", "Sinal", "Setor", "Situação", "Desde", "Última notícia", "Contraparte", "Assessores", "Por que é oportunidade", "Meu status", "Anotação", "Última manchete", "Link"];
     const cell = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
     const lines = [cols.map(cell).join(";"), ...leadRows().map((l) => {
-      const t = state.track[l.key] || {}, last = (l.events || [])[l.events.length - 1] || {};
+      const t = trackOf(l), last = (l.events || [])[l.events.length - 1] || {};
       return [l.company, l.signal, l.sector, l.status, l.first_seen, l.last_seen, l.counterparty, l.advisors, l.why, TRACK[t.s] || "", t.n || "", last.headline, last.link].map(cell).join(";");
     })];
     const blob = new Blob(["\ufeff" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });

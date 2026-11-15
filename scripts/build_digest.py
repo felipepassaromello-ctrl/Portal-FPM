@@ -670,6 +670,54 @@ def lead_key(company: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", fold(company))[:40]
 
 
+LEAD_STOP = {"grupo", "e", "da", "de", "do", "das", "dos", "sa", "s", "a", "ltda", "holding", "participacoes", "cia",
+             "companhia"}
+
+
+def lead_norm(company: str) -> str:
+    """Nome da empresa do lead para achar o mesmo lead escrito de outro jeito: sem o que está entre parênteses, sem
+    "Grupo", "S.A." e conectivos ("Grupo Casas Bahia" = "Casas Bahia"; "Giga+ (ex-Alloha) e Sky" = "Giga+ / Sky")."""
+    if is_unknown(company):
+        return ""
+    words = re.findall(r"[a-z0-9]+", fold(re.sub(r"\(.*?\)", " ", company or "")))
+    return "".join(w for w in words if w not in LEAD_STOP)[:40]
+
+
+def _merge_lead(into: dict, other: dict) -> None:
+    """Junta dois registros do mesmo lead; fica a chave do mais antigo, e a outra vira apelido (o portal acha nela o
+    status e a anotação que o Felipe já tinha dado)."""
+    into["first_seen"] = min(into.get("first_seen", ""), other.get("first_seen", "")) or into.get("first_seen", "")
+    into["last_seen"] = max(into.get("last_seen", ""), other.get("last_seen", ""))
+    into["importance"] = max(into.get("importance", 0), other.get("importance", 0))
+    into["ids"] = list(dict.fromkeys(into.get("ids", []) + other.get("ids", [])))[-30:]
+    ev = {(e.get("date"), e.get("link")): e for e in into.get("events", []) + other.get("events", [])}
+    into["events"] = sorted(ev.values(), key=lambda e: e.get("date", ""))[-12:]
+    into["aliases"] = sorted(set(into.get("aliases", [])) | set(other.get("aliases", [])) | {other["key"]})
+    if other.get("last_seen", "") >= into.get("last_seen", "") or not into.get("why"):
+        for f in ("signal", "why", "sector"):
+            if other.get(f):
+                into[f] = other[f]
+    for f in ("counterparty", "advisors"):
+        if not is_unknown(other.get(f)) and is_unknown(into.get(f)):
+            into[f] = other[f]
+
+
+def dedupe_leads(leads: dict) -> int:
+    """Junta os leads da base que são o mesmo com nomes escritos de outro jeito. Devolve quantos foram juntados."""
+    first: dict[str, str] = {}
+    merged = 0
+    for k in sorted(leads, key=lambda x: (leads[x].get("first_seen", ""), x)):
+        n = lead_norm(leads[k].get("company", ""))
+        if len(n) < 4:
+            continue
+        if n in first and first[n] in leads:
+            _merge_lead(leads[first[n]], leads.pop(k))
+            merged += 1
+        else:
+            first[n] = k
+    return merged
+
+
 LEAD_FIELD_SINCE = "2026-10-19"  # a partir desta edição a análise marca os leads; antes, eles vêm dos deals
 
 
@@ -701,6 +749,7 @@ def update_leads_db(items: list[dict], edition_date: str, deals_db: dict) -> dic
                                              - datetime.fromisoformat(path.stem)).days <= 90:
                 _add_leads(leads, load_json(path, {}).get("items", []), path.stem)
     _add_leads(leads, items, edition_date)
+    dedupe_leads(leads)
     for e in leads.values():  # renomeia sinais antigos
         e["signal"] = LEAD_ALIASES.get(e.get("signal"), e.get("signal"))
         for ev in e.get("events", []):
@@ -712,7 +761,7 @@ def update_leads_db(items: list[dict], edition_date: str, deals_db: dict) -> dic
         if st in CLOSED_STAGES or st == "cancelado":
             closed[lead_key(d.get("target", ""))] = ("Cancelado" if st == "cancelado" else "Virou deal", d.get("last_seen", ""))
     for k, e in leads.items():
-        st = closed.get(k)
+        st = closed.get(k) or next((closed[a] for a in e.get("aliases", []) if a in closed), None)
         e["status"] = st[0] if st and st[1] >= e.get("first_seen", "") else "Em aberto"
     if len(leads) > 800:
         keep = sorted(leads.values(), key=lambda x: x.get("last_seen", ""), reverse=True)[:800]
@@ -728,8 +777,11 @@ def _add_leads(leads: dict, items: list[dict], edition_date: str) -> None:
         k = lead_key(lead["company"]) if lead else ""
         if not k:
             continue
-        # mesma empresa com nome mais curto ou mais longo ("Ri Happy" x "Ri Happy Brinquedos")
-        k = next((x for x in leads if min(len(x), len(k)) >= 5 and (x.startswith(k) or k.startswith(x))), k)
+        # mesma empresa escrita de outro jeito ("Grupo Casas Bahia" x "Casas Bahia") ou com nome mais curto ou mais
+        # longo ("Ri Happy" x "Ri Happy Brinquedos")
+        n = lead_norm(lead["company"])
+        k = next((x for x in leads if len(n) >= 4 and lead_norm(leads[x].get("company", "")) == n), None) or \
+            next((x for x in leads if min(len(x), len(k)) >= 5 and (x.startswith(k) or k.startswith(x))), k)
         e = leads.setdefault(k, {"key": k, "company": lead["company"], "first_seen": edition_date,
                                  "events": [], "ids": [], "importance": 0})
         if it["id"] in e["ids"]:
