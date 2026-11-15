@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T19:16:27.086196-03:00",
+ "generated_at": "2026-11-14T21:28:48.969776-03:00",
  "date": "2026-11-14",
  "window": {
   "start": "2026-11-13T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-13T08:26:51.075611-03:00",
-  "analyzed": 4
+  "analyzed": 3
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -155,14 +155,13 @@
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 63516.23,
-   "change_pct": -6.934936006072401,
+   "price": 63858.77,
+   "change_pct": -6.433040553201863,
    "spark": [
-    73720.1171875,
     73964.46875,
     71342.96875,
     68249.2734375,
-    63516.23046875
+    63858.76953125
    ]
   }
  ],
@@ -589,79 +588,6 @@
    "ai": false
   },
   {
-   "id": "dbeab3d6274d",
-   "title": "Singapore says US offered limited help in its probe of AI chip deals",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTnYzUU95Qk1nQm5HQmgyWFIyZVpEcVpJUHc2b0FCOEYwUnNZbjVrajlLMVY2QXRUTzR1djQxclI1ckdxcUdhc3phdkhNRTZqOFRMY29QZ0pNOUloekpxWldVZEJsS0l4VEZFTXQyb0sxUFpyaGFJY0QtbFFGa0ZZLVB6LTdaQWwyZnhjQUdLbkU4UFhheHJ4NlJCQndfQWtwVHNmYWN4SmNxZGpsSTB0S2RSTmJhTXc?oc=5",
-   "published": "2026-11-13T14:11:24+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTnYzUU95Qk1nQm5HQmgyWFIyZVpEcVpJUHc2b0FCOEYwUnNZbjVrajlLMVY2QXRUTzR1djQxclI1ckdxcUdhc3phdkhNRTZqOFRMY29QZ0pNOUloekpxWldVZEJsS0l4VEZFTXQyb0sxUFpyaGFJY0QtbFFGa0ZZLVB6LTdaQWwyZnhjQUdLbkU4UFhheHJ4NlJCQndfQWtwVHNmYWN4SmNxZGpsSTB0S2RSTmJhTXc?oc=5",
-     "title": "Singapore says US offered limited help in its probe of AI chip deals"
-    }
-   ],
-   "ids": [
-    "dbeab3d6274d"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Singapura diz que EUA deram ajuda limitada em investigação sobre negócios de chips de IA",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Investigação sobre comércio de chips, com impacto em controle de exportações.",
-   "summary": "Singapura afirmou que os EUA ofereceram ajuda limitada em sua investigação sobre negócios com chips de IA.",
-   "involves": "Singapura; EUA; chips de IA",
-   "interpretation": "Mostra atritos na fiscalização do comércio de chips.",
-   "impact": "Risco regulatório para cadeia de chips e distribuidores.",
-   "sentiment": "neutro",
-   "entities": [
-    "Singapura",
-    "EUA"
-   ],
-   "tags": [
-    "chips",
-    "Singapura",
-    "exportação"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "9896210f0dd0",
-   "title": "Sam Bankman-Fried would have made nearly $40bn in Anthropic IPO",
-   "link": "https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787?syn-25a6b1a6=1",
-   "published": "2026-11-13T23:39:26+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787?syn-25a6b1a6=1",
-     "title": "Sam Bankman-Fried would have made nearly $40bn in Anthropic IPO"
-    }
-   ],
-   "ids": [
-    "9896210f0dd0"
-   ],
-   "snippet": "Jailed cryptocurrency mogul loses out on windfall from early investment in the AI lab",
-   "prescore": 5.6,
-   "headline": "Sam Bankman-Fried would have made nearly $40bn in Anthropic IPO",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Jailed cryptocurrency mogul loses out on windfall from early investment in the AI lab",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "90b2ff09fb65",
    "title": "EXCLUSIVE: Investors flock to Anthropic IPO but question durability of AI lead",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOckJYSDVUWDh1cTJPb3ptd2pLZmxuNXBtSEJkN0F0WWFucUZuWDgtQ0dZbzZITDBWY3dhSWZqcjcyZl9FdGpHdHJsX1dkbVowTkZ3OWRKd3pwN2NIMnBGZ1AtbDFkMkl6Vm1RZFNsZ2VDOU1nLUVmY2d4UHV2U01ER1pJTmdlSGFDdmsyM2ZhbXlXYVdEb01ERlNybGxWY0RsYlo4QlNxa0NCaUNpQjQw?oc=5",
@@ -713,6 +639,39 @@
    "snippet": "",
    "prescore": 5.6,
    "headline": "US Supreme Court to consider lawsuit over Robinhood's 2021 IPO",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b97d667a9fb8",
+   "title": "Anthropic Chief Tells Jamie Dimon He Hopes IPO Will ‘Underpromise and Overdeliver’",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRHZzSkNrdXkyNGh6enBWc0xtLVE0UkpKM2hadjNwc0wtV2t6SzJHVE9KRXdEYkZRaTZTdVlKanFocEwwLTc0OUJ3SlVacXNiV1RyeEdtTENBLUNKVWZwdTZqc0h6dHlFaFJWeWFESGJ3X216bmdBZHVfci15cmQzbmk4YkZpSGpaNFctWlVPcEkxZGN4M3hXUHg4azd0M3R2WjFjc0ZtTFhjYnpMSm1Od2h2Yzl3SkNB?oc=5",
+   "published": "2026-11-13T18:46:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRHZzSkNrdXkyNGh6enBWc0xtLVE0UkpKM2hadjNwc0wtV2t6SzJHVE9KRXdEYkZRaTZTdVlKanFocEwwLTc0OUJ3SlVacXNiV1RyeEdtTENBLUNKVWZwdTZqc0h6dHlFaFJWeWFESGJ3X216bmdBZHVfci15cmQzbmk4YkZpSGpaNFctWlVPcEkxZGN4M3hXUHg4azd0M3R2WjFjc0ZtTFhjYnpMSm1Od2h2Yzl3SkNB?oc=5",
+     "title": "Anthropic Chief Tells Jamie Dimon He Hopes IPO Will ‘Underpromise and Overdeliver’"
+    }
+   ],
+   "ids": [
+    "b97d667a9fb8"
+   ],
+   "snippet": "",
+   "prescore": 5.6,
+   "headline": "Anthropic Chief Tells Jamie Dimon He Hopes IPO Will ‘Underpromise and Overdeliver’",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -858,39 +817,6 @@
    "prescore": 5.4,
    "headline": "Ibovespa fecha em alta com ajuste fiscal e inflação dos EUA no radar",
    "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f7f35baee7fc",
-   "title": "Relato aponta possível pausa no IPO da Nscale até 2027",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdTBuT0ZWNlh5NWZ0LTgtNENZMjl3d2ZEQnhlNEp4dmlvTTNLaHo1U1lfVnc2Nlh0bjI3LXJhZ1o5S3M4SXRPbUJyV0xxM0J5QzlNc0JYMmtHTnVEeU1xYlMxTTlfMlQweHVkcnhqaG5aYVRYWnlpTHZTVE9laGNxQWZibXVOZFpNbTZaYw?oc=5",
-   "published": "2026-11-13T21:16:24+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "NeoTeo",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdTBuT0ZWNlh5NWZ0LTgtNENZMjl3d2ZEQnhlNEp4dmlvTTNLaHo1U1lfVnc2Nlh0bjI3LXJhZ1o5S3M4SXRPbUJyV0xxM0J5QzlNc0JYMmtHTnVEeU1xYlMxTTlfMlQweHVkcnhqaG5aYVRYWnlpTHZTVE9laGNxQWZibXVOZFpNbTZaYw?oc=5",
-     "title": "Relato aponta possível pausa no IPO da Nscale até 2027"
-    }
-   ],
-   "ids": [
-    "f7f35baee7fc"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Relato aponta possível pausa no IPO da Nscale até 2027",
-   "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -1518,72 +1444,6 @@
    "snippet": "",
    "prescore": 4.6,
    "headline": "Fed's Jefferson says he is taking his policy cues from inflation",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1af1025ec1bc",
-   "title": "Kevin Warsh’s Plan to Remake the Fed: Fewer Rate Votes, More Deliberating",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWWREYWtpWllac2NUdW9FOW1tdXZrTS1FclFzZnA4TEhkOEFJQ0liTEZZdElXbU5BUHMtTnNVME1zYUVpWHY5VXZmM0Z4YWRMY0U4YzVFdldTOEhEQUpSSnluaXNNM2VVVlQ0YnNXR0hUNHRhM1gwSWhtZXl3QlB2QXR5aUVXajZBTTlRdDhB?oc=5",
-   "published": "2026-11-13T21:01:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWWREYWtpWllac2NUdW9FOW1tdXZrTS1FclFzZnA4TEhkOEFJQ0liTEZZdElXbU5BUHMtTnNVME1zYUVpWHY5VXZmM0Z4YWRMY0U4YzVFdldTOEhEQUpSSnluaXNNM2VVVlQ0YnNXR0hUNHRhM1gwSWhtZXl3QlB2QXR5aUVXajZBTTlRdDhB?oc=5",
-     "title": "Kevin Warsh’s Plan to Remake the Fed: Fewer Rate Votes, More Deliberating"
-    }
-   ],
-   "ids": [
-    "1af1025ec1bc"
-   ],
-   "snippet": "",
-   "prescore": 4.6,
-   "headline": "Kevin Warsh’s Plan to Remake the Fed: Fewer Rate Votes, More Deliberating",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "720c6dd5a655",
-   "title": "Fed's Warsh to take stock of AI revolution as US public grows wary",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWkQ4OXhSU2NkMHBKdUJoR3UxSHZZdDcwX2lwRldpTVlTdWstUGdDMExnaDVjb1ItV2kyUlNGRnlNbS04ZDVWX1hrczMxOXRnTG9MWUxFRXBMNFc5UkYwMnpFOGZsTG1KcTB5dGdlckdHRmFrdERaT1VZWkJKU0JhMER4czlvUEJXQ0JxalhaWUxyQ0pfaHh6WHZlUW1GYVBpb3RxQXVUMVpzMGc4c0E?oc=5",
-   "published": "2026-11-13T16:30:03+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWkQ4OXhSU2NkMHBKdUJoR3UxSHZZdDcwX2lwRldpTVlTdWstUGdDMExnaDVjb1ItV2kyUlNGRnlNbS04ZDVWX1hrczMxOXRnTG9MWUxFRXBMNFc5UkYwMnpFOGZsTG1KcTB5dGdlckdHRmFrdERaT1VZWkJKU0JhMER4czlvUEJXQ0JxalhaWUxyQ0pfaHh6WHZlUW1GYVBpb3RxQXVUMVpzMGc4c0E?oc=5",
-     "title": "Fed's Warsh to take stock of AI revolution as US public grows wary"
-    }
-   ],
-   "ids": [
-    "720c6dd5a655"
-   ],
-   "snippet": "",
-   "prescore": 4.6,
-   "headline": "Fed's Warsh to take stock of AI revolution as US public grows wary",
    "category": "internacional",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -2368,24 +2228,24 @@
    "ai": false
   },
   {
-   "id": "2705d317aa76",
-   "title": "China, US discuss tariffs, farm trade ahead of Xi-Trump meeting",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSXM1eUw2ajFCSktRVnp3Sm5fY0ZteUJnclFnemswOWZRSV8tOUVsczh5c3pZSW5OeEdid0RBVXhVQkhWc0EtOUNjTHk0eURRY1Axa2xXblF1cVhPSmVEQVZXT3Q2ZjI5aXVURGVqSV9wc1NzOGg5bWxhWlZWTEt2dGUzUUtoeVFFeFlmMUVzMk1tZmZaM2daWDliXzQzZXdZTmFWMHdXeVQ0Wnl0b3hObQ?oc=5",
-   "published": "2026-11-14T07:13:00+00:00",
+   "id": "217836a67036",
+   "title": "South Korea should not fear China's rise, foreign minister says",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbTFpNU1OeE1XUnRFajBJZDlmTll0dXZQamU1YTlIRnhMdjllNDJDVFJYYTFsaXB6YzNwQVRtRVdsMmNKd1dKbk94Ri14YjBCMFdDSzU1cWVuVTQ2SmpOb293RkhLYmtKWGlId3JJYVR3ODBCa1JrNF9pNFNIZ2ZJYmVKSlhBVXJpUFN1UzZ5SG9HcTFSV0huZnpRajBWWWpBU3daYXM3cmpLS3Vudnc?oc=5",
+   "published": "2026-11-14T04:49:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSXM1eUw2ajFCSktRVnp3Sm5fY0ZteUJnclFnemswOWZRSV8tOUVsczh5c3pZSW5OeEdid0RBVXhVQkhWc0EtOUNjTHk0eURRY1Axa2xXblF1cVhPSmVEQVZXT3Q2ZjI5aXVURGVqSV9wc1NzOGg5bWxhWlZWTEt2dGUzUUtoeVFFeFlmMUVzMk1tZmZaM2daWDliXzQzZXdZTmFWMHdXeVQ0Wnl0b3hObQ?oc=5",
-     "title": "China, US discuss tariffs, farm trade ahead of Xi-Trump meeting"
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbTFpNU1OeE1XUnRFajBJZDlmTll0dXZQamU1YTlIRnhMdjllNDJDVFJYYTFsaXB6YzNwQVRtRVdsMmNKd1dKbk94Ri14YjBCMFdDSzU1cWVuVTQ2SmpOb293RkhLYmtKWGlId3JJYVR3ODBCa1JrNF9pNFNIZ2ZJYmVKSlhBVXJpUFN1UzZ5SG9HcTFSV0huZnpRajBWWWpBU3daYXM3cmpLS3Vudnc?oc=5",
+     "title": "South Korea should not fear China's rise, foreign minister says"
     }
    ],
    "ids": [
-    "2705d317aa76"
+    "217836a67036"
    ],
    "snippet": "",
    "prescore": 3.6,
-   "headline": "China, US discuss tariffs, farm trade ahead of Xi-Trump meeting",
+   "headline": "South Korea should not fear China's rise, foreign minister says",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -2804,72 +2664,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "O Brasil pode até ter tecnologia e profissionais capazes de competir com os grandes centros globais de inovação. O problema é convencer o resto do mundo disso. Para Felipe Almeida, cofundador da NeoSpace, empresa brasileira de inteligência artificial adquirida pelo Itaú, a origem nacional ainda pesa na hora de conquistar clientes internacionais. “O Brasil parece […] O post “Brasil ainda é visto co",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "8f6deb7f8cd8",
-   "title": "Presidente da Petrobras defende logística estratégica após compra de R$ 620 milhões da Logum",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeTRhcGFFUUhlUnp1LS1RSldxTUdnbXlhOHBDWUJWRTdEV25XSmlXajVIVXRrY2lLR21oUnQ0TW4yUXc4ZFlZMTZtTFYyTVJyUFRBOXUxZnhIOWRyXzl1QU53ZkZXSkkwV2tuc1ZIYTl3TUZoakt4ZFVXMzltWkxFNEc5ZnJaNFlkaXpfYXhxUURCM09ZYmYxa3hlaW1vamh1VTc0UHZpZEk3Y3pUZU9mRVZlZkpIQ0FmYkE?oc=5",
-   "published": "2026-11-13T16:58:21+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "tmc.com.br",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeTRhcGFFUUhlUnp1LS1RSldxTUdnbXlhOHBDWUJWRTdEV25XSmlXajVIVXRrY2lLR21oUnQ0TW4yUXc4ZFlZMTZtTFYyTVJyUFRBOXUxZnhIOWRyXzl1QU53ZkZXSkkwV2tuc1ZIYTl3TUZoakt4ZFVXMzltWkxFNEc5ZnJaNFlkaXpfYXhxUURCM09ZYmYxa3hlaW1vamh1VTc0UHZpZEk3Y3pUZU9mRVZlZkpIQ0FmYkE?oc=5",
-     "title": "Presidente da Petrobras defende logística estratégica após compra de R$ 620 milhões da Logum"
-    }
-   ],
-   "ids": [
-    "8f6deb7f8cd8"
-   ],
-   "snippet": "",
-   "prescore": 3.4,
-   "headline": "Presidente da Petrobras defende logística estratégica após compra de R$ 620 milhões da Logum",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "702e100e8791",
-   "title": "Petrobras busca aprimoramento logístico com a compra da Logum, diz presidente",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOR1h0SkU2YVZxaEZQV3pqczU4MTZOY2daRmN4d1BqYWE2amI1TmpXSFRwcF9RY0dqdU5aZ0t1MHN6MEFpRzQ4anExRGNBdnliX2Qtc2VWWEtpVXZqNVRQSzlwRks0Q21tOXM2ZndkYWVlbDQxRU1RQkpOMWlEWHpuTnlyN09CZnJOSWNDNU1QaDhkQzl6WlFhdHhwaHRpczRsZVkyc0o0LVUzRndhTmN5UEFOYWpPU3dPUE1jOWhmSDliLVJyU2VLRGpHNmx6YWvSAd4BQVVfeXFMTWxpWE1VX0JqRlpUc01nRDh1LVpISkZiNVlHM3gwZExSS0xyVVRfZHhuUXBRN2lsYlVITXUwYzBtWUJXZnVEWmZ5bWU3ZFZRRnNNalpiMWFDaGZ4TDRSNF9BdVBoZHVSZEFKdHpOekx3c05YY1hXNzBQUUt5bzEyV1VUS1JMc1JXYlBYMmRDcXdYenF3NjNEeFUtTXRERmpiSUZ1a1laZEVYMHd2ZXRTcldKbk5tcDNqU01lOURvZEpzQlAyWEhacFM4eVVsdXJCQ3dLZ3JGNEdsbFBoSXl3?oc=5",
-   "published": "2026-11-13T16:35:12+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOR1h0SkU2YVZxaEZQV3pqczU4MTZOY2daRmN4d1BqYWE2amI1TmpXSFRwcF9RY0dqdU5aZ0t1MHN6MEFpRzQ4anExRGNBdnliX2Qtc2VWWEtpVXZqNVRQSzlwRks0Q21tOXM2ZndkYWVlbDQxRU1RQkpOMWlEWHpuTnlyN09CZnJOSWNDNU1QaDhkQzl6WlFhdHhwaHRpczRsZVkyc0o0LVUzRndhTmN5UEFOYWpPU3dPUE1jOWhmSDliLVJyU2VLRGpHNmx6YWvSAd4BQVVfeXFMTWxpWE1VX0JqRlpUc01nRDh1LVpISkZiNVlHM3gwZExSS0xyVVRfZHhuUXBRN2lsYlVITXUwYzBtWUJXZnVEWmZ5bWU3ZFZRRnNNalpiMWFDaGZ4TDRSNF9BdVBoZHVSZEFKdHpOekx3c05YY1hXNzBQUUt5bzEyV1VUS1JMc1JXYlBYMmRDcXdYenF3NjNEeFUtTXRERmpiSUZ1a1laZEVYMHd2ZXRTcldKbk5tcDNqU01lOURvZEpzQlAyWEhacFM4eVVsdXJCQ3dLZ3JGNEdsbFBoSXl3?oc=5",
-     "title": "Petrobras busca aprimoramento logístico com a compra da Logum, diz presidente"
-    }
-   ],
-   "ids": [
-    "702e100e8791"
-   ],
-   "snippet": "",
-   "prescore": 3.4,
-   "headline": "Petrobras busca aprimoramento logístico com a compra da Logum, diz presidente",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -5639,6 +5433,39 @@
    "ai": false
   },
   {
+   "id": "0103bb085f6c",
+   "title": "Inside Stephen Miller’s Frenetic First Week as White House Chief of Staff",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPXzRVVWxXX2pWd1I0WUZzak9QMFFMSXVWMEJ0eUVtTG56bDQ3TmY0dGU0Rm53bnl4T3hjU0w0ekxhQlRoOXNJYjU5MlM0dzJUalBSR05VcDQ5SXI5akl1Q3gzX2RieUt2SmVJOHRfTUh5VHp1ZUFvd2lVSW1TcV9adkpTN18xYXdmcHc5bVJSOGUxd1JZREw4RHNkWU5Sc2NDYS1hRGpsWlNHbU5JUmVPbUpUTlI4Y0tq?oc=5",
+   "published": "2026-11-14T06:30:50+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPXzRVVWxXX2pWd1I0WUZzak9QMFFMSXVWMEJ0eUVtTG56bDQ3TmY0dGU0Rm53bnl4T3hjU0w0ekxhQlRoOXNJYjU5MlM0dzJUalBSR05VcDQ5SXI5akl1Q3gzX2RieUt2SmVJOHRfTUh5VHp1ZUFvd2lVSW1TcV9adkpTN18xYXdmcHc5bVJSOGUxd1JZREw4RHNkWU5Sc2NDYS1hRGpsWlNHbU5JUmVPbUpUTlI4Y0tq?oc=5",
+     "title": "Inside Stephen Miller’s Frenetic First Week as White House Chief of Staff"
+    }
+   ],
+   "ids": [
+    "0103bb085f6c"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Inside Stephen Miller’s Frenetic First Week as White House Chief of Staff",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ee3e6d88d422",
    "title": "Trump, other Quad leaders to meet in Manila on Tuesday, sources say",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSkJpakJlUjRXbXpPc01TZFBYdXpIcGdDWldNS0J4U2kwZ2pqczhDekh3UEFraUx6bHdacG1aem1qY1k1Y1haYVpPVTROa21JOVhZaldkWUxNTE91UmJlSGZ2RFNsbGQxajBlOGlYR1ZuRmwwYkVxYU9uZmtiY2pXMHJuZlBOWFU5WkU1Sk93SnFCcHhGRGcwN1h0bnliVHlwVE0xbG9FWE9aWk15LXJFbg?oc=5",
@@ -5903,39 +5730,6 @@
    "ai": false
   },
   {
-   "id": "0103bb085f6c",
-   "title": "Inside Stephen Miller’s Frenetic First Week as White House Chief of Staff",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPXzRVVWxXX2pWd1I0WUZzak9QMFFMSXVWMEJ0eUVtTG56bDQ3TmY0dGU0Rm53bnl4T3hjU0w0ekxhQlRoOXNJYjU5MlM0dzJUalBSR05VcDQ5SXI5akl1Q3gzX2RieUt2SmVJOHRfTUh5VHp1ZUFvd2lVSW1TcV9adkpTN18xYXdmcHc5bVJSOGUxd1JZREw4RHNkWU5Sc2NDYS1hRGpsWlNHbU5JUmVPbUpUTlI4Y0tq?oc=5",
-   "published": "2026-11-14T02:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPXzRVVWxXX2pWd1I0WUZzak9QMFFMSXVWMEJ0eUVtTG56bDQ3TmY0dGU0Rm53bnl4T3hjU0w0ekxhQlRoOXNJYjU5MlM0dzJUalBSR05VcDQ5SXI5akl1Q3gzX2RieUt2SmVJOHRfTUh5VHp1ZUFvd2lVSW1TcV9adkpTN18xYXdmcHc5bVJSOGUxd1JZREw4RHNkWU5Sc2NDYS1hRGpsWlNHbU5JUmVPbUpUTlI4Y0tq?oc=5",
-     "title": "Inside Stephen Miller’s Frenetic First Week as White House Chief of Staff"
-    }
-   ],
-   "ids": [
-    "0103bb085f6c"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Inside Stephen Miller’s Frenetic First Week as White House Chief of Staff",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "238b6ceac52a",
    "title": "Suspensão de voos nos EUA: secretário cita inconsistências entre radar e torre e diz que sistema de tráfego aéreo é velho",
    "link": "https://g1.globo.com/mundo/noticia/2026/11/13/suspensao-de-voos-secretario-diz-que-houve-inconsistencias-entre-radar-e-torre-e-que-sistema-de-trafego-aereo-e-velho.ghtml",
@@ -5958,39 +5752,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Markwayne Mullin, secretário de Segurança Interna, fala a jornalistas na Casa Branca. Ao seu lado está o secretário de Transporte, Sean Duffy,. Elizabeth Frantz / REUTERS O secretário de Transporte dos Estados Unidos, Sean Duffy, comentou nesta sexta-feira (13) o fechamento do espaço aéreo do país. O secretário citou \"inconsistências entre radar com as torres\" e criticou o sistema de tráfego aéreo",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6a7a6558d79b",
-   "title": "SpaceX’s Latest Starship Mission Hits Early Setback",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc0h5Z2ZOZ3hGRDU2d0RaMk5ocV84cmVmTXhBOWl2dFgzVWhQN3hTNTVuNGhfcFJJbDJhZnZ3aVJFT1I1SnFSdUZGUW9tNFZrZ1ZkQlpXVXlaNDBqQUh0eWxZVU1jM3hSZ01hNEYwV1R1a3p2N2NJOThfTk9TbUNmUmFkZ2RkeTJMRVB6ZVdqeEhVQ0o1ZVozRmRHYVMydlZCWjBKVS1vTDNpZEtIWHpoVGxlUWc?oc=5",
-   "published": "2026-11-14T01:19:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc0h5Z2ZOZ3hGRDU2d0RaMk5ocV84cmVmTXhBOWl2dFgzVWhQN3hTNTVuNGhfcFJJbDJhZnZ3aVJFT1I1SnFSdUZGUW9tNFZrZ1ZkQlpXVXlaNDBqQUh0eWxZVU1jM3hSZ01hNEYwV1R1a3p2N2NJOThfTk9TbUNmUmFkZ2RkeTJMRVB6ZVdqeEhVQ0o1ZVozRmRHYVMydlZCWjBKVS1vTDNpZEtIWHpoVGxlUWc?oc=5",
-     "title": "SpaceX’s Latest Starship Mission Hits Early Setback"
-    }
-   ],
-   "ids": [
-    "6a7a6558d79b"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "SpaceX’s Latest Starship Mission Hits Early Setback",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -6068,6 +5829,39 @@
    "ai": false
   },
   {
+   "id": "f48d28fbd4bd",
+   "title": "Iran Takes the War Beyond the Middle East",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQX2xKR0JTVzRwLUtDQTVuMFdYYm9NY3Bqek9iakIzdXBSN3VoQ3VibWZtcm5RbFJqaXRmWHhlei0ycUpkZkJmc05pTGdqWmIwTHNxdUMzZXVpVXM2dGxqUHlBTlNfZ3ZTRi0tWm51RHk5NHIzT2k5cDREYTlseDZPZmNGSmMtQmpzNUs2dkI4VmJ5SHF3b19WVTc0T3BCZW1LWll6d3V3YWh2RmRjVVBpeHQwRVN1TW9kUnJtdnZ5MWp6OVBheXo2Yk9TUTV1Umtqd0psS2RBZlFzbXBNWm5fbFgtQVY?oc=5",
+   "published": "2026-11-14T00:50:50+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQX2xKR0JTVzRwLUtDQTVuMFdYYm9NY3Bqek9iakIzdXBSN3VoQ3VibWZtcm5RbFJqaXRmWHhlei0ycUpkZkJmc05pTGdqWmIwTHNxdUMzZXVpVXM2dGxqUHlBTlNfZ3ZTRi0tWm51RHk5NHIzT2k5cDREYTlseDZPZmNGSmMtQmpzNUs2dkI4VmJ5SHF3b19WVTc0T3BCZW1LWll6d3V3YWh2RmRjVVBpeHQwRVN1TW9kUnJtdnZ5MWp6OVBheXo2Yk9TUTV1Umtqd0psS2RBZlFzbXBNWm5fbFgtQVY?oc=5",
+     "title": "Iran Takes the War Beyond the Middle East"
+    }
+   ],
+   "ids": [
+    "f48d28fbd4bd"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Iran Takes the War Beyond the Middle East",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "0d93b7db41ff",
    "title": "Photos from airports after FAA grounds flights nationwide",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONzBhVVlrM3VvX3JkUnJPNkFvMENScTQ5UHl2RmVtOHlKN2VzTUpHRnVNaFFDNmtHdG1iYkJtM3FKTDhlQ0oxR3ZObG9oWnN4Qk1YUE9JdC1wWGp5YV9MbXBrM05ENlZxREg1eFlOTzVxWXpPbjFXQTFqcVRlQi1FWW9JY25NQ0NxUGdIZG0tLXVfMl9mLVFlMGFXcWk4UQ?oc=5",
@@ -6104,7 +5898,7 @@
    "id": "4434b653deb7",
    "title": "Exclusive | U.S. Loses Measles-Elimination Status as Historic Resurgence Sickens Thousands",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMXlKX3BJeGxyUWR0NDlUZGVEMS1SRXJZbDJEX0dabk5YNFRWYXN4SGFJekJHM2JCcHU4dnpfYnFmUl9sNVlJcWFnWXdkeUdrNEVOM0JraVg5TElvaHFhVDFxZm9QNkdXczlFNWhQZVg4Q1NSZUdLcG5XVVAwdFZwUzdNSER5czQxNG50b3dZOXZyTXgwcE80Qzg3YXVXUDV0NmU2SE1LU043eFZJdFhkVVRaQQ?oc=5",
-   "published": "2026-11-14T00:30:00+00:00",
+   "published": "2026-11-14T00:30:43+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -6398,6 +6192,72 @@
    "ai": false
   },
   {
+   "id": "629f229c9d72",
+   "title": "FAA Halts Departing Flights Nationwide",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd09wYzJHWGp1X2RwS0xSRlE0ZEdmRHM4UVFvS0JIRHR0WjRvR2RNZzBNZ3hmZFFrUDcxM3ZJdHc4UUtxRWZhdGdwb0hYRDRtdk1BVlZXYlhYTTV4Q1pfRDJIaFpiVDlIRm82Nm5fbEt0Wi04VlA0Z1RVczFrR2VZendRTWduc1ZxNEwyU09R?oc=5",
+   "published": "2026-11-13T22:24:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd09wYzJHWGp1X2RwS0xSRlE0ZEdmRHM4UVFvS0JIRHR0WjRvR2RNZzBNZ3hmZFFrUDcxM3ZJdHc4UUtxRWZhdGdwb0hYRDRtdk1BVlZXYlhYTTV4Q1pfRDJIaFpiVDlIRm82Nm5fbEt0Wi04VlA0Z1RVczFrR2VZendRTWduc1ZxNEwyU09R?oc=5",
+     "title": "FAA Halts Departing Flights Nationwide"
+    }
+   ],
+   "ids": [
+    "629f229c9d72"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "FAA Halts Departing Flights Nationwide",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "91e331d1789f",
+   "title": "Tanker collides with cruise ship in New Orleans, 32 hospitalized",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbGJQd2ZPVXZtMTIxS2dDR2ZOWjU5bVpGSGNXXzY4OFNEWWFTTDV0c0k3cjM5QWF3MVRqaU1RaWhja3YwZzVJOHNHYV9jWkNUR3NrWXRCUl9XSG9QODZNMHhkeUloNVI5a1U5Skg0TzhubXl0ZFZGc3JkdDkzRmstR3pPZi1USEdLTW9rRkdVOXdRakxSX1QwOVBsUEZsWTVFMHE1SkpNV19qMzM5UVE?oc=5",
+   "published": "2026-11-13T22:15:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbGJQd2ZPVXZtMTIxS2dDR2ZOWjU5bVpGSGNXXzY4OFNEWWFTTDV0c0k3cjM5QWF3MVRqaU1RaWhja3YwZzVJOHNHYV9jWkNUR3NrWXRCUl9XSG9QODZNMHhkeUloNVI5a1U5Skg0TzhubXl0ZFZGc3JkdDkzRmstR3pPZi1USEdLTW9rRkdVOXdRakxSX1QwOVBsUEZsWTVFMHE1SkpNV19qMzM5UVE?oc=5",
+     "title": "Tanker collides with cruise ship in New Orleans, 32 hospitalized"
+    }
+   ],
+   "ids": [
+    "91e331d1789f"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Tanker collides with cruise ship in New Orleans, 32 hospitalized",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "9bde29761118",
    "title": "Irish police discover explosive device near where world leaders dined day earlier",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQUpkRk1MdkJfLTRIRE9VMkZuS00zN2pZZnFSTWEwZGo0VGFZNDlNV3JqVlhtNkRsTmhUbjVnckVpemd5MnFQRnl2Skd4VU5tVm5LU1JQeU12NFZJaDg1QnFhdTlHcGdPcFpzMlh5NkFSM2owQzdERk80OW5NMzN4eWRQaEpsUzF1cnd4cm1sWkwzNzJQTlNQM2h6YXA2Z00zNFRLNTN0OEFkU09TQ0lQSUxtblRJUQ?oc=5",
@@ -6417,39 +6277,6 @@
    "prescore": 2.6,
    "headline": "Irish police discover explosive device near where world leaders dined day earlier",
    "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "031cff346f05",
-   "title": "Democrat Holscher wins Kansas governor's race amid data center backlash",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNTZXTFM5V00xOEJZcWtJU21rRENBM2lkQ3JCQmJvbUVRSDNqeWplR0FWSk9qSWVVdDAxR295VWxLMmNKb1Z0RmZURlQ3TV9ReHVrTW1nak9IVHpCNjduUXZZTG5NQ3JhT2pTNUR1N3dtZTNoZDVwdjNKeGY1cGxvSFNsYTNMMjhyZmNENkl1SDR4cFBDNllZdWRRbHhQa3BFUS1xc2lLTkFrOXNkZDNVSnJrRi0?oc=5",
-   "published": "2026-11-13T21:58:36+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNTZXTFM5V00xOEJZcWtJU21rRENBM2lkQ3JCQmJvbUVRSDNqeWplR0FWSk9qSWVVdDAxR295VWxLMmNKb1Z0RmZURlQ3TV9ReHVrTW1nak9IVHpCNjduUXZZTG5NQ3JhT2pTNUR1N3dtZTNoZDVwdjNKeGY1cGxvSFNsYTNMMjhyZmNENkl1SDR4cFBDNllZdWRRbHhQa3BFUS1xc2lLTkFrOXNkZDNVSnJrRi0?oc=5",
-     "title": "Democrat Holscher wins Kansas governor's race amid data center backlash"
-    }
-   ],
-   "ids": [
-    "031cff346f05"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Democrat Holscher wins Kansas governor's race amid data center backlash",
-   "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -6827,6 +6654,39 @@
    "ai": false
   },
   {
+   "id": "2b19ad9f8317",
+   "title": "Railroad CEO’s Loose Lips Threaten to Torpedo His $72 Billion Megadeal",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc3VNenpQMkV4ZGxFd2N4ZlJZTUFCQTN3RWk2RWRUejRLMlcweFhwVVR6cTlSbHpTVHRJQXg3RVljZTV6OVRrTHQ2NERoNGFPSVFLNTNGZWtkcHZ0cWVqMV8zZjY3bkxYQWJGSVctRHh6QjRDZnNCcG9wTUY0c3oyTXVsNHphejF2YkJraWhzMmRCY3RvcHpOY3ZhQUdILTI1THo5OEtwMzZPVnZWRzRKaTBB?oc=5",
+   "published": "2026-11-13T19:18:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc3VNenpQMkV4ZGxFd2N4ZlJZTUFCQTN3RWk2RWRUejRLMlcweFhwVVR6cTlSbHpTVHRJQXg3RVljZTV6OVRrTHQ2NERoNGFPSVFLNTNGZWtkcHZ0cWVqMV8zZjY3bkxYQWJGSVctRHh6QjRDZnNCcG9wTUY0c3oyTXVsNHphejF2YkJraWhzMmRCY3RvcHpOY3ZhQUdILTI1THo5OEtwMzZPVnZWRzRKaTBB?oc=5",
+     "title": "Railroad CEO’s Loose Lips Threaten to Torpedo His $72 Billion Megadeal"
+    }
+   ],
+   "ids": [
+    "2b19ad9f8317"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Railroad CEO’s Loose Lips Threaten to Torpedo His $72 Billion Megadeal",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "bc51c85e15ca",
    "title": "Opinion | The North Dakota Town Where Data Centers Won",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOFdJOFRjMUZ6NmV4RlkydUVIMzQ1alpQejBSYUViZ0RkelE4UXJuaWVLT1pSRXhUMjVReEhVU3lxQm9Nai1iU2c1MC1ycEYwbkY4MGxSVzdJOXAyUTc1SEg5cUluUEhRb2w5cmFrMmlmVENuR2pDejR1VFVsWEV2NGo1eVBWcm84?oc=5",
@@ -6845,39 +6705,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Opinion | The North Dakota Town Where Data Centers Won",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "7f710af20f4e",
-   "title": "Man United turn to US coach Pochettino in latest gamble to revive fallen giants",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcnZIWjJsdGFZd21hcHZROGNCeTRaOFpXYVNNTXhuYUREaFY0MG9QMkpmZjJkUkdmMzlYZDBGaTN6MXBlTHQ3SXlNZGZTTjh0WldjNFcyR3IxWlE1WnhzWGFMMEZ0WlN2UWI5Xy10RXFkSC1DUkthbXlIRUJPbnpzQ2JPODk1ampHX1U2MWp4T3Y4VzBudHFUTlplSFRtUHZ2b1ZTVXV4RmppUQ?oc=5",
-   "published": "2026-11-13T19:01:49+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcnZIWjJsdGFZd21hcHZROGNCeTRaOFpXYVNNTXhuYUREaFY0MG9QMkpmZjJkUkdmMzlYZDBGaTN6MXBlTHQ3SXlNZGZTTjh0WldjNFcyR3IxWlE1WnhzWGFMMEZ0WlN2UWI5Xy10RXFkSC1DUkthbXlIRUJPbnpzQ2JPODk1ampHX1U2MWp4T3Y4VzBudHFUTlplSFRtUHZ2b1ZTVXV4RmppUQ?oc=5",
-     "title": "Man United turn to US coach Pochettino in latest gamble to revive fallen giants"
-    }
-   ],
-   "ids": [
-    "7f710af20f4e"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Man United turn to US coach Pochettino in latest gamble to revive fallen giants",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -6992,39 +6819,6 @@
    "ai": false
   },
   {
-   "id": "3de8180ce6d7",
-   "title": "Several jailed over Abu Dhabi hotel brawl ahead of RAF event",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEtHMl9reXZVdi1XamwtWTM0NkZPX2hzZExDaHNEWjRCbDVhcjlWUFpFT2puZThFdUFyOGxzTDYtMm9LNDBRVTVmcGlnS0gtOXBZdGhyd0pLWndwR3hNQXlYUXg5MzZRSWpTN0JWYTZJbDdUSS11bDFockxCZ2k0UHhWcU5kdG5KTzFFcU1zeHdIeE05bHBGR25pejNzU3YyNU1zWHNZUUVXODQzdGZSdQ?oc=5",
-   "published": "2026-11-13T17:41:03+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEtHMl9reXZVdi1XamwtWTM0NkZPX2hzZExDaHNEWjRCbDVhcjlWUFpFT2puZThFdUFyOGxzTDYtMm9LNDBRVTVmcGlnS0gtOXBZdGhyd0pLWndwR3hNQXlYUXg5MzZRSWpTN0JWYTZJbDdUSS11bDFockxCZ2k0UHhWcU5kdG5KTzFFcU1zeHdIeE05bHBGR25pejNzU3YyNU1zWHNZUUVXODQzdGZSdQ?oc=5",
-     "title": "Several jailed over Abu Dhabi hotel brawl ahead of RAF event"
-    }
-   ],
-   "ids": [
-    "3de8180ce6d7"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Several jailed over Abu Dhabi hotel brawl ahead of RAF event",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "1c1a7f28be27",
    "title": "EXCLUSIVE: Amazon’s plan to own the world’s product data and fight AI shopping agents",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2FJOXhDLWZqYzRxQ3BNVGRyeDNGWGZYU0VwNm5PV09tWGVwRklHdGFQaDRGWEQwM3pBZ1g2X0lYQVFGUU9RdHhyVk9kSnhrcWxob3o2ZUVNTE5SWW5OSWtkZEVlZm83ZUdrZHJ6X1N6bjhqT2F2WWxpWXVaUGhBZldsU0N5MEhjS19yR1pJcFlDN2N4ekpfWDZmR1FPT3k4eGY0bkdEQldjVnVZX21BYlVXX0h4d1JwbFVSaQ?oc=5",
@@ -7094,7 +6888,7 @@
    "id": "39ba0b77b046",
    "title": "‘A Red Badge of Cotton’ Review: Enemies Bound by a Thread",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTU5FVEYtTEhQVWE2Q3Znem9QbDRkMVdFMzE4ZV8xUTkwRlU1aWxCdEt5RFVhd0l3MUtiQ25wYzZnWm5INEVBMFlDOXI5NEtYTmJHTXpvNzBJTFNDU3pGa1IxYWoyYXk4aXQyTElnZUZvOUtITWxramFzd3MwTUxCY1p0ajBtTmREdndyOG9VY2d0cGtGelV0ZmNEMDVvcVA4RnlfVFV5Zw?oc=5",
-   "published": "2026-11-13T17:20:00+00:00",
+   "published": "2026-11-13T17:22:14+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -7160,7 +6954,7 @@
    "id": "b258d3427c38",
    "title": "Iran Escalates Low-Level Conflict With a Shot at Bahrain",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbHpaLUVTUE9TendtYnBmVEhIQWdVMFQ3N0xyU0V1bFN4T2w5N2twdndFQ3k5M1hCejNaalROT3BrdDFTZ1hscHVsSUhSQTRtbTMzd21VR3RhZFg5Z1N4SnhCck9CWkxLUTNQRzQ2NE8yZGExaU1BcWVFV3o5cU5oT2diTUZPejNKWHFoaFpYUzdxX1QwZjNEMVE4VGZMQWZRZDZjT25R?oc=5",
-   "published": "2026-11-13T17:15:13+00:00",
+   "published": "2026-11-13T17:13:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -7322,6 +7116,39 @@
    "ai": false
   },
   {
+   "id": "8015899d1401",
+   "title": "Goldman Sachs sees S&P 500 rising to 8,700 next year despite slower earnings growth",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUUY1ZVU4V1FfVjg4bkIxMkpIVWJqQ0tVeDRsb1ZOSGRkWlo5THVweFduVWVjTXloTWVRZnhhdGJqX0I3RnlHRlkxd3MzNzFUcFBibFd2bUJKNkI2RXdPVE5FeXJRNGZLQzZDcnZXQ0pRcGdPRjBvZWs1Xzd6VTlfLXJXb1dNUjZuM0N1LWZpaUExWmk1ZXpIdlhCM29RTkpLWE9YSXdIM3hLQk41c2M5ZFJCWExESUhabjl6Mjg2dTU?oc=5",
+   "published": "2026-11-13T14:31:48+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUUY1ZVU4V1FfVjg4bkIxMkpIVWJqQ0tVeDRsb1ZOSGRkWlo5THVweFduVWVjTXloTWVRZnhhdGJqX0I3RnlHRlkxd3MzNzFUcFBibFd2bUJKNkI2RXdPVE5FeXJRNGZLQzZDcnZXQ0pRcGdPRjBvZWs1Xzd6VTlfLXJXb1dNUjZuM0N1LWZpaUExWmk1ZXpIdlhCM29RTkpLWE9YSXdIM3hLQk41c2M5ZFJCWExESUhabjl6Mjg2dTU?oc=5",
+     "title": "Goldman Sachs sees S&P 500 rising to 8,700 next year despite slower earnings growth"
+    }
+   ],
+   "ids": [
+    "8015899d1401"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Goldman Sachs sees S&P 500 rising to 8,700 next year despite slower earnings growth",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "3ea26720f847",
    "title": "US Treasury's Bessent says he is optimistic on trade deals with Canada, Mexico",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdWdSaDA1Z1ZyaFBzb2lWR1VzcEs5OGlsZzJhX2tNNXRia3NBcElYZzB2OTR3NW4wV09fY29NZ2JjRUFrazRwY3BkUllCX0FWWkFoNkhienpZMXFEOG9jLW02NWtubXpHZDRiRHFKeENZVlpORjFOMXE3UEkxUnA3aWFnX2QxQldMd2VVNDdwVmwxSUE3eVlEMzN2d0NnanBFbkFVY3pKRkY3bjdneVFyWEV0VjM2Y29qdnNXV0tB?oc=5",
@@ -7439,6 +7266,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Bank of England to wait until February to next raise rates, say economists: Reuters poll",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "356c137eaaf3",
+   "title": "EXCLUSIVE: Iraq turns to trucks to export oil in overland Syrian route revival",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQclRIYjhBLWw5LV85dEh1eWFKUXJ2ZU1xTlpwbmpPSmIzYUZKTzlvNEZvTldxQnE2V1V2WVFNTHJNNVg4SWhFeHM0a0pGSGtic3d0Zk1TVUhXQWwtaFJlZHlkNXFZUnZraUJhUUN3Y2hFMVRzY2ppLUN1SmlYRW9hU2ptaFZiWkRIR3MtdE1FemE0b3M5eXJ6bDBtY2wxc0dwMXJyN0VxLTNGMDlLUUZZ?oc=5",
+   "published": "2026-11-13T13:27:43+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQclRIYjhBLWw5LV85dEh1eWFKUXJ2ZU1xTlpwbmpPSmIzYUZKTzlvNEZvTldxQnE2V1V2WVFNTHJNNVg4SWhFeHM0a0pGSGtic3d0Zk1TVUhXQWwtaFJlZHlkNXFZUnZraUJhUUN3Y2hFMVRzY2ppLUN1SmlYRW9hU2ptaFZiWkRIR3MtdE1FemE0b3M5eXJ6bDBtY2wxc0dwMXJyN0VxLTNGMDlLUUZZ?oc=5",
+     "title": "EXCLUSIVE: Iraq turns to trucks to export oil in overland Syrian route revival"
+    }
+   ],
+   "ids": [
+    "356c137eaaf3"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "EXCLUSIVE: Iraq turns to trucks to export oil in overland Syrian route revival",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7897,138 +7757,6 @@
    "ai": false
   },
   {
-   "id": "85dccdb34d75",
-   "title": "All Airports Are Ground Stopped Until Further Notice: FAA",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-14/balance-of-power-late-edition-11-13-2026-video",
-   "published": "2026-11-14T00:11:19+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-14/balance-of-power-late-edition-11-13-2026-video",
-     "title": "All Airports Are Ground Stopped Until Further Notice: FAA"
-    }
-   ],
-   "ids": [
-    "85dccdb34d75"
-   ],
-   "snippet": "\"Balance of Power\" focuses on the intersection of politics and global business. On today's show, Ray LaHood, former US Transportation Secretary, says he believes the nationwide FAA ground stop is more likely the result of an old, antiquated system failing than problems transitioning to new technology. LaHood says travelers should consider alternate plans because disruptions could continue even after the system is restored, and says major airports are prepared to handle the fallout. (Source: Bloomberg)",
-   "prescore": 2.4,
-   "headline": "All Airports Are Ground Stopped Until Further Notice: FAA",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "\"Balance of Power\" focuses on the intersection of politics and global business. On today's show, Ray LaHood, former US Transportation Secretary, says he believes the nationwide FAA ground stop is more likely the result of an old, antiquated system failing than problems transitioning to new technology. LaHood says travelers should consider alternate plans because disruptions could continue even aft",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ce97a4956c73",
-   "title": "Bloomberg Businessweek Daily Podcast: Jensen’s Nvidia Departure",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-13/businessweek-daily-podcast-jensen-s-nvidia-departure-video",
-   "published": "2026-11-13T23:39:32+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-13/businessweek-daily-podcast-jensen-s-nvidia-departure-video",
-     "title": "Bloomberg Businessweek Daily Podcast: Jensen’s Nvidia Departure"
-    }
-   ],
-   "ids": [
-    "ce97a4956c73"
-   ],
-   "snippet": "The people, companies and trends shaping the global economy. Watch Carol and Tim LIVE every day on YouTube: http://bit.ly/3vTiACF After weeks spent denying the allegations of infidelity and fighting to remain in his job as Nvidia’s chief executive officer, Jensen Huang’s surrender late Wednesday night was unconditional. His usual take-charge demeanor had evaporated, according to a person familiar with the situation, and he’d started using phrases like “whatever” and “I don’t care.” Huang’s admittance to an affair with an alleged spy has had an international ripple effect across the AI and tech",
-   "prescore": 2.4,
-   "headline": "Bloomberg Businessweek Daily Podcast: Jensen’s Nvidia Departure",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The people, companies and trends shaping the global economy. Watch Carol and Tim LIVE every day on YouTube: http://bit.ly/3vTiACF After weeks spent denying the allegations of infidelity and fighting to remain in his job as Nvidia’s chief executive officer, Jensen Huang’s surrender late Wednesday night was unconditional. His usual take-charge demeanor had evaporated, according to a person familiar ",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "8fde1d68f449",
-   "title": "LaHood Says Antiquated FAA System Likely Failed",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-13/lahood-says-antiquated-faa-system-likely-failed-video",
-   "published": "2026-11-13T23:36:07+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-13/lahood-says-antiquated-faa-system-likely-failed-video",
-     "title": "LaHood Says Antiquated FAA System Likely Failed"
-    }
-   ],
-   "ids": [
-    "8fde1d68f449"
-   ],
-   "snippet": "Ray LaHood, former US Transportation Secretary, says he believes the nationwide FAA ground stop is more likely the result of an old, antiquated system failing than problems transitioning to new technology. LaHood says travelers should consider alternate plans because disruptions could continue even after the system is restored, and says major airports are prepared to handle the fallout. He speaks with Joe Mathieu and Kailey Leinz on Bloomberg’s \"Balance of Power.\" (Source: Bloomberg)",
-   "prescore": 2.4,
-   "headline": "LaHood Says Antiquated FAA System Likely Failed",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Ray LaHood, former US Transportation Secretary, says he believes the nationwide FAA ground stop is more likely the result of an old, antiquated system failing than problems transitioning to new technology. LaHood says travelers should consider alternate plans because disruptions could continue even after the system is restored, and says major airports are prepared to handle the fallout. He speaks ",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "39c345c9c92a",
-   "title": "Ground Stop Fix Will 'Take Some Time,' Mullin Says",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-13/ground-stop-fix-will-take-some-time-mullin-says-video",
-   "published": "2026-11-13T22:35:48+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-13/ground-stop-fix-will-take-some-time-mullin-says-video",
-     "title": "Ground Stop Fix Will 'Take Some Time,' Mullin Says"
-    }
-   ],
-   "ids": [
-    "39c345c9c92a"
-   ],
-   "snippet": "Homeland Security Secretary Markwayne Mullin says it will take some time to resolve issues affecting flights around the country. All flights have been grounded. He can't rule out the reason is a cyber attack, but he says travelers are safe. “It’s going to take some time, and so this isn’t going to just be resolved and turned around within the hour. This is going to take take some time,” he told reporters at the White House on Friday. (Source: Bloomberg)",
-   "prescore": 2.4,
-   "headline": "Ground Stop Fix Will 'Take Some Time,' Mullin Says",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Homeland Security Secretary Markwayne Mullin says it will take some time to resolve issues affecting flights around the country. All flights have been grounded. He can't rule out the reason is a cyber attack, but he says travelers are safe. “It’s going to take some time, and so this isn’t going to just be resolved and turned around within the hour. This is going to take take some time,” he told re",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "1a71f6c949ed",
    "title": "Decolagem negada: falha de comunicação provoca apagão aéreo e suspende todos os voos nos EUA",
    "link": "https://neofeed.com.br/negocios/decolagem-negada-falha-de-comunicacao-provoca-apagao-aereo-e-suspende-todos-os-voos-nos-eua/",
@@ -8051,6 +7779,39 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Depois de uma falha global nos servidores da Microsoft impactar governos e empresas em todo o mundo desde as primeiras horas desta sexta-feira, 13 de novembro, uma outra “pane” promete provocar novas turbulências. A Administração Federal de Aviação dos Estados Unidos (FAA, na sigla em inglês) anunciou no fim da tarde que suspendeu todas as […] O post Decolagem negada: falha de comunicação provoca ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "cdcd7d556561",
+   "title": "Estrangeiros investem US$232 bi nos EUA, e 94% vão para a compra de empresas | SEGS Portal Nacional de...",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOU2otX3UtQ2wtZ1dUY2Ixd0dkVldybEI5UXBvWHpOZThPRzVpZFNlMmF1X0hUN1RuR3gtem9yMk9kSnE0V29OOUF5ZUpINmcwVHFKZ19heWhweDREZVpYMGFQT1BCVEVEWjdjLXJ4bjA3ZzdYM2hxWDlpNmNuTFU5b21sMExvajhnMjR2ZVJGR0RETi1uSGlVX255R3h3LTBNaGkxM2ZkUmhLdllfai1xcjFrcFJLa3pUS0Mw0gHAAUFVX3lxTE5EYjV0UDhzUVdsLUM1eFBkUUoySFFJaURmdkdBZUVCM0xkNzc3YTRLcGVucF9tT2RTdFBNZE5nYXpiaUw5ZGlocVdjZHFkTXAycjNhcm4yeHBkNURNWnRQZVhxS0xJZ1V6UE1uOEZ1YWtoV25JWWxfdW1fQ280TnkxYm9UN0c1MkI0Tl9HM0VoU0N0U1paYW43dUwzUjJPUmFSOVdrWFd4V0sxQ3BFREdhQmtUY0lsWU0wTVFyYm9Tbw?oc=5",
+   "published": "2026-11-13T21:47:26+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "SEGS Portal Nacional",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOU2otX3UtQ2wtZ1dUY2Ixd0dkVldybEI5UXBvWHpOZThPRzVpZFNlMmF1X0hUN1RuR3gtem9yMk9kSnE0V29OOUF5ZUpINmcwVHFKZ19heWhweDREZVpYMGFQT1BCVEVEWjdjLXJ4bjA3ZzdYM2hxWDlpNmNuTFU5b21sMExvajhnMjR2ZVJGR0RETi1uSGlVX255R3h3LTBNaGkxM2ZkUmhLdllfai1xcjFrcFJLa3pUS0Mw0gHAAUFVX3lxTE5EYjV0UDhzUVdsLUM1eFBkUUoySFFJaURmdkdBZUVCM0xkNzc3YTRLcGVucF9tT2RTdFBNZE5nYXpiaUw5ZGlocVdjZHFkTXAycjNhcm4yeHBkNURNWnRQZVhxS0xJZ1V6UE1uOEZ1YWtoV25JWWxfdW1fQ280TnkxYm9UN0c1MkI0Tl9HM0VoU0N0U1paYW43dUwzUjJPUmFSOVdrWFd4V0sxQ3BFREdhQmtUY0lsWU0wTVFyYm9Tbw?oc=5",
+     "title": "Estrangeiros investem US$232 bi nos EUA, e 94% vão para a compra de empresas | SEGS Portal Nacional de..."
+    }
+   ],
+   "ids": [
+    "cdcd7d556561"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Estrangeiros investem US$232 bi nos EUA, e 94% vão para a compra de empresas | SEGS Portal Nacional de...",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8279,39 +8040,6 @@
    "prescore": 2.4,
    "headline": "Compra da Fnac Darty abre prazo para credores anteciparem dívida de € 45,7 milhões",
    "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "68f8864146c1",
-   "title": "MBRF tem fechado compra de grãos a preços confortáveis, diz vice-presidente",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ2hTNEpZZjlFSWxCQTZQRDRLdnoybnRRRTJRc08yMHhFQXFNNURuRUZ5UGJGMWJKVEFGWFlOdVVFNWtKWkJPYUxaMHpTdFk4RWlQTUFqRzMwSWdkTk1VMjVRRDduSkl2Y2NFQ2dsbmttWHJMNkxoTzRQMkZhcDVOTTNXdG5HaDJoS2FnTnVYZmVNSkNyNmRUdFVLa3pXTU95MjRYODZIemVOOU0tc2c?oc=5",
-   "published": "2026-11-13T14:03:21+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "CNN Brasil",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ2hTNEpZZjlFSWxCQTZQRDRLdnoybnRRRTJRc08yMHhFQXFNNURuRUZ5UGJGMWJKVEFGWFlOdVVFNWtKWkJPYUxaMHpTdFk4RWlQTUFqRzMwSWdkTk1VMjVRRDduSkl2Y2NFQ2dsbmttWHJMNkxoTzRQMkZhcDVOTTNXdG5HaDJoS2FnTnVYZmVNSkNyNmRUdFVLa3pXTU95MjRYODZIemVOOU0tc2c?oc=5",
-     "title": "MBRF tem fechado compra de grãos a preços confortáveis, diz vice-presidente"
-    }
-   ],
-   "ids": [
-    "68f8864146c1"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "MBRF tem fechado compra de grãos a preços confortáveis, diz vice-presidente",
-   "category": "mna",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -9052,39 +8780,6 @@
    "ai": false
   },
   {
-   "id": "bdc75298d7b9",
-   "title": "STF tem 3 votos para manter decisão de Dino que flexibiliza folgas após fim da escala 6x1",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVFhNRGlNR1J3dWVqSVVkM3hFWXo1b2c4NUo0NzMyZUJTZFlycmtTTldyZkFlUVFiM0ZBQzhFRzR0STVzSGR5RHp3SWxydUVUZkNaTHB2eEVMRXFfQXFGa3lhXzdjcVU3M2gxNjB4SVhrLVJlRElZcFRaZm9WNWlWTGJvWWtBOHkxcXVpaUNscFJVZVNDOFkzYXFmSjJieFA5Vl96bVBrLTFaS3lWcW1Fa1Rsb0FQVjlVS3FIYVpPTGxCcDZR0gHKAUFVX3lxTFBMbEh3WmpaQVNDUTdzUGRuSnFYNW5aYUV3UDN5dEdlZVhLUUJ3c1dSenJ4eDYzNXhzUWtmdXJfdThrWTJVeGNfY2I4NWZOZ3hWSjMxcnNDQWVaRGtYZGtNWFpFSTJySHVqdFNabUdiNDNlWE5XUEpHcnYxZVZyZUdLSlJZS3JidUV5cS10bWZTWFVUYkp4clVCQXBVOWkyYkpfWTFsZkZpUlE3M2dmZmdwUXRzeXBjWkdCV2drcTk3czU1TnFkUHB0cmc?oc=5",
-   "published": "2026-11-13T20:22:41+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVFhNRGlNR1J3dWVqSVVkM3hFWXo1b2c4NUo0NzMyZUJTZFlycmtTTldyZkFlUVFiM0ZBQzhFRzR0STVzSGR5RHp3SWxydUVUZkNaTHB2eEVMRXFfQXFGa3lhXzdjcVU3M2gxNjB4SVhrLVJlRElZcFRaZm9WNWlWTGJvWWtBOHkxcXVpaUNscFJVZVNDOFkzYXFmSjJieFA5Vl96bVBrLTFaS3lWcW1Fa1Rsb0FQVjlVS3FIYVpPTGxCcDZR0gHKAUFVX3lxTFBMbEh3WmpaQVNDUTdzUGRuSnFYNW5aYUV3UDN5dEdlZVhLUUJ3c1dSenJ4eDYzNXhzUWtmdXJfdThrWTJVeGNfY2I4NWZOZ3hWSjMxcnNDQWVaRGtYZGtNWFpFSTJySHVqdFNabUdiNDNlWE5XUEpHcnYxZVZyZUdLSlJZS3JidUV5cS10bWZTWFVUYkp4clVCQXBVOWkyYkpfWTFsZkZpUlE3M2dmZmdwUXRzeXBjWkdCV2drcTk3czU1TnFkUHB0cmc?oc=5",
-     "title": "STF tem 3 votos para manter decisão de Dino que flexibiliza folgas após fim da escala 6x1"
-    }
-   ],
-   "ids": [
-    "bdc75298d7b9"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "STF tem 3 votos para manter decisão de Dino que flexibiliza folgas após fim da escala 6x1",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "f2b1559d549e",
    "title": "6x1: Câmara contesta parte da decisão de Dino e pede que STF não referende flexibilização de folgas",
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZUVBd2xobUJkM1JOTHJNV1dYWnRXc09Jd093NDFvV2FhUzNZNlVWeGVFNkZ0UXNTek5wQkIwRHg1LUxVZUp1M09Mb1NtYmZWZFNwNnlMbTNuYmNVd3B3LVh3TFVUYk9hczVWTTVfTGhPQnpNZjVSY1hTNi1lRm5nQldGa24xTng5Q19qdGJrM0stVl8xOWtkbk9VUFJKUXpmZGZYdG9lR0FTV0FJR0NkbDd6TVEyN0RlLU1NeGxJR2hZRzM0UXVwVldVemJMRWxS0gHWAUFVX3lxTE5VVzRXWEp0OWR5SXpqZTgxZUh0NHZUVWFTYkxwSEJYUS15amxCWFVFV1BZRjgzVF9SOGVfb2xhVUQtQ3pPN3FnX0k4QWt6MXByTjZNUVByaUFmZVRBcVZaaDZFRWM3bDhLaUpwRFJNbnlLVHM4ZW5idmh6aUtaZVFxa2F4Mmc0Ykk3RkdoNnJGYWJKbndTQ29Jd0xWMTl5and5ZmlBaUlUMlhfM0trS3dKU0t1WmZBNzYzVTN0WEhzZEpjNzRaLWp2aEt5RjcwcGxBTG93cXc?oc=5",
@@ -9487,6 +9182,39 @@
    "ai": false
   },
   {
+   "id": "5f794e4da570",
+   "title": "Fim da escala 6x1: veja perguntas e respostas sobre o que Dino definiu e o que continua valendo",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSkJrdDZmeTd6enV0ODQwcFR4TEliWkRnMldtZzl1UEhfNHhLZmd5dVhKUk4zSmxrVVJEOEJLYUNaUTg0U1A4ZnZDSnJTQW5MSG8tWVpxZ19hdGFvV0VZeUk1SlFuSHBBOUdmOWx4YWhMZUNyY2xLcW51VGQ5ZnZWMVZwV3ZPQmExaWVsb9IBkgFBVV95cUxQc2JDZTlVd0xIbTNmc0NyRjZkcXNNOWRYeTMyckx3eXlNN1ZBdUJEVzdZc1gtRVpXSE5nQU5UNzRzTWhtZ2J2Rlc2T1Qxc1BoNUZxVmVOODZiWHhVdkI3WGc0RlJ2WUsyV2hkYTU3ZkduMmRjSGFQeW9kb2M4Y0VCV0Y3bjM2U3pkcXN0S2lEcUpIUQ?oc=5",
+   "published": "2026-11-13T15:27:47+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSkJrdDZmeTd6enV0ODQwcFR4TEliWkRnMldtZzl1UEhfNHhLZmd5dVhKUk4zSmxrVVJEOEJLYUNaUTg0U1A4ZnZDSnJTQW5MSG8tWVpxZ19hdGFvV0VZeUk1SlFuSHBBOUdmOWx4YWhMZUNyY2xLcW51VGQ5ZnZWMVZwV3ZPQmExaWVsb9IBkgFBVV95cUxQc2JDZTlVd0xIbTNmc0NyRjZkcXNNOWRYeTMyckx3eXlNN1ZBdUJEVzdZc1gtRVpXSE5nQU5UNzRzTWhtZ2J2Rlc2T1Qxc1BoNUZxVmVOODZiWHhVdkI3WGc0RlJ2WUsyV2hkYTU3ZkduMmRjSGFQeW9kb2M4Y0VCV0Y3bjM2U3pkcXN0S2lEcUpIUQ?oc=5",
+     "title": "Fim da escala 6x1: veja perguntas e respostas sobre o que Dino definiu e o que continua valendo"
+    }
+   ],
+   "ids": [
+    "5f794e4da570"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Fim da escala 6x1: veja perguntas e respostas sobre o que Dino definiu e o que continua valendo",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "099cc69055a6",
    "title": "BB notificou Deltan por causa de posts com ‘desinformação’ e alegou risco de ‘instabilidade social’",
    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdDRPdU9obHEySDEtYmd2alpSNHhCYzBkeGxuTXowNlQ1d2czT1NFWkFQQkFfQ2ZXTzh6OUZPSkxZSEN5QmI5ZXRUbDlIa05sQ3habGd3aTBMS0g4bXdoSUxSTFBkd0kzdmU0TUtVSzNhSTNjQm9BV0V4dFJaMno0b2tHVHp0dmdBdTV0clhmRVB5bWxsUGJ2OE9kVVVtNjZZa3ZKSjM1NEJRZVJDMWd1eFJQU0VMQnpUUEo4Um5tY0R0RVpMclgyUUdUNGljcXBXLV80N01UbU1walZHZXdwOHVVaWzSAeoBQVVfeXFMTmp6RHY0OHRyb0tmTnlDaXE0cFlxdWo2dVNyaUQ2aE8wdXZlaXN4UkdIemNybWxDUXkxMzd0T18yT3UwbkJKRFNwb2NRWWVWZ25zYlV2X2VncExjUHhnMUFlLTJXNmJlYmwybU4zR2lsN1BvYUZwV1VvNWViejZPbElBOWN1alQ4ZDAzY0Rjb0h0NnRYRXNGc2F2eXhVSUhTZGJhcmVVdTd4VHQ4VXZiZ3RwT1ZDaHFnbldOZ2dDRHBFU3RIUkI0b1dlM2xkMnducVQ3TV9lWDZIVmlHNm9NTmtyamJQUk9YaTlB?oc=5",
@@ -9862,20 +9590,20 @@
    "ai": false
   },
   {
-   "id": "4c819e4c2e54",
+   "id": "ce462aad6b14",
    "title": "Earnings call transcript: NATCO Pharma lifts FY27 PAT outlook after Q2 rebound",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNU0VmLWRUY2I4VEloUExXNFlkNGJtUE16YmJvY2NWbzQ5eHNZMzB5UjNodzVMUHpsWjZ4TWI3WG1IZFpqWVdnSXNYN0JHN2JsckZmM2ZMYWZUNFhXVzVJSVM1NmJfT0JfZm1uLW56WDNPMVpBWTNxX2U3Z3VPNmxFUm1TdDg0N3liR2J5d3V3YnNKbkRzMFNKcV9UV3VaUFRsQVQwd3ZyOTVjelZXd3NhbUNDdXkzYjEzNmU1ak5uamh5cVA0U3NxaDE5Z2xqNE84TWdyTA?oc=5",
-   "published": "2026-11-13T11:58:17+00:00",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaDZEYS1DczVYQ2hUT2ppaUdJb1dOQlQzaDZvVFNKT1ZzS2dCemZqTm1YYmVlMUN6S0NNV0JOS0M2clAzMTRuUnNvTkl1bWFRb0JOYlJveFlfWTVqZGJkWURJcjNFTF9PLTBseGhjb0VxMkd5ODY1Y0hsUTJuWkdKRkxjSWd3ZlFmWVQ0V0pHR2M1QTNqNDRvSTJPLWZRVmFVMkVHSEtvZmw5WXF6U0F3UU5sZFowRlpzbzhUTGRKZVExRkVpUUltLU0wWmhWUQ?oc=5",
+   "published": "2026-11-13T11:59:24+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Investing.com Canada",
-     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNU0VmLWRUY2I4VEloUExXNFlkNGJtUE16YmJvY2NWbzQ5eHNZMzB5UjNodzVMUHpsWjZ4TWI3WG1IZFpqWVdnSXNYN0JHN2JsckZmM2ZMYWZUNFhXVzVJSVM1NmJfT0JfZm1uLW56WDNPMVpBWTNxX2U3Z3VPNmxFUm1TdDg0N3liR2J5d3V3YnNKbkRzMFNKcV9UV3VaUFRsQVQwd3ZyOTVjelZXd3NhbUNDdXkzYjEzNmU1ak5uamh5cVA0U3NxaDE5Z2xqNE84TWdyTA?oc=5",
+     "source": "Investing.com",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaDZEYS1DczVYQ2hUT2ppaUdJb1dOQlQzaDZvVFNKT1ZzS2dCemZqTm1YYmVlMUN6S0NNV0JOS0M2clAzMTRuUnNvTkl1bWFRb0JOYlJveFlfWTVqZGJkWURJcjNFTF9PLTBseGhjb0VxMkd5ODY1Y0hsUTJuWkdKRkxjSWd3ZlFmWVQ0V0pHR2M1QTNqNDRvSTJPLWZRVmFVMkVHSEtvZmw5WXF6U0F3UU5sZFowRlpzbzhUTGRKZVExRkVpUUltLU0wWmhWUQ?oc=5",
      "title": "Earnings call transcript: NATCO Pharma lifts FY27 PAT outlook after Q2 rebound"
     }
    ],
    "ids": [
-    "4c819e4c2e54"
+    "ce462aad6b14"
    ],
    "snippet": "",
    "prescore": 2.2,
@@ -10214,6 +9942,270 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Lori Mills era uma das poucas mulheres da turma de estudantes de engenharia elétrica da Universidade Estadual do Oregon, nos Estados Unidos, nos anos 1980. Foi ali onde conheceu Jensen Huang , que se tornaria seu marido e fundador da Nvidia . Leia mais (11/14/2026 - 04h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e324a24b50f1",
+   "title": "Ecuador wants to monetize its biodiversity — while still drilling for oil",
+   "link": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
+   "published": "2026-11-14T06:00:01+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
+     "title": "Ecuador wants to monetize its biodiversity — while still drilling for oil"
+    }
+   ],
+   "ids": [
+    "e324a24b50f1"
+   ],
+   "snippet": "Ecuador is planning to channel funds into its biodiversity, but faces a key challenge: its reliance on oil.",
+   "prescore": 2.0,
+   "headline": "Ecuador wants to monetize its biodiversity — while still drilling for oil",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Ecuador is planning to channel funds into its biodiversity, but faces a key challenge: its reliance on oil.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "cb23722fe998",
+   "title": "Ministério dos Direitos Humanos contabiliza 831 denúncias de assédio eleitoral e violência política",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/ministerio-dos-direitos-humanos-contabiliza-831-denuncias-de-assedio-eleitoral-e-violencia-politica.shtml",
+   "published": "2026-11-14T03:01:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/ministerio-dos-direitos-humanos-contabiliza-831-denuncias-de-assedio-eleitoral-e-violencia-politica.shtml",
+     "title": "Ministério dos Direitos Humanos contabiliza 831 denúncias de assédio eleitoral e violência política"
+    }
+   ],
+   "ids": [
+    "cb23722fe998"
+   ],
+   "snippet": "O MDHC (Ministério dos Direitos Humanos e da Cidadania) contabilizou 831 denúncias de violência política e assédio eleitoral no período de 11 de setembro a 6 de novembro. Leia mais (11/14/2026 - 00h01)",
+   "prescore": 2.0,
+   "headline": "Ministério dos Direitos Humanos contabiliza 831 denúncias de assédio eleitoral e violência política",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O MDHC (Ministério dos Direitos Humanos e da Cidadania) contabilizou 831 denúncias de violência política e assédio eleitoral no período de 11 de setembro a 6 de novembro. Leia mais (11/14/2026 - 00h01)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "185e43ef78d1",
+   "title": "Obra propõe erradicar miséria com os mesmos R$ 331 bi gastos hoje em programas sociais",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/obra-propoe-erradicar-miseria-com-os-mesmos-r-331-bi-gastos-hoje-em-programas-sociais.shtml",
+   "published": "2026-11-14T02:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/obra-propoe-erradicar-miseria-com-os-mesmos-r-331-bi-gastos-hoje-em-programas-sociais.shtml",
+     "title": "Obra propõe erradicar miséria com os mesmos R$ 331 bi gastos hoje em programas sociais"
+    }
+   ],
+   "ids": [
+    "185e43ef78d1"
+   ],
+   "snippet": "O Brasil vive um paradoxo na rede de assistência pública. Entre 2015 e 2025, os gastos com programas como Bolsa Família e BPC (Benefício de Prestação Continuada) cresceram 142% em termos reais. Leia mais (11/13/2026 - 23h00)",
+   "prescore": 2.0,
+   "headline": "Obra propõe erradicar miséria com os mesmos R$ 331 bi gastos hoje em programas sociais",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Brasil vive um paradoxo na rede de assistência pública. Entre 2015 e 2025, os gastos com programas como Bolsa Família e BPC (Benefício de Prestação Continuada) cresceram 142% em termos reais. Leia mais (11/13/2026 - 23h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "db8db9542888",
+   "title": "Integrantes da PF veem disputa política em crise com delegados do Master e divergem sobre Andrei",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/integrantes-da-pf-veem-disputa-politica-em-crise-com-delegados-do-master-e-divergem-sobre-andrei.shtml",
+   "published": "2026-11-14T02:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/integrantes-da-pf-veem-disputa-politica-em-crise-com-delegados-do-master-e-divergem-sobre-andrei.shtml",
+     "title": "Integrantes da PF veem disputa política em crise com delegados do Master e divergem sobre Andrei"
+    }
+   ],
+   "ids": [
+    "db8db9542888"
+   ],
+   "snippet": "A crise provocada pelo afastamento de dois delegados que atuavam na coordenação das investigações sobre o Banco Master tem servido como combustível na disputa interna vivida na Polícia Federal , segundo integrantes da corporação ouvidos pela Folha. Leia mais (11/13/2026 - 23h00)",
+   "prescore": 2.0,
+   "headline": "Integrantes da PF veem disputa política em crise com delegados do Master e divergem sobre Andrei",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A crise provocada pelo afastamento de dois delegados que atuavam na coordenação das investigações sobre o Banco Master tem servido como combustível na disputa interna vivida na Polícia Federal , segundo integrantes da corporação ouvidos pela Folha. Leia mais (11/13/2026 - 23h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a5bfe618cdcf",
+   "title": "Entenda ação sobre cursos de medicina em que Moraes e Kassio votaram a favor do interesse de Vorcaro",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/entenda-acao-sobre-cursos-de-medicina-em-que-moraes-e-kassio-votaram-a-favor-do-interesse-de-vorcaro.shtml",
+   "published": "2026-11-14T02:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/entenda-acao-sobre-cursos-de-medicina-em-que-moraes-e-kassio-votaram-a-favor-do-interesse-de-vorcaro.shtml",
+     "title": "Entenda ação sobre cursos de medicina em que Moraes e Kassio votaram a favor do interesse de Vorcaro"
+    }
+   ],
+   "ids": [
+    "a5bfe618cdcf"
+   ],
+   "snippet": "O relatório da PF ( Polícia Federal ) que foi rejeitado pela cúpula da corporação sobre o ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), e a sua relação com Daniel Vorcaro , dono do Banco Master , cita mensagens que indicam que ele e o ministro Kassio Nunes Marques teriam antecipado ao ex-banqueiro que votariam a favor dos interesses dele em uma ação na corte. Leia mais (11/13/2026 - 23h00)",
+   "prescore": 2.0,
+   "headline": "Entenda ação sobre cursos de medicina em que Moraes e Kassio votaram a favor do interesse de Vorcaro",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O relatório da PF ( Polícia Federal ) que foi rejeitado pela cúpula da corporação sobre o ministro Alexandre de Moraes , do STF (Supremo Tribunal Federal), e a sua relação com Daniel Vorcaro , dono do Banco Master , cita mensagens que indicam que ele e o ministro Kassio Nunes Marques teriam antecipado ao ex-banqueiro que votariam a favor dos interesses dele em uma ação na corte. Leia mais (11/13/2",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "2805f76925f7",
+   "title": "Justiça condena União a investir R$ 597 milhões em Canudos como reparação por massacre",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/justica-condena-uniao-a-investir-r-597-milhoes-em-canudos-como-reparacao-por-massacre.shtml",
+   "published": "2026-11-14T01:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/justica-condena-uniao-a-investir-r-597-milhoes-em-canudos-como-reparacao-por-massacre.shtml",
+     "title": "Justiça condena União a investir R$ 597 milhões em Canudos como reparação por massacre"
+    }
+   ],
+   "ids": [
+    "2805f76925f7"
+   ],
+   "snippet": "A Justiça Federal condenou a União a investir R$ 597 milhões em projetos de reparação histórica e desenvolvimento social em Canudos, no sertão da Bahia , pelo massacre promovido pelo Exército durante a guerra de 1896 e 1897, que deixou milhares de mortos. Leia mais (11/13/2026 - 22h00)",
+   "prescore": 2.0,
+   "headline": "Justiça condena União a investir R$ 597 milhões em Canudos como reparação por massacre",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A Justiça Federal condenou a União a investir R$ 597 milhões em projetos de reparação histórica e desenvolvimento social em Canudos, no sertão da Bahia , pelo massacre promovido pelo Exército durante a guerra de 1896 e 1897, que deixou milhares de mortos. Leia mais (11/13/2026 - 22h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "62049a73ccec",
+   "title": "Teste do 'plano Moretti' reforça urgência de novas medidas ainda em 2026",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/adriana-fernandes/2026/11/teste-do-plano-moretti-reforca-urgencia-de-novas-medidas-ainda-em-2026.shtml",
+   "published": "2026-11-14T00:01:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/adriana-fernandes/2026/11/teste-do-plano-moretti-reforca-urgencia-de-novas-medidas-ainda-em-2026.shtml",
+     "title": "Teste do 'plano Moretti' reforça urgência de novas medidas ainda em 2026"
+    }
+   ],
+   "ids": [
+    "62049a73ccec"
+   ],
+   "snippet": "À frente das negociações, Bruno Moretti , ministro do Planejamento e Orçamento, está em campo para gerenciar as expectativas em torno do plano de novas medidas fiscais, apelidado com o seu nome e que já passou por uma primeira votação no Senado. Leia mais (11/13/2026 - 21h01)",
+   "prescore": 2.0,
+   "headline": "Teste do 'plano Moretti' reforça urgência de novas medidas ainda em 2026",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "À frente das negociações, Bruno Moretti , ministro do Planejamento e Orçamento, está em campo para gerenciar as expectativas em torno do plano de novas medidas fiscais, apelidado com o seu nome e que já passou por uma primeira votação no Senado. Leia mais (11/13/2026 - 21h01)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ae3217570306",
+   "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
+   "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+   "published": "2026-11-13T23:54:36+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+     "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning"
+    }
+   ],
+   "ids": [
+    "ae3217570306"
+   ],
+   "snippet": "The Republican-led Congress wants to see Jensen Huang in Washington before Democrats take control in January.",
+   "prescore": 2.0,
+   "headline": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The Republican-led Congress wants to see Jensen Huang in Washington before Democrats take control in January.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -10568,6 +10560,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Casa de análise libera acesso a estratégia de investimentos para o governo Lula 4; veja como acessar mais de 20 ativos gratuitamente The post Lula é peça-chave para Ibovespa voltar aos 200 mil pontos? Empiricus traça possíveis cenários fiscais para o Brasil e seus efeitos na bolsa appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "298879a4ad8a",
+   "title": "Banco Central autoriza Nubank a comprar o Banco Porto Real de Investimentos",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5xSFltRk9jM1ZwaGFPQjJDNExpdWZXczJaaFItUm9LdkJqOGRRdkdLSFNIeVZSVG5YZHVmQVYxckwtUzVIMVB1ZkR4RTlsUlZ6bWdLWGRlTVJrX1N0Smw1R1VZTl8xOU13TnI3UEc0bmNxSTFFbVhyLWkxRQ?oc=5",
+   "published": "2026-11-14T22:43:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Plox",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5xSFltRk9jM1ZwaGFPQjJDNExpdWZXczJaaFItUm9LdkJqOGRRdkdLSFNIeVZSVG5YZHVmQVYxckwtUzVIMVB1ZkR4RTlsUlZ6bWdLWGRlTVJrX1N0Smw1R1VZTl8xOU13TnI3UEc0bmNxSTFFbVhyLWkxRQ?oc=5",
+     "title": "Banco Central autoriza Nubank a comprar o Banco Porto Real de Investimentos"
+    }
+   ],
+   "ids": [
+    "298879a4ad8a"
+   ],
+   "snippet": "",
+   "prescore": 4.4,
+   "headline": "Banco Central autoriza Nubank a comprar o Banco Porto Real de Investimentos",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -10987,25 +11012,25 @@
    "ai": false
   },
   {
-   "id": "ab8b269079da",
-   "title": "Janones chama críticos da esquerda contra o ajuste fiscal de ‘covardes’ e defende ‘Exército do Lula’",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxON0IyMVJkUmN2OU9WZHIyTE9weXpBLUZOcXU5MDNSYzM0V3VWY3p5WThkbHAxNU82X3FySl9lWlhpY0xZam5BWXhlb3ZJelFzdUpwbGN1YXgzZVRiYTl5T1lOVUhIZWVLaHRIZ2tKemtXbnpJWHltQVlSQWJkcTdxVjhJSlFCVEotcWh4SlJmNWxTWjdwVjB2RENuSHNXVkk5dlJEd1k1Y3dvVjc3cDB3d1ZfWkFsZl9Cc0hRMnFWeGluMGhtMnRVRlZFRGFpd9IB0wFBVV95cUxQQ3YzUDBZRjNuQk1jRDhHN2R5UE5wQnNkMmdaS1NxZVZlZ2hQVVAyYzI5UFI1SEZfelVNLXlQd2luLXdESU9LaWNSbmJQLWdSLXNWQjFkZ1RQOGxrQ2pmb2dlcnJxcEpXTmNYbWRDR1BPYzdiSXlnRllVQW5CQ1p0cHVrQVBjcjk3bWFlUlp0WEdvc2NraEtZdjFrR2F1VVd2TlU0T2ZDLTZOWE5mb1gyZERYNFJUZnJqRkJ2RHNIZklHTThmbTNjOVZtRlV3N3VXZEhr?oc=5",
-   "published": "2026-11-14T15:32:00+00:00",
+   "id": "a168e50c19c4",
+   "title": "BTG: fator eleitoral pressiona áreas de negócios e ação tomba 3% após balanço; veja as análises",
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNcnJvOWp0a2dIeU43YmdPeGFzSmZFQ3ZhX0U3MGJWRWpJMEVvVGxnRkRSd2ZRR2lnZXpUNFNNcTdhUUh3M1RPMy02TnFFa04tcXBpYU5XOXBSWWRpTkNzQUx6THV0UFpWdWVWSEtMOTFJbHR6Z3lZa2hlVVhOZXFxZmVEVUxyS2pNRTM0RDFBejEzVW04Z1doUWFRUHpLWXR6dWMyV1pwM3hUazU4QmJ0c0RiNnhlQ1paVFU2cHZYZEQ1QUhpbzBuXzFpT1prbV91QlBkWnY3WXNVMHA2RFlrSHU1LURyODNzVmlneDhtS08?oc=5",
+   "published": "2026-11-14T21:50:37+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxON0IyMVJkUmN2OU9WZHIyTE9weXpBLUZOcXU5MDNSYzM0V3VWY3p5WThkbHAxNU82X3FySl9lWlhpY0xZam5BWXhlb3ZJelFzdUpwbGN1YXgzZVRiYTl5T1lOVUhIZWVLaHRIZ2tKemtXbnpJWHltQVlSQWJkcTdxVjhJSlFCVEotcWh4SlJmNWxTWjdwVjB2RENuSHNXVkk5dlJEd1k1Y3dvVjc3cDB3d1ZfWkFsZl9Cc0hRMnFWeGluMGhtMnRVRlZFRGFpd9IB0wFBVV95cUxQQ3YzUDBZRjNuQk1jRDhHN2R5UE5wQnNkMmdaS1NxZVZlZ2hQVVAyYzI5UFI1SEZfelVNLXlQd2luLXdESU9LaWNSbmJQLWdSLXNWQjFkZ1RQOGxrQ2pmb2dlcnJxcEpXTmNYbWRDR1BPYzdiSXlnRllVQW5CQ1p0cHVrQVBjcjk3bWFlUlp0WEdvc2NraEtZdjFrR2F1VVd2TlU0T2ZDLTZOWE5mb1gyZERYNFJUZnJqRkJ2RHNIZklHTThmbTNjOVZtRlV3N3VXZEhr?oc=5",
-     "title": "Janones chama críticos da esquerda contra o ajuste fiscal de ‘covardes’ e defende ‘Exército do Lula’"
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNcnJvOWp0a2dIeU43YmdPeGFzSmZFQ3ZhX0U3MGJWRWpJMEVvVGxnRkRSd2ZRR2lnZXpUNFNNcTdhUUh3M1RPMy02TnFFa04tcXBpYU5XOXBSWWRpTkNzQUx6THV0UFpWdWVWSEtMOTFJbHR6Z3lZa2hlVVhOZXFxZmVEVUxyS2pNRTM0RDFBejEzVW04Z1doUWFRUHpLWXR6dWMyV1pwM3hUazU4QmJ0c0RiNnhlQ1paVFU2cHZYZEQ1QUhpbzBuXzFpT1prbV91QlBkWnY3WXNVMHA2RFlrSHU1LURyODNzVmlneDhtS08?oc=5",
+     "title": "BTG: fator eleitoral pressiona áreas de negócios e ação tomba 3% após balanço; veja as análises"
     }
    ],
    "ids": [
-    "ab8b269079da"
+    "a168e50c19c4"
    ],
    "snippet": "",
    "prescore": 3.2,
-   "headline": "Janones chama críticos da esquerda contra o ajuste fiscal de ‘covardes’ e defende ‘Exército do Lula’",
-   "category": "macro",
+   "headline": "BTG: fator eleitoral pressiona áreas de negócios e ação tomba 3% após balanço; veja as análises",
+   "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -11317,6 +11342,72 @@
    "ai": false
   },
   {
+   "id": "09a77c3585c9",
+   "title": "Com milhares de voos afetados nos EUA, problemas no transporte aéreo devem persistir até domingo, dizem autoridades",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNbjBZMzBGNFdNWDNLZTRLQ1FIb1pmeWNYV1V1M1NWeHZ5RTdfNE02WnNfMWNuY0FVRU1zZkhfU2taOHFfVU00OUJmSjVCeXlhVDhsazJ4ZldFdFFfZVBwdmZZcE93TzRGY016NDBpNEpEMERHWVdJOFktUjl4QVBKSktLXy1zdi1oQUZWc2cwUFJRMXY3dlQ0aUhzeWt4dmxyWElGdzNVS2hETzcwV0xUUXFjM2p0QnJXOEFqRWRYa0MycEE3LWdtaWJmUUlueGFQTHVybjRxc0tON0dYQ2ZNaVR4Ulc2dERzbkx3MXpuWlFtMmd5MkJKNG00dEjSAYsCQVVfeXFMUDVhM25qWUM2UFpvLW1WUUxibzMxUGI5b0NYS0hFcW5nNmU3eFBWLUZwN1FSZFRBR1JWMUNjS0FtWHNhZ2RJYzhqX1p0eFlrLWtXUi1uMXltOHVEcVlNczZqVm5nZ2RvdDhNdFlpbGc3VlBFNHhqS1did2pudWh0dXA0YTRVb0dlTGRwU3I3NlFFNHBNYmxoMmdKbG91eU9uN1VSdER6a1RRQkhGVVBYOUdjNm5wMDFybXpTMlBSTmliU2h4S0VjeS03Wl9QTHY0LU9haXJfdlhJU3NCWEJTV0RBai00VzQ1RUlTa0lzTk8yN2Jwem5RblFVWVotTzZ0dlotQ0V3YjVEcnJz?oc=5",
+   "published": "2026-11-14T22:28:48+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNbjBZMzBGNFdNWDNLZTRLQ1FIb1pmeWNYV1V1M1NWeHZ5RTdfNE02WnNfMWNuY0FVRU1zZkhfU2taOHFfVU00OUJmSjVCeXlhVDhsazJ4ZldFdFFfZVBwdmZZcE93TzRGY016NDBpNEpEMERHWVdJOFktUjl4QVBKSktLXy1zdi1oQUZWc2cwUFJRMXY3dlQ0aUhzeWt4dmxyWElGdzNVS2hETzcwV0xUUXFjM2p0QnJXOEFqRWRYa0MycEE3LWdtaWJmUUlueGFQTHVybjRxc0tON0dYQ2ZNaVR4Ulc2dERzbkx3MXpuWlFtMmd5MkJKNG00dEjSAYsCQVVfeXFMUDVhM25qWUM2UFpvLW1WUUxibzMxUGI5b0NYS0hFcW5nNmU3eFBWLUZwN1FSZFRBR1JWMUNjS0FtWHNhZ2RJYzhqX1p0eFlrLWtXUi1uMXltOHVEcVlNczZqVm5nZ2RvdDhNdFlpbGc3VlBFNHhqS1did2pudWh0dXA0YTRVb0dlTGRwU3I3NlFFNHBNYmxoMmdKbG91eU9uN1VSdER6a1RRQkhGVVBYOUdjNm5wMDFybXpTMlBSTmliU2h4S0VjeS03Wl9QTHY0LU9haXJfdlhJU3NCWEJTV0RBai00VzQ1RUlTa0lzTk8yN2Jwem5RblFVWVotTzZ0dlotQ0V3YjVEcnJz?oc=5",
+     "title": "Com milhares de voos afetados nos EUA, problemas no transporte aéreo devem persistir até domingo, dizem autoridades"
+    }
+   ],
+   "ids": [
+    "09a77c3585c9"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Com milhares de voos afetados nos EUA, problemas no transporte aéreo devem persistir até domingo, dizem autoridades",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "569eb964bdb7",
+   "title": "(Digital) SpaceX Catches Starship in Novel Landing",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-14/-digital-spacex-catches-starship-in-novel-landing",
+   "published": "2026-11-14T22:25:41+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-14/-digital-spacex-catches-starship-in-novel-landing",
+     "title": "(Digital) SpaceX Catches Starship in Novel Landing"
+    }
+   ],
+   "ids": [
+    "569eb964bdb7"
+   ],
+   "snippet": "(Digital) SpaceX Catches Starship in Novel Landing (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "(Digital) SpaceX Catches Starship in Novel Landing",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "(Digital) SpaceX Catches Starship in Novel Landing (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "9b1af2495d41",
    "title": "Manifestantes tomam ruas da França e protestam contra inflação e polícia pelo quinto sábado seguido",
    "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/manifestantes-tomam-ruas-da-franca-e-protestam-contra-inflacao-e-policia-pelo-quinto-sabado-seguido.shtml",
@@ -11603,6 +11694,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Poppi founders Allison and Stephen Ellsworth tell Bloomberg This Weekend how they turned a farmers market business into a nearly $2 billion beverage brand and what they learned from the decade-long journey. Speaking with hosts David Gura and Lisa Mateo, the couple explains why they are starting over with Jetty, a new hydration brand, and how lessons about social media, hiring and building a team a",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d5f9ba6d9355",
+   "title": "Milhares de voos nos EUA são cancelados e sofrem atrasos enquanto sistema aéreo se recupera de paralisação",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOTlE1c1gyN0xhX2RCTm1faEZ5UlVvNE9fQlpSMmZPSlhDUmt5OTF2dHZnTmZneGtwZEtFa3ZmMWhxTFlqWWhiYnp4c2plMDdVZ1hhY2U5MTVPQlVGVnpnR1Bfbmhaakk3dWo5WXNoRHRjWHBCdkkyODhRNUR0Tm9NWVA1UnVxV181b21yOWFjdHljWmVsYzd5SHllcXZ3dzZ4aklMWmFPd29vRlNkQ2FVd1Jma1A2NHBwbmxZdHk5cjVhel9nX1VFMVRCWjFLdnRNMW9Dc2dRVzNRNjBzX09PVjd1eEtWVmd4OE9VSkxB0gH8AUFVX3lxTE9TVDI3b3dTekZ1RXBVakNZQmhEbEZQeXVyeWVrWDB2LVFTWjFHVzNuS0lFWlp1cWNKdWV3ZGRHS0t1VDdURDdoN1FfWDJWY08yZ1lELTRMME03eWE2NWNqTERHNEtZaGhqcUZIWWpOZjhZdXQ4bDNzOExacUgwUjk2STdWTTBhVXRiQlhyNDVLQnJTM05FVXhpLTJHMXFVNV90c0I4LVVNZFdHOGF1a2JCaGdWWlM1RHhfSDVaTHJfMFd4YXpHLUQwWVRSR0RCbXU3TGZMeExraFFZallBZDB4RGpZMm1Rcm5hWW9UR2dnUjdrYVpWMHR4YmJUWA?oc=5",
+   "published": "2026-11-14T16:10:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOTlE1c1gyN0xhX2RCTm1faEZ5UlVvNE9fQlpSMmZPSlhDUmt5OTF2dHZnTmZneGtwZEtFa3ZmMWhxTFlqWWhiYnp4c2plMDdVZ1hhY2U5MTVPQlVGVnpnR1Bfbmhaakk3dWo5WXNoRHRjWHBCdkkyODhRNUR0Tm9NWVA1UnVxV181b21yOWFjdHljWmVsYzd5SHllcXZ3dzZ4aklMWmFPd29vRlNkQ2FVd1Jma1A2NHBwbmxZdHk5cjVhel9nX1VFMVRCWjFLdnRNMW9Dc2dRVzNRNjBzX09PVjd1eEtWVmd4OE9VSkxB0gH8AUFVX3lxTE9TVDI3b3dTekZ1RXBVakNZQmhEbEZQeXVyeWVrWDB2LVFTWjFHVzNuS0lFWlp1cWNKdWV3ZGRHS0t1VDdURDdoN1FfWDJWY08yZ1lELTRMME03eWE2NWNqTERHNEtZaGhqcUZIWWpOZjhZdXQ4bDNzOExacUgwUjk2STdWTTBhVXRiQlhyNDVLQnJTM05FVXhpLTJHMXFVNV90c0I4LVVNZFdHOGF1a2JCaGdWWlM1RHhfSDVaTHJfMFd4YXpHLUQwWVRSR0RCbXU3TGZMeExraFFZallBZDB4RGpZMm1Rcm5hWW9UR2dnUjdrYVpWMHR4YmJUWA?oc=5",
+     "title": "Milhares de voos nos EUA são cancelados e sofrem atrasos enquanto sistema aéreo se recupera de paralisação"
+    }
+   ],
+   "ids": [
+    "d5f9ba6d9355"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Milhares de voos nos EUA são cancelados e sofrem atrasos enquanto sistema aéreo se recupera de paralisação",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12143,41 +12267,103 @@
    "ai": false
   },
   {
-   "id": "c10cea710d2c",
-   "title": "Kim Jong Un Remakes North Korea’s Flag, Ditching Soviet-Era Version",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPamFEUnFZRDE2MFE3WEZFN0NXeWR2ay00NHZ1a2JoN0MyNTFXNjZ0M1JUU3RpSE91RE5Fd3hJUmNHMmk5YVlDNVpwVy1BUjFoQ1BtRjhRZEE3RzJsY2NLYjExR3MzRHNBd1NoclJ2MEJybkxvcVo4N0FaU2hoUzdxNW5yVUEwZzVQYkJHNDZNbGQ2ajBGTG5wdWM3TU9wazVJTVNVLTZ0Y28?oc=5",
-   "published": "2026-11-14T21:45:17+00:00",
+   "id": "6a7a6558d79b",
+   "title": "SpaceX Catches Starship After Early Setback",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc0h5Z2ZOZ3hGRDU2d0RaMk5ocV84cmVmTXhBOWl2dFgzVWhQN3hTNTVuNGhfcFJJbDJhZnZ3aVJFT1I1SnFSdUZGUW9tNFZrZ1ZkQlpXVXlaNDBqQUh0eWxZVU1jM3hSZ01hNEYwV1R1a3p2N2NJOThfTk9TbUNmUmFkZ2RkeTJMRVB6ZVdqeEhVQ0o1ZVozRmRHYVMydlZCWjBKVS1vTDNpZEtIWHpoVGxlUWc?oc=5",
+   "published": "2026-11-14T23:34:44+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPamFEUnFZRDE2MFE3WEZFN0NXeWR2ay00NHZ1a2JoN0MyNTFXNjZ0M1JUU3RpSE91RE5Fd3hJUmNHMmk5YVlDNVpwVy1BUjFoQ1BtRjhRZEE3RzJsY2NLYjExR3MzRHNBd1NoclJ2MEJybkxvcVo4N0FaU2hoUzdxNW5yVUEwZzVQYkJHNDZNbGQ2ajBGTG5wdWM3TU9wazVJTVNVLTZ0Y28?oc=5",
-     "title": "Kim Jong Un Remakes North Korea’s Flag, Ditching Soviet-Era Version"
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc0h5Z2ZOZ3hGRDU2d0RaMk5ocV84cmVmTXhBOWl2dFgzVWhQN3hTNTVuNGhfcFJJbDJhZnZ3aVJFT1I1SnFSdUZGUW9tNFZrZ1ZkQlpXVXlaNDBqQUh0eWxZVU1jM3hSZ01hNEYwV1R1a3p2N2NJOThfTk9TbUNmUmFkZ2RkeTJMRVB6ZVdqeEhVQ0o1ZVozRmRHYVMydlZCWjBKVS1vTDNpZEtIWHpoVGxlUWc?oc=5",
+     "title": "SpaceX Catches Starship After Early Setback"
     }
    ],
    "ids": [
-    "c10cea710d2c"
+    "6a7a6558d79b"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Kim Jong Un refaz a bandeira da Coreia do Norte e abandona versão da era soviética",
+   "headline": "SpaceX Catches Starship After Early Setback",
    "category": "internacional",
    "importance": 2,
-   "importance_reason": "Simbólico, sem efeito de mercado.",
-   "summary": "Kim Jong Un alterou a bandeira norte-coreana, abandonando a versão de inspiração soviética.",
-   "involves": "Kim Jong Un, Coreia do Norte",
-   "interpretation": "Gesto simbólico de afirmação política interna.",
-   "impact": "Sem impacto de mercado imediato.",
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
    "sentiment": "neutro",
-   "entities": [
-    "Kim Jong Un"
-   ],
-   "tags": [
-    "Coreia do Norte"
-   ],
+   "entities": [],
+   "tags": [],
    "is_deal": false,
    "deal": null,
-   "ai": true
+   "ai": false
+  },
+  {
+   "id": "a09803ba1121",
+   "title": "Passengers face widespread disruption after US air traffic control outage",
+   "link": "https://www.ft.com/content/f66f9811-59a2-4e52-a944-c7ed81dabc50?syn-25a6b1a6=1",
+   "published": "2026-11-14T23:32:08+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/f66f9811-59a2-4e52-a944-c7ed81dabc50?syn-25a6b1a6=1",
+     "title": "Passengers face widespread disruption after US air traffic control outage"
+    }
+   ],
+   "ids": [
+    "a09803ba1121"
+   ],
+   "snippet": "Thousands of flights delayed or cancelled as political blame game mounts",
+   "prescore": 2.6,
+   "headline": "Passengers face widespread disruption after US air traffic control outage",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Thousands of flights delayed or cancelled as political blame game mounts",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4fd0514ad1db",
+   "title": "US air travel chaos exposes system held together by ‘string and duct tape’",
+   "link": "https://www.ft.com/content/9df17e1c-c77a-4f67-b5b4-1adb64bcd063?syn-25a6b1a6=1",
+   "published": "2026-11-14T22:57:26+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/9df17e1c-c77a-4f67-b5b4-1adb64bcd063?syn-25a6b1a6=1",
+     "title": "US air travel chaos exposes system held together by ‘string and duct tape’"
+    }
+   ],
+   "ids": [
+    "4fd0514ad1db"
+   ],
+   "snippet": "Decades of bipartisan neglect have left America’s aviation infrastructure unfit for purpose, say experts",
+   "prescore": 2.6,
+   "headline": "US air travel chaos exposes system held together by ‘string and duct tape’",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Decades of bipartisan neglect have left America’s aviation infrastructure unfit for purpose, say experts",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "8de54c597470",
@@ -12198,39 +12384,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Print Edition | Wall Street Journal",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f48d28fbd4bd",
-   "title": "Iran Takes the War Beyond the Middle East",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQX2xKR0JTVzRwLUtDQTVuMFdYYm9NY3Bqek9iakIzdXBSN3VoQ3VibWZtcm5RbFJqaXRmWHhlei0ycUpkZkJmc05pTGdqWmIwTHNxdUMzZXVpVXM2dGxqUHlBTlNfZ3ZTRi0tWm51RHk5NHIzT2k5cDREYTlseDZPZmNGSmMtQmpzNUs2dkI4VmJ5SHF3b19WVTc0T3BCZW1LWll6d3V3YWh2RmRjVVBpeHQwRVN1TW9kUnJtdnZ5MWp6OVBheXo2Yk9TUTV1Umtqd0psS2RBZlFzbXBNWm5fbFgtQVY?oc=5",
-   "published": "2026-11-14T21:25:15+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQX2xKR0JTVzRwLUtDQTVuMFdYYm9NY3Bqek9iakIzdXBSN3VoQ3VibWZtcm5RbFJqaXRmWHhlei0ycUpkZkJmc05pTGdqWmIwTHNxdUMzZXVpVXM2dGxqUHlBTlNfZ3ZTRi0tWm51RHk5NHIzT2k5cDREYTlseDZPZmNGSmMtQmpzNUs2dkI4VmJ5SHF3b19WVTc0T3BCZW1LWll6d3V3YWh2RmRjVVBpeHQwRVN1TW9kUnJtdnZ5MWp6OVBheXo2Yk9TUTV1Umtqd0psS2RBZlFzbXBNWm5fbFgtQVY?oc=5",
-     "title": "Iran Takes the War Beyond the Middle East"
-    }
-   ],
-   "ids": [
-    "f48d28fbd4bd"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Iran Takes the War Beyond the Middle East",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12268,39 +12421,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a09803ba1121",
-   "title": "Passengers face widespread disruption after US air traffic control outage",
-   "link": "https://www.ft.com/content/f66f9811-59a2-4e52-a944-c7ed81dabc50?syn-25a6b1a6=1",
-   "published": "2026-11-14T21:02:31+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/f66f9811-59a2-4e52-a944-c7ed81dabc50?syn-25a6b1a6=1",
-     "title": "Passengers face widespread disruption after US air traffic control outage"
-    }
-   ],
-   "ids": [
-    "a09803ba1121"
-   ],
-   "snippet": "Thousands of flights delayed or cancelled as political blame game mounts",
-   "prescore": 2.6,
-   "headline": "Passengers face widespread disruption after US air traffic control outage",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Thousands of flights delayed or cancelled as political blame game mounts",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12411,6 +12531,39 @@
    "ai": false
   },
   {
+   "id": "f4aa029c4b53",
+   "title": "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9 Million",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWVJ3N0tZNkptaWllay1oY0ZEQjl6T3RYbEZNNHdnbEZHUWtMc0JjT2s5TFA2eUNsZ0dkWFJER3diUzA2TkY1M0FTZmJiNkh3Y214QzM4ampwZWF3Z25rQ3BjaDB4aXlraF9nQU4zaHZ5ZE1tbzRBQ2hWbVVvZWVLcVBITTlSYl9PR3piVGdlZXNzUU5uUEJjRlBBUQ?oc=5",
+   "published": "2026-11-14T19:30:42+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWVJ3N0tZNkptaWllay1oY0ZEQjl6T3RYbEZNNHdnbEZHUWtMc0JjT2s5TFA2eUNsZ0dkWFJER3diUzA2TkY1M0FTZmJiNkh3Y214QzM4ampwZWF3Z25rQ3BjaDB4aXlraF9nQU4zaHZ5ZE1tbzRBQ2hWbVVvZWVLcVBITTlSYl9PR3piVGdlZXNzUU5uUEJjRlBBUQ?oc=5",
+     "title": "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9 Million"
+    }
+   ],
+   "ids": [
+    "f4aa029c4b53"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9 Million",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d8110e61ae9e",
    "title": "Outage That Swamped Air Travel Blamed on ‘Routine’ Work to Replace Copper Wire",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1BwaGNac0VESjJsbHppTjVuN2syUTNyNWZrZlhsUDU2S2N6TFlTZWpQbXlqQVFFdFNibVdraDRsb19TRTNVbzdfbXlpSldua3pmS3NDZEp6R3dSRTk4ZGhLNDA4QzJQTUtpY0tVTXVIR3p4Wl9rVlg4ZUJpN2dnQmhRTmVmTkF6SWg3THBoOGVKMy04Z3F0Tkd2YmF6STZ6ZENXNlJuNS1HZVRtTlE?oc=5",
@@ -12447,7 +12600,7 @@
    "id": "864e5feefc5f",
    "title": "Duffy Blames Congress, Demands $50 Billion as White House Confronts Airport Mess",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUF9BSS0xMzVoWGd0S3BxRUR1V2MxRGxteDFuN0FLRGstVmZwOHItR0VQUG1VM0ZtblBKYUZwVGJmWWNTNlVXOXZpcVhUYmtqOUFLWUdkakl2NmVFZDY4U3dkU3FKTDJIaGlaRklvelIwMEtvNDJMZEVJNHpXUDB4d2JSdl96WmpQMUkzRk9CcEZHcFNaQ1VLQkJleEJ5QVZWWEZFLTktcS12RFVEdlpJdE1peGxxX1RjZjktUUJLR20?oc=5",
-   "published": "2026-11-14T18:35:00+00:00",
+   "published": "2026-11-14T18:37:03+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12477,10 +12630,43 @@
    "ai": false
   },
   {
+   "id": "2360fd635e12",
+   "title": "SpaceX's Starship nears end of 15th test flight and return-landing attempt",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZ25xZHF6NVM2ekhIVmRFejZfdVZ4MVRwMTQ1QjBFeFFQQkN2LTh6eHRVeDF2QzhxMmlzdFg2M1drVm9Sc0lCeWJBZDhwUjV1Vm91TzF4ZzgxczY4RlppNGc0WVJxU0t4dFV3OHIyNWJoREpaWGNweGVoY25XNzBzQWUxUk13RDJkSDZzZXVtVVRKU09admlYMmt0RGFyV3ljbHl3elp5TV9NMmo0ZEVMUENvQTFSTkh0ZHF6U2c2LVpWdE05YlJ4Xw?oc=5",
+   "published": "2026-11-14T18:03:17+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZ25xZHF6NVM2ekhIVmRFejZfdVZ4MVRwMTQ1QjBFeFFQQkN2LTh6eHRVeDF2QzhxMmlzdFg2M1drVm9Sc0lCeWJBZDhwUjV1Vm91TzF4ZzgxczY4RlppNGc0WVJxU0t4dFV3OHIyNWJoREpaWGNweGVoY25XNzBzQWUxUk13RDJkSDZzZXVtVVRKU09admlYMmt0RGFyV3ljbHl3elp5TV9NMmo0ZEVMUENvQTFSTkh0ZHF6U2c2LVpWdE05YlJ4Xw?oc=5",
+     "title": "SpaceX's Starship nears end of 15th test flight and return-landing attempt"
+    }
+   ],
+   "ids": [
+    "2360fd635e12"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "SpaceX's Starship nears end of 15th test flight and return-landing attempt",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b0b23bd0f0cc",
    "title": "Facing Backlash on Land, Data Centers Look to the Sea",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9iWlpvQU5MYnljUk9hNWJvTUZOZks5ZG5HekctTW5ISjNVN211cVVaSVNZRlJOUldzXzRkOXZGSWVfb1duOUtUYm9PN0JIZ0tBWTlyRmVMN1ZZeVR6ZndITEdBa2ZMdw?oc=5",
-   "published": "2026-11-14T18:00:00+00:00",
+   "published": "2026-11-14T18:01:25+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12495,6 +12681,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Facing Backlash on Land, Data Centers Look to the Sea",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ec204c49dcea",
+   "title": "Novo's Wegovy pill helps patients lose about 6% of weight in three months, real-world data show",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQkdyMW8wZ1VqOEc4U1NpVGM1MU95bENTYXZzb0Z4SmhpamNyWlFyQlNWWVdWbk9WMW1NemttalZtbThJQVg5czVCRXM4cDJwT0hWYlJSc253T3JNSmxnWTFac1p5QjhWRU90ZXByVENNdmtCWGdBRmt2WXQtb3luQ1dwN2o3MnJtQmR4YmEwNG82WERJa2FHRW9YUUtGN1RiM0w1Y1F6eDlQWmpETmdwOU1SVmtXa0xzYk1OcnhiMXFiSVZCQ1NCYUh4dDdJNkt4a0FlQW14ZDlCRWJqNkd2WDVn?oc=5",
+   "published": "2026-11-14T17:24:10+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQkdyMW8wZ1VqOEc4U1NpVGM1MU95bENTYXZzb0Z4SmhpamNyWlFyQlNWWVdWbk9WMW1NemttalZtbThJQVg5czVCRXM4cDJwT0hWYlJSc253T3JNSmxnWTFac1p5QjhWRU90ZXByVENNdmtCWGdBRmt2WXQtb3luQ1dwN2o3MnJtQmR4YmEwNG82WERJa2FHRW9YUUtGN1RiM0w1Y1F6eDlQWmpETmdwOU1SVmtXa0xzYk1OcnhiMXFiSVZCQ1NCYUh4dDdJNkt4a0FlQW14ZDlCRWJqNkd2WDVn?oc=5",
+     "title": "Novo's Wegovy pill helps patients lose about 6% of weight in three months, real-world data show"
+    }
+   ],
+   "ids": [
+    "ec204c49dcea"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Novo's Wegovy pill helps patients lose about 6% of weight in three months, real-world data show",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12528,77 +12747,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Inspired Wales beat New Zealand for first time in 73 years",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0b1bcd05f41b",
-   "title": "Biden’s Scaled-Back Book Tour Rekindles Questions Over His Health",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSTlSM3VFRzdWZUFDNDBETmNGa1ljTlQ3LUFtZ3B5MlU1ekpOa1JNVmdJcl8zRG9MZk9nLUZIM3lfSVpWSHhYTnVvYXJSRmFNcXFzSVlSSW53UmpVUmlod1BMLVlOUzFKT2JZUTU4SGxVOE1DQlQwSFAyOE9Eem54cXYtZE42b19MbzBWU0F3cE5aMHNlNjVDQllwX1hDeHpzQ09pTg?oc=5",
-   "published": "2026-11-14T16:46:45+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSTlSM3VFRzdWZUFDNDBETmNGa1ljTlQ3LUFtZ3B5MlU1ekpOa1JNVmdJcl8zRG9MZk9nLUZIM3lfSVpWSHhYTnVvYXJSRmFNcXFzSVlSSW53UmpVUmlod1BMLVlOUzFKT2JZUTU4SGxVOE1DQlQwSFAyOE9Eem54cXYtZE42b19MbzBWU0F3cE5aMHNlNjVDQllwX1hDeHpzQ09pTg?oc=5",
-     "title": "Biden’s Scaled-Back Book Tour Rekindles Questions Over His Health"
-    }
-   ],
-   "ids": [
-    "0b1bcd05f41b"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Turnê reduzida do livro de Biden reacende dúvidas sobre sua saúde",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Tema político-pessoal sem efeito em mercado.",
-   "summary": "A turnê de lançamento do livro de Joe Biden foi reduzida e reacende questionamentos sobre sua saúde.",
-   "involves": "Joe Biden",
-   "interpretation": "Notícia de natureza política e pessoal.",
-   "impact": "Sem impacto relevante em ativos ou setores.",
-   "sentiment": "neutro",
-   "entities": [
-    "Joe Biden"
-   ],
-   "tags": [
-    "EUA",
-    "política"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "50cf534ca5de",
-   "title": "News Quiz for Nov. 14, 2026",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IVl9HdWhFYklGYnowS294RHZONWJ2R1F3VUZTTHV1SWszV1dNdEIyNmVxRkI5OW4tWFRRRlljU2lJX19WVlNkSTNWeHhiY2FLR0tqTV9vb3pYWEs2dWdZNmdrMUJabEg4NFRUT3Y2WGI?oc=5",
-   "published": "2026-11-14T16:31:15+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IVl9HdWhFYklGYnowS294RHZONWJ2R1F3VUZTTHV1SWszV1dNdEIyNmVxRkI5OW4tWFRRRlljU2lJX19WVlNkSTNWeHhiY2FLR0tqTV9vb3pYWEs2dWdZNmdrMUJabEg4NFRUT3Y2WGI?oc=5",
-     "title": "News Quiz for Nov. 14, 2026"
-    }
-   ],
-   "ids": [
-    "50cf534ca5de"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "News Quiz for Nov. 14, 2026",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -12680,6 +12828,39 @@
    "ai": false
   },
   {
+   "id": "a7c14d4c4740",
+   "title": "Alaska elects first Democratic governor since 1998, US media project",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcHVTbkEtaU96RjU1TldQLVY5OFFxWmc2VVZRSFM1bEZqVEdLeUxZeC12SklQRlRyUnZlZUJwOW1yMEVqd2JXV3dYeEdrdElmMUZpYml6bmQzVFM5N25waFh4WmxTUVhJdGVteFRmMm9STVFuS0gwZkJyYXFvZmNjUW0tdzhLcnU2WS1oSHprSlpoaDhLT25aNTFoaUNXVG5LVFVaYkZmNlhwNkNNR29wSWxR?oc=5",
+   "published": "2026-11-14T14:28:09+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcHVTbkEtaU96RjU1TldQLVY5OFFxWmc2VVZRSFM1bEZqVEdLeUxZeC12SklQRlRyUnZlZUJwOW1yMEVqd2JXV3dYeEdrdElmMUZpYml6bmQzVFM5N25waFh4WmxTUVhJdGVteFRmMm9STVFuS0gwZkJyYXFvZmNjUW0tdzhLcnU2WS1oSHprSlpoaDhLT25aNTFoaUNXVG5LVFVaYkZmNlhwNkNNR29wSWxR?oc=5",
+     "title": "Alaska elects first Democratic governor since 1998, US media project"
+    }
+   ],
+   "ids": [
+    "a7c14d4c4740"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Alaska elects first Democratic governor since 1998, US media project",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "620ff76fa2c4",
    "title": "Weekend Air Travel Woes Mount After FAA Lifts Nationwide Ground Stop",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTWttclRZeVZvN2JCTHVnXy1Hdko4UFhvRHY1TzNPcGo5cFkyMXFhZTRreUtwaW9fUUxCaGY0VDNhempMRzd1RHNaSUNITFY1VnpLSk5CWFhOR0JVeURzRG9uYnUzME9qM1g4LUNBcjdjeDcxR2JLa2FOeE1uRFBqWGd5RQ?oc=5",
@@ -12746,39 +12927,6 @@
    "ai": false
   },
   {
-   "id": "f4aa029c4b53",
-   "title": "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9 Million",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWVJ3N0tZNkptaWllay1oY0ZEQjl6T3RYbEZNNHdnbEZHUWtMc0JjT2s5TFA2eUNsZ0dkWFJER3diUzA2TkY1M0FTZmJiNkh3Y214QzM4ampwZWF3Z25rQ3BjaDB4aXlraF9nQU4zaHZ5ZE1tbzRBQ2hWbVVvZWVLcVBITTlSYl9PR3piVGdlZXNzUU5uUEJjRlBBUQ?oc=5",
-   "published": "2026-11-14T13:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWVJ3N0tZNkptaWllay1oY0ZEQjl6T3RYbEZNNHdnbEZHUWtMc0JjT2s5TFA2eUNsZ0dkWFJER3diUzA2TkY1M0FTZmJiNkh3Y214QzM4ampwZWF3Z25rQ3BjaDB4aXlraF9nQU4zaHZ5ZE1tbzRBQ2hWbVVvZWVLcVBITTlSYl9PR3piVGdlZXNzUU5uUEJjRlBBUQ?oc=5",
-     "title": "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9 Million"
-    }
-   ],
-   "ids": [
-    "f4aa029c4b53"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9 Million",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "17407e4c757d",
    "title": "What Jensen Huang’s Downfall Means for Big Tech",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObWJ4blhBYWxVaU1JbDJ2clNtYkJ2Z3JWTTdYMTExdldMYzdxdFlDRnhENEMtTlQ2OUpKSWFvdzlGdTV3eWNOZVV3QmY5VF95d1BSZWlsdlZWMWlCTnE0aElsUHdoZGNrcUVvc01zdGgwMmlHbnFiUHFNVmJreG5aRC1KUk11WXc?oc=5",
@@ -12815,7 +12963,7 @@
    "id": "dc646c4c0fbb",
    "title": "The Massive Chinese Spy Operation Targeting Western Tech and AI | The 10-Point for Nov. 14",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXd4UlN6UWw5UmxJZGc3QnA5Sm5hVi1hRUl1blh3bnRfSnc3Zk4yeG53UjdFbjFvaklZbWRrN0ludmgxbm02cDFBZURTaXdDQTNxZ0gyZUk0OG5XeGVUUy1CZW94T19IUmVLWmFacU02eDVLbnYxcGU0TDI5SDVxMTQ3T0RaanNTdFFaUWpWZEZIbnVDU0hyUFpUVHAzajF4bTlJaWlCUQ?oc=5",
-   "published": "2026-11-14T12:09:43+00:00",
+   "published": "2026-11-14T12:06:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12977,6 +13125,171 @@
    "ai": false
   },
   {
+   "id": "50cf534ca5de",
+   "title": "News Quiz for Nov. 14, 2026",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IVl9HdWhFYklGYnowS294RHZONWJ2R1F3VUZTTHV1SWszV1dNdEIyNmVxRkI5OW4tWFRRRlljU2lJX19WVlNkSTNWeHhiY2FLR0tqTV9vb3pYWEs2dWdZNmdrMUJabEg4NFRUT3Y2WGI?oc=5",
+   "published": "2026-11-14T11:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IVl9HdWhFYklGYnowS294RHZONWJ2R1F3VUZTTHV1SWszV1dNdEIyNmVxRkI5OW4tWFRRRlljU2lJX19WVlNkSTNWeHhiY2FLR0tqTV9vb3pYWEs2dWdZNmdrMUJabEg4NFRUT3Y2WGI?oc=5",
+     "title": "News Quiz for Nov. 14, 2026"
+    }
+   ],
+   "ids": [
+    "50cf534ca5de"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "News Quiz for Nov. 14, 2026",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6a6631cfebd7",
+   "title": "Brasil — Senado finaliza compra de iPhones para parlamentares por 4,9 milhões",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSU9KQnhVSlB1WTV0SGt1cHRGSC05bUgxTUFpUTdYeks4V0t3ZFNmVUFMNGJVSllKajlYVUdVVlhsTW03amVoQWdydEYxc2RTSDZfY3dZWTF0RElTaFpvVGs0X1RjaWxxZnc5eFEzQkhSb0RXM0JlRnZhekJCZVAzMGpiNGR3QURlMnlSWVh0X01pZWo2bEMzZnh6RnMybXFEci1WMmFLTHJieDVPc2xiSUtXdw?oc=5",
+   "published": "2026-11-15T00:11:04+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Prensa Mercosur",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSU9KQnhVSlB1WTV0SGt1cHRGSC05bUgxTUFpUTdYeks4V0t3ZFNmVUFMNGJVSllKajlYVUdVVlhsTW03amVoQWdydEYxc2RTSDZfY3dZWTF0RElTaFpvVGs0X1RjaWxxZnc5eFEzQkhSb0RXM0JlRnZhekJCZVAzMGpiNGR3QURlMnlSWVh0X01pZWo2bEMzZnh6RnMybXFEci1WMmFLTHJieDVPc2xiSUtXdw?oc=5",
+     "title": "Brasil — Senado finaliza compra de iPhones para parlamentares por 4,9 milhões"
+    }
+   ],
+   "ids": [
+    "6a6631cfebd7"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Brasil — Senado finaliza compra de iPhones para parlamentares por 4,9 milhões",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4a7e0afbe722",
+   "title": "Trump’s White House Lawyer on Subpoena Compliance: ‘It Depends’",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-14/trump-s-white-house-lawyer-on-subpoena-compliance-it-depends",
+   "published": "2026-11-14T23:04:15+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-14/trump-s-white-house-lawyer-on-subpoena-compliance-it-depends",
+     "title": "Trump’s White House Lawyer on Subpoena Compliance: ‘It Depends’"
+    }
+   ],
+   "ids": [
+    "4a7e0afbe722"
+   ],
+   "snippet": "The White House won’t commit to complying with potential subpoenas from a Democratic-led Congress and believes company executives who’ve had contact with President Donald Trump may be covered by executive privilege, White House Counsel Will Scharf said.",
+   "prescore": 2.4,
+   "headline": "Trump’s White House Lawyer on Subpoena Compliance: ‘It Depends’",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The White House won’t commit to complying with potential subpoenas from a Democratic-led Congress and believes company executives who’ve had contact with President Donald Trump may be covered by executive privilege, White House Counsel Will Scharf said.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1011c3ab861f",
+   "title": "UK Government To Expand, Accelerate Youth Job Guarantee Program",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-14/uk-government-to-expand-accelerate-youth-job-guarantee-program",
+   "published": "2026-11-14T22:30:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-14/uk-government-to-expand-accelerate-youth-job-guarantee-program",
+     "title": "UK Government To Expand, Accelerate Youth Job Guarantee Program"
+    }
+   ],
+   "ids": [
+    "1011c3ab861f"
+   ],
+   "snippet": "The UK government said it will expand and accelerate its job guarantee program for young people, ahead of the publication next week of a long-awaited review into the causes of rising youth inactivity.",
+   "prescore": 2.4,
+   "headline": "UK Government To Expand, Accelerate Youth Job Guarantee Program",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The UK government said it will expand and accelerate its job guarantee program for young people, ahead of the publication next week of a long-awaited review into the causes of rising youth inactivity.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "03ff74b2c580",
+   "title": "Kushner Wants Direct Russia-Europe Talks in Ukraine Peace Push",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-14/kushner-wants-direct-russia-europe-talks-in-ukraine-peace-push",
+   "published": "2026-11-14T21:47:26+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-14/kushner-wants-direct-russia-europe-talks-in-ukraine-peace-push",
+     "title": "Kushner Wants Direct Russia-Europe Talks in Ukraine Peace Push"
+    }
+   ],
+   "ids": [
+    "03ff74b2c580"
+   ],
+   "snippet": "Jared Kushner, the US president’s son-in-law who has been serving as a negotiator with Russia and Ukraine, said the Trump administration wants to see direct talks between Moscow and US allies in Europe.",
+   "prescore": 2.4,
+   "headline": "Kushner Wants Direct Russia-Europe Talks in Ukraine Peace Push",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Jared Kushner, the US president’s son-in-law who has been serving as a negotiator with Russia and Ukraine, said the Trump administration wants to see direct talks between Moscow and US allies in Europe.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "47d6dc7852f0",
    "title": "Flush With Wins, Democrats Confront Fear of Fleeting Success",
    "link": "https://www.bloomberg.com/news/articles/2026-11-14/flush-with-wins-democrats-confront-fear-of-fleeting-success",
@@ -12999,6 +13312,39 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Democrats gathered this week to celebrate their biggest electoral triumph in a generation and confront an inescapable anxiety — the risk of squandering it all.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "302667410f5b",
+   "title": "Senado fecha pregão de iPhones para parlamentares por R$ 4,95 milhões",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU1Q0bXNOemJnbEFrb0toWlFOX0x3Tl9ZNWFvWnFkcHBfejR5aHBWREE5VlcxblpFTHhOVXJZR3NiQU11dy11NExyN1J6OFlkVFNucFNpMFhIZzFaa0VfZFlPNE0xRVF5U3kyWXA2SlJsbGZoVFVFcGZNdmxraTM3NTl5ek9EaXJlaWxncFZuakpqUDJiWlJtZkhyUWwzZlVxNXZzTFhpUHd0dw?oc=5",
+   "published": "2026-11-14T20:14:59+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU1Q0bXNOemJnbEFrb0toWlFOX0x3Tl9ZNWFvWnFkcHBfejR5aHBWREE5VlcxblpFTHhOVXJZR3NiQU11dy11NExyN1J6OFlkVFNucFNpMFhIZzFaa0VfZFlPNE0xRVF5U3kyWXA2SlJsbGZoVFVFcGZNdmxraTM3NTl5ek9EaXJlaWxncFZuakpqUDJiWlJtZkhyUWwzZlVxNXZzTFhpUHd0dw?oc=5",
+     "title": "Senado fecha pregão de iPhones para parlamentares por R$ 4,95 milhões"
+    }
+   ],
+   "ids": [
+    "302667410f5b"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Senado fecha pregão de iPhones para parlamentares por R$ 4,95 milhões",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13439,28 +13785,61 @@
    "ai": false
   },
   {
-   "id": "8a5b94d16c4d",
-   "title": "Brasileiro é executado dentro da própria empresa na fronteira",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWm5fbXYxOVh4X3hkY25wemdLWmRaNFJlS0JCdU5Qblp5Z0t4ZUNMWVkxZGQ5RmY3RHlZT0N6WFQyMGZ0MjIxSjgyT3I5UkNHbjdueGkwY2YyeF82cnZiaFJpWXlvemJiaEo0T3ppeFZnNmVkbEZZeXVhOTFLeW05eUFUTVZBYVo2R0ZsNUZFaDVWRnduSS1LcG56ZWR6RktMZzhoUGphbEhZZ2VpYUFj0gG0AUFVX3lxTFBTNVl4Wl9tbXRLXzlqazFQY19vamJMeHAxbjhKZlpna05OeVJmSi1ndk1VVXJST0lvNzNnU2xocXNNYmpIdE4xQXFheGZNVU5NWXRYck9KS2w1OU1yQ2w2dmktdXlRYlAyUkVWMUkta3p3dzJKY0VTcDV0TFN2ZnpzdHhmZzJBMmZQTEF6cG5lUHBLV09pak4tLXFIVXhTRFBZVHBQYlQxc3lrRlN1eFRTbk9uYw?oc=5",
-   "published": "2026-11-14T11:15:00+00:00",
+   "id": "fcbe8eb5169a",
+   "title": "Goldie: copo raro da Starbucks vira destaque de nova coleção de Natal; entenda",
+   "link": "https://www.infomoney.com.br/consumo/goldie-copo-raro-da-starbucks-vira-destaque-de-nova-colecao-de-natal-entenda/",
+   "published": "2026-11-14T23:00:00+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Dourados News",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWm5fbXYxOVh4X3hkY25wemdLWmRaNFJlS0JCdU5Qblp5Z0t4ZUNMWVkxZGQ5RmY3RHlZT0N6WFQyMGZ0MjIxSjgyT3I5UkNHbjdueGkwY2YyeF82cnZiaFJpWXlvemJiaEo0T3ppeFZnNmVkbEZZeXVhOTFLeW05eUFUTVZBYVo2R0ZsNUZFaDVWRnduSS1LcG56ZWR6RktMZzhoUGphbEhZZ2VpYUFj0gG0AUFVX3lxTFBTNVl4Wl9tbXRLXzlqazFQY19vamJMeHAxbjhKZlpna05OeVJmSi1ndk1VVXJST0lvNzNnU2xocXNNYmpIdE4xQXFheGZNVU5NWXRYck9KS2w1OU1yQ2w2dmktdXlRYlAyUkVWMUkta3p3dzJKY0VTcDV0TFN2ZnpzdHhmZzJBMmZQTEF6cG5lUHBLV09pak4tLXFIVXhTRFBZVHBQYlQxc3lrRlN1eFRTbk9uYw?oc=5",
-     "title": "Brasileiro é executado dentro da própria empresa na fronteira"
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/consumo/goldie-copo-raro-da-starbucks-vira-destaque-de-nova-colecao-de-natal-entenda/",
+     "title": "Goldie: copo raro da Starbucks vira destaque de nova coleção de Natal; entenda"
     }
    ],
    "ids": [
-    "8a5b94d16c4d"
+    "fcbe8eb5169a"
    ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Brasileiro é executado dentro da própria empresa na fronteira",
+   "snippet": "Batizada de Bearista Glass Cold Cup – Surprise Box Edition, a coleção conta com cinco personagens diferentes The post Goldie: copo raro da Starbucks vira destaque de nova coleção de Natal; entenda appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Goldie: copo raro da Starbucks vira destaque de nova coleção de Natal; entenda",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
+   "summary": "Batizada de Bearista Glass Cold Cup – Surprise Box Edition, a coleção conta com cinco personagens diferentes The post Goldie: copo raro da Starbucks vira destaque de nova coleção de Natal; entenda appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e9632d581252",
+   "title": "SpaceX avança em “foguete reutilizável” com primeira captura da Starship; entenda",
+   "link": "https://www.infomoney.com.br/mundo/spacex-avanca-em-foguete-reutilizavel-com-primeira-captura-da-starship-entenda/",
+   "published": "2026-11-14T22:25:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/spacex-avanca-em-foguete-reutilizavel-com-primeira-captura-da-starship-entenda/",
+     "title": "SpaceX avança em “foguete reutilizável” com primeira captura da Starship; entenda"
+    }
+   ],
+   "ids": [
+    "e9632d581252"
+   ],
+   "snippet": "Nave retornou à base no Texas após 22 horas no espaço e foi presa pelos braços mecânicos da torre; tentativa de recuperar também o propulsor Super Heavy fracassou The post SpaceX avança em “foguete reutilizável” com primeira captura da Starship; entenda appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "SpaceX avança em “foguete reutilizável” com primeira captura da Starship; entenda",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Nave retornou à base no Texas após 22 horas no espaço e foi presa pelos braços mecânicos da torre; tentativa de recuperar também o propulsor Super Heavy fracassou The post SpaceX avança em “foguete reutilizável” com primeira captura da Starship; entenda appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13808,61 +14187,28 @@
    "ai": false
   },
   {
-   "id": "e77be3f7c9f8",
-   "title": "EUA: chefe da FAA prevê entre 4 mil e 5 mil dos voos cancelados neste sábado",
-   "link": "https://www.infomoney.com.br/mundo/eua-chefe-da-faa-preve-entre-4-mil-e-5-mil-dos-voos-cancelados-neste-sabado/",
-   "published": "2026-11-14T19:45:00+00:00",
+   "id": "4d8cfa8ccc61",
+   "title": "Entre a economia e o STF em defesa do rigor técnico",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTnhXRmlrcVZiZFJtOWVCTWZxRGhEeVNSZU9SWXJJc0swLWNhVVhyRzMwRWR3bVh3RmtVLUFFc0lkM1J4R2pOU0stcE9aaU44bzBHUE1uSC1scVFFQ2FqYUU0NVROQmY5bFNiQWNGOEhfckRlZ1RtSjhaa09ydGpId2p3anVSY2h4MThsYkdsX0dMVWFRbkpDR1l1MDkxdVh0NjhDbDBSaXdLdE9rMEhzMTlPRlB6M29wNFE?oc=5",
+   "published": "2026-11-14T19:41:27+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mundo/eua-chefe-da-faa-preve-entre-4-mil-e-5-mil-dos-voos-cancelados-neste-sabado/",
-     "title": "EUA: chefe da FAA prevê entre 4 mil e 5 mil dos voos cancelados neste sábado"
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTnhXRmlrcVZiZFJtOWVCTWZxRGhEeVNSZU9SWXJJc0swLWNhVVhyRzMwRWR3bVh3RmtVLUFFc0lkM1J4R2pOU0stcE9aaU44bzBHUE1uSC1scVFFQ2FqYUU0NVROQmY5bFNiQWNGOEhfckRlZ1RtSjhaa09ydGpId2p3anVSY2h4MThsYkdsX0dMVWFRbkpDR1l1MDkxdVh0NjhDbDBSaXdLdE9rMEhzMTlPRlB6M29wNFE?oc=5",
+     "title": "Entre a economia e o STF em defesa do rigor técnico"
     }
    ],
    "ids": [
-    "e77be3f7c9f8"
+    "4d8cfa8ccc61"
    ],
-   "snippet": "Segundo ele, os atrasos e cancelamentos de hoje permitirão recuperação total no domingo (15) The post EUA: chefe da FAA prevê entre 4 mil e 5 mil dos voos cancelados neste sábado appeared first on InfoMoney .",
+   "snippet": "",
    "prescore": 2.2,
-   "headline": "EUA: chefe da FAA prevê entre 4 mil e 5 mil dos voos cancelados neste sábado",
-   "category": "internacional",
+   "headline": "Entre a economia e o STF em defesa do rigor técnico",
+   "category": "politica",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Segundo ele, os atrasos e cancelamentos de hoje permitirão recuperação total no domingo (15) The post EUA: chefe da FAA prevê entre 4 mil e 5 mil dos voos cancelados neste sábado appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "464aa68fe731",
-   "title": "Mpox: Rio retoma vacinação contra a doença; veja quem tem direito e onde se imunizar",
-   "link": "https://www.infomoney.com.br/brasil/mpox-rio-retoma-vacinacao-contra-a-doenca-veja-quem-tem-direito-e-onde-se-imunizar/",
-   "published": "2026-11-14T19:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/brasil/mpox-rio-retoma-vacinacao-contra-a-doenca-veja-quem-tem-direito-e-onde-se-imunizar/",
-     "title": "Mpox: Rio retoma vacinação contra a doença; veja quem tem direito e onde se imunizar"
-    }
-   ],
-   "ids": [
-    "464aa68fe731"
-   ],
-   "snippet": "Imunizante está disponível em cinco unidades para pessoas com HIV/Aids e CD4 abaixo de 200; cidade soma 287 casos em 2026 The post Mpox: Rio retoma vacinação contra a doença; veja quem tem direito e onde se imunizar appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Mpox: Rio retoma vacinação contra a doença; veja quem tem direito e onde se imunizar",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Imunizante está disponível em cinco unidades para pessoas com HIV/Aids e CD4 abaixo de 200; cidade soma 287 casos em 2026 The post Mpox: Rio retoma vacinação contra a doença; veja quem tem direito e onde se imunizar appeared first on InfoMoney .",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13893,6 +14239,39 @@
    "prescore": 2.2,
    "headline": "Jensen Huang perdeu o cargo na Nvidia e US$ 10 bilhões; um divórcio pode custar muito mais",
    "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "73bca4470d3b",
+   "title": "Nubank Clears Regulatory Hurdle for Brazilian Banking License",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbVBlaHp2MllUS2psZkFYT054aW1rNHVTSHFSYVpVNFJvaGstTHA4ZGZSaHEyTWplZXZlcVdfeGFpNjg1QWNndERyUFQ2UHRJdFFHT3IwS2dMRlVObTUydHdnalBUTWdlNnMxTzR0WFBkanV4eVRHbEFlZmhGNkltWkhQQTU0OFFvS0xvSTdYczJkZw?oc=5",
+   "published": "2026-11-14T17:37:02+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Securities.io",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbVBlaHp2MllUS2psZkFYT054aW1rNHVTSHFSYVpVNFJvaGstTHA4ZGZSaHEyTWplZXZlcVdfeGFpNjg1QWNndERyUFQ2UHRJdFFHT3IwS2dMRlVObTUydHdnalBUTWdlNnMxTzR0WFBkanV4eVRHbEFlZmhGNkltWkhQQTU0OFFvS0xvSTdYczJkZw?oc=5",
+     "title": "Nubank Clears Regulatory Hurdle for Brazilian Banking License"
+    }
+   ],
+   "ids": [
+    "73bca4470d3b"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Nubank Clears Regulatory Hurdle for Brazilian Banking License",
+   "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -14171,10 +14550,76 @@
    "ai": false
   },
   {
+   "id": "a87c18128a6f",
+   "title": "Ministério Público nega pedido para reabrir caso da rachadinha contra Flávio Bolsonaro",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/ministerio-publico-nega-pedido-para-reabrir-caso-da-rachadinha-contra-flavio-bolsonaro.shtml",
+   "published": "2026-11-15T00:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/ministerio-publico-nega-pedido-para-reabrir-caso-da-rachadinha-contra-flavio-bolsonaro.shtml",
+     "title": "Ministério Público nega pedido para reabrir caso da rachadinha contra Flávio Bolsonaro"
+    }
+   ],
+   "ids": [
+    "a87c18128a6f"
+   ],
+   "snippet": "O Ministério Público do Rio de Janeiro negou um pedido feito pelo deputado federal Rui Falcão (PT-SP) para reabrir a investigação da suspeita de rachadinha contra o senador Flávio Bolsonaro (PL-RJ), candidato derrotado a presidente. Leia mais (11/14/2026 - 21h00)",
+   "prescore": 2.0,
+   "headline": "Ministério Público nega pedido para reabrir caso da rachadinha contra Flávio Bolsonaro",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Ministério Público do Rio de Janeiro negou um pedido feito pelo deputado federal Rui Falcão (PT-SP) para reabrir a investigação da suspeita de rachadinha contra o senador Flávio Bolsonaro (PL-RJ), candidato derrotado a presidente. Leia mais (11/14/2026 - 21h00)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "90efe7abd3ca",
+   "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+   "published": "2026-11-14T23:21:21+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+     "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy"
+    }
+   ],
+   "ids": [
+    "90efe7abd3ca"
+   ],
+   "snippet": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
+   "prescore": 2.0,
+   "headline": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "daadbbb0bd00",
    "title": "SpaceX catches upper stage of Starship rocket in historic first",
    "link": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
-   "published": "2026-11-14T21:52:01+00:00",
+   "published": "2026-11-14T23:10:14+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -14193,6 +14638,39 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Starship Test Flight 15 marked the first time Elon Musk's company tried to catch both the booster and upper stage of the rocket.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7cd4b72a2ec5",
+   "title": "$180 million Van Gogh tests the art market and collector confidence",
+   "link": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+   "published": "2026-11-14T22:34:07+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+     "title": "$180 million Van Gogh tests the art market and collector confidence"
+    }
+   ],
+   "ids": [
+    "7cd4b72a2ec5"
+   ],
+   "snippet": "The art auctions in New York next week could top $2 billion, as a treasure trove of masterpieces comes to the market for the first time in decades.",
+   "prescore": 2.0,
+   "headline": "$180 million Van Gogh tests the art market and collector confidence",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The art auctions in New York next week could top $2 billion, as a treasure trove of masterpieces comes to the market for the first time in decades.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14424,39 +14902,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Despite the turbulence, the S&P 500 secured a weekly gain of 2.5%, while the tech-heavy Nasdaq added 2.3%.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "90efe7abd3ca",
-   "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
-   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-   "published": "2026-11-14T18:32:47+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-     "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy"
-    }
-   ],
-   "ids": [
-    "90efe7abd3ca"
-   ],
-   "snippet": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
-   "prescore": 2.0,
-   "headline": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14796,468 +15241,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "045e840d9661",
-   "title": "Três Poderes: Fachin é o vencedor da semana e PF, a perdedora",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/tres-poderes-fachin-e-o-vencedor-da-semana-e-pf-a-perdedora.shtml",
-   "published": "2026-11-14T15:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/tres-poderes-fachin-e-o-vencedor-da-semana-e-pf-a-perdedora.shtml",
-     "title": "Três Poderes: Fachin é o vencedor da semana e PF, a perdedora"
-    }
-   ],
-   "ids": [
-    "045e840d9661"
-   ],
-   "snippet": "Vencedor da semana: o presidente do STF (Supremo Tribunal Federal), Edson Fachin, que encerrou o polêmico inquérito das fake news após mais de sete anos. Leia mais (11/14/2026 - 12h00)",
-   "prescore": 2.0,
-   "headline": "Três Poderes: Fachin é o vencedor da semana e PF, a perdedora",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Vencedor da semana: o presidente do STF (Supremo Tribunal Federal), Edson Fachin, que encerrou o polêmico inquérito das fake news após mais de sete anos. Leia mais (11/14/2026 - 12h00)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e62244f38033",
-   "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
-   "link": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-   "published": "2026-11-14T14:54:22+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-     "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off"
-    }
-   ],
-   "ids": [
-    "e62244f38033"
-   ],
-   "snippet": "\"Grand Theft Auto VI\" launches Nov. 19 with huge expectations. Its impact could reach creators, streaming, music, workplace time off, food delivery and tourism.",
-   "prescore": 2.0,
-   "headline": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "\"Grand Theft Auto VI\" launches Nov. 19 with huge expectations. Its impact could reach creators, streaming, music, workplace time off, food delivery and tourism.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "cafdcfb9c10c",
-   "title": "Heating oil prices are up 59% from last winter. The spike is 'crushing folks,' Maine nonprofit says",
-   "link": "https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html",
-   "published": "2026-11-14T14:30:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html",
-     "title": "Heating oil prices are up 59% from last winter. The spike is 'crushing folks,' Maine nonprofit says"
-    }
-   ],
-   "ids": [
-    "cafdcfb9c10c"
-   ],
-   "snippet": "With household budgets already squeezed by persistent inflation, some residents are seeking emergency help with heating oil bills before winter begins.",
-   "prescore": 2.0,
-   "headline": "Heating oil prices are up 59% from last winter. The spike is 'crushing folks,' Maine nonprofit says",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "With household budgets already squeezed by persistent inflation, some residents are seeking emergency help with heating oil bills before winter begins.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "07da92c6ba60",
-   "title": "Centro de Liderança Pública premia representantes do Piauí por gestão e combate à seca",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/centro-de-lideranca-publica-premia-representantes-do-piaui-por-gestao-e-combate-a-seca.shtml",
-   "published": "2026-11-14T14:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/centro-de-lideranca-publica-premia-representantes-do-piaui-por-gestao-e-combate-a-seca.shtml",
-     "title": "Centro de Liderança Pública premia representantes do Piauí por gestão e combate à seca"
-    }
-   ],
-   "ids": [
-    "07da92c6ba60"
-   ],
-   "snippet": "O Centro de Liderança Pública (CLP) anuncia neste sábado (14) os vencedores de duas categorias do Prêmio Liderança Pública 2026, iniciativa que reconhece profissionais comprometidos com a melhoria da gestão pública brasileira. Leia mais (11/14/2026 - 11h30)",
-   "prescore": 2.0,
-   "headline": "Centro de Liderança Pública premia representantes do Piauí por gestão e combate à seca",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O Centro de Liderança Pública (CLP) anuncia neste sábado (14) os vencedores de duas categorias do Prêmio Liderança Pública 2026, iniciativa que reconhece profissionais comprometidos com a melhoria da gestão pública brasileira. Leia mais (11/14/2026 - 11h30)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1ab48b628505",
-   "title": "Tesla convida clientes para comprar robotáxi para uso pessoal",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/tesla-convida-clientes-para-comprar-robotaxi-para-uso-pessoal.shtml",
-   "published": "2026-11-14T14:19:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/tesla-convida-clientes-para-comprar-robotaxi-para-uso-pessoal.shtml",
-     "title": "Tesla convida clientes para comprar robotáxi para uso pessoal"
-    }
-   ],
-   "ids": [
-    "1ab48b628505"
-   ],
-   "snippet": "A Tesla informou nessa sexta-feira (13) que estava convidando clientes selecionados a comprar o robotáxi Cybercab para uso pessoal em uma iniciativa para avançar na entrega de veículos totalmente autônomos e projetados para esse fim aos consumidores. Leia mais (11/14/2026 - 11h19)",
-   "prescore": 2.0,
-   "headline": "Tesla convida clientes para comprar robotáxi para uso pessoal",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Tesla informou nessa sexta-feira (13) que estava convidando clientes selecionados a comprar o robotáxi Cybercab para uso pessoal em uma iniciativa para avançar na entrega de veículos totalmente autônomos e projetados para esse fim aos consumidores. Leia mais (11/14/2026 - 11h19)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "8e6bc56f8d35",
-   "title": "Juice your growth and save on taxes in this workplace investment account",
-   "link": "https://www.cnbc.com/2026/11/14/hsa-investing-tax-benefits.html",
-   "published": "2026-11-14T14:08:17+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/hsa-investing-tax-benefits.html",
-     "title": "Juice your growth and save on taxes in this workplace investment account"
-    }
-   ],
-   "ids": [
-    "8e6bc56f8d35"
-   ],
-   "snippet": "High-deductible medical benefit plans with health savings accounts are on the menu at many employers as enrollment season for 2027 continues.",
-   "prescore": 2.0,
-   "headline": "Juice your growth and save on taxes in this workplace investment account",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "High-deductible medical benefit plans with health savings accounts are on the menu at many employers as enrollment season for 2027 continues.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "c3b558a2b152",
-   "title": "Berkshire breaks out to record high with fourth-quarter rally reaching 19%",
-   "link": "https://www.cnbc.com/2026/11/14/berkshire-breaks-out-to-record-high-with-fourth-quarter-rally-reaching-19percent.html",
-   "published": "2026-11-14T14:02:39+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/berkshire-breaks-out-to-record-high-with-fourth-quarter-rally-reaching-19percent.html",
-     "title": "Berkshire breaks out to record high with fourth-quarter rally reaching 19%"
-    }
-   ],
-   "ids": [
-    "c3b558a2b152"
-   ],
-   "snippet": "Berkshire Hathaway's red-hot shares are ending a strong week with four consecutive fresh record high closes.",
-   "prescore": 2.0,
-   "headline": "Berkshire breaks out to record high with fourth-quarter rally reaching 19%",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Berkshire Hathaway's red-hot shares are ending a strong week with four consecutive fresh record high closes.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6f98fde83e79",
-   "title": "Microsoft diz que serviços foram restabelecidos após pane de mais de 30 horas",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/tec/2026/11/microsoft-diz-que-servicos-foram-reestabelecidos-apos-pane-de-mais-de-30-horas.shtml",
-   "published": "2026-11-14T13:39:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/tec/2026/11/microsoft-diz-que-servicos-foram-reestabelecidos-apos-pane-de-mais-de-30-horas.shtml",
-     "title": "Microsoft diz que serviços foram restabelecidos após pane de mais de 30 horas"
-    }
-   ],
-   "ids": [
-    "6f98fde83e79"
-   ],
-   "snippet": "A Microsoft informou neste sábado (14) que os serviços do Outlook, Teams, Copilot e de seus outros produtos foram totalmente restabelecidos, encerrando uma interrupção global que paralisou as comunicações online de empresas e governos por mais de 30 horas . Leia mais (11/14/2026 - 10h39)",
-   "prescore": 2.0,
-   "headline": "Microsoft diz que serviços foram restabelecidos após pane de mais de 30 horas",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Microsoft informou neste sábado (14) que os serviços do Outlook, Teams, Copilot e de seus outros produtos foram totalmente restabelecidos, encerrando uma interrupção global que paralisou as comunicações online de empresas e governos por mais de 30 horas . Leia mais (11/14/2026 - 10h39)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "544569cde872",
-   "title": "Retailers are turning to entertainment to win shoppers’ attention",
-   "link": "https://www.cnbc.com/2026/11/14/retailers-invest-entertainment.html",
-   "published": "2026-11-14T13:00:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/retailers-invest-entertainment.html",
-     "title": "Retailers are turning to entertainment to win shoppers’ attention"
-    }
-   ],
-   "ids": [
-    "544569cde872"
-   ],
-   "snippet": "Retailers are increasingly investing in and building out entertainment studios as the race for audience attention speeds up.",
-   "prescore": 2.0,
-   "headline": "Retailers are turning to entertainment to win shoppers’ attention",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Retailers are increasingly investing in and building out entertainment studios as the race for audience attention speeds up.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0ff364750688",
-   "title": "Meet the seven co-founders of Anthropic",
-   "link": "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html",
-   "published": "2026-11-14T12:15:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html",
-     "title": "Meet the seven co-founders of Anthropic"
-    }
-   ],
-   "ids": [
-    "0ff364750688"
-   ],
-   "snippet": "Four researchers, a former journalist, a public policymaker, and an engineer founded Anthropic in 2021. They're now poised to become multi-billionaires.",
-   "prescore": 2.0,
-   "headline": "Meet the seven co-founders of Anthropic",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Four researchers, a former journalist, a public policymaker, and an engineer founded Anthropic in 2021. They're now poised to become multi-billionaires.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "fbe76bfd53a9",
-   "title": "CEO da TIM vê 'risco muito baixo' de SpaceX virar rival das operadoras no Brasil",
-   "link": "https://exame.com/invest/mercados/ceo-da-tim-ve-risco-muito-baixo-de-spacex-virar-rival-das-operadoras-no-brasil/",
-   "published": "2026-11-14T12:03:50+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/mercados/ceo-da-tim-ve-risco-muito-baixo-de-spacex-virar-rival-das-operadoras-no-brasil/",
-     "title": "CEO da TIM vê 'risco muito baixo' de SpaceX virar rival das operadoras no Brasil"
-    }
-   ],
-   "ids": [
-    "fbe76bfd53a9"
-   ],
-   "snippet": "Alberto Griselli afirma que Brasil tem características diferentes dos EUA; mas TIM negocia parcerias com SpaceX e AST SpaceMobile e espera novidades até o fim do ano",
-   "prescore": 2.0,
-   "headline": "CEO da TIM vê 'risco muito baixo' de SpaceX virar rival das operadoras no Brasil",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Alberto Griselli afirma que Brasil tem características diferentes dos EUA; mas TIM negocia parcerias com SpaceX e AST SpaceMobile e espera novidades até o fim do ano",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e4dfe4f27195",
-   "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
-   "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
-   "published": "2026-11-14T12:00:01+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
-     "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home"
-    }
-   ],
-   "ids": [
-    "e4dfe4f27195"
-   ],
-   "snippet": "Eric Trump-backed robot startup Foundation Future Industries has run low on cash and missed payroll, as CEO Sankaet Pathak faces scrutiny over a $4.6 million company loan.",
-   "prescore": 2.0,
-   "headline": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Eric Trump-backed robot startup Foundation Future Industries has run low on cash and missed payroll, as CEO Sankaet Pathak faces scrutiny over a $4.6 million company loan.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "dfe5285bc8e3",
-   "title": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
-   "link": "https://g1.globo.com/politica/politico/noticia/2026/11/14/fux-suspende-julgamento-sobre-escala-5x2-e-leva-caso-para-plenario-fisico-do-stf.ghtml",
-   "published": "2026-11-14T19:55:35+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/politico/noticia/2026/11/14/fux-suspende-julgamento-sobre-escala-5x2-e-leva-caso-para-plenario-fisico-do-stf.ghtml",
-     "title": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF"
-    }
-   ],
-   "ids": [
-    "dfe5285bc8e3"
-   ],
-   "snippet": "Ministro Luiz Fux durante julgamento no Supremo Luiz Silveira/STF O ministro Luiz Fux fez um destaque no julgamento sobre a transição da escala 6x1 para a 5x2 e levou o processo para o plenário físico do Supremo Tribunal Federal (STF). Ainda não há data para a retomada do caso, já que o presidente da Corte, ministro Edson Fachin, precisará colocar a ação em pauta. No plenário virtual, três ministros já tinham votado e acompanhado o relator Flávio Dino para confirmar as regras definidas pelo ministro para o início da escala 5x2 em 16 de dezembro. Agora, o placar fica zerado e os ministros terão",
-   "prescore": 1.8,
-   "headline": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Ministro Luiz Fux durante julgamento no Supremo Luiz Silveira/STF O ministro Luiz Fux fez um destaque no julgamento sobre a transição da escala 6x1 para a 5x2 e levou o processo para o plenário físico do Supremo Tribunal Federal (STF). Ainda não há data para a retomada do caso, já que o presidente da Corte, ministro Edson Fachin, precisará colocar a ação em pauta. No plenário virtual, três ministr",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "52b9d7236143",
-   "title": "Pane aérea nos EUA atrasa viagem de brasileiro ao funeral do pai no Rio",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/pane-aerea-nos-eua-atrasa-viagem-de-brasileiro-ao-funeral-do-pai-no-rio.shtml",
-   "published": "2026-11-14T18:23:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/pane-aerea-nos-eua-atrasa-viagem-de-brasileiro-ao-funeral-do-pai-no-rio.shtml",
-     "title": "Pane aérea nos EUA atrasa viagem de brasileiro ao funeral do pai no Rio"
-    }
-   ],
-   "ids": [
-    "52b9d7236143"
-   ],
-   "snippet": "Na última sexta-feira (13), o empresário Bruno Souza, 26, comprou uma passagem de Orlando, nos Estados Unidos , onde mora, para o Rio de Janeiro para o funeral de seu pai, Julio Diniz Pinheiro, 87. O voo da companhia aérea Copa Airlines estava agendado para as 17h no horário local, com uma conexão na Cidade do Panamá e chegada ao Rio de Janeiro na manhã do sábado (14). Leia mais (11/14/2026 - 15h23)",
-   "prescore": 1.8,
-   "headline": "Pane aérea nos EUA atrasa viagem de brasileiro ao funeral do pai no Rio",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Na última sexta-feira (13), o empresário Bruno Souza, 26, comprou uma passagem de Orlando, nos Estados Unidos , onde mora, para o Rio de Janeiro para o funeral de seu pai, Julio Diniz Pinheiro, 87. O voo da companhia aérea Copa Airlines estava agendado para as 17h no horário local, com uma conexão na Cidade do Panamá e chegada ao Rio de Janeiro na manhã do sábado (14). Leia mais (11/14/2026 - 15h2",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -15279,7 +15262,7 @@
    "id": "braziljournal",
    "name": "Brazil Journal",
    "ok": true,
-   "count": 10,
+   "count": 7,
    "error": null
   },
   {
@@ -15335,28 +15318,28 @@
    "id": "folha-poder",
    "name": "Folha",
    "ok": true,
-   "count": 44,
+   "count": 42,
    "error": null
   },
   {
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 44,
+   "count": 42,
    "error": null
   },
   {
    "id": "g1-economia",
    "name": "g1",
    "ok": true,
-   "count": 42,
+   "count": 40,
    "error": null
   },
   {
    "id": "g1-politica",
    "name": "g1",
    "ok": true,
-   "count": 41,
+   "count": 37,
    "error": null
   },
   {
@@ -15370,28 +15353,28 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 26,
+   "count": 24,
    "error": null
   },
   {
    "id": "bloomberg-markets",
    "name": "Bloomberg",
    "ok": true,
-   "count": 19,
+   "count": 20,
    "error": null
   },
   {
    "id": "bloomberg-deals",
    "name": "Bloomberg",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "id": "bloomberg-politics",
    "name": "Bloomberg",
    "ok": true,
-   "count": 17,
+   "count": 16,
    "error": null
   },
   {
@@ -15440,7 +15423,7 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 24,
+   "count": 21,
    "error": null
   },
   {
@@ -15702,11 +15685,11 @@
   }
  ],
  "stats": {
-  "raw": 795,
-  "unique": 438,
-  "unique_all": 752,
+  "raw": 776,
+  "unique": 429,
+  "unique_all": 736,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.5
+  "seconds": 3.4
  }
 }
