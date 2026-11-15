@@ -45,7 +45,8 @@ async function checkData() {
     if (!digest.brief?.headline) warn("edição", "o digest publicado não tem briefing");
     const items = digest.items || [];
     const sem = items.filter((it) => !it.summary).length;
-    if (items.length && sem / items.length > 0.6) warn("edição", `${sem} de ${items.length} notícias sem análise`);
+    // a análise só roda em dias úteis, de manhã: no fim de semana a edição fica sem análise de propósito
+    if (weekday && hhmm >= 840 && items.length && sem / items.length > 0.6) warn("edição", `${sem} de ${items.length} notícias sem análise`);
     const audio = await getJson(`${SITE}audio/briefing.json`).catch(() => null);
     if (digest.brief?.headline && (!audio || audio.headline !== digest.brief.headline))
       warn("áudio", `o áudio é de outro briefing ("${(audio?.headline || "nenhum").slice(0, 60)}"); o portal está usando a voz do navegador`);
