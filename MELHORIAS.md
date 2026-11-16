@@ -49,6 +49,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 16/11 — O relógio das coletas parava depois de uma volta (#81). O GitHub não gera o evento workflow_run quando a atualização foi disparada pelo próprio relógio, com o token do workflow. Em 16/11, ele disparou a atualização das 09h23 e a das 11h12, e depois parou. Agora, a cada volta, o relógio dispara a próxima atualização e também a si mesmo, o que o GitHub permite com workflow_dispatch. A espera de 55 minutos é medida pela última atualização. Também no vigia: uma falha de carregamento só vale se acontecer de novo na segunda tentativa, porque o Pages devolveu um 503 por um instante em 16/11.
 - 15/11 — Leads do mesmo negócio com nomes diferentes são juntados (#80). O critério é mesmo sinal, mesma contraparte conhecida e um nome em comum. Na base inteira, a regra só juntou o par da BP: "Fatia da BP na maior descoberta em 25 anos" e "Participação da BP em bloco offshore", ambos com a Petrobras de contraparte. A base foi de 65 para 64 leads.
 - 14/11 — Leads duplicados por nome escrito de outro jeito são juntados (#79):
   - "Grupo Casas Bahia" e "Casas Bahia", e "Giga+ / Sky" e "Giga+ (ex-Alloha) e Sky", viravam leads separados. Agora o nome é comparado sem "Grupo", "S.A.", parênteses e conectivos, e os 2 pares que já estavam na base foram juntados (67 → 65 leads);

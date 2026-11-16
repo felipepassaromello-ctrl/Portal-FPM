@@ -104,7 +104,7 @@ async function checkPages(pdf) {
       const errs = [], failed = [];
       p.on("pageerror", (e) => errs.push(e.message.slice(0, 140)));
       p.on("console", (m) => { if (m.type() === "error" && !/Failed to load resource|ERR_|CERT|fonts\.g|brapi/.test(m.text())) errs.push(m.text().slice(0, 140)); });
-      p.on("response", (r) => { if (r.url().startsWith(SITE) && r.status() >= 400) failed.push(`${r.status()} ${r.url().replace(SITE, "")}`); });
+      p.on("response", (r) => { if (r.url().startsWith(SITE) && r.status() >= 400) failed.push([r.status(), r.url()]); });
       try {
         await p.goto(SITE + url, { waitUntil: "load", timeout: 45000 });
         await p.waitForTimeout(3500);
@@ -120,7 +120,14 @@ async function checkPages(pdf) {
         return el ? `${el.tagName.toLowerCase()}.${String(el.className).split(" ")[0]}` : "?";
       });
       if (errs.length) warn("página", `${url} (${dev}): erro de JavaScript: ${[...new Set(errs)].slice(0, 2).join(" | ")}`);
-      if (failed.length) warn("página", `${url} (${dev}): ${[...new Set(failed)].slice(0, 3).join(", ")}`);
+      // o GitHub Pages às vezes devolve 503 por um instante: só vale a falha que se repete numa segunda tentativa
+      const still = [];
+      for (const [code, u] of failed) {
+        await new Promise((ok) => setTimeout(ok, 5000));
+        const r2 = await fetch(u, { cache: "no-store" }).catch(() => null);
+        if (!r2 || r2.status >= 400) still.push(`${r2 ? r2.status : code} ${u.replace(SITE, "")}`);
+      }
+      if (still.length) warn("página", `${url} (${dev}): ${[...new Set(still)].slice(0, 3).join(", ")}`);
       if (wide) warn("página", `${url} (${dev}): conteúdo escapando da tela (${wide})`);
       if (fr && url === `cias.html#cia/${fr.k}` && dev === "iPhone") {
         // o link "PDF" do fato relevante tem de abrir a cópia do site, não a CVM
