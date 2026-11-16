@@ -851,6 +851,13 @@
      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaTBoRUNSa0F0YUl1WWlvbVFCYXJySUs2VFNsQXhqbVMyY2NvSDQwSUdJTGdUcUJ0aHNhMFl5SllzYkQ0NkNWV2FXNndrMDViTllyaGFTWEEtNG9uYVQ2ZUw4cm1ybXl4aU1WbkFHOXhkSldnT1ptTXhaTm1jWFNFZVhpZjlFdERLUEItZ3ZUUVBlMU9KVVFNRFpuazk0ZGJrSkk2aEpac0ZiRkk4c2o0cXNmVzExU2JTTFZyMzFOUjFNUQ?oc=5",
      "source": "Times Brasil | CNBC",
      "signal": "Reestruturação"
+    },
+    {
+     "date": "2026-11-16",
+     "headline": "GPA protocola emissão de R$ 92 milhões em debêntures para credores no plano de recuperação extrajudicial",
+     "link": "https://www.infomoney.com.br/mercados/gpa-pcar3-protocola-pedido-de-emissao-de-debentures-no-valor-de-r-92-milhoes/",
+     "source": "InfoMoney",
+     "signal": "Reestruturação"
     }
    ],
    "ids": [
@@ -859,15 +866,16 @@
     "08beb39f07ba",
     "d30d3a81050e",
     "dbcec22d0657",
-    "b1e4ad743187"
+    "b1e4ad743187",
+    "fef105f39379"
    ],
    "importance": 8,
    "signal": "Reestruturação",
-   "counterparty": "credores",
+   "counterparty": "Credores",
    "advisors": "não divulgado",
-   "why": "Prazo de 60 dias para emissão das novas debêntures abre espaço para coordenação, assessoria jurídica e atuação de investidores em crédito.",
-   "sector": "Varejo alimentar",
-   "last_seen": "2026-10-22",
+   "why": "O GPA implementa um Plano de Recuperação Extrajudicial com debêntures a credores. É oportunidade para assessoria jurídica na reestruturação, em possíveis vendas de ativos e na entrada de novos investidores.",
+   "sector": "Varejo",
+   "last_seen": "2026-11-16",
    "status": "Virou deal"
   },
   "brb": {
@@ -2005,8 +2013,58 @@
    "why": "A Motiva diz ver oportunidades de aquisição no cenário volátil. Vale abordar a companhia e donos de ativos de infraestrutura que busquem vender.",
    "last_seen": "2026-11-13",
    "status": "Em aberto"
+  },
+  "startupsbrasileirascomfundadoresbuscando": {
+   "key": "startupsbrasileirascomfundadoresbuscando",
+   "company": "Startups brasileiras com fundadores buscando liquidez",
+   "first_seen": "2026-11-16",
+   "events": [
+    {
+     "date": "2026-11-16",
+     "headline": "Spectra abre frente para comprar participações de fundadores de startups",
+     "link": "https://neofeed.com.br/startups/rico-no-papel-pobre-na-conta-spectra-abre-nova-frente-para-comprar-fatias-de-fundadores-de-startups/",
+     "source": "NeoFeed",
+     "signal": "Entrada de investidor"
+    }
+   ],
+   "ids": [
+    "5a8fb7a67cde"
+   ],
+   "importance": 6,
+   "signal": "Entrada de investidor",
+   "counterparty": "Spectra",
+   "advisors": "não divulgado",
+   "why": "Fundadores com patrimônio em papel e sem liquidez podem vender fatias à Spectra. Fundadores e startups são o público a abordar para estruturar as operações.",
+   "sector": "Venture capital / startups",
+   "last_seen": "2026-11-16",
+   "status": "Em aberto"
+  },
+  "participacoesdamultiplanemshoppings": {
+   "key": "participacoesdamultiplanemshoppings",
+   "company": "Participações da Multiplan em shoppings",
+   "first_seen": "2026-11-16",
+   "events": [
+    {
+     "date": "2026-11-16",
+     "headline": "Por que a Multiplan decidiu vender fatias de seus shoppings",
+     "link": "https://neofeed.com.br/videos/numeros-falam/por-que-a-multiplan-decidiu-vender-fatias-de-seus-shoppings/",
+     "source": "NeoFeed",
+     "signal": "Venda"
+    }
+   ],
+   "ids": [
+    "178084c98914"
+   ],
+   "importance": 6,
+   "signal": "Venda",
+   "counterparty": "não divulgado",
+   "advisors": "não divulgado",
+   "why": "A Multiplan adota política de vender fatias de shoppings maduros; novas vendas podem exigir assessoria jurídica. Fundos imobiliários e investidores institucionais seriam os compradores a abordar.",
+   "sector": "Shopping centers (real estate)",
+   "last_seen": "2026-11-16",
+   "status": "Em aberto"
   }
  },
  "backfilled": true,
- "updated_at": "2026-11-16T08:16:35.167277-03:00"
+ "updated_at": "2026-11-16T08:26:29.684105-03:00"
 }
