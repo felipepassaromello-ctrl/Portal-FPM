@@ -702,6 +702,25 @@ def _merge_lead(into: dict, other: dict) -> None:
             into[f] = other[f]
 
 
+LEAD_GENERIC = LEAD_STOP | {"participacao", "fatia", "na", "no", "nas", "nos", "em", "o", "brasil", "unidade", "unidades",
+                             "ativos", "ativo", "projeto", "projetos", "negocio", "operacao", "operacoes", "empresa",
+                             "empresas", "parte", "controle", "com", "para"}
+
+
+def lead_words(company: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9+]+", fold(re.sub(r"\(.*?\)", " ", company or ""))) if w not in LEAD_GENERIC and len(w) >= 2}
+
+
+def same_deal_lead(a: dict, b: dict) -> bool:
+    """O mesmo negócio descrito com nomes diferentes ("Fatia da BP na maior descoberta em 25 anos" x "Participação da
+    BP em bloco offshore no Brasil"): mesmo sinal, mesma contraparte conhecida e um nome em comum."""
+    if a.get("signal") != b.get("signal") or is_unknown(a.get("counterparty")) or is_unknown(b.get("counterparty")):
+        return False
+    if re.sub(r"[^a-z0-9]", "", fold(a["counterparty"])) != re.sub(r"[^a-z0-9]", "", fold(b["counterparty"])):
+        return False
+    return bool(lead_words(a.get("company", "")) & lead_words(b.get("company", "")))
+
+
 def dedupe_leads(leads: dict) -> int:
     """Junta os leads da base que são o mesmo com nomes escritos de outro jeito. Devolve quantos foram juntados."""
     first: dict[str, str] = {}
@@ -712,6 +731,11 @@ def dedupe_leads(leads: dict) -> int:
             continue
         if n in first and first[n] in leads:
             _merge_lead(leads[first[n]], leads.pop(k))
+            merged += 1
+            continue
+        older = next((x for x in first.values() if x in leads and same_deal_lead(leads[x], leads[k])), None)
+        if older:
+            _merge_lead(leads[older], leads.pop(k))
             merged += 1
         else:
             first[n] = k
