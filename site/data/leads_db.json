@@ -1888,24 +1888,33 @@
      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUE5OR2lsd2JlUXc1al9ZWFRjVlMzRTczdmV3RER2LU0tQnoxeGowYlZFSUd4VEllWGozTzBnRGtick9kUFBPeHREYW9vTzBOT2o1VVk2SW1tRjE4anVGUjNUNzJzVUs2TXo3MHFVTGE2UnMyeGNUZFRldVVyczZSVGptNmtOYzBCTm96V0RMQmk4T0Rud1d3MFYwcnJTYzBXa1BfNDk0ZGp4VDNHS1VCY1RwTFZWOVRNNWtXUGNsYmpzLTdx0gHSAUFVX3lxTE5fdWtMYlVuOWFkYjRmU0cwdjIwbDNtS0ZCZzZtV1FiQ1pMbDEwWF9WYU9FS3l6azM3b0JOY3NjNXdiSkZHTUI4TGExNXdpUzBmb3NaNlNzLWt5UEo0ZU9ud0IxVk1rWC0welNYQVc1dDNwZnNHSlZvMWJvU2plb29VMW13alcybDVYcmpQNWlSZ2l5OWR4eHVod3NLTE5nSTZSemxkcEVySVBKSmZaLTdyeUs2Z2g0THgyNDd4RWpycDlYV3YyVktNUGRtZ0NBS21kQQ?oc=5",
      "source": "Baird Maritime",
      "signal": "Venda"
+    },
+    {
+     "date": "2026-11-17",
+     "headline": "Petrobras analisa oportunidades em exploração, mas nega acordo vinculante sobre Bumerangue",
+     "link": "https://www.moneytimes.com.br/petrobras-petr4-analisa-oportunidades-em-exploracao-mas-diz-que-nao-assinou-acordo-sobre-bumerangue-fets/",
+     "source": "Money Times",
+     "signal": "Aquisição"
     }
    ],
    "ids": [
     "f857ebcd273d",
     "3ec40376f53e",
     "fd88cac36db2",
-    "ad0b96794440"
+    "ad0b96794440",
+    "33caaeb0ebf1"
    ],
    "importance": 8,
-   "signal": "Venda",
+   "signal": "Aquisição",
    "counterparty": "Petrobras",
    "advisors": "não divulgado",
-   "why": "A BP procura vender a fatia e a Petrobras aparece como compradora. Vale abordar a BP para assessoria na venda e a Petrobras na aquisição.",
+   "why": "A Petrobras analisa oportunidades de exploração e há discussão sobre a participação da BP no bloco, sem acordo vinculante. Vale abordar Petrobras ou BP caso a negociação avance.",
    "sector": "Petróleo e gás",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-17",
    "status": "Em aberto",
    "aliases": [
-    "participacaodabpemblocooffshorenobrasil"
+    "participacaodabpemblocooffshorenobrasil",
+    "petrobrasparticipacaodabpnoblocodebumera"
    ]
   },
   "rumo": {
@@ -2081,31 +2090,6 @@
    "last_seen": "2026-11-16",
    "status": "Em aberto"
   },
-  "petrobrasparticipacaodabpnoblocodebumera": {
-   "key": "petrobrasparticipacaodabpnoblocodebumera",
-   "company": "Petrobras / participação da BP no bloco de Bumerangue",
-   "first_seen": "2026-11-17",
-   "events": [
-    {
-     "date": "2026-11-17",
-     "headline": "Petrobras analisa oportunidades em exploração, mas nega acordo vinculante sobre Bumerangue",
-     "link": "https://www.moneytimes.com.br/petrobras-petr4-analisa-oportunidades-em-exploracao-mas-diz-que-nao-assinou-acordo-sobre-bumerangue-fets/",
-     "source": "Money Times",
-     "signal": "Aquisição"
-    }
-   ],
-   "ids": [
-    "33caaeb0ebf1"
-   ],
-   "importance": 7,
-   "signal": "Aquisição",
-   "counterparty": "BP",
-   "advisors": "não divulgado",
-   "why": "A Petrobras analisa oportunidades de exploração e há discussão sobre a participação da BP no bloco, sem acordo vinculante. Vale abordar Petrobras ou BP caso a negociação avance.",
-   "sector": "Petróleo e gás",
-   "last_seen": "2026-11-17",
-   "status": "Em aberto"
-  },
   "amil": {
    "key": "amil",
    "company": "Amil",
@@ -2182,5 +2166,5 @@
   }
  },
  "backfilled": true,
- "updated_at": "2026-11-17T10:17:06.167843-03:00"
+ "updated_at": "2026-11-17T10:23:01.115273-03:00"
 }
