@@ -1207,13 +1207,16 @@
   }
 
   function renderDeals() {
-    const deals = [...state.digest.deals].sort((a, z) => z.importance - a.importance);
-    $("#deals-count").textContent = `${deals.length} transações identificadas`;
+    // mesmo critério da Base de deals: os do Brasil primeiro, entre os de mesma nota; os do exterior ficam marcados
+    const br = (i) => isBrDeal({ key: `ed:${i.id}`, buyer: i.deal?.buyer, target: i.deal?.target, value: i.deal?.value, headline: i.headline });
+    const deals = [...state.digest.deals].sort((a, z) => z.importance - a.importance || br(z) - br(a));
+    const nBr = deals.filter(br).length;
+    $("#deals-count").textContent = `${deals.length} transações identificadas · ${nBr} no Brasil`;
     $("#deals-body").innerHTML = deals.map((i) => {
       const x = i.deal || {};
       return `<tr>
         <td>${ring(i.importance, "sm")}</td>
-        <td>${esc(x.type)}</td><td>${ciaLinked(x.buyer)}</td><td>${ciaLinked(x.target)}</td>
+        <td>${esc(x.type)}${br(i) ? "" : `<div class="muted small">exterior</div>`}</td><td>${ciaLinked(x.buyer)}</td><td>${ciaLinked(x.target)}</td>
         <td>${esc(x.value)}</td><td><span class="stage">${esc(x.stage)}</span>${i.update ? `<div class="muted small">antes: ${esc(i.update.from)} (${esc(fmtDay(i.update.date))})</div>` : ""}</td><td>${esc(x.sector)}</td>
         <td><a href="#" data-jump="${i.id}">${esc(i.outlets[0].source)}</a></td></tr>`;
     }).join("") || `<tr><td colspan="8" class="muted">Nenhum deal identificado nesta edição${state.digest.mode !== "ai" ? " (requer análise por IA)" : ""}.</td></tr>`;
