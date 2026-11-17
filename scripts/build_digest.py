@@ -714,7 +714,15 @@ def lead_words(company: str) -> set[str]:
 def same_deal_lead(a: dict, b: dict) -> bool:
     """O mesmo negócio descrito com nomes diferentes ("Fatia da BP na maior descoberta em 25 anos" x "Participação da
     BP em bloco offshore no Brasil"): mesmo sinal, mesma contraparte conhecida e um nome em comum."""
-    if a.get("signal") != b.get("signal") or is_unknown(a.get("counterparty")) or is_unknown(b.get("counterparty")):
+    if is_unknown(a.get("counterparty")) or is_unknown(b.get("counterparty")):
+        return False
+    if {a.get("signal"), b.get("signal")} == {"Venda", "Aquisição"}:
+        # o mesmo negócio visto de cada lado ("Fatia da BP..." à venda, contraparte Petrobras; "Petrobras / participação
+        # da BP...", aquisição, contraparte BP): a contraparte de um aparece no nome do outro, e vice-versa
+        wa, wb = lead_words(a.get("company", "")), lead_words(b.get("company", ""))
+        ca, cb = lead_words(a["counterparty"]), lead_words(b["counterparty"])
+        return bool(ca) and bool(cb) and ca <= wb and cb <= wa
+    if a.get("signal") != b.get("signal"):
         return False
     if re.sub(r"[^a-z0-9]", "", fold(a["counterparty"])) != re.sub(r"[^a-z0-9]", "", fold(b["counterparty"])):
         return False
