@@ -493,14 +493,23 @@
   const BR_GROUPS = /\b(jbs|j&f|csn|votorantim|btg|xp|ig4|souza aguiar|ra[ií]zen|cosan|ita[uú]|bradesco|ambev|gerdau|embraer|marfrig|minerva|brf|suzano|eletrobras|axia|sabesp|copel|cemig|magalu|americanas|nubank|pagbank|totvs|localiza|rede d'or|hapvida|klabin|ultrapar|vibra|prio|equatorial|energisa|neoenergia|cpfl|taesa|p[aá]tria|vinci|kinea|spx|g[aá]vea|conasa|odebrecht|novonor|andrade gutierrez|camargo corr[eê]a|safra|caixa|bndes|petrobras|vale s\.?a|conta azul)\b/;
   const BR_TEXT = /r\$|brasil|brasileir|\bcade\b|\bb3\b|\bcvm\b|s[aã]o paulo|rio de janeiro|minas gerais|goi[aá]s|mato grosso|paran[aá]|bahia|pernambuco|cear[aá]|santa catarina|rio grande do sul|esp[ií]rito santo|amazonas|\bbr-\d|recupera[cç][aã]o (extra)?judicial|deb[eê]ntures?/;
   const brCache = new Map();
+  // "mineradora em MG", "ativos em MS": sigla de estado, em maiúsculas, depois de preposição
+  const BR_UF = /\b(?:em|no|na|de|do|da)\s(?:AC|AL|AP|AM|BA|CE|DF|ES|GO|MA|MT|MS|MG|PA|PB|PR|PE|PI|RJ|RN|RS|RO|RR|SC|SP|SE|TO)\b/;
+  const BR_NOT = /(?:\bsem\b|fora d[oe]|nenhum|n[aã]o (?:envolve|afeta|tem|cita)|longe d[oe])[^.;]{0,40}?brasil\w*/g;
   function isBrDeal(d) {
     const key = d.key || `${d.buyer}|${d.target}`;
     if (cias.loaded && brCache.has(key)) return brCache.get(key);
     const names = `${d.buyer || ""} ${d.target || ""}`;
-    const text = fold(`${names} ${d.value || ""} ${d.headline || ""}`);
-    // "Fleury (50,01%) e Atlântica Hospitais": cada parte do nome é procurada na base de companhias
-    const parts = [d.buyer, d.target, ...names.split(/[;,/()]|\s+e\s+/)].map((x) => (x || "").trim()).filter((x) => x.length > 2);
-    const br = Boolean(parts.some(companyOf) || BR_GROUPS.test(text) || BR_TEXT.test(text));
+    // a justificativa da análise ("consolidação de insurtechs no Brasil") também conta, sem as negativas
+    // ("sem relação com o Brasil", "fora do Brasil")
+    const why = fold(d.why || "").replace(BR_NOT, " ");
+    const raw = `${names} ${d.value || ""} ${d.headline || ""}`;
+    const text = `${fold(raw)} ${why}`;
+    // "Fleury (50,01%) e Atlântica Hospitais", "Braskem (capital votante)": cada parte de cada nome é procurada na
+    // base de companhias (antes, comprador e alvo eram juntados antes de separar as partes, e o alvo com parênteses
+    // escapava)
+    const parts = [d.buyer, d.target].flatMap((x) => [x, ...String(x || "").split(/[;,/()]|\s+e\s+/)]).map((x) => (x || "").trim()).filter((x) => x.length > 2);
+    const br = Boolean(parts.some(companyOf) || BR_GROUPS.test(text) || BR_TEXT.test(text) || BR_UF.test(raw));
     if (cias.loaded) brCache.set(key, br);
     return br;
   }
@@ -1208,7 +1217,7 @@
 
   function renderDeals() {
     // mesmo critério da Base de deals: os do Brasil primeiro, entre os de mesma nota; os do exterior ficam marcados
-    const br = (i) => isBrDeal({ key: `ed:${i.id}`, buyer: i.deal?.buyer, target: i.deal?.target, value: i.deal?.value, headline: i.headline });
+    const br = (i) => isBrDeal({ key: `ed:${i.id}`, buyer: i.deal?.buyer, target: i.deal?.target, value: i.deal?.value, headline: i.headline, why: `${i.importance_reason || ""} ${i.involves || ""}` });
     const deals = [...state.digest.deals].sort((a, z) => z.importance - a.importance || br(z) - br(a));
     const nBr = deals.filter(br).length;
     $("#deals-count").textContent = `${deals.length} transações identificadas · ${nBr} no Brasil`;
