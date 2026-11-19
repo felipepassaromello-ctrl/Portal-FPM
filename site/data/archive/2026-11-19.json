@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T10:15:51.015234-03:00",
+ "generated_at": "2026-11-19T10:23:50.754421-03:00",
  "date": "2026-11-19",
  "window": {
   "start": "2026-11-18T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-19T08:24:41.899365-03:00",
-  "analyzed": 249
+  "analyzed": 243
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -103,42 +103,42 @@
    "symbol": "^BVSP",
    "name": "Ibovespa",
    "unit": "pts",
-   "price": 167558.67,
-   "change_pct": 0.012337499552339537,
+   "price": 167907.08,
+   "change_pct": 0.2202962909906958,
    "spark": [
     172458.0,
     169295.0,
     169817.0,
     167538.0,
-    167558.671875
+    167907.078125
    ]
   },
   {
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.8923,
-   "change_pct": 1.999374069528681,
+   "price": 5.8849,
+   "change_pct": 1.8712754716781799,
    "spark": [
     5.640699863433838,
     5.66480016708374,
     5.782599925994873,
     5.776800155639648,
-    5.892300128936768
+    5.884900093078613
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.4748,
-   "change_pct": 2.042840565085391,
+   "price": 6.4717,
+   "change_pct": 1.9939845686450797,
    "spark": [
     6.226650238037109,
     6.238303184509277,
     6.353240013122559,
     6.345178127288818,
-    6.474800109863281
+    6.471700191497803
    ]
   },
   {
@@ -176,7 +176,6 @@
    "price": 5.066,
    "change_pct": -0.7250668791424886,
    "spark": [
-    5.103000164031982,
     5.1539998054504395,
     5.120999813079834,
     5.103000164031982,
@@ -187,40 +186,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 90.05,
-   "change_pct": -2.066337152041109,
+   "price": 89.99,
+   "change_pct": -2.131590009019202,
    "spark": [
     92.44000244140625,
     93.13999938964844,
     91.94999694824219,
-    90.05000305175781
+    89.98999786376953
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3718.3,
-   "change_pct": -0.6306930425628909,
+   "price": 3719.6,
+   "change_pct": -0.5959513328986255,
    "spark": [
     3853.0,
     3864.199951171875,
     3741.89990234375,
-    3718.300048828125
+    3719.60009765625
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 63679.75,
-   "change_pct": 1.0994037733321527,
+   "price": 63680.89,
+   "change_pct": 1.101213662979994,
    "spark": [
     65305.0625,
     64855.84375,
     64893.9453125,
     62987.265625,
-    63679.75
+    63680.890625
    ]
   }
  ],
@@ -880,6 +879,60 @@
    "dup_of": "d8b99f7edc47"
   },
   {
+   "id": "ea1cb3a02997",
+   "title": "BlackRock expands in Brazil with asset management acquisition (BLK:NYSE)",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcFZXNlo1NnkyX2FRTWZ0QUE5WTJRYUphdVVUUEVIcVdnT09fU0RYQ2tWa1Q2aGczRTg3QlFKNXprblZtNThRWnEyak5admFQdTZIMHlzSFRERlp6RlVIRlNqLVBRd29YS3BBSTAzTHBZNzNvMVBaX0w2TXJEUU9lNHVkbmJwcjQybUVvWFFjNUdQV3I0bElPZ0o5OHYwQVlC?oc=5",
+   "published": "2026-11-18T12:43:10+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Seeking Alpha",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcFZXNlo1NnkyX2FRTWZ0QUE5WTJRYUphdVVUUEVIcVdnT09fU0RYQ2tWa1Q2aGczRTg3QlFKNXprblZtNThRWnEyak5admFQdTZIMHlzSFRERlp6RlVIRlNqLVBRd29YS3BBSTAzTHBZNzNvMVBaX0w2TXJEUU9lNHVkbmJwcjQybUVvWFFjNUdQV3I0bElPZ0o5OHYwQVlC?oc=5",
+     "title": "BlackRock expands in Brazil with asset management acquisition (BLK:NYSE)"
+    },
+    {
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOHBwN0g0VkRqU0V2cGNsdkR3cWlvbUpxa1lvak1MOXBfTkZvOGU2S0ZTSjhNTGJqZ1V5VHBjSjdYR01VWGx5ZS03bEJUU1p4b25GMzRPdVl6SDN5VmJxRVNRMkJnZWgyYjZFOS13NjN2OFROeUxJeXJ1Zk1JaXBsVFEwUDNsdExqaGtXT0lPNUROTGYwQUhmeVRQX3FlMmxlNWpFSDFmSUxueTk2WEN4RkdRVlZKNW1KWVgxSWZzQjhLUQ?oc=5",
+     "title": "BlackRock expands in Brazil with asset management acquisition"
+    }
+   ],
+   "ids": [
+    "ea1cb3a02997",
+    "6dd5484d1b7b"
+   ],
+   "snippet": "",
+   "prescore": 6.7,
+   "headline": "BlackRock expande presença no Brasil com aquisição de gestora de ativos",
+   "category": "mna",
+   "importance": 8,
+   "importance_reason": "Aquisição de gestora no Brasil por gigante global de asset management.",
+   "summary": "A BlackRock anunciou a aquisição de uma gestora de ativos no Brasil, segundo Seeking Alpha e TradingView. Os veículos associados a outras manchetes apontam a SulAmérica Investimentos como alvo. Valor não divulgado no material.",
+   "involves": "BlackRock, gestora de ativos no Brasil",
+   "interpretation": "Movimento de consolidação em asset management local por player global.",
+   "impact": "Aumenta a competição no setor de gestão e pode reprecificar gestoras independentes brasileiras e estimular novas operações.",
+   "sentiment": "positivo",
+   "entities": [
+    "BlackRock",
+    "SulAmérica Investimentos"
+   ],
+   "tags": [
+    "BlackRock",
+    "gestão de ativos",
+    "Brasil"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "BlackRock",
+    "target": "SulAmérica Investimentos (a confirmar)",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Gestão de ativos",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "56fde682fa60",
    "title": "Anthropic estreia na bolsa nesta quinta (19); IPO sai a US$ 83 por ação. O que o investidor precisa saber agora?",
    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPZVpORHY2ZEExUUZkQjhrTEFHdVA1aURUWkFJbjJnWjFMZ2xPd0s0M2xXMGhLbXpGdHlHTlJNVUNGeDZDb3ROelFmVktxdFJWSloyTFdaQW9BYnNVZ2xVb2RSeHpSQk5aODhfWTIzaThEWEUzRU02Mkg4bEtEOEFtdlBSdFFxdkdDaWN4U1preVA0NmZNNFBEeXpiTTRNRG83RlRJWnpkVjVrdmZkQUZsMVdNLTNuN0UwX2tPUTVZOEJVT1ZlcUs5UU1fZTFLM19PbWJZbG5CSXVrd2kyekE3WE9DUU9Tcm5ibHRfS2Vmcks?oc=5",
@@ -1046,7 +1099,8 @@
     "sector": "Gestão de ativos",
     "advisors": "não divulgado"
    },
-   "ai": true
+   "ai": true,
+   "dup_of": "ea1cb3a02997"
   },
   {
    "id": "ecc3b27c107f",
@@ -1095,105 +1149,7 @@
     "advisors": "não divulgado"
    },
    "ai": true,
-   "dup_of": "47d47a062233"
-  },
-  {
-   "id": "73c0f75f247c",
-   "title": "BlackRock to acquire Brazil’s SulAmérica Investimentos",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUDE0NEdId1ZyZzJCX3g5djM1UHBEMTJCWklyb1pmd2ZMa1h3RlhROWpwOUhHSFFvWTJJYWtzZXhVVVBPV1A0U2NPdGROeEt0MjhRZ3hHeFFVVGpWSWkxTER6bTBmd0FEXzVoVFZDUjFObzdyenpkQVdjZElqNi1hSWdZeFd6MWVsdEp4WEEzZW0?oc=5",
-   "published": "2026-11-18T13:42:21+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Crypto Briefing",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUDE0NEdId1ZyZzJCX3g5djM1UHBEMTJCWklyb1pmd2ZMa1h3RlhROWpwOUhHSFFvWTJJYWtzZXhVVVBPV1A0U2NPdGROeEt0MjhRZ3hHeFFVVGpWSWkxTER6bTBmd0FEXzVoVFZDUjFObzdyenpkQVdjZElqNi1hSWdZeFd6MWVsdEp4WEEzZW0?oc=5",
-     "title": "BlackRock to acquire Brazil’s SulAmérica Investimentos"
-    }
-   ],
-   "ids": [
-    "73c0f75f247c"
-   ],
-   "snippet": "",
-   "prescore": 5.2,
-   "headline": "BlackRock vai adquirir a SulAmérica Investimentos, do Brasil",
-   "category": "mna",
-   "importance": 8,
-   "importance_reason": "Aquisição de gestora brasileira por gigante global.",
-   "summary": "A BlackRock vai adquirir a SulAmérica Investimentos, segundo o Crypto Briefing. Valor não divulgado.",
-   "involves": "BlackRock, SulAmérica Investimentos",
-   "interpretation": "Confirma o alvo apontado por outros veículos.",
-   "impact": "Reforça o movimento de consolidação.",
-   "sentiment": "positivo",
-   "entities": [
-    "BlackRock",
-    "SulAmérica Investimentos"
-   ],
-   "tags": [
-    "BlackRock",
-    "SulAmérica",
-    "aquisição"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "BlackRock",
-    "target": "SulAmérica Investimentos",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Gestão de ativos",
-    "advisors": "não divulgado"
-   },
-   "ai": true,
-   "dup_of": "47d47a062233"
-  },
-  {
-   "id": "6dd5484d1b7b",
-   "title": "BlackRock expands in Brazil with asset management acquisition",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOHBwN0g0VkRqU0V2cGNsdkR3cWlvbUpxa1lvak1MOXBfTkZvOGU2S0ZTSjhNTGJqZ1V5VHBjSjdYR01VWGx5ZS03bEJUU1p4b25GMzRPdVl6SDN5VmJxRVNRMkJnZWgyYjZFOS13NjN2OFROeUxJeXJ1Zk1JaXBsVFEwUDNsdExqaGtXT0lPNUROTGYwQUhmeVRQX3FlMmxlNWpFSDFmSUxueTk2WEN4RkdRVlZKNW1KWVgxSWZzQjhLUQ?oc=5",
-   "published": "2026-11-18T12:43:10+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "TradingView",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOHBwN0g0VkRqU0V2cGNsdkR3cWlvbUpxa1lvak1MOXBfTkZvOGU2S0ZTSjhNTGJqZ1V5VHBjSjdYR01VWGx5ZS03bEJUU1p4b25GMzRPdVl6SDN5VmJxRVNRMkJnZWgyYjZFOS13NjN2OFROeUxJeXJ1Zk1JaXBsVFEwUDNsdExqaGtXT0lPNUROTGYwQUhmeVRQX3FlMmxlNWpFSDFmSUxueTk2WEN4RkdRVlZKNW1KWVgxSWZzQjhLUQ?oc=5",
-     "title": "BlackRock expands in Brazil with asset management acquisition"
-    }
-   ],
-   "ids": [
-    "6dd5484d1b7b"
-   ],
-   "snippet": "",
-   "prescore": 5.2,
-   "headline": "BlackRock expande presença no Brasil com aquisição de gestora de ativos",
-   "category": "mna",
-   "importance": 8,
-   "importance_reason": "Aquisição de gestora no Brasil por gigante global de asset management.",
-   "summary": "A BlackRock anunciou a aquisição de uma gestora de ativos no Brasil, segundo Seeking Alpha e TradingView. Os veículos associados a outras manchetes apontam a SulAmérica Investimentos como alvo. Valor não divulgado no material.",
-   "involves": "BlackRock, gestora de ativos no Brasil",
-   "interpretation": "Movimento de consolidação em asset management local por player global.",
-   "impact": "Aumenta a competição no setor de gestão e pode reprecificar gestoras independentes brasileiras e estimular novas operações.",
-   "sentiment": "positivo",
-   "entities": [
-    "BlackRock",
-    "SulAmérica Investimentos"
-   ],
-   "tags": [
-    "BlackRock",
-    "gestão de ativos",
-    "Brasil"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "BlackRock",
-    "target": "SulAmérica Investimentos (a confirmar)",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Gestão de ativos",
-    "advisors": "não divulgado"
-   },
-   "ai": true,
-   "dup_of": "47d47a062233"
+   "dup_of": "ea1cb3a02997"
   },
   {
    "id": "15f547e5593f",
@@ -2736,7 +2692,7 @@
     "advisors": "não divulgado"
    },
    "ai": true,
-   "dup_of": "47d47a062233"
+   "dup_of": "ea1cb3a02997"
   },
   {
    "id": "a80c596e86f1",
@@ -3032,45 +2988,6 @@
     "sector": "Portos e logística",
     "advisors": "não divulgado"
    },
-   "ai": true
-  },
-  {
-   "id": "aa65b102d2c7",
-   "title": "Onda de mega-IPO é “prenúncio de queda” das bolsas, avisa o BCE",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONG1lTFZTUHFNRWpVdzdXLWNnZmRoNHF5clFjd0xIWUpFLV94aEg1NWwyUndmNDZtNmlPRmY5ZUJiLXdtLWhkWFRMRUVGeWg4YzhsZmEwRHJFN1NlbG16eTZ4RDByTGFFUGVaa3k5Si1KazFvV1Z5am1idnM3b28xLU1sbW4xOFJOR3Bic1M5N3Z2enI1MjdsQjZSN2xzSEQxOVlTNnhVT3RTcFRkMFEzcUdVRzJDZw?oc=5",
-   "published": "2026-11-18T14:05:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Jornal de Negócios",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONG1lTFZTUHFNRWpVdzdXLWNnZmRoNHF5clFjd0xIWUpFLV94aEg1NWwyUndmNDZtNmlPRmY5ZUJiLXdtLWhkWFRMRUVGeWg4YzhsZmEwRHJFN1NlbG16eTZ4RDByTGFFUGVaa3k5Si1KazFvV1Z5am1idnM3b28xLU1sbW4xOFJOR3Bic1M5N3Z2enI1MjdsQjZSN2xzSEQxOVlTNnhVT3RTcFRkMFEzcUdVRzJDZw?oc=5",
-     "title": "Onda de mega-IPO é “prenúncio de queda” das bolsas, avisa o BCE"
-    }
-   ],
-   "ids": [
-    "aa65b102d2c7"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Onda de mega-IPOs é 'prenúncio de queda' das bolsas, avisa o BCE",
-   "category": "internacional",
-   "importance": 6,
-   "importance_reason": "Alerta de banco central sobre bolhas.",
-   "summary": "O BCE avisa que a onda de mega-IPOs é um prenúncio de queda das bolsas, segundo o Jornal de Negócios.",
-   "involves": "BCE, mega-IPOs",
-   "interpretation": "Aviso de risco de correção.",
-   "impact": "Pode aumentar cautela com mercados de ações.",
-   "sentiment": "negativo",
-   "entities": [
-    "BCE"
-   ],
-   "tags": [
-    "BCE",
-    "IPO",
-    "bolha"
-   ],
-   "is_deal": false,
-   "deal": null,
    "ai": true
   },
   {
@@ -4685,6 +4602,39 @@
    "ai": true
   },
   {
+   "id": "e6311d5f330c",
+   "title": "Brazil's CADE clears Unimed Blumenau takeover of hospital subject to remedies",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTEFCdkNlMHlDREJ0SE8tbEt3bVVsYTdzeTZ1VFJnaWoyQndpZFhIMkpVbTlGeFFfc1hPRm9melZ2Vy0tRUtlWmdMVEc5SVBkVXhfZnIwRXZwa2JMaE4xWno1anFFYWNpcnZUek9wcDJ0aFhzRU1lQ2pUaTM2Rks4WHJ0dDBKQ3FoVHl0MzRGc01tSnMxRS01QUU2VFZ1cFVIX1dzeG9NdkNpXzRzem1mX0x2TXJLT1gxZnRsU9IBWkFVX3lxTE8xZkh2MVBONzF0RG1Cd3phWVlNZXVES0xOUHpWcFBvS2hFazkwTmtkOWtVVFhvQ3JJbGVjUEViUWI1eEJ2ajB1bnBoajR4VUJJWUxmMjgxcDZXdw?oc=5",
+   "published": "2026-11-18T15:54:18+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "MLex",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTEFCdkNlMHlDREJ0SE8tbEt3bVVsYTdzeTZ1VFJnaWoyQndpZFhIMkpVbTlGeFFfc1hPRm9melZ2Vy0tRUtlWmdMVEc5SVBkVXhfZnIwRXZwa2JMaE4xWno1anFFYWNpcnZUek9wcDJ0aFhzRU1lQ2pUaTM2Rks4WHJ0dDBKQ3FoVHl0MzRGc01tSnMxRS01QUU2VFZ1cFVIX1dzeG9NdkNpXzRzem1mX0x2TXJLT1gxZnRsU9IBWkFVX3lxTE8xZkh2MVBONzF0RG1Cd3phWVlNZXVES0xOUHpWcFBvS2hFazkwTmtkOWtVVFhvQ3JJbGVjUEViUWI1eEJ2ajB1bnBoajR4VUJJWUxmMjgxcDZXdw?oc=5",
+     "title": "Brazil's CADE clears Unimed Blumenau takeover of hospital subject to remedies"
+    }
+   ],
+   "ids": [
+    "e6311d5f330c"
+   ],
+   "snippet": "",
+   "prescore": 8.2,
+   "headline": "Brazil's CADE clears Unimed Blumenau takeover of hospital subject to remedies",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "8d0932daa6eb",
    "title": "U.S. Stocks Mixed, Nvidia Down Again Ahead of Anthropic IPO",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXo2WlZpcTltVUpERGFLMVFlbzk3NkhYcVJsSGFCRk1ZeEV3eTBTa2ZhbEx5dHVpZTAxTFFXc1o1Mzc2WHJ1cHFFZWFGVS1GUGxyaGJfOU9KdHF3ZWxaQmZHTWh6bDB0N0JUOVNpbzdpTDZRWGZnY2p0d3lEcXVJcERPZEVwM01QdUdLRWkwN0M2YnNzMk1QbjdlckU?oc=5",
@@ -5486,46 +5436,6 @@
     "STF",
     "Senado",
     "ministérios"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "46c491790eff",
-   "title": "French Risks Have Traders Betting Euro Fall Is Far From Over",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-19/french-risks-traders-betting-euro-slide-currency",
-   "published": "2026-11-19T05:15:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-19/french-risks-traders-betting-euro-slide-currency",
-     "title": "French Risks Have Traders Betting Euro Fall Is Far From Over"
-    }
-   ],
-   "ids": [
-    "46c491790eff"
-   ],
-   "snippet": "The euro’s tumble to an 18-month low against the dollar shows few signs of easing, as expectations mount that next year’s election in a politically divided and fiscally stressed France will continue to weigh on the common currency.",
-   "prescore": 2.8,
-   "headline": "Riscos na França fazem operadores apostarem que queda do euro está longe do fim",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Euro em mínima de 18 meses com risco político e fiscal francês.",
-   "summary": "O euro caiu a mínima de 18 meses ante o dólar, com expectativa de que a eleição do próximo ano em uma França dividida e com estresse fiscal continue pesando.",
-   "involves": "Euro, dólar, França",
-   "interpretation": "Dólar forte global soma-se ao risco europeu.",
-   "impact": "Reforça a força do dólar, ruim para emergentes.",
-   "sentiment": "negativo",
-   "entities": [
-    "Euro",
-    "França"
-   ],
-   "tags": [
-    "euro",
-    "França",
-    "câmbio"
    ],
    "is_deal": false,
    "deal": null,
@@ -6505,43 +6415,37 @@
    "ai": true
   },
   {
-   "id": "99746db02a44",
-   "title": "Anthropic deve anunciar preço de ações para IPO nesta quarta-feira",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/anthropic-deve-anunciar-preco-de-acoes-para-ipo-nesta-quarta-feira.shtml",
-   "published": "2026-11-18T14:17:00+00:00",
+   "id": "2b8f6a4ac282",
+   "title": "Discreta gestora dos Lorentzen atua na reestruturação da Chilli Beans",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQWo5NzN5TWdwUDMxTEFTb2tQa3pHNWU2b00zaEdrMjBhY3Y4MHU1RDJhYmZGV05KSEFBd2ZCdkxtODUyLUNydXlIYWNyV2h0Y21qZ0tNTDF1elZ1UzlZSFdvQ0ZUNjQ0Mi02MU5YNndVNTVfMy13azVoTmRnTEJ2TThnTDA5R0g2Qm5idUNxVm1Td2FlMm1sQWRJTms4Ync3N2RZQVl0bzhQSDljaGFoRC1Id2dIdkdQTXFwRl9DVknSAc8BQVVfeXFMT3hHWURDcUpRWWxNcmN4X2dWbUwxWTFWai1zN08zaVBFSnBQNENsQzljMkxoa19DQ282TnMtck5VQWtLTE1XaEp3Y1lvenZqMjV5UjU3dE9HbGZtRlhELTVidTV6NTVXbmhaR2tzZEdHQTNaR1hSa1BFb1VJSDFtNVhBSFFWV29QZzFkcm5RSGFINlh0cGMyajh5bVNhMUZPTlNTNmNjQ25yQ09Jc1RUYnM3VEtpRXdhWDNOVm1MQ2k5eXNyTlo2OEwzZTVEYnVZ?oc=5",
+   "published": "2026-11-19T10:00:00+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/anthropic-deve-anunciar-preco-de-acoes-para-ipo-nesta-quarta-feira.shtml",
-     "title": "Anthropic deve anunciar preço de ações para IPO nesta quarta-feira"
+     "source": "Pipeline (Valor)",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQWo5NzN5TWdwUDMxTEFTb2tQa3pHNWU2b00zaEdrMjBhY3Y4MHU1RDJhYmZGV05KSEFBd2ZCdkxtODUyLUNydXlIYWNyV2h0Y21qZ0tNTDF1elZ1UzlZSFdvQ0ZUNjQ0Mi02MU5YNndVNTVfMy13azVoTmRnTEJ2TThnTDA5R0g2Qm5idUNxVm1Td2FlMm1sQWRJTms4Ync3N2RZQVl0bzhQSDljaGFoRC1Id2dIdkdQTXFwRl9DVknSAc8BQVVfeXFMT3hHWURDcUpRWWxNcmN4X2dWbUwxWTFWai1zN08zaVBFSnBQNENsQzljMkxoa19DQ282TnMtck5VQWtLTE1XaEp3Y1lvenZqMjV5UjU3dE9HbGZtRlhELTVidTV6NTVXbmhaR2tzZEdHQTNaR1hSa1BFb1VJSDFtNVhBSFFWV29QZzFkcm5RSGFINlh0cGMyajh5bVNhMUZPTlNTNmNjQ25yQ09Jc1RUYnM3VEtpRXdhWDNOVm1MQ2k5eXNyTlo2OEwzZTVEYnVZ?oc=5",
+     "title": "Discreta gestora dos Lorentzen atua na reestruturação da Chilli Beans"
     }
    ],
    "ids": [
-    "99746db02a44"
+    "2b8f6a4ac282"
    ],
-   "snippet": "A Anthropic anunciará nesta quarta-feira (18) o valor de suas ações para o IPO (oferta pública inicial de ações) que ocorre nesta quinta-feira (19) na Nasdaq . Leia mais (11/18/2026 - 11h17)",
+   "snippet": "",
    "prescore": 6.0,
-   "headline": "Anthropic deve anunciar preço das ações do IPO nesta quarta",
-   "category": "mna",
+   "headline": "Discreta gestora dos Lorentzen atua na reestruturação da Chilli Beans",
+   "category": "empresas",
    "importance": 4,
-   "importance_reason": "Nota prévia superada pela precificação já divulgada.",
-   "summary": "A Anthropic anunciaria na quarta (18) o valor das ações do IPO, que ocorre nesta quinta (19) na Nasdaq.",
-   "involves": "Anthropic, Nasdaq",
-   "interpretation": "Etapa de rotina antes da estreia.",
-   "impact": "Sem impacto adicional além das notícias de precificação.",
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
    "sentiment": "neutro",
-   "entities": [
-    "Anthropic",
-    "Nasdaq"
-   ],
-   "tags": [
-    "IPO",
-    "precificação"
-   ],
+   "entities": [],
+   "tags": [],
    "is_deal": false,
    "deal": null,
-   "ai": true
+   "ai": false
   },
   {
    "id": "7ebcfe17de4b",
@@ -7059,6 +6963,60 @@
    "ai": true
   },
   {
+   "id": "36cdf65deb54",
+   "title": "Brazil Expansion: What Does the Auto Avaliar Deal Mean for ASX 200's CAR Group (ASX:CAR)?",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSmpPT1VITDBtY054Wmo5NmRkVFFXNUFReEd5bXNaWFN3b09CbEV6R0dWRUxjRnBuUnlKMjl6Z0d6U0FIeW53UFlJNzNxNHBKVzFqWmdvbFh4b0I2cjdLaTNYNVBUUTdjOUR6NGpQYXplaHVjNFY3b2tQZHRJZ3ZEa3puNkp3XzI4SHdaemNranpIdmJWTURPeTFQUG01cWtpaFVBLWlCcGYzSVJad3JwZ0YxMV8tU3NtWklKQVhsbmIyeTc0QnVRcg?oc=5",
+   "published": "2026-11-19T06:21:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Kalkine Media",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSmpPT1VITDBtY054Wmo5NmRkVFFXNUFReEd5bXNaWFN3b09CbEV6R0dWRUxjRnBuUnlKMjl6Z0d6U0FIeW53UFlJNzNxNHBKVzFqWmdvbFh4b0I2cjdLaTNYNVBUUTdjOUR6NGpQYXplaHVjNFY3b2tQZHRJZ3ZEa3puNkp3XzI4SHdaemNranpIdmJWTURPeTFQUG01cWtpaFVBLWlCcGYzSVJad3JwZ0YxMV8tU3NtWklKQVhsbmIyeTc0QnVRcg?oc=5",
+     "title": "Brazil Expansion: What Does the Auto Avaliar Deal Mean for ASX 200's CAR Group (ASX:CAR)?"
+    },
+    {
+     "source": "Kalkine",
+     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcXJFTmtWV1pwM25JWjBqYk51T2tTM1czZjhidDRESDJVVWcyQS0tYk9uYU9XVnVPYXBXMDBFTkNNYlNfTV93a204R0hvSGRVQXc0ZHQxcm53aXl6blZ2SkpWV3lUSUdpZlFRUkk2SXZSbDBwUmpma0x4UTRjTldJRUxkR1hBdnUtS2xHdk51LUVUdWdLWnVnQ29mLXkwZ2FGU1g1eGl4TmJlTnlvLW9sTVVXZE5JLVFMdUZ4bUI0MEs0ODRidW9VWXVUSER2WGV0ckFuQ3o4R0Nmc3FDNm1TUEpaUzBMbkdzV0xJRA?oc=5",
+     "title": "What does the Auto Avaliar deal in Brazil mean for CAR Group (ASX:CAR), the S&P/ASX 200 online vehicle marketplace operator?"
+    }
+   ],
+   "ids": [
+    "36cdf65deb54",
+    "c896f4b8bdfa"
+   ],
+   "snippet": "",
+   "prescore": 3.7,
+   "headline": "CAR Group, da ASX, entra no Brasil com acordo da Auto Avaliar",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Deal de classificados automotivos com envolvimento no Brasil; detalhes escassos.",
+   "summary": "O título trata do negócio com a Auto Avaliar e o que significa para a CAR Group (ASX:CAR), em expansão no Brasil. Valor não consta.",
+   "involves": "CAR Group, Auto Avaliar.",
+   "interpretation": "Expansão da CAR Group no Brasil; termos ausentes.",
+   "impact": "Pode intensificar a concorrência em classificados automotivos.",
+   "sentiment": "positivo",
+   "entities": [
+    "CAR Group",
+    "Auto Avaliar"
+   ],
+   "tags": [
+    "CAR Group",
+    "Brasil",
+    "automotivo"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "CAR Group",
+    "target": "Auto Avaliar",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Classificados automotivos / tecnologia",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "8276cf48b693",
    "title": "Justiça de SP condena Keeta por listar restaurantes Pizza Hut sem aval em aplicativo",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORGZwRkNFSzdhbncyWHF0dzhRWkhDSVpHNFY5TUJkbWd0Vk14NS1iQlVjS1RFS3F5YUxPTThubXdwczdmM2VUc19lTW9ReVMwakNUNE15YmVtTVN6SUlVZzdaeW9EOERlbXhRNzEtV091NnRxTy1fLVpsWGw0TXZvWVJmVVkyZ3Iyd2ZQYzNDbmwzRkhUY0x2RzFCQ1VEeXZIQUJLQ1BQdHlaS0hrNGlIZndleE50WjhUVnN2bnFMUDFFd9IB1gFBVV95cUxNQVJoNFV2TGdFbl9jaW9LalVpNlRvNWt6V1B3Q3FaSml0MV9LTFRJR3ducndCUnVwTERBSjJzNTNabzZGbHYzVGUybUlSSFZ4MEtQZ0Q2T2ZXT1NVaU56RmFuNG1uTS1MMVVKeFNWSG0zWURabmF5TE1LYnJGVVVGLXVFcTUyeGRKR0hWbmlUcEN3TFhBWmo4cjhCdDZvSWp2YkhuSWpXSUtBbC1yMHU3VjJMZElvc2RvU3BFN25kbFNPVXpzUXF6WkZ5aVFLUUZPNE0xdUN3?oc=5",
@@ -7178,45 +7136,6 @@
     "GNL",
     "China",
     "energia"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "27e0d1f5498f",
-   "title": "IA, inflação e juros definirão a economia global em 2027, segundo a Oxford Economics",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZXRFYlM1X19fQWI5Q2VubkJTQmtwV0NmNXlBM0swLTBLZ1RrZDZ4NkI3WTFFRFFVY3o2TURqNVRzNnNWdkZEQzRsTWN6UEoxeEZTZDMwTEFOeEQ3OTY5N2NLTk9aSnpUclcycklGVnVSS1ZNdFlYd1hnc29fR0FTQzRfYUE3MU9tdDBqX1lRSEtCVXUyd09JX3otaXotZE1fQTVVSnl0VWJMUnJzTy1rQ1hNRXZOMFZnTFZRYzRqalFxZFVV0gHYAUFVX3lxTE5RWEtQVEZSSU1Ca2hBRkJ6QkwyMnc1Yi1KODVDajFaUlVFSmZsa3BCLWxydk5KRTRyX0NNSk02dEtPZ3I2ZEQ5UU9lZy1nQ05tVFBJc2xnd2QwdHQ3SXM5S2ZGZUI0TFNNU3puanNtaGN6eGt1NmlzdGowbXRfcFBjcmxDd2k1ZDNwblUwZTVlUUIzTmZWWnhqT3lnSnhPYWZDTnZmTEJLZU0wNUJEdnBaQjFDVElpWEI0SzFxUm0wSkNiaFR1bTNUS3F1TXZkcnQ1eDMta29UQw?oc=5",
-   "published": "2026-11-18T12:16:26+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Bloomberg Línea",
-     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZXRFYlM1X19fQWI5Q2VubkJTQmtwV0NmNXlBM0swLTBLZ1RrZDZ4NkI3WTFFRFFVY3o2TURqNVRzNnNWdkZEQzRsTWN6UEoxeEZTZDMwTEFOeEQ3OTY5N2NLTk9aSnpUclcycklGVnVSS1ZNdFlYd1hnc29fR0FTQzRfYUE3MU9tdDBqX1lRSEtCVXUyd09JX3otaXotZE1fQTVVSnl0VWJMUnJzTy1rQ1hNRXZOMFZnTFZRYzRqalFxZFVV0gHYAUFVX3lxTE5RWEtQVEZSSU1Ca2hBRkJ6QkwyMnc1Yi1KODVDajFaUlVFSmZsa3BCLWxydk5KRTRyX0NNSk02dEtPZ3I2ZEQ5UU9lZy1nQ05tVFBJc2xnd2QwdHQ3SXM5S2ZGZUI0TFNNU3puanNtaGN6eGt1NmlzdGowbXRfcFBjcmxDd2k1ZDNwblUwZTVlUUIzTmZWWnhqT3lnSnhPYWZDTnZmTEJLZU0wNUJEdnBaQjFDVElpWEI0SzFxUm0wSkNiaFR1bTNUS3F1TXZkcnQ1eDMta29UQw?oc=5",
-     "title": "IA, inflação e juros definirão a economia global em 2027, segundo a Oxford Economics"
-    }
-   ],
-   "ids": [
-    "27e0d1f5498f"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "IA, inflação e juros definirão a economia global em 2027, diz Oxford Economics",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Projeção de consultoria sem números no texto.",
-   "summary": "A Oxford Economics aponta inteligência artificial, inflação e juros como os fatores que definirão a economia global em 2027. O material não traz projeções numéricas.",
-   "involves": "Oxford Economics, economia global, IA, juros",
-   "interpretation": "Cenário de médio prazo útil como pano de fundo para decisões de alocação e deals. Só o título foi divulgado; o texto não traz detalhes.",
-   "impact": "Sem efeito imediato; reforça o tema de juros altos por mais tempo.",
-   "sentiment": "neutro",
-   "entities": [
-    "Oxford Economics"
-   ],
-   "tags": [
-    "2027",
-    "juros",
-    "IA"
    ],
    "is_deal": false,
    "deal": null,
@@ -8178,7 +8097,7 @@
    "id": "7d0aed7463c7",
    "title": "TJX Raises Full-Year Outlook, Expects Sales Trends to Accelerate Through Holiday Season",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNFRwVFRDUDRja3dhdUJrcE9NTHdVQ1Q5TEZScnlmVC01YlJ1RktieFAtUE5OTFhqUUprdVczVFA5QTRhZHEzbkx1QXdPUEhKTVFjVEdpQ2Z3dmQ4dmxQdEgzXzBXUC1HSWVZd3hwZUxrOHNmUzBpZXpRTF9JQ0dqQlFjU1BwYmZLUUFSamRzTGZrNGhtaHRUeW8yclRUSnliS1VZWHBDcFZlZk8xWk1tb2pybGRuazlSRHB1a0tHOHQ0TWUyQ3lFUExUMA?oc=5",
-   "published": "2026-11-18T13:14:00+00:00",
+   "published": "2026-11-18T13:18:48+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -8371,54 +8290,6 @@
    "ai": true
   },
   {
-   "id": "36cdf65deb54",
-   "title": "Brazil Expansion: What Does the Auto Avaliar Deal Mean for ASX 200's CAR Group (ASX:CAR)?",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSmpPT1VITDBtY054Wmo5NmRkVFFXNUFReEd5bXNaWFN3b09CbEV6R0dWRUxjRnBuUnlKMjl6Z0d6U0FIeW53UFlJNzNxNHBKVzFqWmdvbFh4b0I2cjdLaTNYNVBUUTdjOUR6NGpQYXplaHVjNFY3b2tQZHRJZ3ZEa3puNkp3XzI4SHdaemNranpIdmJWTURPeTFQUG01cWtpaFVBLWlCcGYzSVJad3JwZ0YxMV8tU3NtWklKQVhsbmIyeTc0QnVRcg?oc=5",
-   "published": "2026-11-19T07:38:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Kalkine Media",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSmpPT1VITDBtY054Wmo5NmRkVFFXNUFReEd5bXNaWFN3b09CbEV6R0dWRUxjRnBuUnlKMjl6Z0d6U0FIeW53UFlJNzNxNHBKVzFqWmdvbFh4b0I2cjdLaTNYNVBUUTdjOUR6NGpQYXplaHVjNFY3b2tQZHRJZ3ZEa3puNkp3XzI4SHdaemNranpIdmJWTURPeTFQUG01cWtpaFVBLWlCcGYzSVJad3JwZ0YxMV8tU3NtWklKQVhsbmIyeTc0QnVRcg?oc=5",
-     "title": "Brazil Expansion: What Does the Auto Avaliar Deal Mean for ASX 200's CAR Group (ASX:CAR)?"
-    }
-   ],
-   "ids": [
-    "36cdf65deb54"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "CAR Group, da ASX, entra no Brasil com acordo da Auto Avaliar",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Deal de classificados automotivos com envolvimento no Brasil; detalhes escassos.",
-   "summary": "O título trata do negócio com a Auto Avaliar e o que significa para a CAR Group (ASX:CAR), em expansão no Brasil. Valor não consta.",
-   "involves": "CAR Group, Auto Avaliar.",
-   "interpretation": "Expansão da CAR Group no Brasil; termos ausentes.",
-   "impact": "Pode intensificar a concorrência em classificados automotivos.",
-   "sentiment": "positivo",
-   "entities": [
-    "CAR Group",
-    "Auto Avaliar"
-   ],
-   "tags": [
-    "CAR Group",
-    "Brasil",
-    "automotivo"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "CAR Group",
-    "target": "Auto Avaliar",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Classificados automotivos / tecnologia",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "366b11e7b83b",
    "title": "MAHLE Metal Leve stock: Q3 revenue slips, net profit falls 15.9% - ad-hoc-news.de",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUlZYV1VOTFBBQk1BZWdDU21Yck5xNjlXOXhEcnd0bEhELTFZZmtJMDI2REZ2RWhtT21RNDRvb25ub25CTnl5VHkwWFNzNFpKV1RTMGhMNlBXMjFNVjNrQXJVVUY1b25sejZyY1pxTG52d2FQQjNFeXZSRTRBT21VYm5vNGtiSEctU3ItRjFOcDBuTlhrNHFPeXBSeTZNQXNCTTQwWUJWd1BTYk1NVnV4UDBSaDJkdDMxM09UVA?oc=5",
@@ -8593,6 +8464,72 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "It has been a historic week for AI: The Anthropic IPO and the ongoing situation at Nvidia headline a head-spinning time for the industry. Despite Nvidia's earnings outlook looking good, and despite the scale of the Anthropic IPO there are so many open questions about the state of the industry right now. On today's two-part episode, first we speak with Stanley Lee, the chief product officer at Liqu",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "83b0e2295d2f",
+   "title": "Polygon Plans Up to $100 Million to Acquire Payment Licenses in Global Markets",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZlhjbF9zSmg0MV9tMGhuelNBd05Kbk05YXZ0OHY5bXJUaHpFTXBuMFk5RzRIWWtEX3lCSzdYQmI0R2JUX0hkUGNLdGx3dFZtdzEzTmR4bU01YnNFMlpKWk1rc3lndFdRQWI1UGpiY3QxNE11QWRBLXZwV1VPOUNza3Vyc2xHS3M1LXZTS2lmX0JKT1dTTnNNYUVYR3RRY0UwVTlpdzJZSQ?oc=5",
+   "published": "2026-11-18T13:14:39+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "KuCoin",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZlhjbF9zSmg0MV9tMGhuelNBd05Kbk05YXZ0OHY5bXJUaHpFTXBuMFk5RzRIWWtEX3lCSzdYQmI0R2JUX0hkUGNLdGx3dFZtdzEzTmR4bU01YnNFMlpKWk1rc3lndFdRQWI1UGpiY3QxNE11QWRBLXZwV1VPOUNza3Vyc2xHS3M1LXZTS2lmX0JKT1dTTnNNYUVYR3RRY0UwVTlpdzJZSQ?oc=5",
+     "title": "Polygon Plans Up to $100 Million to Acquire Payment Licenses in Global Markets"
+    }
+   ],
+   "ids": [
+    "83b0e2295d2f"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Polygon Plans Up to $100 Million to Acquire Payment Licenses in Global Markets",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8884979a24f0",
+   "title": "Brasil TecPar completes acquisition of Ligga Servicos",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPLVEtekxnejM0WTM5ZmNfaDY2OEFpRjhFSTFNQVdfdWdKLUxJY0YwZklqUE5JOHFyZi03Z0R5VWdSRjdTSVBrYlZYcGFjdk9UZUp3RWo1NzBERzV6M1FUSkJ2eHMwVEtnd2hoOEJHTFhlZmdFY1ZhUjEySkVxQTZhYU95N1RDV2NxSFBUczl3LVNkZWJ1MGRoZjh3TlY?oc=5",
+   "published": "2026-11-18T11:50:01+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Telecompaper",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPLVEtekxnejM0WTM5ZmNfaDY2OEFpRjhFSTFNQVdfdWdKLUxJY0YwZklqUE5JOHFyZi03Z0R5VWdSRjdTSVBrYlZYcGFjdk9UZUp3RWo1NzBERzV6M1FUSkJ2eHMwVEtnd2hoOEJHTFhlZmdFY1ZhUjEySkVxQTZhYU95N1RDV2NxSFBUczl3LVNkZWJ1MGRoZjh3TlY?oc=5",
+     "title": "Brasil TecPar completes acquisition of Ligga Servicos"
+    }
+   ],
+   "ids": [
+    "8884979a24f0"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Brasil TecPar completes acquisition of Ligga Servicos",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -9170,45 +9107,6 @@
     "feriado",
     "B3",
     "bancos"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "193900d0bc1e",
-   "title": "Modi Calls on Indian Companies to Expand Global Ambitions",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-19/modi-calls-on-indian-companies-to-expand-global-ambitions",
-   "published": "2026-11-19T08:27:46+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-19/modi-calls-on-indian-companies-to-expand-global-ambitions",
-     "title": "Modi Calls on Indian Companies to Expand Global Ambitions"
-    }
-   ],
-   "ids": [
-    "193900d0bc1e"
-   ],
-   "snippet": "Prime Minister Narendra Modi urged Indian companies to look beyond the domestic market and focus on global demand, telling business leaders Thursday that they should prepare to compete globally.",
-   "prescore": 2.8,
-   "headline": "Modi pede que empresas indianas ampliem ambições globais",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Discurso político sem efeito direto.",
-   "summary": "O premiê Narendra Modi pediu que empresas indianas olhem além do mercado doméstico e se preparem para competir globalmente.",
-   "involves": "Narendra Modi, empresas indianas",
-   "interpretation": "Estímulo a expansão externa, o que pode gerar M&A cross-border.",
-   "impact": "Potencial de aquisições externas de indianas no médio prazo.",
-   "sentiment": "positivo",
-   "entities": [
-    "Narendra Modi"
-   ],
-   "tags": [
-    "Índia",
-    "Modi",
-    "expansão"
    ],
    "is_deal": false,
    "deal": null,
@@ -10247,6 +10145,39 @@
    "ai": false
   },
   {
+   "id": "65276ebe8fb2",
+   "title": "Brazil's Senate approves Lula's $10 billion fiscal package after costly election spending",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSXJBLTFrczZGS1REVUh3WWNTZWE0d183V1dId3gxb2ptaTAyU295dS1HV0g0QkpIc2JpOHpxVzBjN3hBS2h0TDh3dVd1bDE2UldDNzYzSVU4X0hTb29SSHRXOXBVbHZsZGxpTjI1ZU1BUlc2bDBjMkJvTldfU2E1bmV3T092NkZVZDhFSHZOR2d1SzFWT3A0NEtteU5hcGszQkdnSXZIS3E2cEh2NTZsdXJTYWZSbGI3dFJfWHNpUTdrOG5iTExzMGlGcEg?oc=5",
+   "published": "2026-11-18T22:56:14+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Barchart.com",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSXJBLTFrczZGS1REVUh3WWNTZWE0d183V1dId3gxb2ptaTAyU295dS1HV0g0QkpIc2JpOHpxVzBjN3hBS2h0TDh3dVd1bDE2UldDNzYzSVU4X0hTb29SSHRXOXBVbHZsZGxpTjI1ZU1BUlc2bDBjMkJvTldfU2E1bmV3T092NkZVZDhFSHZOR2d1SzFWT3A0NEtteU5hcGszQkdnSXZIS3E2cEh2NTZsdXJTYWZSbGI3dFJfWHNpUTdrOG5iTExzMGlGcEg?oc=5",
+     "title": "Brazil's Senate approves Lula's $10 billion fiscal package after costly election spending"
+    }
+   ],
+   "ids": [
+    "65276ebe8fb2"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Brazil's Senate approves Lula's $10 billion fiscal package after costly election spending",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "344dc8fe024d",
    "title": "Bastidores: Lula cobra pente-fino nos pedidos de cargos do Centrão para evitar novas traições",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRFZSSVNTU25xSEtvUnFZaFhkb25Bb3M3YTRVdGNHSzhhS1I1andNWTBNWS16YVJkdlp0dEViYmJHTkNYNWFiVkZvejRGZy1YdThkZFdvMU1CdkdiSTc2VlAtaDh5Vi1TaDV6STR0aUpfQ0U0aGJqSjVCak5PUXF0VmQyZnJwU3pOZnQ0SmJuTm5mTWNPZEw2Vmd6OVJIdW1IM1BzQzNFTDRFdUJ2TWtUV3JUZ2JkV0NPWW8xdTdXeW9HWTR4cVdfNdIBzgFBVV95cUxPNUdlUHV0alYyd0l3eU9MVHN2dW1qOGxKbmNUZlVVbi0xNm1oQl9EYVhKdWRHdk9uM1I4dFZoS0g2NWRIQUZNN29hQlV5Zk04OHhEbVI3a2NEQUp1RFpiWFduOUg3aGxqN2hLUlJsdndGZURJcFpHWnQ2RlhEN2hFZ2pibjZIZml1d1VkUTF1MWJneFFiTnNueTRGR3BTbXc1cmlERzZrcWt4bjNiZjZHaUxZS2ZCSkJlc3A5Vng5a09VbFZhUVRYN3h4UGVhQQ?oc=5",
@@ -10266,6 +10197,39 @@
    "prescore": 3.2,
    "headline": "Bastidores: Lula cobra pente-fino nos pedidos de cargos do Centrão para evitar novas traições",
    "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "3ea1888a8d2d",
+   "title": "IA, inflação e juros definirão a economia global em 2027, segundo a Oxford Economics",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZXRFYlM1X19fQWI5Q2VubkJTQmtwV0NmNXlBM0swLTBLZ1RrZDZ4NkI3WTFFRFFVY3o2TURqNVRzNnNWdkZEQzRsTWN6UEoxeEZTZDMwTEFOeEQ3OTY5N2NLTk9aSnpUclcycklGVnVSS1ZNdFlYd1hnc29fR0FTQzRfYUE3MU9tdDBqX1lRSEtCVXUyd09JX3otaXotZE1fQTVVSnl0VWJMUnJzTy1rQ1hNRXZOMFZnTFZRYzRqalFxZFVV?oc=5",
+   "published": "2026-11-18T12:16:26+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZXRFYlM1X19fQWI5Q2VubkJTQmtwV0NmNXlBM0swLTBLZ1RrZDZ4NkI3WTFFRFFVY3o2TURqNVRzNnNWdkZEQzRsTWN6UEoxeEZTZDMwTEFOeEQ3OTY5N2NLTk9aSnpUclcycklGVnVSS1ZNdFlYd1hnc29fR0FTQzRfYUE3MU9tdDBqX1lRSEtCVXUyd09JX3otaXotZE1fQTVVSnl0VWJMUnJzTy1rQ1hNRXZOMFZnTFZRYzRqalFxZFVV?oc=5",
+     "title": "IA, inflação e juros definirão a economia global em 2027, segundo a Oxford Economics"
+    }
+   ],
+   "ids": [
+    "3ea1888a8d2d"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "IA, inflação e juros definirão a economia global em 2027, segundo a Oxford Economics",
+   "category": "macro",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -11526,39 +11490,6 @@
    "ai": false
   },
   {
-   "id": "6c829a6d38da",
-   "title": "Trump hails historic meeting with Putin and Xi",
-   "link": "https://www.ft.com/content/fcf6d27b-a04c-4cef-8b03-ce2423566f1f",
-   "published": "2026-11-19T07:43:13+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/fcf6d27b-a04c-4cef-8b03-ce2423566f1f",
-     "title": "Trump hails historic meeting with Putin and Xi"
-    }
-   ],
-   "ids": [
-    "6c829a6d38da"
-   ],
-   "snippet": "Summit with three leaders in southern Chinese city of Shenzhen during week of high-stakes diplomacy",
-   "prescore": 2.6,
-   "headline": "Trump hails historic meeting with Putin and Xi",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Summit with three leaders in southern Chinese city of Shenzhen during week of high-stakes diplomacy",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "38fbb4a689ca",
    "title": "Taiwan reports two Russian military aircraft nearby, second time this week",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdnpIWnMxVUtEZmIybkVXR29nSWNpWXRqRVo3dXZoYmdTcE91Q2MtZW1oSTZ2X3REWjUyZ1JNYlJSclJZX09TY0FNNllNVFdQUU5TV2lVN083QnN3aXB4U2tTMGN4TmY5U1FJbG9zSnE4bEstV215amRrZ2hpTlZ3UFRnU3dJOWZ5M0I3ZGpmU2sxZVk3bE96MWlGblVnMV9XRHk3NF84bmxGb2t6d2JBbXhNY1BrWHhlRVkxanIwMmN0OHJ6eTE0Nzg5dkV0VDhTc3c?oc=5",
@@ -12360,6 +12291,44 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "a145c5ad2ec4",
+   "title": "Opinion | DEI Will See You Now",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE51R1pZZXMyc2VNNG5zMTZJcFRkWmRlM0tRZmp1VmxYLXdTY3EzeG8zMklyUWw5RW5NaHcwaWhuRFpwNE1nREJuNy1lZ291WEplMUI0UU1EaGxKYTZYeUJJdDhWck5RUHpBTVdkT2kwMWdGVHBwRnIwZE8weXJxQQ?oc=5",
+   "published": "2026-11-18T11:15:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE51R1pZZXMyc2VNNG5zMTZJcFRkWmRlM0tRZmp1VmxYLXdTY3EzeG8zMklyUWw5RW5NaHcwaWhuRFpwNE1nREJuNy1lZ291WEplMUI0UU1EaGxKYTZYeUJJdDhWck5RUHpBTVdkT2kwMWdGVHBwRnIwZE8weXJxQQ?oc=5",
+     "title": "Opinion | DEI Will See You Now"
+    }
+   ],
+   "ids": [
+    "a145c5ad2ec4"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinião: 'DEI Will See You Now'",
+   "category": "outros",
+   "importance": 1,
+   "importance_reason": "Texto de opinião.",
+   "summary": "Coluna de opinião do WSJ sobre DEI.",
+   "involves": "DEI",
+   "interpretation": "Opinião editorial.",
+   "impact": "Sem efeito.",
+   "sentiment": "neutro",
+   "entities": [
+    "WSJ"
+   ],
+   "tags": [
+    "opinião",
+    "DEI"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
   }
  ],
  "deals": [
@@ -12536,65 +12505,53 @@
    "ai": true
   },
   {
-   "id": "47d47a062233",
-   "title": "BlackRock compra SulAmérica Asset por R$ 850 milhões",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb3hNSmRsRGdMX3ZDODhPVzFkRTVKd2JTME42WnQ0LWstRldKX3pJVlRROGE2MXk3OXQ1LU5kQ1JkTXFBc0h6clVfVHQ2TlZVdTdScUU0ZEZFd0Rkb2RXVl9ZbzY0akFzelR2Qm9mMm4tN0NXbUFjc1Z6RXdXWktiOTRVcDlFZ2lqcUFVWktvaWZuNkJZejBmeVlackw3VWRpTjd5R2IxNy1RUdIBuAFBVV95cUxNX1JXYlZ0TVJyQ1dNLVB6M1NqeE92X19iWG5DRnNnSTlWRlE4WEdYTnVmRWY1OERyTUxwRnkxdHNiOWJHYmJkTnNuZ285NEJiTm9CN1IxREktcTdESkRGcmZpSkp2N3BqUk9YRUVDc0NXMVRvdzJzZlVLd1A0QS1QRjdiZEVKajBlbktOYWxabG00cS15YjcyUGdINWNpd3hEbWxTRTNSVUJpNjBlYlY0MXRBaEZwR1Zk?oc=5",
-   "published": "2026-11-18T11:31:56+00:00",
-   "region": "BR",
+   "id": "ea1cb3a02997",
+   "title": "BlackRock expands in Brazil with asset management acquisition (BLK:NYSE)",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcFZXNlo1NnkyX2FRTWZ0QUE5WTJRYUphdVVUUEVIcVdnT09fU0RYQ2tWa1Q2aGczRTg3QlFKNXprblZtNThRWnEyak5admFQdTZIMHlzSFRERlp6RlVIRlNqLVBRd29YS3BBSTAzTHBZNzNvMVBaX0w2TXJEUU9lNHVkbmJwcjQybUVvWFFjNUdQV3I0bElPZ0o5OHYwQVlC?oc=5",
+   "published": "2026-11-18T12:43:10+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "Pipeline (Valor)",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb3hNSmRsRGdMX3ZDODhPVzFkRTVKd2JTME42WnQ0LWstRldKX3pJVlRROGE2MXk3OXQ1LU5kQ1JkTXFBc0h6clVfVHQ2TlZVdTdScUU0ZEZFd0Rkb2RXVl9ZbzY0akFzelR2Qm9mMm4tN0NXbUFjc1Z6RXdXWktiOTRVcDlFZ2lqcUFVWktvaWZuNkJZejBmeVlackw3VWRpTjd5R2IxNy1RUdIBuAFBVV95cUxNX1JXYlZ0TVJyQ1dNLVB6M1NqeE92X19iWG5DRnNnSTlWRlE4WEdYTnVmRWY1OERyTUxwRnkxdHNiOWJHYmJkTnNuZ285NEJiTm9CN1IxREktcTdESkRGcmZpSkp2N3BqUk9YRUVDc0NXMVRvdzJzZlVLd1A0QS1QRjdiZEVKajBlbktOYWxabG00cS15YjcyUGdINWNpd3hEbWxTRTNSVUJpNjBlYlY0MXRBaEZwR1Zk?oc=5",
-     "title": "BlackRock compra SulAmérica Asset por R$ 850 milhões"
+     "source": "Seeking Alpha",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcFZXNlo1NnkyX2FRTWZ0QUE5WTJRYUphdVVUUEVIcVdnT09fU0RYQ2tWa1Q2aGczRTg3QlFKNXprblZtNThRWnEyak5admFQdTZIMHlzSFRERlp6RlVIRlNqLVBRd29YS3BBSTAzTHBZNzNvMVBaX0w2TXJEUU9lNHVkbmJwcjQybUVvWFFjNUdQV3I0bElPZ0o5OHYwQVlC?oc=5",
+     "title": "BlackRock expands in Brazil with asset management acquisition (BLK:NYSE)"
     },
     {
-     "source": "Pipeline (Valor)",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNX1JXYlZ0TVJyQ1dNLVB6M1NqeE92X19iWG5DRnNnSTlWRlE4WEdYTnVmRWY1OERyTUxwRnkxdHNiOWJHYmJkTnNuZ285NEJiTm9CN1IxREktcTdESkRGcmZpSkp2N3BqUk9YRUVDc0NXMVRvdzJzZlVLd1A0QS1QRjdiZEVKajBlbktOYWxabG00cS15YjcyUGdINWNpd3hEbWxTRTNSVUJpNjBlYlY0MXRBaEZwR1Zk0gG4AUFVX3lxTE1fUldiVnRNUnJDV00tUHozU2p4T3ZfX2JYbkNGc2dJOVZGUThYR1hOdWZFZjU4RHJNTHBGeTF0c2I5YkdiYmROc25nbzk0QmJOb0I3UjFESS1xN0RKREZyZmlKSnY3cGpST1hFRUNzQ1cxVG93MnNmVUt3UDRBLVBGN2JkRUpqMGVuS05hbFpsbTRxLXliNzJQZ0g1Y2l3eERtbFNFM1JVQmk2MGViVjQxdEFoRnBHVmQ?oc=5",
-     "title": "Blackrock compra SulAmérica Asset por R$ 850 milhões"
-    },
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd1BMYVNWa0F0T3lRd1NwSnhJd3kyOVhlenZNOEJjdXprRmJLYVlVTW5RNEZYTnRfbFgyZEtTdE1pQnZ4eTh0TzBkSUdhZWVfMzhIUnhRMFRZUVdoaUtKay1FU1JJbHVYZkc5S2NmSGZxbkRLc2JHc2taTHc0SllpRDN1d3NYdzdDbThoR2ljdjFZcmQzMnhLRTdSV09lcllJM2liWGtsLWVUSTBoOEprVlE2a1NFZlh0TFYwYdIBywFBVV95cUxObVVKdElWVmlkNFBfaXNqUEdkY0MwRGphcmhNT1FQdVNtM0Y2QWVWTTJvaFJKYWJhOE92Y09yNlZOaThsZUgxMkZFb29zdHJrOUQyVXQ5bHJTYzR4R3FqZTRGczVWVzFuMGlyenpLQ2dkRGVfS2hNYkg0bmwzZmo3d2hZbGlnVFdhNmZjZzQ1dFQ4WHQ2cko2NmU4TXF1MUFiMjBDS1ZxZkZKa2xBS0FqcGtpejFUR2t3b25TTnROMHc2VExNT3U1THk2dw?oc=5",
-     "title": "Maior gestora de ativos do mundo, BlackRock acerta compra da SulAmérica Asset por até R$ 850 milhões"
-    },
-    {
-     "source": "Brasil 247",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWm9wLUNlT002N2h2NnFQTnVnV2wyWmtBMVVvcmhraEY0SzhzM2FfTlpBVW9VWWlzQklJU19VemZJTGc3TUQtQjU3TEVKYmdET2JNYUZEOU1JZGVET2RtWFI1NjRzWlpBaXVYTGtOX0dMRU5WTG9uUS1PTl9pMDVPQ1pRV1pXcGdfMngxTEo1RW0zZkpOalFUY0l3cnBkVUJTb0dJVWw1VExjS2hV?oc=5",
-     "title": "BlackRock anuncia a compra da SulAmérica Investimentos por R$ 850 milhões"
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOHBwN0g0VkRqU0V2cGNsdkR3cWlvbUpxa1lvak1MOXBfTkZvOGU2S0ZTSjhNTGJqZ1V5VHBjSjdYR01VWGx5ZS03bEJUU1p4b25GMzRPdVl6SDN5VmJxRVNRMkJnZWgyYjZFOS13NjN2OFROeUxJeXJ1Zk1JaXBsVFEwUDNsdExqaGtXT0lPNUROTGYwQUhmeVRQX3FlMmxlNWpFSDFmSUxueTk2WEN4RkdRVlZKNW1KWVgxSWZzQjhLUQ?oc=5",
+     "title": "BlackRock expands in Brazil with asset management acquisition"
     }
    ],
    "ids": [
-    "47d47a062233",
-    "ca443efa900b",
-    "4e34e4349c78",
-    "7bfc4b3e1776"
+    "ea1cb3a02997",
+    "6dd5484d1b7b"
    ],
    "snippet": "",
-   "prescore": 6.0,
-   "headline": "BlackRock compra a SulAmérica Investimentos por R$ 850 milhões",
+   "prescore": 6.7,
+   "headline": "BlackRock expande presença no Brasil com aquisição de gestora de ativos",
    "category": "mna",
    "importance": 8,
-   "importance_reason": "Gestora global compra gestora de ativos brasileira, deal relevante para o setor de asset management.",
-   "summary": "A BlackRock anunciou a compra da SulAmérica Investimentos (SulAmérica Asset) por R$ 850 milhões, segundo Brasil 247 e Pipeline.",
-   "involves": "BlackRock, SulAmérica Investimentos; gestão de ativos.",
-   "interpretation": "Entrada da maior gestora do mundo ampliando presença no varejo e no mercado institucional locais por aquisição.",
-   "impact": "Eleva a competição entre gestoras e dá referência de múltiplo para outras gestoras de bancos e seguradoras; sinaliza possível consolidação.",
+   "importance_reason": "Aquisição de gestora no Brasil por gigante global de asset management.",
+   "summary": "A BlackRock anunciou a aquisição de uma gestora de ativos no Brasil, segundo Seeking Alpha e TradingView. Os veículos associados a outras manchetes apontam a SulAmérica Investimentos como alvo. Valor não divulgado no material.",
+   "involves": "BlackRock, gestora de ativos no Brasil",
+   "interpretation": "Movimento de consolidação em asset management local por player global.",
+   "impact": "Aumenta a competição no setor de gestão e pode reprecificar gestoras independentes brasileiras e estimular novas operações.",
    "sentiment": "positivo",
    "entities": [
     "BlackRock",
     "SulAmérica Investimentos"
    ],
    "tags": [
-    "gestão de ativos",
     "BlackRock",
-    "M&A"
+    "gestão de ativos",
+    "Brasil"
    ],
    "is_deal": true,
    "deal": {
     "type": "Aquisição",
     "buyer": "BlackRock",
-    "target": "SulAmérica Investimentos",
-    "value": "R$ 850 milhões",
+    "target": "SulAmérica Investimentos (a confirmar)",
+    "value": "não divulgado",
     "stage": "Anunciado",
     "sector": "Gestão de ativos",
     "advisors": "não divulgado"
@@ -13218,20 +13175,26 @@
    "id": "36cdf65deb54",
    "title": "Brazil Expansion: What Does the Auto Avaliar Deal Mean for ASX 200's CAR Group (ASX:CAR)?",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSmpPT1VITDBtY054Wmo5NmRkVFFXNUFReEd5bXNaWFN3b09CbEV6R0dWRUxjRnBuUnlKMjl6Z0d6U0FIeW53UFlJNzNxNHBKVzFqWmdvbFh4b0I2cjdLaTNYNVBUUTdjOUR6NGpQYXplaHVjNFY3b2tQZHRJZ3ZEa3puNkp3XzI4SHdaemNranpIdmJWTURPeTFQUG01cWtpaFVBLWlCcGYzSVJad3JwZ0YxMV8tU3NtWklKQVhsbmIyeTc0QnVRcg?oc=5",
-   "published": "2026-11-19T07:38:00+00:00",
+   "published": "2026-11-19T06:21:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Kalkine Media",
      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSmpPT1VITDBtY054Wmo5NmRkVFFXNUFReEd5bXNaWFN3b09CbEV6R0dWRUxjRnBuUnlKMjl6Z0d6U0FIeW53UFlJNzNxNHBKVzFqWmdvbFh4b0I2cjdLaTNYNVBUUTdjOUR6NGpQYXplaHVjNFY3b2tQZHRJZ3ZEa3puNkp3XzI4SHdaemNranpIdmJWTURPeTFQUG01cWtpaFVBLWlCcGYzSVJad3JwZ0YxMV8tU3NtWklKQVhsbmIyeTc0QnVRcg?oc=5",
      "title": "Brazil Expansion: What Does the Auto Avaliar Deal Mean for ASX 200's CAR Group (ASX:CAR)?"
+    },
+    {
+     "source": "Kalkine",
+     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcXJFTmtWV1pwM25JWjBqYk51T2tTM1czZjhidDRESDJVVWcyQS0tYk9uYU9XVnVPYXBXMDBFTkNNYlNfTV93a204R0hvSGRVQXc0ZHQxcm53aXl6blZ2SkpWV3lUSUdpZlFRUkk2SXZSbDBwUmpma0x4UTRjTldJRUxkR1hBdnUtS2xHdk51LUVUdWdLWnVnQ29mLXkwZ2FGU1g1eGl4TmJlTnlvLW9sTVVXZE5JLVFMdUZ4bUI0MEs0ODRidW9VWXVUSER2WGV0ckFuQ3o4R0Nmc3FDNm1TUEpaUzBMbkdzV0xJRA?oc=5",
+     "title": "What does the Auto Avaliar deal in Brazil mean for CAR Group (ASX:CAR), the S&P/ASX 200 online vehicle marketplace operator?"
     }
    ],
    "ids": [
-    "36cdf65deb54"
+    "36cdf65deb54",
+    "c896f4b8bdfa"
    ],
    "snippet": "",
-   "prescore": 2.2,
+   "prescore": 3.7,
    "headline": "CAR Group, da ASX, entra no Brasil com acordo da Auto Avaliar",
    "category": "mna",
    "importance": 4,
@@ -13838,23 +13801,56 @@
    "ai": true
   },
   {
+   "id": "54165a35ea1a",
+   "title": "Ibovespa Futuro sobe com ajuste fiscal e IPO da Anthropic no radar",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU00za2JaR3FrZzRyR0hlWWRpS2FwalpGQ0JpWGk3c0JoWlVfWkJZSl9GQVBvUmZ0Sm5PWFQydG10SXFsVzZVSHhkUDlLX3IxZE5vTXNvc1FYWnBNcEVlWTIxMUFNdVZVUXpTREtob0pycEdxVTRYVVhZN0JUd19MVHhxdUVTVlRTSzdfRg?oc=5",
+   "published": "2026-11-19T13:17:14+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "ISTOÉ DINHEIRO",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU00za2JaR3FrZzRyR0hlWWRpS2FwalpGQ0JpWGk3c0JoWlVfWkJZSl9GQVBvUmZ0Sm5PWFQydG10SXFsVzZVSHhkUDlLX3IxZE5vTXNvc1FYWnBNcEVlWTIxMUFNdVZVUXpTREtob0pycEdxVTRYVVhZN0JUd19MVHhxdUVTVlRTSzdfRg?oc=5",
+     "title": "Ibovespa Futuro sobe com ajuste fiscal e IPO da Anthropic no radar"
+    }
+   ],
+   "ids": [
+    "54165a35ea1a"
+   ],
+   "snippet": "",
+   "prescore": 7.4,
+   "headline": "Ibovespa Futuro sobe com ajuste fiscal e IPO da Anthropic no radar",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ebfa6ce1c746",
-   "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quinta",
+   "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com ajuste fiscal no radar",
    "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-19112026/",
-   "published": "2026-11-19T13:10:31+00:00",
+   "published": "2026-11-19T13:19:52+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "InfoMoney",
      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-19112026/",
-     "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quinta"
+     "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com ajuste fiscal no radar"
     }
    ],
    "ids": [
     "ebfa6ce1c746"
    ],
-   "snippet": "Índices futuros dos EUA sobem com IPO da Anthropic The post Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta quinta appeared first on InfoMoney .",
-   "prescore": 8.2,
+   "snippet": "Índices futuros dos EUA sobem com IPO da Anthropic The post Ibovespa Hoje Ao Vivo: Bolsa sobe com ajuste fiscal no radar appeared first on InfoMoney .",
+   "prescore": 7.2,
    "headline": "Ibovespa hoje: futuros dos EUA sobem com IPO da Anthropic",
    "category": "mercados",
    "importance": 5,
@@ -14386,6 +14382,39 @@
    "ai": false
   },
   {
+   "id": "e35a001c8205",
+   "title": "Copom Compass Dezembro",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORXRGNTZybU14S1diWlBMbDBXX0NvdDlGVEZvUTdsN3dHWVdDblpfYmlZYzZCelBEY3hfNjU2R2NFaGgtb2ZzS1oxbC1Md21VSEVqdnJBUXdKbkJUSVF1YnBaQ1lIcFN6R3E1UlVBRGJPWG1JR2tRQmYyNGxVUGc3WjFCcmt6QQ?oc=5",
+   "published": "2026-11-19T13:19:12+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORXRGNTZybU14S1diWlBMbDBXX0NvdDlGVEZvUTdsN3dHWVdDblpfYmlZYzZCelBEY3hfNjU2R2NFaGgtb2ZzS1oxbC1Md21VSEVqdnJBUXdKbkJUSVF1YnBaQ1lIcFN6R3E1UlVBRGJPWG1JR2tRQmYyNGxVUGc3WjFCcmt6QQ?oc=5",
+     "title": "Copom Compass Dezembro"
+    }
+   ],
+   "ids": [
+    "e35a001c8205"
+   ],
+   "snippet": "",
+   "prescore": 4.8,
+   "headline": "Copom Compass Dezembro",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "814cccb84225",
    "title": "A bolsa caiu, mas o risco ficou: BTG rebaixa Brasil para neutro e tira Itaú, XP e Assaí da carteira",
    "link": "https://www.moneytimes.com.br/a-bolsa-caiu-mas-o-risco-ficou-btg-rebaixa-brasil-para-neutro-e-tira-itau-xp-e-assai-da-carteira-miql/",
@@ -14620,6 +14649,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "fd6fb2e9df8b",
+   "title": "Todo mundo decidiu abandonar o Brasil? BTG e Itaú BBA também tiram o pé da bolsa brasileira após eleições",
+   "link": "https://www.seudinheiro.com/2026/bolsa-dolar/todo-mundo-decidiu-abandonar-o-brasil-btg-e-itau-bba-tambem-tiram-o-pe-da-bolsa-brasileira-apos-eleicoes-miql/",
+   "published": "2026-11-19T13:18:26+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/bolsa-dolar/todo-mundo-decidiu-abandonar-o-brasil-btg-e-itau-bba-tambem-tiram-o-pe-da-bolsa-brasileira-apos-eleicoes-miql/",
+     "title": "Todo mundo decidiu abandonar o Brasil? BTG e Itaú BBA também tiram o pé da bolsa brasileira após eleições"
+    }
+   ],
+   "ids": [
+    "fd6fb2e9df8b"
+   ],
+   "snippet": "Depois de Morgan Stanley e Goldman Sachs, dois dos principais bancos de investimentos brasileiros também rebaixam o Brasil em suas estratégias para a América Latina; veja o que está por trás da mudança de humor The post Todo mundo decidiu abandonar o Brasil? BTG e Itaú BBA também tiram o pé da bolsa brasileira após eleições appeared first on Seu Dinheiro .",
+   "prescore": 3.8,
+   "headline": "Todo mundo decidiu abandonar o Brasil? BTG e Itaú BBA também tiram o pé da bolsa brasileira após eleições",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Depois de Morgan Stanley e Goldman Sachs, dois dos principais bancos de investimentos brasileiros também rebaixam o Brasil em suas estratégias para a América Latina; veja o que está por trás da mudança de humor The post Todo mundo decidiu abandonar o Brasil? BTG e Itaú BBA também tiram o pé da bolsa brasileira após eleições appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "121340538d8e",
@@ -15051,6 +15113,39 @@
    "ai": false
   },
   {
+   "id": "a8617046cbd9",
+   "title": "Argentina’s $24 Billion LNG Dream Bets On Milei's Model Enduring",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-19/argentina-s-24-billion-lng-dream-bets-on-milei-s-model-enduring",
+   "published": "2026-11-19T13:15:45+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-19/argentina-s-24-billion-lng-dream-bets-on-milei-s-model-enduring",
+     "title": "Argentina’s $24 Billion LNG Dream Bets On Milei's Model Enduring"
+    }
+   ],
+   "ids": [
+    "a8617046cbd9"
+   ],
+   "snippet": "Argentina is trying to push through one of the biggest energy investments ever in Latin America. The $24 billion plan to produce vast quantities of liquefied shale gas is a key part of efforts to turn Argentina into a significant world supplier. But while locals hope for enduring prosperity, fears linger over whether construction jobs will vanish once terminals go live—and whether heavy industry will threaten the gulf’s protected right whales. Jonathan Gilbert reports. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "Argentina’s $24 Billion LNG Dream Bets On Milei's Model Enduring",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Argentina is trying to push through one of the biggest energy investments ever in Latin America. The $24 billion plan to produce vast quantities of liquefied shale gas is a key part of efforts to turn Argentina into a significant world supplier. But while locals hope for enduring prosperity, fears linger over whether construction jobs will vanish once terminals go live—and whether heavy industry w",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "3cd2d437a96c",
    "title": "Nick Candy: UK Seeing Wealth 'Exodus'",
    "link": "https://www.bloomberg.com/news/videos/2026-11-19/nick-candy-uk-seeing-wealth-exodus-video",
@@ -15117,6 +15212,39 @@
    "ai": false
   },
   {
+   "id": "ff84960843a2",
+   "title": "Trump diz que EUA vão ‘ver o que acontece’ na guerra com o Irã após 1º de janeiro",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORkZNYnFtV0NORTI0MEN1MjJtemxjNWZVN3VkUzFpNlpNbGlUd1pqenB2ckhyVkVtWk5kMFdqR2diNFNRNWo2bV9kQjdfNHZoYS02VkVaYy1xSC1ocXJMNmhFWVBDVnFWdXI1dlhlMlRHTWJkczNJMmtqd0NGN1E4VnlKZ2lhSWt2UjJ3emJiclllZWVUS3h1TFMxZS1lNFIwVWJKZ2FEM0NWXzVVblRoQmdUT2FYVTNuSUVsUE4ycUhmS0t3LVJUQzZ30gHYAUFVX3lxTE1wR3JkWWo2V0MtNVEtUzdmcHF4MWk4Slh2UUV5Z2E4VnBEd0tyRnBsTER5WktMQTZsYkpCaXFVTURYR2F2TjhFZ2dRbXVnT2pRSGtXeG1sRFVrejhOcDJkVEJQMURyd3B5U1ptOWt3TmJHbjNVdEdzSHpsc0QxeEpCbWM0M0EzRXVuQUYwRG9seTg2aUNSWDVjSElzVlVXTllrYTZ5TXJFSzd4d1RyQUh4dFZlcGVsaFM2Wkgwakk3UldMa1FUNkxiUHRKUWFqcEJLZ3I2RGs0Vg?oc=5",
+   "published": "2026-11-19T12:24:36+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORkZNYnFtV0NORTI0MEN1MjJtemxjNWZVN3VkUzFpNlpNbGlUd1pqenB2ckhyVkVtWk5kMFdqR2diNFNRNWo2bV9kQjdfNHZoYS02VkVaYy1xSC1ocXJMNmhFWVBDVnFWdXI1dlhlMlRHTWJkczNJMmtqd0NGN1E4VnlKZ2lhSWt2UjJ3emJiclllZWVUS3h1TFMxZS1lNFIwVWJKZ2FEM0NWXzVVblRoQmdUT2FYVTNuSUVsUE4ycUhmS0t3LVJUQzZ30gHYAUFVX3lxTE1wR3JkWWo2V0MtNVEtUzdmcHF4MWk4Slh2UUV5Z2E4VnBEd0tyRnBsTER5WktMQTZsYkpCaXFVTURYR2F2TjhFZ2dRbXVnT2pRSGtXeG1sRFVrejhOcDJkVEJQMURyd3B5U1ptOWt3TmJHbjNVdEdzSHpsc0QxeEpCbWM0M0EzRXVuQUYwRG9seTg2aUNSWDVjSElzVlVXTllrYTZ5TXJFSzd4d1RyQUh4dFZlcGVsaFM2Wkgwakk3UldMa1FUNkxiUHRKUWFqcEJLZ3I2RGs0Vg?oc=5",
+     "title": "Trump diz que EUA vão ‘ver o que acontece’ na guerra com o Irã após 1º de janeiro"
+    }
+   ],
+   "ids": [
+    "ff84960843a2"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Trump diz que EUA vão ‘ver o que acontece’ na guerra com o Irã após 1º de janeiro",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "4c4f031d6146",
    "title": "Lula assina nesta quinta decreto com regras para o fim da escala 6x1",
    "link": "https://g1.globo.com/politica/ao-vivo/lula-decreto-regras-fim-da-escala-6x1.ghtml",
@@ -15139,6 +15267,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Lula assina nesta quinta decreto com regras para o fim da escala 6x1 Transição para a jornada 5x2 está prevista para começar em 16 de dezembro, com dois dias de folga por semana e redução da carga horária sem corte salarial. Lula deve assinar nesta quinta-feira (19) o decreto que regulamenta a mudança para a escala 5x2, com dois dias de descanso por semana.. A transição está prevista para 16 de de",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9174401d79c5",
+   "title": "Turkey Fund Investors Protest in Ankara Over Trapped Savings",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-19/turkish-fund-investors-protest-in-ankara-over-trapped-savings",
+   "published": "2026-11-19T12:03:51+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-19/turkish-fund-investors-protest-in-ankara-over-trapped-savings",
+     "title": "Turkey Fund Investors Protest in Ankara Over Trapped Savings"
+    }
+   ],
+   "ids": [
+    "9174401d79c5"
+   ],
+   "snippet": "Protesters saying their investments were tied up in liquidated Turkish funds demonstrated at the market regulator’s headquarters on Thursday, adding more political backlash to a scandal engulfing the country’s markets.",
+   "prescore": 2.8,
+   "headline": "Turkey Fund Investors Protest in Ankara Over Trapped Savings",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Protesters saying their investments were tied up in liquidated Turkish funds demonstrated at the market regulator’s headquarters on Thursday, adding more political backlash to a scandal engulfing the country’s markets.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15403,6 +15564,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "8417ba45b638",
+   "title": "Xi, Trump and Putin hail ‘groundbreaking’ meeting",
+   "link": "https://www.ft.com/content/3fde6008-d9c4-46a3-89f8-0f7611cd9b3a?syn-25a6b1a6=1",
+   "published": "2026-11-19T13:00:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/3fde6008-d9c4-46a3-89f8-0f7611cd9b3a?syn-25a6b1a6=1",
+     "title": "Xi, Trump and Putin hail ‘groundbreaking’ meeting"
+    }
+   ],
+   "ids": [
+    "8417ba45b638"
+   ],
+   "snippet": "The world’s three largest nuclear powers agree to talks on preventing proliferation",
+   "prescore": 2.6,
+   "headline": "Xi, Trump and Putin hail ‘groundbreaking’ meeting",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The world’s three largest nuclear powers agree to talks on preventing proliferation",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15781,6 +15975,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "1652cd6222a1",
+   "title": "PF apreende helicóptero de bet comprado da Igreja Universal por R$ 28 milhões",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBWc3QwU2VsOW5NcE1INDc0Zk5FQzVhcFRfTDBvejE5WnBIbVR0TEJSR2pXb09mSUw2UHpUdnN1S2d5OU56WDhsaWNyNndNNG1sVi14bmtqelVaQ0pFX3M4QXloWXFfRlRRcVpFQXFabXl2dw?oc=5",
+   "published": "2026-11-19T13:14:09+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Revista Fórum",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBWc3QwU2VsOW5NcE1INDc0Zk5FQzVhcFRfTDBvejE5WnBIbVR0TEJSR2pXb09mSUw2UHpUdnN1S2d5OU56WDhsaWNyNndNNG1sVi14bmtqelVaQ0pFX3M4QXloWXFfRlRRcVpFQXFabXl2dw?oc=5",
+     "title": "PF apreende helicóptero de bet comprado da Igreja Universal por R$ 28 milhões"
+    }
+   ],
+   "ids": [
+    "1652cd6222a1"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "PF apreende helicóptero de bet comprado da Igreja Universal por R$ 28 milhões",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "b0799cb38b76",
@@ -16278,6 +16505,72 @@
    "ai": false
   },
   {
+   "id": "51c5886a825b",
+   "title": "Walmart hikes outlook, as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+   "link": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+   "published": "2026-11-19T13:22:57+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+     "title": "Walmart hikes outlook, as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs"
+    }
+   ],
+   "ids": [
+    "51c5886a825b"
+   ],
+   "snippet": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
+   "prescore": 2.0,
+   "headline": "Walmart hikes outlook, as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+   "category": "macro",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1eb48c7aee94",
+   "title": "Moretti diz que ainda não é o momento de tratar de medidas fiscais adicionais",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/moretti-diz-que-ainda-nao-e-o-momento-de-tratar-de-medidas-fiscais-adicionais.shtml",
+   "published": "2026-11-19T13:14:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/moretti-diz-que-ainda-nao-e-o-momento-de-tratar-de-medidas-fiscais-adicionais.shtml",
+     "title": "Moretti diz que ainda não é o momento de tratar de medidas fiscais adicionais"
+    }
+   ],
+   "ids": [
+    "1eb48c7aee94"
+   ],
+   "snippet": "O ministro do Planejamento e Orçamento, Bruno Moretti , disse nesta quinta-feira (19) que, concluída a votação do projeto de ajuste fiscal no Senado , o governo está focado no diálogo com a Câmara dos Deputados. Leia mais (11/19/2026 - 10h14)",
+   "prescore": 2.0,
+   "headline": "Moretti diz que ainda não é o momento de tratar de medidas fiscais adicionais",
+   "category": "macro",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O ministro do Planejamento e Orçamento, Bruno Moretti , disse nesta quinta-feira (19) que, concluída a votação do projeto de ajuste fiscal no Senado , o governo está focado no diálogo com a Câmara dos Deputados. Leia mais (11/19/2026 - 10h14)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "705ad8767644",
    "title": "Banco do Brasil notifica clientes sobre vazamentos de dados; veja cuidados",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-notifica-clientes-sobre-vazamentos-de-dados-veja-cuidados.shtml",
@@ -16333,39 +16626,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Um salão de beleza no Rio de Janeiro foi condenado a pagar indenização de R$ 50 mil a uma cabeleireira que teve seu cabelo ridicularizado por ser crespo . A Sétima Turma do TST (Tribunal Superior do Trabalho) confirmou condenação de instâncias inferiores que entenderam haver conduta de discriminação racial no caso. Leia mais (11/19/2026 - 10h07)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "51c5886a825b",
-   "title": "Walmart hikes outlook, as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-   "link": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-   "published": "2026-11-19T13:06:09+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-     "title": "Walmart hikes outlook, as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs"
-    }
-   ],
-   "ids": [
-    "51c5886a825b"
-   ],
-   "snippet": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
-   "prescore": 2.0,
-   "headline": "Walmart hikes outlook, as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-   "category": "macro",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16774,7 +17034,7 @@
   },
   {
    "id": "a53b05cf63ae",
-   "title": "Dívida pública deve se estabilizar em dois ou três anos, afirma ministro do Planejamento",
+   "title": "Ministro do Planejamento prevê estabilizar dívida pública em até 3 anos",
    "link": "https://g1.globo.com/politica/blog/camila-bomfim/post/2026/11/19/divida-publica-deve-se-estabilizar-em-dois-ou-tres-anos-diz-moretti.ghtml",
    "published": "2026-11-19T12:51:49+00:00",
    "region": "BR",
@@ -16782,20 +17042,20 @@
     {
      "source": "g1",
      "link": "https://g1.globo.com/politica/blog/camila-bomfim/post/2026/11/19/divida-publica-deve-se-estabilizar-em-dois-ou-tres-anos-diz-moretti.ghtml",
-     "title": "Dívida pública deve se estabilizar em dois ou três anos, afirma ministro do Planejamento"
+     "title": "Ministro do Planejamento prevê estabilizar dívida pública em até 3 anos"
     }
    ],
    "ids": [
     "a53b05cf63ae",
     "a53b05cf63ae"
    ],
-   "snippet": "O ministro do Planejamento, Bruno Morreti, afirmou nesta quinta-feira (19) que a dívida pública deve se estabilizar nos próximos dois ou três anos, segundo a trajetória prevista na Lei de Diretrizes Orçamentárias (LDO). Segundo ele, o governo pretende manter o processo de consolidação fiscal ao longo dos próximos anos, inclusive durante o próximo mandato presidencial. Nessa quarta-feira (18), o Senado concluiu a votação e aprovou o projeto de lei com medidas do governo sobre as contas públicas. O texto vai agora para a Câmara dos Deputados. A medida prevê um ajuste fiscal. \"Nós temos na lei de",
+   "snippet": "O ministro do Planejamento, Bruno Moretti, afirmou nesta quinta-feira (19) que trabalha com a previsão da estabilização da dívida pública em até 3 anos, segundo a trajetória prevista na Lei de Diretrizes Orçamentárias (LDO). De acordo com ele, o governo pretende manter o processo de consolidação fiscal ao longo dos próximos anos, inclusive durante o próximo mandato presidencial. Nessa quarta-feira (18), o Senado concluiu a votação e aprovou o projeto de lei com medidas do governo sobre as contas públicas. O texto vai agora para a Câmara dos Deputados. A medida prevê um ajuste fiscal. \"Nós temo",
    "prescore": 1.8,
-   "headline": "Dívida pública deve se estabilizar em dois ou três anos, afirma ministro do Planejamento",
+   "headline": "Ministro do Planejamento prevê estabilizar dívida pública em até 3 anos",
    "category": "macro",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro do Planejamento, Bruno Morreti, afirmou nesta quinta-feira (19) que a dívida pública deve se estabilizar nos próximos dois ou três anos, segundo a trajetória prevista na Lei de Diretrizes Orçamentárias (LDO). Segundo ele, o governo pretende manter o processo de consolidação fiscal ao longo dos próximos anos, inclusive durante o próximo mandato presidencial. Nessa quarta-feira (18), o Se",
+   "summary": "O ministro do Planejamento, Bruno Moretti, afirmou nesta quinta-feira (19) que trabalha com a previsão da estabilização da dívida pública em até 3 anos, segundo a trajetória prevista na Lei de Diretrizes Orçamentárias (LDO). De acordo com ele, o governo pretende manter o processo de consolidação fiscal ao longo dos próximos anos, inclusive durante o próximo mandato presidencial. Nessa quarta-feira",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17261,7 +17521,7 @@
    "id": "bloomberg-deals",
    "name": "Bloomberg",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -17324,7 +17584,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 29,
+   "count": 51,
    "error": null
   },
   {
@@ -17528,11 +17788,11 @@
   }
  ],
  "stats": {
-  "raw": 879,
-  "unique": 485,
-  "unique_all": 827,
+  "raw": 903,
+  "unique": 494,
+  "unique_all": 849,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.0
+  "seconds": 3.8
  }
 }
