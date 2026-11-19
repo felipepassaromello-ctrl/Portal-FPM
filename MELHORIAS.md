@@ -34,7 +34,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 ## Fila (da maior para a menor prioridade)
 
 0. **Publicação no GitHub Pages: só acompanhar.** Depois do #67 (artefato de cerca de 41 MB, sem as bases internas), as 13 execuções de 10/11 à tarde até 11/11 à noite publicaram sem travar, cada deploy em cerca de 12 s; antes, foram 5 travadas em 5 dias. Se voltar a travar, o próximo passo é empacotar os perfis em menos arquivos (hoje são cerca de 3.300).
-2. **Notícia repetida em vários cartões: acompanhar.** Feito no #64 para o mesmo deal e no #75 para o mesmo assunto, junta 7 a 13 cartões por edição. Ainda ficam separadas as matérias do mesmo fato com títulos bem diferentes. Em 12/11, a crise da Nvidia teve 6 cartões e só 2 foram juntados. Se incomodar, o próximo passo é a análise da manhã marcar "mesmo fato que" (mexe no routine.py).
+2. **Notícia repetida em vários cartões: acompanhar.** Feito no #64 para o mesmo deal, no #75 para o mesmo assunto e no #85 entre categorias e com notícias ainda sem análise. Ainda ficam separadas matérias do mesmo fato com títulos bem diferentes e sem entidades em comum. Em 18/11, a saga da Nvidia e de Jensen Huang ainda teve cerca de 10 cartões, quase todos de nota 1 sem análise. Se incomodar, o próximo passo é a análise da manhã marcar "mesmo fato que" (mexe no routine.py).
 3. **Deals: Brasil e exterior, acompanhar.** Feito no #78 na Base de deals e no #84 com mais critérios. A classificação é feita no navegador: companhia aberta da base, grupo brasileiro conhecido, valor em R$, menção ao Brasil, a um estado (por extenso ou sigla, como "em MG"), ao Cade, à B3 ou à CVM e, na aba Deals da edição, a justificativa da análise. Ainda escapam ativos brasileiros de compradores estrangeiros sem menção ao Brasil, como o projeto Cabaçal, da Meridian, e empresas fechadas sem nada no título, como a Archimed comprando a Genetica, de Chapecó. Próximo passo, se precisar: a análise da manhã ganhar o campo "país do negócio" (mexe no routine.py).
 4. **Análise da rotina da manhã: conferida em 16/11, sem mudança.** Os itens de nota 1 a 3 saem com resumo e impacto curtos e diretos, como deve ser ("Sem efeito no Brasil; reforça o tema de preços de energia"). Ponto aberto, que precisa do ok do Felipe porque consome uso do Claude: as notícias que chegam depois da rotina da manhã ficam sem análise até o dia seguinte. Em 16/11 foram cerca de 200 de 300. A rodada do vigia poderia analisá-las.
 5. **Mundo das companhias no celular de verdade.** Os testes rodam em navegador sem placa de vídeo. Falta saber como fica a fluidez num iPhone real; pedir ao Felipe ou medir pelo próprio site.
@@ -47,6 +47,10 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 18/11 — Mais matérias repetidas entram no mesmo cartão (#85):
+  - o mesmo fato caía em categorias diferentes (Nvidia em "empresas" e em "tech", o BDR da Anthropic em "mercados" e em "M&A") e não era juntado; as notícias ainda sem análise também ficavam de fora;
+  - agora junta entre categorias quando as entidades principais coincidem ou os títulos são quase iguais. Notícias sem análise também podem entrar no cartão, mas só uma notícia analisada fica com ele. As palavras são comparadas pelo radical de 5 letras ("volta" e "voltar");
+  - conferido nas edições de 16 a 18/11: de 11 para 19 matérias juntadas em 18/11 (o BDR da Anthropic, por exemplo, passou de 6 cartões para 1), de 4 para 7 em 17/11 e de 11 para 14 em 16/11, sem juntar fatos diferentes.
 - 17/11 — Deals do Brasil que apareciam como exterior (#84):
   - na aba Deals de 17/11, a compra da Justos pela Loovi, duas insurtechs brasileiras, aparecia como "exterior";
   - causa: as partes de cada nome eram procuradas na base de companhias depois de juntar comprador e alvo, e um alvo como "Braskem (capital votante)" ou "Assaí (15,02%)" escapava;
