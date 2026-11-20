@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T10:18:52.413544-03:00",
+ "generated_at": "2026-11-20T10:25:19.958207-03:00",
  "date": "2026-11-20",
  "window": {
   "start": "2026-11-19T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-20T08:19:08.708630-03:00",
-  "analyzed": 255
+  "analyzed": 247
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -116,28 +116,28 @@
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.9362,
-   "change_pct": 0.9266021852448736,
+   "price": 5.9433,
+   "change_pct": 1.0473155836336012,
    "spark": [
     5.66480016708374,
     5.782599925994873,
     5.776800155639648,
     5.881700038909912,
-    5.936200141906738
+    5.943299770355225
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.5255,
-   "change_pct": 1.2105086726568848,
+   "price": 6.5354,
+   "change_pct": 1.3640576782287583,
    "spark": [
     6.238303184509277,
     6.353240013122559,
     6.345178127288818,
     6.447453022003174,
-    6.5254998207092285
+    6.535399913787842
    ]
   },
   {
@@ -175,7 +175,6 @@
    "price": 5.052,
    "change_pct": -0.2763518512313268,
    "spark": [
-    5.1539998054504395,
     5.120999813079834,
     5.103000164031982,
     5.065999984741211,
@@ -186,42 +185,42 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 88.73,
-   "change_pct": -3.533380341726855,
+   "price": 89.03,
+   "change_pct": -3.207222493225992,
    "spark": [
     92.44000244140625,
     93.13999938964844,
     91.94999694824219,
     91.9800033569336,
-    88.7300033569336
+    89.02999877929688
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3581.0,
-   "change_pct": -2.8354361687695007,
+   "price": 3571.7,
+   "change_pct": -3.087776421109756,
    "spark": [
     3853.0,
     3864.199951171875,
     3741.89990234375,
     3685.5,
-    3581.0
+    3571.699951171875
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 61564.68,
-   "change_pct": -0.5446371541224626,
+   "price": 61450.66,
+   "change_pct": -0.7288320605474907,
    "spark": [
     64855.84375,
     64893.9453125,
     62987.265625,
     61901.8203125,
-    61564.6796875
+    61450.66015625
    ]
   }
  ],
@@ -3369,45 +3368,6 @@
    "ai": true
   },
   {
-   "id": "b27182e461be",
-   "title": "Oil prices set for third straight weekly decline on strong Middle East export flows",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb3pQREZDSHE2RmNHdDdGdExDUXhYeWljc2VualVoQ09oQV90WnFQQlZkYW1rWnl5ODJ6N2haaVBDVUY4VmFvRmtLSlZKbU5kR1lHNklrUUR3X3JGc181OHZCUHpXalZFUllBZXVEczJPUUdZZUt1MmpsTEN0MkJGSDNCVHhoa25pZFBSb1lldS1US0VJNVNBWWN1U2VwQmd0WmlQR1RKWmgyS2lyUDVfNHdWeWhzaFhmZ1E?oc=5",
-   "published": "2026-11-20T02:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb3pQREZDSHE2RmNHdDdGdExDUXhYeWljc2VualVoQ09oQV90WnFQQlZkYW1rWnl5ODJ6N2haaVBDVUY4VmFvRmtLSlZKbU5kR1lHNklrUUR3X3JGc181OHZCUHpXalZFUllBZXVEczJPUUdZZUt1MmpsTEN0MkJGSDNCVHhoa25pZFBSb1lldS1US0VJNVNBWWN1U2VwQmd0WmlQR1RKWmgyS2lyUDVfNHdWeWhzaFhmZ1E?oc=5",
-     "title": "Oil prices set for third straight weekly decline on strong Middle East export flows"
-    }
-   ],
-   "ids": [
-    "b27182e461be"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Petróleo sobe com ataques houthis a Riad e temor sobre oferta",
-   "category": "mercados",
-   "importance": 6,
-   "importance_reason": "Risco de oferta no Oriente Médio com efeito em petróleo e Petrobras.",
-   "summary": "Os preços do petróleo sobem após ataques houthis a Riad, que aumentam preocupações com a oferta.",
-   "involves": "Houthis, Riad, petróleo",
-   "interpretation": "Prêmio geopolítico volta ao barril.",
-   "impact": "Favorece petroleiras e royalties; pressiona inflação de combustíveis.",
-   "sentiment": "misto",
-   "entities": [
-    "Houthis",
-    "Riad"
-   ],
-   "tags": [
-    "petróleo",
-    "geopolítica"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "59c6809e7974",
    "title": "Houthi Attack Damages Saudi Capital’s Tallest Tower",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOa0hZSmpRQXJwM2pNbUxHY01JZUd1TkdjdU5YNGZYd1hqMmNES3RoTWRCVm9GYjMwX0x5NkMwb2FicHNjWkhMZ1dQUVNsUW1hblVuQjVLVkhlVUZZRDFiMlcxdWNweTV0NjR6TG43MmFYMjczckZ1SmhzSlZtOFdtZVVsNHZpSk1UVWdRZ0phakNPT05NRUxmOFFmNGtMZw?oc=5",
@@ -4474,45 +4434,6 @@
    "ai": true
   },
   {
-   "id": "8f6b26755288",
-   "title": "Gold slides toward worst week in eight months on hawkish Fed outlook",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMFFjdnZJUDZiUXhKNUdPUWMtQ2tkd0ZKdmN4TTZ3bnQyb09SQ3cxSS1hNVYtcmF5WGpNSlJzS1dWYkdBUzBJZ2s5TnhLQ29mNWNIUy10MGJkN294UndsTmRmOF9GelkyVkdWRl8wcVJQNnRaRGp0a3NIMWNHT1dJSHhZRk1BT3FRV2pFcHVGa3ozS1ZCdjJXenJvSXlBOEdxLUp2MVVVTVBDY0NGX3ZRRUN3?oc=5",
-   "published": "2026-11-20T03:24:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMFFjdnZJUDZiUXhKNUdPUWMtQ2tkd0ZKdmN4TTZ3bnQyb09SQ3cxSS1hNVYtcmF5WGpNSlJzS1dWYkdBUzBJZ2s5TnhLQ29mNWNIUy10MGJkN294UndsTmRmOF9GelkyVkdWRl8wcVJQNnRaRGp0a3NIMWNHT1dJSHhZRk1BT3FRV2pFcHVGa3ozS1ZCdjJXenJvSXlBOEdxLUp2MVVVTVBDY0NGX3ZRRUN3?oc=5",
-     "title": "Gold slides toward worst week in eight months on hawkish Fed outlook"
-    }
-   ],
-   "ids": [
-    "8f6b26755288"
-   ],
-   "snippet": "",
-   "prescore": 4.6,
-   "headline": "Ouro caminha para a pior semana em oito meses com perspectiva dura do Fed",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Movimento de commodities ligado à política monetária americana.",
-   "summary": "O ouro recua e caminha para a pior semana em oito meses, pressionado por perspectiva mais dura de juros do Fed. O trecho não traz cotações.",
-   "involves": "Ouro; Federal Reserve",
-   "interpretation": "Juros americanos mais altos por mais tempo reduzem o apelo do ouro, que não rende juros.",
-   "impact": "Pode afetar mineradoras de ouro e fluxos para ativos defensivos.",
-   "sentiment": "negativo",
-   "entities": [
-    "Federal Reserve"
-   ],
-   "tags": [
-    "ouro",
-    "Fed",
-    "commodities"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "5051118d1510",
    "title": "iFood sofre novo ataque hacker e expõe dados de clientes, restaurantes e entregadores",
    "link": "https://neofeed.com.br/negocios/ifood-sofre-novo-ataque-hacker-e-expoe-dados-de-clientes-restaurantes-e-entregadores/",
@@ -4638,47 +4559,6 @@
    "ai": true
   },
   {
-   "id": "3a99f6acf214",
-   "title": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNc1pDUGRULVJNeGdkT21ERVNzMEl6RHJKTEtLRWFFQjFpYjdxWU5NMmM3Zl8zUzlHQUd3UzJlNE1UV2tlZnZFTEZrNnRKSWU1Y1lkSU1ISmF6U1JGNWNEeUJETVpHNDI5QTEwMWJTTmRraUgyaDR2RUJ1UlRadVJZMW9MUTZCeXdpZHRZRWl1X1VIZ0xBbllSWEUxMGxmdmllVFgxbmxuTmljOFFBTUkyUGR2NDRfTmM0Rm5xcXFxaHk?oc=5",
-   "published": "2026-11-19T12:48:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNc1pDUGRULVJNeGdkT21ERVNzMEl6RHJKTEtLRWFFQjFpYjdxWU5NMmM3Zl8zUzlHQUd3UzJlNE1UV2tlZnZFTEZrNnRKSWU1Y1lkSU1ISmF6U1JGNWNEeUJETVpHNDI5QTEwMWJTTmRraUgyaDR2RUJ1UlRadVJZMW9MUTZCeXdpZHRZRWl1X1VIZ0xBbllSWEUxMGxmdmllVFgxbmxuTmljOFFBTUkyUGR2NDRfTmM0Rm5xcXFxaHk?oc=5",
-     "title": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say"
-    }
-   ],
-   "ids": [
-    "3a99f6acf214"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "TSMC reforça restrições de chips de IA à China com novas regras dos EUA",
-   "category": "tech",
-   "importance": 5,
-   "importance_reason": "Aperto no fornecimento global de chips avançados.",
-   "summary": "A TSMC endureceu as restrições a chips de IA para a China, com novas regras dos EUA que fecham brecha de fabricação, segundo fontes.",
-   "involves": "TSMC; China; EUA",
-   "interpretation": "Mostra a aplicação mais rígida do controle de exportações.",
-   "impact": "Afeta cadeia de chips e empresas chinesas de IA.",
-   "sentiment": "negativo",
-   "entities": [
-    "TSMC",
-    "China",
-    "EUA"
-   ],
-   "tags": [
-    "TSMC",
-    "chips",
-    "exportação"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "7b6c8a5d811c",
    "title": "UK and EU Tighten Relationship as Global Order Shifts",
    "link": "https://www.bloomberg.com/news/articles/2026-11-20/uk-and-eu-agree-on-deals-to-deepen-post-brexit-relationship",
@@ -4790,46 +4670,6 @@
    "tags": [
     "escala 6x1",
     "decreto"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "d3265ec8653d",
-   "title": "Putin scores ‘massive win’ at first trilateral meeting, rebuilding standing as Ukraine war grinds on",
-   "link": "https://www.cnbc.com/2026/11/20/putin-xi-china-trump-russia-ukraine-.html",
-   "published": "2026-11-20T09:26:45+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/20/putin-xi-china-trump-russia-ukraine-.html",
-     "title": "Putin scores ‘massive win’ at first trilateral meeting, rebuilding standing as Ukraine war grinds on"
-    }
-   ],
-   "ids": [
-    "d3265ec8653d"
-   ],
-   "snippet": "Putin was positioned as an equal beside the leaders of the U.S. and China, handing a win to the authoritarian leader bogged down in a multi-year war.",
-   "prescore": 3.0,
-   "headline": "Putin tem grande vitória em primeira reunião trilateral, diz CNBC",
-   "category": "internacional",
-   "importance": 5,
-   "importance_reason": "Reposicionamento de Putin.",
-   "summary": "Putin foi posicionado como igual ao lado dos líderes dos EUA e da China, o que é uma vitória para o líder russo em guerra de vários anos na Ucrânia.",
-   "involves": "Vladimir Putin; EUA; China; Ucrânia",
-   "interpretation": "Reduz o isolamento da Rússia.",
-   "impact": "Afeta o cálculo de sanções e commodities.",
-   "sentiment": "misto",
-   "entities": [
-    "Vladimir Putin",
-    "Ucrânia"
-   ],
-   "tags": [
-    "Putin",
-    "cúpula",
-    "Ucrânia"
    ],
    "is_deal": false,
    "deal": null,
@@ -7286,45 +7126,6 @@
    "ai": true
   },
   {
-   "id": "d0b99ca86ca9",
-   "title": "Trump unveils $17 billion of Southeast Asia deals for US firms, White House says",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMlRBdU1MbG9haFIzV3RrZEx0YkN0R0FvdEtnaWVrdWV1Q0FRUFRiVTdQalV4d3p2UDVrUWFHZUZsMV9QMGtTM2VnUHUtSzhtZXlRXzhFbEdocGExeXhKRXZZbU91NjNSNVlVNklWQS1pcGlzeDdSOWxJaWFPQ1hMT1c0a2pyU01jU0pfUzR0WXByakIyYU01eVNJaTFURWZaeVFTYnBLV3lrMmpGWi1peUVOUnlTeldYcGgzeVU1WjhwSXFmQThNMW43RV9VVXM?oc=5",
-   "published": "2026-11-19T18:33:19+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMlRBdU1MbG9haFIzV3RrZEx0YkN0R0FvdEtnaWVrdWV1Q0FRUFRiVTdQalV4d3p2UDVrUWFHZUZsMV9QMGtTM2VnUHUtSzhtZXlRXzhFbEdocGExeXhKRXZZbU91NjNSNVlVNklWQS1pcGlzeDdSOWxJaWFPQ1hMT1c0a2pyU01jU0pfUzR0WXByakIyYU01eVNJaTFURWZaeVFTYnBLV3lrMmpGWi1peUVOUnlTeldYcGgzeVU1WjhwSXFmQThNMW43RV9VVXM?oc=5",
-     "title": "Trump unveils $17 billion of Southeast Asia deals for US firms, White House says"
-    }
-   ],
-   "ids": [
-    "d0b99ca86ca9"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Trump anuncia US$ 17 bi em acordos no Sudeste Asiático para empresas dos EUA",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Ofensiva comercial dos EUA na Ásia.",
-   "summary": "A Casa Branca diz que Trump anunciou US$ 17 bilhões em acordos no Sudeste Asiático para empresas americanas.",
-   "involves": "Trump, Casa Branca, Sudeste Asiático",
-   "interpretation": "Disputa com a China.",
-   "impact": "Beneficia exportadoras americanas.",
-   "sentiment": "positivo",
-   "entities": [
-    "Donald Trump",
-    "Casa Branca"
-   ],
-   "tags": [
-    "comércio",
-    "Ásia"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "6a858485c66b",
    "title": "Euro zone banks' data centre exposure small but growing, ECB says",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm5Wc0JWdU5keDRHeFRNV0Izdl9IY3pCVzYwaEExN2F0cmo5MTAzMnZ5S3pFSW9zeU5ITVo1bF92OExlbmU0OW55cWR1b09NdGZWU29FTi1kVXBzTHBoSUtNdmRONlVaMUV1XzN5QTUwSWNWQm80YkV0NGpzcjNES195c1VVaS1sRElPVUU2RWJHZ0N3T3I2RGhfVGdTRTlnMkdJeTM0V21lczRyV054R3h3?oc=5",
@@ -8172,39 +7973,6 @@
    "snippet": "",
    "prescore": 5.6,
    "headline": "What to Know About Anthropic’s Record-Breaking IPO",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "8d34323aeb3f",
-   "title": "Anthropic’s IPO Is a Win for Venture. Its Success Could Reshape the Industry.",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSTFtNllCZ185aGplLW0zamNtUkJpdzBTaGJjeWcwYkctQWNQOEFVOGdtTFk1WFVCTlNZdnNvOU9pOV8yZU81Y1IzNE9nWm9FVDBJWV9CMHBfUFVpcmlwU1poVUZmUzhiLTZnTTJxTC1sRHRsOFFFeG5maHBFRHFoNHZSUlREaEpGSWFHQ1AxMWp5Ti1TNTZDdzBrZ3JyQlVaRTZWLXhaX1EwRmFXRXBuQ2VOS0RnMENrcUJPR04ydFQ?oc=5",
-   "published": "2026-11-19T16:53:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSTFtNllCZ185aGplLW0zamNtUkJpdzBTaGJjeWcwYkctQWNQOEFVOGdtTFk1WFVCTlNZdnNvOU9pOV8yZU81Y1IzNE9nWm9FVDBJWV9CMHBfUFVpcmlwU1poVUZmUzhiLTZnTTJxTC1sRHRsOFFFeG5maHBFRHFoNHZSUlREaEpGSWFHQ1AxMWp5Ti1TNTZDdzBrZ3JyQlVaRTZWLXhaX1EwRmFXRXBuQ2VOS0RnMENrcUJPR04ydFQ?oc=5",
-     "title": "Anthropic’s IPO Is a Win for Venture. Its Success Could Reshape the Industry."
-    }
-   ],
-   "ids": [
-    "8d34323aeb3f"
-   ],
-   "snippet": "",
-   "prescore": 5.6,
-   "headline": "Anthropic’s IPO Is a Win for Venture. Its Success Could Reshape the Industry.",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -9447,44 +9215,6 @@
    "ai": true
   },
   {
-   "id": "8dcd9bc2fe7a",
-   "title": "US plans to announce cause of outage that led to nationwide ground stop, FAA says",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZU5sX0RGV3RBdlRyREJNbmhKOTlNU240c0N2QUpZQlkxLTJvTTR5LXJVOS1hcmNwN3MzYmNBcjhIalc3NnFLZWtyQ1cxdnJUVG1pWFpsQndVMzJsQTVhWXpyRVFnVElmSW1xSVdPeVdoLUF4VmNad01pVTcwUmtzdlJ6NUx1QnQ1bVFjaUppRUllazF5R284dmxmZmxVcVdLVEJ6OTg4ZzIyczBIaVBkYzI0THdhR3hPb0dSNW44X2JTRVY0SUgwZVFILXBDNVk?oc=5",
-   "published": "2026-11-19T15:29:43+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZU5sX0RGV3RBdlRyREJNbmhKOTlNU240c0N2QUpZQlkxLTJvTTR5LXJVOS1hcmNwN3MzYmNBcjhIalc3NnFLZWtyQ1cxdnJUVG1pWFpsQndVMzJsQTVhWXpyRVFnVElmSW1xSVdPeVdoLUF4VmNad01pVTcwUmtzdlJ6NUx1QnQ1bVFjaUppRUllazF5R284dmxmZmxVcVdLVEJ6OTg4ZzIyczBIaVBkYzI0THdhR3hPb0dSNW44X2JTRVY0SUgwZVFILXBDNVk?oc=5",
-     "title": "US plans to announce cause of outage that led to nationwide ground stop, FAA says"
-    }
-   ],
-   "ids": [
-    "8dcd9bc2fe7a"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "FAA vai divulgar causa de pane que levou a paralisação de voos nos EUA",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Pane de infraestrutura crítica, ligada à demissão do diretor.",
-   "summary": "A FAA planeja divulgar a causa de uma pane que levou a paralisação nacional.",
-   "involves": "FAA, EUA",
-   "interpretation": "Segue panes recentes.",
-   "impact": "Pode afetar companhias aéreas.",
-   "sentiment": "negativo",
-   "entities": [
-    "FAA"
-   ],
-   "tags": [
-    "FAA",
-    "aviação"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "7c4c740703a5",
    "title": "Ubisoft to cut 166 jobs in Montréal and Québec City",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU1JVd25RRHZwVVVwZl80VzV0R2J3TWFtdXUtemVUMURNbkhWbUFLbk5KZHlKZHdiUFhiZTRublNtamZGdERzdHpndDdUNGE4WndmUFFyazl1R0N2Y0xyUXJrcTE4NzdfTkFKT21UdmVWaS1GR0lDLWpla2lQNG5Wak15NV9zNUNEamFuck9GWmNoWllva1FWQjFnSHEtVVk?oc=5",
@@ -10084,39 +9814,6 @@
    "ai": false
   },
   {
-   "id": "8d47825472ab",
-   "title": "China’s AI Firms Are Addicted to Nvidia Chips. Now They Are Facing Withdrawal.",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeHpsUWpRNHV2N1B5QVI4LUdwb1VMWjB1aXRnV2I0YkowdGZDRnBLeGJWYWx3UERrRXNWWmh4QV9wQkd0UlUydEp6WDVYMVJBMHNSOXJUMHhHUUMtbjUzUFp1aXdlX283dWt1aDlUaWhYQW5oNkozeGY2dUVSbkxiZjQ2Nkd0QjBfVjVLRW44YktRbTMtdEx5ZWZuTGl6LVVvRWpWS1hfZU9pR0RVVkRYUUh3?oc=5",
-   "published": "2026-11-20T03:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeHpsUWpRNHV2N1B5QVI4LUdwb1VMWjB1aXRnV2I0YkowdGZDRnBLeGJWYWx3UERrRXNWWmh4QV9wQkd0UlUydEp6WDVYMVJBMHNSOXJUMHhHUUMtbjUzUFp1aXdlX283dWt1aDlUaWhYQW5oNkozeGY2dUVSbkxiZjQ2Nkd0QjBfVjVLRW44YktRbTMtdEx5ZWZuTGl6LVVvRWpWS1hfZU9pR0RVVkRYUUh3?oc=5",
-     "title": "China’s AI Firms Are Addicted to Nvidia Chips. Now They Are Facing Withdrawal."
-    }
-   ],
-   "ids": [
-    "8d47825472ab"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "China’s AI Firms Are Addicted to Nvidia Chips. Now They Are Facing Withdrawal.",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "cbdab4d75534",
    "title": "Fachin mantém prisão de primo de Vorcaro por risco de ingerência na investigação do caso Master",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/fachin-mantem-prisao-de-primo-de-vorcaro-por-risco-de-ingerencia-na-investigacao.shtml",
@@ -10394,7 +10091,7 @@
   },
   {
    "id": "018b1511ff9b",
-   "title": "Treasury Two-Year Yields Sink Most Since 2025 as AI Worries Bite",
+   "title": "Treasuries Add to Steep Weekly Gain as Investors Flee Stocks",
    "link": "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
    "published": "2026-11-20T04:33:23+00:00",
    "region": "INTL",
@@ -10402,19 +10099,19 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
-     "title": "Treasury Two-Year Yields Sink Most Since 2025 as AI Worries Bite"
+     "title": "Treasuries Add to Steep Weekly Gain as Investors Flee Stocks"
     }
    ],
    "ids": [
     "018b1511ff9b"
    ],
-   "snippet": "Short-dated US Treasuries were set for their best week in more than a year as global stocks slumped on mounting doubts over the artificial intelligence trade.",
+   "snippet": "Treasuries added to a steep weekly advance as stock markets slumped globally on mounting doubts over the artificial intelligence trade.",
    "prescore": 2.8,
-   "headline": "Treasury Two-Year Yields Sink Most Since 2025 as AI Worries Bite",
+   "headline": "Treasuries Add to Steep Weekly Gain as Investors Flee Stocks",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Short-dated US Treasuries were set for their best week in more than a year as global stocks slumped on mounting doubts over the artificial intelligence trade.",
+   "summary": "Treasuries added to a steep weekly advance as stock markets slumped globally on mounting doubts over the artificial intelligence trade.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11059,39 +10756,6 @@
    "ai": false
   },
   {
-   "id": "c27f6318ff44",
-   "title": "BNDES registra lucro de R$ 20,3 bilhões até setembro, alta de 18% ante o mesmo período em 2025",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPS043cmQ0Sm5ZSmFYMWNvUWNNNlVPdHNmS0tESFlKakZpMnJGYjR4TG1CY0F5WHNSWEs3bHJVWjZGQjhkblAzZFR5U1VZakFxNW8tVnV3dGFMckltN0NfMTRjMHNubzhHVVpNaWJtWm5HRmtXSW5GN0lTV1I4ZkJpZVlaNzFCc2hPaGI0bWltbGZZX1ZEM1IyY1FwcEhZX2RZYVpxYWp0UWdyUkxsX0lVckQ1eGhWVjBoaGdDNlZRRnNPSzlDSmpWZkd4V0VudEFfeXM5LTVORVF0eGR4T2lWaEhlZEzSAfMBQVVfeXFMT3pqSmkydzFhRHZRMXVJV213Z215N29rQkZjUDVydVJUUHFSQnlNZ1dqMXZHRWM5VFVhU2k5QV9nM0FxSVR3aGlRVnhDcEtqZ3RkRmR2dnJXNkxuZGFrNllkanQ3VFdITmxwMDlacDlBMnJjOTZ0Q0NQMFQwRTI3TEZzT2NtTjVleEE4cDd5R2xzWFpKdTZKRDRUYWxDRmVzNkkzak9uSHk4d3hoMnY5ZEdEcXNrVmo4dEFmSnpDa0RkOE5Hd2cxWi1BZ2xFNHJDSjh3WFQ1OHN0WUJLM0RUVUhJMmhDLTJIOE9oM3ctR0FYVUkw?oc=5",
-   "published": "2026-11-19T14:56:17+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPS043cmQ0Sm5ZSmFYMWNvUWNNNlVPdHNmS0tESFlKakZpMnJGYjR4TG1CY0F5WHNSWEs3bHJVWjZGQjhkblAzZFR5U1VZakFxNW8tVnV3dGFMckltN0NfMTRjMHNubzhHVVpNaWJtWm5HRmtXSW5GN0lTV1I4ZkJpZVlaNzFCc2hPaGI0bWltbGZZX1ZEM1IyY1FwcEhZX2RZYVpxYWp0UWdyUkxsX0lVckQ1eGhWVjBoaGdDNlZRRnNPSzlDSmpWZkd4V0VudEFfeXM5LTVORVF0eGR4T2lWaEhlZEzSAfMBQVVfeXFMT3pqSmkydzFhRHZRMXVJV213Z215N29rQkZjUDVydVJUUHFSQnlNZ1dqMXZHRWM5VFVhU2k5QV9nM0FxSVR3aGlRVnhDcEtqZ3RkRmR2dnJXNkxuZGFrNllkanQ3VFdITmxwMDlacDlBMnJjOTZ0Q0NQMFQwRTI3TEZzT2NtTjVleEE4cDd5R2xzWFpKdTZKRDRUYWxDRmVzNkkzak9uSHk4d3hoMnY5ZEdEcXNrVmo4dEFmSnpDa0RkOE5Hd2cxWi1BZ2xFNHJDSjh3WFQ1OHN0WUJLM0RUVUhJMmhDLTJIOE9oM3ctR0FYVUkw?oc=5",
-     "title": "BNDES registra lucro de R$ 20,3 bilhões até setembro, alta de 18% ante o mesmo período em 2025"
-    }
-   ],
-   "ids": [
-    "c27f6318ff44"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "BNDES registra lucro de R$ 20,3 bilhões até setembro, alta de 18% ante o mesmo período em 2025",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "69121a507d04",
    "title": "Bitcoin ronda US$ 64 mil; ETFs seguem negativos e Anthropic testa apetite por risco",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZ0pyUXAtQmpESGxXSXNRU19uNjJJWlFDdFdqdGcxT3N5aHE3R0ZaSm1UMlNuU3Q3VW9zRExhNEpXNTJweEU0QURpRDRGT3NBVElQWDVFUV9UaGtvRkxRcG1fc1RCa0Q1Q180bThXYkdGRkpFeUsxMmV0eXN2Z25LMzJTeWU5VlZDdEVtU1JYUk1ldzNmdk9RTE5kRDZoc01fdGVIcVl3RzNYbXZrbW1lTFFoQUVpWmZxTzBEZ0YtR1RGbTFiS3FzZm51c01JZ2tHbTZVTE9qNTA2OUo0RGNTdmZxQ2dsOHPSAfYBQVVfeXFMTjN2S0RGSnRZeVVQbFFqRzRacVlSejVHQm5oUVk4SlJ0cENUTlBTQzdUVVhJa0tnTkd0c2RJQ3pXSU1kb2hFSkxhZ0docmhlNEpRTTFuNVRGTVNOcURNeVdjalA2bEl3TWxiS1hYY3JncklmN2FvT0pxc2QwelRFY3JXWS1kMVZ6bHBtTzRhY3pqU0xib21qSWE4cnR5eE9vZGxvbWNoMGFMZm0ybGV1TEZ3Q2lSTDljNG43QkNuekN4TkJSWGNhYk43NDROTUZXemQ0UkFIdVRTTklWWWMtLUNtdmVzUUNuUF90OEtHWkZ1WWYzMVZ3?oc=5",
@@ -11210,39 +10874,6 @@
    "prescore": 2.8,
    "headline": "Xi cobra que EUA façam ‘coisa certa’ sobre Taiwan para evitar crise nas relações",
    "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "939f1799424e",
-   "title": "Marcopolo assina acordo que permite implementar PDVs e suspensão de contratos no RS",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOekw1UkFJZEE2ZWtwdXlDNzZRLUNhQm5iNjhDZmdaRkpEV2h2ZGk0NUlLbHpsbEdUQTJQZzdIMTZXWFNiMDVERkphR0VpTlA0aVFHcGJQaC1iNE1ZZFF0TEswRjlna3VHWXpMNFRTNzh0NFRfdGFSTGZVR0szQWhlanlUT0hLZUhQZ0RvVUVRME1ic0FqdGh4ZzlMclc5TnlwMkJjM2E5Z2RlZXVQYjZqUGJvOWNWbk1zOUtkanVXTUZiek44TGk4QkFPLXJfbkpySjRRT3g5cmzSAecBQVVfeXFMTk5rVEl5RVdwc1AxeXhZMF9SalRIbUkwQlJSdy1YdThWSUlYNWFEdERqMzdWN1YwYVAweXpxU3VTZHA4YThIQmpHNmlCeENrS2lqT0dMZUl2NHcwUnk1QVBkaUdmWFlzelBFenl6N1pabWVEQlAzeWZWWFdNM1FURHRhTkxuLXo0OVZIdC1DNjQ2RDMyQUdBYmZpbmZxN2xnMm5rNTBMbmR5TmZvWkJvZjBJU21rLXljTTlBSFdzeVBqd0xSOVJQNkdSRzFpU3I2dENxWmtkSE1oeG1XMkFtR2c3MTRhRl9R?oc=5",
-   "published": "2026-11-19T13:43:53+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOekw1UkFJZEE2ZWtwdXlDNzZRLUNhQm5iNjhDZmdaRkpEV2h2ZGk0NUlLbHpsbEdUQTJQZzdIMTZXWFNiMDVERkphR0VpTlA0aVFHcGJQaC1iNE1ZZFF0TEswRjlna3VHWXpMNFRTNzh0NFRfdGFSTGZVR0szQWhlanlUT0hLZUhQZ0RvVUVRME1ic0FqdGh4ZzlMclc5TnlwMkJjM2E5Z2RlZXVQYjZqUGJvOWNWbk1zOUtkanVXTUZiek44TGk4QkFPLXJfbkpySjRRT3g5cmzSAecBQVVfeXFMTk5rVEl5RVdwc1AxeXhZMF9SalRIbUkwQlJSdy1YdThWSUlYNWFEdERqMzdWN1YwYVAweXpxU3VTZHA4YThIQmpHNmlCeENrS2lqT0dMZUl2NHcwUnk1QVBkaUdmWFlzelBFenl6N1pabWVEQlAzeWZWWFdNM1FURHRhTkxuLXo0OVZIdC1DNjQ2RDMyQUdBYmZpbmZxN2xnMm5rNTBMbmR5TmZvWkJvZjBJU21rLXljTTlBSFdzeVBqd0xSOVJQNkdSRzFpU3I2dENxWmtkSE1oeG1XMkFtR2c3MTRhRl9R?oc=5",
-     "title": "Marcopolo assina acordo que permite implementar PDVs e suspensão de contratos no RS"
-    }
-   ],
-   "ids": [
-    "939f1799424e"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Marcopolo assina acordo que permite implementar PDVs e suspensão de contratos no RS",
-   "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -11529,10 +11160,43 @@
    "ai": false
   },
   {
+   "id": "f83c7a345863",
+   "title": "What Columbia Sportswear’s Ads Say About Its Culture",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdWVmenJVM2lpMG5abDMwem8wLTlqUGY1MDJYTWhrRC1pY3RCTWhpZ1hyTlJiYjY0dW9QZXNiU19xQVBzVU9Kb2dPT2g2bnU2Skp2V3JzVG1XWWxsV2x4cGdFekYycHNuVWh4eDVBUm9XM0JTN01rLTFuZVlrc1UwdzdoeS1HakVaOVhiVWVYV1Z3a1U?oc=5",
+   "published": "2026-11-20T10:57:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdWVmenJVM2lpMG5abDMwem8wLTlqUGY1MDJYTWhrRC1pY3RCTWhpZ1hyTlJiYjY0dW9QZXNiU19xQVBzVU9Kb2dPT2g2bnU2Skp2V3JzVG1XWWxsV2x4cGdFekYycHNuVWh4eDVBUm9XM0JTN01rLTFuZVlrc1UwdzdoeS1HakVaOVhiVWVYV1Z3a1U?oc=5",
+     "title": "What Columbia Sportswear’s Ads Say About Its Culture"
+    }
+   ],
+   "ids": [
+    "f83c7a345863"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "What Columbia Sportswear’s Ads Say About Its Culture",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ff546ef51f3a",
    "title": "Lufthansa to Cut 1,000 Jobs at Flagship Airline as Challenges Mount",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNV3RUNnE3bHp2cGcyV1N3WXJEb1VrSGFzaFBNSXg0ckd3bFhWMFNEOGJnOVQycG92SlFIbnQ3Ni1RNnp2SWpfUGVZa1NVdXgtNTI2R0I1RkhrLU8zd1p6WFNObmRBYXdGdFdLbmY5b1IyekhMb3ZQVE4zMm5UR2xwYXpnMDdRWFIzQ1gyZ2p1d1lIQVp1UGltMWJUb1BQZTlSNnBoSkxUeFhsNFlORTJPRWp3bTU?oc=5",
-   "published": "2026-11-20T10:23:07+00:00",
+   "published": "2026-11-20T10:21:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11713,39 +11377,6 @@
    "prescore": 2.6,
    "headline": "Tashima says Balogun red-card row at World Cup pushed him to run for FIFA presidency",
    "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "7545093a02b3",
-   "title": "Rupee climbs past 93/USD as investors seek shelter in Indian stocks, shorts unwind",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY2pFbUd4enR6VTI3UkVVSllkdl92SkJ3d2hNVkZkQTBlQW9FMnBEMHBmUkRkdkhUUFB2NHV0UHNaYUlKS05JaDJOaEswOXF5N0hlaEo3anZHRHdnSU43cEltdkJfM3lEM1VfSWZLTUwxa3MxM3VRZmlhMkxYRWJjVXRxMGh3TW9uZEJFMG1mXzR0MDZuVXo3ejRMQ1FjSXFZRHMwWHczSURscU56TUVFcDV1dHFMdWgxQ0tn?oc=5",
-   "published": "2026-11-20T05:02:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY2pFbUd4enR6VTI3UkVVSllkdl92SkJ3d2hNVkZkQTBlQW9FMnBEMHBmUkRkdkhUUFB2NHV0UHNaYUlKS05JaDJOaEswOXF5N0hlaEo3anZHRHdnSU43cEltdkJfM3lEM1VfSWZLTUwxa3MxM3VRZmlhMkxYRWJjVXRxMGh3TW9uZEJFMG1mXzR0MDZuVXo3ejRMQ1FjSXFZRHMwWHczSURscU56TUVFcDV1dHFMdWgxQ0tn?oc=5",
-     "title": "Rupee climbs past 93/USD as investors seek shelter in Indian stocks, shorts unwind"
-    }
-   ],
-   "ids": [
-    "7545093a02b3"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Rupee climbs past 93/USD as investors seek shelter in Indian stocks, shorts unwind",
-   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -12043,6 +11674,336 @@
    "prescore": 2.6,
    "headline": "California Attorney General Issues Investigative Subpoena to Nvidia",
    "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a5f4187a26af",
+   "title": "Amazon Urges NYC Customers to Oppose Mamdani-Backed Delivery Bill",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUlhuRl9IVHpKbEE1aE5EQ3RBb1lScFkyaktKUHpueW1KSi1EWGFYMEx4TU9oRm5RbzVkSkZ2aWhtZ0hxSkFlcjNFNjJjNHhHME9FNkp2ckNuS1FMMkNBYUZSemt1UTFpYmd6MEtLOTdXdDJwellWMGxFd0lnLXVsMHdiU2tvOWw1Qk9FV1d3c21IejNyT3ZRX1NPdmFyekV0enlHNkszSWVIQVM0dGFRUnh2dw?oc=5",
+   "published": "2026-11-19T23:57:42+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUlhuRl9IVHpKbEE1aE5EQ3RBb1lScFkyaktKUHpueW1KSi1EWGFYMEx4TU9oRm5RbzVkSkZ2aWhtZ0hxSkFlcjNFNjJjNHhHME9FNkp2ckNuS1FMMkNBYUZSemt1UTFpYmd6MEtLOTdXdDJwellWMGxFd0lnLXVsMHdiU2tvOWw1Qk9FV1d3c21IejNyT3ZRX1NPdmFyekV0enlHNkszSWVIQVM0dGFRUnh2dw?oc=5",
+     "title": "Amazon Urges NYC Customers to Oppose Mamdani-Backed Delivery Bill"
+    }
+   ],
+   "ids": [
+    "a5f4187a26af"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Amazon Urges NYC Customers to Oppose Mamdani-Backed Delivery Bill",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "45193fdd9300",
+   "title": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2poV3JYSVEtZHRZTmlXWXNpcUR6VEVZUnZEY01xeTB0WlhhMUVvTngyM1YwMHRieTY0R0lnMjhsWEJwa2lsY1RvNkluUXlKQ0dlZXlwR2VSdV9OSGE0RVZsNUJSTkRheno5NGJnbG1TRk9waG1CMFhCV3FadzgtbmlsQzAwd0dfZHRRMkZMWkpXcmVmMG9neVhtZUxkMUlka2tVdTdNbjRhcm5TZmY2dWw4SUs?oc=5",
+   "published": "2026-11-19T23:37:04+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2poV3JYSVEtZHRZTmlXWXNpcUR6VEVZUnZEY01xeTB0WlhhMUVvTngyM1YwMHRieTY0R0lnMjhsWEJwa2lsY1RvNkluUXlKQ0dlZXlwR2VSdV9OSGE0RVZsNUJSTkRheno5NGJnbG1TRk9waG1CMFhCV3FadzgtbmlsQzAwd0dfZHRRMkZMWkpXcmVmMG9neVhtZUxkMUlka2tVdTdNbjRhcm5TZmY2dWw4SUs?oc=5",
+     "title": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit"
+    }
+   ],
+   "ids": [
+    "45193fdd9300"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "b8a368c50401",
+   "title": "Opinion | The Tech Panic and Government Credibility",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOckQtWXItZnpLZW9iQUlXV09nVGk5WlRkbWRrMzF6UjVhYWt3dnI4azUzWWJnUzdpcWJ2bmcybzN5ejZYeko3TUNBcFpuaks5MFpYX29ZQ0s5VkpyY3E3dk1XYmdOZnhEUDJKYzZtX09tWW1xS2EwUE5HbEhOZ0FONkktV19KbDJNdUp0MGRVOVF1MzNUNHI3enE1RQ?oc=5",
+   "published": "2026-11-19T22:59:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOckQtWXItZnpLZW9iQUlXV09nVGk5WlRkbWRrMzF6UjVhYWt3dnI4azUzWWJnUzdpcWJ2bmcybzN5ejZYeko3TUNBcFpuaks5MFpYX29ZQ0s5VkpyY3E3dk1XYmdOZnhEUDJKYzZtX09tWW1xS2EwUE5HbEhOZ0FONkktV19KbDJNdUp0MGRVOVF1MzNUNHI3enE1RQ?oc=5",
+     "title": "Opinion | The Tech Panic and Government Credibility"
+    }
+   ],
+   "ids": [
+    "b8a368c50401"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinion | The Tech Panic and Government Credibility",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "66539c572a06",
+   "title": "Opinion | The U.S. Navy Needs Frigates. Japan Has One",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNERDb21vWDJvRGZ4MU04aUNDMEk2RlEwMHpYZGE0dVI1QWs1SmVVTlBWUDRHOU1kN3N3QWRJdWlXY3hwSVN1aHdzN202T1V5QjdBYWEzWU9pYV9rNzN4TDhiOGpHdXBlU01oVmhjeVJTRGI2QWxEWENZN011SkM5RjRvU0I?oc=5",
+   "published": "2026-11-19T22:48:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNERDb21vWDJvRGZ4MU04aUNDMEk2RlEwMHpYZGE0dVI1QWs1SmVVTlBWUDRHOU1kN3N3QWRJdWlXY3hwSVN1aHdzN202T1V5QjdBYWEzWU9pYV9rNzN4TDhiOGpHdXBlU01oVmhjeVJTRGI2QWxEWENZN011SkM5RjRvU0I?oc=5",
+     "title": "Opinion | The U.S. Navy Needs Frigates. Japan Has One"
+    }
+   ],
+   "ids": [
+    "66539c572a06"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinion | The U.S. Navy Needs Frigates. Japan Has One",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ce13caa06305",
+   "title": "P&G to Cut Up to 30% of Product-Supply Workers Amid Automation Push",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOWNEUUhHMUFTQjdHbDF1dVlhWmwxbjkyNzBXM2JBRXdqVFRlcjMwTG9lWWRWRTV2bXlzQkdUX2lyUE1zT2pUSzVmTDF2akJKVjNtWFhfRVhQSXhwdEpZb3FOSWcwYnFiSTlCYWNwLWNfVXdweC1XVzg5Y1hRaE56M2diNWV1OTRiMzhZUV9KUm1ZYjZnQXlEN3phejJaMkJPaUVQQWxRNA?oc=5",
+   "published": "2026-11-19T22:26:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOWNEUUhHMUFTQjdHbDF1dVlhWmwxbjkyNzBXM2JBRXdqVFRlcjMwTG9lWWRWRTV2bXlzQkdUX2lyUE1zT2pUSzVmTDF2akJKVjNtWFhfRVhQSXhwdEpZb3FOSWcwYnFiSTlCYWNwLWNfVXdweC1XVzg5Y1hRaE56M2diNWV1OTRiMzhZUV9KUm1ZYjZnQXlEN3phejJaMkJPaUVQQWxRNA?oc=5",
+     "title": "P&G to Cut Up to 30% of Product-Supply Workers Amid Automation Push"
+    }
+   ],
+   "ids": [
+    "ce13caa06305"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "P&G to Cut Up to 30% of Product-Supply Workers Amid Automation Push",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "98a085495659",
+   "title": "Opinion | Guess Who’s Coming to Mecca",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8ybWdzZVB0Q2ozbXNnR1BUXzBZRnBIcG45TEI4ZTZBQklITlIzS1IyM0tCcl9HQXBOMzF3RlNtZ2s1MkR6Z2RjWF9XVXN5aVlaYzlEYi0tYjVzbVVJY21IRjAycElXa3FnOXBUTHpobGI?oc=5",
+   "published": "2026-11-19T22:19:23+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8ybWdzZVB0Q2ozbXNnR1BUXzBZRnBIcG45TEI4ZTZBQklITlIzS1IyM0tCcl9HQXBOMzF3RlNtZ2s1MkR6Z2RjWF9XVXN5aVlaYzlEYi0tYjVzbVVJY21IRjAycElXa3FnOXBUTHpobGI?oc=5",
+     "title": "Opinion | Guess Who’s Coming to Mecca"
+    }
+   ],
+   "ids": [
+    "98a085495659"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinion | Guess Who’s Coming to Mecca",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4637182b9a56",
+   "title": "Opinion | How I Survived the Blue Tsunami",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zQ1VZSHduMlJ3TnV1ODQ5anJReXR5Y1M5WmhuOUZpMHpzU3V1X0RJeXN4clZqMlppd0xrZUZxQVVGWVRxTkt1X3R3SlM3VklCcnN0QUFSUFJoUzB3alZOOTFBNTUzQUdKclUybkVXMnN6a2lJeldZ?oc=5",
+   "published": "2026-11-19T22:18:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zQ1VZSHduMlJ3TnV1ODQ5anJReXR5Y1M5WmhuOUZpMHpzU3V1X0RJeXN4clZqMlppd0xrZUZxQVVGWVRxTkt1X3R3SlM3VklCcnN0QUFSUFJoUzB3alZOOTFBNTUzQUdKclUybkVXMnN6a2lJeldZ?oc=5",
+     "title": "Opinion | How I Survived the Blue Tsunami"
+    }
+   ],
+   "ids": [
+    "4637182b9a56"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinion | How I Survived the Blue Tsunami",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c70ff62cbe36",
+   "title": "GOP Effort to Pass $350 Billion in Extra Military Spending Stalls in Lame-Duck Congress",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRk5KcTJXRVRWeHZYTHhFTXRCTWpJd0RGS2JMcXhnUHpSWG90aGd3WnBmb1JvZkw4WEVTSXB6b1VwZGdPRkZfWWptMkRvWlV4T1l3eXhjLThBTUxYRnczdEdFeUhabE91QUY4dFZxY2ZMajhWd3VRNEVqVHZFdXlGdUVnTnNoQzBrQ1Z6Nw?oc=5",
+   "published": "2026-11-19T22:06:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRk5KcTJXRVRWeHZYTHhFTXRCTWpJd0RGS2JMcXhnUHpSWG90aGd3WnBmb1JvZkw4WEVTSXB6b1VwZGdPRkZfWWptMkRvWlV4T1l3eXhjLThBTUxYRnczdEdFeUhabE91QUY4dFZxY2ZMajhWd3VRNEVqVHZFdXlGdUVnTnNoQzBrQ1Z6Nw?oc=5",
+     "title": "GOP Effort to Pass $350 Billion in Extra Military Spending Stalls in Lame-Duck Congress"
+    }
+   ],
+   "ids": [
+    "c70ff62cbe36"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "GOP Effort to Pass $350 Billion in Extra Military Spending Stalls in Lame-Duck Congress",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f1428455ced7",
+   "title": "Gap Cuts Outlook After Warm Fall Weather Weighs on Sales",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUmk3VDVRSU9ZR0JjY2ZvbjdRNUV6RDZ6UGVDWGpkZ1RuLUVFZU1vU3kxNks0SWdnS0duRDlPZkVPWE5BWlJZMWpJd0tCOElaTmtkWVhQdDVTb3BtQ05uNTZfNThsT2ZZUWFudnlsMmRxNm00eDR4SEZmemJOcF9sVzFmNktpRTlydnhiUDZhQlNBWlZ6UU9MQ1ZGOFQ3blJyM0RqQk5B?oc=5",
+   "published": "2026-11-19T22:01:57+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUmk3VDVRSU9ZR0JjY2ZvbjdRNUV6RDZ6UGVDWGpkZ1RuLUVFZU1vU3kxNks0SWdnS0duRDlPZkVPWE5BWlJZMWpJd0tCOElaTmtkWVhQdDVTb3BtQ05uNTZfNThsT2ZZUWFudnlsMmRxNm00eDR4SEZmemJOcF9sVzFmNktpRTlydnhiUDZhQlNBWlZ6UU9MQ1ZGOFQ3blJyM0RqQk5B?oc=5",
+     "title": "Gap Cuts Outlook After Warm Fall Weather Weighs on Sales"
+    }
+   ],
+   "ids": [
+    "f1428455ced7"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Gap Cuts Outlook After Warm Fall Weather Weighs on Sales",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6ba5e99f57c6",
+   "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTy1UWkp5QmtjYW0wNmgzMm04Y295STZlSUdvQ3FwYzhoV01XY3R4S04xLUFPbnFpU0c1SU9iekhxNXlMZE4tS1FRSnRkeDBmSlVRcGZwc2FEOU80US1hZzZ5M2UyalFjZEE0Zmd6cjc3U1MxTzJfdFFtaXJEa1M3UnZJU1V3aVh6YXF0c3BVVkxDMmZtb1lPaHBNM0NIY2g0OUpOQW9tcW0?oc=5",
+   "published": "2026-11-19T21:56:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTy1UWkp5QmtjYW0wNmgzMm04Y295STZlSUdvQ3FwYzhoV01XY3R4S04xLUFPbnFpU0c1SU9iekhxNXlMZE4tS1FRSnRkeDBmSlVRcGZwc2FEOU80US1hZzZ5M2UyalFjZEE0Zmd6cjc3U1MxTzJfdFFtaXJEa1M3UnZJU1V3aVh6YXF0c3BVVkxDMmZtb1lPaHBNM0NIY2g0OUpOQW9tcW0?oc=5",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers"
+    }
+   ],
+   "ids": [
+    "6ba5e99f57c6"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -13162,6 +13123,46 @@
    "ai": false
   },
   {
+   "id": "c108b468ea5c",
+   "title": "Uber Co-Founder Kalanick Teases Protest at Nvidia as Calls for Huang’s Return Continue",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVVhwbzh4allnMUt5ZzRaR3JZbXlqeU9tY3lIT19fSXA5QW1GTk0tcDVacHg0S05XdkpESUJ2VGpnQnpSWG4wQ2FGTTZRZEZoVE9oT0hYSUFzUmNzQk9MaDZRSjRZdmctZ195WlYwX0g1bjQ5MmcwWGFReC1NbE45MnExanpxM2VCc1Q0ZUNjcGZON0MweExxSlZJMFQ1NGNVa1RodUxGRk9wNWNxSUMxQmRqVzRPd2w0a1lvRUZJNA?oc=5",
+   "published": "2026-11-20T12:34:06+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVVhwbzh4allnMUt5ZzRaR3JZbXlqeU9tY3lIT19fSXA5QW1GTk0tcDVacHg0S05XdkpESUJ2VGpnQnpSWG4wQ2FGTTZRZEZoVE9oT0hYSUFzUmNzQk9MaDZRSjRZdmctZ195WlYwX0g1bjQ5MmcwWGFReC1NbE45MnExanpxM2VCc1Q0ZUNjcGZON0MweExxSlZJMFQ1NGNVa1RodUxGRk9wNWNxSUMxQmRqVzRPd2w0a1lvRUZJNA?oc=5",
+     "title": "Uber Co-Founder Kalanick Teases Protest at Nvidia as Calls for Huang’s Return Continue"
+    }
+   ],
+   "ids": [
+    "c108b468ea5c"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Kalanick sugere protesto na Nvidia enquanto cresce campanha pela volta de Huang",
+   "category": "empresas",
+   "importance": 4,
+   "importance_reason": "Governança da Nvidia em meio a crise.",
+   "summary": "O cofundador da Uber, Travis Kalanick, sugeriu protesto na Nvidia enquanto continuam os pedidos pela volta de Jensen Huang.",
+   "involves": "Travis Kalanick, Nvidia, Jensen Huang.",
+   "interpretation": "Reflete a crise de governança na Nvidia.",
+   "impact": "Incerteza sobre liderança da Nvidia.",
+   "sentiment": "negativo",
+   "entities": [
+    "Nvidia",
+    "Jensen Huang",
+    "Travis Kalanick"
+   ],
+   "tags": [
+    "Nvidia",
+    "governança"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "56880aa47234",
    "title": "How Anthropic’s blockbuster IPO came together",
    "link": "https://www.ft.com/content/149d497e-0567-4467-bcfb-269b8b8eb157?syn-25a6b1a6=1",
@@ -13525,6 +13526,39 @@
    "ai": false
   },
   {
+   "id": "080a152778bf",
+   "title": "EUA: Congresso se esforça para evitar paralisação do governo; guerra com Irã divide",
+   "link": "https://www.infomoney.com.br/mundo/eua-congresso-se-esforca-para-evitar-paralisacao-do-governo-guerra-com-ira-divide/",
+   "published": "2026-11-20T13:23:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/eua-congresso-se-esforca-para-evitar-paralisacao-do-governo-guerra-com-ira-divide/",
+     "title": "EUA: Congresso se esforça para evitar paralisação do governo; guerra com Irã divide"
+    }
+   ],
+   "ids": [
+    "080a152778bf"
+   ],
+   "snippet": "Os legisladores ‌têm apenas três semanas para chegar a um acordo que mantenha as agências federais em funcionamento após 11 de dezembro, quando o atual financiamento está previsto para expirar The post EUA: Congresso se esforça para evitar paralisação do governo; guerra com Irã divide appeared first on InfoMoney .",
+   "prescore": 3.2,
+   "headline": "EUA: Congresso se esforça para evitar paralisação do governo; guerra com Irã divide",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Os legisladores ‌têm apenas três semanas para chegar a um acordo que mantenha as agências federais em funcionamento após 11 de dezembro, quando o atual financiamento está previsto para expirar The post EUA: Congresso se esforça para evitar paralisação do governo; guerra com Irã divide appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "beff5daa2de3",
    "title": "Rússia ataca Kiev com mísseis e drones após promessa de retaliação de Putin",
    "link": "https://www.infomoney.com.br/mundo/russia-ataca-kiev-com-misseis-e-drones-apos-promessa-de-retaliacao-de-putin/",
@@ -13558,28 +13592,28 @@
    "ai": false
   },
   {
-   "id": "bd2f79d0bd64",
-   "title": "Na China, PBoC mantém taxas de juros de referência pelo 18º mês consecutivo",
-   "link": "https://www.infomoney.com.br/economia/na-china-pboc-mantem-taxas-de-juros-de-referencia-pelo-18o-mes-consecutivo/",
-   "published": "2026-11-20T12:24:30+00:00",
-   "region": "BR",
+   "id": "a2435921bf25",
+   "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
+   "link": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
+   "published": "2026-11-20T13:16:47+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/economia/na-china-pboc-mantem-taxas-de-juros-de-referencia-pelo-18o-mes-consecutivo/",
-     "title": "Na China, PBoC mantém taxas de juros de referência pelo 18º mês consecutivo"
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
+     "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia"
     }
    ],
    "ids": [
-    "bd2f79d0bd64"
+    "a2435921bf25"
    ],
-   "snippet": "A LPR de um ano permaneceu em 3,0%, enquanto a taxa de cinco anos foi mantida em 3,5%, informou o PBoC The post Na China, PBoC mantém taxas de juros de referência pelo 18º mês consecutivo appeared first on InfoMoney .",
-   "prescore": 3.2,
-   "headline": "Na China, PBoC mantém taxas de juros de referência pelo 18º mês consecutivo",
+   "snippet": "Analysts note few concrete outcomes from the high-profile trilateral and other meetings for APEC in Shenzhen this week.",
+   "prescore": 3.0,
+   "headline": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A LPR de um ano permaneceu em 3,0%, enquanto a taxa de cinco anos foi mantida em 3,5%, informou o PBoC The post Na China, PBoC mantém taxas de juros de referência pelo 18º mês consecutivo appeared first on InfoMoney .",
+   "summary": "Analysts note few concrete outcomes from the high-profile trilateral and other meetings for APEC in Shenzhen this week.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14020,39 +14054,6 @@
    "ai": false
   },
   {
-   "id": "f41bf9c5edce",
-   "title": "Trump touts Asia trade deal wins, but US agricultural exports disappoint",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX1NxamhacExiOUlPV3RKN2RGTmNzN2gySzZ1Wnl5d0xEUjdud1IyRE5aTk5sUWZRUzRDLTdjblQ0MmNWa1B3Nld0RGhRbDZqbEpfWkpFWlhwOUhPeTJqVkxvNkhReU9iaUlabjJfeVFnNFVrem14RGRVdG9EZHhxcVNFd1dhTkJBR3ljdzZmejE3TkY3bE1zZGJRTG5DRGFTS3k3SDJpRGZWWkdIcTBoYkNB?oc=5",
-   "published": "2026-11-20T12:32:09+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX1NxamhacExiOUlPV3RKN2RGTmNzN2gySzZ1Wnl5d0xEUjdud1IyRE5aTk5sUWZRUzRDLTdjblQ0MmNWa1B3Nld0RGhRbDZqbEpfWkpFWlhwOUhPeTJqVkxvNkhReU9iaUlabjJfeVFnNFVrem14RGRVdG9EZHhxcVNFd1dhTkJBR3ljdzZmejE3TkY3bE1zZGJRTG5DRGFTS3k3SDJpRGZWWkdIcTBoYkNB?oc=5",
-     "title": "Trump touts Asia trade deal wins, but US agricultural exports disappoint"
-    }
-   ],
-   "ids": [
-    "f41bf9c5edce"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Trump touts Asia trade deal wins, but US agricultural exports disappoint",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "cddb3549ac85",
    "title": "AI Stocks Tumble Across the Globe as Slowdown Fears Mount",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSnNEc3dZb2JfSWJYeFFoREFsNXdMS2RyNklRUU9rRUJmajZscVdUTWc5dENvODEwWUQwdHNFcGpPazhndE1MSFJaYnV1Vmota2R5N0YtRVhZS2ZtZmxTZUtnOVgzaXp3X0g5N1hxMExRbFRKWVF4VWJ3OWhqcFVBZlBzWFo0WlVyUTZfZDZSME5WZUsxcEFMbk9ubVlFbWc?oc=5",
@@ -14122,7 +14123,7 @@
    "id": "71af167cf452",
    "title": "Grabbing Inflation Protection Now Is a No-Brainer",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQTBiX0VvbGFEa0dVZ01QZVF3cS1rSmRObzFoeFRxbElwU2Fab0ZHV2tfQzhVd0lJM0d3SUMwd1UxVlhNcGpMRmFJMi1FaW5veElaQ01uc0FtUUpYQWhaeElKU0JIMUdDc1pTUWFRWGZkMFVtMmNNbF81SHlORW83cHJ3T1hLOWQyYTNfeTM1MlcyaUR5LThmMjlfQkk?oc=5",
-   "published": "2026-11-20T11:20:49+00:00",
+   "published": "2026-11-20T11:16:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -14449,6 +14450,72 @@
    "ai": false
   },
   {
+   "id": "6970a69c4758",
+   "title": "Europa: bolsas caem com techs após relatos de juros de 8% para financiar chips de IA",
+   "link": "https://www.infomoney.com.br/mercados/europa-bolsas-caem-com-techs-apos-relatos-de-juros-de-8-para-financiar-chips-de-ia/",
+   "published": "2026-11-20T13:24:10+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/europa-bolsas-caem-com-techs-apos-relatos-de-juros-de-8-para-financiar-chips-de-ia/",
+     "title": "Europa: bolsas caem com techs após relatos de juros de 8% para financiar chips de IA"
+    }
+   ],
+   "ids": [
+    "6970a69c4758"
+   ],
+   "snippet": "As operações estão se tornando mais complexas e caras The post Europa: bolsas caem com techs após relatos de juros de 8% para financiar chips de IA appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Europa: bolsas caem com techs após relatos de juros de 8% para financiar chips de IA",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "As operações estão se tornando mais complexas e caras The post Europa: bolsas caem com techs após relatos de juros de 8% para financiar chips de IA appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "3c6e66cf45f8",
+   "title": "Fontes: Citi subestimou ativos de risco em US$ 35 bi com registro errado de operações",
+   "link": "https://www.infomoney.com.br/mercados/fontes-citi-subestimou-ativos-de-risco-em-us-35-bi-com-registro-errado-de-operacoes/",
+   "published": "2026-11-20T13:21:18+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/fontes-citi-subestimou-ativos-de-risco-em-us-35-bi-com-registro-errado-de-operacoes/",
+     "title": "Fontes: Citi subestimou ativos de risco em US$ 35 bi com registro errado de operações"
+    }
+   ],
+   "ids": [
+    "3c6e66cf45f8"
+   ],
+   "snippet": "Trata-se de um revés para o banco norte-americano, que busca atender rapidamente a exigências regulatórias que já se arrastam há anos The post Fontes: Citi subestimou ativos de risco em US$ 35 bi com registro errado de operações appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Fontes: Citi subestimou ativos de risco em US$ 35 bi com registro errado de operações",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Trata-se de um revés para o banco norte-americano, que busca atender rapidamente a exigências regulatórias que já se arrastam há anos The post Fontes: Citi subestimou ativos de risco em US$ 35 bi com registro errado de operações appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "2e64db0f22b9",
    "title": "Europa mobiliza 2,8 mil militares para simular missão na Ucrânia após fim da guerra",
    "link": "https://www.infomoney.com.br/mundo/europa-mobiliza-28-mil-militares-para-simular-missao-na-ucrania-apos-fim-da-guerra/",
@@ -14647,72 +14714,6 @@
    "ai": false
   },
   {
-   "id": "07974a0ed651",
-   "title": "Como é a escola pública do Rio que venceu o prêmio de melhores escolas do mundo",
-   "link": "https://www.infomoney.com.br/brasil/como-e-a-escola-publica-do-rio-que-venceu-o-premio-de-melhores-escolas-do-mundo/",
-   "published": "2026-11-20T12:23:38+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/brasil/como-e-a-escola-publica-do-rio-que-venceu-o-premio-de-melhores-escolas-do-mundo/",
-     "title": "Como é a escola pública do Rio que venceu o prêmio de melhores escolas do mundo"
-    }
-   ],
-   "ids": [
-    "07974a0ed651"
-   ],
-   "snippet": "A instituição venceu na categoria Superação de Adversidades The post Como é a escola pública do Rio que venceu o prêmio de melhores escolas do mundo appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Como é a escola pública do Rio que venceu o prêmio de melhores escolas do mundo",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A instituição venceu na categoria Superação de Adversidades The post Como é a escola pública do Rio que venceu o prêmio de melhores escolas do mundo appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "719fadd21b7e",
-   "title": "Ucrânia tensiona logística russa com ataques à ponte da Crimeia",
-   "link": "https://www.infomoney.com.br/mundo/ucrania-tensiona-logistica-russa-com-ataques-a-ponte-da-crimeia/",
-   "published": "2026-11-20T12:20:05+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mundo/ucrania-tensiona-logistica-russa-com-ataques-a-ponte-da-crimeia/",
-     "title": "Ucrânia tensiona logística russa com ataques à ponte da Crimeia"
-    }
-   ],
-   "ids": [
-    "719fadd21b7e"
-   ],
-   "snippet": "Ataques desta semana aumentam a pressão sobre uma rede logística já sobrecarregada The post Ucrânia tensiona logística russa com ataques à ponte da Crimeia appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Ucrânia tensiona logística russa com ataques à ponte da Crimeia",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Ataques desta semana aumentam a pressão sobre uma rede logística já sobrecarregada The post Ucrânia tensiona logística russa com ataques à ponte da Crimeia appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "0fed36995961",
    "title": "Justiça reconhece racismo em 68% dos casos, diz levantamento",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd1JwNDgzdzh6eTNUd2diTnpGYlZvQUFRTERKQ0xaekZUMDhid2p6b3A0bDVvVDl0SWtTVDVEUEV6WHZUTEljUFh6bUdLdWZBQnB1QkQ5Q3lUVjdXWjRUeUNDbG5wb0FCWDNoS3ltOV9xQUU3LW9VV1NEeFNmRnc4QzUwaWZDQndEZExrZ3IwcmYzLTg3R2tSV21fOTFfUUVuWjRfVVRYMUk5SEhOVzN2cHBRb9IBuAFBVV95cUxNd1lTN1M5bWJ1YjA4cGp1SDVzd2FObVprUTc5azNXaXVZMEt6c1FzNHRHV0QwMDBsNmJLeXpoVHZqZGpKZmF1cXdaZzhrYWlpLTBZX1l0bVhBaGN3cFJXZXF0TXV1T0dEdmJUOXQwTlFQUkFoZ284M21abmR3YXo4aVB3RHJXZi1XcHM4ZE5lQVBhakFjZ2wxb3ZvWW1CUFRiT2tLY095VWluODMwUXhCTWM5ZU83bFVo?oc=5",
@@ -14801,6 +14802,39 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "06ee38950f7a",
+   "title": "AI can help find holiday deals — but it's not great at spotting scams, experts say",
+   "link": "https://www.cnbc.com/2026/11/20/ai-holiday-shopping-scams.html",
+   "published": "2026-11-20T13:15:01+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/20/ai-holiday-shopping-scams.html",
+     "title": "AI can help find holiday deals — but it's not great at spotting scams, experts say"
+    }
+   ],
+   "ids": [
+    "06ee38950f7a"
+   ],
+   "snippet": "Artificial intelligence can help compare holiday deals, but unfamiliar sellers may be risky. Here’s how to verify a retailer before you buy and pay safely.",
+   "prescore": 2.0,
+   "headline": "AI can help find holiday deals — but it's not great at spotting scams, experts say",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Artificial intelligence can help compare holiday deals, but unfamiliar sellers may be risky. Here’s how to verify a retailer before you buy and pay safely.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16131,10 +16165,10 @@
  ],
  "stats": {
   "raw": 869,
-  "unique": 493,
-  "unique_all": 814,
+  "unique": 478,
+  "unique_all": 813,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.8
+  "seconds": 3.0
  }
 }
