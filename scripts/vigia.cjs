@@ -51,7 +51,12 @@ async function checkData() {
     if (digest.brief?.headline && (!audio || audio.headline !== digest.brief.headline))
       warn("áudio", `o áudio é de outro briefing ("${(audio?.headline || "nenhum").slice(0, 60)}"); o portal está usando a voz do navegador`);
   }
-  if (weekday && hhmm >= 900) {
+  // feriado nacional: o send_email.py não envia de propósito (mesma lista de scripts/holidays.py)
+  let feriado = "";
+  try {
+    feriado = execFileSync("python3", ["-c", "import sys; sys.path.insert(0, 'scripts'); from datetime import date; from holidays import holiday_name; print(holiday_name(date.fromisoformat(sys.argv[1])) or '')", today], { cwd: require("path").join(__dirname, ".."), encoding: "utf8" }).trim();
+  } catch { /* sem Python: confere o e-mail como em qualquer dia útil */ }
+  if (weekday && hhmm >= 900 && !feriado) {
     const sent = await getJson(`${SITE}data/email_sent.json`).catch(() => null);
     if (!sent || sent.date !== today) warn("e-mail", `o e-mail de hoje não consta como enviado (último: ${sent?.date || "nenhum"})`);
   }
