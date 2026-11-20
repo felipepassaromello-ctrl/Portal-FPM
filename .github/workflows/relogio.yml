@@ -11,9 +11,13 @@ name: Relógio das coletas
 # rotina da manhã dispara, e depois de qualquer atualização do agendador ou de um push.
 #
 # A espera é um sleep dentro do job. Como o repositório é público, os minutos do GitHub Actions são gratuitos: a espera
-# não custa nada. Uma espera nova cancela a anterior (concurrency), então nunca há mais de uma. Só dispara em dias
-# úteis, das 06h às 20h30 de Brasília, e se nenhuma atualização tiver começado nos últimos 45 minutos; fora desse
-# horário o relógio para e não dispara a si mesmo.
+# não custa nada. Uma espera nova cancela a anterior (concurrency), então nunca há mais de uma. Só dispara atualização
+# em dias úteis, das 06h às 20h30 de Brasília, e se nenhuma atualização tiver começado nos últimos 45 minutos.
+#
+# Fora desse horário o relógio não para: dorme em trechos de até 5h40 (o limite do job é 6h) até as 06h do próximo dia
+# útil. Em 18 e 19/11, o GitHub descartou os três agendamentos da manhã (05:40, 06:07 e 08:01) e o portal ficou sem
+# atualização das 21h20 às 08h16, quando a rotina da manhã disparou a coleta à mão. Pelo mesmo motivo, em dia útil o
+# relógio garante uma atualização às 08h01, que fecha a edição do dia antes da rotina da manhã (08h15).
 on:
   workflow_run:
     workflows: ["Atualizar portal"]
@@ -30,7 +34,7 @@ concurrency:
 jobs:
   proxima:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 355
     env:
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
@@ -42,30 +46,54 @@ jobs:
             hhmm=$(TZ=America/Sao_Paulo date +%H%M); dow=$(TZ=America/Sao_Paulo date +%u)
             [ "$dow" -le 5 ] && [ "$((10#$hhmm))" -ge 600 ] && [ "$((10#$hhmm))" -le 2030 ]
           }
+          # hora de Brasília de hoje (ou de daqui a N dias) em segundos: as_horas "08:01" [N]
+          as_horas() { TZ=America/Sao_Paulo date -d "$(TZ=America/Sao_Paulo date -d "+${2:-0} day" +%F) $1" +%s; }
+          proxima_volta() {
+            gh workflow run relogio.yml --repo "$REPO" --ref main
+            echo "Próxima volta do relógio disparada."
+          }
           if ! no_horario; then
-            echo "Fora do horário (dias úteis, das 06h às 20h30): o relógio para até a próxima atualização."
+            # fora do horário: dorme até as 06h do próximo dia útil, em trechos de até 5h40
+            agora=$(date +%s)
+            for d in 0 1 2 3 4 5 6 7; do
+              alvo=$(as_horas 06:00 "$d")
+              [ "$alvo" -gt "$agora" ] && [ "$(TZ=America/Sao_Paulo date -d "@$alvo" +%u)" -le 5 ] && break
+            done
+            wait=$(( alvo - agora )); [ "$wait" -gt 20400 ] && wait=20400
+            echo "Fora do horário (dias úteis, das 06h às 20h30): dormindo $((wait / 60)) minutos."
+            sleep "$wait"
+            proxima_volta
             exit 0
           fi
           started=$(gh api "repos/$REPO/actions/workflows/update.yml/runs?per_page=1" \
             --jq '.workflow_runs[0] | (.run_started_at // .created_at)')
-          wait=$(( $(date -d "$started" +%s) + 55 * 60 - $(date +%s) ))
+          alvo=$(( $(date -d "$started" +%s) + 55 * 60 ))
+          # a edição do dia fecha às 08h: se a próxima volta passaria das 08h01, acorda às 08h01
+          oito=$(as_horas 08:01)
+          fechar=0
+          if [ "$(date +%s)" -lt "$oito" ] && [ "$alvo" -gt "$oito" ]; then alvo=$oito; fechar=1; fi
+          wait=$(( alvo - $(date +%s) ))
           if [ "$wait" -gt 0 ]; then
             echo "Última atualização começou em $started; esperando $((wait / 60)) minutos."
             sleep "$wait"
           fi
           if ! no_horario; then
-            echo "Fora do horário: o relógio para até a próxima atualização."
+            echo "Fora do horário: a próxima volta dorme até o próximo dia útil."
+            proxima_volta
             exit 0
           fi
-          since=$(date -u -d '45 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+          if [ "$fechar" = 1 ]; then
+            since=$(date -u -d "@$(( oito - 60 ))" +%Y-%m-%dT%H:%M:%SZ)  # alguma atualização depois das 08h?
+          else
+            since=$(date -u -d '45 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+          fi
           recent=$(gh api "repos/$REPO/actions/workflows/update.yml/runs?per_page=10" \
             --jq "[.workflow_runs[] | select(.created_at > \"$since\")] | length")
           if [ "$recent" -gt 0 ]; then
-            echo "Houve atualização nos últimos 45 minutos ($recent): não disparo outra agora."
+            echo "Já houve atualização desde $since ($recent): não disparo outra agora."
           else
             gh workflow run update.yml --repo "$REPO" --ref main
             echo "Próxima atualização disparada."
             sleep 20
           fi
-          gh workflow run relogio.yml --repo "$REPO" --ref main
-          echo "Próxima volta do relógio disparada."
+          proxima_volta

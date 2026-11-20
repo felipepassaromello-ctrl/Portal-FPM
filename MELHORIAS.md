@@ -47,6 +47,10 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 19/11 — O relógio das coletas passa a atravessar a noite e fecha a edição às 08h01 (#86):
+  - em 18 e 19/11, o GitHub descartou os três agendamentos da manhã (05:40, 06:07 e 08:01) e o portal ficou sem atualização das 21h20 às 08h16, quando a rotina da manhã disparou a coleta à mão;
+  - fora do horário (noite e fim de semana), o relógio agora dorme em trechos de até 5h40 até as 06h do próximo dia útil, em vez de parar e depender do agendador para voltar;
+  - em dia útil, se a próxima volta passaria das 08h01, ele acorda às 08h01 e dispara a atualização que fecha a edição do dia, se nenhuma tiver começado depois das 08h. Assim, a edição fica pronta antes da rotina da manhã (08h15). O e-mail e a coleta não mudam.
 - 18/11 — Mais matérias repetidas entram no mesmo cartão (#85):
   - o mesmo fato caía em categorias diferentes (Nvidia em "empresas" e em "tech", o BDR da Anthropic em "mercados" e em "M&A") e não era juntado; as notícias ainda sem análise também ficavam de fora;
   - agora junta entre categorias quando as entidades principais coincidem ou os títulos são quase iguais. Notícias sem análise também podem entrar no cartão, mas só uma notícia analisada fica com ele. As palavras são comparadas pelo radical de 5 letras ("volta" e "voltar");
