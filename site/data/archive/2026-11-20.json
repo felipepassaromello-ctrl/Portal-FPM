@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T08:19:42.291307-03:00",
+ "generated_at": "2026-11-20T08:28:34.264734-03:00",
  "date": "2026-11-20",
  "window": {
   "start": "2026-11-19T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-20T08:19:08.708630-03:00",
-  "analyzed": 294
+  "analyzed": 292
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -116,28 +116,28 @@
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.9389,
-   "change_pct": 0.9725072804067869,
+   "price": 5.9353,
+   "change_pct": 0.9113004868575691,
    "spark": [
     5.66480016708374,
     5.782599925994873,
     5.776800155639648,
     5.881700038909912,
-    5.938899993896484
+    5.935299873352051
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.5074,
-   "change_pct": 0.9297776624698884,
+   "price": 6.506,
+   "change_pct": 0.9080636616819682,
    "spark": [
     6.238303184509277,
     6.353240013122559,
     6.345178127288818,
     6.447453022003174,
-    6.507400035858154
+    6.50600004196167
    ]
   },
   {
@@ -186,42 +186,42 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 88.6,
-   "change_pct": -3.674715409410567,
+   "price": 88.96,
+   "change_pct": -3.283325991209529,
    "spark": [
     92.44000244140625,
     93.13999938964844,
     91.94999694824219,
     91.9800033569336,
-    88.5999984741211
+    88.95999908447266
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3591.1,
-   "change_pct": -2.561389228055899,
+   "price": 3588.9,
+   "change_pct": -2.6210826210826155,
    "spark": [
     3853.0,
     3864.199951171875,
     3741.89990234375,
     3685.5,
-    3591.10009765625
+    3588.89990234375
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 61662.31,
-   "change_pct": -0.3869196596980151,
+   "price": 61795.38,
+   "change_pct": -0.1719502140044682,
    "spark": [
     64855.84375,
     64893.9453125,
     62987.265625,
     61901.8203125,
-    61662.30859375
+    61795.37890625
    ]
   }
  ],
@@ -5667,45 +5667,6 @@
    "ai": true
   },
   {
-   "id": "71acf56e20c9",
-   "title": "Latest Oil Market News and Analysis for Nov. 20",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-19/latest-oil-market-news-and-analysis-for-nov-20",
-   "published": "2026-11-19T23:05:51+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-19/latest-oil-market-news-and-analysis-for-nov-20",
-     "title": "Latest Oil Market News and Analysis for Nov. 20"
-    }
-   ],
-   "ids": [
-    "71acf56e20c9"
-   ],
-   "snippet": "Oil edged lower after a volatile session on Thursday, with futures on track for a third weekly decline as traders weigh the risk of renewed US strikes on Iran against ample supply.",
-   "prescore": 2.8,
-   "headline": "Petróleo recua e caminha para a terceira queda semanal",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Preço do petróleo com risco geopolítico.",
-   "summary": "O petróleo recuou após sessão volátil e está a caminho da terceira queda semanal, com risco de novos ataques dos EUA ao Irã diante de oferta ampla.",
-   "involves": "Petróleo, EUA, Irã",
-   "interpretation": "Oferta ampla compensa risco geopolítico.",
-   "impact": "Pressão sobre petroleiras.",
-   "sentiment": "neutro",
-   "entities": [
-    "EUA",
-    "Irã"
-   ],
-   "tags": [
-    "petróleo",
-    "Irã"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "45da5f6275af",
    "title": "Valorização global do dólar se acentuou após a eleição nos EUA, diz diretor do banco Pine",
    "link": "https://www.moneytimes.com.br/valorizacao-global-do-dolar-se-acentuou-apos-a-eleicao-nos-eua-diz-diretor-do-banco-pine-pads/",
@@ -7315,47 +7276,6 @@
     "Trump",
     "Nvidia",
     "chips"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "7816a3b669c5",
-   "title": "Australian Leader to Navigate Trade, Security in China Talks",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-19/australia-s-leader-to-navigate-trade-security-in-talks-with-xi",
-   "published": "2026-11-19T20:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-19/australia-s-leader-to-navigate-trade-security-in-talks-with-xi",
-     "title": "Australian Leader to Navigate Trade, Security in China Talks"
-    }
-   ],
-   "ids": [
-    "7816a3b669c5"
-   ],
-   "snippet": "Australian Prime Minister Anthony Albanese will aim to navigate delicate security and trade issues when he meets with China’s top leadership on Friday, seeking to ease access for commodities to its biggest export partner.",
-   "prescore": 3.4,
-   "headline": "Premiê australiano busca equilibrar comércio e segurança em conversas com a China",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Reunião diplomática com efeito sobre commodities.",
-   "summary": "O primeiro-ministro Anthony Albanese se reúne na sexta com a cúpula chinesa, buscando facilitar o acesso de commodities ao maior parceiro exportador.",
-   "involves": "Anthony Albanese; China; Austrália",
-   "interpretation": "Austrália tenta preservar exportações sem ceder em segurança.",
-   "impact": "Acesso a commodities australianas à China concorre com exportadores brasileiros.",
-   "sentiment": "neutro",
-   "entities": [
-    "Anthony Albanese",
-    "China",
-    "Austrália"
-   ],
-   "tags": [
-    "Austrália",
-    "China",
-    "commodities"
    ],
    "is_deal": false,
    "deal": null,
@@ -12319,6 +12239,72 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "d9200e25df85",
+   "title": "Estou muito confortável na presidência do BNDES, diz Mercadante",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVTdTR0NtVGc0TlRTaFRiZDdxV3VZeFpERzNteGE0bHZ1UFQ4bWRNcUd4Q0pRWXBxTnlfcUdKS20tV1BJQ2EzbmNsWDhMWHFJY3hUalRzdjE0SldUcFpkQzMyU1hPU1dwemFLRmZsR3VQTlNqV2Y4T0dBQm9kY3BEbU82YWxiTWRJU0s0cVhVTS1xT3p0SUY1MWZ4QUxDai1VdGljaERCbG5ucDNSLVFOd2djUENUNFpxaHfSAcgBQVVfeXFMTmdSSnRGSVlEV0x1ZFpJQ2JaR0VRTE41aW51Zzc2QS0zTUdOY0NsNTRSbGV0ZFctcHJSNlRoV2Ffak8ySWRseWJRSDFWSXFWNlVwY1VFNlcwVHEyQXFwTW9uMV9qWFU2bnlkUFJvRGk4UVVESlFpQm90UzF4YWZBY3F3UHVaMS1acThyaDFmNHJfWnJnSWRFUEtURjdNT1plYXVobU9KdWg4eHE2OGRLdjUwUDdxUm1fam14d0FxZDNpNWZpMWZoRS0?oc=5",
+   "published": "2026-11-19T15:52:32+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVTdTR0NtVGc0TlRTaFRiZDdxV3VZeFpERzNteGE0bHZ1UFQ4bWRNcUd4Q0pRWXBxTnlfcUdKS20tV1BJQ2EzbmNsWDhMWHFJY3hUalRzdjE0SldUcFpkQzMyU1hPU1dwemFLRmZsR3VQTlNqV2Y4T0dBQm9kY3BEbU82YWxiTWRJU0s0cVhVTS1xT3p0SUY1MWZ4QUxDai1VdGljaERCbG5ucDNSLVFOd2djUENUNFpxaHfSAcgBQVVfeXFMTmdSSnRGSVlEV0x1ZFpJQ2JaR0VRTE41aW51Zzc2QS0zTUdOY0NsNTRSbGV0ZFctcHJSNlRoV2Ffak8ySWRseWJRSDFWSXFWNlVwY1VFNlcwVHEyQXFwTW9uMV9qWFU2bnlkUFJvRGk4UVVESlFpQm90UzF4YWZBY3F3UHVaMS1acThyaDFmNHJfWnJnSWRFUEtURjdNT1plYXVobU9KdWg4eHE2OGRLdjUwUDdxUm1fam14d0FxZDNpNWZpMWZoRS0?oc=5",
+     "title": "Estou muito confortável na presidência do BNDES, diz Mercadante"
+    }
+   ],
+   "ids": [
+    "d9200e25df85"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Estou muito confortável na presidência do BNDES, diz Mercadante",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "48a032bee7fb",
+   "title": "Basf desiste de comprar Evonik por US$ 12 bi após rejeições",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZUFaOEVfQUpPMXBwYXRHRzQwS2NqYnFITUVEN01rS00tNU5reXFjY3REeFBRUWJfMmFPMUY2VDlnRVdZTy1uTXVGbWRjX3VBYy1OWmJmelBHU19URFM0SzZzekNGR3I4QVdlWnJTYVpLUG91M2JNWWw0UGhpMk9lTHEzY0oyVEdRay1zMmJ5VnR5NGFpVDJhQmN3SThsWm1BYkJTXy16NjBEMHhRODJXX0tjSdIBwgFBVV95cUxNMUkybnpKN0pGdGtLRTBmMy10ZjV1OXcxd2U3NWNmWHJNTVE0V1lKOXFwTlQ1REJlclBuVl81RF94MW40S0swNlFtV0E4QXloaHZrQ3JDeHEybmQyWTZvS2RyOHkwcWRfYlRFVFN2bGd5TE94eF84TE5Mb3ZYZ2tGNU16Zld2NmRvNmZhSHBBdE1MZjdRVDYwOXE4cnNDeXhrUTFCUUs2UFVvQWFPaHctTFZtUjJ0ODBzbVNxQU1EVndWZw?oc=5",
+   "published": "2026-11-19T15:47:29+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZUFaOEVfQUpPMXBwYXRHRzQwS2NqYnFITUVEN01rS00tNU5reXFjY3REeFBRUWJfMmFPMUY2VDlnRVdZTy1uTXVGbWRjX3VBYy1OWmJmelBHU19URFM0SzZzekNGR3I4QVdlWnJTYVpLUG91M2JNWWw0UGhpMk9lTHEzY0oyVEdRay1zMmJ5VnR5NGFpVDJhQmN3SThsWm1BYkJTXy16NjBEMHhRODJXX0tjSdIBwgFBVV95cUxNMUkybnpKN0pGdGtLRTBmMy10ZjV1OXcxd2U3NWNmWHJNTVE0V1lKOXFwTlQ1REJlclBuVl81RF94MW40S0swNlFtV0E4QXloaHZrQ3JDeHEybmQyWTZvS2RyOHkwcWRfYlRFVFN2bGd5TE94eF84TE5Mb3ZYZ2tGNU16Zld2NmRvNmZhSHBBdE1MZjdRVDYwOXE4cnNDeXhrUTFCUUs2UFVvQWFPaHctTFZtUjJ0ODBzbVNxQU1EVndWZw?oc=5",
+     "title": "Basf desiste de comprar Evonik por US$ 12 bi após rejeições"
+    }
+   ],
+   "ids": [
+    "48a032bee7fb"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Basf desiste de comprar Evonik por US$ 12 bi após rejeições",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   }
  ],
  "deals": [
@@ -13596,6 +13582,39 @@
    "ai": false
   },
   {
+   "id": "788121eb5dd5",
+   "title": "JPMorgan’s Katrina Dudley Sees Opportunities Beyond Big Tech",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-20/jpmorgan-s-dudley-sees-opportunities-beyond-big-tech-video",
+   "published": "2026-11-20T11:24:37+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-20/jpmorgan-s-dudley-sees-opportunities-beyond-big-tech-video",
+     "title": "JPMorgan’s Katrina Dudley Sees Opportunities Beyond Big Tech"
+    }
+   ],
+   "ids": [
+    "788121eb5dd5"
+   ],
+   "snippet": "Katrina Dudley of J.P. Morgan Asset Management discusses opportunities beyond the biggest AI and tech names as the market broadens. She examines underappreciated AI beneficiaries, the earnings outlook, consumer strength and inflation risks, and what the economic backdrop could mean for the Federal Reserve. She spoke with Guy Johnson on Bloomberg Brief. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "JPMorgan’s Katrina Dudley Sees Opportunities Beyond Big Tech",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Katrina Dudley of J.P. Morgan Asset Management discusses opportunities beyond the biggest AI and tech names as the market broadens. She examines underappreciated AI beneficiaries, the earnings outlook, consumer strength and inflation risks, and what the economic backdrop could mean for the Federal Reserve. She spoke with Guy Johnson on Bloomberg Brief. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d19c3727f275",
    "title": "Galliard CEO Sold Flat Before London’s Royal Gateway Evacuated in Safety Crisis",
    "link": "https://www.bloomberg.com/news/articles/2026-11-20/galliard-ceo-sold-flat-before-london-s-royal-gateway-evacuated-in-safety-crisis",
@@ -13651,6 +13670,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "London cocoa futures are commanding a widening premium over New York as the European Union’s impending deforestation rules threaten to tighten bean supplies to the bloc.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "88339a578d07",
+   "title": "Finland’s Government Survives Confidence Vote Over Elderly Care",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-20/finland-s-government-survives-confidence-vote-over-elderly-care",
+   "published": "2026-11-20T11:18:03+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-20/finland-s-government-survives-confidence-vote-over-elderly-care",
+     "title": "Finland’s Government Survives Confidence Vote Over Elderly Care"
+    }
+   ],
+   "ids": [
+    "88339a578d07"
+   ],
+   "snippet": "Finland’s government survived a confidence vote in parliament brought by the opposition Center Party over health care and services for the elderly.",
+   "prescore": 2.4,
+   "headline": "Finland’s Government Survives Confidence Vote Over Elderly Care",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Finland’s government survived a confidence vote in parliament brought by the opposition Center Party over health care and services for the elderly.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13875,13 +13927,13 @@
    "ids": [
     "d52f448da232"
    ],
-   "snippet": "O ministro André Mendonça , do Supremo Tribunal Federal, pediu nesta sexta-feira (20) ao presidente da Corte, ministro Edson Fachin, que \"dê ampla publicidade\" ao relatório da Polícia Federal com menções a ele no caso Master. Este relatório, assim como outros que tratam de ministros do STF, está em sigilo máximo por determinação de Fachin. É um dos documentos enviados pela PF à presidência do STF nesta semana e que estão no centro da crise do Master no STF. Os relatórios geraram uma crise também na Polícia Federal -- que levou ao afastamento de dois delegados e a críticas à direção-geral do ór",
+   "snippet": "O ministro André Mendonça , do Supremo Tribunal Federal (STF), pediu nesta sexta-feira (20) ao presidente da Corte, Edson Fachin, que \"dê ampla publicidade\" ao relatório da Polícia Federal com menções a Mendonça no caso Master. Este relatório, assim como outros que tratam de ministros do STF, está em sigilo máximo por determinação de Fachin. É um dos documentos enviados pela PF à presidência da Corte nesta semana e que estão no centro da crise do Master no Supremo. Os relatórios geraram uma crise também na Polícia Federal -- que levou ao afastamento de dois delegados e a críticas à direção-ger",
    "prescore": 1.8,
    "headline": "Caso Master: Mendonça pede à presidência do STF que torne público relatório da PF com menções a ele",
    "category": "politica",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro André Mendonça , do Supremo Tribunal Federal, pediu nesta sexta-feira (20) ao presidente da Corte, ministro Edson Fachin, que \"dê ampla publicidade\" ao relatório da Polícia Federal com menções a ele no caso Master. Este relatório, assim como outros que tratam de ministros do STF, está em sigilo máximo por determinação de Fachin. É um dos documentos enviados pela PF à presidência do STF ",
+   "summary": "O ministro André Mendonça , do Supremo Tribunal Federal (STF), pediu nesta sexta-feira (20) ao presidente da Corte, Edson Fachin, que \"dê ampla publicidade\" ao relatório da Polícia Federal com menções a Mendonça no caso Master. Este relatório, assim como outros que tratam de ministros do STF, está em sigilo máximo por determinação de Fachin. É um dos documentos enviados pela PF à presidência da Co",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14353,10 +14405,10 @@
  ],
  "stats": {
   "raw": 881,
-  "unique": 535,
+  "unique": 530,
   "unique_all": 828,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 2.2
+  "seconds": 2.6
  }
 }
