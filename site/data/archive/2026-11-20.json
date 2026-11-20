@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T14:17:12.857165-03:00",
+ "generated_at": "2026-11-20T14:41:37.623036-03:00",
  "date": "2026-11-20",
  "window": {
   "start": "2026-11-19T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-20T08:19:08.708630-03:00",
-  "analyzed": 206
+  "analyzed": 208
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -130,98 +130,98 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.532,
-   "change_pct": 1.3113236763151903,
+   "price": 6.5292,
+   "change_pct": 1.2678956747393055,
    "spark": [
     6.238303184509277,
     6.353240013122559,
     6.345178127288818,
     6.447453022003174,
-    6.5320000648498535
+    6.529200077056885
    ]
   },
   {
    "symbol": "^GSPC",
    "name": "S&P 500",
    "unit": "pts",
-   "price": 7030.77,
-   "change_pct": -2.021509380039599,
+   "price": 7018.99,
+   "change_pct": -2.1856715727301856,
    "spark": [
     7416.58984375,
     7340.52978515625,
     7323.6298828125,
     7175.830078125,
-    7030.77001953125
+    7018.990234375
    ]
   },
   {
    "symbol": "^IXIC",
    "name": "Nasdaq",
    "unit": "pts",
-   "price": 23049.521,
-   "change_pct": -3.474480911816069,
+   "price": 23019.008,
+   "change_pct": -3.6022615786654,
    "spark": [
     24509.759765625,
     24328.380859375,
     24429.880859375,
     23879.19921875,
-    23049.521484375
+    23019.0078125
    ]
   },
   {
    "symbol": "^TNX",
    "name": "Treasury 10a",
    "unit": "%",
-   "price": 4.952,
-   "change_pct": -1.97941498159665,
+   "price": 4.936,
+   "change_pct": -2.2961212336754966,
    "spark": [
     5.120999813079834,
     5.103000164031982,
     5.065999984741211,
     5.052000045776367,
-    4.952000141143799
+    4.935999870300293
    ]
   },
   {
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 89.07,
-   "change_pct": -3.163734780092542,
+   "price": 88.93,
+   "change_pct": -3.3159417760596055,
    "spark": [
     92.44000244140625,
     93.13999938964844,
     91.94999694824219,
     91.9800033569336,
-    89.06999969482422
+    88.93000030517578
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3535.5,
-   "change_pct": -4.0700040700040745,
+   "price": 3529.8,
+   "change_pct": -4.22466422466422,
    "spark": [
     3853.0,
     3864.199951171875,
     3741.89990234375,
     3685.5,
-    3535.5
+    3529.800048828125
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 59259.45,
-   "change_pct": -4.26864718866179,
+   "price": 58985.08,
+   "change_pct": -4.7118813271974425,
    "spark": [
     64855.84375,
     64893.9453125,
     62987.265625,
     61901.8203125,
-    59259.44921875
+    58985.078125
    ]
   }
  ],
@@ -1110,7 +1110,7 @@
   },
   {
    "id": "f9eb3284b600",
-   "title": "Stocks slide as AI selloff deepens, Asia has worst week since 2020",
+   "title": "Tech stocks tumble, Treasury yields fall as traders seek refuge",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORTBuejlwS3Nua0szT1dTbnYtSElZYjI2RUg0NnRsVHNlOW1SMTBlUFIxdmtVcnB2TFd0N19aU1RlbzVWREhqYnZmWF9HRG5odm55UUxLMnJzckZpWjh6UHdrZGtZNlBIMVh3cU1QcUNIQlZRNXJMTW54TjdkaVdGbE9yVQ?oc=5",
    "published": "2026-11-20T01:46:00+00:00",
    "region": "INTL",
@@ -1118,7 +1118,7 @@
     {
      "source": "Reuters",
      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORTBuejlwS3Nua0szT1dTbnYtSElZYjI2RUg0NnRsVHNlOW1SMTBlUFIxdmtVcnB2TFd0N19aU1RlbzVWREhqYnZmWF9HRG5odm55UUxLMnJzckZpWjh6UHdrZGtZNlBIMVh3cU1QcUNIQlZRNXJMTW54TjdkaVdGbE9yVQ?oc=5",
-     "title": "Stocks slide as AI selloff deepens, Asia has worst week since 2020"
+     "title": "Tech stocks tumble, Treasury yields fall as traders seek refuge"
     }
    ],
    "ids": [
@@ -1609,45 +1609,6 @@
    "ai": true
   },
   {
-   "id": "b844cdf906a4",
-   "title": "Fim da escala 6×1: governo Lula confirma data da mudança e regulamenta jornada 5×2",
-   "link": "https://www.seudinheiro.com/2026/seu-negocio/fim-da-escala-6x1-governo-lula-confirma-data-da-mudanca-e-regulamenta-jornada-5x2-cbcb/",
-   "published": "2026-11-19T20:58:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Seu Dinheiro",
-     "link": "https://www.seudinheiro.com/2026/seu-negocio/fim-da-escala-6x1-governo-lula-confirma-data-da-mudanca-e-regulamenta-jornada-5x2-cbcb/",
-     "title": "Fim da escala 6×1: governo Lula confirma data da mudança e regulamenta jornada 5×2"
-    }
-   ],
-   "ids": [
-    "b844cdf906a4"
-   ],
-   "snippet": "Decreto tem redução gradual de horas sem corte salarial e novas regras para empresas se adaptarem The post Fim da escala 6×1: governo Lula confirma data da mudança e regulamenta jornada 5×2 appeared first on Seu Dinheiro .",
-   "prescore": 2.8,
-   "headline": "Governo publica decreto e confirma fim da escala 6x1 com 5x2",
-   "category": "macro",
-   "importance": 7,
-   "importance_reason": "Regulamentação com data e impacto trabalhista amplo.",
-   "summary": "O governo publicou na quinta (19) o decreto que regulamenta a Emenda Constitucional nº 141/2026, que implementou a escala 5x2 no Brasil.",
-   "involves": "Governo Lula, EC 141/2026",
-   "interpretation": "Dá data concreta à mudança.",
-   "impact": "Custo de mão de obra maior em setores intensivos.",
-   "sentiment": "negativo",
-   "entities": [
-    "Governo Lula"
-   ],
-   "tags": [
-    "6x1",
-    "5x2",
-    "decreto"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "d562c5a9881c",
    "title": "IFI alerta que 'bondades' de Lula na eleição apertam máquina pública e pede ajuste 'profundo'",
    "link": "https://g1.globo.com/economia/noticia/2026/11/19/orgao-do-senado-alerta-que-bondades-de-lula-nas-eleicoes-apertam-maquina-publica-e-pede-ajuste-fiscal-profundo.ghtml",
@@ -1810,6 +1771,47 @@
     "Rússia",
     "Otan",
     "guerra"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "ac26e8ecc960",
+   "title": "PF pede apuração dos casos de 4 ministros do STF ligados a Vorcaro",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdURUVVRtYjNaS3pnRVVwT1J1UVBPT1l4TE1tVUROLWZ4ak8yQ2dpVDR1dDRLVlhVbUNWcWRjcnUwQ1dweEU3UmU0SG1mOVR6MzJkUnUtX0o5YVBaeEd4WDNGTGxuLWxJOHdhUXlOQWF3Tzk4UE9KTXZaaHYyU0RNbWhWU0U5T1llMUhtOUlwSWwtdjh2ekUxNU1hSjQyMWtOdW50dS11V0NQY28wWE9xb21nWVRsV3UteWlrdERGONIBxAFBVV95cUxNa2lieGZBVmxMOVVzRndTZWctYlpyVEVjZXhkLS1pUUc3VlFCdTQtbTFDc3NMS2p3Z25EUzN2ZnRxNjhhSzBOVDVWeHg0UnNZZXZzeHNlc0pQQ3lYdHp1ZWsyMzYzRkI3RlJpME00OVFxaEZqcHFCNUZ1LXpmcHdTclZJbW9CTndOcVVnV3hBOWF4aE9XMFM1Z0pMRURURUlRUWRPM25zQnU4MzFhV2xKejZVS1p4SWRDSmtuYW1qeXd3UVBi?oc=5",
+   "published": "2026-11-19T22:23:27+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdURUVVRtYjNaS3pnRVVwT1J1UVBPT1l4TE1tVUROLWZ4ak8yQ2dpVDR1dDRLVlhVbUNWcWRjcnUwQ1dweEU3UmU0SG1mOVR6MzJkUnUtX0o5YVBaeEd4WDNGTGxuLWxJOHdhUXlOQWF3Tzk4UE9KTXZaaHYyU0RNbWhWU0U5T1llMUhtOUlwSWwtdjh2ekUxNU1hSjQyMWtOdW50dS11V0NQY28wWE9xb21nWVRsV3UteWlrdERGONIBxAFBVV95cUxNa2lieGZBVmxMOVVzRndTZWctYlpyVEVjZXhkLS1pUUc3VlFCdTQtbTFDc3NMS2p3Z25EUzN2ZnRxNjhhSzBOVDVWeHg0UnNZZXZzeHNlc0pQQ3lYdHp1ZWsyMzYzRkI3RlJpME00OVFxaEZqcHFCNUZ1LXpmcHdTclZJbW9CTndOcVVnV3hBOWF4aE9XMFM1Z0pMRURURUlRUWRPM25zQnU4MzFhV2xKejZVS1p4SWRDSmtuYW1qeXd3UVBi?oc=5",
+     "title": "PF pede apuração dos casos de 4 ministros do STF ligados a Vorcaro"
+    }
+   ],
+   "ids": [
+    "ac26e8ecc960"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "PF pede apuração dos casos de quatro ministros do STF ligados a Vorcaro",
+   "category": "politica",
+   "importance": 7,
+   "importance_reason": "Investigação atinge a cúpula do Judiciário.",
+   "summary": "A Polícia Federal pediu apuração dos casos de quatro ministros do STF ligados a Vorcaro.",
+   "involves": "Polícia Federal, STF, Vorcaro",
+   "interpretation": "Pedido de apuração é etapa inicial, mas atinge a Corte.",
+   "impact": "Aumenta ruído institucional e o prêmio de risco político.",
+   "sentiment": "negativo",
+   "entities": [
+    "Polícia Federal",
+    "STF",
+    "Vorcaro"
+   ],
+   "tags": [
+    "PF",
+    "STF",
+    "Vorcaro"
    ],
    "is_deal": false,
    "deal": null,
@@ -2893,7 +2895,7 @@
    "id": "59c6809e7974",
    "title": "Houthi Attack Damages Saudi Capital’s Tallest Tower",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOa0hZSmpRQXJwM2pNbUxHY01JZUd1TkdjdU5YNGZYd1hqMmNES3RoTWRCVm9GYjMwX0x5NkMwb2FicHNjWkhMZ1dQUVNsUW1hblVuQjVLVkhlVUZZRDFiMlcxdWNweTV0NjR6TG43MmFYMjczckZ1SmhzSlZtOFdtZVVsNHZpSk1UVWdRZ0phakNPT05NRUxmOFFmNGtMZw?oc=5",
-   "published": "2026-11-19T15:55:06+00:00",
+   "published": "2026-11-20T01:42:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -3097,6 +3099,87 @@
    "ai": true
   },
   {
+   "id": "131ef280113a",
+   "title": "Bruno Moretti ganha força no Planalto, mas comando da Fazenda é considerado pouco provável",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSDVaTWJkWXNKSVVTempwUlI4eGRYU3V2TVZhZlFOaGlaOGs0RkpjXzB5dDgwN2VLZGNLQ0IzajFiOE9ucU1VdW9QLW1hZEU2WGkyUGFLaG95V3EtekQxWmh4SlpyQXZQUzRnSGxRcEZJSmF3c0Q3NE5CcWtGcUNPMnNsdmZUNVVoOTdYZHZPN3BZVkN5VjR5dy1PV2l4OEFDUGVBSlRiQnhQSE5yTVR1Y29QbF9oaFhTVFpONUZZS3ZuQU1MWHRXRUJUUDNfWDM5Rlh3R0hRVkVDaEF00gHiAUFVX3lxTE1HazFvQlJSbHhkOFItclFqcERJMFh1LXpUc1lpTlVodXVhSElwNlAtSFBoU3hYZlBFMEhUM3hoYTJnT2lEYTdnaWdleEZFT0d4ZUJtTGpoUnptdkFfWWlpZTJQYm8zX2lvMy1aUjBQZ2RMbUhUejI5U2lUQmk0UlJ0TUVuN3gtWXRVZ1RCU0FTdHM4ajZKUnVzRGNtWC12UWJEbnZwSVRsNGRjUndyVUkxamlYYllkbFdTMXRfT0RKbDYteUt2aFdPSGJqTlg1M0ZpRlFqTDh2LV94UFVGTzFfSEE?oc=5",
+   "published": "2026-11-20T08:30:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSDVaTWJkWXNKSVVTempwUlI4eGRYU3V2TVZhZlFOaGlaOGs0RkpjXzB5dDgwN2VLZGNLQ0IzajFiOE9ucU1VdW9QLW1hZEU2WGkyUGFLaG95V3EtekQxWmh4SlpyQXZQUzRnSGxRcEZJSmF3c0Q3NE5CcWtGcUNPMnNsdmZUNVVoOTdYZHZPN3BZVkN5VjR5dy1PV2l4OEFDUGVBSlRiQnhQSE5yTVR1Y29QbF9oaFhTVFpONUZZS3ZuQU1MWHRXRUJUUDNfWDM5Rlh3R0hRVkVDaEF00gHiAUFVX3lxTE1HazFvQlJSbHhkOFItclFqcERJMFh1LXpUc1lpTlVodXVhSElwNlAtSFBoU3hYZlBFMEhUM3hoYTJnT2lEYTdnaWdleEZFT0d4ZUJtTGpoUnptdkFfWWlpZTJQYm8zX2lvMy1aUjBQZ2RMbUhUejI5U2lUQmk0UlJ0TUVuN3gtWXRVZ1RCU0FTdHM4ajZKUnVzRGNtWC12UWJEbnZwSVRsNGRjUndyVUkxamlYYllkbFdTMXRfT0RKbDYteUt2aFdPSGJqTlg1M0ZpRlFqTDh2LV94UFVGTzFfSEE?oc=5",
+     "title": "Bruno Moretti ganha força no Planalto, mas comando da Fazenda é considerado pouco provável"
+    }
+   ],
+   "ids": [
+    "131ef280113a"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Bruno Moretti ganha força no Planalto, mas comando da Fazenda é pouco provável",
+   "category": "politica",
+   "importance": 6,
+   "importance_reason": "Define quem pode comandar a economia, tema sensível ao mercado.",
+   "summary": "Bruno Moretti ganha força no Planalto, mas o comando do Ministério da Fazenda é considerado pouco provável para ele.",
+   "involves": "Bruno Moretti, Planalto, Ministério da Fazenda",
+   "interpretation": "Há especulação sobre o comando da Fazenda; o título descarta Moretti no cargo.",
+   "impact": "Mudança na Fazenda afetaria expectativas fiscais, juros e câmbio.",
+   "sentiment": "neutro",
+   "entities": [
+    "Bruno Moretti",
+    "Ministério da Fazenda",
+    "Planalto"
+   ],
+   "tags": [
+    "Fazenda",
+    "Planalto",
+    "fiscal"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "0b293f65d71a",
+   "title": "Governo avalia veto integral ao projeto da renegociação das dívidas rurais",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOU93YXlaRVlPU0dxazRERmNiTmdhdTNkbXEybmhFTmJ1Q0FrUGd4cFZQeFhDdTZ0bUJXNnV6QllWQXF3dG9jeUJDa3AtQlBySVNES1ltcmV6bDEyYnNJandwSjBnQTcwSGlVX1g3RGpWN2lNYkl4RTFQclZ4blVnbTBDZnFjcHptSF9DRmc1UlRCUGJvTjhYMmR1dlpuZnhQMmZwLUh2SVM5dmxiWWJlbGVsbUZpV0lJdDRyVUJkTDhWNUU4Q25YVdIBzgFBVV95cUxPWnlLNWxvYzRrZ2FiaWRwaW96TlFTSW1Pd01JMFdXcnNQOExMajRhVzlvZmJMZ0ZkaDdwTmxkTUlKOXdrNndvMnlTcFd5OGtXekZoVjZZM1NQVExzeDhZWElWOE41bkxEeHhGX2JmTmg1N1RDNU5kVjNTR3lvR1JzTGxnNFU1ME9FdlpSOGF5NFYwWnhlUE9ZM25DX2JDeUZocHk0M1pLYkg0ZjJnZGNjWTVEdHowTi0xaFZoRVBCbzYwRThoOGp1TkZ4VnFLUQ?oc=5",
+   "published": "2026-11-20T08:30:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOU93YXlaRVlPU0dxazRERmNiTmdhdTNkbXEybmhFTmJ1Q0FrUGd4cFZQeFhDdTZ0bUJXNnV6QllWQXF3dG9jeUJDa3AtQlBySVNES1ltcmV6bDEyYnNJandwSjBnQTcwSGlVX1g3RGpWN2lNYkl4RTFQclZ4blVnbTBDZnFjcHptSF9DRmc1UlRCUGJvTjhYMmR1dlpuZnhQMmZwLUh2SVM5dmxiWWJlbGVsbUZpV0lJdDRyVUJkTDhWNUU4Q25YVdIBzgFBVV95cUxPWnlLNWxvYzRrZ2FiaWRwaW96TlFTSW1Pd01JMFdXcnNQOExMajRhVzlvZmJMZ0ZkaDdwTmxkTUlKOXdrNndvMnlTcFd5OGtXekZoVjZZM1NQVExzeDhZWElWOE41bkxEeHhGX2JmTmg1N1RDNU5kVjNTR3lvR1JzTGxnNFU1ME9FdlpSOGF5NFYwWnhlUE9ZM25DX2JDeUZocHk0M1pLYkg0ZjJnZGNjWTVEdHowTi0xaFZoRVBCbzYwRThoOGp1TkZ4VnFLUQ?oc=5",
+     "title": "Governo avalia veto integral ao projeto da renegociação das dívidas rurais"
+    }
+   ],
+   "ids": [
+    "0b293f65d71a"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Governo avalia veto integral ao projeto de renegociação das dívidas rurais",
+   "category": "macro",
+   "importance": 6,
+   "importance_reason": "Decisão fiscal e de crédito rural com efeito em bancos e agro.",
+   "summary": "O governo avalia vetar integralmente o projeto de renegociação das dívidas rurais.",
+   "involves": "Governo, dívidas rurais, agronegócio",
+   "interpretation": "Veto seria vitória fiscal e derrota do Congresso e do agro.",
+   "impact": "Veto reduz risco fiscal; manter a renegociação afetaria bancos expostos ao agro.",
+   "sentiment": "misto",
+   "entities": [
+    "Governo",
+    "Congresso"
+   ],
+   "tags": [
+    "dívidas rurais",
+    "agro",
+    "veto"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "fbc6b006ae8b",
    "title": "Brasil tem chance de atrair capital, mas precisa fazer ‘lição’ de casa, diz BofA",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZUVsS2ZJVEZTeGdSLWdVaGt1eF81ZzZPOWE1b3RSWDdoWkptV3BnVXM5NzJJcFFkM1M3ajBKRFc1cXRtbVNnQklpSm1yeTVySXpSVjJkeFc4emQzdUREcFRUN3d6VkZhbzBpTWEwV0lrel91MkRYeGFpOWktdTh1UFIyaktGNG9oMGdla3Bob1dmNUd3V0ZkSkRBVllvTWM2djVFRmRvRGZiZnlvaVBmYlpETG9Za1VPbEHSAc4BQVVfeXFMTVFtSGF3R2UwWm9odHAwMTF3U3dlZzg0WFhjWWhiaDJKZFRxM2RzRndNSzk1ZHZaNXVYcnlNaTc5d0ZVdW85Q3ZvdXhZaUZfbURFcmVRbXRsZ3IyYi13MWZmRk1FbVBMZmRNZ3NONFpiaXhjZHh0RjdCdXpUXy1KLU1kTWxpT01hd3ZQVjM3UXJzNmdxai13WXdFNzY5QUROMkU1akJkdlBfR1VYbS15eE1XTm8xdm5LWWhRd1F2Uk16cVpYZGdIa3ZmQnBZSXc?oc=5",
@@ -3170,6 +3253,47 @@
     "crédito",
     "bancos",
     "inadimplência"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "5863e3d5d007",
+   "title": "PF inclui Mendonça em pedido de apuração sobre relação com Vorcaro após interferência de Andrei",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMEk3U1FiSUU5TUNoY0Z1bUlKRkhweHFncEttX3VwdFNTRE1mbF9lelc0bzk2b3hCZkF3aUdWSmVXeHE1UjNDOFd3YWxyWUFlWktzc2U2dE5mWVFYN3JCLVpmNFY5Zm1UX1lvXzJzcTBHXzJnVVViNDVhcmg1Z2QtWlctT2RlOTUtcHpJZHNhZzk3MmM4TzBlZ2tIUjdZNjdRR1Z6d2szV3plVkpESjhRTUZoY1dNcHJKVG1naGF0b2ppZXF2OTVBSEYxOGRiUdIB0wFBVV95cUxOQ0RiRW56c3ZnTHA3WTFOYkFsZlJxdUdzX3FlRng2b2hkazdfdmxCWXBnXzJPSG1ueUJScVNuRmRfTE5QdnJkaHY5RDhOdXhBb0w3c2xiM1JVeU9hLXZIX0tNbmIwUlhGd0JoSnlpbmJoZ0ExeU5PVFVxQUh0S09OS2FzeVV4RXo0WEdXbUFnQ0tnTEUwUW8wQjVUSGR3VlNUVFdXR3hwYWV3LVpoNWFnSllCZ2JWVU1CT0RnZEhiZlNFcXJDcXVzRWNNaFJLTGtaUUNv?oc=5",
+   "published": "2026-11-19T22:23:27+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMEk3U1FiSUU5TUNoY0Z1bUlKRkhweHFncEttX3VwdFNTRE1mbF9lelc0bzk2b3hCZkF3aUdWSmVXeHE1UjNDOFd3YWxyWUFlWktzc2U2dE5mWVFYN3JCLVpmNFY5Zm1UX1lvXzJzcTBHXzJnVVViNDVhcmg1Z2QtWlctT2RlOTUtcHpJZHNhZzk3MmM4TzBlZ2tIUjdZNjdRR1Z6d2szV3plVkpESjhRTUZoY1dNcHJKVG1naGF0b2ppZXF2OTVBSEYxOGRiUdIB0wFBVV95cUxOQ0RiRW56c3ZnTHA3WTFOYkFsZlJxdUdzX3FlRng2b2hkazdfdmxCWXBnXzJPSG1ueUJScVNuRmRfTE5QdnJkaHY5RDhOdXhBb0w3c2xiM1JVeU9hLXZIX0tNbmIwUlhGd0JoSnlpbmJoZ0ExeU5PVFVxQUh0S09OS2FzeVV4RXo0WEdXbUFnQ0tnTEUwUW8wQjVUSGR3VlNUVFdXR3hwYWV3LVpoNWFnSllCZ2JWVU1CT0RnZEhiZlNFcXJDcXVzRWNNaFJLTGtaUUNv?oc=5",
+     "title": "PF inclui Mendonça em pedido de apuração sobre relação com Vorcaro após interferência de Andrei"
+    }
+   ],
+   "ids": [
+    "5863e3d5d007"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "PF inclui Mendonça em pedido de apuração sobre relação com Vorcaro",
+   "category": "politica",
+   "importance": 6,
+   "importance_reason": "Investigação envolve ministros do STF e o caso Vorcaro.",
+   "summary": "A Polícia Federal incluiu Mendonça em pedido de apuração sobre sua relação com Vorcaro, após interferência de Andrei. Há poucos detalhes no material.",
+   "involves": "Polícia Federal, Mendonça, Vorcaro, Andrei",
+   "interpretation": "O caso se amplia dentro do STF e aumenta o ruído institucional.",
+   "impact": "Risco político e institucional; efeito indireto sobre prêmio de risco do Brasil.",
+   "sentiment": "negativo",
+   "entities": [
+    "Polícia Federal",
+    "Mendonça",
+    "Vorcaro"
+   ],
+   "tags": [
+    "PF",
+    "STF",
+    "Vorcaro"
    ],
    "is_deal": false,
    "deal": null,
@@ -5316,46 +5440,6 @@
    "ai": true
   },
   {
-   "id": "dc5b5e1c6819",
-   "title": "Fed's Barr worried regulatory changes may increase financial sector risks",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObGNlZHpfREZsS2VzTkI1dGxhQ1FLYk9ta0YzRHp6Wl9JRlF2ZVBFZTlJTmo3NjNoZXkyYUdQeFVwYVdGRW9wM25ldlozX3ZnRncyNktWTkk4RGdILXFaWGxnaVRMSUJvY0IzYUhuVGw3VmVyWGl2bmFXTVFZZ1FiblBqLXBsNThZMFRiRWxwYkg4Z2Y5Mk9YYkpWcHoyT1JhdnVXM01KeTYzaVBsUk9TUmZueTEzbU44?oc=5",
-   "published": "2026-11-19T20:56:48+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObGNlZHpfREZsS2VzTkI1dGxhQ1FLYk9ta0YzRHp6Wl9JRlF2ZVBFZTlJTmo3NjNoZXkyYUdQeFVwYVdGRW9wM25ldlozX3ZnRncyNktWTkk4RGdILXFaWGxnaVRMSUJvY0IzYUhuVGw3VmVyWGl2bmFXTVFZZ1FiblBqLXBsNThZMFRiRWxwYkg4Z2Y5Mk9YYkpWcHoyT1JhdnVXM01KeTYzaVBsUk9TUmZueTEzbU44?oc=5",
-     "title": "Fed's Barr worried regulatory changes may increase financial sector risks"
-    }
-   ],
-   "ids": [
-    "dc5b5e1c6819"
-   ],
-   "snippet": "",
-   "prescore": 4.6,
-   "headline": "Barr, do Fed, teme que mudanças regulatórias aumentem riscos no setor financeiro",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Comentário regulatório sem decisão concreta.",
-   "summary": "A dirigente do Fed Michael Barr disse estar preocupada com a possibilidade de que mudanças regulatórias aumentem os riscos no setor financeiro. O trecho não traz detalhes.",
-   "involves": "Fed; Barr; bancos dos EUA",
-   "interpretation": "Sinaliza resistência interna ao afrouxamento regulatório bancário nos EUA.",
-   "impact": "Tema relevante para bancos globais e requisitos de capital, com efeito indireto no apetite de M&A bancário.",
-   "sentiment": "neutro",
-   "entities": [
-    "Federal Reserve",
-    "Barr"
-   ],
-   "tags": [
-    "Fed",
-    "regulação",
-    "bancos"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "10f5b45525f4",
    "title": "Corina Machado questiona acordo de petróleo de Trump na Venezuela",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb3FwQWhJVnZWU3pTQ0FLcE12Vk42T2RBM0hnc0VSUk1KQmFzbXl0NjE0NkxMY2ZkZEhHVDhIVEpvYi1GRkNjdy1DVmd1UDdvSVNMZkszaG9Rc0NfNmQ3ZkdRNmNBanJDZGZfYXBuNzdyWU5GRnl4TDh5bTlpcHlBbklXaTBFOXlwZWpYOGF5VGZaOXUyaXJLTm50dzUwM2lBcXBhYkRsLWp3RmpSMlE?oc=5",
@@ -5559,45 +5643,6 @@
     "Trump",
     "Nvidia",
     "chips"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "736af86aea87",
-   "title": "Uma herança maldita: a que o Lula 3 deixará ao Lula 4; populista começa a se dar conta dela",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbW1TVG1SZlpidkpUaVpyMVVmWkVUWkJBcW5CTlgyOUhmRm95SnhldTIzU2Y4dlJjY3FEQjBqSmJKQ1liSTJ1Smt0VWpwNGZsaXpsY0NhM05pR2pETnZIUFVFZWdfaE9HVlJRRzV3TklMZjNiZUtTamJyVVpScFpYVGNybTJUODAyQ3d3empEMlFlaTg1NjRYMDRrWFA0VzJtMndjbld0cFlfa3UxcXRyUnk0OW5PVUJVM3FTME5WRzVnYTBuelFBb3JwSndVUjM4S09UVXZyR3hSQdIB3wFBVV95cUxPeTlRTVR6WHk3bi1LUF8xQVpUZ1lEalJwVWNteGIzTUd3dFcwUFQ1SFAzd0VYbkxzYWliYnJGMS15R1dIRU1YZUVGSEFfMkd6QnBKSEIzWmgwMWQwR1pLdnhweV8ydVM0eXBvd1U3RFVqZndyMFNEX0t0N0lkanJ0UXJGa3pZV1h2YlBaOTRsRmVTVDVnb3FYVm1mNXN3ZThtbWh2MnBzY0RJcF9fSzQ3TVAwbnVnd0ItaERXRWp5RmR0S29OYWhtZXRwclZkRU1wN0p0NVZ2WDJjVUJoRVVv?oc=5",
-   "published": "2026-11-20T01:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbW1TVG1SZlpidkpUaVpyMVVmWkVUWkJBcW5CTlgyOUhmRm95SnhldTIzU2Y4dlJjY3FEQjBqSmJKQ1liSTJ1Smt0VWpwNGZsaXpsY0NhM05pR2pETnZIUFVFZWdfaE9HVlJRRzV3TklMZjNiZUtTamJyVVpScFpYVGNybTJUODAyQ3d3empEMlFlaTg1NjRYMDRrWFA0VzJtMndjbld0cFlfa3UxcXRyUnk0OW5PVUJVM3FTME5WRzVnYTBuelFBb3JwSndVUjM4S09UVXZyR3hSQdIB3wFBVV95cUxPeTlRTVR6WHk3bi1LUF8xQVpUZ1lEalJwVWNteGIzTUd3dFcwUFQ1SFAzd0VYbkxzYWliYnJGMS15R1dIRU1YZUVGSEFfMkd6QnBKSEIzWmgwMWQwR1pLdnhweV8ydVM0eXBvd1U3RFVqZndyMFNEX0t0N0lkanJ0UXJGa3pZV1h2YlBaOTRsRmVTVDVnb3FYVm1mNXN3ZThtbWh2MnBzY0RJcF9fSzQ3TVAwbnVnd0ItaERXRWp5RmR0S29OYWhtZXRwclZkRU1wN0p0NVZ2WDJjVUJoRVVv?oc=5",
-     "title": "Uma herança maldita: a que o Lula 3 deixará ao Lula 4; populista começa a se dar conta dela"
-    }
-   ],
-   "ids": [
-    "736af86aea87"
-   ],
-   "snippet": "",
-   "prescore": 3.2,
-   "headline": "Herança maldita: a que o Lula 3 deixará ao Lula 4, segundo o Estadão",
-   "category": "politica",
-   "importance": 4,
-   "importance_reason": "Opinião sem fatos novos.",
-   "summary": "Texto do Estadão discute a herança que o Lula 3 deixará ao Lula 4. O trecho não traz conteúdo.",
-   "involves": "Lula; Estadão",
-   "interpretation": "Texto opinativo, sem informação nova.",
-   "impact": "Contribui para o clima sobre fiscal em 2027.",
-   "sentiment": "negativo",
-   "entities": [
-    "Lula",
-    "Estadão"
-   ],
-   "tags": [
-    "Lula 4",
-    "fiscal"
    ],
    "is_deal": false,
    "deal": null,
@@ -6237,45 +6282,6 @@
    "ai": true
   },
   {
-   "id": "6a858485c66b",
-   "title": "Euro zone banks' data centre exposure small but growing, ECB says",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm5Wc0JWdU5keDRHeFRNV0Izdl9IY3pCVzYwaEExN2F0cmo5MTAzMnZ5S3pFSW9zeU5ITVo1bF92OExlbmU0OW55cWR1b09NdGZWU29FTi1kVXBzTHBoSUtNdmRONlVaMUV1XzN5QTUwSWNWQm80YkV0NGpzcjNES195c1VVaS1sRElPVUU2RWJHZ0N3T3I2RGhfVGdTRTlnMkdJeTM0V21lczRyV054R3h3?oc=5",
-   "published": "2026-11-19T18:33:07+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm5Wc0JWdU5keDRHeFRNV0Izdl9IY3pCVzYwaEExN2F0cmo5MTAzMnZ5S3pFSW9zeU5ITVo1bF92OExlbmU0OW55cWR1b09NdGZWU29FTi1kVXBzTHBoSUtNdmRONlVaMUV1XzN5QTUwSWNWQm80YkV0NGpzcjNES195c1VVaS1sRElPVUU2RWJHZ0N3T3I2RGhfVGdTRTlnMkdJeTM0V21lczRyV054R3h3?oc=5",
-     "title": "Euro zone banks' data centre exposure small but growing, ECB says"
-    }
-   ],
-   "ids": [
-    "6a858485c66b"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Exposição de bancos da zona do euro a data centers é pequena, mas cresce, diz BCE",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Aviso do BCE sobre crédito ligado à IA.",
-   "summary": "O BCE afirma que a exposição de bancos do euro a data centers é pequena, mas crescente.",
-   "involves": "BCE, bancos da zona do euro",
-   "interpretation": "Preocupação com concentração em IA.",
-   "impact": "Reforça o debate sobre risco de crédito em IA.",
-   "sentiment": "neutro",
-   "entities": [
-    "BCE"
-   ],
-   "tags": [
-    "BCE",
-    "data centers",
-    "crédito"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "47123d47254d",
    "title": "Trump, Xi e Putin ignoram guerras e passam ao largo do multilateralismo em 'declaração de paz'",
    "link": "https://g1.globo.com/mundo/blog/sandra-cohen/post/2026/11/19/trump-xi-e-putin-passam-ao-largo-do-multilateralismo.ghtml",
@@ -6506,6 +6512,46 @@
    "tags": [
     "tributação",
     "fiscal"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "8b8e17e075a7",
+   "title": "Agência de Comunicação - Setor mineral articula apoio a Pedro Guerra para a diretoria da ANM",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPcTE5YVVYLWxpbV92ekpMaTMyS0hkRXpUUncyamZaSHFtMzRGN3pGOFF2dTVxMTdoY2lvS3gycUdyR2lQNXgxbThYWmNRcXRVWFhxU29QTFh0a1ppZHdySFZuSzFzbi1GYlJLY3dHX0NCY1FPZjVBQjN4MGliNE5vRm83RG1CZ09ndXBQRTJmVUpZNWpTTmo1MVdDTUl6VWJvcmYwOWwtNURNX0Jqd2xyY1NPLXVxaXgxNFJOTVN6YmJsN2lmeUwxWFZvV3M1Zkw4M3p1RGZPU1BjT2xOS0NacQ?oc=5",
+   "published": "2026-11-19T16:18:57+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPcTE5YVVYLWxpbV92ekpMaTMyS0hkRXpUUncyamZaSHFtMzRGN3pGOFF2dTVxMTdoY2lvS3gycUdyR2lQNXgxbThYWmNRcXRVWFhxU29QTFh0a1ppZHdySFZuSzFzbi1GYlJLY3dHX0NCY1FPZjVBQjN4MGliNE5vRm83RG1CZ09ndXBQRTJmVUpZNWpTTmo1MVdDTUl6VWJvcmYwOWwtNURNX0Jqd2xyY1NPLXVxaXgxNFJOTVN6YmJsN2lmeUwxWFZvV3M1Zkw4M3p1RGZPU1BjT2xOS0NacQ?oc=5",
+     "title": "Agência de Comunicação - Setor mineral articula apoio a Pedro Guerra para a diretoria da ANM"
+    }
+   ],
+   "ids": [
+    "8b8e17e075a7"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Setor mineral articula apoio a Pedro Guerra para a diretoria da ANM",
+   "category": "politica",
+   "importance": 4,
+   "importance_reason": "Indicação para agência reguladora de mineração; relevante para o setor.",
+   "summary": "O setor mineral articula apoio a Pedro Guerra para a diretoria da ANM. O texto vem de agência de comunicação.",
+   "involves": "Pedro Guerra, ANM, setor mineral",
+   "interpretation": "Movimento de bastidor por influência na regulação minerária.",
+   "impact": "Direção da ANM afeta licenciamento e direitos minerários, com reflexo em mineradoras.",
+   "sentiment": "neutro",
+   "entities": [
+    "Pedro Guerra",
+    "ANM"
+   ],
+   "tags": [
+    "ANM",
+    "mineração",
+    "regulação"
    ],
    "is_deal": false,
    "deal": null,
@@ -6806,6 +6852,39 @@
    "snippet": "",
    "prescore": 5.6,
    "headline": "What to Know About Anthropic’s Record-Breaking IPO",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "34406fc98331",
+   "title": "Anthropic estreia-se hoje em bolsa após o maior IPO de sempre",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONk1FWDI3TFdFcjRrcXBVajI4VnB1bHJ5LU1iUzhUOTBPcTJxYmw5clZIVURYdU8zX2gydENJN3FlV08wdHkyb3NCZ3VDcUcxdEpVeEl1WnloM3VxdW0wb3lCMlBkRUxZNUV0UUJrTWVBdTZyb092QW1qZnZkakhpTXgzal9LUk9ZM3dIQUJON0IxZTI1MG1N?oc=5",
+   "published": "2026-11-19T21:48:37+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "MoneyLab",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONk1FWDI3TFdFcjRrcXBVajI4VnB1bHJ5LU1iUzhUOTBPcTJxYmw5clZIVURYdU8zX2gydENJN3FlV08wdHkyb3NCZ3VDcUcxdEpVeEl1WnloM3VxdW0wb3lCMlBkRUxZNUV0UUJrTWVBdTZyb092QW1qZnZkakhpTXgzal9LUk9ZM3dIQUJON0IxZTI1MG1N?oc=5",
+     "title": "Anthropic estreia-se hoje em bolsa após o maior IPO de sempre"
+    }
+   ],
+   "ids": [
+    "34406fc98331"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Anthropic estreia-se hoje em bolsa após o maior IPO de sempre",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7981,6 +8060,47 @@
    "ai": true
   },
   {
+   "id": "a895061128de",
+   "title": "Deputado aciona TCU contra licitação do Senado para contratar TV a cabo em gabinetes e casa de Davi",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZzF3cF9ROHZlVHQteGZXWURHY2Q1YktUcTBUeWo5OGJiTWNxZkcxQlM2YVpHUjdjOHQzUkpQNGZIVjZOa3JVS19fYlBnelJfSUx0blBfQkNoR0gwOG1hQmdWY3ZoaWpDSXVpd3U4ZWRNUFFfVnRaemFIZEFyVmh1ZDFjbnFzUFRDdmpEYk05czhHVzVMVHU3S3B3RzhSdW1hUGJ1eFFjSGRUeEwtU2hxU3hwdklQaUxxcDVoLWlCeGNvcXNrWEY1cllsN25ucTFsaXBnMnNUaHJuaXdSUk43by1GckY5Wm4tZWfSAe8BQVVfeXFMTk9UTTJ0bV9kX21ORnBCYU1XaUkxNl9RMnM3VXQ5cFRnVnl5b0xjQ3Y3dnpYOGxkNHRRNEpYdEdxVTNIaEZwWDBqQ1RwZUJiS1A2SXBMRmI4ajBhYTlSaTRCLXRqUmFRUHFocXBMU2xMbG5BQmtuV1pSSkFBamFVS0N5TUxtOVVZMmE2RXpxcHdxZVZvaFktOWVyajY3dFJDbHhLaUVhXzgxNmdyamZvWVVESG93LTNFWGdReE1LMHZmNmV5RWdyN2RXdjY1bDdrQ1BsMlFKNUM4QlY3RHhoT3RaYXNVeG9HT01VVUJYbUE?oc=5",
+   "published": "2026-11-19T20:32:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZzF3cF9ROHZlVHQteGZXWURHY2Q1YktUcTBUeWo5OGJiTWNxZkcxQlM2YVpHUjdjOHQzUkpQNGZIVjZOa3JVS19fYlBnelJfSUx0blBfQkNoR0gwOG1hQmdWY3ZoaWpDSXVpd3U4ZWRNUFFfVnRaemFIZEFyVmh1ZDFjbnFzUFRDdmpEYk05czhHVzVMVHU3S3B3RzhSdW1hUGJ1eFFjSGRUeEwtU2hxU3hwdklQaUxxcDVoLWlCeGNvcXNrWEY1cllsN25ucTFsaXBnMnNUaHJuaXdSUk43by1GckY5Wm4tZWfSAe8BQVVfeXFMTk9UTTJ0bV9kX21ORnBCYU1XaUkxNl9RMnM3VXQ5cFRnVnl5b0xjQ3Y3dnpYOGxkNHRRNEpYdEdxVTNIaEZwWDBqQ1RwZUJiS1A2SXBMRmI4ajBhYTlSaTRCLXRqUmFRUHFocXBMU2xMbG5BQmtuV1pSSkFBamFVS0N5TUxtOVVZMmE2RXpxcHdxZVZvaFktOWVyajY3dFJDbHhLaUVhXzgxNmdyamZvWVVESG93LTNFWGdReE1LMHZmNmV5RWdyN2RXdjY1bDdrQ1BsMlFKNUM4QlY3RHhoT3RaYXNVeG9HT01VVUJYbUE?oc=5",
+     "title": "Deputado aciona TCU contra licitação do Senado para contratar TV a cabo em gabinetes e casa de Davi"
+    }
+   ],
+   "ids": [
+    "a895061128de"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Deputado aciona TCU contra licitação do Senado para TV a cabo em gabinetes",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Questão administrativa do Senado, sem efeito em mercado.",
+   "summary": "Um deputado acionou o TCU contra a licitação do Senado para contratar TV a cabo nos gabinetes e na casa do presidente da Casa, Davi.",
+   "involves": "Deputado, TCU, Senado, Davi",
+   "interpretation": "Controvérsia de gasto público no Legislativo; tende a ficar no campo político.",
+   "impact": "Sem impacto em ativos.",
+   "sentiment": "neutro",
+   "entities": [
+    "TCU",
+    "Senado",
+    "Davi"
+   ],
+   "tags": [
+    "Senado",
+    "TCU",
+    "licitação"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "2d2bc58777ec",
    "title": "Motorista de aplicativo pode deixar de pagar IPVA em SP; economia passa de R$ 2 mil por ano",
    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNLVYtY09DaUxaa2diS09jZ3Vtc0JNRW9ZT3ZQTV83cVBpYXJyUk81RXJGQlVpbGN6X3VvYkl5UHlsX1IxZjJpa0Z4MkFXRjd6aHpEMHVxLXRFUEs2ZGgzWFhWaXE3djE2RXJ5a2VIVklQTV8yUVRnd2RVZ05xNXFYTTh4X2RLS2IteG5Md01LTXBMenYyTFJPd2VzVWttci1xRjItR2d2UUtEQ2g3LUxDVE5qSENreGJGZlk4WDA1d0pVSlJFR01zbDdfSHZrYlZSQjVCVG1ubEVIQzFXQ3RoemNqak9zNXVqdHh6V3hjNnpGejBZ?oc=5",
@@ -8533,7 +8653,7 @@
   },
   {
    "id": "018b1511ff9b",
-   "title": "Treasuries Build on Big Weekly Gain as Investors Flee Stocks",
+   "title": "Treasuries Rally as AI Selloff Sends Investors to Haven Assets",
    "link": "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
    "published": "2026-11-20T04:33:23+00:00",
    "region": "INTL",
@@ -8541,19 +8661,19 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-20/treasuries-eye-longest-rally-in-five-months-on-haven-demand",
-     "title": "Treasuries Build on Big Weekly Gain as Investors Flee Stocks"
+     "title": "Treasuries Rally as AI Selloff Sends Investors to Haven Assets"
     }
    ],
    "ids": [
     "018b1511ff9b"
    ],
-   "snippet": "Treasuries added to a steep weekly advance as stocks slumped globally on mounting doubts over the artificial intelligence trade.",
+   "snippet": "US Treasuries soared as mounting doubts over the artificial intelligence trade sent stocks tumbling and investors flocking to haven assets.",
    "prescore": 2.8,
-   "headline": "Treasuries Build on Big Weekly Gain as Investors Flee Stocks",
+   "headline": "Treasuries Rally as AI Selloff Sends Investors to Haven Assets",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Treasuries added to a steep weekly advance as stocks slumped globally on mounting doubts over the artificial intelligence trade.",
+   "summary": "US Treasuries soared as mounting doubts over the artificial intelligence trade sent stocks tumbling and investors flocking to haven assets.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -8725,39 +8845,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "8d023ae83690",
-   "title": "Tata Sons Board Meet Next Week to Revisit Listing Issue Amid Row",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-19/tata-sons-largest-shareholder-meets-to-discuss-listing-amid-rift",
-   "published": "2026-11-19T21:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-19/tata-sons-largest-shareholder-meets-to-discuss-listing-amid-rift",
-     "title": "Tata Sons Board Meet Next Week to Revisit Listing Issue Amid Row"
-    }
-   ],
-   "ids": [
-    "8d023ae83690"
-   ],
-   "snippet": "India’s Tata Group is entering a critical fortnight as the conglomerate’s controlling shareholders and holding company has back-to-back meetings amid a governance dispute that has spilled beyond the boardroom.",
-   "prescore": 2.8,
-   "headline": "Tata Sons Board Meet Next Week to Revisit Listing Issue Amid Row",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "India’s Tata Group is entering a critical fortnight as the conglomerate’s controlling shareholders and holding company has back-to-back meetings amid a governance dispute that has spilled beyond the boardroom.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -9869,7 +9956,7 @@
    "id": "c4d0ee5855c3",
    "title": "British Bank Backed by Kushner’s Affinity Gets U.S. License",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUHViRUJDeHV2LWVBd2sybnFMY2RUVmR6Vm9zN0Vsa3JTVWlRR1p0dTR5cXRlRTZGSW01ZTlnbGFoRVZ2V1ZEOXJLTEVZSWxMSnAzZ3YzeVZGZ05YbXZQM0l0Q2pnaHRybnp6NEsxTVJleUo0QUQ1MlNkUXpnMXJqWHFqNzd2ZWstdmdCY2w3M2piNXpFelY0bmx5QWFhVzd3RkFqTTBoR041Q0xULWZHOTJwNVNzaU9wRmJVWjVqWmlHWWhUZGc?oc=5",
-   "published": "2026-11-20T09:21:07+00:00",
+   "published": "2026-11-20T09:18:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -10064,39 +10151,6 @@
    "ai": false
   },
   {
-   "id": "82ab2b34fbd0",
-   "title": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWXJCQzRCQ1FLaXI2THdlRktBd2owbk9uZFNEc3RRWXdzQURnbTNqTjZfd2l5bExBT1FsWURWS2pSYS11ZS1EUm5hNXhnSkFEeEh2cHFBSTZPWnNSTzJDX1Z3aE5LTVFtUzFjZ2Q2QV9PanE1VVQtcjlxbHVQQjdQNzczRENYUlRGaVVvTXpELXp2TWhaVXVSajVSamtCZGJsUnA0TjVB?oc=5",
-   "published": "2026-11-20T04:51:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWXJCQzRCQ1FLaXI2THdlRktBd2owbk9uZFNEc3RRWXdzQURnbTNqTjZfd2l5bExBT1FsWURWS2pSYS11ZS1EUm5hNXhnSkFEeEh2cHFBSTZPWnNSTzJDX1Z3aE5LTVFtUzFjZ2Q2QV9PanE1VVQtcjlxbHVQQjdQNzczRENYUlRGaVVvTXpELXp2TWhaVXVSajVSamtCZGJsUnA0TjVB?oc=5",
-     "title": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion"
-    }
-   ],
-   "ids": [
-    "82ab2b34fbd0"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "527a894e7393",
    "title": "Britain and EU clinch food and youth deals, but push back tuition fee talks",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaUxSQlE3YTlodUx3ZVRaSnlCLVJtZVc5bUtURl8yaEQzZVk4bWdXdFlHdDgwTE1IOFFrZ3pvOTFvQ0s4Y2trSU9PWE4tUnZFQjMyWmZLeVY0aU9IaUFBWVdIVFlRaVZmdXRheEdmVHYyUU9JUnBMQVVhVzNwN2JGdDI5ZlJSVzdNb2tZV0dfaUpoVHJaRnFfcA?oc=5",
@@ -10133,7 +10187,7 @@
    "id": "118cef08d3ba",
    "title": "‘Much Ado About Nothing’ Review: Broadway’s Dance Party With the Bard",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQc0c2SGo1bVVuX2poZTR5UzdwT2lkc184cGVJSUNxLUFXSmNLbEpVU1pBMkU1d090SElfMWtxMXJ5ajEwSFNCcUV1UkY4UDBDeWFmdGsyR25BNVFfOTRseVkzUzJvcFhiSzdoNk1EWUZtb3FDdHg4LUJQTWtZQ1pncVJVNlU1cEFiTXdiSDBzSmNaaUZ5bDhFNmtmb1h6cUN6Vkhrei1B?oc=5",
-   "published": "2026-11-20T03:00:00+00:00",
+   "published": "2026-11-20T03:02:52+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -10247,6 +10301,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Trump’s Personal Lawyer to Step Back as Sullivan & Cromwell Co-Chair",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "82ab2b34fbd0",
+   "title": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWXJCQzRCQ1FLaXI2THdlRktBd2owbk9uZFNEc3RRWXdzQURnbTNqTjZfd2l5bExBT1FsWURWS2pSYS11ZS1EUm5hNXhnSkFEeEh2cHFBSTZPWnNSTzJDX1Z3aE5LTVFtUzFjZ2Q2QV9PanE1VVQtcjlxbHVQQjdQNzczRENYUlRGaVVvTXpELXp2TWhaVXVSajVSamtCZGJsUnA0TjVB?oc=5",
+   "published": "2026-11-20T00:46:05+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWXJCQzRCQ1FLaXI2THdlRktBd2owbk9uZFNEc3RRWXdzQURnbTNqTjZfd2l5bExBT1FsWURWS2pSYS11ZS1EUm5hNXhnSkFEeEh2cHFBSTZPWnNSTzJDX1Z3aE5LTVFtUzFjZ2Q2QV9PanE1VVQtcjlxbHVQQjdQNzczRENYUlRGaVVvTXpELXp2TWhaVXVSajVSamtCZGJsUnA0TjVB?oc=5",
+     "title": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion"
+    }
+   ],
+   "ids": [
+    "82ab2b34fbd0"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -10430,6 +10517,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "45193fdd9300",
+   "title": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2poV3JYSVEtZHRZTmlXWXNpcUR6VEVZUnZEY01xeTB0WlhhMUVvTngyM1YwMHRieTY0R0lnMjhsWEJwa2lsY1RvNkluUXlKQ0dlZXlwR2VSdV9OSGE0RVZsNUJSTkRheno5NGJnbG1TRk9waG1CMFhCV3FadzgtbmlsQzAwd0dfZHRRMkZMWkpXcmVmMG9neVhtZUxkMUlka2tVdTdNbjRhcm5TZmY2dWw4SUs?oc=5",
+   "published": "2026-11-19T23:37:04+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2poV3JYSVEtZHRZTmlXWXNpcUR6VEVZUnZEY01xeTB0WlhhMUVvTngyM1YwMHRieTY0R0lnMjhsWEJwa2lsY1RvNkluUXlKQ0dlZXlwR2VSdV9OSGE0RVZsNUJSTkRheno5NGJnbG1TRk9waG1CMFhCV3FadzgtbmlsQzAwd0dfZHRRMkZMWkpXcmVmMG9neVhtZUxkMUlka2tVdTdNbjRhcm5TZmY2dWw4SUs?oc=5",
+     "title": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit"
+    }
+   ],
+   "ids": [
+    "45193fdd9300"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "b8a368c50401",
@@ -10805,24 +10925,24 @@
    "ai": false
   },
   {
-   "id": "45193fdd9300",
-   "title": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2poV3JYSVEtZHRZTmlXWXNpcUR6VEVZUnZEY01xeTB0WlhhMUVvTngyM1YwMHRieTY0R0lnMjhsWEJwa2lsY1RvNkluUXlKQ0dlZXlwR2VSdV9OSGE0RVZsNUJSTkRheno5NGJnbG1TRk9waG1CMFhCV3FadzgtbmlsQzAwd0dfZHRRMkZMWkpXcmVmMG9neVhtZUxkMUlka2tVdTdNbjRhcm5TZmY2dWw4SUs?oc=5",
-   "published": "2026-11-19T20:39:00+00:00",
+   "id": "44cd0c254efc",
+   "title": "Grand rabbis gather for Hasidic Jewish wedding",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNkg5bUdnbkdVTEFBemVaMG03TzZZX0YxZmdvZXZselhWbkN4ZWtmWXVKOHIyWFRFVC1XelFqLUZpd1F3ak1nWVhZRWgwTERIWDlEQjFteHVkTGQxVW9NSERTVWM4bEpKQnZ6RmRQTHBHTjhCemdyZXpYLVN1OGR4MXhrb29sTVRvS041OWN2bl8?oc=5",
+   "published": "2026-11-19T21:18:57+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2poV3JYSVEtZHRZTmlXWXNpcUR6VEVZUnZEY01xeTB0WlhhMUVvTngyM1YwMHRieTY0R0lnMjhsWEJwa2lsY1RvNkluUXlKQ0dlZXlwR2VSdV9OSGE0RVZsNUJSTkRheno5NGJnbG1TRk9waG1CMFhCV3FadzgtbmlsQzAwd0dfZHRRMkZMWkpXcmVmMG9neVhtZUxkMUlka2tVdTdNbjRhcm5TZmY2dWw4SUs?oc=5",
-     "title": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit"
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNkg5bUdnbkdVTEFBemVaMG03TzZZX0YxZmdvZXZselhWbkN4ZWtmWXVKOHIyWFRFVC1XelFqLUZpd1F3ak1nWVhZRWgwTERIWDlEQjFteHVkTGQxVW9NSERTVWM4bEpKQnZ6RmRQTHBHTjhCemdyZXpYLVN1OGR4MXhrb29sTVRvS041OWN2bl8?oc=5",
+     "title": "Grand rabbis gather for Hasidic Jewish wedding"
     }
    ],
    "ids": [
-    "45193fdd9300"
+    "44cd0c254efc"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U.S. Visit",
+   "headline": "Grand rabbis gather for Hasidic Jewish wedding",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -10913,7 +11033,7 @@
    "id": "df7727733b32",
    "title": "Trump-Xi Summit Shows Putin’s Powerful Friendships Have Their Limits",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNc0tJQkxsakZJaEd3ZkNVV25vVW44WlRjeEJQUEpCajBhNFE0VE5tSVA1THZGcVJvalozd3BxWVFZNW5nTnNWdEloOVdsendjNDF6RVRJV0lYWVBiQkpOSVRUODhQX3BZWG1QcmthZll5QzRqSG1zekhfRWZQdzdUckc3TzZGNDVSNVUwVWNiMndZZVUzLXlteHBpVWxmVGp3dG1CWkpTaDU1aFRlTEE?oc=5",
-   "published": "2026-11-19T20:08:00+00:00",
+   "published": "2026-11-19T20:02:43+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11255,7 +11375,7 @@
    "id": "9b23ffb93d42",
    "title": "Anthropic Pushes the Reset Button for AI",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb0diQmhsYTNGbWRBTnNjclBOYmE4MURVSzZ3WmN5MXN3bmtSRFFXVG5TYWdGa3hVY3JlNUh1YXVlNzVqOG9WRXlWT2w5YmhSNVdXUHpNMkFrUGVLUWdrQ0V3MTAwRzZ4MnZaOGdXMy1FeldpN0FCY0RKN1AzRjlnd2hfTmliTGMw?oc=5",
-   "published": "2026-11-19T14:31:00+00:00",
+   "published": "2026-11-19T14:32:22+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11637,121 +11757,6 @@
    "tags": [
     "SP",
     "convênios"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "a5eff0e90234",
-   "title": "Após embates, Nunes e Pavanato trocam elogios e se aproximam",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/apos-embates-nunes-e-pavanato-trocam-elogios-e-se-aproximam.shtml",
-   "published": "2026-11-20T10:18:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/apos-embates-nunes-e-pavanato-trocam-elogios-e-se-aproximam.shtml",
-     "title": "Após embates, Nunes e Pavanato trocam elogios e se aproximam"
-    }
-   ],
-   "ids": [
-    "a5eff0e90234"
-   ],
-   "snippet": "O prefeito Ricardo Nunes ( MDB ) e o vereador e deputado federal eleito Lucas Pavanato ( PL ) têm se aproximado após divergências e críticas no ano passado . Leia mais (11/20/2026 - 07h18)",
-   "prescore": 2.0,
-   "headline": "Após embates, Nunes e Pavanato trocam elogios e se aproximam",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Política municipal de SP.",
-   "summary": "O prefeito Ricardo Nunes (MDB) e Lucas Pavanato (PL), eleito deputado federal, se aproximaram após divergências no ano passado.",
-   "involves": "Ricardo Nunes, Lucas Pavanato",
-   "interpretation": "Reacomodação política local.",
-   "impact": "Sem impacto de mercado.",
-   "sentiment": "neutro",
-   "entities": [
-    "Ricardo Nunes",
-    "Lucas Pavanato"
-   ],
-   "tags": [
-    "SP",
-    "MDB",
-    "PL"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "17142cdc111d",
-   "title": "Empresas de diferentes setores e portes usam 'GTA 6' para ampliar vendas ou fortalecer marca",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/empresas-de-diferentes-setores-e-portes-usam-gta-6-para-ampliar-vendas-ou-fortalecer-marca.shtml",
-   "published": "2026-11-20T07:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/empresas-de-diferentes-setores-e-portes-usam-gta-6-para-ampliar-vendas-ou-fortalecer-marca.shtml",
-     "title": "Empresas de diferentes setores e portes usam 'GTA 6' para ampliar vendas ou fortalecer marca"
-    }
-   ],
-   "ids": [
-    "17142cdc111d"
-   ],
-   "snippet": "O lançamento de \"GTA 6\" nesta quinta-feira (19) extrapolou o mercado dos jogos eletrônicos , levando empresas de diferentes setores e portes para a euforia em torno da franquia. Leia mais (11/20/2026 - 04h00)",
-   "prescore": 2.0,
-   "headline": "Empresas de vários setores usam GTA 6 para ampliar vendas e fortalecer marca",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Marketing de oportunidade.",
-   "summary": "O lançamento de GTA 6, na quinta (19), extrapolou o mercado de jogos e levou empresas de diferentes setores e portes a usar a franquia.",
-   "involves": "Empresas diversas, GTA 6",
-   "interpretation": "Efeito de marketing.",
-   "impact": "Efeito pequeno.",
-   "sentiment": "positivo",
-   "entities": [
-    "GTA 6"
-   ],
-   "tags": [
-    "GTA 6",
-    "marketing"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "19fef1fc03da",
-   "title": "Mulheres negras avançam na força de trabalho, mas ainda têm a menor taxa de participação",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/mulheres-negras-avancam-na-forca-de-trabalho-mas-ainda-tem-a-menor-taxa-de-participacao.shtml",
-   "published": "2026-11-20T07:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/mulheres-negras-avancam-na-forca-de-trabalho-mas-ainda-tem-a-menor-taxa-de-participacao.shtml",
-     "title": "Mulheres negras avançam na força de trabalho, mas ainda têm a menor taxa de participação"
-    }
-   ],
-   "ids": [
-    "19fef1fc03da"
-   ],
-   "snippet": "As mulheres pretas e pardas aumentaram a sua participação no mercado de trabalho , mas seguem enfrentando barreiras maiores para inserção no mundo profissional se comparadas a outros grupos da população brasileira. Desemprego mais acentuado e renda mais baixa permanecem como desafios. Leia mais (11/20/2026 - 04h00)",
-   "prescore": 2.0,
-   "headline": "Mulheres negras avançam na força de trabalho, mas têm a menor taxa de participação",
-   "category": "macro",
-   "importance": 2,
-   "importance_reason": "Dado social do mercado de trabalho.",
-   "summary": "A participação de mulheres pretas e pardas no mercado de trabalho aumentou, mas elas ainda enfrentam desemprego maior e renda menor.",
-   "involves": "Mulheres pretas e pardas",
-   "interpretation": "Dado estrutural de desigualdade.",
-   "impact": "Efeito indireto.",
-   "sentiment": "misto",
-   "entities": [
-    "Brasil"
-   ],
-   "tags": [
-    "mercado de trabalho"
    ],
    "is_deal": false,
    "deal": null,
@@ -12648,28 +12653,61 @@
    "ai": false
   },
   {
-   "id": "2d2dbf09d75b",
-   "title": "Anthropic Share Slide Almost Erases IPO Pop as AI Trade Unravels",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-20/anthropic-share-slump-nearly-erases-ipo-pop-as-ai-trade-unravels",
-   "published": "2026-11-20T14:36:49+00:00",
+   "id": "84b7982fb10a",
+   "title": "Global Stocks Fall as Anthropic IPO Fails to Revive AI Trade",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-20/bloomberg-surveillance-11-20-2026-video",
+   "published": "2026-11-20T16:31:20+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-20/anthropic-share-slump-nearly-erases-ipo-pop-as-ai-trade-unravels",
-     "title": "Anthropic Share Slide Almost Erases IPO Pop as AI Trade Unravels"
+     "link": "https://www.bloomberg.com/news/videos/2026-11-20/bloomberg-surveillance-11-20-2026-video",
+     "title": "Global Stocks Fall as Anthropic IPO Fails to Revive AI Trade"
     }
    ],
    "ids": [
-    "2d2dbf09d75b"
+    "84b7982fb10a"
    ],
-   "snippet": "Anthropic PBC shares erased much of their first-day jump on Friday, testing investors’ faith after the AI lab delivered the biggest initial public offering in history.",
+   "snippet": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond. No other program better positions investors and executives for the trading day than \"Bloomberg Surveillance.\" (Source: Bloomberg)",
    "prescore": 5.8,
-   "headline": "Anthropic Share Slide Almost Erases IPO Pop as AI Trade Unravels",
+   "headline": "Global Stocks Fall as Anthropic IPO Fails to Revive AI Trade",
    "category": "mna",
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Anthropic PBC shares erased much of their first-day jump on Friday, testing investors’ faith after the AI lab delivered the biggest initial public offering in history.",
+   "summary": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond. No other program better positions investors and executives for the trading day than \"Bloomberg Surveillance.\" (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ed28bb6ebb15",
+   "title": "IPO da Anthropic alcança US$ 93,5 bi após bancos exercerem lote suplementar",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVC1KdWFOeHAteVNLMVlUZnl3WkVRT1FZVFFHdHhpNW11SHhxS3U3MllneElMV3ZOWlhIYVFBZmVqaGJhTFRERWpFNGgyazBrSV9HWFVGQ3lyTGtKUEViVkJpSGtHRERvQU80RlEtZXdhWWFnTURzMms3bjk5bDFMY1U0NHZQWUU5N2hYSktSandsVGFrSGxOOGtXRUNZaDdQcy1nZ2NsSmRCYkU3YUZWU29odVFoQ2d6cUI0TUZKR01CS2pTWGxUZGNqeHlYSDlVUnlPSkc4YXI0U2NiOGRRem4tTVU4Zk9C0gH3AUFVX3lxTFBaaF9CMlZ5QXFGejVWUVktNHhFR0xESTFKVDhGak1zNDROZmoza1dsWWtjR0tXeFN3VFJ6TjdFR2h1M09ER1AtUmdhLWJOaWN4aFBrZE9FNGQxUU93LXN6LS1GRlAzdmxvVS0yZzgwNDQ0endBT0VWZW10RlpMTUdQdEFmUE1XX3lmbmF6X3MwZ1kxdXZyS05wSTd3YmZOZkg1bTB0OUMxWTUteHJBNU5wRjMtdkxVaUdfU1RrMUFqQ0xvM2RIR3NuRTFFYUNCeFpqdUhTM3JLTHlMRXBKYWJVU0VMR3lQSjN0eV96UGxmSGVyNG1ibzg?oc=5",
+   "published": "2026-11-20T14:42:52+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVC1KdWFOeHAteVNLMVlUZnl3WkVRT1FZVFFHdHhpNW11SHhxS3U3MllneElMV3ZOWlhIYVFBZmVqaGJhTFRERWpFNGgyazBrSV9HWFVGQ3lyTGtKUEViVkJpSGtHRERvQU80RlEtZXdhWWFnTURzMms3bjk5bDFMY1U0NHZQWUU5N2hYSktSandsVGFrSGxOOGtXRUNZaDdQcy1nZ2NsSmRCYkU3YUZWU29odVFoQ2d6cUI0TUZKR01CS2pTWGxUZGNqeHlYSDlVUnlPSkc4YXI0U2NiOGRRem4tTVU4Zk9C0gH3AUFVX3lxTFBaaF9CMlZ5QXFGejVWUVktNHhFR0xESTFKVDhGak1zNDROZmoza1dsWWtjR0tXeFN3VFJ6TjdFR2h1M09ER1AtUmdhLWJOaWN4aFBrZE9FNGQxUU93LXN6LS1GRlAzdmxvVS0yZzgwNDQ0endBT0VWZW10RlpMTUdQdEFmUE1XX3lmbmF6X3MwZ1kxdXZyS05wSTd3YmZOZkg1bTB0OUMxWTUteHJBNU5wRjMtdkxVaUdfU1RrMUFqQ0xvM2RIR3NuRTFFYUNCeFpqdUhTM3JLTHlMRXBKYWJVU0VMR3lQSjN0eV96UGxmSGVyNG1ibzg?oc=5",
+     "title": "IPO da Anthropic alcança US$ 93,5 bi após bancos exercerem lote suplementar"
+    }
+   ],
+   "ids": [
+    "ed28bb6ebb15"
+   ],
+   "snippet": "",
+   "prescore": 5.8,
+   "headline": "IPO da Anthropic alcança US$ 93,5 bi após bancos exercerem lote suplementar",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -12985,39 +13023,6 @@
    "ai": false
   },
   {
-   "id": "5672f22ba6a7",
-   "title": "Our top 10 things to watch in the stock market Friday",
-   "link": "https://www.cnbc.com/investingclub/2026/11/20/our-top-10-things-to-watch-in-the-stock-market-friday.html",
-   "published": "2026-11-20T14:06:35+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/investingclub/2026/11/20/our-top-10-things-to-watch-in-the-stock-market-friday.html",
-     "title": "Our top 10 things to watch in the stock market Friday"
-    }
-   ],
-   "ids": [
-    "5672f22ba6a7"
-   ],
-   "snippet": "Can Anthropic stay above its IPO price of $83?",
-   "prescore": 5.0,
-   "headline": "Our top 10 things to watch in the stock market Friday",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Can Anthropic stay above its IPO price of $83?",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "e9c4c44c127f",
    "title": "Samuel Automation Expands U.S. Presence with Acquisition of Alpha Integration",
    "link": "https://www.prnewswire.com/news-releases/samuel-automation-expands-us-presence-with-acquisition-of-alpha-integration-302947002.html",
@@ -13255,6 +13260,39 @@
    "ai": false
   },
   {
+   "id": "f837873b8789",
+   "title": "Lagarde, do BCE, diz que ameaças cibernéticas ampliadas pela IA são sua principal preocupação",
+   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/lagarde-do-bce-diz-que-ameacas-ciberneticas-ampliadas-pela-ia-sao-sua-principal-preocupacao.shtml",
+   "published": "2026-11-20T17:29:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/lagarde-do-bce-diz-que-ameacas-ciberneticas-ampliadas-pela-ia-sao-sua-principal-preocupacao.shtml",
+     "title": "Lagarde, do BCE, diz que ameaças cibernéticas ampliadas pela IA são sua principal preocupação"
+    }
+   ],
+   "ids": [
+    "f837873b8789"
+   ],
+   "snippet": "O maior desafio imediato que o mundo das finanças enfrenta pode ser a ameaça cibernética , potencializada por agentes de IA (inteligência artificial) cada vez mais sofisticados, afirmou na sexta-feira a presidente do Banco Central Europeu, Christine Lagarde . Leia mais (11/20/2026 - 14h29)",
+   "prescore": 4.0,
+   "headline": "Lagarde, do BCE, diz que ameaças cibernéticas ampliadas pela IA são sua principal preocupação",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O maior desafio imediato que o mundo das finanças enfrenta pode ser a ameaça cibernética , potencializada por agentes de IA (inteligência artificial) cada vez mais sofisticados, afirmou na sexta-feira a presidente do Banco Central Europeu, Christine Lagarde . Leia mais (11/20/2026 - 14h29)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "03d1f3edf82b",
    "title": "Diretores da Kitchens processam sócias e pedem explicações sobre afastamento e dívidas",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/diretores-da-kitchens-processam-socias-e-pedem-explicacoes-sobre-afastamento-e-dividas.shtml",
@@ -13415,45 +13453,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "No início de novembro, a Boeing anunciou planos de cortar 5% dos cerca de 50 mil funcionários da divisão de aviões comerciais da empresa por ⁠meio ‌de aposentadorias e demissões em massa The post Boeing deixa em aberto fazer mais demissões em meio a planos de produção paralisados appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "c5fd15fc280e",
-   "title": "Jovens protestam nas ruas da Europa contra alto custo de vida; Itália tem greve geral",
-   "link": "https://www.infomoney.com.br/mundo/jovens-protestam-nas-ruas-da-europa-contra-alto-custo-de-vida-italia-tem-greve-geral/",
-   "published": "2026-11-20T16:19:54+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mundo/jovens-protestam-nas-ruas-da-europa-contra-alto-custo-de-vida-italia-tem-greve-geral/",
-     "title": "Jovens protestam nas ruas da Europa contra alto custo de vida; Itália tem greve geral"
-    },
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/jovens-protestam-nas-ruas-da-europa-contra-alto-custo-de-vida-italia-tem-greve-geral-pads/",
-     "title": "Jovens protestam nas ruas da Europa contra alto custo de vida; Itália tem greve geral"
-    }
-   ],
-   "ids": [
-    "c5fd15fc280e",
-    "aaf5dba41e48"
-   ],
-   "snippet": "Manifestantes se reuniram em vários países para pressionar por reivindicações que vão desde salários e custo de vida até educação e gastos militares The post Jovens protestam nas ruas da Europa contra alto custo de vida; Itália tem greve geral appeared first on InfoMoney .",
-   "prescore": 3.7,
-   "headline": "Jovens protestam nas ruas da Europa contra alto custo de vida; Itália tem greve geral",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Manifestantes se reuniram em vários países para pressionar por reivindicações que vão desde salários e custo de vida até educação e gastos militares The post Jovens protestam nas ruas da Europa contra alto custo de vida; Itália tem greve geral appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13828,6 +13827,39 @@
    "ai": false
   },
   {
+   "id": "78ef073d44ff",
+   "title": "What’s in the UK-EU Deal To Deepen Ties",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-20/what-s-in-the-uk-eu-deal-to-deepen-ties-video",
+   "published": "2026-11-20T17:28:46+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-20/what-s-in-the-uk-eu-deal-to-deepen-ties-video",
+     "title": "What’s in the UK-EU Deal To Deepen Ties"
+    }
+   ],
+   "ids": [
+    "78ef073d44ff"
+   ],
+   "snippet": "The UK and EU struck a deal to reset relations after Brexit, opening opportunities for young people and easing restrictions on food and agriculture. Oliver Crook explains what’s in the deal — and what’s not. (Source: Bloomberg)",
+   "prescore": 2.8,
+   "headline": "What’s in the UK-EU Deal To Deepen Ties",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The UK and EU struck a deal to reset relations after Brexit, opening opportunities for young people and easing restrictions on food and agriculture. Oliver Crook explains what’s in the deal — and what’s not. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "87dc74dfc4b4",
    "title": "A Week for Big Questions on the AI Buildout",
    "link": "https://www.bloomberg.com/news/newsletters/2026-11-20/a-week-for-big-questions-on-the-ai-buildout",
@@ -13916,6 +13948,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Donald Trump’s tariffs can’t kill globalization, author Parag Khanna tells Mishal Husain. He explains how nations targeted by the White House have found ways to survive the disruption. (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c6385a723f30",
+   "title": "AI Selloff Boosts Haven Demand for Yen, Franc as Dollar Slips",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-20/ai-selloff-boosts-haven-demand-for-yen-franc-as-dollar-slips",
+   "published": "2026-11-20T17:00:06+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-20/ai-selloff-boosts-haven-demand-for-yen-franc-as-dollar-slips",
+     "title": "AI Selloff Boosts Haven Demand for Yen, Franc as Dollar Slips"
+    }
+   ],
+   "ids": [
+    "c6385a723f30"
+   ],
+   "snippet": "The Japanese yen and Swiss franc outperformed their major peers as growing doubts about the sustainability of the artificial intelligence boom drove demand for havens and put pressure on the US dollar.",
+   "prescore": 2.8,
+   "headline": "AI Selloff Boosts Haven Demand for Yen, Franc as Dollar Slips",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The Japanese yen and Swiss franc outperformed their major peers as growing doubts about the sustainability of the artificial intelligence boom drove demand for havens and put pressure on the US dollar.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14224,39 +14289,6 @@
    "ai": false
   },
   {
-   "id": "f5415ff0f74c",
-   "title": "Turkey Asks Hundreds to Return Gains From Fund Crisis",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-20/turkey-asks-hundreds-to-return-gains-from-fund-crisis",
-   "published": "2026-11-20T15:04:55+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-20/turkey-asks-hundreds-to-return-gains-from-fund-crisis",
-     "title": "Turkey Asks Hundreds to Return Gains From Fund Crisis"
-    }
-   ],
-   "ids": [
-    "f5415ff0f74c"
-   ],
-   "snippet": "A Turkish state body demanded voluntary repayments from the hundreds of individuals and corporations that made the largest profits from a fund scandal that’s roiled markets, according to people familiar with the matter.",
-   "prescore": 2.8,
-   "headline": "Turkey Asks Hundreds to Return Gains From Fund Crisis",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Turkish state body demanded voluntary repayments from the hundreds of individuals and corporations that made the largest profits from a fund scandal that’s roiled markets, according to people familiar with the matter.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "ba647a2c4cea",
    "title": "Ações da Anthropic caem mais de 9% no pré-mercado de NY",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPckM2OUhsWGo4R01HeFNubmQ5M1k1cGhoTVdvSHo2Y2lhcmRkeVRQa1RSd3dJTEs4WEt0MWMxc3VUMm9vemhaRC16SjR4bHA0ZlVXV25BRk9XYUlMN2RSOTItaVNkSTVILXBmcUFNWlAyaVB4bmdPOHpiWGVEU3ZwZ2VJSU5MWDZHeHdZd2pjYmNXakhveVZreE80cDVaYlZjMUY3VU56X3lEaTR1OG03aDM3bjA2bm1ydTU00gHKAUFVX3lxTE1sWmljdVFkaDVkRnZuaEhDLUhRR2thWDdpM3hGWGFVdVFYSE5wZ3ljVl9lbXY4QXhoZGlLMWNXSk52eVJDbmYtZ19oT2FuZVBKb2hVOE5NT21yMktfNGJZWENtN0ZiNWp3ZTFaaVdPNDNlMnFWcFNGNGZGVl9ZTFFhMEJESEZwMGZQTWtqcFhrZEJsUWVMcTVkS3QyTk1xWXBnSFFBZFBFdjZvaEVYSFZVMjRFQ0RRUlFNTVZabGxNcERRUVdLVm5YQVE?oc=5",
@@ -14411,6 +14443,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "US officials keen to secure agreement between Vladimir Putin and Volodymyr Zelenskyy before Democrats take over Congress",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "187dd88daae4",
+   "title": "BJ’s Wholesale Raises Outlook, But Promotions Weigh on Margins",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWTVVd1g0ZDdPRG40NHpUaVhVek9pSzY0SnM3TTAyX0o0UTlSMVhIWnUwY3piaVprTFZiT2lEZlpCcWRPX1EyMWs5Z1pfSU1CUElKY09ZRm03ZWtpMllmbWtOZTN6Z2ZSQUdSd25yUTZjX29SVHBaMTZCSHFaTXpfMTJXTHd2ZkVacFZsdFVUTHFlS0szNEhRNFJTMlh0ZWJyZmJ0c3BsLUhYQjA?oc=5",
+   "published": "2026-11-20T16:10:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWTVVd1g0ZDdPRG40NHpUaVhVek9pSzY0SnM3TTAyX0o0UTlSMVhIWnUwY3piaVprTFZiT2lEZlpCcWRPX1EyMWs5Z1pfSU1CUElKY09ZRm03ZWtpMllmbWtOZTN6Z2ZSQUdSd25yUTZjX29SVHBaMTZCSHFaTXpfMTJXTHd2ZkVacFZsdFVUTHFlS0szNEhRNFJTMlh0ZWJyZmJ0c3BsLUhYQjA?oc=5",
+     "title": "BJ’s Wholesale Raises Outlook, But Promotions Weigh on Margins"
+    }
+   ],
+   "ids": [
+    "187dd88daae4"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "BJ’s Wholesale Raises Outlook, But Promotions Weigh on Margins",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14587,6 +14652,39 @@
    "ai": false
   },
   {
+   "id": "ef05664301fd",
+   "title": "German minister sorry for calling Pentagon official's view 'stupid'",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONU5pVlJSdXVkaVljNWFkdE9HRDg1WTE5dmpaTGhhTmJhYy1NZVNJQkpQaG1RQTFCRlhVV1hNVnYwTklNYnNUQnlHOXN3eW5nOTlta3NNc3Q5T0ttTzhRUzNkLVZWNkFaWDhRanJZX1pORTE4LUd1OEt1Wk84WHhNY2tlU214VnlkUy15a2JNNWdpZXFNYThubHJKdWNzOFBJYy10bg?oc=5",
+   "published": "2026-11-20T15:09:40+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONU5pVlJSdXVkaVljNWFkdE9HRDg1WTE5dmpaTGhhTmJhYy1NZVNJQkpQaG1RQTFCRlhVV1hNVnYwTklNYnNUQnlHOXN3eW5nOTlta3NNc3Q5T0ttTzhRUzNkLVZWNkFaWDhRanJZX1pORTE4LUd1OEt1Wk84WHhNY2tlU214VnlkUy15a2JNNWdpZXFNYThubHJKdWNzOFBJYy10bg?oc=5",
+     "title": "German minister sorry for calling Pentagon official's view 'stupid'"
+    }
+   ],
+   "ids": [
+    "ef05664301fd"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "German minister sorry for calling Pentagon official's view 'stupid'",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "cddb3549ac85",
    "title": "Anthropic Stock Slides as Tech Rout Intensifies",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSnNEc3dZb2JfSWJYeFFoREFsNXdMS2RyNklRUU9rRUJmajZscVdUTWc5dENvODEwWUQwdHNFcGpPazhndE1MSFJaYnV1Vmota2R5N0YtRVhZS2ZtZmxTZUtnOVgzaXp3X0g5N1hxMExRbFRKWVF4VWJ3OWhqcFVBZlBzWFo0WlVyUTZfZDZSME5WZUsxcEFMbk9ubVlFbWc?oc=5",
@@ -14654,7 +14752,7 @@
   },
   {
    "id": "ca1b4ecb67a7",
-   "title": "Anthropic shares tumble as AI giant swept up in tech sell-off",
+   "title": "US tech rout deepens as Anthropic shares tumble",
    "link": "https://www.ft.com/content/23fa83d8-e078-4853-959e-bd1f19d14ff5?syn-25a6b1a6=1",
    "published": "2026-11-20T14:01:58+00:00",
    "region": "INTL",
@@ -14662,19 +14760,19 @@
     {
      "source": "Financial Times",
      "link": "https://www.ft.com/content/23fa83d8-e078-4853-959e-bd1f19d14ff5?syn-25a6b1a6=1",
-     "title": "Anthropic shares tumble as AI giant swept up in tech sell-off"
+     "title": "US tech rout deepens as Anthropic shares tumble"
     }
    ],
    "ids": [
     "ca1b4ecb67a7"
    ],
-   "snippet": "Shares of Claude developer under pressure a day after blockbuster Wall Street debut",
+   "snippet": "Investors rush for havens as AI-linked stocks endure heavy wave of selling",
    "prescore": 2.6,
-   "headline": "Anthropic shares tumble as AI giant swept up in tech sell-off",
-   "category": "tech",
+   "headline": "US tech rout deepens as Anthropic shares tumble",
+   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Shares of Claude developer under pressure a day after blockbuster Wall Street debut",
+   "summary": "Investors rush for havens as AI-linked stocks endure heavy wave of selling",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14708,39 +14806,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Thirty years after the Dayton peace accords, US pursues competing interests that risk deepening ethnic tensions in Bosnia",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "187dd88daae4",
-   "title": "BJ’s Wholesale Lifts Outlook, Posts Higher Quarterly Profit Despite Margin Pressure",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWTVVd1g0ZDdPRG40NHpUaVhVek9pSzY0SnM3TTAyX0o0UTlSMVhIWnUwY3piaVprTFZiT2lEZlpCcWRPX1EyMWs5Z1pfSU1CUElKY09ZRm03ZWtpMllmbWtOZTN6Z2ZSQUdSd25yUTZjX29SVHBaMTZCSHFaTXpfMTJXTHd2ZkVacFZsdFVUTHFlS0szNEhRNFJTMlh0ZWJyZmJ0c3BsLUhYQjA?oc=5",
-   "published": "2026-11-20T13:24:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWTVVd1g0ZDdPRG40NHpUaVhVek9pSzY0SnM3TTAyX0o0UTlSMVhIWnUwY3piaVprTFZiT2lEZlpCcWRPX1EyMWs5Z1pfSU1CUElKY09ZRm03ZWtpMllmbWtOZTN6Z2ZSQUdSd25yUTZjX29SVHBaMTZCSHFaTXpfMTJXTHd2ZkVacFZsdFVUTHFlS0szNEhRNFJTMlh0ZWJyZmJ0c3BsLUhYQjA?oc=5",
-     "title": "BJ’s Wholesale Lifts Outlook, Posts Higher Quarterly Profit Despite Margin Pressure"
-    }
-   ],
-   "ids": [
-    "187dd88daae4"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "BJ’s Wholesale Lifts Outlook, Posts Higher Quarterly Profit Despite Margin Pressure",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14986,7 +15051,7 @@
    "id": "7667312c5371",
    "title": "Data Centers Are the Growth Engine of America’s Power Grid",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQckVVS1BIRGRPQms1bE9vNlpSYktYV1c5YnlLakQ4bld4T1k4eGRvckdBdDQ3MWN3Sko5NUs3QnpvY2p0VFNkRXptWklwRGNOdTdCVHY1M0VJOEwtSWlhdndoanNjZnotUFBVQXBJR1FYcDB4TFFpd25VVUtnMkFwbE9EODF5ZllrdmdkdnBxTFVmaDVIUUtuZzZ1UnBweERFclJzaml5Zw?oc=5",
-   "published": "2026-11-20T11:27:25+00:00",
+   "published": "2026-11-20T11:25:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -15038,6 +15103,72 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a7321ce7c495",
+   "title": "Burnham’s Brush With Europe Shows How Hard Rejoining Would Be",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-20/burnham-s-brush-with-europe-shows-how-hard-rejoining-would-be",
+   "published": "2026-11-20T17:22:56+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-20/burnham-s-brush-with-europe-shows-how-hard-rejoining-would-be",
+     "title": "Burnham’s Brush With Europe Shows How Hard Rejoining Would Be"
+    }
+   ],
+   "ids": [
+    "a7321ce7c495"
+   ],
+   "snippet": "Andy Burnham experienced his first encounter with the harsh realities of talks with the European Union after last-minute wrangling over the final details of a youth visa program threatened to overshadow his landmark Brussels summit.",
+   "prescore": 2.4,
+   "headline": "Burnham’s Brush With Europe Shows How Hard Rejoining Would Be",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Andy Burnham experienced his first encounter with the harsh realities of talks with the European Union after last-minute wrangling over the final details of a youth visa program threatened to overshadow his landmark Brussels summit.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "68462d8b8ec6",
+   "title": "Indian Man Sentenced to 19 Years for Plot to Kill Sikh Activist",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-20/indian-man-sentenced-to-19-years-for-plot-to-kill-sikh-activist",
+   "published": "2026-11-20T17:02:05+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-20/indian-man-sentenced-to-19-years-for-plot-to-kill-sikh-activist",
+     "title": "Indian Man Sentenced to 19 Years for Plot to Kill Sikh Activist"
+    }
+   ],
+   "ids": [
+    "68462d8b8ec6"
+   ],
+   "snippet": "An Indian man was sentenced to more than 19 years in prison after admitting to his role in a foiled 2023 plot to kill a Sikh activist in New York.",
+   "prescore": 2.4,
+   "headline": "Indian Man Sentenced to 19 Years for Plot to Kill Sikh Activist",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "An Indian man was sentenced to more than 19 years in prison after admitting to his role in a foiled 2023 plot to kill a Sikh activist in New York.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15544,61 +15675,28 @@
    "ai": false
   },
   {
-   "id": "56851f22f1bf",
-   "title": "Has Spain’s Anomalous Leader Run Out of Road",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-11-20/has-spain-s-anomalous-leader-run-out-of-road",
-   "published": "2026-11-20T11:14:33+00:00",
-   "region": "INTL",
+   "id": "cbe0b7cc4aa4",
+   "title": "Negociações COP31 são prorrogadas enquanto países debatem sobre combustíveis fósseis",
+   "link": "https://www.infomoney.com.br/mundo/negociacoes-cop31-sao-prorrogadas-enquanto-paises-debatem-sobre-combustiveis-fosseis/",
+   "published": "2026-11-20T17:28:11+00:00",
+   "region": "BR",
    "outlets": [
     {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/newsletters/2026-11-20/has-spain-s-anomalous-leader-run-out-of-road",
-     "title": "Has Spain’s Anomalous Leader Run Out of Road"
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/negociacoes-cop31-sao-prorrogadas-enquanto-paises-debatem-sobre-combustiveis-fosseis/",
+     "title": "Negociações COP31 são prorrogadas enquanto países debatem sobre combustíveis fósseis"
     }
    ],
    "ids": [
-    "56851f22f1bf"
+    "cbe0b7cc4aa4"
    ],
-   "snippet": "Pedro Sánchez faces an uphill battle to get reelected.",
-   "prescore": 2.4,
-   "headline": "Has Spain’s Anomalous Leader Run Out of Road",
-   "category": "internacional",
+   "snippet": "Grupos ambientalistas ‌que acompanhavam a conferência de duas semanas exerceram forte pressão The post Negociações COP31 são prorrogadas enquanto países debatem sobre combustíveis fósseis appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Negociações COP31 são prorrogadas enquanto países debatem sobre combustíveis fósseis",
+   "category": "mercados",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Pedro Sánchez faces an uphill battle to get reelected.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "216f8c984dcf",
-   "title": "Paraguay Central Bank Chief Says Warnings Were Ignored Ahead of Ueno Collapse",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-20/paraguay-central-bank-chief-says-warnings-were-ignored-ahead-of-ueno-collapse",
-   "published": "2026-11-20T11:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-20/paraguay-central-bank-chief-says-warnings-were-ignored-ahead-of-ueno-collapse",
-     "title": "Paraguay Central Bank Chief Says Warnings Were Ignored Ahead of Ueno Collapse"
-    }
-   ],
-   "ids": [
-    "216f8c984dcf"
-   ],
-   "snippet": "Few central bank chiefs face a more daunting task than Paraguay’s Jorge Schreiner, who must rebuild shattered confidence after his predecessor was arrested over a banking scandal that toppled a president and rocked the nation.",
-   "prescore": 2.4,
-   "headline": "Paraguay Central Bank Chief Says Warnings Were Ignored Ahead of Ueno Collapse",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Few central bank chiefs face a more daunting task than Paraguay’s Jorge Schreiner, who must rebuild shattered confidence after his predecessor was arrested over a banking scandal that toppled a president and rocked the nation.",
+   "summary": "Grupos ambientalistas ‌que acompanhavam a conferência de duas semanas exerceram forte pressão The post Negociações COP31 são prorrogadas enquanto países debatem sobre combustíveis fósseis appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15940,6 +16038,39 @@
    "ai": false
   },
   {
+   "id": "c93c9d68dbcb",
+   "title": "Moraes vota para manter suspensão de privatização no Paraná e Zanin diverge",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQN0t6QnBicjhoWHI5c0dab2lORXhIMUVoM2JkVy1sVk5vWWF5NHh5cjNmU2RMX2J2MzdERkY2N3pOc0RhQTdmNkdGSm1TVjUxa05oZzRFTWxWY043a09NRjZ2aWkwSWhVdDV5SlVNckVBWVhxUllNcVBDcklJOWRBdHdtdzRRR0szZ2x5WXRSRG1DMmVzOEkzQzlMc19Kd0tUeDY4SFNrU2VsY05UcUhEcnJKTDNKQU1DUDF0Nk1vWHlwN0R4SXBxaXV30gHPAUFVX3lxTE9kRVVvZlA5bDU2ckRTS3h5SFFuOUsyaGR1RXpMZ1JSSDhnWm5MZzNHblJ0Q1B0c3RXcV95NEZaWTRFUk03MF9fRkstMUdkOE11Ri1NSlcyZk1tTFNWOW0tc280LXBLOWZvUUhGMHkxUWp1NDFnbFM1R3JxVVotUGh5M1FmU1hJLUdhRms2Tm9Mc1N3TlpZT3l5MERBdEl6QkNMVWU4bFhNaHE1dkNtYzhGNWNxek01M211U2tCQnFVLUYxVHlybFRENXM2b0d0bw?oc=5",
+   "published": "2026-11-20T15:25:16+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQN0t6QnBicjhoWHI5c0dab2lORXhIMUVoM2JkVy1sVk5vWWF5NHh5cjNmU2RMX2J2MzdERkY2N3pOc0RhQTdmNkdGSm1TVjUxa05oZzRFTWxWY043a09NRjZ2aWkwSWhVdDV5SlVNckVBWVhxUllNcVBDcklJOWRBdHdtdzRRR0szZ2x5WXRSRG1DMmVzOEkzQzlMc19Kd0tUeDY4SFNrU2VsY05UcUhEcnJKTDNKQU1DUDF0Nk1vWHlwN0R4SXBxaXV30gHPAUFVX3lxTE9kRVVvZlA5bDU2ckRTS3h5SFFuOUsyaGR1RXpMZ1JSSDhnWm5MZzNHblJ0Q1B0c3RXcV95NEZaWTRFUk03MF9fRkstMUdkOE11Ri1NSlcyZk1tTFNWOW0tc280LXBLOWZvUUhGMHkxUWp1NDFnbFM1R3JxVVotUGh5M1FmU1hJLUdhRms2Tm9Mc1N3TlpZT3l5MERBdEl6QkNMVWU4bFhNaHE1dkNtYzhGNWNxek01M211U2tCQnFVLUYxVHlybFRENXM2b0d0bw?oc=5",
+     "title": "Moraes vota para manter suspensão de privatização no Paraná e Zanin diverge"
+    }
+   ],
+   "ids": [
+    "c93c9d68dbcb"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Moraes vota para manter suspensão de privatização no Paraná e Zanin diverge",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "d9111e131509",
    "title": "De aprendiz a diretor: parceria entre GE Aerospace e SENAI abre caminhos na indústria aeronáutica em Petrópolis",
    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYlU0NE1SVjBiQmhKOHJ2bm53a2cyTVVNcV9idkFRSGR6R2k1OXJmaXFRZmtoeTRZTExSNjBwU3VWMUxqQWNlZ1c4aUNhN2RmOTVIQW4tRG1ON3VzS0dHS3hfRmEyQjVjaEtYV1NWVjRyS3d2blpJMjVaNnVqcHBWTFFmY3BPd2NmMl9XSTZGVkR6OVlQeE1hZTNfUlVsNW9iSlotdTF0dW5JUndWMzE2a1FRZlVJbVhUaHJnR2xPbGFHd193aXJZZXhsY3R6X1FPUmRRak9yeWcyVWkzS0dNclBuWnhWbzVIZENGSA?oc=5",
@@ -15992,6 +16123,72 @@
    "prescore": 2.2,
    "headline": "Here's Why You Should Hold Onto Sherwin-Williams Stock for Now",
    "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "43ce7e565b72",
+   "title": "Bastidores: Como a PF vasculhou o celular de Vorcaro em 5 dias para incluir Mendonça em relatório",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaUhlTExpTmtiUldiVXJLcTN4OFEtR2gzMGIxSHM5YXBJRnFsV3ZGck9UVUNad3c3Q1FnZDBKbjV1WTVkM1BibTZ0VXBnTmJkbDhuR3FNUi1vbzFoV3lzNUhEMThDdmlKZjlJVmVweVdKdTRfTkM4VFppc3pqVnRJSkluMGZFZjRyVk1aWlJkSS1DN2xBb3gyRTh6QS1XTW9renNVNkNKWk5ZLW82WkRmd0t1OFNRczljOTlZM3I0X2NfU0FVd2wyQlNNVUd4RzhuYWpRdHFOUWhtY1gtdHJaNnhEUGdBNmlUdGc?oc=5",
+   "published": "2026-11-20T13:06:07+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaUhlTExpTmtiUldiVXJLcTN4OFEtR2gzMGIxSHM5YXBJRnFsV3ZGck9UVUNad3c3Q1FnZDBKbjV1WTVkM1BibTZ0VXBnTmJkbDhuR3FNUi1vbzFoV3lzNUhEMThDdmlKZjlJVmVweVdKdTRfTkM4VFppc3pqVnRJSkluMGZFZjRyVk1aWlJkSS1DN2xBb3gyRTh6QS1XTW9renNVNkNKWk5ZLW82WkRmd0t1OFNRczljOTlZM3I0X2NfU0FVd2wyQlNNVUd4RzhuYWpRdHFOUWhtY1gtdHJaNnhEUGdBNmlUdGc?oc=5",
+     "title": "Bastidores: Como a PF vasculhou o celular de Vorcaro em 5 dias para incluir Mendonça em relatório"
+    }
+   ],
+   "ids": [
+    "43ce7e565b72"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Bastidores: Como a PF vasculhou o celular de Vorcaro em 5 dias para incluir Mendonça em relatório",
+   "category": "politica",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "0fed36995961",
+   "title": "Justiça reconhece racismo em 68% dos casos, diz levantamento",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd1JwNDgzdzh6eTNUd2diTnpGYlZvQUFRTERKQ0xaekZUMDhid2p6b3A0bDVvVDl0SWtTVDVEUEV6WHZUTEljUFh6bUdLdWZBQnB1QkQ5Q3lUVjdXWjRUeUNDbG5wb0FCWDNoS3ltOV9xQUU3LW9VV1NEeFNmRnc4QzUwaWZDQndEZExrZ3IwcmYzLTg3R2tSV21fOTFfUUVuWjRfVVRYMUk5SEhOVzN2cHBRb9IBuAFBVV95cUxNd1lTN1M5bWJ1YjA4cGp1SDVzd2FObVprUTc5azNXaXVZMEt6c1FzNHRHV0QwMDBsNmJLeXpoVHZqZGpKZmF1cXdaZzhrYWlpLTBZX1l0bVhBaGN3cFJXZXF0TXV1T0dEdmJUOXQwTlFQUkFoZ284M21abmR3YXo4aVB3RHJXZi1XcHM4ZE5lQVBhakFjZ2wxb3ZvWW1CUFRiT2tLY095VWluODMwUXhCTWM5ZU83bFVo?oc=5",
+   "published": "2026-11-20T12:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd1JwNDgzdzh6eTNUd2diTnpGYlZvQUFRTERKQ0xaekZUMDhid2p6b3A0bDVvVDl0SWtTVDVEUEV6WHZUTEljUFh6bUdLdWZBQnB1QkQ5Q3lUVjdXWjRUeUNDbG5wb0FCWDNoS3ltOV9xQUU3LW9VV1NEeFNmRnc4QzUwaWZDQndEZExrZ3IwcmYzLTg3R2tSV21fOTFfUUVuWjRfVVRYMUk5SEhOVzN2cHBRb9IBuAFBVV95cUxNd1lTN1M5bWJ1YjA4cGp1SDVzd2FObVprUTc5azNXaXVZMEt6c1FzNHRHV0QwMDBsNmJLeXpoVHZqZGpKZmF1cXdaZzhrYWlpLTBZX1l0bVhBaGN3cFJXZXF0TXV1T0dEdmJUOXQwTlFQUkFoZ284M21abmR3YXo4aVB3RHJXZi1XcHM4ZE5lQVBhakFjZ2wxb3ZvWW1CUFRiT2tLY095VWluODMwUXhCTWM5ZU83bFVo?oc=5",
+     "title": "Justiça reconhece racismo em 68% dos casos, diz levantamento"
+    }
+   ],
+   "ids": [
+    "0fed36995961"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Justiça reconhece racismo em 68% dos casos, diz levantamento",
+   "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -16075,7 +16272,7 @@
    "id": "3424ee8d0045",
    "title": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
    "link": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
-   "published": "2026-11-20T17:14:44+00:00",
+   "published": "2026-11-20T17:25:19+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -16094,6 +16291,72 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Bitcoin’s sell-off is tracking risk assets again as experts weigh rates, ETF flows, politics and whether the crypto can function as a market hedge.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "d73c63511590",
+   "title": "Here's why we want to buy the sharp decline in this chip stock",
+   "link": "https://www.cnbc.com/investingclub/2026/11/20/heres-why-we-want-to-buy-the-sharp-decline-in-this-chip-stock.html",
+   "published": "2026-11-20T17:22:17+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/investingclub/2026/11/20/heres-why-we-want-to-buy-the-sharp-decline-in-this-chip-stock.html",
+     "title": "Here's why we want to buy the sharp decline in this chip stock"
+    }
+   ],
+   "ids": [
+    "d73c63511590"
+   ],
+   "snippet": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+   "prescore": 2.0,
+   "headline": "Here's why we want to buy the sharp decline in this chip stock",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "1eb7507f8cbe",
+   "title": "Gap stock soars as retailer says Old Navy turnaround shows signs of improvement",
+   "link": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+   "published": "2026-11-20T17:20:29+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+     "title": "Gap stock soars as retailer says Old Navy turnaround shows signs of improvement"
+    }
+   ],
+   "ids": [
+    "1eb7507f8cbe"
+   ],
+   "snippet": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
+   "prescore": 2.0,
+   "headline": "Gap stock soars as retailer says Old Navy turnaround shows signs of improvement",
+   "category": "macro",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17270,270 +17533,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "6bd5e8f575b1",
-   "title": "Rejecting cheap fabrics, higher prices: Why shoppers are asking for better clothes",
-   "link": "https://www.cnbc.com/2026/11/20/clothing-prices-polyester-cotton-quality.html",
-   "published": "2026-11-20T12:00:02+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/20/clothing-prices-polyester-cotton-quality.html",
-     "title": "Rejecting cheap fabrics, higher prices: Why shoppers are asking for better clothes"
-    }
-   ],
-   "ids": [
-    "6bd5e8f575b1"
-   ],
-   "snippet": "Retailers are charging higher prices for clothing made with cheaper materials. Shoppers are taking notice and experts say it could shift how they spend.",
-   "prescore": 2.0,
-   "headline": "Rejecting cheap fabrics, higher prices: Why shoppers are asking for better clothes",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Retailers are charging higher prices for clothing made with cheaper materials. Shoppers are taking notice and experts say it could shift how they spend.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6969f8d6a051",
-   "title": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business",
-   "link": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html",
-   "published": "2026-11-20T12:00:02+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html",
-     "title": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business"
-    }
-   ],
-   "ids": [
-    "6969f8d6a051"
-   ],
-   "snippet": "Access to the huge quantities of compute the company needs to continue developing and deploying models is a challenge for Anthropic to navigate.",
-   "prescore": 2.0,
-   "headline": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Access to the huge quantities of compute the company needs to continue developing and deploying models is a challenge for Anthropic to navigate.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "3e5eeaf3e438",
-   "title": "TikTok lança ferramenta para ajudar figuras públicas a detectar deepfakes",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tiktok-lanca-ferramenta-para-ajudar-figuras-publicas-a-detectar-deepfakes.shtml",
-   "published": "2026-11-20T11:58:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tiktok-lanca-ferramenta-para-ajudar-figuras-publicas-a-detectar-deepfakes.shtml",
-     "title": "TikTok lança ferramenta para ajudar figuras públicas a detectar deepfakes"
-    }
-   ],
-   "ids": [
-    "3e5eeaf3e438"
-   ],
-   "snippet": "O TikTok anunciou nesta sexta-feira (20) o lançamento global de sua ferramenta de detecção de deepfakes para figuras públicas, enquanto a plataforma de mídia social busca conter a desinformação gerada por inteligência artificial antes de uma série de eleições europeias no próximo ano. Leia mais (11/20/2026 - 08h58)",
-   "prescore": 2.0,
-   "headline": "TikTok lança ferramenta para ajudar figuras públicas a detectar deepfakes",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O TikTok anunciou nesta sexta-feira (20) o lançamento global de sua ferramenta de detecção de deepfakes para figuras públicas, enquanto a plataforma de mídia social busca conter a desinformação gerada por inteligência artificial antes de uma série de eleições europeias no próximo ano. Leia mais (11/20/2026 - 08h58)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "40362cb00f14",
-   "title": "André Mendonça pede ao STF abertura de sigilo de relatório da PF sobre ele",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/andre-mendonca-pede-ao-stf-abertura-de-sigilo-de-relatorio-da-pf-sobre-ele.shtml",
-   "published": "2026-11-20T11:44:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/andre-mendonca-pede-ao-stf-abertura-de-sigilo-de-relatorio-da-pf-sobre-ele.shtml",
-     "title": "André Mendonça pede ao STF abertura de sigilo de relatório da PF sobre ele"
-    }
-   ],
-   "ids": [
-    "40362cb00f14"
-   ],
-   "snippet": "O ministro André Mendonça , do STF (Supremo Tribunal Federal), pediu nesta sexta-feira (20) que seja retirado o sigilo do relatório da Polícia Federal que reúne informações sobre ele no caso Banco Master . O magistrado afirmou que renuncia expressamente ao sigilo e solicitou ao presidente da corte, Edson Fachin , que disponibilize a íntegra do processo para consulta pública. Leia mais (11/20/2026 - 08h44)",
-   "prescore": 2.0,
-   "headline": "André Mendonça pede ao STF abertura de sigilo de relatório da PF sobre ele",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro André Mendonça , do STF (Supremo Tribunal Federal), pediu nesta sexta-feira (20) que seja retirado o sigilo do relatório da Polícia Federal que reúne informações sobre ele no caso Banco Master . O magistrado afirmou que renuncia expressamente ao sigilo e solicitou ao presidente da corte, Edson Fachin , que disponibilize a íntegra do processo para consulta pública. Leia mais (11/20/2026 ",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "5fc88aa7ba51",
-   "title": "Reino Unido encontra solução para vulnerabilidade em geladeiras e freezers após ataques cibernéticos na Europa",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/reino-unido-encontra-solucao-para-vulnerabilidade-em-geladeiras-e-freezers-apos-ataques-ciberneticos-na-europa.shtml",
-   "published": "2026-11-20T11:14:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/reino-unido-encontra-solucao-para-vulnerabilidade-em-geladeiras-e-freezers-apos-ataques-ciberneticos-na-europa.shtml",
-     "title": "Reino Unido encontra solução para vulnerabilidade em geladeiras e freezers após ataques cibernéticos na Europa"
-    }
-   ],
-   "ids": [
-    "5fc88aa7ba51"
-   ],
-   "snippet": "Uma operação britânica de segurança cibernética corrigiu uma falha nos sistemas operacionais de geladeiras e freezers comerciais usados por supermercados, armazéns e restaurantes, ajudando a protegê-los de ataques cibernéticos que atingiram vários países europeus nas últimas semanas. Leia mais (11/20/2026 - 08h14)",
-   "prescore": 2.0,
-   "headline": "Reino Unido encontra solução para vulnerabilidade em geladeiras e freezers após ataques cibernéticos na Europa",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Uma operação britânica de segurança cibernética corrigiu uma falha nos sistemas operacionais de geladeiras e freezers comerciais usados por supermercados, armazéns e restaurantes, ajudando a protegê-los de ataques cibernéticos que atingiram vários países europeus nas últimas semanas. Leia mais (11/20/2026 - 08h14)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a022b87d695c",
-   "title": "Casa Branca demite diretor de Cibersegurança após falhas tecnológicas",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/casa-branca-demite-diretor-de-ciberseguranca-apos-falhas-tecnologicas.shtml",
-   "published": "2026-11-20T11:05:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/casa-branca-demite-diretor-de-ciberseguranca-apos-falhas-tecnologicas.shtml",
-     "title": "Casa Branca demite diretor de Cibersegurança após falhas tecnológicas"
-    }
-   ],
-   "ids": [
-    "a022b87d695c"
-   ],
-   "snippet": "O diretor nacional de Cibersegurança da Casa Branca, Sean Cairncross, foi demitido, informou nesta quinta-feira (19) uma fonte próxima do governo americano, após falhas tecnológicas afetarem vários serviços e causarem preocupação. Leia mais (11/20/2026 - 08h05)",
-   "prescore": 2.0,
-   "headline": "Casa Branca demite diretor de Cibersegurança após falhas tecnológicas",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O diretor nacional de Cibersegurança da Casa Branca, Sean Cairncross, foi demitido, informou nesta quinta-feira (19) uma fonte próxima do governo americano, após falhas tecnológicas afetarem vários serviços e causarem preocupação. Leia mais (11/20/2026 - 08h05)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "0aca0eea92d2",
-   "title": "O drama das pessoas com deficiências afetadas pela política de Milei na Argentina: 'Estão presos em suas casas, sem futuro'",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/o-drama-das-pessoas-com-deficiencias-afetadas-pela-politica-de-milei-na-argentina-estao-presos-em-suas-casas-sem-futuro.shtml",
-   "published": "2026-11-20T16:48:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/o-drama-das-pessoas-com-deficiencias-afetadas-pela-politica-de-milei-na-argentina-estao-presos-em-suas-casas-sem-futuro.shtml",
-     "title": "O drama das pessoas com deficiências afetadas pela política de Milei na Argentina: 'Estão presos em suas casas, sem futuro'"
-    }
-   ],
-   "ids": [
-    "0aca0eea92d2"
-   ],
-   "snippet": "Valentina Bassi está acostumada a lutar pelos direitos do seu filho com autismo , ao longo de diversos governos da Argentina . Leia mais (11/20/2026 - 13h48)",
-   "prescore": 1.8,
-   "headline": "O drama das pessoas com deficiências afetadas pela política de Milei na Argentina: 'Estão presos em suas casas, sem futuro'",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Valentina Bassi está acostumada a lutar pelos direitos do seu filho com autismo , ao longo de diversos governos da Argentina . Leia mais (11/20/2026 - 13h48)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "29ed428c63ca",
-   "title": "Queda das ações da Nvidia faz com que empresa fique atrás da Alphabet em termos de valor de mercado",
-   "link": "https://www.moneytimes.com.br/queda-das-acoes-da-nvidia-faz-com-que-empresa-fique-atras-da-alphabet-em-termos-de-valor-de-mercado-pads/",
-   "published": "2026-11-20T16:45:51+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/queda-das-acoes-da-nvidia-faz-com-que-empresa-fique-atras-da-alphabet-em-termos-de-valor-de-mercado-pads/",
-     "title": "Queda das ações da Nvidia faz com que empresa fique atrás da Alphabet em termos de valor de mercado"
-    }
-   ],
-   "ids": [
-    "29ed428c63ca"
-   ],
-   "snippet": "A Nvidia, uma das principais empresas do setor de inteligência artificial em Wall Street, ficou atrás da Alphabet — controladora do Google — e passou a ser a quarta empresa mais valiosa dos EUA nesta sexta-feira, à medida que uma queda prolongada das ações da fabricante de chips reorganizou o topo do ranking de valor […]",
-   "prescore": 1.8,
-   "headline": "Queda das ações da Nvidia faz com que empresa fique atrás da Alphabet em termos de valor de mercado",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Nvidia, uma das principais empresas do setor de inteligência artificial em Wall Street, ficou atrás da Alphabet — controladora do Google — e passou a ser a quarta empresa mais valiosa dos EUA nesta sexta-feira, à medida que uma queda prolongada das ações da fabricante de chips reorganizou o topo do ranking de valor […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -17576,7 +17575,7 @@
    "id": "exame",
    "name": "Exame",
    "ok": true,
-   "count": 17,
+   "count": 15,
    "error": null
   },
   {
@@ -17597,7 +17596,7 @@
    "id": "estadao",
    "name": "Estadão",
    "ok": true,
-   "count": 59,
+   "count": 60,
    "error": null
   },
   {
@@ -17625,7 +17624,7 @@
    "id": "g1-economia",
    "name": "g1",
    "ok": true,
-   "count": 52,
+   "count": 51,
    "error": null
   },
   {
@@ -17646,7 +17645,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 27,
+   "count": 25,
    "error": null
   },
   {
@@ -17723,7 +17722,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 27,
+   "count": 28,
    "error": null
   },
   {
@@ -17962,11 +17961,11 @@
   }
  ],
  "stats": {
-  "raw": 853,
-  "unique": 440,
-  "unique_all": 798,
+  "raw": 850,
+  "unique": 436,
+  "unique_all": 797,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.6
+  "seconds": 3.7
  }
 }
