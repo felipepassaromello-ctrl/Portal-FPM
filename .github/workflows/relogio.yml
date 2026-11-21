@@ -15,7 +15,7 @@ name: Relógio das coletas
 # em dias úteis, das 06h às 20h30 de Brasília, e se nenhuma atualização tiver começado nos últimos 45 minutos.
 #
 # Fora desse horário o relógio não para: dorme em trechos de até 5h40 (o limite do job é 6h) até as 06h do próximo dia
-# útil. Em 18 e 19/11, o GitHub descartou os três agendamentos da manhã (05:40, 06:07 e 08:01) e o portal ficou sem
+# útil e, no fim de semana, dispara uma atualização às 09h05, 15h05 e 19h05. Em 18 e 19/11, o GitHub descartou os três agendamentos da manhã (05:40, 06:07 e 08:01) e o portal ficou sem
 # atualização das 21h20 às 08h16, quando a rotina da manhã disparou a coleta à mão. Pelo mesmo motivo, em dia útil o
 # relógio garante uma atualização às 08h01, que fecha a edição do dia antes da rotina da manhã (08h15).
 on:
@@ -53,15 +53,32 @@ jobs:
             echo "Próxima volta do relógio disparada."
           }
           if ! no_horario; then
-            # fora do horário: dorme até as 06h do próximo dia útil, em trechos de até 5h40
-            agora=$(date +%s)
+            # fora do horário: dorme até a próxima volta, em trechos de até 5h40. A próxima volta é às 06h do próximo
+            # dia útil ou, no fim de semana, às 09h05, 15h05 ou 19h05, quando dispara uma atualização (os mesmos
+            # horários do agendamento de fim de semana do update.yml, que o GitHub também descarta)
+            agora=$(date +%s); alvo=""; fds=0
             for d in 0 1 2 3 4 5 6 7; do
-              alvo=$(as_horas 06:00 "$d")
-              [ "$alvo" -gt "$agora" ] && [ "$(TZ=America/Sao_Paulo date -d "@$alvo" +%u)" -le 5 ] && break
+              dia=$(TZ=America/Sao_Paulo date -d "+$d day" +%u)
+              if [ "$dia" -le 5 ]; then slots="06:00"; else slots="09:05 15:05 19:05"; fi
+              for h in $slots; do
+                t=$(as_horas "$h" "$d")
+                if [ "$t" -gt "$agora" ]; then alvo=$t; [ "$dia" -gt 5 ] && fds=1; break 2; fi
+              done
             done
-            wait=$(( alvo - agora )); [ "$wait" -gt 20400 ] && wait=20400
-            echo "Fora do horário (dias úteis, das 06h às 20h30): dormindo $((wait / 60)) minutos."
+            wait=$(( alvo - agora )); cheio=1
+            if [ "$wait" -gt 20400 ]; then wait=20400; cheio=0; fi
+            echo "Fora do horário: dormindo $((wait / 60)) minutos (próxima volta: $(TZ=America/Sao_Paulo date -d "@$alvo" '+%a %H:%M'))."
             sleep "$wait"
+            if [ "$fds" = 1 ] && [ "$cheio" = 1 ]; then
+              since=$(date -u -d '45 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+              recent=$(gh api "repos/$REPO/actions/workflows/update.yml/runs?per_page=10" \
+                --jq "[.workflow_runs[] | select(.created_at > \"$since\")] | length")
+              if [ "$recent" -eq 0 ]; then
+                gh workflow run update.yml --repo "$REPO" --ref main
+                echo "Atualização de fim de semana disparada."
+                sleep 20
+              fi
+            fi
             proxima_volta
             exit 0
           fi
