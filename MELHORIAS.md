@@ -47,6 +47,7 @@ O portal não pode ficar parado. Todo dia às 21h17 (Brasília), uma rotina do C
 
 ## Feito
 
+- 20/11 — O relógio das coletas cobre também o fim de semana (#88). Depois do #86, o relógio dormia de sexta às 20h30 até segunda às 06h, e no fim de semana o portal dependia do agendamento de sábado e domingo (09:07, 15:07 e 19:07), que o GitHub também descarta. Agora, fora do horário, a próxima volta é às 06h do próximo dia útil ou, no fim de semana, às 09h05, 15h05 e 19h05, com uma atualização se nenhuma tiver começado nos últimos 45 minutos.
 - 20/11 — O vigia não acusa mais e-mail não enviado em feriado nacional (#87). Em 20/11, Consciência Negra, o send_email.py não enviou de propósito, mas o vigia avisou que "o e-mail de hoje não consta como enviado". Agora ele consulta a mesma lista de feriados do envio (scripts/holidays.py).
 - 19/11 — O relógio das coletas passa a atravessar a noite e fecha a edição às 08h01 (#86):
   - em 18 e 19/11, o GitHub descartou os três agendamentos da manhã (05:40, 06:07 e 08:01) e o portal ficou sem atualização das 21h20 às 08h16, quando a rotina da manhã disparou a coleta à mão;
