@@ -11,6 +11,7 @@
 //   - áudio do briefing igual ao briefing publicado;
 //   - PDFs: cada fato relevante dos últimos 2 dias tem cópia no site (pdf/<protocolo>.pdf) e a cópia abre como PDF;
 //   - links "PDF" das companhias apontam para a cópia quando ela existe;
+//   - fontes de notícia fora do ar em duas edições seguidas;
 //   - execuções recentes do "Atualizar portal" e do e-mail sem falha, e o portal atualizado nas últimas 2h30 em dia útil.
 const { chromium, devices } = require("playwright");
 
@@ -47,6 +48,17 @@ async function checkData() {
     const sem = items.filter((it) => !it.summary).length;
     // a análise só roda em dias úteis, de manhã: no fim de semana a edição fica sem análise de propósito
     if (weekday && hhmm >= 840 && items.length && sem / items.length > 0.6) warn("edição", `${sem} de ${items.length} notícias sem análise`);
+    // fonte de notícia fora do ar em duas edições seguidas: queda de um dia acontece (a Bloomberg voltou sozinha em
+    // 09/11), mas se persistir o feed pode ter mudado de endereço
+    const down = (d) => new Set((d?.sources || []).filter((x) => !x.ok).map((x) => x.id || x.name));
+    const nowDown = down(digest);
+    if (nowDown.size && digest.date) {
+      const prev = new Date(`${digest.date}T12:00:00`); prev.setDate(prev.getDate() - 1);
+      const before = await getJson(`${SITE}data/archive/${iso(prev)}.json`).catch(() => null);
+      const both = [...nowDown].filter((id) => down(before).has(id));
+      const name = (id) => (digest.sources.find((x) => (x.id || x.name) === id) || {}).name || id;
+      if (both.length) warn("fontes", `fora do ar há duas edições: ${both.map((id) => `${name(id)} (${id}): ${(digest.sources.find((x) => (x.id || x.name) === id) || {}).error || "sem detalhe"}`).join("; ")}`);
+    }
     const audio = await getJson(`${SITE}audio/briefing.json`).catch(() => null);
     if (digest.brief?.headline && (!audio || audio.headline !== digest.brief.headline))
       warn("áudio", `o áudio é de outro briefing ("${(audio?.headline || "nenhum").slice(0, 60)}"); o portal está usando a voz do navegador`);
