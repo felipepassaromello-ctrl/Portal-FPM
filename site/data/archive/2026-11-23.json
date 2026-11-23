@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T10:17:16.696170-03:00",
+ "generated_at": "2026-11-23T10:23:06.971892-03:00",
  "date": "2026-11-23",
  "window": {
   "start": "2026-11-22T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-23T08:18:35.488030-03:00",
-  "analyzed": 220
+  "analyzed": 216
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -102,41 +102,42 @@
    "symbol": "^BVSP",
    "name": "Ibovespa",
    "unit": "pts",
-   "price": 166376.44,
-   "change_pct": -0.6933113681672154,
+   "price": 165161.73,
+   "change_pct": -0.7298348319469072,
    "spark": [
     169295.0,
     169817.0,
     167538.0,
-    166376.0
+    166376.0,
+    165161.734375
    ]
   },
   {
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.9933,
-   "change_pct": 1.0078400405160837,
+   "price": 5.9967,
+   "change_pct": 1.0651418035077187,
    "spark": [
     5.782599925994873,
     5.776800155639648,
     5.881700038909912,
     5.933499813079834,
-    5.993299961090088
+    5.996699810028076
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.5571,
-   "change_pct": 0.8481881900146648,
+   "price": 6.5633,
+   "change_pct": 0.94354418073892,
    "spark": [
     6.353240013122559,
     6.345178127288818,
     6.447453022003174,
     6.501951217651367,
-    6.55709981918335
+    6.563300132751465
    ]
   },
   {
@@ -174,7 +175,6 @@
    "price": 4.912,
    "change_pct": -2.7711806117937776,
    "spark": [
-    5.120999813079834,
     5.103000164031982,
     5.065999984741211,
     5.052000045776367,
@@ -185,40 +185,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 88.39,
-   "change_pct": -4.515501467650895,
+   "price": 88.33,
+   "change_pct": -4.580317282923452,
    "spark": [
     91.94999694824219,
     91.9800033569336,
     92.56999969482422,
-    88.38999938964844
+    88.33000183105469
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3617.7,
-   "change_pct": 2.9100557688485296,
+   "price": 3619.3,
+   "change_pct": 2.9555697941215486,
    "spark": [
     3741.89990234375,
     3685.5,
     3515.39990234375,
-    3617.699951171875
+    3619.300048828125
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 61205.12,
-   "change_pct": 0.07064829015250851,
+   "price": 61161.13,
+   "change_pct": -0.0012755590007018647,
    "spark": [
     61901.8203125,
     58798.98046875,
     60094.08984375,
     61161.91015625,
-    61205.12109375
+    61161.12890625
    ]
   }
  ],
@@ -1245,46 +1245,6 @@
     "private equity",
     "venture capital",
     "Bradesco"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "6f1e2a1f80a3",
-   "title": "Bond Market’s Go-To Trade for Fed Hikes Roiled by Stocks Retreat",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWmRPX29ITVVwcjVDVWpENEUyaFJ5alFtbVBxTzc0OWZoNkozOW9GZ3UwT3NBOGM5aUtxdm5SbjdYYmNxR3NIWVY1LWFaRUhINmRmdmxYaHlKRzY5dlBnQ3JaYkdlZU1XbVFRcnBDTkcyb1hPNG5pblZkUV9MdEd2S25aSE1TWWFzLXVrQzc0YkxQVTY1MnJYbV82TzgteDJKN2YyWmNneXY1aTg5NURYNFJzcDRxQQ?oc=5",
-   "published": "2026-11-22T20:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWmRPX29ITVVwcjVDVWpENEUyaFJ5alFtbVBxTzc0OWZoNkozOW9GZ3UwT3NBOGM5aUtxdm5SbjdYYmNxR3NIWVY1LWFaRUhINmRmdmxYaHlKRzY5dlBnQ3JaYkdlZU1XbVFRcnBDTkcyb1hPNG5pblZkUV9MdEd2S25aSE1TWWFzLXVrQzc0YkxQVTY1MnJYbV82TzgteDJKN2YyWmNneXY1aTg5NURYNFJzcDRxQQ?oc=5",
-     "title": "Bond Market’s Go-To Trade for Fed Hikes Roiled by Stocks Retreat"
-    }
-   ],
-   "ids": [
-    "6f1e2a1f80a3"
-   ],
-   "snippet": "",
-   "prescore": 5.8,
-   "headline": "Operação clássica de apostas em alta do Fed é abalada pela queda das ações",
-   "category": "internacional",
-   "importance": 6,
-   "importance_reason": "Indica estresse entre bolsa e juros nos EUA, com apostas em alta do Fed.",
-   "summary": "Segundo a Bloomberg, a operação preferida do mercado de títulos para apostar em alta de juros do Fed foi prejudicada pelo recuo das ações. O texto não traz detalhes.",
-   "involves": "Fed; mercado de Treasuries; bolsas dos EUA",
-   "interpretation": "O título fala em alta de juros do Fed, algo que reforça o cenário de juros altos; os detalhes não estão na fonte.",
-   "impact": "Volatilidade em Treasuries tende a pesar em emergentes e no câmbio brasileiro.",
-   "sentiment": "negativo",
-   "entities": [
-    "Fed",
-    "Bloomberg"
-   ],
-   "tags": [
-    "Fed",
-    "Treasuries",
-    "juros"
    ],
    "is_deal": false,
    "deal": null,
@@ -2613,47 +2573,6 @@
    "ai": true
   },
   {
-   "id": "aab668bd13e8",
-   "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
-   "link": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
-   "published": "2026-11-23T10:15:19+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
-     "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech"
-    }
-   ],
-   "ids": [
-    "aab668bd13e8"
-   ],
-   "snippet": "U.S. Treasury yields rose Monday, partially unwinding price action seen at the end of last week, as stock futures pointed to a strong rebound on Wall Street.",
-   "prescore": 4.0,
-   "headline": "Juros dos Treasuries sobem com rebote dos futuros de ações; fala de Williams no radar",
-   "category": "internacional",
-   "importance": 5,
-   "importance_reason": "Movimento de juros americanos com fala do Fed no dia.",
-   "summary": "Os rendimentos dos Treasuries subiram na segunda, devolvendo parte do movimento da semana passada, com os futuros de ações apontando forte rebote. O mercado aguarda Williams, do Fed de Nova York.",
-   "involves": "Treasuries; Fed de Nova York; John Williams",
-   "interpretation": "Rotina de mercado, com a fala como gatilho.",
-   "impact": "Juros americanos mais altos pressionam emergentes.",
-   "sentiment": "neutro",
-   "entities": [
-    "Fed de Nova York",
-    "Williams",
-    "CNBC"
-   ],
-   "tags": [
-    "Treasuries",
-    "Fed",
-    "juros"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "72495c56992c",
    "title": "Troca de CEOs em empresas do Ibovespa é a maior em cinco anos",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/troca-de-ceos-em-empresas-do-ibovespa-e-a-maior-em-cinco-anos.shtml",
@@ -3369,7 +3288,7 @@
    "id": "3bce026e1f0d",
    "title": "BYD’s Shares Fall After Dutch Court Bars Sales of Ti7 SUV Model in EU",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVW9HY19CSXBqQnE4V1VidTlXYTdIclpGbktULVdYWTVYa1RDNDU4MUNweXlfbmtsdWNkSFdwNl9JTFY3T05kRzRLUUkxbU1walhaRGNkLWFiQlJaZ3VVZVREZVJ4OVhSdXVtZy04bDVMM0d3NVRkM3A5S296czl2SVBZc0R3dVJ6VmUzTVNyR3lqQnBESXFQYWlQRjUxTHFZVS16aG1tM29fS1F0STRwQlZR?oc=5",
-   "published": "2026-11-23T08:50:09+00:00",
+   "published": "2026-11-23T08:49:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -4258,6 +4177,44 @@
    "ai": true
   },
   {
+   "id": "83ab3d30f33b",
+   "title": "South Korea Says Market Measures Will Ease Investor Jitters",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNFM3MmtldGFubzdUaHgyalNTc21uMC1PdXJvWm1Hc01jemo2bXN1Sl9YXzM4ZW03TWUxSTQ4WVVRQUkzejhFQ2NWM3FPZnFzMFdrUVRxbTJQeG9mczhUUUVlbm1kdXdtandFTGdYRndvOWk1b3V2dF9IMnR1RFlLLTRJNi1XaEpSY2xUTFEzRVl3MVUwdjJnNllsdFRCd0RFakFTX0k3UzRZenUxeWtv?oc=5",
+   "published": "2026-11-23T08:03:31+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNFM3MmtldGFubzdUaHgyalNTc21uMC1PdXJvWm1Hc01jemo2bXN1Sl9YXzM4ZW03TWUxSTQ4WVVRQUkzejhFQ2NWM3FPZnFzMFdrUVRxbTJQeG9mczhUUUVlbm1kdXdtandFTGdYRndvOWk1b3V2dF9IMnR1RFlLLTRJNi1XaEpSY2xUTFEzRVl3MVUwdjJnNllsdFRCd0RFakFTX0k3UzRZenUxeWtv?oc=5",
+     "title": "South Korea Says Market Measures Will Ease Investor Jitters"
+    }
+   ],
+   "ids": [
+    "83ab3d30f33b"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Coreia do Sul diz que medidas de mercado vão acalmar investidores",
+   "category": "internacional",
+   "importance": 4,
+   "importance_reason": "Reação a volatilidade global, com detalhes não divulgados.",
+   "summary": "O governo sul-coreano afirmou que medidas para o mercado vão reduzir a ansiedade dos investidores. O título não detalha as medidas.",
+   "involves": "Governo da Coreia do Sul; mercado sul-coreano",
+   "interpretation": "Sinal de estresse nos mercados asiáticos em meio à correção ligada a IA.",
+   "impact": "Reforça o tom de cautela em emergentes.",
+   "sentiment": "neutro",
+   "entities": [
+    "Coreia do Sul"
+   ],
+   "tags": [
+    "Coreia do Sul",
+    "mercados"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "05dc62eddaf6",
    "title": "Trump’s AI Chip Crackdown Inflicts Collateral Damage Across Asia",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdXp0ODZqcDNzanpGNkNMTmsxMk93OXpvU2IzU1NKcFkteXdZcXdSM3dKM0lZc3Z0T3lSMXR4UGJ3enY5LWZVdnR6NlBGZENCcDNJYngxMkxKdFVzajN4VlZvMTg3X09vUHlNSFZEZEJ0M0NvSngxdlVjNDQ2OEhyaXYtenB5SVJ3T2tjemlPZjI0WjBTVC1RR0tRY0t3cDZuUDlZal85OVQxRjhiUlg2LV9uZV9yZWN1cng4dkZxNWxkM2F3ZlhpbA?oc=5",
@@ -4693,7 +4650,7 @@
    "id": "a8c4ea703f0d",
    "title": "Ukraine Is Racing to Keep Its Booming Defense Industry From Stalling",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUllLRmxobEp4dElCMVJrTnhoTjVjc3p3YTd1blNlR2YyZUUzRWlOelNZb0JVeWVxR3hkXzhWLU51eEU0N1E1NVhhRXJPM09KLVVzRDVXRmp0YUJnby1WZXZ2QVBfaUl6ckVTSnJ6RE1WRDhVRlVpb3FTZnJKQ19CUjR3ZjJCUmR2cnNrNTY1MkN5RGV2VlByc1FlZ0dPSnBUZVNrS2dn?oc=5",
-   "published": "2026-11-23T06:05:48+00:00",
+   "published": "2026-11-23T06:21:35+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -5566,51 +5523,6 @@
    "ai": false
   },
   {
-   "id": "c153930bd99b",
-   "title": "Jair Bolsonaro está com 'uma cara boa', diz Michelle ao visitá-lo na UTI",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMnppblFqbFN4VmxaQkltWm5nSTMybjViRmRRWXBNbHgybTlUN0xWNktETmRHdmFURUFCc3BOR0FGb0NsdmNLeU9QUkhIdU1INGRrUlRCcnZJTkNybi11SVdjWVhHYWFQM3BVVGo4VFYyTkttMHNwYVdzUXZJOG9zSGJySk5aTkV5MUlCSU44bUl0bkZVeTFfSHNvSlFHMmVoMllENW1YbEtyNmp2WENrZi1RRTZGVEhyS1Vzc21jQzJMSWMyZkHSAdQBQVVfeXFMTU1uN0duaUU3V3pKYjhzYzZueGEyMnVBSW1abkw3ZUVjRHNmNHFId1BEc2VHZVN6N1VvbnA5RmpCMzBvQWlRblV6Y0JacGVZM1VJZEktbmw3MXV1REtrTUJJQ0FqS256ZDdpVHNTMTBoOEkteU8xdmZVdTBqUGtIcUpUODlleVhtblNCNVFScjM0Ums1YzJ4bFZmak5pVGFTZXdNc2JZX19qTnE2ZDhkdmY4WGRYcnhTcHhqb3BWVUN0TGRoSkRwbDJaQjYxRmVwbDN5N0U?oc=5",
-   "published": "2026-11-22T12:08:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMnppblFqbFN4VmxaQkltWm5nSTMybjViRmRRWXBNbHgybTlUN0xWNktETmRHdmFURUFCc3BOR0FGb0NsdmNLeU9QUkhIdU1INGRrUlRCcnZJTkNybi11SVdjWVhHYWFQM3BVVGo4VFYyTkttMHNwYVdzUXZJOG9zSGJySk5aTkV5MUlCSU44bUl0bkZVeTFfSHNvSlFHMmVoMllENW1YbEtyNmp2WENrZi1RRTZGVEhyS1Vzc21jQzJMSWMyZkHSAdQBQVVfeXFMTU1uN0duaUU3V3pKYjhzYzZueGEyMnVBSW1abkw3ZUVjRHNmNHFId1BEc2VHZVN6N1VvbnA5RmpCMzBvQWlRblV6Y0JacGVZM1VJZEktbmw3MXV1REtrTUJJQ0FqS256ZDdpVHNTMTBoOEkteU8xdmZVdTBqUGtIcUpUODlleVhtblNCNVFScjM0Ums1YzJ4bFZmak5pVGFTZXdNc2JZX19qTnE2ZDhkdmY4WGRYcnhTcHhqb3BWVUN0TGRoSkRwbDJaQjYxRmVwbDN5N0U?oc=5",
-     "title": "Jair Bolsonaro está com 'uma cara boa', diz Michelle ao visitá-lo na UTI"
-    },
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU0RiTzlXdkx4cTZtR25wdVhHUmFOdlBjaW41QXhuaGdBWkZGZ2NXWXpqUFZuREJBS0pSTVdfYzZJQmVyNFhJOW12NjNCUzhIbTUtT0FfemVuUTFzbDM5RjJzSWdYMU82d3J6N0lhZE5FNmY2RHNpUkxXdm5sQktvRVB4X2tFU280TU5PTENzM3hjZUE0LWdUYWY2al8zdzFLZGpEdkFZZjZVUDDSAbABQVVfeXFMTmNiQzFoU21zNU9WdXV3a2dFWU1XWEVFdEVvQXAxZmExZlV4dXVZZmN6N0h6d3d6bVF4V2xZWVVRNzZ4dFdaaUtxckZFdUdmaFRBMG5uODdVWElsaGFoclVaTmZDYV9XODRDVFFmTGgtbDFpdER3RXlPYzUtWENpeTNGbDNPdmh1NkVRNWdsZjVaUDI0UlBRSTdBb0NodXM2UWRjbU5odWhpV1JQWlZuRjU?oc=5",
-     "title": "‘Ele está com uma cara boa’, diz Michelle ao visitar Bolsonaro na UTI"
-    }
-   ],
-   "ids": [
-    "c153930bd99b",
-    "4a6fb23d753c"
-   ],
-   "snippet": "",
-   "prescore": 4.3,
-   "headline": "Michelle diz que Bolsonaro está com uma cara boa ao visitá-lo na UTI",
-   "category": "politica",
-   "importance": 3,
-   "importance_reason": "Saúde de Bolsonaro tem peso político, mas a nota é periférica.",
-   "summary": "Michelle Bolsonaro visitou Jair Bolsonaro na UTI e disse que ele está com uma cara boa.",
-   "involves": "Jair Bolsonaro; Michelle Bolsonaro",
-   "interpretation": "Não há detalhes clínicos no material.",
-   "impact": "Efeito de mercado improvável.",
-   "sentiment": "neutro",
-   "entities": [
-    "Jair Bolsonaro",
-    "Michelle Bolsonaro"
-   ],
-   "tags": [
-    "Bolsonaro",
-    "saúde"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "334b88b937c7",
    "title": "OPINIÃO. Ainda dá para apostar tudo no CDI?",
    "link": "https://braziljournal.com/opiniao-ainda-da-para-apostar-tudo-no-cdi",
@@ -6120,44 +6032,6 @@
    "ai": true
   },
   {
-   "id": "5e9d7c5cc903",
-   "title": "US Probing Alleged Spy Tied to Ex-Nvidia CEO, Spy Chief Says",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdE91b1JDX3BfalBuWlNGXzRwNERXUThKVzRESzZnZHMwaHYtM25YYlloMk9DWTJEY01kanUtczZEcC1jUjkzLTBoZnBtWC15eGZLbGlRQnNWa1dWNHpxSnhEcEFJVkQxUGpPb2wyam5kN2xISnRlaW5mdUF6WlZ1S0FKUEx5ZTdTQUFtelJDbDlsc3RjT0dHQmxkcUtIbUlZa3NkZ2xlMmJ4SHFvaXdvRldCM3c?oc=5",
-   "published": "2026-11-22T18:06:18+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdE91b1JDX3BfalBuWlNGXzRwNERXUThKVzRESzZnZHMwaHYtM25YYlloMk9DWTJEY01kanUtczZEcC1jUjkzLTBoZnBtWC15eGZLbGlRQnNWa1dWNHpxSnhEcEFJVkQxUGpPb2wyam5kN2xISnRlaW5mdUF6WlZ1S0FKUEx5ZTdTQUFtelJDbDlsc3RjT0dHQmxkcUtIbUlZa3NkZ2xlMmJ4SHFvaXdvRldCM3c?oc=5",
-     "title": "US Probing Alleged Spy Tied to Ex-Nvidia CEO, Spy Chief Says"
-    }
-   ],
-   "ids": [
-    "5e9d7c5cc903"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "EUA investigam suposto espião ligado a ex-CEO da Nvidia, diz chefe da inteligência",
-   "category": "tech",
-   "importance": 3,
-   "importance_reason": "Caso de espionagem.",
-   "summary": "O chefe da inteligência dos EUA disse que o país investiga um suposto espião ligado ao ex-CEO da Nvidia.",
-   "involves": "Inteligência dos EUA; Nvidia",
-   "interpretation": "Reforça o escrutínio sobre a Nvidia.",
-   "impact": "Risco regulatório no setor de chips.",
-   "sentiment": "negativo",
-   "entities": [
-    "Nvidia"
-   ],
-   "tags": [
-    "Nvidia",
-    "espionagem"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "41ecae317c0d",
    "title": "Michelle diz que Bolsonaro passou a noite sem dores",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSnRPOV9ObVRoSWMyN28tX1JuNHZLYkpmaEF5UzQyQlI5Uy1uNENaN3JBblFXejN3eUhvdTdFTVhzME5KVU5xbzA4SURLbmoxNktKVnRGazliV0RqYk9wV1hDUXlJSkkwQ3c5eGpaaHpaQVAtWm16V3RndlZfM3NLVzV2OW9ldWRyZzNqUXZPcmlHdzNKRGlpUWpHTmRyMXRuSWkwRE9CX2dKOFFBOHfSAbwBQVVfeXFMUHUxLVZQSHRNclpzYmJFbTl1Sm0xaWNSWDB3eEJKWE1DMWhuV1U3OHBHdmx1Tm44NUQxb0lwYlVncElLMTlfSTJVOUJCMGlLV3FXVXBKYld6N2F3d210TWQwTHJmZFNTR01PUk0yNWJ2TzNBbHhfOG9mRjFyZUttTnFXVEtrbGpsQXh3clIyMFJ5RDNjRnpqWUc2R2FPMW43OEFQOTRDSlBoMEx3Vy1VcENiQ3pmQW0zRHZSWEI?oc=5",
@@ -6345,6 +6219,45 @@
    "tags": [
     "bebidas",
     "varejo"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "c153930bd99b",
+   "title": "Jair Bolsonaro está com 'uma cara boa', diz Michelle ao visitá-lo na UTI",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMnppblFqbFN4VmxaQkltWm5nSTMybjViRmRRWXBNbHgybTlUN0xWNktETmRHdmFURUFCc3BOR0FGb0NsdmNLeU9QUkhIdU1INGRrUlRCcnZJTkNybi11SVdjWVhHYWFQM3BVVGo4VFYyTkttMHNwYVdzUXZJOG9zSGJySk5aTkV5MUlCSU44bUl0bkZVeTFfSHNvSlFHMmVoMllENW1YbEtyNmp2WENrZi1RRTZGVEhyS1Vzc21jQzJMSWMyZkHSAdQBQVVfeXFMTU1uN0duaUU3V3pKYjhzYzZueGEyMnVBSW1abkw3ZUVjRHNmNHFId1BEc2VHZVN6N1VvbnA5RmpCMzBvQWlRblV6Y0JacGVZM1VJZEktbmw3MXV1REtrTUJJQ0FqS256ZDdpVHNTMTBoOEkteU8xdmZVdTBqUGtIcUpUODlleVhtblNCNVFScjM0Ums1YzJ4bFZmak5pVGFTZXdNc2JZX19qTnE2ZDhkdmY4WGRYcnhTcHhqb3BWVUN0TGRoSkRwbDJaQjYxRmVwbDN5N0U?oc=5",
+   "published": "2026-11-22T13:37:46+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMnppblFqbFN4VmxaQkltWm5nSTMybjViRmRRWXBNbHgybTlUN0xWNktETmRHdmFURUFCc3BOR0FGb0NsdmNLeU9QUkhIdU1INGRrUlRCcnZJTkNybi11SVdjWVhHYWFQM3BVVGo4VFYyTkttMHNwYVdzUXZJOG9zSGJySk5aTkV5MUlCSU44bUl0bkZVeTFfSHNvSlFHMmVoMllENW1YbEtyNmp2WENrZi1RRTZGVEhyS1Vzc21jQzJMSWMyZkHSAdQBQVVfeXFMTU1uN0duaUU3V3pKYjhzYzZueGEyMnVBSW1abkw3ZUVjRHNmNHFId1BEc2VHZVN6N1VvbnA5RmpCMzBvQWlRblV6Y0JacGVZM1VJZEktbmw3MXV1REtrTUJJQ0FqS256ZDdpVHNTMTBoOEkteU8xdmZVdTBqUGtIcUpUODlleVhtblNCNVFScjM0Ums1YzJ4bFZmak5pVGFTZXdNc2JZX19qTnE2ZDhkdmY4WGRYcnhTcHhqb3BWVUN0TGRoSkRwbDJaQjYxRmVwbDN5N0U?oc=5",
+     "title": "Jair Bolsonaro está com 'uma cara boa', diz Michelle ao visitá-lo na UTI"
+    }
+   ],
+   "ids": [
+    "c153930bd99b"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Michelle diz que Bolsonaro está com uma cara boa ao visitá-lo na UTI",
+   "category": "politica",
+   "importance": 3,
+   "importance_reason": "Saúde de Bolsonaro tem peso político, mas a nota é periférica.",
+   "summary": "Michelle Bolsonaro visitou Jair Bolsonaro na UTI e disse que ele está com uma cara boa.",
+   "involves": "Jair Bolsonaro; Michelle Bolsonaro",
+   "interpretation": "Não há detalhes clínicos no material.",
+   "impact": "Efeito de mercado improvável.",
+   "sentiment": "neutro",
+   "entities": [
+    "Jair Bolsonaro",
+    "Michelle Bolsonaro"
+   ],
+   "tags": [
+    "Bolsonaro",
+    "saúde"
    ],
    "is_deal": false,
    "deal": null,
@@ -6583,6 +6496,44 @@
    "ai": true
   },
   {
+   "id": "694159525b06",
+   "title": "The Brother-Sister Duo Who Want to Keep Anthropic Weird",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZGJyNGh6cktKS0FsM3FIbF9LbjFqVThfY3MyRURJREVmd1JqVGtVX3pTV1FuQzBUUUI3VDdXVHdUYkpKTDk1Ml9vZzdoN1p5T0pVZ3g1eGpwQ1NfVFp6VlhJX1FSXzZ6ajVDYjVKazF5N2FGbXVHLUdjN05YRzVQZnRYaVZtMkE?oc=5",
+   "published": "2026-11-23T00:31:42+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZGJyNGh6cktKS0FsM3FIbF9LbjFqVThfY3MyRURJREVmd1JqVGtVX3pTV1FuQzBUUUI3VDdXVHdUYkpKTDk1Ml9vZzdoN1p5T0pVZ3g1eGpwQ1NfVFp6VlhJX1FSXzZ6ajVDYjVKazF5N2FGbXVHLUdjN05YRzVQZnRYaVZtMkE?oc=5",
+     "title": "The Brother-Sister Duo Who Want to Keep Anthropic Weird"
+    }
+   ],
+   "ids": [
+    "694159525b06"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "A dupla de irmãos que quer manter a Anthropic 'estranha'",
+   "category": "tech",
+   "importance": 3,
+   "importance_reason": "Perfil de executivos de empresa de IA, sem fato de mercado.",
+   "summary": "O WSJ perfila dois irmãos ligados à cultura da Anthropic.",
+   "involves": "Anthropic",
+   "interpretation": "Perfil, sem fato novo.",
+   "impact": "Sem impacto de mercado.",
+   "sentiment": "neutro",
+   "entities": [
+    "Anthropic"
+   ],
+   "tags": [
+    "Anthropic",
+    "perfil"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "c428454e2b21",
    "title": "Delta Resolves Automation Outage That Led to Over 1,000 Flight Delays",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVFRFaTNyYWprQlBYbnJBQTVnTVExUnhoc0lTRjlRYWc3Rk9oV084QlIxdkg4bFE1RnIzV3VvTXl6eXduMlV5RjgzRmRwRmp4X2tRc3lxYlptNXZZZmc3T3BzZjN0d0xlQ21OZjJQa3NzZWlOaWpFSmhoTERqcm14MVZQS2ZfNEh3bW1qSTUwYnFlUmpicjExbmxlOFlROTQ?oc=5",
@@ -6616,46 +6567,6 @@
     "aviação",
     "pane",
     "Delta"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "78518b7dcf59",
-   "title": "WHO chief says fighting near Congo Ebola outbreak area disrupts response efforts",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVnZjcE50YXJiLWxXZE5OQldXSndtUVlUbnNJckNPY1lQM1ZpdlExMlNJX08zNFJQbnFYd3FKT3ZZbzBqY2s4a3c0RVg0M2dELVZrLUx5R0tobENIQWk2QUdNZG9YRl95STZFUlVOVTlVcThuRG90VndEZEZhaE5jbTRVYkN1SUxoYmlteUhlempZSVNGRjJNWjhZdXlSNzMtM1Q3VExpZmFqZHJKbVdjT3lpekdsb0dXQXg0NHdsUkZwdlNzQW9CaGVhblM2b0VHSWRZTGlFVUJBSnd3LXA2SXJoUlVmV1E?oc=5",
-   "published": "2026-11-22T20:17:43+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVnZjcE50YXJiLWxXZE5OQldXSndtUVlUbnNJckNPY1lQM1ZpdlExMlNJX08zNFJQbnFYd3FKT3ZZbzBqY2s4a3c0RVg0M2dELVZrLUx5R0tobENIQWk2QUdNZG9YRl95STZFUlVOVTlVcThuRG90VndEZEZhaE5jbTRVYkN1SUxoYmlteUhlempZSVNGRjJNWjhZdXlSNzMtM1Q3VExpZmFqZHJKbVdjT3lpekdsb0dXQXg0NHdsUkZwdlNzQW9CaGVhblM2b0VHSWRZTGlFVUJBSnd3LXA2SXJoUlVmV1E?oc=5",
-     "title": "WHO chief says fighting near Congo Ebola outbreak area disrupts response efforts"
-    }
-   ],
-   "ids": [
-    "78518b7dcf59"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Chefe da OMS diz que combates perto de área de surto de ebola no Congo atrapalham a resposta",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Tema de saúde pública sem efeito direto no mercado.",
-   "summary": "O diretor da OMS afirma que combates perto da área do surto de ebola no Congo prejudicam o esforço de resposta.",
-   "involves": "OMS, Congo, ebola",
-   "interpretation": "Risco humanitário e sanitário na região.",
-   "impact": "Sem efeito relevante em ativos.",
-   "sentiment": "negativo",
-   "entities": [
-    "OMS",
-    "Congo"
-   ],
-   "tags": [
-    "ebola",
-    "Congo",
-    "saúde"
    ],
    "is_deal": false,
    "deal": null,
@@ -7441,6 +7352,39 @@
    "ai": true
   },
   {
+   "id": "ab7e76eea4c7",
+   "title": "Juros e inflação: como eles afetam as decisões de quem aplica – Engrenagens do Crescimento",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOXQtZHdabHlBRTRuc19TRUZ5alNWenZHZl9YbVJjamRtMktWcVM0ZFI3cUd1X2Y3cjY2UHRLMVQ3X1NiYlBoaklaYzFjMUlXNFhSNnJiSks1TDJPeWN2bmpNSnluY3Nqckd5dzVZRF9QbkF6U0JzdDNHVTFCWDhRa3pFWjNwdnE5QnJzc0NEVnQ2QXlZRER4TmFEa05tbFY3ZkVfY0hkMnJVc2poNFBNNzVTOFBScXdTTFgw?oc=5",
+   "published": "2026-11-22T11:21:19+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOXQtZHdabHlBRTRuc19TRUZ5alNWenZHZl9YbVJjamRtMktWcVM0ZFI3cUd1X2Y3cjY2UHRLMVQ3X1NiYlBoaklaYzFjMUlXNFhSNnJiSks1TDJPeWN2bmpNSnluY3Nqckd5dzVZRF9QbkF6U0JzdDNHVTFCWDhRa3pFWjNwdnE5QnJzc0NEVnQ2QXlZRER4TmFEa05tbFY3ZkVfY0hkMnJVc2poNFBNNzVTOFBScXdTTFgw?oc=5",
+     "title": "Juros e inflação: como eles afetam as decisões de quem aplica – Engrenagens do Crescimento"
+    }
+   ],
+   "ids": [
+    "ab7e76eea4c7"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Juros e inflação: como eles afetam as decisões de quem aplica – Engrenagens do Crescimento",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "642a9ccb349c",
    "title": "Lula e Flávio acionaram TSE quase mil vezes durante campanha, mostra levantamento",
    "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-e-flavio-acionaram-tse-quase-mil-vezes-durante-campanha-mostra-levantamento.shtml",
@@ -7557,25 +7501,25 @@
    "ai": true
   },
   {
-   "id": "6c29807ca905",
-   "title": "Margin Calls Soared 200-Fold in Taiwan as Traders Fled AI Bets",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdHlIQlYxcVdFT3ZZQXdYMXhzS0VUaUExR21XUGhfNy1UdVRiVWkxYUcySmZURDROMS0tUXRpWVRIZjVPQ3d6a3AzMWRxeExLX09VRkg1VU5tVkJxdDNSSjlvRkFDdE9JZTY2M2FPZ3loZ2hxNmg0d01TVXVoV1lPMlhEcjFpVzZCMmNTcVF0LURuX0U0cDZfLTM0YmF0MEdtV19pSGxQUGhvWHFLNUJTV2IyUQ?oc=5",
-   "published": "2026-11-23T10:11:28+00:00",
+   "id": "677ab7f0b436",
+   "title": "Five Charts Unpack One of the Worst Weeks for Stocks in Decades",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTWdFMWhlb1N5cm1VV2hSR2dJWENHbU5fT1l3ai1Va090R3VvczAzSDBWLTJKT0JqRFphM09Zc1BDTUE2N1BqVmlZcHVhRnlpTkZ0ZjMycWNyT2ZWdThsMDBlZm5RN0ZJSDIxbktTbVJEaHZDbUFaN09BRi1ZaHowczI3eVdkb3E4MnVIU3dPSGE1V3VUMnVldTdrOFlkc1F1RXBwOEt6d0p1ZTdKZWJhczc1VWs?oc=5",
+   "published": "2026-11-23T10:29:20+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdHlIQlYxcVdFT3ZZQXdYMXhzS0VUaUExR21XUGhfNy1UdVRiVWkxYUcySmZURDROMS0tUXRpWVRIZjVPQ3d6a3AzMWRxeExLX09VRkg1VU5tVkJxdDNSSjlvRkFDdE9JZTY2M2FPZ3loZ2hxNmg0d01TVXVoV1lPMlhEcjFpVzZCMmNTcVF0LURuX0U0cDZfLTM0YmF0MEdtV19pSGxQUGhvWHFLNUJTV2IyUQ?oc=5",
-     "title": "Margin Calls Soared 200-Fold in Taiwan as Traders Fled AI Bets"
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTWdFMWhlb1N5cm1VV2hSR2dJWENHbU5fT1l3ai1Va090R3VvczAzSDBWLTJKT0JqRFphM09Zc1BDTUE2N1BqVmlZcHVhRnlpTkZ0ZjMycWNyT2ZWdThsMDBlZm5RN0ZJSDIxbktTbVJEaHZDbUFaN09BRi1ZaHowczI3eVdkb3E4MnVIU3dPSGE1V3VUMnVldTdrOFlkc1F1RXBwOEt6d0p1ZTdKZWJhczc1VWs?oc=5",
+     "title": "Five Charts Unpack One of the Worst Weeks for Stocks in Decades"
     }
    ],
    "ids": [
-    "6c29807ca905"
+    "677ab7f0b436"
    ],
    "snippet": "",
    "prescore": 2.8,
-   "headline": "Margin Calls Soared 200-Fold in Taiwan as Traders Fled AI Bets",
-   "category": "tech",
+   "headline": "Five Charts Unpack One of the Worst Weeks for Stocks in Decades",
+   "category": "mna",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -7763,6 +7707,39 @@
    "ai": true
   },
   {
+   "id": "d4463221e18a",
+   "title": "Governo precisa enviar PEC com novas medidas de ajuste fiscal nesta semana, diz Eduardo Braga",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZmxHZ09xS09hRF9fOHZhLWp3aVFra3dtQkdITnpoRkcyeXZfak9jc1liWGFzdm4waFFGdDZ6NU80Rm9fNFBoSWNoR2VVZGVPaHJUcExyRVhYbVduQmg1eGU5Y0lZTDRrVXJfSUdqcVp0NEd1cHowUFR4NWdKRndrWlVWVC1Pbm9LTXJNV2dCSlR0S0RzZnFYbFV0a3M5VFhGS0EwaklnUXhkVjFxS3BaQWlSSE5OX3pQ0gHHAUFVX3lxTE96bTIzQ21kNlpQWGhiMEI2QzRaQ3lVZHQ5Ul95cTU3Y0YtTE1zSEFqVHlwTGsxcXVhSFp5a21UNW10a1FCWEFmSmJkZ19kbHh2NHZ5NkpWSzJtRUxDZkZyU0g1WUhVQ2x2VWhpOGdBNVgtUlQxVU9qa0ROUDBzUDgwM0ZUV1d0Zmg3b0RqU1laOVBlMmJ2SDRFbURZSEdpVnJ3cFFNZURBNmJxMjFybVBUT0d0aVdzd1BnZ1RjZWJJOXFMdjk5ejg?oc=5",
+   "published": "2026-11-23T08:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZmxHZ09xS09hRF9fOHZhLWp3aVFra3dtQkdITnpoRkcyeXZfak9jc1liWGFzdm4waFFGdDZ6NU80Rm9fNFBoSWNoR2VVZGVPaHJUcExyRVhYbVduQmg1eGU5Y0lZTDRrVXJfSUdqcVp0NEd1cHowUFR4NWdKRndrWlVWVC1Pbm9LTXJNV2dCSlR0S0RzZnFYbFV0a3M5VFhGS0EwaklnUXhkVjFxS3BaQWlSSE5OX3pQ0gHHAUFVX3lxTE96bTIzQ21kNlpQWGhiMEI2QzRaQ3lVZHQ5Ul95cTU3Y0YtTE1zSEFqVHlwTGsxcXVhSFp5a21UNW10a1FCWEFmSmJkZ19kbHh2NHZ5NkpWSzJtRUxDZkZyU0g1WUhVQ2x2VWhpOGdBNVgtUlQxVU9qa0ROUDBzUDgwM0ZUV1d0Zmg3b0RqU1laOVBlMmJ2SDRFbURZSEdpVnJ3cFFNZURBNmJxMjFybVBUT0d0aVdzd1BnZ1RjZWJJOXFMdjk5ejg?oc=5",
+     "title": "Governo precisa enviar PEC com novas medidas de ajuste fiscal nesta semana, diz Eduardo Braga"
+    }
+   ],
+   "ids": [
+    "d4463221e18a"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Governo precisa enviar PEC com novas medidas de ajuste fiscal nesta semana, diz Eduardo Braga",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b2dfdc8ea135",
    "title": "Trabalho concentra 25% das decisões da Justiça sobre racismo",
    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQODdzSjJIbTRWaFZ2V044RXg1c3RidGU1M2FjbENSa3RHMjliTWlPTDV2bXVwRGFUQTZ4dG1kRUNTa1lvb2pMTGxZN1FyaEF3Y0w5Uk4xZERieWFmOWFUNmRqaU9ocjgtRnlVUDJfUzBHcDVtekUxYXZGT2t6dUlTcmF1QWNFQzItQWVyMERRWnhOZXhRT3NyeGwtajl4Sk5DRTNpdWtxcVpCVFRZRlJLeXMySUpGamw2a2tobHVXZTdJWFpSV1NpaXQybDdLaTRDVUJHM0pQMVg4Z9IB6AFBVV95cUxPc2x2aXZNVWxJMURDZ3A1anVwX0pGa2ZfbjY1VmRxSVlKbzh4SG5kc1cxbVZjWEVYVGNYaGtSNkdhQTRJOEF2QjNVZlBEelNNeVFWRlJ6dXV1aVhyWndtNkFCVEktaWRfVzBObEVqSmhCTDBKUlBCMWtXMkFybTR2UkhJU1k5MnZPUl9HeVpRVGRIdUgzcjFUQTBnZVdRVk94aHcwN01UeFNSWTR0N3RydGNJSVAzSG5vNzRrSnBSUWxuWjRiel9wV0xiNjFQY0VlQnVWYzlveTd2d3EzR2REOFgwbGxVSHdl?oc=5",
@@ -7893,42 +7870,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "b3ffd295e4c2",
-   "title": "Just Be Thankful It’s a Short Week",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNG1pWURRay16SktNd3hFMzFuVHE1ZF8yelBrSUJsQnBWdWZUVEVubHVGNGtvVm9fNnVEclkxTml1NWh4TTMydG5pbVc2a3pqZWJQYzEyUDh5TUZwNmFxc2htQmhJTm9wNnJnWTVTWlVCd0VKSTU0MTVJZXFrVXAxQm9CREJDaUNUVzkwOUs1aVRHeDRKZHZZZmlTdmhzZGpPdU13eXM0bDNrQQ?oc=5",
-   "published": "2026-11-23T04:02:07+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNG1pWURRay16SktNd3hFMzFuVHE1ZF8yelBrSUJsQnBWdWZUVEVubHVGNGtvVm9fNnVEclkxTml1NWh4TTMydG5pbVc2a3pqZWJQYzEyUDh5TUZwNmFxc2htQmhJTm9wNnJnWTVTWlVCd0VKSTU0MTVJZXFrVXAxQm9CREJDaUNUVzkwOUs1aVRHeDRKZHZZZmlTdmhzZGpPdU13eXM0bDNrQQ?oc=5",
-     "title": "Just Be Thankful It’s a Short Week"
-    }
-   ],
-   "ids": [
-    "b3ffd295e4c2"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Agradeça por ser uma semana curta",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Tema periférico ao radar de M&A e mercado brasileiro.",
-   "summary": "Coluna da Bloomberg sobre a semana mais curta nos EUA, sem trecho.",
-   "involves": "Mercados dos EUA",
-   "interpretation": "Informação pontual; o título não traz detalhes além do fato principal.",
-   "impact": "Efeito limitado sobre ativos e deals no Brasil.",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [
-    "EUA",
-    "semana curta"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
   },
   {
    "id": "e0f8855c5019",
@@ -8488,6 +8429,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "fd2d454a59f2",
+   "title": "Governors Call for Federal AI Rules Without Sidelining States",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3RyYzZEdUFiQTZ6Zk1fQ1FxRmp5alkydktDU3lnSmIxeWdCbWxHbTJ0VDduQlozVnoyaUg5a193N0tjU2F0NHhYeFhwQ3lTZnlxVjZXazVOT2VEd2d3RTc0aFVYdUt6ZGtlaHpUVi05ZmxZekFwZ1hSTmwzdHdmRVhfSTlkdEY4VzJFbDBJUFRwek1pNTV4N1Q2eEpMMEhiUFJEU284cHh5Tl9GdXhCdER3?oc=5",
+   "published": "2026-11-22T13:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3RyYzZEdUFiQTZ6Zk1fQ1FxRmp5alkydktDU3lnSmIxeWdCbWxHbTJ0VDduQlozVnoyaUg5a193N0tjU2F0NHhYeFhwQ3lTZnlxVjZXazVOT2VEd2d3RTc0aFVYdUt6ZGtlaHpUVi05ZmxZekFwZ1hSTmwzdHdmRVhfSTlkdEY4VzJFbDBJUFRwek1pNTV4N1Q2eEpMMEhiUFJEU284cHh5Tl9GdXhCdER3?oc=5",
+     "title": "Governors Call for Federal AI Rules Without Sidelining States"
+    }
+   ],
+   "ids": [
+    "fd2d454a59f2"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Governors Call for Federal AI Rules Without Sidelining States",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "25f051bbc836",
@@ -9068,39 +9042,6 @@
    "ai": false
   },
   {
-   "id": "dfa72f1c6e59",
-   "title": "Historic Homes: An American Author’s Appalachian Mountain Retreat",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUWtTTGs3ODN3SG1IaVl1VWVsUHcxYmh3MTRGcHVpU2daTXZCVzUwZW9mQmFaVU5tekJkSnNYaUJidzZpZ2ZqTU55VGhwTVphcHp3a1g4ODZJNnFOaEFlejRUSGE3eUZPZTAzZkh2S0pXOGxYVFowWHNoZnFYZDF0QlU2WVVOcy16bzAtRjRCT3U?oc=5",
-   "published": "2026-11-23T04:31:28+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUWtTTGs3ODN3SG1IaVl1VWVsUHcxYmh3MTRGcHVpU2daTXZCVzUwZW9mQmFaVU5tekJkSnNYaUJidzZpZ2ZqTU55VGhwTVphcHp3a1g4ODZJNnFOaEFlejRUSGE3eUZPZTAzZkh2S0pXOGxYVFowWHNoZnFYZDF0QlU2WVVOcy16bzAtRjRCT3U?oc=5",
-     "title": "Historic Homes: An American Author’s Appalachian Mountain Retreat"
-    }
-   ],
-   "ids": [
-    "dfa72f1c6e59"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Historic Homes: An American Author’s Appalachian Mountain Retreat",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "4470db7912fe",
    "title": "Indian rupee could rise to 91.50/$ on equity inflows, HDFC Bank's treasury head says",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOd3pBMG1XeGk3X0tmdVlkOWFnRlhTS3h3a1VyZkFhbElMZ2NXa3hPdjVEdkxUYWlxWTZZbmxLV1RSZlV6NDNSQmVXUUVkaV9RSzRodXB1TWw0bkw3Sm02OXVSNGNxS3VHWk95WTN1c19Pa0pEWVlGYmVrSnFnRVNqVzNXbDRiOWx4clplN0d4T2kxUDBxQmNrR2MtNk81T0RWbTBYNml3Q1RnMk45MDN6NGpoeTVJblA3c3BORnhR?oc=5",
@@ -9400,7 +9341,7 @@
    "id": "49805984bd6b",
    "title": "Opinion | Excusing ‘My Friend’ Vladimir",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNREhmaUU0NHphQmNPZm96bmdVQWlJUGVUYkxMc0RlNW4xMVhxRnc4U29GTmI3N01QSk5WWHJseHpIRjBlQzRWcnRJYm51VmViSTZjaTlsNUZpRUdvUnZkU3FwX2FyYjI0MlJYMlNTNjgwRDM5bl85RVdCNlNBeHpJUy02cnRvT2xOVDJScVV1Z3g3WllH?oc=5",
-   "published": "2026-11-22T22:00:00+00:00",
+   "published": "2026-11-22T22:01:27+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -10092,36 +10033,38 @@
    "ai": true
   },
   {
-   "id": "766cf6bacac3",
-   "title": "Chinese Dramas Are Starting to Take Over the World",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZGxJZEl4UjFWMHdlRVZLaDA0VmdQUjA2cHE2QU9fcWRYWDZsdE5pb1l6a1drQjZpekVnM3UtR3MtZEhaa0JGVkN4VzNHQkd0RHk3QkNFaUlHWWZlRWE1RkFPVkJwSlNKMHpLZWZBcGYzUFBjcnhZQVZKVFFWZF9KejZlSUdnOVZNZW5vWTJiVGEyNHJwTXRrVFlkT1otMm1nUlg4U2FSWQ?oc=5",
-   "published": "2026-11-22T23:30:01+00:00",
+   "id": "8dda30d2984d",
+   "title": "Harvard Landscape Architects Propose Monumental Alternatives to Trump’s Triumphal Arch",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTUVhamFQU1hwVzJIdlF1TVB6RjJaQXdfY3JWeVlrcEhCS0syeTkwUXlIOTBKandoeGpCZ0dlT0VNWThBTTFiZzh0MVBCNjY1TG1LWC0wV0RwbFZ2UENIVk1QeTF0WFlZa1lraXRTN3E2aEFoRXh0aF81Z3h6bEthenFHZzRObE8tM3FicmpZSFcxRUpuTXFjM29XSWc1TlBMWkFOYS1raHU4dDBKV05ZSkF4clowV0ZXck9RVEhVQl9GazdlZE53WDNR?oc=5",
+   "published": "2026-11-22T13:00:01+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZGxJZEl4UjFWMHdlRVZLaDA0VmdQUjA2cHE2QU9fcWRYWDZsdE5pb1l6a1drQjZpekVnM3UtR3MtZEhaa0JGVkN4VzNHQkd0RHk3QkNFaUlHWWZlRWE1RkFPVkJwSlNKMHpLZWZBcGYzUFBjcnhZQVZKVFFWZF9KejZlSUdnOVZNZW5vWTJiVGEyNHJwTXRrVFlkT1otMm1nUlg4U2FSWQ?oc=5",
-     "title": "Chinese Dramas Are Starting to Take Over the World"
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTUVhamFQU1hwVzJIdlF1TVB6RjJaQXdfY3JWeVlrcEhCS0syeTkwUXlIOTBKandoeGpCZ0dlT0VNWThBTTFiZzh0MVBCNjY1TG1LWC0wV0RwbFZ2UENIVk1QeTF0WFlZa1lraXRTN3E2aEFoRXh0aF81Z3h6bEthenFHZzRObE8tM3FicmpZSFcxRUpuTXFjM29XSWc1TlBMWkFOYS1raHU4dDBKV05ZSkF4clowV0ZXck9RVEhVQl9GazdlZE53WDNR?oc=5",
+     "title": "Harvard Landscape Architects Propose Monumental Alternatives to Trump’s Triumphal Arch"
     }
    ],
    "ids": [
-    "766cf6bacac3"
+    "8dda30d2984d"
    ],
    "snippet": "",
    "prescore": 2.8,
-   "headline": "Dramas chineses começam a conquistar o mundo",
+   "headline": "Paisagistas de Harvard propõem alternativas ao arco triunfal de Trump",
    "category": "outros",
    "importance": 1,
-   "importance_reason": "Tema periférico ao radar de M&A e mercado brasileiro.",
-   "summary": "Reportagem da Bloomberg sobre a expansão dos dramas chineses.",
-   "involves": "Dramas chineses",
-   "interpretation": "Informação pontual; o título não traz detalhes além do fato principal.",
-   "impact": "Efeito limitado sobre ativos e deals no Brasil.",
+   "importance_reason": "Matéria cultural sem relevância para o leitor.",
+   "summary": "Paisagistas de Harvard propõem alternativas monumentais ao arco triunfal de Trump.",
+   "involves": "Harvard, Donald Trump",
+   "interpretation": "Pauta de arquitetura e política cultural.",
+   "impact": "Sem impacto.",
    "sentiment": "neutro",
-   "entities": [],
+   "entities": [
+    "Donald Trump",
+    "Harvard"
+   ],
    "tags": [
-    "China",
-    "entretenimento"
+    "arquitetura"
    ],
    "is_deal": false,
    "deal": null,
@@ -10839,6 +10782,39 @@
    "ai": false
   },
   {
+   "id": "1b9cdf84c0bd",
+   "title": "Willie Nelson: 'Se você morrer, eu te mato', disse sua esposa",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORjBCWEZ1QlRRZzNsUk5ZWFowRUhENjVueEZHVHZYYk0xdUZIZEVwR2dORmt5bkdHQUVyWDN1Y2s3SHJLQ0ZwWVYtcTRCdjNPZGhnVGY2TkFWY3lZVE1rOVVkbFB1eDE4ZkNldFppZEdLQXNMT0hMMXlEd2Y0djBHTzVvNUZMdVVKcVZjejljQ1VFSlN4ZUVFYUtERUdxOVBNNnNheklPRkdYNkp4a2VPeXdzTWRMemtMMEdVQkNTNS01ZnZqOG9QbDRXa3A4MVZTQzBUdXp2T2k?oc=5",
+   "published": "2026-11-23T09:11:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORjBCWEZ1QlRRZzNsUk5ZWFowRUhENjVueEZHVHZYYk0xdUZIZEVwR2dORmt5bkdHQUVyWDN1Y2s3SHJLQ0ZwWVYtcTRCdjNPZGhnVGY2TkFWY3lZVE1rOVVkbFB1eDE4ZkNldFppZEdLQXNMT0hMMXlEd2Y0djBHTzVvNUZMdVVKcVZjejljQ1VFSlN4ZUVFYUtERUdxOVBNNnNheklPRkdYNkp4a2VPeXdzTWRMemtMMEdVQkNTNS01ZnZqOG9QbDRXa3A4MVZTQzBUdXp2T2k?oc=5",
+     "title": "Willie Nelson: 'Se você morrer, eu te mato', disse sua esposa"
+    }
+   ],
+   "ids": [
+    "1b9cdf84c0bd"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Willie Nelson: 'Se você morrer, eu te mato', disse sua esposa",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ea32156e4044",
    "title": "Anglo American stock faces tougher safeguards for nickel sale - ad-hoc-news.de",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUnZaOTRaV1JYZDFmMTYtb1JmZlNOc0lFaWp6QUtrM19GOVR5RGRCY0hKM2V2V2RxT3J5MVBxZkRVcXBKaEY4d0ZRLWhDSkhjVkNhUlB6QkUzcXA3N0YzcnlBbm43SWpQR3FDZ2N5dGFZNmMtdTFieW84aEVxVjhCYklYeW1IYUdoRWoyX2FHck0wd0FuenlSSG40SUZXZEVtRzBqNEhIME1aYzk3SXJMcjR0M1hIOGhTOExObXBCeUFWdw?oc=5",
@@ -10957,6 +10933,39 @@
    "prescore": 2.2,
    "headline": "Capim na lavoura vira aposta de expansão da Soesp",
    "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e5cff6f736d3",
+   "title": "Por que a Geração Z está protestando na Europa e no mundo? Veja vídeo",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUUkwRy12dllNUFUtTlpwcGltYTNXUVJSM002bzJtejlERXcwaDFoZW5Ma3RSeGhXcTJ3MkVES2J0b3JZaGFNWXEzTjlTaXNxaGhmNS1NWDhoajJ4ZVdKMllmbFFIMW1vRE8xQWRWOHFUcW9nczFPbU9mN0dCRzhDV2h1Q1dSQXhUVWQzSGRGeU1JRTNkMDg2RmhvNHB0ei1MbnNrdzF6el9CeHcwV3JCVVIyZU1NODdsN2c?oc=5",
+   "published": "2026-11-23T08:34:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUUkwRy12dllNUFUtTlpwcGltYTNXUVJSM002bzJtejlERXcwaDFoZW5Ma3RSeGhXcTJ3MkVES2J0b3JZaGFNWXEzTjlTaXNxaGhmNS1NWDhoajJ4ZVdKMllmbFFIMW1vRE8xQWRWOHFUcW9nczFPbU9mN0dCRzhDV2h1Q1dSQXhUVWQzSGRGeU1JRTNkMDg2RmhvNHB0ei1MbnNrdzF6el9CeHcwV3JCVVIyZU1NODdsN2c?oc=5",
+     "title": "Por que a Geração Z está protestando na Europa e no mundo? Veja vídeo"
+    }
+   ],
+   "ids": [
+    "e5cff6f736d3"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Por que a Geração Z está protestando na Europa e no mundo? Veja vídeo",
+   "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -11113,10 +11122,16 @@
      "source": "Estadão",
      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbnhydkJubXVLVUpfVDFHWGpaeVJ2U0o1MzdQamp5RktKQmVlMUdiMkRkdV9mOTVzQmxGWUgtRmhGR0steGhkUkpYaUswVkRpVjdONlpqeUktOGN6NzUtaUt3am5HOTdWN3dvMHkzcnZUWU9pRkhsVzlkc2E2X0JnbV9ZS09taGJlQkNrSGNkUUpYTW4wU3pBZ3NyQkxDY3FJUnZ3ZGNhM3pycFNKSEpGd9IBtgFBVV95cUxPbkEtOTFKQ21EQzE0SUZBUksxbEpkaE4zdzRXQUJ1NTl1REtRZU1fanlJaVRLak5WNXZpV2tGVzdZSzRBQUdld1pPem1EVXFiZkVzYTNnUnlISERKNE0yVGlnVDVoN1FacXBDUXc0ZW0xYXhkTjBfam1VNzk0RWdSSDRzSW5wRmtXOUJsZTE4TmQzZktrRFphRGQ0WTJUYUdVcFZkbFdxN2l1eEozc0Nod203ZjBBUQ?oc=5",
      "title": "Como as pequenas e médias empresas estão se adaptando ao fim da escala 6x1?"
+    },
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2k0M3RJVmtEcWk1bGp2enRicHhQa3ZaV3QzN3dvN3lEWG9JSVJQMkdXRkFJRG5zVkJoa3phRDh0RkxUUFdfanU3Z1FvSXRqRkxhVkY4MkI3RWRiSFB3MGtTSTc2ZTNhNmVEaktMQmxXa1NwTFhaeEE3eXE3ZXZPd3dyY21zZEtRbWJhaGtObzVrZnFHQWFleVEtRXUyX0F4S1d2N2MtN3pyWVdhZkJFUnExNjlRdUQ0d1dn?oc=5",
+     "title": "Como as PMEs estão se adaptando ao fim da escala 6x1"
     }
    ],
    "ids": [
-    "1a26ada6a3e8"
+    "1a26ada6a3e8",
+    "9b003a0e6861"
    ],
    "snippet": "",
    "prescore": 2.2,
@@ -11169,39 +11184,6 @@
    "ai": false
   },
   {
-   "id": "6bceece65351",
-   "title": "Opinião | Política europeia se parece cada vez mais com a Itália, mais à direita e mais desorganizada",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVjNlZzI5QWRnZVlDaXFpREhaWFFxd0t0cHVzVHBaVEkwd19ZZEJXbE93Nm4tVEk1YzBKNktNandUNWFsTTB0a19aRGw3em1UeWUxcXQzYmRlRzNja2xvWnJHbUgtRzA5TlR6VG5kalZydVgtX0VNMkhzWmFNdkxJU0MxSVBlWjdqUGdRZXhNdHhTV0IwMmQtVmpicXI2R2w5OHBpbUwwQS1naUhxbEloRi1wM1NIMzY2Rlo0d1pVeGUwQkdvZzZQQmo5dnY2bjJwWVdFRFNUTQ?oc=5",
-   "published": "2026-11-23T08:14:52+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVjNlZzI5QWRnZVlDaXFpREhaWFFxd0t0cHVzVHBaVEkwd19ZZEJXbE93Nm4tVEk1YzBKNktNandUNWFsTTB0a19aRGw3em1UeWUxcXQzYmRlRzNja2xvWnJHbUgtRzA5TlR6VG5kalZydVgtX0VNMkhzWmFNdkxJU0MxSVBlWjdqUGdRZXhNdHhTV0IwMmQtVmpicXI2R2w5OHBpbUwwQS1naUhxbEloRi1wM1NIMzY2Rlo0d1pVeGUwQkdvZzZQQmo5dnY2bjJwWVdFRFNUTQ?oc=5",
-     "title": "Opinião | Política europeia se parece cada vez mais com a Itália, mais à direita e mais desorganizada"
-    }
-   ],
-   "ids": [
-    "6bceece65351"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Opinião | Política europeia se parece cada vez mais com a Itália, mais à direita e mais desorganizada",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "6b881f20a44f",
    "title": "Q3 LatAm round-up: Brazil shutdown casts heavy shadow over operator results",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWtSby16SkJFV0g5OGxPSUJxTENvdGVBUGR4TXdjcGYtMDgyeEp6TFd4eDF4SWdmNHdpZXhTa2s3MHAtSm1uSlZpYW9hbHRmOWJSamdQUDdEWGVNaTVreVZGeVl0bi1VdmJMbEFIdGJKQlZZSGh2VFpQdFBDZS10UVd0dEI4VEtUajY4YmFiS2JhVHM5QTJxS3ZGOF9zUU4yRXc?oc=5",
@@ -11235,24 +11217,24 @@
    "ai": false
   },
   {
-   "id": "dc73a273df31",
-   "title": "Tarcísio decide manter Roberto Carneiro como substituto de Kassab na articulação política",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNXlGYzI3QjFzenJUaUg3d3IwZkI3US0wbE9GSktaZHk5RnlnblBDMEZBa3ZxRnFFV2N0LXNqVFByS180SXB3TlVxaDg4bkVpN2xRWVFjUzF4N1hLU3V4eGlPWU9PVmdDUnBvbEVZM04ycWhtNF8zTVJzcm1CelBZMHFaNl9XcWhKNnppZG03WlF4dkZ5RzVyRldTM0RxVjA2RlFTcjR2a21qejZHQndNQ3J0TkJCTkg4eWZIUHZNc0g5ODVQOE5jQjZfb1F5TXc?oc=5",
-   "published": "2026-11-23T07:55:53+00:00",
+   "id": "d84c48095771",
+   "title": "Tribunal aprova acordo de US$ 7,25 bi com Bayer por acusação de câncer ligado a herbicida",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVoxTElhTkdjTVNIemlhaFlSVXhEX0M5M3FXVkgxMkcyRnpKdGVUeWozVkxZZm1oOG5PUFFNeWwyZ2pSS2JkbHU4SlBQazRuZHo5SFJ5SlZHQ0FsWUhNMFhHYlRYYnFaT3pFQk11ak53Z3ZlSUU5WGxZXzZkamVQWFdVZldkYjAxaW1MQ1d6U2UwU0tWcFdxc2RXRWxoU3FiS0JXSHU5T3lZTjNCRnVpcUV6ZU9CRGZCVjZicW1RbmNoTXlDTXhmd3pPS0Q?oc=5",
+   "published": "2026-11-23T07:38:21+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNXlGYzI3QjFzenJUaUg3d3IwZkI3US0wbE9GSktaZHk5RnlnblBDMEZBa3ZxRnFFV2N0LXNqVFByS180SXB3TlVxaDg4bkVpN2xRWVFjUzF4N1hLU3V4eGlPWU9PVmdDUnBvbEVZM04ycWhtNF8zTVJzcm1CelBZMHFaNl9XcWhKNnppZG03WlF4dkZ5RzVyRldTM0RxVjA2RlFTcjR2a21qejZHQndNQ3J0TkJCTkg4eWZIUHZNc0g5ODVQOE5jQjZfb1F5TXc?oc=5",
-     "title": "Tarcísio decide manter Roberto Carneiro como substituto de Kassab na articulação política"
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVoxTElhTkdjTVNIemlhaFlSVXhEX0M5M3FXVkgxMkcyRnpKdGVUeWozVkxZZm1oOG5PUFFNeWwyZ2pSS2JkbHU4SlBQazRuZHo5SFJ5SlZHQ0FsWUhNMFhHYlRYYnFaT3pFQk11ak53Z3ZlSUU5WGxZXzZkamVQWFdVZldkYjAxaW1MQ1d6U2UwU0tWcFdxc2RXRWxoU3FiS0JXSHU5T3lZTjNCRnVpcUV6ZU9CRGZCVjZicW1RbmNoTXlDTXhmd3pPS0Q?oc=5",
+     "title": "Tribunal aprova acordo de US$ 7,25 bi com Bayer por acusação de câncer ligado a herbicida"
     }
    ],
    "ids": [
-    "dc73a273df31"
+    "d84c48095771"
    ],
    "snippet": "",
    "prescore": 2.2,
-   "headline": "Tarcísio decide manter Roberto Carneiro como substituto de Kassab na articulação política",
+   "headline": "Tribunal aprova acordo de US$ 7,25 bi com Bayer por acusação de câncer ligado a herbicida",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11466,6 +11448,72 @@
    "ai": false
   },
   {
+   "id": "d0019eccbd71",
+   "title": "Maksoud Plaza: hotel de luxo fechado em 2021 pode virar condomínio com 398 apartamentos residenciais",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTGJTUFdRaVlyZUppaENoSFFrYXYzLUU4VlFTT1BhaFpzRUFKR0JRUVd3Z0x5UWJUNEVTNXVCZmhpLUM5MjliZEtHQkRYeDdYb1l1RGc0b1B2X25ybld1c05ydGsxQzB0bEZGYS0ydS1ad09EY0ZLMWg5UjRRZGlkLWZwdHZMV3JhSUJReTB0MUFwM3YteTktSEJQcmxOQnh0LWVhaGpTd1pFQnQ2VHJNSUllcE9ibnZIb1BfOF81WVRtX0FiNXFUYnR5a0NKcU9TRWV4TFFNZHh6LU1STzZIcGxSY09sNVpK?oc=5",
+   "published": "2026-11-23T01:30:18+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTGJTUFdRaVlyZUppaENoSFFrYXYzLUU4VlFTT1BhaFpzRUFKR0JRUVd3Z0x5UWJUNEVTNXVCZmhpLUM5MjliZEtHQkRYeDdYb1l1RGc0b1B2X25ybld1c05ydGsxQzB0bEZGYS0ydS1ad09EY0ZLMWg5UjRRZGlkLWZwdHZMV3JhSUJReTB0MUFwM3YteTktSEJQcmxOQnh0LWVhaGpTd1pFQnQ2VHJNSUllcE9ibnZIb1BfOF81WVRtX0FiNXFUYnR5a0NKcU9TRWV4TFFNZHh6LU1STzZIcGxSY09sNVpK?oc=5",
+     "title": "Maksoud Plaza: hotel de luxo fechado em 2021 pode virar condomínio com 398 apartamentos residenciais"
+    }
+   ],
+   "ids": [
+    "d0019eccbd71"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Maksoud Plaza: hotel de luxo fechado em 2021 pode virar condomínio com 398 apartamentos residenciais",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "006159fb5563",
+   "title": "Ameaças, insultos, acordos: como Jensen Huang transformou a humilhação em rotina na Nvidia",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVm8yM1M0ZmhiTXc3MjRnYVhQSmMtRWRQZjBxMGE1YzBteDhreFc5blVoNnJqYTFWOW1fZ3ZOX0tvNjlEUzRHbGVDZWJpQ2pqQUJQVnpvd0E3VG9NREI4eEYxTWVZUUIxak5IbXZOYjdYN0RUWC1OQXNZeFJpRl9qV3pHMVRrNEdwMTRhcTVkSEt1dW5Xek9ZYl8wZHFLU1NpRnlkSHA2YTA1VDF1TWxQNzYzSUd5YnZWUnpSM093?oc=5",
+   "published": "2026-11-23T01:27:48+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVm8yM1M0ZmhiTXc3MjRnYVhQSmMtRWRQZjBxMGE1YzBteDhreFc5blVoNnJqYTFWOW1fZ3ZOX0tvNjlEUzRHbGVDZWJpQ2pqQUJQVnpvd0E3VG9NREI4eEYxTWVZUUIxak5IbXZOYjdYN0RUWC1OQXNZeFJpRl9qV3pHMVRrNEdwMTRhcTVkSEt1dW5Xek9ZYl8wZHFLU1NpRnlkSHA2YTA1VDF1TWxQNzYzSUd5YnZWUnpSM093?oc=5",
+     "title": "Ameaças, insultos, acordos: como Jensen Huang transformou a humilhação em rotina na Nvidia"
+    }
+   ],
+   "ids": [
+    "006159fb5563"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Ameaças, insultos, acordos: como Jensen Huang transformou a humilhação em rotina na Nvidia",
+   "category": "tech",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ca204f04f7ed",
    "title": "Rosinha anuncia fim de casamento com Anthony Garotinho",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTWw1d2JzS2pZOHFMNDNLOF9iNTB0Zld0WksydHlpUWN0Q2JicWs1ZHBoZmNNRDdyV0tyTEcwUXJ2ZkRTMzhqVUVNaHhpNEpzbFR2RnpoRkMyd1AxUzlKRVVQWmtqWHVoY0hsblh6Y0tNVUJuMEtZMTk3dFVjQkk4bnJUM0FMVWxnNTVMU19UY2szWlMxb3fSAZsBQVVfeXFMTzkwQ0xkdDg4TGRWSFdfb1V4bHdjNUJqQWFid1pxZWFEc3I1YkdrQUZxb1pOZGd6eFdBMjJhV0VJXzFIakdXRnluOTd1U3l4UTZVS2s3bzE4UWJiUlFCUEkwdTJ0T0ZnY3NIenpyZFZsRU1jRVRzRm9veEE4R3ZZWXp1dzMyLUlnc0FNZFV6eFdJRkhpQXQ4dmI4OEE?oc=5",
@@ -11590,72 +11638,6 @@
    "prescore": 2.2,
    "headline": "Tarcísio mantém metade do secretariado e só traz Salles de fora do governo; veja quem é quem",
    "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "495a41eceaf0",
-   "title": "Soberba, péssima conselheira",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWlN6NUI3dmtqZjZwMXI3SkF2d0hwM01RanNDRHVLLXExbmNhdkhYMmhlNjQ4bUpBNXFjZzFLWTdWSW14ejRxblZQSm1jU1lnRlJlbDVUcU9PNHhSSHpCQS1ucXNjNTBER29od0ZVNTJleFF6ekt0VFlOTlRNb1p3TzdkYllqZ9IBiwFBVV95cUxOaGNkdXFIb1NfLUgzb2sxVTRIYmxQUk5Pdml4ekF4d1BPLUNEQUF4aTFUT3lkX1RNaWNaNE16Z2dIcnJ2c0pnOWIwdVBMR29Fa24zcWhOT1UyRXlkdlcyNXMtZVZvcjN1TkNpSXZZajU5VWM1bDQyVGFla1dLX3FySDhVNnZ5OFM5cG5n?oc=5",
-   "published": "2026-11-22T21:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWlN6NUI3dmtqZjZwMXI3SkF2d0hwM01RanNDRHVLLXExbmNhdkhYMmhlNjQ4bUpBNXFjZzFLWTdWSW14ejRxblZQSm1jU1lnRlJlbDVUcU9PNHhSSHpCQS1ucXNjNTBER29od0ZVNTJleFF6ekt0VFlOTlRNb1p3TzdkYllqZ9IBiwFBVV95cUxOaGNkdXFIb1NfLUgzb2sxVTRIYmxQUk5Pdml4ekF4d1BPLUNEQUF4aTFUT3lkX1RNaWNaNE16Z2dIcnJ2c0pnOWIwdVBMR29Fa24zcWhOT1UyRXlkdlcyNXMtZVZvcjN1TkNpSXZZajU5VWM1bDQyVGFla1dLX3FySDhVNnZ5OFM5cG5n?oc=5",
-     "title": "Soberba, péssima conselheira"
-    }
-   ],
-   "ids": [
-    "495a41eceaf0"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Soberba, péssima conselheira",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "9fa5f423495d",
-   "title": "Usei o ‘Photoshop’ feito por IA e vi que o mercado de software precisa mudar para não morrer",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdmhIMEF2VkgzanVKc18xdzJGazRZS2VLa0dUTXpGVTRsbGwteHRyMnVUNk9jWXdaZjFIUlhzdFk4NEdFNU1FYjE3N1F6MXRudlVnQk9XdnBZTkZ4aUlMMUVvNVNGaGNJMWZKZ1FxT2E4NnIxeGNUckw1dHlYMENlc0dUQnpqRUJYT1Jlc0FjaG9VSXNWMjI1aHRuZmxpeW1fREppWnowckQ4VjlxeVNBeXBGdUJKREdKQzdwSXhNV0lXN0owYVhKTEJGZi1RYXhic3plN2lvS0tONnBq?oc=5",
-   "published": "2026-11-22T20:18:17+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdmhIMEF2VkgzanVKc18xdzJGazRZS2VLa0dUTXpGVTRsbGwteHRyMnVUNk9jWXdaZjFIUlhzdFk4NEdFNU1FYjE3N1F6MXRudlVnQk9XdnBZTkZ4aUlMMUVvNVNGaGNJMWZKZ1FxT2E4NnIxeGNUckw1dHlYMENlc0dUQnpqRUJYT1Jlc0FjaG9VSXNWMjI1aHRuZmxpeW1fREppWnowckQ4VjlxeVNBeXBGdUJKREdKQzdwSXhNV0lXN0owYVhKTEJGZi1RYXhic3plN2lvS0tONnBq?oc=5",
-     "title": "Usei o ‘Photoshop’ feito por IA e vi que o mercado de software precisa mudar para não morrer"
-    }
-   ],
-   "ids": [
-    "9fa5f423495d"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Usei o ‘Photoshop’ feito por IA e vi que o mercado de software precisa mudar para não morrer",
-   "category": "tech",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -12948,6 +12930,47 @@
    "ai": false
   },
   {
+   "id": "aab668bd13e8",
+   "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
+   "link": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
+   "published": "2026-11-23T13:18:14+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CNBC",
+     "link": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
+     "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech"
+    }
+   ],
+   "ids": [
+    "aab668bd13e8"
+   ],
+   "snippet": "U.S. Treasury yields rose Monday, partially unwinding price action seen at the end of last week, as stock futures pointed to a strong rebound on Wall Street.",
+   "prescore": 4.0,
+   "headline": "Juros dos Treasuries sobem com rebote dos futuros de ações; fala de Williams no radar",
+   "category": "internacional",
+   "importance": 5,
+   "importance_reason": "Movimento de juros americanos com fala do Fed no dia.",
+   "summary": "Os rendimentos dos Treasuries subiram na segunda, devolvendo parte do movimento da semana passada, com os futuros de ações apontando forte rebote. O mercado aguarda Williams, do Fed de Nova York.",
+   "involves": "Treasuries; Fed de Nova York; John Williams",
+   "interpretation": "Rotina de mercado, com a fala como gatilho.",
+   "impact": "Juros americanos mais altos pressionam emergentes.",
+   "sentiment": "neutro",
+   "entities": [
+    "Fed de Nova York",
+    "Williams",
+    "CNBC"
+   ],
+   "tags": [
+    "Treasuries",
+    "Fed",
+    "juros"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "77a0f60ba660",
    "title": "Oil Falls Further But Shipping Attacks Persist",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb1hKRlpLcGlCSl9MLWJ6b0FFMExxaExBUERROEFHaGZneE1OcEsxdFlic3hDUUhJaEY4M1NuRWNISGZjSXA4UXNDVzBXUmo1V2s0ZUNUSTltQ21oUWZuTFVpUGxQVFpWNlFuQWd6U3A2VDJHUmc2U1NxanNTQzFCQlViTldyZ1plZFFYbkY4LXo3cE5G?oc=5",
@@ -13064,39 +13087,6 @@
    "ai": true
   },
   {
-   "id": "38a81467fda7",
-   "title": "Dólar abre em alta e vai a R$ 5,98, atento à votação do pacote fiscal na Câmara",
-   "link": "https://g1.globo.com/economia/noticia/2026/11/23/dolar-ibovespa.ghtml",
-   "published": "2026-11-23T12:00:20+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/economia/noticia/2026/11/23/dolar-ibovespa.ghtml",
-     "title": "Dólar abre em alta e vai a R$ 5,98, atento à votação do pacote fiscal na Câmara"
-    }
-   ],
-   "ids": [
-    "38a81467fda7"
-   ],
-   "snippet": "Dólar abre em alta e se aproxima de R$ 6 O dólar operava em alta de 0,89% por volta das 10h desta segunda-feira (23), cotado a R$ 5,9870. Na máxima do dia, a moeda americana chegou a R$ 5,9910. Já as negociações do Ibovespa, principal índice da bolsa brasileira, começaram às 10h. O principal destaque da sessão é a votação da proposta de ajuste fiscal do governo na Câmara dos Deputados. O texto, já aprovado pelo Senado, prevê uma economia de até R$ 50 bilhões em 2027. Falas do presidente do Banco Central e do ministro da Fazenda também ficam no radar. No exterior, o foco fica com novos dados de",
-   "prescore": 6.8,
-   "headline": "Dólar abre em alta e vai a R$ 5,98, atento à votação do pacote fiscal na Câmara",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Dólar abre em alta e se aproxima de R$ 6 O dólar operava em alta de 0,89% por volta das 10h desta segunda-feira (23), cotado a R$ 5,9870. Na máxima do dia, a moeda americana chegou a R$ 5,9910. Já as negociações do Ibovespa, principal índice da bolsa brasileira, começaram às 10h. O principal destaque da sessão é a votação da proposta de ajuste fiscal do governo na Câmara dos Deputados. O texto, já",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "31a121a461d1",
    "title": "IQVIA Closes In on $1.1 Billion Takeover of UK Drug Services Group Quotient",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaFlhNGl2cWFCcFFFRjRBV0VWZEFaUzNiMHB2Uklmc1FfUW9BZG5nOTMzb2ZqcWRKVjViaEREOFNDS3dLOEFhb1FQeGNCSTRON0o5NGVmd25aTEJMQWJta1FELVFscVZ0QmtpckUyYUlhWGllX2FMSHZxVnEzWHBDT1hndWVDZWN5aXFzZ0JCcnhaa0ZvbExJZk0zUE80allEcW5QTkxUdTlzZmlGeUJKTFQxTzl6Sy05dzRRcnZzNkUwcVU?oc=5",
@@ -13161,7 +13151,7 @@
    "ids": [
     "b571fb69f7ef"
    ],
-   "snippet": "Presidente do BC, Gabriel Galípolo CLÁUDIO REIS/ENQUADRAR/ESTADÃO CONTEÚDO O presidente do Banco Central (BC), Gabriel Galípolo, afirmou nesta segunda-feira (23) que a prioridade para a instituição é o controle da inflação. \"Tentamos muito cumprir o nosso mandato, que é de estabilidade de preços, perseguindo os mandatos de menor relevância. [...] Mas está muito claro que se só couber um, o mandato é de estabilidade de preços. Esse é o nosso mandato principal\", afirmou Galípolo em evento promovido pelo Itaú. *Esta reportagem está em atualização. Agora no g1",
+   "snippet": "Presidente do BC, Gabriel Galípolo CLÁUDIO REIS/ENQUADRAR/ESTADÃO CONTEÚDO O presidente do Banco Central (BC), Gabriel Galípolo, afirmou nesta segunda-feira (23) que a prioridade para a instituição é o controle da inflação. \"Tentamos muito cumprir o nosso mandato, que é de estabilidade de preços, perseguindo os mandatos de menor relevância. [...] Mas está muito claro que se só couber um, o mandato é de estabilidade de preços. Esse é o nosso mandato principal\", afirmou Galípolo em evento promovido pelo Itaú. Na prática, isso significa que o BC pode manter ou elevar os juros básicos do país (Sel",
    "prescore": 5.8,
    "headline": "Controle da inflação é prioridade do Banco Central, diz Galípolo",
    "category": "mna",
@@ -13383,6 +13373,39 @@
    "ai": false
   },
   {
+   "id": "e485700d43dd",
+   "title": "Ibovespa abre em queda de 0,9%; BRST3 sobe 2,9% hoje na B3",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQN2pWbzg0TS1sREVXWVFzY2lGNkNJel9rSVlOdjMwTTlwVU9yM0c1aUJvbVV3ZWFfR2R6QmoyNzVOdUVUUUYybEk0VGtySlRQWnRlNE9IanZMUUwxNG1DUk5MaDl3dmhMazctWmpPU3VZVW5kdXBQdjcyS2ttTnl4WVlTT3ZaOE1LRm5nS3FPSUhZaGJwQ2c?oc=5",
+   "published": "2026-11-23T13:15:44+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Visno Invest",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQN2pWbzg0TS1sREVXWVFzY2lGNkNJel9rSVlOdjMwTTlwVU9yM0c1aUJvbVV3ZWFfR2R6QmoyNzVOdUVUUUYybEk0VGtySlRQWnRlNE9IanZMUUwxNG1DUk5MaDl3dmhMazctWmpPU3VZVW5kdXBQdjcyS2ttTnl4WVlTT3ZaOE1LRm5nS3FPSUhZaGJwQ2c?oc=5",
+     "title": "Ibovespa abre em queda de 0,9%; BRST3 sobe 2,9% hoje na B3"
+    }
+   ],
+   "ids": [
+    "e485700d43dd"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Ibovespa abre em queda de 0,9%; BRST3 sobe 2,9% hoje na B3",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b05126f058ea",
    "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
@@ -13438,6 +13461,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "2318cd982945",
+   "title": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
+   "link": "https://www.infomoney.com.br/mercados/ibovespa-cai-23112026-fiscal-e-com-ajustes-pos-feriado/",
+   "published": "2026-11-23T13:22:50+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/ibovespa-cai-23112026-fiscal-e-com-ajustes-pos-feriado/",
+     "title": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado"
+    }
+   ],
+   "ids": [
+    "2318cd982945"
+   ],
+   "snippet": "Sexta-feira, dia de feriado na B3, foi de forte aversão a risco para as bolsas mundiais The post Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado appeared first on InfoMoney .",
+   "prescore": 5.2,
+   "headline": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Sexta-feira, dia de feriado na B3, foi de forte aversão a risco para as bolsas mundiais The post Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13614,6 +13670,39 @@
    "ai": false
   },
   {
+   "id": "38a81467fda7",
+   "title": "Dólar chega a R$ 6 pela primeira vez desde abril de 2025; Ibovespa abre em queda",
+   "link": "https://g1.globo.com/economia/noticia/2026/11/23/dolar-ibovespa.ghtml",
+   "published": "2026-11-23T12:00:20+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/23/dolar-ibovespa.ghtml",
+     "title": "Dólar chega a R$ 6 pela primeira vez desde abril de 2025; Ibovespa abre em queda"
+    }
+   ],
+   "ids": [
+    "38a81467fda7"
+   ],
+   "snippet": "Dólar abre em alta e se aproxima de R$ 6 O dólar chegou a R$ 6 por volta das 10h desta segunda-feira (23), patamar que não atingia desde 9 de abril de 2025, quando alcançou R$ 6,0966 durante o pregão. Após atingir a marca, a moeda americana recuou e, às 10h17, era cotada a R$ 5,9935, ainda em alta de 1%. A última vez que o dólar fechou acima de R$ 6 foi em 8 de abril de 2025, quando encerrou o dia cotado a R$ 6,0109. Já o Ibovespa, principal índice da bolsa brasileira, abriu em queda de 0,61%, aos 165.366,52 pontos. O principal destaque da sessão é a votação da proposta de ajuste fiscal do gov",
+   "prescore": 4.8,
+   "headline": "Dólar chega a R$ 6 pela primeira vez desde abril de 2025; Ibovespa abre em queda",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Dólar abre em alta e se aproxima de R$ 6 O dólar chegou a R$ 6 por volta das 10h desta segunda-feira (23), patamar que não atingia desde 9 de abril de 2025, quando alcançou R$ 6,0966 durante o pregão. Após atingir a marca, a moeda americana recuou e, às 10h17, era cotada a R$ 5,9935, ainda em alta de 1%. A última vez que o dólar fechou acima de R$ 6 foi em 8 de abril de 2025, quando encerrou o dia",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "85b2a0627e8c",
    "title": "Mercado financeiro eleva estimativa de inflação em 2026 e 2027 e projeta corte menor dos juros no ano que vem",
    "link": "https://g1.globo.com/economia/noticia/2026/11/23/mercado-financeiro-eleva-estimativa-de-inflacao-em-2026-e-2027-e-projeta-corte-menor-dos-juros-no-ano-que-vem.ghtml",
@@ -13675,6 +13764,39 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Análise está agenda para esta segunda-feira; texto já passou pelo Senado The post Lula exonera ministro temporariamente para votação do ajuste fiscal na Câmara appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "811966b4eeb0",
+   "title": "Cenário atual é mais desafiador do que o do biênio 2025-2026, afirma Galípolo",
+   "link": "https://www.infomoney.com.br/economia/cenario-atual-e-mais-desafiador-do-que-o-do-bienio-2025-2026-afirma-galipolo/",
+   "published": "2026-11-23T13:20:57+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/economia/cenario-atual-e-mais-desafiador-do-que-o-do-bienio-2025-2026-afirma-galipolo/",
+     "title": "Cenário atual é mais desafiador do que o do biênio 2025-2026, afirma Galípolo"
+    }
+   ],
+   "ids": [
+    "811966b4eeb0"
+   ],
+   "snippet": "Em evento do Itaú, o presidente do BC diz que a questão de entender o que motiva a desancoragem adicional das expectativas de inflação ganhou um grau de importância diferente no ciclo atual The post Cenário atual é mais desafiador do que o do biênio 2025-2026, afirma Galípolo appeared first on InfoMoney .",
+   "prescore": 4.2,
+   "headline": "Cenário atual é mais desafiador do que o do biênio 2025-2026, afirma Galípolo",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Em evento do Itaú, o presidente do BC diz que a questão de entender o que motiva a desancoragem adicional das expectativas de inflação ganhou um grau de importância diferente no ciclo atual The post Cenário atual é mais desafiador do que o do biênio 2025-2026, afirma Galípolo appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13752,57 +13874,24 @@
    "ai": false
   },
   {
-   "id": "26d20eafea32",
-   "title": "Taxas de juros acompanham alta do dólar, com fiscal no foco",
-   "link": "https://www.infomoney.com.br/mercados/taxas-de-juros-acompanham-alta-do-dolar-com-fiscal-no-foco/",
-   "published": "2026-11-23T12:43:16+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/taxas-de-juros-acompanham-alta-do-dolar-com-fiscal-no-foco/",
-     "title": "Taxas de juros acompanham alta do dólar, com fiscal no foco"
-    }
-   ],
-   "ids": [
-    "26d20eafea32"
-   ],
-   "snippet": "Em live no sábado, 21, Lula criticou a pressão do mercado para que ele anuncie os novos ministros The post Taxas de juros acompanham alta do dólar, com fiscal no foco appeared first on InfoMoney .",
-   "prescore": 4.2,
-   "headline": "Taxas de juros acompanham alta do dólar, com fiscal no foco",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Em live no sábado, 21, Lula criticou a pressão do mercado para que ele anuncie os novos ministros The post Taxas de juros acompanham alta do dólar, com fiscal no foco appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "26f6b9815b49",
-   "title": "Mercado eleva projeção para inflação e dólar e prevê PIB menor em 2026",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQXN3SkdYMkVpNVBmSkx4YUZMYWFfMnFsZFV0UnN2cDZCSmZxV216TlM5LW5ocUptdVB0bllkdzc3c2lkWFBBVFF6ZkVQYW01UVV1dG52TktqVlp3OUVRSXVjdVdiNVVJY2JPNXpVTGdaSElEOWhFdmxWMjFyQnNsclc5S09Ec2R6NG5tQjlkMFB3NFJnU1hRS1RkNTdCcFJHczBn0gGoAUFVX3lxTE1KdTRYbUZSM3RRX2RXeTF6bTBmRHQyTjBnLWtOa1FsQ3lkMVd5VVlRRW5wdVVUS3VsVThMUDBROEZrT1pERm95UGk1dXl5OTZRRmxTbi1LelRSbzdUczI3dkpEanQ1WTlrbm9mSzVwSl9USjNtZEJ3cGZXRy1LS1VLWDM2ZWJkLW5BaVNjZENBR19UYXlsZTdtcVUyb0RkRkFqMVVNQWs0aQ?oc=5",
-   "published": "2026-11-23T12:35:00+00:00",
+   "id": "5a3d00db7306",
+   "title": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYjdEZ05aLUUtRk9NRzcwQ3BhTDJRNDBmXzV2Y1UyT0RXbGxYMzdZSWdCS3VLdTJ1MUFKZDc2ZHpYdExQTms2NEpTWVhaNnFpS1ZncDFGejJBU2dOWGNSOVhUSVVURUVjV2pxVXFMYVk3b0ctalhVX0lRQUxtd0tWaWtSR2syUUxxV1BLM0JxdjlhSmpPVzdfUWd5Ni3SAaIBQVVfeXFMT0pMX2N0SU14V0dHVU96Tk11NFhLdjVkaTBTMnU3ak1oeHk0cC1nbGJ1dFRUNHRRS1g5NTNSWW9aTExkbnRXT0UyckN4aTl6emhwV3FKWHA1elkwSUFYRm5reHZjRkRaZEZielZOLXpXSVZud1Fxbk9VSjJuQWs4d2FiemVuUWpWS05KVXh6NjhsY2dfUmFEQWtsQ1hxcVg1aWpB?oc=5",
+   "published": "2026-11-23T13:04:00+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQXN3SkdYMkVpNVBmSkx4YUZMYWFfMnFsZFV0UnN2cDZCSmZxV216TlM5LW5ocUptdVB0bllkdzc3c2lkWFBBVFF6ZkVQYW01UVV1dG52TktqVlp3OUVRSXVjdVdiNVVJY2JPNXpVTGdaSElEOWhFdmxWMjFyQnNsclc5S09Ec2R6NG5tQjlkMFB3NFJnU1hRS1RkNTdCcFJHczBn0gGoAUFVX3lxTE1KdTRYbUZSM3RRX2RXeTF6bTBmRHQyTjBnLWtOa1FsQ3lkMVd5VVlRRW5wdVVUS3VsVThMUDBROEZrT1pERm95UGk1dXl5OTZRRmxTbi1LelRSbzdUczI3dkpEanQ1WTlrbm9mSzVwSl9USjNtZEJ3cGZXRy1LS1VLWDM2ZWJkLW5BaVNjZENBR19UYXlsZTdtcVUyb0RkRkFqMVVNQWs0aQ?oc=5",
-     "title": "Mercado eleva projeção para inflação e dólar e prevê PIB menor em 2026"
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYjdEZ05aLUUtRk9NRzcwQ3BhTDJRNDBmXzV2Y1UyT0RXbGxYMzdZSWdCS3VLdTJ1MUFKZDc2ZHpYdExQTms2NEpTWVhaNnFpS1ZncDFGejJBU2dOWGNSOVhUSVVURUVjV2pxVXFMYVk3b0ctalhVX0lRQUxtd0tWaWtSR2syUUxxV1BLM0JxdjlhSmpPVzdfUWd5Ni3SAaIBQVVfeXFMT0pMX2N0SU14V0dHVU96Tk11NFhLdjVkaTBTMnU3ak1oeHk0cC1nbGJ1dFRUNHRRS1g5NTNSWW9aTExkbnRXT0UyckN4aTl6emhwV3FKWHA1elkwSUFYRm5reHZjRkRaZEZielZOLXpXSVZud1Fxbk9VSjJuQWs4d2FiemVuUWpWS05KVXh6NjhsY2dfUmFEQWtsQ1hxcVg1aWpB?oc=5",
+     "title": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal"
     }
    ],
    "ids": [
-    "26f6b9815b49"
+    "5a3d00db7306"
    ],
    "snippet": "",
    "prescore": 4.2,
-   "headline": "Mercado eleva projeção para inflação e dólar e prevê PIB menor em 2026",
+   "headline": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
    "category": "mercados",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13873,6 +13962,45 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Os economistas aumentaram a previsão da inflação deste ano para 5,15% após a semana marcada pela aprovação no Senado do ajuste fiscal proposto pelo governo e pela assinatura do decreto do fim da escala 6x1 . Leia mais (11/23/2026 - 09h01)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "16fa83c43ded",
+   "title": "CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUWZuQzdzSFNYa2cyQXFzUW9yaldoSDlRS2V2UXE4TGt6VDgtYVoxZk05cUU0b0VVNlVXRmJWb2JRMUtSSXpBTkdUTklQZmR3OElOUjZGa0VQNk5JZTR0Y1J6clp2SkJseHF1dGhpRzlmN2dRLU5sMDREX2NQMW5tdUNUU0tqeGZPUzEyTDhNRl9iUFlUU3VCVi14cWs5ejBGVXRHeFVFYzNERFNCMnNpb0J0NHBYTmFZ0gG-AUFVX3lxTFBLSUQ0MHJNdk1TeG1wcWtUVVByQXRia0JSb0JmRUtyNWx1RHVsQlBhLXFLS1FBeWhhMWhFZkhLMmgwYnVWRTVlRGtSQ1p0ZGx6WG4xbEZHR2phSkZVeU5uUnItd3dwaEFNOUE5NXNPN2JwR0tKa0tyMmFveFhmcXZJc1hrT2QyUWh3VHJHTFU1eVQ3YVdNRmtyMHhvOFZtSWs0WUV6R1ZYWFNYcF9QYVg1LU15VlF5Y3h5OENBR0E?oc=5",
+   "published": "2026-11-23T11:32:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUWZuQzdzSFNYa2cyQXFzUW9yaldoSDlRS2V2UXE4TGt6VDgtYVoxZk05cUU0b0VVNlVXRmJWb2JRMUtSSXpBTkdUTklQZmR3OElOUjZGa0VQNk5JZTR0Y1J6clp2SkJseHF1dGhpRzlmN2dRLU5sMDREX2NQMW5tdUNUU0tqeGZPUzEyTDhNRl9iUFlUU3VCVi14cWs5ejBGVXRHeFVFYzNERFNCMnNpb0J0NHBYTmFZ0gG-AUFVX3lxTFBLSUQ0MHJNdk1TeG1wcWtUVVByQXRia0JSb0JmRUtyNWx1RHVsQlBhLXFLS1FBeWhhMWhFZkhLMmgwYnVWRTVlRGtSQ1p0ZGx6WG4xbEZHR2phSkZVeU5uUnItd3dwaEFNOUE5NXNPN2JwR0tKa0tyMmFveFhmcXZJc1hrT2QyUWh3VHJHTFU1eVQ3YVdNRmtyMHhvOFZtSWs0WUV6R1ZYWFNYcF9QYVg1LU15VlF5Y3h5OENBR0E?oc=5",
+     "title": "CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa"
+    },
+    {
+     "source": "UOL Economia",
+     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNV2YxV2VQUnlpUmtMWDhKY21KTkd0Y1R6aGx4UHhZckVCQUlhTWtvN1k3bndtbE42NkNIekgtWm1GcjFjei1ZblJKRi1NdnhCeXQzZ3FFbGk2S3lfT19CYTZveko4elBXNWFkaXRkOUswTmxNaXVsSjFoM2drTlEzYVl1UlVaa0hOa3JWWHpJUEV3UzZvTndLOU1sNVVqMlRPOGR1TnJkUlg0emhsVjFhRDVGMXFOUEdJOG5DMHI5VnVkSkpIRV9VRVA5ZENSUGdET09Ja2kyVy01LTMxNTNqY3JKazB0c2RvUHczUWRB?oc=5",
+     "title": "CrowdStrike reverte prejuízo, supera projeções e anuncia acordo para aquisição de empresa"
+    }
+   ],
+   "ids": [
+    "16fa83c43ded",
+    "0173db7e98ab"
+   ],
+   "snippet": "",
+   "prescore": 3.9,
+   "headline": "CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13972,6 +14100,45 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "134874dcda41",
+   "title": "Ucrânia afunda navio de guerra russo na Líbia e conflito segue para além da Europa",
+   "link": "https://www.infomoney.com.br/mundo/ucrania-afunda-navio-de-guerra-russo-na-libia-e-conflito-segue-para-alem-da-europa/",
+   "published": "2026-11-23T11:32:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/ucrania-afunda-navio-de-guerra-russo-na-libia-e-conflito-segue-para-alem-da-europa/",
+     "title": "Ucrânia afunda navio de guerra russo na Líbia e conflito segue para além da Europa"
+    },
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/ucrania-afunda-navio-de-guerra-russo-de-r-1-bi-na-libia-veja-video.shtml",
+     "title": "Ucrânia afunda navio de guerra russo de R$ 1 bi na Líbia; veja vídeo"
+    }
+   ],
+   "ids": [
+    "134874dcda41",
+    "2c0fef530e3d"
+   ],
+   "snippet": "Ucrânia utilizou sete drones navais no ataque de domingo The post Ucrânia afunda navio de guerra russo na Líbia e conflito segue para além da Europa appeared first on InfoMoney .",
+   "prescore": 3.7,
+   "headline": "Ucrânia afunda navio de guerra russo na Líbia e conflito segue para além da Europa",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Ucrânia utilizou sete drones navais no ataque de domingo The post Ucrânia afunda navio de guerra russo na Líbia e conflito segue para além da Europa appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14154,28 +14321,28 @@
    "ai": false
   },
   {
-   "id": "1dcd0cecd17a",
-   "title": "Minério cai com enfraquecimento da demanda chinesa e piora das margens siderúrgicas",
-   "link": "https://www.infomoney.com.br/mercados/minerio-cai-com-enfraquecimento-da-demanda-chinesa-e-piora-das-margens-siderurgicas/",
-   "published": "2026-11-23T12:33:40+00:00",
+   "id": "095179ddb039",
+   "title": "Dólar hoje sobe e bate R$ 6 com tensão fiscal no retorno do feriado",
+   "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-23112026/",
+   "published": "2026-11-23T13:18:43+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/minerio-cai-com-enfraquecimento-da-demanda-chinesa-e-piora-das-margens-siderurgicas/",
-     "title": "Minério cai com enfraquecimento da demanda chinesa e piora das margens siderúrgicas"
+     "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-23112026/",
+     "title": "Dólar hoje sobe e bate R$ 6 com tensão fiscal no retorno do feriado"
     }
    ],
    "ids": [
-    "1dcd0cecd17a"
+    "095179ddb039"
    ],
-   "snippet": "O contrato de minério de ferro mais negociado na Bolsa de Mercadorias de Dalian na China fechou o pregão ⁠com ‌queda de 0,3%, a 654 iuanes (US$98,02) por tonelada The post Minério cai com enfraquecimento da demanda chinesa e piora das margens siderúrgicas appeared first on InfoMoney .",
+   "snippet": "Moeda americana avança em meio à preocupação dos investidores com as contas públicas e à expectativa pela votação do ajuste fiscal na Câmara The post Dólar hoje sobe e bate R$ 6 com tensão fiscal no retorno do feriado appeared first on InfoMoney .",
    "prescore": 3.2,
-   "headline": "Minério cai com enfraquecimento da demanda chinesa e piora das margens siderúrgicas",
+   "headline": "Dólar hoje sobe e bate R$ 6 com tensão fiscal no retorno do feriado",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O contrato de minério de ferro mais negociado na Bolsa de Mercadorias de Dalian na China fechou o pregão ⁠com ‌queda de 0,3%, a 654 iuanes (US$98,02) por tonelada The post Minério cai com enfraquecimento da demanda chinesa e piora das margens siderúrgicas appeared first on InfoMoney .",
+   "summary": "Moeda americana avança em meio à preocupação dos investidores com as contas públicas e à expectativa pela votação do ajuste fiscal na Câmara The post Dólar hoje sobe e bate R$ 6 com tensão fiscal no retorno do feriado appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14952,6 +15119,39 @@
    "ai": false
   },
   {
+   "id": "5b8480ea7bc8",
+   "title": "Macron proposes reviving plan to enshrine fiscal rules in French constitution",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSVZtZjVJZktZelVVRnhoMkptVmJPWXg3aDJJdndnTXNQZTctbzI2enZjUlpTN29XTTM0TlJJWHZpMTFuN051VVZMbFVoREV6OVowbFN0M0tLZmlTSjVWc3R0bGZNTGxFRmU1YTNiMTlEQURNME9JX2NTYkR3OVVfSGpSOGJGUTZmWkc1QzBNUGlfUEF6WHdqWjFoeG9CZTRicXVVWmRBQ0NJTTM1b2pYWS1kZ3pob1kwV0ExMHhfbw?oc=5",
+   "published": "2026-11-23T11:42:25+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSVZtZjVJZktZelVVRnhoMkptVmJPWXg3aDJJdndnTXNQZTctbzI2enZjUlpTN29XTTM0TlJJWHZpMTFuN051VVZMbFVoREV6OVowbFN0M0tLZmlTSjVWc3R0bGZNTGxFRmU1YTNiMTlEQURNME9JX2NTYkR3OVVfSGpSOGJGUTZmWkc1QzBNUGlfUEF6WHdqWjFoeG9CZTRicXVVWmRBQ0NJTTM1b2pYWS1kZ3pob1kwV0ExMHhfbw?oc=5",
+     "title": "Macron proposes reviving plan to enshrine fiscal rules in French constitution"
+    }
+   ],
+   "ids": [
+    "5b8480ea7bc8"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Macron proposes reviving plan to enshrine fiscal rules in French constitution",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "a093c642dc4b",
    "title": "CrowdStrike to Buy Zscaler in $44 Billion Stock Swap",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc25MX1dwRE9Lc3haUV91TTdFS3ZhT2VUTXgxTHNPdWpmQXowdE1OVHJWMC16YjFFRTRldy1xWWxvRUpNT3JwenpwZTFvd3ZHSVB3SmtPQU9IT2JjSC1BSTZ6aVdCRHhWZzVHaHNiWEZsYXExR2xiZFRaX1VZMHJscktPVHpzeWZSRGJOZ1JOUXV3bV9tRDVmMUZNR2pvdw?oc=5",
@@ -15003,6 +15203,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Pouncing on Anthropic Won’t Make You Rich",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "894c2857c175",
+   "title": "Volatility Dents Consumer Mood of Wealthier Americans",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUHVRVko0M1B3ZXJncm1mU2tnSVZZQ2dPcUFyMUl4Ri1sNDE4UlM5S3BCbnBZNV9vVGhHbjdDSk41TDM0dEg3bXZhVUp0ejQ1MEdhLXVRRDFXTEVYSk9TQzFWS3d0bUhkVTlVRkhnaVg1dkJvR2ZvT1FiQ0xmYWpDd19CRDlfNEVkdTJGbF9uSkxhbWprcXlTY2dfRjg4Q09KcVE?oc=5",
+   "published": "2026-11-23T11:25:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUHVRVko0M1B3ZXJncm1mU2tnSVZZQ2dPcUFyMUl4Ri1sNDE4UlM5S3BCbnBZNV9vVGhHbjdDSk41TDM0dEg3bXZhVUp0ejQ1MEdhLXVRRDFXTEVYSk9TQzFWS3d0bUhkVTlVRkhnaVg1dkJvR2ZvT1FiQ0xmYWpDd19CRDlfNEVkdTJGbF9uSkxhbWprcXlTY2dfRjg4Q09KcVE?oc=5",
+     "title": "Volatility Dents Consumer Mood of Wealthier Americans"
+    }
+   ],
+   "ids": [
+    "894c2857c175"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Volatility Dents Consumer Mood of Wealthier Americans",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -15259,45 +15492,6 @@
    "ai": false
   },
   {
-   "id": "16fa83c43ded",
-   "title": "CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUWZuQzdzSFNYa2cyQXFzUW9yaldoSDlRS2V2UXE4TGt6VDgtYVoxZk05cUU0b0VVNlVXRmJWb2JRMUtSSXpBTkdUTklQZmR3OElOUjZGa0VQNk5JZTR0Y1J6clp2SkJseHF1dGhpRzlmN2dRLU5sMDREX2NQMW5tdUNUU0tqeGZPUzEyTDhNRl9iUFlUU3VCVi14cWs5ejBGVXRHeFVFYzNERFNCMnNpb0J0NHBYTmFZ0gG-AUFVX3lxTFBLSUQ0MHJNdk1TeG1wcWtUVVByQXRia0JSb0JmRUtyNWx1RHVsQlBhLXFLS1FBeWhhMWhFZkhLMmgwYnVWRTVlRGtSQ1p0ZGx6WG4xbEZHR2phSkZVeU5uUnItd3dwaEFNOUE5NXNPN2JwR0tKa0tyMmFveFhmcXZJc1hrT2QyUWh3VHJHTFU1eVQ3YVdNRmtyMHhvOFZtSWs0WUV6R1ZYWFNYcF9QYVg1LU15VlF5Y3h5OENBR0E?oc=5",
-   "published": "2026-11-23T12:40:02+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUWZuQzdzSFNYa2cyQXFzUW9yaldoSDlRS2V2UXE4TGt6VDgtYVoxZk05cUU0b0VVNlVXRmJWb2JRMUtSSXpBTkdUTklQZmR3OElOUjZGa0VQNk5JZTR0Y1J6clp2SkJseHF1dGhpRzlmN2dRLU5sMDREX2NQMW5tdUNUU0tqeGZPUzEyTDhNRl9iUFlUU3VCVi14cWs5ejBGVXRHeFVFYzNERFNCMnNpb0J0NHBYTmFZ0gG-AUFVX3lxTFBLSUQ0MHJNdk1TeG1wcWtUVVByQXRia0JSb0JmRUtyNWx1RHVsQlBhLXFLS1FBeWhhMWhFZkhLMmgwYnVWRTVlRGtSQ1p0ZGx6WG4xbEZHR2phSkZVeU5uUnItd3dwaEFNOUE5NXNPN2JwR0tKa0tyMmFveFhmcXZJc1hrT2QyUWh3VHJHTFU1eVQ3YVdNRmtyMHhvOFZtSWs0WUV6R1ZYWFNYcF9QYVg1LU15VlF5Y3h5OENBR0E?oc=5",
-     "title": "CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa"
-    },
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/business/crowdstrike-reverte-prejuizo-supera-projecoes-e-anuncia-para-compra-de-empresa/",
-     "title": "CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa"
-    }
-   ],
-   "ids": [
-    "16fa83c43ded",
-    "24774c0bf111"
-   ],
-   "snippet": "A receita da companhia americana de cibersegurança avançou 28% na comparação anual, para US$ 1,58 bilhão The post CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa appeared first on InfoMoney .",
-   "prescore": 2.4,
-   "headline": "CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa",
-   "category": "mna",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A receita da companhia americana de cibersegurança avançou 28% na comparação anual, para US$ 1,58 bilhão The post CrowdStrike reverte prejuízo, supera projeções e anuncia para compra de empresa appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "5a904899b158",
    "title": "Compradores de empresas de tecnologia já perguntam quanto tempo levariam para construir o que a startup tem",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeGdUd3JfLXR6YmROeERQMWVQM053NTNId1RqRFJXR2JPTldFSHkwWlJscEhXTEhlamNtNmg4RkVuYnNLVGRBS1BsNGVuQi0zcmJIOVBta3NYOHEzT1hGNm9xM1Nyem9QTjlCaUhWQUxWdElXMWtfUnBiaTJvM3R5TTIzcVRSdG0zV0ZDZ3dzZmhrSXZVSVhqdQ?oc=5",
@@ -15436,39 +15630,6 @@
    "ai": false
   },
   {
-   "id": "6e2838c12fc8",
-   "title": "CEO da Global Net Lease compra US$ 200.221 em ações da empresa - Investing.com Brasil",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNWk1LTFXcG8wQTNpQnFaaGtNOUdaLWtnUENLQjFib3J3TWo3dEl4ZUUyQ3Y0MWFmcVBfQVg2TkN0bjRmQjJNcTI5ZlUzQkUxYThkc2N4OVVCQmpITmM0cmY0SHVQNTdmM01TNFZ0ckZEd2J0UXM1cWFIeVJwRFVYVGJUdVJYY0ZtbDdlWWloMlJGVVpLYklrbHU4LWM5UGJETnZza184bUxrT2FaQ2VBNTVURUx1aEl2NGIyWUJZYUxDZw?oc=5",
-   "published": "2026-11-23T11:50:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNWk1LTFXcG8wQTNpQnFaaGtNOUdaLWtnUENLQjFib3J3TWo3dEl4ZUUyQ3Y0MWFmcVBfQVg2TkN0bjRmQjJNcTI5ZlUzQkUxYThkc2N4OVVCQmpITmM0cmY0SHVQNTdmM01TNFZ0ckZEd2J0UXM1cWFIeVJwRFVYVGJUdVJYY0ZtbDdlWWloMlJGVVpLYklrbHU4LWM5UGJETnZza184bUxrT2FaQ2VBNTVURUx1aEl2NGIyWUJZYUxDZw?oc=5",
-     "title": "CEO da Global Net Lease compra US$ 200.221 em ações da empresa - Investing.com Brasil"
-    }
-   ],
-   "ids": [
-    "6e2838c12fc8"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "CEO da Global Net Lease compra US$ 200.221 em ações da empresa - Investing.com Brasil",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "dba5e90e3e0d",
    "title": "UK Steps Back from ‘Full-Fat Nationalization’ of Water Sector",
    "link": "https://www.bloomberg.com/news/articles/2026-11-23/uk-steps-back-from-full-fat-nationalization-of-water-sector",
@@ -15568,6 +15729,39 @@
    "ai": false
   },
   {
+   "id": "47be0dea49d0",
+   "title": "Kremlin desmente mídia alemã sobre lançamento de satélite russo com armamento nuclear",
+   "link": "https://www.infomoney.com.br/mundo/kremlin-desmente-midia-alema-sobre-lancamento-de-satelite-russo-com-armamento-nuclear/",
+   "published": "2026-11-23T13:22:29+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mundo/kremlin-desmente-midia-alema-sobre-lancamento-de-satelite-russo-com-armamento-nuclear/",
+     "title": "Kremlin desmente mídia alemã sobre lançamento de satélite russo com armamento nuclear"
+    }
+   ],
+   "ids": [
+    "47be0dea49d0"
+   ],
+   "snippet": "Grupo de veículos de comunicação alemães havia noticiado que Moscou planejava o lançamento ainda neste ano The post Kremlin desmente mídia alemã sobre lançamento de satélite russo com armamento nuclear appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Kremlin desmente mídia alemã sobre lançamento de satélite russo com armamento nuclear",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Grupo de veículos de comunicação alemães havia noticiado que Moscou planejava o lançamento ainda neste ano The post Kremlin desmente mídia alemã sobre lançamento de satélite russo com armamento nuclear appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "459d6b32e2c6",
    "title": "EUA: Exército quer usar medidas de emergência para detonar 5 toneladas de explosivos",
    "link": "https://www.infomoney.com.br/mundo/eua-exercito-quer-usar-medidas-de-emergencia-para-detonar-5-toneladas-de-explosivos/",
@@ -15634,78 +15828,17 @@
    "ai": false
   },
   {
-   "id": "fe1d8a7731b7",
-   "title": "Receita da Randoncorp cai quase 3% em outubro",
-   "link": "https://www.infomoney.com.br/mercados/receita-da-randoncorp-cai-quase-3-em-outubro/",
-   "published": "2026-11-23T12:33:08+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/receita-da-randoncorp-cai-quase-3-em-outubro/",
-     "title": "Receita da Randoncorp cai quase 3% em outubro"
-    }
-   ],
-   "ids": [
-    "fe1d8a7731b7"
-   ],
-   "snippet": "A receita da fabricante de implementos rodoviários cresceu 0,3%, para R$11,11 bilhões The post Receita da Randoncorp cai quase 3% em outubro appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Receita da Randoncorp cai quase 3% em outubro",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A receita da fabricante de implementos rodoviários cresceu 0,3%, para R$11,11 bilhões The post Receita da Randoncorp cai quase 3% em outubro appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "cf753c6c7e91",
-   "title": "Após temporal, SP tem desaparecido, casas interditadas e problemas nos trens",
-   "link": "https://www.infomoney.com.br/brasil/apos-temporal-sp-tem-desaparecido-casas-interditadas-e-problemas-nos-trens/",
-   "published": "2026-11-23T12:32:25+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/brasil/apos-temporal-sp-tem-desaparecido-casas-interditadas-e-problemas-nos-trens/",
-     "title": "Após temporal, SP tem desaparecido, casas interditadas e problemas nos trens"
-    }
-   ],
-   "ids": [
-    "cf753c6c7e91"
-   ],
-   "snippet": "Chuva provocou desabamentos, alagamentos e danos a hospital na Grande São Paulo; bombeiros retomaram buscas no Rio Tamanduateí nesta segunda-feira (23) The post Após temporal, SP tem desaparecido, casas interditadas e problemas nos trens appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Após temporal, SP tem desaparecido, casas interditadas e problemas nos trens",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Chuva provocou desabamentos, alagamentos e danos a hospital na Grande São Paulo; bombeiros retomaram buscas no Rio Tamanduateí nesta segunda-feira (23) The post Após temporal, SP tem desaparecido, casas interditadas e problemas nos trens appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "c0782b549aa9",
-   "title": "Pacote de ajuste fiscal do governo é um 'band-aid' para um problema grave",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMW52cnBhdXMydDduOUhiOXRLaGpBRGZIdWoyWUhYckphYlhFc1JpZnRleWZEVExoNjhsY2pzUF8xbEg0bnk3RGRTeEFMa1VPS09MTmNidnFta2loR2RnbU1DTk5lVENnUTcxY3R2V0JUNW5jckNtM3ZtU01sNldXZmNVV0dNekllcUZmRlQ2NVpEMXRsRFVBVmpGTXotazhHOVhIN083STE0ZVJraThSaA?oc=5",
+   "id": "212320929d31",
+   "title": "Pacote de ajuste fiscal do governo é um ‘band-aid’ para um problema grave",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWmpMT1RLY0E4WklqYmhyOVF6cUh3RGl1blNGaTVlaDlzQmtzdVFKa09IaTZNb2VyN1dVTjlOaElKTVh5Y01KWTdZY240eWlMZ0hGVUxNQkEzZkRkVV8tY25CU19CX2JEZzVZdkhuZjhuYzBsdXFlVDhYN0Z4aF9jTlJGVkt5RzVxMVpieVFmdzF4enlLbHA0VlJ3NUlPbzRLVnBXZlRlVdIBrAFBVV95cUxPSG94RFRPWUNJMVptWng2NWZ5RFFhS3NDbTJsMkc4SzFWM1J1VWdHM3FrWXltY2VnVDJwN1FBcVZiRnRHU3dyYnNGOVRyU2E0VGZfcklSdVJVcUtsbnNkQ2k3dEQwNzgtSGFHZXNkMTBvS25WcHlXZDNyWmc5dE9TN19ocFpaNmRYSDZqdllmQ3QtZU9ZaGdZNHVDbnFZT056QWhhMUJ6eHNhNjVZ?oc=5",
    "published": "2026-11-23T12:30:00+00:00",
    "region": "BR",
    "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWmpMT1RLY0E4WklqYmhyOVF6cUh3RGl1blNGaTVlaDlzQmtzdVFKa09IaTZNb2VyN1dVTjlOaElKTVh5Y01KWTdZY240eWlMZ0hGVUxNQkEzZkRkVV8tY25CU19CX2JEZzVZdkhuZjhuYzBsdXFlVDhYN0Z4aF9jTlJGVkt5RzVxMVpieVFmdzF4enlLbHA0VlJ3NUlPbzRLVnBXZlRlVdIBrAFBVV95cUxPSG94RFRPWUNJMVptWng2NWZ5RFFhS3NDbTJsMkc4SzFWM1J1VWdHM3FrWXltY2VnVDJwN1FBcVZiRnRHU3dyYnNGOVRyU2E0VGZfcklSdVJVcUtsbnNkQ2k3dEQwNzgtSGFHZXNkMTBvS25WcHlXZDNyWmc5dE9TN19ocFpaNmRYSDZqdllmQ3QtZU9ZaGdZNHVDbnFZT056QWhhMUJ6eHNhNjVZ?oc=5",
+     "title": "Pacote de ajuste fiscal do governo é um ‘band-aid’ para um problema grave"
+    },
     {
      "source": "Estadão",
      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMW52cnBhdXMydDduOUhiOXRLaGpBRGZIdWoyWUhYckphYlhFc1JpZnRleWZEVExoNjhsY2pzUF8xbEg0bnk3RGRTeEFMa1VPS09MTmNidnFta2loR2RnbU1DTk5lVENnUTcxY3R2V0JUNW5jckNtM3ZtU01sNldXZmNVV0dNekllcUZmRlQ2NVpEMXRsRFVBVmpGTXotazhHOVhIN083STE0ZVJraThSaA?oc=5",
@@ -15713,11 +15846,12 @@
     }
    ],
    "ids": [
+    "212320929d31",
     "c0782b549aa9"
    ],
    "snippet": "",
    "prescore": 2.2,
-   "headline": "Pacote de ajuste fiscal do governo é um 'band-aid' para um problema grave",
+   "headline": "Pacote de ajuste fiscal do governo é um ‘band-aid’ para um problema grave",
    "category": "macro",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -16327,39 +16461,6 @@
    "ai": false
   },
   {
-   "id": "2c0fef530e3d",
-   "title": "Ucrânia afunda navio de guerra russo de R$ 1 bi na Líbia; veja vídeo",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/ucrania-afunda-navio-de-guerra-russo-de-r-1-bi-na-libia-veja-video.shtml",
-   "published": "2026-11-23T11:32:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/ucrania-afunda-navio-de-guerra-russo-de-r-1-bi-na-libia-veja-video.shtml",
-     "title": "Ucrânia afunda navio de guerra russo de R$ 1 bi na Líbia; veja vídeo"
-    }
-   ],
-   "ids": [
-    "2c0fef530e3d"
-   ],
-   "snippet": "A Ucrânia promoveu um ataque inédito com sete drones marítimos contra um navio de guerra russo no Mediterrâneo, afundando a corveta Merkuri no porto de Benghazi, na Líbia . Uma segunda embarcação da Rússia , essa de carga, foi atingida nas proximidades. Leia mais (11/23/2026 - 08h32)",
-   "prescore": 1.8,
-   "headline": "Ucrânia afunda navio de guerra russo de R$ 1 bi na Líbia; veja vídeo",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Ucrânia promoveu um ataque inédito com sete drones marítimos contra um navio de guerra russo no Mediterrâneo, afundando a corveta Merkuri no porto de Benghazi, na Líbia . Uma segunda embarcação da Rússia , essa de carga, foi atingida nas proximidades. Leia mais (11/23/2026 - 08h32)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "cce3588b9b89",
    "title": "A alegria do CLT: a estratégia do TotalPass e uma semana mais curta de aversão a risco",
    "link": "https://www.seudinheiro.com/2026/colunistas/a-alegria-do-clt-a-estrategia-do-totalpass-e-uma-semana-mais-curta-de-aversao-a-risco-julw/",
@@ -16652,7 +16753,7 @@
    "id": "estadao",
    "name": "Estadão",
    "ok": true,
-   "count": 59,
+   "count": 60,
    "error": null
   },
   {
@@ -16771,7 +16872,7 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 16,
+   "count": 17,
    "error": null
   },
   {
@@ -16934,11 +17035,11 @@
   }
  ],
  "stats": {
-  "raw": 715,
+  "raw": 718,
   "unique": 389,
-  "unique_all": 686,
+  "unique_all": 687,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.9
+  "seconds": 3.1
  }
 }
