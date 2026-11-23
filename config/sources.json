@@ -128,7 +128,8 @@
       "name": "Bloomberg",
       "region": "INTL",
       "weight": 1.4,
-      "url": "https://feeds.bloomberg.com/deals/news.rss"
+      "gnews": "site:bloomberg.com (deal OR acquisition OR merger OR takeover OR buyout OR IPO OR stake)",
+      "lang": "en"
     },
     {
       "id": "bloomberg-politics",
