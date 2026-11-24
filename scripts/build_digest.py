@@ -22,11 +22,13 @@ import hashlib
 import html
 import json
 import os
+import random
 import re
 import sys
 import time
 import unicodedata
 import urllib.parse
+import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -184,8 +186,17 @@ def _fetch_source(src: dict, cutoff: datetime) -> tuple[dict, list[dict], str | 
             parsed = feedparser.parse(url.removeprefix("file://"))
         else:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/xml, */*"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                parsed = feedparser.parse(resp.read())
+            # o Google News devolve 429 (limite de pedidos) quando muitas buscas saem juntas: em 23/11 o Radar M&A
+            # Brasil ficou de fora por isso. 429 e erro 5xx são temporários: tenta de novo, com espera crescente
+            for attempt in range(3):
+                try:
+                    with urllib.request.urlopen(req, timeout=20) as resp:
+                        parsed = feedparser.parse(resp.read())
+                    break
+                except urllib.error.HTTPError as exc:
+                    if attempt == 2 or not (exc.code == 429 or exc.code >= 500):
+                        raise
+                    time.sleep(4 * (attempt + 1) + random.random() * 3)
     except Exception as exc:  # noqa: BLE001 - qualquer falha de rede não pode derrubar o digest
         return src, [], f"{type(exc).__name__}: {exc}"
 
