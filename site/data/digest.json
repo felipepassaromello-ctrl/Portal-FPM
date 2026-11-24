@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T10:11:21.034828-03:00",
+ "generated_at": "2026-11-24T10:19:05.252496-03:00",
  "date": "2026-11-24",
  "window": {
   "start": "2026-11-23T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-24T08:19:35.776128-03:00",
-  "analyzed": 235
+  "analyzed": 231
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -102,41 +102,42 @@
    "symbol": "^BVSP",
    "name": "Ibovespa",
    "unit": "pts",
-   "price": 164796.05,
-   "change_pct": -0.9496261480021251,
+   "price": 165108.55,
+   "change_pct": 0.18965872958081054,
    "spark": [
     169817.0,
     167538.0,
     166376.0,
-    164796.0
+    164796.0,
+    165108.546875
    ]
   },
   {
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.8653,
-   "change_pct": -1.390382563216186,
+   "price": 5.8589,
+   "change_pct": -1.4979817570503373,
    "spark": [
     5.776800155639648,
     5.881700038909912,
     5.933499813079834,
     5.947999954223633,
-    5.865300178527832
+    5.85890007019043
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.4333,
-   "change_pct": -1.3775096644369489,
+   "price": 6.428,
+   "change_pct": -1.4587586655372409,
    "spark": [
     6.345178127288818,
     6.447453022003174,
     6.501951217651367,
     6.523157119750977,
-    6.433300018310547
+    6.427999973297119
    ]
   },
   {
@@ -185,40 +186,40 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 87.04,
-   "change_pct": -2.6071418540614677,
+   "price": 86.93,
+   "change_pct": -2.730225659163188,
    "spark": [
     91.9800033569336,
     92.56999969482422,
     89.37000274658203,
-    87.04000091552734
+    86.93000030517578
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3636.7,
-   "change_pct": -0.4025826460233639,
+   "price": 3628.2,
+   "change_pct": -0.6353700762509962,
    "spark": [
     3685.5,
     3515.39990234375,
     3651.39990234375,
-    3636.699951171875
+    3628.199951171875
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 59976.87,
-   "change_pct": -2.0161648887058847,
+   "price": 60027.92,
+   "change_pct": -1.9327648249407914,
    "spark": [
     58798.98046875,
     60094.08984375,
     61161.91015625,
     61210.984375,
-    59976.87109375
+    60027.921875
    ]
   }
  ],
@@ -276,46 +277,6 @@
     "advisors": "não divulgado",
     "why": "Reestruturação de dívida ainda em negociação, com risco de RJ evitado no último momento. Assessores jurídicos e financeiros de credores e da companhia são os pontos de entrada."
    },
-   "ai": true
-  },
-  {
-   "id": "5213eb15e2f6",
-   "title": "Dólar fecha em alta pela 6ª sessão seguida a R$ 5,93, na maior cotação em 19 meses; Ibovespa cai",
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM0VnN2luWXRyOENEakYtN3lvYW4tMVdnRmctTElMN3NUdjhTVnNHdW9sdklIVExXVzdiYVBLWS1FYVJ1SUpXVnBVTllqaHZITHd6d2NSWTR4dndyc2ZKTmpwbVBsQXItSGZpUWRTQmpMZzdKUDE4eUMwZmxxeERJVjZNTUZGRTlMUGxQN0ROOTlKRTNsVFFJVzZWanlHNWZ0cEx4WndCc1JaVlcxX3lCb1B5cWYzV3BmanpMb3ZXaHpQNEgyRTkyaklLcDl6cFoySTNUUGlOb0N3OXFkcFg0Rm8xbEp1QVJoSEdBWThIQ0JMcTJp?oc=5",
-   "published": "2026-11-24T03:58:59+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM0VnN2luWXRyOENEakYtN3lvYW4tMVdnRmctTElMN3NUdjhTVnNHdW9sdklIVExXVzdiYVBLWS1FYVJ1SUpXVnBVTllqaHZITHd6d2NSWTR4dndyc2ZKTmpwbVBsQXItSGZpUWRTQmpMZzdKUDE4eUMwZmxxeERJVjZNTUZGRTlMUGxQN0ROOTlKRTNsVFFJVzZWanlHNWZ0cEx4WndCc1JaVlcxX3lCb1B5cWYzV3BmanpMb3ZXaHpQNEgyRTkyaklLcDl6cFoySTNUUGlOb0N3OXFkcFg0Rm8xbEp1QVJoSEdBWThIQ0JMcTJp?oc=5",
-     "title": "Dólar fecha em alta pela 6ª sessão seguida a R$ 5,93, na maior cotação em 19 meses; Ibovespa cai"
-    }
-   ],
-   "ids": [
-    "5213eb15e2f6"
-   ],
-   "snippet": "",
-   "prescore": 5.4,
-   "headline": "Dólar sobe pela 6ª sessão a R$ 5,93, maior cotação em 19 meses; Ibovespa cai",
-   "category": "mercados",
-   "importance": 9,
-   "importance_reason": "Câmbio no maior patamar em 19 meses muda o dia do mercado.",
-   "summary": "O dólar fechou em alta pela sexta sessão seguida, a R$ 5,93, a maior cotação em 19 meses, e o Ibovespa caiu.",
-   "involves": "Dólar; Ibovespa",
-   "interpretation": "Sequência de altas sugere pressão externa e fiscal sobre o câmbio.",
-   "impact": "Encarece dívida em dólar e importações; pesa sobre a bolsa e pode atrasar emissões e IPOs.",
-   "sentiment": "negativo",
-   "entities": [
-    "Ibovespa",
-    "Estadão"
-   ],
-   "tags": [
-    "dólar",
-    "câmbio",
-    "Ibovespa"
-   ],
-   "is_deal": false,
-   "deal": null,
    "ai": true
   },
   {
@@ -2147,6 +2108,52 @@
    "ai": true
   },
   {
+   "id": "f99d6ef1d1d7",
+   "title": "Nvidia Board Reinstates Jensen Huang as CEO",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMndVRkJQcnJ1a3ZXTmZpQ0t4d3dBUFFUUnRjS1htT0JxSHRYN1pSelFROGsxTkxHWV83R2h3Z1ViRUhuZS1XSVZSR3djWU5ITXJ2SThvN1oxVGRvMVdOZUk4WUU5bndkY1lBR0pOMmJrWG5OQjVQOVZaaXVfMG1FZG53Rjc5bXdW?oc=5",
+   "published": "2026-11-23T17:07:29+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMndVRkJQcnJ1a3ZXTmZpQ0t4d3dBUFFUUnRjS1htT0JxSHRYN1pSelFROGsxTkxHWV83R2h3Z1ViRUhuZS1XSVZSR3djWU5ITXJ2SThvN1oxVGRvMVdOZUk4WUU5bndkY1lBR0pOMmJrWG5OQjVQOVZaaXVfMG1FZG53Rjc5bXdW?oc=5",
+     "title": "Nvidia Board Reinstates Jensen Huang as CEO"
+    },
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWmN5QUFQSGxDSlRyR3gxZzZQczRFSC1SNjFtY0xtMkM4cjhwbnZndkNaSW5JVDNvVVYxMDdObkhjcVZIMVpVZ2FoVFdNZ3NGQU9hckJhZUx6M0dfMERucTNVZk9aamhpRU85TE96c1pEdGUyTlhyZVRMWlNPNUJ1TG1mLTJadHltZ1Utal85WFlTb09aTXF3MTBXNG1TZ0EzeHYzUFNadw?oc=5",
+     "title": "VIEW Nvidia reinstates Jensen Huang as CEO, igniting tech surge"
+    }
+   ],
+   "ids": [
+    "f99d6ef1d1d7",
+    "fc309036a7be"
+   ],
+   "snippet": "",
+   "prescore": 4.1,
+   "headline": "Conselho da Nvidia reconduz Jensen Huang como CEO",
+   "category": "tech",
+   "importance": 7,
+   "importance_reason": "Mudança de comando na maior empresa de IA move Wall Street.",
+   "summary": "O conselho da Nvidia reconduziu Jensen Huang ao cargo de CEO, o que impulsionou a alta de ações de tecnologia, segundo Reuters e WSJ.",
+   "involves": "Nvidia, Jensen Huang.",
+   "interpretation": "Reverte uma mudança de comando e reduz incerteza.",
+   "impact": "Positivo para Nvidia e tecnologia global.",
+   "sentiment": "positivo",
+   "entities": [
+    "Nvidia",
+    "Jensen Huang"
+   ],
+   "tags": [
+    "Nvidia",
+    "CEO",
+    "tecnologia"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "5b5a2db04132",
    "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
    "link": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
@@ -2919,46 +2926,6 @@
    "ai": true
   },
   {
-   "id": "f99d6ef1d1d7",
-   "title": "Nvidia Board Reinstates Jensen Huang as CEO",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMndVRkJQcnJ1a3ZXTmZpQ0t4d3dBUFFUUnRjS1htT0JxSHRYN1pSelFROGsxTkxHWV83R2h3Z1ViRUhuZS1XSVZSR3djWU5ITXJ2SThvN1oxVGRvMVdOZUk4WUU5bndkY1lBR0pOMmJrWG5OQjVQOVZaaXVfMG1FZG53Rjc5bXdW?oc=5",
-   "published": "2026-11-23T21:21:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMndVRkJQcnJ1a3ZXTmZpQ0t4d3dBUFFUUnRjS1htT0JxSHRYN1pSelFROGsxTkxHWV83R2h3Z1ViRUhuZS1XSVZSR3djWU5ITXJ2SThvN1oxVGRvMVdOZUk4WUU5bndkY1lBR0pOMmJrWG5OQjVQOVZaaXVfMG1FZG53Rjc5bXdW?oc=5",
-     "title": "Nvidia Board Reinstates Jensen Huang as CEO"
-    }
-   ],
-   "ids": [
-    "f99d6ef1d1d7"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Conselho da Nvidia reconduz Jensen Huang como CEO",
-   "category": "tech",
-   "importance": 7,
-   "importance_reason": "Mudança de comando na maior empresa de IA move Wall Street.",
-   "summary": "O conselho da Nvidia reconduziu Jensen Huang ao cargo de CEO, o que impulsionou a alta de ações de tecnologia, segundo Reuters e WSJ.",
-   "involves": "Nvidia, Jensen Huang.",
-   "interpretation": "Reverte uma mudança de comando e reduz incerteza.",
-   "impact": "Positivo para Nvidia e tecnologia global.",
-   "sentiment": "positivo",
-   "entities": [
-    "Nvidia",
-    "Jensen Huang"
-   ],
-   "tags": [
-    "Nvidia",
-    "CEO",
-    "tecnologia"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "e686b4e44a33",
    "title": "Sanofi to Acquire Insmed in Strategic Step that Strengthens Long-Term Future",
    "link": "https://www.prnewswire.com/news-releases/sanofi-to-acquire-insmed-in-strategic-step-that-strengthens-long-term-future-302949056.html",
@@ -3448,45 +3415,6 @@
     "PIB",
     "dólar",
     "inflação"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "a304a070cd9b",
-   "title": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYjdEZ05aLUUtRk9NRzcwQ3BhTDJRNDBmXzV2Y1UyT0RXbGxYMzdZSWdCS3VLdTJ1MUFKZDc2ZHpYdExQTms2NEpTWVhaNnFpS1ZncDFGejJBU2dOWGNSOVhUSVVURUVjV2pxVXFMYVk3b0ctalhVX0lRQUxtd0tWaWtSR2syUUxxV1BLM0JxdjlhSmpPVzdfUWd5Ni0?oc=5",
-   "published": "2026-11-23T13:04:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYjdEZ05aLUUtRk9NRzcwQ3BhTDJRNDBmXzV2Y1UyT0RXbGxYMzdZSWdCS3VLdTJ1MUFKZDc2ZHpYdExQTms2NEpTWVhaNnFpS1ZncDFGejJBU2dOWGNSOVhUSVVURUVjV2pxVXFMYVk3b0ctalhVX0lRQUxtd0tWaWtSR2syUUxxV1BLM0JxdjlhSmpPVzdfUWd5Ni0?oc=5",
-     "title": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal"
-    }
-   ],
-   "ids": [
-    "a304a070cd9b"
-   ],
-   "snippet": "",
-   "prescore": 4.2,
-   "headline": "Gestora vê dólar perto de R$ 8 e fuga de US$ 460 bi sem ajuste fiscal",
-   "category": "macro",
-   "importance": 6,
-   "importance_reason": "Cenário de estresse como argumento pelo ajuste fiscal.",
-   "summary": "Uma gestora projeta cenário sombrio no Brasil sem ajuste fiscal, com dólar perto de R$ 8 e fuga de US$ 460 bilhões, segundo o Estadão.",
-   "involves": "Gestora não identificada no título, dólar, ajuste fiscal.",
-   "interpretation": "Cenário extremo hipotético, usado para pressionar pela aprovação.",
-   "impact": "Reforça o risco cambial se o ajuste falhar.",
-   "sentiment": "negativo",
-   "entities": [
-    "Dólar"
-   ],
-   "tags": [
-    "fiscal",
-    "dólar",
-    "gestora"
    ],
    "is_deal": false,
    "deal": null,
@@ -4560,6 +4488,39 @@
    "is_deal": false,
    "deal": null,
    "ai": true
+  },
+  {
+   "id": "226915b3e40e",
+   "title": "Merger Remedies Brazil: CADE 2026 Deal Guide",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYzJDMm9heHZvSE83aUxyd2E5S1IxdWVLWFFULXR0WHJXTzRobElZZVJDMmYzRFdodEIyQWlCXzJOQmRNNm9sUXN0Q0dITDBjai1WUmdtNHRGTWRTVlJCR2ExS2hXNVNUZkZVTmtVZkdaSG8xQzk2WHgyeW9LU01UeXhNNlZENVJaaWhkYnBaQ0l0LWYxRVVwdg?oc=5",
+   "published": "2026-11-24T05:43:39+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Global Advisory Experts",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYzJDMm9heHZvSE83aUxyd2E5S1IxdWVLWFFULXR0WHJXTzRobElZZVJDMmYzRFdodEIyQWlCXzJOQmRNNm9sUXN0Q0dITDBjai1WUmdtNHRGTWRTVlJCR2ExS2hXNVNUZkZVTmtVZkdaSG8xQzk2WHgyeW9LU01UeXhNNlZENVJaaWhkYnBaQ0l0LWYxRVVwdg?oc=5",
+     "title": "Merger Remedies Brazil: CADE 2026 Deal Guide"
+    }
+   ],
+   "ids": [
+    "226915b3e40e"
+   ],
+   "snippet": "",
+   "prescore": 8.2,
+   "headline": "Merger Remedies Brazil: CADE 2026 Deal Guide",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
   },
   {
    "id": "a214e2f71f15",
@@ -6264,7 +6225,7 @@
    "id": "4b312a05e605",
    "title": "Exclusive | U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaDNLV040WjYxakp4SFpkLW1ZSWo1M3dJOE8xV3pZTmRDZ0EwclVFclVWQlZpazJiRTJwNWtCdmZGeTZkcmJqQUlWbVo5ME92cFZXSUFFOUkyUmp3SldOYmR5S2xXZUVHR1lSZXgzSEFWdHhkTm5HeEM4NVEyc0djNFNrTW9GTFh5WW1j?oc=5",
-   "published": "2026-11-24T00:06:01+00:00",
+   "published": "2026-11-24T00:00:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -6414,59 +6375,6 @@
    ],
    "is_deal": false,
    "deal": null,
-   "ai": true
-  },
-  {
-   "id": "b05126f058ea",
-   "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
-   "published": "2026-11-23T12:22:53+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "NeoTeo",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
-     "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão"
-    },
-    {
-     "source": "Agora Litoral",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeWZNUFdjVVhXSnpfcGxWemlOUXhjN1JZekNlMFNOeHB0eDNDWEU3WHFkeFp1WlZ4UVRjaFhScDJrVXlJcDRUNHF5X05iMzRBbHh6djdWbzRZYm1FNGFqUE1kU2dWSVJmZzFOcEVndUZFZ2ZGRjRJZGhqYl8zWFZZU0FSU1VzWC1OamxwTlBpZ0VIdDdSa3N3b19DRQ?oc=5",
-     "title": "Anthropic estreia na Nasdaq com o maior IPO da história"
-    }
-   ],
-   "ids": [
-    "b05126f058ea",
-    "4a9ea8d9f842"
-   ],
-   "snippet": "",
-   "prescore": 6.9,
-   "headline": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
-   "category": "tech",
-   "importance": 4,
-   "importance_reason": "IPO de grande empresa de IA, com detalhes ausentes.",
-   "summary": "O título trata da estreia da Anthropic na Nasdaq. O material não traz números.",
-   "involves": "Anthropic; Nasdaq",
-   "interpretation": "Os fatos não constam do texto disponível.",
-   "impact": "Indica apetite por IA no mercado.",
-   "sentiment": "neutro",
-   "entities": [
-    "Anthropic",
-    "Nasdaq"
-   ],
-   "tags": [
-    "IPO",
-    "Anthropic"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "IPO",
-    "buyer": "",
-    "target": "Anthropic",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Tecnologia / IA",
-    "advisors": "não divulgado"
-   },
    "ai": true
   },
   {
@@ -6642,6 +6550,53 @@
    ],
    "is_deal": false,
    "deal": null,
+   "ai": true
+  },
+  {
+   "id": "b05126f058ea",
+   "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
+   "published": "2026-11-23T12:22:53+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "NeoTeo",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
+     "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão"
+    }
+   ],
+   "ids": [
+    "b05126f058ea"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
+   "category": "tech",
+   "importance": 4,
+   "importance_reason": "IPO de grande empresa de IA, com detalhes ausentes.",
+   "summary": "O título trata da estreia da Anthropic na Nasdaq. O material não traz números.",
+   "involves": "Anthropic; Nasdaq",
+   "interpretation": "Os fatos não constam do texto disponível.",
+   "impact": "Indica apetite por IA no mercado.",
+   "sentiment": "neutro",
+   "entities": [
+    "Anthropic",
+    "Nasdaq"
+   ],
+   "tags": [
+    "IPO",
+    "Anthropic"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "",
+    "target": "Anthropic",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Tecnologia / IA",
+    "advisors": "não divulgado"
+   },
    "ai": true
   },
   {
@@ -7262,47 +7217,6 @@
     "Senado",
     "emendas",
     "Alcolumbre"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "0bc91310af43",
-   "title": "Malaysia Tells Data Centers to Cut Off Firms on US Blacklist",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU1pha3VFRmh0T3p4N2VwU1VqV1pwai1Sbmw2R2hUZTVZbHpEVHJsY0hFM1pBTzFIRUQzOHhfM25TOTZNTU9YNDVaT1RxVnlhRjNoMXFnVmxubmNidHBNUnA1UUNMYmlPSEFmZW1KeF8yUDZPblJ2Sk9rZDNBSUpiSXNzUnQ0R2RNc2FGMFdDNmkyc1d6eldibUpxLTRUaWp4MGVjY1dqWlVacVJocWYxRA?oc=5",
-   "published": "2026-11-24T04:59:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU1pha3VFRmh0T3p4N2VwU1VqV1pwai1Sbmw2R2hUZTVZbHpEVHJsY0hFM1pBTzFIRUQzOHhfM25TOTZNTU9YNDVaT1RxVnlhRjNoMXFnVmxubmNidHBNUnA1UUNMYmlPSEFmZW1KeF8yUDZPblJ2Sk9rZDNBSUpiSXNzUnQ0R2RNc2FGMFdDNmkyc1d6eldibUpxLTRUaWp4MGVjY1dqWlVacVJocWYxRA?oc=5",
-     "title": "Malaysia Tells Data Centers to Cut Off Firms on US Blacklist"
-    }
-   ],
-   "ids": [
-    "0bc91310af43"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Malásia manda data centers cortarem empresas na lista negra dos EUA",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Reflete o aperto dos controles de exportação dos EUA, com efeito em tech e geopolítica.",
-   "summary": "A Malásia mandou data centers cortarem relações com empresas na lista negra dos EUA, segundo a Bloomberg.",
-   "involves": "Malásia, data centers, lista negra dos EUA",
-   "interpretation": "Alinhamento da Malásia aos EUA sobre acesso a chips e computação.",
-   "impact": "Afeta provedores de nuvem chineses na Ásia.",
-   "sentiment": "misto",
-   "entities": [
-    "Malásia",
-    "EUA"
-   ],
-   "tags": [
-    "Malásia",
-    "data centers",
-    "EUA",
-    "China"
    ],
    "is_deal": false,
    "deal": null,
@@ -8087,6 +8001,39 @@
    "ai": false
   },
   {
+   "id": "8a3fee47fc50",
+   "title": "Ibovespa sobe na abertura com medidas fiscais no radar; Petrobras recua",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdjNmSWNSdm0zdk1Ua29GbjlaMTZ2eFNjUU9USWdQY3g0U0dSLS0xTG1UZDNuNXNBc2xuQlhYc1pqbTlpbkZYeVlzNnFmejVIdDU4Z2NEX1NpLTFfM1BoUElsdDF5a3lDRTJjbVRmVlM1N2lJWUE5dFNmYmtiSGdKLTJSTjQxSzFON2cydVFjNDk1ZGNpd3BZcXFXem1jRGVUMmlhMkxvS2h3SUZ1MERKMlBYV1dJd3FSVFFJ?oc=5",
+   "published": "2026-11-24T08:10:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Portal do Holanda",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdjNmSWNSdm0zdk1Ua29GbjlaMTZ2eFNjUU9USWdQY3g0U0dSLS0xTG1UZDNuNXNBc2xuQlhYc1pqbTlpbkZYeVlzNnFmejVIdDU4Z2NEX1NpLTFfM1BoUElsdDF5a3lDRTJjbVRmVlM1N2lJWUE5dFNmYmtiSGdKLTJSTjQxSzFON2cydVFjNDk1ZGNpd3BZcXFXem1jRGVUMmlhMkxvS2h3SUZ1MERKMlBYV1dJd3FSVFFJ?oc=5",
+     "title": "Ibovespa sobe na abertura com medidas fiscais no radar; Petrobras recua"
+    }
+   ],
+   "ids": [
+    "8a3fee47fc50"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Ibovespa sobe na abertura com medidas fiscais no radar; Petrobras recua",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ac3078e6dcc7",
    "title": "Se o capital já é líquido, para que serve o IPO?",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNc0Nza0VKQUpyYlU3bTJQbTdGYkV4aFBHWWdMdUxWckV5TFhNd0lRVzdfZTZJTVVqTVpZRml4eDNzNmE1X01HeHkwX0hhbDJ6LXdCRFpvYmVodHZnQmNyZTctaWtjbElnSGJ1cm92RkNTQVlXbEZDZk93REtncUdZYnAtYUlKUFhlTURVR0pHSWpRUVBjT2tvTjVtbkYxUXVN?oc=5",
@@ -8121,7 +8068,7 @@
   },
   {
    "id": "647b00aade81",
-   "title": "Criminal Due Diligence Brazil: 2026 M&A Guide",
+   "title": "Criminal Due Diligence Brazil: A 2026 Playbook for M&A Buyers and Sellers",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNURBdE1paWJPZVM4ekYwY3NCaXliN1lhWV9MTUlnaUlXdkhTX1dvdnFfSDVualVGZjh1SDFjZDZ5ZTNyWTVtVGMzLUtuQVd5WExVbV90MkQzSHB6aU4tYmFDb3ZRSEpuQlQ0ZUs4YnFPbjZvaXZCNUI1RmZCOUx3YnJBS21yUGdhZUpEbUxRX3JRdjMxdUxiTA?oc=5",
    "published": "2026-11-24T09:23:05+00:00",
    "region": "INTL",
@@ -8129,7 +8076,7 @@
     {
      "source": "Global Advisory Experts",
      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNURBdE1paWJPZVM4ekYwY3NCaXliN1lhWV9MTUlnaUlXdkhTX1dvdnFfSDVualVGZjh1SDFjZDZ5ZTNyWTVtVGMzLUtuQVd5WExVbV90MkQzSHB6aU4tYmFDb3ZRSEpuQlQ0ZUs4YnFPbjZvaXZCNUI1RmZCOUx3YnJBS21yUGdhZUpEbUxRX3JRdjMxdUxiTA?oc=5",
-     "title": "Criminal Due Diligence Brazil: 2026 M&A Guide"
+     "title": "Criminal Due Diligence Brazil: A 2026 Playbook for M&A Buyers and Sellers"
     }
    ],
    "ids": [
@@ -8137,7 +8084,7 @@
    ],
    "snippet": "",
    "prescore": 5.2,
-   "headline": "Criminal Due Diligence Brazil: 2026 M&A Guide",
+   "headline": "Criminal Due Diligence Brazil: A 2026 Playbook for M&A Buyers and Sellers",
    "category": "internacional",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -8251,6 +8198,39 @@
    "snippet": "",
    "prescore": 4.4,
    "headline": "Ibovespa fecha em queda com Focus e ajuste fiscal no radar",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5a3d00db7306",
+   "title": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYjdEZ05aLUUtRk9NRzcwQ3BhTDJRNDBmXzV2Y1UyT0RXbGxYMzdZSWdCS3VLdTJ1MUFKZDc2ZHpYdExQTms2NEpTWVhaNnFpS1ZncDFGejJBU2dOWGNSOVhUSVVURUVjV2pxVXFMYVk3b0ctalhVX0lRQUxtd0tWaWtSR2syUUxxV1BLM0JxdjlhSmpPVzdfUWd5Ni3SAaIBQVVfeXFMT0pMX2N0SU14V0dHVU96Tk11NFhLdjVkaTBTMnU3ak1oeHk0cC1nbGJ1dFRUNHRRS1g5NTNSWW9aTExkbnRXT0UyckN4aTl6emhwV3FKWHA1elkwSUFYRm5reHZjRkRaZEZielZOLXpXSVZud1Fxbk9VSjJuQWs4d2FiemVuUWpWS05KVXh6NjhsY2dfUmFEQWtsQ1hxcVg1aWpB?oc=5",
+   "published": "2026-11-23T13:04:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYjdEZ05aLUUtRk9NRzcwQ3BhTDJRNDBmXzV2Y1UyT0RXbGxYMzdZSWdCS3VLdTJ1MUFKZDc2ZHpYdExQTms2NEpTWVhaNnFpS1ZncDFGejJBU2dOWGNSOVhUSVVURUVjV2pxVXFMYVk3b0ctalhVX0lRQUxtd0tWaWtSR2syUUxxV1BLM0JxdjlhSmpPVzdfUWd5Ni3SAaIBQVVfeXFMT0pMX2N0SU14V0dHVU96Tk11NFhLdjVkaTBTMnU3ak1oeHk0cC1nbGJ1dFRUNHRRS1g5NTNSWW9aTExkbnRXT0UyckN4aTl6emhwV3FKWHA1elkwSUFYRm5reHZjRkRaZEZielZOLXpXSVZud1Fxbk9VSjJuQWs4d2FiemVuUWpWS05KVXh6NjhsY2dfUmFEQWtsQ1hxcVg1aWpB?oc=5",
+     "title": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal"
+    }
+   ],
+   "ids": [
+    "5a3d00db7306"
+   ],
+   "snippet": "",
+   "prescore": 4.2,
+   "headline": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
    "category": "mercados",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -9227,46 +9207,6 @@
    "ai": true
   },
   {
-   "id": "980d5b5443bc",
-   "title": "Britain bought fake C4 explosives for Ukraine",
-   "link": "https://www.ft.com/content/b5873050-2b90-4889-bbf6-902234e51e9f?syn-25a6b1a6=1",
-   "published": "2026-11-24T05:00:07+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/b5873050-2b90-4889-bbf6-902234e51e9f?syn-25a6b1a6=1",
-     "title": "Britain bought fake C4 explosives for Ukraine"
-    }
-   ],
-   "ids": [
-    "980d5b5443bc"
-   ],
-   "snippet": "Flagship UK procurement unit paid a part-time US police officer for tonnes of plastic explosives with no detectable RDX, the main ingredient in military C4",
-   "prescore": 2.6,
-   "headline": "Reino Unido comprou falso explosivo C4 para a Ucrânia",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Escândalo de compras de defesa no Reino Unido, com efeito de mercado limitado.",
-   "summary": "Segundo o FT, a unidade de compras do Reino Unido pagou a um policial americano de meio período por toneladas de explosivo plástico sem RDX detectável.",
-   "involves": "Reino Unido, Ucrânia, C4, RDX",
-   "interpretation": "Falha grave em governança de compras de defesa.",
-   "impact": "Dano reputacional ao governo britânico.",
-   "sentiment": "negativo",
-   "entities": [
-    "Reino Unido",
-    "Ucrânia"
-   ],
-   "tags": [
-    "defesa",
-    "Ucrânia",
-    "compras"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "34658ca9d982",
    "title": "Indonesia charges ex-police chief with treason aimed at undermining president, official says",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN0dLbGNNdU8ta2dYb2YtNDVVSjJkTDJzMGVFYS1rTzNackFDWl9HSnBfNjVESnVYM0NYdnBXTlZ5X0ZSWm1KNDl6QjVNZTEtYjhxdFIwTlRYb0ViWWdPZnZqVGhQR3FsNGV6ZGtiWUpxVWkteHVYUUZhWjZXYXl5V1VlQ3Q0Tk5kaW15N3VxZUlXaFpsUk5IandmWnlCdnhkT2RKVVJLa2lERFdpclFSTTAxbGtOYTVQQWU0cUIwckZxS01NcWU0Yw?oc=5",
@@ -9613,39 +9553,6 @@
    "prescore": 3.8,
    "headline": "Australia Aims to Sign Another Deal to Block China in Pacific",
    "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f0f80e23835a",
-   "title": "O que explica o dólar saltar de R$ 5 para R$ 6 em um mês?",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
-   "published": "2026-11-23T15:16:02+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
-     "title": "O que explica o dólar saltar de R$ 5 para R$ 6 em um mês?"
-    }
-   ],
-   "ids": [
-    "f0f80e23835a"
-   ],
-   "snippet": "",
-   "prescore": 3.8,
-   "headline": "O que explica o dólar saltar de R$ 5 para R$ 6 em um mês?",
-   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -10165,39 +10072,6 @@
    "ai": false
   },
   {
-   "id": "29bc6e73d1a8",
-   "title": "Análise: Galípolo sinaliza que juro é a principal resposta às pressões cambiais",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWFdsTlM4Y2tLLTRVWDZkbWxOQ1Z5dFJXUW5FcExLRVNhVFRjZHNWN096QWlGeFQtYS1BQ0VBYl9rQ0E1aU5SUjhBUlVLM3dEYVZGTmFZMGNKdU44M2d4RngwLVpKWHFEU1Fvd2oySzlMWlIwY05fZ2p6ampUTlctT2dTY0RibGs5U2NfNzhJNDdHQjdOWWYtWTY5SmlKOF9Vc3kzUlYtYmlMZ3BMY2ZDQzN6UkxtWFM3Y2UyTjlxYWVLSjRGNGtMRjlHNE4talZIS2fSAeABQVVfeXFMTmJEVk84Z0dJeS1fdkRaNTFscmpsazlqMW5VUmZ0eFpqaDhNaDVYOHRkZ3BfNzI0MF91N3BrQWtXVDJkalQ2ejQ0bjc4OGlzVXVCTEpRTGZOYUVJQ2dUdkRnSC04T0pNQzFIbE8yOTBaaXNXeFhzTnJWZGduamx1ZkxUa28zNmdEbzljUTRBU2FyM293WHk4VW9nYkJxMXladjZBUDFYZFliV0VCUDViY09tZVdTVG9taHRER3VoTkl2Q3pLcWJVazZPRVhLNGVNNWpfZEpNMDFMd01zcWtIdlY?oc=5",
-   "published": "2026-11-24T01:48:33+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWFdsTlM4Y2tLLTRVWDZkbWxOQ1Z5dFJXUW5FcExLRVNhVFRjZHNWN096QWlGeFQtYS1BQ0VBYl9rQ0E1aU5SUjhBUlVLM3dEYVZGTmFZMGNKdU44M2d4RngwLVpKWHFEU1Fvd2oySzlMWlIwY05fZ2p6ampUTlctT2dTY0RibGs5U2NfNzhJNDdHQjdOWWYtWTY5SmlKOF9Vc3kzUlYtYmlMZ3BMY2ZDQzN6UkxtWFM3Y2UyTjlxYWVLSjRGNGtMRjlHNE4talZIS2fSAeABQVVfeXFMTmJEVk84Z0dJeS1fdkRaNTFscmpsazlqMW5VUmZ0eFpqaDhNaDVYOHRkZ3BfNzI0MF91N3BrQWtXVDJkalQ2ejQ0bjc4OGlzVXVCTEpRTGZOYUVJQ2dUdkRnSC04T0pNQzFIbE8yOTBaaXNXeFhzTnJWZGduamx1ZkxUa28zNmdEbzljUTRBU2FyM293WHk4VW9nYkJxMXladjZBUDFYZFliV0VCUDViY09tZVdTVG9taHRER3VoTkl2Q3pLcWJVazZPRVhLNGVNNWpfZEpNMDFMd01zcWtIdlY?oc=5",
-     "title": "Análise: Galípolo sinaliza que juro é a principal resposta às pressões cambiais"
-    }
-   ],
-   "ids": [
-    "29bc6e73d1a8"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Análise: Galípolo sinaliza que juro é a principal resposta às pressões cambiais",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "b8415c436394",
    "title": "‘National Treasure’ Jensen Huang and the Rise of the Too-Big-to-Fail CEO",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa1J4RnQ3QS1xUmRHZjdIdk84Zm1KM0ZGZ2E5Z1VuVFRQYWlQMThSeFdlWEFjZTVHWmpFT21kX0lTTEpTQlppRjliazBNNmt3a3B5TEx5LWg4REtMSU9xT05BNzlyTkRGZnhheDVJcHd2V09rTmRTWWVwUjdqYWhnS3BNTWc4czBkX3NPT1V2c1FEblFZZUJhZzlDWQ?oc=5",
@@ -10303,39 +10177,6 @@
    "is_deal": false,
    "deal": null,
    "ai": true
-  },
-  {
-   "id": "146a1c2717ae",
-   "title": "Como calcular o décimo terceiro salário? Primeira parcela cai até segunda",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYjExc3NXZVBjNjk5Ylp3WnU0a1RvdGlYZXRYT2JTRkFuUDhaUTRJSUxIUGNvbUMyWDNDejR3T0J1aFRVOGVsdGo3aDREWjd2cm0zWG5na20wT2NubFZwMnhFYUVaeElvTG5fWEhiaFBsLUtNUWt2TEhYdm5RNFhTZTVfLS12cXlDdGJ5T2J1Y083OWRGLXVZVHpZLWhOcHBaeU05RU5UZll3anZaOENvMnRRUUpHb0dkUnhIdmNTX2hsdEVBS3pxUTFqcTfSAdsBQVVfeXFMUG5GVzFNUGxoU0ZsS0RJd3pEdkp6bkNQWjRYTUZyUTMyUnNwRkQtS1ZCRjQyaUR5aGN3R0N6TmVXT0stWmRzVE9Fa09SaGRkaW5GOFpPWDZxaFo2WHB0RDkwNlZmZFRFRWNBem5weF82Q1Vyb1RFY2o5NmI0c3p6MnNfVjF1STBCeV9XSnd3YU5sdTVBVjhlcmpqbzFyUDlicXpNbHB3YXkwOFIwZ3BhRGc3R0hnRkRSLV9wOV9iSGlBMlVuRldqZTZ5aERMY3RSdzY1YkhIVTJuQV9R?oc=5",
-   "published": "2026-11-23T21:59:29+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYjExc3NXZVBjNjk5Ylp3WnU0a1RvdGlYZXRYT2JTRkFuUDhaUTRJSUxIUGNvbUMyWDNDejR3T0J1aFRVOGVsdGo3aDREWjd2cm0zWG5na20wT2NubFZwMnhFYUVaeElvTG5fWEhiaFBsLUtNUWt2TEhYdm5RNFhTZTVfLS12cXlDdGJ5T2J1Y083OWRGLXVZVHpZLWhOcHBaeU05RU5UZll3anZaOENvMnRRUUpHb0dkUnhIdmNTX2hsdEVBS3pxUTFqcTfSAdsBQVVfeXFMUG5GVzFNUGxoU0ZsS0RJd3pEdkp6bkNQWjRYTUZyUTMyUnNwRkQtS1ZCRjQyaUR5aGN3R0N6TmVXT0stWmRzVE9Fa09SaGRkaW5GOFpPWDZxaFo2WHB0RDkwNlZmZFRFRWNBem5weF82Q1Vyb1RFY2o5NmI0c3p6MnNfVjF1STBCeV9XSnd3YU5sdTVBVjhlcmpqbzFyUDlicXpNbHB3YXkwOFIwZ3BhRGc3R0hnRkRSLV9wOV9iSGlBMlVuRldqZTZ5aERMY3RSdzY1YkhIVTJuQV9R?oc=5",
-     "title": "Como calcular o décimo terceiro salário? Primeira parcela cai até segunda"
-    }
-   ],
-   "ids": [
-    "146a1c2717ae"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Como calcular o décimo terceiro salário? Primeira parcela cai até segunda",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   },
   {
    "id": "ee15c1e2d520",
@@ -10468,39 +10309,6 @@
    "prescore": 2.8,
    "headline": "Bolsas de NY disparam com retorno de Huang à Nvidia e recuperação do setor de IA",
    "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "9887bf524917",
-   "title": "Macron propõe retomar plano para incluir regras fiscais na Constituição da França",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONFB0S3FrazBuSEpsR1JfT3FQbm8zaEJjazF4Z2xuYUdFUnVLai1sMXhfeHNwdDlGQWNNb2F3RUpWSWoyaC1MYmJZM01HYjVUbC1YNHAwQThvUFl5cHJmV3Z3bFpRbnhlQk5OSGY4RWVvbnItZ016eDZEN1hkRno0T0RHWHVZaHFNeThsNFF6ZjVoNTNESFNnRVRtMTUzdy0xeVRrVS1MbUpIYWlZX2I1V0txdVZVN1V4c1BHT2NVWjMxNUNoNzZ2WDBRUzXSAdsBQVVfeXFMT0RYSGhRRjlPRnY5QkFkMFZtYlNaVFc1Rkd6YjJJTFNSN1FGdThWOUpFR1dJY1ZWTDVOT1BKSXdYOC1JdVJZSGg1Sm9ZUGNLb3d4SlVZRV9jZHFlakh1VWN0azJfR05NWWRtVURsaENNSzhzYWVjNGRtQjc3U3ZxaFNCdGdhZWFxbVg2UWppWWVJU2pWR2ppQlJQeVN1R0hhVnhBaE5fNXdhaFdEaTFUTTBucHAzOVVibV9sc2lmZU9MUzEwaXp1eWlBSUJCMjB0enp3R25NeFNyQmQw?oc=5",
-   "published": "2026-11-23T13:34:38+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONFB0S3FrazBuSEpsR1JfT3FQbm8zaEJjazF4Z2xuYUdFUnVLai1sMXhfeHNwdDlGQWNNb2F3RUpWSWoyaC1MYmJZM01HYjVUbC1YNHAwQThvUFl5cHJmV3Z3bFpRbnhlQk5OSGY4RWVvbnItZ016eDZEN1hkRno0T0RHWHVZaHFNeThsNFF6ZjVoNTNESFNnRVRtMTUzdy0xeVRrVS1MbUpIYWlZX2I1V0txdVZVN1V4c1BHT2NVWjMxNUNoNzZ2WDBRUzXSAdsBQVVfeXFMT0RYSGhRRjlPRnY5QkFkMFZtYlNaVFc1Rkd6YjJJTFNSN1FGdThWOUpFR1dJY1ZWTDVOT1BKSXdYOC1JdVJZSGg1Sm9ZUGNLb3d4SlVZRV9jZHFlakh1VWN0azJfR05NWWRtVURsaENNSzhzYWVjNGRtQjc3U3ZxaFNCdGdhZWFxbVg2UWppWWVJU2pWR2ppQlJQeVN1R0hhVnhBaE5fNXdhaFdEaTFUTTBucHAzOVVibV9sc2lmZU9MUzEwaXp1eWlBSUJCMjB0enp3R25NeFNyQmQw?oc=5",
-     "title": "Macron propõe retomar plano para incluir regras fiscais na Constituição da França"
-    }
-   ],
-   "ids": [
-    "9887bf524917"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Macron propõe retomar plano para incluir regras fiscais na Constituição da França",
-   "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -10650,7 +10458,7 @@
    "id": "c37f0668fd1a",
    "title": "Millions of Home Aides Quietly Tend to America’s Elderly. We Followed One Along.",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAwNkFjUm9CNF83SlJuSGJyQldoLV9uWU9CaW1yYkJlYTZmS3psT0VMWEdKZXBPMXF4X3RnWVg0WEcxdGNQVW5lNVVCS25DeGtDb1VLRVJjMEJLZVNaWmtNNXlhcjFUQ19BclVRUEs1d2dVbnotYTZWc2dR?oc=5",
-   "published": "2026-11-24T10:05:33+00:00",
+   "published": "2026-11-24T10:00:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -10764,39 +10572,6 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Compass Group Plans to Move Primary Listing to U.S.",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d2b98841fef5",
-   "title": "Europe's STOXX 600 subdued after AI-driven rally",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRFZqN1lVNFNOTEFzWnBjSFFrbEVUQ2NLQ3EyOFJVdXVoUDFtdDJOcXoteHFEZWVmQ3dsYWV1OUxjN2FkY2pOVzk0T1NpTXBQTXpIWlJuWVozQlJNMHFHQmlvTFVwOG9LYmZRY3k0RDFLelNheUVaanNPSWpibkxyZXlRSGV6a2ttanl1MjZqLTZ3Z0JubU42OUZybWtUZEU?oc=5",
-   "published": "2026-11-24T08:27:40+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRFZqN1lVNFNOTEFzWnBjSFFrbEVUQ2NLQ3EyOFJVdXVoUDFtdDJOcXoteHFEZWVmQ3dsYWV1OUxjN2FkY2pOVzk0T1NpTXBQTXpIWlJuWVozQlJNMHFHQmlvTFVwOG9LYmZRY3k0RDFLelNheUVaanNPSWpibkxyZXlRSGV6a2ttanl1MjZqLTZ3Z0JubU42OUZybWtUZEU?oc=5",
-     "title": "Europe's STOXX 600 subdued after AI-driven rally"
-    }
-   ],
-   "ids": [
-    "d2b98841fef5"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Europe's STOXX 600 subdued after AI-driven rally",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11464,7 +11239,7 @@
    "id": "4a09c5336378",
    "title": "Cisco, OpenAI Launch Project to Safeguard Agentic AI",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQWRzSVl5NXdtMlRvTWxOYmItRm53SkNyVGdNOVhPSkZGMV82cHJhdWNYeDRrLVlUaUxPTC1QX0IyX2d4UkNKTkF1NVd3d21tcUc5QWk4Wm1qUWl3QlVxOFBJV3lpaWxreUxWaEdpRXZpR29YcUpsa1dJYkVGMDh4a0llVUZJaDBYa3ZsbWNR?oc=5",
-   "published": "2026-11-23T22:12:46+00:00",
+   "published": "2026-11-23T22:12:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11728,7 +11503,7 @@
    "id": "f54a17449030",
    "title": "From ‘We’ to ‘Me’: How Remote Work Reshapes Workplace Culture",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZkFTVE9jQ1ZPbTFfMlQwVDM4bWZGMUF6UFZuMG1NWDA5azh6VmlsT20wSllqLVludDN6RTV1aFVjOThfcThjZDNybEJFRGQ2ejFRV2JsdU9ybGo5V09XVEkyUF85UnZMM2NxNjl5TDZRRTVNbmFZMHpJaXlDWFNfRmRkTUJZTmFkdFV3?oc=5",
-   "published": "2026-11-23T21:01:48+00:00",
+   "published": "2026-11-23T21:00:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -11923,39 +11698,6 @@
    "ai": false
   },
   {
-   "id": "57ec8dfbd86b",
-   "title": "US lawmakers vow to sharpen Huang probes as he returns to Nvidia",
-   "link": "https://www.ft.com/content/6b4e5bfb-d566-4a61-a12c-057881a261b8?syn-25a6b1a6=1",
-   "published": "2026-11-23T19:11:29+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/6b4e5bfb-d566-4a61-a12c-057881a261b8?syn-25a6b1a6=1",
-     "title": "US lawmakers vow to sharpen Huang probes as he returns to Nvidia"
-    }
-   ],
-   "ids": [
-    "57ec8dfbd86b"
-   ],
-   "snippet": "Democrats and Republicans insist tech CEO must testify in public",
-   "prescore": 2.6,
-   "headline": "US lawmakers vow to sharpen Huang probes as he returns to Nvidia",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Democrats and Republicans insist tech CEO must testify in public",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "bfdc3378d9ed",
    "title": "Opinion | Marco Rubio Is Hostage to a Failing Foreign Policy",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaVVHRjFmUEhrOWc2TnBrelFxTlhyb0V5RjN0dU5RVUtEMzFhdkR0Z2pveTNOTzd4RjNpWGxfQzltNi1oMFhILUlHSzJCZVNzZHdsRURVZ1ZST1FoaWx3ZXlCVGY0bHhBRU16QlVhQ2xmckFLUlFPRmNBRVhFenVHdzhrelZSUmdabHF3b0U0WjM?oc=5",
@@ -12091,7 +11833,7 @@
    "id": "df7035ec93fd",
    "title": "‘Focker In-Law’ Review: Ariana Grande Gets In On the Dysfunction",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORm12dDdkLXdOSGhWeEt5SDRCQ25oYzJ5dUZHcmtjNnlJVmtXbEgtbUdCdHZhcGpvbFk5OGFISmgzRFl3aE5iYnRvZG5nWUJ0b3FjRWdSVzVuRjBFRXNIRkozeG9GY3pRT1RaQU56c2hnVm5aalA1SE85RTdUd0Y5bk8zMVZkRHg2U0E3dTF0VXJrRHVRdlZZajZkQmdySm9MXzlac3hMQVEyOG9O?oc=5",
-   "published": "2026-11-23T17:42:15+00:00",
+   "published": "2026-11-23T17:39:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -12121,25 +11863,25 @@
    "ai": false
   },
   {
-   "id": "15d2eda5733a",
-   "title": "UK midcaps outperform as Nvidia sparks global risk-on rally",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYkg5VjM0X2g3WGZudDlGM1N4OWFrRW5PZEw4SXVMMjBFb3JtaG1uS3NFQUJzOVFWNzFOaWJYNkNuX3NkV1hnMzByejBPcFA1ZUttNm93XzU2OHFaRE1ZMWpBOE1Bd05JR0Vab1VQaXJJdUM3YlJkcmNPVEJNcGZqYUNnX3Z0aTBLTFVad1BXQWJVTGFfdUJ3Uko2OF9Xdw?oc=5",
-   "published": "2026-11-23T17:32:45+00:00",
+   "id": "8940422c30a4",
+   "title": "Europe's STOXX logs strongest day in over six months on tech boost",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdDFuaFRyaktlcVA5TVR0eXF2QlktZ3ZVU3JkbzZycU8zTU90WEhFSlhuVTc5RTRCdVctYVpuQzZhdUJnN1BlZWdOYkZEQXg5alR6d1BDVWEwMEszRTlRUFB1aG9ueFhHWmZmbkI1dmFSSmNZMVF6VzlhZFpBOG5BaVJ0QlprZnRVRmVIZ2djcXFzM3VrU2VQa3FQelVLU2Qzd2MwT19jTUdkRnVWYmc?oc=5",
+   "published": "2026-11-23T17:21:00+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYkg5VjM0X2g3WGZudDlGM1N4OWFrRW5PZEw4SXVMMjBFb3JtaG1uS3NFQUJzOVFWNzFOaWJYNkNuX3NkV1hnMzByejBPcFA1ZUttNm93XzU2OHFaRE1ZMWpBOE1Bd05JR0Vab1VQaXJJdUM3YlJkcmNPVEJNcGZqYUNnX3Z0aTBLTFVad1BXQWJVTGFfdUJ3Uko2OF9Xdw?oc=5",
-     "title": "UK midcaps outperform as Nvidia sparks global risk-on rally"
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdDFuaFRyaktlcVA5TVR0eXF2QlktZ3ZVU3JkbzZycU8zTU90WEhFSlhuVTc5RTRCdVctYVpuQzZhdUJnN1BlZWdOYkZEQXg5alR6d1BDVWEwMEszRTlRUFB1aG9ueFhHWmZmbkI1dmFSSmNZMVF6VzlhZFpBOG5BaVJ0QlprZnRVRmVIZ2djcXFzM3VrU2VQa3FQelVLU2Qzd2MwT19jTUdkRnVWYmc?oc=5",
+     "title": "Europe's STOXX logs strongest day in over six months on tech boost"
     }
    ],
    "ids": [
-    "15d2eda5733a"
+    "8940422c30a4"
    ],
    "snippet": "",
    "prescore": 2.6,
-   "headline": "UK midcaps outperform as Nvidia sparks global risk-on rally",
-   "category": "tech",
+   "headline": "Europe's STOXX logs strongest day in over six months on tech boost",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -12239,6 +11981,243 @@
    "prescore": 2.6,
    "headline": "EXCLUSIVE: Canada and Qatar to sign investment pact on Tuesday, source says",
    "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c55f797d79b8",
+   "title": "Exclusive | Power Couple Sells San Francisco Compound for $68.3 Million in AI-Fueled Boom",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPU2kwQkdPRldySWFZVUdfV0VkZktwN3BHMlZGQ3ItMy1IWUI1NXZTaG81dWhuM0NlMHd6dHVTUk5JcmduNEtTSV9vVnU2ckR6RmpBVU5kbUJxSi1vajU5QUtuQlJaNHJiaExvVlh5d3dyMUVaREdwcTd2blFkTUxlMlZPeS1WXzRYM29TU0RGLTltQjlUX25CMw?oc=5",
+   "published": "2026-11-23T16:01:29+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPU2kwQkdPRldySWFZVUdfV0VkZktwN3BHMlZGQ3ItMy1IWUI1NXZTaG81dWhuM0NlMHd6dHVTUk5JcmduNEtTSV9vVnU2ckR6RmpBVU5kbUJxSi1vajU5QUtuQlJaNHJiaExvVlh5d3dyMUVaREdwcTd2blFkTUxlMlZPeS1WXzRYM29TU0RGLTltQjlUX25CMw?oc=5",
+     "title": "Exclusive | Power Couple Sells San Francisco Compound for $68.3 Million in AI-Fueled Boom"
+    }
+   ],
+   "ids": [
+    "c55f797d79b8"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Exclusive | Power Couple Sells San Francisco Compound for $68.3 Million in AI-Fueled Boom",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e1e0b68718b6",
+   "title": "Five Urgent Questions in D.C. About Jensen Huang’s Return as Nvidia CEO",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWTZZNWFuNl90a2FKSERLR0hYdVV3cHZrb01MZGM3enM0M2hGVW4xamM5SnVZQndUdjNwOXkyb2pzeVFPLWdxcWh6bUFzbTRDZWZHa1V0MHRMa1NBS2hodVpJYlY4X3lmaW02ZGI5QnhRLVN5UjhIZTAxRzUwdUxVMjdoQVQ1Q1J6by1vU0dRZUtNNjdEY1lDeVh3T0hBX25ITmMtUF93ejRtQQ?oc=5",
+   "published": "2026-11-23T15:57:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWTZZNWFuNl90a2FKSERLR0hYdVV3cHZrb01MZGM3enM0M2hGVW4xamM5SnVZQndUdjNwOXkyb2pzeVFPLWdxcWh6bUFzbTRDZWZHa1V0MHRMa1NBS2hodVpJYlY4X3lmaW02ZGI5QnhRLVN5UjhIZTAxRzUwdUxVMjdoQVQ1Q1J6by1vU0dRZUtNNjdEY1lDeVh3T0hBX25ITmMtUF93ejRtQQ?oc=5",
+     "title": "Five Urgent Questions in D.C. About Jensen Huang’s Return as Nvidia CEO"
+    }
+   ],
+   "ids": [
+    "e1e0b68718b6"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Five Urgent Questions in D.C. About Jensen Huang’s Return as Nvidia CEO",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5c6eaf11a686",
+   "title": "US business activity growth eases further in November, survey shows",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOS2c1R0dOUWNCM3E3aUo2eHluWXZNTXNsWGg0ajRGVkRFeWhHSXpHb0JSX0NvWEE4amt1V0x4d0JnMl8yN1dlc2RQNnBPWnpKYW12Rll0ZnpiTUFrUjRFb0U1OUQxLTk2b3dxR1dQWVJiSVpvM2x2Q0d1UDdIZUdhUkJBejRKLU9ZdmJDREpqRGphQllNQ1E3NnYwVnhBeGx3dFFDbmRzS0VkNlF5?oc=5",
+   "published": "2026-11-23T15:30:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOS2c1R0dOUWNCM3E3aUo2eHluWXZNTXNsWGg0ajRGVkRFeWhHSXpHb0JSX0NvWEE4amt1V0x4d0JnMl8yN1dlc2RQNnBPWnpKYW12Rll0ZnpiTUFrUjRFb0U1OUQxLTk2b3dxR1dQWVJiSVpvM2x2Q0d1UDdIZUdhUkJBejRKLU9ZdmJDREpqRGphQllNQ1E3NnYwVnhBeGx3dFFDbmRzS0VkNlF5?oc=5",
+     "title": "US business activity growth eases further in November, survey shows"
+    }
+   ],
+   "ids": [
+    "5c6eaf11a686"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "US business activity growth eases further in November, survey shows",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a093c642dc4b",
+   "title": "CrowdStrike to Buy Zscaler in $44 Billion Stock Swap",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc25MX1dwRE9Lc3haUV91TTdFS3ZhT2VUTXgxTHNPdWpmQXowdE1OVHJWMC16YjFFRTRldy1xWWxvRUpNT3JwenpwZTFvd3ZHSVB3SmtPQU9IT2JjSC1BSTZ6aVdCRHhWZzVHaHNiWEZsYXExR2xiZFRaX1VZMHJscktPVHpzeWZSRGJOZ1JOUXV3bV9tRDVmMUZNR2pvdw?oc=5",
+   "published": "2026-11-23T14:45:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc25MX1dwRE9Lc3haUV91TTdFS3ZhT2VUTXgxTHNPdWpmQXowdE1OVHJWMC16YjFFRTRldy1xWWxvRUpNT3JwenpwZTFvd3ZHSVB3SmtPQU9IT2JjSC1BSTZ6aVdCRHhWZzVHaHNiWEZsYXExR2xiZFRaX1VZMHJscktPVHpzeWZSRGJOZ1JOUXV3bV9tRDVmMUZNR2pvdw?oc=5",
+     "title": "CrowdStrike to Buy Zscaler in $44 Billion Stock Swap"
+    }
+   ],
+   "ids": [
+    "a093c642dc4b"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "CrowdStrike to Buy Zscaler in $44 Billion Stock Swap",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "42483017df52",
+   "title": "Jensen and Lori Huang Have Amassed a Vast Fortune. We Break Down Their Wealth.",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbF91VVEwdXEzcmZBNVRPZTNSankxLWdwamNpdEJEeFplRDkyU2NNc1BtV1pDXzNENm4wMDdsQzE1NWFtcGppa18tLXgxYlB1S3gxQW8wWlNoNktnSmVzMTUySTBPbjBkMmJrdkJiaTBrbktBNmVYdHhmT2dvMjRwRUtkdTQ5dTNFeW5xbEVVeS1vOU9vUS1DMGd2RjJHQUI3amh3ZGpsaVFVN0ZoNFZ4eXdzbTdDeHBRRGw2YmdRVkE?oc=5",
+   "published": "2026-11-23T14:44:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbF91VVEwdXEzcmZBNVRPZTNSankxLWdwamNpdEJEeFplRDkyU2NNc1BtV1pDXzNENm4wMDdsQzE1NWFtcGppa18tLXgxYlB1S3gxQW8wWlNoNktnSmVzMTUySTBPbjBkMmJrdkJiaTBrbktBNmVYdHhmT2dvMjRwRUtkdTQ5dTNFeW5xbEVVeS1vOU9vUS1DMGd2RjJHQUI3amh3ZGpsaVFVN0ZoNFZ4eXdzbTdDeHBRRGw2YmdRVkE?oc=5",
+     "title": "Jensen and Lori Huang Have Amassed a Vast Fortune. We Break Down Their Wealth."
+    }
+   ],
+   "ids": [
+    "42483017df52"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "WSJ detalha a fortuna de Jensen e Lori Huang",
+   "category": "outros",
+   "importance": 2,
+   "importance_reason": "Perfil patrimonial sem efeito de mercado.",
+   "summary": "O WSJ faz um levantamento da fortuna do casal Huang. Os valores não constam do título.",
+   "involves": "Jensen Huang, Lori Huang",
+   "interpretation": "Matéria de perfil, sem fato novo de mercado.",
+   "impact": "Sem impacto relevante.",
+   "sentiment": "neutro",
+   "entities": [
+    "Jensen Huang",
+    "Lori Huang"
+   ],
+   "tags": [
+    "Nvidia",
+    "patrimônio"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "60961d1bdcd6",
+   "title": "India considers rice export duties as domestic prices rise, sources say",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVFVRlVtNzZDZlUtUU9oVnh5SG92VFJ1b1ZzZWtPeXpfXzV2R1p6SE1CY2lOc1ZtdEhLX2xwOXNCbnN6MmxsR0Zoa3AzQXVrZ3NhUE5pbzhFY1lrVFg2ay1jWmdXZmRiNzJ6a2YtTWpyZTJvOG5qWEFqeUZrcEpYc282MS1MUDBoVjVuSW1IaEZZMjFwaXRtQjBEZWdnc2l4YzgxcEJYLTdwZFBjMGRYcGpybkpsZw?oc=5",
+   "published": "2026-11-23T13:52:09+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVFVRlVtNzZDZlUtUU9oVnh5SG92VFJ1b1ZzZWtPeXpfXzV2R1p6SE1CY2lOc1ZtdEhLX2xwOXNCbnN6MmxsR0Zoa3AzQXVrZ3NhUE5pbzhFY1lrVFg2ay1jWmdXZmRiNzJ6a2YtTWpyZTJvOG5qWEFqeUZrcEpYc282MS1MUDBoVjVuSW1IaEZZMjFwaXRtQjBEZWdnc2l4YzgxcEJYLTdwZFBjMGRYcGpybkpsZw?oc=5",
+     "title": "India considers rice export duties as domestic prices rise, sources say"
+    }
+   ],
+   "ids": [
+    "60961d1bdcd6"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "India considers rice export duties as domestic prices rise, sources say",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c6e47071d5a8",
+   "title": "Morgan Stanley turns most bullish on stocks since April after last week's selloff",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObC1Zdm1ObG5fMy10UDh1T3VVbnpoUzJjSHV0djd6Z3dZdXdHWTlTNUlHU1F1eGJYcUNrZjhzMWVsUFNWSERzS29HY2JVYVZCOXdWWEZqaVl6SkRoZkZQV3NaYWVDc0RmNjlvdnNYQzJ3VlBIamo3NjJpWWdvVGNoTXViYzJwYnlQVUFRYXBxdU9rN3Y2REc0UUp1eE5tbkVydklMX1A2Mkxaa3p4dVZ6S3hqdmdSbzZ2Vm1SU3JUVQ?oc=5",
+   "published": "2026-11-23T13:28:07+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObC1Zdm1ObG5fMy10UDh1T3VVbnpoUzJjSHV0djd6Z3dZdXdHWTlTNUlHU1F1eGJYcUNrZjhzMWVsUFNWSERzS29HY2JVYVZCOXdWWEZqaVl6SkRoZkZQV3NaYWVDc0RmNjlvdnNYQzJ3VlBIamo3NjJpWWdvVGNoTXViYzJwYnlQVUFRYXBxdU9rN3Y2REc0UUp1eE5tbkVydklMX1A2Mkxaa3p4dVZ6S3hqdmdSbzZ2Vm1SU3JUVQ?oc=5",
+     "title": "Morgan Stanley turns most bullish on stocks since April after last week's selloff"
+    }
+   ],
+   "ids": [
+    "c6e47071d5a8"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Morgan Stanley turns most bullish on stocks since April after last week's selloff",
+   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -13178,59 +13157,6 @@
    "ai": true
   },
   {
-   "id": "b05126f058ea",
-   "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
-   "published": "2026-11-23T12:22:53+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "NeoTeo",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
-     "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão"
-    },
-    {
-     "source": "Agora Litoral",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeWZNUFdjVVhXSnpfcGxWemlOUXhjN1JZekNlMFNOeHB0eDNDWEU3WHFkeFp1WlZ4UVRjaFhScDJrVXlJcDRUNHF5X05iMzRBbHh6djdWbzRZYm1FNGFqUE1kU2dWSVJmZzFOcEVndUZFZ2ZGRjRJZGhqYl8zWFZZU0FSU1VzWC1OamxwTlBpZ0VIdDdSa3N3b19DRQ?oc=5",
-     "title": "Anthropic estreia na Nasdaq com o maior IPO da história"
-    }
-   ],
-   "ids": [
-    "b05126f058ea",
-    "4a9ea8d9f842"
-   ],
-   "snippet": "",
-   "prescore": 6.9,
-   "headline": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
-   "category": "tech",
-   "importance": 4,
-   "importance_reason": "IPO de grande empresa de IA, com detalhes ausentes.",
-   "summary": "O título trata da estreia da Anthropic na Nasdaq. O material não traz números.",
-   "involves": "Anthropic; Nasdaq",
-   "interpretation": "Os fatos não constam do texto disponível.",
-   "impact": "Indica apetite por IA no mercado.",
-   "sentiment": "neutro",
-   "entities": [
-    "Anthropic",
-    "Nasdaq"
-   ],
-   "tags": [
-    "IPO",
-    "Anthropic"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "IPO",
-    "buyer": "",
-    "target": "Anthropic",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Tecnologia / IA",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "ffcccf8ef85b",
    "title": "Workday Completes Acquisition of C1.ai",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQVlCZVRKNGhOTzMzNXluV1hGOUpRUGpwVXdTdGpFTEFmY09Ga09JOV9FMGxIcVNFLURSU3Y3ejd4M0lQckhacE5FSmd6ZkVKeGhFTFpVNlNDaThXYmdrVGp5Wm9MSGFyZE5VenhMUHBSdDJjMTIzeER6ZnFIbDh6UEo3cw?oc=5",
@@ -13329,6 +13255,53 @@
     "value": "US$ 1,1 bilhão",
     "stage": "Em negociação",
     "sector": "Serviços para a indústria farmacêutica",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
+   "id": "b05126f058ea",
+   "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
+   "published": "2026-11-23T12:22:53+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "NeoTeo",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR1QwWXNjVkVOZjNnMmpESkdseGVRWkNuN3V6bkY1Sy1JMGhEWklBWmt6akt6eDFRRXF0RE0yYWVNREo3SlBtQlJEYjF5MnVSanBYSEVURWUtcVpIYTRaZmFCWkd3UFVRZGhYeDc1RFQ2XzRocTVDYWtjQXlqMHhGVXVEQkd3dw?oc=5",
+     "title": "IPO da Anthropic: estreia na Nasdaq e preços da sessão"
+    }
+   ],
+   "ids": [
+    "b05126f058ea"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "IPO da Anthropic: estreia na Nasdaq e preços da sessão",
+   "category": "tech",
+   "importance": 4,
+   "importance_reason": "IPO de grande empresa de IA, com detalhes ausentes.",
+   "summary": "O título trata da estreia da Anthropic na Nasdaq. O material não traz números.",
+   "involves": "Anthropic; Nasdaq",
+   "interpretation": "Os fatos não constam do texto disponível.",
+   "impact": "Indica apetite por IA no mercado.",
+   "sentiment": "neutro",
+   "entities": [
+    "Anthropic",
+    "Nasdaq"
+   ],
+   "tags": [
+    "IPO",
+    "Anthropic"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "IPO",
+    "buyer": "",
+    "target": "Anthropic",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Tecnologia / IA",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -14126,13 +14099,13 @@
    "ids": [
     "862feb2d145f"
    ],
-   "snippet": "Uma tela no NASDAQ MarketSite, no dia em que a Anthropic, PBC (ANT) realiza sua oferta pública inicial (IPO), em Nova York, EUA, em 19 de novembro de 2026. REUTERS/Mike Segar As ações da Anthropic caíam abaixo do preço de US$ 83 definido em sua oferta pública inicial (IPO) nas negociações pré-mercado desta terça-feira (24), poucos dias após a estreia recorde da desenvolvedora do Claude na Nasdaq. Os papéis eram negociados em queda de 6,5%, a US$ 82, ampliando as perdas acumuladas desde a forte estreia, em 19 de novembro, quando abriram a US$ 111,50. Na ocasião, uma medida mais ampla de avaliaç",
+   "snippet": "Anthropic faz a maior oferta pública inicial de ações da história As ações da Anthropic caíam abaixo do preço de US$ 83 (R$ 495,58) definido em sua oferta pública inicial (IPO) nas negociações pré-mercado desta terça-feira (24). O movimento ocorre poucos dias após a estreia recorde da desenvolvedora do Claude na Nasdaq, bolsa americana que concentra algumas das maiores empresas de tecnologia do mundo. No pré-mercado, período de negociações que antecede a abertura regular da bolsa, os papéis caíam 6,5%, a US$ 82 (R$ 489,61), ampliando as perdas acumuladas desde a forte estreia, em 19 de novembr",
    "prescore": 5.8,
    "headline": "Ações da Anthropic caem abaixo do preço do IPO cinco dias após estreia",
    "category": "mna",
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Uma tela no NASDAQ MarketSite, no dia em que a Anthropic, PBC (ANT) realiza sua oferta pública inicial (IPO), em Nova York, EUA, em 19 de novembro de 2026. REUTERS/Mike Segar As ações da Anthropic caíam abaixo do preço de US$ 83 definido em sua oferta pública inicial (IPO) nas negociações pré-mercado desta terça-feira (24), poucos dias após a estreia recorde da desenvolvedora do Claude na Nasdaq. ",
+   "summary": "Anthropic faz a maior oferta pública inicial de ações da história As ações da Anthropic caíam abaixo do preço de US$ 83 (R$ 495,58) definido em sua oferta pública inicial (IPO) nas negociações pré-mercado desta terça-feira (24). O movimento ocorre poucos dias após a estreia recorde da desenvolvedora do Claude na Nasdaq, bolsa americana que concentra algumas das maiores empresas de tecnologia do mu",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14271,6 +14244,39 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Anthropic PBC shares briefly traded below their $83 initial public offering price in premarket trading, wiping out gains for investors who piled into the artificial intelligence lab’s record-setting debut.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "73ae24d94419",
+   "title": "Os novos milionários da bolsa: como os IPO estão a criar fortunas entre trabalhadores",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeDYwTng4Z3lza3NvTUE1dVJYOTRuOFpScjRIZXdfcG5vdFJ4TGdmT1gzZFgzVGRqdVYzRHBFdWpZQzEweUtSTVY4aW41eldNbEdVbk92Qk9tU2NDZmt5MjVNZFhfWUZnX3V6OElUS3AxaFlxM2JGZ3dCQU92STd3cmhMS01TM0J6WHo2UjctS2UtYk9ZU0hwMUFnbzBZRk9hczRxRXRYdE1OMmdwY2JGWUMzeWhfYjVxc0N3M3Vod1Vzb1Z1?oc=5",
+   "published": "2026-11-24T11:27:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Jornal Económico",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeDYwTng4Z3lza3NvTUE1dVJYOTRuOFpScjRIZXdfcG5vdFJ4TGdmT1gzZFgzVGRqdVYzRHBFdWpZQzEweUtSTVY4aW41eldNbEdVbk92Qk9tU2NDZmt5MjVNZFhfWUZnX3V6OElUS3AxaFlxM2JGZ3dCQU92STd3cmhMS01TM0J6WHo2UjctS2UtYk9ZU0hwMUFnbzBZRk9hczRxRXRYdE1OMmdwY2JGWUMzeWhfYjVxc0N3M3Vod1Vzb1Z1?oc=5",
+     "title": "Os novos milionários da bolsa: como os IPO estão a criar fortunas entre trabalhadores"
+    }
+   ],
+   "ids": [
+    "73ae24d94419"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Os novos milionários da bolsa: como os IPO estão a criar fortunas entre trabalhadores",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14423,6 +14429,46 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "980d5b5443bc",
+   "title": "Britain bought fake C4 explosives for Ukraine",
+   "link": "https://www.ft.com/content/b5873050-2b90-4889-bbf6-902234e51e9f?syn-25a6b1a6=1",
+   "published": "2026-11-24T13:04:38+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/b5873050-2b90-4889-bbf6-902234e51e9f?syn-25a6b1a6=1",
+     "title": "Britain bought fake C4 explosives for Ukraine"
+    }
+   ],
+   "ids": [
+    "980d5b5443bc"
+   ],
+   "snippet": "Flagship UK procurement unit paid a part-time US police officer for tonnes of plastic explosives with no detectable RDX, the main ingredient in military C4",
+   "prescore": 2.6,
+   "headline": "Reino Unido comprou falso explosivo C4 para a Ucrânia",
+   "category": "internacional",
+   "importance": 3,
+   "importance_reason": "Escândalo de compras de defesa no Reino Unido, com efeito de mercado limitado.",
+   "summary": "Segundo o FT, a unidade de compras do Reino Unido pagou a um policial americano de meio período por toneladas de explosivo plástico sem RDX detectável.",
+   "involves": "Reino Unido, Ucrânia, C4, RDX",
+   "interpretation": "Falha grave em governança de compras de defesa.",
+   "impact": "Dano reputacional ao governo britânico.",
+   "sentiment": "negativo",
+   "entities": [
+    "Reino Unido",
+    "Ucrânia"
+   ],
+   "tags": [
+    "defesa",
+    "Ucrânia",
+    "compras"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
   },
   {
    "id": "9353e8b58e2f",
@@ -14999,20 +15045,20 @@
    "ai": false
   },
   {
-   "id": "adf5a911b79d",
+   "id": "4addaa2a17a0",
    "title": "Ex-Oracle cria IA que vigia telas de crianças e alerta pais pelo WhatsApp",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbG1oa2xlR19CZmdLQzNLcVluTGtHdjVBQ2JwdEMtcGRmblprX0hXbVpwRVZQNWNvSXJ1ZjkxRm9VODNYMWhQY1RCazdPaEJ1VVpGdmNlYl94dWYxNmxXcEpQX2xIZmNqQjg1UjdBcXJYZEtuODJ6X1NhWUc0YUtWTEhjY3FZeU96R2xickMydGdaWlpLTThURlVTbDBMZ0VhNnRlbXNVUnczU1JhT3lvRmJTWlFqTDAxOFRWM0JCamNPSjdGZmww0gHWAUFVX3lxTFBPSkhjYk5XbUxLNG5OU1NXOWVlMzA1VGMtZGJfTGNWVHBueUc5OFRYWGNMWTVUM3did0dSRmVPRDVYYVNDMFpQLUVPQ3VfaTAyNndOTWpMZDlWR1BqRnRkS0MyclUtZTktS3N6UDMzMDExbXBLaFByaG44ZnFiN2hPcWFldjlfanltc3Q0d2tLdUdNcGFGT0ttMWpKVG5ZeExSazM2OEhRQmswRHR2RUdBeTVONXhUVTZJckVidGhwenR0RDJfTzhDLWk4a19rdi1GdHdwNVE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQT0pIY2JOV21MSzRuTlNTVzllZTMwNVRjLWRiX0xjVlRwbnlHOThUWFhjTFk1VDN3YndHUkZlT0Q1WGFTQzBaUC1FT0N1X2kwMjZ3Tk1qTGQ5VkdQakZ0ZEtDMnJVLWU5LUtzelAzMzAxMW1wS2hQcmhuOGZxYjdoT3FhZXY5X2p5bXN0NHdrS3VHTXBhRk9LbTFqSlRuWXhMUmszNjhIUUJrMER0dkVHQXk1TjV4VFU2SXJFYnRocHp0dEQyX084Qy1pOGtfa3YtRnR3cDVR0gHWAUFVX3lxTFBPSkhjYk5XbUxLNG5OU1NXOWVlMzA1VGMtZGJfTGNWVHBueUc5OFRYWGNMWTVUM3did0dSRmVPRDVYYVNDMFpQLUVPQ3VfaTAyNndOTWpMZDlWR1BqRnRkS0MyclUtZTktS3N6UDMzMDExbXBLaFByaG44ZnFiN2hPcWFldjlfanltc3Q0d2tLdUdNcGFGT0ttMWpKVG5ZeExSazM2OEhRQmswRHR2RUdBeTVONXhUVTZJckVidGhwenR0RDJfTzhDLWk4a19rdi1GdHdwNVE?oc=5",
    "published": "2026-11-24T11:30:00+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "Pipeline (Valor)",
-     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbG1oa2xlR19CZmdLQzNLcVluTGtHdjVBQ2JwdEMtcGRmblprX0hXbVpwRVZQNWNvSXJ1ZjkxRm9VODNYMWhQY1RCazdPaEJ1VVpGdmNlYl94dWYxNmxXcEpQX2xIZmNqQjg1UjdBcXJYZEtuODJ6X1NhWUc0YUtWTEhjY3FZeU96R2xickMydGdaWlpLTThURlVTbDBMZ0VhNnRlbXNVUnczU1JhT3lvRmJTWlFqTDAxOFRWM0JCamNPSjdGZmww0gHWAUFVX3lxTFBPSkhjYk5XbUxLNG5OU1NXOWVlMzA1VGMtZGJfTGNWVHBueUc5OFRYWGNMWTVUM3did0dSRmVPRDVYYVNDMFpQLUVPQ3VfaTAyNndOTWpMZDlWR1BqRnRkS0MyclUtZTktS3N6UDMzMDExbXBLaFByaG44ZnFiN2hPcWFldjlfanltc3Q0d2tLdUdNcGFGT0ttMWpKVG5ZeExSazM2OEhRQmswRHR2RUdBeTVONXhUVTZJckVidGhwenR0RDJfTzhDLWk4a19rdi1GdHdwNVE?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQT0pIY2JOV21MSzRuTlNTVzllZTMwNVRjLWRiX0xjVlRwbnlHOThUWFhjTFk1VDN3YndHUkZlT0Q1WGFTQzBaUC1FT0N1X2kwMjZ3Tk1qTGQ5VkdQakZ0ZEtDMnJVLWU5LUtzelAzMzAxMW1wS2hQcmhuOGZxYjdoT3FhZXY5X2p5bXN0NHdrS3VHTXBhRk9LbTFqSlRuWXhMUmszNjhIUUJrMER0dkVHQXk1TjV4VFU2SXJFYnRocHp0dEQyX084Qy1pOGtfa3YtRnR3cDVR0gHWAUFVX3lxTFBPSkhjYk5XbUxLNG5OU1NXOWVlMzA1VGMtZGJfTGNWVHBueUc5OFRYWGNMWTVUM3did0dSRmVPRDVYYVNDMFpQLUVPQ3VfaTAyNndOTWpMZDlWR1BqRnRkS0MyclUtZTktS3N6UDMzMDExbXBLaFByaG44ZnFiN2hPcWFldjlfanltc3Q0d2tLdUdNcGFGT0ttMWpKVG5ZeExSazM2OEhRQmswRHR2RUdBeTVONXhUVTZJckVidGhwenR0RDJfTzhDLWk4a19rdi1GdHdwNVE?oc=5",
      "title": "Ex-Oracle cria IA que vigia telas de crianças e alerta pais pelo WhatsApp"
     }
    ],
    "ids": [
-    "adf5a911b79d"
+    "4addaa2a17a0"
    ],
    "snippet": "",
    "prescore": 3.0,
@@ -15634,6 +15680,39 @@
    "ai": false
   },
   {
+   "id": "1afa00aea813",
+   "title": "Jensen Huang’s return should not stop tighter US chip controls",
+   "link": "https://www.ft.com/content/55a32e72-2cee-4a7f-874f-0936e2581a8a",
+   "published": "2026-11-24T12:54:15+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/55a32e72-2cee-4a7f-874f-0936e2581a8a",
+     "title": "Jensen Huang’s return should not stop tighter US chip controls"
+    }
+   ],
+   "ids": [
+    "1afa00aea813"
+   ],
+   "snippet": "Nvidia was wrong to think Chinese competitors would remain inside the company’s ecosystem",
+   "prescore": 2.6,
+   "headline": "Jensen Huang’s return should not stop tighter US chip controls",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Nvidia was wrong to think Chinese competitors would remain inside the company’s ecosystem",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "29b136e377da",
    "title": "Oil Prices Rebound as Shipping Risks Persist",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMkpRNmtac0F4dkZ2QTRqVEhSc2piS0Vpd1JNaHVScnZZYmRfdzBEbWZXOUFjb0dhR29XZURYZnRUcTVkQW41Y3pOT1plS0ZDOU5NTm1Qel9OUWRMNU53Y2ZoUjBWU045YUczZFRfZGswa0UtY2hVMVJMS2g0b29qUmw3YjN4VHF0aGVTYjVZdl94WjcwdXkxZ3diaVNXSWZwcE9tM2V3b3JLcTRTU0o0aw?oc=5",
@@ -15722,39 +15801,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Ukrainian drones have struck Moscow’s warships and freighters in the Black Sea, Baltic and Mediterranean",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "519450b0bfc8",
-   "title": "Loadsmart traz ao Brasil 11 agentes de IA que resolvem 80% das tarefas do frete, diz empresa",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5SY1k4WS01dGpuX3ZmeWFNQWEtUjZPMkRyV0xRMlN6Yk1xeXU2Z2ExSEYtZ3Y0aFA3N2FuS2tJRkxlbTRIQU5XaDJITGQ4SUd2YjNHOHEzVE4zWVZKZzFJakpnalczWm9nckJFdzdxTzBGdTdNWGhJ?oc=5",
-   "published": "2026-11-24T13:07:30+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5SY1k4WS01dGpuX3ZmeWFNQWEtUjZPMkRyV0xRMlN6Yk1xeXU2Z2ExSEYtZ3Y0aFA3N2FuS2tJRkxlbTRIQU5XaDJITGQ4SUd2YjNHOHEzVE4zWVZKZzFJakpnalczWm9nckJFdzdxTzBGdTdNWGhJ?oc=5",
-     "title": "Loadsmart traz ao Brasil 11 agentes de IA que resolvem 80% das tarefas do frete, diz empresa"
-    }
-   ],
-   "ids": [
-    "519450b0bfc8"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Loadsmart traz ao Brasil 11 agentes de IA que resolvem 80% das tarefas do frete, diz empresa",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15898,6 +15944,72 @@
    "ai": false
   },
   {
+   "id": "3952ee40eb57",
+   "title": "Justiça bloqueia bens de MC Ryan SP em operações da PF contra lavagem de dinheiro",
+   "link": "https://www.infomoney.com.br/brasil/justica-bloqueia-bens-de-mc-ryan-sp-em-operacoes-da-pf-contra-lavagem-de-dinheiro/",
+   "published": "2026-11-24T13:16:53+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/brasil/justica-bloqueia-bens-de-mc-ryan-sp-em-operacoes-da-pf-contra-lavagem-de-dinheiro/",
+     "title": "Justiça bloqueia bens de MC Ryan SP em operações da PF contra lavagem de dinheiro"
+    }
+   ],
+   "ids": [
+    "3952ee40eb57"
+   ],
+   "snippet": "Segundo a PF, os grupos investigados nas duas primeiras movimentaram mais de R$ 4,3 bilhões no Brasil e no exterior The post Justiça bloqueia bens de MC Ryan SP em operações da PF contra lavagem de dinheiro appeared first on InfoMoney .",
+   "prescore": 2.2,
+   "headline": "Justiça bloqueia bens de MC Ryan SP em operações da PF contra lavagem de dinheiro",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Segundo a PF, os grupos investigados nas duas primeiras movimentaram mais de R$ 4,3 bilhões no Brasil e no exterior The post Justiça bloqueia bens de MC Ryan SP em operações da PF contra lavagem de dinheiro appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4fc4062c7e24",
+   "title": "Pimco vê IA elevar risco de disrupção e reforçar atratividade de Treasuries e bonds",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONHluVC03WFB3ZXQzS2l3RkU2VzNtMUg0OTJMdW5ZSjR0MVZCZE1nWkVLYkctbnNMZGFxbGZtbG1Gc1Q5bkhKQ2lGbGpoOTRFZzZ0M2FqWE1JMHU0OVF0eUpVYzB0ckw4YmRZbmpMLVVjaTNwWlVYQUhqUUU2ZGNvWkxuV3Rnd3dlRnhXSlBwaUt2cFJMUjF1ei00d0F0ZGI1bFkyQTlWQkVEaUhGdll4N2VXdW5pNDRadjRRMDdTR3FVOVU0WmJIVNIB3AFBVV95cUxOODRJTGZjeFZvaVpvN0U4eHpmVHZITk03eXV0ay01Z29ydHBVMzJLYThVLWhpcnhaTFplU3VQVUIzdWUxNjctbTNRaTZZaFZscklqQzFhOHhQUzJVaXk3UFVGM2pqTEdQUXIyMDBzXzF1UnNUdnFYX3lIeHpaV0JEQlIyRXlHeVZKX05JakJyTXhsYko4aGEyVEc0eVpLd2s2ODEwVnpMUGxRY05FNXRhRDdUc2JVeTltY1N3TlJ2cXFSbm1SV3NVU2I2WW1LSHhsZFFyLXBkbkIyLXUy?oc=5",
+   "published": "2026-11-24T13:03:38+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONHluVC03WFB3ZXQzS2l3RkU2VzNtMUg0OTJMdW5ZSjR0MVZCZE1nWkVLYkctbnNMZGFxbGZtbG1Gc1Q5bkhKQ2lGbGpoOTRFZzZ0M2FqWE1JMHU0OVF0eUpVYzB0ckw4YmRZbmpMLVVjaTNwWlVYQUhqUUU2ZGNvWkxuV3Rnd3dlRnhXSlBwaUt2cFJMUjF1ei00d0F0ZGI1bFkyQTlWQkVEaUhGdll4N2VXdW5pNDRadjRRMDdTR3FVOVU0WmJIVNIB3AFBVV95cUxOODRJTGZjeFZvaVpvN0U4eHpmVHZITk03eXV0ay01Z29ydHBVMzJLYThVLWhpcnhaTFplU3VQVUIzdWUxNjctbTNRaTZZaFZscklqQzFhOHhQUzJVaXk3UFVGM2pqTEdQUXIyMDBzXzF1UnNUdnFYX3lIeHpaV0JEQlIyRXlHeVZKX05JakJyTXhsYko4aGEyVEc0eVpLd2s2ODEwVnpMUGxRY05FNXRhRDdUc2JVeTltY1N3TlJ2cXFSbm1SV3NVU2I2WW1LSHhsZFFyLXBkbkIyLXUy?oc=5",
+     "title": "Pimco vê IA elevar risco de disrupção e reforçar atratividade de Treasuries e bonds"
+    }
+   ],
+   "ids": [
+    "4fc4062c7e24"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Pimco vê IA elevar risco de disrupção e reforçar atratividade de Treasuries e bonds",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5bf9a3a42cea",
    "title": "Governo deve anunciar contenção de despesas mesmo após aprovação de ajuste fiscal",
    "link": "https://www.infomoney.com.br/politica/governo-deve-anunciar-contencao-de-despesas-mesmo-apos-aprovacao-de-ajuste-fiscal/",
@@ -15953,39 +16065,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Presidente telefonou para integrantes do conselho da empresa no fim de semana, diz CNN. Republicano temia que eventual estouro de bolha da IA varresse o mercado americano The post Como Trump articulou a volta de Huang à Nvidia appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "dc561a03500c",
-   "title": "Na contramão da Bolsa, Gerdau (GGBR4) sobe 29% no ano: até onde pode ir a alta?",
-   "link": "https://www.infomoney.com.br/mercados/gerdau-ggbr4-alta-29-por-cento-ano-analise-tecnica/",
-   "published": "2026-11-24T12:40:25+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/gerdau-ggbr4-alta-29-por-cento-ano-analise-tecnica/",
-     "title": "Na contramão da Bolsa, Gerdau (GGBR4) sobe 29% no ano: até onde pode ir a alta?"
-    }
-   ],
-   "ids": [
-    "dc561a03500c"
-   ],
-   "snippet": "Mesmo após as turbulências do período pós-eleitoral, ações da siderúrgica preservam tendência de alta; análise técnica aponta resistências e possível alvo em R$ 32,63. The post Na contramão da Bolsa, Gerdau (GGBR4) sobe 29% no ano: até onde pode ir a alta? appeared first on InfoMoney .",
-   "prescore": 2.2,
-   "headline": "Na contramão da Bolsa, Gerdau (GGBR4) sobe 29% no ano: até onde pode ir a alta?",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Mesmo após as turbulências do período pós-eleitoral, ações da siderúrgica preservam tendência de alta; análise técnica aponta resistências e possível alvo em R$ 32,63. The post Na contramão da Bolsa, Gerdau (GGBR4) sobe 29% no ano: até onde pode ir a alta? appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16064,15 +16143,15 @@
   },
   {
    "id": "f47983e629e0",
-   "title": "Property Play: Commercial real estate activity falls 14% in October, as interest rates rise",
+   "title": "Commercial real estate activity falls 14% in October, as interest rates rise",
    "link": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-   "published": "2026-11-24T13:05:43+00:00",
+   "published": "2026-11-24T13:17:16+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "CNBC",
      "link": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-     "title": "Property Play: Commercial real estate activity falls 14% in October, as interest rates rise"
+     "title": "Commercial real estate activity falls 14% in October, as interest rates rise"
     }
    ],
    "ids": [
@@ -16080,11 +16159,44 @@
    ],
    "snippet": "Commercial real estate activity dropped 14% in October from September, according to an index from LightBox, a commercial real estate data platform.",
    "prescore": 2.0,
-   "headline": "Property Play: Commercial real estate activity falls 14% in October, as interest rates rise",
+   "headline": "Commercial real estate activity falls 14% in October, as interest rates rise",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Commercial real estate activity dropped 14% in October from September, according to an index from LightBox, a commercial real estate data platform.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "0f59b68a280c",
+   "title": "TruGolf Names Richard Dolan, Kevin Dent, and Roger Premo as Strategic Advisors and Confirms Its Board of Directors",
+   "link": "https://www.prnewswire.com/news-releases/trugolf-names-richard-dolan-kevin-dent-and-roger-premo-as-strategic-advisors-and-confirms-its-board-of-directors-302949027.html",
+   "published": "2026-11-24T13:17:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "PR Newswire (M&A)",
+     "link": "https://www.prnewswire.com/news-releases/trugolf-names-richard-dolan-kevin-dent-and-roger-premo-as-strategic-advisors-and-confirms-its-board-of-directors-302949027.html",
+     "title": "TruGolf Names Richard Dolan, Kevin Dent, and Roger Premo as Strategic Advisors and Confirms Its Board of Directors"
+    }
+   ],
+   "ids": [
+    "0f59b68a280c"
+   ],
+   "snippet": "The three advisors join TruGolf (NASDAQ: TRUG) and its wholly owned subsidiary Polymath at the group level, focused on issuer, partner, and institutional relationships. SALT LAKE CITY, Nov. 24, 2026 /PRNewswire/ -- TruGolf Holdings, Inc. (\"TruGolf\") (NASDAQ: TRUG) today announced that...",
+   "prescore": 2.0,
+   "headline": "TruGolf Names Richard Dolan, Kevin Dent, and Roger Premo as Strategic Advisors and Confirms Its Board of Directors",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "The three advisors join TruGolf (NASDAQ: TRUG) and its wholly owned subsidiary Polymath at the group level, focused on issuer, partner, and institutional relationships. SALT LAKE CITY, Nov. 24, 2026 /PRNewswire/ -- TruGolf Holdings, Inc. (\"TruGolf\") (NASDAQ: TRUG) today announced that...",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17163,7 +17275,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 16,
+   "count": 17,
    "error": null
   },
   {
@@ -17226,7 +17338,7 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 27,
+   "count": 26,
    "error": null
   },
   {
@@ -17240,7 +17352,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 56,
+   "count": 58,
    "error": null
   },
   {
@@ -17544,11 +17656,11 @@
   }
  ],
  "stats": {
-  "raw": 865,
-  "unique": 555,
-  "unique_all": 811,
+  "raw": 867,
+  "unique": 549,
+  "unique_all": 813,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.1
+  "seconds": 8.2
  }
 }
