@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T19:12:10.492418-03:00",
+ "generated_at": "2026-11-25T19:19:27.429993-03:00",
  "date": "2026-11-25",
  "window": {
   "start": "2026-11-24T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-25T08:19:01.877896-03:00",
-  "analyzed": 176
+  "analyzed": 181
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -132,14 +132,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.3876,
-   "change_pct": -1.1199480582865018,
+   "price": 6.3878,
+   "change_pct": -1.1168520581630759,
    "spark": [
     6.447453022003174,
     6.501951217651367,
     6.523157119750977,
     6.4599480628967285,
-    6.387599945068359
+    6.387800216674805
    ]
   },
   {
@@ -214,14 +214,14 @@
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 60049.5,
-   "change_pct": 0.5050136550608375,
+   "price": 60041.5,
+   "change_pct": 0.4916240330116839,
    "spark": [
     60094.08984375,
     61161.91015625,
     61210.984375,
     59747.765625,
-    60049.5
+    60041.5
    ]
   }
  ],
@@ -1895,6 +1895,47 @@
    "ai": true
   },
   {
+   "id": "8e68150878b8",
+   "title": "Anthropic fecha abaixo do preço do IPO pela primeira vez com desaceleração de ações de tecnologia",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPZEFyd2c2V0xZLWRNd0s3WU1lalJjWU92aVFPOWdXM2tKTGkwbHpYaHVSY21ualFmS212OF96WHF4Q1pBWFEtb0VPclliUFVhUXZ5bmNuQi1wT3hZOWtBc3hpRkdESTlVYmlXbXotV3NadC11Ymp4bzh0Z2FRTHY3bTZqQWVWSFZoWEdRMTB0enU1OUJ4MHdBcWwyM05rcDI4UXkxRjNobDlEUnFmQThxVXZhVWhvMGw2WnJ0R3pkcktjX1hPWmV5OEd5YWN6Q1dMNnotRXdPaHV0b0JvM3VnTE52MkNaeEMyMzBEUC1UNG1lVkdqenVv?oc=5",
+   "published": "2026-11-25T01:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Repórter PB",
+     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPZEFyd2c2V0xZLWRNd0s3WU1lalJjWU92aVFPOWdXM2tKTGkwbHpYaHVSY21ualFmS212OF96WHF4Q1pBWFEtb0VPclliUFVhUXZ5bmNuQi1wT3hZOWtBc3hpRkdESTlVYmlXbXotV3NadC11Ymp4bzh0Z2FRTHY3bTZqQWVWSFZoWEdRMTB0enU1OUJ4MHdBcWwyM05rcDI4UXkxRjNobDlEUnFmQThxVXZhVWhvMGw2WnJ0R3pkcktjX1hPWmV5OEd5YWN6Q1dMNnotRXdPaHV0b0JvM3VnTE52MkNaeEMyMzBEUC1UNG1lVkdqenVv?oc=5",
+     "title": "Anthropic fecha abaixo do preço do IPO pela primeira vez com desaceleração de ações de tecnologia"
+    }
+   ],
+   "ids": [
+    "8e68150878b8"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Anthropic fecha abaixo do preço do IPO pela primeira vez, com recuo das ações de tecnologia",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Fechamento abaixo do preço de oferta; contexto de queda setorial nos EUA.",
+   "summary": "As ações de tecnologia dos EUA caíram na terça (24), e a Anthropic fechou abaixo do preço de estreia pela primeira vez. O movimento veio após forte alta impulsionada pelo retorno de Jensen Huang ao comando da Nvidia.",
+   "involves": "Anthropic, Nvidia, Jensen Huang, Nasdaq.",
+   "interpretation": "A queda é parte de uma correção mais ampla em tecnologia, não só um problema específico da empresa.",
+   "impact": "Risco de correção em papéis de IA; reflexo em índices americanos e, por tabela, na B3.",
+   "sentiment": "negativo",
+   "entities": [
+    "Anthropic",
+    "Nvidia",
+    "Jensen Huang"
+   ],
+   "tags": [
+    "IPO",
+    "tecnologia",
+    "Nasdaq"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "217194ae062c",
    "title": "Banco do Brasil (BBAS3) diz que não há decisão sobre IPO de empresas do grupo",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaHdKLTlQSC05YmRFa2dtcnlUYTd5emNsNzhPNFFib0FVcEg2U3ZiUkc3ekR0SGVSLUxENzlINjNsQzh2TGdhNGE1Vk1ILXA5bjBkZzNpLVVDQ3RlT1kzbWhIZ2gxU1h3U0NrY0pWZTY4cEt1OUlmYnU3QVpxQmFDNGh1UC1HQUN6V0NNNW5jVzV3WFdqal82RVVPM1AyUFZpV2kyRHBJSEplTWJ4VDBBTHNNUQ?oc=5",
@@ -1938,6 +1979,46 @@
     "advisors": "não divulgado",
     "why": "O banco afirma que não há decisão, mas o tema está em discussão. Vale monitorar e abordar a área de relações com investidores e a diretoria do BB."
    },
+   "ai": true
+  },
+  {
+   "id": "19af9ec42162",
+   "title": "Nasdaq recua 2% com perda de fôlego da Nvidia; ações da Anthropic caem abaixo do preço do IPO",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNnlfTnVmX0tLTjlFSmlRRlJvWk9vSlRvcHcxOEQwdnB6ZVZJODE3d1BveGtMdnNibVAwM2JyeHBWbV9COTBEZVhPMFROeWJRaG93SUg3VUpBLWdFeGNac2dzb3VBa2l0MkNzOFBSRWpLU0ZINkxtSnVoU2UtcWdTaFAwN19DZ3htVmJUZk0wbktlLXM3cmU5UFdUcldEeHJQNE5QWEpiVF9sOFc5Mkl0bHl6UVdaQk8yMDlXNkF0dnQ5eXRPUkdrMmNiMlpLc18yQXNzVzZ3?oc=5",
+   "published": "2026-11-24T21:14:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Times Brasil | CNBC",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNnlfTnVmX0tLTjlFSmlRRlJvWk9vSlRvcHcxOEQwdnB6ZVZJODE3d1BveGtMdnNibVAwM2JyeHBWbV9COTBEZVhPMFROeWJRaG93SUg3VUpBLWdFeGNac2dzb3VBa2l0MkNzOFBSRWpLU0ZINkxtSnVoU2UtcWdTaFAwN19DZ3htVmJUZk0wbktlLXM3cmU5UFdUcldEeHJQNE5QWEpiVF9sOFc5Mkl0bHl6UVdaQk8yMDlXNkF0dnQ5eXRPUkdrMmNiMlpLc18yQXNzVzZ3?oc=5",
+     "title": "Nasdaq recua 2% com perda de fôlego da Nvidia; ações da Anthropic caem abaixo do preço do IPO"
+    }
+   ],
+   "ids": [
+    "19af9ec42162"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Nasdaq recua 2% com Nvidia; ações da Anthropic caem abaixo do preço do IPO",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Queda de 2% da Nasdaq e perda de fôlego da Nvidia afetam o apetite a risco global.",
+   "summary": "A Nasdaq recuou cerca de 2% com a perda de força da Nvidia. As ações da Anthropic caíram abaixo do preço do IPO.",
+   "involves": "Nasdaq, Nvidia, Anthropic.",
+   "interpretation": "Correção em tecnologia, após forte alta.",
+   "impact": "Pode refletir em ações de tecnologia e no Ibovespa.",
+   "sentiment": "negativo",
+   "entities": [
+    "Nasdaq",
+    "Nvidia",
+    "Anthropic"
+   ],
+   "tags": [
+    "Nasdaq",
+    "tecnologia"
+   ],
+   "is_deal": false,
+   "deal": null,
    "ai": true
   },
   {
@@ -5224,6 +5305,44 @@
    "ai": false
   },
   {
+   "id": "2c68c8ef04e5",
+   "title": "Anthropic cai abaixo do IPO; perps superam US$ 1,3 bi",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbkxhcHAzWE9NeGNNd0JnUlJhZ3NNZFdPRnRJNV9zRHNBdkpXS1RncjAtaVpvU21qUjN4VWxyN1RXSEpaYl9YRl9Lb3V0M1drdGhEOWo2a2l6RFljQkJzOVVDV1ZPSF9xT2VPbUlTUjBKZWVVMUtlTlNJUnZYUXRQMHBR?oc=5",
+   "published": "2026-11-24T22:06:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Webitcoin",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbkxhcHAzWE9NeGNNd0JnUlJhZ3NNZFdPRnRJNV9zRHNBdkpXS1RncjAtaVpvU21qUjN4VWxyN1RXSEpaYl9YRl9Lb3V0M1drdGhEOWo2a2l6RFljQkJzOVVDV1ZPSF9xT2VPbUlTUjBKZWVVMUtlTlNJUnZYUXRQMHBR?oc=5",
+     "title": "Anthropic cai abaixo do IPO; perps superam US$ 1,3 bi"
+    }
+   ],
+   "ids": [
+    "2c68c8ef04e5"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Anthropic cai abaixo do IPO e posições perpétuas passam de US$ 1,3 bi",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Aspecto de derivativos cripto ligado ao papel; periférico.",
+   "summary": "A queda da Anthropic abaixo do preço do IPO ocorreu com contratos perpétuos acima de US$ 1,3 bilhão, segundo o Webitcoin.",
+   "involves": "Anthropic, derivativos.",
+   "interpretation": "Mostra alavancagem em torno do papel.",
+   "impact": "Aumenta volatilidade.",
+   "sentiment": "negativo",
+   "entities": [
+    "Anthropic"
+   ],
+   "tags": [
+    "IPO",
+    "derivativos"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "bb1e9fd31f2e",
    "title": "ValOre Metals Announces Definitive Agreement to Acquire Bemisa Água Azul Mineração S.A., Owner of the Água Azul Gold Project in Pará State, Brazil",
    "link": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQVVk4SzdwRGxlUEg1R25VWnltQjVDS1JXb2diamdIUFZSZWp0Sm92dVUxT2t0ZnR1ejBZbklzQktZbWFQLW1QeENkZmF4dnBBWTVwZVRtLW1JS0lTMUlhenh6Rkc3RHY5YXlwa2ZRNlNPNmYxRlhvTHVVNXRxYklFcGVteXYtRnBmc3VDZW1HQkpzUjJiNzhsV3k2aGF3Nm5iVjdiUDhrM0czeDc4UjQ4OFRCMG9wT2R1LXc0Sml5dnlIdnBLMDhURy1jZjVnWjIwUi1XZUU2bHpYZmI1c3JrVy10V0xhM0M1ZU9pTS1YeVpsajVsdC0wQlFBa0RhcW01OTJZMkJvX1ZOWFpfSG5xaTVsNXpRUlY5c0RhOU5XamplSC1EYWstSDRucmlmQ1BGaDNzRkFBd0FHZGswX0R4WUx4VEpzaUlYcnFnLUczbkJldl9JRzNNY0ZUalgyOWlX?oc=5",
@@ -6205,6 +6324,39 @@
    "snippet": "",
    "prescore": 5.6,
    "headline": "U.K. Regulator Says McCormick Sale of Colman’s Could Address Unilever Foods Merger Concerns",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e6ec47d262c3",
+   "title": "Ações da Anthropic caem abaixo do preço do IPO e ampliam temores sobre setor de IA",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOE9EczdsR3JpVzhNczVyMTVjZmdpVHRySHdCRDhKb0Zwbk1hMWRrTi0tZ3pLSXg1WXRDSjkzeVV5M2gwRlVESlhqRmNqNmlTUzBCM3hvc1Nzb3NISnRja3F1R0diSFpWYUxETXFMMnIyLUdFOWs3enBxYktEb0hhLWZSSlh2clN6RDI0OE1GSmtxMXdPMC1vUTVrd0dVakNXUmRlb3h1SmhfSWhVTnNWVnZmejhscG9kb2c?oc=5",
+   "published": "2026-11-24T14:03:13+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "VEJA",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOE9EczdsR3JpVzhNczVyMTVjZmdpVHRySHdCRDhKb0Zwbk1hMWRrTi0tZ3pLSXg1WXRDSjkzeVV5M2gwRlVESlhqRmNqNmlTUzBCM3hvc1Nzb3NISnRja3F1R0diSFpWYUxETXFMMnIyLUdFOWs3enBxYktEb0hhLWZSSlh2clN6RDI0OE1GSmtxMXdPMC1vUTVrd0dVakNXUmRlb3h1SmhfSWhVTnNWVnZmejhscG9kb2c?oc=5",
+     "title": "Ações da Anthropic caem abaixo do preço do IPO e ampliam temores sobre setor de IA"
+    }
+   ],
+   "ids": [
+    "e6ec47d262c3"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Ações da Anthropic caem abaixo do preço do IPO e ampliam temores sobre setor de IA",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7430,6 +7582,39 @@
    "ai": false
   },
   {
+   "id": "420f09cbf8f7",
+   "title": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeUoweG1BdVNrOHdKYjc5dFlfZDBEWFFjUlRsdFFpVW5fa1ZYaTdlWVZEQm42eGRpQzlfb25uanNRRURITWpGLWtJdU1BN1R4REhNdTlQQ3hFSEJ2R2lGQ1AzRTJkUlJfZG4yZGRaMndVN2JPeUt3YlZWZ1FCQm9xSzBnemZqOWxwclQ0UDZ5LUZ6eGVDdjl3MW9TaXJ5S3RXUW9pamJqWE5aRm01LWtVa2cySFFzVnlhMFp3WEpUbHdGNWtoYU0wUkV5WjRWaW8t0gHfAUFVX3lxTE11TEw2XzFjZDJOWmRUTEkwTi1ObGhvSW9lOVNtbGpqSXgyS1ZVX2g2cHNIS2tZbFFsVkpxektsaEFKQUZ4TGxWZGI1ODdKdnZwMndmUEVOa3VvcHc0NVo3R19tR0VlYWdyWjVxblZiNl9rU3ZLZ0dGTk9PWnRmTGF1WTBqWTBIOVBEVjA5UzBJYjJacnN0NlZIZUFJS09yX1lDTE5LV0dVb1FRZW03TGdvWEJMNHhzSmdrRlItQVNvLVhjLWZjTHJOdF9aZVpjdkh3LU9xOTNHNVZfRFY5NG8?oc=5",
+   "published": "2026-11-25T08:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeUoweG1BdVNrOHdKYjc5dFlfZDBEWFFjUlRsdFFpVW5fa1ZYaTdlWVZEQm42eGRpQzlfb25uanNRRURITWpGLWtJdU1BN1R4REhNdTlQQ3hFSEJ2R2lGQ1AzRTJkUlJfZG4yZGRaMndVN2JPeUt3YlZWZ1FCQm9xSzBnemZqOWxwclQ0UDZ5LUZ6eGVDdjl3MW9TaXJ5S3RXUW9pamJqWE5aRm01LWtVa2cySFFzVnlhMFp3WEpUbHdGNWtoYU0wUkV5WjRWaW8t0gHfAUFVX3lxTE11TEw2XzFjZDJOWmRUTEkwTi1ObGhvSW9lOVNtbGpqSXgyS1ZVX2g2cHNIS2tZbFFsVkpxektsaEFKQUZ4TGxWZGI1ODdKdnZwMndmUEVOa3VvcHc0NVo3R19tR0VlYWdyWjVxblZiNl9rU3ZLZ0dGTk9PWnRmTGF1WTBqWTBIOVBEVjA5UzBJYjJacnN0NlZIZUFJS09yX1lDTE5LV0dVb1FRZW03TGdvWEJMNHhzSmdrRlItQVNvLVhjLWZjTHJOdF9aZVpjdkh3LU9xOTNHNVZfRFY5NG8?oc=5",
+     "title": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91"
+    }
+   ],
+   "ids": [
+    "420f09cbf8f7"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b935b1a337a8",
    "title": "China Halts Critical Minerals Ban to Maintain Truce With US",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRVl4NjNqN2gwZ0daMjNHNG1lRHU3bmVyQUszYk1BN0U1OXgyYkxJdjcwVjZZSHNQZUZ2VWZYM2g1UjRXTjBPSnpuUlZESWNuMkZHd0tpQnZuT2ZTVDNRR3RuYjlpbWsxWFYzQmxWa2ZMWnU5WUkyNnA4LWk0dHExVWdHRWhhd3J5MnIzNTJYT2pSZmZkaF9CVUVlQjd2OEhQeDZvX1VEb1Q2UzRhZ2I4?oc=5",
@@ -7560,6 +7745,45 @@
    "is_deal": false,
    "deal": null,
    "ai": false
+  },
+  {
+   "id": "7be21a138cf9",
+   "title": "Saudi Engineer Accused of Bugging OpenAI to Be Released on $1 Million Bond",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaUdJQnh3YWdwSlhUalhNT3RVdVJmamprVFRUdFVKQXFxSEpjU0JVNEYtSDFNQXREcUVsRE4xUWVOQ2h1RFhXaWVOdlU0amtCa1k0MkVmZXdmajlpdFBjWElKZjRqLVlucF94NWVHV0NkSmRrWFYtcjlLVFFNZHpQc3lGWUdydUVXT0JBWl9MRFNGR0Fnd2h0d2hiSWwyUkRRbEVLVWd4VHFDMFk?oc=5",
+   "published": "2026-11-24T23:00:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaUdJQnh3YWdwSlhUalhNT3RVdVJmamprVFRUdFVKQXFxSEpjU0JVNEYtSDFNQXREcUVsRE4xUWVOQ2h1RFhXaWVOdlU0amtCa1k0MkVmZXdmajlpdFBjWElKZjRqLVlucF94NWVHV0NkSmRrWFYtcjlLVFFNZHpQc3lGWUdydUVXT0JBWl9MRFNGR0Fnd2h0d2hiSWwyUkRRbEVLVWd4VHFDMFk?oc=5",
+     "title": "Saudi Engineer Accused of Bugging OpenAI to Be Released on $1 Million Bond"
+    }
+   ],
+   "ids": [
+    "7be21a138cf9"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "Engenheiro saudita acusado de grampear a OpenAI será solto sob fiança de US$ 1 milhão",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Caso criminal, sem efeito de mercado.",
+   "summary": "Abdulrahman Alfozan, acusado de plantar um dispositivo de gravação em sala de executivos da OpenAI, será solto sob fiança de US$ 1 milhão.",
+   "involves": "Abdulrahman Alfozan, OpenAI.",
+   "interpretation": "Caso de segurança corporativa.",
+   "impact": "Baixo.",
+   "sentiment": "neutro",
+   "entities": [
+    "OpenAI",
+    "Abdulrahman Alfozan"
+   ],
+   "tags": [
+    "OpenAI",
+    "segurança"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
   },
   {
    "id": "6333ba67991e",
@@ -8184,25 +8408,58 @@
    "ai": false
   },
   {
-   "id": "4f1eb9ea8e47",
-   "title": "Após aprovação de projeto de ajuste fiscal, governo reduz contenção no Orçamento para R$ 12,6 bi",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNX1Yzb2xFLVJ1QTU1SEJnWHAwbURmTWJ4Zjc1UjhnY3NyV2c0V0Uxb1VDanc3Sjlyb0pMTTdWenlvRWpPdWtmVWRGSy1meTZtS1BYZ3cxZDVkR1M0RGtROGoyU3BRYURuREdYSlEtZ09yM2FhVWVnY0pjRkdjY2VqVEpwVS1xS2FjNFE1cTl5X3FRTFpSd0V6WTU5OUpTYkhmaEdkOUI3MDR0VzByQ3cyRnQ4Qk9CczQ2R0IyZ2V4ZjdLQTVETkVGakU2bkNDSWlLaVg0aFlQbTJmeEHSAeoBQVVfeXFMUC1PakRXS1FyWFhHVURvSExjZ29PdVczbkdaX1BzU1R3SkhwcUpUdWhGTXVycEVxR2k0MEhZUU1TYXItanVqS0tTYnBZZ1FQdDNDdGQya2VpWkJ0a3NVLVdpUnpiOXBTS1RPekpTSHBubWhrakNVVVp0b2lKNE9TTW1XR011U0NubS1VLUVjLXMyRmJ2VG15SmdVZ3M5RnZKemFvaFFJMEdadE5EeUtZU3Y5bVFSc05kdHFiWEhXTktPa25RdzZORk1BUHM5T1NneGFORm9YWU5lZkhNaXZJRjMxLU1TSDgtQjJB?oc=5",
-   "published": "2026-11-25T02:55:19+00:00",
-   "region": "BR",
+   "id": "e56b9f64e334",
+   "title": "Gold Bounces Back Above $3,500 as Yields, Dollar Retreat",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-24/gold-holds-decline-as-us-tariff-plans-reinforce-rate-hike-bets",
+   "published": "2026-11-24T23:51:22+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNX1Yzb2xFLVJ1QTU1SEJnWHAwbURmTWJ4Zjc1UjhnY3NyV2c0V0Uxb1VDanc3Sjlyb0pMTTdWenlvRWpPdWtmVWRGSy1meTZtS1BYZ3cxZDVkR1M0RGtROGoyU3BRYURuREdYSlEtZ09yM2FhVWVnY0pjRkdjY2VqVEpwVS1xS2FjNFE1cTl5X3FRTFpSd0V6WTU5OUpTYkhmaEdkOUI3MDR0VzByQ3cyRnQ4Qk9CczQ2R0IyZ2V4ZjdLQTVETkVGakU2bkNDSWlLaVg0aFlQbTJmeEHSAeoBQVVfeXFMUC1PakRXS1FyWFhHVURvSExjZ29PdVczbkdaX1BzU1R3SkhwcUpUdWhGTXVycEVxR2k0MEhZUU1TYXItanVqS0tTYnBZZ1FQdDNDdGQya2VpWkJ0a3NVLVdpUnpiOXBTS1RPekpTSHBubWhrakNVVVp0b2lKNE9TTW1XR011U0NubS1VLUVjLXMyRmJ2VG15SmdVZ3M5RnZKemFvaFFJMEdadE5EeUtZU3Y5bVFSc05kdHFiWEhXTktPa25RdzZORk1BUHM5T1NneGFORm9YWU5lZkhNaXZJRjMxLU1TSDgtQjJB?oc=5",
-     "title": "Após aprovação de projeto de ajuste fiscal, governo reduz contenção no Orçamento para R$ 12,6 bi"
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-24/gold-holds-decline-as-us-tariff-plans-reinforce-rate-hike-bets",
+     "title": "Gold Bounces Back Above $3,500 as Yields, Dollar Retreat"
     }
    ],
    "ids": [
-    "4f1eb9ea8e47"
+    "e56b9f64e334"
+   ],
+   "snippet": "Gold rebounded above $3,500 an ounce from session lows as Treasury yields and the dollar eased off earlier gains, prompting some bargain buying.",
+   "prescore": 2.8,
+   "headline": "Gold Bounces Back Above $3,500 as Yields, Dollar Retreat",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Gold rebounded above $3,500 an ounce from session lows as Treasury yields and the dollar eased off earlier gains, prompting some bargain buying.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "78ed67975758",
+   "title": "Citadel Securities Trading Revenue Already Tops Full-Year Record",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdmVwaUdwQWs5YXdPVEtiNGpPcGFpNFVIYTVIT19FSUxKLVNNeWJMTG9ma0ZucW83MlBZWUp1ZWdVWENRNVR4S0VQY3A4OUl3REt2MGdzdnUzRWRvUUxQVk1jQUg0a1JyNk9BSDVSaVVDWUdqd3E2RlRGbDhoN21WNkg0V3R2djNIbUFYTm45a1RidlNCcm1qMXEyaFR6Um9yZmZuVy1kMnVzTjdUanc5TnItTzBZdw?oc=5",
+   "published": "2026-11-24T19:00:05+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdmVwaUdwQWs5YXdPVEtiNGpPcGFpNFVIYTVIT19FSUxKLVNNeWJMTG9ma0ZucW83MlBZWUp1ZWdVWENRNVR4S0VQY3A4OUl3REt2MGdzdnUzRWRvUUxQVk1jQUg0a1JyNk9BSDVSaVVDWUdqd3E2RlRGbDhoN21WNkg0V3R2djNIbUFYTm45a1RidlNCcm1qMXEyaFR6Um9yZmZuVy1kMnVzTjdUanc5TnItTzBZdw?oc=5",
+     "title": "Citadel Securities Trading Revenue Already Tops Full-Year Record"
+    }
+   ],
+   "ids": [
+    "78ed67975758"
    ],
    "snippet": "",
    "prescore": 2.8,
-   "headline": "Após aprovação de projeto de ajuste fiscal, governo reduz contenção no Orçamento para R$ 12,6 bi",
-   "category": "macro",
+   "headline": "Citadel Securities Trading Revenue Already Tops Full-Year Record",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -9181,39 +9438,6 @@
    "ai": false
   },
   {
-   "id": "724268b3a364",
-   "title": "British Police Arrest Two Men Over Suspected Burglary at Royal Estate",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOUZ5THRrTnYzQWlNSmNpaWZWVmZqT1B6ZzJHblZxLXpqMGdma3FxSkdUbTVsdFFGWE1aMWl3MGFQTUZsOVRQVU5DQkh0ZmRnX2NJdTFNdFYxMnJlaGxOdFVfb2FwRGhuVmNITUpjNWxUbWlXVTBXb2ZreHBUakkwb1p0Vjg0TVd3eF9XaGxfdzJCMUZWX2l6cVo2UVVnLWIxSTVzck42cG9UWlk?oc=5",
-   "published": "2026-11-24T15:30:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOUZ5THRrTnYzQWlNSmNpaWZWVmZqT1B6ZzJHblZxLXpqMGdma3FxSkdUbTVsdFFGWE1aMWl3MGFQTUZsOVRQVU5DQkh0ZmRnX2NJdTFNdFYxMnJlaGxOdFVfb2FwRGhuVmNITUpjNWxUbWlXVTBXb2ZreHBUakkwb1p0Vjg0TVd3eF9XaGxfdzJCMUZWX2l6cVo2UVVnLWIxSTVzck42cG9UWlk?oc=5",
-     "title": "British Police Arrest Two Men Over Suspected Burglary at Royal Estate"
-    }
-   ],
-   "ids": [
-    "724268b3a364"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "British Police Arrest Two Men Over Suspected Burglary at Royal Estate",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "c5a23f801516",
    "title": "VÍDEO: ilha deserta na China é transformada em refúgio para gatos de rua",
    "link": "https://g1.globo.com/mundo/noticia/2026/11/24/video-ilha-deserta-na-china-e-transformada-em-refugio-para-gatos-de-rua.ghtml",
@@ -9891,7 +10115,112 @@
    ],
    "snippet": "",
    "prescore": 2.4,
+   "headline": "Amapá Minerals reativa mina de ouro parada desde 2022 e levanta US$ 110 milhões na Bolsa de Toronto",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c671c39468e5",
+   "title": "Bolsa opera em alta: confira os destaques do pregão",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB5M1FTWWZ2b2JGY2VqcExlZFN4elFOVnVqTUZheDZHMk16YVNpRUxQX19IV3ZuMXFJREVrWTVjVGtfek5WaGNLaDdDSjd1cHFWMFlqZDRwNms?oc=5",
+   "published": "2026-11-24T18:12:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "TradeMap",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB5M1FTWWZ2b2JGY2VqcExlZFN4elFOVnVqTUZheDZHMk16YVNpRUxQX19IV3ZuMXFJREVrWTVjVGtfek5WaGNLaDdDSjd1cHFWMFlqZDRwNms?oc=5",
+     "title": "Bolsa opera em alta: confira os destaques do pregão"
+    },
+    {
+     "source": "TradeMap",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UMmUtUUowcFlkMWQzc244bFZIcE5fQzJwOF9oNXBqblhTUHFldXpqcF9BcF9fNUlVWUNaVFRFRTFGVVVKUDVwOUE2cGd6czlmSEpYR082Q1Y?oc=5",
+     "title": "Bolsa operam em alta: confira os destaques do pregão"
+    }
+   ],
+   "ids": [
+    "c671c39468e5",
+    "23c149647a6d"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Bolsa opera em alta: confira os destaques do pregão",
+   "category": "mercados",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9a12bd783055",
+   "title": "A ponte entre o agro americano e o brasileiro passa por Omaha",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbExuZWlVQmZfYS1XdmpyZ05sVVpCWktlVmF1alRwWEg3Sng0NWFFQVd5THZFeDQ5ZTV3bU9va0dpZURCelNyQUxwYW5fclVDU0JIb1FrVWRYbng4VE51YTZDZWJlMV9mWEw0NFowZlRGMUJzcnEwQUh4cUVfcVhETExmQmVicUZjWEtxaVdScmNVaVdCNWNOSmxmYnVpLUQy?oc=5",
+   "published": "2026-11-24T14:24:15+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "The AgriBiz",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbExuZWlVQmZfYS1XdmpyZ05sVVpCWktlVmF1alRwWEg3Sng0NWFFQVd5THZFeDQ5ZTV3bU9va0dpZURCelNyQUxwYW5fclVDU0JIb1FrVWRYbng4VE51YTZDZWJlMV9mWEw0NFowZlRGMUJzcnEwQUh4cUVfcVhETExmQmVicUZjWEtxaVdScmNVaVdCNWNOSmxmYnVpLUQy?oc=5",
+     "title": "A ponte entre o agro americano e o brasileiro passa por Omaha"
+    }
+   ],
+   "ids": [
+    "9a12bd783055"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
    "headline": "A ponte entre o agro americano e o brasileiro passa por Omaha",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "abbd50f46e72",
+   "title": "Espaçolaser aposta em força de marca e descontos de até 80% na “Black da Líder” 2026",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUFB5U25Md1JIdnF4MWduQ01CVmZzaU9kdW9wS1lxUEd3ODZ5TWdiYm9HV1MyQU8tZjBXS2JUYU1QT2ZhX1dhdWtEVGFfNzNpWjktckRoSTZEcW1XcmQ2M1ZTNElFdGFpa1ZVU0JqcWI5UlRsTUFIWERpLWpmdHEtaU5QWlZ1YmFQMUFYQ2pwa1N6LVZxZWlUMDBVdEZwLUVwVUZyM0h0Q0JXeTlsRjU5ajZvTUpsTmVSZnlFRDR3NWJ1LWtl?oc=5",
+   "published": "2026-11-24T13:56:20+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Gazeta da Semana",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUFB5U25Md1JIdnF4MWduQ01CVmZzaU9kdW9wS1lxUEd3ODZ5TWdiYm9HV1MyQU8tZjBXS2JUYU1QT2ZhX1dhdWtEVGFfNzNpWjktckRoSTZEcW1XcmQ2M1ZTNElFdGFpa1ZVU0JqcWI5UlRsTUFIWERpLWpmdHEtaU5QWlZ1YmFQMUFYQ2pwa1N6LVZxZWlUMDBVdEZwLUVwVUZyM0h0Q0JXeTlsRjU5ajZvTUpsTmVSZnlFRDR3NWJ1LWtl?oc=5",
+     "title": "Espaçolaser aposta em força de marca e descontos de até 80% na “Black da Líder” 2026"
+    }
+   ],
+   "ids": [
+    "abbd50f46e72"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Espaçolaser aposta em força de marca e descontos de até 80% na “Black da Líder” 2026",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -10432,6 +10761,39 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Quando se trata de política, pensa-se primeiro nos nossos e, depois, nos outros",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9ec59f5df695",
+   "title": "Crise diplomática com Milei: Brasil encerra missão de embaixador na Argentina",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUE8tUXlGSzNBLWVuZmRyakk2b25VWWs2WndESDVIQV9MMV9uRHZOa0NzNVFublpZaEw1T3JWTV9wRjBycDBhMV9OWGNhYUg1V192bU11bkRVa1lsTVJwdEtQWG1RYmdQel9TQzVycE40TnNHdjVKYktBS0JqRENQWTM3NGhETG1XZTF6TW40WWNldFVSRjhuOW5DNkQ5dlZEWXM3Zy1taUFxT3pCZW1yYWptNjZKN1hRLWduVWhLdlNwX1YzR1E1T3pFZ9IB0AFBVV95cUxNblNTRS1fMDExU19ya3paOFo2MTJTaUh2eG1MZ182Mm5WSlllMjhUb25XbXlTMDdVMVdnOFQwVVpEbllKOUMxWk9MeHZNVjFhY2w4VGt0cVJvZXFpTkRhTFRVcDBRQnFfUnNpX0Rxam1Ja2lzQUNzTm9TcG5fRzBMQ2Q4VGtzTzRwdjlYTGNJNDlNOW5OV2gzNlFSbXl3OUNpNmtnc0JrR2YweVFVN3FZTl9VOWhuZWY4VjlBZGlLMENmUUZGRktzNnBOYUhSdnRw?oc=5",
+   "published": "2026-11-24T21:48:19+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUE8tUXlGSzNBLWVuZmRyakk2b25VWWs2WndESDVIQV9MMV9uRHZOa0NzNVFublpZaEw1T3JWTV9wRjBycDBhMV9OWGNhYUg1V192bU11bkRVa1lsTVJwdEtQWG1RYmdQel9TQzVycE40TnNHdjVKYktBS0JqRENQWTM3NGhETG1XZTF6TW40WWNldFVSRjhuOW5DNkQ5dlZEWXM3Zy1taUFxT3pCZW1yYWptNjZKN1hRLWduVWhLdlNwX1YzR1E1T3pFZ9IB0AFBVV95cUxNblNTRS1fMDExU19ya3paOFo2MTJTaUh2eG1MZ182Mm5WSlllMjhUb25XbXlTMDdVMVdnOFQwVVpEbllKOUMxWk9MeHZNVjFhY2w4VGt0cVJvZXFpTkRhTFRVcDBRQnFfUnNpX0Rxam1Ja2lzQUNzTm9TcG5fRzBMQ2Q4VGtzTzRwdjlYTGNJNDlNOW5OV2gzNlFSbXl3OUNpNmtnc0JrR2YweVFVN3FZTl9VOWhuZWY4VjlBZGlLMENmUUZGRktzNnBOYUhSdnRw?oc=5",
+     "title": "Crise diplomática com Milei: Brasil encerra missão de embaixador na Argentina"
+    }
+   ],
+   "ids": [
+    "9ec59f5df695"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Crise diplomática com Milei: Brasil encerra missão de embaixador na Argentina",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11432,270 +11794,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "68% dos jovens brasileiros dizem ter se deparado com golpes com IA ou falsa identidade no último ano; ainda assim, só 51% temem ser alvo, ante 60% entre os mais velhos",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "81e65381d33f",
-   "title": "INSS paga segunda etapa de benefícios de novembro; veja quem tem direito",
-   "link": "https://exame.com/invest/minhas-financas/inss-paga-segunda-etapa-de-beneficios-de-novembro-veja-quem-tem-direito/",
-   "published": "2026-11-25T05:00:44+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/minhas-financas/inss-paga-segunda-etapa-de-beneficios-de-novembro-veja-quem-tem-direito/",
-     "title": "INSS paga segunda etapa de benefícios de novembro; veja quem tem direito"
-    }
-   ],
-   "ids": [
-    "81e65381d33f"
-   ],
-   "snippet": "Beneficiários podem consultar a data e o valor do depósito pelo Meu INSS ou pela Central 135",
-   "prescore": 2.0,
-   "headline": "INSS paga segunda etapa de benefícios de novembro; veja quem tem direito",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Beneficiários podem consultar a data e o valor do depósito pelo Meu INSS ou pela Central 135",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "45804858f45c",
-   "title": "Menos fila, mais cliques: Raia e Drogasil vendem 15% mais remédios online na Black Friday",
-   "link": "https://exame.com/invest/minhas-financas/menos-fila-mais-cliques-raia-e-drogasil-vendem-15-mais-remedios-online-na-black-friday/",
-   "published": "2026-11-25T05:00:03+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/minhas-financas/menos-fila-mais-cliques-raia-e-drogasil-vendem-15-mais-remedios-online-na-black-friday/",
-     "title": "Menos fila, mais cliques: Raia e Drogasil vendem 15% mais remédios online na Black Friday"
-    }
-   ],
-   "ids": [
-    "45804858f45c"
-   ],
-   "snippet": "Nas lojas físicas de Raia e Drogasil, o avanço foi de 1,9% ante as quatro semanas anteriores à campanha. A participação de clientes multicanais subiu 5,5 pontos percentuais em relação à Black Friday de 2024.",
-   "prescore": 2.0,
-   "headline": "Menos fila, mais cliques: Raia e Drogasil vendem 15% mais remédios online na Black Friday",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Nas lojas físicas de Raia e Drogasil, o avanço foi de 1,9% ante as quatro semanas anteriores à campanha. A participação de clientes multicanais subiu 5,5 pontos percentuais em relação à Black Friday de 2024.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "32626707c81e",
-   "title": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
-   "link": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html",
-   "published": "2026-11-25T02:36:43+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html",
-     "title": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11"
-    }
-   ],
-   "ids": [
-    "32626707c81e"
-   ],
-   "snippet": "This has been the second attack by the Iran-backed group in six days on the tower, although the previous attack did not cause any casualties.",
-   "prescore": 2.0,
-   "headline": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "This has been the second attack by the Iran-backed group in six days on the tower, although the previous attack did not cause any casualties.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "c060c232044e",
-   "title": "Alcolumbre ameaça anular voto do senador que quebrar sigilo de cédula na eleição do Senado",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/alcolumbre-ameaca-anular-voto-do-senador-que-quebrar-sigilo-de-cedula-na-eleicao-do-senado.shtml",
-   "published": "2026-11-25T02:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/alcolumbre-ameaca-anular-voto-do-senador-que-quebrar-sigilo-de-cedula-na-eleicao-do-senado.shtml",
-     "title": "Alcolumbre ameaça anular voto do senador que quebrar sigilo de cédula na eleição do Senado"
-    }
-   ],
-   "ids": [
-    "c060c232044e"
-   ],
-   "snippet": "O presidente do Senado , Davi Alcolumbre ( União Brasil -AP), pretende anular os votos dos senadores que mostrarem a cédula de votação no dia da eleição para a Mesa Diretora do Senado. A estratégia foi revelada por ele a quatro aliados ouvidos pela Folha . Leia mais (11/24/2026 - 23h00)",
-   "prescore": 2.0,
-   "headline": "Alcolumbre ameaça anular voto do senador que quebrar sigilo de cédula na eleição do Senado",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O presidente do Senado , Davi Alcolumbre ( União Brasil -AP), pretende anular os votos dos senadores que mostrarem a cédula de votação no dia da eleição para a Mesa Diretora do Senado. A estratégia foi revelada por ele a quatro aliados ouvidos pela Folha . Leia mais (11/24/2026 - 23h00)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "3ad79a09c0f9",
-   "title": "Driven Tech Completes Acquisitions of ADEX and TekBay, Accelerating Enterprise AI Strategy",
-   "link": "https://www.prnewswire.com/news-releases/driven-tech-completes-acquisitions-of-adex-and-tekbay-accelerating-enterprise-ai-strategy-302949943.html",
-   "published": "2026-11-24T23:10:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "PR Newswire (M&A)",
-     "link": "https://www.prnewswire.com/news-releases/driven-tech-completes-acquisitions-of-adex-and-tekbay-accelerating-enterprise-ai-strategy-302949943.html",
-     "title": "Driven Tech Completes Acquisitions of ADEX and TekBay, Accelerating Enterprise AI Strategy"
-    }
-   ],
-   "ids": [
-    "3ad79a09c0f9"
-   ],
-   "snippet": "NEW YORK, Nov. 24, 2026 /PRNewswire/ -- Driven Tech, Inc. today announced the successful completion of its acquisitions of ADEX and TekBay, following receipt of all required government and regulatory approvals. The acquisitions significantly expand Driven's expertise in enterprise AI,...",
-   "prescore": 2.0,
-   "headline": "Driven Tech Completes Acquisitions of ADEX and TekBay, Accelerating Enterprise AI Strategy",
-   "category": "mna",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "NEW YORK, Nov. 24, 2026 /PRNewswire/ -- Driven Tech, Inc. today announced the successful completion of its acquisitions of ADEX and TekBay, following receipt of all required government and regulatory approvals. The acquisitions significantly expand Driven's expertise in enterprise AI,...",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "621f2126db80",
-   "title": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
-   "link": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
-   "published": "2026-11-24T22:18:47+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
-     "title": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says"
-    }
-   ],
-   "ids": [
-    "621f2126db80"
-   ],
-   "snippet": "Trump Account contributions from friends and family have passed $1 billion, according to the Treasury Department. Here's what families need to know.",
-   "prescore": 2.0,
-   "headline": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Trump Account contributions from friends and family have passed $1 billion, according to the Treasury Department. Here's what families need to know.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "5b0ad5da71df",
-   "title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
-   "link": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
-   "published": "2026-11-24T22:07:45+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "CNBC",
-     "link": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
-     "title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback"
-    }
-   ],
-   "ids": [
-    "5b0ad5da71df"
-   ],
-   "snippet": "The company's overall sales more than doubled on an annual basis during the third quarter, driven by AI server demand.",
-   "prescore": 2.0,
-   "headline": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The company's overall sales more than doubled on an annual basis during the third quarter, driven by AI server demand.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "38837d34711b",
-   "title": "Deputado do Novo aciona TCE contra compra de carros de R$ 5,8 milhões pelo TJSP",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/deputado-do-novo-aciona-tce-contra-compra-de-carros-de-r-58-milhoes-pelo-tjsp.shtml",
-   "published": "2026-11-24T21:59:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/deputado-do-novo-aciona-tce-contra-compra-de-carros-de-r-58-milhoes-pelo-tjsp.shtml",
-     "title": "Deputado do Novo aciona TCE contra compra de carros de R$ 5,8 milhões pelo TJSP"
-    }
-   ],
-   "ids": [
-    "38837d34711b"
-   ],
-   "snippet": "O deputado estadual Leo Siqueira (Novo-SP) acionou o Tribunal de Contas do Estado de São Paulo (TCE-SP) para pedir a suspensão imediata de pregão do Tribunal de Justiça ( TJSP ) destinado à compra de nove SUVs blindados, ao custo estimado de R$ 652 mil cada. Leia mais (11/24/2026 - 18h59)",
-   "prescore": 2.0,
-   "headline": "Deputado do Novo aciona TCE contra compra de carros de R$ 5,8 milhões pelo TJSP",
-   "category": "mna",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O deputado estadual Leo Siqueira (Novo-SP) acionou o Tribunal de Contas do Estado de São Paulo (TCE-SP) para pedir a suspensão imediata de pregão do Tribunal de Justiça ( TJSP ) destinado à compra de nove SUVs blindados, ao custo estimado de R$ 652 mil cada. Leia mais (11/24/2026 - 18h59)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13082,7 +13180,7 @@
    "id": "5f868e0984ea",
    "title": "CEO e presidente da Anthropic venderam mais de 500 milhões em ações no dia seguinte ao IPO",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbGwwUmVUcHBlLUdhWXFpX0xkQ2pjdUlJQlRMbldleTRsUlVfUXRjVXNUVmlGamZPUVpZOUtvSDlsYmt5ZnlWX2VnWFJEOFBTX0laZ0dqalZqdmFlYk4xVjFBVFZjOTZnX21GSy1iUjFNWFR3RTJqQ2NoTmdKXzF3YmZJQnBkb3JRU2tEN290emU0VWtSSXhfQktRSWhsTXY4THY4czVsTVNCSEVla21pbGlrMHdtWHlwWk5pVDF2WFYzYkdaQ2l3MGlTcEI?oc=5",
-   "published": "2026-11-25T21:00:00+00:00",
+   "published": "2026-11-25T22:00:00+00:00",
    "region": "BR",
    "outlets": [
     {
@@ -13255,6 +13353,45 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A Petrobras está retornando ao mercado de etanol com uma aquisição bilionária – anos depois de ter perdido dinheiro com seus investimentos no setor. Mas dessa vez é diferente, disse a CEO Magda Chambriard ao explicar a transação.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "0bf62c4239d3",
+   "title": "Banco do Brasil descarta IPO de empresas do grupo e nega planos de vender participação na BB Seguridade",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNmJXV21semVVT1YyX01kX1lITi00OGlydzNkVWhzV1FRQk5MbEQtbzZwbG01MWpYRzRtR2VRMlZCcGdqOWlVNFZUaVdadlRPOVFUUlFfcHhzdWRLd1VyaWlvTGhSdE5SVy0xYkZkU080cEpXdkd6VFprNkRfNDBWSE1ZS1VoQ0hrU0l1Q0NMbjc1bE5CLVRCYmdjbjVJMkp5cnphOGV5RUVnSkMxbGg2S3JIVmszcGRFS2xyV211a083YW82cUxCN0tvSXc4ZjY2T2ljaXJ3?oc=5",
+   "published": "2026-11-25T11:23:22+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "ADVFN",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNmJXV21semVVT1YyX01kX1lITi00OGlydzNkVWhzV1FRQk5MbEQtbzZwbG01MWpYRzRtR2VRMlZCcGdqOWlVNFZUaVdadlRPOVFUUlFfcHhzdWRLd1VyaWlvTGhSdE5SVy0xYkZkU080cEpXdkd6VFprNkRfNDBWSE1ZS1VoQ0hrU0l1Q0NMbjc1bE5CLVRCYmdjbjVJMkp5cnphOGV5RUVnSkMxbGg2S3JIVmszcGRFS2xyV211a083YW82cUxCN0tvSXc4ZjY2T2ljaXJ3?oc=5",
+     "title": "Banco do Brasil descarta IPO de empresas do grupo e nega planos de vender participação na BB Seguridade"
+    },
+    {
+     "source": "BPMoney",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTko1SkhBcEhybWJHZ0JsMnQ4bnJjcGdUOXVfZVpwRl9CeVcxMUZON0tkY3lZYzVmZmdZaUhuOVVTaG81V0tXSE9Zazc3MVdEWWgtT1prSXFFb0ItNDYzSmNLUkVpUHByMjBWZnYyU25feG1iaWFsaHdSQnpfLXIwRlFOanlLS2VzYmZUcmotckxzRTdEeEtrdXlZV25YX2g4Vmc?oc=5",
+     "title": "Banco do Brasil nega à CVM planos de IPO de controladas e descarta vender fatia na BB Seguridade"
+    }
+   ],
+   "ids": [
+    "0bf62c4239d3",
+    "87a0d12c8b50"
+   ],
+   "snippet": "",
+   "prescore": 6.9,
+   "headline": "Banco do Brasil descarta IPO de empresas do grupo e nega planos de vender participação na BB Seguridade",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13478,6 +13615,39 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Agentes econômicos ficaram de olho na reunião de Lula sobre nova PEC fiscal e reagiram à inflação e às novas tarifas dos EUA",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4d3b8e94244a",
+   "title": "M&A Maintains Amid Selloff, AI Credit Risk Rises",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-25/bloomberg-deals-11-25-2026-video",
+   "published": "2026-11-25T21:45:37+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-25/bloomberg-deals-11-25-2026-video",
+     "title": "M&A Maintains Amid Selloff, AI Credit Risk Rises"
+    }
+   ],
+   "ids": [
+    "4d3b8e94244a"
+   ],
+   "snippet": "A weekly, midday program that delivers high-impact, editorially driven coverage of the most important corporate transactions shaping the global market. Today's guests: Paul Weiss Global Chair of M&A Group Robert Kindler, Centerview Partners Partner Gayle Turk, Skadden Partner, M&A Brandon Van Dyke, and New Mountain Capital President & COO Adam Weinstein. (Source: Bloomberg)",
+   "prescore": 5.8,
+   "headline": "M&A Maintains Amid Selloff, AI Credit Risk Rises",
+   "category": "tech",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "A weekly, midday program that delivers high-impact, editorially driven coverage of the most important corporate transactions shaping the global market. Today's guests: Paul Weiss Global Chair of M&A Group Robert Kindler, Centerview Partners Partner Gayle Turk, Skadden Partner, M&A Brandon Van Dyke, and New Mountain Capital President & COO Adam Weinstein. (Source: Bloomberg)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14478,6 +14648,39 @@
    "ai": false
   },
   {
+   "id": "268fa2cbccde",
+   "title": "Ultrapar lidera as altas do Ibovespa em 2026",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBSE9aM1FHMk5YR2JteEcxZ1BhcHpTckFudzI0TVZPLWVEM3JRNThIazA3NGxzb0FheTZzelE5T1Q3Nl9hQklZd3EzVEQyQm5sb1VQdzZsbHc?oc=5",
+   "published": "2026-11-25T21:15:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "TradeMap",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBSE9aM1FHMk5YR2JteEcxZ1BhcHpTckFudzI0TVZPLWVEM3JRNThIazA3NGxzb0FheTZzelE5T1Q3Nl9hQklZd3EzVEQyQm5sb1VQdzZsbHc?oc=5",
+     "title": "Ultrapar lidera as altas do Ibovespa em 2026"
+    }
+   ],
+   "ids": [
+    "268fa2cbccde"
+   ],
+   "snippet": "",
+   "prescore": 4.4,
+   "headline": "Ultrapar lidera as altas do Ibovespa em 2026",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "e95c1bd29b23",
    "title": "Trump mira Embraer e açúcar com tarifas, pressiona Lula e reabre guerra comercial contra o Brasil",
    "link": "https://neofeed.com.br/economia/trump-mira-embraer-e-acucar-com-tarifas-pressiona-lula-e-reabre-guerra-comercial-contra-o-brasil/",
@@ -14945,6 +15148,39 @@
    "ai": false
   },
   {
+   "id": "5a9eb8fbd8ef",
+   "title": "CMN anuncia medidas para conter o endividamento das famílias",
+   "link": "https://g1.globo.com/economia/noticia/2026/11/25/cmn-anuncia-medidas-para-conter-o-endividamento-das-familias.ghtml",
+   "published": "2026-11-25T22:10:34+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/25/cmn-anuncia-medidas-para-conter-o-endividamento-das-familias.ghtml",
+     "title": "CMN anuncia medidas para conter o endividamento das famílias"
+    }
+   ],
+   "ids": [
+    "5a9eb8fbd8ef"
+   ],
+   "snippet": "O Conselho Monetário Nacional, do qual fazem parte os Ministérios da Fazenda e do Planejamento e o Banco Central, anunciou nesta quarta-feira (25) um conjunto de medidas para conter o endividamento da população. Segundo o comunicado, as ações “reforçam a necessidade de as instituições identificarem, monitorarem e mitigarem o risco de crédito, em especial o risco associado ao nível de endividamento dos tomadores”. A maior parte das novas regras entra em vigor em 1º de julho de 2027 (mais detalhes abaixo).",
+   "prescore": 3.8,
+   "headline": "CMN anuncia medidas para conter o endividamento das famílias",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O Conselho Monetário Nacional, do qual fazem parte os Ministérios da Fazenda e do Planejamento e o Banco Central, anunciou nesta quarta-feira (25) um conjunto de medidas para conter o endividamento da população. Segundo o comunicado, as ações “reforçam a necessidade de as instituições identificarem, monitorarem e mitigarem o risco de crédito, em especial o risco associado ao nível de endividamento",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "64e2fd25bf75",
    "title": "Por que o PIX está na mira dos EUA em investigação que embasa novas tarifas contra o Brasil",
    "link": "https://g1.globo.com/economia/noticia/2026/11/25/brasil-protesta-contra-recomendacao-dos-eua-de-novas-tarifas-sobre-avioes-e-acucar.ghtml",
@@ -14967,6 +15203,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Trump introduziu tarifas de 15% sobre produtos que entram nos Estados Unidos provenientes da maioria dos países do mundo. REUTERS/Elizabeth Frantz O PIX está entre os temas investigados pelo governo dos Estados Unidos na disputa comercial com o Brasil. Washington questiona políticas brasileiras relacionadas ao comércio digital e aos serviços de pagamentos eletrônicos, áreas que abrangem o sistema ",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "112846281b76",
+   "title": "Bond Traders Hedge a Hike Now, Cut Later Scenario",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa2hGc3h3UEdCRnlfNkxhQVdhS0RncV9TS0FwVVptYjdxSjNYVlNHeE93X2hPWFJXY280SVdLRHhEVUo1VVpOSDJHcWxnN19fdVpBVWhoZm1TRzA4QVVuaFhGTWdRTWJ2bGtVNUhmN094TjJ6WHpMUGlDNXQ1ZDlpa0Rya3ZUV1Y5OTVpODc5NVBvSy1QUkdHdi1qSGI3TDgtWlVjeg?oc=5",
+   "published": "2026-11-25T20:48:59+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa2hGc3h3UEdCRnlfNkxhQVdhS0RncV9TS0FwVVptYjdxSjNYVlNHeE93X2hPWFJXY280SVdLRHhEVUo1VVpOSDJHcWxnN19fdVpBVWhoZm1TRzA4QVVuaFhGTWdRTWJ2bGtVNUhmN094TjJ6WHpMUGlDNXQ1ZDlpa0Rya3ZUV1Y5OTVpODc5NVBvSy1QUkdHdi1qSGI3TDgtWlVjeg?oc=5",
+     "title": "Bond Traders Hedge a Hike Now, Cut Later Scenario"
+    }
+   ],
+   "ids": [
+    "112846281b76"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Bond Traders Hedge a Hike Now, Cut Later Scenario",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15796,6 +16065,39 @@
    "prescore": 3.4,
    "headline": "B3 Educação + MUB3: Anthropic na bolsa; o que o investidor brasileiro precisa saber sobre o BDR ANTH34",
    "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "df211e490fee",
+   "title": "Denza B3 carrega em 5 minutos? Veja quanto tempo levaria em diferentes carregadores",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1MSTROUzVxVVB5c1doV1lXVWF5clFZUG1rUFBJaEJJWS1oSTJTMms5STQxV250a3NUdnRIdVFyUVd0ZHBWYzZYUzJlV3JWRUF1N3BRSjFVeFgxS1dNeFZJY1dDS2Z2QnN2V21CVXBaYkN6bVV2Y3hfNUZna3BRQQ?oc=5",
+   "published": "2026-11-25T15:39:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Economic News Brasil",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1MSTROUzVxVVB5c1doV1lXVWF5clFZUG1rUFBJaEJJWS1oSTJTMms5STQxV250a3NUdnRIdVFyUVd0ZHBWYzZYUzJlV3JWRUF1N3BRSjFVeFgxS1dNeFZJY1dDS2Z2QnN2V21CVXBaYkN6bVV2Y3hfNUZna3BRQQ?oc=5",
+     "title": "Denza B3 carrega em 5 minutos? Veja quanto tempo levaria em diferentes carregadores"
+    }
+   ],
+   "ids": [
+    "df211e490fee"
+   ],
+   "snippet": "",
+   "prescore": 3.4,
+   "headline": "Denza B3 carrega em 5 minutos? Veja quanto tempo levaria em diferentes carregadores",
+   "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -16647,6 +16949,39 @@
    "ai": false
   },
   {
+   "id": "8fadf88ff4d4",
+   "title": "Asian Stocks Set for Gains After Late US Rebound: Markets Wrap",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-25/stock-market-today-dow-s-p-live-updates",
+   "published": "2026-11-25T22:10:42+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-25/stock-market-today-dow-s-p-live-updates",
+     "title": "Asian Stocks Set for Gains After Late US Rebound: Markets Wrap"
+    }
+   ],
+   "ids": [
+    "8fadf88ff4d4"
+   ],
+   "snippet": "Asian stocks looked poised for modest gains after a late Wall Street recovery pulled the Nasdaq 100 from the brink of a bear market, while lingering concerns over the sustainability of the artificial intelligence trade lifted Treasuries.",
+   "prescore": 2.8,
+   "headline": "Asian Stocks Set for Gains After Late US Rebound: Markets Wrap",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Asian stocks looked poised for modest gains after a late Wall Street recovery pulled the Nasdaq 100 from the brink of a bear market, while lingering concerns over the sustainability of the artificial intelligence trade lifted Treasuries.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "16bae97f9db6",
    "title": "Wall Street fecha no vermelho com pressão do setor tech — mas Dow Jones tem recuperação surpreendente",
    "link": "https://www.moneytimes.com.br/wall-street-fecha-no-vermelho-com-pressao-do-setor-tech-mas-dow-jones-tem-recuperacao-surpreendente-davs/",
@@ -17077,39 +17412,6 @@
    "ai": false
   },
   {
-   "id": "401c20c4d5ef",
-   "title": "BNP Paribas Hit by Higher Capital Surcharge Under New GSIB List",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-25/bnp-paribas-hit-by-higher-capital-surcharge-under-new-gsib-list",
-   "published": "2026-11-25T20:03:35+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-25/bnp-paribas-hit-by-higher-capital-surcharge-under-new-gsib-list",
-     "title": "BNP Paribas Hit by Higher Capital Surcharge Under New GSIB List"
-    }
-   ],
-   "ids": [
-    "401c20c4d5ef"
-   ],
-   "snippet": "BNP Paribas SA was hit with an extra 50 basis points capital requirement by the Financial Stability Board after the French bank moved into a different tier for the world’s most systemically important banks.",
-   "prescore": 2.8,
-   "headline": "BNP Paribas Hit by Higher Capital Surcharge Under New GSIB List",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "BNP Paribas SA was hit with an extra 50 basis points capital requirement by the Financial Stability Board after the French bank moved into a different tier for the world’s most systemically important banks.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "774ffa435e08",
    "title": "Mais caixa, mais dividendos? BTG eleva preço-alvo do IRB (IRBR3) e vê potencial de alta de 54%",
    "link": "https://www.seudinheiro.com/2026/empresas/mais-caixa-mais-dividendos-btg-eleva-preco-alvo-do-irb-irbr3-e-ve-potencial-de-alta-de-54-lmrs/",
@@ -17132,39 +17434,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Segundo o BTG, o lucro em caixa do IRB deve saltar de aproximadamente R$ 530 milhões em 2026 The post Mais caixa, mais dividendos? BTG eleva preço-alvo do IRB (IRBR3) e vê potencial de alta de 54% appeared first on Seu Dinheiro .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1246534631c6",
-   "title": "Australia’s Beaten-Down Small Caps Look Primed for 2027 Comeback",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-25/australia-s-beaten-down-small-caps-look-primed-for-2027-comeback",
-   "published": "2026-11-25T20:00:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-25/australia-s-beaten-down-small-caps-look-primed-for-2027-comeback",
-     "title": "Australia’s Beaten-Down Small Caps Look Primed for 2027 Comeback"
-    }
-   ],
-   "ids": [
-    "1246534631c6"
-   ],
-   "snippet": "Australia’s small-cap stocks may offer a buying opportunity in the year ahead as relatively attractive valuations and potential interest-rate cuts brighten their earnings outlook, providing an alternative to a broader market struggling for growth.",
-   "prescore": 2.8,
-   "headline": "Australia’s Beaten-Down Small Caps Look Primed for 2027 Comeback",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Australia’s small-cap stocks may offer a buying opportunity in the year ahead as relatively attractive valuations and potential interest-rate cuts brighten their earnings outlook, providing an alternative to a broader market struggling for growth.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17807,105 +18076,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "2712ae1c89f0",
-   "title": "EUA detonarão estoque de explosivos apesar da preocupação com nuvem tóxica de chumbo",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVkJUMlY0VUNSREpZbVpNbzFVU01xYzZFN0VpOTQ4Sm5fTjBWSVZWVnNPZ09nNHNQOXJtbXE4UTZmWlVabThPUjVLNWtVN19vMDB1c2xSMFhDVUJJbllXLUVwSzZNT25VMGdoUFE5QWZBS2gwTlFzaFY4dU4wZDgtMHhHWV9yaUZsOXJEZGMzNXBKQUZOWkJsNWh6N1ZXODluZDZfMUFFOU10ZUNvNy01Um5ZRmhoaDhDSkRIdllFYmRCWkdaYW9yLUhWN3k4UlRy0gHfAUFVX3lxTE83MzMzZURDZWkzLXNLTmx3c1podVR6NFQybFVfU3lRMGVPODRZWlp6dHhoNVREVHpfMFptaE5NTG9FMnRYOUFYVUFQNFhGWXVfVG9pQVBEUVBTYTM5bnhJZkdoSkFLcV9DY0Q4SHNxdm1OYmFSNHhTRTgyQ2pCZDNvV0kzOVdwVUhNemp2aDJIUmJTMk56bEltUy1hTDFyMzVjUFNCNGFmVkpTUGRSM3AwU3RkZ2l2aU44MTNhV3BRZHliRHhNMTdTWnQwak50RVNqa3h5RUN1VEcwWV9RNVk?oc=5",
-   "published": "2026-11-25T14:50:37+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVkJUMlY0VUNSREpZbVpNbzFVU01xYzZFN0VpOTQ4Sm5fTjBWSVZWVnNPZ09nNHNQOXJtbXE4UTZmWlVabThPUjVLNWtVN19vMDB1c2xSMFhDVUJJbllXLUVwSzZNT25VMGdoUFE5QWZBS2gwTlFzaFY4dU4wZDgtMHhHWV9yaUZsOXJEZGMzNXBKQUZOWkJsNWh6N1ZXODluZDZfMUFFOU10ZUNvNy01Um5ZRmhoaDhDSkRIdllFYmRCWkdaYW9yLUhWN3k4UlRy0gHfAUFVX3lxTE83MzMzZURDZWkzLXNLTmx3c1podVR6NFQybFVfU3lRMGVPODRZWlp6dHhoNVREVHpfMFptaE5NTG9FMnRYOUFYVUFQNFhGWXVfVG9pQVBEUVBTYTM5bnhJZkdoSkFLcV9DY0Q4SHNxdm1OYmFSNHhTRTgyQ2pCZDNvV0kzOVdwVUhNemp2aDJIUmJTMk56bEltUy1hTDFyMzVjUFNCNGFmVkpTUGRSM3AwU3RkZ2l2aU44MTNhV3BRZHliRHhNMTdTWnQwak50RVNqa3h5RUN1VEcwWV9RNVk?oc=5",
-     "title": "EUA detonarão estoque de explosivos apesar da preocupação com nuvem tóxica de chumbo"
-    }
-   ],
-   "ids": [
-    "2712ae1c89f0"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "EUA detonarão estoque de explosivos apesar da preocupação com nuvem tóxica de chumbo",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a7a792097078",
-   "title": "Bolsas em NY caem com forte correção em 'techs' e anúncio de novas tarifas",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORG8tdktlcHd6UENYT3A2MVA4a2ZZVUFSWFJWZzJLWXFwRXpaeGp1U3JwcGNsdklNeVlqYU9lcVFsNE44eC0wN2dUdFNNWm1tckNnY3puZGM1cnpYcVl3T2F0S2tlcmlZVmhrRHpNQ1pTblVMYUcxVWtsNFJVbWlRS05ieTJQZHp0RGlMdEduczJRS0NXY1RRaWZzcUlYQXRubWZickhLYXhQY3dRZmdMT3k2UjdReXFUTG9aZ2pmR0tvMF9teHoyak1R0gHYAUFVX3lxTE5yMmpBazh0S3FCRnFVREpxYWMxNDJTY0xHZDhqM29KVnN4WWdIb2psWk1uNmczMVlvT3lwRjBteVktdk1GRG90RjFJX0hVY0NnMVVWdzJlY1JTYlpKVHFNYWhzdXpvb2ZVM3RHdGJXcUpYM1pfeDNhSkp3U3gzV2dnZ0l3VFBZTHVfMDBlTkxybE4wS3lVYkdSd1FuM2Nub29FRHpMOFFIY1pLRXhGV0NCb2dBWlVob1RhcE40UG5MZzBzU25pYkVnRVF6QUV6TjFFZzF1SWJoRg?oc=5",
-   "published": "2026-11-25T14:49:47+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORG8tdktlcHd6UENYT3A2MVA4a2ZZVUFSWFJWZzJLWXFwRXpaeGp1U3JwcGNsdklNeVlqYU9lcVFsNE44eC0wN2dUdFNNWm1tckNnY3puZGM1cnpYcVl3T2F0S2tlcmlZVmhrRHpNQ1pTblVMYUcxVWtsNFJVbWlRS05ieTJQZHp0RGlMdEduczJRS0NXY1RRaWZzcUlYQXRubWZickhLYXhQY3dRZmdMT3k2UjdReXFUTG9aZ2pmR0tvMF9teHoyak1R0gHYAUFVX3lxTE5yMmpBazh0S3FCRnFVREpxYWMxNDJTY0xHZDhqM29KVnN4WWdIb2psWk1uNmczMVlvT3lwRjBteVktdk1GRG90RjFJX0hVY0NnMVVWdzJlY1JTYlpKVHFNYWhzdXpvb2ZVM3RHdGJXcUpYM1pfeDNhSkp3U3gzV2dnZ0l3VFBZTHVfMDBlTkxybE4wS3lVYkdSd1FuM2Nub29FRHpMOFFIY1pLRXhGV0NCb2dBWlVob1RhcE40UG5MZzBzU25pYkVnRVF6QUV6TjFFZzF1SWJoRg?oc=5",
-     "title": "Bolsas em NY caem com forte correção em 'techs' e anúncio de novas tarifas"
-    }
-   ],
-   "ids": [
-    "a7a792097078"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Bolsas em NY caem com forte correção em 'techs' e anúncio de novas tarifas",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "bc6ff7cce980",
-   "title": "Here Are the Economies Hit by Targeted US Tariff Deal Rates",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQWJ5MTRJUXpubWNVWkdIR2hpcnV1bUpjLUxIYmNSemdRT29ibEw5V0w0X2VXd2R4SHpfZUw0cEk0eUdFRkpmZ2k5ZS15X1J5OFNJNWpfNVFsMFVPZTNUallxWUFIWUQxSFRWVkI0NDNTRmdSd1pGLXdrTzU5UTkwZkFfaUpDempEUlFFVEw3QUNQNTZaM21pQk5UTk4?oc=5",
-   "published": "2026-11-25T14:39:35+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQWJ5MTRJUXpubWNVWkdIR2hpcnV1bUpjLUxIYmNSemdRT29ibEw5V0w0X2VXd2R4SHpfZUw0cEk0eUdFRkpmZ2k5ZS15X1J5OFNJNWpfNVFsMFVPZTNUallxWUFIWUQxSFRWVkI0NDNTRmdSd1pGLXdrTzU5UTkwZkFfaUpDempEUlFFVEw3QUNQNTZaM21pQk5UTk4?oc=5",
-     "title": "Here Are the Economies Hit by Targeted US Tariff Deal Rates"
-    }
-   ],
-   "ids": [
-    "bc6ff7cce980"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Here Are the Economies Hit by Targeted US Tariff Deal Rates",
-   "category": "mna",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -17990,7 +18160,7 @@
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 36,
+   "count": 35,
    "error": null
   },
   {
@@ -18088,7 +18258,7 @@
    "id": "q-ecm-br",
    "name": "Radar Mercado de Capitais",
    "ok": true,
-   "count": 29,
+   "count": 42,
    "error": null
   },
   {
@@ -18315,11 +18485,11 @@
   }
  ],
  "stats": {
-  "raw": 929,
-  "unique": 381,
-  "unique_all": 848,
+  "raw": 941,
+  "unique": 389,
+  "unique_all": 858,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 3.4
+  "seconds": 3.5
  }
 }
