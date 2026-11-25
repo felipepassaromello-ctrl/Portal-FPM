@@ -218,6 +218,9 @@
   }
   const ciaName = (k) => cias.resumo[k]?.nm || "";
   // texto com link para o perfil da companhia, quando o portal reconhece o nome
+  // parte de um deal: nome com link para o perfil da companhia; vazio vira "não divulgado" (na base, 45 deals vieram sem
+  // comprador, como IPOs e captações, e a célula ficava em branco)
+  const party = (t) => (String(t || "").trim() ? ciaLinked(String(t).trim()) : `<span class="muted">não divulgado</span>`);
   function ciaLinked(text) {
     const k = companyOf(text);
     return k ? `<a class="cia-link" href="${ciaHref(k)}" title="Perfil de ${esc(ciaName(k) || text)}">${esc(text)}</a>` : esc(text);
@@ -563,7 +566,7 @@
         <div class="side-block"><h3 class="section-label">Setores mais ativos</h3>
           <ul class="bullets macro">${topSectors.map(([k, n]) => `<li><b>${esc(k)}</b> ${n}</li>`).join("") || "<li>–</li>"}</ul></div>
         <div class="side-block"><h3 class="section-label">Maiores da semana</h3>
-          <ul class="bullets">${topDeals.map((d) => `<li>${esc(d.buyer)} → ${esc(d.target)} <span class="muted">· ${esc(d.value || "valor não divulgado")}${isBrDeal(d) ? "" : " · exterior"}</span></li>`).join("") || "<li>–</li>"}</ul></div>
+          <ul class="bullets">${topDeals.map((d) => `<li>${party(d.buyer)} → ${party(d.target)} <span class="muted">· ${esc(d.value || "valor não divulgado")}${isBrDeal(d) ? "" : " · exterior"}</span></li>`).join("") || "<li>–</li>"}</ul></div>
         <div class="side-block"><h3 class="section-label">Assessores mais citados</h3>
           <ul class="bullets macro adv-rank">${advisorRank(deals).map(([n, c]) => `<li><button class="link-btn" type="button" data-advq="${esc(n)}">${esc(n)}</button> ${c}</li>`).join("") || "<li>Sem assessores divulgados na base.</li>"}</ul></div>
       </div>`;
@@ -575,7 +578,7 @@
     const rows = baseRows();
     $("#base-count").textContent = `${rows.length} deals`;
     $("#base-body").innerHTML = rows.map((d) => `<tr>
-      <td>${esc(fmtDay(d.first_seen))}</td><td>${esc(d.type)}</td><td>${esc(d.buyer)}</td><td>${esc(d.target)}</td>
+      <td>${esc(fmtDay(d.first_seen))}</td><td>${esc(d.type)}</td><td>${party(d.buyer)}</td><td>${party(d.target)}</td>
       <td>${esc(d.value)}</td><td><span class="stage">${esc(d.stage)}</span></td><td>${esc(d.sector)}</td>
       <td class="tl">${(d.timeline || []).map((t) => `<a href="${safeUrl(t.link)}" target="_blank" rel="noopener" title="${esc(t.headline)}">${esc(fmtDay(t.date))} · ${esc(t.stage)}</a>`).join("<br>")}</td></tr>`).join("");
   }
