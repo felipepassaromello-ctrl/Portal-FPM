@@ -24,7 +24,7 @@ import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
 import { sectorProps, rotorGeo, towerGeo, treeGeo, personGeo, carGeo, boatGeo } from "./props.js";
-import { themeOf, themeDef, guyGeo, beach } from "./temas.js";
+import { themeOf, themeDef, guyGeo, beach, sea } from "./temas.js";
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
@@ -219,7 +219,7 @@ export function createMap(canvas, world, opts = {}) {
   }
   for (let k = 0; k < (small ? 1500 : 2800); k++) {
     const x = (rnd() - 0.5) * (MW + 10), z = (rnd() - 0.5) * (MH + 9);
-    if (plateSd(x, z) < 1.3 || beachSd(x, z) < 0.5 || hash1(Math.floor(x / 3) * 31 + Math.floor(z / 3) * 17) < 0.42) continue;
+    if (plateSd(x, z) < 1.3 || beachSd(x, z) < 0.5 || (x < -MW / 2 - 3.5 && Math.abs(z + 4) < 5.5) || hash1(Math.floor(x / 3) * 31 + Math.floor(z / 3) * 17) < 0.42) continue;
     trees.push([x, z, 0.6 + rnd() * 0.7]);
   }
 
@@ -283,6 +283,7 @@ export function createMap(canvas, world, opts = {}) {
         float land = length(max(bq, 0.0)) + min(max(bq.x, bq.y), 0.0) - 4.0 + vnoise(p * 0.07 + 3.1) * 7.0 + n1 * 1.5;
         float bd = length(vec2(p.x - clamp(p.x, uBeach.x, uBeach.y), p.y - uBeach.z)) - uBeach.w;
         land = min(land, bd);
+        land = min(land, max(abs(p.y + 4.0) - 4.6, abs(p.x + uLand.x - 2.0) - 4.2) + 0.6);
         float d = 1e5; vec3 sec = uCols[0];
         for (int k = 0; k < ${NR}; k++) { float dk = sdRound(p - uRects[k].xy, uRects[k].zw, 0.6); if (dk < d) { d = dk; sec = uCols[k]; } }
         vec2 muv = vec2(p.x / uSize.x + 0.5, 0.5 - p.y / uSize.y);
@@ -677,6 +678,15 @@ export function createMap(canvas, world, opts = {}) {
     }
     movers(boatGeo(0), boats[0], false);
     movers(boatGeo(1), boats[1], false);
+    // ao largo: plataformas de petróleo; na costa oeste, o porto com um navio atracado; cargueiros cruzando devagar
+    const still0 = (x, z, sc, yaw = 0) => ({ x, y: TOP, z, yaw, s: sc, mx: 0, mz: 0, ph: 0.5, sp: 0, col: [1, 1, 1] });
+    const ex = MW / 2 + 9, ez = MH / 2 + 7;
+    movers(sea.platform(), [still0(ex + 15, -ez * 0.35, 2.6), still0(ex + 20, ez * 0.3, 2.2, 0.8), still0(-ex * 0.3, -ez - 15, 2.4, 2.2)], false, true);
+    const PX = -ex - 2.2, PZ = -4;
+    movers(sea.pier(), [still0(PX, PZ, 1.5, -Math.PI / 2)], false, true);
+    const ships = [still0(PX - 1.75, PZ + 1.9, 2.1, Math.PI / 2), still0(PX - 1.75, PZ - 1.9, 2.1, -Math.PI / 2)];
+    for (const [x, z, a, L] of [[-ex - 18, 16, -1.35, 30], [ex + 9, 16, 1.75, 30], [-18, -ez - 9, 0.1, 34]]) ships.push({ x, y: TOP, z, yaw: -a, s: 2.2, mx: Math.cos(a) * L, mz: Math.sin(a) * L, ph: rnd(), sp: 0.012, bob: 0.008, col: [1, 1, 1] });
+    movers(sea.cargo(), ships, false, true);
   }
 
   // ---------------------------------------------------------------- a vizinhança de cada negócio, a praia e a estátua
@@ -1091,7 +1101,7 @@ export function createMap(canvas, world, opts = {}) {
   }
   function limit() {
     // a câmera pode passear por toda a ilha e um pouco de mar
-    const lx = MW / 2 + 8, lz = MH / 2 + 11;
+    const lx = MW / 2 + 16, lz = MH / 2 + 13;
     cam.x = clamp(cam.x, -lx, lx); cam.z = clamp(cam.z, -lz, lz);
     cam.tx = clamp(cam.tx, -lx, lx); cam.tz = clamp(cam.tz, -lz, lz);
   }
