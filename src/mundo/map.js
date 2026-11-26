@@ -21,6 +21,7 @@ import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+import { sectorProps, rotorGeo } from "./props.js";
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
@@ -75,13 +76,13 @@ export function createMap(canvas, world, opts = {}) {
   scene.environmentIntensity = 0.22;
 
   // luar frio de um lado, um resto de pôr do sol do outro
-  const moon = new THREE.DirectionalLight(0x9fc0ff, 1.5);
+  const moon = new THREE.DirectionalLight(0x9fc0ff, 2.3);
   moon.position.set(-60, 110, 40);
   scene.add(moon);
   const dusk = new THREE.DirectionalLight(0xffa972, 0.7);
   dusk.position.set(90, 30, -70);
   scene.add(dusk);
-  scene.add(new THREE.HemisphereLight(0x33456b, 0x06070a, 0.9));
+  scene.add(new THREE.HemisphereLight(0x4a5f8f, 0x0a0c12, 1.5));
 
   // pós-processamento: o brilho das luzes (bloom). Se o aparelho não der conta, desenha direto.
   let composer = null, bloom = null;
@@ -195,7 +196,7 @@ export function createMap(canvas, world, opts = {}) {
         float tw = 0.75 + 0.25 * sin(uTime * (0.6 + 2.0 * hash21(id + 5.1)) + h * 40.0);
         float on = step(1.0 - dens, h);
         float px = fwidth(q.x) + fwidth(q.y);
-        float dot_ = smoothstep(0.2, 0.04, length(f - jit));
+        float dot_ = smoothstep(0.13, 0.03, length(f - jit));
         return mix(on * dot_ * tw, dens * 0.07, smoothstep(0.5, 1.4, px));
       }
       void main(){
@@ -213,6 +214,22 @@ export function createMap(canvas, world, opts = {}) {
         float dens = clamp(lum * 3.2, 0.0, 0.85);
         vec3 warm = mix(vec3(1.0, 0.72, 0.42), normalize(t + 0.001) * 1.3, 0.35);
         col += warm * (lights(vWp.xz, 0.21, dens, 0.0) * 0.9 + lights(vWp.xz + 3.7, 0.55, dens * 0.6, 9.0) * 0.8) * uRise;
+        // trânsito: faróis brancos num sentido, lanternas vermelhas no outro, correndo pela malha de ruas
+        float fwS = fwidth(vWp.x);
+        float nearK = (1.0 - smoothstep(0.012, 0.05, fwS)) * inside * smoothstep(0.02, 0.1, lum) * uRise;
+        if (nearK > 0.001) {
+          for (int ax = 0; ax < 2; ax++) {
+            vec2 pq = ax == 0 ? vWp.xz : vWp.zx;
+            float lane = floor(pq.y / 1.6 + 0.5);
+            float off = pq.y - lane * 1.6;
+            float sideL = sign(off);
+            float lineK = smoothstep(0.03, 0.012, abs(abs(off) - 0.035));
+            float sp = (0.5 + 0.7 * hash21(vec2(lane, float(ax) + 3.0))) * sideL;
+            float u = pq.x * 5.0 - uTime * sp * 5.0;
+            float car = step(0.86, hash21(vec2(floor(u), lane * 7.0 + sideL))) * smoothstep(0.32, 0.1, abs(fract(u) - 0.5));
+            col += mix(vec3(1.0, 0.12, 0.08), vec3(1.0, 0.92, 0.75), step(0.0, sideL * (ax == 0 ? 1.0 : -1.0))) * car * lineK * nearK * 1.1;
+          }
+        }
         // setor em foco: o resto apaga
         float inF = step(uFocus.x, vWp.x) * step(vWp.x, uFocus.z) * step(uFocus.y, vWp.z) * step(vWp.z, uFocus.w);
         col *= 1.0 - 0.8 * uFocusK * (1.0 - inF);
@@ -230,10 +247,10 @@ export function createMap(canvas, world, opts = {}) {
 
   // ------------------------------------------------------------------ peças (instâncias)
   const instU = { uRise: { value: 1.4 }, uDim: { value: 0 }, uTime: { value: 0 }, uAcc: { value: ACC }, uFocus: { value: -1 } };
-  const inst = new Array(N).fill(null); // nó → [malha, índice]
+  const inst = Array.from({ length: N }, () => []); // nó → [[malha, índice], ...] (o prédio e a peça do setor)
   const meshes = [];
-  const VERT_HEAD = "attribute float aHL; attribute float aVis; attribute float aDelay; attribute float aPlate; attribute float aSeed; attribute vec3 aSize; attribute float aLit; uniform float uRise; uniform float uTime; uniform float uFocus; varying vec3 vOp; varying vec3 vOn; varying vec3 vSize; varying float vHL; varying float vOther; varying float vSeed; varying float vLit;";
-  const FRAG_HEAD = `varying vec3 vOp; varying vec3 vOn; varying vec3 vSize; varying float vHL; varying float vOther; varying float vSeed; varying float vLit; uniform float uDim; uniform float uTime; uniform vec3 uAcc;\n${GLSL_HASH}`;
+  const VERT_HEAD = "attribute float aHL; attribute float aVis; attribute float aDelay; attribute float aPlate; attribute float aSeed; attribute vec3 aSize; attribute float aLit; attribute float aPart; varying float vPart; uniform float uRise; uniform float uTime; uniform float uFocus; varying vec3 vOp; varying vec3 vOn; varying vec3 vSize; varying float vHL; varying float vOther; varying float vSeed; varying float vLit;";
+  const FRAG_HEAD = `varying float vPart; varying vec3 vOp; varying vec3 vOn; varying vec3 vSize; varying float vHL; varying float vOther; varying float vSeed; varying float vLit; uniform float uDim; uniform float uTime; uniform vec3 uAcc;\n${GLSL_HASH}`;
   function instanced(name, geo, mat, idx, place, kind) {
     const n = Math.max(1, idx.length);
     const hl = new Float32Array(n), vis = new Float32Array(n).fill(1), delay = new Float32Array(n), plate = new Float32Array(n), seed = new Float32Array(n), size = new Float32Array(n * 3), lit = new Float32Array(n);
@@ -245,9 +262,10 @@ export function createMap(canvas, world, opts = {}) {
         .replace("#include <common>", `#include <common>\n${VERT_HEAD}`)
         .replace("#include <begin_vertex>", `#include <begin_vertex>
           float rise = smoothstep(aDelay, aDelay + 0.35, uRise);
-          vOp = position; vOn = normal; vSize = aSize; vHL = aHL; vSeed = aSeed; vLit = aLit;
+          vPart = aPart; vOp = position; vOn = normal; vSize = aSize; vHL = aHL; vSeed = aSeed; vLit = aLit;
           vOther = uFocus >= 0.0 && abs(uFocus - aPlate) > 0.5 ? 1.0 : 0.0;
-          ${kind === "bld" ? "transformed.y *= max(0.001, rise * aVis); transformed.xz *= aVis;"
+          ${kind === "spin" ? "float sa = uTime * (1.1 + 1.4 * aSeed) + aSeed * 20.0; transformed.xy = mat2(cos(sa), -sin(sa), sin(sa), cos(sa)) * transformed.xy; transformed *= max(0.001, rise * aVis);"
+            : kind === "bld" ? "transformed.y *= max(0.001, rise * aVis); transformed.xz *= aVis;"
             // peças pequenas: crescem no lugar; as do céu (aLit = 1) balançam devagar
             : "transformed *= max(0.001, rise * aVis); transformed.y += aLit * 0.22 * sin(uTime * 0.9 + aSeed * 40.0) / max(0.05, aSize.x);"}`);
       sh.fragmentShader = sh.fragmentShader
@@ -259,6 +277,24 @@ export function createMap(canvas, world, opts = {}) {
           vec3 sec = diffuseColor.rgb;
           vec3 glow = vec3(0.0);
           ${kind === "bld" ? `
+          float live = 1.0 - 0.93 * dimK;
+          if (vPart > 0.5) {
+            // a peça do setor: concreto, luz do setor, chama, metal, janelas, luz de obstáculo
+            float up = 0.75 + 0.25 * vOn.y;
+            if (vPart < 1.5) { diffuseColor.rgb = mix(vec3(0.3, 0.33, 0.39), sec, 0.2) * up; glow = sec * 0.035 * live; }
+            else if (vPart < 2.5) { diffuseColor.rgb = sec * 0.5; glow = sec * 1.15 * live; }
+            else if (vPart < 3.5) { float fl = 0.72 + 0.28 * sin(uTime * 13.0 + vSeed * 50.0) * sin(uTime * 7.3 + vOp.y * 9.0); diffuseColor.rgb = vec3(0.3, 0.1, 0.02); glow = vec3(1.0, 0.42, 0.08) * 2.2 * fl * live; }
+            else if (vPart < 4.5) { diffuseColor.rgb = vec3(0.1, 0.11, 0.14) * up; }
+            else if (vPart < 5.5) {
+              vec2 q = vec2((vOp.x + vOp.z) * 13.0, vOp.y * 12.0); vec2 f = fract(q);
+              float on = step(0.45, hash21(floor(q) + floor(vSeed * 997.0) / 997.0 * 17.0));
+              float mk = smoothstep(0.1, 0.2, f.x) * smoothstep(0.9, 0.8, f.x) * smoothstep(0.2, 0.32, f.y) * smoothstep(0.86, 0.74, f.y);
+              float px = max(fwidth(q.x), fwidth(q.y));
+              diffuseColor.rgb = vec3(0.07, 0.08, 0.11);
+              glow = vec3(1.0, 0.68, 0.34) * mix(on * mk, 0.22, smoothstep(0.4, 1.0, px)) * 0.8 * (1.0 - top) * live;
+            } else { diffuseColor.rgb = vec3(0.2, 0.02, 0.02); glow = vec3(1.0, 0.1, 0.06) * 2.4 * (0.25 + 0.75 * step(0.0, sin(uTime * 2.6 + vSeed * 40.0))) * live; }
+            glow += uAcc * vHL * vHL * 0.3 + sec * step(0.01, vHL) * (1.0 - vHL) * 0.12;
+          } else {
           // fachada de vidro escuro com janelas acesas; a coroa e o teto levam a cor do setor
           float side = abs(vOn.x) > 0.5 ? 1.0 : 0.0;
           float fw = mix(vSize.x, vSize.z, side);
@@ -267,28 +303,29 @@ export function createMap(canvas, world, opts = {}) {
           float nx = max(2.0, floor(fw / 0.085)), ny = max(2.0, floor(vSize.y / 0.11));
           vec2 q = vec2(along * nx, vOp.y * ny);
           vec2 id = floor(q), f = fract(q);
-          float face = vOn.x * 1.0 + vOn.z * 2.0;
-          float h = hash21(id + vSeed * 71.0 + face * 13.0);
-          float tw = hash21(id * 1.7 + vSeed * 31.0 + face);
+          float face = floor(vOn.x + 0.5) + floor(vOn.z + 0.5) * 2.0;
+          float sd = floor(vSeed * 997.0) / 997.0;
+          float h = hash21(id + sd * 71.0 + face * 13.0);
+          float tw = hash21(id * 1.7 + sd * 31.0 + face);
           float flick = step(0.93, tw) * floor(uTime * 0.35 + tw * 9.0) * 0.37;
           float on = step(1.0 - vLit, fract(h + flick));
           float mask = smoothstep(0.1, 0.2, f.x) * smoothstep(0.9, 0.8, f.x) * smoothstep(0.2, 0.32, f.y) * smoothstep(0.86, 0.74, f.y);
           float px = max(fwidth(q.x), fwidth(q.y));
           float win = mix(on * mask, vLit * 0.2, smoothstep(0.4, 1.0, px)) * (1.0 - top);
-          vec3 winCol = mix(vec3(1.0, 0.66, 0.32), vec3(0.62, 0.8, 1.0), step(0.78, hash21(id + vSeed * 3.1)));
+          vec3 winCol = mix(vec3(1.0, 0.66, 0.32), vec3(0.62, 0.8, 1.0), step(0.78, hash21(id + sd * 3.1)));
           winCol = mix(winCol, sec, 0.22 + 0.4 * smoothstep(0.4, 1.0, px));
           float crownH = min(0.14, vSize.y * 0.12);
           float crown = smoothstep(vSize.y - crownH - 0.012, vSize.y - crownH, hgt) * (1.0 - top);
           float edge = max(abs(vOp.x), abs(vOp.z)) * 2.0;
           float roofRim = top * smoothstep(0.86, 0.95, edge);
           float foot = (1.0 - top) * (1.0 - smoothstep(0.0, 0.5, hgt));
-          diffuseColor.rgb = mix(vec3(0.03, 0.04, 0.06), sec, 0.07 + 0.06 * top);
-          float live = 1.0 - 0.93 * dimK;
+          diffuseColor.rgb = mix(vec3(0.05, 0.065, 0.1), sec, 0.09 + 0.06 * top);
           // luz de obstáculo no topo dos mais altos, piscando
           float beacon = top * smoothstep(0.1, 0.05, length(vOp.xz)) * step(3.2, vSize.y) * (0.35 + 0.65 * step(0.0, sin(uTime * 2.2 + vSeed * 40.0)));
           glow = (winCol * win * 0.78 + sec * (crown * 1.25 + roofRim * 0.95 + top * 0.04 + foot * 0.1) + vec3(1.0, 0.12, 0.08) * beacon * 2.2) * live;
           glow += uAcc * vHL * vHL * (0.1 + 1.3 * crown + 0.9 * roofRim + 0.25 * top + 0.25 * foot) * (0.9 + 0.1 * sin(uTime * 3.0));
-          glow += sec * step(0.01, vHL) * (1.0 - vHL) * (0.5 * crown + 0.4 * roofRim);` : `
+          glow += sec * step(0.01, vHL) * (1.0 - vHL) * (0.5 * crown + 0.4 * roofRim);
+          }` : `
           // peças pequenas: luzes da cor do tipo
           float live = 1.0 - 0.92 * dimK;
           diffuseColor.rgb = sec * (0.35 + 0.3 * top);
@@ -300,7 +337,7 @@ export function createMap(canvas, world, opts = {}) {
     const mesh = new THREE.InstancedMesh(geo, mat, n);
     const m4 = new THREE.Matrix4(), col = new THREE.Color(), sz = new THREE.Vector3();
     idx.forEach((i, k) => {
-      inst[i] = [mesh, k];
+      inst[i].push([mesh, k]);
       place(i, m4, col, sz);
       mesh.setMatrixAt(k, m4);
       mesh.setColorAt(k, col);
@@ -338,6 +375,35 @@ export function createMap(canvas, world, opts = {}) {
   for (let i = 0; i < N; i++) if (isGround[i]) (shape[i] === "tower" && Hh[i] > 3.2 ? tall : low).push(i);
   instanced("tall", tierGeo(), bldMat(), tall, placeBld, "bld");
   instanced("low", boxGeo(), bldMat(), low, placeBld, "bld");
+
+  // a operação de cada setor ao lado da sede (props.js): o setor se lê pela forma
+  const PROPS = sectorProps();
+  const smokePts = [], rotors = [];
+  const propAt = new Map(); // companhia → [x, z, escala]
+  for (const [sec, pr] of Object.entries(PROPS)) {
+    const list = [];
+    for (let i = 0; i < N; i++) if (isGround[i] && world.nodes[i].t === "c" && world.nodes[i].c === sec && (!pr.top || (shape[i] === "tower" && Hh[i] > 3.2))) list.push(i);
+    if (!list.length) continue;
+    instanced(`prop-${sec}`, pr.geo, bldMat(), list, (i, m4, col, sz) => {
+      const w = (SX[i] + SZ[i]) / 2, s2 = pr.top ? w * 0.62 : w * (shape[i] === "tower" ? 0.95 : 0.8);
+      const px = pr.top ? X[i] : X[i] + SX[i] / 2 + s2 * 0.5, py = pr.top ? TOP + Hh[i] : TOP, pz = pr.top ? Z[i] : Z[i] + SZ[i] * 0.12;
+      m4.compose(pos3.set(px, py, pz), quat.identity(), scl.set(s2, s2, s2));
+      vivid(palette.sector(sec), col);
+      sz.set(s2, s2, s2); sz.w = 0;
+      propAt.set(i, [px, pz, s2]);
+      if (pr.rotor) rotors.push([i, px + pr.rotor[0] * s2, py + pr.rotor[1] * s2, pz + pr.rotor[2] * s2, s2]);
+      for (const p of pr.smoke || []) smokePts.push([i, px + p[0] * s2, py + p[1] * s2, pz + p[2] * s2, s2]);
+    }, "bld");
+  }
+  if (rotors.length) {
+    const byNode = new Map(rotors.map((r) => [r[0], r]));
+    instanced("rotor", rotorGeo(), new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.5 }), rotors.map((r) => r[0]), (i, m4, col, sz) => {
+      const r = byNode.get(i);
+      m4.compose(pos3.set(r[1], r[2], r[3]), quat.identity(), scl.set(r[4], r[4], r[4]));
+      col.setRGB(0.8, 0.86, 0.95);
+      sz.set(r[4], r[4], r[4]); sz.w = 0;
+    }, "spin");
+  }
 
   const by = { pawn: [], tile: [], inv: [] };
   for (let i = 0; i < N; i++) if (!isGround[i]) by[shape[i] === "pawn" ? "pawn" : shape[i] === "inv" ? "inv" : "tile"].push(i);
@@ -418,6 +484,23 @@ export function createMap(canvas, world, opts = {}) {
       uniforms: dustU, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
       vertexShader: "attribute float aS; uniform float uTime; uniform float uPx; varying float vA; void main(){ vec3 p = position; p.y = mod(p.y + uTime * (0.12 + 0.25 * aS), 24.0); p.x += sin(uTime * 0.2 + aS * 30.0) * 0.6; vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_Position = projectionMatrix * mv; gl_PointSize = clamp((0.1 + 0.16 * aS) * uPx / -mv.z, 1.0, 5.0); vA = (0.1 + 0.25 * aS) * smoothstep(0.0, 2.0, p.y) * smoothstep(24.0, 18.0, p.y); }",
       fragmentShader: "uniform float uDim; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5) * 2.0; gl_FragColor = vec4(vec3(0.75, 0.86, 1.0) * max(0.0, 1.0 - d) * vA * (1.0 - 0.6 * uDim), 1.0); }",
+    }));
+    pts.frustumCulled = false;
+    scene.add(pts);
+  }
+
+  // fumaça das chaminés (indústria e siderurgia): bolinhas claras que sobem, crescem e somem
+  const smokeU = { uTime: { value: 0 }, uPx: { value: 1 }, uDim: { value: 0 }, uRise: { value: 1 } };
+  if (smokePts.length && !reduced) {
+    const PER = 5, n = smokePts.length * PER, p = new Float32Array(n * 3), a = new Float32Array(n * 2);
+    smokePts.forEach((sp, j) => { for (let k = 0; k < PER; k++) { p.set([sp[1], sp[2], sp[3]], (j * PER + k) * 3); a.set([(k + hash1(j)) / PER, sp[4]], (j * PER + k) * 2); } });
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(p, 3));
+    g.setAttribute("aPh", new THREE.BufferAttribute(a, 2));
+    const pts = new THREE.Points(g, new THREE.ShaderMaterial({
+      uniforms: smokeU, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      vertexShader: "attribute vec2 aPh; uniform float uTime; uniform float uPx; varying float vA; void main(){ float t = fract(uTime * 0.16 + aPh.x); vec3 p = position; p.y += t * 1.5 * aPh.y; p.x += (t * t * 0.7 + 0.06 * sin(uTime + aPh.x * 20.0)) * aPh.y; vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_Position = projectionMatrix * mv; gl_PointSize = clamp((0.12 + 0.5 * t) * aPh.y * uPx / -mv.z, 1.0, 60.0); vA = smoothstep(0.0, 0.12, t) * (1.0 - t) * 0.2; }",
+      fragmentShader: "uniform float uDim; uniform float uRise; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5) * 2.0; gl_FragColor = vec4(vec3(0.62, 0.68, 0.8) * pow(max(0.0, 1.0 - d), 1.5) * vA * (1.0 - 0.85 * uDim) * smoothstep(1.0, 1.35, uRise), 1.0); }",
     }));
     pts.frustumCulled = false;
     scene.add(pts);
@@ -545,7 +628,7 @@ export function createMap(canvas, world, opts = {}) {
     for (const mesh of meshes) mesh.userData.hl.fill(0);
     const hh = halo.geometry.attributes.aHL;
     hh.array.fill(0);
-    if (levels) for (const [i, lv] of levels) { const it = inst[i]; if (!it) continue; it[0].userData.hl[it[1]] = lv; if (haloK[i] >= 0) hh.array[haloK[i]] = lv; }
+    if (levels) for (const [i, lv] of levels) { for (const it of inst[i]) it[0].userData.hl[it[1]] = lv; if (haloK[i] >= 0) hh.array[haloK[i]] = lv; }
     for (const mesh of meshes) mesh.userData.geo.attributes.aHL.needsUpdate = true;
     hh.needsUpdate = true;
     dim.to = levels ? dimTo : 0;
@@ -778,9 +861,10 @@ export function createMap(canvas, world, opts = {}) {
     lineU.uAlpha.value = smooth(0.8, 1.35, r01);
     haloU.uRise.value = r01; groundU.uRise.value = smooth(0.0, 0.9, r01 + 0.15);
     // de longe os fios de participação quase somem (ficam os de controle); de perto aparecem todos
-    lineU.uFar.value = 0.3 + 0.7 * (1 - smooth(30, 120, cam.d));
+    lineU.uFar.value = 0.1 + 0.9 * (1 - smooth(24, 110, cam.d));
     const pxScale = (view.H * DPR) / (2 * Math.tan((camera.fov * Math.PI) / 360));
-    haloU.uPx.value = dustU.uPx.value = flowU.uPx.value = pxScale;
+    haloU.uPx.value = dustU.uPx.value = flowU.uPx.value = smokeU.uPx.value = pxScale;
+    smokeU.uTime.value = clock.t; smokeU.uDim.value = Math.min(1, dim.v * 1.25); smokeU.uRise.value = r01;
     flowGrow = Math.min(1, flowGrow + real * 1.25);
     flowU.uGrow.value = easeInOut(flowGrow);
   }
