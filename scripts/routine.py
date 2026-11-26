@@ -200,7 +200,10 @@ Formato do arquivo: {{"items": [{{"id": "...", "resumo": "...", "pontos": ["..."
 def cmd_cvm_queue(args) -> None:
     from cias import FILA, FILA_HIST, RESUMOS, TEMAS, load_json as cload
     fila, hist, resumos = load_json(FILA, {}), cload(FILA_HIST, {}), cload(RESUMOS, {})
-    ok = lambda kv: kv[0] not in resumos and len((kv[1].get("texto") or "").strip()) > 80  # noqa: E731
+    # "ilegivel": marcado à mão (cvm-skip) quando o texto passa no teste do extrator mas não se lê (OCR de cabeça para
+    # baixo, como a apresentação da Heringer de 12/11, que voltou em todas as rodadas por 14 dias)
+    ok = lambda kv: (kv[0] not in resumos and len((kv[1].get("texto") or "").strip()) > 80  # noqa: E731
+                     and not kv[1].get("ilegivel"))
     # os novos (do dia); com --hist, depois o histórico, do mais recente para o mais antigo
     pend = sorted(filter(ok, fila.items()), key=lambda kv: (kv[1]["c"] != "Fato Relevante", kv[1]["d"]))
     if args.hist:
@@ -241,6 +244,22 @@ def cmd_merge_cvm(args) -> None:
         print("ERRO", e)
 
 
+def cmd_cvm_skip(args) -> None:
+    """Marca documentos da fila da CVM como ilegíveis: saem da cvm-queue sem resumo (e da fila no prazo normal)."""
+    from cias import FILA, FILA_HIST, load_json as cload, save_json as csave
+    fila, hist = load_json(FILA, {}), cload(FILA_HIST, {})
+    for i in args.ids:
+        alvo = fila if i in fila else hist if i in hist else None
+        if alvo is None:
+            print(f"{i}: fora da fila")
+            continue
+        alvo[i]["ilegivel"] = 1
+        print(f"{i}: marcado como ilegível ({alvo[i].get('empresa', '')})")
+    write_json(FILA, fila)
+    if Path(FILA_HIST).exists() or hist:
+        csave(FILA_HIST, hist)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -253,9 +272,11 @@ def main() -> None:
     q.add_argument("--limit", type=int, default=80)
     q.add_argument("--hist", action="store_true", help="inclui a fila do histórico depois dos novos")
     sub.add_parser("merge-cvm").add_argument("file")
+    sub.add_parser("cvm-skip", help="marca documentos da fila da CVM como ilegíveis").add_argument("ids", nargs="+")
     args = ap.parse_args()
     {"queue": cmd_queue, "merge-analyses": cmd_merge_analyses, "brief-input": cmd_brief_input,
-     "merge-brief": cmd_merge_brief, "cvm-queue": cmd_cvm_queue, "merge-cvm": cmd_merge_cvm}[args.cmd](args)
+     "merge-brief": cmd_merge_brief, "cvm-queue": cmd_cvm_queue, "merge-cvm": cmd_merge_cvm,
+     "cvm-skip": cmd_cvm_skip}[args.cmd](args)
 
 
 if __name__ == "__main__":
