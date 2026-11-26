@@ -112,3 +112,47 @@ export function treeGeo() {
   const paint = (g, r, gg, b) => { const n = g.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([r, gg, b], k * 3); g.setAttribute("color", new THREE.BufferAttribute(a, 3)); return g; };
   return mergeGeometries([paint(trunk, 0.62, 0.56, 0.5), paint(crown, 1, 1, 1)]);
 }
+
+// pessoa de terno, altura ~1,95 (mesma escala do antigo peão). Partes (para o shader das peças pequenas):
+// 0 gravata (cor do tipo de acionista), 1 terno, 2 camisa, 3 pele, 4 cabelo, 5 sapatos.
+export function personGeo() {
+  const P = [
+    box(0.2, 0.78, 0.24, 1, -0.13), box(0.2, 0.78, 0.24, 1, 0.13),
+    box(0.22, 0.07, 0.36, 5, -0.13, 0, 0.05), box(0.22, 0.07, 0.36, 5, 0.13, 0, 0.05),
+    box(0.62, 0.72, 0.32, 1, 0, 0.78), box(0.2, 0.5, 0.02, 2, 0, 0.98, 0.165), box(0.07, 0.4, 0.02, 0, 0, 1.04, 0.18),
+    box(0.15, 0.64, 0.2, 1, -0.385, 0.84), box(0.15, 0.64, 0.2, 1, 0.385, 0.84), box(0.13, 0.11, 0.16, 3, -0.385, 0.73), box(0.13, 0.11, 0.16, 3, 0.385, 0.73),
+    box(0.14, 0.1, 0.14, 3, 0, 1.5), ball(0.2, 3, 0, 1.74, 0), ball(0.205, 4, 0, 1.79, -0.035),
+  ];
+  const g = mergeGeometries(P);
+  P.forEach((x) => x.dispose());
+  return g;
+}
+
+const tint = (g, r, gg, b, x = 0, y = 0, z = 0) => { g.translate(x, y, z); const n = g.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([r, gg, b], k * 3); g.setAttribute("color", new THREE.BufferAttribute(a, 3)); return g; };
+// carro (frente para +x): carroceria na cor da instância, cabine de vidro, rodas, faróis e lanternas
+export function carGeo() {
+  const P = [
+    tint(new THREE.BoxGeometry(0.17, 0.03, 0.074), 1, 1, 1, 0, 0.03, 0), tint(new THREE.BoxGeometry(0.09, 0.026, 0.064), 0.1, 0.13, 0.17, -0.008, 0.057, 0),
+    tint(new THREE.BoxGeometry(0.094, 0.004, 0.068), 1, 1, 1, -0.008, 0.072, 0),
+    ...[[-0.052, 0.036], [0.052, 0.036], [-0.052, -0.036], [0.052, -0.036]].map(([x, z]) => tint(new THREE.BoxGeometry(0.034, 0.03, 0.012), 0.06, 0.06, 0.07, x, 0.015, z)),
+    tint(new THREE.BoxGeometry(0.004, 0.01, 0.06), 1.6, 1.5, 1.1, 0.086, 0.034, 0), tint(new THREE.BoxGeometry(0.004, 0.01, 0.06), 0.9, 0.1, 0.08, -0.086, 0.034, 0),
+    tint(new THREE.BoxGeometry(0.19, 0.002, 0.092), 0.2, 0.2, 0.21, 0.008, 0.002, 0.008),
+  ];
+  const g = mergeGeometries(P);
+  P.forEach((x) => x.dispose());
+  return g;
+}
+// barco (proa para +x): k = 0 veleiro, 1 lancha
+export function boatGeo(k) {
+  const hull = new THREE.CylinderGeometry(0.09, 0.05, 0.5, 8, 1); hull.rotateZ(Math.PI / 2); hull.scale(1, 0.55, 1);
+  const P = [tint(hull, 1, 1, 1, 0, 0.03, 0), tint(new THREE.BoxGeometry(0.4, 0.012, 0.13), 0.75, 0.6, 0.42, -0.02, 0.07, 0)];
+  if (k === 0) {
+    const sail = new THREE.ConeGeometry(0.17, 0.5, 3); sail.scale(1, 1, 0.06);
+    const jib = new THREE.ConeGeometry(0.1, 0.36, 3); jib.scale(1, 1, 0.06);
+    P.push(tint(new THREE.CylinderGeometry(0.006, 0.006, 0.6, 5), 0.3, 0.3, 0.32, 0.02, 0.37, 0), tint(sail, 1.5, 1.5, 1.5, -0.08, 0.36, 0), tint(jib, 1.5, 1.5, 1.5, 0.13, 0.27, 0));
+  } else P.push(tint(new THREE.BoxGeometry(0.2, 0.06, 0.1), 1.4, 1.4, 1.4, -0.03, 0.1, 0), tint(new THREE.BoxGeometry(0.12, 0.03, 0.09), 0.1, 0.14, 0.2, 0.0, 0.14, 0), tint(new THREE.BoxGeometry(0.14, 0.008, 0.11), 1.4, 1.4, 1.4, -0.03, 0.16, 0));
+  const g = mergeGeometries(P.map((x) => (x.index ? x.toNonIndexed() : x)));
+  P.forEach((x) => x.dispose());
+  g.computeVertexNormals();
+  return g;
+}
