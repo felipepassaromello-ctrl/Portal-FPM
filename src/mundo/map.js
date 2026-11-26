@@ -1,15 +1,17 @@
 /* Mundo das companhias — o mapa.
  *
- * Uma cidade à noite vista do alto. Cada setor é um bairro (scripts/mundo_mapa.mjs arruma os bairros como quarteirões,
- * todos à vista) e só o que é possuído fica no chão:
- *   companhia aberta  → arranha-céu de janelas acesas (altura pelo valor de mercado, coroa na cor do setor)
- *   capital fechado   → prédio baixo; controlada em comum → prédio baixo de teto verde
+ * Uma cidade numa ilha, vista do alto à luz do dia, como uma maquete de arquitetura: sol com sombras, mar em volta,
+ * parques com árvores, lagos, ruas com faixas e carros. Cada setor é um bairro (scripts/mundo_mapa.mjs arruma os
+ * bairros como quarteirões, todos à vista) e só o que é possuído fica no chão:
+ *   companhia aberta  → prédio de vidro ou concreto (altura pelo valor de mercado, faixa na cor do setor), com a
+ *                       operação do setor ao lado (props.js: refinaria, turbina, silos, fábrica...)
+ *   capital fechado   → prédio baixo; controlada em comum → prédio baixo de faixa verde
  * Os donos ficam onde está o que possuem:
  *   quem só tem uma companhia → na praça dela, em anéis em volta do prédio (pessoa = peão, holding = cubo,
  *                               gestora/fundo/governo = diamante)
  *   quem tem várias           → paira acima da cidade, sobre o centro do que possui, um andar mais alto a cada degrau
- * Toda ligação desce de quem é dono para o que é possuído: fios finos na visão geral (controle em verde) e, ao escolher
- * alguém, feixes com luz correndo no sentido dono → possuído, com ponta de seta e espessura pela fatia.
+ * Toda ligação desce de quem é dono para o que é possuído: fios finos na visão geral e, ao escolher alguém, cabos com
+ * luz correndo no sentido dono → possuído, com ponta de seta e espessura pela fatia (verde controla, azul participa).
  * Arrastar move o mapa (norte para cima), rolar ou pinçar aproxima; de perto a câmera deita e a cidade ganha altura.
  *
  * Este módulo só desenha e responde a perguntas de geometria; a interface fica em main.js.
@@ -21,7 +23,7 @@ import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
-import { sectorProps, rotorGeo } from "./props.js";
+import { sectorProps, rotorGeo, towerGeo, treeGeo } from "./props.js";
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
@@ -39,7 +41,8 @@ export function shapeOf(n) {
   return "tile";
 }
 
-const GLSL_HASH = "float hash21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }";
+const GLSL_NOISE = `float hash21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
+  float vnoise(vec2 p){ vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f); return mix(mix(hash21(i), hash21(i + vec2(1.0, 0.0)), f.x), mix(hash21(i + vec2(0.0, 1.0)), hash21(i + vec2(1.0, 1.0)), f.x), f.y); }`;
 
 export function createMap(canvas, world, opts = {}) {
   const { palette, accent = "#3cf0b4", reduced = false, fixedQuality = false } = opts;
@@ -51,47 +54,49 @@ export function createMap(canvas, world, opts = {}) {
   const MW = 100, MH = M.H * S;
   const toX = (x) => x * S - MW / 2, toZ = (y) => y * S - MH / 2;
   const TOP = 0.02;
-  // as cores dos setores são tons de pó (para o painel); como luz, à noite, precisam de mais saturação
+  const GRID = 1.6; // malha de ruas
+  // as cores dos setores são tons de pó (para o painel); como tinta nos prédios, à luz do dia, pedem mais saturação
   const _hsl = {};
-  const vivid = (c, out = new THREE.Color()) => { out.set(c).getHSL(_hsl); return out.setHSL(_hsl.h, Math.min(1, _hsl.s * 1.55 + 0.12), _hsl.l * 0.86); };
+  const vivid = (c, out = new THREE.Color()) => { out.set(c).getHSL(_hsl); return out.setHSL(_hsl.h, Math.min(1, _hsl.s * 1.35 + 0.1), _hsl.l * 0.8); };
 
-  // ------------------------------------------------------------------ renderizador e cena
+  // ------------------------------------------------------------------ renderizador, luz do dia e sombras
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
   let DPR = Math.min(devicePixelRatio || 1, small ? 2 : 1.75);
   renderer.setPixelRatio(DPR);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.0;
+  renderer.toneMappingExposure = 1.02;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
-  // a mesa da estrutura societária (tree.js) usa sombras neste mesmo renderizador; a cidade, não
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
+  // a cidade é parada: a sombra só é refeita quando algo muda (abertura, camadas), não a cada quadro
   renderer.shadowMap.autoUpdate = false;
-  const NIGHT = new THREE.Color(0x05070d);
+  let shadowDirty = 3;
+  const HAZE = new THREE.Color(0xc9dbe8);
   const scene = new THREE.Scene();
-  scene.background = NIGHT;
-  scene.fog = new THREE.Fog(0x070b16, 160, 420);
-  const camera = new THREE.PerspectiveCamera(32, 1, 0.3, 1400);
+  scene.background = HAZE;
+  scene.fog = new THREE.Fog(HAZE, 160, 520);
+  const camera = new THREE.PerspectiveCamera(32, 1, 0.3, 1600);
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
-  scene.environmentIntensity = 0.22;
+  scene.environmentIntensity = 0.2;
 
-  // luar frio de um lado, um resto de pôr do sol do outro
-  const moon = new THREE.DirectionalLight(0x9fc0ff, 2.3);
-  moon.position.set(-60, 110, 40);
-  scene.add(moon);
-  const dusk = new THREE.DirectionalLight(0xffa972, 0.7);
-  dusk.position.set(90, 30, -70);
-  scene.add(dusk);
-  scene.add(new THREE.HemisphereLight(0x4a5f8f, 0x0a0c12, 1.5));
+  const sun = new THREE.DirectionalLight(0xfff0d8, 3.1);
+  sun.position.set(-75, 105, 62);
+  sun.castShadow = true;
+  sun.shadow.mapSize.set(small ? 2048 : 4096, small ? 2048 : 4096);
+  Object.assign(sun.shadow.camera, { left: -MW * 0.66, right: MW * 0.66, top: MH * 0.85, bottom: -MH * 0.85, near: 10, far: 360 });
+  sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.035; sun.shadow.radius = 2.2;
+  scene.add(sun, sun.target);
+  scene.add(new THREE.HemisphereLight(0xc4dcff, 0x7d8a5c, 0.62));
 
-  // pós-processamento: o brilho das luzes (bloom). Se o aparelho não der conta, desenha direto.
+  // pós-processamento: só um brilho leve nos cabos de ligação. Se o aparelho não der conta, desenha direto.
   let composer = null, bloom = null;
   try {
     const rt = new THREE.WebGLRenderTarget(4, 4, { type: THREE.HalfFloatType, samples: small ? 2 : 4 });
     composer = new EffectComposer(renderer, rt);
     composer.setPixelRatio(DPR);
     composer.addPass(new RenderPass(scene, camera));
-    bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5, 0.55, 0.8);
+    bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.16, 0.4, 1.05);
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
   } catch { composer = null; }
@@ -99,7 +104,7 @@ export function createMap(canvas, world, opts = {}) {
   // ------------------------------------------------------------------ onde cada nó fica
   const shape = new Array(N);
   const X = new Float32Array(N), Y = new Float32Array(N), Z = new Float32Array(N), R = new Float32Array(N), Hh = new Float32Array(N);
-  const SX = new Float32Array(N), SZ = new Float32Array(N); // largura e profundidade dos prédios
+  const SX = new Float32Array(N), SZ = new Float32Array(N), LOT = new Float32Array(N);
   const sky = Uint8Array.from(M.sky || new Array(N).fill(0));
   const isGround = new Uint8Array(N), isInv = new Uint8Array(N);
   const SKY0 = 12.5, SKY_STEP = 3.1;
@@ -110,6 +115,7 @@ export function createMap(canvas, world, opts = {}) {
     X[i] = toX(M.x[i]); Z[i] = toZ(M.y[i]);
     const lot = (M.lot && M.lot[i]) || 0;
     isGround[i] = lot > 0 ? 1 : 0;
+    LOT[i] = lot * S;
     if (isGround[i]) {
       const w = nodeRadius(n) * 1.24 * S, k = hash1(i);
       SX[i] = w * (0.86 + 0.3 * k); SZ[i] = w * (1.14 - 0.3 * k);
@@ -128,135 +134,173 @@ export function createMap(canvas, world, opts = {}) {
     }
   }
   const topY = (i) => Y[i] + Hh[i];
+  const plates = M.plates.map((p, j) => ({ ...p, j, col: vivid(palette.sector(p.c)), x0: toX(p.x0), x1: toX(p.x1), z0: toZ(p.y0), z1: toZ(p.y1) }));
+  const plateSd = (x, z) => { let d = 1e9; for (const p of plates) { const qx = Math.abs(x - (p.x0 + p.x1) / 2) - (p.x1 - p.x0) / 2, qz = Math.abs(z - (p.z0 + p.z1) / 2) - (p.z1 - p.z0) / 2; d = Math.min(d, Math.hypot(Math.max(qx, 0), Math.max(qz, 0)) + Math.min(Math.max(qx, qz), 0)); } return d; };
 
-  // ------------------------------------------------------------------ o chão: a cidade acesa
-  const plateRects = M.plates.map((p) => ({ ...p }));
-  const groundTex = (() => {
-    const CW = small ? 2048 : 4096, CH = Math.round((CW * M.H) / M.W), k = CW / M.W;
+  // ------------------------------------------------------------------ parques, lagos e árvores
+  let seed = 20261126;
+  const rnd = () => { seed |= 0; seed = (seed + 0x6d2b79f5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  const parks = [], trees = []; // parques: [cx, cz, lago?]; árvores: [x, z, escala]
+  const G_ = [];
+  for (let i = 0; i < N; i++) if (isGround[i]) G_.push(i);
+  for (const p of plates) {
+    for (let ix = Math.ceil((p.x0 + 0.25) / GRID); (ix + 1) * GRID < p.x1 - 0.25; ix++) for (let iz = Math.ceil((p.z0 + 0.25) / GRID); (iz + 1) * GRID < p.z1 - 0.25; iz++) {
+      const cx = (ix + 0.5) * GRID, cz = (iz + 0.5) * GRID;
+      let free = true;
+      for (const i of G_) { const r = LOT[i] + 0.85; if (Math.abs(X[i] - cx) < r && Math.abs(Z[i] - cz) < r && Math.hypot(X[i] - cx, Z[i] - cz) < r) { free = false; break; } }
+      if (!free) continue;
+      const pond = rnd() < 0.12;
+      parks.push([cx, cz, pond]);
+      const n = 6 + Math.floor(rnd() * 6);
+      for (let k = 0; k < n; k++) { const x = cx + (rnd() - 0.5) * 1.1, z = cz + (rnd() - 0.5) * 1.1; if (pond && Math.hypot(x - cx, z - cz) < 0.36) continue; trees.push([x, z, 0.75 + rnd() * 0.6]); }
+    }
+  }
+  // atrás de cada terreno (lado norte, para não tapar os donos), uma fileira de árvores
+  for (const i of G_) {
+    if (LOT[i] < 0.45) continue;
+    const r = LOT[i] * 0.95, n = Math.min(14, Math.floor((Math.PI * r) / 0.42));
+    for (let k = 0; k < n; k++) { const a = Math.PI + ((k + 0.5) / n) * Math.PI; trees.push([X[i] + Math.cos(a) * r, Z[i] + Math.sin(a) * r, 0.6 + rnd() * 0.4]); }
+  }
+  // canteiros das avenidas entre os bairros e a mata em volta da cidade
+  for (let x = -MW / 2 - 0.6; x <= MW / 2 + 0.6; x += 0.46) for (let z = -MH / 2 - 0.6; z <= MH / 2 + 0.6; z += 0.46) {
+    const d = plateSd(x, z);
+    if (d > 0.62 && d < 1.2 && rnd() < 0.8) trees.push([x + (rnd() - 0.5) * 0.2, z + (rnd() - 0.5) * 0.2, 0.7 + rnd() * 0.5]);
+  }
+  for (let k = 0; k < (small ? 1500 : 2800); k++) {
+    const x = (rnd() - 0.5) * (MW + 10), z = (rnd() - 0.5) * (MH + 9);
+    if (plateSd(x, z) < 1.3 || hash1(Math.floor(x / 3) * 31 + Math.floor(z / 3) * 17) < 0.42) continue;
+    trees.push([x, z, 0.8 + rnd() * 0.9]);
+  }
+
+  // ------------------------------------------------------------------ o chão: quadras, ruas, praças, campo e mar
+  const maskTex = (() => {
+    const CW = small ? 2048 : 4096, CH = Math.round((CW * M.H) / M.W), k = CW / MW;
     const cv = document.createElement("canvas");
     cv.width = CW; cv.height = CH;
     const g = cv.getContext("2d");
     g.fillStyle = "#000"; g.fillRect(0, 0, CW, CH);
-    const rgb = (c, a) => { const col = new THREE.Color(c); return `rgba(${Math.round(col.r * 255)},${Math.round(col.g * 255)},${Math.round(col.b * 255)},${a})`; };
-    const rr = (x0, y0, x1, y1, r) => { g.beginPath(); g.roundRect(x0, y0, x1 - x0, y1 - y0, r); };
-    // bairros: um tom do setor e o contorno aceso
-    for (const p of M.plates) {
-      const col = vivid(palette.sector(p.c)), r = 2.2 * k;
-      rr(p.x0 * k, p.y0 * k, p.x1 * k, p.y1 * k, r);
-      const gr = g.createLinearGradient(0, p.y0 * k, 0, p.y1 * k);
-      gr.addColorStop(0, rgb(col, 0.17)); gr.addColorStop(1, rgb(col, 0.07));
-      g.fillStyle = gr; g.fill();
-    }
-    // o clarão de cada terreno (mais forte nas maiores) e a praça onde ficam os donos
     g.globalCompositeOperation = "lighter";
-    for (let i = 0; i < N; i++) {
-      if (!isGround[i]) continue;
-      const n = world.nodes[i], lot = M.lot[i] * k, x = M.x[i] * k, y = M.y[i] * k;
-      const col = vivid(n.t === "c" ? palette.sector(n.c) : palette.kind(n));
-      const pw = n.mc ? 0.16 + 0.34 * clamp(Math.log10(n.mc / 2e8) / 3.6, 0, 1) : 0.1;
-      const rad = lot * (n.mc ? 2.1 : 1.5);
-      const gr = g.createRadialGradient(x, y, 0, x, y, rad);
-      gr.addColorStop(0, rgb(col, pw)); gr.addColorStop(0.45, rgb(col, pw * 0.4)); gr.addColorStop(1, rgb(col, 0));
-      g.fillStyle = gr; g.beginPath(); g.arc(x, y, rad, 0, 6.2832); g.fill();
+    const px = (x) => (x + MW / 2) * k, pz = (z) => (z + MH / 2) * k;
+    // vermelho = gramado dos parques; azul = lago; verde = praça de cada terreno
+    for (const [cx, cz, pond] of parks) {
+      g.fillStyle = "#f00"; g.beginPath(); g.roundRect(px(cx - 0.6), pz(cz - 0.6), 1.2 * k, 1.2 * k, 0.14 * k); g.fill();
+      if (pond) { g.fillStyle = "#00f"; g.beginPath(); g.ellipse(px(cx), pz(cz), 0.34 * k, 0.26 * k, cx, 0, 6.2832); g.fill(); }
     }
-    g.globalCompositeOperation = "source-over";
-    for (let i = 0; i < N; i++) {
-      if (!isGround[i]) continue;
-      const lot = M.lot[i] * k * 0.93, x = M.x[i] * k, y = M.y[i] * k;
-      g.beginPath(); g.arc(x, y, lot, 0, 6.2832);
-      g.fillStyle = "rgba(255,255,255,0.028)"; g.fill();
-      g.lineWidth = Math.max(1, k * 0.09); g.strokeStyle = "rgba(255,255,255,0.11)"; g.stroke();
-    }
-    for (const p of M.plates) {
-      rr(p.x0 * k, p.y0 * k, p.x1 * k, p.y1 * k, 2.2 * k);
-      g.lineWidth = Math.max(1.5, k * 0.22); g.strokeStyle = rgb(vivid(palette.sector(p.c)), 0.8); g.stroke();
-    }
+    g.fillStyle = "#0f0";
+    for (const i of G_) { g.beginPath(); g.arc(px(X[i]), pz(Z[i]), LOT[i] * 0.93 * k, 0, 6.2832); g.fill(); }
     const t = new THREE.CanvasTexture(cv);
-    t.colorSpace = THREE.SRGBColorSpace;
     t.anisotropy = renderer.capabilities.getMaxAnisotropy();
     t.generateMipmaps = true; t.minFilter = THREE.LinearMipmapLinearFilter;
     return t;
   })();
+  const NR = plates.length;
   const groundU = {
-    uTex: { value: groundTex }, uTime: { value: 0 }, uSize: { value: new THREE.Vector2(MW, MH) },
+    uMask: { value: maskTex }, uTime: { value: 0 }, uSize: { value: new THREE.Vector2(MW, MH) }, uLand: { value: new THREE.Vector2(MW / 2 + 9, MH / 2 + 7) },
+    uRects: { value: Array.from({ length: 12 }, (_, k) => { const p = plates[k % NR]; return new THREE.Vector4((p.x0 + p.x1) / 2, (p.z0 + p.z1) / 2, (p.x1 - p.x0) / 2, (p.z1 - p.z0) / 2); }) },
+    uCols: { value: Array.from({ length: 12 }, (_, k) => { const c = plates[k % NR].col; return new THREE.Vector3(c.r, c.g, c.b); }) },
     uFocus: { value: new THREE.Vector4(0, 0, 0, 0) }, uFocusK: { value: 0 }, uDim: { value: 0 },
-    uFogColor: { value: scene.fog.color }, uFogNear: { value: 100 }, uFogFar: { value: 400 }, uRise: { value: 1 },
   };
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(900, 900), new THREE.ShaderMaterial({
-    uniforms: groundU,
-    vertexShader: "varying vec3 vWp; varying float vDepth; void main(){ vec4 wp = modelMatrix * vec4(position, 1.0); vWp = wp.xyz; vec4 mv = viewMatrix * wp; vDepth = -mv.z; gl_Position = projectionMatrix * mv; }",
-    fragmentShader: `uniform sampler2D uTex; uniform float uTime; uniform vec2 uSize; uniform vec4 uFocus; uniform float uFocusK; uniform float uDim; uniform float uRise;
-      uniform vec3 uFogColor; uniform float uFogNear; uniform float uFogFar; varying vec3 vWp; varying float vDepth;
-      ${GLSL_HASH}
-      // luzes miúdas da cidade: uma por célula, mais onde o bairro é mais denso
-      float lights(vec2 p, float cell, float dens, float seed){
-        vec2 q = p / cell; vec2 id = floor(q); vec2 f = fract(q) - 0.5;
-        float h = hash21(id + seed);
-        vec2 jit = (vec2(hash21(id + seed + 7.3), hash21(id + seed + 2.9)) - 0.5) * 0.5;
-        float tw = 0.75 + 0.25 * sin(uTime * (0.6 + 2.0 * hash21(id + 5.1)) + h * 40.0);
-        float on = step(1.0 - dens, h);
-        float px = fwidth(q.x) + fwidth(q.y);
-        float dot_ = smoothstep(0.13, 0.03, length(f - jit));
-        return mix(on * dot_ * tw, dens * 0.07, smoothstep(0.5, 1.4, px));
-      }
-      void main(){
-        vec2 uv = vec2(vWp.x / uSize.x + 0.5, 0.5 - vWp.z / uSize.y);
-        float inside = step(0.0, uv.x) * step(uv.x, 1.0) * step(0.0, uv.y) * step(uv.y, 1.0);
-        vec3 t = texture2D(uTex, uv).rgb * inside;
-        float lum = dot(t, vec3(0.3, 0.59, 0.11));
-        vec3 col = vec3(0.012, 0.016, 0.026);
-        // malha de ruas
-        vec2 g1 = abs(fract(vWp.xz / 1.6) - 0.5); float st = 1.0 - smoothstep(0.0, 0.02 + fwidth(vWp.x) * 0.9, min(g1.x, g1.y));
-        col += t * (0.6 + 0.12 * st) * uRise;
-        col += vec3(0.02, 0.026, 0.04) * st * inside * 0.25;
-        vec2 g2 = abs(fract(vWp.xz / 0.4) - 0.5); float st2 = (1.0 - smoothstep(0.0, 0.03 + fwidth(vWp.x) * 3.0, min(g2.x, g2.y))) * (1.0 - smoothstep(0.02, 0.07, fwidth(vWp.x)));
-        col += (vec3(0.006, 0.008, 0.013) + t * 0.035) * st2 * inside;
-        float dens = clamp(lum * 3.2, 0.0, 0.85);
-        vec3 warm = mix(vec3(1.0, 0.72, 0.42), normalize(t + 0.001) * 1.3, 0.35);
-        col += warm * (lights(vWp.xz, 0.21, dens, 0.0) * 0.9 + lights(vWp.xz + 3.7, 0.55, dens * 0.6, 9.0) * 0.8) * uRise;
-        // trânsito: faróis brancos num sentido, lanternas vermelhas no outro, correndo pela malha de ruas
-        float fwS = fwidth(vWp.x);
-        float nearK = (1.0 - smoothstep(0.012, 0.05, fwS)) * inside * smoothstep(0.02, 0.1, lum) * uRise;
-        if (nearK > 0.001) {
-          for (int ax = 0; ax < 2; ax++) {
-            vec2 pq = ax == 0 ? vWp.xz : vWp.zx;
-            float lane = floor(pq.y / 1.6 + 0.5);
-            float off = pq.y - lane * 1.6;
-            float sideL = sign(off);
-            float lineK = smoothstep(0.03, 0.012, abs(abs(off) - 0.035));
-            float sp = (0.5 + 0.7 * hash21(vec2(lane, float(ax) + 3.0))) * sideL;
-            float u = pq.x * 5.0 - uTime * sp * 5.0;
-            float car = step(0.86, hash21(vec2(floor(u), lane * 7.0 + sideL))) * smoothstep(0.32, 0.1, abs(fract(u) - 0.5));
-            col += mix(vec3(1.0, 0.12, 0.08), vec3(1.0, 0.92, 0.75), step(0.0, sideL * (ax == 0 ? 1.0 : -1.0))) * car * lineK * nearK * 1.1;
+  const groundMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.94, metalness: 0, envMapIntensity: 0.6 });
+  groundMat.onBeforeCompile = (sh) => {
+    Object.assign(sh.uniforms, groundU);
+    sh.vertexShader = sh.vertexShader.replace("#include <common>", "#include <common>\nvarying vec3 vWp;").replace("#include <worldpos_vertex>", "#include <worldpos_vertex>\nvWp = (modelMatrix * vec4(transformed, 1.0)).xyz;");
+    sh.fragmentShader = sh.fragmentShader
+      .replace("#include <common>", `#include <common>
+        varying vec3 vWp; uniform sampler2D uMask; uniform float uTime; uniform vec2 uSize; uniform vec2 uLand; uniform vec4 uRects[12]; uniform vec3 uCols[12];
+        uniform vec4 uFocus; uniform float uFocusK; uniform float uDim;
+        float gWater = 0.0;
+        ${GLSL_NOISE}
+        float sdRound(vec2 p, vec2 b, float r){ vec2 q = abs(p) - b + r; return length(max(q, 0.0)) + min(max(q.x, q.y), 0.0) - r; }`)
+      .replace("#include <color_fragment>", `#include <color_fragment>
+        vec2 p = vWp.xz;
+        float aa = fwidth(p.x) * 1.2;
+        float n1 = vnoise(p * 0.35), n2 = vnoise(p * 2.3), n3 = vnoise(p * 11.0);
+        vec2 bq = abs(p) - uLand;
+        float land = length(max(bq, 0.0)) + min(max(bq.x, bq.y), 0.0) - 4.0 + vnoise(p * 0.07 + 3.1) * 7.0 + n1 * 1.5;
+        vec3 grass = mix(vec3(0.19, 0.36, 0.12), vec3(0.36, 0.52, 0.2), n1 * 0.55 + n2 * 0.45) * (0.9 + 0.2 * n3);
+        vec3 asphalt = vec3(0.15, 0.16, 0.18) * (0.9 + 0.2 * n3);
+        vec3 paving = vec3(0.56, 0.55, 0.52) * (0.93 + 0.12 * n3);
+        float far = 1.0 - smoothstep(0.012, 0.045, aa);
+        float d = 1e5; vec3 sec = uCols[0];
+        for (int k = 0; k < ${NR}; k++) { float dk = sdRound(p - uRects[k].xy, uRects[k].zw, 0.45); if (dk < d) { d = dk; sec = uCols[k]; } }
+        vec3 col;
+        if (land > 0.0) {
+          // mar: raso e claro junto à praia, fundo ao largo, com marolas e espuma
+          float depth = smoothstep(0.0, 10.0, land);
+          col = mix(vec3(0.2, 0.6, 0.62), vec3(0.04, 0.2, 0.35), depth);
+          col += vec3(0.07) * smoothstep(0.6, 0.9, vnoise(p * 1.3 + vec2(uTime * 0.22, uTime * 0.16))) * far;
+          col = mix(col, vec3(0.96), (1.0 - smoothstep(0.0, 0.3, land + 0.12 * sin(uTime * 0.8 + p.x * 0.7 + p.y * 0.5))) * 0.65);
+          gWater = 1.0;
+        } else if (d < 0.0) {
+          // dentro do bairro: malha de ruas, calçadas, e em cada quadra praça, parque ou piso
+          vec4 m = texture2D(uMask, vec2(p.x / uSize.x + 0.5, 0.5 - p.y / uSize.y));
+          vec2 gq = abs(fract(p / ${GRID.toFixed(1)} + 0.5) - 0.5) * ${GRID.toFixed(1)};
+          float sd = min(gq.x, gq.y), along = gq.x < gq.y ? p.y : p.x;
+          float road = 1.0 - smoothstep(0.1 - aa, 0.1 + aa, sd);
+          float walk = 1.0 - smoothstep(0.17 - aa, 0.17 + aa, sd);
+          float park = smoothstep(0.35, 0.65, m.r), plaza = smoothstep(0.3, 0.7, m.g), pond = smoothstep(0.4, 0.6, m.b);
+          vec2 tq = abs(fract(p / 0.16) - 0.5);
+          vec3 stone = mix(vec3(0.7, 0.68, 0.63), sec, 0.2) * (0.94 + 0.06 * n3) * (1.0 - 0.07 * far * step(0.46, max(tq.x, tq.y)));
+          vec3 lawn = mix(vec3(0.33, 0.5, 0.2), vec3(0.42, 0.57, 0.25), n2) * (0.92 + 0.16 * n3);
+          vec3 block = mix(lawn, grass, park);
+          block = mix(block, stone, plaza);
+          block = mix(block, mix(vec3(0.2, 0.52, 0.56), vec3(0.1, 0.36, 0.46), n2), pond);
+          gWater = pond * (1.0 - walk);
+          col = mix(block, paving * 1.07, walk);
+          col = mix(col, asphalt, road);
+          col = mix(col, vec3(0.92), road * far * step(0.5, fract(along * 2.4)) * (1.0 - smoothstep(0.007, 0.014, sd)));
+          // faixa de pedestres perto dos cruzamentos
+          float cross = road * far * step(max(gq.x, gq.y), 0.26) * step(0.14, max(gq.x, gq.y)) * step(0.5, fract((gq.x < gq.y ? p.x : p.y) * 14.0));
+          col = mix(col, vec3(0.9), cross * 0.8);
+          // carros: retângulos coloridos correndo, cada pista num sentido
+          if (far > 0.01) for (int ax = 0; ax < 2; ax++) {
+            vec2 pq = ax == 0 ? p : p.yx;
+            float lane = floor(pq.y / ${GRID.toFixed(1)} + 0.5), off = pq.y - lane * ${GRID.toFixed(1)}, sideL = sign(off);
+            float inLane = smoothstep(0.03, 0.018, abs(abs(off) - 0.05));
+            float sp = (0.35 + 0.5 * hash21(vec2(lane, float(ax) + 3.0))) * sideL;
+            float u = pq.x * 4.0 - uTime * sp * 4.0, id = floor(u);
+            float hc = hash21(vec2(id, lane * 7.0 + sideL + float(ax) * 13.0));
+            float car = step(0.8, hc) * smoothstep(0.34, 0.26, abs(fract(u) - 0.5));
+            vec3 cc = hc > 0.95 ? vec3(0.85, 0.12, 0.1) : hc > 0.91 ? vec3(0.95, 0.75, 0.1) : hc > 0.87 ? vec3(0.15, 0.3, 0.7) : hc > 0.83 ? vec3(0.92) : vec3(0.12, 0.13, 0.15);
+            col = mix(col, cc, car * inLane * far * road);
           }
+          // a borda do bairro: calçada larga com o meio-fio na cor do setor
+          float e = -d;
+          col = mix(col, paving * 1.08, 1.0 - smoothstep(0.2, 0.2 + aa, e));
+          col = mix(col, sec, (smoothstep(0.04, 0.04 + aa, e) - smoothstep(0.16 + 3.0 * aa, 0.16 + 4.0 * aa, e)) * 0.92);
+        } else {
+          // fora dos bairros: a avenida que contorna cada um, canteiros, e além deles campo, mata e praia
+          vec3 country = mix(grass, vec3(0.12, 0.27, 0.11), smoothstep(0.42, 0.7, vnoise(p * 0.22 + 7.0)));
+          country = mix(country, vec3(0.5, 0.56, 0.28), smoothstep(0.6, 0.75, vnoise(p * 0.5 + 21.0)) * 0.5);
+          float rd = 1.0 - smoothstep(0.52 - aa, 0.52 + aa, d);
+          col = mix(country, asphalt, rd);
+          col = mix(col, vec3(0.92), rd * far * (1.0 - smoothstep(0.008, 0.016, abs(d - 0.27))) * step(0.5, fract((p.x + p.y) * 1.7)));
+          col = mix(col, vec3(0.86, 0.81, 0.64), smoothstep(-1.3, -0.25, land));
         }
-        // setor em foco: o resto apaga
-        float inF = step(uFocus.x, vWp.x) * step(vWp.x, uFocus.z) * step(uFocus.y, vWp.z) * step(vWp.z, uFocus.w);
-        col *= 1.0 - 0.8 * uFocusK * (1.0 - inF);
-        col *= 1.0 - 0.62 * uDim;
-        float fog = smoothstep(uFogNear, uFogFar, vDepth);
-        col = mix(col, uFogColor, fog);
-        gl_FragColor = vec4(col, 1.0);
-        #include <colorspace_fragment>
-      }`,
-  }));
+        // setor em foco e escolha: o resto perde cor e escurece
+        float inF = step(uFocus.x, p.x) * step(p.x, uFocus.z) * step(uFocus.y, p.y) * step(p.y, uFocus.w);
+        float dk = max(uDim, uFocusK * (1.0 - inF));
+        col = mix(col, vec3(dot(col, vec3(0.3, 0.59, 0.11))) * 0.85, 0.8 * dk) * (1.0 - 0.42 * dk);
+        diffuseColor.rgb = col;`)
+      .replace("#include <roughnessmap_fragment>", "#include <roughnessmap_fragment>\nroughnessFactor = mix(roughnessFactor, 0.1, gWater);");
+  };
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1800), groundMat);
   ground.rotation.x = -Math.PI / 2;
-  ground.renderOrder = -2;
+  ground.receiveShadow = true;
   scene.add(ground);
-  const plates = M.plates.map((p, j) => ({ ...p, j, col: new THREE.Color(palette.sector(p.c)), x0: toX(p.x0), x1: toX(p.x1), z0: toZ(p.y0), z1: toZ(p.y1) }));
 
   // ------------------------------------------------------------------ peças (instâncias)
   const instU = { uRise: { value: 1.4 }, uDim: { value: 0 }, uTime: { value: 0 }, uAcc: { value: ACC }, uFocus: { value: -1 } };
   const inst = Array.from({ length: N }, () => []); // nó → [[malha, índice], ...] (o prédio e a peça do setor)
   const meshes = [];
   const VERT_HEAD = "attribute float aHL; attribute float aVis; attribute float aDelay; attribute float aPlate; attribute float aSeed; attribute vec3 aSize; attribute float aLit; attribute float aPart; varying float vPart; uniform float uRise; uniform float uTime; uniform float uFocus; varying vec3 vOp; varying vec3 vOn; varying vec3 vSize; varying float vHL; varying float vOther; varying float vSeed; varying float vLit;";
-  const FRAG_HEAD = `varying float vPart; varying vec3 vOp; varying vec3 vOn; varying vec3 vSize; varying float vHL; varying float vOther; varying float vSeed; varying float vLit; uniform float uDim; uniform float uTime; uniform vec3 uAcc;\n${GLSL_HASH}`;
+  const FRAG_HEAD = `varying float vPart; varying vec3 vOp; varying vec3 vOn; varying vec3 vSize; varying float vHL; varying float vOther; varying float vSeed; varying float vLit; uniform float uDim; uniform float uTime; uniform vec3 uAcc; float gRough = -1.0;\n${GLSL_NOISE}`;
   function instanced(name, geo, mat, idx, place, kind) {
     const n = Math.max(1, idx.length);
-    const hl = new Float32Array(n), vis = new Float32Array(n).fill(1), delay = new Float32Array(n), plate = new Float32Array(n), seed = new Float32Array(n), size = new Float32Array(n * 3), lit = new Float32Array(n);
+    const hl = new Float32Array(n), vis = new Float32Array(n).fill(1), delay = new Float32Array(n), plate = new Float32Array(n), sd = new Float32Array(n), size = new Float32Array(n * 3), lit = new Float32Array(n);
     const attr = (k, a, s = 1) => geo.setAttribute(k, new THREE.InstancedBufferAttribute(a, s));
-    attr("aHL", hl); attr("aVis", vis); attr("aDelay", delay); attr("aPlate", plate); attr("aSeed", seed); attr("aSize", size, 3); attr("aLit", lit);
-    mat.onBeforeCompile = (sh) => {
+    attr("aHL", hl); attr("aVis", vis); attr("aDelay", delay); attr("aPlate", plate); attr("aSeed", sd); attr("aSize", size, 3); attr("aLit", lit);
+    const patch = (sh) => {
       Object.assign(sh.uniforms, instU);
       sh.vertexShader = sh.vertexShader
         .replace("#include <common>", `#include <common>\n${VERT_HEAD}`)
@@ -268,73 +312,93 @@ export function createMap(canvas, world, opts = {}) {
             : kind === "bld" ? "transformed.y *= max(0.001, rise * aVis); transformed.xz *= aVis;"
             // peças pequenas: crescem no lugar; as do céu (aLit = 1) balançam devagar
             : "transformed *= max(0.001, rise * aVis); transformed.y += aLit * 0.22 * sin(uTime * 0.9 + aSeed * 40.0) / max(0.05, aSize.x);"}`);
+      return sh;
+    };
+    mat.onBeforeCompile = (sh) => {
+      patch(sh);
       sh.fragmentShader = sh.fragmentShader
         .replace("#include <common>", `#include <common>\n${FRAG_HEAD}`)
         .replace("#include <color_fragment>", `#include <color_fragment>
           float top = step(0.5, vOn.y);
           float isHL = step(0.01, vHL);
-          float dimK = max(uDim * (1.0 - isHL), 0.8 * vOther * (1.0 - isHL));
+          float dimK = max(uDim * (1.0 - isHL), 0.85 * vOther * (1.0 - isHL));
           vec3 sec = diffuseColor.rgb;
           vec3 glow = vec3(0.0);
+          float sdv = floor(vSeed * 997.0) / 997.0;
           ${kind === "bld" ? `
-          float live = 1.0 - 0.93 * dimK;
+          vec3 concrete = mix(vec3(0.86, 0.85, 0.82), sec, 0.05);
           if (vPart > 0.5) {
-            // a peça do setor: concreto, luz do setor, chama, metal, janelas, luz de obstáculo
-            float up = 0.75 + 0.25 * vOn.y;
-            if (vPart < 1.5) { diffuseColor.rgb = mix(vec3(0.3, 0.33, 0.39), sec, 0.2) * up; glow = sec * 0.035 * live; }
-            else if (vPart < 2.5) { diffuseColor.rgb = sec * 0.5; glow = sec * 1.15 * live; }
-            else if (vPart < 3.5) { float fl = 0.72 + 0.28 * sin(uTime * 13.0 + vSeed * 50.0) * sin(uTime * 7.3 + vOp.y * 9.0); diffuseColor.rgb = vec3(0.3, 0.1, 0.02); glow = vec3(1.0, 0.42, 0.08) * 2.2 * fl * live; }
-            else if (vPart < 4.5) { diffuseColor.rgb = vec3(0.1, 0.11, 0.14) * up; }
+            // detalhes e a peça do setor: concreto, tinta do setor, chama, metal, vidro, luz de obstáculo
+            if (vPart < 1.5) diffuseColor.rgb = concrete * (0.86 + 0.14 * top);
+            else if (vPart < 2.5) { diffuseColor.rgb = sec; gRough = 0.5; }
+            else if (vPart < 3.5) { float fl = 0.72 + 0.28 * sin(uTime * 13.0 + vSeed * 50.0) * sin(uTime * 7.3 + vOp.y * 9.0); diffuseColor.rgb = vec3(1.0, 0.5, 0.1); glow = vec3(1.0, 0.42, 0.08) * 1.6 * fl; }
+            else if (vPart < 4.5) { diffuseColor.rgb = vec3(0.27, 0.29, 0.33); gRough = 0.45; }
             else if (vPart < 5.5) {
               vec2 q = vec2((vOp.x + vOp.z) * 13.0, vOp.y * 12.0); vec2 f = fract(q);
-              float on = step(0.45, hash21(floor(q) + floor(vSeed * 997.0) / 997.0 * 17.0));
-              float mk = smoothstep(0.1, 0.2, f.x) * smoothstep(0.9, 0.8, f.x) * smoothstep(0.2, 0.32, f.y) * smoothstep(0.86, 0.74, f.y);
+              float mk = smoothstep(0.1, 0.2, f.x) * smoothstep(0.9, 0.8, f.x) * smoothstep(0.2, 0.32, f.y) * smoothstep(0.86, 0.74, f.y) * (1.0 - top);
               float px = max(fwidth(q.x), fwidth(q.y));
-              diffuseColor.rgb = vec3(0.07, 0.08, 0.11);
-              glow = vec3(1.0, 0.68, 0.34) * mix(on * mk, 0.22, smoothstep(0.4, 1.0, px)) * 0.8 * (1.0 - top) * live;
-            } else { diffuseColor.rgb = vec3(0.2, 0.02, 0.02); glow = vec3(1.0, 0.1, 0.06) * 2.4 * (0.25 + 0.75 * step(0.0, sin(uTime * 2.6 + vSeed * 40.0))) * live; }
-            glow += uAcc * vHL * vHL * 0.3 + sec * step(0.01, vHL) * (1.0 - vHL) * 0.12;
+              mk = mix(mk, 0.45 * (1.0 - top), smoothstep(0.4, 1.0, px));
+              diffuseColor.rgb = mix(concrete, mix(vec3(0.14, 0.24, 0.34), vec3(0.4, 0.58, 0.7), hash21(floor(q) + sdv * 17.0)), mk);
+              gRough = mix(0.8, 0.15, mk);
+            } else { diffuseColor.rgb = vec3(0.7, 0.05, 0.04); glow = vec3(1.0, 0.1, 0.06) * 1.6 * step(0.0, sin(uTime * 2.6 + vSeed * 40.0)); }
+            glow += uAcc * vHL * vHL * 0.25;
           } else {
-          // fachada de vidro escuro com janelas acesas; a coroa e o teto levam a cor do setor
-          float side = abs(vOn.x) > 0.5 ? 1.0 : 0.0;
-          float fw = mix(vSize.x, vSize.z, side);
-          float along = mix(vOp.x, vOp.z, side) + 0.5;
-          float hgt = vOp.y * vSize.y;
-          float nx = max(2.0, floor(fw / 0.085)), ny = max(2.0, floor(vSize.y / 0.11));
-          vec2 q = vec2(along * nx, vOp.y * ny);
-          vec2 id = floor(q), f = fract(q);
-          float face = floor(vOn.x + 0.5) + floor(vOn.z + 0.5) * 2.0;
-          float sd = floor(vSeed * 997.0) / 997.0;
-          float h = hash21(id + sd * 71.0 + face * 13.0);
-          float tw = hash21(id * 1.7 + sd * 31.0 + face);
-          float flick = step(0.93, tw) * floor(uTime * 0.35 + tw * 9.0) * 0.37;
-          float on = step(1.0 - vLit, fract(h + flick));
-          float mask = smoothstep(0.1, 0.2, f.x) * smoothstep(0.9, 0.8, f.x) * smoothstep(0.2, 0.32, f.y) * smoothstep(0.86, 0.74, f.y);
-          float px = max(fwidth(q.x), fwidth(q.y));
-          float win = mix(on * mask, vLit * 0.2, smoothstep(0.4, 1.0, px)) * (1.0 - top);
-          vec3 winCol = mix(vec3(1.0, 0.66, 0.32), vec3(0.62, 0.8, 1.0), step(0.78, hash21(id + sd * 3.1)));
-          winCol = mix(winCol, sec, 0.22 + 0.4 * smoothstep(0.4, 1.0, px));
-          float crownH = min(0.14, vSize.y * 0.12);
-          float crown = smoothstep(vSize.y - crownH - 0.012, vSize.y - crownH, hgt) * (1.0 - top);
-          float edge = max(abs(vOp.x), abs(vOp.z)) * 2.0;
-          float roofRim = top * smoothstep(0.86, 0.95, edge);
-          float foot = (1.0 - top) * (1.0 - smoothstep(0.0, 0.5, hgt));
-          diffuseColor.rgb = mix(vec3(0.05, 0.065, 0.1), sec, 0.09 + 0.06 * top);
-          // luz de obstáculo no topo dos mais altos, piscando
-          float beacon = top * smoothstep(0.1, 0.05, length(vOp.xz)) * step(3.2, vSize.y) * (0.35 + 0.65 * step(0.0, sin(uTime * 2.2 + vSeed * 40.0)));
-          glow = (winCol * win * 0.78 + sec * (crown * 1.25 + roofRim * 0.95 + top * 0.04 + foot * 0.1) + vec3(1.0, 0.12, 0.08) * beacon * 2.2) * live;
-          glow += uAcc * vHL * vHL * (0.1 + 1.3 * crown + 0.9 * roofRim + 0.25 * top + 0.25 * foot) * (0.9 + 0.1 * sin(uTime * 3.0));
-          glow += sec * step(0.01, vHL) * (1.0 - vHL) * (0.5 * crown + 0.4 * roofRim);
+            // fachada: cortina de vidro ou grelha de concreto com janelas; faixa do setor no alto; cobertura de brita
+            float side = abs(vOn.x) > 0.5 ? 1.0 : 0.0;
+            float fw = mix(vSize.x, vSize.z, side);
+            float along = mix(vOp.x, vOp.z, side) + 0.5;
+            float hgt = vOp.y * vSize.y;
+            float style = hash21(vec2(sdv * 91.0, 3.0));
+            float nx = max(2.0, floor(fw / (style < 0.55 ? 0.075 : 0.1))), ny = max(2.0, floor(vSize.y / 0.105));
+            vec2 q = vec2(along * nx, vOp.y * ny);
+            vec2 id = floor(q), f = fract(q);
+            float face = floor(vOn.x + 0.5) + floor(vOn.z + 0.5) * 2.0;
+            float hp = hash21(id + sdv * 71.0 + face * 13.0);
+            float px = max(fwidth(q.x), fwidth(q.y)), lod = smoothstep(0.4, 1.0, px);
+            // o vidro reflete o céu: mais claro no alto, cada painel um pouco diferente, alguns com a persiana fechada
+            vec3 tint = mix(vec3(0.3, 0.5, 0.62), mix(vec3(0.24, 0.42, 0.5), vec3(0.42, 0.5, 0.56), hash21(vec2(sdv * 13.0, 1.0))), 0.6);
+            vec3 glass = mix(tint * 0.34, tint * 1.0, smoothstep(0.0, 1.0, vOp.y) * 0.65 + hp * 0.35);
+            glass = mix(glass, vec3(0.78, 0.76, 0.7), step(0.9, hp) * 0.7);
+            vec3 wall; float gk;
+            if (style < 0.55) {
+              // cortina de vidro: montantes finos e uma faixa opaca em cada laje
+              float frame = max(1.0 - smoothstep(0.03, 0.07, min(f.x, 1.0 - f.x)), 1.0 - smoothstep(0.1, 0.16, f.y));
+              gk = mix(1.0 - frame, 0.8, lod);
+              wall = mix(mix(vec3(0.2, 0.24, 0.28), concrete * 0.8, step(0.5, hash21(vec2(sdv * 7.0, 9.0)))), glass, gk);
+            } else {
+              // grelha de concreto: janelas recuadas entre pilares
+              float win = smoothstep(0.16, 0.24, f.x) * smoothstep(0.84, 0.76, f.x) * smoothstep(0.26, 0.36, f.y) * smoothstep(0.86, 0.78, f.y);
+              gk = mix(win, 0.42, lod);
+              wall = mix(mix(concrete, vec3(0.74, 0.68, 0.6), step(0.6, hash21(vec2(sdv * 5.0, 2.0)))), glass * 0.8, gk);
+            }
+            float crownH = min(0.16, vSize.y * 0.1);
+            float crown = smoothstep(vSize.y - crownH - 0.01, vSize.y - crownH, hgt);
+            float lobby = 1.0 - smoothstep(0.1, 0.11, hgt);
+            wall = mix(wall, sec, crown);
+            wall = mix(wall, mix(vec3(0.12, 0.18, 0.24), vec3(0.5, 0.62, 0.7), f.x * 0.5 + 0.2), lobby * (1.0 - crown));
+            float edge = max(abs(vOp.x), abs(vOp.z)) * 2.0 / (abs(vOp.x) > 0.37 || abs(vOp.z) > 0.37 || vOp.y < 0.99 ? 1.0 : 0.72);
+            float rim = smoothstep(0.9, 0.93, edge);
+            vec2 rq = fract(vOp.xz * vec2(vSize.x, vSize.z) / 0.22);
+            vec3 roof = mix(vec3(0.5, 0.5, 0.5), sec, 0.3) * (0.92 + 0.08 * step(0.06, min(rq.x, rq.y)));
+            float pad = step(0.9, vSize.x) * (1.0 - smoothstep(0.2, 0.21, length(vOp.xz + vec2(0.2, -0.18))));
+            roof = mix(roof, mix(sec, vec3(0.95), step(0.17, length(vOp.xz + vec2(0.2, -0.18)))), pad);
+            roof = mix(roof, vec3(0.9), rim);
+            diffuseColor.rgb = mix(wall, roof, top);
+            gRough = mix(mix(0.75, 0.1, gk * (1.0 - crown)), 0.9, top);
+            glow = uAcc * vHL * vHL * (0.12 + 1.1 * crown * (1.0 - top) + 0.9 * rim * top + 0.2 * top) * (0.9 + 0.1 * sin(uTime * 3.0));
           }` : `
-          // peças pequenas: luzes da cor do tipo
-          float live = 1.0 - 0.92 * dimK;
-          diffuseColor.rgb = sec * (0.35 + 0.3 * top);
-          glow = sec * (0.42 + 0.38 * vLit) * live * (0.75 + 0.5 * smoothstep(-0.2, 1.0, vOn.y));
-          glow += uAcc * vHL * vHL * 0.9 + sec * step(0.01, vHL) * 0.35;`}
-          diffuseColor.rgb *= 1.0 - 0.85 * dimK;`)
+          // peças pequenas: figuras foscas na cor do tipo
+          diffuseColor.rgb = sec * (0.82 + 0.18 * smoothstep(-0.3, 1.0, vOn.y));
+          glow = sec * 0.1 + uAcc * vHL * vHL * 0.8 + sec * isHL * 0.25;`}
+          diffuseColor.rgb = mix(diffuseColor.rgb, vec3(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11))) * 0.85, 0.85 * dimK) * (1.0 - 0.4 * dimK);
+          glow *= 1.0 - 0.9 * dimK;`)
+        .replace("#include <roughnessmap_fragment>", "#include <roughnessmap_fragment>\nif (gRough >= 0.0) roughnessFactor = gRough;")
         .replace("#include <emissivemap_fragment>", "#include <emissivemap_fragment>\ntotalEmissiveRadiance += glow;");
     };
     const mesh = new THREE.InstancedMesh(geo, mat, n);
+    // a sombra acompanha a peça (cresce na abertura, some com a camada)
+    mesh.customDepthMaterial = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
+    mesh.customDepthMaterial.onBeforeCompile = (sh) => patch(sh);
     const m4 = new THREE.Matrix4(), col = new THREE.Color(), sz = new THREE.Vector3();
     idx.forEach((i, k) => {
       inst[i].push([mesh, k]);
@@ -342,7 +406,7 @@ export function createMap(canvas, world, opts = {}) {
       mesh.setMatrixAt(k, m4);
       mesh.setColorAt(k, col);
       plate[k] = M.plate[i];
-      seed[k] = hash1(i * 3 + 1);
+      sd[k] = hash1(i * 3 + 1);
       size.set([sz.x, sz.y, sz.z], k * 3);
       lit[k] = sz.w || 0;
     });
@@ -351,46 +415,37 @@ export function createMap(canvas, world, opts = {}) {
     if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
     mesh.userData = { name, idx, hl, vis, delay, geo };
     mesh.frustumCulled = false;
+    if (kind !== "small") { mesh.castShadow = true; mesh.receiveShadow = true; }
     scene.add(mesh);
     meshes.push(mesh);
     return mesh;
   }
   const pos3 = new THREE.Vector3(), quat = new THREE.Quaternion(), scl = new THREE.Vector3();
-  const boxGeo = () => { const g = new THREE.BoxGeometry(1, 1, 1); g.translate(0, 0.5, 0); return g; };
-  // arranha-céu com recuo: o terço de cima é mais estreito
-  const tierGeo = () => {
-    const a = new THREE.BoxGeometry(1, 0.66, 1); a.translate(0, 0.33, 0);
-    const b = new THREE.BoxGeometry(0.72, 0.34, 0.72); b.translate(0, 0.83, 0);
-    return mergeGeometries([a, b]);
-  };
-  const litOf = (i) => (shape[i] === "tower" ? 0.38 + 0.3 * hash1(i + 3) : shape[i] === "block" ? 0.2 + 0.15 * hash1(i + 3) : 0.16);
   const placeBld = (i, m4, col, sz) => {
     m4.compose(pos3.set(X[i], TOP, Z[i]), quat.identity(), scl.set(SX[i], Hh[i], SZ[i]));
     const n = world.nodes[i];
     vivid(n.t === "c" ? palette.sector(n.c) : palette.kind(n), col);
-    sz.set(SX[i], Hh[i], SZ[i]); sz.w = litOf(i);
+    sz.set(SX[i], Hh[i], SZ[i]); sz.w = 0;
   };
-  const bldMat = () => new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.36, metalness: 0.4, envMapIntensity: 0.55 });
+  const bldMat = () => new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.7, metalness: 0, envMapIntensity: 2.2 });
   const tall = [], low = [];
-  for (let i = 0; i < N; i++) if (isGround[i]) (shape[i] === "tower" && Hh[i] > 3.2 ? tall : low).push(i);
-  instanced("tall", tierGeo(), bldMat(), tall, placeBld, "bld");
-  instanced("low", boxGeo(), bldMat(), low, placeBld, "bld");
+  for (const i of G_) (shape[i] === "tower" && Hh[i] > 3.2 ? tall : low).push(i);
+  instanced("tall", towerGeo(true), bldMat(), tall, placeBld, "bld");
+  instanced("low", towerGeo(false), bldMat(), low, placeBld, "bld");
 
   // a operação de cada setor ao lado da sede (props.js): o setor se lê pela forma
   const PROPS = sectorProps();
   const smokePts = [], rotors = [];
-  const propAt = new Map(); // companhia → [x, z, escala]
   for (const [sec, pr] of Object.entries(PROPS)) {
     const list = [];
-    for (let i = 0; i < N; i++) if (isGround[i] && world.nodes[i].t === "c" && world.nodes[i].c === sec && (!pr.top || (shape[i] === "tower" && Hh[i] > 3.2))) list.push(i);
+    for (const i of G_) if (world.nodes[i].t === "c" && world.nodes[i].c === sec && (!pr.top || (shape[i] === "tower" && Hh[i] > 3.2))) list.push(i);
     if (!list.length) continue;
     instanced(`prop-${sec}`, pr.geo, bldMat(), list, (i, m4, col, sz) => {
       const w = (SX[i] + SZ[i]) / 2, s2 = pr.top ? w * 0.62 : w * (shape[i] === "tower" ? 0.95 : 0.8);
-      const px = pr.top ? X[i] : X[i] + SX[i] / 2 + s2 * 0.5, py = pr.top ? TOP + Hh[i] : TOP, pz = pr.top ? Z[i] : Z[i] + SZ[i] * 0.12;
+      const px = pr.top ? X[i] : X[i] + SX[i] / 2 + s2 * 0.52, py = pr.top ? TOP + Hh[i] : TOP, pz = pr.top ? Z[i] : Z[i] + SZ[i] * 0.12;
       m4.compose(pos3.set(px, py, pz), quat.identity(), scl.set(s2, s2, s2));
       vivid(palette.sector(sec), col);
       sz.set(s2, s2, s2); sz.w = 0;
-      propAt.set(i, [px, pz, s2]);
       if (pr.rotor) rotors.push([i, px + pr.rotor[0] * s2, py + pr.rotor[1] * s2, pz + pr.rotor[2] * s2, s2]);
       for (const p of pr.smoke || []) smokePts.push([i, px + p[0] * s2, py + p[1] * s2, pz + p[2] * s2, s2]);
     }, "bld");
@@ -400,7 +455,7 @@ export function createMap(canvas, world, opts = {}) {
     instanced("rotor", rotorGeo(), new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.5 }), rotors.map((r) => r[0]), (i, m4, col, sz) => {
       const r = byNode.get(i);
       m4.compose(pos3.set(r[1], r[2], r[3]), quat.identity(), scl.set(r[4], r[4], r[4]));
-      col.setRGB(0.8, 0.86, 0.95);
+      col.setRGB(0.95, 0.95, 0.95);
       sz.set(r[4], r[4], r[4]); sz.w = 0;
     }, "spin");
   }
@@ -420,15 +475,40 @@ export function createMap(canvas, world, opts = {}) {
   const placeSmall = (i, m4, col, sz) => {
     const s = R[i];
     m4.compose(pos3.set(X[i], Y[i], Z[i]), quat.identity(), scl.set(s, s, s));
-    col.set(palette.kind(world.nodes[i]));
+    vivid(palette.kind(world.nodes[i]), col);
     sz.set(s, s, s); sz.w = sky[i] ? 1 : 0;
   };
-  const smallMat = (flat) => new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.35, metalness: 0.2, flatShading: !!flat });
+  const smallMat = (flat) => new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.4, metalness: 0.05, flatShading: !!flat });
   instanced("pawn", pawnGeo, smallMat(), by.pawn, placeSmall, "small");
   instanced("tile", cubeGeo, smallMat(), by.tile, placeSmall, "small");
   instanced("inv", invGeo, smallMat(true), by.inv, placeSmall, "small");
 
-  // halos: um ponto de luz em cada dono (de longe as praças viram luzes da cidade; os do céu, estrelas)
+  // árvores: copas verdes, com ipês amarelos e rosas e jacarandás roxos de vez em quando
+  const treeU = { uDim: { value: 0 }, uRise: { value: 1 } };
+  {
+    const mat = new THREE.MeshStandardMaterial({ vertexColors: true, flatShading: true, roughness: 0.95 });
+    const patch = (sh) => { Object.assign(sh.uniforms, treeU); sh.vertexShader = sh.vertexShader.replace("#include <common>", "#include <common>\nuniform float uRise;").replace("#include <begin_vertex>", "#include <begin_vertex>\ntransformed *= smoothstep(0.55, 1.2, uRise);"); };
+    mat.onBeforeCompile = (sh) => {
+      patch(sh);
+      sh.fragmentShader = sh.fragmentShader.replace("#include <common>", "#include <common>\nuniform float uDim;").replace("#include <color_fragment>", "#include <color_fragment>\ndiffuseColor.rgb = mix(diffuseColor.rgb, vec3(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11))) * 0.85, 0.8 * uDim) * (1.0 - 0.4 * uDim);");
+    };
+    const mesh = new THREE.InstancedMesh(treeGeo(), mat, trees.length);
+    mesh.customDepthMaterial = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
+    mesh.customDepthMaterial.onBeforeCompile = patch;
+    const m4 = new THREE.Matrix4(), col = new THREE.Color(), e = new THREE.Euler();
+    trees.forEach(([x, z, s], k) => {
+      const r = hash1(k * 5.1 + 2);
+      m4.compose(pos3.set(x, TOP, z), quat.setFromEuler(e.set(0, r * 6.28, 0)), scl.set(s, s * (0.85 + 0.4 * hash1(k + 9)), s));
+      mesh.setMatrixAt(k, m4);
+      if (r > 0.965) col.setRGB(0.93, 0.74, 0.08); else if (r > 0.935) col.setRGB(0.9, 0.45, 0.62); else if (r > 0.92) col.setRGB(0.55, 0.4, 0.78);
+      else col.setHSL(0.27 + 0.1 * hash1(k * 1.3), 0.5 + 0.2 * hash1(k * 2.1), 0.2 + 0.13 * hash1(k * 3.7));
+      mesh.setColorAt(k, col);
+    });
+    mesh.castShadow = true; mesh.receiveShadow = true; mesh.frustumCulled = false;
+    scene.add(mesh);
+  }
+
+  // marca de cada dono vista de longe: um ponto da cor do tipo (as praças viram gente; quem paira, um balão de luz)
   const haloIdx = [];
   for (let i = 0; i < N; i++) if (!isGround[i]) haloIdx.push(i);
   const haloU = { uDim: { value: 0 }, uPx: { value: 1 }, uRise: { value: 1 }, uTime: { value: 0 }, uFocus: { value: -1 } };
@@ -437,8 +517,8 @@ export function createMap(canvas, world, opts = {}) {
     const g = new THREE.BufferGeometry();
     haloIdx.forEach((i, k) => {
       p.set([X[i], Y[i] + Hh[i] * 0.55, Z[i]], k * 3);
-      col.set(palette.kind(world.nodes[i])); c.set([col.r, col.g, col.b], k * 3);
-      sz[k] = sky[i] ? R[i] * 5.5 : R[i] * 3.4;
+      vivid(palette.kind(world.nodes[i]), col); c.set([col.r, col.g, col.b], k * 3);
+      sz[k] = sky[i] ? R[i] * 5 : R[i] * 2.4;
     });
     g.setAttribute("position", new THREE.BufferAttribute(p, 3));
     g.setAttribute("aCol", new THREE.BufferAttribute(c, 3));
@@ -448,20 +528,20 @@ export function createMap(canvas, world, opts = {}) {
     g.setAttribute("aSky", new THREE.BufferAttribute(Float32Array.from(haloIdx, (i) => (sky[i] ? 1 : 0)), 1));
     g.setAttribute("aPlate", new THREE.BufferAttribute(Float32Array.from(haloIdx, (i) => M.plate[i]), 1));
     const m = new THREE.ShaderMaterial({
-      uniforms: haloU, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
-      vertexShader: `attribute vec3 aCol; attribute float aSize; attribute float aHL; attribute float aVis; attribute float aSky; attribute float aPlate; uniform float uPx; uniform float uDim; uniform float uRise; uniform float uTime; uniform float uFocus; varying vec3 vCol; varying float vA;
+      uniforms: haloU, transparent: true, depthWrite: false,
+      vertexShader: `attribute vec3 aCol; attribute float aSize; attribute float aHL; attribute float aVis; attribute float aSky; attribute float aPlate; uniform float uPx; uniform float uDim; uniform float uRise; uniform float uTime; uniform float uFocus; varying vec3 vCol; varying float vA; varying float vSky;
         void main(){ vec3 p = position; p.y += aSky * 0.22 * sin(uTime * 0.9 + p.x * 3.0);
           vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_Position = projectionMatrix * mv;
           float px = aSize * uPx / -mv.z;
-          gl_PointSize = clamp(px, aSky > 0.5 ? 5.0 : 1.6, 90.0) * aVis;
+          gl_PointSize = clamp(px, aSky > 0.5 ? 6.0 : 2.2, 80.0) * aVis;
           float isHL = step(0.01, aHL);
           float other = uFocus >= 0.0 && abs(uFocus - aPlate) > 0.5 ? 1.0 : 0.0;
           float dimK = max(uDim, 0.8 * other) * (1.0 - isHL);
-          // de perto a peça aparece e o halo recua
-          float near = smoothstep(26.0, 7.0, px);
-          vA = (aSky > 0.5 ? 0.46 : mix(0.2, 0.75, near)) * (1.0 - 0.9 * dimK) * (1.0 + 0.9 * isHL) * aVis * smoothstep(0.7, 1.3, uRise);
-          vCol = aCol; }`,
-      fragmentShader: "varying vec3 vCol; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5) * 2.0; float a = pow(max(0.0, 1.0 - d), 2.2); gl_FragColor = vec4(vCol * a * vA, 1.0); }",
+          // de perto a peça aparece e a marca some
+          float nearK = smoothstep(5.0, 16.0, px);
+          vA = (aSky > 0.5 ? 0.3 + 0.3 * isHL : mix(0.9, 0.0, nearK)) * (1.0 - 0.8 * dimK) * aVis * smoothstep(0.7, 1.3, uRise);
+          vCol = aCol; vSky = aSky; }`,
+      fragmentShader: "varying vec3 vCol; varying float vA; varying float vSky; void main(){ float d = length(gl_PointCoord - 0.5) * 2.0; float a = vSky > 0.5 ? pow(max(0.0, 1.0 - d), 1.6) : 1.0 - smoothstep(0.6, 1.0, d); gl_FragColor = vec4(mix(vCol, vec3(1.0), vSky * 0.5), a * vA); }",
     });
     const pts = new THREE.Points(g, m);
     pts.frustumCulled = false;
@@ -472,23 +552,6 @@ export function createMap(canvas, world, opts = {}) {
   const haloK = new Int32Array(N).fill(-1);
   haloIdx.forEach((i, k) => { haloK[i] = k; });
 
-  // poeira de luz subindo devagar (dá ar e profundidade à cidade)
-  const dustU = { uTime: { value: 0 }, uPx: { value: 1 }, uDim: { value: 0 } };
-  if (!reduced) {
-    const n = small ? 260 : 520, p = new Float32Array(n * 3), s = new Float32Array(n);
-    for (let k = 0; k < n; k++) { p.set([(hash1(k) - 0.5) * MW * 1.15, hash1(k + 0.5) * 24, (hash1(k * 1.7 + 3) - 0.5) * MH * 1.2], k * 3); s[k] = hash1(k * 2.3 + 9); }
-    const g = new THREE.BufferGeometry();
-    g.setAttribute("position", new THREE.BufferAttribute(p, 3));
-    g.setAttribute("aS", new THREE.BufferAttribute(s, 1));
-    const pts = new THREE.Points(g, new THREE.ShaderMaterial({
-      uniforms: dustU, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
-      vertexShader: "attribute float aS; uniform float uTime; uniform float uPx; varying float vA; void main(){ vec3 p = position; p.y = mod(p.y + uTime * (0.12 + 0.25 * aS), 24.0); p.x += sin(uTime * 0.2 + aS * 30.0) * 0.6; vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_Position = projectionMatrix * mv; gl_PointSize = clamp((0.1 + 0.16 * aS) * uPx / -mv.z, 1.0, 5.0); vA = (0.1 + 0.25 * aS) * smoothstep(0.0, 2.0, p.y) * smoothstep(24.0, 18.0, p.y); }",
-      fragmentShader: "uniform float uDim; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5) * 2.0; gl_FragColor = vec4(vec3(0.75, 0.86, 1.0) * max(0.0, 1.0 - d) * vA * (1.0 - 0.6 * uDim), 1.0); }",
-    }));
-    pts.frustumCulled = false;
-    scene.add(pts);
-  }
-
   // fumaça das chaminés (indústria e siderurgia): bolinhas claras que sobem, crescem e somem
   const smokeU = { uTime: { value: 0 }, uPx: { value: 1 }, uDim: { value: 0 }, uRise: { value: 1 } };
   if (smokePts.length && !reduced) {
@@ -498,9 +561,9 @@ export function createMap(canvas, world, opts = {}) {
     g.setAttribute("position", new THREE.BufferAttribute(p, 3));
     g.setAttribute("aPh", new THREE.BufferAttribute(a, 2));
     const pts = new THREE.Points(g, new THREE.ShaderMaterial({
-      uniforms: smokeU, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
-      vertexShader: "attribute vec2 aPh; uniform float uTime; uniform float uPx; varying float vA; void main(){ float t = fract(uTime * 0.16 + aPh.x); vec3 p = position; p.y += t * 1.5 * aPh.y; p.x += (t * t * 0.7 + 0.06 * sin(uTime + aPh.x * 20.0)) * aPh.y; vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_Position = projectionMatrix * mv; gl_PointSize = clamp((0.12 + 0.5 * t) * aPh.y * uPx / -mv.z, 1.0, 60.0); vA = smoothstep(0.0, 0.12, t) * (1.0 - t) * 0.2; }",
-      fragmentShader: "uniform float uDim; uniform float uRise; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5) * 2.0; gl_FragColor = vec4(vec3(0.62, 0.68, 0.8) * pow(max(0.0, 1.0 - d), 1.5) * vA * (1.0 - 0.85 * uDim) * smoothstep(1.0, 1.35, uRise), 1.0); }",
+      uniforms: smokeU, transparent: true, depthWrite: false,
+      vertexShader: "attribute vec2 aPh; uniform float uTime; uniform float uPx; varying float vA; void main(){ float t = fract(uTime * 0.16 + aPh.x); vec3 p = position; p.y += t * 1.5 * aPh.y; p.x += (t * t * 0.7 + 0.06 * sin(uTime + aPh.x * 20.0)) * aPh.y; vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_Position = projectionMatrix * mv; gl_PointSize = clamp((0.12 + 0.5 * t) * aPh.y * uPx / -mv.z, 1.0, 60.0); vA = smoothstep(0.0, 0.12, t) * (1.0 - t) * 0.5; }",
+      fragmentShader: "uniform float uDim; uniform float uRise; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5) * 2.0; gl_FragColor = vec4(vec3(0.93, 0.94, 0.96), pow(max(0.0, 1.0 - d), 1.4) * vA * (1.0 - 0.7 * uDim) * smoothstep(1.0, 1.35, uRise)); }",
     }));
     pts.frustumCulled = false;
     scene.add(pts);
@@ -520,14 +583,14 @@ export function createMap(canvas, world, opts = {}) {
     return new THREE.QuadraticBezierCurve3(_a.clone(), _c.clone(), _b.clone());
   }
   const samePlaza = (a, b) => !sky[a] && !isGround[a] && (M.anchor[a] === b || (!isGround[b] && !sky[b] && M.anchor[a] === M.anchor[b]));
-  const lineU = { uDim: { value: 0 }, uAlpha: { value: 1 }, uAcc: { value: ACC }, uFar: { value: 1 } };
+  const lineU = { uDim: { value: 0 }, uAlpha: { value: 1 }, uFar: { value: 1 } };
   const lineMat = new THREE.ShaderMaterial({
-    uniforms: lineU, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+    uniforms: lineU, transparent: true, depthWrite: false,
     vertexShader: "attribute float aT; attribute vec2 aW; varying float vT; varying vec2 vW; void main(){ vT = aT; vW = aW; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }",
     // aW.x = força; aW.y = 1 controle, 0 participação
-    fragmentShader: `uniform float uAlpha; uniform float uDim; uniform vec3 uAcc; uniform float uFar; varying float vT; varying vec2 vW;
-      void main(){ float a = smoothstep(0.0, 0.08, vT) * (0.35 + 0.65 * vT); vec3 c = mix(vec3(0.55, 0.68, 1.0), mix(vec3(0.6, 0.85, 1.0), uAcc, 0.55), vW.y);
-        gl_FragColor = vec4(c * a * vW.x * uAlpha * (1.0 - 0.94 * uDim) * mix(uFar, 1.0, 0.35 * vW.y), 1.0); }`,
+    fragmentShader: `uniform float uAlpha; uniform float uDim; uniform float uFar; varying float vT; varying vec2 vW;
+      void main(){ float a = smoothstep(0.0, 0.08, vT) * (0.4 + 0.6 * vT); vec3 c = mix(vec3(0.16, 0.26, 0.5), vec3(0.0, 0.42, 0.3), vW.y);
+        gl_FragColor = vec4(c, a * vW.x * uAlpha * (1.0 - 0.92 * uDim) * mix(uFar, 1.0, 0.4 * vW.y)); }`,
   });
   let baseLines = null;
   function buildBaseLines(visible) {
@@ -537,12 +600,12 @@ export function createMap(canvas, world, opts = {}) {
       if (visible && (!visible[s] || !visible[t])) continue;
       const ctl = f & 1;
       if (samePlaza(s, t)) {
-        // na praça: um risco de luz no chão, do dono até o prédio
+        // na praça: um risco no piso, do dono até o prédio
         const dx = X[t] - X[s], dz = Z[t] - Z[s], d = Math.hypot(dx, dz) || 1, cut = isGround[t] ? Math.min(0.92, (Math.max(SX[t], SZ[t]) * 0.5) / d) : 0;
-        seg(X[s], TOP + 0.02, Z[s], X[t] - dx * cut, TOP + 0.02, Z[t] - dz * cut, 0.2, 1, ctl ? 0.3 : 0.11, ctl);
+        seg(X[s], TOP + 0.03, Z[s], X[t] - dx * cut, TOP + 0.03, Z[t] - dz * cut, 0.2, 1, ctl ? 0.75 : 0.35, ctl);
         continue;
       }
-      const c = linkCurve(s, t), w = ctl ? 0.15 : 0.05;
+      const c = linkCurve(s, t), w = ctl ? 0.5 : 0.2;
       let px = 0, py = 0, pz = 0;
       for (let k = 0; k <= SEG; k++) {
         const p = c.getPoint(k / SEG, _a);
@@ -559,33 +622,32 @@ export function createMap(canvas, world, opts = {}) {
   }
   buildBaseLines(null);
 
-  // feixes do destaque: tubos com luz correndo do dono para o possuído e ponta de seta na chegada
-  const flowU = { uTime: { value: 0 }, uAcc: { value: ACC }, uGrow: { value: 1 }, uPx: { value: 1 }, uMinPx: { value: DPR } };
+  // cabos do destaque: tubos com luz correndo do dono para o possuído e ponta de seta na chegada
+  const flowU = { uTime: { value: 0 }, uGrow: { value: 1 }, uPx: { value: 1 }, uMinPx: { value: DPR } };
   const flowMat = new THREE.ShaderMaterial({
-    uniforms: flowU, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
-    // de longe o feixe não some: a espessura tem um mínimo em pixels (aRad = raio do tubo; aCenter = base da seta)
+    uniforms: flowU, transparent: true, depthWrite: false,
+    // de longe o cabo não some: a espessura tem um mínimo em pixels (aRad = raio do tubo; aCenter = base da seta)
     vertexShader: `attribute float aPhase; attribute float aCtl; attribute float aLen; attribute float aHead; attribute float aRad; attribute vec3 aCenter; uniform float uPx; uniform float uMinPx;
       varying vec2 vUv; varying float vPhase; varying float vCtl; varying float vLen; varying float vHead; varying vec3 vN; varying vec3 vV;
       void main(){ vUv = uv; vPhase = aPhase; vCtl = aCtl; vLen = aLen; vHead = aHead; vN = normalize(normalMatrix * normal);
         vec3 p = position;
         float depth = -(modelViewMatrix * vec4(aHead > 0.5 ? aCenter : position, 1.0)).z;
-        float want = uMinPx * (0.9 + 1.3 * aRad / 0.11) * depth / uPx;
+        float want = uMinPx * (1.5 + 1.9 * aRad / 0.11) * depth / uPx;
         if (aHead > 0.5) p = aCenter + (position - aCenter) * max(1.0, want / aRad);
         else p += normal * max(0.0, want - aRad);
         vec4 mv = modelViewMatrix * vec4(p, 1.0); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }`,
-    fragmentShader: `uniform float uTime; uniform vec3 uAcc; uniform float uGrow; varying vec2 vUv; varying float vPhase; varying float vCtl; varying float vLen; varying float vHead; varying vec3 vN; varying vec3 vV;
+    fragmentShader: `uniform float uTime; uniform float uGrow; varying vec2 vUv; varying float vPhase; varying float vCtl; varying float vLen; varying float vHead; varying vec3 vN; varying vec3 vV;
       void main(){
-        vec3 base = mix(vec3(0.36, 0.55, 1.0), uAcc, vCtl);
-        if (vHead > 0.5) { if (uGrow < 0.97) discard; gl_FragColor = vec4(base * 1.5 + 0.2, 1.0); return; }
+        vec3 base = mix(vec3(0.04, 0.28, 1.0), vec3(0.0, 0.66, 0.42), vCtl);
+        if (vHead > 0.5) { if (uGrow < 0.97) discard; gl_FragColor = vec4(base * 1.15, 1.0); return; }
         float t = vUv.x;
         if (t > uGrow) discard;
-        float ends = smoothstep(0.0, 0.02, t);
         float core = pow(abs(dot(vN, vV)), 1.2);
-        // cometas a cada 2,4 unidades, correndo para o possuído: cabeça clara, cauda que some para trás
+        // luzes a cada 2,4 unidades, correndo para o possuído: cabeça clara, cauda que some para trás
         float s = fract((t * vLen - uTime * 2.6) / 2.4 + vPhase);
         float comet = pow(s, 5.0);
-        vec3 c = base * (0.4 + 0.5 * core) + (base * 0.9 + 0.35) * comet * 1.5;
-        gl_FragColor = vec4(c * ends, 1.0);
+        // miolo claro e borda escura: o cabo se lê tanto sobre o piso claro quanto sobre a sombra
+        gl_FragColor = vec4(base * (0.35 + 0.95 * core) + vec3(1.0) * comet * 0.85, smoothstep(0.0, 0.02, t));
       }`,
   });
   const flows = new THREE.Mesh(new THREE.BufferGeometry(), flowMat);
@@ -598,13 +660,13 @@ export function createMap(canvas, world, opts = {}) {
     flows.geometry.dispose();
     if (!list.length) { flows.geometry = new THREE.BufferGeometry(); return; }
     const fill = (g, k, v) => g.setAttribute(k, new THREE.BufferAttribute(new Float32Array(g.attributes.position.count).fill(v), 1));
+    const center = (gg, x, y, z) => { const n = gg.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([x, y, z], k * 3); gg.setAttribute("aCenter", new THREE.BufferAttribute(a, 3)); };
     const geos = [];
     list.slice(0, 320).forEach(([a, b, ctl, pct], e) => {
       const curve = linkCurve(a, b);
       const len = curve.getLength();
       const rad = (0.035 + 0.075 * Math.sqrt(clamp((pct > 0 ? pct : ctl ? 50 : 8) / 100, 0.02, 1))) * (small ? 1.25 : 1);
       const g = new THREE.TubeGeometry(curve, clamp(Math.round(len * 2.2), 14, 80), rad, 6, false);
-      const center = (gg, x, y, z) => { const n = gg.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([x, y, z], k * 3); gg.setAttribute("aCenter", new THREE.BufferAttribute(a, 3)); };
       fill(g, "aPhase", (e * 0.137) % 1); fill(g, "aCtl", ctl ? 1 : 0); fill(g, "aLen", len); fill(g, "aHead", 0); fill(g, "aRad", rad); center(g, 0, 0, 0);
       geos.push(g);
       // ponta de seta na chegada
@@ -649,12 +711,14 @@ export function createMap(canvas, world, opts = {}) {
     haloIdx.forEach((i, k) => { hv.array[k] = visible[i] ? 1 : 0; });
     hv.needsUpdate = true;
     buildBaseLines(visible);
+    shadowDirty = 2;
   }
   const rise = { t0: 0, dur: 0 };
-  // abertura: a cidade acende do centro para fora enquanto a câmera sobe de perto do maior prédio até a visão geral
+  // abertura: a cidade sobe do centro para fora enquanto a câmera se afasta do maior prédio até a visão geral
+  let introWait = 0;
   function intro(dur = 5200) {
-    let big = 0;
-    for (let i = 0; i < N; i++) if (Hh[i] > Hh[big] && isGround[i]) big = i;
+    let big = G_[0];
+    for (const i of G_) if (Hh[i] > Hh[big]) big = i;
     for (const mesh of meshes) {
       const { idx, delay, geo } = mesh.userData;
       idx.forEach((i, k) => { delay[k] = clamp(Math.hypot(X[i] - X[big], (Z[i] - Z[big]) * 1.2) / 95, 0, 1) * 0.85 + (i % 7) * 0.01; });
@@ -665,21 +729,20 @@ export function createMap(canvas, world, opts = {}) {
     const end = { x: cam.tx, z: cam.tz, d: cam.td };
     cam.x = X[big] + 3; cam.z = Z[big] + 6; cam.d = 30; cam.yaw = -0.5;
     cam.fly = { a: { x: cam.x, z: cam.z, d: cam.d, yaw: cam.yaw }, b: { ...end, yaw: 0 }, t0: performance.now(), dur, intro: true };
+    // só começa a contar quando a cena já está na tela (os primeiros quadros compilam os shaders)
     introWait = 3;
   }
-  // a abertura só começa a contar quando a cena já está na tela (os primeiros quadros compilam os shaders)
-  let introWait = 0;
   function skipIntro() {
     if (cam.fly && cam.fly.intro) { const f = cam.fly; cam.fly = null; cam.tx = f.b.x; cam.tz = f.b.z; cam.td = f.b.d; cam.yaw = 0; }
-    if (rise.dur) { rise.t0 = Math.min(rise.t0, performance.now() - rise.dur * 0.7); }
+    if (rise.dur) rise.t0 = Math.min(rise.t0, performance.now() - rise.dur * 0.7);
   }
 
   // ------------------------------------------------------------------ câmera: arrastar move, rolar aproxima
   // inset: o que os painéis, a barra de cima e a legenda cobrem em cada lado (o mapa se enquadra no que sobra)
   const view = { W: 1, H: 1, offX: 0, offY: 0, toX: 0, toY: 0, inset: { l: 0, r: 0, t: 0, b: 0 } };
-  const cam = { x: 0, z: 0, d: 160, tx: 0, tz: 0, td: 160, vx: 0, vz: 0, tilt: 0.5, yaw: 0, sway: 0, idleAt: performance.now(), fly: null };
+  const cam = { x: 0, z: 0, d: 160, tx: 0, tz: 0, td: 160, vx: 0, vz: 0, tilt: 0.5, yaw: 0, sway: 0, swayK: 0, idleAt: performance.now(), fly: null };
   const D_MIN = 7;
-  let D_MAX = Math.max(260, MH * 2.4);
+  const D_MAX = Math.max(260, MH * 2.4);
   // de longe quase de cima (tudo à vista); de perto a câmera deita e os prédios ganham altura
   const tiltFor = (d) => 0.5 + 0.48 * (1 - smooth(16, 120, d));
   function placeCamera() {
@@ -688,8 +751,7 @@ export function createMap(canvas, world, opts = {}) {
     camera.position.set(cam.x + Math.sin(yaw) * st, Math.cos(cam.tilt) * cam.d, cam.z + Math.cos(yaw) * st);
     camera.up.set(0, 1, 0);
     camera.lookAt(cam.x, 0, cam.z);
-    scene.fog.near = cam.d * 1.05; scene.fog.far = cam.d * 3.4;
-    groundU.uFogNear.value = scene.fog.near; groundU.uFogFar.value = scene.fog.far;
+    scene.fog.near = cam.d * 1.3; scene.fog.far = cam.d * 4.4 + 60;
   }
   const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
   function groundAt(px, py, y = TOP) {
@@ -733,7 +795,7 @@ export function createMap(canvas, world, opts = {}) {
     flyToBox(x0, x1, z0, z1, opts);
   }
   function flyToPlate(j, opts = {}) { const p = plates[j]; flyToBox(p.x0, p.x1, p.z0 - 2.5, p.z1, { pad: 1.06, ...opts }); }
-  function fitAll(dur = 1100) { flyToBox(-MW / 2, MW / 2, -MH / 2 - 3, MH / 2, { pad: 1.03, dur }); }
+  function fitAll(dur = 1100) { flyToBox(-MW / 2 - 2, MW / 2 + 2, -MH / 2 - 4, MH / 2 + 1, { pad: 1.03, dur }); }
   function pan(dxPx, dyPx) {
     // move o mapa junto com o dedo: o ponto sob o cursor acompanha o cursor
     const a = groundAt(view.W / 2, view.H / 2), b = groundAt(view.W / 2 + dxPx, view.H / 2 + dyPx);
@@ -758,8 +820,8 @@ export function createMap(canvas, world, opts = {}) {
     cam.td = nd;
   }
   function limit() {
-    cam.x = clamp(cam.x, -MW * 0.6, MW * 0.6); cam.z = clamp(cam.z, -MH * 0.7, MH * 0.75);
-    cam.tx = clamp(cam.tx, -MW * 0.6, MW * 0.6); cam.tz = clamp(cam.tz, -MH * 0.7, MH * 0.75);
+    cam.x = clamp(cam.x, -MW * 0.62, MW * 0.62); cam.z = clamp(cam.z, -MH * 0.72, MH * 0.78);
+    cam.tx = clamp(cam.tx, -MW * 0.62, MW * 0.62); cam.tz = clamp(cam.tz, -MH * 0.72, MH * 0.78);
   }
   function touch() { cam.idleAt = performance.now(); }
 
@@ -842,7 +904,7 @@ export function createMap(canvas, world, opts = {}) {
     }
     // parado, o mapa respira: a câmera balança devagar para os lados (dá para ver a altura das coisas)
     const idle = reduced ? 0 : smooth(2500, 7000, now - cam.idleAt);
-    cam.swayK = lerp(cam.swayK || 0, idle, Math.min(1, dt * 1.5));
+    cam.swayK = lerp(cam.swayK, idle, Math.min(1, dt * 1.5));
     cam.sway = Math.sin(clock.t * 0.16) * 0.075 * cam.swayK;
     if (Math.abs(view.toX - view.offX) + Math.abs(view.toY - view.offY) > 0.3) {
       const k = 1 - Math.exp(-real * 7);
@@ -852,19 +914,20 @@ export function createMap(canvas, world, opts = {}) {
     camera.updateMatrixWorld();
     dim.v += (dim.to - dim.v) * (1 - Math.exp(-real * 5));
     focus.v += (focus.to - focus.v) * (1 - Math.exp(-real * 5));
-    instU.uDim.value = haloU.uDim.value = Math.min(1, dim.v * 1.25);
+    const dv = Math.min(1, dim.v * 1.25);
+    instU.uDim.value = haloU.uDim.value = smokeU.uDim.value = dv;
+    treeU.uDim.value = Math.max(dv, focus.v * 0.6);
     lineU.uDim.value = Math.max(Math.min(1, dim.v * 1.3), focus.v * 0.7);
-    groundU.uDim.value = dim.v; groundU.uFocusK.value = focus.v; dustU.uDim.value = dim.v;
-    instU.uTime.value = flowU.uTime.value = groundU.uTime.value = haloU.uTime.value = dustU.uTime.value = clock.t;
-    if (rise.dur) { const k = clamp((now - rise.t0) / rise.dur, 0, 1); instU.uRise.value = 1.4 * k; if (k >= 1) { rise.dur = 0; instU.uRise.value = 1.4; } }
+    groundU.uDim.value = dv * 0.85; groundU.uFocusK.value = focus.v * 0.8;
+    instU.uTime.value = flowU.uTime.value = groundU.uTime.value = haloU.uTime.value = smokeU.uTime.value = clock.t;
+    if (rise.dur) { const k = clamp((now - rise.t0) / rise.dur, 0, 1); instU.uRise.value = 1.4 * k; shadowDirty = 2; if (k >= 1) { rise.dur = 0; instU.uRise.value = 1.4; } }
     const r01 = instU.uRise.value;
     lineU.uAlpha.value = smooth(0.8, 1.35, r01);
-    haloU.uRise.value = r01; groundU.uRise.value = smooth(0.0, 0.9, r01 + 0.15);
+    haloU.uRise.value = smokeU.uRise.value = treeU.uRise.value = r01;
     // de longe os fios de participação quase somem (ficam os de controle); de perto aparecem todos
-    lineU.uFar.value = 0.1 + 0.9 * (1 - smooth(24, 110, cam.d));
+    lineU.uFar.value = 0.12 + 0.88 * (1 - smooth(24, 110, cam.d));
     const pxScale = (view.H * DPR) / (2 * Math.tan((camera.fov * Math.PI) / 360));
-    haloU.uPx.value = dustU.uPx.value = flowU.uPx.value = smokeU.uPx.value = pxScale;
-    smokeU.uTime.value = clock.t; smokeU.uDim.value = Math.min(1, dim.v * 1.25); smokeU.uRise.value = r01;
+    haloU.uPx.value = flowU.uPx.value = smokeU.uPx.value = pxScale;
     flowGrow = Math.min(1, flowGrow + real * 1.25);
     flowU.uGrow.value = easeInOut(flowGrow);
   }
@@ -892,6 +955,7 @@ export function createMap(canvas, world, opts = {}) {
   }
   function render() {
     govern(performance.now());
+    if (shadowDirty > 0) { renderer.shadowMap.needsUpdate = true; shadowDirty--; }
     if (composer) composer.render(); else renderer.render(scene, camera);
   }
   function warmup() { update(); try { renderer.compile(scene, camera); } catch {} render(); clock.last = performance.now(); }
@@ -913,7 +977,6 @@ export function createMap(canvas, world, opts = {}) {
     setHighlight, setFlows, setVisible, setFocusPlate, intro, skipIntro, touch,
     isInv, isGround, sky, shape, X, Y, Z, R, TOP, PLATE_H: 0,
     get scale() { return S; },
-    get dimV() { return dim.v; },
     // andamento da abertura, de 0 a 1 (1 = não há abertura em curso)
     get introK() { return cam.fly && cam.fly.intro ? (introWait ? 0 : clamp((performance.now() - cam.fly.t0) / cam.fly.dur, 0, 1)) : 1; },
     dispose() { renderer.dispose(); pmrem.dispose(); },
