@@ -475,3 +475,24 @@ body.mundo { margin: 0; height: 100vh; height: 100dvh; overflow: hidden; overscr
 .m-lab-dot { box-shadow: 0 0 0 2px rgba(5, 8, 14, .8); }
 .m-lab { --lc: rgba(10, 16, 28, .85); }
 .m-frame { display: none; }
+
+/* maquete clara: rótulos em cartão branco, com tipografia escura e traço fino */
+.m-lab { --lc: rgba(24, 30, 44, .55); }
+.m-lab-tx { background: rgba(255, 255, 255, .92); backdrop-filter: none; -webkit-backdrop-filter: none; border-radius: 0 5px 5px 0; box-shadow: 0 1px 2px rgba(16, 22, 36, .1), 0 6px 18px -8px rgba(16, 22, 36, .35), inset 1.5px 0 0 var(--lc); }
+.m-lab.l .m-lab-tx { border-radius: 5px 0 0 5px; box-shadow: 0 1px 2px rgba(16, 22, 36, .1), 0 6px 18px -8px rgba(16, 22, 36, .35), inset -1.5px 0 0 var(--lc); }
+.m-lab-tx b { color: #131722; letter-spacing: .08em; }
+.m-lab-tx small { color: #5a6376; }
+.m-lab-dot { background: #131722; box-shadow: 0 0 0 2px rgba(255, 255, 255, .9); border-radius: 50%; }
+.m-lab.hl { --lc: #0aa678; }
+.m-lab.hl .m-lab-dot { background: #0aa678; }
+.m-lab.hl .m-lab-tx b { color: #0b1a16; }
+.m-lab.rel .m-lab-tx { background: rgba(255, 255, 255, .95); backdrop-filter: none; -webkit-backdrop-filter: none; }
+.m-lab.rel .m-lab-tx small { color: #2456d6; font-weight: 600; }
+.m-lab.rel.relc .m-lab-tx small { color: #078a63; }
+@media (hover: hover) and (pointer: fine) { .m-lab-tx:hover { background: #fff; } .m-lab-tx:hover b { color: #078a63; } }
+.m-plate { background: rgba(255, 255, 255, .9); backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: 0 1px 2px rgba(16, 22, 36, .08), 0 8px 22px -10px rgba(16, 22, 36, .3); }
+.m-plate b { color: #131722; text-shadow: none; }
+.m-plate small { color: #5a6376; }
+.m-plate b::before { box-shadow: none; border-radius: 2px; }
+@media (hover: hover) and (pointer: fine) { .m-plate:hover b { color: #000; } }
+.m-vignette { background: radial-gradient(130% 100% at 50% 45%, transparent 68%, rgba(20, 28, 44, .16) 100%); }

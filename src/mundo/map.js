@@ -23,6 +23,7 @@ import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
 import { sectorProps, rotorGeo, towerGeo, treeGeo } from "./props.js";
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -57,47 +58,57 @@ export function createMap(canvas, world, opts = {}) {
   const GRID = 1.6; // malha de ruas
   // as cores dos setores são tons de pó (para o painel); como tinta nos prédios, à luz do dia, pedem mais saturação
   const _hsl = {};
-  const vivid = (c, out = new THREE.Color()) => { out.set(c).getHSL(_hsl); return out.setHSL(_hsl.h, Math.min(1, _hsl.s * 1.35 + 0.1), _hsl.l * 0.8); };
+  const vivid = (c, out = new THREE.Color()) => { out.set(c).getHSL(_hsl); return out.setHSL(_hsl.h, Math.min(1, _hsl.s * 1.2 + 0.06), _hsl.l * 0.86); };
 
   // ------------------------------------------------------------------ renderizador, luz do dia e sombras
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
   let DPR = Math.min(devicePixelRatio || 1, small ? 2 : 1.75);
   renderer.setPixelRatio(DPR);
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.02;
+  renderer.toneMapping = THREE.NeutralToneMapping;
+  renderer.toneMappingExposure = 1.0;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
   // a cidade é parada: a sombra só é refeita quando algo muda (abertura, camadas), não a cada quadro
   renderer.shadowMap.autoUpdate = false;
   let shadowDirty = 3;
-  const HAZE = new THREE.Color(0xc9dbe8);
+  const HAZE = new THREE.Color(0xd3e4ee);
   const scene = new THREE.Scene();
   scene.background = HAZE;
   scene.fog = new THREE.Fog(HAZE, 160, 520);
   const camera = new THREE.PerspectiveCamera(32, 1, 0.3, 1600);
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
-  scene.environmentIntensity = 0.2;
+  scene.environmentIntensity = 0.3;
 
-  const sun = new THREE.DirectionalLight(0xfff0d8, 3.1);
+  const sun = new THREE.DirectionalLight(0xfff1dd, 2.75);
   sun.position.set(-75, 105, 62);
   sun.castShadow = true;
   sun.shadow.mapSize.set(small ? 2048 : 4096, small ? 2048 : 4096);
   Object.assign(sun.shadow.camera, { left: -MW * 0.66, right: MW * 0.66, top: MH * 0.85, bottom: -MH * 0.85, near: 10, far: 360 });
-  sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.035; sun.shadow.radius = 2.2;
+  sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.035; sun.shadow.radius = 5; sun.shadow.blurSamples = 16;
   scene.add(sun, sun.target);
-  scene.add(new THREE.HemisphereLight(0xc4dcff, 0x7d8a5c, 0.62));
+  scene.add(new THREE.HemisphereLight(0xd6e4f7, 0x9a9a84, 0.66));
 
   // pós-processamento: só um brilho leve nos cabos de ligação. Se o aparelho não der conta, desenha direto.
-  let composer = null, bloom = null;
+  let composer = null, bloom = null, tilt = null;
   try {
     const rt = new THREE.WebGLRenderTarget(4, 4, { type: THREE.HalfFloatType, samples: small ? 2 : 4 });
     composer = new EffectComposer(renderer, rt);
     composer.setPixelRatio(DPR);
     composer.addPass(new RenderPass(scene, camera));
-    bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.16, 0.4, 1.05);
+    bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.06, 0.4, 1.1);
     composer.addPass(bloom);
+    // foco seletivo (efeito de maquete): o meio da tela nítido, o alto e o pé levemente desfocados, só de perto
+    tilt = new ShaderPass({
+      uniforms: { tDiffuse: { value: null }, uAmt: { value: 0 }, uRes: { value: new THREE.Vector2(1, 1) } },
+      vertexShader: "varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }",
+      fragmentShader: `uniform sampler2D tDiffuse; uniform float uAmt; uniform vec2 uRes; varying vec2 vUv;
+        void main(){ float k = smoothstep(0.16, 0.5, abs(vUv.y - 0.5)) * uAmt; if (k < 0.01) { gl_FragColor = texture2D(tDiffuse, vUv); return; }
+          vec4 c = vec4(0.0); for (int i = 0; i < 12; i++) { float a = float(i) * 2.39996, r = sqrt((float(i) + 0.5) / 12.0) * k; c += texture2D(tDiffuse, vUv + vec2(cos(a), sin(a)) * r / uRes); }
+          gl_FragColor = c / 12.0; }`,
+    });
+    composer.addPass(tilt);
     composer.addPass(new OutputPass());
   } catch { composer = null; }
 
@@ -152,24 +163,24 @@ export function createMap(canvas, world, opts = {}) {
       const pond = rnd() < 0.12;
       parks.push([cx, cz, pond]);
       const n = 6 + Math.floor(rnd() * 6);
-      for (let k = 0; k < n; k++) { const x = cx + (rnd() - 0.5) * 1.1, z = cz + (rnd() - 0.5) * 1.1; if (pond && Math.hypot(x - cx, z - cz) < 0.36) continue; trees.push([x, z, 0.75 + rnd() * 0.6]); }
+      for (let k = 0; k < n; k++) { const x = cx + (rnd() - 0.5) * 1.1, z = cz + (rnd() - 0.5) * 1.1; if (pond && Math.hypot(x - cx, z - cz) < 0.36) continue; trees.push([x, z, 0.55 + rnd() * 0.4]); }
     }
   }
   // atrás de cada terreno (lado norte, para não tapar os donos), uma fileira de árvores
   for (const i of G_) {
     if (LOT[i] < 0.45) continue;
     const r = LOT[i] * 0.95, n = Math.min(14, Math.floor((Math.PI * r) / 0.42));
-    for (let k = 0; k < n; k++) { const a = Math.PI + ((k + 0.5) / n) * Math.PI; trees.push([X[i] + Math.cos(a) * r, Z[i] + Math.sin(a) * r, 0.6 + rnd() * 0.4]); }
+    for (let k = 0; k < n; k++) { const a = Math.PI + ((k + 0.5) / n) * Math.PI; trees.push([X[i] + Math.cos(a) * r, Z[i] + Math.sin(a) * r, 0.5 + rnd() * 0.2]); }
   }
   // canteiros das avenidas entre os bairros e a mata em volta da cidade
   for (let x = -MW / 2 - 0.6; x <= MW / 2 + 0.6; x += 0.46) for (let z = -MH / 2 - 0.6; z <= MH / 2 + 0.6; z += 0.46) {
     const d = plateSd(x, z);
-    if (d > 0.62 && d < 1.2 && rnd() < 0.8) trees.push([x + (rnd() - 0.5) * 0.2, z + (rnd() - 0.5) * 0.2, 0.7 + rnd() * 0.5]);
+    if (d > 0.62 && d < 1.2 && rnd() < 0.8) trees.push([x + (rnd() - 0.5) * 0.12, z + (rnd() - 0.5) * 0.12, 0.6 + rnd() * 0.25]);
   }
   for (let k = 0; k < (small ? 1500 : 2800); k++) {
     const x = (rnd() - 0.5) * (MW + 10), z = (rnd() - 0.5) * (MH + 9);
     if (plateSd(x, z) < 1.3 || hash1(Math.floor(x / 3) * 31 + Math.floor(z / 3) * 17) < 0.42) continue;
-    trees.push([x, z, 0.8 + rnd() * 0.9]);
+    trees.push([x, z, 0.6 + rnd() * 0.7]);
   }
 
   // ------------------------------------------------------------------ o chão: quadras, ruas, praças, campo e mar
@@ -193,9 +204,21 @@ export function createMap(canvas, world, opts = {}) {
     t.generateMipmaps = true; t.minFilter = THREE.LinearMipmapLinearFilter;
     return t;
   })();
+  const aoTex = (() => {
+    const CW = 2048, CH = Math.round((CW * M.H) / M.W), k = CW / MW;
+    const cv = document.createElement("canvas");
+    cv.width = CW; cv.height = CH;
+    const g = cv.getContext("2d");
+    g.fillStyle = "#000"; g.fillRect(0, 0, CW, CH);
+    g.fillStyle = "#fff"; g.shadowColor = "#fff";
+    for (const i of G_) { g.shadowBlur = Math.max(4, (0.16 + Hh[i] * 0.05) * k); g.fillRect((X[i] - SX[i] / 2 + MW / 2) * k, (Z[i] - SZ[i] / 2 + MH / 2) * k, SX[i] * k, SZ[i] * k); }
+    const t = new THREE.CanvasTexture(cv);
+    t.generateMipmaps = true; t.minFilter = THREE.LinearMipmapLinearFilter;
+    return t;
+  })();
   const NR = plates.length;
   const groundU = {
-    uMask: { value: maskTex }, uTime: { value: 0 }, uSize: { value: new THREE.Vector2(MW, MH) }, uLand: { value: new THREE.Vector2(MW / 2 + 9, MH / 2 + 7) },
+    uMask: { value: maskTex }, uAo: { value: aoTex }, uTime: { value: 0 }, uSize: { value: new THREE.Vector2(MW, MH) }, uLand: { value: new THREE.Vector2(MW / 2 + 9, MH / 2 + 7) },
     uRects: { value: Array.from({ length: 12 }, (_, k) => { const p = plates[k % NR]; return new THREE.Vector4((p.x0 + p.x1) / 2, (p.z0 + p.z1) / 2, (p.x1 - p.x0) / 2, (p.z1 - p.z0) / 2); }) },
     uCols: { value: Array.from({ length: 12 }, (_, k) => { const c = plates[k % NR].col; return new THREE.Vector3(c.r, c.g, c.b); }) },
     uFocus: { value: new THREE.Vector4(0, 0, 0, 0) }, uFocusK: { value: 0 }, uDim: { value: 0 },
@@ -206,7 +229,7 @@ export function createMap(canvas, world, opts = {}) {
     sh.vertexShader = sh.vertexShader.replace("#include <common>", "#include <common>\nvarying vec3 vWp;").replace("#include <worldpos_vertex>", "#include <worldpos_vertex>\nvWp = (modelMatrix * vec4(transformed, 1.0)).xyz;");
     sh.fragmentShader = sh.fragmentShader
       .replace("#include <common>", `#include <common>
-        varying vec3 vWp; uniform sampler2D uMask; uniform float uTime; uniform vec2 uSize; uniform vec2 uLand; uniform vec4 uRects[12]; uniform vec3 uCols[12];
+        varying vec3 vWp; uniform sampler2D uMask; uniform sampler2D uAo; uniform float uTime; uniform vec2 uSize; uniform vec2 uLand; uniform vec4 uRects[12]; uniform vec3 uCols[12];
         uniform vec4 uFocus; uniform float uFocusK; uniform float uDim;
         float gWater = 0.0;
         ${GLSL_NOISE}
@@ -214,73 +237,89 @@ export function createMap(canvas, world, opts = {}) {
       .replace("#include <color_fragment>", `#include <color_fragment>
         vec2 p = vWp.xz;
         float aa = fwidth(p.x) * 1.2;
-        float n1 = vnoise(p * 0.35), n2 = vnoise(p * 2.3), n3 = vnoise(p * 11.0);
+        float n1 = vnoise(p * 0.3), n2 = vnoise(p * 1.7);
         vec2 bq = abs(p) - uLand;
         float land = length(max(bq, 0.0)) + min(max(bq.x, bq.y), 0.0) - 4.0 + vnoise(p * 0.07 + 3.1) * 7.0 + n1 * 1.5;
-        vec3 grass = mix(vec3(0.19, 0.36, 0.12), vec3(0.36, 0.52, 0.2), n1 * 0.55 + n2 * 0.45) * (0.9 + 0.2 * n3);
-        vec3 asphalt = vec3(0.15, 0.16, 0.18) * (0.9 + 0.2 * n3);
-        vec3 paving = vec3(0.56, 0.55, 0.52) * (0.93 + 0.12 * n3);
-        float far = 1.0 - smoothstep(0.012, 0.045, aa);
         float d = 1e5; vec3 sec = uCols[0];
-        for (int k = 0; k < ${NR}; k++) { float dk = sdRound(p - uRects[k].xy, uRects[k].zw, 0.45); if (dk < d) { d = dk; sec = uCols[k]; } }
+        for (int k = 0; k < ${NR}; k++) { float dk = sdRound(p - uRects[k].xy, uRects[k].zw, 0.6); if (dk < d) { d = dk; sec = uCols[k]; } }
+        vec2 muv = vec2(p.x / uSize.x + 0.5, 0.5 - p.y / uSize.y);
+        float n3 = vnoise(p * 9.0);
+        float far = 1.0 - smoothstep(0.012, 0.045, aa);
+        vec3 lawn = mix(vec3(0.4, 0.6, 0.29), vec3(0.5, 0.67, 0.34), n2) * (0.96 + 0.08 * n3);
+        vec3 parkC = mix(vec3(0.27, 0.48, 0.22), vec3(0.35, 0.55, 0.27), n2) * (0.96 + 0.08 * n3);
+        vec3 asphalt = vec3(0.27, 0.28, 0.3) * (0.95 + 0.1 * n3);
+        vec3 walkC = vec3(0.86, 0.85, 0.82);
+        vec3 waterC = mix(vec3(0.36, 0.7, 0.76), vec3(0.26, 0.58, 0.7), n2);
         vec3 col;
         if (land > 0.0) {
-          // mar: raso e claro junto à praia, fundo ao largo, com marolas e espuma
-          float depth = smoothstep(0.0, 10.0, land);
-          col = mix(vec3(0.2, 0.6, 0.62), vec3(0.04, 0.2, 0.35), depth);
-          col += vec3(0.07) * smoothstep(0.6, 0.9, vnoise(p * 1.3 + vec2(uTime * 0.22, uTime * 0.16))) * far;
-          col = mix(col, vec3(0.96), (1.0 - smoothstep(0.0, 0.3, land + 0.12 * sin(uTime * 0.8 + p.x * 0.7 + p.y * 0.5))) * 0.65);
+          // mar: turquesa claro na beira, azul fundo ao largo, com ondulação e a espuma batendo na praia
+          col = mix(vec3(0.42, 0.8, 0.8), vec3(0.1, 0.4, 0.6), smoothstep(0.0, 9.0, land));
+          col += vec3(0.05) * smoothstep(0.55, 0.9, vnoise(p * 1.1 + vec2(uTime * 0.18, uTime * 0.12))) * far;
+          float wave = land + 0.1 * sin(uTime * 0.7 + p.x * 0.6 + p.y * 0.45);
+          col = mix(col, vec3(0.98), (1.0 - smoothstep(0.0, 0.16 + aa, wave)) * 0.9);
+          col = mix(col, vec3(0.95), (smoothstep(0.5, 0.56, wave) - smoothstep(0.56, 0.68 + aa, wave)) * 0.35 * far);
           gWater = 1.0;
         } else if (d < 0.0) {
-          // dentro do bairro: malha de ruas, calçadas, e em cada quadra praça, parque ou piso
-          vec4 m = texture2D(uMask, vec2(p.x / uSize.x + 0.5, 0.5 - p.y / uSize.y));
+          // dentro do bairro: ruas com faixas e carros, calçadas, praças com anel, gramados, parques e lagos
+          vec4 m = texture2D(uMask, muv);
           vec2 gq = abs(fract(p / ${GRID.toFixed(1)} + 0.5) - 0.5) * ${GRID.toFixed(1)};
           float sd = min(gq.x, gq.y), along = gq.x < gq.y ? p.y : p.x;
-          float road = 1.0 - smoothstep(0.1 - aa, 0.1 + aa, sd);
-          float walk = 1.0 - smoothstep(0.17 - aa, 0.17 + aa, sd);
-          float park = smoothstep(0.35, 0.65, m.r), plaza = smoothstep(0.3, 0.7, m.g), pond = smoothstep(0.4, 0.6, m.b);
-          vec2 tq = abs(fract(p / 0.16) - 0.5);
-          vec3 stone = mix(vec3(0.7, 0.68, 0.63), sec, 0.2) * (0.94 + 0.06 * n3) * (1.0 - 0.07 * far * step(0.46, max(tq.x, tq.y)));
-          vec3 lawn = mix(vec3(0.33, 0.5, 0.2), vec3(0.42, 0.57, 0.25), n2) * (0.92 + 0.16 * n3);
-          vec3 block = mix(lawn, grass, park);
-          block = mix(block, stone, plaza);
-          block = mix(block, mix(vec3(0.2, 0.52, 0.56), vec3(0.1, 0.36, 0.46), n2), pond);
+          float road = 1.0 - smoothstep(0.085 - aa, 0.085 + aa, sd);
+          float walk = 1.0 - smoothstep(0.135 - aa, 0.135 + aa, sd);
+          float park = smoothstep(0.4, 0.6, m.r), pond = smoothstep(0.42, 0.58, m.b);
+          float plaza = smoothstep(0.42, 0.58, m.g);
+          float ring = smoothstep(0.3, 0.42, m.g) * (1.0 - smoothstep(0.5, 0.62, m.g));
+          col = mix(lawn, parkC, park);
+          col = mix(col, mix(vec3(0.93, 0.92, 0.89), sec, 0.05) * (0.97 + 0.03 * n3), plaza);
+          col = mix(col, waterC, pond);
+          col = mix(col, vec3(0.9, 0.86, 0.72), (smoothstep(0.3, 0.42, m.b) - pond) * 0.9);
           gWater = pond * (1.0 - walk);
-          col = mix(block, paving * 1.07, walk);
+          col = mix(col, mix(sec, vec3(0.55), 0.3), ring * 0.5 * (1.0 - pond));
+          col = mix(col, walkC, walk);
           col = mix(col, asphalt, road);
-          col = mix(col, vec3(0.92), road * far * step(0.5, fract(along * 2.4)) * (1.0 - smoothstep(0.007, 0.014, sd)));
+          col = mix(col, vec3(0.95), road * far * 0.85 * step(0.5, fract(along * 3.0)) * (1.0 - smoothstep(0.004, 0.009, sd)));
           // faixa de pedestres perto dos cruzamentos
-          float cross = road * far * step(max(gq.x, gq.y), 0.26) * step(0.14, max(gq.x, gq.y)) * step(0.5, fract((gq.x < gq.y ? p.x : p.y) * 14.0));
-          col = mix(col, vec3(0.9), cross * 0.8);
-          // carros: retângulos coloridos correndo, cada pista num sentido
+          float mx = max(gq.x, gq.y);
+          float cross = road * far * step(mx, 0.21) * step(0.15, mx) * step(0.5, fract((gq.x < gq.y ? p.x : p.y) * 22.0));
+          col = mix(col, vec3(0.95), cross * 0.85);
+          // carros: carroceria arredondada com para-brisa e sombra, cada pista num sentido
           if (far > 0.01) for (int ax = 0; ax < 2; ax++) {
             vec2 pq = ax == 0 ? p : p.yx;
             float lane = floor(pq.y / ${GRID.toFixed(1)} + 0.5), off = pq.y - lane * ${GRID.toFixed(1)}, sideL = sign(off);
-            float inLane = smoothstep(0.03, 0.018, abs(abs(off) - 0.05));
-            float sp = (0.35 + 0.5 * hash21(vec2(lane, float(ax) + 3.0))) * sideL;
-            float u = pq.x * 4.0 - uTime * sp * 4.0, id = floor(u);
-            float hc = hash21(vec2(id, lane * 7.0 + sideL + float(ax) * 13.0));
-            float car = step(0.8, hc) * smoothstep(0.34, 0.26, abs(fract(u) - 0.5));
-            vec3 cc = hc > 0.95 ? vec3(0.85, 0.12, 0.1) : hc > 0.91 ? vec3(0.95, 0.75, 0.1) : hc > 0.87 ? vec3(0.15, 0.3, 0.7) : hc > 0.83 ? vec3(0.92) : vec3(0.12, 0.13, 0.15);
-            col = mix(col, cc, car * inLane * far * road);
+            float lc = abs(off) - 0.042;
+            float sp = (0.3 + 0.4 * hash21(vec2(lane, float(ax) + 3.0))) * sideL;
+            float uu = (pq.x - uTime * sp) / 0.52, fx = (fract(uu) - 0.5) * 0.52;
+            float hc = hash21(vec2(floor(uu), lane * 7.0 + sideL + float(ax) * 13.0));
+            if (hc < 0.7 || mx < 0.2) continue;
+            vec2 cq = abs(vec2(fx, lc)) - vec2(0.062, 0.02) + 0.014;
+            float body = 1.0 - smoothstep(-0.002, 0.004, length(max(cq, 0.0)) + min(max(cq.x, cq.y), 0.0) - 0.014);
+            vec2 sq = abs(vec2(fx - 0.012, lc - 0.012)) - vec2(0.062, 0.02) + 0.014;
+            float shade = 1.0 - smoothstep(-0.004, 0.02, length(max(sq, 0.0)) + min(max(sq.x, sq.y), 0.0) - 0.014);
+            vec3 cc = hc > 0.96 ? vec3(0.8, 0.14, 0.12) : hc > 0.93 ? vec3(0.95, 0.76, 0.16) : hc > 0.89 ? vec3(0.16, 0.34, 0.66) : hc > 0.82 ? vec3(0.95, 0.95, 0.94) : hc > 0.76 ? vec3(0.7, 0.72, 0.75) : vec3(0.18, 0.19, 0.22);
+            float cabin = step(abs(fx + sign(sp) * 0.006), 0.03) * step(abs(lc), 0.014);
+            cc = mix(cc, vec3(0.12, 0.17, 0.23), cabin * 0.85);
+            col = mix(col, col * 0.55, shade * road * far * 0.8);
+            col = mix(col, cc, body * road * far);
           }
-          // a borda do bairro: calçada larga com o meio-fio na cor do setor
+          // a borda do bairro: calçada e um filete na cor do setor
           float e = -d;
-          col = mix(col, paving * 1.08, 1.0 - smoothstep(0.2, 0.2 + aa, e));
-          col = mix(col, sec, (smoothstep(0.04, 0.04 + aa, e) - smoothstep(0.16 + 3.0 * aa, 0.16 + 4.0 * aa, e)) * 0.92);
+          col = mix(col, walkC, 1.0 - smoothstep(0.16, 0.16 + aa, e));
+          col = mix(col, sec, (smoothstep(0.035, 0.035 + aa, e) - smoothstep(0.11 + 2.0 * aa, 0.11 + 3.0 * aa, e)) * 0.92);
+          col *= 1.0 - 0.45 * texture2D(uAo, muv).r;
         } else {
-          // fora dos bairros: a avenida que contorna cada um, canteiros, e além deles campo, mata e praia
-          vec3 country = mix(grass, vec3(0.12, 0.27, 0.11), smoothstep(0.42, 0.7, vnoise(p * 0.22 + 7.0)));
-          country = mix(country, vec3(0.5, 0.56, 0.28), smoothstep(0.6, 0.75, vnoise(p * 0.5 + 21.0)) * 0.5);
-          float rd = 1.0 - smoothstep(0.52 - aa, 0.52 + aa, d);
+          // fora dos bairros: a avenida que contorna cada um, canteiros e, além deles, campo, mata e a praia
+          vec3 country = mix(lawn * 0.97, vec3(0.3, 0.5, 0.28), smoothstep(0.42, 0.68, vnoise(p * 0.2 + 7.0)));
+          float rd = 1.0 - smoothstep(0.44 - aa, 0.44 + aa, d);
           col = mix(country, asphalt, rd);
-          col = mix(col, vec3(0.92), rd * far * (1.0 - smoothstep(0.008, 0.016, abs(d - 0.27))) * step(0.5, fract((p.x + p.y) * 1.7)));
-          col = mix(col, vec3(0.86, 0.81, 0.64), smoothstep(-1.3, -0.25, land));
+          col = mix(col, vec3(0.95), rd * far * 0.85 * (1.0 - smoothstep(0.005, 0.011, abs(d - 0.23))) * step(0.5, fract((p.x + p.y) * 2.1)));
+          // praia: areia clara, mais escura e molhada junto à água
+          float sand = smoothstep(-2.0, -1.2, land);
+          col = mix(col, mix(vec3(0.95, 0.9, 0.76), vec3(0.8, 0.74, 0.6), smoothstep(-0.5, 0.0, land)) * (0.97 + 0.05 * n3), sand);
         }
-        // setor em foco e escolha: o resto perde cor e escurece
+        // setor em foco e escolha: o resto esmaece para um cinza claro
         float inF = step(uFocus.x, p.x) * step(p.x, uFocus.z) * step(uFocus.y, p.y) * step(p.y, uFocus.w);
         float dk = max(uDim, uFocusK * (1.0 - inF));
-        col = mix(col, vec3(dot(col, vec3(0.3, 0.59, 0.11))) * 0.85, 0.8 * dk) * (1.0 - 0.42 * dk);
+        col = mix(col, vec3(dot(col, vec3(0.3, 0.59, 0.11))) * 0.82, 0.9 * dk);
         diffuseColor.rgb = col;`)
       .replace("#include <roughnessmap_fragment>", "#include <roughnessmap_fragment>\nroughnessFactor = mix(roughnessFactor, 0.1, gWater);");
   };
@@ -326,19 +365,19 @@ export function createMap(canvas, world, opts = {}) {
           vec3 glow = vec3(0.0);
           float sdv = floor(vSeed * 997.0) / 997.0;
           ${kind === "bld" ? `
-          vec3 concrete = mix(vec3(0.86, 0.85, 0.82), sec, 0.05);
+          vec3 concrete = mix(vec3(0.94, 0.935, 0.92), sec, 0.03);
           if (vPart > 0.5) {
             // detalhes e a peça do setor: concreto, tinta do setor, chama, metal, vidro, luz de obstáculo
             if (vPart < 1.5) diffuseColor.rgb = concrete * (0.86 + 0.14 * top);
             else if (vPart < 2.5) { diffuseColor.rgb = sec; gRough = 0.5; }
             else if (vPart < 3.5) { float fl = 0.72 + 0.28 * sin(uTime * 13.0 + vSeed * 50.0) * sin(uTime * 7.3 + vOp.y * 9.0); diffuseColor.rgb = vec3(1.0, 0.5, 0.1); glow = vec3(1.0, 0.42, 0.08) * 1.6 * fl; }
-            else if (vPart < 4.5) { diffuseColor.rgb = vec3(0.27, 0.29, 0.33); gRough = 0.45; }
+            else if (vPart < 4.5) { diffuseColor.rgb = vec3(0.56, 0.58, 0.62); gRough = 0.4; }
             else if (vPart < 5.5) {
               vec2 q = vec2((vOp.x + vOp.z) * 13.0, vOp.y * 12.0); vec2 f = fract(q);
               float mk = smoothstep(0.1, 0.2, f.x) * smoothstep(0.9, 0.8, f.x) * smoothstep(0.2, 0.32, f.y) * smoothstep(0.86, 0.74, f.y) * (1.0 - top);
               float px = max(fwidth(q.x), fwidth(q.y));
               mk = mix(mk, 0.45 * (1.0 - top), smoothstep(0.4, 1.0, px));
-              diffuseColor.rgb = mix(concrete, mix(vec3(0.14, 0.24, 0.34), vec3(0.4, 0.58, 0.7), hash21(floor(q) + sdv * 17.0)), mk);
+              diffuseColor.rgb = mix(concrete, mix(vec3(0.4, 0.5, 0.6), vec3(0.62, 0.73, 0.82), hash21(floor(q) + sdv * 17.0)), mk);
               gRough = mix(0.8, 0.15, mk);
             } else { diffuseColor.rgb = vec3(0.7, 0.05, 0.04); glow = vec3(1.0, 0.1, 0.06) * 1.6 * step(0.0, sin(uTime * 2.6 + vSeed * 40.0)); }
             glow += uAcc * vHL * vHL * 0.25;
@@ -349,48 +388,41 @@ export function createMap(canvas, world, opts = {}) {
             float along = mix(vOp.x, vOp.z, side) + 0.5;
             float hgt = vOp.y * vSize.y;
             float style = hash21(vec2(sdv * 91.0, 3.0));
-            float nx = max(2.0, floor(fw / (style < 0.55 ? 0.075 : 0.1))), ny = max(2.0, floor(vSize.y / 0.105));
+            float nx = max(3.0, floor(fw / (style < 0.6 ? 0.06 : 0.085))), ny = max(2.0, floor(vSize.y / 0.1));
             vec2 q = vec2(along * nx, vOp.y * ny);
             vec2 id = floor(q), f = fract(q);
             float face = floor(vOn.x + 0.5) + floor(vOn.z + 0.5) * 2.0;
             float hp = hash21(id + sdv * 71.0 + face * 13.0);
-            float px = max(fwidth(q.x), fwidth(q.y)), lod = smoothstep(0.4, 1.0, px);
-            // o vidro reflete o céu: mais claro no alto, cada painel um pouco diferente, alguns com a persiana fechada
-            vec3 tint = mix(vec3(0.3, 0.5, 0.62), mix(vec3(0.24, 0.42, 0.5), vec3(0.42, 0.5, 0.56), hash21(vec2(sdv * 13.0, 1.0))), 0.6);
-            vec3 glass = mix(tint * 0.34, tint * 1.0, smoothstep(0.0, 1.0, vOp.y) * 0.65 + hp * 0.35);
-            glass = mix(glass, vec3(0.78, 0.76, 0.7), step(0.9, hp) * 0.7);
+            float px = max(fwidth(q.x), fwidth(q.y)), lod = smoothstep(0.35, 0.9, px);
+            // vidro azul-acinzentado, mais claro no alto (reflete o céu), com um toque da cor do setor
+            vec3 glass = mix(vec3(0.2, 0.31, 0.43), vec3(0.5, 0.65, 0.78), smoothstep(0.0, 1.0, vOp.y) * 0.7 + hp * 0.3);
+            glass = mix(glass, sec, 0.1);
             vec3 wall; float gk;
-            if (style < 0.55) {
-              // cortina de vidro: montantes finos e uma faixa opaca em cada laje
-              float frame = max(1.0 - smoothstep(0.03, 0.07, min(f.x, 1.0 - f.x)), 1.0 - smoothstep(0.1, 0.16, f.y));
-              gk = mix(1.0 - frame, 0.8, lod);
-              wall = mix(mix(vec3(0.2, 0.24, 0.28), concrete * 0.8, step(0.5, hash21(vec2(sdv * 7.0, 9.0)))), glass, gk);
+            if (style < 0.6) {
+              // cortina de vidro: montantes e lajes em filetes brancos
+              float frame = max(1.0 - smoothstep(0.02, 0.05, min(f.x, 1.0 - f.x)), 1.0 - smoothstep(0.06, 0.1, f.y));
+              gk = mix(1.0 - frame, 0.86, lod);
+              wall = mix(concrete, glass, gk);
             } else {
-              // grelha de concreto: janelas recuadas entre pilares
-              float win = smoothstep(0.16, 0.24, f.x) * smoothstep(0.84, 0.76, f.x) * smoothstep(0.26, 0.36, f.y) * smoothstep(0.86, 0.78, f.y);
-              gk = mix(win, 0.42, lod);
-              wall = mix(mix(concrete, vec3(0.74, 0.68, 0.6), step(0.6, hash21(vec2(sdv * 5.0, 2.0)))), glass * 0.8, gk);
+              // fachada branca com janelas recuadas
+              float win = smoothstep(0.2, 0.26, f.x) * smoothstep(0.8, 0.74, f.x) * smoothstep(0.22, 0.3, f.y) * smoothstep(0.82, 0.74, f.y);
+              gk = mix(win, 0.36, lod);
+              wall = mix(concrete, glass * 0.62, gk);
             }
-            float crownH = min(0.16, vSize.y * 0.1);
-            float crown = smoothstep(vSize.y - crownH - 0.01, vSize.y - crownH, hgt);
-            float lobby = 1.0 - smoothstep(0.1, 0.11, hgt);
+            float crown = smoothstep(vSize.y - 0.075, vSize.y - 0.065, hgt);
             wall = mix(wall, sec, crown);
-            wall = mix(wall, mix(vec3(0.12, 0.18, 0.24), vec3(0.5, 0.62, 0.7), f.x * 0.5 + 0.2), lobby * (1.0 - crown));
+            wall *= mix(0.8, 1.0, smoothstep(0.0, 0.7, hgt));
             float edge = max(abs(vOp.x), abs(vOp.z)) * 2.0 / (abs(vOp.x) > 0.37 || abs(vOp.z) > 0.37 || vOp.y < 0.99 ? 1.0 : 0.72);
-            float rim = smoothstep(0.9, 0.93, edge);
-            vec2 rq = fract(vOp.xz * vec2(vSize.x, vSize.z) / 0.22);
-            vec3 roof = mix(vec3(0.5, 0.5, 0.5), sec, 0.3) * (0.92 + 0.08 * step(0.06, min(rq.x, rq.y)));
-            float pad = step(0.9, vSize.x) * (1.0 - smoothstep(0.2, 0.21, length(vOp.xz + vec2(0.2, -0.18))));
-            roof = mix(roof, mix(sec, vec3(0.95), step(0.17, length(vOp.xz + vec2(0.2, -0.18)))), pad);
-            roof = mix(roof, vec3(0.9), rim);
+            float rim = smoothstep(0.92, 0.95, edge);
+            vec3 roof = mix(mix(vec3(0.9, 0.89, 0.87), sec, 0.3), vec3(0.97), rim);
             diffuseColor.rgb = mix(wall, roof, top);
-            gRough = mix(mix(0.75, 0.1, gk * (1.0 - crown)), 0.9, top);
-            glow = uAcc * vHL * vHL * (0.12 + 1.1 * crown * (1.0 - top) + 0.9 * rim * top + 0.2 * top) * (0.9 + 0.1 * sin(uTime * 3.0));
+            gRough = mix(mix(0.8, 0.12, gk * (1.0 - crown)), 0.9, top);
+            glow = uAcc * vHL * vHL * (0.1 + 1.0 * crown * (1.0 - top) + 0.8 * rim * top + 0.15 * top) * (0.9 + 0.1 * sin(uTime * 3.0));
           }` : `
           // peças pequenas: figuras foscas na cor do tipo
           diffuseColor.rgb = sec * (0.82 + 0.18 * smoothstep(-0.3, 1.0, vOn.y));
           glow = sec * 0.1 + uAcc * vHL * vHL * 0.8 + sec * isHL * 0.25;`}
-          diffuseColor.rgb = mix(diffuseColor.rgb, vec3(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11))) * 0.85, 0.85 * dimK) * (1.0 - 0.4 * dimK);
+          diffuseColor.rgb = mix(diffuseColor.rgb, vec3(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11))) * 0.86, 0.92 * dimK);
           glow *= 1.0 - 0.9 * dimK;`)
         .replace("#include <roughnessmap_fragment>", "#include <roughnessmap_fragment>\nif (gRough >= 0.0) roughnessFactor = gRough;")
         .replace("#include <emissivemap_fragment>", "#include <emissivemap_fragment>\ntotalEmissiveRadiance += glow;");
@@ -486,11 +518,11 @@ export function createMap(canvas, world, opts = {}) {
   // árvores: copas verdes, com ipês amarelos e rosas e jacarandás roxos de vez em quando
   const treeU = { uDim: { value: 0 }, uRise: { value: 1 } };
   {
-    const mat = new THREE.MeshStandardMaterial({ vertexColors: true, flatShading: true, roughness: 0.95 });
+    const mat = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.92 });
     const patch = (sh) => { Object.assign(sh.uniforms, treeU); sh.vertexShader = sh.vertexShader.replace("#include <common>", "#include <common>\nuniform float uRise;").replace("#include <begin_vertex>", "#include <begin_vertex>\ntransformed *= smoothstep(0.55, 1.2, uRise);"); };
     mat.onBeforeCompile = (sh) => {
       patch(sh);
-      sh.fragmentShader = sh.fragmentShader.replace("#include <common>", "#include <common>\nuniform float uDim;").replace("#include <color_fragment>", "#include <color_fragment>\ndiffuseColor.rgb = mix(diffuseColor.rgb, vec3(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11))) * 0.85, 0.8 * uDim) * (1.0 - 0.4 * uDim);");
+      sh.fragmentShader = sh.fragmentShader.replace("#include <common>", "#include <common>\nuniform float uDim;").replace("#include <color_fragment>", "#include <color_fragment>\ndiffuseColor.rgb = mix(diffuseColor.rgb, vec3(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11))) * 0.86, 0.9 * uDim);");
     };
     const mesh = new THREE.InstancedMesh(treeGeo(), mat, trees.length);
     mesh.customDepthMaterial = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
@@ -500,8 +532,8 @@ export function createMap(canvas, world, opts = {}) {
       const r = hash1(k * 5.1 + 2);
       m4.compose(pos3.set(x, TOP, z), quat.setFromEuler(e.set(0, r * 6.28, 0)), scl.set(s, s * (0.85 + 0.4 * hash1(k + 9)), s));
       mesh.setMatrixAt(k, m4);
-      if (r > 0.965) col.setRGB(0.93, 0.74, 0.08); else if (r > 0.935) col.setRGB(0.9, 0.45, 0.62); else if (r > 0.92) col.setRGB(0.55, 0.4, 0.78);
-      else col.setHSL(0.27 + 0.1 * hash1(k * 1.3), 0.5 + 0.2 * hash1(k * 2.1), 0.2 + 0.13 * hash1(k * 3.7));
+      if (r > 0.97) col.setRGB(0.95, 0.77, 0.2); else if (r > 0.945) col.setRGB(0.93, 0.56, 0.68); else if (r > 0.93) col.setRGB(0.62, 0.5, 0.82);
+      else col.setHSL(0.26 + 0.06 * hash1(k * 1.3), 0.36 + 0.14 * hash1(k * 2.1), 0.3 + 0.1 * hash1(k * 3.7));
       mesh.setColorAt(k, col);
     });
     mesh.castShadow = true; mesh.receiveShadow = true; mesh.frustumCulled = false;
@@ -589,7 +621,7 @@ export function createMap(canvas, world, opts = {}) {
     vertexShader: "attribute float aT; attribute vec2 aW; varying float vT; varying vec2 vW; void main(){ vT = aT; vW = aW; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }",
     // aW.x = força; aW.y = 1 controle, 0 participação
     fragmentShader: `uniform float uAlpha; uniform float uDim; uniform float uFar; varying float vT; varying vec2 vW;
-      void main(){ float a = smoothstep(0.0, 0.08, vT) * (0.4 + 0.6 * vT); vec3 c = mix(vec3(0.16, 0.26, 0.5), vec3(0.0, 0.42, 0.3), vW.y);
+      void main(){ float a = smoothstep(0.0, 0.08, vT) * (0.4 + 0.6 * vT); vec3 c = mix(vec3(0.3, 0.38, 0.55), vec3(0.05, 0.5, 0.38), vW.y);
         gl_FragColor = vec4(c, a * vW.x * uAlpha * (1.0 - 0.92 * uDim) * mix(uFar, 1.0, 0.4 * vW.y)); }`,
   });
   let baseLines = null;
@@ -918,7 +950,7 @@ export function createMap(canvas, world, opts = {}) {
     instU.uDim.value = haloU.uDim.value = smokeU.uDim.value = dv;
     treeU.uDim.value = Math.max(dv, focus.v * 0.6);
     lineU.uDim.value = Math.max(Math.min(1, dim.v * 1.3), focus.v * 0.7);
-    groundU.uDim.value = dv * 0.85; groundU.uFocusK.value = focus.v * 0.8;
+    groundU.uDim.value = dv; groundU.uFocusK.value = focus.v;
     instU.uTime.value = flowU.uTime.value = groundU.uTime.value = haloU.uTime.value = smokeU.uTime.value = clock.t;
     if (rise.dur) { const k = clamp((now - rise.t0) / rise.dur, 0, 1); instU.uRise.value = 1.4 * k; shadowDirty = 2; if (k >= 1) { rise.dur = 0; instU.uRise.value = 1.4; } }
     const r01 = instU.uRise.value;
@@ -928,6 +960,7 @@ export function createMap(canvas, world, opts = {}) {
     lineU.uFar.value = 0.12 + 0.88 * (1 - smooth(24, 110, cam.d));
     const pxScale = (view.H * DPR) / (2 * Math.tan((camera.fov * Math.PI) / 360));
     haloU.uPx.value = flowU.uPx.value = smokeU.uPx.value = pxScale;
+    if (tilt) tilt.uniforms.uAmt.value = 4.2 * DPR * (1 - smooth(22, 90, cam.d)) * (1 - 0.6 * Math.min(1, dim.v * 1.3));
     flowGrow = Math.min(1, flowGrow + real * 1.25);
     flowU.uGrow.value = easeInOut(flowGrow);
   }
@@ -962,7 +995,7 @@ export function createMap(canvas, world, opts = {}) {
   function resize(w, h) {
     view.W = Math.max(1, w); view.H = Math.max(1, h);
     renderer.setSize(view.W, view.H, false);
-    if (composer) { composer.setSize(view.W, view.H); bloom.resolution.set(view.W * 0.5, view.H * 0.5); }
+    if (composer) { composer.setSize(view.W, view.H); bloom.resolution.set(view.W * 0.5, view.H * 0.5); tilt.uniforms.uRes.value.set(view.W * DPR, view.H * DPR); }
     camera.aspect = view.W / view.H;
     camera.updateProjectionMatrix();
     applyOffset(view.offX, view.offY);
