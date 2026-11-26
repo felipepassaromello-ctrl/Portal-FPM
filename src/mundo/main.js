@@ -721,8 +721,10 @@ function updatePlateLabels(placed) {
     if (!show) return;
     el.style.transform = `translate3d(${a.x.toFixed(1)}px, ${a.y.toFixed(1)}px, 0)`;
     el.style.maxWidth = `${Math.max(60, wpx - 18).toFixed(0)}px`;
-    const r = el.getBoundingClientRect();
-    if (r.width) placed.push([r.left - 4, r.top - 4, r.right + 4, r.bottom + 4]);
+    // tamanho do cartão: medido só quando muda de formato (medir a cada quadro trava o desenho)
+    const fmt = wpx < 210 ? 1 : 2;
+    if (el._fmt !== fmt || !el._w) { el._fmt = fmt; el._w = el.offsetWidth; el._h = el.offsetHeight; }
+    if (el._w) placed.push([a.x - 4, a.y - 4, a.x + el._w + 4, a.y + el._h + 4]);
   });
 }
 function updateLabels() {
@@ -738,7 +740,7 @@ function updateLabels() {
   // quantas chamadas cabem: pela escala (de longe, só as maiores; de perto, quase todas)
   const ppu = map.pxPerUnit();
   const z = clamp((ppu - 6) / 40, 0, 1);
-  let budget = Math.round((TOUCH ? 6 : 12) + z * (TOUCH ? 26 : 60));
+  let budget = Math.round((TOUCH ? 5 : 9) + z * (TOUCH ? 14 : 30));
   const hl = ui.hl;
   let order;
   if (hl) order = [...hl].sort((a, b) => prio(b) - prio(a)).slice(0, 60);
@@ -748,11 +750,12 @@ function updateLabels() {
     const quota = map.plates.map((pl) => clamp(Math.round(((pl.x1 - pl.x0) * (pl.z1 - pl.z0) * ppu2) / 42000), 1, 6));
     order = [];
     for (let r = 0; r < 6; r++) for (let j = 0; j < lists.length; j++) if (r < quota[j] && lists[j][r] != null) order.push(lists[j][r]);
-    budget = Math.max(budget, TOUCH ? 12 : 34);
+    budget = Math.max(budget, TOUCH ? 9 : 18);
   } else if (ui.sector >= 0) {
     // setor em foco: todas as companhias dele, das maiores para as menores
-    order = W.labelOrder.filter((i) => W.data.mapa.plate[i] === ui.sector && W.nodes[i].t === "c");
-    budget = Math.max(budget, TOUCH ? 12 : 28);
+    // setor em foco: só as maiores; as demais aparecem conforme se aproxima (o painel lista todas)
+    order = W.labelOrder.filter((i) => W.data.mapa.plate[i] === ui.sector && W.nodes[i].t === "c" && (W.nodes[i].mc || z > 0.5));
+    budget = TOUCH ? 5 + Math.round(z * 10) : 8 + Math.round(z * 22);
   } else order = W.labelOrder.slice(0, 260);
   const want = new Map();
   const o = {};
@@ -921,22 +924,27 @@ function doHover() {
   if (!hoverPending || ui.mode === "tree") return;
   const [px, py] = hoverPending;
   const i = map.pick(px, py, vis);
-  const j = i < 0 ? map.plateAt(px, py) : -1;
-  const cv = $("#map");
-  cv.classList.toggle("pointing", i >= 0 || j >= 0);
-  if (i !== ui.hover) {
-    ui.hover = i;
-    clearTimeout(doHover.t);
-    if (ui.sel < 0 && ui.group < 0 && !ui.shape && ui.mode === "world") {
-      doHover.t = setTimeout(() => {
-        if (ui.sel >= 0 || ui.group >= 0 || ui.shape || ui.mode !== "world" || ui.hover !== i) return;
-        if (i >= 0) { const nb = neighborhood(i); setHighlight(nb.nodes, nb.edges, nb.brd, [i], 0.5, false, relations(i, nb)); } else setHighlight(null);
-      }, i >= 0 ? 140 : 90);
-    }
+  $("#map").classList.toggle("pointing", i >= 0 || labelAt(px, py) != null || plateLabelAt(px, py) >= 0);
+  ui.hover = i;
+  showTip(i, px, py);
+}
+// rótulos e nomes de bairro não interceptam o ponteiro (arrastar por cima deles move o mapa): o toque é conferido aqui
+function labelAt(px, py) {
+  for (const [i, el] of labels.used) {
+    if (!el.classList.contains("on")) continue;
+    const r = el.lastElementChild.getBoundingClientRect();
+    if (px >= r.left && px <= r.right && py >= r.top && py <= r.bottom) return i;
   }
-  if (i >= 0) showTip(i, px, py);
-  else if (j >= 0 && j !== ui.sector) showPlateTip(j, px, py);
-  else showTip(-1);
+  return null;
+}
+function plateLabelAt(px, py) {
+  for (let j = 0; j < plateLabels.length; j++) {
+    const el = plateLabels[j].el;
+    if (!el.classList.contains("on")) continue;
+    const r = el.getBoundingClientRect();
+    if (px >= r.left && px <= r.right && py >= r.top && py <= r.bottom) return j;
+  }
+  return -1;
 }
 function showPlateTip(j, px, py) {
   const tip = $("#m-tip");
@@ -951,7 +959,15 @@ function showPlateTip(j, px, py) {
 function onUp(e) {
   pointers.delete(e.pointerId);
   e.currentTarget.classList.remove("dragging");
-  if (pinch) { if (pointers.size < 2) pinch = null; return; }
+  if (pinch) {
+    // soltou um dos dedos da pinça: o que ficou continua arrastando o mapa
+    if (pointers.size < 2) {
+      pinch = null;
+      const rest = [...pointers.values()][0];
+      if (rest) drag = { x: rest.x, y: rest.y, sx: rest.x, sy: rest.y, moved: true, hist: [{ x: rest.x, y: rest.y, t: performance.now() }] };
+    }
+    return;
+  }
   if (!drag || ui.mode === "tree") { drag = null; return; }
   const d = drag;
   drag = null;
@@ -965,13 +981,15 @@ function onUp(e) {
   }
   const now = performance.now(), dbl = now - lastTap < 320;
   lastTap = now;
+  const lab = labelAt(e.clientX, e.clientY);
+  if (lab != null) { if (dbl) openTree(lab); else select(lab); return; }
+  const pl = plateLabelAt(e.clientX, e.clientY);
+  if (pl >= 0) { focusSector(pl); return; }
   const i = map.pick(e.clientX, e.clientY, vis);
   if (dbl && i >= 0) { openTree(i); return; }
   if (i >= 0) { select(i); return; }
   if (dbl) { map.zoom(0.55, e.clientX, e.clientY); return; }
-  // clique no chão de um bloco: o setor inteiro
-  const j = map.plateAt(e.clientX, e.clientY);
-  if (j >= 0 && ui.mode === "world") { if (j !== ui.sector || ui.sel >= 0 || ui.group >= 0) focusSector(j); return; }
+  // clique no chão só desmarca; o setor inteiro abre pelo nome do bairro (ou pela lista de setores)
   if (ui.sel >= 0 || ui.group >= 0 || ui.sector >= 0 || ui.shape || ui.mode === "path") { if (ui.mode === "path") exitMode(false); select(-1); }
 }
 function onWheel(e) {
@@ -1077,7 +1095,7 @@ function wire() {
   cv.addEventListener("pointerleave", () => {
     if (drag || ui.mode === "tree") return;
     showTip(-1);
-    if (ui.hover >= 0) { ui.hover = -1; if (ui.sel < 0 && ui.group < 0 && !ui.shape && ui.mode === "world") setHighlight(null); }
+    ui.hover = -1;
   });
   cv.addEventListener("wheel", onWheel, { passive: false });
   labels.layer.addEventListener("click", (e) => {
