@@ -91,3 +91,27 @@ export function rotorGeo() {
   [...blades, hub].forEach((x) => x.dispose());
   return g;
 }
+
+// o prédio da companhia, com altura 1 (o mapa estica pela altura de cada uma): corpo de fachada (parte 0), embasamento,
+// casas de máquinas e antena na cobertura. Com recuo, o terço de cima é mais estreito.
+export function towerGeo(tiered) {
+  const body = (w, h, y) => tag(new THREE.BoxGeometry(w, h, w), 0, 0, y + h / 2, 0);
+  const s = tiered ? 0.72 : 1;
+  const parts = tiered ? [body(1, 0.66, 0), body(0.72, 0.34, 0.66)] : [body(1, 1, 0)];
+  parts.push(box(1.1, 0.03, 1.1, 1), box(0.26 * s, 0.03, 0.2 * s, 1, -0.2 * s, 1, 0.15 * s), box(0.16 * s, 0.045, 0.16 * s, 4, 0.22 * s, 1, -0.2 * s), box(0.3 * s, 0.018, 0.12 * s, 4, 0.1 * s, 1, 0.3 * s));
+  if (tiered) parts.push(cyl(0.012, 0.12, 4, 0.2 * s, 1, 0.2 * s, 0.006, 5), box(0.2, 0.02, 0.1, 1, -0.3, 0.66, 0.42), box(0.1, 0.03, 0.1, 4, 0.42, 0.66, -0.3));
+  const g = mergeGeometries(parts);
+  parts.forEach((x) => x.dispose());
+  return g;
+}
+
+// árvore: tronco e copa facetada (a cor da copa vem de cada instância)
+export function treeGeo() {
+  const trunk = new THREE.CylinderGeometry(0.035, 0.05, 0.3, 5); trunk.translate(0, 0.15, 0);
+  const crown = new THREE.IcosahedronGeometry(0.26, 0); crown.scale(1, 1.15, 1); crown.translate(0, 0.5, 0);
+  const paint = (g, r, gg, b) => { const n = g.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([r, gg, b], k * 3); g.setAttribute("color", new THREE.BufferAttribute(a, 3)); return g.index ? g.toNonIndexed() : g; };
+  const a = paint(trunk, 0.45, 0.32, 0.22), b = paint(crown, 1, 1, 1);
+  const g = mergeGeometries([a, b]);
+  g.computeVertexNormals();
+  return g;
+}
