@@ -105,13 +105,10 @@ export function towerGeo(tiered) {
   return g;
 }
 
-// árvore: tronco e copa facetada (a cor da copa vem de cada instância)
+// árvore de maquete: uma copa lisa sobre um tronco fino (a cor da copa vem de cada instância)
 export function treeGeo() {
-  const trunk = new THREE.CylinderGeometry(0.035, 0.05, 0.3, 5); trunk.translate(0, 0.15, 0);
-  const crown = new THREE.IcosahedronGeometry(0.26, 0); crown.scale(1, 1.15, 1); crown.translate(0, 0.5, 0);
-  const paint = (g, r, gg, b) => { const n = g.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([r, gg, b], k * 3); g.setAttribute("color", new THREE.BufferAttribute(a, 3)); return g.index ? g.toNonIndexed() : g; };
-  const a = paint(trunk, 0.45, 0.32, 0.22), b = paint(crown, 1, 1, 1);
-  const g = mergeGeometries([a, b]);
-  g.computeVertexNormals();
-  return g;
+  const trunk = new THREE.CylinderGeometry(0.018, 0.024, 0.2, 6); trunk.translate(0, 0.1, 0);
+  const crown = new THREE.SphereGeometry(0.2, 12, 9); crown.scale(1, 1.08, 1); crown.translate(0, 0.36, 0);
+  const paint = (g, r, gg, b) => { const n = g.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([r, gg, b], k * 3); g.setAttribute("color", new THREE.BufferAttribute(a, 3)); return g; };
+  return mergeGeometries([paint(trunk, 0.62, 0.56, 0.5), paint(crown, 1, 1, 1)]);
 }
