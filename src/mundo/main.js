@@ -743,7 +743,12 @@ function updateLabels() {
   let budget = Math.round((TOUCH ? 5 : 9) + z * (TOUCH ? 14 : 30));
   const hl = ui.hl;
   let order;
-  if (hl) order = [...hl].sort((a, b) => prio(b) - prio(a)).slice(0, 60);
+  if (hl) {
+    // com alguém escolhido: ele primeiro, depois quem controla e as maiores fatias; poucos nomes de longe, mais ao aproximar
+    const w = (i) => (i === ui.sel ? 1e9 : 0) + (ui.rel && /^control/.test(ui.rel.get(i) || "") ? 1e6 : 0) + (parseFloat(String((ui.rel && ui.rel.get(i)) || "").replace(/^[^0-9]*/, "").replace(",", ".")) || 0) * 1e3 + (map.sky[i] ? 500 : 0);
+    order = [...hl].sort((a, b) => w(b) - w(a) || prio(b) - prio(a)).slice(0, 60);
+    budget = Math.min(budget, TOUCH ? 6 + Math.round(z * 8) : 8 + Math.round(z * 14));
+  }
   else if (ui.sector < 0 && z < 0.5) {
     // visão geral: as maiores de cada setor, em rodadas (todo bloco ganha a sua principal antes de outro ganhar a segunda)
     const lists = plateTopLists(), ppu2 = ppu * ppu;

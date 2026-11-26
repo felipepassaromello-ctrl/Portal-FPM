@@ -912,7 +912,7 @@ export function createMap(canvas, world, opts = {}) {
       void main(){ vUv = uv; vPhase = aPhase; vCtl = aCtl; vLen = aLen; vHead = aHead; vN = normalize(normalMatrix * normal);
         vec3 p = position;
         float depth = -(modelViewMatrix * vec4(aHead > 0.5 ? aCenter : position, 1.0)).z;
-        float want = uMinPx * (1.5 + 1.9 * aRad / 0.11) * depth / uPx;
+        float want = uMinPx * (0.75 + 1.1 * aRad / 0.11) * depth / uPx;
         if (aHead > 0.5) p = aCenter + (position - aCenter) * max(1.0, want / aRad);
         else p += normal * max(0.0, want - aRad);
         vec4 mv = modelViewMatrix * vec4(p, 1.0); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }`,
@@ -924,10 +924,10 @@ export function createMap(canvas, world, opts = {}) {
         if (t > uGrow) discard;
         float core = pow(abs(dot(vN, vV)), 1.2);
         // luzes a cada 2,4 unidades, correndo para o possuído: cabeça clara, cauda que some para trás
-        float s = fract((t * vLen - uTime * 2.6) / 2.4 + vPhase);
+        float s = fract((t * vLen - uTime * 1.6) / max(1.2, min(2.4, vLen)) + vPhase);
         float comet = pow(s, 5.0);
         // miolo claro e borda escura: o cabo se lê tanto sobre o piso claro quanto sobre a sombra
-        gl_FragColor = vec4(base * (0.35 + 0.95 * core) + vec3(1.0) * comet * 0.85, smoothstep(0.0, 0.02, t));
+        gl_FragColor = vec4(base * (0.5 + 0.8 * core) + vec3(1.0) * comet * 0.6, smoothstep(0.0, 0.02, t));
       }`,
   });
   const flows = new THREE.Mesh(new THREE.BufferGeometry(), flowMat);
@@ -943,10 +943,18 @@ export function createMap(canvas, world, opts = {}) {
     const center = (gg, x, y, z) => { const n = gg.attributes.position.count, a = new Float32Array(n * 3); for (let k = 0; k < n; k++) a.set([x, y, z], k * 3); gg.setAttribute("aCenter", new THREE.BufferAttribute(a, 3)); };
     const geos = [];
     list.slice(0, 320).forEach(([a, b, ctl, pct], e) => {
-      const curve = linkCurve(a, b);
+      // dono na praça da própria companhia: um traço no chão, do dono até o pé do prédio (sem arco); os demais, um
+      // arco fino que pousa no topo
+      const plaza = samePlaza(a, b);
+      let curve;
+      if (plaza) {
+        const dx = X[b] - X[a], dz = Z[b] - Z[a], d = Math.hypot(dx, dz) || 1;
+        const cut = isGround[b] ? Math.min(0.9, (Math.max(SX[b], SZ[b]) * 0.56) / d) : Math.min(0.5, R[b] / d), c0 = Math.min(0.3, (R[a] * 0.9) / d);
+        curve = new THREE.LineCurve3(new THREE.Vector3(X[a] + dx * c0, TOP + 0.035, Z[a] + dz * c0), new THREE.Vector3(X[b] - dx * cut, TOP + 0.035, Z[b] - dz * cut));
+      } else curve = linkCurve(a, b);
       const len = curve.getLength();
-      const rad = (0.035 + 0.075 * Math.sqrt(clamp((pct > 0 ? pct : ctl ? 50 : 8) / 100, 0.02, 1))) * (small ? 1.25 : 1);
-      const g = new THREE.TubeGeometry(curve, clamp(Math.round(len * 2.2), 14, 80), rad, 6, false);
+      const rad = (plaza ? 0.014 + 0.03 * Math.sqrt(clamp((pct > 0 ? pct : ctl ? 30 : 5) / 100, 0.01, 1)) : 0.022 + 0.05 * Math.sqrt(clamp((pct > 0 ? pct : ctl ? 50 : 8) / 100, 0.02, 1))) * (small ? 1.2 : 1);
+      const g = new THREE.TubeGeometry(curve, plaza ? 1 : clamp(Math.round(len * 2.2), 14, 80), rad, plaza ? 4 : 6, false);
       fill(g, "aPhase", (e * 0.137) % 1); fill(g, "aCtl", ctl ? 1 : 0); fill(g, "aLen", len); fill(g, "aHead", 0); fill(g, "aRad", rad); center(g, 0, 0, 0);
       geos.push(g);
       // ponta de seta na chegada
