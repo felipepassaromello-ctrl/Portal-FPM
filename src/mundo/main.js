@@ -1,10 +1,10 @@
 /* Portal FPM — Mundo das companhias (3D).
  *
- * Fonte de site/mundo.js (gerado com `npm run build` nesta pasta). O mapa (map.js) é um tabuleiro em que cada setor é
- * um bloco com o nome escrito, todos à vista; companhias abertas são prédios, capital fechado blocos baixos, holdings
- * placas, pessoas peões e investidores institucionais diamantes (no bloco próprio). As ligações de controle são arcos;
- * ao selecionar, viram cabos com energia de quem é dono para quem é possuído. A estrutura societária de uma entidade
- * abre numa mesa 3D vista de cima (tree.js).
+ * Fonte de site/mundo.js (gerado com `npm run build` nesta pasta). O mapa (map.js) é uma cidade à noite: cada setor é
+ * um bairro, cada companhia um prédio aceso (altura pelo valor de mercado). Quem só tem participação numa companhia
+ * fica na praça dela; quem tem em várias paira acima da cidade, sobre o que possui. Toda ligação desce do dono para o
+ * possuído: fios finos na visão geral e, ao escolher alguém, feixes com luz correndo, seta e a fatia escrita ao lado.
+ * A estrutura societária de uma entidade abre numa mesa 3D vista de cima (tree.js).
  *
  * Os dados vêm de data/cias/mundo.json (scripts/mundo.py, scripts/mundo_layout.mjs e scripts/mundo_mapa.mjs).
  * Endereços compartilháveis: #n/<id> (entidade), #g/<grupo>, #e/<id> (estrutura), #c/<id>/<id> (caminho),
@@ -12,7 +12,7 @@
  */
 import { createMap, clamp } from "./map.js";
 import { createTree } from "./tree.js";
-import { mapLayout, ASPECT_TALL } from "../../scripts/mundo_mapa.mjs";
+import { mapLayout, ASPECT_TALL, MAPA_VERSION } from "../../scripts/mundo_mapa.mjs";
 
 // ---------------------------------------------------------------- utilidades
 const $ = (s, r = document) => r.querySelector(s);
@@ -63,7 +63,6 @@ const colorOf = (n) => (n.t === "c" ? sectorColor(n.c) : KIND[kindKey(n)][0]);
 const kindLabel = (n) => (n.t === "c" ? "Companhia aberta" : KIND[kindKey(n)][1]);
 const palette = { sector: sectorColor, kind: (n) => KIND[kindKey(n)][0], investor: INVESTOR };
 // nome do tipo pela forma no mapa (a legenda usa os mesmos nomes)
-const shapeLabel = (i) => ({ tower: "Companhia aberta", block: "Companhia de capital fechado", tile: "Holding ou empresa", sub: "Controlada em comum", pawn: "Pessoa física", inv: "Investidor institucional" })[map?.shape[i]] || kindLabel(W.nodes[i]);
 
 // ---------------------------------------------------------------- dados
 const W = { ready: false };
@@ -135,8 +134,10 @@ function neighborhood(i) {
   if (ui.layers.board || W.nodes[i].b) for (const j of W.brd[i]) { const o = W.bs[j] === i ? W.bt[j] : W.bs[j]; nodes.add(o); brd.add(j); }
   return { nodes, edges, brd };
 }
-function setHighlight(nodes, edges, brd, focus = [], dimTo = 0.75, bright = false) {
+function setHighlight(nodes, edges, brd, focus = [], dimTo = 0.75, bright = false, rel = null) {
   ui.hl = nodes;
+  ui.rel = rel;
+  resetLabels();
   if (!map) return;
   if (!nodes) { map.setHighlight(null); map.setFlows([]); return; }
   const lv = new Map();
@@ -144,13 +145,24 @@ function setHighlight(nodes, edges, brd, focus = [], dimTo = 0.75, bright = fals
   for (const i of focus) lv.set(i, 1);
   map.setHighlight(lv, dimTo);
   const flows = [];
-  for (const j of edges || []) flows.push([W.es[j], W.et[j], bright ? 1 : W.ef[j] & 1]);
-  for (const j of brd || []) flows.push([W.bs[j], W.bt[j], bright ? 1 : 0]);
+  for (const j of edges || []) flows.push([W.es[j], W.et[j], bright ? 1 : W.ef[j] & 1, W.ep[j]]);
+  for (const j of brd || []) flows.push([W.bs[j], W.bt[j], bright ? 1 : 0, 4]);
   // controle primeiro (os cabos de controle são desenhados mesmo quando há centenas de ligações)
   flows.sort((a, b) => b[2] - a[2]);
   map.setFlows(flows);
 }
 
+// o que cada vizinho é de quem foi escolhido (vai escrito no rótulo dele, ao lado do feixe)
+function relations(i, nb) {
+  const rel = new Map();
+  for (const j of nb.edges) {
+    const ctl = W.ef[j] & 1, p = W.ep[j] >= 0 ? pct(W.ep[j]) : "";
+    if (W.et[j] === i) rel.set(W.es[j], ctl ? `controla${p ? ` · ${p}` : ""}` : p ? `dono de ${p}` : "acionista");
+    else rel.set(W.et[j], ctl ? `controlada${p ? ` · ${p}` : ""}` : p ? `participação de ${p}` : "participação");
+  }
+  for (const j of nb.brd) { const o = W.bs[j] === i ? W.bt[j] : W.bs[j]; if (!rel.has(o)) rel.set(o, ({ P: "presidência do conselho", E: "presidência executiva", C: "conselho", D: "diretoria" })[W.br[j]] || "administração"); }
+  return rel;
+}
 function select(i, { fly = true, push = true } = {}) {
   if (ui.mode !== "world") exitMode(false);
   hideHint();
@@ -164,11 +176,21 @@ function select(i, { fly = true, push = true } = {}) {
     return;
   }
   const nb = neighborhood(i);
-  setHighlight(nb.nodes, nb.edges, nb.brd, [i]);
+  setHighlight(nb.nodes, nb.edges, nb.brd, [i], 0.75, false, relations(i, nb));
   renderPanel(i);
   markRank();
-  if (fly) map.flyToNodes([...nb.nodes], { minSpan: 18 });
+  if (fly) map.flyToNodes(frameOf(i, nb.nodes), { minSpan: 16 });
   if (push) route(`n/${W.nodes[i].id}`);
+}
+// o que enquadrar ao escolher alguém: tudo a que ele se liga; se isso for o mapa quase inteiro (um acionista do outro
+// lado da cidade), só o que está perto dele (os feixes mostram para onde vai o resto)
+function frameOf(i, nodes) {
+  const all = [...nodes];
+  let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity;
+  for (const j of all) { x0 = Math.min(x0, map.X[j]); x1 = Math.max(x1, map.X[j]); z0 = Math.min(z0, map.Z[j]); z1 = Math.max(z1, map.Z[j]); }
+  if (map.sky[i] || Math.hypot(x1 - x0, z1 - z0) <= 62) return all;
+  const near = all.filter((j) => j === i || Math.hypot(map.X[j] - map.X[i], map.Z[j] - map.Z[i]) <= 26);
+  return near;
 }
 function selectGroup(gi, { push = true } = {}) {
   if (ui.mode !== "world") exitMode(false);
@@ -544,6 +566,7 @@ function wireSearch(input, list, onPick) {
   input.addEventListener("keydown", (e) => {
     if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); sel = (sel + (e.key === "ArrowDown" ? 1 : -1) + res.length) % Math.max(1, res.length); render(); }
     else if (e.key === "Enter") { e.preventDefault(); choose(res[sel]); }
+    else if (e.key === "Escape" && introState.on) endIntro();
     else if (e.key === "Escape") { input.value = ""; list.hidden = true; input.blur(); }
   });
   list.addEventListener("pointerdown", (e) => { const li = e.target.closest("[data-idx]"); if (li) { e.preventDefault(); choose(res[+li.dataset.idx]); } });
@@ -582,28 +605,27 @@ function markRank() {
 }
 // ícones das formas do mapa (legenda fixa e menu de camadas)
 const SHAPES = [
-  ["tower", "Companhia aberta", '<svg viewBox="0 0 20 20"><path d="M6 18V5.5L11 3.5V18" fill="#dfe3ea"/><path d="M11 3.5 14 5v13h-3z" fill="#9aa4b3"/><path d="M6 5.5 11 3.5 14 5 9 7z" fill="var(--c)"/></svg>'],
-  ["block", "Capital fechado", '<svg viewBox="0 0 20 20"><path d="M4 16v-5l6-2.5 6 2.5v5l-6 2.5z" fill="#c9ced6"/><path d="M4 11l6-2.5 6 2.5-6 2.5z" fill="var(--c)"/></svg>'],
-  ["tile", "Holding ou empresa", '<svg viewBox="0 0 20 20"><path d="M3 12.5 10 9.5l7 3-7 3z" fill="#8ea3bd"/><path d="M3 12.5v1.2l7 3v-1.2zM17 12.5v1.2l-7 3v-1.2z" fill="#5f7088"/></svg>'],
-  ["sub", "Controlada em comum", '<svg viewBox="0 0 20 20"><path d="M3 12.5 10 9.5l7 3-7 3z" fill="#7fd6b4"/><path d="M3 12.5v1.2l7 3v-1.2zM17 12.5v1.2l-7 3v-1.2z" fill="#4f9a7e"/></svg>'],
+  ["tower", "Companhia aberta", '<svg viewBox="0 0 20 20"><path d="M6 18V5h8v13z" fill="#141b29"/><path d="M6 5h8v1.8H6z" fill="var(--c)"/><path d="M7.6 8.4h1.3v1.3H7.6zM11 8.4h1.3v1.3H11zM9.3 11h1.3v1.3H9.3zM7.6 13.6h1.3v1.3H7.6zM11 13.6h1.3v1.3H11zM11 11h1.3v1.3H11z" fill="#ffd9a0"/></svg>'],
+  ["block", "Capital fechado", '<svg viewBox="0 0 20 20"><path d="M4 17v-6h12v6z" fill="#141b29"/><path d="M4 11h12v1.5H4z" fill="var(--c)"/><path d="M6 13.6h1.3v1.3H6zM12.6 13.6h1.3v1.3h-1.3z" fill="#ffd9a0"/></svg>'],
+  ["sub", "Controlada em comum", '<svg viewBox="0 0 20 20"><path d="M4 17v-6h12v6z" fill="#141b29"/><path d="M4 11h12v1.5H4z" fill="#7fd6b4"/><path d="M9.3 13.6h1.3v1.3H9.3z" fill="#ffd9a0"/></svg>'],
   ["pawn", "Pessoa física", '<svg viewBox="0 0 20 20"><circle cx="10" cy="6" r="2.6" fill="#f0c9a0"/><path d="M7.4 15.5 8.4 9.4h3.2l1 6.1z" fill="#f0c9a0"/><ellipse cx="10" cy="16" rx="4.6" ry="1.6" fill="#c99e74"/></svg>'],
-  ["inv", "Investidor institucional", '<svg viewBox="0 0 20 20"><path d="M10 2.5 15 9 10 17.5 5 9z" fill="#b3a6f7"/><path d="M10 2.5 15 9H5z" fill="#d6cffb"/><path d="M10 17.5 15 9H10z" fill="#8576d6"/></svg>'],
+  ["tile", "Holding ou empresa", '<svg viewBox="0 0 20 20"><path d="M5 8.5 10 6l5 2.5v6L10 17l-5-2.5z" fill="#5f7088"/><path d="M5 8.5 10 6l5 2.5-5 2.5z" fill="#a9bdd6"/></svg>'],
+  ["inv", "Gestora, fundo ou governo", '<svg viewBox="0 0 20 20"><path d="M10 2.5 15 9 10 17.5 5 9z" fill="#b3a6f7"/><path d="M10 2.5 15 9H5z" fill="#d6cffb"/><path d="M10 17.5 15 9H10z" fill="#8576d6"/></svg>'],
 ];
-const SHAPE_SHORT = { tower: "Aberta", block: "Fechada", tile: "Holding", sub: "Controlada", pawn: "Pessoa", inv: "Investidor" };
+const SHAPE_SHORT = { tower: "Aberta", block: "Fechada", tile: "Holding", sub: "Controlada", pawn: "Pessoa", inv: "Gestora" };
 const shapeKeyHtml = () => SHAPES.map(([k, label, svg]) => `<button type="button" class="m-key-i" data-shape="${k}" title="Destacar no mapa: ${label}" style="--c:${sectorColor("util")}">${svg}<span class="l">${label}</span><span class="s">${SHAPE_SHORT[k]}</span></button>`).join("")
-  + `<span class="m-key-i m-key-ctl"><i class="m-key-ln"></i><span class="l">Controle</span><span class="s">Controle</span></span>`;
+  + `<span class="m-key-sep"></span><span class="m-key-i m-key-ctl" title="O feixe corre de quem é dono para o que é possuído"><i class="m-key-ln"></i><span class="l">Controla</span><span class="s">Controla</span></span><span class="m-key-i m-key-ctl part" title="Participação sem controle"><i class="m-key-ln"></i><span class="l">Participa</span><span class="s">Participa</span></span>`;
 function sectorStats() {
   const M = W.data.mapa, st = M.plates.map(() => ({ n: 0, listed: 0, mc: 0 }));
   for (let i = 0; i < W.N; i++) {
     const n = W.nodes[i], s2 = st[M.plate[i]];
     if (n.t === "c") { s2.n++; if (n.mc) { s2.listed++; s2.mc += n.mc; } }
-    else if (map?.isInv[i]) { s2.n++; s2.mc += n.v || 0; }
   }
   return st;
 }
-const plateName = (p) => (p.c === "inv" ? "Investidores institucionais" : SECTOR[p.c]?.[1] || p.c);
-const plateShort = (p) => (p.c === "inv" ? "Investidores" : SECTOR[p.c]?.[2] || p.c);
-const plateColor = (p) => (p.c === "inv" ? INVESTOR : sectorColor(p.c));
+const plateName = (p) => SECTOR[p.c]?.[1] || p.c;
+const plateShort = (p) => SECTOR[p.c]?.[2] || p.c;
+const plateColor = (p) => sectorColor(p.c);
 function renderLegend() {
   const st = sectorStats();
   const order = W.data.mapa.plates.map((p, j) => j).sort((a, b) => st[b].mc - st[a].mc);
@@ -657,11 +679,15 @@ let plateTop = null;
 function plateTopLists() {
   if (plateTop) return plateTop;
   plateTop = W.data.mapa.plates.map(() => []);
-  for (const i of W.labelOrder) if (W.nodes[i].t === "c" || map.isInv[i]) plateTop[W.data.mapa.plate[i]].push(i);
+  for (const i of W.labelOrder) if (W.nodes[i].t === "c") plateTop[W.data.mapa.plate[i]].push(i);
   return plateTop;
+}
+function resetLabels() {
+  for (const [i, el] of labels.used) { el.classList.remove("on"); labels.used.delete(i); labels.pool.push(el); }
 }
 function labelText(i) {
   const n = W.nodes[i];
+  if (ui.rel && ui.rel.has(i)) return [shortName(n.n), ui.rel.get(i)];
   if (n.t === "c") return [shortName(n.n), [n.tk, n.mc ? brl(n.mc).replace("R$ ", "R$ ").toUpperCase() : "capital fechado"].filter(Boolean).join(" · ")];
   return [shortName(n.n), [kindLabel(n), n.v ? `≈ ${brl(n.v)}` : ""].filter(Boolean).join(" · ")];
 }
@@ -674,7 +700,7 @@ function buildPlateLabels() {
     const el = document.createElement("button");
     el.type = "button"; el.className = "m-plate"; el.dataset.plate = j;
     el.style.setProperty("--c", plateColor(p));
-    const what = p.c === "inv" ? plural(st[j].n, "investidor", "investidores") : plural(st[j].n, "companhia", "companhias");
+    const what = plural(st[j].n, "companhia", "companhias");
     el.innerHTML = `<b><span class="full">${esc(plateName(p))}</span><span class="short">${esc(plateShort(p))}</span></b><small>${what}${st[j].mc ? ` · ${brl(st[j].mc)}` : ""}</small>`;
     el.title = `Ver o setor ${plateName(p)} inteiro`;
     layer.appendChild(el);
@@ -725,8 +751,8 @@ function updateLabels() {
     budget = Math.max(budget, TOUCH ? 12 : 34);
   } else if (ui.sector >= 0) {
     // setor em foco: todas as companhias dele, das maiores para as menores
-    order = W.labelOrder.filter((i) => W.data.mapa.plate[i] === ui.sector && (W.nodes[i].t === "c" || map.isInv[i]));
-    budget = Math.max(budget, TOUCH ? 18 : 48);
+    order = W.labelOrder.filter((i) => W.data.mapa.plate[i] === ui.sector && W.nodes[i].t === "c");
+    budget = Math.max(budget, TOUCH ? 12 : 28);
   } else order = W.labelOrder.slice(0, 260);
   const want = new Map();
   const o = {};
@@ -736,7 +762,7 @@ function updateLabels() {
     if (want.has(i) || (!vis[i] && !ui.forceVis?.has(i))) continue;
     const n = W.nodes[i];
     const inHl = hl && hl.has(i);
-    if (!inHl && n.t !== "c" && !map.isInv[i] && z < 0.55) continue;
+    if (!inHl && n.t !== "c" && !map.sky[i] && z < 0.55) continue;
     map.project(i, o);
     if (!o.f) continue;
     const [name, sub] = labelText(i);
@@ -762,6 +788,8 @@ function updateLabels() {
       if (!el.parentNode) labels.layer.appendChild(el);
       const [name, sub] = labelText(i);
       el.innerHTML = `<i class="m-lab-dot"></i><span class="m-lab-ln"></span><span class="m-lab-tx"><b>${esc(name)}</b><small>${esc(sub)}</small></span>`;
+      el.classList.toggle("rel", !!(ui.rel && ui.rel.has(i)));
+      el.classList.toggle("relc", !!(ui.rel && /^control/.test(ui.rel.get(i) || "")));
       el.dataset.i = i;
       el.classList.remove("on");
       el._t = performance.now();
@@ -800,7 +828,7 @@ function showTip(i, px, py) {
   } else rows.push([kindLabel(n), n.v ? `≈ ${brl(n.v)}` : ""]);
   const cos = new Set([...W.out[i].map((j) => W.et[j]), ...W.inc[i].map((j) => W.es[j])]).size;
   rows.push(["Ligações", nf(cos + W.brd[i].length)]);
-  tip.innerHTML = `<div class="m-tip-head"><i style="background:${colorOf(n)}"></i><b>${esc(n.n)}</b></div>${rows.map(([a, b]) => `<div class="row"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join("")}<div class="row muted"><span>Clique para ver quem é dono · dois cliques abrem a estrutura</span></div>`;
+  tip.innerHTML = `<div class="m-tip-head"><i style="background:${colorOf(n)}"></i><b>${esc(n.n)}</b></div>${rows.map(([a, b]) => `<div class="row"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join("")}<div class="row muted"><span>${map.sky[i] ? "Paira sobre o que possui · " : !map.isGround[i] ? "Na praça da companhia · " : ""}clique para ver as ligações</span></div>`;
   tip.hidden = false;
   const w = tip.offsetWidth, h = tip.offsetHeight;
   tip.style.left = `${clamp(px + 18, 8, innerWidth - w - 8)}px`;
@@ -850,6 +878,8 @@ function onDown(e) {
   pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
   ui.lastInput = performance.now();
   hideHint();
+  endIntro();
+  map.touch();
   map.cam.vx = map.cam.vz = 0; map.cam.fly = null;
   if (pointers.size === 2) {
     const [p, q] = [...pointers.values()];
@@ -862,6 +892,7 @@ function onDown(e) {
 function onMove(e) {
   if (pointers.has(e.pointerId)) pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
   ui.lastInput = performance.now();
+  if (pointers.size) map?.touch();
   if (ui.mode === "tree") return;
   if (pinch && pointers.size === 2) {
     const [p, q] = [...pointers.values()];
@@ -899,7 +930,7 @@ function doHover() {
     if (ui.sel < 0 && ui.group < 0 && !ui.shape && ui.mode === "world") {
       doHover.t = setTimeout(() => {
         if (ui.sel >= 0 || ui.group >= 0 || ui.shape || ui.mode !== "world" || ui.hover !== i) return;
-        if (i >= 0) { const nb = neighborhood(i); setHighlight(nb.nodes, nb.edges, nb.brd, [i], 0.45); } else setHighlight(null);
+        if (i >= 0) { const nb = neighborhood(i); setHighlight(nb.nodes, nb.edges, nb.brd, [i], 0.5, false, relations(i, nb)); } else setHighlight(null);
       }, i >= 0 ? 140 : 90);
     }
   }
@@ -911,7 +942,7 @@ function showPlateTip(j, px, py) {
   const tip = $("#m-tip");
   if (TOUCH) { tip.hidden = true; return; }
   const p = W.data.mapa.plates[j], st = sectorStats()[j];
-  tip.innerHTML = `<div class="m-tip-head"><i style="background:${plateColor(p)}"></i><b>${esc(plateName(p))}</b></div><div class="row"><span>${p.c === "inv" ? "Investidores" : "Companhias"}</span><span>${nf(st.n)}</span></div><div class="row"><span>${p.c === "inv" ? "Valor investido" : "Valor de mercado"}</span><span>${st.mc ? brl(st.mc) : "–"}</span></div><div class="row muted"><span>Clique para ver o setor inteiro</span></div>`;
+  tip.innerHTML = `<div class="m-tip-head"><i style="background:${plateColor(p)}"></i><b>${esc(plateName(p))}</b></div><div class="row"><span>Companhias</span><span>${nf(st.n)}</span></div><div class="row"><span>Valor de mercado</span><span>${st.mc ? brl(st.mc) : "–"}</span></div><div class="row muted"><span>Clique para ver o setor inteiro</span></div>`;
   tip.hidden = false;
   const w = tip.offsetWidth, h = tip.offsetHeight;
   tip.style.left = `${clamp(px + 18, 8, innerWidth - w - 8)}px`;
@@ -947,9 +978,47 @@ function onWheel(e) {
   e.preventDefault();
   ui.lastInput = performance.now();
   hideHint();
+  endIntro();
+  map.touch();
   if (ui.mode === "tree") return;
   const f = Math.exp(e.deltaY * (e.ctrlKey ? 0.012 : e.deltaMode === 1 ? 0.05 : 0.0018));
   map.zoom(f, e.clientX, e.clientY);
+}
+
+// ---------------------------------------------------------------- abertura
+// Enquanto a câmera sobe do maior prédio até a visão geral, o que o mapa reúne aparece em letras grandes, com o valor
+// de mercado contando. Qualquer toque encerra.
+const introState = { on: false, t0: 0, raf: 0 };
+function startIntro(dur) {
+  const el = $("#m-intro");
+  if (!el) return;
+  const cos = W.nodes.filter((n) => n.t === "c"), total = cos.reduce((s, n) => s + (n.mc || 0), 0);
+  const owners = W.nodes.length - cos.length;
+  $("#m-intro-cap").textContent = `${nf(cos.length)} companhias · ${nf(owners)} acionistas e conselheiros · ${nf(W.M)} participações`;
+  const num = $("#m-intro-num");
+  el.hidden = false;
+  requestAnimationFrame(() => el.classList.add("on"));
+  Object.assign(introState, { on: true, done: 0 });
+  const tick = (now) => {
+    if (!introState.on) return;
+    const k = clamp(map.introK / 0.86, 0, 1), e = 1 - Math.pow(1 - k, 3);
+    num.textContent = nf((total * e) / 1e12, 2);
+    if (map.introK >= 1 && !introState.done) introState.done = now;
+    if (introState.done && now - introState.done > 1800) { endIntro(true); return; }
+    introState.raf = requestAnimationFrame(tick);
+  };
+  introState.raf = requestAnimationFrame(tick);
+}
+function endIntro(natural = false) {
+  if (!introState.on) return;
+  introState.on = false;
+  cancelAnimationFrame(introState.raf);
+  const el = $("#m-intro");
+  el.classList.remove("on");
+  setTimeout(() => { el.hidden = true; }, 900);
+  if (!natural) map.skipIntro();
+  document.body.classList.remove("intro");
+  if (!store.get("mundo-hint", 0)) hintTimer = setTimeout(() => { if (ui.sel < 0 && ui.mode === "world") { $("#m-hint").hidden = false; uiRectsT = 0; hintTimer = setTimeout(hideHint, 9000); } }, 1400);
 }
 
 let hintTimer = 0;
@@ -963,22 +1032,6 @@ function renderSectorPanel(j) {
   const byMc = (a, b) => (W.nodes[b].mc || 0) - (W.nodes[a].mc || 0) || W.nodes[a].n.localeCompare(W.nodes[b].n);
   const col = plateColor(p);
   panelRows = {};
-  if (p.c === "inv") {
-    const invs = mem.sort((a, b) => (W.nodes[b].v || 0) - (W.nodes[a].v || 0));
-    panelRows.inv = invs.map((i) => {
-      const cos = new Set(W.out[i].map((e) => W.et[e]).filter((t) => W.nodes[t].t === "c")).size;
-      return rowHtml(i, W.nodes[i].v ? brl(W.nodes[i].v) : "", `${kindLabel(W.nodes[i])} · ${plural(cos, "companhia", "companhias")}`, false);
-    });
-    const tot = invs.reduce((s2, i) => s2 + (W.nodes[i].v || 0), 0);
-    $("#m-panel-body").innerHTML = `
-      <div class="m-kicker" style="--c:${col}"><i></i>Bloco dos investidores</div>
-      <div class="m-head"><span class="m-badge" style="--c:${col}">${icon("cias")}</span><div><h2>Investidores institucionais</h2><p>gestoras, fundos de pensão e governo</p></div></div>
-      <div class="m-stats"><div class="m-stat"><span>Investidores</span><b>${nf(invs.length)}</b></div><div class="m-stat"><span>Valor investido</span><b>${esc(tot ? brl(tot) : "–")}</b></div><div class="m-stat"><span>Participações</span><b>${nf(invs.reduce((s2, i) => s2 + W.out[i].length, 0))}</b></div></div>
-      <div class="m-sec"><h3>Pelo valor investido<small>participação × valor de mercado</small></h3>${listHtml(panelRows.inv, 15, "inv")}</div>
-      <p class="m-foot">Quem tem 5% ou mais de duas ou mais companhias abertas e não tem dono no mapa, mais o governo. Os demais acionistas ficam no setor das companhias em que investem.</p>`;
-    openPanel();
-    return;
-  }
   const cos = mem.filter((i) => W.nodes[i].t === "c").sort(byMc);
   const listed = cos.filter((i) => W.nodes[i].mc);
   const mcTot = listed.reduce((s2, i) => s2 + W.nodes[i].mc, 0);
@@ -999,16 +1052,17 @@ function renderSectorPanel(j) {
   for (const i of cos) for (const e of W.inc[i]) { const o = W.es[e]; if (!map.isInv[o]) continue; const a = invAgg.get(o) || { n: 0, v: 0 }; a.n++; a.v += (Math.max(0, W.ep[e]) / 100) * (W.nodes[i].mc || 0); invAgg.set(o, a); }
   const invTop = [...invAgg.entries()].sort((a, b) => b[1].n - a[1].n || b[1].v - a[1].v).slice(0, 8);
   const invHtml = invTop.map(([o, a]) => rowHtml(o, a.v ? `≈ ${brl(a.v)}` : "", `${kindLabel(W.nodes[o])} · em ${plural(a.n, "companhia", "companhias")} do setor`, false)).join("");
-  const nPeople = mem.filter((i) => W.nodes[i].t === "p").length, nHold = mem.filter((i) => W.nodes[i].t === "j" || W.nodes[i].t === "s").length;
+  const here = mem.filter((i) => !map.sky[i]);
+  const nPeople = here.filter((i) => W.nodes[i].t === "p").length, nHold = here.filter((i) => W.nodes[i].t === "j" || W.nodes[i].t === "s").length;
   $("#m-panel-body").innerHTML = `
     <div class="m-kicker" style="--c:${col}"><i></i>Setor</div>
     <div class="m-head"><span class="m-badge" style="--c:${col}">${icon("cias")}</span><div><h2>${esc(plateName(p))}</h2><p>${plural(cos.length, "companhia", "companhias")} · ${plural(segList.length, "segmento", "segmentos")} · ${plural(groups.length, "grupo", "grupos")}</p></div></div>
     <div class="m-stats"><div class="m-stat"><span>Valor de mercado</span><b>${esc(mcTot ? brl(mcTot) : "–")}</b></div><div class="m-stat"><span>Na bolsa</span><b>${nf(listed.length)}</b></div><div class="m-stat"><span>Capital fechado</span><b>${nf(cos.length - listed.length)}</b></div></div>
-    <p class="m-note m-sec-note">No bloco também estão ${plural(nHold, "holding ou empresa", "holdings e empresas")} e ${plural(nPeople, "pessoa física", "pessoas físicas")} ligadas a essas companhias.</p>
+    <p class="m-note m-sec-note">Nas praças do bairro estão ${plural(nPeople, "pessoa física", "pessoas físicas")} e ${plural(nHold, "holding ou empresa", "holdings e empresas")} que só têm participação aqui.</p>
     <div class="m-sec"><h3>Companhias por segmento<small>valor de mercado</small></h3>${segHtml}</div>
     ${grpHtml ? `<div class="m-sec"><h3>Grupos econômicos<small>valor de mercado</small></h3><ul class="m-list">${grpHtml}</ul></div>` : ""}
     ${invHtml ? `<div class="m-sec"><h3>Investidores mais presentes<small>companhias do setor</small></h3><ul class="m-list">${invHtml}</ul></div>` : ""}
-    <p class="m-foot">Cada companhia fica no bloco do seu setor; holdings e pessoas, no setor das companhias que controlam. Segmento é o setor de atividade declarado à CVM.</p>`;
+    <p class="m-foot">Cada companhia fica no bairro do seu setor, com os donos de uma só companhia na praça dela; quem tem participação em várias paira acima da cidade. Segmento é o setor de atividade declarado à CVM.</p>`;
   openPanel();
 }
 
@@ -1047,7 +1101,7 @@ function wire() {
       ui.layers[inp.dataset.layer] = inp.checked;
       store.set("mundo-layers", ui.layers);
       computeVisibility();
-      if (ui.sel >= 0 && ui.mode === "world") { const nb = neighborhood(ui.sel); setHighlight(nb.nodes, nb.edges, nb.brd, [ui.sel]); }
+      if (ui.sel >= 0 && ui.mode === "world") { const nb = neighborhood(ui.sel); setHighlight(nb.nodes, nb.edges, nb.brd, [ui.sel], 0.75, false, relations(ui.sel, nb)); }
       else if (ui.shape) { const k = ui.shape; ui.shape = null; showShape(k); }
       renderRank();
     };
@@ -1103,6 +1157,7 @@ function wire() {
   document.addEventListener("keydown", (e) => {
     if (e.target.matches("input[type=search], input[type=text], textarea")) return;
     if (e.key === "/" || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k")) { e.preventDefault(); $("#m-q").focus(); }
+    else if (e.key === "Escape" && introState.on) endIntro();
     else if (e.key === "Escape") { if (ui.mode !== "world") { const s2 = ui.sel; exitMode(false); s2 >= 0 ? select(s2) : select(-1); } else select(-1); }
     else if (e.key === "+" || e.key === "=") $("#m-zin").click();
     else if (e.key === "-") $("#m-zout").click();
@@ -1141,14 +1196,14 @@ async function init() {
   }
   // celular (ou tablet) em pé: o arranjo em pé, que ocupa a tela; senão, o deitado. Sem as posições (o CI ainda não
   // rodou a versão nova), calcula aqui mesmo.
-  const ok = (m) => m && m.x && m.x.length === data.nodes.length;
+  const ok = (m) => m && m.v === MAPA_VERSION && m.x && m.x.length === data.nodes.length;
   const tall = innerHeight > innerWidth * 1.15;
   if (tall) data.mapa = ok(data.mapaV) ? data.mapaV : mapLayout(data, { aspect: ASPECT_TALL });
   else if (!ok(data.mapa)) data.mapa = mapLayout(data);
   delete data.mapaV;
   prepare(data);
   try {
-    map = createMap($("#map"), data, { palette, accent: ACCENT });
+    map = createMap($("#map"), data, { palette, accent: ACCENT, reduced: REDUCED, fixedQuality: /[?&]hq\b/.test(location.search) });
   } catch (err) {
     console.error(err);
     $("#m-empty").hidden = false;
@@ -1178,12 +1233,13 @@ async function init() {
   map.cam.x = map.cam.tx; map.cam.z = map.cam.tz; map.cam.d = map.cam.td; map.cam.fly = null;
   fitAllD = map.cam.td;
   if (!location.hash && !REDUCED) {
-    map.intro();
-    map.cam.d = fitAllD * 1.35;
+    document.body.classList.add("intro");
+    map.intro(5600);
+    startIntro(5600);
   }
   raf = requestAnimationFrame(frame);
   readRoute();
-  if (!store.get("mundo-hint", 0) && !location.hash) setTimeout(() => { if (ui.sel < 0 && ui.mode === "world") { $("#m-hint").hidden = false; uiRectsT = 0; hintTimer = setTimeout(hideHint, 9000); } }, 3200);
+  if (!store.get("mundo-hint", 0) && !location.hash && !introState.on) hintTimer = setTimeout(() => { if (ui.sel < 0 && ui.mode === "world") { $("#m-hint").hidden = false; uiRectsT = 0; hintTimer = setTimeout(hideHint, 9000); } }, 2500);
   if (/[?&]debug\b/.test(location.search)) window.__mundo = { ui, W, map, tree, select, openTree, showPath, selectGroup, focusSector };
 }
 init();
