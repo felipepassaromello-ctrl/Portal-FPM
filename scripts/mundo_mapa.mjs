@@ -19,7 +19,7 @@
 // Determinístico: as mesmas posições 2D dão o mesmo mapa. Também roda no navegador (fallback quando o mundo.json ainda
 // não tem o mapa desta versão).
 
-export const MAPA_VERSION = "mapa-3";
+export const MAPA_VERSION = "mapa-4";
 
 const SECTOR_ORDER = ["fin", "tech", "saude", "log", "agro", "ind", "util", "oil", "base", "cons", "imob", "out"];
 const FILL = 0.45; // fração de cada bairro ocupada pelos terrenos (o resto é rua e respiro)
@@ -156,11 +156,12 @@ export function mapLayout(world, { log = () => {}, aspect = ASPECT_WIDE } = {}) 
   for (let a = 0; a < N; a++) {
     if (!ground[a]) continue;
     const g = guests.get(a);
-    if (!g) { lot[a] = core[a] * 1.42 + 0.9; continue; }
+    const edge = core[a] * (nodes[a].t === "c" ? 2.1 : 1.42); // a companhia tem ao lado a peça do setor (refinaria, silos, turbina...)
+    if (!g) { lot[a] = edge + 0.9; continue; }
     const byDepth = new Map();
     for (const i of g) { const d = depth[i] || 1; (byDepth.get(d) || byDepth.set(d, []).get(d)).push(i); }
     const list = [];
-    let r = core[a] * 1.42 + RING0;
+    let r = edge + RING0;
     for (const d of [...byDepth.keys()].sort((x, y) => x - y)) {
       const rest = byDepth.get(d);
       if (d === 1) rest.sort((x, y) => stake(y, a) - stake(x, a) || (nodes[y].v || 0) - (nodes[x].v || 0) || x - y);
