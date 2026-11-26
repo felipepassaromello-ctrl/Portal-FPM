@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>Mundo das companhias · Portal FPM</title>
-  <meta name="description" content="O mapa de quem é dono de quem nas companhias abertas brasileiras: cada setor é um bloco, companhias são prédios, pessoas são peões e investidores institucionais diamantes, com controladores, acionistas, grupos econômicos e conselhos.">
+  <meta name="description" content="O mapa de quem é dono de quem nas companhias abertas brasileiras: uma cidade em que cada setor é um bairro e cada companhia um prédio, com controladores, acionistas, grupos econômicos e conselhos ligados ao que possuem.">
   <meta name="theme-color" content="#05070d">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/icon-180.png?v=2">
@@ -45,6 +45,7 @@
     <canvas id="map" class="m-canvas" aria-label="Mapa interativo das companhias abertas, por setor, e de quem é dono delas" role="img"></canvas>
     <div id="m-plates" class="m-plates"></div>
     <div id="m-labels" class="m-labels" aria-hidden="true"></div>
+    <div class="m-vignette" aria-hidden="true"></div>
     <div class="m-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
     <!-- barra de cima: voltar, título, busca, camadas -->
@@ -116,7 +117,13 @@
     </div>
 
     <div id="m-tip" class="m-tip" hidden></div>
-    <div id="m-hint" class="m-glass m-hint" hidden><span class="desk-only">Clique num bloco para ver o setor inteiro · clique numa peça para ver quem é dono · arraste para mover, role para aproximar</span><span class="touch-only">Toque num bloco para ver o setor inteiro, ou numa peça para ver quem é dono</span></div>
+    <div id="m-hint" class="m-glass m-hint" hidden><span class="desk-only">Clique num prédio para ver quem é dono · quem paira no alto é dono de várias · arraste para mover, role para aproximar</span><span class="touch-only">Toque num prédio para ver quem é dono; quem paira no alto é dono de várias</span></div>
+    <div id="m-intro" class="m-intro" aria-hidden="true" hidden>
+      <p class="m-intro-h">Quem é dono de quem<br>nas companhias abertas do Brasil.</p>
+      <p class="m-intro-k">Valor de mercado reunido neste mapa</p>
+      <p class="m-intro-n"><small>R$</small><b id="m-intro-num">0,00</b><span>trilhões</span></p>
+      <p id="m-intro-cap" class="m-intro-c"></p>
+    </div>
     <div id="m-empty" class="m-empty" hidden></div>
     <div id="m-fade" class="m-fade" aria-hidden="true"></div>
   </div>
