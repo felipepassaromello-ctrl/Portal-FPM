@@ -24,6 +24,7 @@ import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
 import { sectorProps, rotorGeo, towerGeo, treeGeo, personGeo, carGeo, boatGeo } from "./props.js";
+import { themeOf, themeDef, guyGeo, beach } from "./temas.js";
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
@@ -150,7 +151,10 @@ export function createMap(canvas, world, opts = {}) {
   const rnd = () => { seed |= 0; seed = (seed + 0x6d2b79f5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
   const DECOR = new Set(["util", "oil", "agro", "ind", "base", "log", "tech", "imob", "saude", "cons"]);
   const decor = [];
-  const parks = [], trees = []; // parques: [cx, cz, lago?]; árvores: [x, z, escala]
+  const parks = [], trees = [], freeBlocks = [];
+  // a praia central (onde fica a estátua): uma faixa de areia garantida na costa sul
+  const BEACH = { x0: -20, x1: 20, z: MH / 2 + 8.2, r: 2.4 };
+  const beachSd = (x, z) => Math.hypot(x - clamp(x, BEACH.x0, BEACH.x1), z - BEACH.z) - BEACH.r; // parques: [cx, cz, lago?]; árvores: [x, z, escala]
   const G_ = [];
   for (let i = 0; i < N; i++) if (isGround[i]) G_.push(i);
   for (const p of plates) {
@@ -159,17 +163,48 @@ export function createMap(canvas, world, opts = {}) {
       let free = true;
       for (const i of G_) { const r = LOT[i] + 0.85; if (Math.abs(X[i] - cx) < r && Math.abs(Z[i] - cz) < r && Math.hypot(X[i] - cx, Z[i] - cz) < r) { free = false; break; } }
       if (!free) continue;
-      const pond = rnd() < 0.12;
-      parks.push([cx, cz, pond]);
-      // em parte das quadras livres, uma instalação do setor do bairro (turbina, silos, refinaria, fábrica...)
-      if (!pond && rnd() < 0.42 && DECOR.has(p.c)) {
-        decor.push({ x: cx, z: cz, plate: p.j, sec: p.c, s: 1.05 + rnd() * 0.25 });
-        for (const [ax, az] of [[-0.5, -0.5], [0.5, -0.5], [-0.5, 0.5]]) trees.push([cx + ax, cz + az, 0.5 + rnd() * 0.25]);
-        continue;
-      }
-      const n = 6 + Math.floor(rnd() * 6);
-      for (let k = 0; k < n; k++) { const x = cx + (rnd() - 0.5) * 1.1, z = cz + (rnd() - 0.5) * 1.1; if (pond && Math.hypot(x - cx, z - cz) < 0.36) continue; trees.push([x, z, 0.55 + rnd() * 0.4]); }
+      freeBlocks.push({ cx, cz, p });
     }
+  }
+  // perto de cada companhia (das maiores para as menores), a quadra livre mais próxima vira algo do negócio dela:
+  // bar perto da cervejaria, posto perto da petroleira, escola perto do grupo de educação...
+  const themed = [], themeCount = {}, TH = {};
+  let nFree = 0;
+  const thDef = (k) => TH[k] || (TH[k] = themeDef(k));
+  const comps = G_.filter((i) => world.nodes[i].t === "c").sort((a, b) => (world.nodes[b].mc || 0) - (world.nodes[a].mc || 0));
+  for (const i of comps) {
+    const th = themeOf(world.nodes[i]);
+    if (!th || (themeCount[th] || 0) >= 14) continue;
+    let best = -1, bd = nFree > freeBlocks.length * 0.4 ? -1 : 6;
+    for (let k = 0; k < freeBlocks.length; k++) { const f = freeBlocks[k]; if (f.used || f.p.j !== M.plate[i]) continue; // de preferência à frente ou ao lado: atrás (ao norte) o prédio taparia a vista
+      const d = Math.hypot(f.cx - X[i], f.cz - Z[i]) + (f.cz < Z[i] - 0.3 && Math.abs(f.cx - X[i]) < SX[i] + 1.2 ? 4 : 0); if (d < bd) { bd = d; best = k; } }
+    if (best < 0) {
+      // sem quadra livre por perto: se a companhia for grande, o negócio fica no próprio terreno dela, do lado oeste
+      const w = (SX[i] + SZ[i]) / 2, sc = clamp(w * 0.8, 0.8, 1.05);
+      if (w < 0.8) continue;
+      themeCount[th] = (themeCount[th] || 0) + 1;
+      themed.push({ x: X[i] - SX[i] / 2 - 0.66 * sc, z: Z[i] + SZ[i] * 0.25, th, node: i, plate: M.plate[i], s: sc, inLot: true });
+      continue;
+    }
+    nFree++;
+    freeBlocks[best].used = true;
+    themeCount[th] = (themeCount[th] || 0) + 1;
+    themed.push({ x: freeBlocks[best].cx, z: freeBlocks[best].cz, th, node: i, plate: M.plate[i] });
+    if (thDef(th).green) parks.push([freeBlocks[best].cx, freeBlocks[best].cz, false]);
+  }
+  for (const f of freeBlocks) {
+    if (f.used) continue;
+    const { cx, cz, p } = f;
+    const pond = rnd() < 0.12;
+    parks.push([cx, cz, pond]);
+    // em parte das quadras livres, uma instalação do setor do bairro (turbina, silos, refinaria, fábrica...)
+    if (!pond && rnd() < 0.42 && DECOR.has(p.c)) {
+      decor.push({ x: cx, z: cz, plate: p.j, sec: p.c, s: 1.05 + rnd() * 0.25 });
+      for (const [ax, az] of [[-0.5, -0.5], [0.5, -0.5], [-0.5, 0.5]]) trees.push([cx + ax, cz + az, 0.5 + rnd() * 0.25]);
+      continue;
+    }
+    const n = 6 + Math.floor(rnd() * 6);
+    for (let k = 0; k < n; k++) { const x = cx + (rnd() - 0.5) * 1.1, z = cz + (rnd() - 0.5) * 1.1; if (pond && Math.hypot(x - cx, z - cz) < 0.36) continue; trees.push([x, z, 0.55 + rnd() * 0.4]); }
   }
   // atrás de cada terreno (lado norte, para não tapar os donos), uma fileira de árvores
   for (const i of G_) {
@@ -184,7 +219,7 @@ export function createMap(canvas, world, opts = {}) {
   }
   for (let k = 0; k < (small ? 1500 : 2800); k++) {
     const x = (rnd() - 0.5) * (MW + 10), z = (rnd() - 0.5) * (MH + 9);
-    if (plateSd(x, z) < 1.3 || hash1(Math.floor(x / 3) * 31 + Math.floor(z / 3) * 17) < 0.42) continue;
+    if (plateSd(x, z) < 1.3 || beachSd(x, z) < 0.5 || hash1(Math.floor(x / 3) * 31 + Math.floor(z / 3) * 17) < 0.42) continue;
     trees.push([x, z, 0.6 + rnd() * 0.7]);
   }
 
@@ -204,6 +239,7 @@ export function createMap(canvas, world, opts = {}) {
     }
     g.fillStyle = "#0f0";
     for (const i of G_) { g.beginPath(); g.arc(px(X[i]), pz(Z[i]), LOT[i] * 0.93 * k, 0, 6.2832); g.fill(); }
+    for (const t of themed) if (!t.inLot && !thDef(t.th).green) { g.beginPath(); g.roundRect(px(t.x - 0.6), pz(t.z - 0.6), 1.2 * k, 1.2 * k, 0.1 * k); g.fill(); }
     const t = new THREE.CanvasTexture(cv);
     t.anisotropy = renderer.capabilities.getMaxAnisotropy();
     t.generateMipmaps = true; t.minFilter = THREE.LinearMipmapLinearFilter;
@@ -223,7 +259,7 @@ export function createMap(canvas, world, opts = {}) {
   })();
   const NR = plates.length;
   const groundU = {
-    uMask: { value: maskTex }, uAo: { value: aoTex }, uTime: { value: 0 }, uSize: { value: new THREE.Vector2(MW, MH) }, uLand: { value: new THREE.Vector2(MW / 2 + 9, MH / 2 + 7) },
+    uMask: { value: maskTex }, uAo: { value: aoTex }, uBeach: { value: new THREE.Vector4(BEACH.x0, BEACH.x1, BEACH.z, BEACH.r) }, uTime: { value: 0 }, uSize: { value: new THREE.Vector2(MW, MH) }, uLand: { value: new THREE.Vector2(MW / 2 + 9, MH / 2 + 7) },
     uRects: { value: Array.from({ length: 12 }, (_, k) => { const p = plates[k % NR]; return new THREE.Vector4((p.x0 + p.x1) / 2, (p.z0 + p.z1) / 2, (p.x1 - p.x0) / 2, (p.z1 - p.z0) / 2); }) },
     uCols: { value: Array.from({ length: 12 }, (_, k) => { const c = plates[k % NR].col; return new THREE.Vector3(c.r, c.g, c.b); }) },
     uFocus: { value: new THREE.Vector4(0, 0, 0, 0) }, uFocusK: { value: 0 }, uDim: { value: 0 },
@@ -234,7 +270,7 @@ export function createMap(canvas, world, opts = {}) {
     sh.vertexShader = sh.vertexShader.replace("#include <common>", "#include <common>\nvarying vec3 vWp;").replace("#include <worldpos_vertex>", "#include <worldpos_vertex>\nvWp = (modelMatrix * vec4(transformed, 1.0)).xyz;");
     sh.fragmentShader = sh.fragmentShader
       .replace("#include <common>", `#include <common>
-        varying vec3 vWp; uniform sampler2D uMask; uniform sampler2D uAo; uniform float uTime; uniform vec2 uSize; uniform vec2 uLand; uniform vec4 uRects[12]; uniform vec3 uCols[12];
+        varying vec3 vWp; uniform sampler2D uMask; uniform sampler2D uAo; uniform vec4 uBeach; uniform float uTime; uniform vec2 uSize; uniform vec2 uLand; uniform vec4 uRects[12]; uniform vec3 uCols[12];
         uniform vec4 uFocus; uniform float uFocusK; uniform float uDim;
         float gWater = 0.0;
         ${GLSL_NOISE}
@@ -245,6 +281,8 @@ export function createMap(canvas, world, opts = {}) {
         float n1 = vnoise(p * 0.3), n2 = vnoise(p * 1.7);
         vec2 bq = abs(p) - uLand;
         float land = length(max(bq, 0.0)) + min(max(bq.x, bq.y), 0.0) - 4.0 + vnoise(p * 0.07 + 3.1) * 7.0 + n1 * 1.5;
+        float bd = length(vec2(p.x - clamp(p.x, uBeach.x, uBeach.y), p.y - uBeach.z)) - uBeach.w;
+        land = min(land, bd);
         float d = 1e5; vec3 sec = uCols[0];
         for (int k = 0; k < ${NR}; k++) { float dk = sdRound(p - uRects[k].xy, uRects[k].zw, 0.6); if (dk < d) { d = dk; sec = uCols[k]; } }
         vec2 muv = vec2(p.x / uSize.x + 0.5, 0.5 - p.y / uSize.y);
@@ -300,7 +338,7 @@ export function createMap(canvas, world, opts = {}) {
           col = mix(country, asphalt, rd);
           col = mix(col, vec3(0.95), rd * far * 0.85 * (1.0 - smoothstep(0.005, 0.011, abs(d - 0.23))) * step(0.5, fract((p.x + p.y) * 2.1)));
           // praia: areia clara, mais escura e molhada junto à água
-          float sand = smoothstep(-2.0, -1.2, land);
+          float sand = max(smoothstep(-2.0, -1.2, land), 1.0 - smoothstep(-0.9, -0.3, bd));
           col = mix(col, mix(vec3(0.95, 0.9, 0.76), vec3(0.8, 0.74, 0.6), smoothstep(-0.5, 0.0, land)) * (0.97 + 0.05 * n3), sand);
         }
         // setor em foco e escolha: o resto esmaece para um cinza claro
@@ -435,10 +473,12 @@ export function createMap(canvas, world, opts = {}) {
         .replace("#include <roughnessmap_fragment>", "#include <roughnessmap_fragment>\nif (gRough >= 0.0) roughnessFactor = gRough;")
         .replace("#include <emissivemap_fragment>", "#include <emissivemap_fragment>\ntotalEmissiveRadiance += glow;");
     };
+    mat.customProgramCacheKey = () => `inst-${kind}`;
     const mesh = new THREE.InstancedMesh(geo, mat, n);
     // a sombra acompanha a peça (cresce na abertura, some com a camada)
     mesh.customDepthMaterial = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
     mesh.customDepthMaterial.onBeforeCompile = (sh) => patch(sh);
+    mesh.customDepthMaterial.customProgramCacheKey = () => `instd-${kind}`;
     const m4 = new THREE.Matrix4(), col = new THREE.Color(), sz = new THREE.Vector3();
     idx.forEach((i, k) => {
       if (typeof i === "number") inst[i].push([mesh, k]);
@@ -579,7 +619,7 @@ export function createMap(canvas, world, opts = {}) {
   }
 
   const moverU = { uTime: { value: 0 }, uDim: { value: 0 }, uRise: { value: 1 }, uMask: { value: maskTex }, uSize: { value: new THREE.Vector2(MW, MH) } };
-  function movers(geo, items, useMask) {
+  function movers(geo, items, useMask, shadow = false) {
     if (!items.length) return;
     const n = items.length, move = new Float32Array(n * 3), ph = new Float32Array(n * 3);
     geo.setAttribute("aMove", new THREE.InstancedBufferAttribute(move, 3));
@@ -598,6 +638,7 @@ export function createMap(canvas, world, opts = {}) {
           gl_Position = projectionMatrix * mvPosition;`);
       sh.fragmentShader = sh.fragmentShader.replace("#include <common>", "#include <common>\nuniform float uDim;").replace("#include <color_fragment>", "#include <color_fragment>\ndiffuseColor.rgb = mix(diffuseColor.rgb, vec3(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11))) * 0.86, 0.9 * uDim);");
     };
+    mat.customProgramCacheKey = () => `mover-${useMask ? 1 : 0}`;
     const mesh = new THREE.InstancedMesh(geo, mat, n);
     const m4 = new THREE.Matrix4(), col = new THREE.Color(), e = new THREE.Euler();
     items.forEach((it, k) => {
@@ -608,6 +649,7 @@ export function createMap(canvas, world, opts = {}) {
       ph.set([it.ph, it.sp, it.bob || 0], k * 3);
     });
     mesh.frustumCulled = false;
+    if (shadow) { mesh.castShadow = true; mesh.receiveShadow = true; }
     scene.add(mesh);
   }
   {
@@ -635,6 +677,105 @@ export function createMap(canvas, world, opts = {}) {
     }
     movers(boatGeo(0), boats[0], false);
     movers(boatGeo(1), boats[1], false);
+  }
+
+  // ---------------------------------------------------------------- a vizinhança de cada negócio, a praia e a estátua
+  const still = (x, z, sc = 1, yaw = 0, col = [1, 1, 1], y = TOP) => ({ x, y, z, yaw, s: sc, mx: 0, mz: 0, ph: 0.5, sp: 0, col });
+  const walker = (x, z, sc, a, len, speed, col = [1, 1, 1]) => ({ x, y: TOP, z, yaw: -a, s: sc, mx: Math.cos(a) * len, mz: Math.sin(a) * len, ph: rnd(), sp: speed / len, col });
+  const boardItems = [];
+  const board = (word, x, y, z, w) => boardItems.push({ word, x, y, z, w });
+  const GUYS = [[[0.85, 0.2, 0.18], [0.1, 0.12, 0.2]], [[0.2, 0.42, 0.8], [0.9, 0.9, 0.88]], [[0.96, 0.8, 0.2], [0.2, 0.4, 0.3]], [[0.95, 0.95, 0.93], [0.75, 0.2, 0.2]]];
+  const crowd = GUYS.map(() => []);
+  {
+    const byTheme = {};
+    for (const t of themed) (byTheme[t.th] || (byTheme[t.th] = [])).push(t);
+    for (const [th, list] of Object.entries(byTheme)) {
+      const def = thDef(th);
+      movers(def.geo, list.map((t) => still(t.x, t.z, t.s || 1.02)), false, true);
+      for (const t of list) {
+        const sc = t.s || 1.02;
+        for (const [word, bx, by, bz, bw] of def.boards || []) board(word, t.x + bx * sc, TOP + by * sc, t.z + bz * sc + 0.004, bw * sc);
+        // crianças correndo no parquinho
+        for (let k = 0; k < (def.kids || 0); k++) { const a = rnd() * 6.283; crowd[k % 4].push(walker(t.x + (rnd() - 0.5) * 0.7 * sc, t.z + (0.1 + rnd() * 0.35) * sc, 0.42 * sc, a, (0.35 + rnd() * 0.4) * sc, 0.3 + rnd() * 0.25)); }
+      }
+    }
+    // a praia: barraquinhas com placa, guarda-sóis com cadeiras, toalhas, pranchas, banhistas e gente caminhando
+    const KIOSK = ["COCO GELADO", "AÇAÍ", "PASTEL", "SORVETE", "CAIPIRINHA", "MILHO VERDE", "ÁGUA DE COCO", "TAPIOCA"];
+    const kiosks = [[], []];
+    let kk = 0;
+    for (let x = -18; x <= 18; x += 4.5) {
+      if (Math.abs(x) < 3) continue;
+      const z = BEACH.z - 1.45, sc = 1.7;
+      kiosks[kk % 2].push(still(x, z, sc));
+      board(KIOSK[kk % KIOSK.length], x, TOP + 0.4 * sc, z + 0.2 * sc, 0.42 * sc);
+      for (let c = 0; c < 3; c++) crowd[(kk + c) % 4].push(still(x - 0.3 + c * 0.3 + rnd() * 0.1, z + 0.5 + rnd() * 0.2, 0.7, Math.PI + (rnd() - 0.5)));
+      kk++;
+    }
+    movers(beach.kiosk([0.85, 0.2, 0.16]), kiosks[0], false, true);
+    movers(beach.kiosk([0.15, 0.4, 0.75]), kiosks[1], false, true);
+    const UMB = [[0.85, 0.2, 0.16], [0.96, 0.8, 0.2], [0.15, 0.45, 0.8], [0.95, 0.95, 0.93]], umb = UMB.map(() => []), towels = [], boards2 = [[], []];
+    for (let k = 0; k < 110; k++) {
+      const x = -21 + rnd() * 42, z = BEACH.z - 0.7 + rnd() * 2.3;
+      if (Math.abs(x) < 2.4 && z < BEACH.z + 1.2) continue;
+      const r = rnd();
+      if (r < 0.5) { umb[k % 4].push(still(x, z, 1.5, rnd() * 6.28)); if (rnd() < 0.7) crowd[k % 4].push(still(x + 0.25, z + 0.15, 0.7, rnd() * 6.28)); }
+      else if (r < 0.75) towels.push(still(x, z, 1.4, rnd() * 6.28, [[0.9, 0.3, 0.3], [0.3, 0.6, 0.9], [0.98, 0.85, 0.3], [0.4, 0.8, 0.6]][k % 4]));
+      else if (r < 0.85) boards2[k % 2].push(still(x, z, 1.5, rnd() * 6.28));
+      else crowd[k % 4].push(still(x, z, 0.7, rnd() * 6.28));
+    }
+    UMB.forEach((c, k) => movers(beach.umbrella(c), umb[k], false, true));
+    movers(beach.towel(), towels, false);
+    movers(beach.board([0.95, 0.75, 0.2]), boards2[0], false, true);
+    movers(beach.board([0.2, 0.7, 0.8]), boards2[1], false, true);
+    // caminhando na beira e crianças correndo na areia
+    for (let k = 0; k < 22; k++) crowd[k % 4].push(walker(-19 + rnd() * 30, BEACH.z + 1.5 + rnd() * 0.5, 0.7, rnd() < 0.5 ? 0 : Math.PI, 5 + rnd() * 5, 0.25 + rnd() * 0.2));
+    for (let k = 0; k < 12; k++) crowd[k % 4].push(walker(-18 + rnd() * 36, BEACH.z + rnd() * 1.2, 0.45, rnd() * 6.28, 0.8 + rnd(), 0.5 + rnd() * 0.3));
+    GUYS.forEach(([shirt, shorts], k) => movers(guyGeo(shirt, shorts, k % 2 ? [0.45, 0.32, 0.18] : [0.12, 0.09, 0.07]), crowd[k], false));
+    // a estátua dourada do Felipe Passaro, no meio da praia, de frente para a cidade... e para quem chega pelo mar
+    const SX0 = 0, SZ0 = BEACH.z - 0.2;
+    movers(beach.pedestal(), [still(SX0, SZ0, 1)], false, true);
+    const gold = new THREE.Mesh(beach.statue(), new THREE.MeshStandardMaterial({ color: 0xffc83a, metalness: 0.45, roughness: 0.32, envMapIntensity: 3, emissive: 0x7a5200, emissiveIntensity: 0.55 }));
+    gold.position.set(SX0, TOP + 1.08, SZ0);
+    gold.scale.setScalar(0.92);
+    gold.castShadow = true;
+    scene.add(gold);
+    board("FELIPE PASSARO", SX0, TOP + 0.74, SZ0 + 0.585, 1.02);
+    board("CRIADOR DESTE MUNDO", SX0, TOP + 0.46, SZ0 + 0.585, 0.86);
+  }
+  // placas: cada palavra numa célula de uma textura; cada placa é um retângulo que mostra a sua célula
+  if (boardItems.length) {
+    const words = [...new Set(boardItems.map((b) => b.word))], BC = 4, BR = Math.ceil(words.length / BC), CWD = 256, CHT = 64;
+    const BG = { "FELIPE PASSARO": "#2a2110", "CRIADOR DESTE MUNDO": "#2a2110", "CERVEJA GELADA": "#c98a12", BAR: "#7a2318", POSTO: "#0d6b3c", "GASOLINA · ETANOL": "#0d6b3c", ESCOLA: "#1f4fa3", "FARMÁCIA": "#0e7a48", "PRONTO-SOCORRO": "#b3261e", AEROPORTO: "#1c2f4d", SUPERMERCADO: "#c2371f", "PEDÁGIO": "#c2671a" };
+    const cv = document.createElement("canvas");
+    cv.width = BC * CWD; cv.height = BR * CHT;
+    const g = cv.getContext("2d");
+    g.textAlign = "center"; g.textBaseline = "middle";
+    words.forEach((w, c) => {
+      const x = (c % BC) * CWD, y = Math.floor(c / BC) * CHT;
+      g.fillStyle = BG[w] || "#17335f"; g.fillRect(x, y, CWD, CHT);
+      g.strokeStyle = "rgba(255,255,255,.85)"; g.lineWidth = 3; g.strokeRect(x + 4, y + 4, CWD - 8, CHT - 8);
+      g.fillStyle = w.startsWith("FELIPE") || w.startsWith("CRIADOR") ? "#f3cf6b" : "#fff";
+      g.font = '800 34px "Inter", "Helvetica Neue", Arial, sans-serif';
+      const k = Math.min(1, (CWD - 30) / Math.max(1, g.measureText(w).width));
+      g.font = `800 ${Math.round(34 * k)}px "Inter", "Helvetica Neue", Arial, sans-serif`;
+      g.fillText(w, x + CWD / 2, y + CHT / 2 + 2);
+    });
+    const tex = new THREE.CanvasTexture(cv);
+    tex.colorSpace = THREE.SRGBColorSpace;
+    tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+    const geo = new THREE.PlaneGeometry(1, 0.25), off = new Float32Array(boardItems.length * 2);
+    geo.setAttribute("aOff", new THREE.InstancedBufferAttribute(off, 2));
+    const mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.6, side: THREE.DoubleSide });
+    mat.onBeforeCompile = (sh) => { sh.vertexShader = sh.vertexShader.replace("#include <common>", "#include <common>\nattribute vec2 aOff;").replace("#include <uv_vertex>", `#include <uv_vertex>\nvMapUv = uv * vec2(${(1 / BC).toFixed(5)}, ${(1 / BR).toFixed(5)}) + aOff;`); };
+    const mesh = new THREE.InstancedMesh(geo, mat, boardItems.length), m4 = new THREE.Matrix4();
+    boardItems.forEach((b, k) => {
+      const c = words.indexOf(b.word);
+      m4.compose(pos3.set(b.x, b.y, b.z), quat.identity(), scl.set(b.w, b.w, 1));
+      mesh.setMatrixAt(k, m4);
+      off.set([(c % BC) / BC, 1 - (Math.floor(c / BC) + 1) / BR], k * 2);
+    });
+    mesh.frustumCulled = false;
+    scene.add(mesh);
   }
 
   // marca de cada dono vista de longe: um ponto da cor do tipo (as praças viram gente; quem paira, um balão de luz)
@@ -924,7 +1065,7 @@ export function createMap(canvas, world, opts = {}) {
     flyToBox(x0, x1, z0, z1, opts);
   }
   function flyToPlate(j, opts = {}) { const p = plates[j]; flyToBox(p.x0, p.x1, p.z0 - 2.5, p.z1, { pad: 1.06, ...opts }); }
-  function fitAll(dur = 1100) { flyToBox(-MW / 2 - 2, MW / 2 + 2, -MH / 2 - 4, MH / 2 + 1, { pad: 1.03, dur }); }
+  function fitAll(dur = 1100) { flyToBox(-MW / 2 - 2, MW / 2 + 2, -MH / 2 - 4, MH / 2 + 6, { pad: 1.03, dur }); }
   function pan(dxPx, dyPx) {
     // move o mapa junto com o dedo: o ponto sob o cursor acompanha o cursor
     const a = groundAt(view.W / 2, view.H / 2), b = groundAt(view.W / 2 + dxPx, view.H / 2 + dyPx);
@@ -950,7 +1091,7 @@ export function createMap(canvas, world, opts = {}) {
   }
   function limit() {
     // a câmera pode passear por toda a ilha e um pouco de mar
-    const lx = MW / 2 + 8, lz = MH / 2 + 8;
+    const lx = MW / 2 + 8, lz = MH / 2 + 11;
     cam.x = clamp(cam.x, -lx, lx); cam.z = clamp(cam.z, -lz, lz);
     cam.tx = clamp(cam.tx, -lx, lx); cam.tz = clamp(cam.tz, -lz, lz);
   }
