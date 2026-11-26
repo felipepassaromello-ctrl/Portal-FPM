@@ -496,3 +496,6 @@ body.mundo { margin: 0; height: 100vh; height: 100dvh; overflow: hidden; overscr
 .m-plate b::before { box-shadow: none; border-radius: 2px; }
 @media (hover: hover) and (pointer: fine) { .m-plate:hover b { color: #000; } }
 .m-vignette { background: radial-gradient(130% 100% at 50% 45%, transparent 68%, rgba(20, 28, 44, .16) 100%); }
+
+/* rótulos e nomes de bairro não interceptam o ponteiro: arrastar por cima deles move o mapa (o toque é conferido no código) */
+.m-lab-tx, .m-plate, .m-plate.on { pointer-events: none; }

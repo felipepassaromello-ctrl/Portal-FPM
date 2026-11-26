@@ -21,7 +21,6 @@ import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
-import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
 import { sectorProps, rotorGeo, towerGeo, treeGeo, personGeo, carGeo, boatGeo } from "./props.js";
@@ -62,7 +61,7 @@ export function createMap(canvas, world, opts = {}) {
 
   // ------------------------------------------------------------------ renderizador, luz do dia e sombras
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
-  let DPR = Math.min(devicePixelRatio || 1, small ? 2 : 1.75);
+  let DPR = Math.min(devicePixelRatio || 1, small ? 1.75 : 1.5);
   renderer.setPixelRatio(DPR);
   renderer.toneMapping = THREE.NeutralToneMapping;
   renderer.toneMappingExposure = 1.0;
@@ -90,15 +89,13 @@ export function createMap(canvas, world, opts = {}) {
   scene.add(sun, sun.target);
   scene.add(new THREE.HemisphereLight(0xd6e4f7, 0x9a9a84, 0.66));
 
-  // pós-processamento: só um brilho leve nos cabos de ligação. Se o aparelho não der conta, desenha direto.
-  let composer = null, bloom = null, tilt = null;
+  // pós-processamento: foco seletivo e saída de cor. Se o aparelho não der conta, desenha direto.
+  let composer = null, tilt = null;
   try {
-    const rt = new THREE.WebGLRenderTarget(4, 4, { type: THREE.HalfFloatType, samples: small ? 2 : 4 });
+    const rt = new THREE.WebGLRenderTarget(4, 4, { type: THREE.HalfFloatType, samples: 2 });
     composer = new EffectComposer(renderer, rt);
     composer.setPixelRatio(DPR);
     composer.addPass(new RenderPass(scene, camera));
-    bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.06, 0.4, 1.1);
-    composer.addPass(bloom);
     // foco seletivo (efeito de maquete): o meio da tela nítido, o alto e o pé levemente desfocados, só de perto
     tilt = new ShaderPass({
       uniforms: { tDiffuse: { value: null }, uAmt: { value: 0 }, uRes: { value: new THREE.Vector2(1, 1) } },
@@ -952,8 +949,10 @@ export function createMap(canvas, world, opts = {}) {
     cam.td = nd;
   }
   function limit() {
-    cam.x = clamp(cam.x, -MW * 0.62, MW * 0.62); cam.z = clamp(cam.z, -MH * 0.72, MH * 0.78);
-    cam.tx = clamp(cam.tx, -MW * 0.62, MW * 0.62); cam.tz = clamp(cam.tz, -MH * 0.72, MH * 0.78);
+    // a câmera pode passear por toda a ilha e um pouco de mar
+    const lx = MW / 2 + 8, lz = MH / 2 + 8;
+    cam.x = clamp(cam.x, -lx, lx); cam.z = clamp(cam.z, -lz, lz);
+    cam.tx = clamp(cam.tx, -lx, lx); cam.tz = clamp(cam.tz, -lz, lz);
   }
   function touch() { cam.idleAt = performance.now(); }
 
@@ -974,19 +973,27 @@ export function createMap(canvas, world, opts = {}) {
   }
   // pixels por unidade do mapa no centro da tela (escala da vista)
   function pxPerUnit() { const a = projectPoint(cam.x, TOP, cam.z), b = projectPoint(cam.x + 1, TOP, cam.z); return Math.hypot(b.x - a.x, b.y - a.y); }
-  const _hits = [];
-  function pick(px, py, visible) {
+    function pick(px, py, visible) {
     ndc.set((px / view.W) * 2 - 1, -(py / view.H) * 2 + 1);
     ray.setFromCamera(ndc, camera);
     let best = -1, bestD = Infinity;
-    for (const mesh of meshes) {
-      _hits.length = 0;
-      mesh.raycast(ray, _hits);
-      for (const h of _hits) {
-        const i = mesh.userData.idx[h.instanceId];
-        if (i == null || (visible && !visible[i])) continue;
-        if (h.distance < bestD) { bestD = h.distance; best = i; }
+    const o3 = ray.ray.origin, d3 = ray.ray.direction;
+    for (let i = 0; i < N; i++) {
+      if (visible && !visible[i]) continue;
+      // caixa da peça: o prédio inteiro; para os donos, uma caixa um pouco maior que a figura (fácil de acertar)
+      const hx = isGround[i] ? SX[i] / 2 : R[i] * 0.85, hz = isGround[i] ? SZ[i] / 2 : R[i] * 0.85, y0 = Y[i], y1 = Y[i] + Hh[i] * (isGround[i] ? 1 : 1.25);
+      let t0 = 0, t1 = bestD;
+      const ax = [[o3.x, d3.x, X[i] - hx, X[i] + hx], [o3.y, d3.y, y0, y1], [o3.z, d3.z, Z[i] - hz, Z[i] + hz]];
+      let hit = true;
+      for (const [o, d, lo, hi] of ax) {
+        if (Math.abs(d) < 1e-9) { if (o < lo || o > hi) { hit = false; break; } continue; }
+        let a = (lo - o) / d, b = (hi - o) / d;
+        if (a > b) { const t = a; a = b; b = t; }
+        if (a > t0) t0 = a;
+        if (b < t1) t1 = b;
+        if (t0 > t1) { hit = false; break; }
       }
+      if (hit) { bestD = t0; best = i; }
     }
     if (best >= 0) return best;
     // na tela, com raio de toque generoso, preferindo companhias e quem paira
@@ -1065,27 +1072,25 @@ export function createMap(canvas, world, opts = {}) {
     flowGrow = Math.min(1, flowGrow + real * 1.25);
     flowU.uGrow.value = easeInOut(flowGrow);
   }
-  // regulador: se o aparelho não segura uns 24 quadros por segundo, primeiro baixa a resolução, depois tira o bloom
+  // regulador: se o aparelho não segura uns 26 quadros por segundo, baixa a resolução, depois tira o pós-processamento e por fim vai à resolução mínima
   const perf = { n: 0, acc: 0, last: 0, skip: 45, level: 0 };
   function govern(now) {
     const d = now - perf.last;
     perf.last = now;
-    if (fixedQuality || perf.level >= 2 || d > 250 || d <= 0) return;
+    if (fixedQuality || perf.level >= 3 || d > 250 || d <= 0) return;
     if (perf.skip > 0) { perf.skip--; return; }
     perf.acc += d;
-    if (++perf.n < 50) return;
+    if (++perf.n < 40) return;
     const avg = perf.acc / perf.n;
     perf.n = perf.acc = 0;
-    if (avg <= 42) return;
+    if (avg <= 38) return;
     perf.level++;
     perf.skip = 20;
-    if (perf.level === 1 && DPR > 1.3) {
-      DPR = 1.25;
-      renderer.setPixelRatio(DPR);
-      if (composer) composer.setPixelRatio(DPR);
-      flowU.uMinPx.value = DPR;
-      resize(view.W, view.H);
-    } else { perf.level = 2; if (composer) { composer.dispose(); composer = null; } }
+    if (perf.level === 1 && DPR <= 1.3) perf.level = 2;
+    const setDpr = (v) => { DPR = v; renderer.setPixelRatio(DPR); if (composer) composer.setPixelRatio(DPR); flowU.uMinPx.value = DPR; resize(view.W, view.H); };
+    if (perf.level === 1) setDpr(1.25);
+    else if (perf.level === 2) { if (composer) { composer.dispose(); composer = null; } }
+    else if (DPR > 1) setDpr(1);
   }
   function render() {
     govern(performance.now());
@@ -1096,7 +1101,7 @@ export function createMap(canvas, world, opts = {}) {
   function resize(w, h) {
     view.W = Math.max(1, w); view.H = Math.max(1, h);
     renderer.setSize(view.W, view.H, false);
-    if (composer) { composer.setSize(view.W, view.H); bloom.resolution.set(view.W * 0.5, view.H * 0.5); tilt.uniforms.uRes.value.set(view.W * DPR, view.H * DPR); }
+    if (composer) { composer.setSize(view.W, view.H); tilt.uniforms.uRes.value.set(view.W * DPR, view.H * DPR); }
     camera.aspect = view.W / view.H;
     camera.updateProjectionMatrix();
     applyOffset(view.offX, view.offY);
