@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T06:55:40.045063-03:00",
+ "generated_at": "2026-11-26T07:50:41.852413-03:00",
  "date": "2026-11-25",
  "window": {
   "start": "2026-11-24T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-25T08:19:01.877896-03:00",
-  "analyzed": 145
+  "analyzed": 143
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -132,14 +132,14 @@
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.3914,
-   "change_pct": -1.1250434002734289,
+   "price": 6.3917,
+   "change_pct": -1.1204024003391488,
    "spark": [
     6.501951217651367,
     6.523157119750977,
     6.4599480628967285,
     6.4641242027282715,
-    6.39139986038208
+    6.39169979095459
    ]
   },
   {
@@ -188,42 +188,42 @@
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 90.02,
-   "change_pct": -4.85149622739709,
+   "price": 90.5,
+   "change_pct": -4.344150284152814,
    "spark": [
     92.56999969482422,
     89.37000274658203,
     91.4000015258789,
     94.61000061035156,
-    90.0199966430664
+    90.5
    ]
   },
   {
    "symbol": "GC=F",
    "name": "Ouro",
    "unit": "US$",
-   "price": 3603.3,
-   "change_pct": 1.9090432218939135,
+   "price": 3583.9,
+   "change_pct": 1.3603696619614247,
    "spark": [
     3515.39990234375,
     3651.39990234375,
     3561.89990234375,
     3535.800048828125,
-    3603.300048828125
+    3583.89990234375
    ]
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 60857.15,
-   "change_pct": 0.7932511857711599,
+   "price": 60444.36,
+   "change_pct": 0.10957726813001223,
    "spark": [
     61161.91015625,
     61210.984375,
     59747.765625,
     60378.19921875,
-    60857.1484375
+    60444.359375
    ]
   }
  ],
@@ -581,6 +581,45 @@
     "Petrobras",
     "capex",
     "plano"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "5e7bd2b171c0",
+   "title": "Petrobras Lifts Spending to $122 Billion After War Windfall",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT1VuclM1UmdNREt6Q2RINHlKLTNjcXJmWGdOLVQtMUpYemNXYld3eUV6TnkzcF83Zzk2a000TlhJNDdZVnlfZTRpVGlKNXpkQnotUS1oNnJqTDgxTUd3b0ZmV1Q1YmJtek83U1hQUWk3RXdqQ2ltVlczWEUxU0JfX2NxelRBeGlLMXR5Ymx0c2pmOFFNcHlCZ2F1Rk1yMFBab250VXR6TGc1Z2F5MG9N?oc=5",
+   "published": "2026-11-24T12:51:54+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT1VuclM1UmdNREt6Q2RINHlKLTNjcXJmWGdOLVQtMUpYemNXYld3eUV6TnkzcF83Zzk2a000TlhJNDdZVnlfZTRpVGlKNXpkQnotUS1oNnJqTDgxTUd3b0ZmV1Q1YmJtek83U1hQUWk3RXdqQ2ltVlczWEUxU0JfX2NxelRBeGlLMXR5Ymx0c2pmOFFNcHlCZ2F1Rk1yMFBab250VXR6TGc1Z2F5MG9N?oc=5",
+     "title": "Petrobras Lifts Spending to $122 Billion After War Windfall"
+    }
+   ],
+   "ids": [
+    "5e7bd2b171c0"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Petrobras eleva investimentos para US$ 122 bilhões após ganho com a guerra",
+   "category": "empresas",
+   "importance": 8,
+   "importance_reason": "Maior empresa listada muda o plano de investimentos e a política de caixa.",
+   "summary": "A Petrobras elevou seu plano de investimentos para US$ 122 bilhões, após ganho extraordinário associado à guerra, segundo o título da Bloomberg. Detalhes adicionais não constam do material.",
+   "involves": "Petrobras, plano de negócios",
+   "interpretation": "Aumento de capex sinaliza uso do caixa extra em expansão, além de proventos.",
+   "impact": "Positivo para fornecedores de óleo e gás e para o setor de serviços; atenção ao efeito fiscal e a dividendos.",
+   "sentiment": "positivo",
+   "entities": [
+    "Petrobras"
+   ],
+   "tags": [
+    "Petrobras",
+    "capex",
+    "petróleo"
    ],
    "is_deal": false,
    "deal": null,
@@ -2678,44 +2717,6 @@
    "ai": true
   },
   {
-   "id": "247a4b1b1a89",
-   "title": "Arrecadação federal de tributos é a maior da história para outubro",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTThWX0M3Y2NUMjl1LTZheWpkYmI1T2VQYkE4TzNTSHVVeUh4V3ljWVRUeEFFVGttQm5sQUFVTEQtS3J3ZGdmdE05emp0NFlmNlZIOFpJQkl5Z055b09Bb2tidUdsY1dDaTRNWm9MSW9lNkZSUngtNXZhdGwtR2pILUd3THVUY2djNGtueXR1b1poYUkwWVZkaERDeHZmMEVHa1N4Mi1WczRFNHRjUHhEcXFENkgzRW4wcHVnWnpwNNIBzgFBVV95cUxQNXBNcU4wbWVoa0hnSUpBdmRiSEtnQjA3RmFFcnBZdUJ4dXB4eGdRaExYaUI3d1dteDBJUVdUNmFRN2VNX011M0lSU3o0dEVGcjIzUXlEbVVSanpxS0hHd2F3dUlsc2ZXSFBwWThtVlY1RFVDWnp3dXRYbE0xMEVEY2RMZ2xaX2lLRXhTS3ZLSkF4dVVldWRub2JMRXNwbENLRks1b2I0WndkLWtob3BidUUwMmFrNHFLRUZPaHZBZWhJT2NTcnpsSEtlMUlwUQ?oc=5",
-   "published": "2026-11-24T14:06:56+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTThWX0M3Y2NUMjl1LTZheWpkYmI1T2VQYkE4TzNTSHVVeUh4V3ljWVRUeEFFVGttQm5sQUFVTEQtS3J3ZGdmdE05emp0NFlmNlZIOFpJQkl5Z055b09Bb2tidUdsY1dDaTRNWm9MSW9lNkZSUngtNXZhdGwtR2pILUd3THVUY2djNGtueXR1b1poYUkwWVZkaERDeHZmMEVHa1N4Mi1WczRFNHRjUHhEcXFENkgzRW4wcHVnWnpwNNIBzgFBVV95cUxQNXBNcU4wbWVoa0hnSUpBdmRiSEtnQjA3RmFFcnBZdUJ4dXB4eGdRaExYaUI3d1dteDBJUVdUNmFRN2VNX011M0lSU3o0dEVGcjIzUXlEbVVSanpxS0hHd2F3dUlsc2ZXSFBwWThtVlY1RFVDWnp3dXRYbE0xMEVEY2RMZ2xaX2lLRXhTS3ZLSkF4dVVldWRub2JMRXNwbENLRks1b2I0WndkLWtob3BidUUwMmFrNHFLRUZPaHZBZWhJT2NTcnpsSEtlMUlwUQ?oc=5",
-     "title": "Arrecadação federal de tributos é a maior da história para outubro"
-    }
-   ],
-   "ids": [
-    "247a4b1b1a89"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Arrecadação federal é a maior da história para outubro",
-   "category": "macro",
-   "importance": 6,
-   "importance_reason": "Dado fiscal relevante.",
-   "summary": "A arrecadação federal de tributos foi a maior da história para o mês de outubro, segundo o Valor.",
-   "involves": "Receita Federal",
-   "interpretation": "Ajuda a meta fiscal.",
-   "impact": "Positivo para o fiscal.",
-   "sentiment": "positivo",
-   "entities": [
-    "Receita Federal"
-   ],
-   "tags": [
-    "arrecadação",
-    "fiscal"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "69e285e5d345",
    "title": "Efeito Jensen Huang: retorno à Nvidia impulsiona bolsas, mas riscos para setor de IA persistem",
    "link": "https://g1.globo.com/economia/noticia/2026/11/24/volta-de-huang-a-nvidia-reanima-bolsas-e-acoes-de-tecnologia.ghtml",
@@ -4046,44 +4047,6 @@
    "ai": true
   },
   {
-   "id": "4f7a98d30430",
-   "title": "Bitcoin volta aos US$ 60 mil; ETFs têm recorde de saídas",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPXzFkM0xTMngxbUxTMlhYRXN4bnVuM1lyaWVuc2FPWEYtMXBKU0Y5SFhWYThwRDl2b05SaU12aWJfdElfT1ZiSXM1ZUVBbm5uR1NoN2lSSWxDNk5naHV0N1lXVFkyazVDZDE3S1h3QjJoY2hCYXM1ZXk2OTRBN2ZVdzhjamJkVXdYZFJabTFnWWs1ZFc1cm5hV1hMOGllN3ppdTNlVURpVEZLcGFNT2RaU2lxam8zbEVCX0hFbnlfV19jTknSAdIBQVVfeXFMT2NDZ1J0aktVa0tJOWFNRDFVbnBmQ2ttakNrcTVuUjRTWWc1WGFuUnZtTk9IaHZVMk5xWEt0LXltQTJVSDVUNEtBRHBKaW1DbnZrUW1iS2p5RW1Edm43UVZHaEEwNjJZTUFVa3hKMGZqNmR3U2ZWcUFfSGY2clQ2YkJCYklIUjQ1T1JPUjZUSHY3Tkt3aURXM3g0NmtzT2RNSGdnVjV3YjZVbVBjTDl0R3g4SDRIcDRRc1l6Tnp4Tk0xYXJzM1VCUF9hZGFpeV9pMTVn?oc=5",
-   "published": "2026-11-24T13:53:32+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPXzFkM0xTMngxbUxTMlhYRXN4bnVuM1lyaWVuc2FPWEYtMXBKU0Y5SFhWYThwRDl2b05SaU12aWJfdElfT1ZiSXM1ZUVBbm5uR1NoN2lSSWxDNk5naHV0N1lXVFkyazVDZDE3S1h3QjJoY2hCYXM1ZXk2OTRBN2ZVdzhjamJkVXdYZFJabTFnWWs1ZFc1cm5hV1hMOGllN3ppdTNlVURpVEZLcGFNT2RaU2lxam8zbEVCX0hFbnlfV19jTknSAdIBQVVfeXFMT2NDZ1J0aktVa0tJOWFNRDFVbnBmQ2ttakNrcTVuUjRTWWc1WGFuUnZtTk9IaHZVMk5xWEt0LXltQTJVSDVUNEtBRHBKaW1DbnZrUW1iS2p5RW1Edm43UVZHaEEwNjJZTUFVa3hKMGZqNmR3U2ZWcUFfSGY2clQ2YkJCYklIUjQ1T1JPUjZUSHY3Tkt3aURXM3g0NmtzT2RNSGdnVjV3YjZVbVBjTDl0R3g4SDRIcDRRc1l6Tnp4Tk0xYXJzM1VCUF9hZGFpeV9pMTVn?oc=5",
-     "title": "Bitcoin volta aos US$ 60 mil; ETFs têm recorde de saídas"
-    }
-   ],
-   "ids": [
-    "4f7a98d30430"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Bitcoin volta a US$ 60 mil; ETFs têm recorde de saídas",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Cripto em queda forte.",
-   "summary": "O bitcoin voltou a US$ 60 mil e ETFs registraram recorde de saídas.",
-   "involves": "Bitcoin; ETFs",
-   "interpretation": "Aversão a risco.",
-   "impact": "Pressão em ativos de risco.",
-   "sentiment": "negativo",
-   "entities": [
-    "Bitcoin"
-   ],
-   "tags": [
-    "bitcoin",
-    "ETFs"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "86c0c510fca0",
    "title": "Nenhum deputado do PSOL votou a favor do ajuste fiscal na Câmara; 2 parlamentares do PT criticaram projeto e se abstiveram",
    "link": "https://g1.globo.com/politica/noticia/2026/11/24/esquerda-votos-ajuste-fiscal-camara.ghtml",
@@ -4257,51 +4220,6 @@
    "ai": true
   },
   {
-   "id": "cdec35ee0f7a",
-   "title": "Petrobras compra fatia de empresa de etanol de milho por R$ 2,8 bilhões",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWHhqbWE0azZYd0thTGExWmxsd0NBUUdUY3JDRmVBLUVDd0lodEs4Unl2M0hSNG1YclBIUXZjUy1lQU93QnBsQmFhNlFhWElmMDJQTXREWHgyOFVjN19JanFfTHFmT1ZvWTZkMDVxMnJKdHR6YnQ2Z1VHSURoX0hJRW0wWEJFR0F0TEQzbFZjLTdTSG51VEdoMkRhX1EwMEtlYUdRSThR?oc=5",
-   "published": "2026-11-24T14:37:57+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Metrópoles",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWHhqbWE0azZYd0thTGExWmxsd0NBUUdUY3JDRmVBLUVDd0lodEs4Unl2M0hSNG1YclBIUXZjUy1lQU93QnBsQmFhNlFhWElmMDJQTXREWHgyOFVjN19JanFfTHFmT1ZvWTZkMDVxMnJKdHR6YnQ2Z1VHSURoX0hJRW0wWEJFR0F0TEQzbFZjLTdTSG51VEdoMkRhX1EwMEtlYUdRSThR?oc=5",
-     "title": "Petrobras compra fatia de empresa de etanol de milho por R$ 2,8 bilhões"
-    },
-    {
-     "source": "J3News",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS3pUX096bVVhVFNBZzZvUWIxMGZ6dWtDNERRdFBZcS12dnJ2ZGhSbFJ0SUNjVVduZl83QXZVQTNCRVVUTEVWQjY2YmNERW5fanJVWGJndGlBOGdvMC05RHFYWHdRdHM2eGV6UHdVUUZnakpGNXNFYm93NnBFOURva1hMYWV2bFlDNHBBMlVnMV9wTThf?oc=5",
-     "title": "Petrobras compra 42% de empresa produtora de etanol de milho"
-    },
-    {
-     "source": "Bloomberg Línea",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeGVRc3JBUGI5bTZoVGJ6ZzRFSmlZd29kN3pxSjEwY0Z2eGFNcUFVcjFNcG9MNXVtN3A3SDU5blFSaEwwek5Yb3RHdzBneGg2eTdSUFlBUS1IV2RhdXQzMDhLT1JPSVVfMEliendwNUdpUUx0MjZOS1pWRk10YUc0QmxUd3B0cW16OWZERnZqS1hURlZfTmZzSnIzbEd3RUNCZ1U5TkV0dmFrRkNOaFR1NXRSM0EySXhoOTNidE5EOGjSAdQBQVVfeXFMTWtTTTllRmdjcHZ4Z0F1alBrcXl0UmQ4MFNZZHYzeTd2VDVmdGlqdkxOYTB2MnlRVnBTTmZtM2w1UzhsNWxxRXE2Nk1OSTFnYW5LRXRzUy1xaGtleEhsSmNmeWVhRTZhQ0MxSXkxeVFHYmY3TjByMno0cEpmNDRrODFZNjhfaTdQSTlPSzI1M0VUQ043NFVNUnFYckt2aEgtdmpnVFluMW1tOFZFekQtRGtkdlM5TUVOTXdRTFEwVjJUZW1tNnJNWEltdXJfRUI4aVVUcWY?oc=5",
-     "title": "Petrobras compra 42% da Neomille por R$ 2,8 bilhões em expansão em etanol de milho"
-    }
-   ],
-   "ids": [
-    "cdec35ee0f7a",
-    "504f892c6c27",
-    "15d2bd168dd1"
-   ],
-   "snippet": "",
-   "prescore": 6.4,
-   "headline": "Petrobras compra fatia de empresa de etanol de milho por R$ 2,8 bilhões",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "a91e5af8ff38",
    "title": "Petrobras adquire participação em empresa que produz etanol",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORjhiOEVfaXhCVHg4NXJLUjNtLV9iaTRLQjh6SG81cm1rNC1oSTN2NU5HLWRTazFuLWJCNG4tamZDWFNZRkprWXFMMG8zMmVRSWQzVGNvUDZtSXJkS01ULXJsOVRGRmFIZWpsdUQ4R3hsX2xJblg2a3p5WkQ1WEMyQkdPVGFuclAzeGtMMW0waVR3UENXRUJTMENtS1R0cFVSeUllQXVVcU9raDF5a1NCQkJuYkxFNVZr?oc=5",
@@ -4320,39 +4238,6 @@
    "snippet": "",
    "prescore": 6.4,
    "headline": "Petrobras adquire participação em empresa que produz etanol",
-   "category": "mna",
-   "importance": 4,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "dd60ec067871",
-   "title": "Petrobras retorna ao setor de etanol com aquisição de fatia na Neomille",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM0IwVTZ6SzlSV3lSUGh2Y3c0X0VudUxhM0x0ZjlTUHdneW9mb3dDLV9lN0V4aTFPdkwyRDFIdG9tUGNtNDhRX1pqdVNwWl9aZTVSRW53cWlveWluZU9NZ3JaMmw4WUctTWlsN241NXB3ZXJhZUFHNjRoeWQ3UXFRNUNhdmV4ZldjVE9hQnMtRDY0UFRNYUtmemViVk8xZzBnZW5TNlMwWUtzNHZsYm9iYjJWZUJqaWtqV0R4Q0UxX3FObGhYUHNBSEpVYw?oc=5",
-   "published": "2026-11-24T11:59:23+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "BiodieselBR",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM0IwVTZ6SzlSV3lSUGh2Y3c0X0VudUxhM0x0ZjlTUHdneW9mb3dDLV9lN0V4aTFPdkwyRDFIdG9tUGNtNDhRX1pqdVNwWl9aZTVSRW53cWlveWluZU9NZ3JaMmw4WUctTWlsN241NXB3ZXJhZUFHNjRoeWQ3UXFRNUNhdmV4ZldjVE9hQnMtRDY0UFRNYUtmemViVk8xZzBnZW5TNlMwWUtzNHZsYm9iYjJWZUJqaWtqV0R4Q0UxX3FObGhYUHNBSEpVYw?oc=5",
-     "title": "Petrobras retorna ao setor de etanol com aquisição de fatia na Neomille"
-    }
-   ],
-   "ids": [
-    "dd60ec067871"
-   ],
-   "snippet": "",
-   "prescore": 6.4,
-   "headline": "Petrobras retorna ao setor de etanol com aquisição de fatia na Neomille",
    "category": "mna",
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -5483,25 +5368,31 @@
    "ai": true
   },
   {
-   "id": "0d3c4a9ba280",
-   "title": "China e Índia devem atingir recorde de importações de petróleo da Rússia em 2026",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVzUzUzkxRHB3ckE5dW8xUWM0MjhJek4ybDk0YlkyOXdQOGItVXpZekhyeVNnTk9XNThSUm1ZREhKNjdWMDNZbEpkbVJZdWlUQm45WmlaUjM5Uk1WWUFiSzBfTnV0eDV5dHBCMFlOUFN1cGIxR04tMlRrQXZnc2UtZE16TzkzaEVzRzNDZDNPai1wYkgwU3VVbVFhd1I3S1JWNlpSU3NBcU9Odmh3ZWpIMkhpM01hNW1TVkZyWjREQ0NLX2VoYUJaOXJn0gHYAUFVX3lxTFBuRGdnNDBPQUJ1RmluXzdWZ1R3QWpweC1OVjFiZjVHM3gyUDY0dGROeHhyRVVQMmJwRmlBSkI3d2ZETi1EWmZ4bldUQm5SSEVTQTBiQXpqdEo0NWh1NzBhdHVpMmZaY1lmUUN1TzIydnR4a3FkQlpUbVkyY0lrQl8wU0xwOTBFNUxnU185dTNGWWlGSFZuZWc1R1h3Ym9LTXBLZF8tbldsckNfRUh2NXNCVExVTHhoZU1nOW9Ba0syZjF5SzloLU5RTmdJMm1yNVNZZGJmb2h4Zw?oc=5",
-   "published": "2026-11-24T13:57:26+00:00",
+   "id": "cdec35ee0f7a",
+   "title": "Petrobras compra fatia de empresa de etanol de milho por R$ 2,8 bilhões",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWHhqbWE0azZYd0thTGExWmxsd0NBUUdUY3JDRmVBLUVDd0lodEs4Unl2M0hSNG1YclBIUXZjUy1lQU93QnBsQmFhNlFhWElmMDJQTXREWHgyOFVjN19JanFfTHFmT1ZvWTZkMDVxMnJKdHR6YnQ2Z1VHSURoX0hJRW0wWEJFR0F0TEQzbFZjLTdTSG51VEdoMkRhX1EwMEtlYUdRSThR?oc=5",
+   "published": "2026-11-24T14:37:57+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVzUzUzkxRHB3ckE5dW8xUWM0MjhJek4ybDk0YlkyOXdQOGItVXpZekhyeVNnTk9XNThSUm1ZREhKNjdWMDNZbEpkbVJZdWlUQm45WmlaUjM5Uk1WWUFiSzBfTnV0eDV5dHBCMFlOUFN1cGIxR04tMlRrQXZnc2UtZE16TzkzaEVzRzNDZDNPai1wYkgwU3VVbVFhd1I3S1JWNlpSU3NBcU9Odmh3ZWpIMkhpM01hNW1TVkZyWjREQ0NLX2VoYUJaOXJn0gHYAUFVX3lxTFBuRGdnNDBPQUJ1RmluXzdWZ1R3QWpweC1OVjFiZjVHM3gyUDY0dGROeHhyRVVQMmJwRmlBSkI3d2ZETi1EWmZ4bldUQm5SSEVTQTBiQXpqdEo0NWh1NzBhdHVpMmZaY1lmUUN1TzIydnR4a3FkQlpUbVkyY0lrQl8wU0xwOTBFNUxnU185dTNGWWlGSFZuZWc1R1h3Ym9LTXBLZF8tbldsckNfRUh2NXNCVExVTHhoZU1nOW9Ba0syZjF5SzloLU5RTmdJMm1yNVNZZGJmb2h4Zw?oc=5",
-     "title": "China e Índia devem atingir recorde de importações de petróleo da Rússia em 2026"
+     "source": "Metrópoles",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWHhqbWE0azZYd0thTGExWmxsd0NBUUdUY3JDRmVBLUVDd0lodEs4Unl2M0hSNG1YclBIUXZjUy1lQU93QnBsQmFhNlFhWElmMDJQTXREWHgyOFVjN19JanFfTHFmT1ZvWTZkMDVxMnJKdHR6YnQ2Z1VHSURoX0hJRW0wWEJFR0F0TEQzbFZjLTdTSG51VEdoMkRhX1EwMEtlYUdRSThR?oc=5",
+     "title": "Petrobras compra fatia de empresa de etanol de milho por R$ 2,8 bilhões"
+    },
+    {
+     "source": "Bloomberg Línea",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeGVRc3JBUGI5bTZoVGJ6ZzRFSmlZd29kN3pxSjEwY0Z2eGFNcUFVcjFNcG9MNXVtN3A3SDU5blFSaEwwek5Yb3RHdzBneGg2eTdSUFlBUS1IV2RhdXQzMDhLT1JPSVVfMEliendwNUdpUUx0MjZOS1pWRk10YUc0QmxUd3B0cW16OWZERnZqS1hURlZfTmZzSnIzbEd3RUNCZ1U5TkV0dmFrRkNOaFR1NXRSM0EySXhoOTNidE5EOGjSAdQBQVVfeXFMTWtTTTllRmdjcHZ4Z0F1alBrcXl0UmQ4MFNZZHYzeTd2VDVmdGlqdkxOYTB2MnlRVnBTTmZtM2w1UzhsNWxxRXE2Nk1OSTFnYW5LRXRzUy1xaGtleEhsSmNmeWVhRTZhQ0MxSXkxeVFHYmY3TjByMno0cEpmNDRrODFZNjhfaTdQSTlPSzI1M0VUQ043NFVNUnFYckt2aEgtdmpnVFluMW1tOFZFekQtRGtkdlM5TUVOTXdRTFEwVjJUZW1tNnJNWEltdXJfRUI4aVVUcWY?oc=5",
+     "title": "Petrobras compra 42% da Neomille por R$ 2,8 bilhões em expansão em etanol de milho"
     }
    ],
    "ids": [
-    "0d3c4a9ba280"
+    "cdec35ee0f7a",
+    "15d2bd168dd1"
    ],
    "snippet": "",
-   "prescore": 4.8,
-   "headline": "China e Índia devem atingir recorde de importações de petróleo da Rússia em 2026",
-   "category": "mercados",
+   "prescore": 4.9,
+   "headline": "Petrobras compra fatia de empresa de etanol de milho por R$ 2,8 bilhões",
+   "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -6372,6 +6263,72 @@
    "ai": false
   },
   {
+   "id": "420f09cbf8f7",
+   "title": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeUoweG1BdVNrOHdKYjc5dFlfZDBEWFFjUlRsdFFpVW5fa1ZYaTdlWVZEQm42eGRpQzlfb25uanNRRURITWpGLWtJdU1BN1R4REhNdTlQQ3hFSEJ2R2lGQ1AzRTJkUlJfZG4yZGRaMndVN2JPeUt3YlZWZ1FCQm9xSzBnemZqOWxwclQ0UDZ5LUZ6eGVDdjl3MW9TaXJ5S3RXUW9pamJqWE5aRm01LWtVa2cySFFzVnlhMFp3WEpUbHdGNWtoYU0wUkV5WjRWaW8t0gHfAUFVX3lxTE11TEw2XzFjZDJOWmRUTEkwTi1ObGhvSW9lOVNtbGpqSXgyS1ZVX2g2cHNIS2tZbFFsVkpxektsaEFKQUZ4TGxWZGI1ODdKdnZwMndmUEVOa3VvcHc0NVo3R19tR0VlYWdyWjVxblZiNl9rU3ZLZ0dGTk9PWnRmTGF1WTBqWTBIOVBEVjA5UzBJYjJacnN0NlZIZUFJS09yX1lDTE5LV0dVb1FRZW03TGdvWEJMNHhzSmdrRlItQVNvLVhjLWZjTHJOdF9aZVpjdkh3LU9xOTNHNVZfRFY5NG8?oc=5",
+   "published": "2026-11-25T08:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeUoweG1BdVNrOHdKYjc5dFlfZDBEWFFjUlRsdFFpVW5fa1ZYaTdlWVZEQm42eGRpQzlfb25uanNRRURITWpGLWtJdU1BN1R4REhNdTlQQ3hFSEJ2R2lGQ1AzRTJkUlJfZG4yZGRaMndVN2JPeUt3YlZWZ1FCQm9xSzBnemZqOWxwclQ0UDZ5LUZ6eGVDdjl3MW9TaXJ5S3RXUW9pamJqWE5aRm01LWtVa2cySFFzVnlhMFp3WEpUbHdGNWtoYU0wUkV5WjRWaW8t0gHfAUFVX3lxTE11TEw2XzFjZDJOWmRUTEkwTi1ObGhvSW9lOVNtbGpqSXgyS1ZVX2g2cHNIS2tZbFFsVkpxektsaEFKQUZ4TGxWZGI1ODdKdnZwMndmUEVOa3VvcHc0NVo3R19tR0VlYWdyWjVxblZiNl9rU3ZLZ0dGTk9PWnRmTGF1WTBqWTBIOVBEVjA5UzBJYjJacnN0NlZIZUFJS09yX1lDTE5LV0dVb1FRZW03TGdvWEJMNHhzSmdrRlItQVNvLVhjLWZjTHJOdF9aZVpjdkh3LU9xOTNHNVZfRFY5NG8?oc=5",
+     "title": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91"
+    }
+   ],
+   "ids": [
+    "420f09cbf8f7"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7acf02abf41a",
+   "title": "Petróleo sobe com novos ataques no Estreito de Ormuz",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY2tmSnV6OWRIVGxkUHlzUUdNZTBZSmNsVE5NRWdJZ2dQbUUxUU11YnFzbzJNVS03RWtqYTk1RHJ1ZnNJTS1POGpGamJycVpnTjJRVlZublpNWTlEWVlvT1Z0WERRdDd4N1VMc2VtLS1OWmgxc0NiUW9WS3h4dVlLS1NCRV9PUi1iSHhuRGJ0WXk5UXhRcFlMMWNKbmxWZFlwSEJtV0ZxN2FRZ3lJaUlv0gG-AUFVX3lxTFA0eFhGN0hvVzJxbkgxdVFzZGF1Tml3dkhkaXBZQVZDczhKT1Q1UFFUUnR5N01MMENIUG8xdjIzSlZHd0dRdDFKQ280UXJMV0dFbjNYcmt5aF9INVFnSi1CRVRCU3FzazU5cjFwdHJVOFRLN2w5WDFwZVBoeUs3dVRiNHJnejh5djhHY1hCYmxGLWRQVTVNWG1HY1lXMjBGS29aR3BZZVdDSXFtX0Vod3JleXo4RHBseXhtYnNMVVE?oc=5",
+   "published": "2026-11-24T20:31:58+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY2tmSnV6OWRIVGxkUHlzUUdNZTBZSmNsVE5NRWdJZ2dQbUUxUU11YnFzbzJNVS03RWtqYTk1RHJ1ZnNJTS1POGpGamJycVpnTjJRVlZublpNWTlEWVlvT1Z0WERRdDd4N1VMc2VtLS1OWmgxc0NiUW9WS3h4dVlLS1NCRV9PUi1iSHhuRGJ0WXk5UXhRcFlMMWNKbmxWZFlwSEJtV0ZxN2FRZ3lJaUlv0gG-AUFVX3lxTFA0eFhGN0hvVzJxbkgxdVFzZGF1Tml3dkhkaXBZQVZDczhKT1Q1UFFUUnR5N01MMENIUG8xdjIzSlZHd0dRdDFKQ280UXJMV0dFbjNYcmt5aF9INVFnSi1CRVRCU3FzazU5cjFwdHJVOFRLN2w5WDFwZVBoeUs3dVRiNHJnejh5djhHY1hCYmxGLWRQVTVNWG1HY1lXMjBGS29aR3BZZVdDSXFtX0Vod3JleXo4RHBseXhtYnNMVVE?oc=5",
+     "title": "Petróleo sobe com novos ataques no Estreito de Ormuz"
+    }
+   ],
+   "ids": [
+    "7acf02abf41a"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Petróleo sobe com novos ataques no Estreito de Ormuz",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "98090a63073e",
    "title": "China investiga líder do Partido Comunista em Xangai por suspeita de corrupção",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWk9KZjVQUFVfV3ZfbmE1QzlLZzM5NnZiTk9jRS1hSW1TNVk4R25HcDkxbWVfYjdXcDJZT0lmRnVpZ2N2T2FjZHdYMWh1akVzd3BIeWY0VGt0SW5KYUZOc044NnoyQ3BTNEtIaVRXZFpZazQ4NGpxUk5Fd19KVzFnSS1qNkRKZWpjUURyVU1OZFRwLU9aNDlQNEN2dmNVZ3NMTHNaOVFCd2xTT25DZUhtRWFkY2RJT29HWUtrbFJ2T3lVb3NWamtaUjJ30gHYAUFVX3lxTE9tbmdpdDJnWW1CR2FHQS1uaGx6TkpBa25qOFE5QzRENXFGcFNIOXVZcDU1XzhtWG1ZVWNyM09NZFRFblpvdlhNT0NHX3JuTGZKdHJrcm1PeGxmdWw2VVpWMG5BVjhLNF82bFNaRVBJbXZrRThCaHZ1UmpobDFld0Zwd0g4Z1JXWXEwdXBJWDRuN3kyUk90NklQX0pEZjdubVIzVmhwSGZJNk9zTkZfaWFyVjd5Q2FzSk95bVBkRHpWN3JkYWU4TEVkb3ZZeFlZR0VhWnQ2MllteA?oc=5",
@@ -6615,6 +6572,39 @@
    "ai": false
   },
   {
+   "id": "b502650ae0d6",
+   "title": "Petrobras to increase corn processing capacity in Brazil to 3.2 mln tons per year",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYmZXWVA5YTlLWGEtSDRjZmxqSmd3NklIdFdBNjNVRHFkZDA5X2liYlZwRlpMSmdZZXE5UXdTaXI3Ym9KTU5jcHlsbGpfQUJZMS16QlZfWnVUUm5rUU84Z3R3S1VJWldLM0tQcUhfZU43NlVTTEpBcEcwS2RCZkRfMU5uTXBvemF1eXJqOVRCVFJpT1h1OHBmdGxzU2wtQV9TQ19vaElreENZYXlMdl9hUmd4YnUzdWVO?oc=5",
+   "published": "2026-11-25T08:32:38+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "УкрАгроКонсалт",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYmZXWVA5YTlLWGEtSDRjZmxqSmd3NklIdFdBNjNVRHFkZDA5X2liYlZwRlpMSmdZZXE5UXdTaXI3Ym9KTU5jcHlsbGpfQUJZMS16QlZfWnVUUm5rUU84Z3R3S1VJWldLM0tQcUhfZU43NlVTTEpBcEcwS2RCZkRfMU5uTXBvemF1eXJqOVRCVFJpT1h1OHBmdGxzU2wtQV9TQ19vaElreENZYXlMdl9hUmd4YnUzdWVO?oc=5",
+     "title": "Petrobras to increase corn processing capacity in Brazil to 3.2 mln tons per year"
+    }
+   ],
+   "ids": [
+    "b502650ae0d6"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Petrobras to increase corn processing capacity in Brazil to 3.2 mln tons per year",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "689047c67fea",
    "title": "Petrobras to buy R$2.8bn stake in corn ethanol producer",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZGt4Q3pUU2lucXl0YVh3bGRzYndIR3A5VDJuT3lEekVIcWlZdml5WE45SXlFV296b3BZakJySjNJRWQ1X2kxLXA5RGYzTXZLUTJuNkZxWkVtMVMxQVlIU2VBb2U3Zkd6MV9YY1Y3V0JhNGY0REFZb21KQnAzX2diTU1nRlpFVWxnR3l5bktaTUUxQQ?oc=5",
@@ -6633,6 +6623,138 @@
    "snippet": "",
    "prescore": 3.2,
    "headline": "Petrobras to buy R$2.8bn stake in corn ethanol producer",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "056558430e8c",
+   "title": "Petrobras Unveils $122B Investment Plan, Eyes Higher Dividends",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOUtVaEhMdkZSTGxpV2xSVEczaDh4SjhrV29hRjhuWHVrWURoZ2hSNWQwZFVfSk94VDR6ZVZfNlVxZFI5STE4cEdTdTJ4X3ptTm5iTC1pS0F3NEhjR0VGb2NZN29YWlV1N2dabm9ENV9mbXpVY3JGN192cTJ3YXFoWUhiTWRkdTRlTE1FaGVjZFRzY3MtN3VGLXdDd3BMZEs0TGpqRmdqOW1TR0Q2WFJYWElhTFh4ZVk?oc=5",
+   "published": "2026-11-24T16:31:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOUtVaEhMdkZSTGxpV2xSVEczaDh4SjhrV29hRjhuWHVrWURoZ2hSNWQwZFVfSk94VDR6ZVZfNlVxZFI5STE4cEdTdTJ4X3ptTm5iTC1pS0F3NEhjR0VGb2NZN29YWlV1N2dabm9ENV9mbXpVY3JGN192cTJ3YXFoWUhiTWRkdTRlTE1FaGVjZFRzY3MtN3VGLXdDd3BMZEs0TGpqRmdqOW1TR0Q2WFJYWElhTFh4ZVk?oc=5",
+     "title": "Petrobras Unveils $122B Investment Plan, Eyes Higher Dividends"
+    }
+   ],
+   "ids": [
+    "056558430e8c"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Petrobras Unveils $122B Investment Plan, Eyes Higher Dividends",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "39ae215f1cda",
+   "title": "Petrobras returns to ethanol with a 2.8 billion reais deal for 42% of corn ethanol maker Neomille",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaC1odVFpOFVJbzFzenRvcjY2c3RnX1N3ZVFSeGNNd09FY29hdldzb1ExM0l2T0FXazVGY1A2VVRHdmdxc2JFS3FlQldnbkRJZlhEdEp0VVZNYkJUajVDcW1nb3M4d0h0dXBrTkNLS09PVmlvSkZJc2dJNTNSZnNpYlUwR05QMFNNRXozaVo4UjFHdkFPNWdXQnF5U2VkUmw1LUNBcUExcGE2cmxsZW1DX0wyYU1qa00?oc=5",
+   "published": "2026-11-24T16:23:35+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "MLQ.ai",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaC1odVFpOFVJbzFzenRvcjY2c3RnX1N3ZVFSeGNNd09FY29hdldzb1ExM0l2T0FXazVGY1A2VVRHdmdxc2JFS3FlQldnbkRJZlhEdEp0VVZNYkJUajVDcW1nb3M4d0h0dXBrTkNLS09PVmlvSkZJc2dJNTNSZnNpYlUwR05QMFNNRXozaVo4UjFHdkFPNWdXQnF5U2VkUmw1LUNBcUExcGE2cmxsZW1DX0wyYU1qa00?oc=5",
+     "title": "Petrobras returns to ethanol with a 2.8 billion reais deal for 42% of corn ethanol maker Neomille"
+    }
+   ],
+   "ids": [
+    "39ae215f1cda"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Petrobras returns to ethanol with a 2.8 billion reais deal for 42% of corn ethanol maker Neomille",
+   "category": "mna",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "28b21d171f13",
+   "title": "Petrobras takes 42% of Neomille for 438.2 million euros",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTEJFanU4STJQamh6WGMydjQ3dDl4R0EwLWdjbHNLLVlyWldaMUNXb2VKbGxpbnl2cjFWQVAxVW81V0JxdThPWFRWb0xGYlcxNC05ZXpiYUFrVFhZN0dHSG54czIxd2Q3RjZ2eC14aTdEMFE0VHBicUxKVHQtc2ZCeXFMakh2TU4yaTFmZVd2S0lUaDZWMk5jR0d3a9IBmwFBVV95cUxPTEJFanU4STJQamh6WGMydjQ3dDl4R0EwLWdjbHNLLVlyWldaMUNXb2VKbGxpbnl2cjFWQVAxVW81V0JxdThPWFRWb0xGYlcxNC05ZXpiYUFrVFhZN0dHSG54czIxd2Q3RjZ2eC14aTdEMFE0VHBicUxKVHQtc2ZCeXFMakh2TU4yaTFmZVd2S0lUaDZWMk5jR0d3aw?oc=5",
+   "published": "2026-11-24T14:19:17+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Demócrata",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTEJFanU4STJQamh6WGMydjQ3dDl4R0EwLWdjbHNLLVlyWldaMUNXb2VKbGxpbnl2cjFWQVAxVW81V0JxdThPWFRWb0xGYlcxNC05ZXpiYUFrVFhZN0dHSG54czIxd2Q3RjZ2eC14aTdEMFE0VHBicUxKVHQtc2ZCeXFMakh2TU4yaTFmZVd2S0lUaDZWMk5jR0d3a9IBmwFBVV95cUxPTEJFanU4STJQamh6WGMydjQ3dDl4R0EwLWdjbHNLLVlyWldaMUNXb2VKbGxpbnl2cjFWQVAxVW81V0JxdThPWFRWb0xGYlcxNC05ZXpiYUFrVFhZN0dHSG54czIxd2Q3RjZ2eC14aTdEMFE0VHBicUxKVHQtc2ZCeXFMakh2TU4yaTFmZVd2S0lUaDZWMk5jR0d3aw?oc=5",
+     "title": "Petrobras takes 42% of Neomille for 438.2 million euros"
+    }
+   ],
+   "ids": [
+    "28b21d171f13"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Petrobras takes 42% of Neomille for 438.2 million euros",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "cece5ec5a36b",
+   "title": "A stake in a corn ethanol producer would bring Petrobras (PBR) back into ethanol production.",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWkI3SFhCWFFULXZwTnZZVGdDWUlsZ1hBaUllY0kyY2Ixc1d0T2ZKV1pUNkc3ZHRhTXdoSVdTOGZnMFlUQ09wZVpWT05TT3h4Qk4wUFBELVViQURHeEtEdTNtTzAwMURiWWIxT0N1Vk16RlZabm1weHp5UWlESW51MjNPc3VzZnVadjdIc2pqR0NNZkFJZzdWa2JzZ3RtM002RE9ZMnQzSVZnM2NzbVhPQlJ3XzkySW0yMDhkdWdLOWNJUWhzU3c?oc=5",
+   "published": "2026-11-24T11:10:34+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Stock Titan",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWkI3SFhCWFFULXZwTnZZVGdDWUlsZ1hBaUllY0kyY2Ixc1d0T2ZKV1pUNkc3ZHRhTXdoSVdTOGZnMFlUQ09wZVpWT05TT3h4Qk4wUFBELVViQURHeEtEdTNtTzAwMURiWWIxT0N1Vk16RlZabm1weHp5UWlESW51MjNPc3VzZnVadjdIc2pqR0NNZkFJZzdWa2JzZ3RtM002RE9ZMnQzSVZnM2NzbVhPQlJ3XzkySW0yMDhkdWdLOWNJUWhzU3c?oc=5",
+     "title": "A stake in a corn ethanol producer would bring Petrobras (PBR) back into ethanol production."
+    }
+   ],
+   "ids": [
+    "cece5ec5a36b"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "A stake in a corn ethanol producer would bring Petrobras (PBR) back into ethanol production.",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -6994,39 +7116,6 @@
    "ai": false
   },
   {
-   "id": "39f496f03d43",
-   "title": "Flipkart CEO to Exit After Transforming Walmart’s India Play",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOM1BMVDU1dTVIU0ZhWElNMmg0Z3d0YlRJZzBaalVpOV9IVTlwNHpJN0NNV0ZCNHZpX3RUWHJ3S0lKTVdUQWFHRmNpZVpBUlNLSV85LVl0RjJVdXZoSTNVLXpZOXQ5VFNkSlJtTkxQYWhQa3ZMbkkwWnRHN3NYVDYtQ3JMMHBzbjlwVUhMeml1Yl9KdV9UQWRKeFJ1a01oUlFxYWtSOFp2MzU0R0dJRWc1Nw?oc=5",
-   "published": "2026-11-25T07:32:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOM1BMVDU1dTVIU0ZhWElNMmg0Z3d0YlRJZzBaalVpOV9IVTlwNHpJN0NNV0ZCNHZpX3RUWHJ3S0lKTVdUQWFHRmNpZVpBUlNLSV85LVl0RjJVdXZoSTNVLXpZOXQ5VFNkSlJtTkxQYWhQa3ZMbkkwWnRHN3NYVDYtQ3JMMHBzbjlwVUhMeml1Yl9KdV9UQWRKeFJ1a01oUlFxYWtSOFp2MzU0R0dJRWc1Nw?oc=5",
-     "title": "Flipkart CEO to Exit After Transforming Walmart’s India Play"
-    }
-   ],
-   "ids": [
-    "39f496f03d43"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Flipkart CEO to Exit After Transforming Walmart’s India Play",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "64942ce46b60",
    "title": "Banks Put Data Center Clients Under the Microscope on AI Chips",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORUJzZHdsdUt1VDhNT2xRY1VSX3VQZFpET1NKVHlyNlF3V0FvbENTYkt4akxXbElMOENpZ0xwNEtJTkIyTnIxV0MzU2xjVWUwRm5qVUJvbE1Gc25rRk1fOWtCX1NtYU5qZ1VVdTF1c2hlbmwzWDgwQ0RrMUlJR0sxTEJleU1Gd3JtOXNOWHd2UkZBUV83RkwybnhLWlpjQzdhOTNxY2xqdk9lR2paWTVZRVF6YkZoYWxVV0dSaFB0OA?oc=5",
@@ -7078,6 +7167,39 @@
    "snippet": "",
    "prescore": 2.8,
    "headline": "Tempestade solar vai atingir a Terra nesta semana, prevê relatório; veja impacto esperado",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "90bdb0e6b9cd",
+   "title": "Fachin autoriza que pai de Daniel Vorcaro deixe prisão para fazer exames",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVlsTE5JZGF4Zkp6OWR5RFZqQmczY250UFhPM3ExeTgwQTJjZElRRVpPTndzSk9iRzZibGVLWVB0dmxNT19WTkZ1dEpvU2FxeFdpdmttQzczTFgwTlFpa2dWSXdQY0lNRTIwbDFNOGNUcHNsSUJGemtmZ2JZTjI2OUk0ZU5CYVZLcXJqMUVBQmhLZWhydTRqenhCOWxYRG9NT1ExRG5WV0t0QVVtZGFNVFNTczl4ZUo3Vm0zWVllNjFDMEtxbDdJU1BR0gHYAUFVX3lxTE1BYkpEZTFoeXBWNkVCVTlnbExDMFVNOTNYamVjcUd6bjhoeVhuZ2dpOHRhRTBfaldZX0QxUXZrelp1Rnk3a01oRy1LU29PT2hWM3o4NE5mLVR1WHlkQlNHbmtHLUZ2Q0lDSUV0S0FjSDNkdXZiR3BBUWUzRTRLZW9CcXdqOGhTZXNVM2dmaEtXRGUxTFl3SkJDMmEwSXNpM1o2TzIzLXBEZ2k2cmtycTBuTEVJQ3RtTFJMR1FHazRUbGFNUVBLNXhMR2hiZnRVR3pHcTBIWHJrdA?oc=5",
+   "published": "2026-11-25T00:19:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVlsTE5JZGF4Zkp6OWR5RFZqQmczY250UFhPM3ExeTgwQTJjZElRRVpPTndzSk9iRzZibGVLWVB0dmxNT19WTkZ1dEpvU2FxeFdpdmttQzczTFgwTlFpa2dWSXdQY0lNRTIwbDFNOGNUcHNsSUJGemtmZ2JZTjI2OUk0ZU5CYVZLcXJqMUVBQmhLZWhydTRqenhCOWxYRG9NT1ExRG5WV0t0QVVtZGFNVFNTczl4ZUo3Vm0zWVllNjFDMEtxbDdJU1BR0gHYAUFVX3lxTE1BYkpEZTFoeXBWNkVCVTlnbExDMFVNOTNYamVjcUd6bjhoeVhuZ2dpOHRhRTBfaldZX0QxUXZrelp1Rnk3a01oRy1LU29PT2hWM3o4NE5mLVR1WHlkQlNHbmtHLUZ2Q0lDSUV0S0FjSDNkdXZiR3BBUWUzRTRLZW9CcXdqOGhTZXNVM2dmaEtXRGUxTFl3SkJDMmEwSXNpM1o2TzIzLXBEZ2k2cmtycTBuTEVJQ3RtTFJMR1FHazRUbGFNUVBLNXhMR2hiZnRVR3pHcTBIWHJrdA?oc=5",
+     "title": "Fachin autoriza que pai de Daniel Vorcaro deixe prisão para fazer exames"
+    }
+   ],
+   "ids": [
+    "90bdb0e6b9cd"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Fachin autoriza que pai de Daniel Vorcaro deixe prisão para fazer exames",
    "category": "tech",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -7192,39 +7314,6 @@
    "ai": false
   },
   {
-   "id": "59f04168e2cb",
-   "title": "Relator ajusta PL das big techs após negociação com deputados e prevê votação para a próxima semana",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVlVWWGZ3UWdqd0E4SmNQZVNCRU1QNV94M0dqMW1pWXVCaVlBYnRBdTJYQ2FfWEduWnNzUWIzLWlGc3BCZ2tUQS1HU1JIeE1OTUZtMlZsS01lcHBlZTZHaDJHWlBFa2laTHZwYkZJVDY0YTZxTVZGQ3Uyc1B0R2hMcUtLb3k1dHl3TG1abWM2ZHo1dUZXVUpXZTBUM3pJX25PZjRHWTZYWEtOOHE1ZmtKVkxOZk5yYTJxc2V4clBFZnFCb0FNSTBpVU12OFZETjZsXzZtZEVfQngyVmtDRjlnSV9SWGE5LTRX0gH3AUFVX3lxTE5qelZKRWZ3RmJZRUlaYjBLRGpMc1FmcXlLaTk5X09XNVVCSFNXMzVWSXBNNm40VFZlMUdmSFV2eEtKRHV5OFJXWmRxeE9qdFZsQjJ4X1lRdjVNTFhMVWJyQUdsRWtGOHlFX0xBdkg2bWJ6cGd5R2M2eHlCUGRRaF92YzFBZjBLd19zNjdlY1FlSWtxNFBzRkRtYXJYbGNhVW9GNkY5ZnhqRTllSWNYNXFURHdJMFJWSFN1TmlmcjYyMWFDbEVHMXB3N3Z1WjF4MmdFTUlVb2hEcnkwaVdZSDJYbEJ4MnI5ZjdpWHF4bFZ6aGFTRnV2OFE?oc=5",
-   "published": "2026-11-24T16:20:40+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVlVWWGZ3UWdqd0E4SmNQZVNCRU1QNV94M0dqMW1pWXVCaVlBYnRBdTJYQ2FfWEduWnNzUWIzLWlGc3BCZ2tUQS1HU1JIeE1OTUZtMlZsS01lcHBlZTZHaDJHWlBFa2laTHZwYkZJVDY0YTZxTVZGQ3Uyc1B0R2hMcUtLb3k1dHl3TG1abWM2ZHo1dUZXVUpXZTBUM3pJX25PZjRHWTZYWEtOOHE1ZmtKVkxOZk5yYTJxc2V4clBFZnFCb0FNSTBpVU12OFZETjZsXzZtZEVfQngyVmtDRjlnSV9SWGE5LTRX0gH3AUFVX3lxTE5qelZKRWZ3RmJZRUlaYjBLRGpMc1FmcXlLaTk5X09XNVVCSFNXMzVWSXBNNm40VFZlMUdmSFV2eEtKRHV5OFJXWmRxeE9qdFZsQjJ4X1lRdjVNTFhMVWJyQUdsRWtGOHlFX0xBdkg2bWJ6cGd5R2M2eHlCUGRRaF92YzFBZjBLd19zNjdlY1FlSWtxNFBzRkRtYXJYbGNhVW9GNkY5ZnhqRTllSWNYNXFURHdJMFJWSFN1TmlmcjYyMWFDbEVHMXB3N3Z1WjF4MmdFTUlVb2hEcnkwaVdZSDJYbEJ4MnI5ZjdpWHF4bFZ6aGFTRnV2OFE?oc=5",
-     "title": "Relator ajusta PL das big techs após negociação com deputados e prevê votação para a próxima semana"
-    }
-   ],
-   "ids": [
-    "59f04168e2cb"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Relator ajusta PL das big techs após negociação com deputados e prevê votação para a próxima semana",
-   "category": "empresas",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "8360bfa21c6c",
    "title": "Sanofi’s $41 Billion Insmed Deal Shows Cost of a Patent Cliff",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcFF3eGlyR1o4aXEtbTBrN2c2a2k5NUg5NUxkc0MwV0M2bEJxNmgwWHVUMWREMWxnS21tT3RFTG9raEdIYnduY3daOEl6RzNjMzdTSkpxazhzZHNkN0ZSMFNWSmRGNzFUdXZWdks2V2oyUXJTNU9TTE9jdS1qc0RnSDZHRFdmSTVKOEJmQWY1cFNjMTBDM2JfNndnQmI1T3pjSS1IcGJabnNxNnQyTGNOQw?oc=5",
@@ -7292,39 +7381,6 @@
    "ai": false
   },
   {
-   "id": "d901d89800a2",
-   "title": "Embaixador dos EUA 'não tem certeza' de que ajuda militar a Israel terminará em 2026",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWXFsQ2F2REswVjVYcE41ZUpVOGljLVJwWkR5ODFtcUMtVndSY0MxWm5WUVowR3o1VDVkRjJmcnJRLUw2WGswakp3anFrZm5xQ2tsN1lFZW9rUWdzaG5BSXR4ZlJhcW5xanNtZVdRV0p3QjBsM1F1SVVzSE5SdGo2RzhTdTdScC0xZGNOeUhhVXl3VDV4WFBLX2puY0t5QlpJTThsTzFhRGhSRzc3enNXeURaanEwQ2trMkF1d0FJVDRwSlBPYlFHSDRwcUVvRHk30gHfAUFVX3lxTE05cUYyblVDaUlJclNyTWdWOGR0ZjZLNU9NZ3FIOUZVeEYyUEdZVUhOTnhySWdUcEM4U2N0ZmxGYll2NVRjNlc4d19MeFh4dXRKeWlWQ3ZJd3E3emFLbWRkbW5CRTloMk1fZmtBNWwwNnZ1dkxZYlFoeWZ5YmtfS1NHcDk5QmUtS1pyUzRPZXNETWl2SE42bGJuWkM5VWFBRXZsQjgyTTYtTzJwanZZOTgzZENaNHJpbjZfWXBXVG1qQXF4MUs0S3Jub1VkR29RbkJ4ODRDU1VLM05GYXNCSE0?oc=5",
-   "published": "2026-11-24T12:53:25+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWXFsQ2F2REswVjVYcE41ZUpVOGljLVJwWkR5ODFtcUMtVndSY0MxWm5WUVowR3o1VDVkRjJmcnJRLUw2WGswakp3anFrZm5xQ2tsN1lFZW9rUWdzaG5BSXR4ZlJhcW5xanNtZVdRV0p3QjBsM1F1SVVzSE5SdGo2RzhTdTdScC0xZGNOeUhhVXl3VDV4WFBLX2puY0t5QlpJTThsTzFhRGhSRzc3enNXeURaanEwQ2trMkF1d0FJVDRwSlBPYlFHSDRwcUVvRHk30gHfAUFVX3lxTE05cUYyblVDaUlJclNyTWdWOGR0ZjZLNU9NZ3FIOUZVeEYyUEdZVUhOTnhySWdUcEM4U2N0ZmxGYll2NVRjNlc4d19MeFh4dXRKeWlWQ3ZJd3E3emFLbWRkbW5CRTloMk1fZmtBNWwwNnZ1dkxZYlFoeWZ5YmtfS1NHcDk5QmUtS1pyUzRPZXNETWl2SE42bGJuWkM5VWFBRXZsQjgyTTYtTzJwanZZOTgzZENaNHJpbjZfWXBXVG1qQXF4MUs0S3Jub1VkR29RbkJ4ODRDU1VLM05GYXNCSE0?oc=5",
-     "title": "Embaixador dos EUA 'não tem certeza' de que ajuda militar a Israel terminará em 2026"
-    }
-   ],
-   "ids": [
-    "d901d89800a2"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Embaixador dos EUA 'não tem certeza' de que ajuda militar a Israel terminará em 2026",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "18e1a0cac610",
    "title": "Italy rebukes Ukraine over attacks on Russian ships in Libya",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRGl5eGplZXIyMktvQUNpVzZ6LV84eU50Qnp6dzZiWEhScWZzaXZuVzVjdTNVZWlHQXVINHQ1SzRRZnRvZHRQWDZyLXJZRXlUQ3JZbkZZR0lTQWJ2RGE4S1pySVFSekZ3QnZWOFJOd1hwUkJKNkxMSF9oM2ZxM2s4VV9UMG5TRGkyRlIyRFFWcUd5a3RwSzZyZzR3NmQ?oc=5",
@@ -7377,39 +7433,6 @@
    "prescore": 2.6,
    "headline": "Nasdaq, S&P 500 end down, but well off lows as investors buy bargains",
    "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1d298c58ac52",
-   "title": "Dutch government working to prevent passing of US MATCH bill, minister says",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNR2pzRlRWd3NmU2NZYmZNSEFKdUpxRnp5QmtyOHl1OVR3dFVNdThNaTc5bXJEYVVCS2R6NlFpYmtwZlhXRnNOSzNwYlgyZ2ZoODBkdk83eVFzbGxCYTZoYW1YQnBEZzhOZFNQMTM0VDZVQWtfV3dpZURXSEtOak1Yc0Zyd29PLU5ZaW9FTFYyNUVaWlNjRDR1cUkySGgyb0JHeFJzaF9JN1pBXzBiVG1sQkEyX3B2cDg?oc=5",
-   "published": "2026-11-25T08:43:44+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNR2pzRlRWd3NmU2NZYmZNSEFKdUpxRnp5QmtyOHl1OVR3dFVNdThNaTc5bXJEYVVCS2R6NlFpYmtwZlhXRnNOSzNwYlgyZ2ZoODBkdk83eVFzbGxCYTZoYW1YQnBEZzhOZFNQMTM0VDZVQWtfV3dpZURXSEtOak1Yc0Zyd29PLU5ZaW9FTFYyNUVaWlNjRDR1cUkySGgyb0JHeFJzaF9JN1pBXzBiVG1sQkEyX3B2cDg?oc=5",
-     "title": "Dutch government working to prevent passing of US MATCH bill, minister says"
-    }
-   ],
-   "ids": [
-    "1d298c58ac52"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Dutch government working to prevent passing of US MATCH bill, minister says",
-   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -7820,6 +7843,39 @@
    "ai": false
   },
   {
+   "id": "472687cea7a5",
+   "title": "Judge OKs Bidder for Character.ai Data—After Its Backer Is Revealed",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPY2NEQ0lTaFRNREdwdjhFSmh6Vk92YkpBWmYxUlc1LTlBQ3VlSTkzaGlWd0xiNmJlUmJQS0RGTWpGdDJ4bnRCTUxFSEVaTU1MSHhZQl9LY3p3LV9ia2VMYkdoc1J6bW0zQVI4UHN4azR5WW5mdUg4b2hVQ3hjSTFvUnFFcmNhTW15emFKT3RuckFzUm9qY19jZTBEOVRKZVBLYjE3a2M1YmdKY00tNUVN?oc=5",
+   "published": "2026-11-25T00:09:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPY2NEQ0lTaFRNREdwdjhFSmh6Vk92YkpBWmYxUlc1LTlBQ3VlSTkzaGlWd0xiNmJlUmJQS0RGTWpGdDJ4bnRCTUxFSEVaTU1MSHhZQl9LY3p3LV9ia2VMYkdoc1J6bW0zQVI4UHN4azR5WW5mdUg4b2hVQ3hjSTFvUnFFcmNhTW15emFKT3RuckFzUm9qY19jZTBEOVRKZVBLYjE3a2M1YmdKY00tNUVN?oc=5",
+     "title": "Judge OKs Bidder for Character.ai Data—After Its Backer Is Revealed"
+    }
+   ],
+   "ids": [
+    "472687cea7a5"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Judge OKs Bidder for Character.ai Data—After Its Backer Is Revealed",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "85e0166a9efd",
    "title": "Intelligence Agencies Hacked in Cybersecurity Breach",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRXNfZ01taGNSQ1NOR3YxWmZncjl2WUFnTWZ5enNJSTdHcDI2elM3ZWY5Z2xOb3V3M29GM3hYRkNIbUxITU5BcDJzQTdyRmhsVWh0MmRRazVrcllFUEZoQ191R0dyLW5oYU1RZVpvaURDSGl1N0JCSHBSM1A0c2RKTmVSM3RtaUszeDl3NnFDU3RDVkhacjNMdkhMWVRza3FYcU9GOXJzektnb004?oc=5",
@@ -7853,10 +7909,43 @@
    "ai": false
   },
   {
+   "id": "b081c7350297",
+   "title": "Opinion | American Exceptionalism Will Win AI",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1Zd0xTZ0pyNG1feUdqVU5maFptbE1EMTNmdUduanAxa29zbEJYRDJvZ2xqYlBsREpZR2d1Z0tKb3JScEhHTTY2c0Z3ZXc0MDhobUc5QU5xZzlsU3U2MVlKbEFaeE9mZ192VEhuRmtxMjNNLUdmbHNKTFV3MHg?oc=5",
+   "published": "2026-11-24T22:21:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1Zd0xTZ0pyNG1feUdqVU5maFptbE1EMTNmdUduanAxa29zbEJYRDJvZ2xqYlBsREpZR2d1Z0tKb3JScEhHTTY2c0Z3ZXc0MDhobUc5QU5xZzlsU3U2MVlKbEFaeE9mZ192VEhuRmtxMjNNLUdmbHNKTFV3MHg?oc=5",
+     "title": "Opinion | American Exceptionalism Will Win AI"
+    }
+   ],
+   "ids": [
+    "b081c7350297"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinion | American Exceptionalism Will Win AI",
+   "category": "tech",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "1d03d3f4dcb3",
    "title": "Venezuela Reveals an Eye-Popping Debt Load of $237 Billion",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdHRaVi1VTkFScTJIT0JyU3dWZUIyTmU0MjBZUGJKcXdxV282TjQ2aU0xSjZ3bF9ucDNVeEdIUFFhOXE2bnVqZmNxbm5TU1BDZ3BMc185ZmhHRTIzanhSX1dLMmZ0TXN5TlJ3WWpJc0FDS1FXb2t5SUJQZXpFMTllOGtfeWIybms1UVp4emxaME9NVFlvSW5nUU1va01kSDFEWGpn?oc=5",
-   "published": "2026-11-24T21:56:57+00:00",
+   "published": "2026-11-24T21:55:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -7970,6 +8059,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Medtronic misses quarterly revenue estimates after diabetes business spinoff",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "eb27c897bce4",
+   "title": "Saudi Arabia approves 2027 budget with projected deficit of 190 billion riyals",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcV9kN0V0azFZSng0NU9wN21YMkxnM2I5NE1yTkhEUEpId2dxb0N1Tm5iaUk5YUp3aE12SldWV25wQnZ1Rkl0Q0NqTTliU3cwSmdWYnEzdE41cHlSdWpTaGVwZXJlbHNjblhiQnZKWks0RkF4QV9TanFONTVHNnlLNE9EdXAxWFBZeUxGdDJoazZCZmplc3BpMXdQSW5NTFFsVjZBUW8xbjV6azBQMm9LQnBOTW5VZ19laXNFbEZIUTRBZjNQOEJQVA?oc=5",
+   "published": "2026-11-24T14:18:10+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcV9kN0V0azFZSng0NU9wN21YMkxnM2I5NE1yTkhEUEpId2dxb0N1Tm5iaUk5YUp3aE12SldWV25wQnZ1Rkl0Q0NqTTliU3cwSmdWYnEzdE41cHlSdWpTaGVwZXJlbHNjblhiQnZKWks0RkF4QV9TanFONTVHNnlLNE9EdXAxWFBZeUxGdDJoazZCZmplc3BpMXdQSW5NTFFsVjZBUW8xbjV6azBQMm9LQnBOTW5VZ19laXNFbEZIUTRBZjNQOEJQVA?oc=5",
+     "title": "Saudi Arabia approves 2027 budget with projected deficit of 190 billion riyals"
+    }
+   ],
+   "ids": [
+    "eb27c897bce4"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Saudi Arabia approves 2027 budget with projected deficit of 190 billion riyals",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -8160,43 +8282,6 @@
    ],
    "tags": [
     "Copa"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "ea68ea5839c7",
-   "title": "‘Blade Runner 2099’ Review: Replicating a Sci-Fi World on Prime",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcUZ4RXVQMktPenlXXzRMMFFfTHpEWVlJRXlVdlQwNWtNdV9MZ0N5cjg4Z0VtZTJTM1FObnAxTmVKVF9zNTZJWnpFNFgyaXFJTlMzNmJaVm1BX0FiYVhxLUYzVzh5bzdpbC05d0Qtb1FTMlRYRDVPTWU3dlJTWm5leDJhaHpWamZTNDJlSXFkWHlNMUNCUDhGakd6YjFIakVQOC00bnR0dTREY1lINllheTdoYw?oc=5",
-   "published": "2026-11-24T21:48:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcUZ4RXVQMktPenlXXzRMMFFfTHpEWVlJRXlVdlQwNWtNdV9MZ0N5cjg4Z0VtZTJTM1FObnAxTmVKVF9zNTZJWnpFNFgyaXFJTlMzNmJaVm1BX0FiYVhxLUYzVzh5bzdpbC05d0Qtb1FTMlRYRDVPTWU3dlJTWm5leDJhaHpWamZTNDJlSXFkWHlNMUNCUDhGakd6YjFIakVQOC00bnR0dTREY1lINllheTdoYw?oc=5",
-     "title": "‘Blade Runner 2099’ Review: Replicating a Sci-Fi World on Prime"
-    }
-   ],
-   "ids": [
-    "ea68ea5839c7"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Resenha: 'Blade Runner 2099' no Prime",
-   "category": "outros",
-   "importance": 1,
-   "importance_reason": "Entretenimento, fora do foco.",
-   "summary": "Resenha de série de ficção científica no Prime Video.",
-   "involves": "Amazon Prime Video.",
-   "interpretation": "Cultura.",
-   "impact": "Nenhum.",
-   "sentiment": "neutro",
-   "entities": [
-    "Prime Video"
-   ],
-   "tags": [
-    "entretenimento"
    ],
    "is_deal": false,
    "deal": null,
@@ -8444,6 +8529,72 @@
    "ai": false
   },
   {
+   "id": "ba00b6deb5d4",
+   "title": "Depois de fechar lojas no Brasil, Nutrien encaminha venda de produtora de sementes de soja",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JWmlvUzN0b1JsMDdVcUJyYjBWQ3lKUDZaZ1d6UHdmZFUwdVlybTNsZlRoLUxHamZUNEdsb19Oam9JdGxMVEdrR0FkdTd0LTBzdHk1RVQwbmR0bzc4NUZoVGdMNlpuX1gtNVdSMTR1bUEwWGvSAXhBVV95cUxQUlVmRlFRSk5IYUZENzhHaWFsTFhRZHJzZVNQVnpHMmJRZnZIR0pHLXJpVHpGb09yYkNPMUVLOHJObUZlbVZ2S2stR19sTlA2U1VrcUVsS005aHZXMFdCa3N4Y0ZZWG5GNE1XOEJSMkxkZ050RFo1aG4?oc=5",
+   "published": "2026-11-24T20:31:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InvestNews",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JWmlvUzN0b1JsMDdVcUJyYjBWQ3lKUDZaZ1d6UHdmZFUwdVlybTNsZlRoLUxHamZUNEdsb19Oam9JdGxMVEdrR0FkdTd0LTBzdHk1RVQwbmR0bzc4NUZoVGdMNlpuX1gtNVdSMTR1bUEwWGvSAXhBVV95cUxQUlVmRlFRSk5IYUZENzhHaWFsTFhRZHJzZVNQVnpHMmJRZnZIR0pHLXJpVHpGb09yYkNPMUVLOHJObUZlbVZ2S2stR19sTlA2U1VrcUVsS005aHZXMFdCa3N4Y0ZZWG5GNE1XOEJSMkxkZ050RFo1aG4?oc=5",
+     "title": "Depois de fechar lojas no Brasil, Nutrien encaminha venda de produtora de sementes de soja"
+    }
+   ],
+   "ids": [
+    "ba00b6deb5d4"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Depois de fechar lojas no Brasil, Nutrien encaminha venda de produtora de sementes de soja",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "35ece56ee3d9",
+   "title": "Pré-venda de GTA 6 movimenta R$ 4,81 milhões no e-commerce brasileiro - E-Commerce Brasil",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWV9UNDhmT29mVjBsUURCMU94a0FHamZHOHhoem1YRDQtbWQ4YVAzenRRSEhTci1kSk1DNkFHTlplNU9ZdHVwNTdlOG1kWEhyb01PWW1VWlVGUEN3Y21vVUhvcjVtMUl3djVsQlZBQkRWR21ZQ1RvdG9ZRnRtSGlySFdSODhpUU8tUHdVMlRpYURWT2psd295NDhIMWs3dHcteXdkZnZ1LTFqeXpHU05MdQ?oc=5",
+   "published": "2026-11-24T19:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "E-Commerce Brasil",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWV9UNDhmT29mVjBsUURCMU94a0FHamZHOHhoem1YRDQtbWQ4YVAzenRRSEhTci1kSk1DNkFHTlplNU9ZdHVwNTdlOG1kWEhyb01PWW1VWlVGUEN3Y21vVUhvcjVtMUl3djVsQlZBQkRWR21ZQ1RvdG9ZRnRtSGlySFdSODhpUU8tUHdVMlRpYURWT2psd295NDhIMWs3dHcteXdkZnZ1LTFqeXpHU05MdQ?oc=5",
+     "title": "Pré-venda de GTA 6 movimenta R$ 4,81 milhões no e-commerce brasileiro - E-Commerce Brasil"
+    }
+   ],
+   "ids": [
+    "35ece56ee3d9"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Pré-venda de GTA 6 movimenta R$ 4,81 milhões no e-commerce brasileiro - E-Commerce Brasil",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "c671c39468e5",
    "title": "Bolsa opera em alta: confira os destaques do pregão",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB5M1FTWWZ2b2JGY2VqcExlZFN4elFOVnVqTUZheDZHMk16YVNpRUxQX19IV3ZuMXFJREVrWTVjVGtfek5WaGNLaDdDSjd1cHFWMFlqZDRwNms?oc=5",
@@ -8541,6 +8692,39 @@
    "prescore": 2.2,
    "headline": "Aos 77, Arnault abre caminho para comandar império de luxo da LVMH até os 95 anos",
    "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c19889f36930",
+   "title": "Botswana to Take 5% Free Stake in Mines on State Concessions",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc0o1YVlxMFpzS2NDcXZNdGZJZ1RWcUI2bUw1cnc0dy1iTTFVVWZlckcyZU5oN1BSd3ViOWlQVllKSEJBQlJvYVpuNzEtZXlOaG9jeVVURXZ3MFZfd1ppVkxva19ZWnU1UGxfOEpra3VvdnFab0dQWUp5bVdyQWFIaGFiS2N0V2hYdkVCTEtVM3lwamc?oc=5",
+   "published": "2026-11-25T10:41:53+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "IndexBox",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc0o1YVlxMFpzS2NDcXZNdGZJZ1RWcUI2bUw1cnc0dy1iTTFVVWZlckcyZU5oN1BSd3ViOWlQVllKSEJBQlJvYVpuNzEtZXlOaG9jeVVURXZ3MFZfd1ppVkxva19ZWnU1UGxfOEpra3VvdnFab0dQWUp5bVdyQWFIaGFiS2N0V2hYdkVCTEtVM3lwamc?oc=5",
+     "title": "Botswana to Take 5% Free Stake in Mines on State Concessions"
+    }
+   ],
+   "ids": [
+    "c19889f36930"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Botswana to Take 5% Free Stake in Mines on State Concessions",
+   "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -8687,6 +8871,39 @@
    "ai": false
   },
   {
+   "id": "0ef2cad28880",
+   "title": "DigiPlus seeks recovery of Brazil investment via legal action, maintains overseas expansion plans",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQWZGZVA5d3VwMjJNdElWeHBFalAyODZlNlNjdkFieE85cF9MTVo2S3Z5NWVpSU1JUHFtQlRzNFRKWWdqYjgwUnQ2UmZBOEU2U3BMZFp3OU9VVGdHMmhlUjdBeFI2UDBHenpNNHF2WUdfWFpDdDdvbFdxbEhIUUdra21tbDJNSTh4VENiUm4yUFN5N0pTNUU2U09jNExPRzRtMHo2Y21Zcmp6cUtWd3lWYUl3QjFjTEZaMXBMUQ?oc=5",
+   "published": "2026-11-25T06:25:45+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "GGRAsia",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQWZGZVA5d3VwMjJNdElWeHBFalAyODZlNlNjdkFieE85cF9MTVo2S3Z5NWVpSU1JUHFtQlRzNFRKWWdqYjgwUnQ2UmZBOEU2U3BMZFp3OU9VVGdHMmhlUjdBeFI2UDBHenpNNHF2WUdfWFpDdDdvbFdxbEhIUUdra21tbDJNSTh4VENiUm4yUFN5N0pTNUU2U09jNExPRzRtMHo2Y21Zcmp6cUtWd3lWYUl3QjFjTEZaMXBMUQ?oc=5",
+     "title": "DigiPlus seeks recovery of Brazil investment via legal action, maintains overseas expansion plans"
+    }
+   ],
+   "ids": [
+    "0ef2cad28880"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "DigiPlus seeks recovery of Brazil investment via legal action, maintains overseas expansion plans",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "ee1e2bff8c95",
    "title": "Korea's 1st Embraer C-390 transport aircraft lands at Seoul Air Base",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPY3Y1ZnVkTWFxM0FPWTEwZFl4OUV4R0R5bWx2bGRpVk5jTUctUjFaQ25NQmJ2azZTRDlFV0lKSENHbWlnQ19wU01FTHJfSjd2RjloemNMVmxJdENxVUtiNTJPcldTdW8yOWpaNzNWQzBkaGFGdUMyemFrcVhrWWZoTmwzX1IxTkpoSHFwWnlHTk5RTkpNUzJfNzU0RDVibnE2QUQtaUxTbW5HMTBfb19Jamc5QVdtaGFpT0tReFJfN1FweG1uRXF30gHHAUFVX3lxTE9jdjVmdWRNYXEzQU9ZMTBkWXg5RXhHRHltbHZsZGlWTmNNRy1SMVpDbk1CYnZrNlNEOUVXSUpIQ0dtaWdDX3BTTUVMcl9KN3ZGOWh6Y0xWbEl0Q3FVS2I1Mk9yV1N1bzI5alo3M1ZDMGRoYUZ1QzJ6YWtxWGtZZmhObDNfUjFOSmhIcXBaeUdOTlFOSk1TMl83NTRENWJucTZBRC1pTFNtbkcxMF9vX0lqZzlBV21oYWlPS1F4Ul83UXB4bW5FcXc?oc=5",
@@ -8705,6 +8922,39 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Korea's 1st Embraer C-390 transport aircraft lands at Seoul Air Base",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7e7683a310e6",
+   "title": "Stake launches in Argentina’s La Rioja province under AJALaR licence",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ESzVYMXM0NGM5YUNtZ1lqbzNFeVoxQVZNanN3S2hSWlZFdERjMk1MT3pZX2h3a3p1LWZxRlFoRUlvemVEcnNZeU9Tak5tcEVfQ3Q5ekRzbzdUSVBKeXNvUm9QQnBReHY0bnFkT21aaWI3M1NwQWVBVE1n?oc=5",
+   "published": "2026-11-25T03:35:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Inside Bitcoins",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ESzVYMXM0NGM5YUNtZ1lqbzNFeVoxQVZNanN3S2hSWlZFdERjMk1MT3pZX2h3a3p1LWZxRlFoRUlvemVEcnNZeU9Tak5tcEVfQ3Q5ekRzbzdUSVBKeXNvUm9QQnBReHY0bnFkT21aaWI3M1NwQWVBVE1n?oc=5",
+     "title": "Stake launches in Argentina’s La Rioja province under AJALaR licence"
+    }
+   ],
+   "ids": [
+    "7e7683a310e6"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Stake launches in Argentina’s La Rioja province under AJALaR licence",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -8918,6 +9168,105 @@
    "ai": false
   },
   {
+   "id": "0d3279ecf3c1",
+   "title": "The crisis of Washington’s far-right bloc in the Americas",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5xVS1LMjZZQlhlNDYwRGlJdnlBdUM4V0NXUEF1MjdFbmwxQi1NM1lpZnF3ZXh1NFhvMm5YU2tvNFp5b0JxNHlwdWxsRFB4RUd5OFVoR2VsbXlBWnB0aVJnQndmbFVvT2NR?oc=5",
+   "published": "2026-11-25T02:38:45+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "World Socialist Web Site",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5xVS1LMjZZQlhlNDYwRGlJdnlBdUM4V0NXUEF1MjdFbmwxQi1NM1lpZnF3ZXh1NFhvMm5YU2tvNFp5b0JxNHlwdWxsRFB4RUd5OFVoR2VsbXlBWnB0aVJnQndmbFVvT2NR?oc=5",
+     "title": "The crisis of Washington’s far-right bloc in the Americas"
+    }
+   ],
+   "ids": [
+    "0d3279ecf3c1"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "The crisis of Washington’s far-right bloc in the Americas",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "51edd9f73bdd",
+   "title": "Contenção de gastos cai para R$ 12,6 bilhões após pacote fiscal, mas previsão de déficit real sobe",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWGh5ZGpxazBtb1JRZ211eDFqUnNZWHl6Z2FlX2E5aVRwX1BXZTNBLVhTMHRzZEs1QUYxeVBXUTViWDFYQUI2ZkRnOWJhdDktbDJ2OXhhUkRRekZHV05oWjFVRzRMRmpDWXVHQ1VpZC1HSnptTDhqaV8xLUlpTEZjSzVXVkliMnBMVmlHemJxU3RsQWh0UTE5bkFjQ1QwUHljbUN4Nm80V2lITWFZVHQ1MHg0R3NFT2RvV0NmdDZoZC1IMXJOMVlnRjI2MNIB0AFBVV95cUxNMUo1bWIyeTlYejROZGdLbGhOeGlsUU1adDdUNHFCZG1vaWxEMl9YN1JmTXJhRFpUbXBKd3Q4cVo0a2xDRWNxeFRFSmRXaTdHWEkxOTRyQ29DaDgxVnFhbUxtaWdjdmJId2VEX2lEZEZlTHg1NG56V0NPNklQUVhpYVNlZ3RPMkVfQkY2WUJIbnVuNllNd3Y2cUthQktIWHNaRFlSX0lyTFoxUkJacmZDM0dMLXp4UzhNYTdwUHVmS0kzVkhoQ1BuRHhaZ1Y1aE5u?oc=5",
+   "published": "2026-11-25T02:20:36+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWGh5ZGpxazBtb1JRZ211eDFqUnNZWHl6Z2FlX2E5aVRwX1BXZTNBLVhTMHRzZEs1QUYxeVBXUTViWDFYQUI2ZkRnOWJhdDktbDJ2OXhhUkRRekZHV05oWjFVRzRMRmpDWXVHQ1VpZC1HSnptTDhqaV8xLUlpTEZjSzVXVkliMnBMVmlHemJxU3RsQWh0UTE5bkFjQ1QwUHljbUN4Nm80V2lITWFZVHQ1MHg0R3NFT2RvV0NmdDZoZC1IMXJOMVlnRjI2MNIB0AFBVV95cUxNMUo1bWIyeTlYejROZGdLbGhOeGlsUU1adDdUNHFCZG1vaWxEMl9YN1JmTXJhRFpUbXBKd3Q4cVo0a2xDRWNxeFRFSmRXaTdHWEkxOTRyQ29DaDgxVnFhbUxtaWdjdmJId2VEX2lEZEZlTHg1NG56V0NPNklQUVhpYVNlZ3RPMkVfQkY2WUJIbnVuNllNd3Y2cUthQktIWHNaRFlSX0lyTFoxUkJacmZDM0dMLXp4UzhNYTdwUHVmS0kzVkhoQ1BuRHhaZ1Y1aE5u?oc=5",
+     "title": "Contenção de gastos cai para R$ 12,6 bilhões após pacote fiscal, mas previsão de déficit real sobe"
+    }
+   ],
+   "ids": [
+    "51edd9f73bdd"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Contenção de gastos cai para R$ 12,6 bilhões após pacote fiscal, mas previsão de déficit real sobe",
+   "category": "macro",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "6c1c3a7510ca",
+   "title": "Classys eyes global expansion in 2027 with five U.S. products",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52S1RrQ3dRZnZ3eUN5elNwdlNrcVpObExRUmF6eWJKNnI2SnQydlNKVlkyTFhiODFScXctX2tFZjViWHJxUFYxSFNNRUgxNFd6T1QwZHZ3?oc=5",
+   "published": "2026-11-25T02:18:59+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "mkbn.mk.co.kr",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52S1RrQ3dRZnZ3eUN5elNwdlNrcVpObExRUmF6eWJKNnI2SnQydlNKVlkyTFhiODFScXctX2tFZjViWHJxUFYxSFNNRUgxNFd6T1QwZHZ3?oc=5",
+     "title": "Classys eyes global expansion in 2027 with five U.S. products"
+    }
+   ],
+   "ids": [
+    "6c1c3a7510ca"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Classys eyes global expansion in 2027 with five U.S. products",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "700f829038ff",
    "title": "Com melhora do setor, venda de fatia da Ipiranga pela Ultrapar esfria",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY1pDRjFPYkdTVExDWUdpaE1HWng0elh4WHpwZUp6NmQ5N0xTWEtEV29iYUZpOGZWeW9UWWZ6YmJQby1NbW8wVzJSLWl1Y2tvSldmemRiWHlVY1F1VjQxeXBjZjl3UDUzOUxaTmdqNkVSYmFkb3R2RTk1MHZsUzFvaTIzUWVmOHVjYU4xby1QQUNKU3BqZXJpU213MUtHZHdQaGdwRG1pdDZaYzJMNlViTEZVSzFuRy1lV0ZwWXR30gHDAUFVX3lxTE1Qb3BTZXE5cm9iT0Zmb2dOUWUwVVQ2c0ZESTRiZHZVVWVBTHYwSWVMQmVHdHFNZGRxcUVSUjdhSHBadnl3cmhQeUROVzdES19HNUN5RnBnZWMwN1dTNU1mdDMzZ1piWnhNSkhhdmRtZ1dZY0FQQTlpVG1IbldsWGtBWV9CNmVHQVg0QUVyOW1uZ2hGaUR3VkhVcGVScU5qSlN5bFl4Ynd5bTFXaENBS0RKN29KMmpIdG5ndU9waU5PTU83RQ?oc=5",
@@ -9017,6 +9366,72 @@
    "ai": false
   },
   {
+   "id": "ece630fd3290",
+   "title": "Live Nation Unveils 21,000-Capacity São Paulo Arena",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSFVOVkE4VVgySVBiXzlVeFYwN2tNa2tCUHV5U0lma2I4alkxbVVsemhuOHpqMDFDSzUySndrQUhzYmVpWTE1S2d3Nkd1RHIwLWhfUVRLWFFIU2ZLd0k5RmtheHVVNFowY25FX29OeGFrenQ1QTBla3ZlWXEzZ2NtLUctWm1yNW13Y0V3MzBtbw?oc=5",
+   "published": "2026-11-25T00:47:52+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "TicketNews",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSFVOVkE4VVgySVBiXzlVeFYwN2tNa2tCUHV5U0lma2I4alkxbVVsemhuOHpqMDFDSzUySndrQUhzYmVpWTE1S2d3Nkd1RHIwLWhfUVRLWFFIU2ZLd0k5RmtheHVVNFowY25FX29OeGFrenQ1QTBla3ZlWXEzZ2NtLUctWm1yNW13Y0V3MzBtbw?oc=5",
+     "title": "Live Nation Unveils 21,000-Capacity São Paulo Arena"
+    }
+   ],
+   "ids": [
+    "ece630fd3290"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Live Nation Unveils 21,000-Capacity São Paulo Arena",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e6b346c8b20c",
+   "title": "Stake Expands Its Presence in Argentina’s Regulated Betting Market",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbWNNYmNGelpNd09FRjBGVzlDSlN3bGxHUFRkaENnWHozZnBmSGNJZEtPZzFSM3RPVFo2d1VGcFJHMjZXUkpqeFNqQzZZekZxWEFPM2hNNW1UVG5mMzBMQzZHT3k0a19tZXlIRTA3Y0F3aGlFQWhrSVJKaThTdEM2ZTRDb1RoRWxKcThUMThzRG1pOUtkTWpwOTY3dw?oc=5",
+   "published": "2026-11-25T00:08:52+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "iGamingToday.com",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbWNNYmNGelpNd09FRjBGVzlDSlN3bGxHUFRkaENnWHozZnBmSGNJZEtPZzFSM3RPVFo2d1VGcFJHMjZXUkpqeFNqQzZZekZxWEFPM2hNNW1UVG5mMzBMQzZHT3k0a19tZXlIRTA3Y0F3aGlFQWhrSVJKaThTdEM2ZTRDb1RoRWxKcThUMThzRG1pOUtkTWpwOTY3dw?oc=5",
+     "title": "Stake Expands Its Presence in Argentina’s Regulated Betting Market"
+    }
+   ],
+   "ids": [
+    "e6b346c8b20c"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Stake Expands Its Presence in Argentina’s Regulated Betting Market",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "54c1e022f05b",
    "title": "Quando se trata de política, pensa-se primeiro nos nossos e, depois, nos outros",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYTVxdnpPM2xjTjdPcnl3cm1jQmJHWVdiUzE2VlBHSUlQR0ZKZ01jN0tfaDMzX1JDYm5vTTRMbUpGNGQ4OTcwc2lJZTBOUjM2Nmx0alN6R01CNWtyM2gxQmFRam5RaXFieWJEbU1JakhlOXd0bUxmNC0xSkJBdXhOOUVCNHBuUHRreTJVd18tenNfZlBXYlVOWmFhR2FvTHRuajBnSlk1WHc5bnV0MzlDVVh6bTRGRmd5MTJSclRpSG1XRlVLdUI40gHMAUFVX3lxTFBZOGxHSHJKaWN1WWlmcExkUlJxanNCY0dQQVZMbjlkZXJFaEVaYVF3ZUFlV09PUHUxQVJ4N1J1bDEzMlE0U3J0U3lHNnFnWHNnNzVDd2k4YjJlX19nUG5zeDNVQ3hCdjlaZF90d2g0TWlNT0NMeW92RlpQOGdsVWs3R1h3NUJwNFFtVkxVUlYxSGxWWkROaG5CWTRtYUlFbzRsUmRHYWo5REp0QV9CZVZWcmdiWG5QRGVTamcyaWxWUG03WEVHUWtGSm9nTA?oc=5",
@@ -9069,6 +9484,39 @@
    "prescore": 2.2,
    "headline": "Crise diplomática com Milei: Brasil encerra missão de embaixador na Argentina",
    "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "be82778f3f8b",
+   "title": "Xavier Niel becomes Edenred's top shareholder with 10.55% stake",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU0ZPUTVxQ3REMkF1Y2hfRWFQazBBZWkwcTZDWHFaU1NnSGVRUDVxTUV1cnpWZGJ4SWpEa3BybGJFLVR0ZWlRVjlQQmt3bk1UZFJCb2tUanFRbjd5eGVsMy13NHQtajM1WjJ6ZUtFMlB4NTZKYVVkNWdPZlFkd0djdnNZWnB0N19aQVEyRERoZ3dvQXQtREtRQ01UNGg?oc=5",
+   "published": "2026-11-24T21:44:56+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Dealroom",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU0ZPUTVxQ3REMkF1Y2hfRWFQazBBZWkwcTZDWHFaU1NnSGVRUDVxTUV1cnpWZGJ4SWpEa3BybGJFLVR0ZWlRVjlQQmt3bk1UZFJCb2tUanFRbjd5eGVsMy13NHQtajM1WjJ6ZUtFMlB4NTZKYVVkNWdPZlFkd0djdnNZWnB0N19aQVEyRERoZ3dvQXQtREtRQ01UNGg?oc=5",
+     "title": "Xavier Niel becomes Edenred's top shareholder with 10.55% stake"
+    }
+   ],
+   "ids": [
+    "be82778f3f8b"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Xavier Niel becomes Edenred's top shareholder with 10.55% stake",
+   "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -9182,39 +9630,6 @@
    "ai": false
   },
   {
-   "id": "c6fd8fb53fd7",
-   "title": "A venda não termina quando o cliente paga",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaW1Sa3VkMExndVFmaURyUlFybTFDX2I4UXRxY2I2RlFDNXNQVWo0bTlBSW1HZUh1OUcyU0Q0LVhzYTlyTHVyZnBCQVdyTS11RVpBVENOajhocWJBRFV1OGRYa3J4cFdOck9FdlBYdVQ2aGRBNUZJVzduSkNQWkFoUW1jUUTSAYoBQVVfeXFMTUgwb29yMzNhVVJ1OU96SHpYRDZENVZ6c1g4UjRlcVVoUXJSUjNoODhFa2VfYlRNZVdtbXZMMFFfMEtIQ3NJM0p5eW5YNWlvV0Eyd2NEbjdmSHJoREpxdHNVTWdOYzJoa09XMlMxWldwa1RzQm9JcG9wR0o3ME92cHpjY2kxY2tmYXBn?oc=5",
-   "published": "2026-11-24T19:15:37+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaW1Sa3VkMExndVFmaURyUlFybTFDX2I4UXRxY2I2RlFDNXNQVWo0bTlBSW1HZUh1OUcyU0Q0LVhzYTlyTHVyZnBCQVdyTS11RVpBVENOajhocWJBRFV1OGRYa3J4cFdOck9FdlBYdVQ2aGRBNUZJVzduSkNQWkFoUW1jUUTSAYoBQVVfeXFMTUgwb29yMzNhVVJ1OU96SHpYRDZENVZ6c1g4UjRlcVVoUXJSUjNoODhFa2VfYlRNZVdtbXZMMFFfMEtIQ3NJM0p5eW5YNWlvV0Eyd2NEbjdmSHJoREpxdHNVTWdOYzJoa09XMlMxWldwa1RzQm9JcG9wR0o3ME92cHpjY2kxY2tmYXBn?oc=5",
-     "title": "A venda não termina quando o cliente paga"
-    }
-   ],
-   "ids": [
-    "c6fd8fb53fd7"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "A venda não termina quando o cliente paga",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "2f20d3e5d560",
    "title": "Djokovic treina o que muitos profissionais insistem em ignorar",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUm9pdTJWVGE3dW5tRmtlOWxwRmdSYUNjZzZjT3JXQWtTNHpyQUxLN3VCdWttdFZUQjV3V01wbU9zNTBNMUlDTzg3WjVFYTNwXzFKNy1LN1RnWW9Mc0tXeG5vQVJXZUdITU1VOGkxTW41aC1GY2Z6OUNfSDBIY0NSWng4M09aUktCeS1nM0hRVDVITFdHU0pxSjBJNjA0REhMR0NOTw?oc=5",
@@ -9248,6 +9663,39 @@
    "ai": false
   },
   {
+   "id": "499ddabd455c",
+   "title": "Brazilian company reduces electricity bills with solar farms, reaches 1 million customers, projects R$1.4 billion revenue, and invests in EV charging stations",
+   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOUjc3VUtReDUxMkVDYk5IV1gxY3c1SW05MWo0TnJxVURmeDdxQkdnZ1lQOGMxRlhvZEZvZmkwcC1PSGJoX1pCaUlvSnJuRmlJYThuRWpjUDJ6QXVoWTlHMTE0eEpKU3UwR0lKR3kyYVFpbzU2bzVBMlFBWTZWSEpWYWZteWZtQl80NElKUGp4WnpxOGpfR05kWlJaRUtpbzZqLVl4ZzFWZFFKM2I1MkpuRk9tcWhGdFhtY3gyOEhvUFpuV0JIRnluNEpKODlneXotUkhKOXI1LVZLSDRFUVBVSmx5VHBjQl9kWVdodjA1WVVUelY1R3p3c0N4Q25tbGozNGdGRU9scGRMQ2Iy?oc=5",
+   "published": "2026-11-24T15:28:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "CPG Click Oil and Gas",
+     "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOUjc3VUtReDUxMkVDYk5IV1gxY3c1SW05MWo0TnJxVURmeDdxQkdnZ1lQOGMxRlhvZEZvZmkwcC1PSGJoX1pCaUlvSnJuRmlJYThuRWpjUDJ6QXVoWTlHMTE0eEpKU3UwR0lKR3kyYVFpbzU2bzVBMlFBWTZWSEpWYWZteWZtQl80NElKUGp4WnpxOGpfR05kWlJaRUtpbzZqLVl4ZzFWZFFKM2I1MkpuRk9tcWhGdFhtY3gyOEhvUFpuV0JIRnluNEpKODlneXotUkhKOXI1LVZLSDRFUVBVSmx5VHBjQl9kWVdodjA1WVVUelY1R3p3c0N4Q25tbGozNGdGRU9scGRMQ2Iy?oc=5",
+     "title": "Brazilian company reduces electricity bills with solar farms, reaches 1 million customers, projects R$1.4 billion revenue, and invests in EV charging stations"
+    }
+   ],
+   "ids": [
+    "499ddabd455c"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Brazilian company reduces electricity bills with solar farms, reaches 1 million customers, projects R$1.4 billion revenue, and invests in EV charging stations",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "57cdcb67e1e0",
    "title": "Que economia o Brasil quer ter em 2035? | Brasil em Transição – Caminhos para uma nova economia",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXVRODJvc0l3VGxldHN4ZkxydWMtZ21UalRtYXNEZnpmRmVUZ2M1b1hrcFV4X1B2VmhPMWliMEphOXRndnJMMG9vZE9iZTB0NFhmdzBwSHNmY2NOdm1nZ1ZYOUpQYW43dTNTMWhWcldFTXJ0NXZQRGtMTWxFYmdjbXRFOUxXOFhiRXBya3dlSEdvdjFqX3ZuWm1YM2ZmMHhFZTFzMFRCTWZyNmxzT01iU3hRWV9WeEp4dHEtanBLNWgxNmpzVDdoX2ZR?oc=5",
@@ -9258,16 +9706,10 @@
      "source": "Estadão",
      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXVRODJvc0l3VGxldHN4ZkxydWMtZ21UalRtYXNEZnpmRmVUZ2M1b1hrcFV4X1B2VmhPMWliMEphOXRndnJMMG9vZE9iZTB0NFhmdzBwSHNmY2NOdm1nZ1ZYOUpQYW43dTNTMWhWcldFTXJ0NXZQRGtMTWxFYmdjbXRFOUxXOFhiRXBya3dlSEdvdjFqX3ZuWm1YM2ZmMHhFZTFzMFRCTWZyNmxzT01iU3hRWV9WeEp4dHEtanBLNWgxNmpzVDdoX2ZR?oc=5",
      "title": "Que economia o Brasil quer ter em 2035? | Brasil em Transição – Caminhos para uma nova economia"
-    },
-    {
-     "source": "Estadão",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPN2FxXzZYSnFTdWg0aWIwUnppdURabnh4dUtCZWdDeGxtSENfMWphRmxCbWpZaXR4dURmRjRUY1lBQ1pMWWllTUo5bHBmVjg4ZFZyX0o5Qlc1SjJmWDFMeEEzMDQ0RGF4S1NjNjJLSF9oNGFrM1Babkt0WUxNdGY3WkY4X1V6Y0hPVzNpVkYxZXJHRWdtRUVraFYzd1EzcjBtRS04YlBQRWk?oc=5",
-     "title": "Que economia o Brasil quer ter em 2035?"
     }
    ],
    "ids": [
-    "57cdcb67e1e0",
-    "c168f4b2a2bc"
+    "57cdcb67e1e0"
    ],
    "snippet": "",
    "prescore": 2.2,
@@ -9503,6 +9945,39 @@
    "snippet": "",
    "prescore": 2.2,
    "headline": "Stake continues Argentine expansion amid Brazil uncertainty",
+   "category": "internacional",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "658781ac90bd",
+   "title": "Brazil Betting Ban Hits Q3 Results Across LatAm",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9IUGJHVGg3TGwzbkNrQnV4ZE9pZGNuQ2hKVHR1ajBaT2JKMHNtNzRTRk5nYkxsVmFTYjBzbmNwcXpVRFhXUG92U2dwUHJDNjV5SEtKLXZIeU9pSm1hVkhvakgxYmcwalllZXljb0hpTGxSUGVXZFhjZDVNbXjSAXxBVV95cUxPSFBiR1RoN0xsM25Da0J1eGRPaWRjbkNoSlR0dWowWk9iSjBzbTc0U0ZOZ2JMbFZhU2Iwc25jcHF6VURYV1BvdlNncFByQzY1eUhLSi12SHlPaUptYVZIb2pIMWJnMGpZZWV5Y29IaUxsUlBlV2RYY2Q1TW14?oc=5",
+   "published": "2026-11-24T12:31:49+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Latest Casino Bonuses",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9IUGJHVGg3TGwzbkNrQnV4ZE9pZGNuQ2hKVHR1ajBaT2JKMHNtNzRTRk5nYkxsVmFTYjBzbmNwcXpVRFhXUG92U2dwUHJDNjV5SEtKLXZIeU9pSm1hVkhvakgxYmcwalllZXljb0hpTGxSUGVXZFhjZDVNbXjSAXxBVV95cUxPSFBiR1RoN0xsM25Da0J1eGRPaWRjbkNoSlR0dWowWk9iSjBzbTc0U0ZOZ2JMbFZhU2Iwc25jcHF6VURYV1BvdlNncFByQzY1eUhLSi12SHlPaUptYVZIb2pIMWJnMGpZZWV5Y29IaUxsUlBlV2RYY2Q1TW14?oc=5",
+     "title": "Brazil Betting Ban Hits Q3 Results Across LatAm"
+    }
+   ],
+   "ids": [
+    "658781ac90bd"
+   ],
+   "snippet": "",
+   "prescore": 2.2,
+   "headline": "Brazil Betting Ban Hits Q3 Results Across LatAm",
    "category": "internacional",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -10981,504 +11456,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "795b20bf524f",
-   "title": "Master: relatoria de pedidos sobre Vorcaro reabre debate no STF sobre impedimento de Nunes Marques",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/24/master-relatoria-de-pedidos-sobre-vorcaro-reabre-debate-no-stf-sobre-impedimento-de-nunes-marques.ghtml",
-   "published": "2026-11-24T19:54:26+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/11/24/master-relatoria-de-pedidos-sobre-vorcaro-reabre-debate-no-stf-sobre-impedimento-de-nunes-marques.ghtml",
-     "title": "Master: relatoria de pedidos sobre Vorcaro reabre debate no STF sobre impedimento de Nunes Marques"
-    }
-   ],
-   "ids": [
-    "795b20bf524f"
-   ],
-   "snippet": "A definição do ministro Nunes Marques como relator de pedidos ligados ao ex-banqueiro Daniel Vorcaro reabriu, no Supremo Tribunal Federal (STF), a discussão sobre a permanência do magistrado nos processos relacionados ao Banco Master ou a eventual declaração de impedimento. Nunes Marques é um dos quatro ministros da Corte citados em levantamentos da Polícia Federal sobre relações com o ex-banqueiro, material que foi encaminhado para análise da Procuradoria-Geral da República (PGR). Ele também integra a Segunda Turma do STF, colegiado responsável por julgar os processos do caso Master. No dia 1",
-   "prescore": 1.8,
-   "headline": "Master: relatoria de pedidos sobre Vorcaro reabre debate no STF sobre impedimento de Nunes Marques",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A definição do ministro Nunes Marques como relator de pedidos ligados ao ex-banqueiro Daniel Vorcaro reabriu, no Supremo Tribunal Federal (STF), a discussão sobre a permanência do magistrado nos processos relacionados ao Banco Master ou a eventual declaração de impedimento. Nunes Marques é um dos quatro ministros da Corte citados em levantamentos da Polícia Federal sobre relações com o ex-banqueir",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e77d64c10790",
-   "title": "Polônia acusa Rússia de invadir espaço aéreo de propósito",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/polonia-acusa-russia-de-invadir-espaco-aereo-de-proposito.shtml",
-   "published": "2026-11-24T19:47:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/polonia-acusa-russia-de-invadir-espaco-aereo-de-proposito.shtml",
-     "title": "Polônia acusa Rússia de invadir espaço aéreo de propósito"
-    }
-   ],
-   "ids": [
-    "e77d64c10790"
-   ],
-   "snippet": "A Polônia acusou nesta terça-feira (24) a Rússia de promover uma invasão deliberada de seu espaço aéreo com um drone de vigilância, elevando ainda mais o temor de que a Guerra da Ucrânia saia de controle e se torne um confronto entre Moscou e países do Leste Europeu . Leia mais (11/24/2026 - 16h47)",
-   "prescore": 1.8,
-   "headline": "Polônia acusa Rússia de invadir espaço aéreo de propósito",
-   "category": "internacional",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A Polônia acusou nesta terça-feira (24) a Rússia de promover uma invasão deliberada de seu espaço aéreo com um drone de vigilância, elevando ainda mais o temor de que a Guerra da Ucrânia saia de controle e se torne um confronto entre Moscou e países do Leste Europeu . Leia mais (11/24/2026 - 16h47)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "3155ec165101",
-   "title": "Moraes rejeita pedido da defesa de Zambelli para descontar de pena da ex-deputada tempo que ela ficou presa na Itália",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/24/moraes-rejeita-pedido-da-defesa-de-zambelli-para-descontar-de-pena-da-ex-deputada-tempo-que-ela-ficou-presa-na-italia.ghtml",
-   "published": "2026-11-24T19:34:05+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/11/24/moraes-rejeita-pedido-da-defesa-de-zambelli-para-descontar-de-pena-da-ex-deputada-tempo-que-ela-ficou-presa-na-italia.ghtml",
-     "title": "Moraes rejeita pedido da defesa de Zambelli para descontar de pena da ex-deputada tempo que ela ficou presa na Itália"
-    }
-   ],
-   "ids": [
-    "3155ec165101"
-   ],
-   "snippet": "O ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), rejeitou nesta terça-feira (24) um pedido da defesa da ex-deputada federal Carla Zambelli para descontar da pena imposta no caso da invasão aos sistemas do Conselho Nacional de Justiça (CNJ) o período em que ela ficou presa na Itália e cumpriu medidas cautelares no Brasil. Na decisão, Moraes apontou que Zambelli está foragida e que, por esse motivo, eventuais benefícios na execução penal só poderão ser analisados quando ela iniciar efetivamente o cumprimento da pena. Condenada pela Primeira Turma do STF a 10 anos de prisão em r",
-   "prescore": 1.8,
-   "headline": "Moraes rejeita pedido da defesa de Zambelli para descontar de pena da ex-deputada tempo que ela ficou presa na Itália",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), rejeitou nesta terça-feira (24) um pedido da defesa da ex-deputada federal Carla Zambelli para descontar da pena imposta no caso da invasão aos sistemas do Conselho Nacional de Justiça (CNJ) o período em que ela ficou presa na Itália e cumpriu medidas cautelares no Brasil. Na decisão, Moraes apontou que Zambelli está foragida e que",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "c2f9448d539e",
-   "title": "Nunes Marques é definido relator de pedido de Vorcaro para retirar caso Master do gabinete da presidência do STF",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/24/nunes-marques-e-sorteado-relator-de-pedido-de-vorcaro-para-retirar-caso-master-do-gabinete-da-presidencia-do-stf.ghtml",
-   "published": "2026-11-24T18:53:54+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/11/24/nunes-marques-e-sorteado-relator-de-pedido-de-vorcaro-para-retirar-caso-master-do-gabinete-da-presidencia-do-stf.ghtml",
-     "title": "Nunes Marques é definido relator de pedido de Vorcaro para retirar caso Master do gabinete da presidência do STF"
-    }
-   ],
-   "ids": [
-    "c2f9448d539e"
-   ],
-   "snippet": "O ministro Kassio Nunes Marques, do Supremo Tribunal Federal (STF), foi definido relator do mandado de segurança apresentado pela defesa do ex-banqueiro Daniel Vorcaro, do Banco Master, para tentar retirar da presidência da Corte a condução da Operação Compliance Zero, que apura fraudes financeiras bilionárias. A ação tramita sob segredo de Justiça. O recurso contesta o ato administrativo do presidente do STF, ministro Edson Fachin, que avocou — ou seja, chamou para o próprio gabinete — os materiais da investigação. Em nota divulgada à imprensa, os advogados de Daniel Vorcaro informaram que o ",
-   "prescore": 1.8,
-   "headline": "Nunes Marques é definido relator de pedido de Vorcaro para retirar caso Master do gabinete da presidência do STF",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro Kassio Nunes Marques, do Supremo Tribunal Federal (STF), foi definido relator do mandado de segurança apresentado pela defesa do ex-banqueiro Daniel Vorcaro, do Banco Master, para tentar retirar da presidência da Corte a condução da Operação Compliance Zero, que apura fraudes financeiras bilionárias. A ação tramita sob segredo de Justiça. O recurso contesta o ato administrativo do presi",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ed5a5f1e3456",
-   "title": "Austrália quer multar big techs em até 5% do faturamento global por conteúdos nocivos",
-   "link": "https://g1.globo.com/tecnologia/noticia/2026/11/24/australia-google-meta.ghtml",
-   "published": "2026-11-24T17:36:10+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/tecnologia/noticia/2026/11/24/australia-google-meta.ghtml",
-     "title": "Austrália quer multar big techs em até 5% do faturamento global por conteúdos nocivos"
-    }
-   ],
-   "ids": [
-    "ed5a5f1e3456",
-    "ed5a5f1e3456"
-   ],
-   "snippet": "Austrália propõe permitir que usuários 'desliguem' algoritmo das redes sociais A Austrália quer aumentar as punições para empresas de tecnologia que não impeçam a circulação de conteúdos prejudiciais em suas plataformas. Pelo projeto de lei, gigantes como Google e Meta poderão ser multadas em até 5% de sua receita global caso não removam conteúdos nocivos ou recursos considerados viciantes. A proposta também permite que usuários processem as plataformas caso seus serviços facilitem práticas prejudiciais. 🗒️ Tem alguma sugestão de reportagem? Envie para o g1 ➡️ O governo australiano chegou a um",
-   "prescore": 1.8,
-   "headline": "Austrália quer multar big techs em até 5% do faturamento global por conteúdos nocivos",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Austrália propõe permitir que usuários 'desliguem' algoritmo das redes sociais A Austrália quer aumentar as punições para empresas de tecnologia que não impeçam a circulação de conteúdos prejudiciais em suas plataformas. Pelo projeto de lei, gigantes como Google e Meta poderão ser multadas em até 5% de sua receita global caso não removam conteúdos nocivos ou recursos considerados viciantes. A prop",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b53b02669139",
-   "title": "É #FAKE que vídeo de descarte de cebolas na Bahia tenha a ver com alta de preços em 2026; cena há dois anos",
-   "link": "https://g1.globo.com/fato-ou-fake/noticia/2026/11/24/e-fake-que-video-de-descarte-de-cebolas-na-bahia-tenha-a-ver-com-alta-de-precos-em-2026-cena-ha-dois-anos.ghtml",
-   "published": "2026-11-24T17:27:24+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/fato-ou-fake/noticia/2026/11/24/e-fake-que-video-de-descarte-de-cebolas-na-bahia-tenha-a-ver-com-alta-de-precos-em-2026-cena-ha-dois-anos.ghtml",
-     "title": "É #FAKE que vídeo de descarte de cebolas na Bahia tenha a ver com alta de preços em 2026; cena há dois anos"
-    }
-   ],
-   "ids": [
-    "b53b02669139"
-   ],
-   "snippet": "É #FAKE que vídeo de descarte de cebolas na Bahia tenha a ver com alta de preços em 2026; cena ocorreu em 2024 Reprodução Circula nas redes sociais um vídeo que supostamente mostra um recente descarte de 17 mil sacos de cebolas na Bahia. As legendas alegam que ação teria o objetivo de aumentar o preço do produto. É #FAKE. Selo Fake (Horizontal) g1 🔴 Como é o vídeo? Publicado no X, Instagram, Facebook, YouTube e TikTok nesta quinta-feira (19), o vídeo leva esta caixa de texto sobreposta às imagens: \"O agro é pop. O agro joga cebola fora e dá calote no Banco do Brasil\". Veja dois exemplos de leg",
-   "prescore": 1.8,
-   "headline": "É #FAKE que vídeo de descarte de cebolas na Bahia tenha a ver com alta de preços em 2026; cena há dois anos",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "É #FAKE que vídeo de descarte de cebolas na Bahia tenha a ver com alta de preços em 2026; cena ocorreu em 2024 Reprodução Circula nas redes sociais um vídeo que supostamente mostra um recente descarte de 17 mil sacos de cebolas na Bahia. As legendas alegam que ação teria o objetivo de aumentar o preço do produto. É #FAKE. Selo Fake (Horizontal) g1 🔴 Como é o vídeo? Publicado no X, Instagram, Faceb",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d899c8790ed7",
-   "title": "Reféns são resgatados na Colômbia após forças de segurança invadirem supermercado em Cartagena",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/assaltantes-fazem-refens-em-mercado-em-cartagena-na-colombia.shtml",
-   "published": "2026-11-24T17:11:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/assaltantes-fazem-refens-em-mercado-em-cartagena-na-colombia.shtml",
-     "title": "Reféns são resgatados na Colômbia após forças de segurança invadirem supermercado em Cartagena"
-    }
-   ],
-   "ids": [
-    "d899c8790ed7"
-   ],
-   "snippet": "Forças de segurança invadiram um supermercado na turística cidade de Cartagena , na costa caribenha da Colômbia , na madrugada desta quarta-feira (25), pondo fim a um cerco com reféns que durou o dia todo. Segundo o presidente Abelardo de la Espriella, todas as pessoas mantidas no local foram resgatadas e um dos sequestradores foi morto. Leia mais (11/24/2026 - 14h11)",
-   "prescore": 1.8,
-   "headline": "Reféns são resgatados na Colômbia após forças de segurança invadirem supermercado em Cartagena",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Forças de segurança invadiram um supermercado na turística cidade de Cartagena , na costa caribenha da Colômbia , na madrugada desta quarta-feira (25), pondo fim a um cerco com reféns que durou o dia todo. Segundo o presidente Abelardo de la Espriella, todas as pessoas mantidas no local foram resgatadas e um dos sequestradores foi morto. Leia mais (11/24/2026 - 14h11)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d329a3ec1dfa",
-   "title": "Justiça italiana adia para fevereiro reavaliação do pedido de extradição de Carla Zambelli",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/24/justica-italiana-adia-para-fevereiro-reavaliacao-do-pedido-de-extradicao-de-carla-zambelli.ghtml",
-   "published": "2026-11-24T16:55:13+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/11/24/justica-italiana-adia-para-fevereiro-reavaliacao-do-pedido-de-extradicao-de-carla-zambelli.ghtml",
-     "title": "Justiça italiana adia para fevereiro reavaliação do pedido de extradição de Carla Zambelli"
-    }
-   ],
-   "ids": [
-    "d329a3ec1dfa",
-    "d329a3ec1dfa"
-   ],
-   "snippet": "Foto de arquivo de 15/05/2025 da deputada federal Carla Zambelli (PL-SP) durante uma coletiva de imprensa na sede de seu partido no bairro de Moema, na zona sul da cidade de São Paulo. Felipe Rau/Estadão Conteúdo A Justiça da Itália adiou para fevereiro de 2027 a reavaliação do pedido de extradição feito pelo governo brasileiro contra a ex-deputada Carla Zambelli. A audiência na Corte de Apelação de Roma estava prevista para esta terça-feira (24), mas foi transferida para 2 de fevereiro do ano que vem. Em outubro, a análise do caso já havia sido adiada. O caso envolve a condenação pelo caso de",
-   "prescore": 1.8,
-   "headline": "Justiça italiana adia para fevereiro reavaliação do pedido de extradição de Carla Zambelli",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Foto de arquivo de 15/05/2025 da deputada federal Carla Zambelli (PL-SP) durante uma coletiva de imprensa na sede de seu partido no bairro de Moema, na zona sul da cidade de São Paulo. Felipe Rau/Estadão Conteúdo A Justiça da Itália adiou para fevereiro de 2027 a reavaliação do pedido de extradição feito pelo governo brasileiro contra a ex-deputada Carla Zambelli. A audiência na Corte de Apelação ",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d95e5d238dfd",
-   "title": "WhatsApp começa a liberar figurinhas com som; veja como funciona",
-   "link": "https://g1.globo.com/tecnologia/noticia/2026/11/24/whatsapp-comeca-a-liberar-figurinhas-com-som.ghtml",
-   "published": "2026-11-24T16:51:24+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/tecnologia/noticia/2026/11/24/whatsapp-comeca-a-liberar-figurinhas-com-som.ghtml",
-     "title": "WhatsApp começa a liberar figurinhas com som; veja como funciona"
-    }
-   ],
-   "ids": [
-    "d95e5d238dfd"
-   ],
-   "snippet": "WhatsApp começa a liberar figurinhas com som Reuters/Reprodução Usuários do WhatsApp notaram nesta terça-feira (24) que figurinhas com som começaram a aparecer nas conversas do app de mensagens. A novidade ficou entre os assuntos mais comentados do X na tarde desta terça-feira. (veja a repercussão abaixo) 🗒️ Tem alguma sugestão de reportagem? Mande para o g1 Ainda não se sabe se o recurso está disponível para todos os usuários. Procurada pelo g1, a Meta, dona do WhatsApp, disse que \"não tem nada para compartilhar\". No celular, basta tocar no ícone de som que aparece no canto superior esquerdo ",
-   "prescore": 1.8,
-   "headline": "WhatsApp começa a liberar figurinhas com som; veja como funciona",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "WhatsApp começa a liberar figurinhas com som Reuters/Reprodução Usuários do WhatsApp notaram nesta terça-feira (24) que figurinhas com som começaram a aparecer nas conversas do app de mensagens. A novidade ficou entre os assuntos mais comentados do X na tarde desta terça-feira. (veja a repercussão abaixo) 🗒️ Tem alguma sugestão de reportagem? Mande para o g1 Ainda não se sabe se o recurso está dis",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "5db44a75a1f5",
-   "title": "PCC foca em rotas do tráfico a partir do Sudeste e CV aposta no controle do território no Norte e no Nordeste, mostra estudo inédito da Abin",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/24/pcc-cv-estudo-abin-forum-brasileiro-seguranca-publica.ghtml",
-   "published": "2026-11-24T16:50:43+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/11/24/pcc-cv-estudo-abin-forum-brasileiro-seguranca-publica.ghtml",
-     "title": "PCC foca em rotas do tráfico a partir do Sudeste e CV aposta no controle do território no Norte e no Nordeste, mostra estudo inédito da Abin"
-    }
-   ],
-   "ids": [
-    "5db44a75a1f5"
-   ],
-   "snippet": "Um estudo inédito da Agência Brasileira de Inteligência (Abin) em parceria com o Fórum Brasileiro de Segurança Pública (FBSP) mostra que há 31 facções criminosas atuando no Brasil e que as duas maiores, com presença nacional, adotam estratégias diferentes para expandir seus negócios ilícitos. O Primeiro Comando da Capital (PCC) concentra suas decisões em São Paulo e prioriza o tráfico internacional de cocaína e o controle de rotas estratégicas. Já o Comando Vermelho (CV), surgido no Rio de Janeiro, aposta na ocupação de territórios e no domínio direto de comunidades urbanas, especialmente nas ",
-   "prescore": 1.8,
-   "headline": "PCC foca em rotas do tráfico a partir do Sudeste e CV aposta no controle do território no Norte e no Nordeste, mostra estudo inédito da Abin",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Um estudo inédito da Agência Brasileira de Inteligência (Abin) em parceria com o Fórum Brasileiro de Segurança Pública (FBSP) mostra que há 31 facções criminosas atuando no Brasil e que as duas maiores, com presença nacional, adotam estratégias diferentes para expandir seus negócios ilícitos. O Primeiro Comando da Capital (PCC) concentra suas decisões em São Paulo e prioriza o tráfico internaciona",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "e5a731450a49",
-   "title": "'Ninguém vai morrer se fechar um dia', diz ministro sobre fim da escala 6x1",
-   "link": "https://g1.globo.com/economia/noticia/2026/11/24/ninguem-vai-morrer-se-fechar-um-dia-diz-ministro-sobre-fim-da-escala-6x1.ghtml",
-   "published": "2026-11-24T16:43:39+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/economia/noticia/2026/11/24/ninguem-vai-morrer-se-fechar-um-dia-diz-ministro-sobre-fim-da-escala-6x1.ghtml",
-     "title": "'Ninguém vai morrer se fechar um dia', diz ministro sobre fim da escala 6x1"
-    }
-   ],
-   "ids": [
-    "e5a731450a49",
-    "e5a731450a49"
-   ],
-   "snippet": "O ministro do Trabalho, Luiz Marinho, em audiência pública na Comissão de Direitos Humanos do Senado Geraldo Magela/Agência Senado O ministro do Trabalho, Luiz Marinho, afirmou nesta terça-feira (24) que \"ninguém vai morrer se fechar um dia\", ao ser questionado sobre a opção de algumas empresas do comércio de fecharem uma vez na semana por conta do fim da escala 6x1. 📱Favorite o g1 no Google e acompanhe as principais notícias do dia \"Adotamos uma loucura americana que tem de estar aberto sete dias por semana, todos os dias do ano. Ninguém vai morrer se fechar um dia, Europa fecha aos domingos ",
-   "prescore": 1.8,
-   "headline": "'Ninguém vai morrer se fechar um dia', diz ministro sobre fim da escala 6x1",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O ministro do Trabalho, Luiz Marinho, em audiência pública na Comissão de Direitos Humanos do Senado Geraldo Magela/Agência Senado O ministro do Trabalho, Luiz Marinho, afirmou nesta terça-feira (24) que \"ninguém vai morrer se fechar um dia\", ao ser questionado sobre a opção de algumas empresas do comércio de fecharem uma vez na semana por conta do fim da escala 6x1. 📱Favorite o g1 no Google e aco",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "dbd9d8b0a1ce",
-   "title": "Relatórios da PF têm citações a Moraes, Nunes e Toffoli, mas deixam de fora diálogos e documentos que poderiam indicar conexão com Vorcaro",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/24/relatorios-da-pf-tem-citacoes-a-moraes-nunes-e-tofolli-mas-deixam-de-fora-dialogos-e-documentos-que-poderiam-indicar-conexao-com-vorcaro.ghtml",
-   "published": "2026-11-24T15:22:40+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/politica/noticia/2026/11/24/relatorios-da-pf-tem-citacoes-a-moraes-nunes-e-tofolli-mas-deixam-de-fora-dialogos-e-documentos-que-poderiam-indicar-conexao-com-vorcaro.ghtml",
-     "title": "Relatórios da PF têm citações a Moraes, Nunes e Toffoli, mas deixam de fora diálogos e documentos que poderiam indicar conexão com Vorcaro"
-    }
-   ],
-   "ids": [
-    "dbd9d8b0a1ce"
-   ],
-   "snippet": "Daniel Vorcaro Divulgação A Polícia Federal (PF) usou apenas menções literais a ministros do Supremo Tribunal Federal (STF) nos relatórios produzidos pela corporação sobre as relações com Daniel Vorcaro. Os investigadores utilizaram como critério central a busca por referências aos nomes dos ministros no celular do ex-banqueiro, deixando de fora imagens, anexos e outros dados que poderiam indicar relação, conexão entre eles. A informação foi revelada pela jornalista Malu Gaspar, de O Globo, e confirmada pela TV Globo de forma reservada por pessoas que tiveram acesso ao material. A PF nega omis",
-   "prescore": 1.8,
-   "headline": "Relatórios da PF têm citações a Moraes, Nunes e Toffoli, mas deixam de fora diálogos e documentos que poderiam indicar conexão com Vorcaro",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Daniel Vorcaro Divulgação A Polícia Federal (PF) usou apenas menções literais a ministros do Supremo Tribunal Federal (STF) nos relatórios produzidos pela corporação sobre as relações com Daniel Vorcaro. Os investigadores utilizaram como critério central a busca por referências aos nomes dos ministros no celular do ex-banqueiro, deixando de fora imagens, anexos e outros dados que poderiam indicar ",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "258e5965e956",
-   "title": "Gisèle Pelicot diz que editora usou fotos íntimas sem consentimento para promover livro de psicanalista",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/gisele-pelicot-diz-que-editora-usou-fotos-intimas-sem-consentimento-para-promover-livro.shtml",
-   "published": "2026-11-24T14:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/gisele-pelicot-diz-que-editora-usou-fotos-intimas-sem-consentimento-para-promover-livro.shtml",
-     "title": "Gisèle Pelicot diz que editora usou fotos íntimas sem consentimento para promover livro de psicanalista"
-    }
-   ],
-   "ids": [
-    "258e5965e956"
-   ],
-   "snippet": "A francesa Gisèle Pelicot afirmou nesta segunda-feira (23) estar \"profundamente chocada\" com o uso, sem seu consentimento, de fotografias íntimas suas para promover o livro de uma psicanalista sobre o conceito de controle coercitivo. Leia mais (11/24/2026 - 11h30)",
-   "prescore": 1.8,
-   "headline": "Gisèle Pelicot diz que editora usou fotos íntimas sem consentimento para promover livro de psicanalista",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A francesa Gisèle Pelicot afirmou nesta segunda-feira (23) estar \"profundamente chocada\" com o uso, sem seu consentimento, de fotografias íntimas suas para promover o livro de uma psicanalista sobre o conceito de controle coercitivo. Leia mais (11/24/2026 - 11h30)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "bab67b957ab5",
-   "title": "Volkswagen negocia com trabalhadores sob ameaça de greve na Alemanha",
-   "link": "https://g1.globo.com/carros/noticia/2026/11/24/volkswagen-negocia-com-trabalhadores-sob-ameaca-de-greve-na-alemanha.ghtml",
-   "published": "2026-11-24T14:24:27+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/carros/noticia/2026/11/24/volkswagen-negocia-com-trabalhadores-sob-ameaca-de-greve-na-alemanha.ghtml",
-     "title": "Volkswagen negocia com trabalhadores sob ameaça de greve na Alemanha"
-    }
-   ],
-   "ids": [
-    "bab67b957ab5"
-   ],
-   "snippet": "Volkswagen Logo REUTERS/Suzanne Plunkett A Volkswagen iniciou nesta terça-feira (24) uma rodada de negociações salariais com representantes dos trabalhadores, em meio à crescente insatisfação dos funcionários com os cortes de custos promovidos pela montadora na Alemanha. Em protesto, trabalhadores carregaram caixões pretos para simbolizar o que consideram a perda da confiança e das perspectivas de futuro da empresa. 🗒️ Tem alguma sugestão de reportagem? Envie para o g1 A concorrência crescente das montadoras chinesas, os bilhões de euros gastos anualmente com tarifas comerciais e as rápidas mu",
-   "prescore": 1.8,
-   "headline": "Volkswagen negocia com trabalhadores sob ameaça de greve na Alemanha",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Volkswagen Logo REUTERS/Suzanne Plunkett A Volkswagen iniciou nesta terça-feira (24) uma rodada de negociações salariais com representantes dos trabalhadores, em meio à crescente insatisfação dos funcionários com os cortes de custos promovidos pela montadora na Alemanha. Em protesto, trabalhadores carregaram caixões pretos para simbolizar o que consideram a perda da confiança e das perspectivas de",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d27767870072",
-   "title": "Atentado com carro-bomba fere 25 e aumenta tensão na Colômbia após ofensiva militar com apoio dos EUA",
-   "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/atentado-com-carro-bomba-fere-25-e-aumenta-tensao-na-colombia-apos-ofensiva-militar-com-apoio-dos-eua.shtml",
-   "published": "2026-11-24T13:58:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/atentado-com-carro-bomba-fere-25-e-aumenta-tensao-na-colombia-apos-ofensiva-militar-com-apoio-dos-eua.shtml",
-     "title": "Atentado com carro-bomba fere 25 e aumenta tensão na Colômbia após ofensiva militar com apoio dos EUA"
-    }
-   ],
-   "ids": [
-    "d27767870072"
-   ],
-   "snippet": "A explosão de um carro-bomba com 100 kg de explosivos na Colômbia feriu pelo menos 25 pessoas na noite desta segunda-feira (23), véspera do aniversário de dez anos da assinatura do acordo de paz definitivo com as Farc. O atentado foi em Villavicencio, cidade no centro do país, e provocou danos à sede do governo regional de Meta, a veículos e a outros edifícios nas proximidades. Leia mais (11/24/2026 - 10h58)",
-   "prescore": 1.8,
-   "headline": "Atentado com carro-bomba fere 25 e aumenta tensão na Colômbia após ofensiva militar com apoio dos EUA",
-   "category": "politica",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A explosão de um carro-bomba com 100 kg de explosivos na Colômbia feriu pelo menos 25 pessoas na noite desta segunda-feira (23), véspera do aniversário de dez anos da assinatura do acordo de paz definitivo com as Farc. O atentado foi em Villavicencio, cidade no centro do país, e provocou danos à sede do governo regional de Meta, a veículos e a outros edifícios nas proximidades. Leia mais (11/24/20",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "deals": [
@@ -12676,7 +12653,7 @@
    "id": "5f868e0984ea",
    "title": "CEO e presidente da Anthropic venderam mais de 500 milhões em ações no dia seguinte ao IPO",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbGwwUmVUcHBlLUdhWXFpX0xkQ2pjdUlJQlRMbldleTRsUlVfUXRjVXNUVmlGamZPUVpZOUtvSDlsYmt5ZnlWX2VnWFJEOFBTX0laZ0dqalZqdmFlYk4xVjFBVFZjOTZnX21GSy1iUjFNWFR3RTJqQ2NoTmdKXzF3YmZJQnBkb3JRU2tEN290emU0VWtSSXhfQktRSWhsTXY4THY4czVsTVNCSEVla21pbGlrMHdtWHlwWk5pVDF2WFYzYkdaQ2l3MGlTcEI?oc=5",
-   "published": "2026-11-26T07:00:00+00:00",
+   "published": "2026-11-26T10:00:00+00:00",
    "region": "BR",
    "outlets": [
     {
@@ -12932,6 +12909,45 @@
    "ai": false
   },
   {
+   "id": "14e601485874",
+   "title": "Shareholders of Brazil's YDUQS approve merger with Afya",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdUpRalpmOXMyNkpJTm91aEdkeDA1UEhhaUE0ajM5cExYMDNWeUgxY2Q4QlZaN05vWjhSczRDOURLbVEwR1Z3MlYzazFBMjdNSDQzM1JvNEd3dTl5SWZZSVp3ZE1iZnVWMjRnX2JsMVdURG5iNk1aSF80TVJGeWF0NmEzTVc3MThWNFJKYVRyc3BCN3lTNzhlN1VTOE11UmVibS1hRC0yVkttNlRSUjh4WFBnU0U4dWhocFRENWdXVmFNRmc?oc=5",
+   "published": "2026-11-25T21:07:06+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdUpRalpmOXMyNkpJTm91aEdkeDA1UEhhaUE0ajM5cExYMDNWeUgxY2Q4QlZaN05vWjhSczRDOURLbVEwR1Z3MlYzazFBMjdNSDQzM1JvNEd3dTl5SWZZSVp3ZE1iZnVWMjRnX2JsMVdURG5iNk1aSF80TVJGeWF0NmEzTVc3MThWNFJKYVRyc3BCN3lTNzhlN1VTOE11UmVibS1hRC0yVkttNlRSUjh4WFBnU0U4dWhocFRENWdXVmFNRmc?oc=5",
+     "title": "Shareholders of Brazil's YDUQS approve merger with Afya"
+    },
+    {
+     "source": "TipRanks",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOE9CWXh2ZnF0WmVocGJlQWJYOWR3d1RzS0hqUlp2MU5jdkFQa3diU1FBUERwLWhVLVdfV1F2eGhFaTVqY19LY2xUdlhJWHdjYWNzSDhXcXFMQ1NaVnZTaFdnMnk3NllXcWpBZmhWV0h4WGRsX0xsWHY3RWd0SnBRZW1qVnhkUDlpLTlGRjVfYVFCdFJkZFZnVjViRzIzMDJ6djhJdDZ0SQ?oc=5",
+     "title": "YDUQS Shareholders Approve Proposed Merger With Afya"
+    }
+   ],
+   "ids": [
+    "14e601485874",
+    "8e7094f7410e"
+   ],
+   "snippet": "",
+   "prescore": 6.7,
+   "headline": "Shareholders of Brazil's YDUQS approve merger with Afya",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "dab81e640105",
    "title": "EUA propõem novas tarifas sobre China, UE e outros países para combater 'excesso de capacidade industrial'",
    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPajJUdnFqY2VpaXYtQ3ZISkdobFhOZlU5SnMtcWpHX3VhUFhqMzFPUlNCLXhmWmRDUFlCVkxXYWRTcHBXcGc0TDJWcFZjbEQ4M0E0QU42eXg3WndIU18xM0J0R2t2X19ZRlRqWWxFRmxabldvNW1aSnF0WmtOU1B6LUlMazVpYVRUTU1LQWJuY1R4S0VkMTIxRmxSZDhzZUEwSmp5aldTTFo1eEIwdUVLa2JzWm9RMTVZOE1VaS16d29rLXV2RHNHUUxEMnNyT0g3NXh1N2xvLTA0c1ZOTHE3ZWNBQ0tmdHRYTTA0edIB-wFBVV95cUxOcmd1TVFGYjV5c3VURUd3d2lqTFlnNGhMSmtxeUZna3lpcUdzUks1WEdaRU4yRVRUTnh5UGdTWFNGU0VmaXVKMnVZMVl3VnktOG44Z0JJUVBEcjhxZ05wdzNtaU12V1B3SkxxWmJkT1gydTdQUnZUWmdlak0wZlRqRVNxNGF5b1huT1lQVzBLVC1DLWp6V3FMT0h0Z0lCOV9RYVNmeHFja3llZU9QX0Q5a0pHZ181Z0ZTd0I3M0N6Z1pvS1dKV0RxT0U5cHp6UENUNEtVX2hybVNOUm9WdmNEQkNHSXVpV3B5V0xobmNsUUJkSkZmVkNCSmlmZw?oc=5",
@@ -13072,6 +13088,39 @@
    "importance": 4,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Agentes econômicos ficaram de olho na reunião de Lula sobre nova PEC fiscal e reagiram à inflação e às novas tarifas dos EUA",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "a471c4b57f6e",
+   "title": "Feriado nos EUA reduz liquidez do mercado em dia de inflação no Brasil; Ibovespa em dólar sobe nesta quinta (26)",
+   "link": "https://www.moneytimes.com.br/feriado-nos-eua-reduz-liquidez-do-mercado-em-dia-de-inflacao-ibovespa-em-dolar-sobe-nesta-quinta-feira-26-rens/",
+   "published": "2026-11-26T10:18:47+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/feriado-nos-eua-reduz-liquidez-do-mercado-em-dia-de-inflacao-ibovespa-em-dolar-sobe-nesta-quinta-feira-26-rens/",
+     "title": "Feriado nos EUA reduz liquidez do mercado em dia de inflação no Brasil; Ibovespa em dólar sobe nesta quinta (26)"
+    }
+   ],
+   "ids": [
+    "a471c4b57f6e"
+   ],
+   "snippet": "Os investidores internacionais começam o dia sem a liquidez dos mercados norte-americanos em virtude do feriado local desta quinta-feira (26). Com isso, as atenções se voltam para a bateria de indicadores regionais. Ainda no exterior, o apetite por risco melhorou diante de sinais de que as tarifas propostas pelos Estados Unidos podem ser menos severas […]",
+   "prescore": 5.8,
+   "headline": "Feriado nos EUA reduz liquidez do mercado em dia de inflação no Brasil; Ibovespa em dólar sobe nesta quinta (26)",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Os investidores internacionais começam o dia sem a liquidez dos mercados norte-americanos em virtude do feriado local desta quinta-feira (26). Com isso, as atenções se voltam para a bateria de indicadores regionais. Ainda no exterior, o apetite por risco melhorou diante de sinais de que as tarifas propostas pelos Estados Unidos podem ser menos severas […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13326,46 +13375,6 @@
    "ai": false
   },
   {
-   "id": "47ca2532028f",
-   "title": "Alice Huang Had Ties to China’s Intelligence Network. But Was She Really a Spy?",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5sNDVoNV9xcTIyQnZYS3BwSDlwQWFGMFhDelJGWXc3VUNMX0thTjIzNnhRdk1pajB2akpIeU8xQ1NHcWpfNGtXUW9VcHAtdDVJOHh4dzhLT3Fha0hUYmdPTVRKdmlaX1J5YU9XcWtDOWhVZHM1Mmw5Q3RmczFNOTA?oc=5",
-   "published": "2026-11-26T08:01:17+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5sNDVoNV9xcTIyQnZYS3BwSDlwQWFGMFhDelJGWXc3VUNMX0thTjIzNnhRdk1pajB2akpIeU8xQ1NHcWpfNGtXUW9VcHAtdDVJOHh4dzhLT3Fha0hUYmdPTVRKdmlaX1J5YU9XcWtDOWhVZHM1Mmw5Q3RmczFNOTA?oc=5",
-     "title": "Alice Huang Had Ties to China’s Intelligence Network. But Was She Really a Spy?"
-    }
-   ],
-   "ids": [
-    "47ca2532028f"
-   ],
-   "snippet": "",
-   "prescore": 3.6,
-   "headline": "Alice Huang tinha laços com rede de inteligência da China; era mesmo espiã?",
-   "category": "internacional",
-   "importance": 4,
-   "importance_reason": "Desdobramento do caso que envolve o CEO da Nvidia.",
-   "summary": "O WSJ questiona se Alice Huang, ligada à rede de inteligência da China, era de fato espiã. O material traz apenas o título.",
-   "involves": "Alice Huang, China, Nvidia",
-   "interpretation": "Aprofunda o caso que levou à renúncia e ao retorno de Jensen Huang.",
-   "impact": "Risco geopolítico e de governança para a Nvidia e o setor de chips.",
-   "sentiment": "neutro",
-   "entities": [
-    "Alice Huang",
-    "Nvidia"
-   ],
-   "tags": [
-    "Nvidia",
-    "China",
-    "espionagem"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "1e7ff3a276af",
    "title": "Marinha e Omnisys assinam carta de intenção para aquisição de cinco radares Sentinela",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY1ZNMnlwWEgwWmtOek1sekk4OC1MeTVnNThjakNSYnVmSVlySHpzMGFBV2NTSEYwVGFQSGozbTI1VXcxel9Hb3V3S0t4ay14YjZZd2NEQWM3cHF2Smx5S3E0UWtVUWFNWFRwNjc0TFNQVWF5WEJ2MTZwaGdjVlo3dEV5NmdPMTQ4Y2ppYXlSelk2clRwM2JQWDlhd3o3ZG9STzkzNE45d1JsV3psLVZsd25QekZlZ255OTFnc1E0Ti04QThuT0E?oc=5",
@@ -13432,6 +13441,138 @@
    "ai": false
   },
   {
+   "id": "94ce5d39a988",
+   "title": "Day Trade hoje (26): Ibovespa reage após 4 quedas e dólar pode ampliar correção",
+   "link": "https://www.infomoney.com.br/mercados/mercados-day-trade-hoje-analistas-26112026/",
+   "published": "2026-11-26T10:03:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/mercados/mercados-day-trade-hoje-analistas-26112026/",
+     "title": "Day Trade hoje (26): Ibovespa reage após 4 quedas e dólar pode ampliar correção"
+    }
+   ],
+   "ids": [
+    "94ce5d39a988"
+   ],
+   "snippet": "Ibovespa reage após quatro pregões de queda, enquanto minidólar e Bitcoin futuro testam regiões importantes em meio ao feriado nos Estados Unidos The post Day Trade hoje (26): Ibovespa reage após 4 quedas e dólar pode ampliar correção appeared first on InfoMoney .",
+   "prescore": 5.2,
+   "headline": "Day Trade hoje (26): Ibovespa reage após 4 quedas e dólar pode ampliar correção",
+   "category": "mercados",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Ibovespa reage após quatro pregões de queda, enquanto minidólar e Bitcoin futuro testam regiões importantes em meio ao feriado nos Estados Unidos The post Day Trade hoje (26): Ibovespa reage após 4 quedas e dólar pode ampliar correção appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "283e5657b438",
+   "title": "Onde Investir repercute último Copom do ano e debate rumos da renda fixa em 2027",
+   "link": "https://www.infomoney.com.br/onde-investir/renda-fixa-2027-onde-investir-juros-altos/",
+   "published": "2026-11-26T10:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://www.infomoney.com.br/onde-investir/renda-fixa-2027-onde-investir-juros-altos/",
+     "title": "Onde Investir repercute último Copom do ano e debate rumos da renda fixa em 2027"
+    }
+   ],
+   "ids": [
+    "283e5657b438"
+   ],
+   "snippet": "Painel vai reunir especialistas da XP e da Monte Bravo para discutir títulos públicos, crédito privado e investimentos internacionais diante do cenário de juros elevados The post Onde Investir repercute último Copom do ano e debate rumos da renda fixa em 2027 appeared first on InfoMoney .",
+   "prescore": 5.2,
+   "headline": "Onde Investir repercute último Copom do ano e debate rumos da renda fixa em 2027",
+   "category": "macro",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Painel vai reunir especialistas da XP e da Monte Bravo para discutir títulos públicos, crédito privado e investimentos internacionais diante do cenário de juros elevados The post Onde Investir repercute último Copom do ano e debate rumos da renda fixa em 2027 appeared first on InfoMoney .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9f53515d98e9",
+   "title": "Why Chinese Companies Are Scrambling to Acquire the Brazilian Cement Maker That Posted an $80 Million Half-Year Loss",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUbS1aUFN2cGVvNkJUN0VWY29Ydm5DUl9JRm5kVjlQc2l3dER0SGZoOWJwNDdVY0ptQXE5VmY2YkJxSWo0c3ZHTVlERUZXbFhiZ3hz?oc=5",
+   "published": "2026-11-26T04:44:43+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "36Kr",
+     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUbS1aUFN2cGVvNkJUN0VWY29Ydm5DUl9JRm5kVjlQc2l3dER0SGZoOWJwNDdVY0ptQXE5VmY2YkJxSWo0c3ZHTVlERUZXbFhiZ3hz?oc=5",
+     "title": "Why Chinese Companies Are Scrambling to Acquire the Brazilian Cement Maker That Posted an $80 Million Half-Year Loss"
+    }
+   ],
+   "ids": [
+    "9f53515d98e9"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Why Chinese Companies Are Scrambling to Acquire the Brazilian Cement Maker That Posted an $80 Million Half-Year Loss",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "5927989e92be",
+   "title": "Merger control developments in Brazil: January-September 2026",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Pd21TNloza05lOWVIZ0hWZUpaQzZiOTRWdmhQWFRmcHdibjFNdHg5QlhwdjE1U0R0a09yaVJFMmtCdTZqRmd5ZUdDLTBJM2Y1TUZKN3BOMlRhSVdRSzVMYlZZUE5VeWlBQjlxQVlidGlueHpKeFZj?oc=5",
+   "published": "2026-11-25T21:54:44+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Mattos Filho",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Pd21TNloza05lOWVIZ0hWZUpaQzZiOTRWdmhQWFRmcHdibjFNdHg5QlhwdjE1U0R0a09yaVJFMmtCdTZqRmd5ZUdDLTBJM2Y1TUZKN3BOMlRhSVdRSzVMYlZZUE5VeWlBQjlxQVlidGlueHpKeFZj?oc=5",
+     "title": "Merger control developments in Brazil: January-September 2026"
+    }
+   ],
+   "ids": [
+    "5927989e92be"
+   ],
+   "snippet": "",
+   "prescore": 5.2,
+   "headline": "Merger control developments in Brazil: January-September 2026",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "36d4f7a8c613",
    "title": "About 99% of votes cast at Afya (AFYA) backed a merger agreement that still needs Brazil’s antitrust approval.",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaUpMQVZILWtYVGJpYkhHdmVxNDVVRDcya0VreEJjQTJDU1hDNjQ0dXFDT3FSdFdQa0NFenRndzF2aGtUSVAtVTA3YkRhMzdXUkRxMGxFaWdBRlZVVDhCbzFCQTJKTk14WlF1N3RYTG5zMTFfZlVRT3A1VEJGekNTQXpmdmkwZUYtNlkwR2NjVFJ5QnFTYnRDTC0xeElPaFc0Ul9PbGxnUQ?oc=5",
@@ -13450,39 +13591,6 @@
    "snippet": "",
    "prescore": 5.2,
    "headline": "About 99% of votes cast at Afya (AFYA) backed a merger agreement that still needs Brazil’s antitrust approval.",
-   "category": "mna",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "8e7094f7410e",
-   "title": "YDUQS Shareholders Approve Proposed Merger With Afya",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOE9CWXh2ZnF0WmVocGJlQWJYOWR3d1RzS0hqUlp2MU5jdkFQa3diU1FBUERwLWhVLVdfV1F2eGhFaTVqY19LY2xUdlhJWHdjYWNzSDhXcXFMQ1NaVnZTaFdnMnk3NllXcWpBZmhWV0h4WGRsX0xsWHY3RWd0SnBRZW1qVnhkUDlpLTlGRjVfYVFCdFJkZFZnVjViRzIzMDJ6djhJdDZ0SQ?oc=5",
-   "published": "2026-11-25T21:22:29+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "TipRanks",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOE9CWXh2ZnF0WmVocGJlQWJYOWR3d1RzS0hqUlp2MU5jdkFQa3diU1FBUERwLWhVLVdfV1F2eGhFaTVqY19LY2xUdlhJWHdjYWNzSDhXcXFMQ1NaVnZTaFdnMnk3NllXcWpBZmhWV0h4WGRsX0xsWHY3RWd0SnBRZW1qVnhkUDlpLTlGRjVfYVFCdFJkZFZnVjViRzIzMDJ6djhJdDZ0SQ?oc=5",
-     "title": "YDUQS Shareholders Approve Proposed Merger With Afya"
-    }
-   ],
-   "ids": [
-    "8e7094f7410e"
-   ],
-   "snippet": "",
-   "prescore": 5.2,
-   "headline": "YDUQS Shareholders Approve Proposed Merger With Afya",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13856,39 +13964,6 @@
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Resumo: Enquanto os investidores de Wall Street ganham uma pausa devido ao feriado de Ação de Graças nesta quinta-feira (26), o Ibovespa (IBOV) vai passar pela prova de fogo da semana. Hoje, os investidores acompanham a divulgação do IPCA-15. A agenda econômica conta ainda com a publicação de dados do investimento estrangeiro direto e das […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d13b953c2793",
-   "title": "Gold Wavers After Battering as Traders Assess Fed Path, AI Angst",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-26/gold-edges-lower-as-us-inflation-data-fuels-bets-for-rate-hikes",
-   "published": "2026-11-26T00:18:09+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-26/gold-edges-lower-as-us-inflation-data-fuels-bets-for-rate-hikes",
-     "title": "Gold Wavers After Battering as Traders Assess Fed Path, AI Angst"
-    }
-   ],
-   "ids": [
-    "d13b953c2793"
-   ],
-   "snippet": "Gold wavered just above the lowest level in about 15 months, as investors contended with concerns that the Federal Reserve will hike interest rates to combat inflation against a calmer tone in wider markets.",
-   "prescore": 4.8,
-   "headline": "Gold Wavers After Battering as Traders Assess Fed Path, AI Angst",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Gold wavered just above the lowest level in about 15 months, as investors contended with concerns that the Federal Reserve will hike interest rates to combat inflation against a calmer tone in wider markets.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14275,28 +14350,28 @@
    "ai": false
   },
   {
-   "id": "c93ed08bf3fd",
-   "title": "IPCA-15, agenda fiscal de Lula, feriado nos EUA e outros destaques desta quinta-feira",
-   "link": "https://www.infomoney.com.br/mercados/ipca-15-debate-fiscal-feriado-eua-agenda-26112026/",
-   "published": "2026-11-26T09:28:42+00:00",
+   "id": "b15d09b28215",
+   "title": "Governo Lula tem 28 dias para aprovar 8 projetos econômicos; veja quais",
+   "link": "https://www.infomoney.com.br/politica/governo-lula-tem-28-dias-para-aprovar-8-projetos-economicos-veja-quais/",
+   "published": "2026-11-26T10:00:00+00:00",
    "region": "BR",
    "outlets": [
     {
      "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/ipca-15-debate-fiscal-feriado-eua-agenda-26112026/",
-     "title": "IPCA-15, agenda fiscal de Lula, feriado nos EUA e outros destaques desta quinta-feira"
+     "link": "https://www.infomoney.com.br/politica/governo-lula-tem-28-dias-para-aprovar-8-projetos-economicos-veja-quais/",
+     "title": "Governo Lula tem 28 dias para aprovar 8 projetos econômicos; veja quais"
     }
    ],
    "ids": [
-    "c93ed08bf3fd"
+    "b15d09b28215"
    ],
-   "snippet": "InfoMoney reúne as principais informações que devem movimentar os mercados nesta quinta-feira (26) The post IPCA-15, agenda fiscal de Lula, feriado nos EUA e outros destaques desta quinta-feira appeared first on InfoMoney .",
+   "snippet": "Avanço da oposição no próximo Congresso aumenta a pressão por votações ainda neste ano The post Governo Lula tem 28 dias para aprovar 8 projetos econômicos; veja quais appeared first on InfoMoney .",
    "prescore": 4.2,
-   "headline": "IPCA-15, agenda fiscal de Lula, feriado nos EUA e outros destaques desta quinta-feira",
+   "headline": "Governo Lula tem 28 dias para aprovar 8 projetos econômicos; veja quais",
    "category": "mercados",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "InfoMoney reúne as principais informações que devem movimentar os mercados nesta quinta-feira (26) The post IPCA-15, agenda fiscal de Lula, feriado nos EUA e outros destaques desta quinta-feira appeared first on InfoMoney .",
+   "summary": "Avanço da oposição no próximo Congresso aumenta a pressão por votações ainda neste ano The post Governo Lula tem 28 dias para aprovar 8 projetos econômicos; veja quais appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14869,6 +14944,39 @@
    "ai": false
   },
   {
+   "id": "b55531e81d4e",
+   "title": "German Bond Haven Trade Shifts as Investors Turn to Asset Swaps",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-26/german-bond-haven-trade-shifts-as-investors-turn-to-asset-swaps",
+   "published": "2026-11-26T09:52:35+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-26/german-bond-haven-trade-shifts-as-investors-turn-to-asset-swaps",
+     "title": "German Bond Haven Trade Shifts as Investors Turn to Asset Swaps"
+    }
+   ],
+   "ids": [
+    "b55531e81d4e"
+   ],
+   "snippet": "Investors are changing how they trade German government bonds, Europe’s go-to haven in times of stress.",
+   "prescore": 3.8,
+   "headline": "German Bond Haven Trade Shifts as Investors Turn to Asset Swaps",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Investors are changing how they trade German government bonds, Europe’s go-to haven in times of stress.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b1ec79133cb7",
    "title": "China Braces for Tariff Hike After US Announcement",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS3NyOFFZY3BES2RUSW1SemdaTWUwNGplTjBWQ2drSjc0cy1RV0pIdEMzbmdadV8wbUViUXI1eEFDQlNjN3pCT2M1LWVYYU42OEtYTU1meEZKT2ZqeFVrUlU5cUdia1pJMHlFNDVYZGRGWmE1WDZmQWcxQTl6UkstWElHbmlKSXpHNHdna2x5OXlsTlg0eWRuZ1B6ejhwdF9nM1o2ZGNIMA?oc=5",
@@ -14938,17 +15046,23 @@
    "id": "910c140987a5",
    "title": "Can Trump Gain Any Leverage Over China With the 40% Tariff Threat?",
    "link": "https://www.bloomberg.com/news/videos/2026-11-26/insight-with-haslinda-amin-11-26-2026-video",
-   "published": "2026-11-26T09:09:16+00:00",
+   "published": "2026-11-26T08:41:53+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/videos/2026-11-26/insight-with-haslinda-amin-11-26-2026-video",
      "title": "Can Trump Gain Any Leverage Over China With the 40% Tariff Threat?"
+    },
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcTVMWExHUXNZQS1TWHdON1BLSjgydFhicUlOeWo0dXZ4cVBxYm4zUk9ydG5YXy1oNlVNMDB4TlU1ZjRoaDdGMlJieE5XSlJsenNFZ3ZDWGtvVEt0V0IyaGNwRnYyRGNJdXlBaGs0MEdsUjhPZ1FwNFV2NlVfZ21Ldk9DLTk3Wk1lWF9FenVEZHdselN5X2ktUHItdUpMZVM4eldXMnNiM2pqWExNMUotWGdjYw?oc=5",
+     "title": "Trump Aims to Keep Leverage Over Xi With 40% China Tariff Threat"
     }
    ],
    "ids": [
-    "910c140987a5"
+    "910c140987a5",
+    "959e8427effa"
    ],
    "snippet": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter. The show features prominent leaders spanning the worlds of business, finance, politics and culture. (Source: Bloomberg)",
    "prescore": 3.8,
@@ -15023,6 +15137,45 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "\"Bloomberg: The China Show is your definitive source for news and analysis on the world's second-biggest economy. From politics and policy to tech and trends, Yvonne Man gives global investors unique insight, delivering in-depth discussions with the newsmakers who matter.\" (Source: Bloomberg)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ab42135aaa5b",
+   "title": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSkF3aC1sbjRDck0zelpqaHVfa29acDJvY3VITko0eWJjaFJaQndUREJXUmhZb3ZDZm14YmRVZDFOV2JZUF9YNW9xVF9lOHVSTFVQWVBQRGpSQy1STi1Pa1EtTW9vQVRmUmNPQm9wdDJLcmNSRlB5MEhLak5VaGpEWVhNVThvNUZIQnVYa2VDa0ZyMHBtLUx5REVTUmRySm9WU3BwMm5VWTRtRjdXRVZOYWk5NDc?oc=5",
+   "published": "2026-11-26T07:02:03+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSkF3aC1sbjRDck0zelpqaHVfa29acDJvY3VITko0eWJjaFJaQndUREJXUmhZb3ZDZm14YmRVZDFOV2JZUF9YNW9xVF9lOHVSTFVQWVBQRGpSQy1STi1Pa1EtTW9vQVRmUmNPQm9wdDJLcmNSRlB5MEhLak5VaGpEWVhNVThvNUZIQnVYa2VDa0ZyMHBtLUx5REVTUmRySm9WU3BwMm5VWTRtRjdXRVZOYWk5NDc?oc=5",
+     "title": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy"
+    },
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-26/us-partners-respond-to-tariffs-with-anger-protest-and-diplomacy",
+     "title": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy"
+    }
+   ],
+   "ids": [
+    "ab42135aaa5b",
+    "20e5c5169770"
+   ],
+   "snippet": "Major US trading partners responded with disappointment and protests while holding out the prospect of negotiations after the Trump administration rolled out a fresh round of tariffs on goods from China, the European Union and a dozen other economies.",
+   "prescore": 3.8,
+   "headline": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Major US trading partners responded with disappointment and protests while holding out the prospect of negotiations after the Trump administration rolled out a fresh round of tariffs on goods from China, the European Union and a dozen other economies.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15772,7 +15925,7 @@
    "id": "b31ba2c402e0",
    "title": "No Evidence China Orchestrated Jensen Huang’s Affair, Officials Brief Congress",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNM1MzT3BJb0JlQ2xzdTJRZi12MllDSlBzS3IwMlZkYVZhV2NuUnpPWGV3LW9lVUg3MTg5QzZ5amhpRTZMeThEYXpLSHc5Q1RJdkh0RVVmMmd0aEQ4OHZIYTBWZ0JiWV9FU2dPbnNjQ1c4LXpfNFZaWmlMckdqWkl1U2Nvb1NoZUdlYVNNQ2xYVHNPc2ZQY05qS0xTd1lUUkowaHdEQUlLVGhJYjdPM01JMFByUDV3QjRhQmJ4aThsSDhSQTIwSUpfMy1UZlE?oc=5",
-   "published": "2026-11-25T15:47:43+00:00",
+   "published": "2026-11-25T15:46:00+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -15874,51 +16027,6 @@
    "ai": false
   },
   {
-   "id": "c905e081c883",
-   "title": "TCU livra Dilma de multas por irregularidades fiscais em 2014",
-   "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/poder/2026/11/tcu-livra-dilma-de-multas-por-irregularidades-fiscais-em-2014.shtml",
-   "published": "2026-11-25T21:36:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/poder/2026/11/tcu-livra-dilma-de-multas-por-irregularidades-fiscais-em-2014.shtml",
-     "title": "TCU livra Dilma de multas por irregularidades fiscais em 2014"
-    },
-    {
-     "source": "Folha",
-     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/tcu-livra-dilma-de-multas-por-irregularidades-fiscais-em-2014.shtml",
-     "title": "TCU livra Dilma de multas por irregularidades fiscais em 2014"
-    },
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/tcu-afasta-multas-a-dilma-e-auxiliares-por-pedaladas-fiscais-de-2014-fets/",
-     "title": "TCU afasta multas a Dilma e auxiliares por pedaladas fiscais de 2014"
-    }
-   ],
-   "ids": [
-    "c905e081c883",
-    "2baa059938f1",
-    "46ad51a771d5"
-   ],
-   "snippet": "O TCU (Tribunal de Contas da União) livrou a ex-presidente Dilma Rousseff ( PT ) e ex-integrantes de sua equipe econômica de punições por irregularidades na gestão fiscal e orçamentária de 2014, em casos conexos às chamadas \"pedaladas fiscais\" , que resultaram no impeachment dela em 2016. Leia mais (11/25/2026 - 18h36)",
-   "prescore": 3.5,
-   "headline": "TCU livra Dilma de multas por irregularidades fiscais em 2014",
-   "category": "macro",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O TCU (Tribunal de Contas da União) livrou a ex-presidente Dilma Rousseff ( PT ) e ex-integrantes de sua equipe econômica de punições por irregularidades na gestão fiscal e orçamentária de 2014, em casos conexos às chamadas \"pedaladas fiscais\" , que resultaram no impeachment dela em 2016. Leia mais (11/25/2026 - 18h36)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "1083f3fad015",
    "title": "How Are US Trading Partners Responding to Tariffs?",
    "link": "https://www.bloomberg.com/news/videos/2026-11-26/how-are-us-trading-partners-responding-to-tariffs-video",
@@ -15941,39 +16049,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Major US trading partners responded with disappointment and protests while holding out the prospect of negotiations after the Trump administration rolled out a fresh round of tariffs on goods from China, the European Union and a dozen other economies. Bloomberg's Jon Herskovitz reports. (Source: Bloomberg)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "20e5c5169770",
-   "title": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-26/us-partners-respond-to-tariffs-with-anger-protest-and-diplomacy",
-   "published": "2026-11-26T07:02:03+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-26/us-partners-respond-to-tariffs-with-anger-protest-and-diplomacy",
-     "title": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy"
-    }
-   ],
-   "ids": [
-    "20e5c5169770"
-   ],
-   "snippet": "Major US trading partners responded with disappointment and protests while holding out the prospect of negotiations after the Trump administration rolled out a fresh round of tariffs on goods from China, the European Union and a dozen other economies.",
-   "prescore": 3.4,
-   "headline": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Major US trading partners responded with disappointment and protests while holding out the prospect of negotiations after the Trump administration rolled out a fresh round of tariffs on goods from China, the European Union and a dozen other economies.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16249,39 +16324,6 @@
    "ai": false
   },
   {
-   "id": "75d48a3975d9",
-   "title": "Xi Unleashes China ‘Earthquake’ With Ouster of Rising Star",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-25/xi-unleashes-china-earthquake-with-shock-ouster-of-rising-star",
-   "published": "2026-11-25T12:15:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-25/xi-unleashes-china-earthquake-with-shock-ouster-of-rising-star",
-     "title": "Xi Unleashes China ‘Earthquake’ With Ouster of Rising Star"
-    }
-   ],
-   "ids": [
-    "75d48a3975d9"
-   ],
-   "snippet": "Ten months before his sudden downfall, Shanghai Party Chief Chen Jining made a visit to an industrial park incubating the city’s artificial intelligence start-ups.",
-   "prescore": 3.4,
-   "headline": "Xi Unleashes China ‘Earthquake’ With Ouster of Rising Star",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Ten months before his sudden downfall, Shanghai Party Chief Chen Jining made a visit to an industrial park incubating the city’s artificial intelligence start-ups.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "d0669ee9c4da",
    "title": "Acidente com caminhão-tanque deixa pelo menos 30 mortos no Egito",
    "link": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/acidente-com-caminhao-tanque-deixa-pelo-menos-30-mortos-no-egito.shtml",
@@ -16321,28 +16363,28 @@
    "ai": false
   },
   {
-   "id": "97327105854b",
-   "title": "De 2002 a 2026, o que mudou na Carta ao Povo Brasileiro do PT?",
-   "link": "https://www.infomoney.com.br/politica/de-2002-a-2026-o-que-mudou-na-carta-ao-povo-brasileiro-do-pt/",
-   "published": "2026-11-26T09:00:00+00:00",
+   "id": "3f2772bf9f1f",
+   "title": "China ameaça retaliar contra novas tarifas dos EUA e alerta para risco à trégua comercial",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPLUxlWF9pOUZ3NThtOE9hQWRrcWxvX3J4ald2U01oWUF4VHFfdURiWUt5VnZhdmYwTk1sclpNelFWbmdwRDd0ZDJCNHMwbkpZVGtFU05TeUJWNzJpNzQyQVJTLU9uR0VuVTRGc3FZMU1ZNS1OcjNFYThHRDFQamVLR1ozLUxILVVkaE1rWmtiRzdKdUY4WmVja0Y4Vk1mOURNamxVZ3FzVjgyUUtJTzVzRXRMNFdDaldESVY1TkJCOThKdkR0YUp0MHhlVXFxbjFnTzA5Ng?oc=5",
+   "published": "2026-11-26T10:28:30+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/de-2002-a-2026-o-que-mudou-na-carta-ao-povo-brasileiro-do-pt/",
-     "title": "De 2002 a 2026, o que mudou na Carta ao Povo Brasileiro do PT?"
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPLUxlWF9pOUZ3NThtOE9hQWRrcWxvX3J4ald2U01oWUF4VHFfdURiWUt5VnZhdmYwTk1sclpNelFWbmdwRDd0ZDJCNHMwbkpZVGtFU05TeUJWNzJpNzQyQVJTLU9uR0VuVTRGc3FZMU1ZNS1OcjNFYThHRDFQamVLR1ozLUxILVVkaE1rWmtiRzdKdUY4WmVja0Y4Vk1mOURNamxVZ3FzVjgyUUtJTzVzRXRMNFdDaldESVY1TkJCOThKdkR0YUp0MHhlVXFxbjFnTzA5Ng?oc=5",
+     "title": "China ameaça retaliar contra novas tarifas dos EUA e alerta para risco à trégua comercial"
     }
    ],
    "ids": [
-    "97327105854b"
+    "3f2772bf9f1f"
    ],
-   "snippet": "Documento que ajudou Lula a conquistar a confiança do mercado há 24 anos ganha nova versão, agora em meio à disputa sobre o ajuste fiscal e as prioridades do quarto mandato The post De 2002 a 2026, o que mudou na Carta ao Povo Brasileiro do PT? appeared first on InfoMoney .",
+   "snippet": "",
    "prescore": 3.2,
-   "headline": "De 2002 a 2026, o que mudou na Carta ao Povo Brasileiro do PT?",
-   "category": "macro",
+   "headline": "China ameaça retaliar contra novas tarifas dos EUA e alerta para risco à trégua comercial",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Documento que ajudou Lula a conquistar a confiança do mercado há 24 anos ganha nova versão, agora em meio à disputa sobre o ajuste fiscal e as prioridades do quarto mandato The post De 2002 a 2026, o que mudou na Carta ao Povo Brasileiro do PT? appeared first on InfoMoney .",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16382,39 +16424,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ac4c4499d219",
-   "title": "Brasil vê queda de alocação de investidores e México ganha espaço; Vale lidera saídas",
-   "link": "https://www.infomoney.com.br/mercados/brasil-ve-queda-de-alocacao-entre-emergentes-e-mexico-ganha-espaco-vale-lidera-saida/",
-   "published": "2026-11-26T08:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/mercados/brasil-ve-queda-de-alocacao-entre-emergentes-e-mexico-ganha-espaco-vale-lidera-saida/",
-     "title": "Brasil vê queda de alocação de investidores e México ganha espaço; Vale lidera saídas"
-    }
-   ],
-   "ids": [
-    "ac4c4499d219"
-   ],
-   "snippet": "Alocação em ações brasileiras recua ao menor nível relativo desde 2022 entre fundos globais de mercados emergentes; México lidera fluxo na América Latina, enquanto gestores reduzem exposição a Vale (VALE3), Bradesco (BBDC4) e Banco do Brasil (BBAS3) The post Brasil vê queda de alocação de investidores e México ganha espaço; Vale lidera saídas appeared first on InfoMoney .",
-   "prescore": 3.2,
-   "headline": "Brasil vê queda de alocação de investidores e México ganha espaço; Vale lidera saídas",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Alocação em ações brasileiras recua ao menor nível relativo desde 2022 entre fundos globais de mercados emergentes; México lidera fluxo na América Latina, enquanto gestores reduzem exposição a Vale (VALE3), Bradesco (BBDC4) e Banco do Brasil (BBAS3) The post Brasil vê queda de alocação de investidores e México ganha espaço; Vale lidera saídas appeared first on InfoMoney .",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -16642,6 +16651,39 @@
    "snippet": "",
    "prescore": 3.2,
    "headline": "A oportunidade venezuelana: encontro entre Lula e Delcy recoloca possibilidade comercial na agenda",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "ebd86e301558",
+   "title": "Ministro promete orçamento no azul no Lula 4 e evita discussão sobre PEC: ‘Não tem bala de prata’",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX2dzR2xSbTg0Wk9yOGhOVjVDVHVPX29VWXRodFdiSTBzWk8ydkdPcGJYWE9LQUdhSnNJRnhTbjlWSldBQU9aVmt4LUdiUmcxVWV5azVpSGwxblJ3UlhMaE5wN2N3ZHREX0JIb0pTbEpYd3dicUdBN3lmRVV6SmdUYVZXV2MxRVBwaUdNb0NuUHhtY1ZsM3pxYURhTlJzQ2VxWnAxTUNNQ1R5OHZOdEYxbWUwN2NWSUdneWlyaW9IaXQwWFQ0YnNSc05rVzDSAdIBQVVfeXFMTWpBeUNocHR4eF9Pa1lZUFhWcmNrcE55clBQaW51YW1STDZHTDlvNzkxb1Rhdkx1STlvdFo0aFJ1UmMzd1ZjbkRMYUhjRVdERTNhVmRtRG5EYkU0aHRyaUYzUHpkV09MakFrNEs2d3JOdHROeGFYUGFQYWNqTGJxdnRtR2dnR1hGemR2RHE4b2JTSE8weGI4ZFcyN2otUWdpQU9OUWw3WlBhbzByTExIMUZOWEl2RzZRSW9ZcGxySzNrckZOdDZyYkJONGFiZnhiYzhB?oc=5",
+   "published": "2026-11-25T14:11:39+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX2dzR2xSbTg0Wk9yOGhOVjVDVHVPX29VWXRodFdiSTBzWk8ydkdPcGJYWE9LQUdhSnNJRnhTbjlWSldBQU9aVmt4LUdiUmcxVWV5azVpSGwxblJ3UlhMaE5wN2N3ZHREX0JIb0pTbEpYd3dicUdBN3lmRVV6SmdUYVZXV2MxRVBwaUdNb0NuUHhtY1ZsM3pxYURhTlJzQ2VxWnAxTUNNQ1R5OHZOdEYxbWUwN2NWSUdneWlyaW9IaXQwWFQ0YnNSc05rVzDSAdIBQVVfeXFMTWpBeUNocHR4eF9Pa1lZUFhWcmNrcE55clBQaW51YW1STDZHTDlvNzkxb1Rhdkx1STlvdFo0aFJ1UmMzd1ZjbkRMYUhjRVdERTNhVmRtRG5EYkU0aHRyaUYzUHpkV09MakFrNEs2d3JOdHROeGFYUGFQYWNqTGJxdnRtR2dnR1hGemR2RHE4b2JTSE8weGI4ZFcyN2otUWdpQU9OUWw3WlBhbzByTExIMUZOWEl2RzZRSW9ZcGxySzNrckZOdDZyYkJONGFiZnhiYzhB?oc=5",
+     "title": "Ministro promete orçamento no azul no Lula 4 e evita discussão sobre PEC: ‘Não tem bala de prata’"
+    }
+   ],
+   "ids": [
+    "ebd86e301558"
+   ],
+   "snippet": "",
+   "prescore": 3.2,
+   "headline": "Ministro promete orçamento no azul no Lula 4 e evita discussão sobre PEC: ‘Não tem bala de prata’",
    "category": "politica",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -16922,7 +16964,7 @@
   },
   {
    "id": "65b095fd125f",
-   "title": "Chance é remota de Trabuco topar Fazenda - mas torcida é grande",
+   "title": "Chance de Trabuco topar Fazenda é remota – mas torcida é grande",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUlxeXZlbXUwbTZodnZRVS1UYWppR0tUVjY3WlhDZ2U1YW5xbHR5MEM1Z3dTYUpEYkdZSlZ2c3J6Tk4xck5HRzN0S2dmNkdlU0lIZ1ZOTzFmT1kzTkNTNURfeDZmRzNhelA0UjdUanR6OUY3dDFQN25UYThCTUk2NnhGaVU4SHJPTko5SW9JUnp6SktlSEJ5VWp6V2QtS1NjNlBIbGlwdDVZVkM2MjhEZHppMHJtbXfSAcYBQVVfeXFMUDBaYnRxR24zUm5kdE5JZGxQd2ZKQjRzUXFoSTNIazhlMFNYbWhjOUZPUy1jbWNHVlZRTkNGSGdLM1hEUjlWRTNFVzhKQ1R3N1ZmRDYwZEVlSUFDLVAtTW1ZT041MWhGV253blBMYmktWi1ZMTUwRFFCYmRwMGhkaDlEamRMTHl6eXhtZlBaZGp4QUVQZnFGSFlLYmtiV0RVOHRoaVhISVRETi1CZVlQSzRKdXQwZFFydGV6TmkxUE10TTkzQkpn?oc=5",
    "published": "2026-11-26T01:13:42+00:00",
    "region": "BR",
@@ -16930,7 +16972,7 @@
     {
      "source": "Pipeline (Valor)",
      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUlxeXZlbXUwbTZodnZRVS1UYWppR0tUVjY3WlhDZ2U1YW5xbHR5MEM1Z3dTYUpEYkdZSlZ2c3J6Tk4xck5HRzN0S2dmNkdlU0lIZ1ZOTzFmT1kzTkNTNURfeDZmRzNhelA0UjdUanR6OUY3dDFQN25UYThCTUk2NnhGaVU4SHJPTko5SW9JUnp6SktlSEJ5VWp6V2QtS1NjNlBIbGlwdDVZVkM2MjhEZHppMHJtbXfSAcYBQVVfeXFMUDBaYnRxR24zUm5kdE5JZGxQd2ZKQjRzUXFoSTNIazhlMFNYbWhjOUZPUy1jbWNHVlZRTkNGSGdLM1hEUjlWRTNFVzhKQ1R3N1ZmRDYwZEVlSUFDLVAtTW1ZT041MWhGV253blBMYmktWi1ZMTUwRFFCYmRwMGhkaDlEamRMTHl6eXhtZlBaZGp4QUVQZnFGSFlLYmtiV0RVOHRoaVhISVRETi1CZVlQSzRKdXQwZFFydGV6TmkxUE10TTkzQkpn?oc=5",
-     "title": "Chance é remota de Trabuco topar Fazenda - mas torcida é grande"
+     "title": "Chance de Trabuco topar Fazenda é remota – mas torcida é grande"
     }
    ],
    "ids": [
@@ -16938,7 +16980,7 @@
    ],
    "snippet": "",
    "prescore": 3.0,
-   "headline": "Chance é remota de Trabuco topar Fazenda - mas torcida é grande",
+   "headline": "Chance de Trabuco topar Fazenda é remota – mas torcida é grande",
    "category": "empresas",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -17519,72 +17561,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "09756bb86cbb",
-   "title": "Anthropic’s Stock Sparks Rare Divide Inside One Wall Street Firm",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNlM1cEVZV2FiQzNweFlINDdoTDVGaDFnOS02eWpIV3BDUks0Q2FNc2dUWUkxOHl4LThWVXJCeXFRMHFETVpORjR2Y0lKSkh5YVN0Y2dUR0pTb1dmWUJoQmtCWTdETmpwYWtDZ1otOTlHb2lpdWNpSG5Kc3Z2QW94VjlWX1doeEJOLW01NU04aDBBYmxFY3RnLU1Vek9jdmEtVE9TTmFJZ1pWd0xLUXpnUnZjOEx3UQ?oc=5",
-   "published": "2026-11-26T09:08:53+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNlM1cEVZV2FiQzNweFlINDdoTDVGaDFnOS02eWpIV3BDUks0Q2FNc2dUWUkxOHl4LThWVXJCeXFRMHFETVpORjR2Y0lKSkh5YVN0Y2dUR0pTb1dmWUJoQmtCWTdETmpwYWtDZ1otOTlHb2lpdWNpSG5Kc3Z2QW94VjlWX1doeEJOLW01NU04aDBBYmxFY3RnLU1Vek9jdmEtVE9TTmFJZ1pWd0xLUXpnUnZjOEx3UQ?oc=5",
-     "title": "Anthropic’s Stock Sparks Rare Divide Inside One Wall Street Firm"
-    }
-   ],
-   "ids": [
-    "09756bb86cbb"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Anthropic’s Stock Sparks Rare Divide Inside One Wall Street Firm",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6337c9066e7f",
-   "title": "Bolsas da Ásia fecham majoritariamente em alta apesar de novas propostas tarifárias dos EUA",
-   "link": "https://www.moneytimes.com.br/bolsas-da-asia-fecham-majoritariamente-em-alta-apesar-de-novas-propostas-tarifarias-dos-eua-fets/",
-   "published": "2026-11-26T09:08:18+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/bolsas-da-asia-fecham-majoritariamente-em-alta-apesar-de-novas-propostas-tarifarias-dos-eua-fets/",
-     "title": "Bolsas da Ásia fecham majoritariamente em alta apesar de novas propostas tarifárias dos EUA"
-    }
-   ],
-   "ids": [
-    "6337c9066e7f"
-   ],
-   "snippet": "As bolsas asiáticas fecharam majoritariamente em alta nesta quinta-feira (26), enquanto investidores deixaram de lado as novas propostas tarifárias dos EUA e Wall Street recuperou a maior parte das perdas da sessão anterior, às vésperas do feriado de Ação de Graças. Os EUA disseram na quarta-feira que pretendem propor novas tarifas sobre a China e […]",
-   "prescore": 2.8,
-   "headline": "Bolsas da Ásia fecham majoritariamente em alta apesar de novas propostas tarifárias dos EUA",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "As bolsas asiáticas fecharam majoritariamente em alta nesta quinta-feira (26), enquanto investidores deixaram de lado as novas propostas tarifárias dos EUA e Wall Street recuperou a maior parte das perdas da sessão anterior, às vésperas do feriado de Ação de Graças. Os EUA disseram na quarta-feira que pretendem propor novas tarifas sobre a China e […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -17662,7 +17638,7 @@
    "id": "folha-poder",
    "name": "Folha",
    "ok": true,
-   "count": 57,
+   "count": 58,
    "error": null
   },
   {
@@ -17683,7 +17659,7 @@
    "id": "g1-politica",
    "name": "g1",
    "ok": true,
-   "count": 52,
+   "count": 51,
    "error": null
   },
   {
@@ -17697,7 +17673,7 @@
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 33,
+   "count": 34,
    "error": null
   },
   {
@@ -17760,7 +17736,7 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 22,
+   "count": 21,
    "error": null
   },
   {
@@ -17774,7 +17750,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 25,
+   "count": 53,
    "error": null
   },
   {
@@ -17994,11 +17970,11 @@
   }
  ],
  "stats": {
-  "raw": 931,
-  "unique": 333,
-  "unique_all": 862,
+  "raw": 959,
+  "unique": 346,
+  "unique_all": 889,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 4.5
+  "seconds": 3.3
  }
 }
