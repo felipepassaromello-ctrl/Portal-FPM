@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T15:48:24.832422-03:00",
+ "generated_at": "2026-11-27T16:17:23.674416-03:00",
  "date": "2026-11-27",
  "window": {
   "start": "2026-11-26T08:00:00-03:00",
@@ -10,7 +10,7 @@
  "analysis": {
   "by": "rotina",
   "updated_at": "2026-11-27T08:19:03.113218-03:00",
-  "analyzed": 206
+  "analyzed": 205
  },
  "categories": {
   "mna": "M&A e Deals",
@@ -116,42 +116,42 @@
    "symbol": "^BVSP",
    "name": "Ibovespa",
    "unit": "pts",
-   "price": 177190.31,
-   "change_pct": 0.2207635746606318,
+   "price": 177018.62,
+   "change_pct": 0.12365384615384833,
    "spark": [
     164796.0,
     164090.0,
     166685.0,
     176800.0,
-    177190.3125
+    177018.625
    ]
   },
   {
    "symbol": "BRL=X",
    "name": "Dólar",
    "unit": "R$",
-   "price": 5.5342,
-   "change_pct": -4.941683922620655,
+   "price": 5.5261,
+   "change_pct": -5.080813762566239,
    "spark": [
     5.947999954223633,
     5.928299903869629,
     5.9039998054504395,
     5.821899890899658,
-    5.534200191497803
+    5.526100158691406
    ]
   },
   {
    "symbol": "EURBRL=X",
    "name": "Euro",
    "unit": "R$",
-   "price": 6.0486,
-   "change_pct": -5.218437290432664,
+   "price": 6.0415,
+   "change_pct": -5.329694291265586,
    "spark": [
     6.523157119750977,
     6.4599480628967285,
     6.4641242027282715,
     6.38162088394165,
-    6.048600196838379
+    6.041500091552734
    ]
   },
   {
@@ -186,27 +186,27 @@
    "symbol": "^TNX",
    "name": "Treasury 10a",
    "unit": "%",
-   "price": 4.936,
-   "change_pct": 1.8151804766660007,
+   "price": 4.934,
+   "change_pct": 1.7739263516754589,
    "spark": [
     4.9120001792907715,
     4.918000221252441,
     4.9039998054504395,
     4.8480000495910645,
-    4.935999870300293
+    4.934000015258789
    ]
   },
   {
    "symbol": "BZ=F",
    "name": "Brent",
    "unit": "US$",
-   "price": 90.3,
-   "change_pct": -4.555544427171254,
+   "price": 90.46,
+   "change_pct": -4.386429112756507,
    "spark": [
     89.37000274658203,
     91.4000015258789,
     94.61000061035156,
-    90.30000305175781
+    90.45999908447266
    ]
   },
   {
@@ -226,14 +226,14 @@
    "symbol": "BTC-USD",
    "name": "Bitcoin",
    "unit": "US$",
-   "price": 59784.78,
-   "change_pct": -1.1735421601294482,
+   "price": 59900.49,
+   "change_pct": -0.9822692402215449,
    "spark": [
     61210.984375,
     59747.765625,
     60378.19921875,
     60494.7109375,
-    59784.78125
+    59900.48828125
    ]
   }
  ],
@@ -1707,46 +1707,6 @@
    "ai": true
   },
   {
-   "id": "aeba84282c68",
-   "title": "Warsh’s ‘good family fight’ could turn ugly",
-   "link": "https://www.ft.com/content/71ffa69f-2a07-44e4-8305-ae5548b89828?syn-25a6b1a6=1",
-   "published": "2026-11-27T05:00:13+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/71ffa69f-2a07-44e4-8305-ae5548b89828?syn-25a6b1a6=1",
-     "title": "Warsh’s ‘good family fight’ could turn ugly"
-    }
-   ],
-   "ids": [
-    "aeba84282c68"
-   ],
-   "snippet": "Federal Reserve officials face a three-dimensional tussle over inflation, AI and guidance",
-   "prescore": 2.6,
-   "headline": "Disputa interna no Fed sobre inflação, IA e comunicação pode azedar",
-   "category": "internacional",
-   "importance": 7,
-   "importance_reason": "Rumos do Fed definem juros globais e câmbio.",
-   "summary": "O FT diz que dirigentes do Fed enfrentam um embate em três frentes: inflação, IA e comunicação de política monetária, sob a liderança de Warsh.",
-   "involves": "Federal Reserve; Kevin Warsh",
-   "interpretation": "Divisão interna pode gerar sinais ambíguos e maior volatilidade nas expectativas de juros.",
-   "impact": "Afeta Treasuries, dólar e, por tabela, curva de juros e câmbio no Brasil.",
-   "sentiment": "misto",
-   "entities": [
-    "Federal Reserve",
-    "Warsh"
-   ],
-   "tags": [
-    "Fed",
-    "juros",
-    "inflação"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "93415fdd8d45",
    "title": "Global markets rally as end of bruising month approaches",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeDB1T1E2SVA0LVpuZFR6d2d5dWFobkEwdkN5aFVmZUZKN1pSVWExbEJzWlZhV0tKcklRQ09yZlFTZklkLTBNSGFwbHBfbHR2SWZoQTdXcWtFdEViWGdQamN2a0JjWjZ4M0Mydmlpc1lrQUdYaFBNVkFBdTQ4djVpbjZrRQ?oc=5",
@@ -1907,51 +1867,6 @@
     "tarifas",
     "comércio",
     "EUA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "7cb5b062de1d",
-   "title": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTlk0cWFXc1dCWFZnYlZPbnBBNGtndk1USE5BM3dhd1RYNzNZdkJiYlNxWmtsLVoxa3FSR0FmNkdKaEVsaVZjYnYwaHl3QjVUbnpLcFpfUDRyenNXMjVFOVNEY083SG9rSTBLeHd4ZENhb1hBc0gtS3kyYzRQUU8xM1duaG51WHZjRFhRcXh5Y1FrdEk3WTIyMXFhdGw3ZzliWjc3RkJDVGZYT252YXRZRTd2Y3RXY2wwbWVVNEREWQ?oc=5",
-   "published": "2026-11-26T12:45:00+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTlk0cWFXc1dCWFZnYlZPbnBBNGtndk1USE5BM3dhd1RYNzNZdkJiYlNxWmtsLVoxa3FSR0FmNkdKaEVsaVZjYnYwaHl3QjVUbnpLcFpfUDRyenNXMjVFOVNEY083SG9rSTBLeHd4ZENhb1hBc0gtS3kyYzRQUU8xM1duaG51WHZjRFhRcXh5Y1FrdEk3WTIyMXFhdGw3ZzliWjc3RkJDVGZYT252YXRZRTd2Y3RXY2wwbWVVNEREWQ?oc=5",
-     "title": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist"
-    },
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMG9zX0RPUEVtQjFwX3JjTHJlTGZQMHY0OGtiTXRlbE9Kam5MLUdKTlJmdXgyaFZJSWdiWFZtbWVzQXlqTkp1ZzF6d0UwaEg1U09FY2xHbl9hM1FVYWZubGlndHJ4ZzlsMHNDZThVczU0VEpvTFZONGZZdXd6ak5zV1RBRnRQaTk2dU01bFJsYkQzMzAyTVNkcFNCYWxDYkNrNkpLeEpmZWFIWmVTNDZHTUxFTTFYckVpM1NjeQ?oc=5",
-     "title": "Oil Prices Rise as Traders Weigh Middle East Supply Risks, OPEC+ Meeting"
-    }
-   ],
-   "ids": [
-    "7cb5b062de1d",
-    "4a4cb1334125"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Petróleo sobe com riscos de oferta no Oriente Médio e reunião da Opep+",
-   "category": "mercados",
-   "importance": 7,
-   "importance_reason": "Movimento do petróleo afeta Petrobras e inflação.",
-   "summary": "Os preços do petróleo subiram com a avaliação dos riscos de oferta no Oriente Médio e a reunião da Opep+.",
-   "involves": "Petróleo; Opep+; Oriente Médio",
-   "interpretation": "Combinação de risco geopolítico e decisão de oferta.",
-   "impact": "Favorece Petrobras e petroleiras; pressiona inflação de combustíveis.",
-   "sentiment": "misto",
-   "entities": [
-    "Opep+"
-   ],
-   "tags": [
-    "petróleo",
-    "Opep+",
-    "Oriente Médio"
    ],
    "is_deal": false,
    "deal": null,
@@ -2620,44 +2535,6 @@
    "ai": true
   },
   {
-   "id": "2ea662a7fa7a",
-   "title": "IPCA-15: prévia da inflação sobe 0,22% em novembro, puxada por alimentos",
-   "link": "https://g1.globo.com/economia/noticia/2026/11/26/ipca-15-previa-da-inflacao-novembro.ghtml",
-   "published": "2026-11-26T12:00:28+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "g1",
-     "link": "https://g1.globo.com/economia/noticia/2026/11/26/ipca-15-previa-da-inflacao-novembro.ghtml",
-     "title": "IPCA-15: prévia da inflação sobe 0,22% em novembro, puxada por alimentos"
-    }
-   ],
-   "ids": [
-    "2ea662a7fa7a"
-   ],
-   "snippet": "IPCA-15 fica em 0,22% em novembro Setor de serviços — que engloba bares, restaurantes, hotelaria, salões de beleza e outras atividades do tipo. Fábio Tito/g1 O Índice Nacional de Preços ao Consumidor Amplo 15 (IPCA-15), considerado a prévia da inflação oficial do país, subiu 0,22% em novembro. Os dados foram divulgados nesta quinta-feira (26) pelo Instituto Brasileiro de Geografia e Estatística (IBGE). O número representa uma desaceleração em relação a outubro, quando o indicador avançou 0,32% e ficou abaixo do esperado pelo mercado, de 0,34%, segundo pesquisa da Reuters. Com o resultado, o IP",
-   "prescore": 3.8,
-   "headline": "IPCA-15 sobe 0,22% em novembro, puxado por alimentos",
-   "category": "macro",
-   "importance": 6,
-   "importance_reason": "Mesmo dado de inflação, com foco nos alimentos.",
-   "summary": "O IPCA-15 subiu 0,22% em novembro, desacelerando frente aos 0,32% de outubro, segundo o IBGE.",
-   "involves": "IBGE, IPCA-15, alimentos",
-   "interpretation": "Desaceleração, mas alimentos continuam como pressão.",
-   "impact": "Contribui para a leitura do Copom.",
-   "sentiment": "neutro",
-   "entities": [
-    "IBGE"
-   ],
-   "tags": [
-    "IPCA-15",
-    "inflação"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
    "id": "89c4194b960e",
    "title": "Investimento estrangeiro atinge marca US$ 1,4 trilhão em 2025, quase metade do PIB, diz BC",
    "link": "https://g1.globo.com/economia/noticia/2026/11/26/investimento-estrangeiro-atinge-marca-us-14-trilhao-em-2025-quase-metade-do-pib-aplicacoes-no-exterior-superam-reservas.ghtml",
@@ -3056,6 +2933,45 @@
     "defesa",
     "UE",
     "dívida"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "c34a5cda6da9",
+   "title": "Copper Surges Most in Seven Months as Risk Appetite Returns",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-27/copper-rebounds-from-11-month-low-on-return-of-risk-appetite",
+   "published": "2026-11-27T03:33:07+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-27/copper-rebounds-from-11-month-low-on-return-of-risk-appetite",
+     "title": "Copper Surges Most in Seven Months as Risk Appetite Returns"
+    }
+   ],
+   "ids": [
+    "c34a5cda6da9"
+   ],
+   "snippet": "Copper climbed the most since April, extending its rebound from an 11-month low earlier this week, as risk appetite returned after a rout fueled by concerns over the artificial intelligence trade.",
+   "prescore": 2.8,
+   "headline": "Cobre tem a maior alta em 10 meses com volta do apetite a risco",
+   "category": "mercados",
+   "importance": 6,
+   "importance_reason": "Commodity-chave para a Vale e o ciclo industrial.",
+   "summary": "O cobre subiu o máximo desde janeiro, estendendo a recuperação da mínima de 11 meses, com a volta do apetite a risco após a queda ligada ao receio com a IA.",
+   "involves": "Cobre, mercado de commodities.",
+   "interpretation": "Movimento de recuperação, não necessariamente tendência.",
+   "impact": "Positivo para mineradoras e para o Ibovespa, via commodities.",
+   "sentiment": "positivo",
+   "entities": [
+    "cobre"
+   ],
+   "tags": [
+    "cobre",
+    "commodities",
+    "metais"
    ],
    "is_deal": false,
    "deal": null,
@@ -3983,6 +3899,47 @@
    "ai": true
   },
   {
+   "id": "7642954deae8",
+   "title": "A trajetória de uma década assessorando reestruturação de empresas, como Grupo Virgolino de Oliveira, Grupo Safras e Braskem , levou a Makalu a explorar também o papel de investidora, área que acaba de bater R$ 2 bilhões em ativos sob gestão (AUM)",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBJNVU0ZmlGY1pqVS1kWE5UNURlSDk4UG1fZkRiSFdHdmo2LUwySU5DNzg3aHY2Q19lWWtIRUtrSlBZLWEwbTFOWHJ1TjlKRTJuTUE?oc=5",
+   "published": "2026-11-26T15:04:10+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Instagram",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBJNVU0ZmlGY1pqVS1kWE5UNURlSDk4UG1fZkRiSFdHdmo2LUwySU5DNzg3aHY2Q19lWWtIRUtrSlBZLWEwbTFOWHJ1TjlKRTJuTUE?oc=5",
+     "title": "A trajetória de uma década assessorando reestruturação de empresas, como Grupo Virgolino de Oliveira, Grupo Safras e Braskem , levou a Makalu a explorar também o papel de investidora, área que acaba de bater R$ 2 bilhões em ativos sob gestão (AUM)"
+    }
+   ],
+   "ids": [
+    "7642954deae8"
+   ],
+   "snippet": "",
+   "prescore": 4.4,
+   "headline": "Makalu, assessora de reestruturações, chega a R$ 2 bi de AUM como investidora",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Boutique de reestruturação com atuação em casos relevantes ganha escala como investidora.",
+   "summary": "Depois de uma década assessorando reestruturações como as do Grupo Virgolino de Oliveira, Grupo Safras e Braskem, a Makalu passou a investir e sua área de investimentos atingiu R$ 2 bilhões em ativos sob gestão.",
+   "involves": "Makalu; Grupo Virgolino de Oliveira; Grupo Safras; Braskem.",
+   "interpretation": "Boutique de advisory migra para a gestão de ativos.",
+   "impact": "Mais capital disponível para situações especiais e distressed no Brasil.",
+   "sentiment": "positivo",
+   "entities": [
+    "Makalu",
+    "Braskem",
+    "Grupo Safras"
+   ],
+   "tags": [
+    "reestruturação",
+    "AUM",
+    "distressed"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "99ff1ae33f41",
    "title": "O relatório da discórdia na Opep",
    "link": "https://braziljournal.com/o-relatorio-da-discordia-na-opep",
@@ -4019,6 +3976,60 @@
    ],
    "is_deal": false,
    "deal": null,
+   "ai": true
+  },
+  {
+   "id": "d555da102870",
+   "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
+   "published": "2026-11-26T11:01:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "TV Sim Brasil",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
+     "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada"
+    },
+    {
+     "source": "Motor1.com Brasil",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HWlFwODRyMzhwRXYxQUlHcXpaWWpWbzhBbHRhVFNGeEtwbWNQaWs0Y3JzRy01RWd6b1hqSjNVbzB3T2ZMTnpVYWlSUW1SUklyRmV0TnRtT1JFdFBSOEQ5eElfbnlCSW9XVEdGck15NnF1UTBaOFhXSUNvU3c2WTA?oc=5",
+     "title": "Dona da Avelloz compra Moto Morini e entra no mercado de alta cilindrada"
+    }
+   ],
+   "ids": [
+    "d555da102870",
+    "3eb9c5e097fa"
+   ],
+   "snippet": "",
+   "prescore": 3.9,
+   "headline": "Dona da Avelloz compra 70% da Moto Morini e entra em motos de alta cilindrada",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Aquisição de controle de marca europeia por grupo brasileiro; relevante para o setor, mas de porte pouco claro.",
+   "summary": "A empresa dona da Avelloz comprou 70% da Moto Morini e passa a atuar no segmento de alta cilindrada. Valor e assessores não foram divulgados no material.",
+   "involves": "Dona da Avelloz, Moto Morini, setor de motocicletas",
+   "interpretation": "Movimento de expansão para premium via compra de marca consolidada, com participação majoritária de 70%.",
+   "impact": "Amplia o portfólio do comprador e sinaliza apetite por ativos de marca no setor de duas rodas; efeito de mercado limitado.",
+   "sentiment": "positivo",
+   "entities": [
+    "Avelloz",
+    "Moto Morini"
+   ],
+   "tags": [
+    "motos",
+    "aquisição",
+    "alta cilindrada"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Dona da Avelloz",
+    "target": "Moto Morini (70%)",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Motocicletas",
+    "advisors": "não divulgado"
+   },
    "ai": true
   },
   {
@@ -5080,54 +5091,6 @@
    "ai": true
   },
   {
-   "id": "d555da102870",
-   "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
-   "published": "2026-11-27T01:06:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "TV Sim Brasil",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
-     "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada"
-    }
-   ],
-   "ids": [
-    "d555da102870"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Dona da Avelloz compra 70% da Moto Morini e entra em motos de alta cilindrada",
-   "category": "mna",
-   "importance": 5,
-   "importance_reason": "Aquisição de controle de marca europeia por grupo brasileiro; relevante para o setor, mas de porte pouco claro.",
-   "summary": "A empresa dona da Avelloz comprou 70% da Moto Morini e passa a atuar no segmento de alta cilindrada. Valor e assessores não foram divulgados no material.",
-   "involves": "Dona da Avelloz, Moto Morini, setor de motocicletas",
-   "interpretation": "Movimento de expansão para premium via compra de marca consolidada, com participação majoritária de 70%.",
-   "impact": "Amplia o portfólio do comprador e sinaliza apetite por ativos de marca no setor de duas rodas; efeito de mercado limitado.",
-   "sentiment": "positivo",
-   "entities": [
-    "Avelloz",
-    "Moto Morini"
-   ],
-   "tags": [
-    "motos",
-    "aquisição",
-    "alta cilindrada"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "Dona da Avelloz",
-    "target": "Moto Morini (70%)",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Motocicletas",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
    "id": "97b3f329be9c",
    "title": "Sandvik to acquire Brazilian mining wear and spare parts manufacturer Del Rey Minerals",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZHZKRVRLcDEwV1Q0dm16blp2QW8xMEdzcEFycXVKdThhM2cweFljXzROaS1mclFOcDdvTnphVV9RZkJMNm5oYW83VFdsbGpfVnhUZkE2a0ZZMzVYNHpBdWxWVU1xSnNtWktIMG80bnpSdWtMVmpIaU13ZDQ3bjNyMFY2dnBCZDhvX2Rwam0zMEVpMXlPbm9qeG5Zb2NOY2NJUEgzWnhscVVYQV93T3ozN04wVDd0NXg2MkRVaVlya2Y?oc=5",
@@ -5582,45 +5545,6 @@
     "IA",
     "China",
     "EUA"
-   ],
-   "is_deal": false,
-   "deal": null,
-   "ai": true
-  },
-  {
-   "id": "4ed528212dce",
-   "title": "O “cashback” de US$ 3,5 bilhões da Citadel",
-   "link": "https://neofeed.com.br/negocios/o-cashback-de-us-35-bilhoes-da-citadel/",
-   "published": "2026-11-26T23:29:39+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "NeoFeed",
-     "link": "https://neofeed.com.br/negocios/o-cashback-de-us-35-bilhoes-da-citadel/",
-     "title": "O “cashback” de US$ 3,5 bilhões da Citadel"
-    }
-   ],
-   "ids": [
-    "4ed528212dce"
-   ],
-   "snippet": "À frente da Citadel, gestora de fundos de hedge criada por ele em 1990, Ken Griffin se acostumou a empilhar, ano após ano, retornos acima da média de boa parte de seus pares. Ao que tudo indica, essa tradição será mantida em 2026 e virá acompanhada de um “cashback” recheado de dígitos. A expectativa é […] O post O “cashback” de US$ 3,5 bilhões da Citadel apareceu primeiro em NeoFeed .",
-   "prescore": 3.4,
-   "headline": "Citadel deve distribuir 'cashback' de US$ 3,5 bilhões a investidores",
-   "category": "mercados",
-   "importance": 4,
-   "importance_reason": "Notícia sobre desempenho de hedge fund global.",
-   "summary": "A Citadel, de Ken Griffin, deve manter retornos acima da média em 2026 e distribuir cerca de US$ 3,5 bilhões a investidores.",
-   "involves": "Citadel, Ken Griffin",
-   "interpretation": "Reflete desempenho forte do fundo.",
-   "impact": "Indicador de apetite do setor de hedge funds.",
-   "sentiment": "positivo",
-   "entities": [
-    "Citadel",
-    "Ken Griffin"
-   ],
-   "tags": [
-    "hedge fund",
-    "Citadel"
    ],
    "is_deal": false,
    "deal": null,
@@ -6235,6 +6159,46 @@
     "comércio",
     "Índia",
     "EUA"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
+   "id": "3223d8760c09",
+   "title": "Qantas Set to Pick Boeing for Bulk of 20 Long-Range Jet Order",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONWM0SG04YnNSNHdpNDhYdklrSjd1TXNHUkRDT2JLWGNyQ2tVcDk3bXF5ZXRaRVhuV0J3NkV3am1VdW03bnVtZ2JWdF9NV256YllmMndrTG9vZFJUaXEtdnkwQ2puSTY1T1Y0eFNiVTdxeU5LZUpza3hVdkp5LTUwak0wX1ppYnFoUkZmUG5NVk40WFlBVkF6c3VIOTZUektxN2htNmlHZmJhbkl1N1FfWmpR?oc=5",
+   "published": "2026-11-27T04:29:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONWM0SG04YnNSNHdpNDhYdklrSjd1TXNHUkRDT2JLWGNyQ2tVcDk3bXF5ZXRaRVhuV0J3NkV3am1VdW03bnVtZ2JWdF9NV256YllmMndrTG9vZFJUaXEtdnkwQ2puSTY1T1Y0eFNiVTdxeU5LZUpza3hVdkp5LTUwak0wX1ppYnFoUkZmUG5NVk40WFlBVkF6c3VIOTZUektxN2htNmlHZmJhbkl1N1FfWmpR?oc=5",
+     "title": "Qantas Set to Pick Boeing for Bulk of 20 Long-Range Jet Order"
+    }
+   ],
+   "ids": [
+    "3223d8760c09"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Qantas deve escolher a Boeing para a maior parte de pedido de 20 jatos de longo alcance",
+   "category": "empresas",
+   "importance": 4,
+   "importance_reason": "Encomenda de aeronaves, relevante para Boeing e Embraer só indiretamente.",
+   "summary": "A Qantas deve escolher a Boeing para a maior parte de um pedido de 20 aeronaves de longo alcance. O trecho não traz valores.",
+   "involves": "Qantas, Boeing.",
+   "interpretation": "Pelo título, a decisão ainda não foi formalizada.",
+   "impact": "Positivo para a Boeing; sem efeito direto no Brasil.",
+   "sentiment": "positivo",
+   "entities": [
+    "Qantas",
+    "Boeing"
+   ],
+   "tags": [
+    "aviação",
+    "Boeing",
+    "Qantas"
    ],
    "is_deal": false,
    "deal": null,
@@ -7190,6 +7154,39 @@
    "prescore": 5.4,
    "headline": "Fidelidade Prepara IPO em Lisboa para o segundo semestre de 2027",
    "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "c3d1cb18d3a6",
+   "title": "Mercado de M&A registra queda de 31% em operações, mas movimenta US$ 49,2 bilhões",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ012eWF2TXdZR19BSkFkNU9yRklWeldUTkxMVGlSRmtPTXNUeE4tbGh6M1hEWE1adGRPY01vYlJYM0F0bzA4Y1NWMjFyd3lKRnVlV2dCY0lidnFDS0hPMV9qSE5OZkF6RlFMNmxlWmQ0TWpudmc5a2tfYUdjeEc4YWUyVzJNcHlZZWFMazBsX2FLOXBaQWJ1NTdXc0pPT0hQakt2bWRqYTRxelE?oc=5",
+   "published": "2026-11-26T20:30:29+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Rádio Pampa",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ012eWF2TXdZR19BSkFkNU9yRklWeldUTkxMVGlSRmtPTXNUeE4tbGh6M1hEWE1adGRPY01vYlJYM0F0bzA4Y1NWMjFyd3lKRnVlV2dCY0lidnFDS0hPMV9qSE5OZkF6RlFMNmxlWmQ0TWpudmc5a2tfYUdjeEc4YWUyVzJNcHlZZWFMazBsX2FLOXBaQWJ1NTdXc0pPT0hQakt2bWRqYTRxelE?oc=5",
+     "title": "Mercado de M&A registra queda de 31% em operações, mas movimenta US$ 49,2 bilhões"
+    }
+   ],
+   "ids": [
+    "c3d1cb18d3a6"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Mercado de M&A registra queda de 31% em operações, mas movimenta US$ 49,2 bilhões",
+   "category": "mercados",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -8543,6 +8540,39 @@
    "ai": true
   },
   {
+   "id": "7969865cd524",
+   "title": "Mercado vê espaço para queda de ao menos 3,5% no dólar após confirmação de Trabuco",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSEExVC1pMTNFWnZHN1hmZkxDUzh1LUVqbVRVU1I1c2pqcWpUOURUajFXVDZtNE9icFQ2NUxrdjlmb25qd0xpM25NZDBGeWMtQl84T0J5Yk1IZ0NhZjF2bXBzbGhleEZEWC1uSTk2bkItem1JTk51amF6OS02UHAyNEt4Y2ZOUjVKbmVuRzRwMVJOVlJwWF8tRWg2c1NfTlh0SDMtT29fRlBrelppOFoycU4wTk5OejBObGJ0STlxS29NQUF5OVVlVjlWTDI3Q3RFSUJYMVA0cGJJYUk3MVhuYVdB0gHwAUFVX3lxTFBoNlcyaGhITElSOHpVcElwdWF4TllLR0FPbVRfZGw2cXBac2RKbWdoWFlnTDRTMXduVmVZcnNkSlpfXzdTaDIzb0ZGdGw0OFF4b2F2cmwyXzJMZjVkLW43aHRxZmtSUkRaZ0FhOGVCdUlyVmNmaWR1MngxS1FHYW1LTHJjVmdDYVlaN2phbjBYN0dGUkE5S1BYVDBBdUoyZXpjaDJNbHBFWC0zUDd5X0stNkhxTmlZUjh5aDdkaC1Wdmt3dmNpMXh6TnBTNlptUWUxUlFpZnNtNHBSZXZPQW1WdERHY1hPa1V6ZlFCVGV1cQ?oc=5",
+   "published": "2026-11-27T10:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSEExVC1pMTNFWnZHN1hmZkxDUzh1LUVqbVRVU1I1c2pqcWpUOURUajFXVDZtNE9icFQ2NUxrdjlmb25qd0xpM25NZDBGeWMtQl84T0J5Yk1IZ0NhZjF2bXBzbGhleEZEWC1uSTk2bkItem1JTk51amF6OS02UHAyNEt4Y2ZOUjVKbmVuRzRwMVJOVlJwWF8tRWg2c1NfTlh0SDMtT29fRlBrelppOFoycU4wTk5OejBObGJ0STlxS29NQUF5OVVlVjlWTDI3Q3RFSUJYMVA0cGJJYUk3MVhuYVdB0gHwAUFVX3lxTFBoNlcyaGhITElSOHpVcElwdWF4TllLR0FPbVRfZGw2cXBac2RKbWdoWFlnTDRTMXduVmVZcnNkSlpfXzdTaDIzb0ZGdGw0OFF4b2F2cmwyXzJMZjVkLW43aHRxZmtSUkRaZ0FhOGVCdUlyVmNmaWR1MngxS1FHYW1LTHJjVmdDYVlaN2phbjBYN0dGUkE5S1BYVDBBdUoyZXpjaDJNbHBFWC0zUDd5X0stNkhxTmlZUjh5aDdkaC1Wdmt3dmNpMXh6TnBTNlptUWUxUlFpZnNtNHBSZXZPQW1WdERHY1hPa1V6ZlFCVGV1cQ?oc=5",
+     "title": "Mercado vê espaço para queda de ao menos 3,5% no dólar após confirmação de Trabuco"
+    }
+   ],
+   "ids": [
+    "7969865cd524"
+   ],
+   "snippet": "",
+   "prescore": 3.8,
+   "headline": "Mercado vê espaço para queda de ao menos 3,5% no dólar após confirmação de Trabuco",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "60e8e0833be6",
    "title": "Brazil Markets Rally as Trabuco Pick Soothes Fiscal Fears",
    "link": "https://www.bloomberg.com/news/articles/2026-11-27/brazil-assets-rally-after-lula-names-banker-luiz-carlos-trabuco-cappi-finance-minister",
@@ -9070,6 +9100,39 @@
    "ai": true
   },
   {
+   "id": "d79d24243360",
+   "title": "Agenda do dia: Dados de desemprego do IBGE de outubro são destaque",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ1FJSXlEZFNFLWdLYTNfMlVheGZIYmYzU3dpblJKX21zTTd0ZEZLT0FKWW56WVdYbXZzQlRpV3BzcjZPVlBjNkdjUG1STEVuWWRYeFJJRVhycU50V1E5SlYtX1I1am1pQ3d0SGFIWk5ucmJVeUVjQnYtaTY5bU9Gek1qaFpDc2ZfdlRWYktvLWNNUGR6WjlQR1VGTXprRngxNmtuaHd1TEc3bU1mMGhXSEpFMl9sSFhfQ0k5SF84dXc?oc=5",
+   "published": "2026-11-27T10:54:43+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Valor Econômico",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ1FJSXlEZFNFLWdLYTNfMlVheGZIYmYzU3dpblJKX21zTTd0ZEZLT0FKWW56WVdYbXZzQlRpV3BzcjZPVlBjNkdjUG1STEVuWWRYeFJJRVhycU50V1E5SlYtX1I1am1pQ3d0SGFIWk5ucmJVeUVjQnYtaTY5bU9Gek1qaFpDc2ZfdlRWYktvLWNNUGR6WjlQR1VGTXprRngxNmtuaHd1TEc3bU1mMGhXSEpFMl9sSFhfQ0k5SF84dXc?oc=5",
+     "title": "Agenda do dia: Dados de desemprego do IBGE de outubro são destaque"
+    }
+   ],
+   "ids": [
+    "d79d24243360"
+   ],
+   "snippet": "",
+   "prescore": 2.8,
+   "headline": "Agenda do dia: Dados de desemprego do IBGE de outubro são destaque",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "fa18668458db",
    "title": "Italy’s Star Banker Scores a Big Away Win After Home Loss",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOUJNTmxQSlRlb25BbXpNU1V0R1RiYUktS0FVWTcyMVVod1RDZHdhYXl4MFBTUXVDN2toSzZkLTBXVVlINlIxOGtsNWhUY3dJYzM4Yk0wUHZmLVJTOVVsQ3JRLVNEZVlIODlrQ0huZldEMmpRSC1NZENvY2xDbHFjSFpUOWxLLWN3bmR0SU41TWwza0E0c2lsT18wVk1LTUJNaFF5aHJWSlVJemFsX0tlcGx5elZ4V0RaczB6cVdzZ1lzOW5L?oc=5",
@@ -9089,39 +9152,6 @@
    "prescore": 2.8,
    "headline": "Italy’s Star Banker Scores a Big Away Win After Home Loss",
    "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1242eca524aa",
-   "title": "Zara’s Ortega Buys Lisbon Building Following Chicago Tower Deals",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMkxTbnhNaEF6cFBELUJ5cnRNR0tJZFNZSlRGWUhEZDJXNklyU210N2huVTNWeExPMkN5eVEzWkt4MmJXOGpxUzdVaHY2Z3lUa0poaFNGdlNza0RHSFJya2dXbkEtUzNyY1BFeUJzOHcxRmFiOWRsaV9lYlBzWnE1a214LVFRSkxVMnUxLVZPR2F2U1Vha1JPcU9NNThNYnE0UEFLX3NCTWs1eWZSSEktbkVrOTFXUQ?oc=5",
-   "published": "2026-11-27T10:02:52+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMkxTbnhNaEF6cFBELUJ5cnRNR0tJZFNZSlRGWUhEZDJXNklyU210N2huVTNWeExPMkN5eVEzWkt4MmJXOGpxUzdVaHY2Z3lUa0poaFNGdlNza0RHSFJya2dXbkEtUzNyY1BFeUJzOHcxRmFiOWRsaV9lYlBzWnE1a214LVFRSkxVMnUxLVZPR2F2U1Vha1JPcU9NNThNYnE0UEFLX3NCTWs1eWZSSEktbkVrOTFXUQ?oc=5",
-     "title": "Zara’s Ortega Buys Lisbon Building Following Chicago Tower Deals"
-    }
-   ],
-   "ids": [
-    "1242eca524aa"
-   ],
-   "snippet": "",
-   "prescore": 2.8,
-   "headline": "Zara’s Ortega Buys Lisbon Building Following Chicago Tower Deals",
-   "category": "mna",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -9434,7 +9464,7 @@
   },
   {
    "id": "e5b8fdbcb8be",
-   "title": "Treasuries Fall as Haven Demand Ebbs Amid Stocks Rebound",
+   "title": "Treasuries Drop as Stock Rise Saps Demand for Haven Bonds",
    "link": "https://www.bloomberg.com/news/articles/2026-11-27/treasuries-retreat-as-gains-in-equities-sap-demand-for-havens",
    "published": "2026-11-27T02:43:08+00:00",
    "region": "INTL",
@@ -9442,7 +9472,7 @@
     {
      "source": "Bloomberg",
      "link": "https://www.bloomberg.com/news/articles/2026-11-27/treasuries-retreat-as-gains-in-equities-sap-demand-for-havens",
-     "title": "Treasuries Fall as Haven Demand Ebbs Amid Stocks Rebound"
+     "title": "Treasuries Drop as Stock Rise Saps Demand for Haven Bonds"
     }
    ],
    "ids": [
@@ -9450,7 +9480,7 @@
    ],
    "snippet": "US Treasuries fell as the market reopened after the Thanksgiving holiday, with gains in equities damping demand for haven assets.",
    "prescore": 2.8,
-   "headline": "Treasuries Fall as Haven Demand Ebbs Amid Stocks Rebound",
+   "headline": "Treasuries Drop as Stock Rise Saps Demand for Haven Bonds",
    "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -9538,25 +9568,25 @@
    "ai": false
   },
   {
-   "id": "ab06607ef3b5",
-   "title": "Bankers Pay Up for Hong Kong Apartments as Rents Hit New Highs",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdzI4RV8tX0liZlJfUWFDQXpYejFKQnRMNGphYXIySGx5c1pHZHRVbjdCeVJJM1otN3I5M2tjWFdUMXQ1WTNqcnZHVlFLNzVRLWNLZmJtc3hBZmZVUHl6bms0TWtxSFRyRE9wNC1yQnBnQVd3UTJNMFV0RFFmTmJuZ3A3YnB2UVQzRGU3V21fb20xT0FxUW9vZXdtY1BxNFRyNXh0a2VUYWRxaVBveGVmWHlYYw?oc=5",
-   "published": "2026-11-26T23:00:00+00:00",
+   "id": "9d0f80e76e63",
+   "title": "US Futures Rally as Tech Rebound Gains Momentum: Markets Wrap",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd2ZFa0FGcTRjb19HbGxhWGxZc05LTXQ2WUJDTTQzc2hYNGVrbE5GQWtlcERpWGdVZmptNEFUM0ltY0ZobVhoaVo1Qzl4ZTFuNlBDSXFNaG9ETXFDOGdYSGppVVh1cW10TFJ5RG9sVVNYZmUzMHk2VlROMG9yVDM3UzRtM1VSbXlaYWlSN01McUlncVljREZvOGY5UzZaSjc3R3MzdWJUOF9oS3ZLU2c3bmV0MA?oc=5",
+   "published": "2026-11-26T21:59:57+00:00",
    "region": "INTL",
    "outlets": [
     {
      "source": "Bloomberg",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdzI4RV8tX0liZlJfUWFDQXpYejFKQnRMNGphYXIySGx5c1pHZHRVbjdCeVJJM1otN3I5M2tjWFdUMXQ1WTNqcnZHVlFLNzVRLWNLZmJtc3hBZmZVUHl6bms0TWtxSFRyRE9wNC1yQnBnQVd3UTJNMFV0RFFmTmJuZ3A3YnB2UVQzRGU3V21fb20xT0FxUW9vZXdtY1BxNFRyNXh0a2VUYWRxaVBveGVmWHlYYw?oc=5",
-     "title": "Bankers Pay Up for Hong Kong Apartments as Rents Hit New Highs"
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd2ZFa0FGcTRjb19HbGxhWGxZc05LTXQ2WUJDTTQzc2hYNGVrbE5GQWtlcERpWGdVZmptNEFUM0ltY0ZobVhoaVo1Qzl4ZTFuNlBDSXFNaG9ETXFDOGdYSGppVVh1cW10TFJ5RG9sVVNYZmUzMHk2VlROMG9yVDM3UzRtM1VSbXlaYWlSN01McUlncVljREZvOGY5UzZaSjc3R3MzdWJUOF9oS3ZLU2c3bmV0MA?oc=5",
+     "title": "US Futures Rally as Tech Rebound Gains Momentum: Markets Wrap"
     }
    ],
    "ids": [
-    "ab06607ef3b5"
+    "9d0f80e76e63"
    ],
    "snippet": "",
    "prescore": 2.8,
-   "headline": "Bankers Pay Up for Hong Kong Apartments as Rents Hit New Highs",
-   "category": "internacional",
+   "headline": "US Futures Rally as Tech Rebound Gains Momentum: Markets Wrap",
+   "category": "mercados",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -9844,7 +9874,7 @@
    "id": "a510cfab042e",
    "title": "Essay | Has the AR-15 Become Too Big to Ban?",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5sTUdJYVB4eVF4WHdMS242NS12enBraHJMR1JLOURRTDA3VHZHbGZXa1cyZXdXM3FuNjFCckVIWFVsTEtxSjJoRllPUXBZS285cV92dGNZUHU4akFxaWFZN3E0YXl4dnV6bERPTg?oc=5",
-   "published": "2026-11-27T10:00:00+00:00",
+   "published": "2026-11-27T10:02:20+00:00",
    "region": "INTL",
    "outlets": [
     {
@@ -10143,6 +10173,39 @@
    "ai": true
   },
   {
+   "id": "ea1597edbefa",
+   "title": "Inside the Luxury Senior Community Where Everyone Lives Like Royals",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91TmtrUXNVYTQ0X1BpSy1tVThNam9RbkxlNThiY2M5UVY5QWZ5VmszSUdaUE1MQ0xENjVMLUx2ZGxsc0ZXVWpEb2t5R2pkWlZLTFRxN1NtUDUwTUJ1SVlyYWtHZ05IQks4cmJpUVhB?oc=5",
+   "published": "2026-11-27T03:01:04+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91TmtrUXNVYTQ0X1BpSy1tVThNam9RbkxlNThiY2M5UVY5QWZ5VmszSUdaUE1MQ0xENjVMLUx2ZGxsc0ZXVWpEb2t5R2pkWlZLTFRxN1NtUDUwTUJ1SVlyYWtHZ05IQks4cmJpUVhB?oc=5",
+     "title": "Inside the Luxury Senior Community Where Everyone Lives Like Royals"
+    }
+   ],
+   "ids": [
+    "ea1597edbefa"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Inside the Luxury Senior Community Where Everyone Lives Like Royals",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "80b779c1d1ab",
    "title": "Rupee rally takes a hit as AI trade revival dents shares, currency sees weekly dip",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTVpnbGF5MDlLb2hLcjBEWnM2ajc3TkQ0R0tmYy1ZV2lMU2NpeEMtdG95djVVcDVFY3dZMmxRSjFPT19sWDJNeDNCcTJyLVJYelprdFNIdkNOQTV0NG80VjV3bTVkYXhBb3JWY2ZydEJsbFVMUll0Q3lkZVAyWWkwY0NNV3lVcll6YzVqcDU2SGZma0c4cm5WR2ZSLVlTekx6LUgwUGlWTWNuMlBXeEhrQTIza3Q4TTBC?oc=5",
@@ -10260,6 +10323,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Zelenskiy says Russia preparing new mass strike in coming days",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f0812ba34694",
+   "title": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR0Rfd3gyc1VTeUhmeUlWc2duZUxMMW03cmFieHhuRzB4QlVlZGxxOWt1emQ0cjRqbmtYYmZrRDFZeG5fM3BRbk9rbkNFTE84OXpHWDZCQ25fWWtEdi1pTFZpa0xwWmpfR3Y2S2JHQkxmcW83NW1IRkNkRXREYjdPUFFTUkxXN2V3dEp3V1pqRTg0c1c5OEhfaUxtREY3anpLV3JSQkhJbW90aHhPZ3dFM1drWlQ3TkJiZG8ybzJCUkY?oc=5",
+   "published": "2026-11-26T19:54:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR0Rfd3gyc1VTeUhmeUlWc2duZUxMMW03cmFieHhuRzB4QlVlZGxxOWt1emQ0cjRqbmtYYmZrRDFZeG5fM3BRbk9rbkNFTE84OXpHWDZCQ25fWWtEdi1pTFZpa0xwWmpfR3Y2S2JHQkxmcW83NW1IRkNkRXREYjdPUFFTUkxXN2V3dEp3V1pqRTg0c1c5OEhfaUxtREY3anpLV3JSQkhJbW90aHhPZ3dFM1drWlQ3TkJiZG8ybzJCUkY?oc=5",
+     "title": "Thanksgiving storm knocks out power, disrupts flights on US East Coast"
+    }
+   ],
+   "ids": [
+    "f0812ba34694"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Thanksgiving storm knocks out power, disrupts flights on US East Coast",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11125,6 +11221,39 @@
    "ai": false
   },
   {
+   "id": "1535ba70a1aa",
+   "title": "Comprou na Black Friday e se arrependeu? Veja quando é possível cancelar",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRmtCXzhOeGlOTUdYUmMzbW51RUZJZVh1cWxxdHpFRENBRlg2U3NUS1BjVDlhVDB4ZE96OVhBYWdGNlkxcmd0dWF4Q1REaktrYVBad3lNejdPXzU4Wmc3QTlUZHRoNWVBNU1BamZVemZ0NGkyU0taQTdVak0zaTZtZ0FkTE9Pck5ka0Rac1NuUUV5Q21sc3dlYkY1WTV2cFo4V3VORVdNWXQ?oc=5",
+   "published": "2026-11-27T07:00:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Metrópoles",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRmtCXzhOeGlOTUdYUmMzbW51RUZJZVh1cWxxdHpFRENBRlg2U3NUS1BjVDlhVDB4ZE96OVhBYWdGNlkxcmd0dWF4Q1REaktrYVBad3lNejdPXzU4Wmc3QTlUZHRoNWVBNU1BamZVemZ0NGkyU0taQTdVak0zaTZtZ0FkTE9Pck5ka0Rac1NuUUV5Q21sc3dlYkY1WTV2cFo4V3VORVdNWXQ?oc=5",
+     "title": "Comprou na Black Friday e se arrependeu? Veja quando é possível cancelar"
+    }
+   ],
+   "ids": [
+    "1535ba70a1aa"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Comprou na Black Friday e se arrependeu? Veja quando é possível cancelar",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "b4c495a352a7",
    "title": "Sweden’s Kristersson on Track to Clinch Second Term in Vote",
    "link": "https://www.bloomberg.com/news/articles/2026-11-27/sweden-s-kingmaker-to-face-final-choice-on-backing-kristersson",
@@ -11158,28 +11287,61 @@
    "ai": false
   },
   {
-   "id": "2a08b0a8241b",
-   "title": "Philippine VP Duterte Refuses to Quit Before Impeachment Verdict",
-   "link": "https://www.bloomberg.com/news/articles/2026-11-27/philippines-vp-duterte-will-not-resign-prepared-for-worst",
-   "published": "2026-11-27T06:23:45+00:00",
-   "region": "INTL",
+   "id": "11844ead638e",
+   "title": "Sovena reforça presença em Espanha com compra de lagar",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWHVwV1RnaWtzS0pTei1JdWd3aU4ybkE2V1NjbHMxUlQtV003WExwZ0tVZFdxQVV2Rk03WnB1ckNjRmJBdmEzUWNGQW5SN180ZVhFT1RXb184UlVESFhDZENMa3JNRVJxczZtVkV5R2pHSXVweTZvcFlBclU1bW1wNmFtY0JUd0RIekVHRjJIYmRXcm1MeWRUbUdyQlI?oc=5",
+   "published": "2026-11-27T06:43:00+00:00",
+   "region": "BR",
    "outlets": [
     {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/articles/2026-11-27/philippines-vp-duterte-will-not-resign-prepared-for-worst",
-     "title": "Philippine VP Duterte Refuses to Quit Before Impeachment Verdict"
+     "source": "Jornal Económico",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWHVwV1RnaWtzS0pTei1JdWd3aU4ybkE2V1NjbHMxUlQtV003WExwZ0tVZFdxQVV2Rk03WnB1ckNjRmJBdmEzUWNGQW5SN180ZVhFT1RXb184UlVESFhDZENMa3JNRVJxczZtVkV5R2pHSXVweTZvcFlBclU1bW1wNmFtY0JUd0RIekVHRjJIYmRXcm1MeWRUbUdyQlI?oc=5",
+     "title": "Sovena reforça presença em Espanha com compra de lagar"
     }
    ],
    "ids": [
-    "2a08b0a8241b"
+    "11844ead638e"
    ],
-   "snippet": "Philippines Vice President Sara Duterte said she will not resign while awaiting verdict in her impeachment trial at the Senate.",
+   "snippet": "",
    "prescore": 2.4,
-   "headline": "Philippine VP Duterte Refuses to Quit Before Impeachment Verdict",
-   "category": "internacional",
+   "headline": "Sovena reforça presença em Espanha com compra de lagar",
+   "category": "mna",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Philippines Vice President Sara Duterte said she will not resign while awaiting verdict in her impeachment trial at the Senate.",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e1478ee0e20a",
+   "title": "Por que o Brasil fecha menos negócios, mas bate recorde em fusões",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORUNBcEFpQzhIWHlPcnN5ZGJEX1pwLWctcENHbEtSVEIzdmpuUWR4a04xbnR6WjR0aEFDMlJvVFN1WENXS21NWktKX1dnNFFrdm9pTlo2ZjRaV1I4ejB6MWJqZjhjblh6emkyekwwbzVxMmNTRHlrbFVrVm1qNG1iY3RLX0dpc2h5M1Zwdy1nNEhrc2lPRGM0UmNLN01UXzFSLVlxOFNwX2t3YjdudVYtenFWSkhpaEp4?oc=5",
+   "published": "2026-11-27T06:34:49+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "TV Sim Brasil",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORUNBcEFpQzhIWHlPcnN5ZGJEX1pwLWctcENHbEtSVEIzdmpuUWR4a04xbnR6WjR0aEFDMlJvVFN1WENXS21NWktKX1dnNFFrdm9pTlo2ZjRaV1I4ejB6MWJqZjhjblh6emkyekwwbzVxMmNTRHlrbFVrVm1qNG1iY3RLX0dpc2h5M1Zwdy1nNEhrc2lPRGM0UmNLN01UXzFSLVlxOFNwX2t3YjdudVYtenFWSkhpaEp4?oc=5",
+     "title": "Por que o Brasil fecha menos negócios, mas bate recorde em fusões"
+    }
+   ],
+   "ids": [
+    "e1478ee0e20a"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Por que o Brasil fecha menos negócios, mas bate recorde em fusões",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11290,6 +11452,72 @@
    "ai": false
   },
   {
+   "id": "162caafa742d",
+   "title": "Parceria no marketing com opção de compra: entenda o negócio por trás do Furia Novorizontino",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZzlxX0xWSmZMbWMwdG5qU0FCS1Z6bEF0U1ZMZ1RyVTRLaHNjbGxFbDhZdjB1ay1VU3NqcDR5R1hYSlpXRTBtN2FKckdtSThjQkhNZU5sWU9zWVQzRVBrOV9LbXNCY0Q1Z2VEM2hSZFdVaC1EY29tYnJDTVZVQTdnalFtaVRoZkZfWTFocnJCMnAwWUk3dUVEOWM1M0dOYm50T081Y083MjlQWEg3ejg0SjREMmcxVWJDcEZpTE9IM3VacTV4eXlKQ2JNejZnWUdMT1cxZklmeFNLNDTSAeABQVVfeXFMTjVNd21UaGtXc245dF8ybVVPbjFjTzdxeUFYZVBQd1dkYmx4dm1ITzUzelAwNm1GNkZtTzlFZkdia1FwWGdSZFZvMTE5aHlCZVhTU2lQaUNaa2xJdkxDOUw5aC03VzJMUExhN1NvOG5qSFVrejZTUlA2dmNsdEN2T2djenBiRzRBMmppLTBlT1hhWFFqQW5GQlkyWnNoMFZfMEdYWTdZU3F3QkJsc1hucXVQYTdiNGUySldUR19LX09QMTVuR2IydFhuclJpZkM2Slk4Z3RGelhJZGxxRGJDbEM?oc=5",
+   "published": "2026-11-26T22:55:47+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Estadão",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZzlxX0xWSmZMbWMwdG5qU0FCS1Z6bEF0U1ZMZ1RyVTRLaHNjbGxFbDhZdjB1ay1VU3NqcDR5R1hYSlpXRTBtN2FKckdtSThjQkhNZU5sWU9zWVQzRVBrOV9LbXNCY0Q1Z2VEM2hSZFdVaC1EY29tYnJDTVZVQTdnalFtaVRoZkZfWTFocnJCMnAwWUk3dUVEOWM1M0dOYm50T081Y083MjlQWEg3ejg0SjREMmcxVWJDcEZpTE9IM3VacTV4eXlKQ2JNejZnWUdMT1cxZklmeFNLNDTSAeABQVVfeXFMTjVNd21UaGtXc245dF8ybVVPbjFjTzdxeUFYZVBQd1dkYmx4dm1ITzUzelAwNm1GNkZtTzlFZkdia1FwWGdSZFZvMTE5aHlCZVhTU2lQaUNaa2xJdkxDOUw5aC03VzJMUExhN1NvOG5qSFVrejZTUlA2dmNsdEN2T2djenBiRzRBMmppLTBlT1hhWFFqQW5GQlkyWnNoMFZfMEdYWTdZU3F3QkJsc1hucXVQYTdiNGUySldUR19LX09QMTVuR2IydFhuclJpZkM2Slk4Z3RGelhJZGxxRGJDbEM?oc=5",
+     "title": "Parceria no marketing com opção de compra: entenda o negócio por trás do Furia Novorizontino"
+    }
+   ],
+   "ids": [
+    "162caafa742d"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Parceria no marketing com opção de compra: entenda o negócio por trás do Furia Novorizontino",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "eea0fc73a0d3",
+   "title": "Ex-Copel Telecom, Ligga é vendida para empresa gaúcha",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbVBPRVJoZUpDeGRidThOaGh6NEZmd0hTN2FkdHAydk9EdkJxTlhkU25WT1lIZ2J6U0R3cWxfUTRWeUVuUnlIZ2stUkVuV3I4TW03a1dpTmxyamRiQjU0UnpyaHNsQ0JuY1lZUjdfV2JLY1pDN3d3XzU1ZGlJT2dBN0p2ZmpRWVJU?oc=5",
+   "published": "2026-11-26T21:43:05+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Ric.com.br",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbVBPRVJoZUpDeGRidThOaGh6NEZmd0hTN2FkdHAydk9EdkJxTlhkU25WT1lIZ2J6U0R3cWxfUTRWeUVuUnlIZ2stUkVuV3I4TW03a1dpTmxyamRiQjU0UnpyaHNsQ0JuY1lZUjdfV2JLY1pDN3d3XzU1ZGlJT2dBN0p2ZmpRWVJU?oc=5",
+     "title": "Ex-Copel Telecom, Ligga é vendida para empresa gaúcha"
+    }
+   ],
+   "ids": [
+    "eea0fc73a0d3"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Ex-Copel Telecom, Ligga é vendida para empresa gaúcha",
+   "category": "empresas",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5fd3090659fa",
    "title": "Sete em cada dez líderes já pensaram em deixar o cargo por impactos na saúde mental",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQS1vX3ppNkIzU3VPeGNoRHVNd0E0WGF5TWFkNDRZRm1fUEJ3UDg3ZUh4WmJ1cUZNY1hpTUIzbXk0c0dWekJLNWpyb3ZyRjRxWXRRVE1PSVpuMHhoX2NOb3diZ1JBT1Y2dnlSS01GLWxsNEZJNHJtaUV0ZDk2SlN5dGJqdmdvS3I1aEttVnE2R25lM0E5bEdNaXBVQ1UtUmd0ZC1iaXN1YVVHYm1CN2ZlSEZicXJvUQ?oc=5",
@@ -11345,39 +11573,6 @@
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "President Javier Milei won a trio of legislative victories, including support for the suspension of a primary vote before Argentina’s next election, that helped halt a slide in the country’s bonds.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "210b45ee5a55",
-   "title": "Parahyba Mall participa da Black Friday com descontos de até 50%",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUGFyYzlLNG1Ra0ktTWR4bDMwVENtTVpRWDQ1UkptVGdsRzN4bVBiX29ET2U5VEpRcGhpTVotT3NIVjJJUGMtTHV3eDRjNzgxV2tPaTVZU3BMd1ppS19mbnFsMlA2MHhtaURyMkptSDdLRnhPWVR5U2M4MG5sSWZvdEU0Q3VUem5zUy1DeGFnS3hsQU9xRUFzQm45Zw?oc=5",
-   "published": "2026-11-26T21:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Paraíba Business",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUGFyYzlLNG1Ra0ktTWR4bDMwVENtTVpRWDQ1UkptVGdsRzN4bVBiX29ET2U5VEpRcGhpTVotT3NIVjJJUGMtTHV3eDRjNzgxV2tPaTVZU3BMd1ppS19mbnFsMlA2MHhtaURyMkptSDdLRnhPWVR5U2M4MG5sSWZvdEU0Q3VUem5zUy1DeGFnS3hsQU9xRUFzQm45Zw?oc=5",
-     "title": "Parahyba Mall participa da Black Friday com descontos de até 50%"
-    }
-   ],
-   "ids": [
-    "210b45ee5a55"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Parahyba Mall participa da Black Friday com descontos de até 50%",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -11521,12 +11716,17 @@
    "ai": false
   },
   {
-   "id": "c6f5b10b0184",
-   "title": "Bolsa opera em forte alta: confira os destaques do pregão",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE13Rm8tWDdBTXNqbS1SamZBS3dIVTVzS09tVmw1U0cwSnAwQ0VNVXVGVjF6SUFIMHBDNWRJLUdJNFhPUVVVTTFIa0pUZ3lSenl0aEF3MlJNbWQ?oc=5",
+   "id": "964fd418b582",
+   "title": "Bolsa opera em alta: confira os destaques do pregão",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1vZEhjd2ZNR0Mtc0tZbzI3UzMtUjFUbTNyY3ROblZOVUJLbkdvNElOXzBYYkk2WG1FMEZzNkY2RHpna3Zib00zUTd1YnRHdzBlRFNSelBXYVE?oc=5",
    "published": "2026-11-26T17:40:00+00:00",
    "region": "BR",
    "outlets": [
+    {
+     "source": "TradeMap",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1vZEhjd2ZNR0Mtc0tZbzI3UzMtUjFUbTNyY3ROblZOVUJLbkdvNElOXzBYYkk2WG1FMEZzNkY2RHpna3Zib00zUTd1YnRHdzBlRFNSelBXYVE?oc=5",
+     "title": "Bolsa opera em alta: confira os destaques do pregão"
+    },
     {
      "source": "TradeMap",
      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE13Rm8tWDdBTXNqbS1SamZBS3dIVTVzS09tVmw1U0cwSnAwQ0VNVXVGVjF6SUFIMHBDNWRJLUdJNFhPUVVVTTFIa0pUZ3lSenl0aEF3MlJNbWQ?oc=5",
@@ -11534,11 +11734,12 @@
     }
    ],
    "ids": [
+    "964fd418b582",
     "c6f5b10b0184"
    ],
    "snippet": "",
    "prescore": 2.4,
-   "headline": "Bolsa opera em forte alta: confira os destaques do pregão",
+   "headline": "Bolsa opera em alta: confira os destaques do pregão",
    "category": "mercados",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11587,24 +11788,24 @@
    "ai": false
   },
   {
-   "id": "ae203c5ed056",
-   "title": "Auren diz que agregou R$ 1 bi com compra da AES Brasil, apesar de cortes de geração renovável",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPc2FFT1RLcTFHN3VSLXlGTWRVdVlvajA0UjFrS2xocWQ2cWt5Z0dhM1NXd2ZhR1FpSlZFTU1WejBRZi1HRUd1VGZxR09jUWZZNmhvVmRFMk1IOEJXUlRFY3VyeGhiZlliNU1SMXUxU3h2dkpKWTd5N3pYNVJTcE9FcmVmaW9uSzlFb0dMWXF2cFFCaU5ZREVpWl9wNEJaRTBuLVpuZFlEM0cxVDAzR1o0SV84ajkteFFRdlBVNGV4cml3V0pYTjB3RXJ4MGlObzN4WFNLMnoxbGhXVkJPdGZ5VFE4SdIB8gFBVV95cUxOU0p6NlRJbTc1cTV2T3VIR001eWhqcHloNk1jLXF5dUV4R3E3T1dhdjhrT1FUY19naFhvUWh0V2Q0OFpCck5WUFp1dG1YTjR6SWh3WFM0ZW92NTZ6SEQ4NlV1STZqVURYMWtuREpoLUNPZTZwaTdnM2t6Y0hkaDhVRUVOOEtwcGVlX3Z1R0p2MjM4VC00Zk1tdXdHalpLZWd0amsxeVRlenNNZ2w5cGVYNXZJY2V5d2EwcVFqekdwVWlxdFY0cTlWWjF2VnkwbGZFZ2R3WGlXU1VITlFzTFJpMXJjNFoyUFd1SzVxT0FyTVRnZw?oc=5",
-   "published": "2026-11-26T12:59:37+00:00",
+   "id": "49cbdf50c7bc",
+   "title": "Latam faz primeiro voo com jato da Embraer e anuncia 6 novas rotas",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRUozMFlaRllpQTJNak44eW94SXdWZlZROG5kRWJ6MDVqczBXUnFwM0wxTEFVcVlOZWxlc2pvS0stNkpLMXI0N0d3VC10QjZoOFhwcHhUbE5XWl9lcVBwMDBLcWtKanFOM3RIUzBJWWJkVXVNTmZGMkYyQWRQbzViWFRFYUJRWVpHMm4zYkotZHZvbHM2Tm9hRERUNWxwYkNWNTFjc0dwUW80Mm9RY1pmLVhRUms5c05vRzJzM2hPeVR1NFZIcXQyb3hpYmTSAdIBQVVfeXFMTXN2emtNS2VGUVVqdU83TlM1aEJVT3RodnloWXU5SDBqN3IyRC0tVkt6b3hjMVVZZVUtZ0FWVFBSVmhfSHI1ZV82YXBpYWZuRlZpY0NOLUllanlrWTZEZVd6bGg1dDRTaWxOSklibUNNRzRSNHB4TXh6dWVlUTh6SGRwemxFZHBnOTUtM1JVMTU0SmF6MXdHbzVOQ0tlbEkxZWRRWGFWc0FnVE1JcnFHdmFUN05RYkY2YUpZbmZiQWFoYW1ra1RZZU9uRkdnaHluOTlB?oc=5",
+   "published": "2026-11-26T16:05:00+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Valor Econômico",
-     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPc2FFT1RLcTFHN3VSLXlGTWRVdVlvajA0UjFrS2xocWQ2cWt5Z0dhM1NXd2ZhR1FpSlZFTU1WejBRZi1HRUd1VGZxR09jUWZZNmhvVmRFMk1IOEJXUlRFY3VyeGhiZlliNU1SMXUxU3h2dkpKWTd5N3pYNVJTcE9FcmVmaW9uSzlFb0dMWXF2cFFCaU5ZREVpWl9wNEJaRTBuLVpuZFlEM0cxVDAzR1o0SV84ajkteFFRdlBVNGV4cml3V0pYTjB3RXJ4MGlObzN4WFNLMnoxbGhXVkJPdGZ5VFE4SdIB8gFBVV95cUxOU0p6NlRJbTc1cTV2T3VIR001eWhqcHloNk1jLXF5dUV4R3E3T1dhdjhrT1FUY19naFhvUWh0V2Q0OFpCck5WUFp1dG1YTjR6SWh3WFM0ZW92NTZ6SEQ4NlV1STZqVURYMWtuREpoLUNPZTZwaTdnM2t6Y0hkaDhVRUVOOEtwcGVlX3Z1R0p2MjM4VC00Zk1tdXdHalpLZWd0amsxeVRlenNNZ2w5cGVYNXZJY2V5d2EwcVFqekdwVWlxdFY0cTlWWjF2VnkwbGZFZ2R3WGlXU1VITlFzTFJpMXJjNFoyUFd1SzVxT0FyTVRnZw?oc=5",
-     "title": "Auren diz que agregou R$ 1 bi com compra da AES Brasil, apesar de cortes de geração renovável"
+     "source": "Correio Braziliense",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRUozMFlaRllpQTJNak44eW94SXdWZlZROG5kRWJ6MDVqczBXUnFwM0wxTEFVcVlOZWxlc2pvS0stNkpLMXI0N0d3VC10QjZoOFhwcHhUbE5XWl9lcVBwMDBLcWtKanFOM3RIUzBJWWJkVXVNTmZGMkYyQWRQbzViWFRFYUJRWVpHMm4zYkotZHZvbHM2Tm9hRERUNWxwYkNWNTFjc0dwUW80Mm9RY1pmLVhRUms5c05vRzJzM2hPeVR1NFZIcXQyb3hpYmTSAdIBQVVfeXFMTXN2emtNS2VGUVVqdU83TlM1aEJVT3RodnloWXU5SDBqN3IyRC0tVkt6b3hjMVVZZVUtZ0FWVFBSVmhfSHI1ZV82YXBpYWZuRlZpY0NOLUllanlrWTZEZVd6bGg1dDRTaWxOSklibUNNRzRSNHB4TXh6dWVlUTh6SGRwemxFZHBnOTUtM1JVMTU0SmF6MXdHbzVOQ0tlbEkxZWRRWGFWc0FnVE1JcnFHdmFUN05RYkY2YUpZbmZiQWFoYW1ra1RZZU9uRkdnaHluOTlB?oc=5",
+     "title": "Latam faz primeiro voo com jato da Embraer e anuncia 6 novas rotas"
     }
    ],
    "ids": [
-    "ae203c5ed056"
+    "49cbdf50c7bc"
    ],
    "snippet": "",
    "prescore": 2.4,
-   "headline": "Auren diz que agregou R$ 1 bi com compra da AES Brasil, apesar de cortes de geração renovável",
+   "headline": "Latam faz primeiro voo com jato da Embraer e anuncia 6 novas rotas",
    "category": "empresas",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -11620,256 +11821,58 @@
    "ai": false
   },
   {
-   "id": "b917b1367902",
-   "title": "Radar corporativo: Yduqs aprova incorporação da Afya, Smart Fit anuncia R$ 545 mi em JCP e Cosan negocia ativos",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYmFZcU9RWWZCWHlsa1hNUzF1Sy1GRGJSWldTa050TWhGZEphcS1VaHRCUXJLOU1XeGQ2LWtaRTNuUG1QUS1OcFY4RTlPSTRCYkdHemRaS29kMFdBdHlaVldOT2JDLUhRR2E4S2FGVEJCby1UbWxPdVBZd1NOVXZ5UkRiaTI2NlZ1MkFvaGZRMTM?oc=5",
-   "published": "2026-11-26T12:57:15+00:00",
+   "id": "5b907883def6",
+   "title": "Justiça barra compra de livros sem licitação no Maranhão",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaEdRSkktbW91dzJLbVRkclNkYUFlQXFvdWVFbWRxTldvaTJUU3VfZXFuSmE0Tl94c2x2blpCOFBsNldKNkdHYUdoQzlVdVdLdncxT2FPUGNyQnNObjBZRlowNlNwLVZhZl9PcEV5VThnNjFNQjVJcjFpVG5XQzhZdG0zQURCUUFTMkhVcWZWam5aSlVwOUd3Q1FoNTlvWWM5UzVfY3ZiRXBrMS0weDR0cTdEdTBGS3RDLVd4aENJVnRpeDFLQnQ3bGpIaEZaZw?oc=5",
+   "published": "2026-11-26T15:40:00+00:00",
    "region": "BR",
    "outlets": [
     {
-     "source": "Gazeta Mercantil",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYmFZcU9RWWZCWHlsa1hNUzF1Sy1GRGJSWldTa050TWhGZEphcS1VaHRCUXJLOU1XeGQ2LWtaRTNuUG1QUS1OcFY4RTlPSTRCYkdHemRaS29kMFdBdHlaVldOT2JDLUhRR2E4S2FGVEJCby1UbWxPdVBZd1NOVXZ5UkRiaTI2NlZ1MkFvaGZRMTM?oc=5",
-     "title": "Radar corporativo: Yduqs aprova incorporação da Afya, Smart Fit anuncia R$ 545 mi em JCP e Cosan negocia ativos"
+     "source": "Agência Brasil",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaEdRSkktbW91dzJLbVRkclNkYUFlQXFvdWVFbWRxTldvaTJUU3VfZXFuSmE0Tl94c2x2blpCOFBsNldKNkdHYUdoQzlVdVdLdncxT2FPUGNyQnNObjBZRlowNlNwLVZhZl9PcEV5VThnNjFNQjVJcjFpVG5XQzhZdG0zQURCUUFTMkhVcWZWam5aSlVwOUd3Q1FoNTlvWWM5UzVfY3ZiRXBrMS0weDR0cTdEdTBGS3RDLVd4aENJVnRpeDFLQnQ3bGpIaEZaZw?oc=5",
+     "title": "Justiça barra compra de livros sem licitação no Maranhão"
     }
    ],
    "ids": [
-    "b917b1367902"
+    "5b907883def6"
    ],
    "snippet": "",
    "prescore": 2.4,
-   "headline": "Radar corporativo: Yduqs aprova incorporação da Afya, Smart Fit anuncia R$ 545 mi em JCP e Cosan negocia ativos",
+   "headline": "Justiça barra compra de livros sem licitação no Maranhão",
+   "category": "mna",
+   "importance": 1,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "97aa970f2b2f",
+   "title": "Como está a Fictor após caso Master? Entenda situação do grupo",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQb1QzT0U0a0pKZzdyQmlHQ19KOWJDZG5ncGNhb3g2M2VqNzN2VHpSX1dkYnVGOEdNRGdXQ01RYmVNNFZ1SGNETVl1S1F3Y1pUakNxbzIyUlk2QjU4LU9Cb1JUUlRlRVV4Y0YyY3dVRW5zVk5jYTBhUnJiZHlsSTZEcXBkTzM0dEpGT2NwVFJuU3NiOGY1R3phNVprWHpteDdjX215REVzSjljQ3dQRURlRnZhSXVCZw?oc=5",
+   "published": "2026-11-26T15:18:08+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "CNN Brasil",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQb1QzT0U0a0pKZzdyQmlHQ19KOWJDZG5ncGNhb3g2M2VqNzN2VHpSX1dkYnVGOEdNRGdXQ01RYmVNNFZ1SGNETVl1S1F3Y1pUakNxbzIyUlk2QjU4LU9Cb1JUUlRlRVV4Y0YyY3dVRW5zVk5jYTBhUnJiZHlsSTZEcXBkTzM0dEpGT2NwVFJuU3NiOGY1R3phNVprWHpteDdjX215REVzSjljQ3dQRURlRnZhSXVCZw?oc=5",
+     "title": "Como está a Fictor após caso Master? Entenda situação do grupo"
+    }
+   ],
+   "ids": [
+    "97aa970f2b2f"
+   ],
+   "snippet": "",
+   "prescore": 2.4,
+   "headline": "Como está a Fictor após caso Master? Entenda situação do grupo",
    "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "876fe93f71d6",
-   "title": "Visa conclui três pilotos de compra feita por IA no Brasil",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYUJNclFvMzlJd05LZVY0TExPaDdxTTh5dU5KWnhEa05YUndCUk1EQnRHOTJqaHhRT3gtSmlhM1dhVWx0R0g5b1FiZUYxMUtiRjhGVXZWY1lCYWFfZGZWdzR2cDhXMWNWWVNqWXc1Nnl3VzY1OU5HN2pHa0xKOVpyOWIyNGx5enlQbG1PNU41RQ?oc=5",
-   "published": "2026-11-26T12:48:18+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Let's Money",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYUJNclFvMzlJd05LZVY0TExPaDdxTTh5dU5KWnhEa05YUndCUk1EQnRHOTJqaHhRT3gtSmlhM1dhVWx0R0g5b1FiZUYxMUtiRjhGVXZWY1lCYWFfZGZWdzR2cDhXMWNWWVNqWXc1Nnl3VzY1OU5HN2pHa0xKOVpyOWIyNGx5enlQbG1PNU41RQ?oc=5",
-     "title": "Visa conclui três pilotos de compra feita por IA no Brasil"
-    }
-   ],
-   "ids": [
-    "876fe93f71d6"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Visa conclui três pilotos de compra feita por IA no Brasil",
-   "category": "tech",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "ab8d5557c71d",
-   "title": "UE - Atas da Reunião de Política Monetária do BCE",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8wSGNYczFaNk5NenhlZWNsNTJWdkV6VzVPbnlfUWgxREdscEp0ZTFUMmFfUEFUcG1uVzVvM09VX2VsZkY3Tm1PS0IwRnZxeUc3NnhTeGZzMlk?oc=5",
-   "published": "2026-11-26T12:30:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "TradeMap",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8wSGNYczFaNk5NenhlZWNsNTJWdkV6VzVPbnlfUWgxREdscEp0ZTFUMmFfUEFUcG1uVzVvM09VX2VsZkY3Tm1PS0IwRnZxeUc3NnhTeGZzMlk?oc=5",
-     "title": "UE - Atas da Reunião de Política Monetária do BCE"
-    }
-   ],
-   "ids": [
-    "ab8d5557c71d"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "UE - Atas da Reunião de Política Monetária do BCE",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "f6958a14f25d",
-   "title": "Após ter entrado na Bolsa de Valores de VND, o Grupo Amy (AMY) está prestes a gastar mais de 321 bilhões de VND para pagar dividendos referentes a 2026.",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWmJCbjNMNzFLQnozZnhCWGJwVkd4aGpmc085Tk5mVzg2WHdNdU9leHdiU0NVcmlCOUZGOEdHS0w1cURxb1RUa01kblBGa3BnaFRTU0pEdGVHandUQWp1OHhENkJKRUpTS01ZNm4wMWQ5YlE0TXplUzlEVG9Lei1Qb29PUDh2am9TcC14b2Y5Rmo2ZW1UdFNQZU1XNENvRkFnbDRB?oc=5",
-   "published": "2026-11-26T12:23:49+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Vietnam.vn",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWmJCbjNMNzFLQnozZnhCWGJwVkd4aGpmc085Tk5mVzg2WHdNdU9leHdiU0NVcmlCOUZGOEdHS0w1cURxb1RUa01kblBGa3BnaFRTU0pEdGVHandUQWp1OHhENkJKRUpTS01ZNm4wMWQ5YlE0TXplUzlEVG9Lei1Qb29PUDh2am9TcC14b2Y5Rmo2ZW1UdFNQZU1XNENvRkFnbDRB?oc=5",
-     "title": "Após ter entrado na Bolsa de Valores de VND, o Grupo Amy (AMY) está prestes a gastar mais de 321 bilhões de VND para pagar dividendos referentes a 2026."
-    }
-   ],
-   "ids": [
-    "f6958a14f25d"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Após ter entrado na Bolsa de Valores de VND, o Grupo Amy (AMY) está prestes a gastar mais de 321 bilhões de VND para pagar dividendos referentes a 2026.",
-   "category": "mercados",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "618ff4dbc145",
-   "title": "IPP sobe 0,98% em outubro, puxado por alimentos e combustíveis",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBFRWR1UlppaElyWUNFZEdYWERfRVdoOXZPZWVXd3h4bk13TUFaVi1jbWtLSXRsd00za29GUGVZZjNEbkw0NjdYNkFHWDhFcFFrUlYwQzZ3U1A?oc=5",
-   "published": "2026-11-26T12:06:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "TradeMap",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBFRWR1UlppaElyWUNFZEdYWERfRVdoOXZPZWVXd3h4bk13TUFaVi1jbWtLSXRsd00za29GUGVZZjNEbkw0NjdYNkFHWDhFcFFrUlYwQzZ3U1A?oc=5",
-     "title": "IPP sobe 0,98% em outubro, puxado por alimentos e combustíveis"
-    }
-   ],
-   "ids": [
-    "618ff4dbc145"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "IPP sobe 0,98% em outubro, puxado por alimentos e combustíveis",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "67c436623514",
-   "title": "Yduqs aprova incorporação da Afya e eleva capital a R$ 3,68 bi",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMUhPcUdGZVhRLVhSZ1BFMGZKYnh4dWtJRU0yY3dzMktXX1ctSEszS0IxMjBkZm1jV25RZlgweXZPYXl2U2xMdHVSbmpIMFhaTk9yZmFmNnpHcDRRLXZWcXlUTFBaUnBpZGdvNzJocnBfWW5aOVc4ZEQxY3VvRjVFX1NuWnZOc21jN2ptaVVBcGN0ZUhiT3Q4Zk1YV2h0cmlNRGRXVWJNVlU0Wkw4d2JONVJOZw?oc=5",
-   "published": "2026-11-26T11:54:36+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "TV Sim Brasil",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMUhPcUdGZVhRLVhSZ1BFMGZKYnh4dWtJRU0yY3dzMktXX1ctSEszS0IxMjBkZm1jV25RZlgweXZPYXl2U2xMdHVSbmpIMFhaTk9yZmFmNnpHcDRRLXZWcXlUTFBaUnBpZGdvNzJocnBfWW5aOVc4ZEQxY3VvRjVFX1NuWnZOc21jN2ptaVVBcGN0ZUhiT3Q4Zk1YV2h0cmlNRGRXVWJNVlU0Wkw4d2JONVJOZw?oc=5",
-     "title": "Yduqs aprova incorporação da Afya e eleva capital a R$ 3,68 bi"
-    }
-   ],
-   "ids": [
-    "67c436623514"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Yduqs aprova incorporação da Afya e eleva capital a R$ 3,68 bi",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6e17a9bd3e2f",
-   "title": "Destaques do dia",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIc1RjUmRQN3p5bGlKMlA1dHVBbGxDd3VPRC1xSllmSEdjWVF6NzExWEpseU05U0lzOTZJTmFsa2k2ZUxNU2NqdGhpYmxrcVJ3c1pGQkgzMTM?oc=5",
-   "published": "2026-11-26T11:00:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "trademap.com.br",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIc1RjUmRQN3p5bGlKMlA1dHVBbGxDd3VPRC1xSllmSEdjWVF6NzExWEpseU05U0lzOTZJTmFsa2k2ZUxNU2NqdGhpYmxrcVJ3c1pGQkgzMTM?oc=5",
-     "title": "Destaques do dia"
-    }
-   ],
-   "ids": [
-    "6e17a9bd3e2f"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Destaques do dia",
-   "category": "empresas",
-   "importance": 1,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "2487a92647d0",
-   "title": "Governo e produtores acusam Macron de desinformação ao chamar carne do Brasil de dopada",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNHVQU0NoNGZmRUU5a0JvWllZTUhPTjRkWmtkRTRrdjd6RWJJUFlYeTh6NEJTUmEyZHZBR1RtTGxYbF9ibDRTdkpUODRJQk85bHdYek9kZzZ1QVhFcV9QeVhQdWpMM0lPVHRnSGNMYlYyWUNYNEZXTVRfdXZMLUpISk95aE9VWHJFdUdSU1JQbXQxUmltN3gzVXpvVTRhVUJqQjhDVk55OF9Yb09SWkxfdUs4TjExQVlmZm52aVBFeHdObWxva2fSAdoBQVVfeXFMUEc5eV8xOGo4c2lmRkQxTk5IOFYyd2ZZTDlBRXk0MTZzWXFkVjlmRFNZU2lWTnlzVFFkcXFsWE1kN3NoaFVkdkNvc2Q2YVdMS1ZqWGlNckNTMTBSWXhxVUtqODh3M2lyd3Z4NWxMTkU4SkRCOU00S25ZQTBOU003d2NpZWoxYXdyLWFDNElNNHZpeV9qNWpWSnFENDRlTFJGZXVEQlBUMWxXeFJuYXFwaEQ1NDNzb3BBRUZISG8ydHdUYXV1ZlNiTEhlMGd0d1ltUDBGbTVWSE9TdlE?oc=5",
-   "published": "2026-11-27T10:44:01+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Bloomberg Línea",
-     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNHVQU0NoNGZmRUU5a0JvWllZTUhPTjRkWmtkRTRrdjd6RWJJUFlYeTh6NEJTUmEyZHZBR1RtTGxYbF9ibDRTdkpUODRJQk85bHdYek9kZzZ1QVhFcV9QeVhQdWpMM0lPVHRnSGNMYlYyWUNYNEZXTVRfdXZMLUpISk95aE9VWHJFdUdSU1JQbXQxUmltN3gzVXpvVTRhVUJqQjhDVk55OF9Yb09SWkxfdUs4TjExQVlmZm52aVBFeHdObWxva2fSAdoBQVVfeXFMUEc5eV8xOGo4c2lmRkQxTk5IOFYyd2ZZTDlBRXk0MTZzWXFkVjlmRFNZU2lWTnlzVFFkcXFsWE1kN3NoaFVkdkNvc2Q2YVdMS1ZqWGlNckNTMTBSWXhxVUtqODh3M2lyd3Z4NWxMTkU4SkRCOU00S25ZQTBOU003d2NpZWoxYXdyLWFDNElNNHZpeV9qNWpWSnFENDRlTFJGZXVEQlBUMWxXeFJuYXFwaEQ1NDNzb3BBRUZISG8ydHdUYXV1ZlNiTEhlMGd0d1ltUDBGbTVWSE9TdlE?oc=5",
-     "title": "Governo e produtores acusam Macron de desinformação ao chamar carne do Brasil de dopada"
-    }
-   ],
-   "ids": [
-    "2487a92647d0"
-   ],
-   "snippet": "",
-   "prescore": 2.2,
-   "headline": "Governo e produtores acusam Macron de desinformação ao chamar carne do Brasil de dopada",
-   "category": "politica",
    "importance": 1,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
@@ -12336,6 +12339,60 @@
    "ai": true
   },
   {
+   "id": "d555da102870",
+   "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
+   "published": "2026-11-26T11:01:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "TV Sim Brasil",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
+     "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada"
+    },
+    {
+     "source": "Motor1.com Brasil",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HWlFwODRyMzhwRXYxQUlHcXpaWWpWbzhBbHRhVFNGeEtwbWNQaWs0Y3JzRy01RWd6b1hqSjNVbzB3T2ZMTnpVYWlSUW1SUklyRmV0TnRtT1JFdFBSOEQ5eElfbnlCSW9XVEdGck15NnF1UTBaOFhXSUNvU3c2WTA?oc=5",
+     "title": "Dona da Avelloz compra Moto Morini e entra no mercado de alta cilindrada"
+    }
+   ],
+   "ids": [
+    "d555da102870",
+    "3eb9c5e097fa"
+   ],
+   "snippet": "",
+   "prescore": 3.9,
+   "headline": "Dona da Avelloz compra 70% da Moto Morini e entra em motos de alta cilindrada",
+   "category": "mna",
+   "importance": 5,
+   "importance_reason": "Aquisição de controle de marca europeia por grupo brasileiro; relevante para o setor, mas de porte pouco claro.",
+   "summary": "A empresa dona da Avelloz comprou 70% da Moto Morini e passa a atuar no segmento de alta cilindrada. Valor e assessores não foram divulgados no material.",
+   "involves": "Dona da Avelloz, Moto Morini, setor de motocicletas",
+   "interpretation": "Movimento de expansão para premium via compra de marca consolidada, com participação majoritária de 70%.",
+   "impact": "Amplia o portfólio do comprador e sinaliza apetite por ativos de marca no setor de duas rodas; efeito de mercado limitado.",
+   "sentiment": "positivo",
+   "entities": [
+    "Avelloz",
+    "Moto Morini"
+   ],
+   "tags": [
+    "motos",
+    "aquisição",
+    "alta cilindrada"
+   ],
+   "is_deal": true,
+   "deal": {
+    "type": "Aquisição",
+    "buyer": "Dona da Avelloz",
+    "target": "Moto Morini (70%)",
+    "value": "não divulgado",
+    "stage": "Anunciado",
+    "sector": "Motocicletas",
+    "advisors": "não divulgado"
+   },
+   "ai": true
+  },
+  {
    "id": "c5497b12f40a",
    "title": "Tata Steel-Apollo Deal Tests Power of India’s Minority Investors",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTEpmMmwySUNyVnNxRENMVE9XQzdhRXV5bjVHWXFJdWk0RUpqek9RUnFDLXVDSm1INFktZDBvSWVpWm5zNG1HWlBDUFlzVFhBY1RCZXBqN05YSmRJQUY3YnZWd19DdlptVXpRTVJOUTdNOFlRaGR3eGt2VEtCb2Z3Rl9iZUpzc1hqZ1V2YWxfcmgtU0UzNFE2X3BjcXQwYjJkVXM5a2NBVlUtY0k0MWVsbURJMTdQdw?oc=5",
@@ -12426,54 +12483,6 @@
     "value": "não divulgado",
     "stage": "Rumor",
     "sector": "Defesa",
-    "advisors": "não divulgado"
-   },
-   "ai": true
-  },
-  {
-   "id": "d555da102870",
-   "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
-   "published": "2026-11-27T01:06:00+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "TV Sim Brasil",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTGwwQVAzSHNxYVNVdmxVbUJCTGl5Q3Q3cnlxTDdPMl9RWEV4cXRLelhVcnpZZDhVUFdkWGk2cElYalhJc081NFZXbV92XzB0Z0V6ajJFSFhKcW51MlNZVGc2SWJDbUN3ZWZZbXk1OGRwSGhQV2IxSEpBR0lQYnhZMFh6ZnlPRmtTQ3M2RWxWUzZoMGlZcWRFNC1rWF9WUS1jN3pSbzNZZDl1aG9jdTdjQ2dR?oc=5",
-     "title": "Dona da Avelloz compra 70% da Moto Morini e entra em alta cilindrada"
-    }
-   ],
-   "ids": [
-    "d555da102870"
-   ],
-   "snippet": "",
-   "prescore": 2.4,
-   "headline": "Dona da Avelloz compra 70% da Moto Morini e entra em motos de alta cilindrada",
-   "category": "mna",
-   "importance": 5,
-   "importance_reason": "Aquisição de controle de marca europeia por grupo brasileiro; relevante para o setor, mas de porte pouco claro.",
-   "summary": "A empresa dona da Avelloz comprou 70% da Moto Morini e passa a atuar no segmento de alta cilindrada. Valor e assessores não foram divulgados no material.",
-   "involves": "Dona da Avelloz, Moto Morini, setor de motocicletas",
-   "interpretation": "Movimento de expansão para premium via compra de marca consolidada, com participação majoritária de 70%.",
-   "impact": "Amplia o portfólio do comprador e sinaliza apetite por ativos de marca no setor de duas rodas; efeito de mercado limitado.",
-   "sentiment": "positivo",
-   "entities": [
-    "Avelloz",
-    "Moto Morini"
-   ],
-   "tags": [
-    "motos",
-    "aquisição",
-    "alta cilindrada"
-   ],
-   "is_deal": true,
-   "deal": {
-    "type": "Aquisição",
-    "buyer": "Dona da Avelloz",
-    "target": "Moto Morini (70%)",
-    "value": "não divulgado",
-    "stage": "Anunciado",
-    "sector": "Motocicletas",
     "advisors": "não divulgado"
    },
    "ai": true
@@ -12779,6 +12788,45 @@
  ],
  "upcoming": [
   {
+   "id": "243aa351d760",
+   "title": "Exclusive | Inside the Scramble to Avert Conflict With Russia in the Baltic",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWXU1WDdhS2huZHA0c0owNzRTTVpyZklia2VLbWNUMk1nWk52TFlieHdwZ2dNSEZ5LUdKTl83WU9iWkhwTHFWVHg4RkpudTM3WjlFa1lzbnY5YThqOTVyNU11cThCWWp0aTJGeU1wTVM5akVzeWRuQzMyaTROaDVXREdTOHRsQ0luM3VKME9DODhRZFVJLWxZSmEyU1VlbWlmME9YbEVBbGY?oc=5",
+   "published": "2026-11-27T17:22:31+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWXU1WDdhS2huZHA0c0owNzRTTVpyZklia2VLbWNUMk1nWk52TFlieHdwZ2dNSEZ5LUdKTl83WU9iWkhwTHFWVHg4RkpudTM3WjlFa1lzbnY5YThqOTVyNU11cThCWWp0aTJGeU1wTVM5akVzeWRuQzMyaTROaDVXREdTOHRsQ0luM3VKME9DODhRZFVJLWxZSmEyU1VlbWlmME9YbEVBbGY?oc=5",
+     "title": "Exclusive | Inside the Scramble to Avert Conflict With Russia in the Baltic"
+    }
+   ],
+   "ids": [
+    "243aa351d760"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Nos bastidores, a corrida para evitar conflito com a Rússia no Báltico",
+   "category": "internacional",
+   "importance": 6,
+   "importance_reason": "Risco geopolítico na Europa afeta o humor global.",
+   "summary": "O WSJ relata os esforços para evitar um conflito com a Rússia no Báltico.",
+   "involves": "Rússia; região do Báltico",
+   "interpretation": "Indica tensão elevada na fronteira da Otan.",
+   "impact": "Risco geopolítico pode pressionar petróleo, gás e ativos europeus.",
+   "sentiment": "negativo",
+   "entities": [
+    "Rússia",
+    "Báltico"
+   ],
+   "tags": [
+    "geopolítica",
+    "Rússia"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "9fa2ce7ca43a",
    "title": "Oil Futures Mixed in Shortened U.S. Trading Day",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNElnc21mUVJWTGEwdHJtLW92M2loQ2dEUW1majlOZzhqMThGeTdYUHJiS2xfSEFIY3JQbnhZdUJjV3VtVG9HYUdYY2JaU2M0bmhIU25aQkNPa2tmSlR1N0VGUlNQekJlMEtHS1hYQWZZYmh4WXFRYndQTzNNdlFkMm1oU3NiS3VhaWw0NVFObVktazlrR0dLamM4Uy1wNkkydmFSS1hOa0pIMmdjUHR4dzc0VkZ6SjRqa3RPXw?oc=5",
@@ -12841,39 +12889,6 @@
    "importance": 5,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "b0fe20ae556c",
-   "title": "Petrobras e Vale derrubam ritmo do Ibovespa, enquanto dólar segue abaixo de R$ 5,56",
-   "link": "https://exame.com/invest/mercados/ibovespa-hoje-27-11-2026/",
-   "published": "2026-11-27T11:06:28+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Exame",
-     "link": "https://exame.com/invest/mercados/ibovespa-hoje-27-11-2026/",
-     "title": "Petrobras e Vale derrubam ritmo do Ibovespa, enquanto dólar segue abaixo de R$ 5,56"
-    }
-   ],
-   "ids": [
-    "b0fe20ae556c"
-   ],
-   "snippet": "Confirmação de Trabuco na Fazenda ajuda principal índice da B3; dólar cai e bancos lideram ganhos",
-   "prescore": 8.0,
-   "headline": "Petrobras e Vale derrubam ritmo do Ibovespa, enquanto dólar segue abaixo de R$ 5,56",
-   "category": "mercados",
-   "importance": 5,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Confirmação de Trabuco na Fazenda ajuda principal índice da B3; dólar cai e bancos lideram ganhos",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -13174,6 +13189,72 @@
    "ai": false
   },
   {
+   "id": "b0fe20ae556c",
+   "title": "Ibovespa destoa do otimismo com Trabuco e perde força; dólar cai mais de 3% e fica abaixo de R$ 5,53",
+   "link": "https://exame.com/invest/mercados/ibovespa-hoje-27-11-2026/",
+   "published": "2026-11-27T11:06:28+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Exame",
+     "link": "https://exame.com/invest/mercados/ibovespa-hoje-27-11-2026/",
+     "title": "Ibovespa destoa do otimismo com Trabuco e perde força; dólar cai mais de 3% e fica abaixo de R$ 5,53"
+    }
+   ],
+   "ids": [
+    "b0fe20ae556c"
+   ],
+   "snippet": "Confirmação de Trabuco na Fazenda ajuda principal índice da B3; dólar cai e bancos lideram ganhos",
+   "prescore": 6.0,
+   "headline": "Ibovespa destoa do otimismo com Trabuco e perde força; dólar cai mais de 3% e fica abaixo de R$ 5,53",
+   "category": "mercados",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Confirmação de Trabuco na Fazenda ajuda principal índice da B3; dólar cai e bancos lideram ganhos",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "9955fdc2e1e5",
+   "title": "FII BTLG11 quer investir R$ 798,5 milhões em galpões com Mercado Livre entre os inquilinos; cotistas decidem",
+   "link": "https://www.moneytimes.com.br/fii-btlg11-quer-investir-r-798-milhoes-em-galpoes-com-mercado-livre-entre-os-inquilinos-cotistas-decidem-igdl/",
+   "published": "2026-11-27T18:53:19+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/fii-btlg11-quer-investir-r-798-milhoes-em-galpoes-com-mercado-livre-entre-os-inquilinos-cotistas-decidem-igdl/",
+     "title": "FII BTLG11 quer investir R$ 798,5 milhões em galpões com Mercado Livre entre os inquilinos; cotistas decidem"
+    }
+   ],
+   "ids": [
+    "9955fdc2e1e5"
+   ],
+   "snippet": "O fundo imobiliário BTG Pactual Logística (BTLG11) propôs aos cotistas a aquisição de participações em dois empreendimentos logísticos localizados em Guarulhos (SP) e Londrina (PR), por aproximadamente R$ 798,5 milhões, além de um aumento do limite de capital autorizado para R$ 30 bilhões. As matérias foram apresentadas em consulta formal e dependem da aprovação dos […]",
+   "prescore": 5.8,
+   "headline": "FII BTLG11 quer investir R$ 798,5 milhões em galpões com Mercado Livre entre os inquilinos; cotistas decidem",
+   "category": "mna",
+   "importance": 4,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O fundo imobiliário BTG Pactual Logística (BTLG11) propôs aos cotistas a aquisição de participações em dois empreendimentos logísticos localizados em Guarulhos (SP) e Londrina (PR), por aproximadamente R$ 798,5 milhões, além de um aumento do limite de capital autorizado para R$ 30 bilhões. As matérias foram apresentadas em consulta formal e dependem da aprovação dos […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "c96034373447",
    "title": "Anthropic Shares Jump After Volatile First Week Since IPO",
    "link": "https://www.bloomberg.com/news/articles/2026-11-27/anthropic-shares-jump-after-volatile-first-week-since-record-ipo",
@@ -13240,6 +13321,51 @@
    "ai": false
   },
   {
+   "id": "83961f694a19",
+   "title": "Silêncio após a compra pode afastar novos clientes",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRVlNbzAzeUh5eU1GNTd5THVXVDlXN0FNRUwwblo4NWVDb1FvYW5vcHFCR3ZUc3lZc1g5aHJpclpLN0pPb2s2TTdxTG5DZ1k1TldFLVF5Q3N5S1M2ZlcwaGxYNTliLWZrY3B4ZkstWHZJaFZzOFZsclBVaHdmSUdmOEgwajlBcHFEQ3hvQVVud2tCWHgtS3ZKbw?oc=5",
+   "published": "2026-11-27T16:06:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Hortonews",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRVlNbzAzeUh5eU1GNTd5THVXVDlXN0FNRUwwblo4NWVDb1FvYW5vcHFCR3ZUc3lZc1g5aHJpclpLN0pPb2s2TTdxTG5DZ1k1TldFLVF5Q3N5S1M2ZlcwaGxYNTliLWZrY3B4ZkstWHZJaFZzOFZsclBVaHdmSUdmOEgwajlBcHFEQ3hvQVVud2tCWHgtS3ZKbw?oc=5",
+     "title": "Silêncio após a compra pode afastar novos clientes"
+    },
+    {
+     "source": "RADAR DIGITAL BRASÍLIA",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZkhTUlFHZndHS2l5X2hYX0hNczdBVHZtTDgySDhlNnBOVkI1OUt3cnlyRm9FQkQzYzMxdHZHckhHM1UyOU9OYTRrZnEzNnllSmJ3VjA1Qks4bkhWTnlVM3AzN201cHhyR2dIUXpURVlBVXNENFVHNjBIYnJmWHhMS2ZFdVRSeUczUGpfQkdRSWRfRVZLa0xpQldqZy1JM1BnYVB2U1dNSTRoYU84djY5SFFhTjJxbGhNODBPbWtB?oc=5",
+     "title": "Silêncio após a compra pode afastar novos clientes"
+    },
+    {
+     "source": "Amazônia Sem Fronteira",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeVdzQzRYZFVxamlQLW9Ucnd4ckZ1MWhaY3pZMkgyd0ZHVnpUYzJCV1YxRUtnSWczSVFiYTY3cFk5SmxTaVJ0UDFVY0haUlR4Qkt4MG94SUtBMTQ4elFuVWYtbXZXOHhPTV9LZnlfa0hrRVVxR1dnUlFMQXMyZzN6bHVSdWp0M3ZsZkp0d3o2VVdNb0Q2MUJ1MzN3?oc=5",
+     "title": "Silêncio após a compra pode afastar novos clientes"
+    }
+   ],
+   "ids": [
+    "83961f694a19",
+    "3d358e1d5d03",
+    "9ecbfde7294d"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Silêncio após a compra pode afastar novos clientes",
+   "category": "empresas",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "5bfa0bfecabc",
    "title": "PhonePe, app de pagamentos da Índia, prepara IPO para 2027",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPN09kUGhnVm5WOTJ1d21lTzlHeTRZLXo0QXV6bjJ5X09UN2tpWWZwd2hDZVFZbUNQcURTSDJkTzN5RFJ1dzlBMGpZNWNiOS16MlU0bXQ2M0FGVzNPYzRVM1RObjBieGhhbnpSd0xIbUladElKTko0M0VvRGJQYzBUYTBFWm9iV3BBOWJqMTlqS3lndw?oc=5",
@@ -13258,6 +13384,39 @@
    "snippet": "",
    "prescore": 5.4,
    "headline": "PhonePe, app de pagamentos da Índia, prepara IPO para 2027",
+   "category": "mna",
+   "importance": 3,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "f5441508b7c2",
+   "title": "Buser entra em passagens aéreas e mira R$ 1 bi com aquisição em 2027",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUFEVzlDOVRlUldKUnZ5cllrVFBrWDMxQWluZ3ZuU25iSE94MkZ3aVlmVTdYTzJJQVVsOWV3N3NtOXJIWnY4cUp0RkJ4T053OTVhV3hIRU9wOW5YekRkN21GdUtHZDF1MTB2VndRSE94MElQV3VaRHFfNXZqbzg4SXJyYUd2OS11d0Z3LS1mTVB5YlZHVE4tcy1qMlQ3dkV2Q3lMS21rRXZqTk80akhR0gGvAUFVX3lxTE9ZQURXOUM5VGVSV0pSdnlyWWtUUGtYMzFBaW5ndm5TbmJIT3gyRndpWWZVN1hPMklBVWw5ZXc3c205ckhadjhxSnRGQnhPTnc5NWFXeEhFT3A5blh6RGQ3bUZ1S0dkMXUxMHZWd1FIT3gwSVBXdVpEcV81dmpvODhJcnJhR3Y5LXV3RnctLWZNUHliVkdUTi1zLWoyVDd2RXZDeUxLbWtFdmpOTzRqSFE?oc=5",
+   "published": "2026-11-27T12:28:31+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "InfoMoney",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUFEVzlDOVRlUldKUnZ5cllrVFBrWDMxQWluZ3ZuU25iSE94MkZ3aVlmVTdYTzJJQVVsOWV3N3NtOXJIWnY4cUp0RkJ4T053OTVhV3hIRU9wOW5YekRkN21GdUtHZDF1MTB2VndRSE94MElQV3VaRHFfNXZqbzg4SXJyYUd2OS11d0Z3LS1mTVB5YlZHVE4tcy1qMlQ3dkV2Q3lMS21rRXZqTk80akhR0gGvAUFVX3lxTE9ZQURXOUM5VGVSV0pSdnlyWWtUUGtYMzFBaW5ndm5TbmJIT3gyRndpWWZVN1hPMklBVWw5ZXc3c205ckhadjhxSnRGQnhPTnc5NWFXeEhFT3A5blh6RGQ3bUZ1S0dkMXUxMHZWd1FIT3gwSVBXdVpEcV81dmpvODhJcnJhR3Y5LXV3RnctLWZNUHliVkdUTi1zLWoyVDd2RXZDeUxLbWtFdmpOTzRqSFE?oc=5",
+     "title": "Buser entra em passagens aéreas e mira R$ 1 bi com aquisição em 2027"
+    }
+   ],
+   "ids": [
+    "f5441508b7c2"
+   ],
+   "snippet": "",
+   "prescore": 5.4,
+   "headline": "Buser entra em passagens aéreas e mira R$ 1 bi com aquisição em 2027",
    "category": "mna",
    "importance": 3,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -13648,72 +13807,6 @@
    "ai": false
   },
   {
-   "id": "51c8e7075d2e",
-   "title": "Ibovespa reduz fôlego após euforia com Trabuco no comando da Fazenda; entenda",
-   "link": "https://www.moneytimes.com.br/ibovespa-reduz-folego-apos-euforia-com-trabuco-no-comando-da-fazenda-davs/",
-   "published": "2026-11-27T16:10:21+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/ibovespa-reduz-folego-apos-euforia-com-trabuco-no-comando-da-fazenda-davs/",
-     "title": "Ibovespa reduz fôlego após euforia com Trabuco no comando da Fazenda; entenda"
-    }
-   ],
-   "ids": [
-    "51c8e7075d2e"
-   ],
-   "snippet": "A última sessão da semana é marcada por otimismo na bolsa brasileira, impulsionada pelo anúncio de que Luiz Carlos Trabuco assumirá o Ministério da Fazenda no quarto mandato do presidente Luiz Inácio Lula da Silva. Contudo, a festa na Faria Lima já começa a reduzir o ritmo inicial. Por volta de 13h (horário de Brasília), […]",
-   "prescore": 4.8,
-   "headline": "Ibovespa reduz fôlego após euforia com Trabuco no comando da Fazenda; entenda",
-   "category": "mercados",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A última sessão da semana é marcada por otimismo na bolsa brasileira, impulsionada pelo anúncio de que Luiz Carlos Trabuco assumirá o Ministério da Fazenda no quarto mandato do presidente Luiz Inácio Lula da Silva. Contudo, a festa na Faria Lima já começa a reduzir o ritmo inicial. Por volta de 13h (horário de Brasília), […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d37a903891bd",
-   "title": "The Big Pressures Facing the Fed",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-11-27/the-big-pressures-facing-the-fed",
-   "published": "2026-11-27T15:53:26+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/newsletters/2026-11-27/the-big-pressures-facing-the-fed",
-     "title": "The Big Pressures Facing the Fed"
-    }
-   ],
-   "ids": [
-    "d37a903891bd"
-   ],
-   "snippet": "And the hard question they have to answer.",
-   "prescore": 4.8,
-   "headline": "The Big Pressures Facing the Fed",
-   "category": "internacional",
-   "importance": 3,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "And the hard question they have to answer.",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "7f40eb9c51c7",
    "title": "‘Efeito Trabuco’ leva Ibovespa aos 183 mil pontos e derruba dólar em mais de 4,60%",
    "link": "https://www.seudinheiro.com/2026/bolsa-dolar/efeito-trabuco-leva-ibovespa-aos-182-mil-pontos-e-derruba-dolar-em-mais-de-3-davs/",
@@ -13965,6 +14058,46 @@
    "ai": false
   },
   {
+   "id": "b31ba2c402e0",
+   "title": "No Evidence China Orchestrated Jensen Huang’s Affair, Officials Brief Congress",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNM1MzT3BJb0JlQ2xzdTJRZi12MllDSlBzS3IwMlZkYVZhV2NuUnpPWGV3LW9lVUg3MTg5QzZ5amhpRTZMeThEYXpLSHc5Q1RJdkh0RVVmMmd0aEQ4OHZIYTBWZ0JiWV9FU2dPbnNjQ1c4LXpfNFZaWmlMckdqWkl1U2Nvb1NoZUdlYVNNQ2xYVHNPc2ZQY05qS0xTd1lUUkowaHdEQUlLVGhJYjdPM01JMFByUDV3QjRhQmJ4aThsSDhSQTIwSUpfMy1UZlE?oc=5",
+   "published": "2026-11-27T15:48:09+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNM1MzT3BJb0JlQ2xzdTJRZi12MllDSlBzS3IwMlZkYVZhV2NuUnpPWGV3LW9lVUg3MTg5QzZ5amhpRTZMeThEYXpLSHc5Q1RJdkh0RVVmMmd0aEQ4OHZIYTBWZ0JiWV9FU2dPbnNjQ1c4LXpfNFZaWmlMckdqWkl1U2Nvb1NoZUdlYVNNQ2xYVHNPc2ZQY05qS0xTd1lUUkowaHdEQUlLVGhJYjdPM01JMFByUDV3QjRhQmJ4aThsSDhSQTIwSUpfMy1UZlE?oc=5",
+     "title": "No Evidence China Orchestrated Jensen Huang’s Affair, Officials Brief Congress"
+    }
+   ],
+   "ids": [
+    "b31ba2c402e0"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "Autoridades dos EUA dizem a congressistas que não há evidência de coordenação chinesa no caso Jensen Huang",
+   "category": "tech",
+   "importance": 3,
+   "importance_reason": "Atualização de investigação, sem efeito direto.",
+   "summary": "Autoridades americanas informaram ao Congresso que não há evidência de que a China tenha orquestrado o caso envolvendo Jensen Huang, segundo o WSJ.",
+   "involves": "Jensen Huang, Nvidia, Congresso dos EUA, China",
+   "interpretation": "Reduz o risco de um desdobramento geopolítico do caso.",
+   "impact": "Efeito limitado sobre a Nvidia.",
+   "sentiment": "neutro",
+   "entities": [
+    "Jensen Huang",
+    "Nvidia"
+   ],
+   "tags": [
+    "Nvidia",
+    "China",
+    "Congresso"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "bf72aa42b43a",
    "title": "Axia vende R$ 2,1 bilhões de ISA Energia, surfando o rali Trabuco",
    "link": "https://braziljournal.com/axia-vende-r-2-1-bilhoes-de-isa-energia-surfando-o-rali-trabuco",
@@ -14163,34 +14296,28 @@
    "ai": false
   },
   {
-   "id": "92875f72c36a",
-   "title": "Agência de Comunicação - Silêncio após a compra pode afastar novos clientes",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbnMxT3VGSGtkTzVNUjlUdmJCWGlvZnFxTFoxQjR0NTNaanhlTHY1VjcxS3ptazNrUDByeVg2dGVfeW5iVTRxd3pITkprT0xmVXVtdG5ZWi1WX0wxZkVpaWN4aVpUU1pJcENZa0tUMFZNeVE1WmNfVllkWEpYbldRSTRhQ2hfT0dQTlBMN1M4QnZ1MUQzQ0FSMEttTzJibV9XQVRtMkVrM1pjSER0SDVnOVZzcXhCeFJCUlBOZQ?oc=5",
-   "published": "2026-11-27T16:08:38+00:00",
-   "region": "BR",
+   "id": "9167f9651ab5",
+   "title": "Trump’s AI Gambit Fuels Wild Thanksgiving Week on Wall Street",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-27/trump-s-ai-gambit-fuels-wild-thanksgiving-week-on-wall-street",
+   "published": "2026-11-27T18:43:36+00:00",
+   "region": "INTL",
    "outlets": [
     {
-     "source": "Estadão Blue Studio",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbnMxT3VGSGtkTzVNUjlUdmJCWGlvZnFxTFoxQjR0NTNaanhlTHY1VjcxS3ptazNrUDByeVg2dGVfeW5iVTRxd3pITkprT0xmVXVtdG5ZWi1WX0wxZkVpaWN4aVpUU1pJcENZa0tUMFZNeVE1WmNfVllkWEpYbldRSTRhQ2hfT0dQTlBMN1M4QnZ1MUQzQ0FSMEttTzJibV9XQVRtMkVrM1pjSER0SDVnOVZzcXhCeFJCUlBOZQ?oc=5",
-     "title": "Agência de Comunicação - Silêncio após a compra pode afastar novos clientes"
-    },
-    {
-     "source": "RADAR DIGITAL BRASÍLIA",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZkhTUlFHZndHS2l5X2hYX0hNczdBVHZtTDgySDhlNnBOVkI1OUt3cnlyRm9FQkQzYzMxdHZHckhHM1UyOU9OYTRrZnEzNnllSmJ3VjA1Qks4bkhWTnlVM3AzN201cHhyR2dIUXpURVlBVXNENFVHNjBIYnJmWHhMS2ZFdVRSeUczUGpfQkdRSWRfRVZLa0xpQldqZy1JM1BnYVB2U1dNSTRoYU84djY5SFFhTjJxbGhNODBPbWtB?oc=5",
-     "title": "Silêncio após a compra pode afastar novos clientes"
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-27/trump-s-ai-gambit-fuels-wild-thanksgiving-week-on-wall-street",
+     "title": "Trump’s AI Gambit Fuels Wild Thanksgiving Week on Wall Street"
     }
    ],
    "ids": [
-    "92875f72c36a",
-    "3d358e1d5d03"
+    "9167f9651ab5"
    ],
-   "snippet": "",
-   "prescore": 3.9,
-   "headline": "Agência de Comunicação - Silêncio após a compra pode afastar novos clientes",
-   "category": "empresas",
+   "snippet": "The message from Washington this week was unmistakable: America must do whatever it takes to win the artificial-intelligence race with China, and the government is prepared to intervene to make it happen.",
+   "prescore": 3.8,
+   "headline": "Trump’s AI Gambit Fuels Wild Thanksgiving Week on Wall Street",
+   "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
+   "summary": "The message from Washington this week was unmistakable: America must do whatever it takes to win the artificial-intelligence race with China, and the government is prepared to intervene to make it happen.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14268,39 +14395,6 @@
    "ai": false
   },
   {
-   "id": "53b0fc191da6",
-   "title": "BC: inadimplência de produtores no crédito rural sobe para 9,6% em outubro",
-   "link": "https://www.moneytimes.com.br/bc-inadimplencia-de-produtores-no-credito-rural-sobe-para-96-em-outubro-pads/",
-   "published": "2026-11-27T16:58:16+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/bc-inadimplencia-de-produtores-no-credito-rural-sobe-para-96-em-outubro-pads/",
-     "title": "BC: inadimplência de produtores no crédito rural sobe para 9,6% em outubro"
-    }
-   ],
-   "ids": [
-    "53b0fc191da6"
-   ],
-   "snippet": "A inadimplência do crédito rural para pessoas físicas com recursos direcionados subiu para 9,6% em outubro, de 8,6% em setembro. O resultado está apenas 0,1 ponto porcentual abaixo do recorde da série, de 9,7%, registrado em agosto. As informações foram divulgadas nesta sexta-feira, 27, pelo Banco Central. A inadimplência na modalidade acumula alta de 3,0% […]",
-   "prescore": 3.8,
-   "headline": "BC: inadimplência de produtores no crédito rural sobe para 9,6% em outubro",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A inadimplência do crédito rural para pessoas físicas com recursos direcionados subiu para 9,6% em outubro, de 8,6% em setembro. O resultado está apenas 0,1 ponto porcentual abaixo do recorde da série, de 9,7%, registrado em agosto. As informações foram divulgadas nesta sexta-feira, 27, pelo Banco Central. A inadimplência na modalidade acumula alta de 3,0% […]",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "c9873acb438c",
    "title": "Lula escolhe Trabuco para acalmar mercado",
    "link": "https://www.bloomberg.com/news/videos/2026-11-27/lula-escolhe-trabuco-para-acalmar-mercado-video",
@@ -14323,39 +14417,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Martha Beck fala da escolha de Lula por Trabuco para a Fazenda. Edição de Patricia Xavier. (Source: Bloomberg)",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "6533da71c8f8",
-   "title": "Trabuco na Fazenda pode blindar Banco Central; veja os 3 pontos que o mercado vai monitorar, segundo UBS GWM",
-   "link": "https://www.moneytimes.com.br/trabuco-na-fazenda-pode-blindar-banco-central-veja-os-3-pontos-que-o-mercado-vai-monitorar-segundo-ubs-gwm/",
-   "published": "2026-11-27T16:20:14+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Money Times",
-     "link": "https://www.moneytimes.com.br/trabuco-na-fazenda-pode-blindar-banco-central-veja-os-3-pontos-que-o-mercado-vai-monitorar-segundo-ubs-gwm/",
-     "title": "Trabuco na Fazenda pode blindar Banco Central; veja os 3 pontos que o mercado vai monitorar, segundo UBS GWM"
-    }
-   ],
-   "ids": [
-    "6533da71c8f8"
-   ],
-   "snippet": "A escolha de Luiz Carlos Trabuco para o Ministério da Fazenda pode trazer benefícios não apenas para a condução da política fiscal brasileira, mas também para a atuação do Banco Central (BC), avalia o UBS GWM em relatório divulgado nesta sexta-feira (27). Segundo o banco suíço, a chegada do banqueiro à equipe econômica reduz significativamente […]",
-   "prescore": 3.8,
-   "headline": "Trabuco na Fazenda pode blindar Banco Central; veja os 3 pontos que o mercado vai monitorar, segundo UBS GWM",
-   "category": "macro",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "A escolha de Luiz Carlos Trabuco para o Ministério da Fazenda pode trazer benefícios não apenas para a condução da política fiscal brasileira, mas também para a atuação do Banco Central (BC), avalia o UBS GWM em relatório divulgado nesta sexta-feira (27). Segundo o banco suíço, a chegada do banqueiro à equipe econômica reduz significativamente […]",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14535,6 +14596,45 @@
    "ai": false
   },
   {
+   "id": "6333ba67991e",
+   "title": "The Gap Between China’s Military Spectacle and Battlefield Reality",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUDN4d1ZQZ3BaZzhDMzFUN0xBa2dqbU14SFltZGdfWmR5eTFRSjRHanJoY1NETTNKWkFkVjBYNTlVLVVFcktuWllBSkdoZnJYblRuMEhVMXdvVHM3M3ZsLXV3TTVONVJjMDg4RVRVcm9kZEN2akJVQklxcXA1a1NDM1ZoeGM4ZGxKb2xZWkI1SHp4Y29zNUF5azdwNF9yNjBwZm1kQlRtT1R0QQ?oc=5",
+   "published": "2026-11-27T18:43:36+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUDN4d1ZQZ3BaZzhDMzFUN0xBa2dqbU14SFltZGdfWmR5eTFRSjRHanJoY1NETTNKWkFkVjBYNTlVLVVFcktuWllBSkdoZnJYblRuMEhVMXdvVHM3M3ZsLXV3TTVONVJjMDg4RVRVcm9kZEN2akJVQklxcXA1a1NDM1ZoeGM4ZGxKb2xZWkI1SHp4Y29zNUF5azdwNF9yNjBwZm1kQlRtT1R0QQ?oc=5",
+     "title": "The Gap Between China’s Military Spectacle and Battlefield Reality"
+    }
+   ],
+   "ids": [
+    "6333ba67991e"
+   ],
+   "snippet": "",
+   "prescore": 3.6,
+   "headline": "A distância entre o espetáculo militar e a realidade de combate da China",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Análise de opinião sem fatos novos.",
+   "summary": "Texto do WSJ sobre a distância entre o espetáculo militar chinês e a realidade em combate. O material traz só o título.",
+   "involves": "China, WSJ.",
+   "interpretation": "Análise de fundo, sem gatilho de mercado.",
+   "impact": "Sem impacto direto.",
+   "sentiment": "neutro",
+   "entities": [
+    "China",
+    "WSJ"
+   ],
+   "tags": [
+    "China",
+    "militar"
+   ],
+   "is_deal": false,
+   "deal": null,
+   "ai": true
+  },
+  {
    "id": "b4c5c52682e1",
    "title": "Os caminhoneiros que se arriscam e ganham pouco para entregar suas compras na Black Friday: 'Querem que a gente trabalhe sem parar'",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/os-caminhoneiros-que-se-arriscam-e-ganham-pouco-para-entregar-suas-compras-na-black-friday-querem-que-a-gente-trabalhe-sem-parar.shtml",
@@ -14662,6 +14762,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "Um mês após o segundo turno presidencial, com a vitória de Luiz Inácio Lula da Silva (PT) sobre Flávio Bolsonaro (PL), já há quem pense na próxima disputa eleitoral. E não é nenhum político. Principal fornecedora de urnas eletrônicas no País, a Positivo está de olho na tecnologia que envolvei o pleito municipal de 2028. […] O post A Positivo já pensa na próxima eleição (mas não está atrás de voto)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "01d2e3e7bcde",
+   "title": "France Joins the Dutch in Opposing Proposed US Export Curbs",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-27/france-joins-the-dutch-in-opposing-proposed-us-export-curbs",
+   "published": "2026-11-27T17:06:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Bloomberg",
+     "link": "https://www.bloomberg.com/news/articles/2026-11-27/france-joins-the-dutch-in-opposing-proposed-us-export-curbs",
+     "title": "France Joins the Dutch in Opposing Proposed US Export Curbs"
+    }
+   ],
+   "ids": [
+    "01d2e3e7bcde"
+   ],
+   "snippet": "France said it’s backing the Dutch over concerns that a proposed US law will force European companies such as ASML Holding NV to comply with restrictions on technology exports to China, and is considering possible measures if the law is adopted.",
+   "prescore": 3.4,
+   "headline": "France Joins the Dutch in Opposing Proposed US Export Curbs",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "France said it’s backing the Dutch over concerns that a proposed US law will force European companies such as ASML Holding NV to comply with restrictions on technology exports to China, and is considering possible measures if the law is adopted.",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -14910,72 +15043,6 @@
    "ai": false
   },
   {
-   "id": "76cb178571be",
-   "title": "Após troca na Fazenda, Moretti deve ser mantido no Planejamento, dizem aliados",
-   "link": "https://www.infomoney.com.br/politica/apos-troca-na-fazenda-moretti-deve-ser-mantido-no-planejamento-dizem-aliados/",
-   "published": "2026-11-27T18:01:48+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/politica/apos-troca-na-fazenda-moretti-deve-ser-mantido-no-planejamento-dizem-aliados/",
-     "title": "Após troca na Fazenda, Moretti deve ser mantido no Planejamento, dizem aliados"
-    }
-   ],
-   "ids": [
-    "76cb178571be"
-   ],
-   "snippet": "Lula tem elogiado Moretti, a quem já chamou de \"mágico\" do orçamento The post Após troca na Fazenda, Moretti deve ser mantido no Planejamento, dizem aliados appeared first on InfoMoney .",
-   "prescore": 3.2,
-   "headline": "Após troca na Fazenda, Moretti deve ser mantido no Planejamento, dizem aliados",
-   "category": "politica",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Lula tem elogiado Moretti, a quem já chamou de \"mágico\" do orçamento The post Após troca na Fazenda, Moretti deve ser mantido no Planejamento, dizem aliados appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "2371790e5d53",
-   "title": "Tesouro IPCA+ rende mais de 9% em menos de uma semana com “efeito Trabuco”",
-   "link": "https://www.infomoney.com.br/onde-investir/tesouro-ipca-quanto-rende-efeito-trabuco/",
-   "published": "2026-11-27T17:30:10+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "InfoMoney",
-     "link": "https://www.infomoney.com.br/onde-investir/tesouro-ipca-quanto-rende-efeito-trabuco/",
-     "title": "Tesouro IPCA+ rende mais de 9% em menos de uma semana com “efeito Trabuco”"
-    }
-   ],
-   "ids": [
-    "2371790e5d53"
-   ],
-   "snippet": "Queda das taxas valoriza títulos de longo prazo pela marcação a mercado. O ganho, porém, só se concretiza na venda antecipada e, para quem comprou nesta semana, seria em grande parte consumido pelo IOF The post Tesouro IPCA+ rende mais de 9% em menos de uma semana com “efeito Trabuco” appeared first on InfoMoney .",
-   "prescore": 3.2,
-   "headline": "Tesouro IPCA+ rende mais de 9% em menos de uma semana com “efeito Trabuco”",
-   "category": "macro",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "Queda das taxas valoriza títulos de longo prazo pela marcação a mercado. O ganho, porém, só se concretiza na venda antecipada e, para quem comprou nesta semana, seria em grande parte consumido pelo IOF The post Tesouro IPCA+ rende mais de 9% em menos de uma semana com “efeito Trabuco” appeared first on InfoMoney .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "bca568891f5b",
    "title": "Brazilian markets rally after Lula taps Bradesco chairman for finance chief",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVWJ1TmgtM1FzTjRxamVLcWlsa3NnLTcwY2dHb1UzUUhlajNUaXZyZllrWDFxRjk3ZHZPejU2OWhNV2ctU3ZJb3R1T0ZpeUJDY21BVXBXbmFsOGdJOVpHN09yZmUyVVlwQnh2WTFLMmRvU1dWSzF6eHlZeFdiaXNic3piWTZGbEZTam5XVkVGOW95WktaTHB2UEFfQk95LVhENmhwLThKUQ?oc=5",
@@ -15141,6 +15208,39 @@
    "ai": false
   },
   {
+   "id": "34637949e54c",
+   "title": "Lula chama FHC de 'morto-vivo' em evento no Rio",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-chama-fhc-de-morto-vivo-em-evento-no-rio.shtml",
+   "published": "2026-11-27T19:14:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Folha",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-chama-fhc-de-morto-vivo-em-evento-no-rio.shtml",
+     "title": "Lula chama FHC de 'morto-vivo' em evento no Rio"
+    }
+   ],
+   "ids": [
+    "34637949e54c"
+   ],
+   "snippet": "O presidente Lula afirmou nesta sexta-feira (27) que o ex-presidente Fernando Henrique Cardoso \"é um morto-vivo\". O ex-mandatário tem doença de Alzheimer em estágio avançado e está sob cuidados permanentes de cuidadores. Leia mais (11/27/2026 - 16h14)",
+   "prescore": 3.0,
+   "headline": "Lula chama FHC de 'morto-vivo' em evento no Rio",
+   "category": "politica",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O presidente Lula afirmou nesta sexta-feira (27) que o ex-presidente Fernando Henrique Cardoso \"é um morto-vivo\". O ex-mandatário tem doença de Alzheimer em estágio avançado e está sob cuidados permanentes de cuidadores. Leia mais (11/27/2026 - 16h14)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "f3bd94e50c49",
    "title": "Lula acerta permanência de Bruno Moretti no Ministério do Planejamento, dizem aliados",
    "link": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-acerta-permanencia-de-bruno-moretti-no-ministerio-do-planejamento-dizem-aliados.shtml",
@@ -15295,6 +15395,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A Rede Brasil do Pacto Global da ONU (Organização das Nações Unidas) lançou nesta semana, em Genebra, um grupo de trabalho sobre segurança alimentar e nutricional de trabalhadores. Leia mais (11/27/2026 - 14h06)",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "e00fe6cbe96d",
+   "title": "Na economia da inovação, fomento público já ultrapassa os anjos",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa05zWXpnQjE2QVFYTmlJVHlNemZ0LXJBVzl6THBVVWJONzd0NkRKVHZDTzZyczN1ZjNFTkIxX2xOd29oZ1JQVTJxbTNXcm9CZVBhSm5DRGt2WWZ6SnlPSENscGF4Z20yajhaYUphZnFhWEhLdmJ3a2s0SkNEWGlaZDl2Rms2Z2s2dm96bFBEcy1sWkIwOW5JdDhjVmZoUU53MnpldUZHTWY4RWZXVFN2RTFrQUFQWnRWbFRYTHZNaG1vanI1elRZ0gHHAUFVX3lxTE9rTnNZemdCMTZBUVhOaUlUeU16ZnQtckFXOXpMcFVVYk43N3Q2REpUdkNPNnJzM3VmM0VOQjFfbE53b2hnUlBVMnFtM1dyb0JlUGFKbkNEa3ZZZnpKeU9IQ2xwYXhnbTJqOFphSmFmcWFYSEt2YndrazRKQ0RYaVpkOXZGazZnazZ2b3psUERzLWxaQjA5bkl0OGNWZmhRTncyemV1RkdNZjhFZldUU3ZFMWtBQVBadFZsVFhMdk1obW9qcjV6VFk?oc=5",
+   "published": "2026-11-27T17:00:02+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Pipeline (Valor)",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa05zWXpnQjE2QVFYTmlJVHlNemZ0LXJBVzl6THBVVWJONzd0NkRKVHZDTzZyczN1ZjNFTkIxX2xOd29oZ1JQVTJxbTNXcm9CZVBhSm5DRGt2WWZ6SnlPSENscGF4Z20yajhaYUphZnFhWEhLdmJ3a2s0SkNEWGlaZDl2Rms2Z2s2dm96bFBEcy1sWkIwOW5JdDhjVmZoUU53MnpldUZHTWY4RWZXVFN2RTFrQUFQWnRWbFRYTHZNaG1vanI1elRZ0gHHAUFVX3lxTE9rTnNZemdCMTZBUVhOaUlUeU16ZnQtckFXOXpMcFVVYk43N3Q2REpUdkNPNnJzM3VmM0VOQjFfbE53b2hnUlBVMnFtM1dyb0JlUGFKbkNEa3ZZZnpKeU9IQ2xwYXhnbTJqOFphSmFmcWFYSEt2YndrazRKQ0RYaVpkOXZGazZnazZ2b3psUERzLWxaQjA5bkl0OGNWZmhRTncyemV1RkdNZjhFZldUU3ZFMWtBQVBadFZsVFhMdk1obW9qcjV6VFk?oc=5",
+     "title": "Na economia da inovação, fomento público já ultrapassa os anjos"
+    }
+   ],
+   "ids": [
+    "e00fe6cbe96d"
+   ],
+   "snippet": "",
+   "prescore": 3.0,
+   "headline": "Na economia da inovação, fomento público já ultrapassa os anjos",
+   "category": "empresas",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -15840,6 +15973,106 @@
    "ai": false
   },
   {
+   "id": "3a86c72a37f8",
+   "title": "Trabuco Day no Tesouro Direto: taxas dos títulos públicos voltam aos níveis anteriores às eleições",
+   "link": "https://www.seudinheiro.com/2026/renda-fixa/trabuco-day-no-tesouro-direto-taxas-dos-titulos-publicos-voltam-aos-niveis-anteriores-as-eleicoes-mlim/",
+   "published": "2026-11-27T19:15:00+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Seu Dinheiro",
+     "link": "https://www.seudinheiro.com/2026/renda-fixa/trabuco-day-no-tesouro-direto-taxas-dos-titulos-publicos-voltam-aos-niveis-anteriores-as-eleicoes-mlim/",
+     "title": "Trabuco Day no Tesouro Direto: taxas dos títulos públicos voltam aos níveis anteriores às eleições"
+    }
+   ],
+   "ids": [
+    "3a86c72a37f8"
+   ],
+   "snippet": "Taxa do prefixado mais curto chega a 13%, enquanto o Tesouro IPCA+ mais longo quase perde o nível dos 7% de juro real The post Trabuco Day no Tesouro Direto: taxas dos títulos públicos voltam aos níveis anteriores às eleições appeared first on Seu Dinheiro .",
+   "prescore": 2.8,
+   "headline": "Trabuco Day no Tesouro Direto: taxas dos títulos públicos voltam aos níveis anteriores às eleições",
+   "category": "macro",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Taxa do prefixado mais curto chega a 13%, enquanto o Tesouro IPCA+ mais longo quase perde o nível dos 7% de juro real The post Trabuco Day no Tesouro Direto: taxas dos títulos públicos voltam aos níveis anteriores às eleições appeared first on Seu Dinheiro .",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "25a7b5939833",
+   "title": "Fiagro negocia com desconto e pode entregar rendimentos acima de 16%, aponta XP",
+   "link": "https://www.moneytimes.com.br/fiagro-negocia-com-desconto-e-pode-entregar-rendimentos-de-16-aponta-xp-pads/",
+   "published": "2026-11-27T19:04:18+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "Money Times",
+     "link": "https://www.moneytimes.com.br/fiagro-negocia-com-desconto-e-pode-entregar-rendimentos-de-16-aponta-xp-pads/",
+     "title": "Fiagro negocia com desconto e pode entregar rendimentos acima de 16%, aponta XP"
+    }
+   ],
+   "ids": [
+    "25a7b5939833"
+   ],
+   "snippet": "O FG/Agro Fiagro (FGAA11) segue entre as principais recomendações de compra no segmento de Fiagros de crédito, segundo relatório assinado pelos analistas Marx Gonçalves e Eduardo Bacelar, da XP Investimentos. A visão positiva é sustentada pela gestão especializada, carteira sem eventos de inadimplência e pelo forte desconto das cotas em relação ao valor patrimonial. Atualmente, […]",
+   "prescore": 2.8,
+   "headline": "Fiagro negocia com desconto e pode entregar rendimentos acima de 16%, aponta XP",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O FG/Agro Fiagro (FGAA11) segue entre as principais recomendações de compra no segmento de Fiagros de crédito, segundo relatório assinado pelos analistas Marx Gonçalves e Eduardo Bacelar, da XP Investimentos. A visão positiva é sustentada pela gestão especializada, carteira sem eventos de inadimplência e pelo forte desconto das cotas em relação ao valor patrimonial. Atualmente, […]",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "4a29d32de453",
+   "title": "Durigan deixa agenda fiscal para 2027 com promessa de superávit e revisão de gastos",
+   "link": "https://g1.globo.com/economia/noticia/2026/11/27/durigan-deixa-agenda-fiscal-para-2027.ghtml",
+   "published": "2026-11-27T18:50:34+00:00",
+   "region": "BR",
+   "outlets": [
+    {
+     "source": "g1",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/27/durigan-deixa-agenda-fiscal-para-2027.ghtml",
+     "title": "Durigan deixa agenda fiscal para 2027 com promessa de superávit e revisão de gastos"
+    }
+   ],
+   "ids": [
+    "4a29d32de453",
+    "4a29d32de453"
+   ],
+   "snippet": "O ministro da Fazenda, Dario Durigan, nega que razão para a alta de recuperações judiciais seja somente as taxas de juros EPA-Shutterstock Luiz Carlos Trabuco, presidente do conselho do Bradesco, aceitou o convite do presidente da República, Luiz Inácio Lula da Silva (PT), para ser o novo ministro da Fazenda em 2027. O atual chefe da pasta, Dario Durigan — que permaneceu 8 meses no cargo — deixa a pasta com um conjunto de propostas para enfrentar o desafio econômico a partir do ano que vem. Durante a campanha eleitoral de Lula (PT) e nos meses seguintes, Durigan defendeu medidas como a revisão",
+   "prescore": 2.8,
+   "headline": "Durigan deixa agenda fiscal para 2027 com promessa de superávit e revisão de gastos",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "O ministro da Fazenda, Dario Durigan, nega que razão para a alta de recuperações judiciais seja somente as taxas de juros EPA-Shutterstock Luiz Carlos Trabuco, presidente do conselho do Bradesco, aceitou o convite do presidente da República, Luiz Inácio Lula da Silva (PT), para ser o novo ministro da Fazenda em 2027. O atual chefe da pasta, Dario Durigan — que permaneceu 8 meses no cargo — deixa a",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "35fdc50c7f0d",
    "title": "Lula: não vamos cortar benefícios do povo pobre desse país",
    "link": "https://www.moneytimes.com.br/lula-nao-vamos-cortar-beneficios-do-povo-pobre-desse-pais/",
@@ -16327,39 +16560,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "d85f266d1a09",
-   "title": "AI Tools Reshape the Black Friday Experience",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-27/ai-tools-reshape-the-black-friday-experience-video",
-   "published": "2026-11-27T15:54:40+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Bloomberg",
-     "link": "https://www.bloomberg.com/news/videos/2026-11-27/ai-tools-reshape-the-black-friday-experience-video",
-     "title": "AI Tools Reshape the Black Friday Experience"
-    }
-   ],
-   "ids": [
-    "d85f266d1a09"
-   ],
-   "snippet": "As the holiday shopping season ramps up, retail sales are expected to top $1 trillion for the first time, with shoppers indicating they will spend more this year than last. They are also expected to give AI more say over what they buy. Anjee Solanki, National Director of Retail, US at Colliers, explains what the first true \"agentic AI\" holiday season means for shoppers. (Source: Bloomberg)",
-   "prescore": 2.8,
-   "headline": "AI Tools Reshape the Black Friday Experience",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "As the holiday shopping season ramps up, retail sales are expected to top $1 trillion for the first time, with shoppers indicating they will spend more this year than last. They are also expected to give AI more say over what they buy. Anjee Solanki, National Director of Retail, US at Colliers, explains what the first true \"agentic AI\" holiday season means for shoppers. (Source: Bloomberg)",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17035,39 +17235,6 @@
    "ai": false
   },
   {
-   "id": "87a01d098812",
-   "title": "Trabuco no Ministério da Fazenda, o lado bom do dólar em alta e feedbacks nas PMEs; veja o que mexe com seu bolso hoje",
-   "link": "https://www.seudinheiro.com/2026/colunistas/trabuco-no-ministerio-da-fazenda-o-lado-bom-do-dolar-em-alta-e-feedbacks-nas-pmes-veja-o-que-mexe-com-seu-bolso-hoje/",
-   "published": "2026-11-27T11:37:19+00:00",
-   "region": "BR",
-   "outlets": [
-    {
-     "source": "Seu Dinheiro",
-     "link": "https://www.seudinheiro.com/2026/colunistas/trabuco-no-ministerio-da-fazenda-o-lado-bom-do-dolar-em-alta-e-feedbacks-nas-pmes-veja-o-que-mexe-com-seu-bolso-hoje/",
-     "title": "Trabuco no Ministério da Fazenda, o lado bom do dólar em alta e feedbacks nas PMEs; veja o que mexe com seu bolso hoje"
-    }
-   ],
-   "ids": [
-    "87a01d098812"
-   ],
-   "snippet": "O anúncio de Luiz Carlos Trabuco para comandar a Fazenda deve animar os mercados ainda mais nesta sexta (27) The post Trabuco no Ministério da Fazenda, o lado bom do dólar em alta e feedbacks nas PMEs; veja o que mexe com seu bolso hoje appeared first on Seu Dinheiro .",
-   "prescore": 2.8,
-   "headline": "Trabuco no Ministério da Fazenda, o lado bom do dólar em alta e feedbacks nas PMEs; veja o que mexe com seu bolso hoje",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "O anúncio de Luiz Carlos Trabuco para comandar a Fazenda deve animar os mercados ainda mais nesta sexta (27) The post Trabuco no Ministério da Fazenda, o lado bom do dólar em alta e feedbacks nas PMEs; veja o que mexe com seu bolso hoje appeared first on Seu Dinheiro .",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
    "id": "3bda35c89fde",
    "title": "Altria’s Interest in Imperial May Affect Its AB InBev Stake",
    "link": "https://www.bloomberg.com/news/articles/2026-11-27/altria-s-interest-in-imperial-may-also-affect-its-ab-inbev-stake",
@@ -17096,6 +17263,39 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "A possible three-way deal to reshape the global tobacco industry may spill over into another business whose products are sometimes consumed alongside cigarettes — beer.",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "090e22e06d04",
+   "title": "Trump’s Nvidia intervention has a cost for US stocks",
+   "link": "https://www.ft.com/content/3318a827-bf20-4826-947d-9327381c3c10?syn-25a6b1a6=1",
+   "published": "2026-11-27T18:26:25+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/3318a827-bf20-4826-947d-9327381c3c10?syn-25a6b1a6=1",
+     "title": "Trump’s Nvidia intervention has a cost for US stocks"
+    }
+   ],
+   "ids": [
+    "090e22e06d04"
+   ],
+   "snippet": "Political meddling has already rubbed some of the gloss off the dollar and US Treasuries. Now it is hitting equities",
+   "prescore": 2.6,
+   "headline": "Trump’s Nvidia intervention has a cost for US stocks",
+   "category": "mercados",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "Political meddling has already rubbed some of the gloss off the dollar and US Treasuries. Now it is hitting equities",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17140,94 +17340,28 @@
    "ai": false
   },
   {
-   "id": "617e2759aa55",
-   "title": "The Friendship Breakup That Led to Bob Iger’s Biggest Boardroom Fight",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSUdOWU40SjdpV3pjTGVDOVdKNi1jUmxic2FfSzRXREdwWkVIMXdaWFdET2ZlbEUtODl2RFJWN3paSkRUaTRLQUxBb3p6Sk9PTWY2YkpfVEJsVlFzWkZGbjBnQURJMmdMVWlsYW5BRmZpME0yZzBFLVRiQ0Y0dlQ5b24xcWJmeWlNOWZGdEhCQnFUalFjbWhYVWlaRTBJcGNqZVE?oc=5",
-   "published": "2026-11-27T17:31:45+00:00",
+   "id": "8a6da2f85aad",
+   "title": "AI and the decryption nightmare",
+   "link": "https://www.ft.com/content/4114d053-de5e-46a5-8b46-758726abdcb7?syn-25a6b1a6=1",
+   "published": "2026-11-27T18:18:27+00:00",
    "region": "INTL",
    "outlets": [
     {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSUdOWU40SjdpV3pjTGVDOVdKNi1jUmxic2FfSzRXREdwWkVIMXdaWFdET2ZlbEUtODl2RFJWN3paSkRUaTRLQUxBb3p6Sk9PTWY2YkpfVEJsVlFzWkZGbjBnQURJMmdMVWlsYW5BRmZpME0yZzBFLVRiQ0Y0dlQ5b24xcWJmeWlNOWZGdEhCQnFUalFjbWhYVWlaRTBJcGNqZVE?oc=5",
-     "title": "The Friendship Breakup That Led to Bob Iger’s Biggest Boardroom Fight"
+     "source": "Financial Times",
+     "link": "https://www.ft.com/content/4114d053-de5e-46a5-8b46-758726abdcb7?syn-25a6b1a6=1",
+     "title": "AI and the decryption nightmare"
     }
    ],
    "ids": [
-    "617e2759aa55"
+    "8a6da2f85aad"
    ],
-   "snippet": "",
+   "snippet": "New breakthroughs call for faster upgrades to security, not panic",
    "prescore": 2.6,
-   "headline": "The Friendship Breakup That Led to Bob Iger’s Biggest Boardroom Fight",
-   "category": "internacional",
+   "headline": "AI and the decryption nightmare",
+   "category": "tech",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "1d4f86bafd96",
-   "title": "The Race to Make Dinner Delivery More Affordable",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcGNrZGFnUTAzaFAzYjd3eUFzTzNoaFQ1R2plTHB4R2htMk5uSFNOaGNNRm1oNUpIbkJXSkpwRWpPQWJOaWZJQjlQTWltYlNxb3lnN3BOSWFZdmQ3a2pYcU1lV0lUdmtYSEowUkp6Rl9hUnlFd2JodXcwaWRlY3d4OVFFNlQ3dFdjdWxXeHRxSGlKNG1YYlgzRTk1UGlINzA?oc=5",
-   "published": "2026-11-27T17:31:42+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcGNrZGFnUTAzaFAzYjd3eUFzTzNoaFQ1R2plTHB4R2htMk5uSFNOaGNNRm1oNUpIbkJXSkpwRWpPQWJOaWZJQjlQTWltYlNxb3lnN3BOSWFZdmQ3a2pYcU1lV0lUdmtYSEowUkp6Rl9hUnlFd2JodXcwaWRlY3d4OVFFNlQ3dFdjdWxXeHRxSGlKNG1YYlgzRTk1UGlINzA?oc=5",
-     "title": "The Race to Make Dinner Delivery More Affordable"
-    }
-   ],
-   "ids": [
-    "1d4f86bafd96"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "The Race to Make Dinner Delivery More Affordable",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "990595d05579",
-   "title": "Why Amazon’s Rival to Starlink Is Struggling to Catch Up With SpaceX",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qWUtZX1p5dVJja3JzN1l2Q1p3VFc2UF9wSEhpNFJqQWZ0ZjJEWkFNV25HR1dLNDJLSXpDckRMN19JZWk5QWhFRGR3YWlwQWtDSDBaSjZLRTI4ZjVmZTFTUUpIOHM1Qm5uSURj?oc=5",
-   "published": "2026-11-27T17:31:29+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qWUtZX1p5dVJja3JzN1l2Q1p3VFc2UF9wSEhpNFJqQWZ0ZjJEWkFNV25HR1dLNDJLSXpDckRMN19JZWk5QWhFRGR3YWlwQWtDSDBaSjZLRTI4ZjVmZTFTUUpIOHM1Qm5uSURj?oc=5",
-     "title": "Why Amazon’s Rival to Starlink Is Struggling to Catch Up With SpaceX"
-    }
-   ],
-   "ids": [
-    "990595d05579"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "Why Amazon’s Rival to Starlink Is Struggling to Catch Up With SpaceX",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
+   "summary": "New breakthroughs call for faster upgrades to security, not panic",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17338,6 +17472,39 @@
    "ai": false
   },
   {
+   "id": "8d8fcbcdc871",
+   "title": "Opinion | The Republican Party’s 2028 Rubio Question",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLVQzMGc4amZNOGt2MUdJR1hLNmRSUV84Um9CUXJxT09QeUhxbG1SbE9vMURpWHhTeVNCT3BpaklsUjRJemp1QUttN3hTRXR5Vl9YWGlSRG94ajhKZmZmdmlaTFBYenFSV19PbzNGRmNwM084aHlldWIzRERDM1luRUpwcWM?oc=5",
+   "published": "2026-11-27T16:38:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLVQzMGc4amZNOGt2MUdJR1hLNmRSUV84Um9CUXJxT09QeUhxbG1SbE9vMURpWHhTeVNCT3BpaklsUjRJemp1QUttN3hTRXR5Vl9YWGlSRG94ajhKZmZmdmlaTFBYenFSV19PbzNGRmNwM084aHlldWIzRERDM1luRUpwcWM?oc=5",
+     "title": "Opinion | The Republican Party’s 2028 Rubio Question"
+    }
+   ],
+   "ids": [
+    "8d8fcbcdc871"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Opinion | The Republican Party’s 2028 Rubio Question",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "edb718d829a5",
    "title": "The Best Movies of 2026: Hollywood Bounces Back",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQnFvVEZndFlrMTNycGNEZkM5TUpVdTc2TWZVQV90RGtEeGdtRnpQWlk3d0JxYk1sTzF2NXJCN1VNZ3RvTHBIRVgxTmpkOWhRS1pldkMwRm1KNzgwUzVRSjlmeElpTHBKZUU5MFp5NkttVGJRMlBOS1p2VEJPVl9MaDRmYkEtSTdQSk1mMGVxNjNZR3RSZTl4Sw?oc=5",
@@ -17393,72 +17560,6 @@
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
    "summary": "UK Department for Work and Pensions, Fifa and the US Treasury among institutions hit by outages as concerns grow over threat from AI",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "fca23bc49265",
-   "title": "BAE Systems Secures $6 Billion in Combat-Vehicle Contracts For Several European Nations",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaWJXNFZKY2c3TWlOM18zMjhGZmdqaDduQ3I3UHFReVJOSVp3b1NmT040d2c3NnVzU09yaldySWVTMU5oYktRdDkwSWhxZFI0QzFwWjZjS25IZi1JcFUtTHZ4QTNINF9SSEM4MzNXUEJCZnFaMnhQRWhQTW9yNXllMXFEalBRR0xuN1lsTFBLN0Q3QUFxR3FnX29BVWNpalNKSlk2LWNEaDZ1SGZvM2VJRm9JZHBJcVhETFlVdVJPY0wyQQ?oc=5",
-   "published": "2026-11-27T16:12:25+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaWJXNFZKY2c3TWlOM18zMjhGZmdqaDduQ3I3UHFReVJOSVp3b1NmT040d2c3NnVzU09yaldySWVTMU5oYktRdDkwSWhxZFI0QzFwWjZjS25IZi1JcFUtTHZ4QTNINF9SSEM4MzNXUEJCZnFaMnhQRWhQTW9yNXllMXFEalBRR0xuN1lsTFBLN0Q3QUFxR3FnX29BVWNpalNKSlk2LWNEaDZ1SGZvM2VJRm9JZHBJcVhETFlVdVJPY0wyQQ?oc=5",
-     "title": "BAE Systems Secures $6 Billion in Combat-Vehicle Contracts For Several European Nations"
-    }
-   ],
-   "ids": [
-    "fca23bc49265"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "BAE Systems Secures $6 Billion in Combat-Vehicle Contracts For Several European Nations",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "81b97ad62cf0",
-   "title": "From Jobs to Jensen: tech’s metamorphosis",
-   "link": "https://www.ft.com/content/5b10a0e6-aad6-403b-9f2e-23b5ca78897d",
-   "published": "2026-11-27T15:10:17+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/5b10a0e6-aad6-403b-9f2e-23b5ca78897d",
-     "title": "From Jobs to Jensen: tech’s metamorphosis"
-    }
-   ],
-   "ids": [
-    "81b97ad62cf0"
-   ],
-   "snippet": "The Nvidia saga is part of a bigger, stranger story about Silicon Valley’s political transformation",
-   "prescore": 2.6,
-   "headline": "From Jobs to Jensen: tech’s metamorphosis",
-   "category": "tech",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "The Nvidia saga is part of a bigger, stranger story about Silicon Valley’s political transformation",
    "involves": "",
    "interpretation": "",
    "impact": "",
@@ -17602,6 +17703,39 @@
    "ai": false
   },
   {
+   "id": "fd13515956bf",
+   "title": "EXCLUSIVE: Global fashion brands shift orders from Bangladesh to India amid unrest",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQWJhaVBEcEFiX2hwb0lHanFvdTJncnpwM3JVMEh6WTUxSmhaWjV6MHcwdGJueHd5M1pmcVB2VG9UbGxKbzlseklNR2FjNHFWMlFLbmxLQkxxeXptM1VWUVRkWngxS2dwNTVWTng2NXcyUlo4NHM5OFM3NWNsNUY2WkdJblJmcVFRaVV4X1IweXZQWUJya01ZVi1qc19IVjF1OGEtQU9aVDd0eW5xYnBkQkxhcWg0dHFUWEwyYzlPdkdqZw?oc=5",
+   "published": "2026-11-27T13:04:32+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Reuters",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQWJhaVBEcEFiX2hwb0lHanFvdTJncnpwM3JVMEh6WTUxSmhaWjV6MHcwdGJueHd5M1pmcVB2VG9UbGxKbzlseklNR2FjNHFWMlFLbmxLQkxxeXptM1VWUVRkWngxS2dwNTVWTng2NXcyUlo4NHM5OFM3NWNsNUY2WkdJblJmcVFRaVV4X1IweXZQWUJya01ZVi1qc19IVjF1OGEtQU9aVDd0eW5xYnBkQkxhcWg0dHFUWEwyYzlPdkdqZw?oc=5",
+     "title": "EXCLUSIVE: Global fashion brands shift orders from Bangladesh to India amid unrest"
+    }
+   ],
+   "ids": [
+    "fd13515956bf"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "EXCLUSIVE: Global fashion brands shift orders from Bangladesh to India amid unrest",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
    "id": "9aa289233295",
    "title": "Spain's far-right Vox leader Abascal nears power as election kingmaker",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPX1AxaFV1YTZ1VFB6MmVETG5iUmpxLWNEbjVDejhPZjJIVml6ZExzVGdxdGlmQUtfbkJ6ZUVWMzd6TDVVb1BsT1UtVXdXa3llbjFKbkFyQUJRdjJiUFdhVmxKdXpIemxhcDlLN1JpTDdHX3dhUzBQUmZRMGR6ZzZEOXNwWUFmVjU2ckRNcUI4TVVxT2ZHQWQ0RFdyZDBxajRrM3N2N0RhYw?oc=5",
@@ -17620,6 +17754,39 @@
    "snippet": "",
    "prescore": 2.6,
    "headline": "Spain's far-right Vox leader Abascal nears power as election kingmaker",
+   "category": "internacional",
+   "importance": 2,
+   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
+   "summary": "",
+   "involves": "",
+   "interpretation": "",
+   "impact": "",
+   "sentiment": "neutro",
+   "entities": [],
+   "tags": [],
+   "is_deal": false,
+   "deal": null,
+   "ai": false
+  },
+  {
+   "id": "7cb5b062de1d",
+   "title": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTlk0cWFXc1dCWFZnYlZPbnBBNGtndk1USE5BM3dhd1RYNzNZdkJiYlNxWmtsLVoxa3FSR0FmNkdKaEVsaVZjYnYwaHl3QjVUbnpLcFpfUDRyenNXMjVFOVNEY083SG9rSTBLeHd4ZENhb1hBc0gtS3kyYzRQUU8xM1duaG51WHZjRFhRcXh5Y1FrdEk3WTIyMXFhdGw3ZzliWjc3RkJDVGZYT252YXRZRTd2Y3RXY2wwbWVVNEREWQ?oc=5",
+   "published": "2026-11-27T12:50:00+00:00",
+   "region": "INTL",
+   "outlets": [
+    {
+     "source": "Wall Street Journal",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTlk0cWFXc1dCWFZnYlZPbnBBNGtndk1USE5BM3dhd1RYNzNZdkJiYlNxWmtsLVoxa3FSR0FmNkdKaEVsaVZjYnYwaHl3QjVUbnpLcFpfUDRyenNXMjVFOVNEY083SG9rSTBLeHd4ZENhb1hBc0gtS3kyYzRQUU8xM1duaG51WHZjRFhRcXh5Y1FrdEk3WTIyMXFhdGw3ZzliWjc3RkJDVGZYT252YXRZRTd2Y3RXY2wwbWVVNEREWQ?oc=5",
+     "title": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist"
+    }
+   ],
+   "ids": [
+    "7cb5b062de1d"
+   ],
+   "snippet": "",
+   "prescore": 2.6,
+   "headline": "Oil Prices Mixed Ahead of OPEC+ Meeting as Middle East Supply Risks Persist",
    "category": "internacional",
    "importance": 2,
    "importance_reason": "Nota estimada por palavras-chave (sem IA).",
@@ -17699,138 +17866,6 @@
    "is_deal": false,
    "deal": null,
    "ai": false
-  },
-  {
-   "id": "53c058822f65",
-   "title": "First principles to cling to when markets convulse",
-   "link": "https://www.ft.com/content/839c7d2c-adad-4e70-9abd-3cd5bdf5e09e?syn-25a6b1a6=1",
-   "published": "2026-11-27T12:32:08+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Financial Times",
-     "link": "https://www.ft.com/content/839c7d2c-adad-4e70-9abd-3cd5bdf5e09e?syn-25a6b1a6=1",
-     "title": "First principles to cling to when markets convulse"
-    }
-   ],
-   "ids": [
-    "53c058822f65"
-   ],
-   "snippet": "If you haven’t a clue what to do right now, stick to the investment basics",
-   "prescore": 2.6,
-   "headline": "First principles to cling to when markets convulse",
-   "category": "mercados",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "If you haven’t a clue what to do right now, stick to the investment basics",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "a48788104a52",
-   "title": "They Call Him Bazooka Joe—and He Just Blew Up the Dallas Cowboys’ Season",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4zUEdoOE5EWXh4WDhuX1AwZ2N4ZWNDSTJ3QjJpckNWdnFNUURGY3RaZjNlc1d3Tl9PYzI2T0tIWHpVb0FsMjB5QmpwaWw2TUtxOFUtZm1NZjFPaFU1M1N2N2JLdVFtWnNQSW9ScnNQbDctRGtkY2plUVZn?oc=5",
-   "published": "2026-11-27T12:00:50+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Wall Street Journal",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4zUEdoOE5EWXh4WDhuX1AwZ2N4ZWNDSTJ3QjJpckNWdnFNUURGY3RaZjNlc1d3Tl9PYzI2T0tIWHpVb0FsMjB5QmpwaWw2TUtxOFUtZm1NZjFPaFU1M1N2N2JLdVFtWnNQSW9ScnNQbDctRGtkY2plUVZn?oc=5",
-     "title": "They Call Him Bazooka Joe—and He Just Blew Up the Dallas Cowboys’ Season"
-    }
-   ],
-   "ids": [
-    "a48788104a52"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "They Call Him Bazooka Joe—and He Just Blew Up the Dallas Cowboys’ Season",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "068ae1e840d4",
-   "title": "France in technical recession after quarterly revisions",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTER0b3otWTRCSmNQXzlVUXVMamtxeGxHV3BMQkVoRnBLTkhsYnFIdXdySXRYNUR4RWxBVU82Mk5oVDl1U2lNaTJ3U3FaVnpLUFM2UDZvSU92VERNcVBaOUtpVVpkek9vTFhZWG52TUQxUDNFVWs1UVZJQVpuM05SOGFQN29nblhlb19NeW9KYVM5OWlDV3NycXJkTG9Zc3d1Zm92VGNLaWlCN2It?oc=5",
-   "published": "2026-11-27T11:50:26+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTER0b3otWTRCSmNQXzlVUXVMamtxeGxHV3BMQkVoRnBLTkhsYnFIdXdySXRYNUR4RWxBVU82Mk5oVDl1U2lNaTJ3U3FaVnpLUFM2UDZvSU92VERNcVBaOUtpVVpkek9vTFhZWG52TUQxUDNFVWs1UVZJQVpuM05SOGFQN29nblhlb19NeW9KYVM5OWlDV3NycXJkTG9Zc3d1Zm92VGNLaWlCN2It?oc=5",
-     "title": "France in technical recession after quarterly revisions"
-    }
-   ],
-   "ids": [
-    "068ae1e840d4"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "France in technical recession after quarterly revisions",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
-  },
-  {
-   "id": "c1927ae46f35",
-   "title": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnhWb2oyc2Qta3k0bUhwbGZTcWZMREZ0VU41eVNZWDJZTDlBcmMxZzFrLXlmVGJpUHBRbVdBRlNoQU9lWUlIcVpMcXQwWWpyYVJ2eDJQa1ZvNFU5MUFHLWdpQW1BVloyUW5lTUlVSlFpLXJwVHNLMl9fQnBFTTNnemY4Q0JiUkN3SXFndG1pX1l1TmdySFJDOHJlWC1fMnE3cjlaVFB5M1hWbU0?oc=5",
-   "published": "2026-11-27T11:46:24+00:00",
-   "region": "INTL",
-   "outlets": [
-    {
-     "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnhWb2oyc2Qta3k0bUhwbGZTcWZMREZ0VU41eVNZWDJZTDlBcmMxZzFrLXlmVGJpUHBRbVdBRlNoQU9lWUlIcVpMcXQwWWpyYVJ2eDJQa1ZvNFU5MUFHLWdpQW1BVloyUW5lTUlVSlFpLXJwVHNLMl9fQnBFTTNnemY4Q0JiUkN3SXFndG1pX1l1TmdySFJDOHJlWC1fMnE3cjlaVFB5M1hWbU0?oc=5",
-     "title": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform"
-    }
-   ],
-   "ids": [
-    "c1927ae46f35"
-   ],
-   "snippet": "",
-   "prescore": 2.6,
-   "headline": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform",
-   "category": "internacional",
-   "importance": 2,
-   "importance_reason": "Nota estimada por palavras-chave (sem IA).",
-   "summary": "",
-   "involves": "",
-   "interpretation": "",
-   "impact": "",
-   "sentiment": "neutro",
-   "entities": [],
-   "tags": [],
-   "is_deal": false,
-   "deal": null,
-   "ai": false
   }
  ],
  "sources": [
@@ -17845,7 +17880,7 @@
    "id": "pipeline",
    "name": "Pipeline (Valor)",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null
   },
   {
@@ -17915,7 +17950,7 @@
    "id": "folha-mundo",
    "name": "Folha",
    "ok": true,
-   "count": 36,
+   "count": 37,
    "error": null
   },
   {
@@ -17936,14 +17971,14 @@
    "id": "g1-mundo",
    "name": "g1",
    "ok": true,
-   "count": 50,
+   "count": 51,
    "error": null
   },
   {
    "id": "bloomberglinea",
    "name": "Bloomberg Línea",
    "ok": true,
-   "count": 38,
+   "count": 36,
    "error": null
   },
   {
@@ -18006,7 +18041,7 @@
    "id": "q-mna-br",
    "name": "Radar M&A Brasil",
    "ok": true,
-   "count": 26,
+   "count": 51,
    "error": null
   },
   {
@@ -18020,7 +18055,7 @@
    "id": "q-mna-latam",
    "name": "Radar M&A LatAm",
    "ok": true,
-   "count": 52,
+   "count": 53,
    "error": null
   },
   {
@@ -18035,7 +18070,7 @@
    "name": "Diário Oficial (Cade)",
    "ok": false,
    "count": 0,
-   "error": "do1: HTTPError: HTTP Error 502: Bad Gateway; do3: HTTPError: HTTP Error 502: Bad Gateway"
+   "error": "do1: HTTPError: HTTP Error 502: Bad Gateway; do3: TimeoutError: The read operation timed out"
   },
   {
    "id": "bcb",
@@ -18215,7 +18250,7 @@
   },
   "cvm_through": "2026-11-26",
   "cvm_realtime": true,
-  "fetched_at": "2026-11-27T18:49",
+  "fetched_at": "2026-11-27T19:19",
   "complete": false,
   "v": 5
  },
@@ -18232,7 +18267,7 @@
    "name": "Diário Oficial (Cade)",
    "ok": false,
    "count": 0,
-   "error": "do1: HTTPError: HTTP Error 502: Bad Gateway; do3: HTTPError: HTTP Error 502: Bad Gateway"
+   "error": "do1: HTTPError: HTTP Error 502: Bad Gateway; do3: TimeoutError: The read operation timed out"
   },
   {
    "id": "bcb",
@@ -18243,11 +18278,11 @@
   }
  ],
  "stats": {
-  "raw": 977,
-  "unique": 447,
-  "unique_all": 901,
+  "raw": 1004,
+  "unique": 461,
+  "unique_all": 925,
   "sources_ok": 27,
   "sources_total": 27,
-  "seconds": 43.7
+  "seconds": 154.8
  }
 }
