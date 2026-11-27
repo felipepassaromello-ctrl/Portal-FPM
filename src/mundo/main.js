@@ -157,8 +157,10 @@ function relations(i, nb) {
   const rel = new Map();
   for (const j of nb.edges) {
     const ctl = W.ef[j] & 1, p = W.ep[j] >= 0 ? pct(W.ep[j]) : "";
-    if (W.et[j] === i) rel.set(W.es[j], ctl ? `controla${p ? ` · ${p}` : ""}` : p ? `dono de ${p}` : "acionista");
-    else rel.set(W.et[j], ctl ? `controlada${p ? ` · ${p}` : ""}` : p ? `participação de ${p}` : "participação");
+    // vários controladores (ou acordo de acionistas): cada um é parte do bloco de controle, não "controla" sozinho
+    const bloc = ctl && (W.ef[j] & 2 || W.inc[W.et[j]].filter((k) => W.ef[k] & 1).length > 1);
+    if (W.et[j] === i) rel.set(W.es[j], ctl ? `${bloc ? "bloco de controle" : "controla"}${p ? ` · ${p}` : ""}` : p ? `dono de ${p}` : "acionista");
+    else rel.set(W.et[j], ctl ? `${bloc ? "controle compartilhado" : "controlada"}${p ? ` · ${p}` : ""}` : p ? `participação de ${p}` : "participação");
   }
   for (const j of nb.brd) { const o = W.bs[j] === i ? W.bt[j] : W.bs[j]; if (!rel.has(o)) rel.set(o, ({ P: "presidência do conselho", E: "presidência executiva", C: "conselho", D: "diretoria" })[W.br[j]] || "administração"); }
   return rel;
@@ -745,7 +747,7 @@ function updateLabels() {
   let order;
   if (hl) {
     // com alguém escolhido: ele primeiro, depois quem controla e as maiores fatias; poucos nomes de longe, mais ao aproximar
-    const w = (i) => (i === ui.sel ? 1e9 : 0) + (ui.rel && /^control/.test(ui.rel.get(i) || "") ? 1e6 : 0) + (parseFloat(String((ui.rel && ui.rel.get(i)) || "").replace(/^[^0-9]*/, "").replace(",", ".")) || 0) * 1e3 + (map.sky[i] ? 500 : 0);
+    const w = (i) => (i === ui.sel ? 1e9 : 0) + (ui.rel && /^(control|bloco)/.test(ui.rel.get(i) || "") ? 1e6 : 0) + (parseFloat(String((ui.rel && ui.rel.get(i)) || "").replace(/^[^0-9]*/, "").replace(",", ".")) || 0) * 1e3 + (map.sky[i] ? 500 : 0);
     order = [...hl].sort((a, b) => w(b) - w(a) || prio(b) - prio(a)).slice(0, 60);
     budget = Math.min(budget, TOUCH ? 6 + Math.round(z * 8) : 8 + Math.round(z * 14));
   }
@@ -797,7 +799,7 @@ function updateLabels() {
       const [name, sub] = labelText(i);
       el.innerHTML = `<i class="m-lab-dot"></i><span class="m-lab-ln"></span><span class="m-lab-tx"><b>${esc(name)}</b><small>${esc(sub)}</small></span>`;
       el.classList.toggle("rel", !!(ui.rel && ui.rel.has(i)));
-      el.classList.toggle("relc", !!(ui.rel && /^control/.test(ui.rel.get(i) || "")));
+      el.classList.toggle("relc", !!(ui.rel && /^(control|bloco)/.test(ui.rel.get(i) || "")));
       el.dataset.i = i;
       el.classList.remove("on");
       el._t = performance.now();
