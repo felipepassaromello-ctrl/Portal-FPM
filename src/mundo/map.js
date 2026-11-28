@@ -1272,7 +1272,7 @@ export function createMap(canvas, world, opts = {}) {
   return {
     renderer, scene, camera, cam, view, plates, update, render, warmup, resize, setOffset, setInsets,
     pan, fling, zoom, flyTo, flyToBox, flyToNodes, flyToPlate, fitAll, pick, plateAt, project, projectPoint, pxPerUnit,
-    setHighlight, setFlows, setVisible, setFocusPlate, intro, skipIntro, touch,
+    setHighlight, setFlows, setVisible, setFocusPlate, intro, skipIntro, touch, themed,
     isInv, isGround, sky, shape, X, Y, Z, R, TOP, PLATE_H: 0,
     get scale() { return S; },
     // andamento da abertura, de 0 a 1 (1 = não há abertura em curso)
